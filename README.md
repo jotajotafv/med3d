@@ -33,15 +33,18 @@ Para otro alojamiento estático cambia `BASE_PATH` y `SITE_ORIGIN` al compilar; 
 `/anatomia/` abre el atlas óseo modular. Conserva los órganos anteriores mediante `?organ=heart`, `?organ=lungs` y `?organ=brain`.
 
 - BodyParts3D 4.0: 199 huesos convencionales y 4 sesamoideos accesorios; 205 mallas seleccionables en 7 GLB.
-- Búsqueda común/anatómica/latina, árbol virtualizado, regiones bajo demanda, aislamiento, ocultación, opacidad por sistema, fichas por familia y despiece jerárquico suave.
+- Búsqueda común/anatómica/latina, árbol virtualizado, regiones bajo demanda, aislamiento, ocultación, opacidad por sistema y despiece jerárquico suave.
+- Fase 2.1: veinte fichas individuales para los principales huesos, seis vistas anatómicas, encuadre adaptado a estructuras pequeñas y controles legibles. Las fichas de familia siguen disponibles como contenido general identificado.
 - Faltan cóccix y seis huesecillos auditivos en el cuerpo registrado. Las fuentes adicionales están identificadas; su alineación y lateralidad requieren revisión antes de incorporarlas. No se declara un esqueleto de 206 huesos completo.
 - Procedimientos y primeros auxilios conservan sus prototipos existentes.
 
 Consulta `docs/phase2-audit.md`, `docs/phase2-architecture.md`, `docs/phase2-missing-bones.md` y `scripts/anatomy/README.md`.
 
+La validación de la fase 2.1 se documenta en `docs/phase2.1-validation.md`. El flujo `anatomy-visual-validation.yml` ejecuta pruebas funcionales, produce capturas reproducibles y mide el navegador disponible. La inspección visual y las pruebas en hardware físico se registran por separado.
+
 ## Rendimiento y modelos
 
-El inicio descarga sólo el corazón (715.820 bytes). Los demás órganos se solicitan al elegirlos; el conjunto completo suma 6.603.880 bytes. GLB comprimidos con Meshopt, carga diferida del visor y densidad de píxeles limitada. El rendimiento 3D depende también del dispositivo.
+El atlas óseo solicita siete módulos regionales, con un máximo de dos descargas simultáneas. Los órganos anteriores se cargan al elegirlos: el corazón ocupa 715.820 bytes y el conjunto de órganos y piel suma 6.603.880 bytes. GLB comprimidos con Meshopt, carga diferida del visor y densidad de píxeles limitada. El rendimiento 3D depende también del dispositivo.
 
 ## Alcance y atribuciones
 

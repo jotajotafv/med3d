@@ -8,6 +8,8 @@ Esta decisión responde a la falta de correspondencias anatómicas verificadas e
 
 ## Evidencia reproducible
 
+Los modelos originales y metadatos se conservan de forma duradera en [`research/anatomy/source-candidates.zip`](../research/anatomy/source-candidates.zip), fuera de los recursos cargados por el atlas. El [manifiesto del archivo](../research/anatomy/source-candidates-manifest.json) permite comprobar cada SHA-256 después de descomprimir. Véanse las [atribuciones e instrucciones de reproducción](../research/anatomy/README.md).
+
 - [`openear_headers.py`](../scripts/anatomy/registration-research/openear_headers.py): lectura por rangos de los ZIP oficiales; inspecciona encabezados NRRD, parámetros H5 y únicamente campos DICOM espaciales/de lateralidad. Rechaza descargar el ZIP entero si el servidor ignora `Range`.
 - [`openear-headers-2026-09-14.jsonl`](../scripts/anatomy/registration-research/openear-headers-2026-09-14.jsonl): resultados de esa inspección ejecutada en **Higgsfield**, con miembros originales, CRC32 y SHA-256 de las diez transformaciones H5. Se leyeron 1.237 MB de ZETA y 1.242 MB de EPSILON; no las tomografías completas de varios GB.
 - [`verify_candidates.py`](../scripts/anatomy/registration-research/verify_candidates.py): comprueba los seis PLY originales contra el encabezado de su propia segmentación y registra las matrices del GLB HRA. No registra modelos entre sujetos.

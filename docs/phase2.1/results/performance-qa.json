@@ -1,0 +1,199 @@
+{
+  "date": "2026-09-14T16:44:44.176Z",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "deviceScaleFactor": 1,
+    "network": "Unthrottled loopback HTTP, no-store responses",
+    "physicalDevicesTested": [],
+    "limitations": [
+      "No desktop, laptop, phone or tablet physical GPU is available in this runtime.",
+      "Browser viewport checks cannot represent device GPU, thermal or network performance.",
+      "Geometry bytes are owned decoded buffers, not a measurement of GPU VRAM.",
+      "JS heap measures the browser JavaScript heap only.",
+      "FPS is measured during automated interaction on software WebGL; it is not a hardware performance prediction."
+    ],
+    "detectedWebGL": {
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "vendor": "Google Inc. (Google)"
+    }
+  },
+  "measurements": {
+    "initial": {
+      "loadedAssets": 7,
+      "meshCount": 205,
+      "triangleCount": 512450,
+      "geometryBytes": 7609772,
+      "drawCalls": 205,
+      "renderGeometries": 209,
+      "renderTextures": 4,
+      "loadMs": 70.5,
+      "firstGeometryMs": 222.90000000002328,
+      "fullSystemMs": 222.90000000002328
+    },
+    "loadMarks": [
+      {
+        "name": "med3d:load-start",
+        "startTimeMs": 751.7999999999884
+      },
+      {
+        "name": "med3d:first-geometry",
+        "startTimeMs": 974.7000000000116
+      },
+      {
+        "name": "med3d:all-assets-rendered",
+        "startTimeMs": 974.7000000000116
+      }
+    ],
+    "resources": [
+      {
+        "file": "arm-left.glb",
+        "durationMs": 7.399999999965075,
+        "encodedBodyBytes": 345860,
+        "transferBytes": 346160
+      },
+      {
+        "file": "arm-right.glb",
+        "durationMs": 3,
+        "encodedBodyBytes": 336004,
+        "transferBytes": 336304
+      },
+      {
+        "file": "leg-left.glb",
+        "durationMs": 2.900000000023283,
+        "encodedBodyBytes": 230240,
+        "transferBytes": 230540
+      },
+      {
+        "file": "leg-right.glb",
+        "durationMs": 2.199999999953434,
+        "encodedBodyBytes": 230668,
+        "transferBytes": 230968
+      },
+      {
+        "file": "skull.glb",
+        "durationMs": 4.099999999976717,
+        "encodedBodyBytes": 1002700,
+        "transferBytes": 1003000
+      },
+      {
+        "file": "spine.glb",
+        "durationMs": 3.400000000023283,
+        "encodedBodyBytes": 579828,
+        "transferBytes": 580128
+      },
+      {
+        "file": "thorax.glb",
+        "durationMs": 5.599999999976717,
+        "encodedBodyBytes": 1191640,
+        "transferBytes": 1191940
+      }
+    ],
+    "encodedModelBytes": 3916940,
+    "browserMemoryInitial": {
+      "Documents": 1,
+      "Nodes": 595,
+      "LayoutCount": 0,
+      "JSHeapUsedSize": 11398576,
+      "JSHeapTotalSize": 20824064
+    },
+    "orbit": {
+      "renderedFrames": 7,
+      "sampleDurationMs": 2466.6000000000004,
+      "fps": 2.432498175626368,
+      "medianFrameIntervalMs": 350,
+      "p95FrameIntervalMs": 700,
+      "definition": "Unique requestAnimationFrame timestamps with actual WebGL draw calls while continuous input was issued."
+    },
+    "explode": {
+      "renderedFrames": 6,
+      "sampleDurationMs": 2616.5,
+      "fps": 1.910949742021785,
+      "medianFrameIntervalMs": 366.7000000000007,
+      "p95FrameIntervalMs": 766.6999999999989,
+      "definition": "Unique requestAnimationFrame timestamps with actual WebGL draw calls while continuous input was issued."
+    },
+    "search": [
+      {
+        "query": "femur",
+        "resultPaintMs": 3.099999999976717,
+        "definition": "Input event to result DOM mutation; excludes browser transport and human typing."
+      },
+      {
+        "query": "FÍBULA IZQUIERDA",
+        "resultPaintMs": 1.5,
+        "definition": "Input event to result DOM mutation; excludes browser transport and human typing."
+      },
+      {
+        "query": "os femoris",
+        "resultPaintMs": 1.5,
+        "definition": "Input event to result DOM mutation; excludes browser transport and human typing."
+      },
+      {
+        "query": "escafoides",
+        "resultPaintMs": 2.099999999976717,
+        "definition": "Input event to result DOM mutation; excludes browser transport and human typing."
+      }
+    ],
+    "regionUnloadMs": 1860.5980980000022,
+    "afterRegionUnload": {
+      "loadedAssets": 6,
+      "meshCount": 172,
+      "triangleCount": 488138,
+      "geometryBytes": 7243788,
+      "drawCalls": 172,
+      "renderGeometries": 176,
+      "renderTextures": 4,
+      "loadMs": 70.5,
+      "firstGeometryMs": 222.90000000002328,
+      "fullSystemMs": 222.90000000002328
+    },
+    "regionSearchReloadMs": 1355.8654490000008,
+    "fullUnloadMs": 1512.9070030000003,
+    "afterFullUnload": {
+      "loadedAssets": 0,
+      "meshCount": 0,
+      "triangleCount": 0,
+      "geometryBytes": 0,
+      "drawCalls": 0,
+      "renderGeometries": 4,
+      "renderTextures": 4,
+      "loadMs": 0,
+      "firstGeometryMs": 222.90000000002328,
+      "fullSystemMs": 222.90000000002328
+    },
+    "browserMemoryUnloaded": {
+      "Documents": 1,
+      "Nodes": 1032,
+      "LayoutCount": 23,
+      "JSHeapUsedSize": 13048948,
+      "JSHeapTotalSize": 29212672
+    },
+    "fullReloadMs": 1222.2516529999994,
+    "afterFullReload": {
+      "loadedAssets": 7,
+      "meshCount": 205,
+      "triangleCount": 512450,
+      "geometryBytes": 7609772,
+      "drawCalls": 205,
+      "renderGeometries": 209,
+      "renderTextures": 4,
+      "loadMs": 79,
+      "firstGeometryMs": 222.90000000002328,
+      "fullSystemMs": 222.90000000002328
+    },
+    "browserMemoryReloaded": {
+      "Documents": 1,
+      "Nodes": 579,
+      "LayoutCount": 25,
+      "JSHeapUsedSize": 13926156,
+      "JSHeapTotalSize": 30261248
+    },
+    "operationTimingDefinition": "Region/unload/reload wall times include automated UI click, load and React DOM metrics acknowledgement; not isolated network or GPU kernel timings."
+  },
+  "success": true
+}

@@ -24,7 +24,7 @@ concurrency:
 jobs:
   anatomy:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     env:
       QA_PLAYWRIGHT_MODULE: ${{ github.workspace }}/.cache/anatomy-qa/node_modules/playwright
     steps:

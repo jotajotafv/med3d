@@ -2,7 +2,7 @@
 import assert from 'node:assert/strict';
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { createHarness, setSlider } from './browser-qa.mjs';
+import { createHarness, setSlider, withinQaDeadline } from './browser-qa.mjs';
 const h=await createHarness({viewport:{width:1366,height:768}}),{page,metrics,choose,reset}=h;
 const report={date:new Date().toISOString(),environment:{browser:'Headless Chromium',renderer:'ANGLE SwiftShader software',viewport:{width:1366,height:768},deviceScaleFactor:1,network:'Unthrottled loopback HTTP, no-store responses',physicalDevicesTested:[],limitations:['No desktop, laptop, phone or tablet physical GPU is available in this runtime.','Browser viewport checks cannot represent device GPU, thermal or network performance.','Geometry bytes are owned decoded buffers, not a measurement of GPU VRAM.','JS heap measures the browser JavaScript heap only.','FPS is measured during automated interaction on software WebGL; it is not a hardware performance prediction.']},measurements:{}};
 const percentile=(values,p)=>values.length?[...values].sort((a,b)=>a-b)[Math.min(values.length-1,Math.floor(values.length*p))]:null;
@@ -14,6 +14,7 @@ const endFrames=async()=>{
 };
 const measured=async action=>{const start=performance.now();await action();return performance.now()-start;};
 try{
+  await withinQaDeadline(async()=>{
   await page.goto(h.origin+'/med3d/anatomia/',{waitUntil:'domcontentloaded'});await h.waitMeshes(h.expectedMeshes);
   await page.waitForFunction(()=>Number(document.querySelector('.atlas-viewport')?.dataset.fullSystemMs)>0,null,{timeout:30000});
   report.measurements.initial=await metrics();
@@ -41,10 +42,14 @@ try{
   report.measurements.explode=await endFrames();await setSlider(page.getByRole('slider',{name:'Separación de piezas'}),0);await reset();
   report.measurements.search=[];
   for(const [query,expected] of [['femur','Fémur izquierdo'],['FÍBULA IZQUIERDA','Peroné izquierdo'],['os femoris','Fémur izquierdo'],['escafoides','Escafoides izquierdo']]){
-    const ms=await page.getByRole('textbox',{name:'Buscar estructura anatómica'}).evaluate((input,{query,expected})=>new Promise(resolve=>{
-      const start=performance.now();const observer=new MutationObserver(()=>{if([...document.querySelectorAll('.atlas-search-result span')].some(e=>e.textContent===expected)){observer.disconnect();resolve(performance.now()-start);}});
+    const ms=await page.getByRole('textbox',{name:'Buscar estructura anatómica'}).evaluate((input,{query,expected})=>new Promise((resolve,reject)=>{
+      const start=performance.now();let timer;
+      const inspect=()=>{if([...document.querySelectorAll('.atlas-search-result span')].some(e=>e.textContent===expected)){observer.disconnect();clearTimeout(timer);resolve(performance.now()-start);}};
+      const observer=new MutationObserver(inspect);
       observer.observe(document.querySelector('.atlas-sidebar'),{childList:true,subtree:true,characterData:true});
+      timer=setTimeout(()=>{observer.disconnect();reject(new Error('Search result did not appear within 5000 ms: '+query+' → '+expected));},5000);
       Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(input,query);input.dispatchEvent(new Event('input',{bubbles:true}));
+      queueMicrotask(inspect);
     }),{query,expected});
     report.measurements.search.push({query,resultPaintMs:ms,definition:'Input event to result DOM mutation; excludes browser transport and human typing.'});
   }
@@ -63,5 +68,6 @@ try{
   assert.equal(report.measurements.afterFullReload.geometryBytes,report.measurements.initial.geometryBytes);
   report.measurements.operationTimingDefinition='Region/unload/reload wall times include automated UI click, load and React DOM metrics acknowledgement; not isolated network or GPU kernel timings.';
   assert.deepEqual(h.errors,[]);assert.deepEqual(h.badRequests,[]);report.success=true;
+  },180000,'Performance validation');
 }catch(error){report.success=false;report.error=error.stack;throw error;}
 finally{await writeFile(path.join(h.output,'performance-qa.json'),JSON.stringify(report,null,2)+'\n');await h.close();}

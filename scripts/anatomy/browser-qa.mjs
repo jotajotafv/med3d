@@ -10,6 +10,14 @@ export const setSlider = (locator,value) => locator.evaluate((input,value)=>{
   Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(input,String(value));
   input.dispatchEvent(new Event('input',{bubbles:true})); input.dispatchEvent(new Event('change',{bubbles:true}));
 },value);
+export async function withinQaDeadline(task, timeoutMs, label) {
+  let timer;
+  try {
+    return await Promise.race([task(), new Promise((_,reject)=>{
+      timer=setTimeout(()=>reject(new Error(`${label}: exceeded ${timeoutMs} ms; partial evidence is retained.`)),timeoutMs);
+    })]);
+  } finally {clearTimeout(timer);}
+}
 export async function createHarness(options={}) {
   const output = path.resolve(options.output || process.env.QA_OUTPUT_DIR || path.join(project, '.qa-anatomy'));
   const distribution = path.resolve(project, process.env.QA_SERVE_DIR || 'dist');
@@ -39,7 +47,8 @@ export async function createHarness(options={}) {
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   const origin = `http://127.0.0.1:${server.address().port}`;
   const browser = await playwright.chromium.launch({headless:true, ...(process.env.QA_BROWSER_EXECUTABLE?{executablePath:process.env.QA_BROWSER_EXECUTABLE}:{}), args:['--no-sandbox','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
-  const context = await browser.newContext({viewport:options.viewport||{width:1440,height:900}, deviceScaleFactor:1});
+  const context = await browser.newContext({viewport:options.viewport||{width:1440,height:900}, deviceScaleFactor:1,reducedMotion:options.reducedMotion||'no-preference'});
+  context.setDefaultTimeout(20000);context.setDefaultNavigationTimeout(60000);
   await context.addInitScript(() => {
     window.__atlasQa = {draws:0, captureFrames:false, frames:[], firstMeshObservedMs:null, fullMeshObservedMs:null};
     const request = window.requestAnimationFrame.bind(window); let frameTime=0;
@@ -81,7 +90,11 @@ export async function createHarness(options={}) {
     await page.getByRole('combobox',{name:'Vista anatómica'}).selectOption(value);
     await page.waitForTimeout(1100);
   };
-  const close = async () => {await browser.close();await new Promise(resolve=>server.close(resolve));};
+  const close = async () => {
+    // A crashed browser must not keep CI alive after the report has been saved.
+    await withinQaDeadline(()=>browser.close(),5000,'Browser teardown').catch(error=>console.error(error.message));
+    server.closeAllConnections();await new Promise(resolve=>server.close(resolve));
+  };
   return {output,catalog,expectedMeshes,expectedTriangles,origin,browser,context,page,errors,badRequests,metrics,waitMeshes,waitDraws,choose,reset,view,close};
 }
 export async function runBrowserQa() {
@@ -90,6 +103,7 @@ const {output,catalog,expectedMeshes,expectedTriangles,origin,browser,context,pa
 const report = {date:new Date().toISOString(),environment:'Headless Chromium; ANGLE SwiftShader software WebGL; local HTTP; not physical-device performance', expectedMeshes, expectedTriangles, checks:[]};
 const check = (name, values={}) => {report.checks.push({name,...values});console.log('PASS',name,JSON.stringify(values));};
 try {
+  await withinQaDeadline(async()=>{
   await page.goto(origin+'/med3d/anatomia/',{waitUntil:'domcontentloaded',timeout:120000});
   await waitMeshes(expectedMeshes); await page.waitForTimeout(1500);
   const initial=await metrics(); assert.equal(initial.triangleCount,expectedTriangles); assert.equal(initial.loadedAssets,catalog.assets.length);
@@ -201,6 +215,10 @@ try {
   for(const width of [1366,1050,900,390]){
     await page.setViewportSize({width,height:844});await page.waitForTimeout(350);
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'No horizontal overflow at '+width);
+    if(width<=680){
+      const canvasBounds=await page.locator('.atlas-canvas canvas').boundingBox(),actionsBounds=await page.locator('.atlas-mobile-actions').boundingBox();
+      assert.ok(canvasBounds.y>=actionsBounds.y+actionsBounds.height-1,'Mobile anatomy canvas must begin below the action buttons');
+    }
     const inspect=page.getByRole('button',{name:'Inspección',exact:true});
     if(await inspect.isVisible()){
       await inspect.click(); assert.ok(await page.locator('.atlas-detail').isVisible());
@@ -231,21 +249,29 @@ try {
     assert.equal(await page.getByRole('alert').count(),0);check('Legacy '+organ+' model renders');
   }
 
-  // Inject one expected network fault in a separate page. Recovery must use the
-  // user-facing retry action and preserve successfully decoded regions.
-  const faultPage=await context.newPage();let failNext=true;
+  // Use the existing page: retaining a background brain WebGL context would add
+  // an unrelated GPU-pressure variable to this regional network recovery test.
+  // Keep transport unavailable until the explicit retry instead of depending on
+  // the lifetime of a momentary error during progressive loading.
+  const faultPage=page;let allowSpine=false,spineAttempts=0;
   await faultPage.route('**/models/anatomy/skeletal/spine.glb',route=>{
-    if(failNext){failNext=false;return route.abort('failed');}return route.continue();
+    spineAttempts++;if(!allowSpine)return route.abort('failed');return route.continue();
   });
   await faultPage.goto(origin+'/med3d/anatomia/',{waitUntil:'domcontentloaded'});
   await faultPage.getByRole('button',{name:'Reintentar regiones pendientes'}).waitFor({timeout:120000});
+  const healthyMeshes=expectedMeshes-catalog.assets.find(asset=>asset.id==='skeletal:spine').meshCount;
+  await waitMeshes(healthyMeshes);
+  report.recoveryBefore={spineAttempts,metrics:await metrics(),alerts:await faultPage.getByRole('alert').allTextContents()};
+  assert.equal(spineAttempts,1,'A failed region must remain failed until the user retries');
+  allowSpine=true;
   await faultPage.getByRole('button',{name:'Reintentar regiones pendientes'}).click();
   await faultPage.waitForFunction(expected=>Number(document.querySelector('.atlas-viewport')?.dataset.meshCount)===expected,expectedMeshes,{timeout:120000});
-  assert.equal(await faultPage.getByRole('alert').count(),0);await faultPage.close();
-  check('Failed regional request is recoverable without rebuilding the atlas');
+  assert.equal(await faultPage.getByRole('alert').count(),0);assert.equal(spineAttempts,2);
+  check('Failed regional request is recoverable without rebuilding the atlas',{requests:spineAttempts,retainedHealthyMeshes:healthyMeshes});
   assert.deepEqual(errors,[],'No unhandled browser errors');assert.deepEqual(badRequests,[],'No failing asset requests');
   report.errors=errors;report.badRequests=badRequests;report.success=true;
-}catch(error){report.success=false;report.error=error.stack;report.errors=errors;report.badRequests=badRequests;await page.screenshot({path:path.join(output,'failure.png'),fullPage:true}).catch(()=>{});throw error;}
+  },360000,'Functional validation');
+}catch(error){report.success=false;report.error=error.stack;report.errors=errors;report.badRequests=badRequests;await page.screenshot({path:path.join(output,'failure.png'),fullPage:true,timeout:5000}).catch(()=>{});throw error;}
 finally{await writeFile(path.join(output,'browser-qa.json'),JSON.stringify(report,null,2)+'\n');await harness.close();}
 }
 if(process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url))await runBrowserQa();

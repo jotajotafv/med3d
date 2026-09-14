@@ -276,15 +276,15 @@ export default function AtlasScene(props: AtlasSceneProps) {
         gl={{ antialias: true, alpha: true, powerPreference: 'high-performance', preserveDrawingBuffer: false }}
         onCreated={({ gl }) => { gl.setClearColor('#edf2f2', 0); gl.domElement.style.cursor = 'grab'; gl.domElement.setAttribute('aria-label', 'Modelo anatómico: arrastra para girar y selecciona una estructura'); }}
         onPointerMissed={event => { if (event.type === 'click' && dragDistance.current < 5) props.onSelect(null); }} style={{ touchAction: 'none' }}>
-        <ambientLight intensity={1.65} />
-        <hemisphereLight color="#fff5e9" groundColor="#53686b" intensity={1.2} />
+        <ambientLight intensity={.75} />
+        <hemisphereLight color="#fff5e9" groundColor="#53686b" intensity={.6} />
         <directionalLight position={[4, 5, 6]} color="#fff6ec" intensity={2.2} />
         <directionalLight position={[-4, 1, 2]} color="#c4e5e5" intensity={1.2} />
         <directionalLight position={[0, 3, -5]} color="#e8ffff" intensity={1.8} />
         <Models {...props} resources={resources} parts={parts} />
         <CameraRig {...props} resources={resources} parts={parts} />
         <Monitor resources={resources} loadTiming={loadTiming} onMetrics={props.onMetrics} onContextLost={setContextLost} />
-        <GizmoHelper alignment="bottom-right" margin={[53, 58]}><GizmoViewport axisColors={['#b87874', '#819b8a', '#779fae']} labelColor="#ffffff" hideNegativeAxes /></GizmoHelper>
+        <GizmoHelper alignment="bottom-left" margin={[48, 48]}><GizmoViewport axisColors={['#b87874', '#819b8a', '#779fae']} labelColor="#ffffff" hideNegativeAxes /></GizmoHelper>
       </Canvas>
     </SceneBoundary>
     {contextLost && <div role="alert" style={{ position: 'absolute', inset: 0, display: 'grid', placeContent: 'center', textAlign: 'center', padding: 24, background: '#edf2f2ed', color: '#355c60' }}>

@@ -103,6 +103,10 @@ try {
   assert.equal(maximum, 2, 'decoding and transfer share a two-job concurrency bound');
   jobs[2].finish(); jobs[3].fail(); await flush();
   assert.equal(manager.snapshot().statuses.find(status => status.id === 'd').state, 'error');
+  manager.setDesired(['a', 'c', 'd']); await flush();
+  assert.equal(jobs.length, 4, 'reaffirming desired layers must not auto-retry a failed region');
+  assert.equal(manager.snapshot().statuses.find(status => status.id === 'd').state, 'error', 'the retry control remains backed by a stable error state');
+  assert.equal(manager.snapshot().resources[0], retained, 'failed-region updates retain healthy decoded geometry');
   manager.retry('d'); assert.equal(jobs.length, 5);
   jobs[4].finish(); await flush();
   assert.equal(manager.snapshot().resources.length, 3);

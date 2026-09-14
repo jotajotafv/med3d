@@ -1,5 +1,7 @@
 name: Publicar MED3D en GitHub Pages
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read

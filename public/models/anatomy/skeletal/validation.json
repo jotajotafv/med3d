@@ -1,0 +1,61 @@
+{
+  "pipeline": "@gltf-transform 4.5.0; meshoptimizer 1.2.0",
+  "positionBits": 16,
+  "normalBits": 12,
+  "additionalDecimation": false,
+  "modules": [
+    {
+      "id": "skeletal:arm-left",
+      "bytes": 345860,
+      "meshes": 32,
+      "triangles": 44808,
+      "maxBoundsErrorMetres": 0.0000010698039459924868
+    },
+    {
+      "id": "skeletal:arm-right",
+      "bytes": 336004,
+      "meshes": 32,
+      "triangles": 42330,
+      "maxBoundsErrorMetres": 0.0000021164769576642595
+    },
+    {
+      "id": "skeletal:leg-left",
+      "bytes": 230240,
+      "meshes": 33,
+      "triangles": 24312,
+      "maxBoundsErrorMetres": 0.000002589602075914188
+    },
+    {
+      "id": "skeletal:leg-right",
+      "bytes": 230668,
+      "meshes": 33,
+      "triangles": 23748,
+      "maxBoundsErrorMetres": 0.0000027837911008299354
+    },
+    {
+      "id": "skeletal:skull",
+      "bytes": 1002700,
+      "meshes": 23,
+      "triangles": 128290,
+      "maxBoundsErrorMetres": 9.071765501023066e-7
+    },
+    {
+      "id": "skeletal:spine",
+      "bytes": 579828,
+      "meshes": 25,
+      "triangles": 70086,
+      "maxBoundsErrorMetres": 0.0000010779999002731924
+    },
+    {
+      "id": "skeletal:thorax",
+      "bytes": 1191640,
+      "meshes": 27,
+      "triangles": 178876,
+      "maxBoundsErrorMetres": 0.0000014477065832796399
+    }
+  ],
+  "totalBytes": 3916940,
+  "totalTriangles": 512450,
+  "totalMeshes": 205,
+  "maxBoundsErrorMetres": 0.0000027837911008299354
+}

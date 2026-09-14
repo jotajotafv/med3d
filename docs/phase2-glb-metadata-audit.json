@@ -1,0 +1,216 @@
+{
+  "date": "2026-09-14",
+  "executor": "Local independent audit, Python + NumPy",
+  "scope": "Extracted glTF 2.0 JSON metadata and source/catalog manifests; no binary Meshopt decoding or visual/clinical validation in this audit",
+  "inputMetadataSha256": "d248e02a082bffb68a26485980251e225ac4e9abf01ffc738776dc4affe357f1",
+  "status": "passed",
+  "errors": [],
+  "modules": [
+    {
+      "file": "arm-left.glb",
+      "sha256": "688937b1d1eb08e1518e27c035e9d8d9729a470ff70b8c9e2d25aecef29db904",
+      "bytes": 345860,
+      "meshes": 32,
+      "triangles": 44808,
+      "verticesInPositionAccessors": 23744,
+      "materials": 1,
+      "boundsMetres": [
+        [
+          0.008378730155527592,
+          0.6533671055009223,
+          -0.005075566885947923
+        ],
+        [
+          0.3239348704106138,
+          1.355180470021643,
+          0.19508899748325348
+        ]
+      ],
+      "maxBoundsErrorMetres": 1.0698039459924868e-06
+    },
+    {
+      "file": "arm-right.glb",
+      "sha256": "ebfe485840fd737b8eaa573dbd4bf13b11cb30542b93273af2ae8417835a06ba",
+      "bytes": 336004,
+      "meshes": 32,
+      "triangles": 42330,
+      "verticesInPositionAccessors": 23016,
+      "materials": 1,
+      "boundsMetres": [
+        [
+          -0.32391395713179777,
+          0.653066864698033,
+          -0.005082640520497346
+        ],
+        [
+          -0.009661650285124779,
+          1.3554409968366277,
+          0.1954279989004135
+        ]
+      ],
+      "maxBoundsErrorMetres": 2.1164769576642595e-06
+    },
+    {
+      "file": "leg-left.glb",
+      "sha256": "6e70fd15a54b1dcbf26aafad860cb282b1e6364c064cdd41e0822beef37b2f1d",
+      "bytes": 230240,
+      "meshes": 33,
+      "triangles": 24312,
+      "verticesInPositionAccessors": 13757,
+      "materials": 1,
+      "boundsMetres": [
+        [
+          0.0027512946567936486,
+          -0.07047985447046284,
+          0.001314759328324075
+        ],
+        [
+          0.16935803039815678,
+          0.9580900073051453,
+          0.23591899871826172
+        ]
+      ],
+      "maxBoundsErrorMetres": 2.589602075914188e-06
+    },
+    {
+      "file": "leg-right.glb",
+      "sha256": "06ced279676f896dbc4176e99931e4e77dd60734bcdccf108b3be2a96fffb806",
+      "bytes": 230668,
+      "meshes": 33,
+      "triangles": 23748,
+      "verticesInPositionAccessors": 13813,
+      "materials": 1,
+      "boundsMetres": [
+        [
+          -0.16932697602692576,
+          -0.07039229168105024,
+          0.0011191490126709752
+        ],
+        [
+          -0.002790784978960764,
+          0.9578689932823181,
+          0.2360440045595169
+        ]
+      ],
+      "maxBoundsErrorMetres": 2.7837911008299354e-06
+    },
+    {
+      "file": "skull.glb",
+      "sha256": "835b8ad861d6dcdd92a7cbeeddc8c8586f7a0c11356670274467f2f62730e5ba",
+      "bytes": 1002700,
+      "meshes": 23,
+      "triangles": 128290,
+      "verticesInPositionAccessors": 76208,
+      "materials": 1,
+      "boundsMetres": [
+        [
+          -0.07618867357077841,
+          1.421630732112287,
+          -0.018001167116068847
+        ],
+        [
+          0.07485622425107194,
+          1.6362709071765502,
+          0.19083314182983566
+        ]
+      ],
+      "maxBoundsErrorMetres": 9.071765501023066e-07
+    },
+    {
+      "file": "spine.glb",
+      "sha256": "d0a338e305718d9e7820e9df732e0b9743712ad94ec9b3ca27a8df8958dd6e65",
+      "bytes": 579828,
+      "meshes": 25,
+      "triangles": 70086,
+      "verticesInPositionAccessors": 41289,
+      "materials": 1,
+      "boundsMetres": [
+        [
+          -0.05959014897033648,
+          0.7828369736671448,
+          -0.0072526720000997275
+        ],
+        [
+          0.05820184876009898,
+          1.4814296103984361,
+          0.11535300314426422
+        ]
+      ],
+      "maxBoundsErrorMetres": 1.0779999002731924e-06
+    },
+    {
+      "file": "thorax.glb",
+      "sha256": "4d13ab0f94f1b41c81c17402d4830dcc3b28cca7d6b91c075d0ba9e77fb606d9",
+      "bytes": 1191640,
+      "meshes": 27,
+      "triangles": 178876,
+      "verticesInPositionAccessors": 91615,
+      "materials": 1,
+      "boundsMetres": [
+        [
+          -0.1370839888594372,
+          1.0080599784851074,
+          0.00364141003228724
+        ],
+        [
+          0.13577744133459693,
+          1.3704796167720437,
+          0.21383194781997422
+        ]
+      ],
+      "maxBoundsErrorMetres": 1.4477065832796399e-06
+    }
+  ],
+  "totals": {
+    "bytes": 3916940,
+    "meshes": 205,
+    "triangles": 512450,
+    "verticesInPositionAccessors": 283442,
+    "catalogNodes": 249,
+    "uniqueAnatomyIds": 205,
+    "maxBoundsErrorMetres": 2.7837911008299354e-06,
+    "boundsMetres": [
+      [
+        -0.32391395713179777,
+        -0.07047985447046284,
+        -0.018001167116068847
+      ],
+      [
+        0.3239348704106138,
+        1.6362709071765502,
+        0.2360440045595169
+      ]
+    ]
+  },
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "coverage": {
+    "title": "Sistema óseo · BodyParts3D",
+    "structures": 203,
+    "meshes": 205,
+    "note": "199 huesos del recuento adulto habitual, más 4 sesamoideos accesorios del pie. El esternón conserva 3 componentes originales. Se retiró una copia exactamente duplicada del hioides. No existe un cóccix separable identificado.",
+    "limitations": [
+      "Pendientes 7 huesos del recuento adulto habitual: cóccix identificable por separado y 6 huesecillos del oído (martillo, yunque y estribo de ambos lados).",
+      "205 mallas no equivalen a 205 huesos: el esternón tiene 3 componentes; se incluyen 4 sesamoideos accesorios. El hioides duplicado en la fuente se muestra una sola vez.",
+      "Modelo de referencia masculino adulto; no representa variación individual ni un esqueleto pediátrico.",
+      "La fuente OBJ99 tiene resolución reducida; no permite interpretar microanatomía ni planificar procedimientos.",
+      "Fichas educativas y relaciones articulares se incorporan sólo con referencias verificadas."
+    ]
+  }
+}

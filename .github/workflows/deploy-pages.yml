@@ -23,6 +23,7 @@ jobs:
           VITE_BASE_PATH: /med3d/
           SITE_ORIGIN: https://jotajotafv.github.io
       - run: npm run typecheck
+      - run: npm run verify:anatomy
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist

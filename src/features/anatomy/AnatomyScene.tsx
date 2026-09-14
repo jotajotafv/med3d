@@ -175,13 +175,15 @@ function useAnatomyResource(modelId: AnatomyModelId, retry: number): LoadState {
 function matches(part: Part, id: string | null | undefined): boolean { return !!id && part.aliases.has(id); }
 function Model({ resource, onSelect, selected, hidden, isolated, opacity, exploded, explodeLevel }: AnatomySceneProps & { resource: Resource }) {
   const { invalidate, gl } = useThree(), [hover, setHover] = useState<string | null>(null);
+  const motion = useRef<Array<{ part: Part; target: THREE.Vector3 }>>([]);
+  const animating = useRef(false), reducedMotion = useRef(false);
   const hiddenKey = hidden.join('|');
   useEffect(() => {
     const hiddenIds = new Set(hidden);
     resource.parts.forEach(part => {
       const hiddenByUser = Array.from(part.aliases).some(id => hiddenIds.has(id));
       part.mesh.visible = !hiddenByUser && (!isolated || matches(part, isolated));
-      if (part.asset === 'skin') part.mesh.visible = !hiddenByUser && !isolated && exploded < .4;
+      if (part.asset === 'skin') part.mesh.visible = !hiddenByUser && !isolated;
       const chosen = matches(part, selected), hovered = part.id === hover, material = part.mesh.material;
       material.color.copy(chosen ? TEAL : part.baseColor);
       material.emissive.copy(chosen ? TEAL : hovered ? part.baseColor : BLACK);
@@ -189,10 +191,34 @@ function Model({ resource, onSelect, selected, hidden, isolated, opacity, explod
       material.opacity = part.asset === 'skin' ? .085 * limit(opacity) : limit(opacity);
       material.transparent = material.opacity < .999; material.depthWrite = material.opacity > .6;
       material.needsUpdate = true;
-      part.mesh.position.copy(explodeLevel === 'parts' ? part.partDirection : part.organDirection).multiplyScalar(limit(exploded));
     });
     resource.group.updateMatrixWorld(true); invalidate();
-  }, [resource, selected, hiddenKey, isolated, opacity, exploded, explodeLevel, hover, invalidate]);
+  }, [resource, selected, hiddenKey, isolated, opacity, hover, invalidate]);
+  useEffect(() => {
+    const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const update = () => { reducedMotion.current = preference.matches; invalidate(); };
+    update(); preference.addEventListener('change', update);
+    return () => preference.removeEventListener('change', update);
+  }, [invalidate]);
+  useEffect(() => {
+    motion.current = resource.parts.map(part => ({ part,
+      target: (explodeLevel === 'parts' ? part.partDirection : part.organDirection).clone().multiplyScalar(limit(exploded)),
+    }));
+    animating.current = true; invalidate();
+    return () => { animating.current = false; motion.current = []; };
+  }, [resource, exploded, explodeLevel, invalidate]);
+  useFrame((_, delta) => {
+    if (!animating.current) return;
+    const alpha = reducedMotion.current ? 1 : 1 - Math.exp(-12 * Math.min(delta, .05));
+    let pending = false;
+    motion.current.forEach(({ part, target }) => {
+      part.mesh.position.lerp(target, alpha);
+      if (part.mesh.position.distanceToSquared(target) < 1e-10) part.mesh.position.copy(target);
+      else pending = true;
+    });
+    resource.group.updateMatrixWorld(true); animating.current = pending;
+    if (pending) invalidate();
+  });
   useEffect(() => () => { gl.domElement.style.cursor = 'grab'; }, [gl]);
   function pointer(event: ThreeEvent<PointerEvent>, entering: boolean) {
     event.stopPropagation(); setHover(entering ? event.object.name : null);
@@ -232,7 +258,7 @@ function CameraRig({ resource, focusRequest, cameraRequest, framing = 'full' }: 
   useEffect(() => {
     if (resource && previousResource.current !== resource) { previousResource.current = resource; frame(null, true); }
   }, [resource, size.width, size.height, framing]);
-  useEffect(() => { if (focusRequest?.version) frame(focusRequest.id); }, [focusRequest?.version]);
+  useEffect(() => { if (focusRequest?.version) frame(focusRequest.id); }, [focusRequest?.version, resource]);
   useEffect(() => {
     if (!cameraRequest?.version) return;
     if (cameraRequest.kind === 'reset') frame(null, true);
@@ -243,7 +269,7 @@ function CameraRig({ resource, focusRequest, cameraRequest, framing = 'full' }: 
       offset.clampLength(.35, 22);
       destination.current = { target, position: target.clone().add(offset) }; invalidate();
     }
-  }, [cameraRequest?.version]);
+  }, [cameraRequest?.version, resource]);
   useFrame((_, delta) => {
     const goal = destination.current;
     if (!goal || !controls.current) return;

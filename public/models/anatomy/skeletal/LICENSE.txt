@@ -1,0 +1,24 @@
+BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.
+
+Source organization: Database Center for Life Science (DBCLS), Japan.
+Source release: BodyParts3D 4.0, OBJ99 geometry archive, 2013-06-19.
+Original URL: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip
+Current official database license: Creative Commons Attribution 4.0 International (CC BY 4.0).
+License: https://creativecommons.org/licenses/by/4.0/
+Official license declaration (updated 2025-02-27): https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html
+
+The original OBJ file comments retain an older CC BY-SA 2.1 Japan statement. This distribution follows the source publisher's current CC BY 4.0 declaration, not an assumed license inferred from a third-party copy.
+
+MED3D modifications:
+- Selected 206 original source elements covering 199 standard adult bones and 4 accessory foot sesamoids.
+- Removed FJ2772 only after verifying that all ordered vertex, normal and triangle lines exactly duplicate the retained hyoid FJ3201.
+- Kept 205 separate identified meshes; the sternum retains 3 named components.
+- Converted common coordinates from source millimetres (Z superior, X anatomical left, Y posterior) to metres/Y-up: (x,y,z) -> (x,z,-y)/1000. No bone or region was independently centered, mirrored, repositioned or generated.
+- Converted to GLB, added a neutral visualization material, and separated seven regional modules without altering source triangles.
+- Used Meshopt compression with 16-bit position quantization and 12-bit normals; no additional decimation.
+- Added Spanish editorial display names and a navigational hierarchy; retained original English labels, FMA concepts and source element IDs.
+
+Coverage remains incomplete: a separately identifiable coccyx and six auditory ossicles are absent. No absent structure was synthesized or represented by a primitive.
+The source is a reference adult male and does not depict individual variability or clinical-quality microanatomy.
+
+Per-file source/output checksums, counts and modifications: source-manifest.json, catalog.json and validation.json.

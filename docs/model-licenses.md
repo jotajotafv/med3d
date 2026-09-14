@@ -1,6 +1,6 @@
 # MED3D anatomy models — provenance and license
 
-All four meshes are sourced from the official Human Reference Atlas / HuBMAP CCF 3D Reference Object Library. Repository: https://github.com/hubmapconsortium/ccf-3d-reference-object-library. License: **Creative Commons Attribution 4.0 International (CC BY 4.0)**, https://creativecommons.org/licenses/by/4.0/. Exact upstream license: https://github.com/hubmapconsortium/ccf-3d-reference-object-library/blob/main/LICENSE.
+The four original organ/skin assets are sourced from the official Human Reference Atlas / HuBMAP CCF 3D Reference Object Library. Repository: https://github.com/hubmapconsortium/ccf-3d-reference-object-library. License: **Creative Commons Attribution 4.0 International (CC BY 4.0)**, https://creativecommons.org/licenses/by/4.0/. Exact upstream license: https://github.com/hubmapconsortium/ccf-3d-reference-object-library/blob/main/LICENSE.
 
 Attribution: **Human Reference Atlas (HRA) / HuBMAP, CCF 3D Reference Object Library, CC BY 4.0.** The reference-organ portal and source models identify the underlying Visible Human / Allen data and contributors: https://humanatlas.io/3d-reference-library. The encéphalon model carries Allen anatomy names. Each downloaded source URL and sourceSha256 of the original file is recorded in `src/features/anatomy/model-index.ts`.
 
@@ -21,11 +21,11 @@ The 355 organ meshes are real segmented source geometries, with 26 grouping node
 
 ## Coverage limits
 
-This prototype provides three organ models, not a complete human anatomy atlas. The heart model contains chambers, valves, interventricular septum and papillary muscles. The lungs include lobes, bronchopulmonary segments, and a bronchial tree. The Allen brain model contains cortical and deeper regions, grouped primarily by hemisphere. Upstream metadata contains absent terms, duplicate ontology identifiers, and naming inconsistencies; the UI exposes source labels for traceability and does not treat these as clinically validated annotations. Latin names are provided only for selected major structures. No diagnostic descriptions are generated.
+The original HRA subset provides three organ models. Phase 2 adds the separately registered skeletal dataset described below; the project remains a partial human atlas. The heart model contains chambers, valves, interventricular septum and papillary muscles. The lungs include lobes, bronchopulmonary segments, and a bronchial tree. The Allen brain model contains cortical and deeper regions, grouped primarily by hemisphere. Upstream metadata contains absent terms, duplicate ontology identifiers, and naming inconsistencies; the UI exposes source labels for traceability and does not treat these as clinically validated annotations. Latin names are provided only for selected major structures. No diagnostic descriptions are generated.
 
-## Future expansion
+## BodyParts3D · phase 2
 
-BodyParts3D is an option for broader male body coverage in OBJ, with PART-OF and IS-A data. The **current official archive** lists CC BY 4.0 as of 2025-02-27 (older mirrors still list CC BY-SA 2.1 JP): https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html. Downloads: https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html. No BodyParts3D or Z-Anatomy data is incorporated in this version. Z-Anatomy's global CC BY-SA 4.0 README also lists components with NC licenses, so it must not be treated as one uniformly licensed commercial asset set.
+BodyParts3D is an option for broader male body coverage in OBJ, with PART-OF and IS-A data. The **current official archive** lists CC BY 4.0 as of 2025-02-27 (older mirrors still list CC BY-SA 2.1 JP): https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html. Downloads: https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html. BodyParts3D 4.0 is now incorporated as seven modular skeletal GLBs. Its per-element source hashes, author, current license declaration, source version, conversion, exact-duplicate removal and Meshopt quantization are recorded in `public/models/anatomy/skeletal/{catalog.json,source-manifest.json,LICENSE.txt,validation.json}`. See `scripts/anatomy/README.md`. The registered model covers 199 conventional bones plus 4 accessory sesamoids; coccyx and six auditory ossicles remain absent. No Z-Anatomy data is incorporated. Z-Anatomy's global CC BY-SA 4.0 README also lists components with NC licenses, so it must not be treated as one uniformly licensed commercial asset set.
 
 ## Delivered asset sizes
 

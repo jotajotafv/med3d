@@ -175,3 +175,16 @@ Orden de entrega:
 3. Esqueleto en el nuevo núcleo: seleccionar, buscar, árbol, enfocar, aislar, ocultar, transparencia, información y relaciones trazables, despiece reversible y restauración.
 4. Verificación funcional, visual y de memoria/rendimiento con resultados y límites publicados en el repositorio.
 5. Completar carencias óseas importantes antes de importar el siguiente sistema. Las capas futuras se activan cuando exista geometría y registro compatibles, no por añadir su nombre al selector.
+
+## 10. Estado implementado de esta entrega
+
+El contrato TypeScript operativo vive en `src/features/anatomy/atlas/types.ts`; la sección 2 describe el modelo objetivo, con relaciones cruzadas que se irán ampliando. Esta entrega implementa un sistema corporal registrado y once definiciones de sistemas para organizar la expansión, no once sistemas 3D disponibles.
+
+- La ruta anatómica predeterminada usa `SkeletalAtlas`. `LegacyOrganAtlas` conserva las vistas HRA y los enlaces `organ`/`structure`; sus geometrías no se superponen a BodyParts3D sin registro.
+- `catalog.json` contiene 249 nodos y siete assets. Se registran 199 huesos convencionales, cuatro sesamoideos accesorios y tres componentes del esternón, que dan 205 mallas únicas. La lista precisa de siete huesos pendientes está en `phase2-missing-bones.md`.
+- Cada estructura usa el nombre individual del catálogo y, cuando existe, la ficha documentada de su familia. La interfaz identifica ese alcance; las relaciones navegables indican pertenencia y homología, sin fingir un grafo completo de articulaciones.
+- Los tres niveles implementados separan sistemas, regiones y estructuras/componentes según su padre anatómico. El nivel de sistemas permanece en reposo con una sola capa corporal. No hay aún despiece contextual de tres niveles aplicado a todos los órganos HRA: éstos conservan sus dos niveles previos con transición suavizada.
+- El árbol virtualiza filas y ofrece navegación por teclado. Los resultados óseos se presentan en páginas de 60. Los módulos desactivados se liberan y una selección reactiva su región cuando sea necesaria.
+- KTX2, Draco, BVH y LOD no se añaden sin un problema medido que los justifique. Los huesos actuales no tienen texturas; Meshopt, geometría compartida cuando existe, culling, materiales compartidos y renderizado bajo demanda son las medidas activas.
+
+No pasar al siguiente sistema mientras las ausencias óseas importantes, el registro espacial y la revisión anatómica sigan abiertos.

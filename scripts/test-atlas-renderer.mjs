@@ -9,13 +9,49 @@ import * as THREE from 'three';
 const project = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const temporary = await mkdtemp(path.join(project, '.renderer-tests-'));
 try {
-  for (const file of ['asset-manager', 'explosion']) {
+  for (const file of ['asset-manager', 'explosion', 'camera-framing']) {
     const source = (await readFile(path.join(project, 'src/features/anatomy/atlas', file + '.ts'), 'utf8')).replaceAll('import.meta.env.BASE_URL', JSON.stringify('/med3d/'));
     const compiled = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } });
     await writeFile(path.join(temporary, file + '.mjs'), compiled.outputText);
   }
   const { AtlasAssetManager, geometryMemoryBytes, createAssetLoader } = await import(pathToFileURL(path.join(temporary, 'asset-manager.mjs')));
   const { createExplosionOffsets, explosionTarget } = await import(pathToFileURL(path.join(temporary, 'explosion.mjs')));
+  const { ANATOMICAL_VIEWS, fitCameraBounds } = await import(pathToFileURL(path.join(temporary, 'camera-framing.mjs')));
+  const assertCameraContains = (bounds, direction, up, aspect) => {
+    const goal = fitCameraBounds(bounds, 34, aspect, direction, up);
+    const camera = new THREE.PerspectiveCamera(34, aspect, goal.near, 80);
+    camera.position.copy(goal.position); camera.up.copy(goal.up); camera.lookAt(goal.target); camera.updateMatrixWorld();
+    for (const x of [bounds.min.x, bounds.max.x]) for (const y of [bounds.min.y, bounds.max.y]) for (const z of [bounds.min.z, bounds.max.z]) {
+      const corner = new THREE.Vector3(x, y, z).project(camera);
+      assert.ok(Math.abs(corner.x) <= 1 / 1.18 + 1e-6 && Math.abs(corner.y) <= 1 / 1.18 + 1e-6,
+        `all eight corners must fit with padding, including oblique/deep selections: ${corner.toArray()}`);
+      assert.ok(corner.z >= -1 && corner.z <= 1, 'no near/far clipping');
+    }
+    assert.ok(goal.distance >= goal.minDistance && goal.minDistance > bounds.getSize(new THREE.Vector3()).length() / 2,
+      'focus and zoom floor remain outside the selection bounding sphere');
+    return goal;
+  };
+  for (const dimensions of [[1, 3.45, .4], [.15, .1, 1.6], [.018, .023, .015], [.001, .002, .0008]]) {
+    const box = new THREE.Box3(new THREE.Vector3(...dimensions).multiplyScalar(-.5), new THREE.Vector3(...dimensions).multiplyScalar(.5));
+    for (const aspect of [.42, 1, 1.8]) for (const view of Object.values(ANATOMICAL_VIEWS)) assertCameraContains(box, view.direction, view.up, aspect);
+    assertCameraContains(box, new THREE.Vector3(.8, .3, .5), new THREE.Vector3(0, 1, 0), .65);
+  }
+  assert.deepEqual(ANATOMICAL_VIEWS.left.direction.toArray(), [1, 0, 0], '+X is anatomical left');
+  assert.deepEqual(ANATOMICAL_VIEWS.right.direction.toArray(), [-1, 0, 0]);
+  assert.deepEqual(ANATOMICAL_VIEWS.superior.up.toArray(), [0, 0, -1], 'superior orbit avoids the world-up polar singularity');
+  const tinyBox = new THREE.Box3(new THREE.Vector3(-.004, -.006, -.003), new THREE.Vector3(.004, .006, .003));
+  const tinyFit = assertCameraContains(tinyBox, ANATOMICAL_VIEWS.anterior.direction, ANATOMICAL_VIEWS.anterior.up, 1);
+  assert.ok(tinyFit.distance < .16 && tinyFit.minDistance < .12 && tinyFit.near < .005, 'small structures are no longer limited by body-scale camera constants');
+  for (const from of Object.values(ANATOMICAL_VIEWS)) for (const to of Object.values(ANATOMICAL_VIEWS)) {
+    const a = fitCameraBounds(tinyBox, 34, 1, from.direction, from.up).orientation;
+    const b = fitCameraBounds(tinyBox, 34, 1, to.direction, to.up).orientation;
+    for (let step = 0; step <= 10; step++) {
+      const orientation = a.clone().slerp(b, step / 10), up = new THREE.Vector3(0, 1, 0).applyQuaternion(orientation), direction = new THREE.Vector3(0, 0, 1).applyQuaternion(orientation);
+      assert.ok(Math.abs(up.dot(direction)) < 1e-10, 'anatomical-view transitions stay orthogonal, including posterior to superior');
+      assert.ok([...up.toArray(), ...direction.toArray()].every(Number.isFinite));
+    }
+  }
+  console.log('Atlas camera: six anatomical views, oblique/aspect-aware framing, tiny-bone focus, near clipping and stable view transitions passed.');
   const bounds = [[-.5, 0, -.2], [.5, 2, .2]];
   const node = (id, parentId, kind, box, children = []) => ({ id, parentId, kind, children, bounds: box,
     regionId: kind === 'region' ? id : 'skull', systemId: 'skeletal', meshNames: [], assetIds: ['a'], name: id, anatomicalName: id, aliases: [], relatedIds: [] });

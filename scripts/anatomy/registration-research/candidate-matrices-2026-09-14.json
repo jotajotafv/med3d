@@ -1,0 +1,590 @@
+{
+  "date": "2026-09-14",
+  "method": "read-only source matrices and same-source segmentation extents; no anatomical registration",
+  "matricesConvention": "row-major storage; column vectors; metres for glTF",
+  "publicAssetsModified": false,
+  "bodyRegistration": null,
+  "specimens": [
+    {
+      "id": "ZETA",
+      "originalObjectMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sourceUnits": "millimetres",
+      "sourceFrame": "RAS segmentation coordinate frame; specimen pose is not body pose",
+      "segmentationIJKToRASmm": [
+        [
+          0.125,
+          0.0,
+          0.0,
+          -17.3069000244141
+        ],
+        [
+          0.0,
+          0.125,
+          0.0,
+          -7.37023019790649
+        ],
+        [
+          0.0,
+          0.0,
+          0.125,
+          -0.11073005199431996
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rasToLps": [
+        [
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "unitsAndBasisConversionOnly": [
+        [
+          -0.001,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0.001,
+          0
+        ],
+        [
+          0,
+          0.001,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "conversionApplied": false,
+      "finalBodyMatrix": null,
+      "bodyScale": null,
+      "bodyRotation": null,
+      "bodyTranslation": null,
+      "bones": [
+        {
+          "file": "openear-zeta-03_Malleus.ply",
+          "sha256": "52e00f6afe6946e8adf6e2514acbf072950e62dac4d39ca8edc0d87b2ffb1cc2",
+          "vertices": 2000,
+          "segment": 2,
+          "plyBoundsMm": [
+            [
+              24.64630699157715,
+              16.957693099975586,
+              30.205650329589844
+            ],
+            [
+              28.13392448425293,
+              25.13374900817871,
+              33.4199104309082
+            ]
+          ],
+          "segmentationVoxelCentreBoundsMm": [
+            [
+              24.6930999755859,
+              17.00476980209351,
+              30.26426994800568
+            ],
+            [
+              28.0680999755859,
+              25.12976980209351,
+              33.38926994800568
+            ]
+          ],
+          "maxSameSourceBoundEndpointDifferenceMm": 0.06582450866703127,
+          "sameSourceBoundEndpointDifferenceVoxels": 0.5265960693362501,
+          "ifMistakenlyTreatingPlyAsLpsDifferenceMm": 52.827024459838825
+        },
+        {
+          "file": "openear-zeta-04_Incus.ply",
+          "sha256": "f967dd6b0fc5f195fe76a3605f8a5acfaf522c62667d0acf194637574c2049ee",
+          "vertices": 2000,
+          "segment": 3,
+          "plyBoundsMm": [
+            [
+              22.930910110473633,
+              16.90006446838379,
+              27.393606185913086
+            ],
+            [
+              26.897993087768555,
+              22.744369506835938,
+              32.16648864746094
+            ]
+          ],
+          "segmentationVoxelCentreBoundsMm": [
+            [
+              22.9430999755859,
+              16.87976980209351,
+              27.38926994800568
+            ],
+            [
+              26.8180999755859,
+              22.75476980209351,
+              32.26426994800568
+            ]
+          ],
+          "maxSameSourceBoundEndpointDifferenceMm": 0.09778130054474587,
+          "sameSourceBoundEndpointDifferenceVoxels": 0.782250404357967,
+          "ifMistakenlyTreatingPlyAsLpsDifferenceMm": 49.84109306335445
+        },
+        {
+          "file": "openear-zeta-05_Stapes.ply",
+          "sha256": "91da300f4245514218410d33a371be2470e53b30c4197001ebf9879988bb3364",
+          "vertices": 1000,
+          "segment": 4,
+          "plyBoundsMm": [
+            [
+              19.700885772705078,
+              20.116249084472656,
+              31.685585021972656
+            ],
+            [
+              23.129596710205078,
+              22.438419342041016,
+              35.68913650512695
+            ]
+          ],
+          "segmentationVoxelCentreBoundsMm": [
+            [
+              19.6930999755859,
+              20.12976980209351,
+              31.63926994800568
+            ],
+            [
+              23.0680999755859,
+              22.37976980209351,
+              35.63926994800568
+            ]
+          ],
+          "maxSameSourceBoundEndpointDifferenceMm": 0.061496734619179705,
+          "sameSourceBoundEndpointDifferenceVoxels": 0.49197387695343764,
+          "ifMistakenlyTreatingPlyAsLpsDifferenceMm": 42.82269668579097
+        }
+      ]
+    },
+    {
+      "id": "EPSILON",
+      "originalObjectMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sourceUnits": "millimetres",
+      "sourceFrame": "RAS segmentation coordinate frame; specimen pose is not body pose",
+      "segmentationIJKToRASmm": [
+        [
+          0.125,
+          0.0,
+          0.0,
+          -9.5132999420166
+        ],
+        [
+          0.0,
+          0.125,
+          0.0,
+          -14.679500579833999
+        ],
+        [
+          0.0,
+          0.0,
+          0.125,
+          -1.40993022918701
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rasToLps": [
+        [
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "unitsAndBasisConversionOnly": [
+        [
+          -0.001,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0.001,
+          0
+        ],
+        [
+          0,
+          0.001,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "conversionApplied": false,
+      "finalBodyMatrix": null,
+      "bodyScale": null,
+      "bodyRotation": null,
+      "bodyTranslation": null,
+      "bones": [
+        {
+          "file": "openear-epsilon-Incus.ply",
+          "sha256": "4c62d640b60336d291665bb1fa40d969378541390c41b803f70add8f9398c582",
+          "vertices": 2000,
+          "segment": 4,
+          "plyBoundsMm": [
+            [
+              20.974781036376953,
+              16.957212448120117,
+              26.653179168701172
+            ],
+            [
+              27.392236709594727,
+              20.56185531616211,
+              31.967329025268555
+            ]
+          ],
+          "segmentationVoxelCentreBoundsMm": [
+            [
+              20.8617000579834,
+              16.945499420166,
+              26.71506977081299
+            ],
+            [
+              27.3617000579834,
+              20.570499420166,
+              31.96506977081299
+            ]
+          ],
+          "maxSameSourceBoundEndpointDifferenceMm": 0.11308097839355469,
+          "sameSourceBoundEndpointDifferenceVoxels": 0.9046478271484375,
+          "ifMistakenlyTreatingPlyAsLpsDifferenceMm": 48.33648109436035
+        },
+        {
+          "file": "openear-epsilon-Malleus.ply",
+          "sha256": "5403a47d58b79fb7e74205e662f24b9ad1ce7dfc0be698833b06867951dcdc73",
+          "vertices": 4260,
+          "segment": 3,
+          "plyBoundsMm": [
+            [
+              19.894163131713867,
+              15.1143798828125,
+              29.008472442626953
+            ],
+            [
+              27.8159122467041,
+              18.314857482910156,
+              33.49569320678711
+            ]
+          ],
+          "segmentationVoxelCentreBoundsMm": [
+            [
+              19.4867000579834,
+              15.195499420166001,
+              29.09006977081299
+            ],
+            [
+              27.7367000579834,
+              18.320499420166,
+              33.46506977081299
+            ]
+          ],
+          "maxSameSourceBoundEndpointDifferenceMm": 0.40746307373046875,
+          "sameSourceBoundEndpointDifferenceVoxels": 3.25970458984375,
+          "ifMistakenlyTreatingPlyAsLpsDifferenceMm": 47.630863189697266
+        },
+        {
+          "file": "openear-epsilon-Stapes.ply",
+          "sha256": "e87a08d32ae99029ac29799d409d68c1d51c570560b9a2605960446f07881109",
+          "vertices": 1000,
+          "segment": 5,
+          "plyBoundsMm": [
+            [
+              21.08181381225586,
+              18.85486602783203,
+              31.761016845703125
+            ],
+            [
+              23.03270149230957,
+              22.516197204589844,
+              35.13108825683594
+            ]
+          ],
+          "segmentationVoxelCentreBoundsMm": [
+            [
+              21.1117000579834,
+              18.820499420166,
+              31.84006977081299
+            ],
+            [
+              23.1117000579834,
+              22.570499420166,
+              35.09006977081299
+            ]
+          ],
+          "maxSameSourceBoundEndpointDifferenceMm": 0.07905292510986328,
+          "sameSourceBoundEndpointDifferenceVoxels": 0.6324234008789062,
+          "ifMistakenlyTreatingPlyAsLpsDifferenceMm": 44.19351387023926
+        }
+      ]
+    }
+  ],
+  "coccyx": {
+    "originalFile": "hra-pelvis-male-v1.3.glb",
+    "bytes": 1348340,
+    "sha256": "5bfd2c34b62a7224796d50002bcdf9ded60ea11485a118351dfd1f19c6853e77",
+    "source": "https://cdn.humanatlas.io/digital-objects/ref-organ/pelvis-male/v1.3/assets/3d-vh-m-pelvis.glb",
+    "version": "v1.3",
+    "license": "CC BY 4.0",
+    "originalNode": "VH_M_coccyx",
+    "originalLocalMatrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "originalParentMatrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "originalWorldMatrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "gltfUnitsAndBasisConversion": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "originalScale": [
+      1,
+      1,
+      1
+    ],
+    "originalRotationQuaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "originalTranslation": [
+      0,
+      0,
+      0
+    ],
+    "units": "metres",
+    "upAxis": "Y",
+    "vertices": 422,
+    "boundsMetres": [
+      [
+        -0.00554418564,
+        0.01124464,
+        -0.11215394
+      ],
+      [
+        0.0116152382,
+        0.0308184847,
+        -0.08895875
+      ]
+    ],
+    "conversionApplied": false,
+    "finalBodyMatrix": null,
+    "bodyScale": null,
+    "bodyRotation": null,
+    "bodyTranslation": null,
+    "matchingAnatomicalLandmarkPairs": [],
+    "modifications": []
+  }
+}

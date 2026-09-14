@@ -1,0 +1,76 @@
+name: Validar anatomía y capturar vistas
+on:
+  push:
+    branches: [phase2.1-skeletal-polish]
+    paths:
+      - 'src/**'
+      - 'scripts/anatomy/**'
+      - 'scripts/test-atlas-*.mjs'
+      - 'public/models/anatomy/**'
+      - 'package*.json'
+      - '.github/workflows/anatomy-visual-validation.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'src/features/anatomy/**'
+      - 'scripts/anatomy/**'
+      - 'public/models/anatomy/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: anatomy-validation-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  anatomy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      QA_PLAYWRIGHT_MODULE: ${{ github.workspace }}/.cache/anatomy-qa/node_modules/playwright
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run verify:anatomy
+      - name: Compilar versión de producción
+        id: build
+        run: npm run build
+        env:
+          VITE_BASE_PATH: /med3d/
+          SITE_ORIGIN: https://jotajotafv.github.io
+      - name: Preparar Chromium para pruebas
+        id: browser
+        run: |
+          npm install --prefix .cache/anatomy-qa --no-save --no-audit --no-fund playwright@1.62.1
+          node .cache/anatomy-qa/node_modules/playwright/cli.js install --with-deps chromium
+      - name: Pruebas funcionales
+        if: ${{ !cancelled() && steps.browser.outcome == 'success' }}
+        run: node scripts/anatomy/browser-qa.mjs
+        env:
+          QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/functional
+      - name: Capturas anatómicas reproducibles
+        if: ${{ !cancelled() && steps.browser.outcome == 'success' }}
+        run: node scripts/anatomy/visual-qa.mjs
+        env:
+          QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/visual
+      - name: Medir el entorno disponible
+        if: ${{ !cancelled() && steps.browser.outcome == 'success' }}
+        run: node scripts/anatomy/performance-qa.mjs
+        env:
+          QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/performance
+      - name: Registrar versión probada
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: |
+          mkdir -p qa-results
+          node --input-type=module -e "import fs from 'node:fs'; fs.writeFileSync('qa-results/build.json', JSON.stringify({commit:process.env.GITHUB_SHA,runId:process.env.GITHUB_RUN_ID,node:process.version,runner:process.env.RUNNER_OS,physicalGpuTested:false},null,2));"
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        with:
+          name: med3d-anatomy-${{ github.sha }}
+          path: qa-results/
+          retention-days: 30
+          if-no-files-found: error

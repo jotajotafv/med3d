@@ -5,10 +5,20 @@ import * as THREE from 'three';
 import SceneBoundary from '../SceneBoundary';
 import { AtlasAssetManager, type AssetSnapshot, type AtlasPart, type AtlasResource } from './asset-manager';
 import { createExplosionOffsets, explosionTarget } from './explosion';
-import type { AnatomyCatalog, AtlasSceneProps, Bounds, SystemId } from './types';
+import { ANATOMICAL_VIEWS, fitCameraBounds } from './camera-framing';
+import type { AnatomyCatalog, AtlasAnatomicalView, AtlasSceneProps, Bounds, SystemId } from './types';
 
 type Controls = ComponentRef<typeof OrbitControls>;
 type MaterialVariants = { base: THREE.MeshStandardMaterial; selected: THREE.MeshStandardMaterial; hover: THREE.MeshStandardMaterial };
+type LoadTiming = { startedAt: number; initialAssets: string[]; firstGeometryMs?: number; fullSystemMs?: number };
+function useReducedMotionPreference() {
+  const [reduced, setReduced] = useState(() => typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  useEffect(() => {
+    const query = window.matchMedia('(prefers-reduced-motion: reduce)'), change = () => setReduced(query.matches);
+    query.addEventListener('change', change); return () => query.removeEventListener('change', change);
+  }, []);
+  return reduced;
+}
 const SYSTEM_COLORS: Record<SystemId, string> = {
   skeletal: '#d7c6a1', integumentary: '#cdb3a0', muscular: '#b67070', nervous: '#d7c487',
   cardiovascular: '#ba7770', respiratory: '#caa1a1', digestive: '#c49f8c', urinary: '#af8175',
@@ -23,8 +33,11 @@ function frameTransform(catalog: AnatomyCatalog) {
 function useAssets(catalog: AnatomyCatalog, assetIds: string[], reset: number) {
   const manager = useRef<AtlasAssetManager | null>(null);
   const desired = useRef(assetIds); desired.current = assetIds;
+  const loadTiming = useRef<LoadTiming>({ startedAt: 0, initialAssets: [] });
   const [snapshot, setSnapshot] = useState<AssetSnapshot>({ resources: [], statuses: [] });
   useEffect(() => {
+    performance.clearMarks('med3d:load-start'); performance.clearMarks('med3d:first-geometry'); performance.clearMarks('med3d:all-assets-rendered');
+    loadTiming.current = { startedAt: performance.mark('med3d:load-start').startTime, initialAssets: [...desired.current] };
     const next = new AtlasAssetManager(catalog); manager.current = next;
     const unsubscribe = next.subscribe(value => setSnapshot(previous => ({ ...value,
       resources: value.resources.length === previous.resources.length && value.resources.every((resource, index) => resource === previous.resources[index]) ? previous.resources : value.resources,
@@ -34,7 +47,7 @@ function useAssets(catalog: AnatomyCatalog, assetIds: string[], reset: number) {
   }, [catalog, reset]);
   const assetKey = assetIds.join('|');
   useEffect(() => { manager.current?.setDesired(desired.current); }, [assetKey]);
-  return { ...snapshot, retry: (id?: string) => manager.current?.retry(id) };
+  return { ...snapshot, loadTiming, retry: (id?: string) => manager.current?.retry(id) };
 }
 function useMaterials(catalog: AnatomyCatalog) {
   const materials = useMemo(() => new Map<SystemId, MaterialVariants>([...new Set(catalog.assets.map(asset => asset.systemId))].map(system => {
@@ -53,6 +66,7 @@ function Models(props: ModelProps) {
   const { catalog, resources, parts, selected, isolated, hidden, opacityBySystem, explodeLevel, exploded, onSelect } = props;
   const { invalidate, gl } = useThree();
   const [hovered, setHovered] = useState<string | null>(null);
+  const reducedMotion = useReducedMotionPreference();
   const materials = useMaterials(catalog), transform = useMemo(() => frameTransform(catalog), [catalog]);
   const activeSystems = useMemo(() => new Set(props.assetIds.flatMap(id => catalog.assets.find(asset => asset.id === id)?.systemId ? [catalog.assets.find(asset => asset.id === id)!.systemId] : [])), [catalog, props.assetIds.join('|')]);
   const offsets = useMemo(() => createExplosionOffsets(catalog, activeSystems), [catalog, activeSystems]);
@@ -81,7 +95,7 @@ function Models(props: ModelProps) {
   }, [parts, offsets, explodeLevel, exploded, invalidate]);
   useFrame((_, delta) => {
     let moving = false;
-    const alpha = 1 - Math.exp(-11 * Math.min(delta, .05));
+    const alpha = reducedMotion ? 1 : 1 - Math.exp(-11 * Math.min(delta, .05));
     parts.forEach(part => {
       if (part.offset.equals(part.targetOffset)) return;
       part.offset.lerp(part.targetOffset, alpha);
@@ -107,31 +121,31 @@ function Models(props: ModelProps) {
       onPointerOut={(event: ThreeEvent<PointerEvent>) => pointer(event, false)} />)}
   </group>;
 }
-function CameraRig({ catalog, parts, cameraRequest, resources, exploded, explodeLevel, assetIds }: Pick<ModelProps, 'catalog' | 'parts' | 'cameraRequest' | 'resources' | 'exploded' | 'explodeLevel' | 'assetIds'>) {
+function CameraRig({ catalog, parts, cameraRequest, resources, exploded, explodeLevel, assetIds, selected }: Pick<ModelProps, 'catalog' | 'parts' | 'cameraRequest' | 'resources' | 'exploded' | 'explodeLevel' | 'assetIds' | 'selected'>) {
   const controls = useRef<Controls>(null), { camera, invalidate, size } = useThree();
-  const destination = useRef<{ position: THREE.Vector3; target: THREE.Vector3 } | null>(null);
+  const destination = useRef<ReturnType<typeof fitCameraBounds> | null>(null);
   const pending = useRef<AtlasSceneProps['cameraRequest'] | null>(null), handledVersion = useRef(-1);
+  const focused = useRef<string | null>(null), lastCatalog = useRef<AnatomyCatalog | null>(null);
+  const reducedMotion = useReducedMotionPreference();
   const transform = useMemo(() => frameTransform(catalog), [catalog]);
-  const current = useRef({ catalog, parts, cameraRequest, resources, exploded, explodeLevel, assetIds });
-  current.current = { catalog, parts, cameraRequest, resources, exploded, explodeLevel, assetIds };
-  const frame = useCallback((id?: string | null, reset = false): boolean => {
+  const current = useRef({ catalog, parts, resources, exploded, explodeLevel, assetIds });
+  current.current = { catalog, parts, resources, exploded, explodeLevel, assetIds };
+  const frame = useCallback((id?: string | null, view?: AtlasAnatomicalView): boolean => {
     if (!(camera instanceof THREE.PerspectiveCamera)) return false;
-    const box = new THREE.Box3();
+    const box = new THREE.Box3(), state = current.current;
     if (id) {
-      const state = current.current;
       const node = state.catalog.nodes.find(node => node.id === id);
       if (!node) return true;
       const requestedAssets = node.assetIds.filter(asset => state.assetIds.includes(asset));
-      // Keep the request pending until every requested region of this target is decoded.
+      // Preserve the request until every requested region of this target is decoded.
       if (!requestedAssets.length || requestedAssets.some(asset => !state.resources.some(resource => resource.asset.id === asset))) return false;
       state.parts.forEach(part => {
         if (!part.ancestors.has(id) || !part.mesh.visible) return;
-        // Focus on the final exploded bounds so it remains correct during the smooth transition.
+        // Use the destination bounds while separation is still interpolating.
         box.union(part.baseBounds.clone().translate(part.targetOffset));
       });
       if (box.isEmpty()) return false;
     } else {
-      const state = current.current;
       box.copy(boxFrom(catalog.frame.bounds));
       if (state.exploded > 0) {
         const wanted = new Set(state.assetIds), activeSystems = new Set(state.catalog.assets.filter(asset => wanted.has(asset.id)).map(asset => asset.systemId));
@@ -144,45 +158,61 @@ function CameraRig({ catalog, parts, cameraRequest, resources, exploded, explode
       }
     }
     box.min.multiplyScalar(transform.scale).add(transform.position); box.max.multiplyScalar(transform.scale).add(transform.position);
-    const centre = box.getCenter(new THREE.Vector3()), dimensions = box.getSize(new THREE.Vector3());
-    const tan = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2), aspect = size.width / Math.max(size.height, 1);
-    const distance = Math.max(dimensions.y / (2 * tan), dimensions.x / (2 * tan * aspect), dimensions.z * .8) * 1.2;
-    const direction = reset ? new THREE.Vector3(.025, .008, 1) : camera.position.clone().sub(controls.current?.target ?? new THREE.Vector3());
-    if (direction.lengthSq() < .0001) direction.set(0, 0, 1);
-    destination.current = { target: centre, position: centre.clone().add(direction.normalize().multiplyScalar(Math.max(.16, Math.min(35, distance)))) };
+    const direction = view ? ANATOMICAL_VIEWS[view].direction : camera.position.clone().sub(controls.current?.target ?? new THREE.Vector3());
+    const up = view ? ANATOMICAL_VIEWS[view].up : camera.up;
+    const goal = fitCameraBounds(box, camera.fov, size.width / Math.max(size.height, 1), direction, up);
+    camera.near = goal.near; camera.far = Math.max(80, goal.distance * 2); camera.updateProjectionMatrix();
+    if (controls.current) { controls.current.minDistance = goal.minDistance; controls.current.maxDistance = Math.max(35, goal.distance * 1.2); }
+    focused.current = id ?? null; destination.current = goal;
     invalidate(); return true;
   }, [camera, catalog, invalidate, size.width, size.height, transform]);
-  useEffect(() => { frame(null, true); }, [catalog, size.width, size.height, frame]);
   useEffect(() => {
-    // Fit the destination pose while separation animates; changing levels cannot
-    // push structures outside the view. A focused detail remains the focus.
-    if (cameraRequest.kind === 'focus' && cameraRequest.id) frame(cameraRequest.id);
-    else frame(null);
+    const changedCatalog = lastCatalog.current !== catalog; lastCatalog.current = catalog;
+    if (changedCatalog) focused.current = null;
+    // Resizing must retain a detail already being studied.
+    frame(focused.current, changedCatalog ? 'anterior' : undefined);
+  }, [catalog, size.width, size.height, frame]);
+  useEffect(() => {
+    frame(focused.current);
   }, [exploded, explodeLevel]);
   useEffect(() => {
     if (handledVersion.current !== cameraRequest.version) { pending.current = cameraRequest; handledVersion.current = cameraRequest.version; }
     const request = pending.current; if (!request) return;
     if (request.kind === 'focus') { if (frame(request.id)) pending.current = null; }
-    else if (request.kind === 'reset') { frame(null, true); pending.current = null; }
+    else if (request.kind === 'view') { if (frame(request.id ?? selected, request.view ?? 'anterior')) pending.current = null; }
+    else if (request.kind === 'reset') { frame(null, 'anterior'); pending.current = null; }
     else {
       const target = controls.current?.target.clone() ?? new THREE.Vector3();
-      const offset = camera.position.clone().sub(target).multiplyScalar(request.kind === 'zoomIn' ? .78 : 1.28).clampLength(.12, 35);
-      destination.current = { target, position: target.clone().add(offset) }; invalidate(); pending.current = null;
+      const offset = camera.position.clone().sub(target).multiplyScalar(request.kind === 'zoomIn' ? .78 : 1.28);
+      const distance = THREE.MathUtils.clamp(offset.length(), controls.current?.minDistance ?? .001, controls.current?.maxDistance ?? 35);
+      const direction = offset.normalize(), up = camera.up.clone();
+      // Orientation-only bounds supply the same stable camera basis used by framing.
+      const basis = fitCameraBounds(new THREE.Box3(target.clone(), target.clone()), (camera as THREE.PerspectiveCamera).fov, 1, direction, up);
+      destination.current = { ...basis, target, position: target.clone().addScaledVector(direction, distance), distance };
+      invalidate(); pending.current = null;
     }
-  }, [cameraRequest.version, resources, frame, camera, invalidate, parts, exploded, explodeLevel]);
+  }, [cameraRequest.version, resources, frame, camera, invalidate, parts, exploded, explodeLevel, selected]);
   useFrame((_, delta) => {
-    const goal = destination.current;
-    if (!goal || !controls.current) return;
-    const alpha = 1 - Math.exp(-10 * Math.min(delta, .05));
-    camera.position.lerp(goal.position, alpha); controls.current.target.lerp(goal.target, alpha); controls.current.update();
-    if (camera.position.distanceToSquared(goal.position) < .0000002 && controls.current.target.distanceToSquared(goal.target) < .0000002) {
-      camera.position.copy(goal.position); controls.current.target.copy(goal.target); controls.current.update(); destination.current = null;
+    const goal = destination.current, orbit = controls.current;
+    if (!goal || !orbit) return;
+    const alpha = reducedMotion ? 1 : 1 - Math.exp(-10 * Math.min(delta, .05));
+    const distance = THREE.MathUtils.lerp(camera.position.distanceTo(orbit.target), goal.distance, alpha);
+    const orientation = camera.quaternion.clone().slerp(goal.orientation, alpha);
+    orbit.target.lerp(goal.target, alpha);
+    // Slerp an orthogonal camera frame: interpolating position/up independently
+    // crosses a singular pose for posterior -> superior and flips the scene.
+    camera.up.set(0, 1, 0).applyQuaternion(orientation);
+    camera.position.set(0, 0, 1).applyQuaternion(orientation).multiplyScalar(distance).add(orbit.target);
+    camera.quaternion.copy(orientation); orbit.update();
+    const tolerance = Math.max(1e-7, goal.distance * 1e-5);
+    if (camera.position.distanceTo(goal.position) < tolerance && orbit.target.distanceTo(goal.target) < tolerance && camera.quaternion.angleTo(goal.orientation) < .0001) {
+      camera.position.copy(goal.position); camera.up.copy(goal.up); orbit.target.copy(goal.target); orbit.update(); destination.current = null;
     } else invalidate();
   });
-  return <OrbitControls ref={controls} makeDefault enableDamping dampingFactor={.12} minDistance={.12} maxDistance={35}
+  return <OrbitControls ref={controls} makeDefault enableDamping={!reducedMotion} dampingFactor={.12} minDistance={.001} maxDistance={35}
     rotateSpeed={.65} panSpeed={.65} zoomSpeed={.85} onStart={() => { destination.current = null; pending.current = null; }} onChange={() => invalidate()} />;
 }
-function Monitor({ resources, onMetrics, onContextLost }: { resources: AtlasResource[]; onMetrics: AtlasSceneProps['onMetrics']; onContextLost: (lost: boolean) => void }) {
+function Monitor({ resources, loadTiming, onMetrics, onContextLost }: { resources: AtlasResource[]; loadTiming: { current: LoadTiming }; onMetrics: AtlasSceneProps['onMetrics']; onContextLost: (lost: boolean) => void }) {
   const { gl, scene, invalidate } = useThree();
   const latest = useRef({ resources, onMetrics }); latest.current = { resources, onMetrics };
   useEffect(() => {
@@ -193,12 +223,20 @@ function Monitor({ resources, onMetrics, onContextLost }: { resources: AtlasReso
     scene.onAfterRender = function (...args) {
       after.apply(this, args);
       const resources = latest.current.resources;
+      const timing = loadTiming.current;
+      if (timing.startedAt && timing.firstGeometryMs === undefined && resources.some(resource => resource.parts.some(part => part.mesh.visible))) {
+        timing.firstGeometryMs = performance.mark('med3d:first-geometry').startTime - timing.startedAt;
+      }
+      if (timing.startedAt && timing.fullSystemMs === undefined && timing.initialAssets.length && timing.initialAssets.every(id => resources.some(resource => resource.asset.id === id))) {
+        timing.fullSystemMs = performance.mark('med3d:all-assets-rendered').startTime - timing.startedAt;
+      }
       const metrics = {
         loadedAssets: resources.length, meshes: resources.reduce((sum, resource) => sum + resource.parts.length, 0),
         triangles: resources.reduce((sum, resource) => sum + resource.triangles, 0), geometryBytes: resources.reduce((sum, resource) => sum + resource.geometryBytes, 0),
         loadMs: resources.reduce((max, resource) => Math.max(max, resource.loadMs), 0), drawCalls: gl.info.render.calls,
         renderGeometries: gl.info.memory.geometries, renderTextures: gl.info.memory.textures,
         frameMs: performance.now() - started,
+        firstGeometryMs: timing.firstGeometryMs, fullSystemMs: timing.fullSystemMs,
       };
       // Reporting unchanged timing on every draw would trigger React -> R3F -> React
       // forever. Counts are the invalidation key; frameMs samples the actual render
@@ -216,13 +254,13 @@ function Monitor({ resources, onMetrics, onContextLost }: { resources: AtlasReso
       disposed = true; clearTimeout(timer); scene.onBeforeRender = before; scene.onAfterRender = after;
       gl.domElement.removeEventListener('webglcontextlost', lost); gl.domElement.removeEventListener('webglcontextrestored', restored);
     };
-  }, [gl, scene, invalidate, onContextLost]);
+  }, [gl, scene, invalidate, onContextLost, loadTiming]);
   return null;
 }
 
 export default function AtlasScene(props: AtlasSceneProps) {
   const [reset, setReset] = useState(0), [contextLost, setContextLost] = useState(false);
-  const { resources, statuses, retry } = useAssets(props.catalog, props.assetIds, reset);
+  const { resources, statuses, loadTiming, retry } = useAssets(props.catalog, props.assetIds, reset);
   const parts = useMemo(() => resources.flatMap(resource => resource.parts), [resources]);
   const callback = useRef(props.onLoadStatus); callback.current = props.onLoadStatus;
   useEffect(() => { callback.current?.(statuses); }, [statuses]);
@@ -245,7 +283,7 @@ export default function AtlasScene(props: AtlasSceneProps) {
         <directionalLight position={[0, 3, -5]} color="#e8ffff" intensity={1.8} />
         <Models {...props} resources={resources} parts={parts} />
         <CameraRig {...props} resources={resources} parts={parts} />
-        <Monitor resources={resources} onMetrics={props.onMetrics} onContextLost={setContextLost} />
+        <Monitor resources={resources} loadTiming={loadTiming} onMetrics={props.onMetrics} onContextLost={setContextLost} />
         <GizmoHelper alignment="bottom-right" margin={[53, 58]}><GizmoViewport axisColors={['#b87874', '#819b8a', '#779fae']} labelColor="#ffffff" hideNegativeAxes /></GizmoHelper>
       </Canvas>
     </SceneBoundary>

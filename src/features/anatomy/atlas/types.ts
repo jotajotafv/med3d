@@ -54,9 +54,17 @@ export interface AnatomyCatalog {
   provenance: AssetProvenance[];
   coverage: { title: string; structures: number; meshes: number; note: string; limitations: string[] };
 }
-export interface AtlasCameraRequest { kind: 'reset' | 'zoomIn' | 'zoomOut' | 'focus'; version: number; id?: string | null }
+export type AtlasAnatomicalView = 'anterior' | 'posterior' | 'left' | 'right' | 'superior' | 'inferior';
+export interface AtlasCameraRequest { kind: 'reset' | 'zoomIn' | 'zoomOut' | 'focus' | 'view'; version: number; id?: string | null; view?: AtlasAnatomicalView }
 export interface AssetLoadStatus { id: string; state: 'queued' | 'loading' | 'ready' | 'error'; progress: number; error?: string }
-export interface AtlasMetrics { loadedAssets: number; meshes: number; triangles: number; geometryBytes: number; loadMs: number; drawCalls: number; renderGeometries: number; renderTextures: number; frameMs?: number }
+export interface AtlasMetrics {
+  loadedAssets: number; meshes: number; triangles: number; geometryBytes: number;
+  /** Longest individual asset fetch/decode duration; not a system wall time. */
+  loadMs: number;
+  drawCalls: number; renderGeometries: number; renderTextures: number; frameMs?: number;
+  /** Wall times from this asset manager's creation to the corresponding render. */
+  firstGeometryMs?: number; fullSystemMs?: number;
+}
 export interface AtlasSceneProps {
   catalog: AnatomyCatalog;
   assetIds: string[];

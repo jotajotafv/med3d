@@ -3,7 +3,7 @@ import {CaretDown, CaretRight, Eye, EyeSlash} from '@phosphor-icons/react';
 import type {AnatomyCatalog} from './types';
 import {flattenTree, type CatalogIndex} from './catalog-index';
 type Props = {catalog: AnatomyCatalog; index: CatalogIndex; expanded: Set<string>; selected: string | null; hidden: string[]; onExpand: (id:string) => void; onSelect: (id:string) => void; onHide: (id:string) => void};
-const HEIGHT = 36, OVERSCAN = 8;
+const HEIGHT = 40, OVERSCAN = 8;
 export default function VirtualTree(props: Props) {
   const {catalog, index, expanded, selected, hidden, onExpand, onSelect, onHide} = props;
   const rows = useMemo(() => flattenTree(catalog, index, expanded), [catalog,index,expanded]);

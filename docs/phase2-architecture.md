@@ -1,5 +1,24 @@
 # MED3D · Arquitectura de ampliación anatómica
 
+## Decisión vigente de Fase 2.1: avance a nuevos sistemas
+
+**Aclaración del 20 de septiembre de 2026. La Fase 2.1 sustituye el requisito anterior de completar los siete huesos pendientes antes de ampliar el atlas.** Las condiciones de avance de las secciones 4, 9 (paso 5) y 10 se conservan como decisión original e histórica; ya no bloquean la incorporación de nuevos sistemas por estas siete ausencias.
+
+Los elementos pendientes son: cóccix; martillo izquierdo; yunque izquierdo; estribo izquierdo; martillo derecho; yunque derecho; estribo derecho. Las fuentes candidatas pertenecen a diferentes donantes y marcos espaciales, y todavía no existe un registro anatómico suficientemente validado para integrarlas al cuerpo BodyParts3D.
+
+La decisión vigente es:
+
+1. Mantener los siete elementos explícitamente documentados como pendientes.
+2. Conservar toda la investigación, las fuentes y las matrices de registro, incluidos los campos todavía sin determinar.
+3. No declarar el sistema óseo como esqueleto completo de 206 huesos ni incorporar artificialmente estos elementos sólo para alcanzar ese conteo.
+4. Permitir continuar con nuevos sistemas anatómicos sin exigir antes el cierre de estos siete pendientes. Cada incorporación mantiene sus propios requisitos de procedencia, registro anatómico y validación.
+5. Si posteriormente se obtiene una solución de registro anatómico verificable, integrar los huesos pendientes en una fase de corrección.
+6. Mantener el sistema óseo actual como patrón técnico de referencia para los siguientes sistemas.
+
+Véanse la [validación de Fase 2.1](phase2.1-validation.md), la [investigación y matrices de registro](phase2.1-registration.md) y las [fuentes de los siete huesos pendientes](phase2-missing-bones.md). Esta aclaración es exclusivamente documental; no inicia la Fase 3.
+
+---
+
 Fecha: 14 de septiembre de 2026. Diseño de la fase 2 sobre la base existente; los contratos siguientes definen responsabilidades y criterios de aceptación, no prometen que todos los sistemas estén ya disponibles. La auditoría de partida está en `phase2-audit.md`.
 
 ## 1. Alcance y estrategia

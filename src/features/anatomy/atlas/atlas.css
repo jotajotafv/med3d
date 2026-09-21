@@ -20,6 +20,9 @@
 .atlas-phase2 .atlas-tree-eye{padding:6px;min-height:28px;min-width:28px}
 .atlas-phase2 .atlas-tree-dot{margin:0 9px}
 .atlas-virtual-tree{padding-bottom:0;min-height:120px;overflow-anchor:none}
+/* Virtual row positions and spacer height must change instantly, including
+   reduced-motion rules that otherwise introduce a nonzero transition duration. */
+.atlas-virtual-tree>div,.atlas-virtual-tree .atlas-tree-row{transition:none!important}
 .atlas-virtual-tree:focus-visible,.atlas-phase2 select:focus-visible{outline:2px solid #86bec8;outline-offset:-2px}
 .atlas-global-results{min-height:120px}
 .atlas-phase2 .atlas-result-count{font-size:11px;line-height:1.6;color:#a0b8c3;padding:0 10px}

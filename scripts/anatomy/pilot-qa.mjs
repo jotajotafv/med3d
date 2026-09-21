@@ -5,8 +5,8 @@ import {readFile, writeFile} from 'node:fs/promises';
 import path from 'node:path';
 import {createHarness, project, setSlider, withinQaDeadline} from './browser-qa.mjs';
 
-const mode=process.argv.find(arg=>['--functional','--captures','--performance'].includes(arg))?.slice(2)||'functional';
-const h=await createHarness({output:process.env.QA_OUTPUT_DIR||path.join(project,'.qa-pilot',mode),viewport:{width:1440,height:900},reducedMotion:mode==='captures'?'reduce':'no-preference'});
+const mode=process.argv.find(arg=>['--functional','--captures','--performance','--tree'].includes(arg))?.slice(2)||'functional';
+const h=await createHarness({output:process.env.QA_OUTPUT_DIR||path.join(project,'.qa-pilot',mode),viewport:{width:1440,height:900},reducedMotion:['captures','tree'].includes(mode)?'reduce':'no-preference'});
 const {page,output}=h;
 const muscular=JSON.parse(await readFile(path.join(project,process.env.QA_SERVE_DIR||'dist','models/anatomy/muscular/catalog.json'),'utf8'));
 const catalogs=[h.catalog,muscular],nodes=catalogs.flatMap(c=>c.nodes),assets=catalogs.flatMap(c=>c.assets);
@@ -14,6 +14,28 @@ const byId=new Map(nodes.map(n=>[n.id,n]));
 const boneMeshes=h.expectedMeshes,muscleMeshes=muscular.coverage.meshes,totalMeshes=boneMeshes+muscleMeshes;
 const countTriangles=list=>list.reduce((sum,a)=>sum+a.triangles,0);
 const report={date:new Date().toISOString(),mode,source:'Local production build served over unthrottled loopback HTTP',environment:{browser:'Headless Chromium',renderer:'ANGLE SwiftShader software WebGL',physicalGpuTested:false,deviceScaleFactor:1},checks:[],captures:[],measurements:{},errors:h.errors,badRequests:h.badRequests};
+if(mode==='tree')await h.context.addInitScript(()=>{
+  const trace=window.__atlasTreeTrace=[];
+  const describe=element=>({scrollTop:element.scrollTop,scrollHeight:element.scrollHeight,clientHeight:element.clientHeight,spacerStyleHeight:element.firstElementChild?.style.height,selectedId:document.querySelector('.atlas-viewport')?.dataset.selectedId,selection:document.querySelector('.atlas-detail-content h2')?.textContent,renderedSelected:element.querySelector('[role=treeitem][aria-selected=true]')?.id});
+  const record=(kind,value)=>{if(trace.length<4000)trace.push({kind,timeMs:performance.now(),...value});};
+  const descriptor=Object.getOwnPropertyDescriptor(Element.prototype,'scrollTop');
+  if(descriptor?.get&&descriptor?.set)Object.defineProperty(Element.prototype,'scrollTop',{...descriptor,set(value){
+    const tracked=this.classList?.contains('atlas-virtual-tree'),before=tracked?describe(this):null;
+    descriptor.set.call(this,value);
+    if(tracked){record('scrollTop-set',{requested:value,before,after:describe(this),stack:new Error().stack});requestAnimationFrame(()=>record('after-animation-frame',{state:describe(this)}));}
+  }});
+  document.addEventListener('scroll',event=>{if(event.target?.classList?.contains('atlas-virtual-tree'))record('scroll-event',{state:describe(event.target)});},true);
+  document.addEventListener('DOMContentLoaded',()=>{
+    const observed=new WeakSet();
+    const resized=new ResizeObserver(entries=>{for(const entry of entries){const tree=entry.target.classList.contains('atlas-virtual-tree')?entry.target:entry.target.parentElement;if(tree?.classList.contains('atlas-virtual-tree'))record('resize',{target:entry.target===tree?'tree':'spacer',observedHeight:entry.contentRect.height,state:describe(tree)});}});
+    const mutations=new MutationObserver(entries=>{
+      const tree=document.querySelector('.atlas-virtual-tree');if(!tree)return;
+      for(const element of [tree,tree.firstElementChild].filter(Boolean))if(!observed.has(element)){observed.add(element);resized.observe(element);record('observe',{target:element===tree?'tree':'spacer',state:describe(tree)});}
+      for(const entry of entries)if(entry.type==='attributes'&&(entry.target===tree||entry.target===tree.firstElementChild))record('style-mutation',{target:entry.target===tree?'tree':'spacer',oldValue:entry.oldValue,newValue:entry.target.getAttribute(entry.attributeName),state:describe(tree)});
+    });
+    mutations.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['style'],attributeOldValue:true});
+  });
+});
 const check=(name,values={})=>{report.checks.push({name,...values});console.log('PASS',name,JSON.stringify(values));};
 const wait=ms=>page.waitForTimeout(ms);
 const snapshot=()=>page.evaluate(()=>{
@@ -54,6 +76,24 @@ async function shot(name,note=''){
   report.captures.push({file:name+'.png',viewport:page.viewportSize(),selection:await selectedName(),note,metrics:await h.metrics(),scene:await snapshot()});console.log('CAPTURE',name);
 }
 async function closePanels(){for(const name of ['Cerrar estructuras','Cerrar inspección']){const close=page.getByRole('button',{name,exact:true});if(await close.isVisible())await close.click();}}
+async function treeQa(){
+  await goto();
+  // Preserve the selection/expansion history of captures 01–14. Camera views
+  // and screenshots do not change the tree; all resets and selections do.
+  for(const [name,side] of [['hombro','right'],['hombro','left'],['brazo','right'],['brazo','left']]){await reset();await choose(region(name,side));}
+  await reset();await choose(muscle('deltoides'));await action('Aislar');
+  await reset();await choose(muscle('bíceps braquial'));await action('Aislar');
+  await reset();await choose(muscle('tríceps braquial'));
+  await reset();await choose(region('hombro'));
+  await clearSearch();await page.getByRole('button',{name:'Árbol anatómico',exact:true}).click();
+  await page.getByRole('button',{name:'Expandir todo el árbol'}).click();
+  const tree=page.getByRole('tree',{name:'Árbol anatómico'});
+  await tree.getByRole('treeitem',{selected:true}).waitFor({state:'visible',timeout:20000});
+  assert.equal(await selectedName(),region('hombro').name);
+  await tree.getByRole('button',{name:'Ocultar '+muscle('deltoides').name,exact:true}).waitFor({state:'visible'});
+  check('Reduced-motion capture history retains selected shoulder after expand all');
+  await shot('tree-expand-all','Actual tree after the selection history of captures 01–14; no manual scrolling.');
+}
 async function functional(){
   await goto();const initial=await h.metrics();assert.equal(muscleMeshes,26);assert.equal(muscular.nodes.filter(n=>n.kind==='structure').length,16);assert.equal(initial.triangleCount,countTriangles(assets));assert.equal(initial.loadedAssets,assets.length);check('Combined registered skeletal + 26-component, 16-muscle pilot loads',initial);
   report.environment.detectedWebGL=await page.locator('.atlas-canvas canvas').evaluate(canvas=>{const gl=canvas.getContext('webgl2')||canvas.getContext('webgl'),ext=gl.getExtension('WEBGL_debug_renderer_info');return {renderer:gl.getParameter(ext?ext.UNMASKED_RENDERER_WEBGL:gl.RENDERER),vendor:gl.getParameter(ext?ext.UNMASKED_VENDOR_WEBGL:gl.VENDOR)};});
@@ -136,6 +176,6 @@ async function performanceQa(){
   }
 }
 
-try{await withinQaDeadline(async()=>{await ({functional,captures,performance:performanceQa}[mode])();assert.deepEqual(h.errors,[],'No unhandled browser errors');assert.deepEqual(h.badRequests,[],'No HTTP error responses');report.success=true;},mode==='functional'?900000:mode==='captures'?600000:300000,'Fase 3A '+mode);}
+try{await withinQaDeadline(async()=>{await ({functional,captures,performance:performanceQa,tree:treeQa}[mode])();assert.deepEqual(h.errors,[],'No unhandled browser errors');assert.deepEqual(h.badRequests,[],'No HTTP error responses');report.success=true;},mode==='functional'?900000:mode==='captures'?600000:mode==='tree'?180000:300000,'Fase 3A '+mode);}
 catch(error){report.success=false;report.error=error.stack;report.failureUi=await page.evaluate(()=>{const tree=document.querySelector('[role=tree]');return {selection:document.querySelector('.atlas-detail-content h2')?.textContent,tree:tree?{scrollTop:tree.scrollTop,scrollHeight:tree.scrollHeight,clientHeight:tree.clientHeight,rows:[...tree.querySelectorAll('[role=treeitem]')].map(row=>({id:row.id,selected:row.getAttribute('aria-selected'),text:row.textContent}))}:null};}).catch(()=>null);await page.screenshot({path:path.join(output,'failure.png'),fullPage:false,timeout:20000}).catch(error=>{report.failureScreenshotError=error.message;});throw error;}
-finally{await writeFile(path.join(output,'pilot-'+mode+'.json'),JSON.stringify(report,null,2)+'\n');await h.close();}
+finally{if(mode==='tree')report.treeTrace=await page.evaluate(()=>window.__atlasTreeTrace||[]).catch(()=>[]);await writeFile(path.join(output,'pilot-'+mode+'.json'),JSON.stringify(report,null,2)+'\n');await h.close();}

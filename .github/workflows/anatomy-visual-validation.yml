@@ -47,33 +47,39 @@ jobs:
         run: |
           npm install --prefix .cache/anatomy-qa --no-save --no-audit --no-fund playwright@1.62.1
           node .cache/anatomy-qa/node_modules/playwright/cli.js install --with-deps chromium
-      - name: Pruebas funcionales
+      - name: Verificar expansión del árbol con movimiento reducido
+        id: tree
         if: ${{ !cancelled() && steps.browser.outcome == 'success' }}
+        run: node scripts/anatomy/pilot-qa.mjs --tree
+        env:
+          QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/tree
+      - name: Pruebas funcionales
+        if: ${{ !cancelled() && steps.tree.outcome == 'success' }}
         run: node scripts/anatomy/browser-qa.mjs
         env:
           QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/functional
       - name: Capturas anatómicas reproducibles
-        if: ${{ !cancelled() && steps.browser.outcome == 'success' }}
+        if: ${{ !cancelled() && steps.tree.outcome == 'success' }}
         run: node scripts/anatomy/visual-qa.mjs
         env:
           QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/visual
       - name: Medir el entorno disponible
-        if: ${{ !cancelled() && steps.browser.outcome == 'success' }}
+        if: ${{ !cancelled() && steps.tree.outcome == 'success' }}
         run: node scripts/anatomy/performance-qa.mjs
         env:
           QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/performance
       - name: Pruebas funcionales del piloto muscular
-        if: ${{ !cancelled() && steps.browser.outcome == 'success' }}
+        if: ${{ !cancelled() && steps.tree.outcome == 'success' }}
         run: node scripts/anatomy/pilot-qa.mjs --functional
         env:
           QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/pilot-functional
       - name: Capturar piloto bilateral y transparencia
-        if: ${{ !cancelled() && steps.browser.outcome == 'success' }}
+        if: ${{ !cancelled() && steps.tree.outcome == 'success' }}
         run: node scripts/anatomy/pilot-qa.mjs --captures
         env:
           QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/pilot-captures
       - name: Medir óseo, muscular y conjunto
-        if: ${{ !cancelled() && steps.browser.outcome == 'success' }}
+        if: ${{ !cancelled() && steps.tree.outcome == 'success' }}
         run: node scripts/anatomy/pilot-qa.mjs --performance
         env:
           QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/pilot-performance

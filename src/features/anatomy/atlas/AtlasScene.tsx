@@ -151,7 +151,10 @@ function CameraRig({ catalog, parts, cameraRequest, resources, exploded, explode
       // Preserve the request until every requested region of this target is decoded.
       if (!requestedAssets.length || requestedAssets.some(asset => !state.resources.some(resource => resource.asset.id === asset))) return false;
       state.parts.forEach(part => {
-        if (!targets.some(target=>part.ancestors.has(target)) || !part.mesh.visible) return;
+        if (!targets.some(target=>part.ancestors.has(target))) return;
+        // Hiding a selected structure must not cancel a requested camera view.
+        // Its decoded anatomical bounds remain the focus reference; visibility
+        // is unchanged, and the UI continues to label the selection as hidden.
         // Use the destination bounds while separation is still interpolating.
         box.union(part.baseBounds.clone().translate(part.targetOffset));
       });

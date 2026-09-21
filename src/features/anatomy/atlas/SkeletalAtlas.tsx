@@ -101,7 +101,19 @@ export default function SkeletalAtlas() {
     setAssetIds(catalog?.assets.filter(asset=>initialSystems.current.includes(asset.systemId)).map(asset=>asset.id)||[]);request('reset');
   }
   function selectByPointer(id:string|null) {setSelected(id);if(id&&index)setExpanded(value=>new Set([...value,...(index.ancestors.get(id)||[])]));}
-  function isolate() {if(!current)return;setContextIds([]);setHidden([]);setAssetIds(value=>[...new Set([...value,...(index?.assetIdsFor(current.id)||[])])]);setIsolated(value=>value===current.id?null:current.id);request('focus',current.id);}
+  function isolate() {
+    if(!current)return;
+    setContextIds([]);setHidden([]);
+    if(isolated===current.id) {
+      // Leaving isolation preserves the user's current layer/module choices.
+      setIsolated(null);
+      const stillRequested=index?.assetIdsFor(current.id).some(id=>assetIds.includes(id));
+      request(stillRequested?'focus':'reset',stillRequested?current.id:undefined);
+      return;
+    }
+    setAssetIds(value=>[...new Set([...value,...(index?.assetIdsFor(current.id)||[])])]);
+    setIsolated(current.id);request('focus',current.id);
+  }
   function regionName(id:string) {return index?.byId.get(id)?.name||id;}
   const nodeKind = current?kindName(current):'Cuerpo';
   const availableStructures = catalog?.nodes.filter(node=>node.kind==='structure'&&node.assetIds.some(id=>loadedIds.has(id))).length||0;

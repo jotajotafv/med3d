@@ -2,6 +2,8 @@
 
 Revisión: 21 de septiembre de 2026. Base MED3D: `41c797b106c66429eeda41a81597bf05abfb07d8`.
 
+**Actualización de Fase 3A:** se implementó exclusivamente el piloto autorizado de 26 elementos originales, que representan 16 músculos bilaterales. El apartado final documenta extracción, catálogo, conversión y validación numérica. La investigación previa se conserva a continuación como antecedente; sus afirmaciones «aún no convertido/medido» describen aquel momento, no el estado del piloto implementado.
+
 **Decisión previa a Fase 3A: BodyParts3D 4.0 OBJ99 para el piloto.** La elección se apoya en procedencia, metadatos, existencia de archivos y compatibilidad con la fuente ósea actual. No declara validada la anatomía muscular integrada ni su cobertura completa. La [auditoría](phase3-audit.md) y la [estrategia de registro](phase3-registration.md) delimitan el trabajo pendiente.
 
 ## Comparación de candidatos
@@ -68,3 +70,62 @@ La licencia Z-Anatomy enumera excepciones NC del oído interno Dundee y del riñ
 ## Conclusión y límites
 
 La investigación justifica elegir la fuente y preparar una prueba regional con transformaciones conservadas. No justifica afirmar cuerpo muscular completo, alineación anatómica aprobada, rendimiento web o puntos seguros de origen/inserción. Mantener las siete ausencias óseas documentadas y los órganos HRA en exploradores independientes.
+
+## Fase 3A — originales incorporados y conversión reproducible
+
+Se extrajeron **solamente los 26 OBJ aprobados**, mediante 53 peticiones HTTP Range: directorio ZIP fijado por SHA-256, 26 cabeceras locales y 26 contenidos comprimidos. Se rechazaba la descarga si el servidor no respondía `206` con el intervalo exacto. Se transfirieron 1.160.597 bytes; el ZIP completo de 142.903.898 bytes no se descargó. No se procesaron los 403 candidatos.
+
+Cada original se comprobó contra tamaño/CRC32 del directorio auditado; los seis músculos inspeccionados previamente también coinciden con sus SHA-256 anteriores. Los 26 encabezados coinciden con versión compatible `4.0`, FMA, FJ y representación BP de los metadatos. El [ZIP de originales](../research/anatomy/muscular-pilot-originals.zip) conserva íntegros sus comentarios históricos y geometría. Su SHA-256 es `251bf962442e4077d258ee164bc6af68f51ec89f888ae1051f4f7dc611238844`, ocupa 988.669 bytes y contiene 3.264.206 bytes OBJ. El [lock de extracción](../research/anatomy/muscular-pilot-source-lock.json) registra fuentes, intervalos y hashes por elemento. El hash histórico del ZIP completo se identifica expresamente como no recalculado en esta fase.
+
+### Identidad y conteo
+
+El [catálogo muscular](../public/models/anatomy/muscular/catalog.json) contiene 16 nodos `structure` —8 músculos por lado— y 26 mallas originales. Deltoides, bíceps y tríceps tienen padres editoriales `med3d:muscle:<familia>:<lado>`; sus porciones/cabezas conservan los FMA y FJ originales como componentes. Los otros cinco músculos por lado son estructuras indivisas identificadas con sus FMA originales. No se inventan FMA para padres ni se cuentan cabezas como músculos adicionales.
+
+| Músculo o componente | FMA / FJ derecho | FMA / FJ izquierdo |
+| --- | --- | --- |
+| Deltoides, porción clavicular | FMA34680 / FJ1468 | FMA34681 / FJ1468M |
+| Deltoides, porción acromial | FMA34682 / FJ1467 | FMA34683 / FJ1467M |
+| Deltoides, porción espinal | FMA34684 / FJ1513 | FMA34685 / FJ1513M |
+| Bíceps braquial, cabeza corta | FMA37684 / FJ1512 | FMA37685 / FJ1512M |
+| Bíceps braquial, cabeza larga | FMA37686 / FJ1478 | FMA37687 / FJ1478M |
+| Tríceps braquial, cabeza medial | FMA37695 / FJ1480 | FMA37696 / FJ1480M |
+| Tríceps braquial, cabeza lateral | FMA37697 / FJ1477 | FMA37698 / FJ1477M |
+| Tríceps braquial, cabeza larga | FMA37699 / FJ1479 | FMA37700 / FJ1479M |
+| Braquial | FMA37668 / FJ1486 | FMA37669 / FJ1486M |
+| Supraespinoso | FMA32544 / FJ1506 | FMA32545 / FJ1506M |
+| Infraespinoso | FMA32547 / FJ1500 | FMA32548 / FJ1500M |
+| Redondo menor | FMA32553 / FJ1508 | FMA32554 / FJ1508M |
+| Subescapular | FMA13414 / FJ1504 | FMA13415 / FJ1504M |
+
+Los grupos de navegación distinguen hombro y brazo, y el brazo conserva compartimento anterior —bíceps y braquial— y posterior —tríceps—. Es curación anatómica, no inferencia de una relación `part_of` a partir de `is_a`; véase [OpenStax, músculos de cintura escapular y miembro superior](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs). El alcance no incluye todos los músculos del hombro/brazo ni musculatura corporal completa.
+
+### Transformación y entrega web
+
+Los 26 originales reciben exactamente `(x,y,z) → (x,z,-y)/1000`, igual que los huesos; no hay ajuste espacial adicional, centrado individual, espejo generado, síntesis, unión ni simplificación. El marco declarado sigue siendo `bodyparts3d-4.0-male`, con los límites corporales existentes para que una carga regional no altere escala o centro global. La [documentación de registro](phase3-registration.md) distingue esta conservación del marco de una validación anatómica independiente.
+
+Los GLB conservan posiciones Float32 en metros y comprimen sin pérdida esos valores con Meshopt. Sólo las normales de visualización se cuantizan a 12 bits, almacenadas como Int16 normalizado; se declaran `EXT_meshopt_compression` y `KHR_mesh_quantization`. Una prueba inicial con posiciones a 16 bits volvió ambiguas las correspondencias por proximidad entre vértices originales muy cercanos del bíceps; se descartó esa variante, sin usarla como resultado final. Conservar Float32 permite comprobar todos los triángulos sin aumentar la tolerancia ni omitir piezas.
+
+| Módulo final | Bytes GLB | Mallas | Triángulos | Vértices GLB | Materiales | Bytes de accessors decodificados |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| muscular-upper-right.glb | 269.856 | 13 | 19.802 | 17.387 | 1 | 431.778 |
+| muscular-upper-left.glb | 270.076 | 13 | 19.802 | 17.370 | 1 | 431.472 |
+| Total | 539.932 | 26 | 39.604 | 34.757 | 2 por módulos | 863.250 |
+
+Los vértices GLB distinguen normales/seams y no equivalen al número de posiciones únicas del OBJ ni al número de músculos. Los bytes de accessors son los arrays decodificados de atributos/índices, no memoria GPU total ni los buffers transformados del renderer; las mediciones de ejecución pertenecen a [rendimiento](phase3-performance.md). Los dos GLB sin compresión ocupaban en conjunto 1.091.620 bytes.
+
+El [manifiesto](../public/models/anatomy/muscular/source-manifest.json) enlaza original → FMA/FJ/lado → nodo → módulo e incluye la matriz compartida. El [informe numérico](../public/models/anatomy/muscular/validation.json) contiene hashes finales, métricas por módulo y por los 26 elementos. La comparación parte de coordenadas OBJ originales en doble precisión, no del GLB intermedio: busca cada posición decodificada en metros, exige el mismo multiconjunto de todos los triángulos orientados —incluidas repeticiones— y conserva toda posición original usada por caras.
+
+Tolerancia fijada: error euclídeo máximo **0,05 mm**, exclusivamente numérico. Resultado final: **0,0000599851 mm** máximo entre posición original transformada y decodificada; error máximo de límites **0,0000574112 mm**. Los 39.604 triángulos, sus identidades y orientación se conservan. Estas cifras no expresan precisión anatómica o clínica.
+
+### Reproducir sin volver a descargar
+
+```sh
+npm install --prefix .cache/anatomy-tools --no-save @gltf-transform/core@4.5.0 @gltf-transform/extensions@4.5.0 @gltf-transform/functions@4.5.0 meshoptimizer@1.2.0
+python scripts/anatomy/build-muscular-pilot.py
+node scripts/anatomy/optimize-muscular-pilot.mjs
+node scripts/anatomy/optimize-muscular-pilot.mjs --verify-only
+```
+
+`build-muscular-pilot.py --fetch` repite opcionalmente la extracción exacta de los 26 originales; no es necesario para reconstruir con el ZIP preservado. El optimizador rechaza cuantizar de nuevo un archivo ya comprimido. `--verify-only` verifica los hashes finales y vuelve a calcular íntegramente el informe sin modificar archivos.
+
+El catálogo y los GLB óseos originales no forman parte de esta conversión. Persisten las siete ausencias óseas y el criterio de Fase 2.1; las fuentes alternativas, matrices y razonamiento previo permanecen conservados. La evaluación visual y funcional del piloto, y sus límites, se documentan en [validación de Fase 3A](phase3-validation.md). No se han incorporado nuevos sistemas ni iniciado Fase 3B.

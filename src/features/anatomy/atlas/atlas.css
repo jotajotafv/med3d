@@ -165,7 +165,7 @@
  .atlas-view-picker select{font-size:11px;padding:8px 4px}
  .atlas-phase2 .atlas-mobile-actions{top:145px;left:18px;right:auto}
  .atlas-phase2 .atlas-mobile-actions>button:first-child{display:flex}
- .atlas-phase2 .atlas-canvas{inset:190px 0 144px}
+ .atlas-phase2 .atlas-canvas{inset:190px 0 130px}
  .atlas-phase2 .atlas-view-controls{right:10px;top:calc(50% - 35px)}
  .atlas-phase2 .atlas-view-controls button{min-height:34px;min-width:34px;padding:7px}
  .atlas-phase2 .atlas-explode-bar{left:12px;right:12px;bottom:43px;padding:11px;gap:9px}
@@ -181,3 +181,11 @@
  .atlas-legacy-return{padding:0 16px;margin-top:18px;margin-bottom:0}
  .atlas-phase2 .atlas-tree-eye{opacity:1}
 }
+
+/* Phase 3A: explicit muscle–bone study context, preserving the reading scale. */
+.atlas-context-actions{margin:0 0 16px}
+.atlas-show-context{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:40px;border:1px solid #52737c;border-radius:5px;background:#284951;color:#d4e9ec;font:13px var(--font);cursor:pointer}
+.atlas-context-actions p,.atlas-context-note{font-size:12px;line-height:1.6;color:#a9c4cf;margin:9px 0 15px}
+.atlas-context-note{padding:10px 12px;border-left:2px solid #6d9eaa;background:#203b45}
+.atlas-layer-system[data-system-id="muscular"] .atlas-layer-toggle>svg{color:#cf9289}
+.atlas-phase2 .atlas-education .atlas-muscle-group{font-size:14px;line-height:1.6}

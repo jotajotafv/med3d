@@ -67,6 +67,13 @@ export function createAssetLoader(catalog: AnatomyCatalog): LoadAsset {
   // A mesh belongs to its deepest selectable catalog node; groups are resolved by ancestors.
   catalog.nodes.forEach(node => node.assetIds.forEach(assetId => node.meshNames.forEach(name => {
     const mapping = assetNodes.get(assetId), previous = mapping?.get(name);
+    if (!mapping) throw new Error(`La estructura ${node.id} referencia un módulo inexistente.`);
+    if (!node.systemId || catalog.assets.find(asset => asset.id === assetId)?.systemId !== node.systemId) {
+      throw new Error(`La malla ${name} no pertenece al sistema de ${assetId}.`);
+    }
+    if (previous && !ancestry.get(node.id)?.has(previous.id) && !ancestry.get(previous.id)?.has(node.id)) {
+      throw new Error(`La malla ${name} tiene propietarios anatómicos incompatibles.`);
+    }
     if (!previous || ancestry.get(node.id)!.size > ancestry.get(previous.id)!.size) mapping?.set(name, node);
   })));
   return async (asset, signal, onProgress) => {
@@ -102,10 +109,13 @@ export function createAssetLoader(catalog: AnatomyCatalog): LoadAsset {
     try {
       signal.throwIfAborted(); gltf.scene.updateMatrixWorld(true);
       const mapping = assetNodes.get(asset.id)!;
+      const observed = new Set<string>();
       gltf.scene.traverse(object => {
         if (!(object instanceof THREE.Mesh)) return;
         const node = mapping.get(object.name);
         if (!node) throw new Error(`La malla ${object.name || '(sin nombre)'} no tiene una estructura registrada en ${asset.id}.`);
+        if (observed.has(object.name)) throw new Error(`La malla ${object.name} está duplicada en ${asset.id}.`);
+        observed.add(object.name);
         const geometry = object.geometry;
         if (!geometry.getAttribute('normal')) geometry.computeVertexNormals();
         if (!geometry.boundingBox) geometry.computeBoundingBox();
@@ -119,8 +129,11 @@ export function createAssetLoader(catalog: AnatomyCatalog): LoadAsset {
         group.add(mesh);
       });
       if (!parts.length) throw new Error(`El archivo ${asset.id} no contiene estructuras 3D.`);
+      const missing = [...mapping.keys()].filter(name => !observed.has(name));
+      if (missing.length || parts.length !== asset.meshCount) throw new Error(`El archivo ${asset.id} no contiene todas las mallas catalogadas (${parts.length}/${asset.meshCount}; faltan ${missing.join(', ') || 'elementos'}).`);
       const geometryBytes = geometryMemoryBytes(source.geometries);
       const triangles = parts.reduce((sum, part) => sum + (part.mesh.geometry.index?.count ?? part.mesh.geometry.getAttribute('position').count) / 3, 0);
+      if (triangles !== asset.triangles) throw new Error(`La geometría de ${asset.id} no coincide con el recuento de triángulos registrado.`);
       let disposed = false;
       return { asset, group, parts, geometries: source.geometries, geometryBytes, triangles, loadMs: performance.now() - started,
         dispose() {

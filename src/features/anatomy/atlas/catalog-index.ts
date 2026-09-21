@@ -7,9 +7,12 @@ export function createCatalogIndex(catalog: AnatomyCatalog) {
   const assetIds = new Set(catalog.assets.map(asset => asset.id));
   if (assetIds.size !== catalog.assets.length) throw new Error('El catálogo contiene módulos repetidos.');
   for (const node of catalog.nodes) {
+    if (node.kind === 'body' && (node.systemId || node.parentId || node.meshNames.length)) throw new Error('La raíz corporal debe ser neutral y no poseer mallas.');
+    if (node.kind !== 'body' && !node.systemId) throw new Error('Falta el sistema de una estructura anatómica.');
     if (new Set(node.children).size !== node.children.length || node.children.some(id => !byId.has(id) || byId.get(id)?.parentId !== node.id)) throw new Error('Los componentes de un grupo no concuerdan con la jerarquía.');
     if (node.parentId && !byId.get(node.parentId)?.children.includes(node.id)) throw new Error('Falta una relación de pertenencia anatómica.');
     if (node.assetIds.some(id => !assetIds.has(id))) throw new Error('Una estructura hace referencia a un módulo inexistente.');
+    if (node.meshNames.length && node.assetIds.some(id => catalog.assets.find(asset => asset.id === id)?.systemId !== node.systemId)) throw new Error('Una malla está asignada a un módulo de otro sistema.');
   }
   const ancestors = new Map<string, string[]>();
   for (const node of catalog.nodes) {

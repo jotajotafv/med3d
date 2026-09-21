@@ -104,7 +104,7 @@ const report = {date:new Date().toISOString(),environment:'Headless Chromium; AN
 const check = (name, values={}) => {report.checks.push({name,...values});console.log('PASS',name,JSON.stringify(values));};
 try {
   await withinQaDeadline(async()=>{
-  await page.goto(origin+'/med3d/anatomia/',{waitUntil:'domcontentloaded',timeout:120000});
+  await page.goto(origin+'/med3d/anatomia/?systems=skeletal',{waitUntil:'domcontentloaded',timeout:120000});
   await waitMeshes(expectedMeshes); await page.waitForTimeout(1500);
   const initial=await metrics(); assert.equal(initial.triangleCount,expectedTriangles); assert.equal(initial.loadedAssets,catalog.assets.length);
   report.initial=initial; report.geometryMarks=await page.evaluate(()=>performance.getEntriesByType('mark').filter(entry=>entry.name.startsWith('med3d:')).map(entry=>({name:entry.name,startTime:entry.startTime})));
@@ -137,8 +137,8 @@ try {
   await page.waitForFunction(()=>document.querySelector('[role=treeitem][aria-selected=true]'));
   assert.ok(await tree.getByRole('treeitem',{selected:true}).isVisible());
   const lastTreeName=await page.locator('.atlas-detail-content h2').textContent();
-  await page.keyboard.press('Home');assert.equal(await page.locator('.atlas-detail-content h2').textContent(),'Sistema óseo');
-  await page.keyboard.press('ArrowDown');assert.notEqual(await page.locator('.atlas-detail-content h2').textContent(),'Sistema óseo');
+  await page.keyboard.press('Home');assert.equal(await page.locator('.atlas-detail-content h2').textContent(),'Cuerpo humano');
+  await page.keyboard.press('ArrowDown');assert.equal(await page.locator('.atlas-detail-content h2').textContent(),'Sistema óseo');
   check('Virtual tree keyboard navigation retains visible selected row',{renderedRows:await tree.getByRole('treeitem').count(),catalogNodes:catalog.nodes.length,lastTreeName});
 
   for(const direction of ['anterior','posterior','left','right','superior','inferior'])await view(direction);
@@ -206,10 +206,10 @@ try {
   await choose('Tibia izquierda');await waitMeshes(expectedMeshes);check('Search reactivates missing region and retains pending focus');
   await page.getByRole('button',{name:'Restablecer atlas'}).click();
   await page.getByRole('button',{name:'Capas',exact:true}).click();
-  await page.locator('.atlas-layer-toggle input').uncheck();await waitMeshes(0);
+  await page.locator('[data-system-id=skeletal] .atlas-layer-toggle input').uncheck();await waitMeshes(0);
   const unloaded=await metrics();assert.equal(unloaded.geometryBytes,0);assert.equal(unloaded.loadedAssets,0);
   assert.ok(unloaded.renderGeometries<=initial.renderGeometries-expectedMeshes,'GPU geometry ownership must be released');check('System unload releases CPU and GPU geometry',unloaded);
-  await page.locator('.atlas-layer-toggle input').check();await waitMeshes(expectedMeshes);
+  await page.locator('[data-system-id=skeletal] .atlas-layer-toggle input').check();await waitMeshes(expectedMeshes);
   const reloaded=await metrics();assert.equal(reloaded.geometryBytes,initial.geometryBytes);assert.equal(reloaded.meshCount,initial.meshCount);check('Reload is bounded with no geometry growth',reloaded);
 
   for(const width of [1366,1050,900,390]){
@@ -257,7 +257,7 @@ try {
   await faultPage.route('**/models/anatomy/skeletal/spine.glb',route=>{
     spineAttempts++;if(!allowSpine)return route.abort('failed');return route.continue();
   });
-  await faultPage.goto(origin+'/med3d/anatomia/',{waitUntil:'domcontentloaded'});
+  await faultPage.goto(origin+'/med3d/anatomia/?systems=skeletal',{waitUntil:'domcontentloaded'});
   await faultPage.getByRole('button',{name:'Reintentar regiones pendientes'}).waitFor({timeout:120000});
   const healthyMeshes=expectedMeshes-catalog.assets.find(asset=>asset.id==='skeletal:spine').meshCount;
   await waitMeshes(healthyMeshes);

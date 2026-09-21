@@ -9,11 +9,14 @@ export interface AnatomyNode {
   anatomicalName: string;
   latin?: string;
   aliases: string[];
-  systemId: SystemId;
+  /** A body root deliberately has no system; mesh-owning nodes must have one. */
+  systemId?: SystemId;
   regionId: string;
+  /** Shared presentation group across systems; never an anatomical registration. */
+  explosionRegionId?: string;
   parentId?: string;
   children: string[];
-  kind: 'system' | 'division' | 'region' | 'structure' | 'component';
+  kind: 'body' | 'system' | 'division' | 'region' | 'structure' | 'component';
   assetIds: string[];
   meshNames: string[];
   family?: string;
@@ -64,6 +67,8 @@ export interface AtlasMetrics {
   drawCalls: number; renderGeometries: number; renderTextures: number; frameMs?: number;
   /** Wall times from this asset manager's creation to the corresponding render. */
   firstGeometryMs?: number; fullSystemMs?: number;
+  visibleMeshes?: number; visibleSystems?: SystemId[]; maxRestError?: number;
+  opacityBySystem?: Partial<Record<SystemId, number>>;
 }
 export interface AtlasSceneProps {
   catalog: AnatomyCatalog;
@@ -71,6 +76,8 @@ export interface AtlasSceneProps {
   selected: string | null;
   hidden: string[];
   isolated: string | null;
+  /** Explicit curated context. An empty/absent list means no context filter. */
+  contextIds?: string[];
   opacityBySystem: Partial<Record<SystemId, number>>;
   exploded: number;
   explodeLevel: ExplodeLevel;

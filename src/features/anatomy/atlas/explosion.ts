@@ -18,9 +18,12 @@ function union(bounds: Bounds[]): Bounds | undefined {
   ];
 }
 
-/** All directions come from registered anatomical bounds, never random vectors.
- * Offsets are in the source frame (metres); the viewer normalises exactly once.
- * Each deeper level includes the preceding levels, preserving a readable hierarchy.
+/** Presentation offsets only: they never enter the source registration matrix.
+ * Systems use ordered lateral slots so coincident centres still separate.
+ * Regions use shared anatomical bounds across layers, and structures add a
+ * bounded offset around their parent. Regional/structure views intentionally
+ * omit system offsets to preserve muscle–bone relationships.
+ * Offsets are in source-frame metres; the viewer normalises exactly once.
  */
 export function createExplosionOffsets(catalog: AnatomyCatalog, activeSystems: ReadonlySet<SystemId>): Map<string, ExplosionOffsets> {
   const nodes = new Map(catalog.nodes.map(node => [node.id, node]));
@@ -45,19 +48,36 @@ export function createExplosionOffsets(catalog: AnatomyCatalog, activeSystems: R
     const bounds = union(catalog.assets.filter(asset => asset.systemId === system).map(asset => asset.bounds));
     if (bounds) systemBounds.set(system, bounds);
   });
+  const roleOrder: SystemId[] = ['skeletal', 'muscular', 'integumentary', 'nervous', 'cardiovascular', 'respiratory', 'digestive', 'urinary', 'endocrine', 'lymphatic', 'reproductive'];
+  const orderedSystems = roleOrder.filter(system => systemBounds.has(system));
+  const systemOffsets = new Map<SystemId, Vec3>(orderedSystems.map((system, index) => [system,
+    orderedSystems.length > 1 ? [(index / (orderedSystems.length - 1) * 2 - 1) * height * .16, 0, 0] : [...ZERO],
+  ]));
+  const sharedRegions = new Map<string, Bounds>();
+  for (const node of catalog.nodes) {
+    if (!node.explosionRegionId) continue;
+    const box = nodeBounds(node);
+    if (!box) continue;
+    const previous = sharedRegions.get(node.explosionRegionId);
+    sharedRegions.set(node.explosionRegionId, previous ? union([previous, box])! : box);
+  }
   const result = new Map<string, ExplosionOffsets>();
   catalog.nodes.forEach(node => {
-    const ownBounds = nodeBounds(node), systemBox = systemBounds.get(node.systemId);
-    const region = nodes.get(node.regionId), regionBox = region && nodeBounds(region);
+    if (node.kind === 'body') {
+      result.set(node.id, { systems: [...ZERO], regions: [...ZERO], structures: [...ZERO] });
+      return;
+    }
+    const ownBounds = nodeBounds(node);
+    const region = nodes.get(node.regionId), regionBox = (node.explosionRegionId && sharedRegions.get(node.explosionRegionId)) || (region && nodeBounds(region));
     const parent = node.parentId && nodes.get(node.parentId), parentBox = parent && nodeBounds(parent);
-    const systemOffset = systemBounds.size > 1 && systemBox ? offset(centre(systemBox), bodyCenter, .7, height * .16) : ZERO;
+    const systemOffset = (node.systemId && systemOffsets.get(node.systemId)) || ZERO;
     const regionOffset = regionBox ? offset(centre(regionBox), bodyCenter, .28, height * .18) : ZERO;
     // A component is separated around its immediate parent's anatomical centroid.
     // Coincident centres stay together rather than receiving invented directions.
     const localOffset = ownBounds && (parentBox || regionBox)
       ? offset(centre(ownBounds), centre((parentBox || regionBox)!), 1.35, Math.min(height * .115, extent((parentBox || regionBox)!) * .7))
       : ZERO;
-    result.set(node.id, { systems: [...systemOffset], regions: add(systemOffset, regionOffset), structures: add(add(systemOffset, regionOffset), localOffset) });
+    result.set(node.id, { systems: [...systemOffset], regions: [...regionOffset], structures: add(regionOffset, localOffset) });
   });
   return result;
 }

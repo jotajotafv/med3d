@@ -1,0 +1,1829 @@
+{
+  "schemaVersion": 1,
+  "id": "med3d-muscular-pilot-bodyparts3d-4.0",
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "nodes": [
+    {
+      "id": "muscular",
+      "name": "Sistema muscular · piloto",
+      "anatomicalName": "Sistema muscular · piloto",
+      "aliases": [
+        "músculos",
+        "musculatura",
+        "muscular system"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular",
+      "children": [
+        "muscular:region:arm-right",
+        "muscular:region:arm-left"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "muscular:upper-left",
+        "muscular:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "bounds": [
+        [
+          -0.23512100000000002,
+          0.9940720000000001,
+          -0.00366613
+        ],
+        [
+          0.23512100000000002,
+          1.35539,
+          0.12133100000000001
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:arm-right",
+      "name": "Hombro y brazo derecho",
+      "anatomicalName": "Hombro y brazo derecho",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [
+        "muscular:group:arm-right:shoulder",
+        "muscular:group:arm-right:arm"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular"
+      ],
+      "parentId": "muscular",
+      "side": "right",
+      "bounds": [
+        [
+          -0.23512100000000002,
+          0.9940720000000001,
+          -0.00366613
+        ],
+        [
+          -0.060258400000000004,
+          1.35539,
+          0.12133100000000001
+        ]
+      ]
+    },
+    {
+      "id": "muscular:group:arm-right:shoulder",
+      "name": "Hombro derecho",
+      "anatomicalName": "Hombro derecho",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [
+        "med3d:muscle:deltoid:right",
+        "bp3d:FMA32544",
+        "bp3d:FMA32547",
+        "bp3d:FMA32553",
+        "bp3d:FMA13414"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-right"
+      ],
+      "parentId": "muscular:region:arm-right",
+      "side": "right",
+      "explosionRegionId": "shoulder-right",
+      "bounds": [
+        [
+          -0.227228,
+          1.18775,
+          -0.00366613
+        ],
+        [
+          -0.060258400000000004,
+          1.35539,
+          0.12133100000000001
+        ]
+      ]
+    },
+    {
+      "id": "muscular:group:arm-right:arm",
+      "name": "Brazo derecho",
+      "anatomicalName": "Brazo derecho",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [
+        "muscular:group:arm-right:arm:anterior",
+        "muscular:group:arm-right:arm:posterior"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-right"
+      ],
+      "parentId": "muscular:region:arm-right",
+      "side": "right",
+      "explosionRegionId": "arm-right",
+      "bounds": [
+        [
+          -0.23512100000000002,
+          0.9940720000000001,
+          0.0187595
+        ],
+        [
+          -0.134691,
+          1.33942,
+          0.109292
+        ]
+      ]
+    },
+    {
+      "id": "muscular:group:arm-right:arm:anterior",
+      "name": "Compartimento anterior",
+      "anatomicalName": "Compartimento anterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [
+        "med3d:muscle:bicepsbrachii:right",
+        "bp3d:FMA37668"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:group:arm-right:arm"
+      ],
+      "parentId": "muscular:group:arm-right:arm",
+      "side": "right",
+      "explosionRegionId": "arm-right",
+      "bounds": [
+        [
+          -0.23512100000000002,
+          0.9940720000000001,
+          0.0605697
+        ],
+        [
+          -0.135237,
+          1.33942,
+          0.109292
+        ]
+      ]
+    },
+    {
+      "id": "muscular:group:arm-right:arm:posterior",
+      "name": "Compartimento posterior",
+      "anatomicalName": "Compartimento posterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [
+        "med3d:muscle:tricepsbrachii:right"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:group:arm-right:arm"
+      ],
+      "parentId": "muscular:group:arm-right:arm",
+      "side": "right",
+      "explosionRegionId": "arm-right",
+      "bounds": [
+        [
+          -0.228005,
+          1.02935,
+          0.0187595
+        ],
+        [
+          -0.134691,
+          1.30075,
+          0.07187990000000001
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:deltoid:right",
+      "name": "Deltoides derecho",
+      "anatomicalName": "Deltoides derecho",
+      "aliases": [
+        "deltoid",
+        "Musculus deltoideus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [
+        "bp3d:FMA34680",
+        "bp3d:FMA34682",
+        "bp3d:FMA34684"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:group:arm-right:shoulder",
+        "med3d:muscle:deltoid:left"
+      ],
+      "parentId": "muscular:group:arm-right:shoulder",
+      "family": "deltoid",
+      "side": "right",
+      "latin": "Musculus deltoideus",
+      "explosionRegionId": "shoulder-right",
+      "bounds": [
+        [
+          -0.227228,
+          1.18775,
+          0.00272512
+        ],
+        [
+          -0.08283410000000001,
+          1.35539,
+          0.12133100000000001
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:bicepsbrachii:right",
+      "name": "Bíceps braquial derecho",
+      "anatomicalName": "Bíceps braquial derecho",
+      "aliases": [
+        "bicepsbrachii",
+        "Musculus biceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [
+        "bp3d:FMA37684",
+        "bp3d:FMA37686"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:group:arm-right:arm:anterior",
+        "med3d:muscle:bicepsbrachii:left"
+      ],
+      "parentId": "muscular:group:arm-right:arm:anterior",
+      "family": "bicepsbrachii",
+      "side": "right",
+      "latin": "Musculus biceps brachii",
+      "explosionRegionId": "arm-right",
+      "bounds": [
+        [
+          -0.22986,
+          0.9940720000000001,
+          0.06780889999999999
+        ],
+        [
+          -0.135237,
+          1.33942,
+          0.109292
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:tricepsbrachii:right",
+      "name": "Tríceps braquial derecho",
+      "anatomicalName": "Tríceps braquial derecho",
+      "aliases": [
+        "tricepsbrachii",
+        "Musculus triceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [
+        "bp3d:FMA37695",
+        "bp3d:FMA37697",
+        "bp3d:FMA37699"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:group:arm-right:arm:posterior",
+        "med3d:muscle:tricepsbrachii:left"
+      ],
+      "parentId": "muscular:group:arm-right:arm:posterior",
+      "family": "tricepsbrachii",
+      "side": "right",
+      "latin": "Musculus triceps brachii",
+      "explosionRegionId": "arm-right",
+      "bounds": [
+        [
+          -0.228005,
+          1.02935,
+          0.0187595
+        ],
+        [
+          -0.134691,
+          1.30075,
+          0.07187990000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA34680",
+      "name": "Porción clavicular del deltoides derecho",
+      "anatomicalName": "Porción clavicular del deltoides derecho",
+      "aliases": [
+        "clavicular part of right deltoid",
+        "FMA34680",
+        "FJ1468",
+        "Musculus deltoideus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA34680_FJ1468"
+      ],
+      "relatedIds": [
+        "med3d:muscle:deltoid:right"
+      ],
+      "parentId": "med3d:muscle:deltoid:right",
+      "sourceId": "FMA34680",
+      "family": "deltoid",
+      "side": "right",
+      "explosionRegionId": "shoulder-right",
+      "bounds": [
+        [
+          -0.203619,
+          1.2038499999999999,
+          0.0751252
+        ],
+        [
+          -0.08855500000000001,
+          1.35539,
+          0.12133100000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA34682",
+      "name": "Porción acromial del deltoides derecho",
+      "anatomicalName": "Porción acromial del deltoides derecho",
+      "aliases": [
+        "acromial part of right deltoid",
+        "FMA34682",
+        "FJ1467",
+        "Musculus deltoideus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA34682_FJ1467"
+      ],
+      "relatedIds": [
+        "med3d:muscle:deltoid:right"
+      ],
+      "parentId": "med3d:muscle:deltoid:right",
+      "sourceId": "FMA34682",
+      "family": "deltoid",
+      "side": "right",
+      "explosionRegionId": "shoulder-right",
+      "bounds": [
+        [
+          -0.227228,
+          1.20509,
+          0.0408371
+        ],
+        [
+          -0.14658600000000002,
+          1.34922,
+          0.103338
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA34684",
+      "name": "Porción espinal del deltoides derecho",
+      "anatomicalName": "Porción espinal del deltoides derecho",
+      "aliases": [
+        "spinal part of right deltoid",
+        "FMA34684",
+        "FJ1513",
+        "Musculus deltoideus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA34684_FJ1513"
+      ],
+      "relatedIds": [
+        "med3d:muscle:deltoid:right"
+      ],
+      "parentId": "med3d:muscle:deltoid:right",
+      "sourceId": "FMA34684",
+      "family": "deltoid",
+      "side": "right",
+      "explosionRegionId": "shoulder-right",
+      "bounds": [
+        [
+          -0.219171,
+          1.18775,
+          0.00272512
+        ],
+        [
+          -0.08283410000000001,
+          1.33984,
+          0.079253
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37684",
+      "name": "Cabeza corta del bíceps braquial derecho",
+      "anatomicalName": "Cabeza corta del bíceps braquial derecho",
+      "aliases": [
+        "short head of right biceps brachii",
+        "FMA37684",
+        "FJ1512",
+        "Musculus biceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37684_FJ1512"
+      ],
+      "relatedIds": [
+        "med3d:muscle:bicepsbrachii:right"
+      ],
+      "parentId": "med3d:muscle:bicepsbrachii:right",
+      "sourceId": "FMA37684",
+      "family": "bicepsbrachii",
+      "side": "right",
+      "explosionRegionId": "arm-right",
+      "bounds": [
+        [
+          -0.21239,
+          1.06522,
+          0.0759581
+        ],
+        [
+          -0.135237,
+          1.32776,
+          0.109101
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37686",
+      "name": "Cabeza larga del bíceps braquial derecho",
+      "anatomicalName": "Cabeza larga del bíceps braquial derecho",
+      "aliases": [
+        "long head of right biceps brachii",
+        "FMA37686",
+        "FJ1478",
+        "Musculus biceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37686_FJ1478"
+      ],
+      "relatedIds": [
+        "med3d:muscle:bicepsbrachii:right"
+      ],
+      "parentId": "med3d:muscle:bicepsbrachii:right",
+      "sourceId": "FMA37686",
+      "family": "bicepsbrachii",
+      "side": "right",
+      "explosionRegionId": "arm-right",
+      "bounds": [
+        [
+          -0.22986,
+          0.9940720000000001,
+          0.06780889999999999
+        ],
+        [
+          -0.135268,
+          1.33942,
+          0.109292
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37695",
+      "name": "Cabeza medial del tríceps braquial derecho",
+      "anatomicalName": "Cabeza medial del tríceps braquial derecho",
+      "aliases": [
+        "medial head of right triceps brachii",
+        "FMA37695",
+        "FJ1480",
+        "Musculus triceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37695_FJ1480"
+      ],
+      "relatedIds": [
+        "med3d:muscle:tricepsbrachii:right"
+      ],
+      "parentId": "med3d:muscle:tricepsbrachii:right",
+      "sourceId": "FMA37695",
+      "family": "tricepsbrachii",
+      "side": "right",
+      "explosionRegionId": "arm-right",
+      "bounds": [
+        [
+          -0.226963,
+          1.02935,
+          0.0463172
+        ],
+        [
+          -0.167373,
+          1.25604,
+          0.07187990000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37697",
+      "name": "Cabeza lateral del tríceps braquial derecho",
+      "anatomicalName": "Cabeza lateral del tríceps braquial derecho",
+      "aliases": [
+        "lateral head of right triceps brachii",
+        "FMA37697",
+        "FJ1477",
+        "Musculus triceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37697_FJ1477"
+      ],
+      "relatedIds": [
+        "med3d:muscle:tricepsbrachii:right"
+      ],
+      "parentId": "med3d:muscle:tricepsbrachii:right",
+      "sourceId": "FMA37697",
+      "family": "tricepsbrachii",
+      "side": "right",
+      "explosionRegionId": "arm-right",
+      "bounds": [
+        [
+          -0.228005,
+          1.03597,
+          0.0200842
+        ],
+        [
+          -0.174456,
+          1.2921300000000002,
+          0.0687968
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37699",
+      "name": "Cabeza larga del tríceps braquial derecho",
+      "anatomicalName": "Cabeza larga del tríceps braquial derecho",
+      "aliases": [
+        "long head of right triceps brachii",
+        "FMA37699",
+        "FJ1479",
+        "Musculus triceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37699_FJ1479"
+      ],
+      "relatedIds": [
+        "med3d:muscle:tricepsbrachii:right"
+      ],
+      "parentId": "med3d:muscle:tricepsbrachii:right",
+      "sourceId": "FMA37699",
+      "family": "tricepsbrachii",
+      "side": "right",
+      "explosionRegionId": "arm-right",
+      "bounds": [
+        [
+          -0.216462,
+          1.03524,
+          0.0187595
+        ],
+        [
+          -0.134691,
+          1.30075,
+          0.0641021
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37668",
+      "name": "Braquial derecho",
+      "anatomicalName": "Braquial derecho",
+      "aliases": [
+        "right brachialis",
+        "FMA37668",
+        "FJ1486",
+        "Musculus brachialis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37668_FJ1486"
+      ],
+      "relatedIds": [
+        "muscular:group:arm-right:arm:anterior",
+        "bp3d:FMA37669"
+      ],
+      "parentId": "muscular:group:arm-right:arm:anterior",
+      "sourceId": "FMA37668",
+      "family": "brachialis",
+      "side": "right",
+      "explosionRegionId": "arm-right",
+      "latin": "Musculus brachialis",
+      "bounds": [
+        [
+          -0.23512100000000002,
+          0.995361,
+          0.0605697
+        ],
+        [
+          -0.176385,
+          1.2202000000000002,
+          0.086396
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA32544",
+      "name": "Supraespinoso derecho",
+      "anatomicalName": "Supraespinoso derecho",
+      "aliases": [
+        "right supraspinatus",
+        "FMA32544",
+        "FJ1506",
+        "Musculus supraspinatus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA32544_FJ1506"
+      ],
+      "relatedIds": [
+        "muscular:group:arm-right:shoulder",
+        "bp3d:FMA32545"
+      ],
+      "parentId": "muscular:group:arm-right:shoulder",
+      "sourceId": "FMA32544",
+      "family": "supraspinatus",
+      "side": "right",
+      "explosionRegionId": "shoulder-right",
+      "latin": "Musculus supraspinatus",
+      "bounds": [
+        [
+          -0.18844300000000003,
+          1.30734,
+          0.0129613
+        ],
+        [
+          -0.063876,
+          1.34236,
+          0.0919013
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA32547",
+      "name": "Infraespinoso derecho",
+      "anatomicalName": "Infraespinoso derecho",
+      "aliases": [
+        "right infraspinatus muscle",
+        "FMA32547",
+        "FJ1500",
+        "Musculus infraspinatus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA32547_FJ1500"
+      ],
+      "relatedIds": [
+        "muscular:group:arm-right:shoulder",
+        "bp3d:FMA32548"
+      ],
+      "parentId": "muscular:group:arm-right:shoulder",
+      "sourceId": "FMA32547",
+      "family": "infraspinatus",
+      "side": "right",
+      "explosionRegionId": "shoulder-right",
+      "latin": "Musculus infraspinatus",
+      "bounds": [
+        [
+          -0.18905000000000002,
+          1.20653,
+          -0.00366613
+        ],
+        [
+          -0.060258400000000004,
+          1.33097,
+          0.077087
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA32553",
+      "name": "Redondo menor derecho",
+      "anatomicalName": "Redondo menor derecho",
+      "aliases": [
+        "right teres minor",
+        "FMA32553",
+        "FJ1508",
+        "Musculus teres minor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA32553_FJ1508"
+      ],
+      "relatedIds": [
+        "muscular:group:arm-right:shoulder",
+        "bp3d:FMA32554"
+      ],
+      "parentId": "muscular:group:arm-right:shoulder",
+      "sourceId": "FMA32553",
+      "family": "teresminor",
+      "side": "right",
+      "explosionRegionId": "shoulder-right",
+      "latin": "Musculus teres minor",
+      "bounds": [
+        [
+          -0.190554,
+          1.2205599999999999,
+          0.012406200000000001
+        ],
+        [
+          -0.105409,
+          1.31692,
+          0.0803106
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13414",
+      "name": "Subescapular derecho",
+      "anatomicalName": "Subescapular derecho",
+      "aliases": [
+        "right subscapularis",
+        "FMA13414",
+        "FJ1504",
+        "Musculus subscapularis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA13414_FJ1504"
+      ],
+      "relatedIds": [
+        "muscular:group:arm-right:shoulder",
+        "bp3d:FMA13415"
+      ],
+      "parentId": "muscular:group:arm-right:shoulder",
+      "sourceId": "FMA13414",
+      "family": "subscapularis",
+      "side": "right",
+      "explosionRegionId": "shoulder-right",
+      "latin": "Musculus subscapularis",
+      "bounds": [
+        [
+          -0.166117,
+          1.19516,
+          0.0027578299999999997
+        ],
+        [
+          -0.06318220000000001,
+          1.3248,
+          0.09995470000000001
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:arm-left",
+      "name": "Hombro y brazo izquierdo",
+      "anatomicalName": "Hombro y brazo izquierdo",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [
+        "muscular:group:arm-left:shoulder",
+        "muscular:group:arm-left:arm"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular"
+      ],
+      "parentId": "muscular",
+      "side": "left",
+      "bounds": [
+        [
+          0.060258400000000004,
+          0.9940720000000001,
+          -0.00366613
+        ],
+        [
+          0.23512100000000002,
+          1.35539,
+          0.12133100000000001
+        ]
+      ]
+    },
+    {
+      "id": "muscular:group:arm-left:shoulder",
+      "name": "Hombro izquierdo",
+      "anatomicalName": "Hombro izquierdo",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [
+        "med3d:muscle:deltoid:left",
+        "bp3d:FMA32545",
+        "bp3d:FMA32548",
+        "bp3d:FMA32554",
+        "bp3d:FMA13415"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-left"
+      ],
+      "parentId": "muscular:region:arm-left",
+      "side": "left",
+      "explosionRegionId": "shoulder-left",
+      "bounds": [
+        [
+          0.060258400000000004,
+          1.18775,
+          -0.00366613
+        ],
+        [
+          0.227228,
+          1.35539,
+          0.12133100000000001
+        ]
+      ]
+    },
+    {
+      "id": "muscular:group:arm-left:arm",
+      "name": "Brazo izquierdo",
+      "anatomicalName": "Brazo izquierdo",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [
+        "muscular:group:arm-left:arm:anterior",
+        "muscular:group:arm-left:arm:posterior"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-left"
+      ],
+      "parentId": "muscular:region:arm-left",
+      "side": "left",
+      "explosionRegionId": "arm-left",
+      "bounds": [
+        [
+          0.134691,
+          0.9940720000000001,
+          0.018759599999999998
+        ],
+        [
+          0.23512100000000002,
+          1.33942,
+          0.10929300000000002
+        ]
+      ]
+    },
+    {
+      "id": "muscular:group:arm-left:arm:anterior",
+      "name": "Compartimento anterior",
+      "anatomicalName": "Compartimento anterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [
+        "med3d:muscle:bicepsbrachii:left",
+        "bp3d:FMA37669"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:group:arm-left:arm"
+      ],
+      "parentId": "muscular:group:arm-left:arm",
+      "side": "left",
+      "explosionRegionId": "arm-left",
+      "bounds": [
+        [
+          0.135237,
+          0.9940720000000001,
+          0.0605697
+        ],
+        [
+          0.23512100000000002,
+          1.33942,
+          0.10929300000000002
+        ]
+      ]
+    },
+    {
+      "id": "muscular:group:arm-left:arm:posterior",
+      "name": "Compartimento posterior",
+      "anatomicalName": "Compartimento posterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [
+        "med3d:muscle:tricepsbrachii:left"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:group:arm-left:arm"
+      ],
+      "parentId": "muscular:group:arm-left:arm",
+      "side": "left",
+      "explosionRegionId": "arm-left",
+      "bounds": [
+        [
+          0.134691,
+          1.02935,
+          0.018759599999999998
+        ],
+        [
+          0.228005,
+          1.30075,
+          0.07187990000000001
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:deltoid:left",
+      "name": "Deltoides izquierdo",
+      "anatomicalName": "Deltoides izquierdo",
+      "aliases": [
+        "deltoid",
+        "Musculus deltoideus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [
+        "bp3d:FMA34681",
+        "bp3d:FMA34683",
+        "bp3d:FMA34685"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:group:arm-left:shoulder",
+        "med3d:muscle:deltoid:right"
+      ],
+      "parentId": "muscular:group:arm-left:shoulder",
+      "family": "deltoid",
+      "side": "left",
+      "latin": "Musculus deltoideus",
+      "explosionRegionId": "shoulder-left",
+      "bounds": [
+        [
+          0.08283410000000001,
+          1.18775,
+          0.00272512
+        ],
+        [
+          0.227228,
+          1.35539,
+          0.12133100000000001
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:bicepsbrachii:left",
+      "name": "Bíceps braquial izquierdo",
+      "anatomicalName": "Bíceps braquial izquierdo",
+      "aliases": [
+        "bicepsbrachii",
+        "Musculus biceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [
+        "bp3d:FMA37685",
+        "bp3d:FMA37687"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:group:arm-left:arm:anterior",
+        "med3d:muscle:bicepsbrachii:right"
+      ],
+      "parentId": "muscular:group:arm-left:arm:anterior",
+      "family": "bicepsbrachii",
+      "side": "left",
+      "latin": "Musculus biceps brachii",
+      "explosionRegionId": "arm-left",
+      "bounds": [
+        [
+          0.135237,
+          0.9940720000000001,
+          0.06780889999999999
+        ],
+        [
+          0.22986,
+          1.33942,
+          0.10929300000000002
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:tricepsbrachii:left",
+      "name": "Tríceps braquial izquierdo",
+      "anatomicalName": "Tríceps braquial izquierdo",
+      "aliases": [
+        "tricepsbrachii",
+        "Musculus triceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [
+        "bp3d:FMA37696",
+        "bp3d:FMA37698",
+        "bp3d:FMA37700"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:group:arm-left:arm:posterior",
+        "med3d:muscle:tricepsbrachii:right"
+      ],
+      "parentId": "muscular:group:arm-left:arm:posterior",
+      "family": "tricepsbrachii",
+      "side": "left",
+      "latin": "Musculus triceps brachii",
+      "explosionRegionId": "arm-left",
+      "bounds": [
+        [
+          0.134691,
+          1.02935,
+          0.018759599999999998
+        ],
+        [
+          0.228005,
+          1.30075,
+          0.07187990000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA34681",
+      "name": "Porción clavicular del deltoides izquierdo",
+      "anatomicalName": "Porción clavicular del deltoides izquierdo",
+      "aliases": [
+        "clavicular part of left deltoid",
+        "FMA34681",
+        "FJ1468M",
+        "Musculus deltoideus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA34681_FJ1468M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:deltoid:left"
+      ],
+      "parentId": "med3d:muscle:deltoid:left",
+      "sourceId": "FMA34681",
+      "family": "deltoid",
+      "side": "left",
+      "explosionRegionId": "shoulder-left",
+      "bounds": [
+        [
+          0.08855500000000001,
+          1.2038499999999999,
+          0.0751252
+        ],
+        [
+          0.203619,
+          1.35539,
+          0.12133100000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA34683",
+      "name": "Porción acromial del deltoides izquierdo",
+      "anatomicalName": "Porción acromial del deltoides izquierdo",
+      "aliases": [
+        "acromial part of left deltoid",
+        "FMA34683",
+        "FJ1467M",
+        "Musculus deltoideus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA34683_FJ1467M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:deltoid:left"
+      ],
+      "parentId": "med3d:muscle:deltoid:left",
+      "sourceId": "FMA34683",
+      "family": "deltoid",
+      "side": "left",
+      "explosionRegionId": "shoulder-left",
+      "bounds": [
+        [
+          0.14658600000000002,
+          1.20509,
+          0.0408371
+        ],
+        [
+          0.227228,
+          1.34922,
+          0.10333700000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA34685",
+      "name": "Porción espinal del deltoides izquierdo",
+      "anatomicalName": "Porción espinal del deltoides izquierdo",
+      "aliases": [
+        "spinal part of left deltoid",
+        "FMA34685",
+        "FJ1513M",
+        "Musculus deltoideus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA34685_FJ1513M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:deltoid:left"
+      ],
+      "parentId": "med3d:muscle:deltoid:left",
+      "sourceId": "FMA34685",
+      "family": "deltoid",
+      "side": "left",
+      "explosionRegionId": "shoulder-left",
+      "bounds": [
+        [
+          0.08283410000000001,
+          1.18775,
+          0.00272512
+        ],
+        [
+          0.219171,
+          1.33984,
+          0.079253
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37685",
+      "name": "Cabeza corta del bíceps braquial izquierdo",
+      "anatomicalName": "Cabeza corta del bíceps braquial izquierdo",
+      "aliases": [
+        "short head of left biceps brachii",
+        "FMA37685",
+        "FJ1512M",
+        "Musculus biceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37685_FJ1512M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:bicepsbrachii:left"
+      ],
+      "parentId": "med3d:muscle:bicepsbrachii:left",
+      "sourceId": "FMA37685",
+      "family": "bicepsbrachii",
+      "side": "left",
+      "explosionRegionId": "arm-left",
+      "bounds": [
+        [
+          0.135237,
+          1.06522,
+          0.0759581
+        ],
+        [
+          0.21239,
+          1.32776,
+          0.109102
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37687",
+      "name": "Cabeza larga del bíceps braquial izquierdo",
+      "anatomicalName": "Cabeza larga del bíceps braquial izquierdo",
+      "aliases": [
+        "long head of left biceps brachii",
+        "FMA37687",
+        "FJ1478M",
+        "Musculus biceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37687_FJ1478M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:bicepsbrachii:left"
+      ],
+      "parentId": "med3d:muscle:bicepsbrachii:left",
+      "sourceId": "FMA37687",
+      "family": "bicepsbrachii",
+      "side": "left",
+      "explosionRegionId": "arm-left",
+      "bounds": [
+        [
+          0.135268,
+          0.9940720000000001,
+          0.06780889999999999
+        ],
+        [
+          0.22986,
+          1.33942,
+          0.10929300000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37696",
+      "name": "Cabeza medial del tríceps braquial izquierdo",
+      "anatomicalName": "Cabeza medial del tríceps braquial izquierdo",
+      "aliases": [
+        "medial head of left triceps brachii",
+        "FMA37696",
+        "FJ1480M",
+        "Musculus triceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37696_FJ1480M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:tricepsbrachii:left"
+      ],
+      "parentId": "med3d:muscle:tricepsbrachii:left",
+      "sourceId": "FMA37696",
+      "family": "tricepsbrachii",
+      "side": "left",
+      "explosionRegionId": "arm-left",
+      "bounds": [
+        [
+          0.167374,
+          1.02935,
+          0.0463172
+        ],
+        [
+          0.226963,
+          1.25604,
+          0.07187990000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37698",
+      "name": "Cabeza lateral del tríceps braquial izquierdo",
+      "anatomicalName": "Cabeza lateral del tríceps braquial izquierdo",
+      "aliases": [
+        "lateral head of left triceps brachii",
+        "FMA37698",
+        "FJ1477M",
+        "Musculus triceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37698_FJ1477M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:tricepsbrachii:left"
+      ],
+      "parentId": "med3d:muscle:tricepsbrachii:left",
+      "sourceId": "FMA37698",
+      "family": "tricepsbrachii",
+      "side": "left",
+      "explosionRegionId": "arm-left",
+      "bounds": [
+        [
+          0.174456,
+          1.03597,
+          0.0200842
+        ],
+        [
+          0.228005,
+          1.2921300000000002,
+          0.0687968
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37700",
+      "name": "Cabeza larga del tríceps braquial izquierdo",
+      "anatomicalName": "Cabeza larga del tríceps braquial izquierdo",
+      "aliases": [
+        "long head of left triceps brachii",
+        "FMA37700",
+        "FJ1479M",
+        "Musculus triceps brachii"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37700_FJ1479M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:tricepsbrachii:left"
+      ],
+      "parentId": "med3d:muscle:tricepsbrachii:left",
+      "sourceId": "FMA37700",
+      "family": "tricepsbrachii",
+      "side": "left",
+      "explosionRegionId": "arm-left",
+      "bounds": [
+        [
+          0.134691,
+          1.03524,
+          0.018759599999999998
+        ],
+        [
+          0.216462,
+          1.30075,
+          0.0641021
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37669",
+      "name": "Braquial izquierdo",
+      "anatomicalName": "Braquial izquierdo",
+      "aliases": [
+        "left brachialis",
+        "FMA37669",
+        "FJ1486M",
+        "Musculus brachialis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37669_FJ1486M"
+      ],
+      "relatedIds": [
+        "muscular:group:arm-left:arm:anterior",
+        "bp3d:FMA37668"
+      ],
+      "parentId": "muscular:group:arm-left:arm:anterior",
+      "sourceId": "FMA37669",
+      "family": "brachialis",
+      "side": "left",
+      "explosionRegionId": "arm-left",
+      "latin": "Musculus brachialis",
+      "bounds": [
+        [
+          0.176385,
+          0.995361,
+          0.0605697
+        ],
+        [
+          0.23512100000000002,
+          1.2202000000000002,
+          0.0863959
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA32545",
+      "name": "Supraespinoso izquierdo",
+      "anatomicalName": "Supraespinoso izquierdo",
+      "aliases": [
+        "left supraspinatus",
+        "FMA32545",
+        "FJ1506M",
+        "Musculus supraspinatus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA32545_FJ1506M"
+      ],
+      "relatedIds": [
+        "muscular:group:arm-left:shoulder",
+        "bp3d:FMA32544"
+      ],
+      "parentId": "muscular:group:arm-left:shoulder",
+      "sourceId": "FMA32545",
+      "family": "supraspinatus",
+      "side": "left",
+      "explosionRegionId": "shoulder-left",
+      "latin": "Musculus supraspinatus",
+      "bounds": [
+        [
+          0.063876,
+          1.30734,
+          0.0129613
+        ],
+        [
+          0.18844300000000003,
+          1.3423699999999998,
+          0.0919013
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA32548",
+      "name": "Infraespinoso izquierdo",
+      "anatomicalName": "Infraespinoso izquierdo",
+      "aliases": [
+        "left infraspinatus muscle",
+        "FMA32548",
+        "FJ1500M",
+        "Musculus infraspinatus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA32548_FJ1500M"
+      ],
+      "relatedIds": [
+        "muscular:group:arm-left:shoulder",
+        "bp3d:FMA32547"
+      ],
+      "parentId": "muscular:group:arm-left:shoulder",
+      "sourceId": "FMA32548",
+      "family": "infraspinatus",
+      "side": "left",
+      "explosionRegionId": "shoulder-left",
+      "latin": "Musculus infraspinatus",
+      "bounds": [
+        [
+          0.060258400000000004,
+          1.20653,
+          -0.00366613
+        ],
+        [
+          0.18905000000000002,
+          1.33098,
+          0.077087
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA32554",
+      "name": "Redondo menor izquierdo",
+      "anatomicalName": "Redondo menor izquierdo",
+      "aliases": [
+        "left teres minor",
+        "FMA32554",
+        "FJ1508M",
+        "Musculus teres minor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA32554_FJ1508M"
+      ],
+      "relatedIds": [
+        "muscular:group:arm-left:shoulder",
+        "bp3d:FMA32553"
+      ],
+      "parentId": "muscular:group:arm-left:shoulder",
+      "sourceId": "FMA32554",
+      "family": "teresminor",
+      "side": "left",
+      "explosionRegionId": "shoulder-left",
+      "latin": "Musculus teres minor",
+      "bounds": [
+        [
+          0.105409,
+          1.2205599999999999,
+          0.012406200000000001
+        ],
+        [
+          0.190555,
+          1.31692,
+          0.0803106
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13415",
+      "name": "Subescapular izquierdo",
+      "anatomicalName": "Subescapular izquierdo",
+      "aliases": [
+        "left subscapularis",
+        "FMA13415",
+        "FJ1504M",
+        "Musculus subscapularis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA13415_FJ1504M"
+      ],
+      "relatedIds": [
+        "muscular:group:arm-left:shoulder",
+        "bp3d:FMA13414"
+      ],
+      "parentId": "muscular:group:arm-left:shoulder",
+      "sourceId": "FMA13415",
+      "family": "subscapularis",
+      "side": "left",
+      "explosionRegionId": "shoulder-left",
+      "latin": "Musculus subscapularis",
+      "bounds": [
+        [
+          0.06318220000000001,
+          1.19516,
+          0.0027578299999999997
+        ],
+        [
+          0.166117,
+          1.3248,
+          0.099955
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "muscular:upper-right",
+      "path": "models/anatomy/muscular/muscular-upper-right.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 269856,
+      "sha256": "9aea14bb438f006103f48cf0f42cd2c9d58031973a0e3c355c033f880b719d21",
+      "meshCount": 13,
+      "triangles": 19802,
+      "bounds": [
+        [
+          -0.23512100000000002,
+          0.9940720000000001,
+          -0.00366613
+        ],
+        [
+          -0.060258400000000004,
+          1.35539,
+          0.12133100000000001
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-pilot"
+    },
+    {
+      "id": "muscular:upper-left",
+      "path": "models/anatomy/muscular/muscular-upper-left.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 270076,
+      "sha256": "1a5885fe1258bde59dfc88437726f3ddb9db7dee4c3e4c2ae834feb701c3b559",
+      "meshCount": 13,
+      "triangles": 19802,
+      "bounds": [
+        [
+          0.060258400000000004,
+          0.9940720000000001,
+          -0.00366613
+        ],
+        [
+          0.23512100000000002,
+          1.35539,
+          0.12133100000000001
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-pilot"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "bodyparts3d-4.0-muscular-pilot",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 · OBJ99 (2013 archive; current license declaration)",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selected only 26 original elements for 16 bilateral shoulder/arm muscles; preserved heads and deltoid portions as components under editorial muscle parents.",
+        "Every source triangle and individual FMA/FJ identity retained. No decimation, mirroring, synthesis, per-mesh centering, custom registration or joining.",
+        "Shared transform (x,y,z) source millimetres to (x,z,-y) metres, identical to the skeleton.",
+        "Spanish labels and regional grouping are curated navigation. Composite parent IDs use the editorial med3d namespace, not invented FMA identifiers.",
+        "Assigned untextured red display material; Meshopt preserves float32 positions and quantizes normals to 12 bits; decoded geometry is checked against all source triangles.",
+        "Current publisher CC BY 4.0 declaration updated 2025-02-27; original OBJ legacy CC BY-SA 2.1 Japan headers remain in the preserved source ZIP."
+      ]
+    }
+  ],
+  "coverage": {
+    "title": "Sistema muscular · piloto de hombro y brazo",
+    "structures": 16,
+    "meshes": 26,
+    "note": "8 músculos por lado, 16 unidades musculares. Deltoides: 3 porciones; bíceps: 2 cabezas; tríceps: 3 cabezas. No es musculatura corporal completa.",
+    "limitations": [
+      "Sólo hombro y brazo bilateral; no incluye todos los músculos de estas regiones ni del cuerpo.",
+      "Atlas masculino adulto modelado; no representa variación individual ni acredita precisión clínica.",
+      "Origen e inserción son relaciones educativas textuales; no hay superficies de inserción anotadas.",
+      "Se conserva el marco BP3D compartido; la identidad de fuente no sustituye revisión anatómica."
+    ]
+  }
+}

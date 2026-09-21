@@ -15,7 +15,7 @@ const endFrames=async()=>{
 const measured=async action=>{const start=performance.now();await action();return performance.now()-start;};
 try{
   await withinQaDeadline(async()=>{
-  await page.goto(h.origin+'/med3d/anatomia/',{waitUntil:'domcontentloaded'});await h.waitMeshes(h.expectedMeshes);
+  await page.goto(h.origin+'/med3d/anatomia/?systems=skeletal',{waitUntil:'domcontentloaded'});await h.waitMeshes(h.expectedMeshes);
   await page.waitForFunction(()=>Number(document.querySelector('.atlas-viewport')?.dataset.fullSystemMs)>0,null,{timeout:30000});
   report.measurements.initial=await metrics();
   report.measurements.loadMarks=await page.evaluate(()=>performance.getEntriesByType('mark').filter(e=>e.name.startsWith('med3d:')).map(e=>({name:e.name,startTimeMs:e.startTime})));
@@ -60,10 +60,10 @@ try{
   report.measurements.afterRegionUnload=await metrics();
   report.measurements.regionSearchReloadMs=await measured(async()=>{await choose('Tibia izquierda');await h.waitMeshes(h.expectedMeshes);});
   await reset();await page.getByRole('button',{name:'Capas',exact:true}).click();
-  report.measurements.fullUnloadMs=await measured(async()=>{await page.locator('.atlas-layer-toggle input').uncheck();await h.waitMeshes(0);});
+  report.measurements.fullUnloadMs=await measured(async()=>{await page.locator('[data-system-id=skeletal] .atlas-layer-toggle input').uncheck();await h.waitMeshes(0);});
   report.measurements.afterFullUnload=await metrics();report.measurements.browserMemoryUnloaded=await browserMetrics();
   assert.equal(report.measurements.afterFullUnload.geometryBytes,0);
-  report.measurements.fullReloadMs=await measured(async()=>{await page.locator('.atlas-layer-toggle input').check();await h.waitMeshes(h.expectedMeshes);});
+  report.measurements.fullReloadMs=await measured(async()=>{await page.locator('[data-system-id=skeletal] .atlas-layer-toggle input').check();await h.waitMeshes(h.expectedMeshes);});
   report.measurements.afterFullReload=await metrics();report.measurements.browserMemoryReloaded=await browserMetrics();
   assert.equal(report.measurements.afterFullReload.geometryBytes,report.measurements.initial.geometryBytes);
   report.measurements.operationTimingDefinition='Region/unload/reload wall times include automated UI click, load and React DOM metrics acknowledgement; not isolated network or GPU kernel timings.';

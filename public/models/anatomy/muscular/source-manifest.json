@@ -1,0 +1,819 @@
+{
+  "sourceArchive": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+  "sourceVersion": "4.0 OBJ99",
+  "sourceLicenseDeclaration": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "sourceLicenseUpdated": "2025-02-27",
+  "sourceZip": "research/anatomy/muscular-pilot-originals.zip",
+  "sourceZipSha256": "251bf962442e4077d258ee164bc6af68f51ec89f888ae1051f4f7dc611238844",
+  "sourceLock": "research/anatomy/muscular-pilot-source-lock.json",
+  "sourceAuditSha256": "656c9d68dbe1cb00cc7cf18610ca679768c72cfd7d9e80fc4cddb8eb5b982d66",
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "additionalRegistration": "none",
+  "files": [
+    {
+      "elementId": "FJ1467",
+      "sourceId": "FMA34682",
+      "side": "right",
+      "representationId": "BP7571",
+      "path": "isa_BP3D_4.0_obj_99/FJ1467.obj",
+      "bytes": 92591,
+      "sha256": "2f69f1a13c836539abca85d9b77f55f96319ad3fdd75c62f498eabe49b266bfe",
+      "crc32": "b31afe8f",
+      "compressedBytesUpstream": 29687,
+      "anatomyId": "bp3d:FMA34682",
+      "family": "deltoid",
+      "triangles": 1300,
+      "sourcePositionCount": 916,
+      "vertices": 916,
+      "boundsMetres": [
+        [
+          -0.227228,
+          1.20509,
+          0.0408371
+        ],
+        [
+          -0.14658600000000002,
+          1.34922,
+          0.103338
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1467M",
+      "sourceId": "FMA34683",
+      "side": "left",
+      "representationId": "BP9075",
+      "path": "isa_BP3D_4.0_obj_99/FJ1467M.obj",
+      "bytes": 91869,
+      "sha256": "a523b5f2ab862ad6505787f4936098fbcfe3f28a3742b57aac34307fe752f8eb",
+      "crc32": "76914e75",
+      "compressedBytesUpstream": 29713,
+      "anatomyId": "bp3d:FMA34683",
+      "family": "deltoid",
+      "triangles": 1300,
+      "sourcePositionCount": 918,
+      "vertices": 918,
+      "boundsMetres": [
+        [
+          0.14658600000000002,
+          1.20509,
+          0.0408371
+        ],
+        [
+          0.227228,
+          1.34922,
+          0.10333700000000001
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1468",
+      "sourceId": "FMA34680",
+      "side": "right",
+      "representationId": "BP7573",
+      "path": "isa_BP3D_4.0_obj_99/FJ1468.obj",
+      "bytes": 223657,
+      "sha256": "09eebb4a8d72c91936b0bfde7f35829a58f56103ac158f559186698458bcc616",
+      "crc32": "ab38ba35",
+      "compressedBytesUpstream": 63249,
+      "anatomyId": "bp3d:FMA34680",
+      "family": "deltoid",
+      "triangles": 2206,
+      "sourcePositionCount": 2592,
+      "vertices": 2592,
+      "boundsMetres": [
+        [
+          -0.203619,
+          1.2038499999999999,
+          0.0751252
+        ],
+        [
+          -0.08855500000000001,
+          1.35539,
+          0.12133100000000001
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1468M",
+      "sourceId": "FMA34681",
+      "side": "left",
+      "representationId": "BP8259",
+      "path": "isa_BP3D_4.0_obj_99/FJ1468M.obj",
+      "bytes": 222006,
+      "sha256": "75340ac9157ea6c64baaa74c0bbfd6173114dcff0d30ea814702c288b002f104",
+      "crc32": "012c6829",
+      "compressedBytesUpstream": 62987,
+      "anatomyId": "bp3d:FMA34681",
+      "family": "deltoid",
+      "triangles": 2206,
+      "sourcePositionCount": 2604,
+      "vertices": 2604,
+      "boundsMetres": [
+        [
+          0.08855500000000001,
+          1.2038499999999999,
+          0.0751252
+        ],
+        [
+          0.203619,
+          1.35539,
+          0.12133100000000001
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1477",
+      "sourceId": "FMA37697",
+      "side": "right",
+      "representationId": "BP5550",
+      "path": "isa_BP3D_4.0_obj_99/FJ1477.obj",
+      "bytes": 182250,
+      "sha256": "1d1c3b42eec0dffe696bd25cffa81784c87c15f16c9605050fdf1cb2f47698dd",
+      "crc32": "f19f5e8b",
+      "compressedBytesUpstream": 57448,
+      "anatomyId": "bp3d:FMA37697",
+      "family": "tricepsbrachii",
+      "triangles": 2606,
+      "sourcePositionCount": 1678,
+      "vertices": 1678,
+      "boundsMetres": [
+        [
+          -0.228005,
+          1.03597,
+          0.0200842
+        ],
+        [
+          -0.174456,
+          1.2921300000000002,
+          0.0687968
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1477M",
+      "sourceId": "FMA37698",
+      "side": "left",
+      "representationId": "BP8525",
+      "path": "isa_BP3D_4.0_obj_99/FJ1477M.obj",
+      "bytes": 180451,
+      "sha256": "96d9859e983736f53864e53fa0579b8f6a18006067967df42e4fe7ea2d2b9e6f",
+      "crc32": "1424c831",
+      "compressedBytesUpstream": 57017,
+      "anatomyId": "bp3d:FMA37698",
+      "family": "tricepsbrachii",
+      "triangles": 2606,
+      "sourcePositionCount": 1676,
+      "vertices": 1676,
+      "boundsMetres": [
+        [
+          0.174456,
+          1.03597,
+          0.0200842
+        ],
+        [
+          0.228005,
+          1.2921300000000002,
+          0.0687968
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1478",
+      "sourceId": "FMA37686",
+      "side": "right",
+      "representationId": "BP5566",
+      "path": "isa_BP3D_4.0_obj_99/FJ1478.obj",
+      "bytes": 105386,
+      "sha256": "2442d2b5ac30c5da42e72eeff83d143df51c7617001cbc6552096a504f29bc07",
+      "crc32": "61ff5926",
+      "compressedBytesUpstream": 33239,
+      "anatomyId": "bp3d:FMA37686",
+      "family": "bicepsbrachii",
+      "triangles": 1426,
+      "sourcePositionCount": 1053,
+      "vertices": 1053,
+      "boundsMetres": [
+        [
+          -0.22986,
+          0.9940720000000001,
+          0.06780889999999999
+        ],
+        [
+          -0.135268,
+          1.33942,
+          0.109292
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1478M",
+      "sourceId": "FMA37687",
+      "side": "left",
+      "representationId": "BP8816",
+      "path": "isa_BP3D_4.0_obj_99/FJ1478M.obj",
+      "bytes": 103260,
+      "sha256": "10189f1d7b5220df3baef2b259ae9855ed301c1afaadfc2de25af3222c5a08fc",
+      "crc32": "949f7d2a",
+      "compressedBytesUpstream": 32958,
+      "anatomyId": "bp3d:FMA37687",
+      "family": "bicepsbrachii",
+      "triangles": 1426,
+      "sourcePositionCount": 1039,
+      "vertices": 1039,
+      "boundsMetres": [
+        [
+          0.135268,
+          0.9940720000000001,
+          0.06780889999999999
+        ],
+        [
+          0.22986,
+          1.33942,
+          0.10929300000000002
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1479",
+      "sourceId": "FMA37699",
+      "side": "right",
+      "representationId": "BP5564",
+      "path": "isa_BP3D_4.0_obj_99/FJ1479.obj",
+      "bytes": 113287,
+      "sha256": "acc48f746bd07a117357a9c49a1a9850c96b85d7c63cf90a662a45717875a315",
+      "crc32": "0016b8b0",
+      "compressedBytesUpstream": 35496,
+      "anatomyId": "bp3d:FMA37699",
+      "family": "tricepsbrachii",
+      "triangles": 1588,
+      "sourcePositionCount": 1105,
+      "vertices": 1105,
+      "boundsMetres": [
+        [
+          -0.216462,
+          1.03524,
+          0.0187595
+        ],
+        [
+          -0.134691,
+          1.30075,
+          0.0641021
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1479M",
+      "sourceId": "FMA37700",
+      "side": "left",
+      "representationId": "BP8344",
+      "path": "isa_BP3D_4.0_obj_99/FJ1479M.obj",
+      "bytes": 112468,
+      "sha256": "4b8315f9134a213f45c3af830270f4526e705d0a149894516d3f5fba98878f15",
+      "crc32": "cca1c473",
+      "compressedBytesUpstream": 35502,
+      "anatomyId": "bp3d:FMA37700",
+      "family": "tricepsbrachii",
+      "triangles": 1588,
+      "sourcePositionCount": 1109,
+      "vertices": 1109,
+      "boundsMetres": [
+        [
+          0.134691,
+          1.03524,
+          0.018759599999999998
+        ],
+        [
+          0.216462,
+          1.30075,
+          0.0641021
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1480",
+      "sourceId": "FMA37695",
+      "side": "right",
+      "representationId": "BP5562",
+      "path": "isa_BP3D_4.0_obj_99/FJ1480.obj",
+      "bytes": 61608,
+      "sha256": "1ea653667afa5ff0bf0e01d71ac648819655241c130e8dd1778ed2f9561c34c5",
+      "crc32": "9cd7730f",
+      "compressedBytesUpstream": 19947,
+      "anatomyId": "bp3d:FMA37695",
+      "family": "tricepsbrachii",
+      "triangles": 832,
+      "sourcePositionCount": 620,
+      "vertices": 620,
+      "boundsMetres": [
+        [
+          -0.226963,
+          1.02935,
+          0.0463172
+        ],
+        [
+          -0.167373,
+          1.25604,
+          0.07187990000000001
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1480M",
+      "sourceId": "FMA37696",
+      "side": "left",
+      "representationId": "BP8257",
+      "path": "isa_BP3D_4.0_obj_99/FJ1480M.obj",
+      "bytes": 60584,
+      "sha256": "fc35854102a057ca85a201eeff4c18f03722b1ceab52c311ce1b87abf4fa2ff8",
+      "crc32": "bd300921",
+      "compressedBytesUpstream": 19877,
+      "anatomyId": "bp3d:FMA37696",
+      "family": "tricepsbrachii",
+      "triangles": 832,
+      "sourcePositionCount": 617,
+      "vertices": 617,
+      "boundsMetres": [
+        [
+          0.167374,
+          1.02935,
+          0.0463172
+        ],
+        [
+          0.226963,
+          1.25604,
+          0.07187990000000001
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1486",
+      "sourceId": "FMA37668",
+      "side": "right",
+      "representationId": "BP4807",
+      "path": "isa_BP3D_4.0_obj_99/FJ1486.obj",
+      "bytes": 127901,
+      "sha256": "be5f40b153fd6ce0c8c274eb4c26be8d1a29b4bbe75dd0e4a0dfe5c4d251fa03",
+      "crc32": "9dcfbdc9",
+      "compressedBytesUpstream": 39956,
+      "anatomyId": "bp3d:FMA37668",
+      "family": "brachialis",
+      "triangles": 1746,
+      "sourcePositionCount": 1266,
+      "vertices": 1266,
+      "boundsMetres": [
+        [
+          -0.23512100000000002,
+          0.995361,
+          0.0605697
+        ],
+        [
+          -0.176385,
+          1.2202000000000002,
+          0.086396
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1486M",
+      "sourceId": "FMA37669",
+      "side": "left",
+      "representationId": "BP8684",
+      "path": "isa_BP3D_4.0_obj_99/FJ1486M.obj",
+      "bytes": 126069,
+      "sha256": "cedf106a4917deab99f86f077dde7d34d0672dbbb74f30652a4f81f75d7ef180",
+      "crc32": "3b6cee87",
+      "compressedBytesUpstream": 39768,
+      "anatomyId": "bp3d:FMA37669",
+      "family": "brachialis",
+      "triangles": 1746,
+      "sourcePositionCount": 1256,
+      "vertices": 1256,
+      "boundsMetres": [
+        [
+          0.176385,
+          0.995361,
+          0.0605697
+        ],
+        [
+          0.23512100000000002,
+          1.2202000000000002,
+          0.0863959
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1500",
+      "sourceId": "FMA32547",
+      "side": "right",
+      "representationId": "BP4797",
+      "path": "isa_BP3D_4.0_obj_99/FJ1500.obj",
+      "bytes": 69844,
+      "sha256": "28f61376a3a88a28d14c44e1c20e9b7a34129772c130afa003daceac801455b1",
+      "crc32": "f3f5c0ef",
+      "compressedBytesUpstream": 22037,
+      "anatomyId": "bp3d:FMA32547",
+      "family": "infraspinatus",
+      "triangles": 866,
+      "sourcePositionCount": 743,
+      "vertices": 743,
+      "boundsMetres": [
+        [
+          -0.18905000000000002,
+          1.20653,
+          -0.00366613
+        ],
+        [
+          -0.060258400000000004,
+          1.33097,
+          0.077087
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1500M",
+      "sourceId": "FMA32548",
+      "side": "left",
+      "representationId": "BP8965",
+      "path": "isa_BP3D_4.0_obj_99/FJ1500M.obj",
+      "bytes": 69046,
+      "sha256": "9013158a3c598eb6dbf95dcaf72da439721dec4d3ebc37f660db9c2748f1e42e",
+      "crc32": "c62f2f0c",
+      "compressedBytesUpstream": 22001,
+      "anatomyId": "bp3d:FMA32548",
+      "family": "infraspinatus",
+      "triangles": 866,
+      "sourcePositionCount": 738,
+      "vertices": 738,
+      "boundsMetres": [
+        [
+          0.060258400000000004,
+          1.20653,
+          -0.00366613
+        ],
+        [
+          0.18905000000000002,
+          1.33098,
+          0.077087
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1504",
+      "sourceId": "FMA13414",
+      "side": "right",
+      "representationId": "BP4795",
+      "path": "isa_BP3D_4.0_obj_99/FJ1504.obj",
+      "bytes": 231733,
+      "sha256": "fdcbfd01f93e2d24bd73f5cb259a311c9f9e90de08c41573439844eef5f605dd",
+      "crc32": "fbba5562",
+      "compressedBytesUpstream": 64797,
+      "anatomyId": "bp3d:FMA13414",
+      "family": "subscapularis",
+      "triangles": 2092,
+      "sourcePositionCount": 2775,
+      "vertices": 2775,
+      "boundsMetres": [
+        [
+          -0.166117,
+          1.19516,
+          0.0027578299999999997
+        ],
+        [
+          -0.06318220000000001,
+          1.3248,
+          0.09995470000000001
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1504M",
+      "sourceId": "FMA13415",
+      "side": "left",
+      "representationId": "BP8214",
+      "path": "isa_BP3D_4.0_obj_99/FJ1504M.obj",
+      "bytes": 228104,
+      "sha256": "926fe07c8cf1056aa3aedda2f3a02a5027f4ef24cc5d41ba1359c53eedce1bc6",
+      "crc32": "4e46cdb1",
+      "compressedBytesUpstream": 64394,
+      "anatomyId": "bp3d:FMA13415",
+      "family": "subscapularis",
+      "triangles": 2092,
+      "sourcePositionCount": 2759,
+      "vertices": 2759,
+      "boundsMetres": [
+        [
+          0.06318220000000001,
+          1.19516,
+          0.0027578299999999997
+        ],
+        [
+          0.166117,
+          1.3248,
+          0.099955
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1506",
+      "sourceId": "FMA32544",
+      "side": "right",
+      "representationId": "BP4791",
+      "path": "isa_BP3D_4.0_obj_99/FJ1506.obj",
+      "bytes": 76172,
+      "sha256": "793771eceb64385269ddeeb09245e8c53b67499194f6fa98049b5e17aafa8e0c",
+      "crc32": "2cb78047",
+      "compressedBytesUpstream": 23086,
+      "anatomyId": "bp3d:FMA32544",
+      "family": "supraspinatus",
+      "triangles": 878,
+      "sourcePositionCount": 843,
+      "vertices": 843,
+      "boundsMetres": [
+        [
+          -0.18844300000000003,
+          1.30734,
+          0.0129613
+        ],
+        [
+          -0.063876,
+          1.34236,
+          0.0919013
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1506M",
+      "sourceId": "FMA32545",
+      "side": "left",
+      "representationId": "BP8376",
+      "path": "isa_BP3D_4.0_obj_99/FJ1506M.obj",
+      "bytes": 75068,
+      "sha256": "6d6741ab840272a59d50c59cd87ccfa676e1f72fa9b600bba06bf9c24d1e01fe",
+      "crc32": "90db6a0e",
+      "compressedBytesUpstream": 22989,
+      "anatomyId": "bp3d:FMA32545",
+      "family": "supraspinatus",
+      "triangles": 878,
+      "sourcePositionCount": 842,
+      "vertices": 842,
+      "boundsMetres": [
+        [
+          0.063876,
+          1.30734,
+          0.0129613
+        ],
+        [
+          0.18844300000000003,
+          1.3423699999999998,
+          0.0919013
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1508",
+      "sourceId": "FMA32553",
+      "side": "right",
+      "representationId": "BP4793",
+      "path": "isa_BP3D_4.0_obj_99/FJ1508.obj",
+      "bytes": 38012,
+      "sha256": "f56e595b86cea659891664706cd4443acddd8dc69e4e5bb3855445eef302641a",
+      "crc32": "10238bd1",
+      "compressedBytesUpstream": 12584,
+      "anatomyId": "bp3d:FMA32553",
+      "family": "teresminor",
+      "triangles": 506,
+      "sourcePositionCount": 392,
+      "vertices": 392,
+      "boundsMetres": [
+        [
+          -0.190554,
+          1.2205599999999999,
+          0.012406200000000001
+        ],
+        [
+          -0.105409,
+          1.31692,
+          0.0803106
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1508M",
+      "sourceId": "FMA32554",
+      "side": "left",
+      "representationId": "BP9197",
+      "path": "isa_BP3D_4.0_obj_99/FJ1508M.obj",
+      "bytes": 37682,
+      "sha256": "4b07345bef6658a27bac6b2c7c2c52307bc769a804a80e7e657ce40e03427a17",
+      "crc32": "45fb7172",
+      "compressedBytesUpstream": 12595,
+      "anatomyId": "bp3d:FMA32554",
+      "family": "teresminor",
+      "triangles": 506,
+      "sourcePositionCount": 391,
+      "vertices": 391,
+      "boundsMetres": [
+        [
+          0.105409,
+          1.2205599999999999,
+          0.012406200000000001
+        ],
+        [
+          0.190555,
+          1.31692,
+          0.0803106
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1512",
+      "sourceId": "FMA37684",
+      "side": "right",
+      "representationId": "BP5558",
+      "path": "isa_BP3D_4.0_obj_99/FJ1512.obj",
+      "bytes": 161507,
+      "sha256": "2173b7cce29f11036907b80e068e9bd6c16f22359d6e7994af9684454b99b4d5",
+      "crc32": "8745907c",
+      "compressedBytesUpstream": 47460,
+      "anatomyId": "bp3d:FMA37684",
+      "family": "bicepsbrachii",
+      "triangles": 1856,
+      "sourcePositionCount": 1739,
+      "vertices": 1739,
+      "boundsMetres": [
+        [
+          -0.21239,
+          1.06522,
+          0.0759581
+        ],
+        [
+          -0.135237,
+          1.32776,
+          0.109101
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1512M",
+      "sourceId": "FMA37685",
+      "side": "left",
+      "representationId": "BP9153",
+      "path": "isa_BP3D_4.0_obj_99/FJ1512M.obj",
+      "bytes": 159783,
+      "sha256": "6b0ed7b70973b3a2e08de4ea5ce59c05a4ddce2b90212ff734326be2726d1293",
+      "crc32": "0d9629b1",
+      "compressedBytesUpstream": 47378,
+      "anatomyId": "bp3d:FMA37685",
+      "family": "bicepsbrachii",
+      "triangles": 1856,
+      "sourcePositionCount": 1743,
+      "vertices": 1743,
+      "boundsMetres": [
+        [
+          0.135237,
+          1.06522,
+          0.0759581
+        ],
+        [
+          0.21239,
+          1.32776,
+          0.109102
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1513",
+      "sourceId": "FMA34684",
+      "side": "right",
+      "representationId": "BP5607",
+      "path": "isa_BP3D_4.0_obj_99/FJ1513.obj",
+      "bytes": 157136,
+      "sha256": "ef8308c92fd0d01d8c0d7ffd9238305eefc2f28710d7bb58f451512abdc08e99",
+      "crc32": "90d182b3",
+      "compressedBytesUpstream": 46756,
+      "anatomyId": "bp3d:FMA34684",
+      "family": "deltoid",
+      "triangles": 1900,
+      "sourcePositionCount": 1665,
+      "vertices": 1665,
+      "boundsMetres": [
+        [
+          -0.219171,
+          1.18775,
+          0.00272512
+        ],
+        [
+          -0.08283410000000001,
+          1.33984,
+          0.079253
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1513M",
+      "sourceId": "FMA34685",
+      "side": "left",
+      "representationId": "BP8151",
+      "path": "isa_BP3D_4.0_obj_99/FJ1513M.obj",
+      "bytes": 156732,
+      "sha256": "a806a9a20b68009f0071c22411b009f4baef3de118f00a37cc4a3be8cdf7ce2e",
+      "crc32": "b0233810",
+      "compressedBytesUpstream": 46871,
+      "anatomyId": "bp3d:FMA34685",
+      "family": "deltoid",
+      "triangles": 1900,
+      "sourcePositionCount": 1678,
+      "vertices": 1678,
+      "boundsMetres": [
+        [
+          0.08283410000000001,
+          1.18775,
+          0.00272512
+        ],
+        [
+          0.219171,
+          1.33984,
+          0.079253
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    }
+  ]
+}

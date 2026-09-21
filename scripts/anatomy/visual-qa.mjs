@@ -19,7 +19,7 @@ const group=async (id,direction='anterior')=>{const node=catalog.nodes.find(node
 const explode=async(level,value)=>{await page.getByRole('combobox',{name:'Nivel de despiece'}).selectOption(level);await setSlider(page.getByRole('slider',{name:'Separación de piezas'}),value);await page.waitForTimeout(1500);};
 try{
   await withinQaDeadline(async()=>{
-  await page.goto(h.origin+'/med3d/anatomia/',{waitUntil:'domcontentloaded'});await h.waitMeshes(h.expectedMeshes);await page.waitForTimeout(1200);
+  await page.goto(h.origin+'/med3d/anatomia/?systems=skeletal',{waitUntil:'domcontentloaded'});await h.waitMeshes(h.expectedMeshes);await page.waitForTimeout(1200);
   await view('anterior');await shot('01-esqueleto-frontal','Normal; no selection. Inspect complete frame, bilateral alignment and coverage.');
   await view('posterior');await shot('02-esqueleto-posterior');
   await view('left');await shot('03-lateral-izquierda','Left means the specimen’s anatomical left.');

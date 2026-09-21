@@ -1,7 +1,7 @@
 name: Validar anatomía y capturar vistas
 on:
   push:
-    branches: [phase2.1-skeletal-polish]
+    branches: [phase2.1-skeletal-polish, phase3a-muscular-pilot]
     paths:
       - 'src/**'
       - 'scripts/anatomy/**'
@@ -24,7 +24,7 @@ concurrency:
 jobs:
   anatomy:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     env:
       QA_PLAYWRIGHT_MODULE: ${{ github.workspace }}/.cache/anatomy-qa/node_modules/playwright
     steps:
@@ -62,6 +62,21 @@ jobs:
         run: node scripts/anatomy/performance-qa.mjs
         env:
           QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/performance
+      - name: Pruebas funcionales del piloto muscular
+        if: ${{ !cancelled() && steps.browser.outcome == 'success' }}
+        run: node scripts/anatomy/pilot-qa.mjs --functional
+        env:
+          QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/pilot-functional
+      - name: Capturar piloto bilateral y transparencia
+        if: ${{ !cancelled() && steps.browser.outcome == 'success' }}
+        run: node scripts/anatomy/pilot-qa.mjs --captures
+        env:
+          QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/pilot-captures
+      - name: Medir óseo, muscular y conjunto
+        if: ${{ !cancelled() && steps.browser.outcome == 'success' }}
+        run: node scripts/anatomy/pilot-qa.mjs --performance
+        env:
+          QA_OUTPUT_DIR: ${{ github.workspace }}/qa-results/pilot-performance
       - name: Registrar versión probada
         if: ${{ !cancelled() && steps.build.outcome == 'success' }}
         run: |

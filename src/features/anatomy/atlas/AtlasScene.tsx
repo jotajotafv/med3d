@@ -9,7 +9,7 @@ import { ANATOMICAL_VIEWS, fitCameraBounds } from './camera-framing';
 import type { AnatomyCatalog, AtlasAnatomicalView, AtlasSceneProps, Bounds, SystemId } from './types';
 
 type Controls = ComponentRef<typeof OrbitControls>;
-type MaterialVariants = { base: THREE.MeshStandardMaterial; selected: THREE.MeshStandardMaterial; hover: THREE.MeshStandardMaterial };
+type MaterialVariants = { systemId: SystemId; base: THREE.MeshStandardMaterial; selected: THREE.MeshStandardMaterial; hover: THREE.MeshStandardMaterial };
 type LoadTiming = { startedAt: number; initialAssets: string[]; firstGeometryMs?: number; fullSystemMs?: number };
 function useReducedMotionPreference() {
   const [reduced, setReduced] = useState(() => typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
@@ -49,46 +49,56 @@ function useAssets(catalog: AnatomyCatalog, assetIds: string[], reset: number) {
   useEffect(() => { manager.current?.setDesired(desired.current); }, [assetKey]);
   return { ...snapshot, loadTiming, retry: (id?: string) => manager.current?.retry(id) };
 }
+// Fixed, restrained family tones; these are presentation materials, not tissue labels.
+const MUSCLE_COLORS: Record<string,string> = {deltoid:'#ad6764',bicepsbrachii:'#a95b56',tricepsbrachii:'#b37369',brachialis:'#9d625c',supraspinatus:'#b17a6c',infraspinatus:'#a85f59',teresminor:'#b88174',subscapularis:'#985b57'};
+const materialKey = (system:SystemId,family?:string) => system==='muscular'?system+':'+(family||'muscle'):system;
 function useMaterials(catalog: AnatomyCatalog) {
-  const materials = useMemo(() => new Map<SystemId, MaterialVariants>([...new Set(catalog.assets.map(asset => asset.systemId))].map(system => {
-    const options = { color: SYSTEM_COLORS[system], roughness: .78, metalness: .015, side: THREE.DoubleSide };
-    return [system, {
+  const materials = useMemo(() => new Map<string, MaterialVariants>(Array.from(catalog.nodes.filter(node=>node.systemId&&node.meshNames.length).map(node => {
+    const system=node.systemId!, key=materialKey(system,node.family);
+    const color=system==='muscular'?(MUSCLE_COLORS[(node.family||'').replace(/[^a-z]/g,'')]||SYSTEM_COLORS.muscular):SYSTEM_COLORS[system];
+    return [key,{system,color}] as const;
+  }).reduce((unique,[key,value])=>unique.set(key,value),new Map<string,{system:SystemId;color:string}>()).entries()).map(([key,{system,color}])=>{
+    const options = { color, roughness: .78, metalness: .015, side: THREE.DoubleSide };
+    return [key, {
+      systemId:system,
       base: new THREE.MeshStandardMaterial(options),
       selected: new THREE.MeshStandardMaterial({ ...options, color: '#36bcb1', emissive: '#36bcb1', emissiveIntensity: .16 }),
-      hover: new THREE.MeshStandardMaterial({ ...options, emissive: SYSTEM_COLORS[system], emissiveIntensity: .15 }),
+      hover: new THREE.MeshStandardMaterial({ ...options, emissive: color, emissiveIntensity: .22 }),
     }];
   })), [catalog]);
-  useEffect(() => () => { materials.forEach(variants => Object.values(variants).forEach(material => material.dispose())); }, [materials]);
+  useEffect(() => () => { materials.forEach(({base,selected,hover}) => [base,selected,hover].forEach(material => material.dispose())); }, [materials]);
   return materials;
 }
 type ModelProps = AtlasSceneProps & { resources: AtlasResource[]; parts: AtlasPart[] };
 function Models(props: ModelProps) {
-  const { catalog, resources, parts, selected, isolated, hidden, opacityBySystem, explodeLevel, exploded, onSelect } = props;
+  const { catalog, resources, parts, selected, isolated, hidden, contextIds=[], opacityBySystem, explodeLevel, exploded, onSelect } = props;
   const { invalidate, gl } = useThree();
   const [hovered, setHovered] = useState<string | null>(null);
   const reducedMotion = useReducedMotionPreference();
   const materials = useMaterials(catalog), transform = useMemo(() => frameTransform(catalog), [catalog]);
-  const activeSystems = useMemo(() => new Set(props.assetIds.flatMap(id => catalog.assets.find(asset => asset.id === id)?.systemId ? [catalog.assets.find(asset => asset.id === id)!.systemId] : [])), [catalog, props.assetIds.join('|')]);
+  const activeSystems = useMemo(() => new Set(parts.filter(part=>![...part.ancestors].some(id=>hidden.includes(id))&&(!isolated||part.ancestors.has(isolated))&&(!contextIds.length||contextIds.some(id=>part.ancestors.has(id)))).map(part=>part.node.systemId!)), [parts,hidden.join('|'),isolated,contextIds.join('|')]);
   const offsets = useMemo(() => createExplosionOffsets(catalog, activeSystems), [catalog, activeSystems]);
   useEffect(() => {
     const hiddenIds = new Set(hidden);
-    materials.forEach((variants, system) => {
+    materials.forEach((variants) => {
+      const system=variants.systemId;
       const supplied = opacityBySystem[system] ?? 1;
       const opacity = Number.isFinite(supplied) ? Math.max(.1, Math.min(1, supplied)) : 1;
-      Object.values(variants).forEach(material => {
+      [variants.base,variants.selected,variants.hover].forEach(material => {
         const transparent = opacity < .999, changed = material.transparent !== transparent;
         material.opacity = opacity; material.transparent = transparent; material.depthWrite = !transparent;
         if (changed) material.needsUpdate = true;
       });
     });
     parts.forEach(part => {
-      part.mesh.visible = ![...part.ancestors].some(id => hiddenIds.has(id)) && (!isolated || part.ancestors.has(isolated));
-      const variants = materials.get(part.node.systemId)!;
+      part.mesh.visible = ![...part.ancestors].some(id => hiddenIds.has(id)) && (!isolated || part.ancestors.has(isolated)) && (!contextIds.length || contextIds.some(id=>part.ancestors.has(id)));
+      part.mesh.raycast=part.mesh.visible?THREE.Mesh.prototype.raycast:()=>{};
+      const variants = materials.get(materialKey(part.node.systemId!,part.node.family))!;
       part.mesh.material = selected && part.ancestors.has(selected) ? variants.selected : part.node.id === hovered ? variants.hover : variants.base;
-      part.mesh.renderOrder = (opacityBySystem[part.node.systemId] ?? 1) < .999 ? 1 : 0;
+      part.mesh.renderOrder = (opacityBySystem[part.node.systemId!] ?? 1) < .999 ? 1 : 0;
     });
     invalidate();
-  }, [parts, selected, isolated, hidden.join('|'), opacityBySystem, hovered, materials, invalidate]);
+  }, [parts, selected, isolated, hidden.join('|'), contextIds.join('|'), opacityBySystem, hovered, materials, invalidate]);
   useEffect(() => {
     parts.forEach(part => { part.targetOffset.set(...explosionTarget(offsets.get(part.node.id), explodeLevel, exploded)); });
     invalidate();
@@ -121,26 +131,27 @@ function Models(props: ModelProps) {
       onPointerOut={(event: ThreeEvent<PointerEvent>) => pointer(event, false)} />)}
   </group>;
 }
-function CameraRig({ catalog, parts, cameraRequest, resources, exploded, explodeLevel, assetIds, selected }: Pick<ModelProps, 'catalog' | 'parts' | 'cameraRequest' | 'resources' | 'exploded' | 'explodeLevel' | 'assetIds' | 'selected'>) {
+function CameraRig({ catalog, parts, cameraRequest, resources, exploded, explodeLevel, assetIds, selected, contextIds=[] }: Pick<ModelProps, 'catalog' | 'parts' | 'cameraRequest' | 'resources' | 'exploded' | 'explodeLevel' | 'assetIds' | 'selected' | 'contextIds'>) {
   const controls = useRef<Controls>(null), { camera, invalidate, size } = useThree();
   const destination = useRef<ReturnType<typeof fitCameraBounds> | null>(null);
   const pending = useRef<AtlasSceneProps['cameraRequest'] | null>(null), handledVersion = useRef(-1);
   const focused = useRef<string | null>(null), lastCatalog = useRef<AnatomyCatalog | null>(null);
   const reducedMotion = useReducedMotionPreference();
   const transform = useMemo(() => frameTransform(catalog), [catalog]);
-  const current = useRef({ catalog, parts, resources, exploded, explodeLevel, assetIds });
-  current.current = { catalog, parts, resources, exploded, explodeLevel, assetIds };
+  const current = useRef({ catalog, parts, resources, exploded, explodeLevel, assetIds, contextIds });
+  current.current = { catalog, parts, resources, exploded, explodeLevel, assetIds, contextIds };
   const frame = useCallback((id?: string | null, view?: AtlasAnatomicalView): boolean => {
     if (!(camera instanceof THREE.PerspectiveCamera)) return false;
     const box = new THREE.Box3(), state = current.current;
     if (id) {
       const node = state.catalog.nodes.find(node => node.id === id);
       if (!node) return true;
-      const requestedAssets = node.assetIds.filter(asset => state.assetIds.includes(asset));
+      const targets=state.contextIds.length?state.contextIds:[id];
+      const requestedAssets = [...new Set(targets.flatMap(target=>state.catalog.nodes.find(node=>node.id===target)?.assetIds||[]))].filter(asset => state.assetIds.includes(asset));
       // Preserve the request until every requested region of this target is decoded.
       if (!requestedAssets.length || requestedAssets.some(asset => !state.resources.some(resource => resource.asset.id === asset))) return false;
       state.parts.forEach(part => {
-        if (!part.ancestors.has(id) || !part.mesh.visible) return;
+        if (!targets.some(target=>part.ancestors.has(target)) || !part.mesh.visible) return;
         // Use the destination bounds while separation is still interpolating.
         box.union(part.baseBounds.clone().translate(part.targetOffset));
       });
@@ -148,13 +159,7 @@ function CameraRig({ catalog, parts, cameraRequest, resources, exploded, explode
     } else {
       box.copy(boxFrom(catalog.frame.bounds));
       if (state.exploded > 0) {
-        const wanted = new Set(state.assetIds), activeSystems = new Set(state.catalog.assets.filter(asset => wanted.has(asset.id)).map(asset => asset.systemId));
-        const offsets = createExplosionOffsets(state.catalog, activeSystems);
-        state.catalog.nodes.forEach(node => {
-          if (node.bounds && node.meshNames.length && node.assetIds.some(id => wanted.has(id))) {
-            box.union(boxFrom(node.bounds).translate(new THREE.Vector3(...explosionTarget(offsets.get(node.id), state.explodeLevel, state.exploded))));
-          }
-        });
+        state.parts.filter(part=>part.mesh.visible).forEach(part=>box.union(part.baseBounds.clone().translate(part.targetOffset)));
       }
     }
     box.min.multiplyScalar(transform.scale).add(transform.position); box.max.multiplyScalar(transform.scale).add(transform.position);
@@ -191,7 +196,7 @@ function CameraRig({ catalog, parts, cameraRequest, resources, exploded, explode
       destination.current = { ...basis, target, position: target.clone().addScaledVector(direction, distance), distance };
       invalidate(); pending.current = null;
     }
-  }, [cameraRequest.version, resources, frame, camera, invalidate, parts, exploded, explodeLevel, selected]);
+  }, [cameraRequest.version, resources, frame, camera, invalidate, parts, exploded, explodeLevel, selected, contextIds.join('|')]);
   useFrame((_, delta) => {
     const goal = destination.current, orbit = controls.current;
     if (!goal || !orbit) return;
@@ -258,6 +263,29 @@ function Monitor({ resources, loadTiming, onMetrics, onContextLost }: { resource
   return null;
 }
 
+declare global { interface Window { __med3dAtlasScene?: () => unknown } }
+// Read-only inspection of actual rendered objects, enabled only by the QA URL.
+// No setter or alternative anatomy/animation implementation is exposed.
+function SceneInspection({resources}:{resources:AtlasResource[]}) {
+  const {camera,controls,gl}=useThree();
+  useEffect(()=>{
+    if(new URLSearchParams(window.location.search).get('qa')!=='1')return;
+    const inspect=()=>({
+      parts:resources.flatMap(resource=>resource.parts.map(part=>{
+        const material=part.mesh.material as THREE.MeshStandardMaterial;
+        return {id:part.node.id,systemId:part.node.systemId,assetId:resource.asset.id,visible:part.mesh.visible,
+          position:part.mesh.position.toArray(),restPosition:part.basePosition.toArray(),targetPosition:part.basePosition.clone().add(part.targetOffset).toArray(),
+          opacity:material.opacity,transparent:material.transparent,depthWrite:material.depthWrite,color:material.color.getHexString()};
+      })).sort((a,b)=>a.id.localeCompare(b.id)),
+      camera:{position:camera.position.toArray(),target:(controls as Controls|null)?.target.toArray()},
+      renderer:gl.getContext().getParameter(gl.getContext().RENDERER),
+    });
+    window.__med3dAtlasScene=inspect;
+    return()=>{if(window.__med3dAtlasScene===inspect)delete window.__med3dAtlasScene;};
+  },[resources,camera,controls,gl]);
+  return null;
+}
+
 export default function AtlasScene(props: AtlasSceneProps) {
   const [reset, setReset] = useState(0), [contextLost, setContextLost] = useState(false);
   const { resources, statuses, loadTiming, retry } = useAssets(props.catalog, props.assetIds, reset);
@@ -284,6 +312,7 @@ export default function AtlasScene(props: AtlasSceneProps) {
         <Models {...props} resources={resources} parts={parts} />
         <CameraRig {...props} resources={resources} parts={parts} />
         <Monitor resources={resources} loadTiming={loadTiming} onMetrics={props.onMetrics} onContextLost={setContextLost} />
+        <SceneInspection resources={resources}/>
         <GizmoHelper alignment="bottom-left" margin={[48, 48]}><GizmoViewport axisColors={['#b87874', '#819b8a', '#779fae']} labelColor="#ffffff" hideNegativeAxes /></GizmoHelper>
       </Canvas>
     </SceneBoundary>

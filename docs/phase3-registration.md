@@ -1,5 +1,20 @@
 # Fase 3 — estrategia de registro y alcance del piloto
 
+
+## Actualización de implementación · Fase 3A
+
+Se integran únicamente los 26 elementos del piloto autorizado desde `ac8631fd2a22509992e6058fcfdc292ecb212bf6`. Los dos GLB contienen 39.604 triángulos, sin simplificación adicional, y conservan `(x,y,z) → (x,z,−y)/1000`. La conversión y la cadena de presentación descritas abajo siguen vigentes.
+
+Los [originales y sus hashes](../research/anatomy/muscular-pilot-source-lock.json), el [manifiesto de conversión](../public/models/anatomy/muscular/source-manifest.json) y la [validación numérica del GLB decodificado](../public/models/anatomy/muscular/validation.json) permiten reproducir la comparación. Las posiciones Float32 conservan un error máximo de aproximadamente `5.999e-8 m` respecto a la transformación de los OBJ en doble precisión; no es un error clínico de registro. La prueba coteja todos los triángulos orientados, además de posiciones y conteos. Se descartó la cuantización de posiciones a 16 bits porque producía correspondencias ambiguas entre vértices próximos; se conserva compresión Meshopt y cuantización de normales a 12 bits.
+
+El marco corporal procede siempre del catálogo óseo completo y no cambia con los módulos activos. La raíz corporal no tiene sistema asignado. La [validación del piloto](phase3-validation.md) registra las pruebas y la inspección visual; la identidad técnica de los originales no sustituye esa revisión.
+
+El despiece añade offsets de presentación independientes: sistemas a ±0,16 veces la extensión corporal máxima en X; regiones con un bloque compartido de miembro superior por lado; estructuras/componentes alrededor de su padre real con desplazamiento acotado. No se incorporan a T ni a un manifiesto de registro. Al 0 % se restaura exactamente la posición de cada malla.
+
+## Investigación original previa al piloto
+
+Se conserva a continuación el estado y razonamiento de la auditoría anterior. Las menciones a GLB o validación pendientes describen ese momento histórico; el estado de implementación vigente figura arriba y en el informe de validación.
+
 Fecha: 21 de septiembre de 2026. Base inspeccionada: `41c797b106c66429eeda41a81597bf05abfb07d8`.
 
 **Estado: decisión de fuente e inspección numérica previa a Fase 3A.** No hay GLB musculares integrados ni validación visual músculo-hueso terminada. Esta documentación permite empezar un piloto verificable; no autoriza declarar todo el cuerpo muscular validado.

@@ -2,7 +2,7 @@
 
 Revisión: 21 de septiembre de 2026. Base MED3D: `41c797b106c66429eeda41a81597bf05abfb07d8`.
 
-**Actualización de Fase 3A:** se implementó exclusivamente el piloto autorizado de 26 elementos originales, que representan 16 músculos bilaterales. El apartado final documenta extracción, catálogo, conversión y validación numérica. La investigación previa se conserva a continuación como antecedente; sus afirmaciones «aún no convertido/medido» describen aquel momento, no el estado del piloto implementado.
+**Actualización de Fase 3A:** se implementó exclusivamente el piloto autorizado de 26 elementos originales, que representan 16 músculos bilaterales. El apartado final documenta extracción, catálogo, conversión y validación numérica. El código `8c2a9cdd67a482459de106dfc87843502c1c0643` completó la [ejecución final 35554899964](https://github.com/jotajotafv/med3d/actions/runs/35554899964): 30 comprobaciones funcionales del piloto, 26 regresiones óseas y una regresión dirigida del árbol; se generaron 38 capturas del piloto y 32 de referencia, y se midieron las configuraciones ósea, muscular y conjunta. La inspección visual y sus limitaciones se registran separadamente en [validación](phase3-validation.md) y [entrega](phase3-delivery.md). La investigación previa se conserva a continuación como antecedente; sus afirmaciones «aún no convertido/medido» describen aquel momento, no el estado del piloto implementado.
 
 **Decisión previa a Fase 3A: BodyParts3D 4.0 OBJ99 para el piloto.** La elección se apoya en procedencia, metadatos, existencia de archivos y compatibilidad con la fuente ósea actual. No declara validada la anatomía muscular integrada ni su cobertura completa. La [auditoría](phase3-audit.md) y la [estrategia de registro](phase3-registration.md) delimitan el trabajo pendiente.
 
@@ -111,7 +111,7 @@ Los GLB conservan posiciones Float32 en metros y comprimen sin pérdida esos val
 | muscular-upper-left.glb | 270.076 | 13 | 19.802 | 17.370 | 1 | 431.472 |
 | Total | 539.932 | 26 | 39.604 | 34.757 | 2 por módulos | 863.250 |
 
-Los vértices GLB distinguen normales/seams y no equivalen al número de posiciones únicas del OBJ ni al número de músculos. Los bytes de accessors son los arrays decodificados de atributos/índices, no memoria GPU total ni los buffers transformados del renderer; las mediciones de ejecución pertenecen a [rendimiento](phase3-performance.md). Los dos GLB sin compresión ocupaban en conjunto 1.091.620 bytes.
+Los vértices GLB distinguen normales/seams y no equivalen al número de posiciones únicas del OBJ ni al número de músculos. Los bytes de accessors cuentan sus datos de atributos/índices decodificados. El gestor mide por separado los `ArrayBuffer` únicos asignados por el loader, incluida su capacidad; ninguna cifra representa memoria GPU total. Las transformaciones permanecen en los objetos 3D, sin hornearse en esos buffers. Las mediciones de ejecución pertenecen a [rendimiento](phase3-performance.md). Los dos GLB sin compresión ocupaban en conjunto 1.091.620 bytes.
 
 El [manifiesto](../public/models/anatomy/muscular/source-manifest.json) enlaza original → FMA/FJ/lado → nodo → módulo e incluye la matriz compartida. El [informe numérico](../public/models/anatomy/muscular/validation.json) contiene hashes finales, métricas por módulo y por los 26 elementos. La comparación parte de coordenadas OBJ originales en doble precisión, no del GLB intermedio: busca cada posición decodificada en metros, exige el mismo multiconjunto de todos los triángulos orientados —incluidas repeticiones— y conserva toda posición original usada por caras.
 
@@ -129,3 +129,14 @@ node scripts/anatomy/optimize-muscular-pilot.mjs --verify-only
 `build-muscular-pilot.py --fetch` repite opcionalmente la extracción exacta de los 26 originales; no es necesario para reconstruir con el ZIP preservado. El optimizador rechaza cuantizar de nuevo un archivo ya comprimido. `--verify-only` verifica los hashes finales y vuelve a calcular íntegramente el informe sin modificar archivos.
 
 El catálogo y los GLB óseos originales no forman parte de esta conversión. Persisten las siete ausencias óseas y el criterio de Fase 2.1; las fuentes alternativas, matrices y razonamiento previo permanecen conservados. La evaluación visual y funcional del piloto, y sus límites, se documentan en [validación de Fase 3A](phase3-validation.md). No se han incorporado nuevos sistemas ni iniciado Fase 3B.
+
+
+### Cierre técnico del piloto
+
+La ejecución final y los informes conservados en [validación](phase3-validation.md) vinculan fuentes, GLB y funcionamiento al código `8c2a9cd`. El validador glTF registró cero errores y cero advertencias en ambos GLB; los mensajes informativos de Meshopt no modifican la evidencia de conversión. Los recursos óseos, su catálogo y la documentación histórica de los siete huesos pendientes permanecen sin cambios.
+
+Las mediciones finales del [piloto](phase3-performance.md) registran 205 / 26 / 231 draw calls iniciales para óseo / muscular / conjunto y 7.609.772 / 932.764 / 8.542.536 bytes de buffers geométricos. Se midió Chromium con ANGLE SwiftShader sobre HTTP local, sin GPU física. Los tiempos de una ejecución secuencial no demuestran superioridad de una configuración ni representan redes móviles.
+
+La inspección específica de transparencia observa bandas oscuras y acumulación de color por superposición al 75 % y 50 %; al 25 % y 10 % se distingue el húmero subyacente. En móvil los paneles se abren voluntariamente y requieren desplazamiento vertical. El despiece de componentes conserva solapes parciales, especialmente entre las dos cabezas del bíceps incluso al 100 %; no es una separación completa de todas las superficies. Estas limitaciones de presentación no se corrigen alterando las coordenadas fuente.
+
+Se revisaron las 38 capturas del piloto mediante hojas de contacto e inspecciones individuales adicionales de los casos relevantes. El [informe visual](phase3/results/visual-review.md) no identifica un impedimento para entregar el piloto educativo dentro del alcance inspeccionado; conserva las limitaciones anteriores y no certifica ausencia global de penetraciones. La publicación se verifica por separado en la [entrega](phase3-delivery.md). No se declara precisión clínica, musculatura corporal completa ni autorización para Fase 3B.

@@ -9,6 +9,8 @@ Los [originales y sus hashes](../research/anatomy/muscular-pilot-source-lock.jso
 
 El marco corporal procede siempre del catálogo óseo completo y no cambia con los módulos activos. La raíz corporal no tiene sistema asignado. La [validación del piloto](phase3-validation.md) registra las pruebas y la inspección visual; la identidad técnica de los originales no sustituye esa revisión.
 
+La [revisión final de las 38 capturas](phase3/results/visual-review.md), correspondientes al código `8c2a9cdd67a482459de106dfc87843502c1c0643`, no identificó desplazamientos globales, lateralidad incorrecta ni otras inconsistencias visuales importantes en las vistas examinadas. Se conservan las oclusiones del manguito y del subescapular, y los solapes entre componentes; sus acciones de ocultación, aislamiento y despiece están documentadas por separado. Esta compatibilidad visual razonable no cuantifica un error clínico de registro ni valida contactos o inserciones sobre las superficies.
+
 El despiece añade offsets de presentación independientes: sistemas a ±0,16 veces la extensión corporal máxima en X; regiones con un bloque compartido de miembro superior por lado; estructuras/componentes alrededor de su padre real con desplazamiento acotado. No se incorporan a T ni a un manifiesto de registro. Al 0 % se restaura exactamente la posición de cada malla.
 
 ## Investigación original previa al piloto

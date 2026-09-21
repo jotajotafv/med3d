@@ -1,0 +1,415 @@
+{
+  "date": "2026-09-21T02:53:19.767Z",
+  "mode": "performance",
+  "source": "Local production build served over unthrottled loopback HTTP",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "physicalGpuTested": false,
+    "deviceScaleFactor": 1
+  },
+  "checks": [],
+  "captures": [],
+  "measurements": {
+    "operationTimingDefinition": "UI event to acknowledged actual renderer/DOM state; includes automation transport and React work. Explosion timing ends at the first changed mesh position, not animation completion. Geometry bytes are decoded owned buffers, not GPU VRAM. No physical GPU, phone thermal or real network performance is inferred.",
+    "skeletal": {
+      "glbBytes": 3916940,
+      "meshes": 205,
+      "triangles": 512450,
+      "geometryBuffersBytes": 7609772,
+      "drawCalls": 205,
+      "firstGeometryMs": 244.39999999990687,
+      "fullReadyMs": 1494.7999999999302,
+      "initial": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 205,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 109.09999999997672,
+        "firstGeometryMs": 244.39999999990687,
+        "fullSystemMs": 1494.7999999999302
+      },
+      "loadMarks": [
+        {
+          "name": "med3d:load-start",
+          "startTimeMs": 762.6000000000931
+        },
+        {
+          "name": "med3d:first-geometry",
+          "startTimeMs": 1007
+        },
+        {
+          "name": "med3d:all-assets-rendered",
+          "startTimeMs": 2257.4000000000233
+        }
+      ],
+      "resources": [
+        {
+          "name": "arm-left.glb",
+          "durationMs": 5.299999999930151,
+          "encodedBodyBytes": 345860,
+          "transferBytes": 346160
+        },
+        {
+          "name": "arm-right.glb",
+          "durationMs": 7,
+          "encodedBodyBytes": 336004,
+          "transferBytes": 336304
+        },
+        {
+          "name": "leg-left.glb",
+          "durationMs": 3.300000000046566,
+          "encodedBodyBytes": 230240,
+          "transferBytes": 230540
+        },
+        {
+          "name": "leg-right.glb",
+          "durationMs": 3.099999999976717,
+          "encodedBodyBytes": 230668,
+          "transferBytes": 230968
+        },
+        {
+          "name": "skull.glb",
+          "durationMs": 4.900000000023283,
+          "encodedBodyBytes": 1002700,
+          "transferBytes": 1003000
+        },
+        {
+          "name": "spine.glb",
+          "durationMs": 3.900000000023283,
+          "encodedBodyBytes": 579828,
+          "transferBytes": 580128
+        },
+        {
+          "name": "thorax.glb",
+          "durationMs": 6,
+          "encodedBodyBytes": 1191640,
+          "transferBytes": 1191940
+        }
+      ],
+      "searchMs": 41.259803999999804,
+      "isolateMs": 611.149993,
+      "isolated": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 94,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 109.09999999997672,
+        "firstGeometryMs": 244.39999999990687,
+        "fullSystemMs": 1494.7999999999302
+      },
+      "explosionFirstResponseMs": 313.0075370000004,
+      "layerUnloadMs": 279.0142560000004,
+      "afterUnload": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 0,
+        "meshCount": 0,
+        "triangleCount": 0,
+        "geometryBytes": 0,
+        "drawCalls": 0,
+        "renderGeometries": 4,
+        "renderTextures": 4,
+        "loadMs": 0,
+        "firstGeometryMs": 244.39999999990687,
+        "fullSystemMs": 1494.7999999999302
+      },
+      "layerReloadMs": 519.4085269999996,
+      "afterReload": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 70,
+        "renderGeometries": 74,
+        "renderTextures": 4,
+        "loadMs": 36.40000000002328,
+        "firstGeometryMs": 244.39999999990687,
+        "fullSystemMs": 1494.7999999999302
+      },
+      "browserMemory": {
+        "Documents": 1,
+        "Nodes": 891,
+        "JSHeapUsedSize": 15720048,
+        "JSHeapTotalSize": 31571968
+      },
+      "detectedWebGL": {
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)"
+      }
+    },
+    "muscular": {
+      "glbBytes": 539932,
+      "meshes": 26,
+      "triangles": 39604,
+      "geometryBuffersBytes": 932764,
+      "drawCalls": 26,
+      "firstGeometryMs": 154.80000000004657,
+      "fullReadyMs": 154.90000000002328,
+      "initial": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 2,
+        "meshCount": 26,
+        "triangleCount": 39604,
+        "geometryBytes": 932764,
+        "drawCalls": 26,
+        "renderGeometries": 30,
+        "renderTextures": 4,
+        "loadMs": 18,
+        "firstGeometryMs": 154.80000000004657,
+        "fullSystemMs": 154.90000000002328
+      },
+      "loadMarks": [
+        {
+          "name": "med3d:load-start",
+          "startTimeMs": 2316.0999999999767
+        },
+        {
+          "name": "med3d:first-geometry",
+          "startTimeMs": 2470.9000000000233
+        },
+        {
+          "name": "med3d:all-assets-rendered",
+          "startTimeMs": 2471
+        }
+      ],
+      "resources": [
+        {
+          "name": "muscular-upper-right.glb",
+          "durationMs": 4.900000000023283,
+          "encodedBodyBytes": 269856,
+          "transferBytes": 270156
+        },
+        {
+          "name": "muscular-upper-left.glb",
+          "durationMs": 4.699999999953434,
+          "encodedBodyBytes": 270076,
+          "transferBytes": 270376
+        }
+      ],
+      "searchMs": 34.89592700000139,
+      "isolateMs": 156.6202349999985,
+      "isolated": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 2,
+        "meshCount": 26,
+        "triangleCount": 39604,
+        "geometryBytes": 932764,
+        "drawCalls": 2,
+        "renderGeometries": 30,
+        "renderTextures": 4,
+        "loadMs": 18,
+        "firstGeometryMs": 154.80000000004657,
+        "fullSystemMs": 154.90000000002328
+      },
+      "explosionFirstResponseMs": 69.11657600000035,
+      "layerUnloadMs": 421.9915269999983,
+      "afterUnload": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 0,
+        "meshCount": 0,
+        "triangleCount": 0,
+        "geometryBytes": 0,
+        "drawCalls": 0,
+        "renderGeometries": 4,
+        "renderTextures": 4,
+        "loadMs": 0,
+        "firstGeometryMs": 154.80000000004657,
+        "fullSystemMs": 154.90000000002328
+      },
+      "layerReloadMs": 285.61675599999944,
+      "afterReload": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 2,
+        "meshCount": 26,
+        "triangleCount": 39604,
+        "geometryBytes": 932764,
+        "drawCalls": 26,
+        "renderGeometries": 30,
+        "renderTextures": 4,
+        "loadMs": 26.199999999953434,
+        "firstGeometryMs": 154.80000000004657,
+        "fullSystemMs": 154.90000000002328
+      },
+      "browserMemory": {
+        "Documents": 3,
+        "Nodes": 2090,
+        "JSHeapUsedSize": 22359516,
+        "JSHeapTotalSize": 45056000
+      },
+      "detectedWebGL": {
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)"
+      }
+    },
+    "combined": {
+      "glbBytes": 4456872,
+      "meshes": 231,
+      "triangles": 552054,
+      "geometryBuffersBytes": 8542536,
+      "drawCalls": 231,
+      "firstGeometryMs": 233.79999999993015,
+      "fullReadyMs": 233.90000000002328,
+      "initial": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 9,
+        "meshCount": 231,
+        "triangleCount": 552054,
+        "geometryBytes": 8542536,
+        "drawCalls": 231,
+        "renderGeometries": 235,
+        "renderTextures": 4,
+        "loadMs": 21.100000000093132,
+        "firstGeometryMs": 233.79999999993015,
+        "fullSystemMs": 233.90000000002328
+      },
+      "loadMarks": [
+        {
+          "name": "med3d:load-start",
+          "startTimeMs": 3208.8000000000466
+        },
+        {
+          "name": "med3d:first-geometry",
+          "startTimeMs": 3442.5999999999767
+        },
+        {
+          "name": "med3d:all-assets-rendered",
+          "startTimeMs": 3442.70000000007
+        }
+      ],
+      "resources": [
+        {
+          "name": "arm-left.glb",
+          "durationMs": 4.800000000046566,
+          "encodedBodyBytes": 345860,
+          "transferBytes": 346160
+        },
+        {
+          "name": "arm-right.glb",
+          "durationMs": 4.099999999976717,
+          "encodedBodyBytes": 336004,
+          "transferBytes": 336304
+        },
+        {
+          "name": "leg-left.glb",
+          "durationMs": 2.900000000023283,
+          "encodedBodyBytes": 230240,
+          "transferBytes": 230540
+        },
+        {
+          "name": "leg-right.glb",
+          "durationMs": 2.199999999953434,
+          "encodedBodyBytes": 230668,
+          "transferBytes": 230968
+        },
+        {
+          "name": "skull.glb",
+          "durationMs": 3.599999999976717,
+          "encodedBodyBytes": 1002700,
+          "transferBytes": 1003000
+        },
+        {
+          "name": "spine.glb",
+          "durationMs": 5.599999999976717,
+          "encodedBodyBytes": 579828,
+          "transferBytes": 580128
+        },
+        {
+          "name": "thorax.glb",
+          "durationMs": 3.700000000069849,
+          "encodedBodyBytes": 1191640,
+          "transferBytes": 1191940
+        },
+        {
+          "name": "muscular-upper-right.glb",
+          "durationMs": 4,
+          "encodedBodyBytes": 269856,
+          "transferBytes": 270156
+        },
+        {
+          "name": "muscular-upper-left.glb",
+          "durationMs": 2.199999999953434,
+          "encodedBodyBytes": 270076,
+          "transferBytes": 270376
+        }
+      ],
+      "searchMs": 52.85612199999741,
+      "isolateMs": 1049.9922560000014,
+      "isolated": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 9,
+        "meshCount": 231,
+        "triangleCount": 552054,
+        "geometryBytes": 8542536,
+        "drawCalls": 88,
+        "renderGeometries": 235,
+        "renderTextures": 4,
+        "loadMs": 21.100000000093132,
+        "firstGeometryMs": 233.79999999993015,
+        "fullSystemMs": 233.90000000002328
+      },
+      "explosionFirstResponseMs": 410.56507799999963,
+      "layerUnloadMs": 2207.576595999999,
+      "afterUnload": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 61,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 21.100000000093132,
+        "firstGeometryMs": 233.79999999993015,
+        "fullSystemMs": 233.90000000002328
+      },
+      "layerReloadMs": 897.4851560000025,
+      "afterReload": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 9,
+        "meshCount": 231,
+        "triangleCount": 552054,
+        "geometryBytes": 8542536,
+        "drawCalls": 87,
+        "renderGeometries": 235,
+        "renderTextures": 4,
+        "loadMs": 68.40000000002328,
+        "firstGeometryMs": 233.79999999993015,
+        "fullSystemMs": 233.90000000002328
+      },
+      "browserMemory": {
+        "Documents": 1,
+        "Nodes": 1008,
+        "JSHeapUsedSize": 15112284,
+        "JSHeapTotalSize": 19742720
+      },
+      "detectedWebGL": {
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)"
+      }
+    }
+  },
+  "errors": [],
+  "badRequests": [],
+  "success": true
+}

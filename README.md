@@ -44,7 +44,7 @@ Consulta `docs/phase2-audit.md`, `docs/phase2-architecture.md`, `docs/phase2-mis
 
 La validación de la fase 2.1 se documenta en `docs/phase2.1-validation.md`. El flujo `anatomy-visual-validation.yml` ejecuta pruebas funcionales, produce capturas reproducibles y mide el navegador disponible. La inspección visual y las pruebas en hardware físico se registran por separado.
 
-El piloto Fase 3A está implementado; las pruebas de navegador, la revisión de capturas y la verificación de publicación siguen pendientes. No se declara aprobado ni autoriza ampliar la musculatura al resto del cuerpo. Consulta la [validación de Fase 3A](docs/phase3-validation.md), la [estrategia y evidencia de registro](docs/phase3-registration.md) y las [fuentes y limitaciones](docs/phase3-model-sources.md).
+El piloto Fase 3A está implementado y publicado: 30 comprobaciones funcionales musculares, 26 regresiones óseas y una regresión dirigida del árbol aprobadas sobre `8c2a9cdd67a482459de106dfc87843502c1c0643`; 38 capturas del piloto revisadas y 73 recursos públicos cotejados por tamaño y SHA-256. La validación utiliza Chromium/SwiftShader y no certifica precisión clínica ni rendimiento de GPU física. Se conservan las limitaciones de transparencia, oclusión y solape entre componentes. La ampliación a Fase 3B requiere autorización explícita. Consulta la [entrega de Fase 3A](docs/phase3-delivery.md), la [validación](docs/phase3-validation.md), la [estrategia y evidencia de registro](docs/phase3-registration.md) y las [fuentes y limitaciones](docs/phase3-model-sources.md).
 
 ## Rendimiento y modelos
 

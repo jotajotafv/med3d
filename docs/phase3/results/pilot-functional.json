@@ -1,0 +1,147 @@
+{
+  "date": "2026-09-21T02:46:22.080Z",
+  "mode": "functional",
+  "source": "Local production build served over unthrottled loopback HTTP",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "physicalGpuTested": false,
+    "deviceScaleFactor": 1,
+    "detectedWebGL": {
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "vendor": "Google Inc. (Google)"
+    }
+  },
+  "checks": [
+    {
+      "name": "Combined registered skeletal + 26-component, 16-muscle pilot loads",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 9,
+      "meshCount": 231,
+      "triangleCount": 552054,
+      "geometryBytes": 8542536,
+      "drawCalls": 231,
+      "renderGeometries": 235,
+      "renderTextures": 4,
+      "loadMs": 87.5,
+      "firstGeometryMs": 253.5,
+      "fullSystemMs": 1822.9000000000233
+    },
+    {
+      "name": "Skeletal layer unload retains complete muscular pilot",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 2,
+      "meshCount": 26,
+      "triangleCount": 39604,
+      "geometryBytes": 932764,
+      "drawCalls": 26,
+      "renderGeometries": 30,
+      "renderTextures": 4,
+      "loadMs": 87.5,
+      "firstGeometryMs": 253.5,
+      "fullSystemMs": 1822.9000000000233
+    },
+    {
+      "name": "Right muscular module alone loads",
+      "meshes": 13
+    },
+    {
+      "name": "System activation restores its chosen module subset"
+    },
+    {
+      "name": "Left muscular module alone loads",
+      "meshes": 13
+    },
+    {
+      "name": "Both muscular modules reload without geometry growth"
+    },
+    {
+      "name": "Muscular layer unload preserves skeleton"
+    },
+    {
+      "name": "Independent opacities and depth-write states persist across system unload"
+    },
+    {
+      "name": "Global accent-aware search finds all required muscles, bones and legacy organs"
+    },
+    {
+      "name": "Neutral body root and virtualized multisystem keyboard tree"
+    },
+    {
+      "name": "Specialized muscle card includes curated attachment and innervation text",
+      "minimumFontPx": 14
+    },
+    {
+      "name": "Whole deltoid isolation, hide and reveal preserves 3 component ownership"
+    },
+    {
+      "name": "Actual raycast selects a component, with distinct hover and selection",
+      "id": "bp3d:FMA34684"
+    },
+    {
+      "name": "Six camera views execute for superficial muscles and rotator cuff; occlusion remains explicit"
+    },
+    {
+      "name": "Explicit curated biceps context shows muscle plus related bones",
+      "visibleIds": [
+        "bp3d:FMA13395",
+        "bp3d:FMA23464",
+        "bp3d:FMA37684",
+        "bp3d:FMA37686"
+      ]
+    },
+    {
+      "name": "Leaving muscle isolation preserves a disabled muscular layer and restores visible bones"
+    },
+    {
+      "name": "Hidden muscle accepts posterior camera requests without implicit reveal or mesh transform changes"
+    },
+    {
+      "name": "Three explosion levels are deterministic and return exactly to original mesh positions"
+    },
+    {
+      "name": "Biceps two heads separate distinctly as components"
+    },
+    {
+      "name": "Muscular module unload/reload cycles release buffers and remain bounded"
+    },
+    {
+      "name": "Rapid muscular layer changes leave no unexpected CPU or renderer geometry growth"
+    },
+    {
+      "name": "Partial muscular network failure retains healthy modules and recovers only on explicit retry",
+      "attempts": 2
+    },
+    {
+      "name": "Responsive two-system panels 1366"
+    },
+    {
+      "name": "Responsive two-system panels 1050"
+    },
+    {
+      "name": "Responsive two-system panels 900"
+    },
+    {
+      "name": "Reopened mobile tree retains its selected muscle without manual scrolling"
+    },
+    {
+      "name": "Responsive two-system panels 390"
+    },
+    {
+      "name": "Legacy heart still renders actual WebGL"
+    },
+    {
+      "name": "Legacy lungs still renders actual WebGL"
+    },
+    {
+      "name": "Legacy brain still renders actual WebGL"
+    }
+  ],
+  "captures": [],
+  "measurements": {},
+  "errors": [],
+  "badRequests": [],
+  "success": true
+}

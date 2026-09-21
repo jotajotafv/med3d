@@ -1,0 +1,668 @@
+{
+  "date": "2026-09-21T03:08:06.707508+00:00",
+  "codeCommit": "8c2a9cdd67a482459de106dfc87843502c1c0643",
+  "validationRunId": 35554899964,
+  "deploymentRunId": 35556168389,
+  "url": "https://jotajotafv.github.io/med3d/anatomia/",
+  "method": "Public HTTP GET; compare byte count and SHA-256 with the local production build of the tested code commit, using the same locked dependencies and base path.",
+  "resources": [
+    {
+      "path": "404.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "acerca/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "anatomia/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "arquitectura/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/AnatomyScene-BHRHvYY4.js",
+      "bytes": 11965,
+      "sha256": "d1e50dc3bbd9e530271ac45d1aa4c983bd5585ff34c707340b68ce6e08cecc00",
+      "status": 200,
+      "publishedBytes": 11965,
+      "publishedSha256": "d1e50dc3bbd9e530271ac45d1aa4c983bd5585ff34c707340b68ce6e08cecc00",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/ArrowRight.es-CV4S122f.js",
+      "bytes": 1523,
+      "sha256": "d1e8795bfea670440032e73f4762d55ab73b601eedee8a3fc2d92fddf16e069e",
+      "status": 200,
+      "publishedBytes": 1523,
+      "publishedSha256": "d1e8795bfea670440032e73f4762d55ab73b601eedee8a3fc2d92fddf16e069e",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/AtlasScene-CWd7Dnwu.js",
+      "bytes": 23558,
+      "sha256": "9fdc15a7e84297df514eb9ac52f383f06fbd859893ccd0334206dd0f9b3d184f",
+      "status": 200,
+      "publishedBytes": 23558,
+      "publishedSha256": "9fdc15a7e84297df514eb9ac52f383f06fbd859893ccd0334206dd0f9b3d184f",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/Bone.es-DTiu8-Hu.js",
+      "bytes": 3664,
+      "sha256": "fde7f0520e2a1b38e61cc7405863302457f46418ad3bdcb85d52ad44e8499bec",
+      "status": 200,
+      "publishedBytes": 3664,
+      "publishedSha256": "fde7f0520e2a1b38e61cc7405863302457f46418ad3bdcb85d52ad44e8499bec",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/BookOpen.es-B8cvDLM2.js",
+      "bytes": 2564,
+      "sha256": "e7e23c7a637b3c800703712475a500cb5e838c6631a7083c4f695a5ddc05cc4b",
+      "status": 200,
+      "publishedBytes": 2564,
+      "publishedSha256": "e7e23c7a637b3c800703712475a500cb5e838c6631a7083c4f695a5ddc05cc4b",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/Brain.es-xwUn6kGJ.js",
+      "bytes": 5432,
+      "sha256": "ff695a06ecb017f27a1a8a368efd9af6474622e55d5f4ba54daa6c0388e38002",
+      "status": 200,
+      "publishedBytes": 5432,
+      "publishedSha256": "ff695a06ecb017f27a1a8a368efd9af6474622e55d5f4ba54daa6c0388e38002",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/CaretRight.es-CX9NZZJF.js",
+      "bytes": 1371,
+      "sha256": "42bec2bde45b9efc1bbfdeed686a889e9309d9e91e0259d4d1cf09eb23b406fc",
+      "status": 200,
+      "publishedBytes": 1371,
+      "publishedSha256": "42bec2bde45b9efc1bbfdeed686a889e9309d9e91e0259d4d1cf09eb23b406fc",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/Check.es-DBgW7pKe.js",
+      "bytes": 1527,
+      "sha256": "2e127eece1449cd436f28bf8c44d6d60deade7f1bbc022323d6b4547153daec0",
+      "status": 200,
+      "publishedBytes": 1527,
+      "publishedSha256": "2e127eece1449cd436f28bf8c44d6d60deade7f1bbc022323d6b4547153daec0",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/Cube.es-DoNjKLfR.js",
+      "bytes": 2679,
+      "sha256": "ef1cd1b6dd0d914037116e5111afa82b969e5dd7681fe00ddf6683936a957831",
+      "status": 200,
+      "publishedBytes": 2679,
+      "publishedSha256": "ef1cd1b6dd0d914037116e5111afa82b969e5dd7681fe00ddf6683936a957831",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/Gauge.es-BihGo97Z.js",
+      "bytes": 3392,
+      "sha256": "df172b08b9df15587fa1a80450a0d4439f0406c4c73f0187c590751562e3fcfd",
+      "status": 200,
+      "publishedBytes": 3392,
+      "publishedSha256": "df172b08b9df15587fa1a80450a0d4439f0406c4c73f0187c590751562e3fcfd",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/Heartbeat.es-ClCT0tmL.js",
+      "bytes": 4597,
+      "sha256": "34df3bb291c4e3ade46cf301d0a6356518110e84d18f86ff24969bb20d07ce3e",
+      "status": 200,
+      "publishedBytes": 4597,
+      "publishedSha256": "34df3bb291c4e3ade46cf301d0a6356518110e84d18f86ff24969bb20d07ce3e",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/Info.es-DzU4tLg6.js",
+      "bytes": 2194,
+      "sha256": "b729f2424ac5fea6887e85c6966625310e710bf94b28cacc7b48735dedcd36e9",
+      "status": 200,
+      "publishedBytes": 2194,
+      "publishedSha256": "b729f2424ac5fea6887e85c6966625310e710bf94b28cacc7b48735dedcd36e9",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/LearningCatalog-BYy7bRK7.js",
+      "bytes": 43442,
+      "sha256": "56f8e68a2ab88607e033ca06ce6fc89eb699d1325a3d08945df529b3640ac387",
+      "status": 200,
+      "publishedBytes": 43442,
+      "publishedSha256": "56f8e68a2ab88607e033ca06ce6fc89eb699d1325a3d08945df529b3640ac387",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/LearningCatalog-TxtNiQwt.css",
+      "bytes": 20741,
+      "sha256": "410c523289ed7e4bb8168bb08fd0f16e702a0fe6226eb8596923409673529a82",
+      "status": 200,
+      "publishedBytes": 20741,
+      "publishedSha256": "410c523289ed7e4bb8168bb08fd0f16e702a0fe6226eb8596923409673529a82",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/LearningScene-Dmci4ybx.js",
+      "bytes": 17440,
+      "sha256": "4f5029a88c7c48d1d039c496d311f6f68ffad58a359868e74228e28dfb002ec8",
+      "status": 200,
+      "publishedBytes": 17440,
+      "publishedSha256": "4f5029a88c7c48d1d039c496d311f6f68ffad58a359868e74228e28dfb002ec8",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/LegacyOrganAtlas-C0cYvAxR.js",
+      "bytes": 20081,
+      "sha256": "6b211ac61468465b204987c0768d55c9c2fb967070418d88847adb959d1f33c5",
+      "status": 200,
+      "publishedBytes": 20081,
+      "publishedSha256": "6b211ac61468465b204987c0768d55c9c2fb967070418d88847adb959d1f33c5",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/LessonPage-IzQj2gn3.js",
+      "bytes": 25352,
+      "sha256": "e99c61c435ce84d682e8b212110f65945d505f83c8f916cf3f6c0d6262130c78",
+      "status": 200,
+      "publishedBytes": 25352,
+      "publishedSha256": "e99c61c435ce84d682e8b212110f65945d505f83c8f916cf3f6c0d6262130c78",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/MagnifyingGlass.es-DnYJwd0g.js",
+      "bytes": 1621,
+      "sha256": "26b8d3c8b599008fd12c0bffd8142aca5662f923b7686a850565ae8a00a07cb1",
+      "status": 200,
+      "publishedBytes": 1621,
+      "publishedSha256": "26b8d3c8b599008fd12c0bffd8142aca5662f923b7686a850565ae8a00a07cb1",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/OrbitControls-ByBvH76j.js",
+      "bytes": 920007,
+      "sha256": "32b231771721fe947a71f058efdfa51c7003a1c547bc092dff0221018290c929",
+      "status": 200,
+      "publishedBytes": 920007,
+      "publishedSha256": "32b231771721fe947a71f058efdfa51c7003a1c547bc092dff0221018290c929",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/SceneBoundary-DHF38PZS.js",
+      "bytes": 79180,
+      "sha256": "e3c5786d204f3b5ea54e005f5102705876b3c5012439720794dbc90d712e3d2f",
+      "status": 200,
+      "publishedBytes": 79180,
+      "publishedSha256": "e3c5786d204f3b5ea54e005f5102705876b3c5012439720794dbc90d712e3d2f",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/SkeletalAtlas-BfRc6NAV.css",
+      "bytes": 15485,
+      "sha256": "3fa907e2d823cef64a97ca869f734e08561624fafae7ee9635b15567ad5fa2ce",
+      "status": 200,
+      "publishedBytes": 15485,
+      "publishedSha256": "3fa907e2d823cef64a97ca869f734e08561624fafae7ee9635b15567ad5fa2ce",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/SkeletalAtlas-C5aGTxiU.js",
+      "bytes": 69053,
+      "sha256": "c62c8153a4d322043c4d641ea34be6b6016943850ca733ef9c054fbdd82b1076",
+      "status": 200,
+      "publishedBytes": 69053,
+      "publishedSha256": "c62c8153a4d322043c4d641ea34be6b6016943850ca733ef9c054fbdd82b1076",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/SlidersHorizontal.es-Bv6pD9EH.js",
+      "bytes": 21104,
+      "sha256": "9417bee840c2073cb110a927d1acd0e4fcec1817336e8be2b35af8da7aa3918a",
+      "status": 200,
+      "publishedBytes": 21104,
+      "publishedSha256": "9417bee840c2073cb110a927d1acd0e4fcec1817336e8be2b35af8da7aa3918a",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/Stack.es-BZS9AAaE.js",
+      "bytes": 2978,
+      "sha256": "fcb7ffb61d703de01d77e83e536fb503ea1de7a29324166544a81bb99806244a",
+      "status": 200,
+      "publishedBytes": 2978,
+      "publishedSha256": "fcb7ffb61d703de01d77e83e536fb503ea1de7a29324166544a81bb99806244a",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/_slug-BqXhj0yn.js",
+      "bytes": 602,
+      "sha256": "f523acd5b711f4c5fd77263bbaa42f8799304bbe9a38bb1eea70a39b37a18216",
+      "status": 200,
+      "publishedBytes": 602,
+      "publishedSha256": "f523acd5b711f4c5fd77263bbaa42f8799304bbe9a38bb1eea70a39b37a18216",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/_slug-DJWdk6S1.js",
+      "bytes": 602,
+      "sha256": "e7683c80f75641dc85f0d04bc0d78d37ca07f025685e5ade5295e41c3955d598",
+      "status": 200,
+      "publishedBytes": 602,
+      "publishedSha256": "e7683c80f75641dc85f0d04bc0d78d37ca07f025685e5ade5295e41c3955d598",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/about-u_aBuI98.css",
+      "bytes": 13726,
+      "sha256": "f63677010c4dcb75718cbb66219968e232d8d4ba319c7a9c739a6326ff61c6d4",
+      "status": 200,
+      "publishedBytes": 13726,
+      "publishedSha256": "f63677010c4dcb75718cbb66219968e232d8d4ba319c7a9c739a6326ff61c6d4",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/acerca-DkKuh42K.js",
+      "bytes": 18902,
+      "sha256": "f0eb684c696cf2f546654b44c626646cad6fd3e4266c56212efb66b7890b1206",
+      "status": 200,
+      "publishedBytes": 18902,
+      "publishedSha256": "f0eb684c696cf2f546654b44c626646cad6fd3e4266c56212efb66b7890b1206",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/anatomia-CHGD2EwF.js",
+      "bytes": 1221,
+      "sha256": "bd566b3b0e991923c3daa534013e206d34ef212eff4cba8d970c8f2b088ccfac",
+      "status": 200,
+      "publishedBytes": 1221,
+      "publishedSha256": "bd566b3b0e991923c3daa534013e206d34ef212eff4cba8d970c8f2b088ccfac",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/anatomy-CdgjjqS4.css",
+      "bytes": 19666,
+      "sha256": "2b3511d9c4356030e3b226c6a455aa5db7e581cdd135335ca0d85fcaed915aee",
+      "status": 200,
+      "publishedBytes": 19666,
+      "publishedSha256": "2b3511d9c4356030e3b226c6a455aa5db7e581cdd135335ca0d85fcaed915aee",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/arquitectura-D6xqj-Bc.js",
+      "bytes": 19150,
+      "sha256": "dc4d28f9173516ae4c9be80905dcbd78d590f9a6b2318fd01e0c6f900d6bb31b",
+      "status": 200,
+      "publishedBytes": 19150,
+      "publishedSha256": "dc4d28f9173516ae4c9be80905dcbd78d590f9a6b2318fd01e0c6f900d6bb31b",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/data-D8vzls4f.js",
+      "bytes": 88530,
+      "sha256": "f987e62ce90d102cc52261f6d75cdc07ae3344b358301c5239155b53af8ab23d",
+      "status": 200,
+      "publishedBytes": 88530,
+      "publishedSha256": "f987e62ce90d102cc52261f6d75cdc07ae3344b358301c5239155b53af8ab23d",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/index-8v6eCLi1.js",
+      "bytes": 14625,
+      "sha256": "c3b103b618fa41b4e8d03c72606e30e545c14772d0842800b94cdd6bd8916576",
+      "status": 200,
+      "publishedBytes": 14625,
+      "publishedSha256": "c3b103b618fa41b4e8d03c72606e30e545c14772d0842800b94cdd6bd8916576",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/index-B9SmE3Pw.css",
+      "bytes": 10989,
+      "sha256": "d1e93e29101652f1057fb18a508137d525c3a5700b10fadd3680d73ae9a37e23",
+      "status": 200,
+      "publishedBytes": 10989,
+      "publishedSha256": "d1e93e29101652f1057fb18a508137d525c3a5700b10fadd3680d73ae9a37e23",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/index-BB2kA7V_.js",
+      "bytes": 321517,
+      "sha256": "211d587aa003c4fca430a0e4a0b6d8381d0d6ef2ed20a0db526ef5bc6d3262ff",
+      "status": 200,
+      "publishedBytes": 321517,
+      "publishedSha256": "211d587aa003c4fca430a0e4a0b6d8381d0d6ef2ed20a0db526ef5bc6d3262ff",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/index-BXAy1yUC.css",
+      "bytes": 8573,
+      "sha256": "c718997a2997d9feb35d294247f7ed12398beb6376c29fcaf8d4a4f0dbc82c7f",
+      "status": 200,
+      "publishedBytes": 8573,
+      "publishedSha256": "c718997a2997d9feb35d294247f7ed12398beb6376c29fcaf8d4a4f0dbc82c7f",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/index-Bc83S6pV.js",
+      "bytes": 422,
+      "sha256": "47c682bcd1f56cf07620116a04f6d44636d4203b495026fa1004df1e79983a9e",
+      "status": 200,
+      "publishedBytes": 422,
+      "publishedSha256": "47c682bcd1f56cf07620116a04f6d44636d4203b495026fa1004df1e79983a9e",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "assets/index-hRbFC_Na.js",
+      "bytes": 422,
+      "sha256": "b2da0a96864b99733c6516a6b56585ef31d9aef48ce233870891a16111cdbb42",
+      "status": 200,
+      "publishedBytes": 422,
+      "publishedSha256": "b2da0a96864b99733c6516a6b56585ef31d9aef48ce233870891a16111cdbb42",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/anatomy/muscular/catalog.json",
+      "bytes": 46251,
+      "sha256": "96bf455a56d993c3684b5598ba98fadb02b883c57f2f51bce3f25932e457a49e",
+      "status": 200,
+      "publishedBytes": 46251,
+      "publishedSha256": "96bf455a56d993c3684b5598ba98fadb02b883c57f2f51bce3f25932e457a49e",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/anatomy/muscular/muscular-upper-left.glb",
+      "bytes": 270076,
+      "sha256": "1a5885fe1258bde59dfc88437726f3ddb9db7dee4c3e4c2ae834feb701c3b559",
+      "status": 200,
+      "publishedBytes": 270076,
+      "publishedSha256": "1a5885fe1258bde59dfc88437726f3ddb9db7dee4c3e4c2ae834feb701c3b559",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/anatomy/muscular/muscular-upper-right.glb",
+      "bytes": 269856,
+      "sha256": "9aea14bb438f006103f48cf0f42cd2c9d58031973a0e3c355c033f880b719d21",
+      "status": 200,
+      "publishedBytes": 269856,
+      "publishedSha256": "9aea14bb438f006103f48cf0f42cd2c9d58031973a0e3c355c033f880b719d21",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/anatomy/muscular/source-manifest.json",
+      "bytes": 21828,
+      "sha256": "745f40edbcc039380060ea20774d186c154ea3a8835988bcd25a45cc6461cfed",
+      "status": 200,
+      "publishedBytes": 21828,
+      "publishedSha256": "745f40edbcc039380060ea20774d186c154ea3a8835988bcd25a45cc6461cfed",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/anatomy/muscular/validation.json",
+      "bytes": 14702,
+      "sha256": "4ba5d57e51f1a9d37e93264abe76aeea840df7ced73353df4fe448745dfedf07",
+      "status": 200,
+      "publishedBytes": 14702,
+      "publishedSha256": "4ba5d57e51f1a9d37e93264abe76aeea840df7ced73353df4fe448745dfedf07",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/anatomy/skeletal/arm-left.glb",
+      "bytes": 345860,
+      "sha256": "688937b1d1eb08e1518e27c035e9d8d9729a470ff70b8c9e2d25aecef29db904",
+      "status": 200,
+      "publishedBytes": 345860,
+      "publishedSha256": "688937b1d1eb08e1518e27c035e9d8d9729a470ff70b8c9e2d25aecef29db904",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/anatomy/skeletal/arm-right.glb",
+      "bytes": 336004,
+      "sha256": "ebfe485840fd737b8eaa573dbd4bf13b11cb30542b93273af2ae8417835a06ba",
+      "status": 200,
+      "publishedBytes": 336004,
+      "publishedSha256": "ebfe485840fd737b8eaa573dbd4bf13b11cb30542b93273af2ae8417835a06ba",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/anatomy/skeletal/catalog.json",
+      "bytes": 238232,
+      "sha256": "9e6888913a5d997cc467819d9a2bed7c15d5c8ac09fc3c34076b8a7391d98c60",
+      "status": 200,
+      "publishedBytes": 238232,
+      "publishedSha256": "9e6888913a5d997cc467819d9a2bed7c15d5c8ac09fc3c34076b8a7391d98c60",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/anatomy/skeletal/leg-left.glb",
+      "bytes": 230240,
+      "sha256": "6e70fd15a54b1dcbf26aafad860cb282b1e6364c064cdd41e0822beef37b2f1d",
+      "status": 200,
+      "publishedBytes": 230240,
+      "publishedSha256": "6e70fd15a54b1dcbf26aafad860cb282b1e6364c064cdd41e0822beef37b2f1d",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/anatomy/skeletal/leg-right.glb",
+      "bytes": 230668,
+      "sha256": "06ced279676f896dbc4176e99931e4e77dd60734bcdccf108b3be2a96fffb806",
+      "status": 200,
+      "publishedBytes": 230668,
+      "publishedSha256": "06ced279676f896dbc4176e99931e4e77dd60734bcdccf108b3be2a96fffb806",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/anatomy/skeletal/skull.glb",
+      "bytes": 1002700,
+      "sha256": "835b8ad861d6dcdd92a7cbeeddc8c8586f7a0c11356670274467f2f62730e5ba",
+      "status": 200,
+      "publishedBytes": 1002700,
+      "publishedSha256": "835b8ad861d6dcdd92a7cbeeddc8c8586f7a0c11356670274467f2f62730e5ba",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/anatomy/skeletal/spine.glb",
+      "bytes": 579828,
+      "sha256": "d0a338e305718d9e7820e9df732e0b9743712ad94ec9b3ca27a8df8958dd6e65",
+      "status": 200,
+      "publishedBytes": 579828,
+      "publishedSha256": "d0a338e305718d9e7820e9df732e0b9743712ad94ec9b3ca27a8df8958dd6e65",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/anatomy/skeletal/thorax.glb",
+      "bytes": 1191640,
+      "sha256": "4d13ab0f94f1b41c81c17402d4830dcc3b28cca7d6b91c075d0ba9e77fb606d9",
+      "status": 200,
+      "publishedBytes": 1191640,
+      "publishedSha256": "4d13ab0f94f1b41c81c17402d4830dcc3b28cca7d6b91c075d0ba9e77fb606d9",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/brain.glb",
+      "bytes": 3496140,
+      "sha256": "ecda8d7886b75241c36eefebf7796ec5ed38cd4495c8eb96e50595ee733c52e6",
+      "status": 200,
+      "publishedBytes": 3496140,
+      "publishedSha256": "ecda8d7886b75241c36eefebf7796ec5ed38cd4495c8eb96e50595ee733c52e6",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/heart.glb",
+      "bytes": 715820,
+      "sha256": "4637d0779ee7c278cf81a326c933528421372bf0aa709188c20308a6ad81b3a1",
+      "status": 200,
+      "publishedBytes": 715820,
+      "publishedSha256": "4637d0779ee7c278cf81a326c933528421372bf0aa709188c20308a6ad81b3a1",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "models/lungs.glb",
+      "bytes": 1992744,
+      "sha256": "5e7959b7842d46c2ad7d47770d8bfbd5aa0a06c1a7476cf5b779e9c0462e5a29",
+      "status": 200,
+      "publishedBytes": 1992744,
+      "publishedSha256": "5e7959b7842d46c2ad7d47770d8bfbd5aa0a06c1a7476cf5b779e9c0462e5a29",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "primeros-auxilios/atragantamiento/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "primeros-auxilios/botiquin/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "primeros-auxilios/convulsiones/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "primeros-auxilios/desmayos/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "primeros-auxilios/fracturas/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "primeros-auxilios/hemorragias/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "primeros-auxilios/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "primeros-auxilios/quemaduras/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "primeros-auxilios/rcp/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "procedimientos/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "procedimientos/inmovilizacion/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "procedimientos/presion-arterial/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "procedimientos/signos-vitales/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    },
+    {
+      "path": "procedimientos/vendaje/index.html",
+      "bytes": 1188,
+      "sha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "status": 200,
+      "publishedBytes": 1188,
+      "publishedSha256": "a8b4090a00c1ddb472871ab8b463eac3fecd109ae2e46abffb08bbb6ab768428",
+      "matchesValidatedBuild": true
+    }
+  ],
+  "allMatch": true
+}

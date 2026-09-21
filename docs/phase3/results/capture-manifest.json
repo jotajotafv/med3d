@@ -1,0 +1,732 @@
+{
+  "date": "2026-09-21T02:44:12.114Z",
+  "source": "MED3D local production build",
+  "environment": "Headless Chromium, ANGLE SwiftShader; DPR 1. Human inspection required.",
+  "reducedMotion": "reduce",
+  "captureMethod": "The supported reduced-motion preference captures final poses deterministically. Functional and performance runs retain normal animation.",
+  "captures": [
+    {
+      "file": "01-esqueleto-frontal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "Normal; no selection. Inspect complete frame, bilateral alignment and coverage.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 205,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "02-esqueleto-posterior.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 205,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "03-lateral-izquierda.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "Left means the specimen’s anatomical left.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 205,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "04-lateral-derecha.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "Right means the specimen’s anatomical right.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 205,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "05-craneo-superior.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Neurocráneo",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 205,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "06-craneo-inferior.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Neurocráneo",
+      "note": "Opaque mandible and spine can occlude this contextual inferior axis; compare the explicitly isolated neurocranium capture32.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 72,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "07-craneo-frontal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cráneo y hueso hioides",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 46,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "08-columna.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Columna vertebral",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 143,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "09-caja-toracica.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Caja torácica",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 69,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "10-pelvis.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Sacro",
+      "note": "Sacro focus, four existing zoom-out steps; geometry remains in its registered source frame.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 88,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "11-mano.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Falanges de la mano",
+      "note": "Left hand phalanges focus expanded with two zoom-out steps.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 35,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "12-pie.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Tarso",
+      "note": "Left foot in anatomical left lateral context. Four zoom-out steps encompass tarsals, metatarsals and phalanges without looking through the opaque tibia.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 60,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "13-femur-seleccionado.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Fémur izquierdo",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 70,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "14-femur-aislado.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Fémur izquierdo",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 1,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "15-exploded-regiones.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 205,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "16-exploded-estructuras.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 205,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "17-craneo-exploded.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cráneo y hueso hioides",
+      "note": "100% structure separation, deterministic hierarchical bounds.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 55,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "18-columna-exploded.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Columna vertebral",
+      "note": "100% structure separation, deterministic hierarchical bounds.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 143,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "19-torax-exploded.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Caja torácica",
+      "note": "100% structure separation, deterministic hierarchical bounds.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 110,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "20-mano-exploded.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Falanges de la mano",
+      "note": "100% structure separation, deterministic hierarchical bounds.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 40,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "21-pie-exploded.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Tarso",
+      "note": "100% structure separation, deterministic hierarchical bounds. Left tarsal group explicitly isolated; opaque tibial context would occlude the superior view.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 7,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "22-carpo-seleccionado.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Escafoides izquierdo",
+      "note": "Dense region selection, normal system opacity.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 17,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "23-carpo-transparente.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Escafoides izquierdo",
+      "note": "System opacity 35%; selected structure retained.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 34,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "24-carpo-oculto.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Escafoides izquierdo",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 16,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "25-hover.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "note": "Real raycast hover on an isolated femur; no selection."
+    },
+    {
+      "file": "26-laptop-1366.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "selection": "Cuerpo humano",
+      "note": "CSS viewport profile only, not a physical hardware measurement.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 205,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "27-laptop-1050.png",
+      "viewport": {
+        "width": 1050,
+        "height": 844
+      },
+      "selection": "Cuerpo humano",
+      "note": "CSS viewport profile only, not a physical hardware measurement.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 205,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "28-tablet-900.png",
+      "viewport": {
+        "width": 900,
+        "height": 1000
+      },
+      "selection": "Cuerpo humano",
+      "note": "CSS viewport profile only, not a physical hardware measurement.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 205,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "29-mobile.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selection": "Cuerpo humano",
+      "note": "CSS viewport profile only, not a physical hardware measurement.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 205,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "30-mobile-ficha.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selection": "Fémur izquierdo",
+      "note": "Mobile educational panel, selected femur.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 43,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "31-tarso-superior-aislado.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Tarso",
+      "note": "Explicit isolation reveals the left tarsal group without opaque tibial context. This is a tarsal group, not the complete foot.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 7,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    },
+    {
+      "file": "32-neurocraneo-inferior-aislado.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Neurocráneo",
+      "note": "Explicit isolation for studying the cranial base. Capture06 preserves the occluded contextual view for comparison.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 7,
+        "meshCount": 205,
+        "triangleCount": 512450,
+        "geometryBytes": 7609772,
+        "drawCalls": 8,
+        "renderGeometries": 209,
+        "renderTextures": 4,
+        "loadMs": 31.29999999998836,
+        "firstGeometryMs": 241.79999999998836,
+        "fullSystemMs": 241.79999999998836
+      }
+    }
+  ],
+  "errors": [],
+  "generated": true
+}

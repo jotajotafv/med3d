@@ -1,0 +1,1591 @@
+{
+  "date": "2026-09-21T02:35:39.758Z",
+  "mode": "tree",
+  "source": "Local production build served over unthrottled loopback HTTP",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "physicalGpuTested": false,
+    "deviceScaleFactor": 1
+  },
+  "checks": [],
+  "captures": [],
+  "measurements": {},
+  "errors": [],
+  "badRequests": [],
+  "success": false,
+  "error": "locator.waitFor: Timeout 20000ms exceeded.\nCall log:\n  - waiting for getByRole('tree', { name: 'Árbol anatómico' }).getByRole('treeitem', { selected: true }) to be visible\n\n    at Object.treeQa (/home/runner/work/med3d/med3d/scripts/anatomy/pilot-qa.mjs:91:52)\n    at async file:///home/runner/work/med3d/med3d/scripts/anatomy/pilot-qa.mjs:179:38\n    at async withinQaDeadline (/home/runner/work/med3d/med3d/scripts/anatomy/browser-qa.mjs:16:12)\n    at async file:///home/runner/work/med3d/med3d/scripts/anatomy/pilot-qa.mjs:179:5",
+  "failureUi": {
+    "selection": "Hombro derecho",
+    "tree": {
+      "scrollTop": 1413,
+      "scrollHeight": 11720,
+      "clientHeight": 427,
+      "rows": [
+        {
+          "id": "atlas-node-skeletal:group:leg-right:thigh",
+          "selected": "false",
+          "text": "Muslo"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24474",
+          "selected": "false",
+          "text": "Fémur derecho"
+        },
+        {
+          "id": "atlas-node-skeletal:group:leg-right:leg",
+          "selected": "false",
+          "text": "Pierna"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24480",
+          "selected": "false",
+          "text": "Peroné derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24477",
+          "selected": "false",
+          "text": "Tibia derecha"
+        },
+        {
+          "id": "atlas-node-skeletal:group:leg-right:knee",
+          "selected": "false",
+          "text": "Rodilla"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24486",
+          "selected": "false",
+          "text": "Rótula derecha"
+        },
+        {
+          "id": "atlas-node-skeletal:group:leg-right:sesamoid",
+          "selected": "false",
+          "text": "Sesamoideos del pie"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA45097:FJ3372",
+          "selected": "false",
+          "text": "Sesamoideo del pie derecho · FJ3372"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA45097:FJ3376",
+          "selected": "false",
+          "text": "Sesamoideo del pie derecho · FJ3376"
+        },
+        {
+          "id": "atlas-node-skeletal:group:leg-right:tarsals",
+          "selected": "false",
+          "text": "Tarso"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24482",
+          "selected": "false",
+          "text": "Astrágalo derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24497",
+          "selected": "false",
+          "text": "Calcáneo derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24528",
+          "selected": "false",
+          "text": "Cuboides derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24523",
+          "selected": "false",
+          "text": "Cuneiforme intermedio derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24525",
+          "selected": "false",
+          "text": "Cuneiforme lateral derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24521",
+          "selected": "false",
+          "text": "Cuneiforme medial derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24500",
+          "selected": "false",
+          "text": "Navicular del pie derecho"
+        },
+        {
+          "id": "atlas-node-skeletal:region:leg-left",
+          "selected": "false",
+          "text": "Miembro inferior izquierdo"
+        },
+        {
+          "id": "atlas-node-skeletal:group:leg-left:girdle",
+          "selected": "false",
+          "text": "Cintura pélvica"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA16587",
+          "selected": "false",
+          "text": "Hueso coxal izquierdo"
+        },
+        {
+          "id": "atlas-node-skeletal:group:leg-left:toephalanges",
+          "selected": "false",
+          "text": "Falanges del pie"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA32651",
+          "selected": "false",
+          "text": "Falange distal del dedo 1 del pie izquierdo"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA32653",
+          "selected": "false",
+          "text": "Falange distal del dedo 2 del pie izquierdo"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA32655",
+          "selected": "false",
+          "text": "Falange distal del dedo 3 del pie izquierdo"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA32657",
+          "selected": "false",
+          "text": "Falange distal del dedo 4 del pie izquierdo"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA32659",
+          "selected": "false",
+          "text": "Falange distal del dedo 5 del pie izquierdo"
+        }
+      ]
+    }
+  },
+  "treeTrace": [
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 472,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 560,
+        "clientHeight": 427,
+        "spacerStyleHeight": "560px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 560,
+        "clientHeight": 427,
+        "spacerStyleHeight": "560px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 473.29999999998836,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 560,
+        "clientHeight": 427,
+        "spacerStyleHeight": "560px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 560,
+        "clientHeight": 427,
+        "spacerStyleHeight": "560px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "observe",
+      "timeMs": 473.79999999998836,
+      "target": "tree",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 560,
+        "clientHeight": 427,
+        "spacerStyleHeight": "560px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "observe",
+      "timeMs": 473.79999999998836,
+      "target": "spacer",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 560,
+        "clientHeight": 427,
+        "spacerStyleHeight": "560px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 475,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 560,
+        "clientHeight": 427,
+        "spacerStyleHeight": "560px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 475,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 560,
+        "clientHeight": 427,
+        "spacerStyleHeight": "560px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 475.29999999998836,
+      "target": "tree",
+      "observedHeight": 427,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 560,
+        "clientHeight": 427,
+        "spacerStyleHeight": "560px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 475.29999999998836,
+      "target": "spacer",
+      "observedHeight": 560,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 560,
+        "clientHeight": 427,
+        "spacerStyleHeight": "560px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 4340.099999999991,
+      "target": "tree",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "560px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 4340.099999999991,
+      "target": "spacer",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "560px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 5262.5,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 5265.299999999988,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "observe",
+      "timeMs": 5265.5,
+      "target": "tree",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "observe",
+      "timeMs": 5265.5,
+      "target": "spacer",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 5270.299999999988,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 5273.899999999994,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 5274,
+      "target": "tree",
+      "observedHeight": 427,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 5274,
+      "target": "spacer",
+      "observedHeight": 840,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 6435.599999999991,
+      "target": "tree",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 6435.599999999991,
+      "target": "spacer",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 7347.599999999991,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 1120,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1120px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 1120,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1120px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 7349.5,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 1120,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1120px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 1120,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1120px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "observe",
+      "timeMs": 7349.599999999991,
+      "target": "tree",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1120,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1120px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "observe",
+      "timeMs": 7349.599999999991,
+      "target": "spacer",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1120,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1120px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 7355.599999999991,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1120,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1120px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 7357.799999999988,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1120,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1120px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 7359.799999999988,
+      "target": "tree",
+      "observedHeight": 427,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1120,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1120px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 7359.899999999994,
+      "target": "spacer",
+      "observedHeight": 1120,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1120,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1120px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 8525.099999999991,
+      "target": "tree",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "1120px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 8525.099999999991,
+      "target": "spacer",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "1120px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 9425.099999999991,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 1320,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1320px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 1320,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1320px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 9426.899999999994,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 1320,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1320px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 1320,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1320px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "observe",
+      "timeMs": 9427.199999999997,
+      "target": "tree",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1320,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1320px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "observe",
+      "timeMs": 9427.199999999997,
+      "target": "spacer",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1320,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1320px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 9430.699999999997,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1320,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1320px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 9433.5,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1320,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1320px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 9433.599999999991,
+      "target": "tree",
+      "observedHeight": 427,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1320,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1320px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 9433.599999999991,
+      "target": "spacer",
+      "observedHeight": 1320,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1320,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1320px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 10605.399999999994,
+      "target": "tree",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "1320px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 10605.399999999994,
+      "target": "spacer",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "1320px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 11507.699999999997,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 1520,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1520px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 1520,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1520px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 11509.5,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 1520,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1520px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 1520,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1520px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "observe",
+      "timeMs": 11509.599999999991,
+      "target": "tree",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1520,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1520px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "observe",
+      "timeMs": 11509.699999999997,
+      "target": "spacer",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1520,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1520px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 11512.899999999994,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1520,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1520px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 11517.399999999994,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1520,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1520px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 11517.5,
+      "target": "tree",
+      "observedHeight": 427,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1520,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1520px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 11517.5,
+      "target": "spacer",
+      "observedHeight": 1520,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1520,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1520px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 12668.599999999991,
+      "target": "tree",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "1520px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 12668.599999999991,
+      "target": "spacer",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "1520px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 14006.5,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 1640,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1640px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 1640,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1640px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 14009.699999999997,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 1640,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1640px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 1640,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1640px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "observe",
+      "timeMs": 14009.799999999988,
+      "target": "tree",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1640,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1640px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "observe",
+      "timeMs": 14009.799999999988,
+      "target": "spacer",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1640,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1640px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 14014.599999999991,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1640,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1640px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 14019.5,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1640,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1640px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 14019.599999999991,
+      "target": "tree",
+      "observedHeight": 427,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1640,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1640px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 14019.599999999991,
+      "target": "spacer",
+      "observedHeight": 1640,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1640,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1640px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 15163.899999999994,
+      "target": "tree",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "1640px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 15163.899999999994,
+      "target": "spacer",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "1640px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 16526.09999999999,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 1720,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1720px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 1720,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1720px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 16528.899999999994,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 1720,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1720px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 1720,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1720px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "observe",
+      "timeMs": 16529.09999999999,
+      "target": "tree",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1720,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1720px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "observe",
+      "timeMs": 16529.09999999999,
+      "target": "spacer",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1720,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1720px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 16533.09999999999,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1720,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1720px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 16535.79999999999,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1720,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1720px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 16535.899999999994,
+      "target": "tree",
+      "observedHeight": 427,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1720,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1720px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 16535.899999999994,
+      "target": "spacer",
+      "observedHeight": 1720,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1720,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1720px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 17701.5,
+      "target": "tree",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "1720px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 17701.5,
+      "target": "spacer",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "1720px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 18592.399999999994,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 18594.399999999994,
+      "requested": 0,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "after": {
+        "scrollTop": 0,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "observe",
+      "timeMs": 18594.59999999999,
+      "target": "tree",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "observe",
+      "timeMs": 18594.59999999999,
+      "target": "spacer",
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 18597.09999999999,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 18603.5,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 18603.59999999999,
+      "target": "tree",
+      "observedHeight": 427,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 18603.59999999999,
+      "target": "spacer",
+      "observedHeight": 1840,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 19765.79999999999,
+      "target": "tree",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 19765.79999999999,
+      "target": "spacer",
+      "observedHeight": 0,
+      "state": {
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "",
+        "selection": "Cuerpo humano"
+      }
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 20637.29999999999,
+      "requested": 306.5,
+      "before": {
+        "scrollTop": 0,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho",
+        "renderedSelected": "atlas-node-muscular:group:arm-right:shoulder"
+      },
+      "after": {
+        "scrollTop": 307,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho",
+        "renderedSelected": "atlas-node-muscular:group:arm-right:shoulder"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 20640.5,
+      "requested": 307,
+      "before": {
+        "scrollTop": 307,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho",
+        "renderedSelected": "atlas-node-muscular:group:arm-right:shoulder"
+      },
+      "after": {
+        "scrollTop": 307,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho",
+        "renderedSelected": "atlas-node-muscular:group:arm-right:shoulder"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "observe",
+      "timeMs": 20640.899999999994,
+      "target": "tree",
+      "state": {
+        "scrollTop": 307,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho",
+        "renderedSelected": "atlas-node-muscular:group:arm-right:shoulder"
+      }
+    },
+    {
+      "kind": "observe",
+      "timeMs": 20640.899999999994,
+      "target": "spacer",
+      "state": {
+        "scrollTop": 307,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho",
+        "renderedSelected": "atlas-node-muscular:group:arm-right:shoulder"
+      }
+    },
+    {
+      "kind": "scroll-event",
+      "timeMs": 20645.899999999994,
+      "state": {
+        "scrollTop": 307,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho",
+        "renderedSelected": "atlas-node-muscular:group:arm-right:shoulder"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 20646.29999999999,
+      "state": {
+        "scrollTop": 307,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho",
+        "renderedSelected": "atlas-node-muscular:group:arm-right:shoulder"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 20648.79999999999,
+      "state": {
+        "scrollTop": 307,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho",
+        "renderedSelected": "atlas-node-muscular:group:arm-right:shoulder"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 20649,
+      "target": "tree",
+      "observedHeight": 427,
+      "state": {
+        "scrollTop": 307,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho",
+        "renderedSelected": "atlas-node-muscular:group:arm-right:shoulder"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 20649.399999999994,
+      "target": "spacer",
+      "observedHeight": 1840,
+      "state": {
+        "scrollTop": 307,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "1840px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho",
+        "renderedSelected": "atlas-node-muscular:group:arm-right:shoulder"
+      }
+    },
+    {
+      "kind": "scrollTop-set",
+      "timeMs": 20757.899999999994,
+      "requested": 1413,
+      "before": {
+        "scrollTop": 307,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "11720px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho"
+      },
+      "after": {
+        "scrollTop": 1413,
+        "scrollHeight": 1840,
+        "clientHeight": 427,
+        "spacerStyleHeight": "11720px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho"
+      },
+      "stack": "Error\n    at HTMLDivElement.set [as scrollTop] (<anonymous>:10:91)\n    at http://127.0.0.1:33859/med3d/assets/SkeletalAtlas-VOoJLrGF.js:2:15268\n    at Pl (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:92705)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97220)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:98212)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)\n    at dn (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:106087)\n    at Gh (http://127.0.0.1:33859/med3d/assets/index-CF1WiNng.js:9:97779)"
+    },
+    {
+      "kind": "style-mutation",
+      "timeMs": 20763.399999999994,
+      "target": "spacer",
+      "oldValue": "height: 1840px; position: relative;",
+      "newValue": "height: 11720px; position: relative;",
+      "state": {
+        "scrollTop": 1413,
+        "scrollHeight": 2160,
+        "clientHeight": 427,
+        "spacerStyleHeight": "11720px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho"
+      }
+    },
+    {
+      "kind": "scroll-event",
+      "timeMs": 20765.79999999999,
+      "state": {
+        "scrollTop": 1413,
+        "scrollHeight": 2160,
+        "clientHeight": 427,
+        "spacerStyleHeight": "11720px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho"
+      }
+    },
+    {
+      "kind": "after-animation-frame",
+      "timeMs": 20766,
+      "state": {
+        "scrollTop": 1413,
+        "scrollHeight": 2160,
+        "clientHeight": 427,
+        "spacerStyleHeight": "11720px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho"
+      }
+    },
+    {
+      "kind": "resize",
+      "timeMs": 20783.899999999994,
+      "target": "spacer",
+      "observedHeight": 11720,
+      "state": {
+        "scrollTop": 1413,
+        "scrollHeight": 11720,
+        "clientHeight": 427,
+        "spacerStyleHeight": "11720px",
+        "selectedId": "muscular:group:arm-right:shoulder",
+        "selection": "Hombro derecho"
+      }
+    }
+  ],
+  "sourceBuild": {
+    "commit": "b8e90c6d9041a214fedb6e21083681fa7943cfb7",
+    "runId": 35554626390,
+    "url": "https://github.com/jotajotafv/med3d/actions/runs/35554626390",
+    "artifactSha256": "4fb35de3ca357c83bc62c80d4955e3e2c1939946d2bbcafef726fd6ef63864c1"
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "date": "2026-09-21T02:45:51.132Z",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "deviceScaleFactor": 1,
+    "network": "Unthrottled loopback HTTP, no-store responses",
+    "physicalDevicesTested": [],
+    "limitations": [
+      "No desktop, laptop, phone or tablet physical GPU is available in this runtime.",
+      "Browser viewport checks cannot represent device GPU, thermal or network performance.",
+      "Geometry bytes are owned decoded buffers, not a measurement of GPU VRAM.",
+      "JS heap measures the browser JavaScript heap only.",
+      "FPS is measured during automated interaction on software WebGL; it is not a hardware performance prediction."
+    ],
+    "detectedWebGL": {
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "vendor": "Google Inc. (Google)"
+    }
+  },
+  "measurements": {
+    "initial": {
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 7,
+      "meshCount": 205,
+      "triangleCount": 512450,
+      "geometryBytes": 7609772,
+      "drawCalls": 205,
+      "renderGeometries": 209,
+      "renderTextures": 4,
+      "loadMs": 83,
+      "firstGeometryMs": 259.5999999999767,
+      "fullSystemMs": 1581.2999999999884
+    },
+    "loadMarks": [
+      {
+        "name": "med3d:load-start",
+        "startTimeMs": 760.7999999999884
+      },
+      {
+        "name": "med3d:first-geometry",
+        "startTimeMs": 1020.3999999999651
+      },
+      {
+        "name": "med3d:all-assets-rendered",
+        "startTimeMs": 2342.0999999999767
+      }
+    ],
+    "resources": [
+      {
+        "file": "arm-left.glb",
+        "durationMs": 9.299999999988358,
+        "encodedBodyBytes": 345860,
+        "transferBytes": 346160
+      },
+      {
+        "file": "arm-right.glb",
+        "durationMs": 10.399999999965075,
+        "encodedBodyBytes": 336004,
+        "transferBytes": 336304
+      },
+      {
+        "file": "leg-left.glb",
+        "durationMs": 6.099999999976717,
+        "encodedBodyBytes": 230240,
+        "transferBytes": 230540
+      },
+      {
+        "file": "leg-right.glb",
+        "durationMs": 3.099999999976717,
+        "encodedBodyBytes": 230668,
+        "transferBytes": 230968
+      },
+      {
+        "file": "skull.glb",
+        "durationMs": 5.7999999999883585,
+        "encodedBodyBytes": 1002700,
+        "transferBytes": 1003000
+      },
+      {
+        "file": "spine.glb",
+        "durationMs": 5.599999999976717,
+        "encodedBodyBytes": 579828,
+        "transferBytes": 580128
+      },
+      {
+        "file": "thorax.glb",
+        "durationMs": 5.5,
+        "encodedBodyBytes": 1191640,
+        "transferBytes": 1191940
+      }
+    ],
+    "encodedModelBytes": 3916940,
+    "browserMemoryInitial": {
+      "Documents": 1,
+      "Nodes": 635,
+      "LayoutCount": 0,
+      "JSHeapUsedSize": 11130948,
+      "JSHeapTotalSize": 21872640
+    },
+    "orbit": {
+      "renderedFrames": 7,
+      "sampleDurationMs": 2516.5999999999995,
+      "fps": 2.384169117062704,
+      "medianFrameIntervalMs": 366.6999999999998,
+      "p95FrameIntervalMs": 733.2999999999993,
+      "definition": "Unique requestAnimationFrame timestamps with actual WebGL draw calls while continuous input was issued."
+    },
+    "explode": {
+      "renderedFrames": 5,
+      "sampleDurationMs": 2633.199999999999,
+      "fps": 1.5190642564180472,
+      "medianFrameIntervalMs": 766.5,
+      "p95FrameIntervalMs": 766.7000000000007,
+      "definition": "Unique requestAnimationFrame timestamps with actual WebGL draw calls while continuous input was issued."
+    },
+    "search": [
+      {
+        "query": "femur",
+        "resultPaintMs": 4.2999999999883585,
+        "definition": "Input event to result DOM mutation; excludes browser transport and human typing."
+      },
+      {
+        "query": "FÍBULA IZQUIERDA",
+        "resultPaintMs": 7.300000000046566,
+        "definition": "Input event to result DOM mutation; excludes browser transport and human typing."
+      },
+      {
+        "query": "os femoris",
+        "resultPaintMs": 2.2999999999883585,
+        "definition": "Input event to result DOM mutation; excludes browser transport and human typing."
+      },
+      {
+        "query": "escafoides",
+        "resultPaintMs": 2.5,
+        "definition": "Input event to result DOM mutation; excludes browser transport and human typing."
+      }
+    ],
+    "regionUnloadMs": 1448.9987,
+    "afterRegionUnload": {
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 6,
+      "meshCount": 172,
+      "triangleCount": 488138,
+      "geometryBytes": 7243788,
+      "drawCalls": 172,
+      "renderGeometries": 176,
+      "renderTextures": 4,
+      "loadMs": 83,
+      "firstGeometryMs": 259.5999999999767,
+      "fullSystemMs": 1581.2999999999884
+    },
+    "regionSearchReloadMs": 1089.5972000000002,
+    "fullUnloadMs": 1187.2272630000007,
+    "afterFullUnload": {
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 0,
+      "meshCount": 0,
+      "triangleCount": 0,
+      "geometryBytes": 0,
+      "drawCalls": 0,
+      "renderGeometries": 4,
+      "renderTextures": 4,
+      "loadMs": 0,
+      "firstGeometryMs": 259.5999999999767,
+      "fullSystemMs": 1581.2999999999884
+    },
+    "browserMemoryUnloaded": {
+      "Documents": 1,
+      "Nodes": 619,
+      "LayoutCount": 22,
+      "JSHeapUsedSize": 11441796,
+      "JSHeapTotalSize": 28688384
+    },
+    "fullReloadMs": 1251.3146220000017,
+    "afterFullReload": {
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 7,
+      "meshCount": 205,
+      "triangleCount": 512450,
+      "geometryBytes": 7609772,
+      "drawCalls": 205,
+      "renderGeometries": 209,
+      "renderTextures": 4,
+      "loadMs": 72.40000000002328,
+      "firstGeometryMs": 259.5999999999767,
+      "fullSystemMs": 1581.2999999999884
+    },
+    "browserMemoryReloaded": {
+      "Documents": 1,
+      "Nodes": 620,
+      "LayoutCount": 24,
+      "JSHeapUsedSize": 13986716,
+      "JSHeapTotalSize": 31309824
+    },
+    "operationTimingDefinition": "Region/unload/reload wall times include automated UI click, load and React DOM metrics acknowledgement; not isolated network or GPU kernel timings."
+  },
+  "success": true
+}

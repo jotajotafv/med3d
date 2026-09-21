@@ -1,0 +1,175 @@
+{
+  "commit": "89fe1a4e6786df71e0930014bb51017b71b07d73",
+  "runId": 35553304271,
+  "runUrl": "https://github.com/jotajotafv/med3d/actions/runs/35553304271",
+  "pilotFunctionalSuccess": true,
+  "pilotFunctionalChecks": 30,
+  "baselineFunctional": "success",
+  "baselineCaptures": "success",
+  "baselinePerformance": "success",
+  "pilotPerformance": "success",
+  "pilotCapturesSuccess": false,
+  "capturedFiles": [
+    "01-anterior-oseo-muscular.png",
+    "02-posterior-oseo-muscular.png",
+    "03-lateral-derecho.png",
+    "04-lateral-izquierdo.png",
+    "05-hombro-derecho.png",
+    "06-hombro-izquierdo.png",
+    "07-brazo-derecho.png",
+    "08-brazo-izquierdo.png",
+    "09-deltoides-seleccionado.png",
+    "10-deltoides-aislado.png",
+    "11-biceps-seleccionado.png",
+    "12-biceps-aislado.png",
+    "13-triceps.png",
+    "14-manguito-rotador-posterior.png"
+  ],
+  "error": "locator.waitFor: Timeout 20000ms exceeded.\nCall log:\n  - waiting for getByRole('tree', { name: 'Árbol anatómico' }).getByRole('treeitem', { selected: true }) to be visible\n\n    at Object.captures (/home/runner/work/med3d/med3d/scripts/anatomy/pilot-qa.mjs:109:261)\n    at async file:///home/runner/work/med3d/med3d/scripts/anatomy/pilot-qa.mjs:139:38\n    at async withinQaDeadline (/home/runner/work/med3d/med3d/scripts/anatomy/browser-qa.mjs:16:12)\n    at async file:///home/runner/work/med3d/med3d/scripts/anatomy/pilot-qa.mjs:139:5",
+  "failureUi": {
+    "selection": "Hombro derecho",
+    "tree": {
+      "scrollTop": 1413,
+      "scrollHeight": 11720,
+      "clientHeight": 427,
+      "rows": [
+        {
+          "id": "atlas-node-skeletal:group:leg-right:thigh",
+          "selected": "false",
+          "text": "Muslo"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24474",
+          "selected": "false",
+          "text": "Fémur derecho"
+        },
+        {
+          "id": "atlas-node-skeletal:group:leg-right:leg",
+          "selected": "false",
+          "text": "Pierna"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24480",
+          "selected": "false",
+          "text": "Peroné derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24477",
+          "selected": "false",
+          "text": "Tibia derecha"
+        },
+        {
+          "id": "atlas-node-skeletal:group:leg-right:knee",
+          "selected": "false",
+          "text": "Rodilla"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24486",
+          "selected": "false",
+          "text": "Rótula derecha"
+        },
+        {
+          "id": "atlas-node-skeletal:group:leg-right:sesamoid",
+          "selected": "false",
+          "text": "Sesamoideos del pie"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA45097:FJ3372",
+          "selected": "false",
+          "text": "Sesamoideo del pie derecho · FJ3372"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA45097:FJ3376",
+          "selected": "false",
+          "text": "Sesamoideo del pie derecho · FJ3376"
+        },
+        {
+          "id": "atlas-node-skeletal:group:leg-right:tarsals",
+          "selected": "false",
+          "text": "Tarso"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24482",
+          "selected": "false",
+          "text": "Astrágalo derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24497",
+          "selected": "false",
+          "text": "Calcáneo derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24528",
+          "selected": "false",
+          "text": "Cuboides derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24523",
+          "selected": "false",
+          "text": "Cuneiforme intermedio derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24525",
+          "selected": "false",
+          "text": "Cuneiforme lateral derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24521",
+          "selected": "false",
+          "text": "Cuneiforme medial derecho"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA24500",
+          "selected": "false",
+          "text": "Navicular del pie derecho"
+        },
+        {
+          "id": "atlas-node-skeletal:region:leg-left",
+          "selected": "false",
+          "text": "Miembro inferior izquierdo"
+        },
+        {
+          "id": "atlas-node-skeletal:group:leg-left:girdle",
+          "selected": "false",
+          "text": "Cintura pélvica"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA16587",
+          "selected": "false",
+          "text": "Hueso coxal izquierdo"
+        },
+        {
+          "id": "atlas-node-skeletal:group:leg-left:toephalanges",
+          "selected": "false",
+          "text": "Falanges del pie"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA32651",
+          "selected": "false",
+          "text": "Falange distal del dedo 1 del pie izquierdo"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA32653",
+          "selected": "false",
+          "text": "Falange distal del dedo 2 del pie izquierdo"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA32655",
+          "selected": "false",
+          "text": "Falange distal del dedo 3 del pie izquierdo"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA32657",
+          "selected": "false",
+          "text": "Falange distal del dedo 4 del pie izquierdo"
+        },
+        {
+          "id": "atlas-node-bp3d:FMA32659",
+          "selected": "false",
+          "text": "Falange distal del dedo 5 del pie izquierdo"
+        }
+      ]
+    }
+  },
+  "interpretation": "React virtual rows now match DOM scroll position. Native offset remains clamped at 1413 (previous 46-row tree limit) after expansion to 293 rows. Further targeted diagnosis required; this run does not approve the pilot."
+}

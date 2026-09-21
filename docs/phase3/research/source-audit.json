@@ -1,0 +1,1636 @@
+{
+  "checked_date": "2026-09-21",
+  "repository": "https://github.com/jotajotafv/med3d",
+  "baseline_commit": "41c797b106c66429eeda41a81597bf05abfb07d8",
+  "scope": "Pre-implementation source investigation and numeric inspection. No muscular GLB integrated, no clinical or visual anatomical validation, no application benchmark.",
+  "metadata_audit": {
+    "checked_date": "2026-09-21",
+    "version": "4.0",
+    "source_base": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/",
+    "metadata": [
+      {
+        "filename": "isa_element_parts.txt",
+        "bytes": 1142159,
+        "sha256": "a3de74423f943b0d724ae8f59b3a817f87c423a544f8db98113b1980817cbeaf"
+      },
+      {
+        "filename": "isa_inclusion_relation_list.txt",
+        "bytes": 207664,
+        "sha256": "26e7d818e03a8c909fe09c561f38d0d513423c87681f9450a803bc38f5b07564"
+      },
+      {
+        "filename": "isa_parts_list_e.txt",
+        "bytes": 128086,
+        "sha256": "ab7796deedd49205e77f3609a1cb8c53e2bbee14ecb5c9a6ca05227469780513"
+      },
+      {
+        "filename": "partof_element_parts.txt",
+        "bytes": 651179,
+        "sha256": "3f5f6df1028eb122b30de77c711597b6bb8e5541658e5985859fd228adbf88ea"
+      },
+      {
+        "filename": "partof_parts_list_e.txt",
+        "bytes": 59351,
+        "sha256": "9224080557053e6f1322f1e13ab27f0ecde0db19bb3b505f0631afad230eeebd"
+      }
+    ],
+    "all_isa": {
+      "represented_concepts": 2905,
+      "inclusion_edges": 2904,
+      "concept_fj_rows": 29549,
+      "unique_fj": 2234
+    },
+    "muscle_branches": [
+      {
+        "concept_id": "FMA5022",
+        "name": "muscle organ",
+        "concept_descendants_including_root": 535,
+        "terminal_concepts": 302,
+        "unique_fj": 323,
+        "fj_ids": [
+          "FJ1294",
+          "FJ1295",
+          "FJ1304",
+          "FJ1306",
+          "FJ1308",
+          "FJ1322",
+          "FJ1323",
+          "FJ1345",
+          "FJ1346",
+          "FJ1355",
+          "FJ1357",
+          "FJ1359",
+          "FJ1373",
+          "FJ1374",
+          "FJ1383",
+          "FJ1383M",
+          "FJ1384",
+          "FJ1384M",
+          "FJ1385",
+          "FJ1385M",
+          "FJ1386",
+          "FJ1386M",
+          "FJ1387",
+          "FJ1387M",
+          "FJ1388",
+          "FJ1388M",
+          "FJ1389",
+          "FJ1389M",
+          "FJ1390",
+          "FJ1390M",
+          "FJ1391",
+          "FJ1391M",
+          "FJ1399",
+          "FJ1399M",
+          "FJ1400",
+          "FJ1400M",
+          "FJ1401",
+          "FJ1401M",
+          "FJ1402",
+          "FJ1402M",
+          "FJ1403",
+          "FJ1403M",
+          "FJ1404",
+          "FJ1404M",
+          "FJ1406",
+          "FJ1406M",
+          "FJ1407",
+          "FJ1407M",
+          "FJ1408",
+          "FJ1408M",
+          "FJ1409",
+          "FJ1409M",
+          "FJ1410",
+          "FJ1410M",
+          "FJ1411",
+          "FJ1411M",
+          "FJ1412",
+          "FJ1412M",
+          "FJ1413",
+          "FJ1413M",
+          "FJ1414",
+          "FJ1414M",
+          "FJ1415",
+          "FJ1415M",
+          "FJ1416",
+          "FJ1416M",
+          "FJ1417",
+          "FJ1417M",
+          "FJ1418",
+          "FJ1418M",
+          "FJ1419",
+          "FJ1419M",
+          "FJ1420",
+          "FJ1420M",
+          "FJ1421",
+          "FJ1421M",
+          "FJ1422",
+          "FJ1422M",
+          "FJ1425",
+          "FJ1425M",
+          "FJ1426",
+          "FJ1426M",
+          "FJ1427",
+          "FJ1427M",
+          "FJ1428",
+          "FJ1428M",
+          "FJ1429",
+          "FJ1429M",
+          "FJ1430",
+          "FJ1430M",
+          "FJ1431",
+          "FJ1431M",
+          "FJ1432",
+          "FJ1432M",
+          "FJ1434",
+          "FJ1434M",
+          "FJ1435",
+          "FJ1435M",
+          "FJ1436",
+          "FJ1436M",
+          "FJ1437",
+          "FJ1437M",
+          "FJ1438",
+          "FJ1438M",
+          "FJ1439",
+          "FJ1439M",
+          "FJ1440",
+          "FJ1440M",
+          "FJ1449M",
+          "FJ1450",
+          "FJ1450M",
+          "FJ1451",
+          "FJ1451M",
+          "FJ1452",
+          "FJ1452M",
+          "FJ1454",
+          "FJ1454M",
+          "FJ1455",
+          "FJ1455M",
+          "FJ1456",
+          "FJ1456M",
+          "FJ1459",
+          "FJ1459M",
+          "FJ1460",
+          "FJ1460M",
+          "FJ1461",
+          "FJ1461M",
+          "FJ1466",
+          "FJ1466M",
+          "FJ1469",
+          "FJ1469M",
+          "FJ1470",
+          "FJ1470M",
+          "FJ1472",
+          "FJ1472M",
+          "FJ1475",
+          "FJ1475M",
+          "FJ1482",
+          "FJ1482M",
+          "FJ1483",
+          "FJ1483M",
+          "FJ1484",
+          "FJ1484M",
+          "FJ1485",
+          "FJ1485M",
+          "FJ1486",
+          "FJ1486M",
+          "FJ1487",
+          "FJ1487M",
+          "FJ1488",
+          "FJ1488M",
+          "FJ1489",
+          "FJ1489M",
+          "FJ1490",
+          "FJ1490M",
+          "FJ1491",
+          "FJ1491M",
+          "FJ1492",
+          "FJ1492M",
+          "FJ1493",
+          "FJ1493M",
+          "FJ1494",
+          "FJ1494M",
+          "FJ1495",
+          "FJ1495M",
+          "FJ1496",
+          "FJ1496M",
+          "FJ1497",
+          "FJ1497M",
+          "FJ1498",
+          "FJ1498M",
+          "FJ1499",
+          "FJ1499M",
+          "FJ1500",
+          "FJ1500M",
+          "FJ1501",
+          "FJ1501M",
+          "FJ1502",
+          "FJ1502M",
+          "FJ1503",
+          "FJ1503M",
+          "FJ1504",
+          "FJ1504M",
+          "FJ1505",
+          "FJ1505M",
+          "FJ1506",
+          "FJ1506M",
+          "FJ1507",
+          "FJ1507M",
+          "FJ1508",
+          "FJ1508M",
+          "FJ1517",
+          "FJ1517M",
+          "FJ1522",
+          "FJ1522M",
+          "FJ1524",
+          "FJ1524M",
+          "FJ1525",
+          "FJ1525M",
+          "FJ1526",
+          "FJ1526M",
+          "FJ1527",
+          "FJ1527M",
+          "FJ1528",
+          "FJ1528M",
+          "FJ1532",
+          "FJ1532M",
+          "FJ1533",
+          "FJ1533M",
+          "FJ1534",
+          "FJ1534M",
+          "FJ1535",
+          "FJ1535M",
+          "FJ1536",
+          "FJ1536M",
+          "FJ1537",
+          "FJ1537M",
+          "FJ1538",
+          "FJ1538M",
+          "FJ1539",
+          "FJ1539M",
+          "FJ1540",
+          "FJ1540M",
+          "FJ1541",
+          "FJ1541M",
+          "FJ1542",
+          "FJ1542M",
+          "FJ1543",
+          "FJ1543M",
+          "FJ1544",
+          "FJ1544M",
+          "FJ1545",
+          "FJ1545M",
+          "FJ1546",
+          "FJ1546M",
+          "FJ1547",
+          "FJ1547M",
+          "FJ1548",
+          "FJ1548M",
+          "FJ1551",
+          "FJ1551M",
+          "FJ1555",
+          "FJ1556",
+          "FJ1558",
+          "FJ1559",
+          "FJ1560",
+          "FJ1561",
+          "FJ1562",
+          "FJ1563",
+          "FJ1564",
+          "FJ1565",
+          "FJ1566",
+          "FJ1567",
+          "FJ1568",
+          "FJ1569",
+          "FJ1570",
+          "FJ1571",
+          "FJ1572",
+          "FJ1573",
+          "FJ1574",
+          "FJ1575",
+          "FJ1576",
+          "FJ1577",
+          "FJ1578",
+          "FJ1579",
+          "FJ1580",
+          "FJ1582",
+          "FJ1583",
+          "FJ1584",
+          "FJ1585",
+          "FJ1586",
+          "FJ1587",
+          "FJ1588",
+          "FJ1589",
+          "FJ1590",
+          "FJ1591",
+          "FJ1592",
+          "FJ1593",
+          "FJ1594",
+          "FJ1595",
+          "FJ1596",
+          "FJ1597",
+          "FJ1598",
+          "FJ1599",
+          "FJ2542",
+          "FJ2543",
+          "FJ2547",
+          "FJ2548",
+          "FJ2738",
+          "FJ2739",
+          "FJ2740",
+          "FJ2741",
+          "FJ2742",
+          "FJ2743",
+          "FJ2745",
+          "FJ2746",
+          "FJ2747",
+          "FJ2748",
+          "FJ2750",
+          "FJ2751",
+          "FJ2752",
+          "FJ2753",
+          "FJ2754",
+          "FJ2755",
+          "FJ2757",
+          "FJ2758",
+          "FJ2759",
+          "FJ2760",
+          "FJ2762",
+          "FJ2778",
+          "FJ2780",
+          "FJ2782",
+          "FJ2784",
+          "FJ2785",
+          "FJ2788",
+          "FJ2796",
+          "FJ2798",
+          "FJ2800",
+          "FJ2802",
+          "FJ2803",
+          "FJ2806",
+          "FJ2809",
+          "FJ3131"
+        ]
+      },
+      {
+        "concept_id": "FMA10474",
+        "name": "zone of muscle organ",
+        "concept_descendants_including_root": 63,
+        "terminal_concepts": 35,
+        "unique_fj": 38,
+        "fj_ids": [
+          "FJ1433",
+          "FJ1433M",
+          "FJ1441",
+          "FJ1441M",
+          "FJ1442",
+          "FJ1442M",
+          "FJ1443",
+          "FJ1443M",
+          "FJ1446",
+          "FJ1446M",
+          "FJ1453M",
+          "FJ1457M",
+          "FJ1458M",
+          "FJ1464",
+          "FJ1464M",
+          "FJ1467",
+          "FJ1467M",
+          "FJ1468",
+          "FJ1468M",
+          "FJ1513",
+          "FJ1513M",
+          "FJ1554",
+          "FJ1554M",
+          "FJ1557",
+          "FJ1600",
+          "FJ1601",
+          "FJ2544",
+          "FJ2545",
+          "FJ2546",
+          "FJ2549",
+          "FJ2550",
+          "FJ2551",
+          "FJ2774",
+          "FJ2781",
+          "FJ2783",
+          "FJ2791",
+          "FJ2799",
+          "FJ2801"
+        ]
+      },
+      {
+        "concept_id": "FMA85453",
+        "name": "head of muscle organ",
+        "concept_descendants_including_root": 68,
+        "terminal_concepts": 42,
+        "unique_fj": 42,
+        "fj_ids": [
+          "FJ1393",
+          "FJ1393M",
+          "FJ1394",
+          "FJ1394M",
+          "FJ1395",
+          "FJ1395M",
+          "FJ1396",
+          "FJ1396M",
+          "FJ1397",
+          "FJ1397M",
+          "FJ1398",
+          "FJ1398M",
+          "FJ1444",
+          "FJ1444M",
+          "FJ1445",
+          "FJ1445M",
+          "FJ1447",
+          "FJ1447M",
+          "FJ1473",
+          "FJ1473M",
+          "FJ1474",
+          "FJ1474M",
+          "FJ1477",
+          "FJ1477M",
+          "FJ1478",
+          "FJ1478M",
+          "FJ1479",
+          "FJ1479M",
+          "FJ1480",
+          "FJ1480M",
+          "FJ1481",
+          "FJ1481M",
+          "FJ1512",
+          "FJ1512M",
+          "FJ1514",
+          "FJ1514M",
+          "FJ1515",
+          "FJ1515M",
+          "FJ1516",
+          "FJ1516M",
+          "FJ1518",
+          "FJ1518M"
+        ]
+      }
+    ],
+    "muscle_candidate_union": {
+      "concept_count": 666,
+      "unique_fj": 403,
+      "limitation": "Not a conventional anatomical muscle count; contains groups, laterality, heads, and zones. Not proof of complete skeletal-muscle coverage or geometry quality."
+    },
+    "pilot": {
+      "target_muscle_names": 8,
+      "target_bilateral_units": 16,
+      "component_mesh_ids": 26,
+      "component_pairs": [
+        {
+          "component": "deltoid_clavicular",
+          "right": {
+            "concept id": "FMA34680",
+            "representation id": "BP7573",
+            "en": "clavicular part of right deltoid",
+            "element_file_ids": [
+              "FJ1468"
+            ]
+          },
+          "left": {
+            "concept id": "FMA34681",
+            "representation id": "BP8259",
+            "en": "clavicular part of left deltoid",
+            "element_file_ids": [
+              "FJ1468M"
+            ]
+          }
+        },
+        {
+          "component": "deltoid_acromial",
+          "right": {
+            "concept id": "FMA34682",
+            "representation id": "BP7571",
+            "en": "acromial part of right deltoid",
+            "element_file_ids": [
+              "FJ1467"
+            ]
+          },
+          "left": {
+            "concept id": "FMA34683",
+            "representation id": "BP9075",
+            "en": "acromial part of left deltoid",
+            "element_file_ids": [
+              "FJ1467M"
+            ]
+          }
+        },
+        {
+          "component": "deltoid_spinal",
+          "right": {
+            "concept id": "FMA34684",
+            "representation id": "BP5607",
+            "en": "spinal part of right deltoid",
+            "element_file_ids": [
+              "FJ1513"
+            ]
+          },
+          "left": {
+            "concept id": "FMA34685",
+            "representation id": "BP8151",
+            "en": "spinal part of left deltoid",
+            "element_file_ids": [
+              "FJ1513M"
+            ]
+          }
+        },
+        {
+          "component": "biceps_short_head",
+          "right": {
+            "concept id": "FMA37684",
+            "representation id": "BP5558",
+            "en": "short head of right biceps brachii",
+            "element_file_ids": [
+              "FJ1512"
+            ]
+          },
+          "left": {
+            "concept id": "FMA37685",
+            "representation id": "BP9153",
+            "en": "short head of left biceps brachii",
+            "element_file_ids": [
+              "FJ1512M"
+            ]
+          }
+        },
+        {
+          "component": "biceps_long_head",
+          "right": {
+            "concept id": "FMA37686",
+            "representation id": "BP5566",
+            "en": "long head of right biceps brachii",
+            "element_file_ids": [
+              "FJ1478"
+            ]
+          },
+          "left": {
+            "concept id": "FMA37687",
+            "representation id": "BP8816",
+            "en": "long head of left biceps brachii",
+            "element_file_ids": [
+              "FJ1478M"
+            ]
+          }
+        },
+        {
+          "component": "triceps_medial_head",
+          "right": {
+            "concept id": "FMA37695",
+            "representation id": "BP5562",
+            "en": "medial head of right triceps brachii",
+            "element_file_ids": [
+              "FJ1480"
+            ]
+          },
+          "left": {
+            "concept id": "FMA37696",
+            "representation id": "BP8257",
+            "en": "medial head of left triceps brachii",
+            "element_file_ids": [
+              "FJ1480M"
+            ]
+          }
+        },
+        {
+          "component": "triceps_lateral_head",
+          "right": {
+            "concept id": "FMA37697",
+            "representation id": "BP5550",
+            "en": "lateral head of right triceps brachii",
+            "element_file_ids": [
+              "FJ1477"
+            ]
+          },
+          "left": {
+            "concept id": "FMA37698",
+            "representation id": "BP8525",
+            "en": "lateral head of left triceps brachii",
+            "element_file_ids": [
+              "FJ1477M"
+            ]
+          }
+        },
+        {
+          "component": "triceps_long_head",
+          "right": {
+            "concept id": "FMA37699",
+            "representation id": "BP5564",
+            "en": "long head of right triceps brachii",
+            "element_file_ids": [
+              "FJ1479"
+            ]
+          },
+          "left": {
+            "concept id": "FMA37700",
+            "representation id": "BP8344",
+            "en": "long head of left triceps brachii",
+            "element_file_ids": [
+              "FJ1479M"
+            ]
+          }
+        },
+        {
+          "component": "brachialis",
+          "right": {
+            "concept id": "FMA37668",
+            "representation id": "BP4807",
+            "en": "right brachialis",
+            "element_file_ids": [
+              "FJ1486"
+            ]
+          },
+          "left": {
+            "concept id": "FMA37669",
+            "representation id": "BP8684",
+            "en": "left brachialis",
+            "element_file_ids": [
+              "FJ1486M"
+            ]
+          }
+        },
+        {
+          "component": "supraspinatus",
+          "right": {
+            "concept id": "FMA32544",
+            "representation id": "BP4791",
+            "en": "right supraspinatus",
+            "element_file_ids": [
+              "FJ1506"
+            ]
+          },
+          "left": {
+            "concept id": "FMA32545",
+            "representation id": "BP8376",
+            "en": "left supraspinatus",
+            "element_file_ids": [
+              "FJ1506M"
+            ]
+          }
+        },
+        {
+          "component": "infraspinatus",
+          "right": {
+            "concept id": "FMA32547",
+            "representation id": "BP4797",
+            "en": "right infraspinatus muscle",
+            "element_file_ids": [
+              "FJ1500"
+            ]
+          },
+          "left": {
+            "concept id": "FMA32548",
+            "representation id": "BP8965",
+            "en": "left infraspinatus muscle",
+            "element_file_ids": [
+              "FJ1500M"
+            ]
+          }
+        },
+        {
+          "component": "teres_minor",
+          "right": {
+            "concept id": "FMA32553",
+            "representation id": "BP4793",
+            "en": "right teres minor",
+            "element_file_ids": [
+              "FJ1508"
+            ]
+          },
+          "left": {
+            "concept id": "FMA32554",
+            "representation id": "BP9197",
+            "en": "left teres minor",
+            "element_file_ids": [
+              "FJ1508M"
+            ]
+          }
+        },
+        {
+          "component": "subscapularis",
+          "right": {
+            "concept id": "FMA13414",
+            "representation id": "BP4795",
+            "en": "right subscapularis",
+            "element_file_ids": [
+              "FJ1504"
+            ]
+          },
+          "left": {
+            "concept id": "FMA13415",
+            "representation id": "BP8214",
+            "en": "left subscapularis",
+            "element_file_ids": [
+              "FJ1504M"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "zip_directory_inspection": {
+    "source": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+    "archive_bytes": 142903898,
+    "directory_entries": 2234,
+    "parsed_entries": 2234,
+    "obj_entries": 2234,
+    "transferred_bytes": 235582,
+    "requests": [
+      {
+        "range": "-65557",
+        "content_range": "bytes 142838341-142903897/142903898",
+        "bytes": 65557
+      },
+      {
+        "range": "142733851-142903875",
+        "content_range": "bytes 142733851-142903875/142903898",
+        "bytes": 170025
+      }
+    ],
+    "central_directory_sha256": "edde15c7c5f34b2b9743935fb3c1873cce3a9789164427ddf8343c879bcde96b",
+    "first_entries": [
+      {
+        "path": "isa_BP3D_4.0_obj_99/FJ1252.obj",
+        "compressed_bytes": 37779,
+        "bytes": 120953,
+        "crc32": "34e33efe",
+        "method": 8,
+        "offset": 0
+      },
+      {
+        "path": "isa_BP3D_4.0_obj_99/FJ1253.obj",
+        "compressed_bytes": 37129,
+        "bytes": 117509,
+        "crc32": "ecccc52b",
+        "method": 8,
+        "offset": 37839
+      },
+      {
+        "path": "isa_BP3D_4.0_obj_99/FJ1254.obj",
+        "compressed_bytes": 32484,
+        "bytes": 103775,
+        "crc32": "b547bffb",
+        "method": 8,
+        "offset": 75028
+      },
+      {
+        "path": "isa_BP3D_4.0_obj_99/FJ1255.obj",
+        "compressed_bytes": 22147,
+        "bytes": 69150,
+        "crc32": "01a16a77",
+        "method": 8,
+        "offset": 107572
+      },
+      {
+        "path": "isa_BP3D_4.0_obj_99/FJ1256.obj",
+        "compressed_bytes": 30204,
+        "bytes": 95723,
+        "crc32": "1c92ee0e",
+        "method": 8,
+        "offset": 129779
+      },
+      {
+        "path": "isa_BP3D_4.0_obj_99/FJ1257.obj",
+        "compressed_bytes": 21226,
+        "bytes": 65949,
+        "crc32": "2c8d11de",
+        "method": 8,
+        "offset": 160043
+      }
+    ]
+  },
+  "candidate_archive_sizes": {
+    "source": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+    "method": "ZIP central-directory metadata only; no body-wide OBJ extraction",
+    "transferred_bytes": 235582,
+    "central_directory_sha256": "edde15c7c5f34b2b9743935fb3c1873cce3a9789164427ddf8343c879bcde96b",
+    "candidate": {
+      "requested_ids": 403,
+      "found_ids": 403,
+      "missing_ids": [],
+      "obj_uncompressed_bytes": 181315733,
+      "zip_compressed_bytes": 53590425
+    },
+    "pilot": {
+      "requested_ids": 26,
+      "found_ids": 26,
+      "missing_ids": [],
+      "obj_uncompressed_bytes": 3264206,
+      "zip_compressed_bytes": 989792,
+      "entries": [
+        {
+          "id": "FJ1468",
+          "path": "isa_BP3D_4.0_obj_99/FJ1468.obj",
+          "compressed_bytes": 63249,
+          "bytes": 223657,
+          "crc32": "ab38ba35"
+        },
+        {
+          "id": "FJ1468M",
+          "path": "isa_BP3D_4.0_obj_99/FJ1468M.obj",
+          "compressed_bytes": 62987,
+          "bytes": 222006,
+          "crc32": "012c6829"
+        },
+        {
+          "id": "FJ1467",
+          "path": "isa_BP3D_4.0_obj_99/FJ1467.obj",
+          "compressed_bytes": 29687,
+          "bytes": 92591,
+          "crc32": "b31afe8f"
+        },
+        {
+          "id": "FJ1467M",
+          "path": "isa_BP3D_4.0_obj_99/FJ1467M.obj",
+          "compressed_bytes": 29713,
+          "bytes": 91869,
+          "crc32": "76914e75"
+        },
+        {
+          "id": "FJ1513",
+          "path": "isa_BP3D_4.0_obj_99/FJ1513.obj",
+          "compressed_bytes": 46756,
+          "bytes": 157136,
+          "crc32": "90d182b3"
+        },
+        {
+          "id": "FJ1513M",
+          "path": "isa_BP3D_4.0_obj_99/FJ1513M.obj",
+          "compressed_bytes": 46871,
+          "bytes": 156732,
+          "crc32": "b0233810"
+        },
+        {
+          "id": "FJ1512",
+          "path": "isa_BP3D_4.0_obj_99/FJ1512.obj",
+          "compressed_bytes": 47460,
+          "bytes": 161507,
+          "crc32": "8745907c"
+        },
+        {
+          "id": "FJ1512M",
+          "path": "isa_BP3D_4.0_obj_99/FJ1512M.obj",
+          "compressed_bytes": 47378,
+          "bytes": 159783,
+          "crc32": "0d9629b1"
+        },
+        {
+          "id": "FJ1478",
+          "path": "isa_BP3D_4.0_obj_99/FJ1478.obj",
+          "compressed_bytes": 33239,
+          "bytes": 105386,
+          "crc32": "61ff5926"
+        },
+        {
+          "id": "FJ1478M",
+          "path": "isa_BP3D_4.0_obj_99/FJ1478M.obj",
+          "compressed_bytes": 32958,
+          "bytes": 103260,
+          "crc32": "949f7d2a"
+        },
+        {
+          "id": "FJ1480",
+          "path": "isa_BP3D_4.0_obj_99/FJ1480.obj",
+          "compressed_bytes": 19947,
+          "bytes": 61608,
+          "crc32": "9cd7730f"
+        },
+        {
+          "id": "FJ1480M",
+          "path": "isa_BP3D_4.0_obj_99/FJ1480M.obj",
+          "compressed_bytes": 19877,
+          "bytes": 60584,
+          "crc32": "bd300921"
+        },
+        {
+          "id": "FJ1477",
+          "path": "isa_BP3D_4.0_obj_99/FJ1477.obj",
+          "compressed_bytes": 57448,
+          "bytes": 182250,
+          "crc32": "f19f5e8b"
+        },
+        {
+          "id": "FJ1477M",
+          "path": "isa_BP3D_4.0_obj_99/FJ1477M.obj",
+          "compressed_bytes": 57017,
+          "bytes": 180451,
+          "crc32": "1424c831"
+        },
+        {
+          "id": "FJ1479",
+          "path": "isa_BP3D_4.0_obj_99/FJ1479.obj",
+          "compressed_bytes": 35496,
+          "bytes": 113287,
+          "crc32": "0016b8b0"
+        },
+        {
+          "id": "FJ1479M",
+          "path": "isa_BP3D_4.0_obj_99/FJ1479M.obj",
+          "compressed_bytes": 35502,
+          "bytes": 112468,
+          "crc32": "cca1c473"
+        },
+        {
+          "id": "FJ1486",
+          "path": "isa_BP3D_4.0_obj_99/FJ1486.obj",
+          "compressed_bytes": 39956,
+          "bytes": 127901,
+          "crc32": "9dcfbdc9"
+        },
+        {
+          "id": "FJ1486M",
+          "path": "isa_BP3D_4.0_obj_99/FJ1486M.obj",
+          "compressed_bytes": 39768,
+          "bytes": 126069,
+          "crc32": "3b6cee87"
+        },
+        {
+          "id": "FJ1506",
+          "path": "isa_BP3D_4.0_obj_99/FJ1506.obj",
+          "compressed_bytes": 23086,
+          "bytes": 76172,
+          "crc32": "2cb78047"
+        },
+        {
+          "id": "FJ1506M",
+          "path": "isa_BP3D_4.0_obj_99/FJ1506M.obj",
+          "compressed_bytes": 22989,
+          "bytes": 75068,
+          "crc32": "90db6a0e"
+        },
+        {
+          "id": "FJ1500",
+          "path": "isa_BP3D_4.0_obj_99/FJ1500.obj",
+          "compressed_bytes": 22037,
+          "bytes": 69844,
+          "crc32": "f3f5c0ef"
+        },
+        {
+          "id": "FJ1500M",
+          "path": "isa_BP3D_4.0_obj_99/FJ1500M.obj",
+          "compressed_bytes": 22001,
+          "bytes": 69046,
+          "crc32": "c62f2f0c"
+        },
+        {
+          "id": "FJ1508",
+          "path": "isa_BP3D_4.0_obj_99/FJ1508.obj",
+          "compressed_bytes": 12584,
+          "bytes": 38012,
+          "crc32": "10238bd1"
+        },
+        {
+          "id": "FJ1508M",
+          "path": "isa_BP3D_4.0_obj_99/FJ1508M.obj",
+          "compressed_bytes": 12595,
+          "bytes": 37682,
+          "crc32": "45fb7172"
+        },
+        {
+          "id": "FJ1504",
+          "path": "isa_BP3D_4.0_obj_99/FJ1504.obj",
+          "compressed_bytes": 64797,
+          "bytes": 231733,
+          "crc32": "fbba5562"
+        },
+        {
+          "id": "FJ1504M",
+          "path": "isa_BP3D_4.0_obj_99/FJ1504M.obj",
+          "compressed_bytes": 64394,
+          "bytes": 228104,
+          "crc32": "4e46cdb1"
+        }
+      ]
+    }
+  },
+  "pilot_source_sample": {
+    "source": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+    "inspection": "12 original OBJ only, byte range extraction; CRC32 checked; no anatomy modified, no import, no new registration fitted",
+    "source_to_existing_frame": [
+      [
+        0.001,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0.001,
+        0
+      ],
+      [
+        0,
+        -0.001,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "http_body_bytes": 1651177,
+    "models": [
+      {
+        "id": "FJ1478",
+        "path": "isa_BP3D_4.0_obj_99/FJ1478.obj",
+        "bytes": 105386,
+        "compressed_bytes": 33239,
+        "sha256": "2442d2b5ac30c5da42e72eeff83d143df51c7617001cbc6552096a504f29bc07",
+        "crc32": "61ff5926",
+        "vertices": 1053,
+        "faces": 1426,
+        "triangles": 1426,
+        "all_faces_triangular": true,
+        "source_bounds": [
+          [
+            -229.86,
+            -109.292,
+            994.072
+          ],
+          [
+            -135.268,
+            -67.8089,
+            1339.42
+          ]
+        ],
+        "bounds_metres_after_existing_matrix": [
+          [
+            -0.22986,
+            0.994072,
+            0.06780889999999999
+          ],
+          [
+            -0.135268,
+            1.33942,
+            0.109292
+          ]
+        ],
+        "header_compatibility_version": "4.0",
+        "header_legacy_license": "CC BY-SA 2.1 Japan",
+        "current_archive_license": "CC BY 4.0; publisher declaration updated 2025-02-27"
+      },
+      {
+        "id": "FJ1478M",
+        "path": "isa_BP3D_4.0_obj_99/FJ1478M.obj",
+        "bytes": 103260,
+        "compressed_bytes": 32958,
+        "sha256": "10189f1d7b5220df3baef2b259ae9855ed301c1afaadfc2de25af3222c5a08fc",
+        "crc32": "949f7d2a",
+        "vertices": 1039,
+        "faces": 1426,
+        "triangles": 1426,
+        "all_faces_triangular": true,
+        "source_bounds": [
+          [
+            135.268,
+            -109.293,
+            994.072
+          ],
+          [
+            229.86,
+            -67.8089,
+            1339.42
+          ]
+        ],
+        "bounds_metres_after_existing_matrix": [
+          [
+            0.135268,
+            0.994072,
+            0.06780889999999999
+          ],
+          [
+            0.22986,
+            1.33942,
+            0.109293
+          ]
+        ],
+        "header_compatibility_version": "4.0",
+        "header_legacy_license": "CC BY-SA 2.1 Japan",
+        "current_archive_license": "CC BY 4.0; publisher declaration updated 2025-02-27"
+      },
+      {
+        "id": "FJ1467",
+        "path": "isa_BP3D_4.0_obj_99/FJ1467.obj",
+        "bytes": 92591,
+        "compressed_bytes": 29687,
+        "sha256": "2f69f1a13c836539abca85d9b77f55f96319ad3fdd75c62f498eabe49b266bfe",
+        "crc32": "b31afe8f",
+        "vertices": 916,
+        "faces": 1300,
+        "triangles": 1300,
+        "all_faces_triangular": true,
+        "source_bounds": [
+          [
+            -227.228,
+            -103.338,
+            1205.09
+          ],
+          [
+            -146.586,
+            -40.8371,
+            1349.22
+          ]
+        ],
+        "bounds_metres_after_existing_matrix": [
+          [
+            -0.227228,
+            1.20509,
+            0.0408371
+          ],
+          [
+            -0.14658600000000002,
+            1.34922,
+            0.103338
+          ]
+        ],
+        "header_compatibility_version": "4.0",
+        "header_legacy_license": "CC BY-SA 2.1 Japan",
+        "current_archive_license": "CC BY 4.0; publisher declaration updated 2025-02-27"
+      },
+      {
+        "id": "FJ1467M",
+        "path": "isa_BP3D_4.0_obj_99/FJ1467M.obj",
+        "bytes": 91869,
+        "compressed_bytes": 29713,
+        "sha256": "a523b5f2ab862ad6505787f4936098fbcfe3f28a3742b57aac34307fe752f8eb",
+        "crc32": "76914e75",
+        "vertices": 918,
+        "faces": 1300,
+        "triangles": 1300,
+        "all_faces_triangular": true,
+        "source_bounds": [
+          [
+            146.586,
+            -103.337,
+            1205.09
+          ],
+          [
+            227.228,
+            -40.8371,
+            1349.22
+          ]
+        ],
+        "bounds_metres_after_existing_matrix": [
+          [
+            0.14658600000000002,
+            1.20509,
+            0.0408371
+          ],
+          [
+            0.227228,
+            1.34922,
+            0.103337
+          ]
+        ],
+        "header_compatibility_version": "4.0",
+        "header_legacy_license": "CC BY-SA 2.1 Japan",
+        "current_archive_license": "CC BY 4.0; publisher declaration updated 2025-02-27"
+      },
+      {
+        "id": "FJ1479",
+        "path": "isa_BP3D_4.0_obj_99/FJ1479.obj",
+        "bytes": 113287,
+        "compressed_bytes": 35496,
+        "sha256": "acc48f746bd07a117357a9c49a1a9850c96b85d7c63cf90a662a45717875a315",
+        "crc32": "0016b8b0",
+        "vertices": 1105,
+        "faces": 1588,
+        "triangles": 1588,
+        "all_faces_triangular": true,
+        "source_bounds": [
+          [
+            -216.462,
+            -64.1021,
+            1035.24
+          ],
+          [
+            -134.691,
+            -18.7595,
+            1300.75
+          ]
+        ],
+        "bounds_metres_after_existing_matrix": [
+          [
+            -0.216462,
+            1.03524,
+            0.0187595
+          ],
+          [
+            -0.134691,
+            1.30075,
+            0.0641021
+          ]
+        ],
+        "header_compatibility_version": "4.0",
+        "header_legacy_license": "CC BY-SA 2.1 Japan",
+        "current_archive_license": "CC BY 4.0; publisher declaration updated 2025-02-27"
+      },
+      {
+        "id": "FJ1479M",
+        "path": "isa_BP3D_4.0_obj_99/FJ1479M.obj",
+        "bytes": 112468,
+        "compressed_bytes": 35502,
+        "sha256": "4b8315f9134a213f45c3af830270f4526e705d0a149894516d3f5fba98878f15",
+        "crc32": "cca1c473",
+        "vertices": 1109,
+        "faces": 1588,
+        "triangles": 1588,
+        "all_faces_triangular": true,
+        "source_bounds": [
+          [
+            134.691,
+            -64.1021,
+            1035.24
+          ],
+          [
+            216.462,
+            -18.7596,
+            1300.75
+          ]
+        ],
+        "bounds_metres_after_existing_matrix": [
+          [
+            0.134691,
+            1.03524,
+            0.018759599999999998
+          ],
+          [
+            0.216462,
+            1.30075,
+            0.0641021
+          ]
+        ],
+        "header_compatibility_version": "4.0",
+        "header_legacy_license": "CC BY-SA 2.1 Japan",
+        "current_archive_license": "CC BY 4.0; publisher declaration updated 2025-02-27"
+      },
+      {
+        "id": "FJ3362",
+        "path": "isa_BP3D_4.0_obj_99/FJ3362.obj",
+        "bytes": 68321,
+        "compressed_bytes": 22650,
+        "sha256": "9a111cac8351e79dd1315aea90108fe56f78e4bf0159473e6ad727ba91b60e6d",
+        "crc32": "71d71386",
+        "vertices": 583,
+        "faces": 1146,
+        "triangles": 1146,
+        "all_faces_triangular": true,
+        "source_bounds": [
+          [
+            -145.277,
+            -146.948,
+            1308.62
+          ],
+          [
+            -9.66165,
+            -54.4125,
+            1355.44
+          ]
+        ],
+        "bounds_metres_after_existing_matrix": [
+          [
+            -0.145277,
+            1.30862,
+            0.0544125
+          ],
+          [
+            -0.009661649999999999,
+            1.35544,
+            0.146948
+          ]
+        ],
+        "header_compatibility_version": "4.0",
+        "header_legacy_license": "CC BY-SA 2.1 Japan",
+        "current_archive_license": "CC BY 4.0; publisher declaration updated 2025-02-27"
+      },
+      {
+        "id": "FJ3237",
+        "path": "isa_BP3D_4.0_obj_99/FJ3237.obj",
+        "bytes": 69709,
+        "compressed_bytes": 23404,
+        "sha256": "2491009d53eaed99ccb2a802b29402eec715eb8d207fb819fad67b0720195cf2",
+        "crc32": "9d862e71",
+        "vertices": 602,
+        "faces": 1176,
+        "triangles": 1176,
+        "all_faces_triangular": true,
+        "source_bounds": [
+          [
+            8.37873,
+            -147.078,
+            1308.53
+          ],
+          [
+            143.942,
+            -54.3875,
+            1355.18
+          ]
+        ],
+        "bounds_metres_after_existing_matrix": [
+          [
+            0.00837873,
+            1.30853,
+            0.054387500000000005
+          ],
+          [
+            0.14394200000000001,
+            1.35518,
+            0.14707800000000001
+          ]
+        ],
+        "header_compatibility_version": "4.0",
+        "header_legacy_license": "CC BY-SA 2.1 Japan",
+        "current_archive_license": "CC BY 4.0; publisher declaration updated 2025-02-27"
+      },
+      {
+        "id": "FJ3384",
+        "path": "isa_BP3D_4.0_obj_99/FJ3384.obj",
+        "bytes": 1743768,
+        "compressed_bytes": 495983,
+        "sha256": "1641b04e55f9d75bdd6f1f4f07ea596e5dea0a8cb6b348bff47281b8a0bc6e5d",
+        "crc32": "fe8fd6b5",
+        "vertices": 13118,
+        "faces": 26172,
+        "triangles": 26172,
+        "all_faces_triangular": true,
+        "source_bounds": [
+          [
+            -166.464,
+            -102.856,
+            1183.96
+          ],
+          [
+            -57.0538,
+            5.08275,
+            1349.86
+          ]
+        ],
+        "bounds_metres_after_existing_matrix": [
+          [
+            -0.166464,
+            1.1839600000000001,
+            -0.00508275
+          ],
+          [
+            -0.0570538,
+            1.3498599999999998,
+            0.10285599999999999
+          ]
+        ],
+        "header_compatibility_version": "4.0",
+        "header_legacy_license": "CC BY-SA 2.1 Japan",
+        "current_archive_license": "CC BY 4.0; publisher declaration updated 2025-02-27"
+      },
+      {
+        "id": "FJ3279",
+        "path": "isa_BP3D_4.0_obj_99/FJ3279.obj",
+        "bytes": 1865738,
+        "compressed_bytes": 523873,
+        "sha256": "e63a5675c6cdbe942322305920241b4a63762d7a65879572400f444fa3d42739",
+        "crc32": "f275f69c",
+        "vertices": 14068,
+        "faces": 28106,
+        "triangles": 28106,
+        "all_faces_triangular": true,
+        "source_bounds": [
+          [
+            57.0614,
+            -102.845,
+            1183.95
+          ],
+          [
+            166.464,
+            5.0764,
+            1349.86
+          ]
+        ],
+        "bounds_metres_after_existing_matrix": [
+          [
+            0.0570614,
+            1.18395,
+            -0.0050764
+          ],
+          [
+            0.166464,
+            1.3498599999999998,
+            0.10284499999999999
+          ]
+        ],
+        "header_compatibility_version": "4.0",
+        "header_legacy_license": "CC BY-SA 2.1 Japan",
+        "current_archive_license": "CC BY 4.0; publisher declaration updated 2025-02-27"
+      },
+      {
+        "id": "FJ3368",
+        "path": "isa_BP3D_4.0_obj_99/FJ3368.obj",
+        "bytes": 256564,
+        "compressed_bytes": 76914,
+        "sha256": "85f5445a11ecb029b027db0b9b34933982836d442b19ff531d1ca35a3bc3a237",
+        "crc32": "b736993e",
+        "vertices": 2233,
+        "faces": 3784,
+        "triangles": 3784,
+        "all_faces_triangular": true,
+        "source_bounds": [
+          [
+            -240.841,
+            -100.219,
+            1029.2
+          ],
+          [
+            -140.09,
+            -51.0391,
+            1336.54
+          ]
+        ],
+        "bounds_metres_after_existing_matrix": [
+          [
+            -0.240841,
+            1.0292000000000001,
+            0.0510391
+          ],
+          [
+            -0.14009,
+            1.33654,
+            0.10021899999999999
+          ]
+        ],
+        "header_compatibility_version": "4.0",
+        "header_legacy_license": "CC BY-SA 2.1 Japan",
+        "current_archive_license": "CC BY 4.0; publisher declaration updated 2025-02-27"
+      },
+      {
+        "id": "FJ3262",
+        "path": "isa_BP3D_4.0_obj_99/FJ3262.obj",
+        "bytes": 247429,
+        "compressed_bytes": 75816,
+        "sha256": "4a07066d7c7f17dfeb61797dc31c529d0d6fd3fda8136912ebd8a92ccc1ac6fc",
+        "crc32": "09898f67",
+        "vertices": 2073,
+        "faces": 3844,
+        "triangles": 3844,
+        "all_faces_triangular": true,
+        "source_bounds": [
+          [
+            140.073,
+            -100.229,
+            1029.21
+          ],
+          [
+            240.76,
+            -51.0559,
+            1336.52
+          ]
+        ],
+        "bounds_metres_after_existing_matrix": [
+          [
+            0.140073,
+            1.02921,
+            0.0510559
+          ],
+          [
+            0.24076,
+            1.33652,
+            0.100229
+          ]
+        ],
+        "header_compatibility_version": "4.0",
+        "header_legacy_license": "CC BY-SA 2.1 Japan",
+        "current_archive_license": "CC BY 4.0; publisher declaration updated 2025-02-27"
+      }
+    ],
+    "source_pair_symmetry": [
+      {
+        "right": "FJ1478",
+        "left": "FJ1478M",
+        "same_vertex_count": false
+      },
+      {
+        "right": "FJ1467",
+        "left": "FJ1467M",
+        "same_vertex_count": false
+      },
+      {
+        "right": "FJ1479",
+        "left": "FJ1479M",
+        "same_vertex_count": false
+      }
+    ]
+  },
+  "comparison_with_existing_skeletal_sources": {
+    "anchors": [
+      {
+        "id": "FJ3362",
+        "sha256": "9a111cac8351e79dd1315aea90108fe56f78e4bf0159473e6ad727ba91b60e6d",
+        "bytes": 68321,
+        "matchesExistingSourceLock": true
+      },
+      {
+        "id": "FJ3237",
+        "sha256": "2491009d53eaed99ccb2a802b29402eec715eb8d207fb819fad67b0720195cf2",
+        "bytes": 69709,
+        "matchesExistingSourceLock": true
+      },
+      {
+        "id": "FJ3384",
+        "sha256": "1641b04e55f9d75bdd6f1f4f07ea596e5dea0a8cb6b348bff47281b8a0bc6e5d",
+        "bytes": 1743768,
+        "matchesExistingSourceLock": true
+      },
+      {
+        "id": "FJ3279",
+        "sha256": "e63a5675c6cdbe942322305920241b4a63762d7a65879572400f444fa3d42739",
+        "bytes": 1865738,
+        "matchesExistingSourceLock": true
+      },
+      {
+        "id": "FJ3368",
+        "sha256": "85f5445a11ecb029b027db0b9b34933982836d442b19ff531d1ca35a3bc3a237",
+        "bytes": 256564,
+        "matchesExistingSourceLock": true
+      },
+      {
+        "id": "FJ3262",
+        "sha256": "4a07066d7c7f17dfeb61797dc31c529d0d6fd3fda8136912ebd8a92ccc1ac6fc",
+        "bytes": 247429,
+        "matchesExistingSourceLock": true
+      }
+    ],
+    "anchorMatches": 6,
+    "muscleSampleCount": 6,
+    "muscleObjBytes": 618861,
+    "muscleCompressedZipBytes": 196595,
+    "muscleTriangles": 8628,
+    "matrixMatchesExistingManifest": true,
+    "scope": "Source identity and conversion only; no final GLB, no source-to-target fitted anatomical registration or visual validation."
+  },
+  "existing_shared_display_transform": {
+    "frameBounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "center": [
+      0.000010499999999996623,
+      0.7828950499999999,
+      0.10902150000000001
+    ],
+    "scale": 2.021385792962402,
+    "matrix": [
+      [
+        2.021385792962402,
+        0,
+        0,
+        -0.000021224550826098396
+      ],
+      [
+        0,
+        2.021385792962402,
+        0,
+        -1.5825329314505892
+      ],
+      [
+        0,
+        0,
+        2.021385792962402,
+        -0.22037451122745053
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "formula": "G = uniformScale(s) plus translation -s*c; s=3.45/max(frame extents), c=frame center; shared by all anatomical systems."
+  },
+  "historical_archive_sha256": {
+    "value": "40665852c49f218326590e204db91064a1ecfc3c6f8cbd7bbbcaac62c7cd409e",
+    "source": "scripts/anatomy/source-lock.json at baseline commit",
+    "recomputed_in_this_investigation": false
+  },
+  "limitations": [
+    "403 FJ identifiers are not 403 complete muscles; semantic hierarchy and coverage need curation.",
+    "Only 12 OBJ files were extracted and CRC32/SHA256 checked; other candidate bytes and sizes come from the ZIP central directory.",
+    "No independent cross-donor registration was fitted. Shared source configuration is preserved, not clinically validated.",
+    "Near-symmetric bounds do not establish vertex-by-vertex mirroring; the sampled pairs have different vertex counts.",
+    "No body-wide triangle count, final GLB size, draw-call count, FPS, GPU or mobile measurements were taken.",
+    "No insertion/origin masks or safe geometric surface zones were established."
+  ]
+}
+

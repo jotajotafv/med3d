@@ -1,4 +1,4 @@
-import {useEffect, useMemo, useRef, useState} from 'react';
+import {useEffect, useLayoutEffect, useMemo, useRef, useState} from 'react';
 import {CaretDown, CaretRight, Eye, EyeSlash} from '@phosphor-icons/react';
 import type {AnatomyCatalog} from './types';
 import {flattenTree, type CatalogIndex} from './catalog-index';
@@ -11,15 +11,32 @@ export default function VirtualTree(props: Props) {
   const [viewport, setViewport] = useState({top:0,height:360});
   useEffect(() => {
     const element = ref.current; if (!element) return;
-    const observer = new ResizeObserver(() => setViewport(value => ({...value,height:element.clientHeight})));
+    const observer = new ResizeObserver(() => {
+      const top=element.scrollTop,height=element.clientHeight;
+      setViewport(value=>value.top===top&&value.height===height?value:{top,height});
+    });
     observer.observe(element); return () => observer.disconnect();
   }, []);
-  useEffect(() => {
+  useLayoutEffect(() => {
     const element = ref.current, row = rows.findIndex(item => item.node.id === selected);
-    if (!element || row < 0) return;
-    const y = row * HEIGHT;
-    if (y < element.scrollTop || y + HEIGHT > element.scrollTop + element.clientHeight) element.scrollTop = Math.max(0, y - element.clientHeight/2);
-  }, [selected,rows]);
+    if (!element) return;
+    const height=element.clientHeight;
+    // Mobile panels remain mounted while display:none. Wait for the observer's
+    // visible height before restoring the selected row when the panel reopens.
+    if(height<=0)return;
+    const maximum=Math.max(0,element.scrollHeight-height);
+    let top=Math.min(element.scrollTop,maximum);
+    if(row>=0) {
+      const y=row*HEIGHT;
+      if(y<top||y+HEIGHT>top+height)top=Math.max(0,Math.min(maximum,y-height/2));
+    }
+    element.scrollTop=top;
+    // Changing the spacer can clamp native scrolling without delivering a new
+    // scroll event. Commit the DOM position and virtual window together before
+    // paint, so expansion and keyboard selection cannot leave stale rows shown.
+    const actualTop=element.scrollTop;
+    setViewport(value=>value.top===actualTop&&value.height===height?value:{top:actualTop,height});
+  }, [selected,rows,viewport.height]);
   const start = Math.max(0, Math.floor(viewport.top/HEIGHT) - OVERSCAN);
   const end = Math.min(rows.length, Math.ceil((viewport.top+viewport.height)/HEIGHT) + OVERSCAN);
   return <div ref={ref} className="atlas-tree atlas-virtual-tree" role="tree" tabIndex={0} aria-label="Árbol anatómico" aria-activedescendant={selected&&rows.slice(start,end).some(row=>row.node.id===selected)?'atlas-node-'+selected:undefined} onKeyDown={event=>{
@@ -29,7 +46,11 @@ export default function VirtualTree(props: Props) {
     if(event.key==='ArrowRight'){if(node.children.length){if(!expanded.has(node.id))onExpand(node.id);else onSelect(node.children[0]);}}
     else if(event.key==='ArrowLeft'){if(node.children.length&&expanded.has(node.id))onExpand(node.id);else if(node.parentId)onSelect(node.parentId);}
     else {const next=event.key==='Home'?0:event.key==='End'?rows.length-1:Math.max(0,Math.min(rows.length-1,position+(event.key==='ArrowDown'?1:-1)));onSelect(rows[next].node.id);}
-  }} onScroll={event => setViewport(value => ({...value,top:event.currentTarget.scrollTop}))}>
+  }} onScroll={event => {
+    // Snapshot the event target before React can defer a state updater.
+    const top=event.currentTarget.scrollTop;
+    setViewport(value=>value.top===top?value:{...value,top});
+  }}>
     <div style={{height:rows.length*HEIGHT,position:'relative'}}>
       {rows.slice(start,end).map(({node,depth,siblingIndex,siblingCount},offset) => {
         const isHidden = hidden.some(id => index.inside(node.id,id));

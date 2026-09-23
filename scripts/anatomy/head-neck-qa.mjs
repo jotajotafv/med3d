@@ -6,7 +6,7 @@ import {readFile, writeFile} from 'node:fs/promises';
 import path from 'node:path';
 import {createHarness, project, setSlider, withinQaDeadline} from './browser-qa.mjs';
 
-const mode=process.argv.find(arg=>['--regional','--functional','--captures','--performance'].includes(arg))?.slice(2)||'functional';
+const mode=process.argv.find(arg=>['--regional','--functional','--captures','--performance','--search'].includes(arg))?.slice(2)||'functional';
 const h=await createHarness({output:process.env.QA_OUTPUT_DIR||path.join(project,'.qa-anatomy','neck',mode),viewport:{width:1440,height:900},reducedMotion:mode==='captures'?'reduce':'no-preference'});
 const {page,output}=h;
 const muscular=JSON.parse(await readFile(path.join(project,process.env.QA_SERVE_DIR||'dist','models/anatomy/muscular/catalog.json'),'utf8'));
@@ -128,6 +128,24 @@ async function functional(){
   check('Final responsive tree, layers, search, card and viewport '+width);
  }
 }
+async function searchTypes(){
+ await goto('skeletal,muscular',['muscular:neck']);
+ const input=page.getByRole('textbox',{name:'Buscar estructura anatómica'});
+ for(const [query,id,expected] of [
+  ['Corazón','VH_M_heart','Órgano'],['Encéfalo','Allen_brain','Órgano'],
+  ['Pulmón izquierdo','VH_M_lungs_L','Órgano'],['Pulmones','VH_M_lungs','Grupo de órganos'],
+  ['Ventrículo derecho','VH_M_heart_right_ventricle','Componente'],
+ ]){
+  await input.fill(query);const result=page.locator('.atlas-global-results a.atlas-search-result').filter({has:page.locator('span').filter({hasText:new RegExp('^'+query+'$')})});
+  await result.first().waitFor();assert.equal(await result.count(),1);assert.match(await result.getAttribute('href'),new RegExp('structure='+id+'$'));
+  assert.equal((await result.locator('small').innerText()).split(' · ')[0],expected);check('Precise legacy search kind '+query,{expected});
+ }
+ const component=muscular.nodes.find(n=>n.kind==='component'&&n.meshNames.length);
+ for(const [node,expected] of [[h.catalog.nodes.find(n=>n.name==='Frontal'),'Hueso'],[muscle('sternocleidomastoid'),'Músculo'],[component,'Componente'],[byId.get('muscular:region:neck'),'Región']]){
+  await input.fill(node.name);const result=page.locator('.atlas-search-result[data-node-id="'+node.id+'"]');await result.waitFor();
+  assert.equal((await result.locator('small').last().innerText()).split(' · ')[0],expected);check('Precise body search kind '+node.name,{expected});
+ }
+}
 async function captures(){
  await goto();const neck=byId.get('muscular:region:neck'),head=byId.get('skeletal:region:skull');
  for(const [direction,file] of [['anterior','01-cabeza-anterior'],['right','02-cabeza-lateral'],['posterior','03-cabeza-posterior']]){
@@ -183,6 +201,6 @@ async function performanceQa(){
 }
 const suiteTimeoutMs=Number(process.env.QA_SUITE_TIMEOUT_MS||1200000);
 assert.ok(Number.isFinite(suiteTimeoutMs)&&suiteTimeoutMs>0);
-try{await withinQaDeadline(async()=>{await ({regional,functional,captures,performance:performanceQa}[mode])();assert.deepEqual(h.errors,[]);assert.deepEqual(h.badRequests,[]);report.success=true;},suiteTimeoutMs,'Fase 3DE '+mode);}
+try{await withinQaDeadline(async()=>{await ({regional,functional,captures,performance:performanceQa,search:searchTypes}[mode])();assert.deepEqual(h.errors,[]);assert.deepEqual(h.badRequests,[]);report.success=true;},suiteTimeoutMs,'Fase 3DE '+mode);}
 catch(error){report.success=false;report.error=error.stack;await page.screenshot({path:path.join(output,'failure.png'),timeout:15000}).catch(()=>{});throw error;}
 finally{await writeFile(path.join(output,'head-neck-'+mode+'.json'),JSON.stringify(report,null,2)+'\n');await h.close();}

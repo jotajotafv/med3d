@@ -1,7 +1,7 @@
 import {lazy, Suspense, useEffect, useMemo, useRef, useState} from 'react';
 import {ArrowCounterClockwise, ArrowSquareOut, ArrowsOut, Bone, CaretRight, Cube, Eye, EyeSlash, List, MagnifyingGlass, Minus, Plus, Scan, SlidersHorizontal, Stack, X} from '@phosphor-icons/react';
 import SiteLink from '../../../components/SiteLink';
-import {MODEL_DEFINITIONS, STRUCTURES, type OrganId} from '../data';
+import {MODEL_DEFINITIONS, STRUCTURES, type OrganId, type Structure} from '../data';
 import {BONE_TERMS} from './bone-education';
 import {createCatalogIndex, normalizeSearch, SYSTEMS} from './catalog-index';
 import type {AnatomyCatalog, AnatomyNode, AssetLoadStatus, AtlasCameraRequest, AtlasMetrics, ExplodeLevel, SystemId} from './types';
@@ -15,9 +15,11 @@ import './atlas.css';
 const Scene = lazy(() => import('./AtlasScene'));
 const CATALOG_PATHS = ['models/anatomy/skeletal/catalog.json','models/anatomy/muscular/catalog.json'];
 const initialOpacity: Partial<Record<SystemId, number>> = {skeletal: 1, muscular: 1};
-const kindName = (node: AnatomyNode) => node.kind==='structure'&&node.systemId==='muscular'?'Músculo':({body:'Cuerpo',system:'Sistema',division:'Grupo anatómico',region:'Región',structure:'Estructura',component:'Componente'} as const)[node.kind];
+const kindName = (node: AnatomyNode) => node.kind==='structure'&&node.systemId==='muscular'?'Músculo':node.kind==='structure'&&node.systemId==='skeletal'?'Hueso':({body:'Cuerpo',system:'Sistema',division:'Grupo anatómico',region:'Región',structure:'Estructura',component:'Componente'} as const)[node.kind];
 const systemName = (id?:SystemId) => SYSTEMS.find(system=>system.id===id)?.name||'Cuerpo humano';
 const ORGAN_IDS: OrganId[] = ['heart','lungs','brain'];
+const LEGACY_ORGAN_IDS = new Set(['VH_M_heart','VH_M_lungs_L','VH_M_lungs_R','Allen_brain']);
+const legacyKind = (node: Structure) => LEGACY_ORGAN_IDS.has(node.id)?'Órgano':node.id==='VH_M_lungs'?'Grupo de órganos':node.id==='VH_M_respiratory_system'?'Sistema':node.mesh?'Componente':'Grupo anatómico';
 const legacySearch = ORGAN_IDS.flatMap(organ => STRUCTURES[organ].map(node => ({organ,node,text:normalizeSearch([node.title,node.latin,node.sourceLabel,node.id].filter(Boolean).join(' '))})));
 const mb = (bytes:number) => (bytes/1_000_000).toLocaleString('es',{maximumFractionDigits:1});
 
@@ -138,7 +140,7 @@ export default function SkeletalAtlas() {
             {found.slice(searchPage*60,(searchPage+1)*60).map(node=><button className={'atlas-search-result '+(node.id===selected?'is-selected':'')} key={node.id} data-node-id={node.id} onClick={()=>choose(node.id)}><span>{node.name}</span>{node.latin&&<small>{node.latin}</small>}<small>{kindName(node)} · {systemName(node.systemId)} · {regionName(node.regionId)}</small></button>)}
             {found.length>60&&<div className="atlas-search-pages"><button disabled={searchPage===0} onClick={()=>setSearchPage(value=>value-1)}>Anterior</button><span>{searchPage+1} / {Math.ceil(found.length/60)}</span><button disabled={(searchPage+1)*60>=found.length} onClick={()=>setSearchPage(value=>value+1)}>Siguiente</button></div>}
             {legacyFound.length>0&&<p className="atlas-reference-heading">ÓRGANOS DE REFERENCIA</p>}
-            {legacyFound.map(({organ,node})=><SiteLink className="atlas-search-result" key={organ+node.id} href={'/anatomia?organ='+organ+'&structure='+encodeURIComponent(node.id)}><span>{node.title}</span><small>Órgano / componente · {organ==='heart'?'Cardiovascular · Tórax':organ==='lungs'?'Respiratorio · Tórax':'Nervioso · Cabeza'} · modelo independiente</small></SiteLink>)}
+            {legacyFound.map(({organ,node})=><SiteLink className="atlas-search-result" key={organ+node.id} href={'/anatomia?organ='+organ+'&structure='+encodeURIComponent(node.id)}><span>{node.title}</span><small>{legacyKind(node)} · {organ==='heart'?'Cardiovascular · Tórax':organ==='lungs'?'Respiratorio · Tórax':'Nervioso · Cabeza'} · modelo independiente</small></SiteLink>)}
             {!found.length&&!legacyFound.length&&<p className="atlas-empty">No hay coincidencias en las estructuras incorporadas. Prueba con otro nombre o sinónimo.</p>}
           </div> : mobileTab==='tree' ? <><div className="atlas-tree-heading">DESGLOSE ANATÓMICO<div><button onClick={()=>setExpanded(new Set())} aria-label="Contraer todo el árbol"><Minus size={14}/></button><button onClick={()=>setExpanded(new Set(catalog.nodes.filter(node=>node.children.length).map(node=>node.id)))} aria-label="Expandir todo el árbol"><Plus size={14}/></button></div></div>
             {index&&<VirtualTree catalog={catalog} index={index} expanded={expanded} selected={selected} hidden={hidden} onExpand={id=>setExpanded(value=>{const next=new Set(value);next.has(id)?next.delete(id):next.add(id);return next;})} onSelect={choose} onHide={hide}/>}</> : <div className="atlas-layers-scroll">

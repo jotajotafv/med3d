@@ -28,6 +28,8 @@ export function composeBodyCatalog(skeletal: AnatomyCatalog, muscular?: AnatomyC
       if (!catalog.provenance.some(item => item.id === asset.provenanceId)) throw new Error(`Falta la procedencia de ${asset.id}.`);
     }
   }
+  const hasNeck = !!muscular?.assets.some(asset => asset.id === 'muscular:neck');
+  const cervicalIds = new Set(skeletal.nodes.find(node => node.id === 'skeletal:group:spine:cervicalvertebrae')?.children || []);
   const roots = catalogs.flatMap(catalog => catalog.nodes.filter(node => !node.parentId).map(node => node.id));
   const nodes = catalogs.flatMap(catalog => catalog.nodes.map(node => {
     // The pilot crosses shoulder, elbow and forearm attachments. Move the whole
@@ -47,6 +49,7 @@ export function composeBodyCatalog(skeletal: AnatomyCatalog, muscular?: AnatomyC
       ...(!node.parentId ? { parentId: BODY_ROOT_ID } : {}),
       ...(upperSide ? { explosionRegionId: `upper-limb-${upperSide}` } : {}),
       ...(lowerSide ? { explosionRegionId: `lower-limb-${lowerSide}` } : {}),
+      ...(hasNeck && node.systemId === 'skeletal' && (node.regionId === 'skeletal:region:skull' || cervicalIds.has(node.id) || node.id === 'skeletal:group:spine:cervicalvertebrae') ? { explosionRegionId: 'head-neck' } : {}),
     };
   }));
   const assets = catalogs.flatMap(catalog => catalog.assets);
@@ -60,7 +63,7 @@ export function composeBodyCatalog(skeletal: AnatomyCatalog, muscular?: AnatomyC
     schemaVersion: 1, id: 'med3d-body', frame: structuredClone(reference),
     nodes: [root, ...nodes], assets, provenance: [...provenance.values()],
     coverage: {
-      title: muscular ? 'Sistema óseo y musculatura disponible del torso y las extremidades' : skeletal.coverage.title,
+      title: muscular ? 'Sistema óseo y cobertura muscular integrada disponible' : skeletal.coverage.title,
       structures: catalogs.reduce((sum, catalog) => sum + catalog.coverage.structures, 0),
       meshes: catalogs.reduce((sum, catalog) => sum + catalog.coverage.meshes, 0),
       note: catalogs.map(catalog => catalog.coverage.note).join(' '),

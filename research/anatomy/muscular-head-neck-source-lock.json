@@ -1,0 +1,399 @@
+{
+  "source": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+  "archiveBytes": 142903898,
+  "fullArchiveHashRecomputed": false,
+  "centralDirectorySha256": "edde15c7c5f34b2b9743935fb3c1873cce3a9789164427ddf8343c879bcde96b",
+  "selectionSha256": "4845c8eaed44d16e41546918b5b143708fe6eb327a1b35e8c667d65d9df5f92d",
+  "extraction": "Exact HTTP Range, only the 20 approved head-neck elements; original bytes preserved",
+  "transferredBytes": 2327333,
+  "requests": [
+    {
+      "range": "142733851-142903875",
+      "bytes": 170025
+    },
+    {
+      "range": "52154775-52154804",
+      "bytes": 30
+    },
+    {
+      "range": "52154835-52323597",
+      "bytes": 168763
+    },
+    {
+      "range": "52323598-52323627",
+      "bytes": 30
+    },
+    {
+      "range": "52323659-52492268",
+      "bytes": 168610
+    },
+    {
+      "range": "53498000-53498029",
+      "bytes": 30
+    },
+    {
+      "range": "53498060-53765385",
+      "bytes": 267326
+    },
+    {
+      "range": "53765386-53765415",
+      "bytes": 30
+    },
+    {
+      "range": "53765446-53780672",
+      "bytes": 15227
+    },
+    {
+      "range": "53791092-53791121",
+      "bytes": 30
+    },
+    {
+      "range": "53791152-53871161",
+      "bytes": 80010
+    },
+    {
+      "range": "53871162-53871191",
+      "bytes": 30
+    },
+    {
+      "range": "53871222-53912541",
+      "bytes": 41320
+    },
+    {
+      "range": "54174769-54174798",
+      "bytes": 30
+    },
+    {
+      "range": "54174829-54231017",
+      "bytes": 56189
+    },
+    {
+      "range": "54231018-54231047",
+      "bytes": 30
+    },
+    {
+      "range": "54231078-54324464",
+      "bytes": 93387
+    },
+    {
+      "range": "54324465-54324494",
+      "bytes": 30
+    },
+    {
+      "range": "54324525-54386462",
+      "bytes": 61938
+    },
+    {
+      "range": "54386463-54386492",
+      "bytes": 30
+    },
+    {
+      "range": "54386523-54600961",
+      "bytes": 214439
+    },
+    {
+      "range": "54600962-54600991",
+      "bytes": 30
+    },
+    {
+      "range": "54601022-54663566",
+      "bytes": 62545
+    },
+    {
+      "range": "54871193-54871222",
+      "bytes": 30
+    },
+    {
+      "range": "54871253-54886264",
+      "bytes": 15012
+    },
+    {
+      "range": "54898227-54898256",
+      "bytes": 30
+    },
+    {
+      "range": "54898287-54982919",
+      "bytes": 84633
+    },
+    {
+      "range": "54982920-54982949",
+      "bytes": 30
+    },
+    {
+      "range": "54982980-55024581",
+      "bytes": 41602
+    },
+    {
+      "range": "55200025-55200054",
+      "bytes": 30
+    },
+    {
+      "range": "55200085-55482885",
+      "bytes": 282801
+    },
+    {
+      "range": "55576226-55576255",
+      "bytes": 30
+    },
+    {
+      "range": "55576286-55633049",
+      "bytes": 56764
+    },
+    {
+      "range": "55633050-55633079",
+      "bytes": 30
+    },
+    {
+      "range": "55633110-55726664",
+      "bytes": 93555
+    },
+    {
+      "range": "55726665-55726694",
+      "bytes": 30
+    },
+    {
+      "range": "55726725-55790021",
+      "bytes": 63297
+    },
+    {
+      "range": "55790022-55790051",
+      "bytes": 30
+    },
+    {
+      "range": "55790082-56013957",
+      "bytes": 223876
+    },
+    {
+      "range": "56013958-56013987",
+      "bytes": 30
+    },
+    {
+      "range": "56014018-56079431",
+      "bytes": 65414
+    }
+  ],
+  "sourceZipSha256": "bd00cd75b66bd9757063bfd106cc487c61a1f9d5934a557d333df1e08ba92b44",
+  "sourceZipBytes": 2138368,
+  "files": [
+    {
+      "elementId": "FJ1545",
+      "sourceId": "FMA22728",
+      "side": "right",
+      "representationId": "BP4758",
+      "path": "isa_BP3D_4.0_obj_99/FJ1545.obj",
+      "bytes": 556499,
+      "sha256": "1d1361ff53074dc46a3a372cfd754121afb7a24511fee225b06b312e3277efa8",
+      "crc32": "9742b9a6",
+      "compressedBytesUpstream": 168763
+    },
+    {
+      "elementId": "FJ1545M",
+      "sourceId": "FMA22729",
+      "side": "left",
+      "representationId": "BP8022",
+      "path": "isa_BP3D_4.0_obj_99/FJ1545M.obj",
+      "bytes": 554265,
+      "sha256": "a80ad7dd892450090022cd108216c21a55dd70872c7cfa832c604c040c79cd98",
+      "crc32": "42df6bd3",
+      "compressedBytesUpstream": 168610
+    },
+    {
+      "elementId": "FJ1558",
+      "sourceId": "FMA45740",
+      "side": "left",
+      "representationId": "BP7577",
+      "path": "isa_BP3D_4.0_obj_99/FJ1558.obj",
+      "bytes": 896681,
+      "sha256": "21711ac424696b6bc9a08ed225405228a26eef29beb237b7d9d8ed5a0a65d394",
+      "crc32": "af6d6954",
+      "compressedBytesUpstream": 267326
+    },
+    {
+      "elementId": "FJ1559",
+      "sourceId": "FMA46327",
+      "side": "left",
+      "representationId": "BP7578",
+      "path": "isa_BP3D_4.0_obj_99/FJ1559.obj",
+      "bytes": 46065,
+      "sha256": "f774104354835d3d5347d323642f305cb439d861d9c979227948239309be41dc",
+      "crc32": "9641e539",
+      "compressedBytesUpstream": 15227
+    },
+    {
+      "elementId": "FJ1561",
+      "sourceId": "FMA46310",
+      "side": "left",
+      "representationId": "BP7581",
+      "path": "isa_BP3D_4.0_obj_99/FJ1561.obj",
+      "bytes": 262624,
+      "sha256": "a805c03e24aadb8da137abb8533543f4561db28e050b7bc6bb6f7ba70a0f1ac0",
+      "crc32": "97372e3e",
+      "compressedBytesUpstream": 80010
+    },
+    {
+      "elementId": "FJ1562",
+      "sourceId": "FMA46322",
+      "side": "left",
+      "representationId": "BP7582",
+      "path": "isa_BP3D_4.0_obj_99/FJ1562.obj",
+      "bytes": 133298,
+      "sha256": "33970bf53e3065f79e3600c6b2bf2f99c2d02e56fe75ac085b1a5615993afda3",
+      "crc32": "d1c68d5e",
+      "compressedBytesUpstream": 41320
+    },
+    {
+      "elementId": "FJ1570",
+      "sourceId": "FMA13393",
+      "side": "left",
+      "representationId": "BP7590",
+      "path": "isa_BP3D_4.0_obj_99/FJ1570.obj",
+      "bytes": 179909,
+      "sha256": "7cffc2140b07a8966c1bf36937f3e260b4b565b8151ecfa2f683b72bcd5f546d",
+      "crc32": "c1f0a249",
+      "compressedBytesUpstream": 56189
+    },
+    {
+      "elementId": "FJ1571",
+      "sourceId": "FMA13391",
+      "side": "left",
+      "representationId": "BP7591",
+      "path": "isa_BP3D_4.0_obj_99/FJ1571.obj",
+      "bytes": 309508,
+      "sha256": "87f401434568a449ee7ac71d8d372998611f5eed4190e8273e31cf252fccfbcd",
+      "crc32": "24199a95",
+      "compressedBytesUpstream": 93387
+    },
+    {
+      "elementId": "FJ1572",
+      "sourceId": "FMA13389",
+      "side": "left",
+      "representationId": "BP4876",
+      "path": "isa_BP3D_4.0_obj_99/FJ1572.obj",
+      "bytes": 200162,
+      "sha256": "227a19a0ccceb88b370c8fe5af637ccb491bcb2c1f1898cd101c24e93fa82ae7",
+      "crc32": "a513e1b8",
+      "compressedBytesUpstream": 61938
+    },
+    {
+      "elementId": "FJ1573",
+      "sourceId": "FMA13409",
+      "side": "left",
+      "representationId": "BP4910",
+      "path": "isa_BP3D_4.0_obj_99/FJ1573.obj",
+      "bytes": 718388,
+      "sha256": "2035124d82e26f8e2ba9985925a746d0fd1fd94535d6ca7eed4b622f60bf5363",
+      "crc32": "84ed601a",
+      "compressedBytesUpstream": 214439
+    },
+    {
+      "elementId": "FJ1574",
+      "sourceId": "FMA13347",
+      "side": "left",
+      "representationId": "BP4918",
+      "path": "isa_BP3D_4.0_obj_99/FJ1574.obj",
+      "bytes": 204287,
+      "sha256": "ea466d41ef524b945f5e4e50620b74d8c493288c36a3d0207922f514364a5c65",
+      "crc32": "96d5e010",
+      "compressedBytesUpstream": 62545
+    },
+    {
+      "elementId": "FJ1580",
+      "sourceId": "FMA46326",
+      "side": "right",
+      "representationId": "BP4906",
+      "path": "isa_BP3D_4.0_obj_99/FJ1580.obj",
+      "bytes": 45501,
+      "sha256": "848229dad5d1cee4765c43edcf577e02bb901737cd58afc0cb41f6271a121346",
+      "crc32": "d6b1a51b",
+      "compressedBytesUpstream": 15012
+    },
+    {
+      "elementId": "FJ1582",
+      "sourceId": "FMA46309",
+      "side": "right",
+      "representationId": "BP4703",
+      "path": "isa_BP3D_4.0_obj_99/FJ1582.obj",
+      "bytes": 278756,
+      "sha256": "2b0def59b27f6f6c654983b04daf3401997517a7c93bfff5bf70d0d0eb875ac9",
+      "crc32": "1cc42d65",
+      "compressedBytesUpstream": 84633
+    },
+    {
+      "elementId": "FJ1583",
+      "sourceId": "FMA46321",
+      "side": "right",
+      "representationId": "BP4904",
+      "path": "isa_BP3D_4.0_obj_99/FJ1583.obj",
+      "bytes": 135100,
+      "sha256": "1a12e34cd47b7c713e9e01509fd5bfadddfcf6b58e38617484f37298d345fb9d",
+      "crc32": "8cd39ba1",
+      "compressedBytesUpstream": 41602
+    },
+    {
+      "elementId": "FJ1587",
+      "sourceId": "FMA45739",
+      "side": "right",
+      "representationId": "BP4912",
+      "path": "isa_BP3D_4.0_obj_99/FJ1587.obj",
+      "bytes": 950590,
+      "sha256": "6b7deb39529e4ae7aeb013bdcbca4d7c773035d75d4d2e7c821bb1bdc1852790",
+      "crc32": "2dc9c530",
+      "compressedBytesUpstream": 282801
+    },
+    {
+      "elementId": "FJ1592",
+      "sourceId": "FMA13392",
+      "side": "right",
+      "representationId": "BP4880",
+      "path": "isa_BP3D_4.0_obj_99/FJ1592.obj",
+      "bytes": 183341,
+      "sha256": "a8e09cc9dcc353437edeafeb78873c3f4d9727fcd9187d0f43dd57a3e72efb83",
+      "crc32": "0117ca5e",
+      "compressedBytesUpstream": 56764
+    },
+    {
+      "elementId": "FJ1593",
+      "sourceId": "FMA13390",
+      "side": "right",
+      "representationId": "BP4878",
+      "path": "isa_BP3D_4.0_obj_99/FJ1593.obj",
+      "bytes": 314596,
+      "sha256": "d601c1bf83da406115bc5605305b04ef8f4a37518e3d8528ca35e93fde0f4140",
+      "crc32": "87c24e83",
+      "compressedBytesUpstream": 93555
+    },
+    {
+      "elementId": "FJ1594",
+      "sourceId": "FMA13388",
+      "side": "right",
+      "representationId": "BP4875",
+      "path": "isa_BP3D_4.0_obj_99/FJ1594.obj",
+      "bytes": 205887,
+      "sha256": "babdc76481ea863c4f1d5599fbc843da667780a2d7a5abe2c30a4c82374c9f11",
+      "crc32": "c0b10b2a",
+      "compressedBytesUpstream": 63297
+    },
+    {
+      "elementId": "FJ1595",
+      "sourceId": "FMA13408",
+      "side": "right",
+      "representationId": "BP4909",
+      "path": "isa_BP3D_4.0_obj_99/FJ1595.obj",
+      "bytes": 755824,
+      "sha256": "287ce88ff3321e41d83b34bb0c30f66ab273aceac9fd0a6c693af4532d0e0681",
+      "crc32": "aa7c56b6",
+      "compressedBytesUpstream": 223876
+    },
+    {
+      "elementId": "FJ1596",
+      "sourceId": "FMA13346",
+      "side": "right",
+      "representationId": "BP4917",
+      "path": "isa_BP3D_4.0_obj_99/FJ1596.obj",
+      "bytes": 213915,
+      "sha256": "262225d820e3b09f05a269a23f32eb1d97ce29dfa569d569c73e88c0a106708c",
+      "crc32": "567ad453",
+      "compressedBytesUpstream": 65414
+    }
+  ]
+}

@@ -1,0 +1,4803 @@
+{
+  "phase": "3DE",
+  "decision": "approved-local-pre-extraction",
+  "checkedDate": "2026-09-23",
+  "baselineCommit": "5ba794438287a16b6482c6a63d3d2b6ca8ee6542",
+  "source": {
+    "name": "BodyParts3D 4.0 OBJ99 / DBCLS",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+    "archiveBytes": 142903898,
+    "centralDirectorySha256": "edde15c7c5f34b2b9743935fb3c1873cce3a9789164427ddf8343c879bcde96b",
+    "metadataArchive": "research/anatomy/torso-metadata.zip",
+    "fullArchiveDownloaded": false,
+    "geometryExtractedDuringAudit": false
+  },
+  "counts": {
+    "families": 10,
+    "structures": 20,
+    "meshes": 20,
+    "modules": 1,
+    "candidates": 60,
+    "approvedConceptRows": 20,
+    "discardedConceptRows": 7,
+    "deferredConceptRows": 33,
+    "requestedFamiliesWithoutIdentification": 14
+  },
+  "modules": [
+    {
+      "id": "muscular:neck",
+      "filename": "muscular-neck.glb",
+      "regionId": "muscular:region:neck",
+      "meshes": 20,
+      "structures": 20,
+      "upstreamObjBytes": 7145196,
+      "upstreamCompressedBytes": 2156708
+    }
+  ],
+  "approved": [
+    {
+      "elementId": "FJ1595",
+      "sourceId": "FMA13408",
+      "representationId": "BP4909",
+      "en": "right sternocleidomastoid",
+      "name": "Esternocleidomastoideo",
+      "latin": "Musculus sternocleidomastoideus",
+      "side": "right",
+      "family": "sternocleidomastoid",
+      "component": null,
+      "region": "neck",
+      "compartment": "superficial",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13407",
+          "name": "sternocleidomastoid"
+        },
+        {
+          "id": "FMA64822",
+          "name": "superficial muscle of neck"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA13408",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:superficial",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1595.obj",
+        "bytes": 755824,
+        "compressedBytes": 223876,
+        "crc32": "aa7c56b6",
+        "offset": 55790022,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1573",
+      "sourceId": "FMA13409",
+      "representationId": "BP4910",
+      "en": "left sternocleidomastoid",
+      "name": "Esternocleidomastoideo",
+      "latin": "Musculus sternocleidomastoideus",
+      "side": "left",
+      "family": "sternocleidomastoid",
+      "component": null,
+      "region": "neck",
+      "compartment": "superficial",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13407",
+          "name": "sternocleidomastoid"
+        },
+        {
+          "id": "FMA64822",
+          "name": "superficial muscle of neck"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA13409",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:superficial",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1573.obj",
+        "bytes": 718388,
+        "compressedBytes": 214439,
+        "crc32": "84ed601a",
+        "offset": 54386463,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1587",
+      "sourceId": "FMA45739",
+      "representationId": "BP4912",
+      "en": "right platysma",
+      "name": "Platisma",
+      "latin": "Musculus platysma",
+      "side": "right",
+      "family": "platysma",
+      "component": null,
+      "region": "neck",
+      "compartment": "superficial",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA45738",
+          "name": "platysma"
+        },
+        {
+          "id": "FMA64822",
+          "name": "superficial muscle of neck"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA45739",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:superficial",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1587.obj",
+        "bytes": 950590,
+        "compressedBytes": 282801,
+        "crc32": "2dc9c530",
+        "offset": 55200025,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1558",
+      "sourceId": "FMA45740",
+      "representationId": "BP7577",
+      "en": "left platysma",
+      "name": "Platisma",
+      "latin": "Musculus platysma",
+      "side": "left",
+      "family": "platysma",
+      "component": null,
+      "region": "neck",
+      "compartment": "superficial",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA45738",
+          "name": "platysma"
+        },
+        {
+          "id": "FMA64822",
+          "name": "superficial muscle of neck"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA45740",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:superficial",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1558.obj",
+        "bytes": 896681,
+        "compressedBytes": 267326,
+        "crc32": "af6d6954",
+        "offset": 53498000,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1592",
+      "sourceId": "FMA13392",
+      "representationId": "BP4880",
+      "en": "right scalenus anterior",
+      "name": "Escaleno anterior",
+      "latin": "Musculus scalenus anterior",
+      "side": "right",
+      "family": "scalenusanterior",
+      "component": null,
+      "region": "neck",
+      "compartment": "lateral",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13385",
+          "name": "scalenus anterior"
+        },
+        {
+          "id": "FMA64829",
+          "name": "scalene muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA13392",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:lateral",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1592.obj",
+        "bytes": 183341,
+        "compressedBytes": 56764,
+        "crc32": "0117ca5e",
+        "offset": 55576226,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1570",
+      "sourceId": "FMA13393",
+      "representationId": "BP7590",
+      "en": "left scalenus anterior",
+      "name": "Escaleno anterior",
+      "latin": "Musculus scalenus anterior",
+      "side": "left",
+      "family": "scalenusanterior",
+      "component": null,
+      "region": "neck",
+      "compartment": "lateral",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13385",
+          "name": "scalenus anterior"
+        },
+        {
+          "id": "FMA64829",
+          "name": "scalene muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA13393",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:lateral",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1570.obj",
+        "bytes": 179909,
+        "compressedBytes": 56189,
+        "crc32": "c1f0a249",
+        "offset": 54174769,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1593",
+      "sourceId": "FMA13390",
+      "representationId": "BP4878",
+      "en": "right scalenus medius",
+      "name": "Escaleno medio",
+      "latin": "Musculus scalenus medius",
+      "side": "right",
+      "family": "scalenusmedius",
+      "component": null,
+      "region": "neck",
+      "compartment": "lateral",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13386",
+          "name": "scalenus medius"
+        },
+        {
+          "id": "FMA64829",
+          "name": "scalene muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA13390",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:lateral",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1593.obj",
+        "bytes": 314596,
+        "compressedBytes": 93555,
+        "crc32": "87c24e83",
+        "offset": 55633050,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1571",
+      "sourceId": "FMA13391",
+      "representationId": "BP7591",
+      "en": "left scalenus medius",
+      "name": "Escaleno medio",
+      "latin": "Musculus scalenus medius",
+      "side": "left",
+      "family": "scalenusmedius",
+      "component": null,
+      "region": "neck",
+      "compartment": "lateral",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13386",
+          "name": "scalenus medius"
+        },
+        {
+          "id": "FMA64829",
+          "name": "scalene muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA13391",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:lateral",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1571.obj",
+        "bytes": 309508,
+        "compressedBytes": 93387,
+        "crc32": "24199a95",
+        "offset": 54231018,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1594",
+      "sourceId": "FMA13388",
+      "representationId": "BP4875",
+      "en": "right scalenus posterior",
+      "name": "Escaleno posterior",
+      "latin": "Musculus scalenus posterior",
+      "side": "right",
+      "family": "scalenusposterior",
+      "component": null,
+      "region": "neck",
+      "compartment": "lateral",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13387",
+          "name": "scalenus posterior"
+        },
+        {
+          "id": "FMA64829",
+          "name": "scalene muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA13388",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:lateral",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1594.obj",
+        "bytes": 205887,
+        "compressedBytes": 63297,
+        "crc32": "c0b10b2a",
+        "offset": 55726665,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1572",
+      "sourceId": "FMA13389",
+      "representationId": "BP4876",
+      "en": "left scalenus posterior",
+      "name": "Escaleno posterior",
+      "latin": "Musculus scalenus posterior",
+      "side": "left",
+      "family": "scalenusposterior",
+      "component": null,
+      "region": "neck",
+      "compartment": "lateral",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13387",
+          "name": "scalenus posterior"
+        },
+        {
+          "id": "FMA64829",
+          "name": "scalene muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA13389",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:lateral",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1572.obj",
+        "bytes": 200162,
+        "compressedBytes": 61938,
+        "crc32": "a513e1b8",
+        "offset": 54324465,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1582",
+      "sourceId": "FMA46309",
+      "representationId": "BP4703",
+      "en": "right longus capitis",
+      "name": "Largo de la cabeza",
+      "latin": "Musculus longus capitis",
+      "side": "right",
+      "family": "longuscapitis",
+      "component": null,
+      "region": "neck",
+      "compartment": "prevertebral",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46308",
+          "name": "longus capitis"
+        },
+        {
+          "id": "FMA32514",
+          "name": "prevertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA46309",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:prevertebral",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1582.obj",
+        "bytes": 278756,
+        "compressedBytes": 84633,
+        "crc32": "1cc42d65",
+        "offset": 54898227,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1561",
+      "sourceId": "FMA46310",
+      "representationId": "BP7581",
+      "en": "left longus capitis",
+      "name": "Largo de la cabeza",
+      "latin": "Musculus longus capitis",
+      "side": "left",
+      "family": "longuscapitis",
+      "component": null,
+      "region": "neck",
+      "compartment": "prevertebral",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46308",
+          "name": "longus capitis"
+        },
+        {
+          "id": "FMA32514",
+          "name": "prevertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA46310",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:prevertebral",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1561.obj",
+        "bytes": 262624,
+        "compressedBytes": 80010,
+        "crc32": "97372e3e",
+        "offset": 53791092,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1545",
+      "sourceId": "FMA22728",
+      "representationId": "BP4758",
+      "en": "right splenius capitis",
+      "name": "Esplenio de la cabeza",
+      "latin": "Musculus splenius capitis",
+      "side": "right",
+      "family": "spleniuscapitis",
+      "component": null,
+      "region": "neck",
+      "compartment": "posterior",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22653",
+          "name": "splenius capitis"
+        },
+        {
+          "id": "FMA77180",
+          "name": "splenius"
+        },
+        {
+          "id": "FMA32559",
+          "name": "superficial postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA22728",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:posterior",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1545.obj",
+        "bytes": 556499,
+        "compressedBytes": 168763,
+        "crc32": "9742b9a6",
+        "offset": 52154775,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1545M",
+      "sourceId": "FMA22729",
+      "representationId": "BP8022",
+      "en": "left splenius capitis",
+      "name": "Esplenio de la cabeza",
+      "latin": "Musculus splenius capitis",
+      "side": "left",
+      "family": "spleniuscapitis",
+      "component": null,
+      "region": "neck",
+      "compartment": "posterior",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22653",
+          "name": "splenius capitis"
+        },
+        {
+          "id": "FMA77180",
+          "name": "splenius"
+        },
+        {
+          "id": "FMA32559",
+          "name": "superficial postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA22729",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:posterior",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1545M.obj",
+        "bytes": 554265,
+        "compressedBytes": 168610,
+        "crc32": "42df6bd3",
+        "offset": 52323598,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1596",
+      "sourceId": "FMA13346",
+      "representationId": "BP4917",
+      "en": "right sternohyoid",
+      "name": "Esternohioideo",
+      "latin": "Musculus sternohyoideus",
+      "side": "right",
+      "family": "sternohyoid",
+      "component": null,
+      "region": "neck",
+      "compartment": "infrahyoid",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13341",
+          "name": "sternohyoid"
+        },
+        {
+          "id": "FMA13338",
+          "name": "infrahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA13346",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:infrahyoid",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1596.obj",
+        "bytes": 213915,
+        "compressedBytes": 65414,
+        "crc32": "567ad453",
+        "offset": 56013958,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1574",
+      "sourceId": "FMA13347",
+      "representationId": "BP4918",
+      "en": "left sternohyoid",
+      "name": "Esternohioideo",
+      "latin": "Musculus sternohyoideus",
+      "side": "left",
+      "family": "sternohyoid",
+      "component": null,
+      "region": "neck",
+      "compartment": "infrahyoid",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13341",
+          "name": "sternohyoid"
+        },
+        {
+          "id": "FMA13338",
+          "name": "infrahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA13347",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:infrahyoid",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1574.obj",
+        "bytes": 204287,
+        "compressedBytes": 62545,
+        "crc32": "96d5e010",
+        "offset": 54600962,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1583",
+      "sourceId": "FMA46321",
+      "representationId": "BP4904",
+      "en": "right mylohyoid",
+      "name": "Milohioideo",
+      "latin": "Musculus mylohyoideus",
+      "side": "right",
+      "family": "mylohyoid",
+      "component": null,
+      "region": "neck",
+      "compartment": "suprahyoid",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46320",
+          "name": "mylohyoid"
+        },
+        {
+          "id": "FMA46290",
+          "name": "suprahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA46321",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:suprahyoid",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1583.obj",
+        "bytes": 135100,
+        "compressedBytes": 41602,
+        "crc32": "8cd39ba1",
+        "offset": 54982920,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1562",
+      "sourceId": "FMA46322",
+      "representationId": "BP7582",
+      "en": "left mylohyoid",
+      "name": "Milohioideo",
+      "latin": "Musculus mylohyoideus",
+      "side": "left",
+      "family": "mylohyoid",
+      "component": null,
+      "region": "neck",
+      "compartment": "suprahyoid",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46320",
+          "name": "mylohyoid"
+        },
+        {
+          "id": "FMA46290",
+          "name": "suprahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA46322",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:suprahyoid",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1562.obj",
+        "bytes": 133298,
+        "compressedBytes": 41320,
+        "crc32": "d1c68d5e",
+        "offset": 53871162,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1580",
+      "sourceId": "FMA46326",
+      "representationId": "BP4906",
+      "en": "right geniohyoid",
+      "name": "Genihioideo",
+      "latin": "Musculus geniohyoideus",
+      "side": "right",
+      "family": "geniohyoid",
+      "component": null,
+      "region": "neck",
+      "compartment": "suprahyoid",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46325",
+          "name": "geniohyoid"
+        },
+        {
+          "id": "FMA46290",
+          "name": "suprahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA46326",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:suprahyoid",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1580.obj",
+        "bytes": 45501,
+        "compressedBytes": 15012,
+        "crc32": "d6b1a51b",
+        "offset": 54871193,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1559",
+      "sourceId": "FMA46327",
+      "representationId": "BP7578",
+      "en": "left geniohyoid",
+      "name": "Genihioideo",
+      "latin": "Musculus geniohyoideus",
+      "side": "left",
+      "family": "geniohyoid",
+      "component": null,
+      "region": "neck",
+      "compartment": "suprahyoid",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46325",
+          "name": "geniohyoid"
+        },
+        {
+          "id": "FMA46290",
+          "name": "suprahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "structureId": "bp3d:FMA46327",
+      "muscleParent": "No aplica: músculo",
+      "proposedParentId": "muscular:region:neck:suprahyoid",
+      "regionId": "muscular:region:neck",
+      "moduleId": "muscular:neck",
+      "moduleFile": "muscular-neck.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1559.obj",
+        "bytes": 46065,
+        "compressedBytes": 15227,
+        "crc32": "9641e539",
+        "offset": 53765386,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Músculo con identidad y lateralidad explícitas, un FJ propio por lado y sin duplicación histórica.",
+      "originalHeaderNotYetInspected": true
+    }
+  ],
+  "other": [
+    {
+      "sourceId": "FMA46288",
+      "representationId": "BP7685",
+      "en": "inferior oblique part of left longus colli",
+      "name": "inferior oblique part of left longus colli",
+      "elementIds": [
+        "FJ1557"
+      ],
+      "side": "left",
+      "isaType": "zone of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46281",
+          "name": "inferior oblique part of longus colli"
+        },
+        {
+          "id": "FMA46279",
+          "name": "zone of longus colli"
+        },
+        {
+          "id": "FMA10474",
+          "name": "zone of muscle organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "Por curar",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Zonas de un músculo, con desglose terminal lateral asimétrico en esta tabla; requiere curación adicional, sin reflejar ni inventar el lado faltante.",
+      "archiveEntries": {
+        "FJ1557": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1557.obj",
+          "bytes": 124773,
+          "compressedBytes": 39772,
+          "crc32": "e7767576",
+          "offset": 53458168,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA46293",
+      "representationId": "BP7579",
+      "en": "left digastric",
+      "name": "left digastric",
+      "elementIds": [
+        "FJ1555",
+        "FJ1560",
+        "FJ1578"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46291",
+          "name": "digastric"
+        },
+        {
+          "id": "FMA46290",
+          "name": "suprahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Varios FJ por músculo; desglose de vientres/componentes pendiente. No se transforma cada FJ en un músculo.",
+      "archiveEntries": {
+        "FJ1555": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1555.obj",
+          "bytes": 42800,
+          "compressedBytes": 14064,
+          "crc32": "5f3b4edc",
+          "offset": 53428762,
+          "method": 8
+        },
+        "FJ1560": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1560.obj",
+          "bytes": 32825,
+          "compressedBytes": 10359,
+          "crc32": "25248c97",
+          "offset": 53780673,
+          "method": 8
+        },
+        "FJ1578": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1578.obj",
+          "bytes": 149166,
+          "compressedBytes": 46651,
+          "crc32": "79fb8e9b",
+          "offset": 54775079,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA55141",
+      "representationId": "BP8424",
+      "en": "left lateral thyrohyoid ligament",
+      "name": "left lateral thyrohyoid ligament",
+      "elementIds": [
+        "FJ2779"
+      ],
+      "side": "left",
+      "isaType": "set/group or other anatomical entity",
+      "isaAncestry": [
+        {
+          "id": "FMA55139",
+          "name": "lateral thyrohyoid ligament"
+        },
+        {
+          "id": "FMA55135",
+          "name": "thyrohyoid ligament"
+        },
+        {
+          "id": "FMA25625",
+          "name": "nonskeletal ligament"
+        },
+        {
+          "id": "FMA21496",
+          "name": "ligament organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "DESCARTADO",
+      "reason": "Membrana o ligamento: no es una unidad muscular y no se integra.",
+      "archiveEntries": {
+        "FJ2779": {
+          "path": "isa_BP3D_4.0_obj_99/FJ2779.obj",
+          "bytes": 61122,
+          "compressedBytes": 19633,
+          "crc32": "e876dd8f",
+          "offset": 106796834,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA32541",
+      "representationId": "BP8746",
+      "en": "left levator scapulae",
+      "name": "left levator scapulae",
+      "elementIds": [
+        "FJ1532M"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32519",
+          "name": "levator scapulae"
+        },
+        {
+          "id": "FMA32518",
+          "name": "deep extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA32516",
+          "name": "extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA33531",
+          "name": "muscle of shoulder"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1532M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1532M.obj",
+          "bytes": 353007,
+          "compressedBytes": 108655,
+          "crc32": "33e28fe2",
+          "offset": 48487124,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA32537",
+      "representationId": "BP7583",
+      "en": "left obliquus capitis inferior",
+      "name": "left obliquus capitis inferior",
+      "elementIds": [
+        "FJ1563"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32528",
+          "name": "obliquus capitis inferior"
+        },
+        {
+          "id": "FMA32582",
+          "name": "posterior suboccipital muscle"
+        },
+        {
+          "id": "FMA32561",
+          "name": "deep postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1563": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1563.obj",
+          "bytes": 71856,
+          "compressedBytes": 23680,
+          "crc32": "7a3a7995",
+          "offset": 53912542,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA32535",
+      "representationId": "BP7584",
+      "en": "left obliquus capitis superior",
+      "name": "left obliquus capitis superior",
+      "elementIds": [
+        "FJ1564"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32527",
+          "name": "obliquus capitis superior"
+        },
+        {
+          "id": "FMA32582",
+          "name": "posterior suboccipital muscle"
+        },
+        {
+          "id": "FMA32561",
+          "name": "deep postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1564": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1564.obj",
+          "bytes": 127978,
+          "compressedBytes": 36031,
+          "crc32": "efb416da",
+          "offset": 53936282,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA13349",
+      "representationId": "BP7585",
+      "en": "left omohyoid",
+      "name": "left omohyoid",
+      "elementIds": [
+        "FJ1565"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13342",
+          "name": "omohyoid"
+        },
+        {
+          "id": "FMA13338",
+          "name": "infrahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1565": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1565.obj",
+          "bytes": 367436,
+          "compressedBytes": 110224,
+          "crc32": "9d93484d",
+          "offset": 53972373,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA46314",
+      "representationId": "BP7586",
+      "en": "left rectus capitis anterior",
+      "name": "left rectus capitis anterior",
+      "elementIds": [
+        "FJ1566"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46312",
+          "name": "rectus capitis anterior"
+        },
+        {
+          "id": "FMA64875",
+          "name": "anterior suboccipital muscle"
+        },
+        {
+          "id": "FMA32514",
+          "name": "prevertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1566": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1566.obj",
+          "bytes": 61793,
+          "compressedBytes": 19451,
+          "crc32": "98577e70",
+          "offset": 54082657,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA46318",
+      "representationId": "BP7589",
+      "en": "left rectus capitis lateralis",
+      "name": "left rectus capitis lateralis",
+      "elementIds": [
+        "FJ1569"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46316",
+          "name": "rectus capitis lateralis"
+        },
+        {
+          "id": "FMA64875",
+          "name": "anterior suboccipital muscle"
+        },
+        {
+          "id": "FMA32514",
+          "name": "prevertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1569": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1569.obj",
+          "bytes": 56282,
+          "compressedBytes": 17871,
+          "crc32": "4ef98668",
+          "offset": 54156838,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA32531",
+      "representationId": "BP7587",
+      "en": "left rectus capitis posterior major",
+      "name": "left rectus capitis posterior major",
+      "elementIds": [
+        "FJ1567"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32525",
+          "name": "rectus capitis posterior major"
+        },
+        {
+          "id": "FMA32582",
+          "name": "posterior suboccipital muscle"
+        },
+        {
+          "id": "FMA32561",
+          "name": "deep postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1567": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1567.obj",
+          "bytes": 107211,
+          "compressedBytes": 34043,
+          "crc32": "ba5cd7df",
+          "offset": 54102168,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA32533",
+      "representationId": "BP7588",
+      "en": "left rectus capitis posterior minor",
+      "name": "left rectus capitis posterior minor",
+      "elementIds": [
+        "FJ1568"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32526",
+          "name": "rectus capitis posterior minor"
+        },
+        {
+          "id": "FMA32582",
+          "name": "posterior suboccipital muscle"
+        },
+        {
+          "id": "FMA32561",
+          "name": "deep postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1568": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1568.obj",
+          "bytes": 65082,
+          "compressedBytes": 20507,
+          "crc32": "05379327",
+          "offset": 54136271,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22877",
+      "representationId": "BP8700",
+      "en": "left semispinalis capitis",
+      "name": "left semispinalis capitis",
+      "elementIds": [
+        "FJ1538M"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22830",
+          "name": "semispinalis capitis"
+        },
+        {
+          "id": "FMA22823",
+          "name": "semispinalis"
+        },
+        {
+          "id": "FMA32560",
+          "name": "intermediate postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1538M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1538M.obj",
+          "bytes": 215105,
+          "compressedBytes": 61441,
+          "crc32": "36b8607f",
+          "offset": 50168059,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22875",
+      "representationId": "BP8930",
+      "en": "left semispinalis cervicis",
+      "name": "left semispinalis cervicis",
+      "elementIds": [
+        "FJ1539M"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22829",
+          "name": "semispinalis cervicis"
+        },
+        {
+          "id": "FMA22823",
+          "name": "semispinalis"
+        },
+        {
+          "id": "FMA32560",
+          "name": "intermediate postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1539M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1539M.obj",
+          "bytes": 291523,
+          "compressedBytes": 94063,
+          "crc32": "ac6fcdbc",
+          "offset": 50324261,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22727",
+      "representationId": "BP8241",
+      "en": "left splenius cervicis",
+      "name": "left splenius cervicis",
+      "elementIds": [
+        "FJ1546M"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22681",
+          "name": "splenius cervicis"
+        },
+        {
+          "id": "FMA77180",
+          "name": "splenius"
+        },
+        {
+          "id": "FMA32559",
+          "name": "superficial postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1546M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1546M.obj",
+          "bytes": 483632,
+          "compressedBytes": 148964,
+          "crc32": "af28a1b5",
+          "offset": 52641357,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA13351",
+      "representationId": "BP4924",
+      "en": "left sternothyroid",
+      "name": "left sternothyroid",
+      "elementIds": [
+        "FJ1575"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13343",
+          "name": "sternothyroid"
+        },
+        {
+          "id": "FMA13338",
+          "name": "infrahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1575": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1575.obj",
+          "bytes": 172843,
+          "compressedBytes": 52883,
+          "crc32": "a4ea232d",
+          "offset": 54663567,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA45827",
+      "representationId": "BP4902",
+      "en": "left stylohyoid",
+      "name": "left stylohyoid",
+      "elementIds": [
+        "FJ1576"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA9625",
+          "name": "stylohyoid"
+        },
+        {
+          "id": "FMA46290",
+          "name": "suprahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1576": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1576.obj",
+          "bytes": 89944,
+          "compressedBytes": 28371,
+          "crc32": "bbe67446",
+          "offset": 54716510,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA72311",
+      "representationId": "BP8289",
+      "en": "left stylohyoid ligament",
+      "name": "left stylohyoid ligament",
+      "elementIds": [
+        "FJ2763"
+      ],
+      "side": "left",
+      "isaType": "set/group or other anatomical entity",
+      "isaAncestry": [
+        {
+          "id": "FMA72308",
+          "name": "stylohyoid ligament"
+        },
+        {
+          "id": "FMA25624",
+          "name": "skeletal ligament"
+        },
+        {
+          "id": "FMA21496",
+          "name": "ligament organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "DESCARTADO",
+      "reason": "Membrana o ligamento: no es una unidad muscular y no se integra.",
+      "archiveEntries": {
+        "FJ2763": {
+          "path": "isa_BP3D_4.0_obj_99/FJ2763.obj",
+          "bytes": 400624,
+          "compressedBytes": 118532,
+          "crc32": "0a665d91",
+          "offset": 105976035,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA13353",
+      "representationId": "BP4921",
+      "en": "left thyrohyoid",
+      "name": "left thyrohyoid",
+      "elementIds": [
+        "FJ1577"
+      ],
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13344",
+          "name": "thyrohyoid"
+        },
+        {
+          "id": "FMA13338",
+          "name": "infrahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1577": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1577.obj",
+          "bytes": 96410,
+          "compressedBytes": 30078,
+          "crc32": "2c324528",
+          "offset": 54744941,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA55134",
+      "representationId": "BP8736",
+      "en": "left thyrohyoid membrane",
+      "name": "left thyrohyoid membrane",
+      "elementIds": [
+        "FJ2786"
+      ],
+      "side": "left",
+      "isaType": "set/group or other anatomical entity",
+      "isaAncestry": [
+        {
+          "id": "FMA55132",
+          "name": "thyrohyoid membrane"
+        },
+        {
+          "id": "FMA7145",
+          "name": "membrane organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "DESCARTADO",
+      "reason": "Membrana o ligamento: no es una unidad muscular y no se integra.",
+      "archiveEntries": {
+        "FJ2786": {
+          "path": "isa_BP3D_4.0_obj_99/FJ2786.obj",
+          "bytes": 330865,
+          "compressedBytes": 96000,
+          "crc32": "ab061d77",
+          "offset": 107561980,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA55138",
+      "representationId": "BP8311",
+      "en": "median thyrohyoid ligament",
+      "name": "median thyrohyoid ligament",
+      "elementIds": [
+        "FJ2790"
+      ],
+      "side": "unspecified",
+      "isaType": "set/group or other anatomical entity",
+      "isaAncestry": [
+        {
+          "id": "FMA55135",
+          "name": "thyrohyoid ligament"
+        },
+        {
+          "id": "FMA25625",
+          "name": "nonskeletal ligament"
+        },
+        {
+          "id": "FMA21496",
+          "name": "ligament organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "DESCARTADO",
+      "reason": "Membrana o ligamento: no es una unidad muscular y no se integra.",
+      "archiveEntries": {
+        "FJ2790": {
+          "path": "isa_BP3D_4.0_obj_99/FJ2790.obj",
+          "bytes": 199496,
+          "compressedBytes": 59688,
+          "crc32": "0d2a08c9",
+          "offset": 107784743,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA46292",
+      "representationId": "BP7592",
+      "en": "right digastric",
+      "name": "right digastric",
+      "elementIds": [
+        "FJ1556",
+        "FJ1579"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46291",
+          "name": "digastric"
+        },
+        {
+          "id": "FMA46290",
+          "name": "suprahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Varios FJ por músculo; desglose de vientres/componentes pendiente. No se transforma cada FJ en un músculo.",
+      "archiveEntries": {
+        "FJ1556": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1556.obj",
+          "bytes": 47157,
+          "compressedBytes": 15222,
+          "crc32": "e0aca5c4",
+          "offset": 53442886,
+          "method": 8
+        },
+        "FJ1579": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1579.obj",
+          "bytes": 160591,
+          "compressedBytes": 49343,
+          "crc32": "ab35c1b0",
+          "offset": 54821790,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA55140",
+      "representationId": "BP8164",
+      "en": "right lateral thyrohyoid ligament",
+      "name": "right lateral thyrohyoid ligament",
+      "elementIds": [
+        "FJ2797"
+      ],
+      "side": "right",
+      "isaType": "set/group or other anatomical entity",
+      "isaAncestry": [
+        {
+          "id": "FMA55139",
+          "name": "lateral thyrohyoid ligament"
+        },
+        {
+          "id": "FMA55135",
+          "name": "thyrohyoid ligament"
+        },
+        {
+          "id": "FMA25625",
+          "name": "nonskeletal ligament"
+        },
+        {
+          "id": "FMA21496",
+          "name": "ligament organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "DESCARTADO",
+      "reason": "Membrana o ligamento: no es una unidad muscular y no se integra.",
+      "archiveEntries": {
+        "FJ2797": {
+          "path": "isa_BP3D_4.0_obj_99/FJ2797.obj",
+          "bytes": 61609,
+          "compressedBytes": 19619,
+          "crc32": "abc48427",
+          "offset": 108215137,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA32540",
+      "representationId": "BP4786",
+      "en": "right levator scapulae",
+      "name": "right levator scapulae",
+      "elementIds": [
+        "FJ1532"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32519",
+          "name": "levator scapulae"
+        },
+        {
+          "id": "FMA32518",
+          "name": "deep extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA32516",
+          "name": "extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA33531",
+          "name": "muscle of shoulder"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1532": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1532.obj",
+          "bytes": 355503,
+          "compressedBytes": 108900,
+          "crc32": "e926967d",
+          "offset": 48378164,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA32536",
+      "representationId": "BP4740",
+      "en": "right obliquus capitis inferior",
+      "name": "right obliquus capitis inferior",
+      "elementIds": [
+        "FJ1584"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32528",
+          "name": "obliquus capitis inferior"
+        },
+        {
+          "id": "FMA32582",
+          "name": "posterior suboccipital muscle"
+        },
+        {
+          "id": "FMA32561",
+          "name": "deep postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1584": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1584.obj",
+          "bytes": 71500,
+          "compressedBytes": 23330,
+          "crc32": "3ff744a9",
+          "offset": 55024582,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA32534",
+      "representationId": "BP4738",
+      "en": "right obliquus capitis superior",
+      "name": "right obliquus capitis superior",
+      "elementIds": [
+        "FJ1585"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32527",
+          "name": "obliquus capitis superior"
+        },
+        {
+          "id": "FMA32582",
+          "name": "posterior suboccipital muscle"
+        },
+        {
+          "id": "FMA32561",
+          "name": "deep postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1585": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1585.obj",
+          "bytes": 135599,
+          "compressedBytes": 36746,
+          "crc32": "194aed19",
+          "offset": 55047972,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA13348",
+      "representationId": "BP4915",
+      "en": "right omohyoid",
+      "name": "right omohyoid",
+      "elementIds": [
+        "FJ1586"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13342",
+          "name": "omohyoid"
+        },
+        {
+          "id": "FMA13338",
+          "name": "infrahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1586": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1586.obj",
+          "bytes": 383387,
+          "compressedBytes": 115187,
+          "crc32": "f4cd6e2b",
+          "offset": 55084778,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA46313",
+      "representationId": "BP4708",
+      "en": "right rectus capitis anterior",
+      "name": "right rectus capitis anterior",
+      "elementIds": [
+        "FJ1588"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46312",
+          "name": "rectus capitis anterior"
+        },
+        {
+          "id": "FMA64875",
+          "name": "anterior suboccipital muscle"
+        },
+        {
+          "id": "FMA32514",
+          "name": "prevertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1588": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1588.obj",
+          "bytes": 68249,
+          "compressedBytes": 20391,
+          "crc32": "49a5e434",
+          "offset": 55482886,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA46317",
+      "representationId": "BP4706",
+      "en": "right rectus capitis lateralis",
+      "name": "right rectus capitis lateralis",
+      "elementIds": [
+        "FJ1591"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46316",
+          "name": "rectus capitis lateralis"
+        },
+        {
+          "id": "FMA64875",
+          "name": "anterior suboccipital muscle"
+        },
+        {
+          "id": "FMA32514",
+          "name": "prevertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1591": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1591.obj",
+          "bytes": 52646,
+          "compressedBytes": 16676,
+          "crc32": "7182982f",
+          "offset": 55559490,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA32530",
+      "representationId": "BP4736",
+      "en": "right rectus capitis posterior major",
+      "name": "right rectus capitis posterior major",
+      "elementIds": [
+        "FJ1589"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32525",
+          "name": "rectus capitis posterior major"
+        },
+        {
+          "id": "FMA32582",
+          "name": "posterior suboccipital muscle"
+        },
+        {
+          "id": "FMA32561",
+          "name": "deep postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1589": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1589.obj",
+          "bytes": 110635,
+          "compressedBytes": 34596,
+          "crc32": "a99618c5",
+          "offset": 55503337,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA32532",
+      "representationId": "BP4734",
+      "en": "right rectus capitis posterior minor",
+      "name": "right rectus capitis posterior minor",
+      "elementIds": [
+        "FJ1590"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32526",
+          "name": "rectus capitis posterior minor"
+        },
+        {
+          "id": "FMA32582",
+          "name": "posterior suboccipital muscle"
+        },
+        {
+          "id": "FMA32561",
+          "name": "deep postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1590": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1590.obj",
+          "bytes": 69750,
+          "compressedBytes": 21437,
+          "crc32": "d2544a03",
+          "offset": 55537993,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22876",
+      "representationId": "BP4717",
+      "en": "right semispinalis capitis",
+      "name": "right semispinalis capitis",
+      "elementIds": [
+        "FJ1538"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22830",
+          "name": "semispinalis capitis"
+        },
+        {
+          "id": "FMA22823",
+          "name": "semispinalis"
+        },
+        {
+          "id": "FMA32560",
+          "name": "intermediate postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1538": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1538.obj",
+          "bytes": 219002,
+          "compressedBytes": 61934,
+          "crc32": "08f7e999",
+          "offset": 50106065,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22874",
+      "representationId": "BP4715",
+      "en": "right semispinalis cervicis",
+      "name": "right semispinalis cervicis",
+      "elementIds": [
+        "FJ1539"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22829",
+          "name": "semispinalis cervicis"
+        },
+        {
+          "id": "FMA22823",
+          "name": "semispinalis"
+        },
+        {
+          "id": "FMA32560",
+          "name": "intermediate postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1539": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1539.obj",
+          "bytes": 294969,
+          "compressedBytes": 94640,
+          "crc32": "010598f3",
+          "offset": 50229561,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22726",
+      "representationId": "BP4760",
+      "en": "right splenius cervicis",
+      "name": "right splenius cervicis",
+      "elementIds": [
+        "FJ1546"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22681",
+          "name": "splenius cervicis"
+        },
+        {
+          "id": "FMA77180",
+          "name": "splenius"
+        },
+        {
+          "id": "FMA32559",
+          "name": "superficial postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1546": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1546.obj",
+          "bytes": 486722,
+          "compressedBytes": 149028,
+          "crc32": "3883d7cd",
+          "offset": 52492269,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA13350",
+      "representationId": "BP4923",
+      "en": "right sternothyroid",
+      "name": "right sternothyroid",
+      "elementIds": [
+        "FJ1597"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13343",
+          "name": "sternothyroid"
+        },
+        {
+          "id": "FMA13338",
+          "name": "infrahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1597": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1597.obj",
+          "bytes": 176101,
+          "compressedBytes": 53556,
+          "crc32": "0bf59cde",
+          "offset": 56079432,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA45826",
+      "representationId": "BP4901",
+      "en": "right stylohyoid",
+      "name": "right stylohyoid",
+      "elementIds": [
+        "FJ1598"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA9625",
+          "name": "stylohyoid"
+        },
+        {
+          "id": "FMA46290",
+          "name": "suprahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1598": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1598.obj",
+          "bytes": 86582,
+          "compressedBytes": 27543,
+          "crc32": "a6f4f816",
+          "offset": 56133048,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA72309",
+      "representationId": "BP8422",
+      "en": "right stylohyoid ligament",
+      "name": "right stylohyoid ligament",
+      "elementIds": [
+        "FJ2764"
+      ],
+      "side": "right",
+      "isaType": "set/group or other anatomical entity",
+      "isaAncestry": [
+        {
+          "id": "FMA72308",
+          "name": "stylohyoid ligament"
+        },
+        {
+          "id": "FMA25624",
+          "name": "skeletal ligament"
+        },
+        {
+          "id": "FMA21496",
+          "name": "ligament organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "DESCARTADO",
+      "reason": "Membrana o ligamento: no es una unidad muscular y no se integra.",
+      "archiveEntries": {
+        "FJ2764": {
+          "path": "isa_BP3D_4.0_obj_99/FJ2764.obj",
+          "bytes": 403354,
+          "compressedBytes": 117637,
+          "crc32": "0da3e8ec",
+          "offset": 106094627,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA13352",
+      "representationId": "BP4920",
+      "en": "right thyrohyoid",
+      "name": "right thyrohyoid",
+      "elementIds": [
+        "FJ1599"
+      ],
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13344",
+          "name": "thyrohyoid"
+        },
+        {
+          "id": "FMA13338",
+          "name": "infrahyoid muscle"
+        },
+        {
+          "id": "FMA9617",
+          "name": "muscle of neck"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Identificable, aplazado para limitar esta cohorte a diez familias cervicales; no se afirma ausencia ni ambigüedad.",
+      "archiveEntries": {
+        "FJ1599": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1599.obj",
+          "bytes": 107757,
+          "compressedBytes": 32360,
+          "crc32": "719c5a8b",
+          "offset": 56160651,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA55133",
+      "representationId": "BP8304",
+      "en": "right thyrohyoid membrane",
+      "name": "right thyrohyoid membrane",
+      "elementIds": [
+        "FJ2804"
+      ],
+      "side": "right",
+      "isaType": "set/group or other anatomical entity",
+      "isaAncestry": [
+        {
+          "id": "FMA55132",
+          "name": "thyrohyoid membrane"
+        },
+        {
+          "id": "FMA7145",
+          "name": "membrane organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "DESCARTADO",
+      "reason": "Membrana o ligamento: no es una unidad muscular y no se integra.",
+      "archiveEntries": {
+        "FJ2804": {
+          "path": "isa_BP3D_4.0_obj_99/FJ2804.obj",
+          "bytes": 332143,
+          "compressedBytes": 96085,
+          "crc32": "0b35fca6",
+          "offset": 108996275,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA46284",
+      "representationId": "BP5595",
+      "en": "superior oblique part of left longus colli",
+      "name": "superior oblique part of left longus colli",
+      "elementIds": [
+        "FJ1600"
+      ],
+      "side": "left",
+      "isaType": "zone of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46280",
+          "name": "superior oblique part of longus colli"
+        },
+        {
+          "id": "FMA46279",
+          "name": "zone of longus colli"
+        },
+        {
+          "id": "FMA10474",
+          "name": "zone of muscle organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "Por curar",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Zonas de un músculo, con desglose terminal lateral asimétrico en esta tabla; requiere curación adicional, sin reflejar ni inventar el lado faltante.",
+      "archiveEntries": {
+        "FJ1600": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1600.obj",
+          "bytes": 151215,
+          "compressedBytes": 47286,
+          "crc32": "499462ad",
+          "offset": 56193071,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA46286",
+      "representationId": "BP5593",
+      "en": "vertical intermediate part of left longus colli",
+      "name": "vertical intermediate part of left longus colli",
+      "elementIds": [
+        "FJ1601"
+      ],
+      "side": "left",
+      "isaType": "zone of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46282",
+          "name": "vertical intermediate part of longus colli"
+        },
+        {
+          "id": "FMA46279",
+          "name": "zone of longus colli"
+        },
+        {
+          "id": "FMA10474",
+          "name": "zone of muscle organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "Por curar",
+      "region": "neck",
+      "compartment": "No asignado",
+      "moduleId": "No asignado",
+      "decision": "APLAZADO",
+      "reason": "Zonas de un músculo, con desglose terminal lateral asimétrico en esta tabla; requiere curación adicional, sin reflejar ni inventar el lado faltante.",
+      "archiveEntries": {
+        "FJ1601": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1601.obj",
+          "bytes": 211566,
+          "compressedBytes": 66770,
+          "crc32": "aa276c78",
+          "offset": 56240417,
+          "method": 8
+        }
+      }
+    }
+  ],
+  "missingRequestedFamilies": [
+    {
+      "name": "Masetero",
+      "query": "masseter",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    },
+    {
+      "name": "Temporal",
+      "query": "temporalis",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    },
+    {
+      "name": "Pterigoideo medial",
+      "query": "medial pterygoid",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    },
+    {
+      "name": "Pterigoideo lateral",
+      "query": "lateral pterygoid",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    },
+    {
+      "name": "Orbicular de los ojos",
+      "query": "orbicularis oculi",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    },
+    {
+      "name": "Orbicular de la boca",
+      "query": "orbicularis oris",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    },
+    {
+      "name": "Buccinador",
+      "query": "buccinator",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    },
+    {
+      "name": "Cigomático mayor",
+      "query": "zygomaticus major",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    },
+    {
+      "name": "Cigomático menor",
+      "query": "zygomaticus minor",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    },
+    {
+      "name": "Occipitofrontal",
+      "query": "occipitofrontal|frontalis|occipitalis",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    },
+    {
+      "name": "Risorio",
+      "query": "risorius",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    },
+    {
+      "name": "Nasal",
+      "query": "nasalis",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    },
+    {
+      "name": "Prócer",
+      "query": "procerus",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    },
+    {
+      "name": "Corrugador superciliar",
+      "query": "corrugator",
+      "sourceId": null,
+      "elementId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las dos tablas BP3D 4.0 consultadas; no se asignan FMA/FJ ni geometría supuesta."
+    }
+  ],
+  "discovery": {
+    "candidatePattern": "masseter|temporalis|pterygoid|orbicularis|buccinator|zygomaticus|frontalis|occipitalis|occipitofrontal|sternocleidomastoid|platysma|scalen|levator scapula|longus colli|longus capitis|digastric|mylohyoid|geniohyoid|stylohyoid|sternohyoid|sternothyroid|thyrohyoid|omohyoid|splenius|semispinalis capitis|semispinalis cervicis|rectus capitis|obliquus capitis|risorius|nasalis|procerus|corrugator|depressor (anguli|labii|septi)|levator (labii|anguli)",
+    "scope": "Only matching terminal concepts with FJ; separate absence queries in both name tables.",
+    "isaNameRows": 2905,
+    "partofNameRows": 1368
+  },
+  "notes": [
+    "No nueva región muscular Cabeza sin cobertura: músculos faciales/masticatorios no identificados en estas tablas.",
+    "Un solo módulo cervical bilateral: 20 mallas, seis divisiones con cobertura; no un GLB por músculo.",
+    "IS-A sólo se conserva como clasificación. Padres regionales editoriales, sin afirmar aristas PART-OF.",
+    "Las ausencias nominales no prueban ausencia en todas las versiones de BP3D. No se cambia de versión/fuente.",
+    "Esta auditoría no reabre las auditorías de 3A/3B/3C; sólo lee sus IDs para evitar duplicados."
+  ]
+}

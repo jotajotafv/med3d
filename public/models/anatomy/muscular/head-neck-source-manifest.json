@@ -1,0 +1,958 @@
+{
+  "sourceArchive": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+  "sourceVersion": "4.0 OBJ99",
+  "sourceLicenseDeclaration": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "sourceZip": "research/anatomy/muscular-head-neck-originals.zip",
+  "sourceZipSha256": "bd00cd75b66bd9757063bfd106cc487c61a1f9d5934a557d333df1e08ba92b44",
+  "sourceLock": "research/anatomy/muscular-head-neck-source-lock.json",
+  "selectionSha256": "4845c8eaed44d16e41546918b5b143708fe6eb327a1b35e8c667d65d9df5f92d",
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "additionalRegistration": "none",
+  "files": [
+    {
+      "elementId": "FJ1545",
+      "sourceId": "FMA22728",
+      "side": "right",
+      "representationId": "BP4758",
+      "path": "isa_BP3D_4.0_obj_99/FJ1545.obj",
+      "bytes": 556499,
+      "sha256": "1d1361ff53074dc46a3a372cfd754121afb7a24511fee225b06b312e3277efa8",
+      "crc32": "9742b9a6",
+      "compressedBytesUpstream": 168763,
+      "anatomyId": "bp3d:FMA22728",
+      "family": "spleniuscapitis",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 7808,
+      "faces": 7808,
+      "sourcePositionCount": 4841,
+      "vertices": 4841,
+      "boundsMetres": [
+        [
+          -0.0608389,
+          1.28535,
+          -0.00206777
+        ],
+        [
+          0.0025878299999999997,
+          1.49905,
+          0.0720166
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -60.8389,
+          -72.0166,
+          1285.35
+        ],
+        [
+          2.58783,
+          2.06777,
+          1499.05
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1545M",
+      "sourceId": "FMA22729",
+      "side": "left",
+      "representationId": "BP8022",
+      "path": "isa_BP3D_4.0_obj_99/FJ1545M.obj",
+      "bytes": 554265,
+      "sha256": "a80ad7dd892450090022cd108216c21a55dd70872c7cfa832c604c040c79cd98",
+      "crc32": "42df6bd3",
+      "compressedBytesUpstream": 168610,
+      "anatomyId": "bp3d:FMA22729",
+      "family": "spleniuscapitis",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 7808,
+      "faces": 7808,
+      "sourcePositionCount": 4846,
+      "vertices": 4846,
+      "boundsMetres": [
+        [
+          -0.0025878299999999997,
+          1.28535,
+          -0.00206778
+        ],
+        [
+          0.0608389,
+          1.49905,
+          0.0720167
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -2.58783,
+          -72.0167,
+          1285.35
+        ],
+        [
+          60.8389,
+          2.06778,
+          1499.05
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1558",
+      "sourceId": "FMA45740",
+      "side": "left",
+      "representationId": "BP7577",
+      "path": "isa_BP3D_4.0_obj_99/FJ1558.obj",
+      "bytes": 896681,
+      "sha256": "21711ac424696b6bc9a08ed225405228a26eef29beb237b7d9d8ed5a0a65d394",
+      "crc32": "af6d6954",
+      "compressedBytesUpstream": 267326,
+      "anatomyId": "bp3d:FMA45740",
+      "family": "platysma",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 13396,
+      "faces": 13396,
+      "sourcePositionCount": 7290,
+      "vertices": 7290,
+      "boundsMetres": [
+        [
+          -0.00037663700000000003,
+          1.31937,
+          0.0497984
+        ],
+        [
+          0.145761,
+          1.46818,
+          0.173513
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.376637,
+          -173.513,
+          1319.37
+        ],
+        [
+          145.761,
+          -49.7984,
+          1468.18
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1559",
+      "sourceId": "FMA46327",
+      "side": "left",
+      "representationId": "BP7578",
+      "path": "isa_BP3D_4.0_obj_99/FJ1559.obj",
+      "bytes": 46065,
+      "sha256": "f774104354835d3d5347d323642f305cb439d861d9c979227948239309be41dc",
+      "crc32": "9641e539",
+      "compressedBytesUpstream": 15227,
+      "anatomyId": "bp3d:FMA46327",
+      "family": "geniohyoid",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 732,
+      "faces": 732,
+      "sourcePositionCount": 419,
+      "vertices": 419,
+      "boundsMetres": [
+        [
+          -0.000548999,
+          1.42306,
+          0.120963
+        ],
+        [
+          0.00702057,
+          1.4368800000000002,
+          0.160248
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.548999,
+          -160.248,
+          1423.06
+        ],
+        [
+          7.02057,
+          -120.963,
+          1436.88
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1561",
+      "sourceId": "FMA46310",
+      "side": "left",
+      "representationId": "BP7581",
+      "path": "isa_BP3D_4.0_obj_99/FJ1561.obj",
+      "bytes": 262624,
+      "sha256": "a805c03e24aadb8da137abb8533543f4561db28e050b7bc6bb6f7ba70a0f1ac0",
+      "crc32": "97372e3e",
+      "compressedBytesUpstream": 80010,
+      "anatomyId": "bp3d:FMA46310",
+      "family": "longuscapitis",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3898,
+      "faces": 3898,
+      "sourcePositionCount": 2300,
+      "vertices": 2300,
+      "boundsMetres": [
+        [
+          0.00103732,
+          1.3857000000000002,
+          0.0773292
+        ],
+        [
+          0.025480899999999997,
+          1.4966400000000002,
+          0.0950486
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          1.03732,
+          -95.0486,
+          1385.7
+        ],
+        [
+          25.4809,
+          -77.3292,
+          1496.64
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1562",
+      "sourceId": "FMA46322",
+      "side": "left",
+      "representationId": "BP7582",
+      "path": "isa_BP3D_4.0_obj_99/FJ1562.obj",
+      "bytes": 133298,
+      "sha256": "33970bf53e3065f79e3600c6b2bf2f99c2d02e56fe75ac085b1a5615993afda3",
+      "crc32": "d1c68d5e",
+      "compressedBytesUpstream": 41320,
+      "anatomyId": "bp3d:FMA46322",
+      "family": "mylohyoid",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 1938,
+      "faces": 1938,
+      "sourcePositionCount": 1257,
+      "vertices": 1257,
+      "boundsMetres": [
+        [
+          -0.000655269,
+          1.43162,
+          0.122195
+        ],
+        [
+          0.025460899999999998,
+          1.45588,
+          0.158807
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.655269,
+          -158.807,
+          1431.62
+        ],
+        [
+          25.4609,
+          -122.195,
+          1455.88
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1570",
+      "sourceId": "FMA13393",
+      "side": "left",
+      "representationId": "BP7590",
+      "path": "isa_BP3D_4.0_obj_99/FJ1570.obj",
+      "bytes": 179909,
+      "sha256": "7cffc2140b07a8966c1bf36937f3e260b4b565b8151ecfa2f683b72bcd5f546d",
+      "crc32": "c1f0a249",
+      "compressedBytesUpstream": 56189,
+      "anatomyId": "bp3d:FMA13393",
+      "family": "scalenusanterior",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2596,
+      "faces": 2596,
+      "sourcePositionCount": 1673,
+      "vertices": 1673,
+      "boundsMetres": [
+        [
+          0.0210125,
+          1.33428,
+          0.0788861
+        ],
+        [
+          0.0550162,
+          1.42096,
+          0.0968296
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          21.0125,
+          -96.8296,
+          1334.28
+        ],
+        [
+          55.0162,
+          -78.8861,
+          1420.96
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1571",
+      "sourceId": "FMA13391",
+      "side": "left",
+      "representationId": "BP7591",
+      "path": "isa_BP3D_4.0_obj_99/FJ1571.obj",
+      "bytes": 309508,
+      "sha256": "87f401434568a449ee7ac71d8d372998611f5eed4190e8273e31cf252fccfbcd",
+      "crc32": "24199a95",
+      "compressedBytesUpstream": 93387,
+      "anatomyId": "bp3d:FMA13391",
+      "family": "scalenusmedius",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 4074,
+      "faces": 4074,
+      "sourcePositionCount": 2969,
+      "vertices": 2969,
+      "boundsMetres": [
+        [
+          0.0209021,
+          1.34322,
+          0.0713643
+        ],
+        [
+          0.054277900000000004,
+          1.44861,
+          0.08600780000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          20.9021,
+          -86.0078,
+          1343.22
+        ],
+        [
+          54.2779,
+          -71.3643,
+          1448.61
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1572",
+      "sourceId": "FMA13389",
+      "side": "left",
+      "representationId": "BP4876",
+      "path": "isa_BP3D_4.0_obj_99/FJ1572.obj",
+      "bytes": 200162,
+      "sha256": "227a19a0ccceb88b370c8fe5af637ccb491bcb2c1f1898cd101c24e93fa82ae7",
+      "crc32": "a513e1b8",
+      "compressedBytesUpstream": 61938,
+      "anatomyId": "bp3d:FMA13389",
+      "family": "scalenusposterior",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2756,
+      "faces": 2756,
+      "sourcePositionCount": 1920,
+      "vertices": 1920,
+      "boundsMetres": [
+        [
+          0.0236221,
+          1.34137,
+          0.0560756
+        ],
+        [
+          0.07275430000000001,
+          1.40296,
+          0.0814324
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          23.6221,
+          -81.4324,
+          1341.37
+        ],
+        [
+          72.7543,
+          -56.0756,
+          1402.96
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1573",
+      "sourceId": "FMA13409",
+      "side": "left",
+      "representationId": "BP4910",
+      "path": "isa_BP3D_4.0_obj_99/FJ1573.obj",
+      "bytes": 718388,
+      "sha256": "2035124d82e26f8e2ba9985925a746d0fd1fd94535d6ca7eed4b622f60bf5363",
+      "crc32": "84ed601a",
+      "compressedBytesUpstream": 214439,
+      "anatomyId": "bp3d:FMA13409",
+      "family": "sternocleidomastoid",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 10224,
+      "faces": 10224,
+      "sourcePositionCount": 6210,
+      "vertices": 6210,
+      "boundsMetres": [
+        [
+          0.000579663,
+          1.30199,
+          0.037391100000000004
+        ],
+        [
+          0.061665500000000005,
+          1.50302,
+          0.15680600000000003
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          0.579663,
+          -156.806,
+          1301.99
+        ],
+        [
+          61.6655,
+          -37.3911,
+          1503.02
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1574",
+      "sourceId": "FMA13347",
+      "side": "left",
+      "representationId": "BP4918",
+      "path": "isa_BP3D_4.0_obj_99/FJ1574.obj",
+      "bytes": 204287,
+      "sha256": "ea466d41ef524b945f5e4e50620b74d8c493288c36a3d0207922f514364a5c65",
+      "crc32": "96d5e010",
+      "compressedBytesUpstream": 62545,
+      "anatomyId": "bp3d:FMA13347",
+      "family": "sternohyoid",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3078,
+      "faces": 3078,
+      "sourcePositionCount": 1812,
+      "vertices": 1812,
+      "boundsMetres": [
+        [
+          0.00248157,
+          1.3134700000000001,
+          0.10789
+        ],
+        [
+          0.0249927,
+          1.42904,
+          0.137632
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          2.48157,
+          -137.632,
+          1313.47
+        ],
+        [
+          24.9927,
+          -107.89,
+          1429.04
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1580",
+      "sourceId": "FMA46326",
+      "side": "right",
+      "representationId": "BP4906",
+      "path": "isa_BP3D_4.0_obj_99/FJ1580.obj",
+      "bytes": 45501,
+      "sha256": "848229dad5d1cee4765c43edcf577e02bb901737cd58afc0cb41f6271a121346",
+      "crc32": "d6b1a51b",
+      "compressedBytesUpstream": 15012,
+      "anatomyId": "bp3d:FMA46326",
+      "family": "geniohyoid",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 728,
+      "faces": 728,
+      "sourcePositionCount": 408,
+      "vertices": 408,
+      "boundsMetres": [
+        [
+          -0.0083421,
+          1.42305,
+          0.121041
+        ],
+        [
+          -0.000738788,
+          1.4369,
+          0.16023900000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -8.3421,
+          -160.239,
+          1423.05
+        ],
+        [
+          -0.738788,
+          -121.041,
+          1436.9
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1582",
+      "sourceId": "FMA46309",
+      "side": "right",
+      "representationId": "BP4703",
+      "path": "isa_BP3D_4.0_obj_99/FJ1582.obj",
+      "bytes": 278756,
+      "sha256": "2b0def59b27f6f6c654983b04daf3401997517a7c93bfff5bf70d0d0eb875ac9",
+      "crc32": "1cc42d65",
+      "compressedBytesUpstream": 84633,
+      "anatomyId": "bp3d:FMA46309",
+      "family": "longuscapitis",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3956,
+      "faces": 3956,
+      "sourcePositionCount": 2489,
+      "vertices": 2489,
+      "boundsMetres": [
+        [
+          -0.026782,
+          1.38568,
+          0.0771956
+        ],
+        [
+          -0.00231143,
+          1.49669,
+          0.0950333
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -26.782,
+          -95.0333,
+          1385.68
+        ],
+        [
+          -2.31143,
+          -77.1956,
+          1496.69
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1583",
+      "sourceId": "FMA46321",
+      "side": "right",
+      "representationId": "BP4904",
+      "path": "isa_BP3D_4.0_obj_99/FJ1583.obj",
+      "bytes": 135100,
+      "sha256": "1a12e34cd47b7c713e9e01509fd5bfadddfcf6b58e38617484f37298d345fb9d",
+      "crc32": "8cd39ba1",
+      "compressedBytesUpstream": 41602,
+      "anatomyId": "bp3d:FMA46321",
+      "family": "mylohyoid",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 1956,
+      "faces": 1956,
+      "sourcePositionCount": 1267,
+      "vertices": 1267,
+      "boundsMetres": [
+        [
+          -0.026749099999999998,
+          1.43171,
+          0.122195
+        ],
+        [
+          -0.0006329090000000001,
+          1.45588,
+          0.15884
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -26.7491,
+          -158.84,
+          1431.71
+        ],
+        [
+          -0.632909,
+          -122.195,
+          1455.88
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1587",
+      "sourceId": "FMA45739",
+      "side": "right",
+      "representationId": "BP4912",
+      "path": "isa_BP3D_4.0_obj_99/FJ1587.obj",
+      "bytes": 950590,
+      "sha256": "6b7deb39529e4ae7aeb013bdcbca4d7c773035d75d4d2e7c821bb1bdc1852790",
+      "crc32": "2dc9c530",
+      "compressedBytesUpstream": 282801,
+      "anatomyId": "bp3d:FMA45739",
+      "family": "platysma",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 13780,
+      "faces": 13780,
+      "sourcePositionCount": 7857,
+      "vertices": 7857,
+      "boundsMetres": [
+        [
+          -0.147095,
+          1.3194400000000002,
+          0.0497678
+        ],
+        [
+          0.00276451,
+          1.46815,
+          0.173535
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -147.095,
+          -173.535,
+          1319.44
+        ],
+        [
+          2.76451,
+          -49.7678,
+          1468.15
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1592",
+      "sourceId": "FMA13392",
+      "side": "right",
+      "representationId": "BP4880",
+      "path": "isa_BP3D_4.0_obj_99/FJ1592.obj",
+      "bytes": 183341,
+      "sha256": "a8e09cc9dcc353437edeafeb78873c3f4d9727fcd9187d0f43dd57a3e72efb83",
+      "crc32": "0117ca5e",
+      "compressedBytesUpstream": 56764,
+      "anatomyId": "bp3d:FMA13392",
+      "family": "scalenusanterior",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2632,
+      "faces": 2632,
+      "sourcePositionCount": 1697,
+      "vertices": 1697,
+      "boundsMetres": [
+        [
+          -0.0563191,
+          1.33433,
+          0.07880419999999999
+        ],
+        [
+          -0.0223265,
+          1.42099,
+          0.09680580000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -56.3191,
+          -96.8058,
+          1334.33
+        ],
+        [
+          -22.3265,
+          -78.8042,
+          1420.99
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1593",
+      "sourceId": "FMA13390",
+      "side": "right",
+      "representationId": "BP4878",
+      "path": "isa_BP3D_4.0_obj_99/FJ1593.obj",
+      "bytes": 314596,
+      "sha256": "d601c1bf83da406115bc5605305b04ef8f4a37518e3d8528ca35e93fde0f4140",
+      "crc32": "87c24e83",
+      "compressedBytesUpstream": 93555,
+      "anatomyId": "bp3d:FMA13390",
+      "family": "scalenusmedius",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 4102,
+      "faces": 4102,
+      "sourcePositionCount": 3015,
+      "vertices": 3015,
+      "boundsMetres": [
+        [
+          -0.0555911,
+          1.34318,
+          0.071341
+        ],
+        [
+          -0.0221477,
+          1.44861,
+          0.0859771
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -55.5911,
+          -85.9771,
+          1343.18
+        ],
+        [
+          -22.1477,
+          -71.341,
+          1448.61
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1594",
+      "sourceId": "FMA13388",
+      "side": "right",
+      "representationId": "BP4875",
+      "path": "isa_BP3D_4.0_obj_99/FJ1594.obj",
+      "bytes": 205887,
+      "sha256": "babdc76481ea863c4f1d5599fbc843da667780a2d7a5abe2c30a4c82374c9f11",
+      "crc32": "c0b10b2a",
+      "compressedBytesUpstream": 63297,
+      "anatomyId": "bp3d:FMA13388",
+      "family": "scalenusposterior",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2778,
+      "faces": 2778,
+      "sourcePositionCount": 1979,
+      "vertices": 1979,
+      "boundsMetres": [
+        [
+          -0.0740721,
+          1.34132,
+          0.056077300000000004
+        ],
+        [
+          -0.024892800000000003,
+          1.40294,
+          0.08141960000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -74.0721,
+          -81.4196,
+          1341.32
+        ],
+        [
+          -24.8928,
+          -56.0773,
+          1402.94
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1595",
+      "sourceId": "FMA13408",
+      "side": "right",
+      "representationId": "BP4909",
+      "path": "isa_BP3D_4.0_obj_99/FJ1595.obj",
+      "bytes": 755824,
+      "sha256": "287ce88ff3321e41d83b34bb0c30f66ab273aceac9fd0a6c693af4532d0e0681",
+      "crc32": "aa7c56b6",
+      "compressedBytesUpstream": 223876,
+      "anatomyId": "bp3d:FMA13408",
+      "family": "sternocleidomastoid",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 10344,
+      "faces": 10344,
+      "sourcePositionCount": 6642,
+      "vertices": 6642,
+      "boundsMetres": [
+        [
+          -0.06304,
+          1.30197,
+          0.0372539
+        ],
+        [
+          0.061405,
+          1.50319,
+          0.15690700000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -63.04,
+          -156.907,
+          1301.97
+        ],
+        [
+          61.405,
+          -37.2539,
+          1503.19
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1596",
+      "sourceId": "FMA13346",
+      "side": "right",
+      "representationId": "BP4917",
+      "path": "isa_BP3D_4.0_obj_99/FJ1596.obj",
+      "bytes": 213915,
+      "sha256": "262225d820e3b09f05a269a23f32eb1d97ce29dfa569d569c73e88c0a106708c",
+      "crc32": "567ad453",
+      "compressedBytesUpstream": 65414,
+      "anatomyId": "bp3d:FMA13346",
+      "family": "sternohyoid",
+      "moduleId": "muscular:neck",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3116,
+      "faces": 3116,
+      "sourcePositionCount": 1911,
+      "vertices": 1911,
+      "boundsMetres": [
+        [
+          -0.0262347,
+          1.31345,
+          0.107833
+        ],
+        [
+          -0.00376191,
+          1.42903,
+          0.13778
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -26.2347,
+          -137.78,
+          1313.45
+        ],
+        [
+          -3.76191,
+          -107.833,
+          1429.03
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    }
+  ]
+}

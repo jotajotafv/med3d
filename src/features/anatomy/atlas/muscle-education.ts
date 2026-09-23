@@ -1,4 +1,5 @@
 import type {AnatomyNode} from './types';
+import {NECK_EDUCATION} from './neck-education';
 import {LIMB_COMPONENTS, LIMB_EDUCATION, QUADRICEPS_MEMBERS} from './limb-education';
 
 /** Curated anatomy, independent of mesh geometry. Reviewed 21 September 2026. */
@@ -96,6 +97,7 @@ const cuffFunction = 'Contribuye a mantener la cabeza humeral estable en la cavi
  */
 export const MUSCLE_EDUCATION: Record<string, MuscleEducation> = {
   ...LIMB_EDUCATION,
+  ...NECK_EDUCATION,
   deltoid: {
     name: 'Deltoides', latin: 'Musculus deltoideus', region: 'Hombro', group: 'Musculatura del hombro',
     description: 'Músculo superficial que da forma al hombro. Sus porciones clavicular, acromial y espinal forman una unidad muscular.',

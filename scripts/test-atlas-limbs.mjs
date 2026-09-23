@@ -5,6 +5,7 @@ import {mkdtemp,readFile,writeFile,rm} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import ts from 'typescript';
+import {limbsCatalog,PHASE3C_FAMILIES} from './anatomy/limbs-catalog.mjs';
 import {PILOT_ASSET_IDS,PILOT_FAMILIES,pilotCatalog} from './anatomy/pilot-catalog.mjs';
 import {PHASE3B_ASSET_IDS} from './anatomy/torso-catalog.mjs';
 import {spawnSync} from 'node:child_process';
@@ -16,23 +17,23 @@ const json=async file=>JSON.parse(await readFile(path.join(project,file),'utf8')
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const previousFetch=globalThis.fetch,previousWindow=globalThis.window;
 try {
-  for(const file of ['asset-manager','explosion','catalog-index','body-catalog','muscle-education','limb-education','camera-framing']){
+  for(const file of ['asset-manager','explosion','catalog-index','body-catalog','muscle-education','limb-education','neck-education','camera-framing']){
     const source=(await readFile(path.join(project,'src/features/anatomy/atlas',file+'.ts'),'utf8')).replaceAll('import.meta.env.BASE_URL',JSON.stringify('/med3d/'));
     const compiled=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}});
-    await writeFile(path.join(temporary,file+'.mjs'),compiled.outputText.replaceAll("'./catalog-index'","'./catalog-index.mjs'").replaceAll("'./limb-education'","'./limb-education.mjs'"));
+    await writeFile(path.join(temporary,file+'.mjs'),compiled.outputText.replaceAll("'./neck-education'","'./neck-education.mjs'").replaceAll("'./catalog-index'","'./catalog-index.mjs'").replaceAll("'./limb-education'","'./limb-education.mjs'"));
   }
   const {composeBodyCatalog,BODY_ROOT_ID}=await import(pathToFileURL(path.join(temporary,'body-catalog.mjs')));
   const {createCatalogIndex}=await import(pathToFileURL(path.join(temporary,'catalog-index.mjs')));
   const {createAssetLoader,AtlasAssetManager}=await import(pathToFileURL(path.join(temporary,'asset-manager.mjs')));
   const {createExplosionOffsets,explosionTarget}=await import(pathToFileURL(path.join(temporary,'explosion.mjs')));
   const {MUSCLE_EDUCATION,resolveMuscleDetail,getMuscleContextIds}=await import(pathToFileURL(path.join(temporary,'muscle-education.mjs')));
-  const skeletal=await json('public/models/anatomy/skeletal/catalog.json'),muscular=await json('public/models/anatomy/muscular/catalog.json');
+  const skeletal=await json('public/models/anatomy/skeletal/catalog.json'),muscular=limbsCatalog(await json('public/models/anatomy/muscular/catalog.json'));
   const catalog=composeBodyCatalog(skeletal,muscular),index=createCatalogIndex(catalog);
   const limbsAssets=muscular.assets.filter(a=>a.provenanceId==='bodyparts3d-4.0-muscular-limbs'),assetIds=new Set(limbsAssets.map(a=>a.id));
   const limbNodes=muscular.nodes.filter(n=>n.assetIds.some(id=>assetIds.has(id))),whole=limbNodes.filter(n=>n.kind==='structure'),owners=limbNodes.filter(n=>n.meshNames.length);
   assert.equal(limbsAssets.length,8);assert.equal(whole.length,48);assert.equal(owners.length,54);assert.equal(new Set(whole.map(n=>n.family)).size,24);
   assert.equal(catalog.assets.length,20);assert.equal(catalog.coverage.structures,293);assert.equal(catalog.coverage.meshes,319);assert.deepEqual(catalog.frame,skeletal.frame);
-  assert.equal(muscular.coverage.structures,90);assert.equal(muscular.coverage.meshes,114);assert.equal(Object.keys(MUSCLE_EDUCATION).length,45);
+  assert.equal(muscular.coverage.structures,90);assert.equal(muscular.coverage.meshes,114);assert.equal(Object.keys(MUSCLE_EDUCATION).filter(family=>PHASE3C_FAMILIES.includes(family)).length,45);
   for(const family of new Set(whole.map(n=>n.family)))for(const side of ['right','left'])assert.equal(whole.filter(n=>n.family===family&&n.side===side).length,1);
   const gitFile=file=>{const result=spawnSync('git',['show','1d58140bec7cdf946f3400d461a218756799bbc5:'+file],{cwd:project,maxBuffer:64*1024*1024});assert.equal(result.status,0,result.stderr.toString());return result.stdout;};
   const oldMuscular=JSON.parse(gitFile('public/models/anatomy/muscular/catalog.json'));

@@ -127,7 +127,7 @@ export default function SkeletalAtlas() {
   const publicStatus = errors.length?'Hay una región sin cargar':!requested.length?'Elige una región para explorar':ready<requested.length?'Cargando anatomía…':`${availableStructures} estructuras disponibles`;
   const totalBytes = catalog?.assets.reduce((sum,asset)=>sum+asset.bytes,0)||0;
   return <main className="atlas-page atlas-phase2">
-    <div className="atlas-heading"><div><span className="anatomy-eyebrow">EL CUERPO, PIEZA A PIEZA</span><h1>Explorador anatómico</h1></div><span className="atlas-edition">ANATOMÍA HUMANA <span>·</span> TORSO Y EXTREMIDADES</span></div>
+    <div className="atlas-heading"><div><span className="anatomy-eyebrow">EL CUERPO, PIEZA A PIEZA</span><h1>Explorador anatómico</h1></div><span className="atlas-edition">ANATOMÍA HUMANA <span>·</span> COBERTURA DISPONIBLE</span></div>
     {!catalog ? <section className="atlas-catalog-state" role={catalogError?'alert':'status'}><Bone size={36} weight="light"/><h2>{catalogError?'No se pudo abrir el atlas':'Preparando el catálogo anatómico'}</h2><p>{catalogError||'Las estructuras se cargarán por regiones.'}</p>{catalogError&&<button onClick={()=>setCatalogRetry(value=>value+1)}>Reintentar</button>}</section> : <>
       <div className="atlas-workspace">
         <aside className={'atlas-sidebar '+(panel==='structures'?'is-open':'')}>
@@ -174,8 +174,8 @@ export default function SkeletalAtlas() {
             {relatedContext.length>0&&<div className="atlas-context-actions"><button className="atlas-show-context" onClick={showContext}><Eye size={16}/> Mostrar contexto</button><p>{current?.kind==='division'?'Grupo muscular':'Músculo'} y huesos relacionados según sus referencias anatómicas. Esta acción limita las piezas visibles.</p></div>}
             {contextIds.length>0&&<p className="atlas-context-note" role="status">Contexto activo: {contextIds.map(regionName).join(' · ')}.</p>}
             {current?.systemId==='muscular'&&!isolated&&!contextIds.length&&<p className="atlas-context-note">Los músculos profundos pueden quedar cubiertos. Usa Aislar para estudiarlos; cambiar la vista conserva el contexto.</p>}
-            <div className="atlas-education"><dl><div><dt>SISTEMA</dt><dd>{systemName(current?.systemId)}</dd></div><div><dt>REGIÓN</dt><dd>{current?regionName(current.regionId):'Cuerpo, torso y extremidades'}</dd></div></dl>
-              {current?<AnatomyInformation node={current}/>:<p>Explora el esqueleto y la musculatura disponible del torso y las extremidades. Activa las regiones en Capas y selecciona una estructura para estudiar su anatomía.</p>}
+            <div className="atlas-education"><dl><div><dt>SISTEMA</dt><dd>{systemName(current?.systemId)}</dd></div><div><dt>REGIÓN</dt><dd>{current?regionName(current.regionId):'Cuerpo humano'}</dd></div></dl>
+              {current?<AnatomyInformation node={current}/>:<p>Explora el esqueleto y la musculatura disponible del cuello, tronco y extremidades. Activa las regiones en Capas y selecciona una estructura para estudiar su anatomía.</p>}
               {current&&<Related current={current} byId={index?.byId||new Map()} choose={choose}/>}
             </div>
             <div className="atlas-property"><label htmlFor={detailSystem+"-opacity"}>Opacidad de {systemName(detailSystem)} <strong>{Math.round((opacityBySystem[detailSystem]??1)*100)}%</strong></label><input id={detailSystem+"-opacity"} type="range" min="10" max="100" value={(opacityBySystem[detailSystem]??1)*100} onChange={event=>setOpacityBySystem(value=>({...value,[detailSystem]:Number(event.target.value)/100}))}/></div>

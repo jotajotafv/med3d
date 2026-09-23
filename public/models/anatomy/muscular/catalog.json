@@ -32,9 +32,10 @@
       "systemId": "muscular",
       "regionId": "muscular",
       "children": [
+        "muscular:region:neck",
+        "muscular:region:trunk",
         "muscular:region:arm-right",
         "muscular:region:arm-left",
-        "muscular:region:trunk",
         "muscular:region:leg-right",
         "muscular:region:leg-left"
       ],
@@ -48,6 +49,7 @@
         "muscular:gluteal-right",
         "muscular:leg-left",
         "muscular:leg-right",
+        "muscular:neck",
         "muscular:thigh-left",
         "muscular:thigh-right",
         "muscular:thorax-anterior",
@@ -7254,6 +7256,1152 @@
           0.0905488
         ]
       ]
+    },
+    {
+      "id": "muscular:region:neck",
+      "name": "Cuello",
+      "anatomicalName": "Cuello",
+      "aliases": [
+        "Región cervical",
+        "Neck",
+        "Cervix"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular",
+      "children": [
+        "muscular:region:neck:superficial",
+        "muscular:region:neck:lateral",
+        "muscular:region:neck:prevertebral",
+        "muscular:region:neck:posterior",
+        "muscular:region:neck:suprahyoid",
+        "muscular:region:neck:infrahyoid"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.147095,
+          1.28535,
+          -0.00206778
+        ],
+        [
+          0.145761,
+          1.50319,
+          0.173535
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:neck:superficial",
+      "name": "Cuello superficial",
+      "anatomicalName": "Cuello superficial",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck",
+      "children": [
+        "bp3d:FMA13408",
+        "bp3d:FMA13409",
+        "bp3d:FMA45739",
+        "bp3d:FMA45740"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:neck"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.147095,
+          1.30197,
+          0.0372539
+        ],
+        [
+          0.145761,
+          1.50319,
+          0.173535
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:neck:lateral",
+      "name": "Cuello lateral",
+      "anatomicalName": "Cuello lateral",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck",
+      "children": [
+        "bp3d:FMA13392",
+        "bp3d:FMA13393",
+        "bp3d:FMA13390",
+        "bp3d:FMA13391",
+        "bp3d:FMA13388",
+        "bp3d:FMA13389"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:neck"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0740721,
+          1.33428,
+          0.0560756
+        ],
+        [
+          0.07275430000000001,
+          1.44861,
+          0.0968296
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:neck:prevertebral",
+      "name": "Prevertebrales",
+      "anatomicalName": "Prevertebrales",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck",
+      "children": [
+        "bp3d:FMA46309",
+        "bp3d:FMA46310"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:neck"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.026782,
+          1.38568,
+          0.0771956
+        ],
+        [
+          0.025480899999999997,
+          1.49669,
+          0.0950486
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:neck:posterior",
+      "name": "Cuello posterior",
+      "anatomicalName": "Cuello posterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck",
+      "children": [
+        "bp3d:FMA22728",
+        "bp3d:FMA22729"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:neck"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0608389,
+          1.28535,
+          -0.00206778
+        ],
+        [
+          0.0608389,
+          1.49905,
+          0.0720167
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:neck:suprahyoid",
+      "name": "Suprahioideos",
+      "anatomicalName": "Suprahioideos",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck",
+      "children": [
+        "bp3d:FMA46321",
+        "bp3d:FMA46322",
+        "bp3d:FMA46326",
+        "bp3d:FMA46327"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:neck"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.026749099999999998,
+          1.42305,
+          0.120963
+        ],
+        [
+          0.025460899999999998,
+          1.45588,
+          0.160248
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:neck:infrahyoid",
+      "name": "Infrahioideos",
+      "anatomicalName": "Infrahioideos",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck",
+      "children": [
+        "bp3d:FMA13346",
+        "bp3d:FMA13347"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:neck"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0262347,
+          1.31345,
+          0.107833
+        ],
+        [
+          0.0249927,
+          1.42904,
+          0.13778
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13408",
+      "name": "Esternocleidomastoideo derecho",
+      "anatomicalName": "Esternocleidomastoideo derecho",
+      "aliases": [
+        "right sternocleidomastoid",
+        "FMA13408",
+        "FJ1595",
+        "Musculus sternocleidomastoideus",
+        "sternocleidomastoid",
+        "ECM",
+        "Esternocleidomastoideo"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:superficial",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA13408_FJ1595"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:superficial",
+        "bp3d:FMA13409"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA13408",
+      "family": "sternocleidomastoid",
+      "side": "right",
+      "latin": "Musculus sternocleidomastoideus",
+      "bounds": [
+        [
+          -0.06304,
+          1.30197,
+          0.0372539
+        ],
+        [
+          0.061405,
+          1.50319,
+          0.15690700000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13409",
+      "name": "Esternocleidomastoideo izquierdo",
+      "anatomicalName": "Esternocleidomastoideo izquierdo",
+      "aliases": [
+        "left sternocleidomastoid",
+        "FMA13409",
+        "FJ1573",
+        "Musculus sternocleidomastoideus",
+        "sternocleidomastoid",
+        "ECM",
+        "Esternocleidomastoideo"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:superficial",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA13409_FJ1573"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:superficial",
+        "bp3d:FMA13408"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA13409",
+      "family": "sternocleidomastoid",
+      "side": "left",
+      "latin": "Musculus sternocleidomastoideus",
+      "bounds": [
+        [
+          0.000579663,
+          1.30199,
+          0.037391100000000004
+        ],
+        [
+          0.061665500000000005,
+          1.50302,
+          0.15680600000000003
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45739",
+      "name": "Platisma derecho",
+      "anatomicalName": "Platisma derecho",
+      "aliases": [
+        "right platysma",
+        "FMA45739",
+        "FJ1587",
+        "Musculus platysma",
+        "platysma",
+        "Cutáneo del cuello",
+        "Expresión facial"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:superficial",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA45739_FJ1587"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:superficial",
+        "bp3d:FMA45740"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA45739",
+      "family": "platysma",
+      "side": "right",
+      "latin": "Musculus platysma",
+      "bounds": [
+        [
+          -0.147095,
+          1.3194400000000002,
+          0.0497678
+        ],
+        [
+          0.00276451,
+          1.46815,
+          0.173535
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45740",
+      "name": "Platisma izquierdo",
+      "anatomicalName": "Platisma izquierdo",
+      "aliases": [
+        "left platysma",
+        "FMA45740",
+        "FJ1558",
+        "Musculus platysma",
+        "platysma",
+        "Cutáneo del cuello",
+        "Expresión facial"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:superficial",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA45740_FJ1558"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:superficial",
+        "bp3d:FMA45739"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA45740",
+      "family": "platysma",
+      "side": "left",
+      "latin": "Musculus platysma",
+      "bounds": [
+        [
+          -0.00037663700000000003,
+          1.31937,
+          0.0497984
+        ],
+        [
+          0.145761,
+          1.46818,
+          0.173513
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13392",
+      "name": "Escaleno anterior derecho",
+      "anatomicalName": "Escaleno anterior derecho",
+      "aliases": [
+        "right scalenus anterior",
+        "FMA13392",
+        "FJ1592",
+        "Musculus scalenus anterior",
+        "scalenusanterior"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:lateral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA13392_FJ1592"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:lateral",
+        "bp3d:FMA13393"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA13392",
+      "family": "scalenusanterior",
+      "side": "right",
+      "latin": "Musculus scalenus anterior",
+      "bounds": [
+        [
+          -0.0563191,
+          1.33433,
+          0.07880419999999999
+        ],
+        [
+          -0.0223265,
+          1.42099,
+          0.09680580000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13393",
+      "name": "Escaleno anterior izquierdo",
+      "anatomicalName": "Escaleno anterior izquierdo",
+      "aliases": [
+        "left scalenus anterior",
+        "FMA13393",
+        "FJ1570",
+        "Musculus scalenus anterior",
+        "scalenusanterior"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:lateral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA13393_FJ1570"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:lateral",
+        "bp3d:FMA13392"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA13393",
+      "family": "scalenusanterior",
+      "side": "left",
+      "latin": "Musculus scalenus anterior",
+      "bounds": [
+        [
+          0.0210125,
+          1.33428,
+          0.0788861
+        ],
+        [
+          0.0550162,
+          1.42096,
+          0.0968296
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13390",
+      "name": "Escaleno medio derecho",
+      "anatomicalName": "Escaleno medio derecho",
+      "aliases": [
+        "right scalenus medius",
+        "FMA13390",
+        "FJ1593",
+        "Musculus scalenus medius",
+        "scalenusmedius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:lateral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA13390_FJ1593"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:lateral",
+        "bp3d:FMA13391"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA13390",
+      "family": "scalenusmedius",
+      "side": "right",
+      "latin": "Musculus scalenus medius",
+      "bounds": [
+        [
+          -0.0555911,
+          1.34318,
+          0.071341
+        ],
+        [
+          -0.0221477,
+          1.44861,
+          0.0859771
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13391",
+      "name": "Escaleno medio izquierdo",
+      "anatomicalName": "Escaleno medio izquierdo",
+      "aliases": [
+        "left scalenus medius",
+        "FMA13391",
+        "FJ1571",
+        "Musculus scalenus medius",
+        "scalenusmedius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:lateral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA13391_FJ1571"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:lateral",
+        "bp3d:FMA13390"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA13391",
+      "family": "scalenusmedius",
+      "side": "left",
+      "latin": "Musculus scalenus medius",
+      "bounds": [
+        [
+          0.0209021,
+          1.34322,
+          0.0713643
+        ],
+        [
+          0.054277900000000004,
+          1.44861,
+          0.08600780000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13388",
+      "name": "Escaleno posterior derecho",
+      "anatomicalName": "Escaleno posterior derecho",
+      "aliases": [
+        "right scalenus posterior",
+        "FMA13388",
+        "FJ1594",
+        "Musculus scalenus posterior",
+        "scalenusposterior"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:lateral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA13388_FJ1594"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:lateral",
+        "bp3d:FMA13389"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA13388",
+      "family": "scalenusposterior",
+      "side": "right",
+      "latin": "Musculus scalenus posterior",
+      "bounds": [
+        [
+          -0.0740721,
+          1.34132,
+          0.056077300000000004
+        ],
+        [
+          -0.024892800000000003,
+          1.40294,
+          0.08141960000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13389",
+      "name": "Escaleno posterior izquierdo",
+      "anatomicalName": "Escaleno posterior izquierdo",
+      "aliases": [
+        "left scalenus posterior",
+        "FMA13389",
+        "FJ1572",
+        "Musculus scalenus posterior",
+        "scalenusposterior"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:lateral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA13389_FJ1572"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:lateral",
+        "bp3d:FMA13388"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA13389",
+      "family": "scalenusposterior",
+      "side": "left",
+      "latin": "Musculus scalenus posterior",
+      "bounds": [
+        [
+          0.0236221,
+          1.34137,
+          0.0560756
+        ],
+        [
+          0.07275430000000001,
+          1.40296,
+          0.0814324
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46309",
+      "name": "Largo de la cabeza derecho",
+      "anatomicalName": "Largo de la cabeza derecho",
+      "aliases": [
+        "right longus capitis",
+        "FMA46309",
+        "FJ1582",
+        "Musculus longus capitis",
+        "longuscapitis",
+        "Largo de la cabeza",
+        "Recto anterior mayor de la cabeza"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:prevertebral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA46309_FJ1582"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:prevertebral",
+        "bp3d:FMA46310"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA46309",
+      "family": "longuscapitis",
+      "side": "right",
+      "latin": "Musculus longus capitis",
+      "bounds": [
+        [
+          -0.026782,
+          1.38568,
+          0.0771956
+        ],
+        [
+          -0.00231143,
+          1.49669,
+          0.0950333
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46310",
+      "name": "Largo de la cabeza izquierdo",
+      "anatomicalName": "Largo de la cabeza izquierdo",
+      "aliases": [
+        "left longus capitis",
+        "FMA46310",
+        "FJ1561",
+        "Musculus longus capitis",
+        "longuscapitis",
+        "Largo de la cabeza",
+        "Recto anterior mayor de la cabeza"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:prevertebral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA46310_FJ1561"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:prevertebral",
+        "bp3d:FMA46309"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA46310",
+      "family": "longuscapitis",
+      "side": "left",
+      "latin": "Musculus longus capitis",
+      "bounds": [
+        [
+          0.00103732,
+          1.3857000000000002,
+          0.0773292
+        ],
+        [
+          0.025480899999999997,
+          1.4966400000000002,
+          0.0950486
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22728",
+      "name": "Esplenio de la cabeza derecho",
+      "anatomicalName": "Esplenio de la cabeza derecho",
+      "aliases": [
+        "right splenius capitis",
+        "FMA22728",
+        "FJ1545",
+        "Musculus splenius capitis",
+        "spleniuscapitis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA22728_FJ1545"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:posterior",
+        "bp3d:FMA22729"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA22728",
+      "family": "spleniuscapitis",
+      "side": "right",
+      "latin": "Musculus splenius capitis",
+      "bounds": [
+        [
+          -0.0608389,
+          1.28535,
+          -0.00206777
+        ],
+        [
+          0.0025878299999999997,
+          1.49905,
+          0.0720166
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22729",
+      "name": "Esplenio de la cabeza izquierdo",
+      "anatomicalName": "Esplenio de la cabeza izquierdo",
+      "aliases": [
+        "left splenius capitis",
+        "FMA22729",
+        "FJ1545M",
+        "Musculus splenius capitis",
+        "spleniuscapitis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA22729_FJ1545M"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:posterior",
+        "bp3d:FMA22728"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA22729",
+      "family": "spleniuscapitis",
+      "side": "left",
+      "latin": "Musculus splenius capitis",
+      "bounds": [
+        [
+          -0.0025878299999999997,
+          1.28535,
+          -0.00206778
+        ],
+        [
+          0.0608389,
+          1.49905,
+          0.0720167
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13346",
+      "name": "Esternohioideo derecho",
+      "anatomicalName": "Esternohioideo derecho",
+      "aliases": [
+        "right sternohyoid",
+        "FMA13346",
+        "FJ1596",
+        "Musculus sternohyoideus",
+        "sternohyoid"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:infrahyoid",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA13346_FJ1596"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:infrahyoid",
+        "bp3d:FMA13347"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA13346",
+      "family": "sternohyoid",
+      "side": "right",
+      "latin": "Musculus sternohyoideus",
+      "bounds": [
+        [
+          -0.0262347,
+          1.31345,
+          0.107833
+        ],
+        [
+          -0.00376191,
+          1.42903,
+          0.13778
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13347",
+      "name": "Esternohioideo izquierdo",
+      "anatomicalName": "Esternohioideo izquierdo",
+      "aliases": [
+        "left sternohyoid",
+        "FMA13347",
+        "FJ1574",
+        "Musculus sternohyoideus",
+        "sternohyoid"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:infrahyoid",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA13347_FJ1574"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:infrahyoid",
+        "bp3d:FMA13346"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA13347",
+      "family": "sternohyoid",
+      "side": "left",
+      "latin": "Musculus sternohyoideus",
+      "bounds": [
+        [
+          0.00248157,
+          1.3134700000000001,
+          0.10789
+        ],
+        [
+          0.0249927,
+          1.42904,
+          0.137632
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46321",
+      "name": "Milohioideo derecho",
+      "anatomicalName": "Milohioideo derecho",
+      "aliases": [
+        "right mylohyoid",
+        "FMA46321",
+        "FJ1583",
+        "Musculus mylohyoideus",
+        "mylohyoid"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:suprahyoid",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA46321_FJ1583"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:suprahyoid",
+        "bp3d:FMA46322"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA46321",
+      "family": "mylohyoid",
+      "side": "right",
+      "latin": "Musculus mylohyoideus",
+      "bounds": [
+        [
+          -0.026749099999999998,
+          1.43171,
+          0.122195
+        ],
+        [
+          -0.0006329090000000001,
+          1.45588,
+          0.15884
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46322",
+      "name": "Milohioideo izquierdo",
+      "anatomicalName": "Milohioideo izquierdo",
+      "aliases": [
+        "left mylohyoid",
+        "FMA46322",
+        "FJ1562",
+        "Musculus mylohyoideus",
+        "mylohyoid"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:suprahyoid",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA46322_FJ1562"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:suprahyoid",
+        "bp3d:FMA46321"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA46322",
+      "family": "mylohyoid",
+      "side": "left",
+      "latin": "Musculus mylohyoideus",
+      "bounds": [
+        [
+          -0.000655269,
+          1.43162,
+          0.122195
+        ],
+        [
+          0.025460899999999998,
+          1.45588,
+          0.158807
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46326",
+      "name": "Genihioideo derecho",
+      "anatomicalName": "Genihioideo derecho",
+      "aliases": [
+        "right geniohyoid",
+        "FMA46326",
+        "FJ1580",
+        "Musculus geniohyoideus",
+        "geniohyoid"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:suprahyoid",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA46326_FJ1580"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:suprahyoid",
+        "bp3d:FMA46327"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA46326",
+      "family": "geniohyoid",
+      "side": "right",
+      "latin": "Musculus geniohyoideus",
+      "bounds": [
+        [
+          -0.0083421,
+          1.42305,
+          0.121041
+        ],
+        [
+          -0.000738788,
+          1.4369,
+          0.16023900000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46327",
+      "name": "Genihioideo izquierdo",
+      "anatomicalName": "Genihioideo izquierdo",
+      "aliases": [
+        "left geniohyoid",
+        "FMA46327",
+        "FJ1559",
+        "Musculus geniohyoideus",
+        "geniohyoid"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "parentId": "muscular:region:neck:suprahyoid",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA46327_FJ1559"
+      ],
+      "relatedIds": [
+        "muscular:region:neck:suprahyoid",
+        "bp3d:FMA46326"
+      ],
+      "explosionRegionId": "head-neck",
+      "sourceId": "FMA46327",
+      "family": "geniohyoid",
+      "side": "left",
+      "latin": "Musculus geniohyoideus",
+      "bounds": [
+        [
+          -0.000548999,
+          1.42306,
+          0.120963
+        ],
+        [
+          0.00702057,
+          1.4368800000000002,
+          0.160248
+        ]
+      ]
     }
   ],
   "assets": [
@@ -7568,6 +8716,30 @@
         ]
       ],
       "provenanceId": "bodyparts3d-4.0-muscular-limbs"
+    },
+    {
+      "id": "muscular:neck",
+      "path": "models/anatomy/muscular/muscular-neck.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:neck",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 1003996,
+      "sha256": "08b8635109dc69d4de32cd5a93f8eb3fc0861466708c65aeb98058ebaef1223a",
+      "meshCount": 20,
+      "triangles": 101700,
+      "bounds": [
+        [
+          -0.147095,
+          1.28535,
+          -0.00206778
+        ],
+        [
+          0.145761,
+          1.50319,
+          0.173535
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-head-neck"
     }
   ],
   "provenance": [
@@ -7622,13 +8794,29 @@
         "Shared transform (x,y,z) to (x,z,-y)/1000; float32 positions; Meshopt and 12-bit display normals as Phase 3A/3B.",
         "Current CC BY 4.0 publisher declaration; original legacy license headers preserved. No clinical validation."
       ]
+    },
+    {
+      "id": "bodyparts3d-4.0-muscular-head-neck",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 · OBJ99 (2013 archive; current license declaration)",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selected 20 audited original elements: 10 bilateral cervical muscle families. Unidentified facial/masticatory families remain absent.",
+        "Preserved original FMA/FJ, side, coordinates, oriented triangles and whole-muscle scope. No inferred IS-A to PART-OF edges.",
+        "Shared transform (x,y,z) to (x,z,-y)/1000; Float32 positions, Meshopt and 12-bit display normals; no fitting or decimation.",
+        "No historical geometry rebuilt. Publisher CC BY 4.0 declaration and original legacy headers retained. No clinical certification."
+      ]
     }
   ],
   "coverage": {
-    "title": "Sistema muscular · torso y extremidades",
-    "structures": 90,
-    "meshes": 114,
-    "note": "90 músculos bilaterales representados por 114 mallas: 16 de hombro/brazo, 26 del torso y 48 de glúteos, muslo, pierna y antebrazo. Cabezas y grupos no se cuentan como músculos adicionales.",
+    "title": "Sistema Muscular de MED3D",
+    "structures": 110,
+    "meshes": 134,
+    "note": "Cobertura muscular integrada disponible: 110 músculos, representados por 134 mallas, en cuello, tronco y extremidades. Cabezas y grupos no son músculos adicionales.",
     "limitations": [
       "Cobertura parcial: no es la musculatura completa del cuerpo ni del torso.",
       "No se identificaron recto abdominal, oblicuo interno, transverso abdominal ni dorsal ancho en el inventario BP3D 4.0 auditado.",
@@ -7636,7 +8824,9 @@
       "Atlas masculino adulto modelado; no representa variación individual ni acredita precisión clínica.",
       "Origen e inserción son texto educativo; no hay zonas de fijación anotadas sobre las mallas.",
       "Extremidades con cobertura parcial: se han seleccionado 24 familias; mano y pie intrínsecos siguen pendientes.",
-      "Cuádriceps es un grupo de cuatro músculos; se conserva la clasificación BP3D de sus elementos como zonas en la procedencia."
+      "Cuádriceps es un grupo de cuatro músculos; se conserva la clasificación BP3D de sus elementos como zonas en la procedencia.",
+      "Cabeza sin musculatura facial o masticatoria identificada en las tablas de BP3D 4.0 consultadas; no se representa una cobertura humana completa.",
+      "Cuello parcial: diez familias bilaterales seleccionadas. Digástrico y largo del cuello pendientes de curación de componentes."
     ]
   }
 }

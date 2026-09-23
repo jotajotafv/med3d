@@ -4,13 +4,17 @@ import assert from 'node:assert/strict';
 import {readFile, writeFile} from 'node:fs/promises';
 import path from 'node:path';
 import {createHarness, project, setSlider, withinQaDeadline} from './browser-qa.mjs';
+import {limbsCatalog,PHASE3C_ASSET_IDS,PHASE3C_MODULE_QUERY} from './limbs-catalog.mjs';
 import {PILOT_ASSET_IDS} from './pilot-catalog.mjs';
 import {PHASE3B_ASSET_IDS} from './torso-catalog.mjs';
 
 const mode=process.argv.find(arg=>['--functional','--captures','--performance'].includes(arg))?.slice(2)||'functional';
 const h=await createHarness({output:process.env.QA_OUTPUT_DIR||path.join(project,'.qa-anatomy','limbs',mode),viewport:{width:1440,height:900},reducedMotion:mode==='captures'?'reduce':'no-preference'});
 const {page,output}=h;
-const muscular=JSON.parse(await readFile(path.join(project,process.env.QA_SERVE_DIR||'dist','models/anatomy/muscular/catalog.json'),'utf8'));
+const rawGoto=page.goto.bind(page);
+page.goto=(url,options)=>{const target=new URL(url);if(target.pathname.endsWith('/anatomia/')&&!target.searchParams.has('modules'))target.searchParams.set('modules',PHASE3C_ASSET_IDS.join(','));return rawGoto(target.href,options);};
+
+const muscular=limbsCatalog(JSON.parse(await readFile(path.join(project,process.env.QA_SERVE_DIR||'dist','models/anatomy/muscular/catalog.json'),'utf8')));
 const nodes=[...h.catalog.nodes,...muscular.nodes],assets=[...h.catalog.assets,...muscular.assets],byId=new Map(nodes.map(node=>[node.id,node]));
 const limbsAssets=muscular.assets.filter(asset=>asset.provenanceId==='bodyparts3d-4.0-muscular-limbs');
 const limbsAssetIds=new Set(limbsAssets.map(asset=>asset.id));

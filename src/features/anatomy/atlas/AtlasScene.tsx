@@ -51,6 +51,8 @@ function useAssets(catalog: AnatomyCatalog, assetIds: string[], reset: number) {
 }
 // Fixed, restrained family tones; these are presentation materials, not tissue labels.
 const MUSCLE_COLORS: Record<string,string> = {
+  sternocleidomastoid:'#ac796c',platysma:'#b58878',scalenusanterior:'#a97669',scalenusmedius:'#ae7d6d',scalenusposterior:'#9c6c62',
+  longuscapitis:'#95665f',spleniuscapitis:'#a37166',sternohyoid:'#b28070',mylohyoid:'#a8796b',geniohyoid:'#b18675',
   gluteusmaximus:'#a97065',gluteusmedius:'#b17a6d',gluteusminimus:'#98655e',tensorfasciaelatae:'#af8174',
   rectusfemoris:'#b57969',vastuslateralis:'#a66c61',vastusmedialis:'#b18070',vastusintermedius:'#99675f',sartorius:'#ba8879',
   adductorlongus:'#a7786b',gracilis:'#b48a7b',bicepsfemoris:'#9d6c65',semitendinosus:'#ac7a6c',semimembranosus:'#a16e61',

@@ -14,8 +14,10 @@ const [{NodeIO},{ALL_EXTENSIONS},{MeshoptDecoder},validator]=await Promise.all([
 await MeshoptDecoder.ready;
 const io=new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({'meshopt.decoder':MeshoptDecoder});
 const catalog=JSON.parse(await readFile(path.join(root,'public/models/anatomy/muscular/catalog.json'),'utf8'));
+const selectedAsset=process.argv.includes('--asset')?process.argv[process.argv.indexOf('--asset')+1]:undefined;
+if(selectedAsset)assert.ok(catalog.assets.some(asset=>asset.id===selectedAsset),'Requested real module exists');
 const result={validator:validator.version(),modules:[]};
-for(const asset of catalog.assets){
+for(const asset of catalog.assets.filter(asset=>!selectedAsset||asset.id===selectedAsset)){
   const bytes=await readFile(path.join(root,'public',asset.path));
   const raw=await validator.validateBytes(new Uint8Array(bytes),{uri:path.basename(asset.path)});
   const document=await io.readBinary(bytes);

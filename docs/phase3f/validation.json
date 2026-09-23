@@ -1,0 +1,44 @@
+{
+  "testedImplementationCommit": "b2921c7ea8bb86b1421fb8c9067c6d1cb0893027",
+  "base": "0841ad7942755905886d86e799c2e510473d6649",
+  "globalFinalRuns": 1,
+  "globalCommands": [
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:anatomy",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    }
+  ],
+  "staticSuites": [
+    "catalog",
+    "renderer",
+    "multisystem",
+    "torso",
+    "limbs",
+    "head-neck",
+    "muscle-gaps"
+  ],
+  "regionalStaticChecks": 7,
+  "browserChecks": 11,
+  "reviewedScreenshots": 12,
+  "gltfCompressedAndDecoded": {
+    "modules": 4,
+    "errors": 0,
+    "warnings": 0
+  },
+  "warnings": [
+    "Existing OrbitControls chunk exceeds 500 kB; build succeeds."
+  ],
+  "historicalPreservation": "202 muscular nodes retain identity; 197 unchanged node definitions, five ancestor aggregates expand. Fourteen historical muscle asset records and GLB files unchanged; 55 old educational families preserved.",
+  "sourceManifest": "public/models/anatomy/muscular/muscle-gaps-source-manifest.json",
+  "geometryValidation": "public/models/anatomy/muscular/muscle-gaps-validation.json",
+  "productionCatalogSha256": "1f4e93ef906b04a5f2f902317ebb65c51ebfc52af6aa07e890ca0e050012f06d",
+  "committedCatalogSha256": "1f4e93ef906b04a5f2f902317ebb65c51ebfc52af6aa07e890ca0e050012f06d"
+}

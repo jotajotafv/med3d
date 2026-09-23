@@ -1,0 +1,29 @@
+ M package.json
+ M public/models/anatomy/muscular/catalog.json
+ M scripts/anatomy/optimize-muscular-pilot.mjs
+ M scripts/anatomy/pilot-qa.mjs
+ M scripts/test-atlas-multisystem.mjs
+ M src/features/anatomy/atlas/AtlasScene.tsx
+ M src/features/anatomy/atlas/MuscleInformation.tsx
+ M src/features/anatomy/atlas/SkeletalAtlas.tsx
+ M src/features/anatomy/atlas/body-catalog.ts
+ M src/features/anatomy/atlas/catalog-index.ts
+ M src/features/anatomy/atlas/muscle-education.ts
+?? docs/phase3b-audit.md
+?? docs/phase3b-education.md
+?? public/models/anatomy/muscular/muscular-abdomen.glb
+?? public/models/anatomy/muscular/muscular-torso-anterior.glb
+?? public/models/anatomy/muscular/muscular-torso-posterior.glb
+?? public/models/anatomy/muscular/torso-source-manifest.json
+?? public/models/anatomy/muscular/torso-validation.json
+?? research/anatomy/muscular-torso-originals.zip
+?? research/anatomy/muscular-torso-source-lock.json
+?? research/anatomy/torso-metadata.zip
+?? research/anatomy/torso-selection.json
+?? scripts/anatomy/audit-torso-inventory.py
+?? scripts/anatomy/build-muscular-torso.py
+?? scripts/anatomy/optimize-muscular-torso.mjs
+?? scripts/anatomy/pilot-catalog.mjs
+?? scripts/anatomy/torso-qa.mjs
+?? scripts/anatomy/validate-muscular-gltf.mjs
+?? scripts/test-atlas-torso.mjs

@@ -1,0 +1,147 @@
+{
+  "codeCommit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a",
+  "checks": [
+    {
+      "name": "typecheck",
+      "program": "npm.cmd",
+      "arguments": [
+        "run",
+        "typecheck"
+      ],
+      "startedUtc": "2026-09-23T17:48:15.7245724Z",
+      "finishedUtc": "2026-09-23T17:48:20.4751539Z",
+      "exitCode": 0,
+      "commit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a"
+    },
+    {
+      "name": "verify-anatomy",
+      "program": "npm.cmd",
+      "arguments": [
+        "run",
+        "verify:anatomy"
+      ],
+      "startedUtc": "2026-09-23T17:48:20.5005930Z",
+      "finishedUtc": "2026-09-23T17:48:23.1882049Z",
+      "exitCode": 0,
+      "commit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a"
+    },
+    {
+      "name": "pilot-geometry",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/optimize-muscular-pilot.mjs",
+        "--verify-only"
+      ],
+      "startedUtc": "2026-09-23T17:48:23.1902279Z",
+      "finishedUtc": "2026-09-23T17:48:24.0770698Z",
+      "exitCode": 0,
+      "commit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a"
+    },
+    {
+      "name": "torso-geometry",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/optimize-muscular-torso.mjs",
+        "--verify-only"
+      ],
+      "startedUtc": "2026-09-23T17:48:24.0800709Z",
+      "finishedUtc": "2026-09-23T17:48:29.3101185Z",
+      "exitCode": 0,
+      "commit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a"
+    },
+    {
+      "name": "gltf",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/validate-muscular-gltf.mjs"
+      ],
+      "startedUtc": "2026-09-23T17:48:29.3125344Z",
+      "finishedUtc": "2026-09-23T17:48:29.8595638Z",
+      "exitCode": 0,
+      "commit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a"
+    },
+    {
+      "name": "build",
+      "program": "npm.cmd",
+      "arguments": [
+        "run",
+        "build"
+      ],
+      "startedUtc": "2026-09-23T17:48:29.8635638Z",
+      "finishedUtc": "2026-09-23T17:48:37.2146791Z",
+      "exitCode": 0,
+      "commit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a"
+    },
+    {
+      "name": "torso-functional",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/torso-qa.mjs",
+        "--functional"
+      ],
+      "startedUtc": "2026-09-23T17:48:37.2186697Z",
+      "finishedUtc": "2026-09-23T17:52:53.8832022Z",
+      "exitCode": 0,
+      "commit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a"
+    },
+    {
+      "name": "pilot-functional",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/pilot-qa.mjs",
+        "--functional"
+      ],
+      "startedUtc": "2026-09-23T17:52:53.8872047Z",
+      "finishedUtc": "2026-09-23T17:55:43.3072158Z",
+      "exitCode": 0,
+      "commit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a"
+    },
+    {
+      "name": "skeletal-functional",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/browser-qa.mjs"
+      ],
+      "startedUtc": "2026-09-23T17:55:43.3102029Z",
+      "finishedUtc": "2026-09-23T17:56:45.5032675Z",
+      "exitCode": 0,
+      "commit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a"
+    },
+    {
+      "name": "pilot-tree",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/pilot-qa.mjs",
+        "--tree"
+      ],
+      "startedUtc": "2026-09-23T17:56:45.5072594Z",
+      "finishedUtc": "2026-09-23T17:57:08.4662771Z",
+      "exitCode": 0,
+      "commit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a"
+    },
+    {
+      "name": "performance",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/torso-qa.mjs",
+        "--performance"
+      ],
+      "startedUtc": "2026-09-23T17:57:08.4702938Z",
+      "finishedUtc": "2026-09-23T17:57:51.1984302Z",
+      "exitCode": 0,
+      "commit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a"
+    },
+    {
+      "name": "captures",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/torso-qa.mjs",
+        "--captures"
+      ],
+      "startedUtc": "2026-09-23T17:57:51.2034275Z",
+      "finishedUtc": "2026-09-23T17:59:56.7519007Z",
+      "exitCode": 0,
+      "commit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a"
+    }
+  ]
+}

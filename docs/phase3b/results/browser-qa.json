@@ -1,0 +1,258 @@
+{
+  "date": "2026-09-23T17:55:44.643Z",
+  "environment": "Headless Chromium; ANGLE SwiftShader software WebGL; local HTTP; not physical-device performance",
+  "expectedMeshes": 205,
+  "expectedTriangles": 512450,
+  "checks": [
+    {
+      "name": "Progressive complete registered model load",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 7,
+      "meshCount": 205,
+      "triangleCount": 512450,
+      "geometryBytes": 7609772,
+      "drawCalls": 205,
+      "renderGeometries": 209,
+      "renderTextures": 4,
+      "loadMs": 22.30000001192093,
+      "firstGeometryMs": 415.2999999821186,
+      "fullSystemMs": 415.2999999821186
+    },
+    {
+      "name": "Idle demand rendering stops",
+      "drawsPerSecond": [
+        211,
+        0
+      ]
+    },
+    {
+      "name": "Case, accents, common synonyms and Latin search"
+    },
+    {
+      "name": "Virtual tree keyboard navigation retains visible selected row",
+      "renderedRows": 19,
+      "catalogNodes": 249,
+      "lastTreeName": "Porción descendente del trapecio izquierdo"
+    },
+    {
+      "name": "Six anatomical camera orientations execute without a rendering error"
+    },
+    {
+      "name": "Zoom and right-button pan change actual WebGL pixels"
+    },
+    {
+      "name": "Individual educational card, source links and readable body typography",
+      "minimumEducationFontPx": 14
+    },
+    {
+      "name": "Selection, focus and isolation",
+      "drawCalls": 1,
+      "retainedMeshes": 205
+    },
+    {
+      "name": "Hide and reveal selected individual bone"
+    },
+    {
+      "name": "System opacity 10–100%"
+    },
+    {
+      "name": "Raycast selects registered bone ID"
+    },
+    {
+      "name": "Single-system UI exposes regions and structures only"
+    },
+    {
+      "name": "Exploded view regions preserves ownership",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 7,
+      "meshCount": 205,
+      "triangleCount": 512450,
+      "geometryBytes": 7609772,
+      "drawCalls": 205,
+      "renderGeometries": 209,
+      "renderTextures": 4,
+      "loadMs": 22.30000001192093,
+      "firstGeometryMs": 415.2999999821186,
+      "fullSystemMs": 415.2999999821186
+    },
+    {
+      "name": "Exploded view structures preserves ownership",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 7,
+      "meshCount": 205,
+      "triangleCount": 512450,
+      "geometryBytes": 7609772,
+      "drawCalls": 205,
+      "renderGeometries": 209,
+      "renderTextures": 4,
+      "loadMs": 22.30000001192093,
+      "firstGeometryMs": 415.2999999821186,
+      "fullSystemMs": 415.2999999821186
+    },
+    {
+      "name": "Disabled region releases decoded geometry",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 6,
+      "meshCount": 172,
+      "triangleCount": 488138,
+      "geometryBytes": 7243788,
+      "drawCalls": 172,
+      "renderGeometries": 176,
+      "renderTextures": 4,
+      "loadMs": 22.30000001192093,
+      "firstGeometryMs": 415.2999999821186,
+      "fullSystemMs": 415.2999999821186
+    },
+    {
+      "name": "Search reactivates missing region and retains pending focus"
+    },
+    {
+      "name": "System unload releases CPU and GPU geometry",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 0,
+      "meshCount": 0,
+      "triangleCount": 0,
+      "geometryBytes": 0,
+      "drawCalls": 0,
+      "renderGeometries": 4,
+      "renderTextures": 4,
+      "loadMs": 0,
+      "firstGeometryMs": 415.2999999821186,
+      "fullSystemMs": 415.2999999821186
+    },
+    {
+      "name": "Reload is bounded with no geometry growth",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 7,
+      "meshCount": 205,
+      "triangleCount": 512450,
+      "geometryBytes": 7609772,
+      "drawCalls": 205,
+      "renderGeometries": 209,
+      "renderTextures": 4,
+      "loadMs": 26.799999982118607,
+      "firstGeometryMs": 415.2999999821186,
+      "fullSystemMs": 415.2999999821186
+    },
+    {
+      "name": "Responsive panels and search 1366"
+    },
+    {
+      "name": "Responsive panels and search 1050"
+    },
+    {
+      "name": "Responsive panels and search 900"
+    },
+    {
+      "name": "Responsive panels and search 390"
+    },
+    {
+      "name": "Legacy heart route and selected structure preserved"
+    },
+    {
+      "name": "Legacy lungs model renders"
+    },
+    {
+      "name": "Legacy brain model renders"
+    },
+    {
+      "name": "Failed regional request is recoverable without rebuilding the atlas",
+      "requests": 2,
+      "retainedHealthyMeshes": 180
+    }
+  ],
+  "initial": {
+    "selectedId": 0,
+    "contextIds": 0,
+    "loadedAssets": 7,
+    "meshCount": 205,
+    "triangleCount": 512450,
+    "geometryBytes": 7609772,
+    "drawCalls": 205,
+    "renderGeometries": 209,
+    "renderTextures": 4,
+    "loadMs": 22.30000001192093,
+    "firstGeometryMs": 415.2999999821186,
+    "fullSystemMs": 415.2999999821186
+  },
+  "geometryMarks": [
+    {
+      "name": "med3d:load-start",
+      "startTime": 767.6000000238419
+    },
+    {
+      "name": "med3d:first-geometry",
+      "startTime": 1182.9000000059605
+    },
+    {
+      "name": "med3d:all-assets-rendered",
+      "startTime": 1182.9000000059605
+    }
+  ],
+  "modelTransfers": [
+    {
+      "name": "arm-left.glb",
+      "durationMs": 3.300000011920929,
+      "encodedBytes": 345860
+    },
+    {
+      "name": "arm-right.glb",
+      "durationMs": 3.2999999821186066,
+      "encodedBytes": 336004
+    },
+    {
+      "name": "leg-left.glb",
+      "durationMs": 2.5999999940395355,
+      "encodedBytes": 230240
+    },
+    {
+      "name": "leg-right.glb",
+      "durationMs": 2.300000011920929,
+      "encodedBytes": 230668
+    },
+    {
+      "name": "skull.glb",
+      "durationMs": 3.9000000059604645,
+      "encodedBytes": 1002700
+    },
+    {
+      "name": "spine.glb",
+      "durationMs": 3.2999999821186066,
+      "encodedBytes": 579828
+    },
+    {
+      "name": "thorax.glb",
+      "durationMs": 4.4000000059604645,
+      "encodedBytes": 1191640
+    }
+  ],
+  "recoveryBefore": {
+    "spineAttempts": 1,
+    "metrics": {
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 6,
+      "meshCount": 180,
+      "triangleCount": 442364,
+      "geometryBytes": 6528632,
+      "drawCalls": 180,
+      "renderGeometries": 184,
+      "renderTextures": 4,
+      "loadMs": 22.900000005960464,
+      "firstGeometryMs": 104.19999998807907,
+      "fullSystemMs": 0
+    },
+    "alerts": [
+      "No se pudieron cargar una regiónFailed to fetchReintentar regiones pendientes"
+    ]
+  },
+  "errors": [],
+  "badRequests": [],
+  "success": true
+}

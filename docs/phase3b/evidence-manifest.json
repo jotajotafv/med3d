@@ -1,0 +1,413 @@
+{
+  "codeCommit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a",
+  "baseCommit": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6",
+  "review": "visual-review.md",
+  "capturesReviewedIndividually": 48,
+  "files": [
+    {
+      "file": "phase3b/captures/01-cuerpo-anterior.png",
+      "bytes": 302180,
+      "sha256": "6d0029a1c53ba4a1709f25fb528f9c7e49a1492ce488ad883c06bccdbb175c5e"
+    },
+    {
+      "file": "phase3b/captures/02-cuerpo-posterior.png",
+      "bytes": 299530,
+      "sha256": "a9836608d7a179ea4da56d0283ab30847abae1e082e966698f95fe6790a81fc6"
+    },
+    {
+      "file": "phase3b/captures/03-torso-anterior.png",
+      "bytes": 383879,
+      "sha256": "681ae02f9f0f64de95d9e9506ac29a1261b6284d83b38a1acf0c40418e098f29"
+    },
+    {
+      "file": "phase3b/captures/04-torso-posterior.png",
+      "bytes": 369988,
+      "sha256": "72071e4f34f41d1bd3588d6bcb0dae5abf73bb8802c567fcd1953abfd9727d86"
+    },
+    {
+      "file": "phase3b/captures/05-lateral-derecho.png",
+      "bytes": 324062,
+      "sha256": "cfeb6f8f2d54766385ff4de578acb71300d8e25f6a4dae380855ed75a38dd9d2"
+    },
+    {
+      "file": "phase3b/captures/06-lateral-izquierdo.png",
+      "bytes": 328962,
+      "sha256": "b55ccf8341ac5a97b399fb6a01b3f525406ff9548646d7418b334789907785f5"
+    },
+    {
+      "file": "phase3b/captures/07-pectoral-mayor-seleccionado.png",
+      "bytes": 471440,
+      "sha256": "0fd7727dcee27f60702e1f857d9b9e4f94db46ce56e809241431054529b1935f"
+    },
+    {
+      "file": "phase3b/captures/08-pectoral-mayor-aislado.png",
+      "bytes": 324711,
+      "sha256": "ad68039f7a2db1598b1391d1428f218cfcb3e514a8dfeef425320c71b25aece6"
+    },
+    {
+      "file": "phase3b/captures/09-abdomen-superficial.png",
+      "bytes": 471296,
+      "sha256": "0620c763270bccaf9b35cbb90989f491ac0bf37372aeed5798e91cf190b30340"
+    },
+    {
+      "file": "phase3b/captures/10-abdomen-profundo-no-disponible.png",
+      "bytes": 457815,
+      "sha256": "82c565becd5a06d35d44f5dba4f70d427500704dc554f9962a6d7c563dfc4291"
+    },
+    {
+      "file": "phase3b/captures/11-trapecio.png",
+      "bytes": 415436,
+      "sha256": "ffd746619975fdfd5299e2d2ca6969299476df1afa7d7a840286c7e8c990b228"
+    },
+    {
+      "file": "phase3b/captures/12-dorsal-ancho-no-disponible.png",
+      "bytes": 370153,
+      "sha256": "3f18176ac5ff82f1d9bf8802b58db27d2ac509614cf51d6078abefce1497579c"
+    },
+    {
+      "file": "phase3b/captures/13-posterior-profundo-contextual.png",
+      "bytes": 418662,
+      "sha256": "bbbeb7769eafdf03fd10ec4f2d4d3e624582fd808dd77039a9bb79129e4575b3"
+    },
+    {
+      "file": "phase3b/captures/13b-romboides-aislado.png",
+      "bytes": 277207,
+      "sha256": "218b329c506641e366928f30a94b19e78695788fca1428e7e1f6619cb3707ce7"
+    },
+    {
+      "file": "phase3b/captures/14-muscular-50-oseo-100.png",
+      "bytes": 402533,
+      "sha256": "4bd455291325eba2a59c120037e7011a9b328824c2690d7f929ca52e57e2e328"
+    },
+    {
+      "file": "phase3b/captures/15-solo-muscular.png",
+      "bytes": 280587,
+      "sha256": "e8690d106eedd2d447f151c50349b680eb8a2ba628bd7e3e31e380650a4b2526"
+    },
+    {
+      "file": "phase3b/captures/16-solo-oseo.png",
+      "bytes": 299393,
+      "sha256": "1d0dcd23303b6686e860e728eddbe3e0488e06eb69f91b6734838feb3638ad58"
+    },
+    {
+      "file": "phase3b/captures/17-exploded-sistemas.png",
+      "bytes": 325284,
+      "sha256": "e3891ed435325a6b79f164be2142888b2b38fe5a4063676382b59dac05d08b32"
+    },
+    {
+      "file": "phase3b/captures/18-exploded-regiones.png",
+      "bytes": 373759,
+      "sha256": "7a7f6480e1daf8579a14b0a57e7c748e7812c5ca4da2b61c7c0db60c28a80bba"
+    },
+    {
+      "file": "phase3b/captures/19-exploded-estructuras.png",
+      "bytes": 492869,
+      "sha256": "e3ecd978bb25be488ac76e5dfa4c20d74df96db2d2879999a17c8bda01a35283"
+    },
+    {
+      "file": "phase3b/captures/20-contexto-anterior.png",
+      "bytes": 318461,
+      "sha256": "ef02812a382af25f9bca6d228d07978ee59ea6ff7b1bab5169a06d2d8e6cc2e8"
+    },
+    {
+      "file": "phase3b/captures/21-contexto-posterior.png",
+      "bytes": 320806,
+      "sha256": "8e51d59b1ea9ef8874d83c8b56427998cd12271e11efb2a3c3cb97820279a300"
+    },
+    {
+      "file": "phase3b/captures/22-laptop-1366.png",
+      "bytes": 240211,
+      "sha256": "cdd0867209076c267b6422bfdc637ad2e87f22f7bb34da7bbf44bc546cbc2602"
+    },
+    {
+      "file": "phase3b/captures/23-laptop-1050.png",
+      "bytes": 231256,
+      "sha256": "ae74fbf302314c82ba530990139112994e67b8c0e6413a34860f37f51aae79af"
+    },
+    {
+      "file": "phase3b/captures/24-tablet-900.png",
+      "bytes": 269640,
+      "sha256": "d34ccac29a11cd9e56bbcd24ff45b1bb07b2541ca4fcfdc82e05df27efe9fecd"
+    },
+    {
+      "file": "phase3b/captures/25-movil-390.png",
+      "bytes": 118511,
+      "sha256": "7fc9041bd240b7e3b4a4f408e90472d43e859deceb7e648aae031854e149010e"
+    },
+    {
+      "file": "phase3b/captures/25b-movil-capas.png",
+      "bytes": 59618,
+      "sha256": "6c446487503e7f6a7c8741f515808ee12f8bffe9f202c2ec514c56448d9296dd"
+    },
+    {
+      "file": "phase3b/captures/25c-movil-ficha.png",
+      "bytes": 61984,
+      "sha256": "386a7287bef3607914ffef9d73f04cc819ccefa6f3d06f6e17ab99de65ffb4af"
+    },
+    {
+      "file": "phase3b/captures/25d-movil-modulos-musculares.png",
+      "bytes": 57272,
+      "sha256": "2badfb7071790c4d5c6c701cee93e7245c10923b1fb3a352112319762c06d88b"
+    },
+    {
+      "file": "phase3b/captures/25e-movil-ficha-origen.png",
+      "bytes": 70252,
+      "sha256": "8267e909e70ce8c3714f3126299df9af316f4f8ab70398871f8cb32a1cf663c0"
+    },
+    {
+      "file": "phase3b/captures/26-pectoral-menor-contextual.png",
+      "bytes": 379335,
+      "sha256": "0982d27be6f523eab5a81bd27caccf8503b38e9b745e034443be906deecb1a40"
+    },
+    {
+      "file": "phase3b/captures/26b-pectoral-menor-aislado.png",
+      "bytes": 279342,
+      "sha256": "5d58987d6926d6f44b66af28fbfedad956ef784ad22677544effcef4532422dc"
+    },
+    {
+      "file": "phase3b/captures/27-erectores-posteriores.png",
+      "bytes": 292085,
+      "sha256": "d5422768cc1c769652727cd98f63775e9dcbc3b49ef8921d5c2d8a930d5b2098"
+    },
+    {
+      "file": "phase3b/captures/opacity-anterior-010.png",
+      "bytes": 405041,
+      "sha256": "e109e2543138197c6e944ae570e6411f941a2bc37d86c926f409fd2c699b3ab7"
+    },
+    {
+      "file": "phase3b/captures/opacity-anterior-025.png",
+      "bytes": 408728,
+      "sha256": "654cf7c4e77871581febda348a04ac4104b296179ee2a44f1394430b5621f46d"
+    },
+    {
+      "file": "phase3b/captures/opacity-anterior-050.png",
+      "bytes": 405363,
+      "sha256": "4c758d90fbc72230ba1c36c8949c397eab139a53960f4d2559e897d8e1a9fda8"
+    },
+    {
+      "file": "phase3b/captures/opacity-anterior-075.png",
+      "bytes": 401477,
+      "sha256": "013b4903973884266d4f2272461fe5c37af78af3677cb3a12914b6c8856e6553"
+    },
+    {
+      "file": "phase3b/captures/opacity-anterior-100.png",
+      "bytes": 397664,
+      "sha256": "d4396105afd2f1db569ba641f96d258c5db6709318a3b5a4e25d1beb37a80f37"
+    },
+    {
+      "file": "phase3b/captures/opacity-posterior-010.png",
+      "bytes": 400592,
+      "sha256": "6c5dabf73e232488a90e0cccaaf19ab8d89bddec0914e223a13e4125b23d3030"
+    },
+    {
+      "file": "phase3b/captures/opacity-posterior-025.png",
+      "bytes": 401284,
+      "sha256": "748d5a430b00c936d008248469aa2950b50a28934b748def6f318b2cec0eb6b0"
+    },
+    {
+      "file": "phase3b/captures/opacity-posterior-050.png",
+      "bytes": 394878,
+      "sha256": "5f493039231f319685994ec0eba4a6e1d046622ebeb94b59916f2e1916d68a12"
+    },
+    {
+      "file": "phase3b/captures/opacity-posterior-075.png",
+      "bytes": 389467,
+      "sha256": "83a7a99e1685fe0702639541b6ba175f5c9a67b90b7d051116f19f4a7b12642f"
+    },
+    {
+      "file": "phase3b/captures/opacity-posterior-100.png",
+      "bytes": 383710,
+      "sha256": "48b681a57e682abf73b38e74066c712a71c90402ec8de709208ec2008cb85964"
+    },
+    {
+      "file": "phase3b/captures/opacity-right-010.png",
+      "bytes": 341372,
+      "sha256": "4cae407d044ea41de65f44f97fef5dd76aa4ae058cff5c460a7fec1b751e0fea"
+    },
+    {
+      "file": "phase3b/captures/opacity-right-025.png",
+      "bytes": 342381,
+      "sha256": "d47a1b1248aee1ae9496bed8a56b1618047b428c092e680c5535a7559924c6bb"
+    },
+    {
+      "file": "phase3b/captures/opacity-right-050.png",
+      "bytes": 340031,
+      "sha256": "2c53b312bf17f127efe4ec9aea068737dac4a06485cecee9b5b73b51c5ad6fd3"
+    },
+    {
+      "file": "phase3b/captures/opacity-right-075.png",
+      "bytes": 338027,
+      "sha256": "23c3eda0a5434984489fc33f904ac84edb3630ea5383b6913776f24986515c0d"
+    },
+    {
+      "file": "phase3b/captures/opacity-right-100.png",
+      "bytes": 336387,
+      "sha256": "ba8c17b60eb8fb2daae83bab9cfe37c0a885858aaf4b4f9f6e961fc859297a58"
+    },
+    {
+      "file": "phase3b/results/browser-qa.json",
+      "bytes": 6616,
+      "sha256": "43ba03af8a00f2c458c1a26d97e0a9af205b041a9da62609768a5b62c7c7e29f"
+    },
+    {
+      "file": "phase3b/results/build-identity.json",
+      "bytes": 18948,
+      "sha256": "f4ae1385043562f98dc0df56811f3b7b26579b0a2d0df4ca19e6088dc593b9f7"
+    },
+    {
+      "file": "phase3b/results/build.txt",
+      "bytes": 5393,
+      "sha256": "c729731fd1748605089937e0ccdfef4eff739dda3551383674012a06799e519f"
+    },
+    {
+      "file": "phase3b/results/captures.txt",
+      "bytes": 1401,
+      "sha256": "91d5e53f05fd2498f6d55cf9bf41e7a47b2188c8aa691e6be060f566d7b2dbf7"
+    },
+    {
+      "file": "phase3b/results/commands.json",
+      "bytes": 4148,
+      "sha256": "507b8f4f51665e8d9f2aeecd544b5a99775da5743ff9dc3f4b1873596df334fb"
+    },
+    {
+      "file": "phase3b/results/delivery-checks.json",
+      "bytes": 496,
+      "sha256": "83643b3fa77b2c4cca71d6e914ded46b57b00fdc779a37b1f0753e4890b8962c"
+    },
+    {
+      "file": "phase3b/results/gltf-validation.json",
+      "bytes": 4682,
+      "sha256": "c76fbfee3e9a855d748f57ba64825e6a20d0d5ee90749feaff2bab375d83ca06"
+    },
+    {
+      "file": "phase3b/results/gltf.txt",
+      "bytes": 77,
+      "sha256": "0804a8696b13cf7d9afb9b9bbc6b00535cc0ee5fff04aa80b98f2aada832aa6e"
+    },
+    {
+      "file": "phase3b/results/performance.txt",
+      "bytes": 13751,
+      "sha256": "b6aa24056150b4e123b63adf18f9dbd64066ee3200e69428906d085b386c4fb0"
+    },
+    {
+      "file": "phase3b/results/pilot-functional.json",
+      "bytes": 4266,
+      "sha256": "8bf787d7e0afd0a07104c8085db69cffc814c0ab6e7f9e9a60497947ac960624"
+    },
+    {
+      "file": "phase3b/results/pilot-functional.txt",
+      "bytes": 2736,
+      "sha256": "4b84327868761ab7663c602759644d81c2395fdc3faa8a42f7a4eb2a4417be11"
+    },
+    {
+      "file": "phase3b/results/pilot-geometry.txt",
+      "bytes": 309,
+      "sha256": "fe95191f21fea764b4feaee620560a39d93ef08aa73490e56a7511a42a9066a7"
+    },
+    {
+      "file": "phase3b/results/pilot-tree.json",
+      "bytes": 217167,
+      "sha256": "787aee48f3592306c846d6f457bd9d3baa9346f9f9beca282d6974927bbbbffb"
+    },
+    {
+      "file": "phase3b/results/pilot-tree.txt",
+      "bytes": 106,
+      "sha256": "ca051671a392aa86f0fd435a82b8b2870b1e2784284361a5e6347d59459bbef8"
+    },
+    {
+      "file": "phase3b/results/preservation.json",
+      "bytes": 29226,
+      "sha256": "69cf0d87c098b38a1761042a05c15efcd617ff61dbc2a4d3423f2508cd8219ad"
+    },
+    {
+      "file": "phase3b/results/reproduction.json",
+      "bytes": 1344,
+      "sha256": "32b7d8373a645c5fef153f52a2044becad236e341a4bf7d0c464d2de016f3c1d"
+    },
+    {
+      "file": "phase3b/results/resumed-status.txt",
+      "bytes": 1281,
+      "sha256": "2f0b1ab5f7139293b7de4fe1c4ed7a6e4bd71f9d08fba636c7ada725ac850f30"
+    },
+    {
+      "file": "phase3b/results/runtime-environment.json",
+      "bytes": 416,
+      "sha256": "4eafc9363e54286fc3f67cfab2f210f22699162369c459b2145e801aae59ccc0"
+    },
+    {
+      "file": "phase3b/results/skeletal-functional.txt",
+      "bytes": 3118,
+      "sha256": "305a2aa687676289fc29aba8b6552f29146df656148273173b36eeb50b5eb19c"
+    },
+    {
+      "file": "phase3b/results/torso-captures.json",
+      "bytes": 8771262,
+      "sha256": "63961863f1bba5c8a627beb12297fbea7d2e656743a965d4e35aecd3328f2fba"
+    },
+    {
+      "file": "phase3b/results/torso-functional.json",
+      "bytes": 4395,
+      "sha256": "0dd1c8e2dcd17e5cd77371fc7e61ca8fd8d986610599ede496f784546a7c9e08"
+    },
+    {
+      "file": "phase3b/results/torso-functional.txt",
+      "bytes": 2848,
+      "sha256": "79849785f36edb0a4c011a4835b16f7f3693ad27818c60e7e70cbb1da1abc0ab"
+    },
+    {
+      "file": "phase3b/results/torso-geometry.txt",
+      "bytes": 310,
+      "sha256": "9e72ee679dfd7e6aa06e0c48e27be9fe4663ee4d463b593daf8051ca6b715143"
+    },
+    {
+      "file": "phase3b/results/torso-performance.json",
+      "bytes": 21301,
+      "sha256": "395a876b8962d9fd1e857a6d6a3ef5a890cbef6b896d6c9a7948c982ce342b2c"
+    },
+    {
+      "file": "phase3b/results/typecheck.txt",
+      "bytes": 40,
+      "sha256": "39b3f7b3e8762f103c196fbb53f030031188b14c60e215fa21c8e3976234658f"
+    },
+    {
+      "file": "phase3b/results/verify-anatomy.txt",
+      "bytes": 1418,
+      "sha256": "caf15afaba59163552a09d86fe2edb5dc2e5f3ec694d559870f3a537cf93a61b"
+    },
+    {
+      "file": "phase3b/visual-review.md",
+      "bytes": 15902,
+      "sha256": "4fd841b56f38fe85ac10c630377a1c276d5c399899b5a4f232f87589bfa29133"
+    },
+    {
+      "file": "phase3b-audit.md",
+      "bytes": 17383,
+      "sha256": "0c264a0327bcaf04be04708796b3981d4b38969458c8370d5c444dffd33e1033"
+    },
+    {
+      "file": "phase3b-delivery.md",
+      "bytes": 15497,
+      "sha256": "e339ca9b132c7ecbe7279a7c4813a7904e83826d78bd85f78a05e98be20452e5"
+    },
+    {
+      "file": "phase3b-education.md",
+      "bytes": 10092,
+      "sha256": "73329d5502f01f886032483089f48f8d0409b520580d1e8dc95ef3f65df6f9c6"
+    },
+    {
+      "file": "phase3b-performance.md",
+      "bytes": 5284,
+      "sha256": "3f1435e0e92a5878a81cf1e43fbe2f38099a8b767e80f458184b82256a3b3c36"
+    },
+    {
+      "file": "phase3b-registration.md",
+      "bytes": 7627,
+      "sha256": "bf69edb9a75ade785941028c5164f1d059e5e9ae635ec314155fd579f4e477dc"
+    },
+    {
+      "file": "phase3b-validation.md",
+      "bytes": 7833,
+      "sha256": "a097f09e45650b8544f856c439c9255ccb63a0f6848a3558baee7f5cd548d550"
+    }
+  ]
+}

@@ -1,0 +1,572 @@
+{
+  "codeCommit": "5c6b6e32aca61ebee8ae14f418a5c32c2eaf686a",
+  "baseline": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6",
+  "branch": "phase3b-torso",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "node": "v24.15.0",
+  "distribution": "dist",
+  "basePath": "/med3d/",
+  "files": [
+    {
+      "file": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "404.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "acerca/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "anatomia/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "apple-touch-icon.png",
+      "bytes": 2360,
+      "sha256": "7ae755f3a3ed4f2ffc6206a3b31ff75fed0ac461b4ad7f4680815f027e71aca3"
+    },
+    {
+      "file": "arquitectura/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "assets/_slug-Cyf1MF1n.js",
+      "bytes": 602,
+      "sha256": "5d0728a4e88102ec54f6344b9cd0bb77ffab96a10d1bdd8ca548c6147bbd1e2a"
+    },
+    {
+      "file": "assets/_slug-Ii1RYC3P.js",
+      "bytes": 602,
+      "sha256": "8e57be2d81c691077bd14fa8e1c433b8d0ce072b78e0f62b7eb054d05fab2fec"
+    },
+    {
+      "file": "assets/about-u_aBuI98.css",
+      "bytes": 13726,
+      "sha256": "f63677010c4dcb75718cbb66219968e232d8d4ba319c7a9c739a6326ff61c6d4"
+    },
+    {
+      "file": "assets/acerca-CQas-a-A.js",
+      "bytes": 18902,
+      "sha256": "6823e2982474677aa0cbae922b8e7f1b6380aff74b40c5204e4e86b421b45f3c"
+    },
+    {
+      "file": "assets/anatomia-DG3idogW.js",
+      "bytes": 1221,
+      "sha256": "0833e27b4e026cccea4dcf5ce5b011e39155adda6f61d4eefd76ebb9878940f3"
+    },
+    {
+      "file": "assets/anatomy-CdgjjqS4.css",
+      "bytes": 19666,
+      "sha256": "2b3511d9c4356030e3b226c6a455aa5db7e581cdd135335ca0d85fcaed915aee"
+    },
+    {
+      "file": "assets/AnatomyScene-CVVTO2RC.js",
+      "bytes": 11965,
+      "sha256": "0a5ecc5a2e3929519594b441890ee2e2ae5f673f8e9292465367b25479ad32b1"
+    },
+    {
+      "file": "assets/arquitectura-C0ECpvD4.js",
+      "bytes": 19150,
+      "sha256": "fd4162aaf4782d7d304175b27356441ce60824fda6839e18337c6eb8a6a76f43"
+    },
+    {
+      "file": "assets/ArrowRight.es-ByVIvC7l.js",
+      "bytes": 1523,
+      "sha256": "e9754ebdacb3d3bcfb98edcce322e206fbd450dc27306c81deadedd98eb217bb"
+    },
+    {
+      "file": "assets/AtlasScene-YsQM7MPU.js",
+      "bytes": 23892,
+      "sha256": "8555f41ff83a0aeb04af430851184c5fe8eca9b7743d2a4ab5f04c10e3f5144f"
+    },
+    {
+      "file": "assets/Bone.es-Cx192E5B.js",
+      "bytes": 3664,
+      "sha256": "e948a80329fa9cfb04a50b212898ff26ff2a7db133f993ad35423df114a156f2"
+    },
+    {
+      "file": "assets/BookOpen.es-vviISSto.js",
+      "bytes": 2564,
+      "sha256": "642e8f7c239cb2463330deefdf540d9a7bea8f4fd3e70b50b49c5dcb873ad438"
+    },
+    {
+      "file": "assets/Brain.es-Dg_FFL7F.js",
+      "bytes": 5432,
+      "sha256": "4e97cc293bfcb40b1db5d72aaed2f7078f4126bf5682108190f85f628e48b3f0"
+    },
+    {
+      "file": "assets/CaretRight.es-CiFZj6pX.js",
+      "bytes": 1371,
+      "sha256": "266a46712528f555d507558d51b28ea313e46712ba1b00f3ada7a78eb2001c85"
+    },
+    {
+      "file": "assets/Check.es-BmOJQlHA.js",
+      "bytes": 1527,
+      "sha256": "74f5299e96d8b0ab1847100046581c91f3d0e7608e556ecc291f27723ef17508"
+    },
+    {
+      "file": "assets/cover.webp",
+      "bytes": 258110,
+      "sha256": "4f76e6c83020479a51ea6626d3cb54d291232caad3621bacf9b938c78813327b"
+    },
+    {
+      "file": "assets/cpr.webp",
+      "bytes": 47960,
+      "sha256": "0350b6390a1bcee37af088713614b383db765f5f99e357bb090f26817678bd31"
+    },
+    {
+      "file": "assets/Cube.es-BCPWg2qp.js",
+      "bytes": 2679,
+      "sha256": "d7625495294b9e8bdbea6f4956898ec6d92055ff0b7608160b9b1d9c5d9a7c7f"
+    },
+    {
+      "file": "assets/data-C156R7bm.js",
+      "bytes": 88530,
+      "sha256": "c29fb2422779bc76f251e88fb7495ffae2450ce68d396689bdcee8d644fdded5"
+    },
+    {
+      "file": "assets/Gauge.es-BZU2koq8.js",
+      "bytes": 3392,
+      "sha256": "aaec185573fcfc9c3ef6a9d4de53dcdb562c3b6bd55f6c91a2c52e296b40100f"
+    },
+    {
+      "file": "assets/geist-cyrillic-ext-wght-normal-DjL33-gN.woff2",
+      "bytes": 7420,
+      "sha256": "2317fa4bb293c9c0b110e18315d529235c47a0ddd3338cea3d8c7955e927899e"
+    },
+    {
+      "file": "assets/geist-cyrillic-wght-normal-BEAKL7Jp.woff2",
+      "bytes": 15084,
+      "sha256": "6894439694946a589d157ece003086960a6a4013d74a813dab7602efdb3d8c09"
+    },
+    {
+      "file": "assets/geist-latin-ext-wght-normal-DC-KSUi6.woff2",
+      "bytes": 16512,
+      "sha256": "824f485b5d26e2f2da3c2b236132ece1bc8e4e43373452950bb0e40548b4313f"
+    },
+    {
+      "file": "assets/geist-latin-wght-normal-BgDaEnEv.woff2",
+      "bytes": 29400,
+      "sha256": "19f9c92546aa300c312235e3125af1b81394d8db9a4bc4a425cd5b641d2d54e1"
+    },
+    {
+      "file": "assets/geist-mono-cyrillic-ext-wght-normal-X_5orZeX.woff2",
+      "bytes": 6176,
+      "sha256": "cd8800999070b729e1cc0bf7a48da6c3ac096a044251171b9a7574b56d96d4b4"
+    },
+    {
+      "file": "assets/geist-mono-cyrillic-wght-normal-DiZS0aHC.woff2",
+      "bytes": 12940,
+      "sha256": "4866787fc952dbdbd591d6923d67bc21c2d894b93f34ab69d0cdf25d47bfb2df"
+    },
+    {
+      "file": "assets/geist-mono-latin-ext-wght-normal-Bwz-egvJ.woff2",
+      "bytes": 14696,
+      "sha256": "1a189eb997c3e2ece68373e387afaec9e8617424186c4b1ab3cff7c54ba6223b"
+    },
+    {
+      "file": "assets/geist-mono-latin-wght-normal-XN7g48iV.woff2",
+      "bytes": 23128,
+      "sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+    },
+    {
+      "file": "assets/geist-mono-symbols2-wght-normal-CO5SzqOn.woff2",
+      "bytes": 5812,
+      "sha256": "5bb66d8319ba1602bb2eb67dce8d79c2b4687be8ce183a0574433e949b3c60ad"
+    },
+    {
+      "file": "assets/geist-mono-vietnamese-wght-normal-DadHysG0.woff2",
+      "bytes": 7696,
+      "sha256": "d39b60889a94a527a7f73c7988a2d6efb6c081614aef683b0b386c02d74c2175"
+    },
+    {
+      "file": "assets/geist-vietnamese-wght-normal-6IgcOCM7.woff2",
+      "bytes": 8004,
+      "sha256": "8fa40e5d248247735eb97a0bd593b8852440430600d6ba01364c31fe0abc1fe1"
+    },
+    {
+      "file": "assets/Heartbeat.es-Bf518GtD.js",
+      "bytes": 4597,
+      "sha256": "f7aabe37c6154aa16dfdfd659c3c67741a081da4a058f6b66d015ad48b34215f"
+    },
+    {
+      "file": "assets/index-B9SmE3Pw.css",
+      "bytes": 10989,
+      "sha256": "d1e93e29101652f1057fb18a508137d525c3a5700b10fadd3680d73ae9a37e23"
+    },
+    {
+      "file": "assets/index-BqseEwWH.js",
+      "bytes": 422,
+      "sha256": "83073509b629089db3fbc7f6b571b4835638d15703ee2b51a88685f36fd404fb"
+    },
+    {
+      "file": "assets/index-BXAy1yUC.css",
+      "bytes": 8573,
+      "sha256": "c718997a2997d9feb35d294247f7ed12398beb6376c29fcaf8d4a4f0dbc82c7f"
+    },
+    {
+      "file": "assets/index-Chf886eT.js",
+      "bytes": 422,
+      "sha256": "afff36309cff834d4b96ab7ba4fae2bf6c70b69cc95494b483fc4000f648b03d"
+    },
+    {
+      "file": "assets/index-De5CyUGv.js",
+      "bytes": 14625,
+      "sha256": "3612cd075fe48a17111c16167322692ad00b641ebe4ee7187d1f4ed6fffa2fb8"
+    },
+    {
+      "file": "assets/index-DYMUjrGE.js",
+      "bytes": 321517,
+      "sha256": "c34836e303ccc25641f95b35cff6c99955cba02444fb4f2eadf55b7b38ca717d"
+    },
+    {
+      "file": "assets/Info.es-DA7EcfBP.js",
+      "bytes": 2194,
+      "sha256": "09bb9b754819a5f3d7aa546c7fc2df628938e8809fbc3af341c8394a51d3a0a5"
+    },
+    {
+      "file": "assets/LearningCatalog-_Opj8rax.js",
+      "bytes": 43442,
+      "sha256": "cbaeb283751ff5cc081854220f1c029be7c731abd13247e86b95a906e92aa4b1"
+    },
+    {
+      "file": "assets/LearningCatalog-TxtNiQwt.css",
+      "bytes": 20741,
+      "sha256": "410c523289ed7e4bb8168bb08fd0f16e702a0fe6226eb8596923409673529a82"
+    },
+    {
+      "file": "assets/LearningScene-BvdhCC_l.js",
+      "bytes": 17440,
+      "sha256": "3cbfafb598fb34aa47a285394b0c027d0f7eb11a85fa054e6407384e4f0b5db5"
+    },
+    {
+      "file": "assets/LegacyOrganAtlas-BmvBqW8p.js",
+      "bytes": 20081,
+      "sha256": "381fe2b139561365d0f0963b0b864de41db9f1d06ae8d1b2c3aed1a4fbd7f4a6"
+    },
+    {
+      "file": "assets/LessonPage-BdpkIyHw.js",
+      "bytes": 25352,
+      "sha256": "edb0612cee5a5fa7f091870b5868d2825444d49d78f0552bda5780319bfd5b14"
+    },
+    {
+      "file": "assets/MagnifyingGlass.es-DZrMIoPV.js",
+      "bytes": 1621,
+      "sha256": "ed23afd9e6306924165e041ebba2401e0644137f24c53d7fcfc7bff588bfabf5"
+    },
+    {
+      "file": "assets/og-wide.webp",
+      "bytes": 172786,
+      "sha256": "3a4097feb9850785c05ef310138a47aadef7cfe072c159b2a007df0b621695da"
+    },
+    {
+      "file": "assets/og.webp",
+      "bytes": 195768,
+      "sha256": "5a99abc4b7dddf1b518cdafe0d1b9b3189d4e672441cc61670d266119846d5b3"
+    },
+    {
+      "file": "assets/OrbitControls-CmJ2wooF.js",
+      "bytes": 920007,
+      "sha256": "aed24680a581264e5662f2457c41fc728060dc033e7ae5b035f11981d3f9eaf6"
+    },
+    {
+      "file": "assets/pressure.webp",
+      "bytes": 64460,
+      "sha256": "a8960864a6da689fbd640046cef514368325d3be31bf37751462da8faa2952c3"
+    },
+    {
+      "file": "assets/SceneBoundary-BKxCSrJU.js",
+      "bytes": 79180,
+      "sha256": "76331c4e07ec4e64bbc075facd2d650f760aa0382f5017f8eed3b9e8fedf1a99"
+    },
+    {
+      "file": "assets/SkeletalAtlas-BfRc6NAV.css",
+      "bytes": 15485,
+      "sha256": "3fa907e2d823cef64a97ca869f734e08561624fafae7ee9635b15567ad5fa2ce"
+    },
+    {
+      "file": "assets/SkeletalAtlas-UmgvgKGd.js",
+      "bytes": 85806,
+      "sha256": "a0abbf5b98f760731c84867b3ce2671167ee3b416ac0f15f9d6bb7f2cb9feec8"
+    },
+    {
+      "file": "assets/SlidersHorizontal.es-SqQb2bUE.js",
+      "bytes": 21104,
+      "sha256": "0e04a8adb2fa5d4d850ceac001ae7dfafa36df56479cff722960a51b935fbeb0"
+    },
+    {
+      "file": "assets/Stack.es-DBmkhrfP.js",
+      "bytes": 2978,
+      "sha256": "832b3f0d0be264b2a61bca29764b9dd1d5625cd01dd29ebd27db4f8c803dafaa"
+    },
+    {
+      "file": "favicon-16.png",
+      "bytes": 209,
+      "sha256": "6fcce6b783d1fc938583fdab8fdce5c9b5a17f36911972f30ea5963b825641a4"
+    },
+    {
+      "file": "favicon-32.png",
+      "bytes": 405,
+      "sha256": "8217ee1c68368c34048c081b610b9c345a9ad5ac3d6e6e0a9f7e34fad78a01e6"
+    },
+    {
+      "file": "favicon.ico",
+      "bytes": 2327,
+      "sha256": "853a074ceca236c7de6d015afe4919f6052642c349257ab4dc1b58323f2f3cf4"
+    },
+    {
+      "file": "favicon.svg",
+      "bytes": 228,
+      "sha256": "546eefb78d7b53471566d92f77a35967a5f4f6b2d2f6dcc4a75e3916c2ebc819"
+    },
+    {
+      "file": "icon-192.png",
+      "bytes": 2485,
+      "sha256": "2e969f8f6ca6a39de87f19751601ac8e4675fe85b58d0eb5e7cbf4ca492726ba"
+    },
+    {
+      "file": "icon-512.png",
+      "bytes": 7061,
+      "sha256": "506ecc794ac137819923e7e752fd975e738385fd49d71d34ef62924bbc6cdc2c"
+    },
+    {
+      "file": "icon-maskable.png",
+      "bytes": 7061,
+      "sha256": "506ecc794ac137819923e7e752fd975e738385fd49d71d34ef62924bbc6cdc2c"
+    },
+    {
+      "file": "index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "models/anatomy/muscular/catalog.json",
+      "bytes": 95288,
+      "sha256": "a257d52ca1174eee370a38169d4cec28b240aa2836be5ecc6c7bd7628896f8d8"
+    },
+    {
+      "file": "models/anatomy/muscular/muscular-abdomen.glb",
+      "bytes": 1971408,
+      "sha256": "f290f3617effb101f91b9d293361e67075d8a2d38c30e05eedfe738c1b3b78cd"
+    },
+    {
+      "file": "models/anatomy/muscular/muscular-torso-anterior.glb",
+      "bytes": 1372520,
+      "sha256": "0d2938cfcb5d651f97155e4ea4d5d69399e4bf584e99f4321f9a2b95e388356b"
+    },
+    {
+      "file": "models/anatomy/muscular/muscular-torso-posterior.glb",
+      "bytes": 1862216,
+      "sha256": "149b481048540bd5af3d2d436c904917259304cc702d2e9d0fc44d19ccc25ba5"
+    },
+    {
+      "file": "models/anatomy/muscular/muscular-upper-left.glb",
+      "bytes": 270076,
+      "sha256": "1a5885fe1258bde59dfc88437726f3ddb9db7dee4c3e4c2ae834feb701c3b559"
+    },
+    {
+      "file": "models/anatomy/muscular/muscular-upper-right.glb",
+      "bytes": 269856,
+      "sha256": "9aea14bb438f006103f48cf0f42cd2c9d58031973a0e3c355c033f880b719d21"
+    },
+    {
+      "file": "models/anatomy/muscular/source-manifest.json",
+      "bytes": 21828,
+      "sha256": "745f40edbcc039380060ea20774d186c154ea3a8835988bcd25a45cc6461cfed"
+    },
+    {
+      "file": "models/anatomy/muscular/torso-source-manifest.json",
+      "bytes": 38303,
+      "sha256": "f77ccd8cce08219039cba2933ce27b908084fb58d70e6fe01afc50311fe78219"
+    },
+    {
+      "file": "models/anatomy/muscular/torso-validation.json",
+      "bytes": 19141,
+      "sha256": "560f8703083a101d0d8767324ab89553b948c4db1009276359effe029ace81c0"
+    },
+    {
+      "file": "models/anatomy/muscular/validation.json",
+      "bytes": 14702,
+      "sha256": "4ba5d57e51f1a9d37e93264abe76aeea840df7ced73353df4fe448745dfedf07"
+    },
+    {
+      "file": "models/anatomy/skeletal/arm-left.glb",
+      "bytes": 345860,
+      "sha256": "688937b1d1eb08e1518e27c035e9d8d9729a470ff70b8c9e2d25aecef29db904"
+    },
+    {
+      "file": "models/anatomy/skeletal/arm-right.glb",
+      "bytes": 336004,
+      "sha256": "ebfe485840fd737b8eaa573dbd4bf13b11cb30542b93273af2ae8417835a06ba"
+    },
+    {
+      "file": "models/anatomy/skeletal/catalog.json",
+      "bytes": 238232,
+      "sha256": "9e6888913a5d997cc467819d9a2bed7c15d5c8ac09fc3c34076b8a7391d98c60"
+    },
+    {
+      "file": "models/anatomy/skeletal/leg-left.glb",
+      "bytes": 230240,
+      "sha256": "6e70fd15a54b1dcbf26aafad860cb282b1e6364c064cdd41e0822beef37b2f1d"
+    },
+    {
+      "file": "models/anatomy/skeletal/leg-right.glb",
+      "bytes": 230668,
+      "sha256": "06ced279676f896dbc4176e99931e4e77dd60734bcdccf108b3be2a96fffb806"
+    },
+    {
+      "file": "models/anatomy/skeletal/LICENSE.txt",
+      "bytes": 2160,
+      "sha256": "8701492dae56848477416b696ae91abff459feab87371620e1662dedf5d59444"
+    },
+    {
+      "file": "models/anatomy/skeletal/skull.glb",
+      "bytes": 1002700,
+      "sha256": "835b8ad861d6dcdd92a7cbeeddc8c8586f7a0c11356670274467f2f62730e5ba"
+    },
+    {
+      "file": "models/anatomy/skeletal/source-manifest.json",
+      "bytes": 92130,
+      "sha256": "d5b80328caffd0bd538c416b70f3bbdabf4754c39f01577e57ca8c2dd7f8a274"
+    },
+    {
+      "file": "models/anatomy/skeletal/spine.glb",
+      "bytes": 579828,
+      "sha256": "d0a338e305718d9e7820e9df732e0b9743712ad94ec9b3ca27a8df8958dd6e65"
+    },
+    {
+      "file": "models/anatomy/skeletal/thorax.glb",
+      "bytes": 1191640,
+      "sha256": "4d13ab0f94f1b41c81c17402d4830dcc3b28cca7d6b91c075d0ba9e77fb606d9"
+    },
+    {
+      "file": "models/anatomy/skeletal/validation.json",
+      "bytes": 1467,
+      "sha256": "9cad58f9276313a40dafb92aead9a67913212efc0418167e3c9e1a49b5a62dba"
+    },
+    {
+      "file": "models/brain.glb",
+      "bytes": 3496140,
+      "sha256": "ecda8d7886b75241c36eefebf7796ec5ed38cd4495c8eb96e50595ee733c52e6"
+    },
+    {
+      "file": "models/heart.glb",
+      "bytes": 715820,
+      "sha256": "4637d0779ee7c278cf81a326c933528421372bf0aa709188c20308a6ad81b3a1"
+    },
+    {
+      "file": "models/LICENSE.txt",
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "file": "models/lungs.glb",
+      "bytes": 1992744,
+      "sha256": "5e7959b7842d46c2ad7d47770d8bfbd5aa0a06c1a7476cf5b779e9c0462e5a29"
+    },
+    {
+      "file": "models/manifest.json",
+      "bytes": 1808,
+      "sha256": "ca9935a4121b93ddd9dd2c302579d6c62353a034efd6653a2233e17010d3948c"
+    },
+    {
+      "file": "models/skin.glb",
+      "bytes": 399176,
+      "sha256": "7ff23b72499707b9d0f5c65029cabcce4e9be8414dc05aed5ee1de867d1d8b43"
+    },
+    {
+      "file": "primeros-auxilios/atragantamiento/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "primeros-auxilios/botiquin/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "primeros-auxilios/convulsiones/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "primeros-auxilios/desmayos/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "primeros-auxilios/fracturas/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "primeros-auxilios/hemorragias/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "primeros-auxilios/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "primeros-auxilios/quemaduras/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "primeros-auxilios/rcp/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "procedimientos/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "procedimientos/inmovilizacion/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "procedimientos/presion-arterial/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "procedimientos/signos-vitales/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "procedimientos/vendaje/index.html",
+      "bytes": 1188,
+      "sha256": "30775e58080308cb13e1e7407563d05f8fbcc221cb001be54af6b0920e037c3e"
+    },
+    {
+      "file": "robots.txt",
+      "bytes": 79,
+      "sha256": "df6e6bdd8752d86a77bdcd27396d8634ca455f5394abd777fc0dbd93cd9b5df0"
+    },
+    {
+      "file": "site.webmanifest",
+      "bytes": 512,
+      "sha256": "fe2fdb080d77a393cdae39fdd9eb0a6630da0927e9b0084a4aebc2e4ea758290"
+    },
+    {
+      "file": "sitemap.xml",
+      "bytes": 1521,
+      "sha256": "b49fba41b5d7c51e1cde556bf70e48b37554b32bddb362f29f22296c31569bc0"
+    }
+  ]
+}

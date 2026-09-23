@@ -1,0 +1,6274 @@
+{
+  "source": {
+    "metadata": "research/anatomy/torso-metadata.zip",
+    "version": "4.0 OBJ99",
+    "geometryExtractedDuringAudit": false,
+    "scope": "Face/mastication, intrinsic hand and foot only; pinned metadata reused without historical re-audit"
+  },
+  "counts": {
+    "candidates": {
+      "face": 34,
+      "hand": 25,
+      "foot": 38
+    },
+    "decisions": {
+      "APROBADO": 48,
+      "DESCARTADO": 14,
+      "APLAZADO": 35
+    },
+    "families": 21,
+    "structures": 42,
+    "meshes": 48,
+    "modules": 4,
+    "missingRequestedFamilies": 23
+  },
+  "approved": [
+    {
+      "region": "hand",
+      "name": "Abductor corto del pulgar",
+      "en": "right abductor pollicis brevis",
+      "sourceId": "FMA37386",
+      "elementIds": [
+        "FJ1483"
+      ],
+      "representationId": "BP4855",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37373",
+          "name": "abductor pollicis brevis"
+        },
+        {
+          "id": "FMA64916",
+          "name": "thenar muscle"
+        },
+        {
+          "id": "FMA42380",
+          "name": "intrinsic muscle of hand"
+        },
+        {
+          "id": "FMA37372",
+          "name": "muscle of hand"
+        },
+        {
+          "id": "FMA37348",
+          "name": "muscle of free upper limb"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus abductor pollicis brevis",
+      "family": "abductorpollicisbrevis",
+      "component": null,
+      "elementId": "FJ1483",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37386",
+      "regionId": "muscular:region:arm-right:hand",
+      "moduleId": "muscular:hand-right",
+      "moduleFile": "muscular-hand-right.glb",
+      "proposedParentId": "muscular:region:arm-right:hand",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1483.obj",
+        "bytes": 64157,
+        "compressedBytes": 19675,
+        "crc32": "6a757ce0",
+        "offset": 41811462,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "hand",
+      "name": "Abductor corto del pulgar",
+      "en": "left abductor pollicis brevis",
+      "sourceId": "FMA37387",
+      "elementIds": [
+        "FJ1483M"
+      ],
+      "representationId": "BP8706",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37373",
+          "name": "abductor pollicis brevis"
+        },
+        {
+          "id": "FMA64916",
+          "name": "thenar muscle"
+        },
+        {
+          "id": "FMA42380",
+          "name": "intrinsic muscle of hand"
+        },
+        {
+          "id": "FMA37372",
+          "name": "muscle of hand"
+        },
+        {
+          "id": "FMA37348",
+          "name": "muscle of free upper limb"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus abductor pollicis brevis",
+      "family": "abductorpollicisbrevis",
+      "component": null,
+      "elementId": "FJ1483M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37387",
+      "regionId": "muscular:region:arm-left:hand",
+      "moduleId": "muscular:hand-left",
+      "moduleFile": "muscular-hand-left.glb",
+      "proposedParentId": "muscular:region:arm-left:hand",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1483M.obj",
+        "bytes": 63468,
+        "compressedBytes": 19715,
+        "crc32": "28f9ed70",
+        "offset": 41831197,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "hand",
+      "name": "Oponente del pulgar",
+      "en": "right opponens pollicis",
+      "sourceId": "FMA37390",
+      "elementIds": [
+        "FJ1501"
+      ],
+      "representationId": "BP4853",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37379",
+          "name": "opponens pollicis"
+        },
+        {
+          "id": "FMA64916",
+          "name": "thenar muscle"
+        },
+        {
+          "id": "FMA42380",
+          "name": "intrinsic muscle of hand"
+        },
+        {
+          "id": "FMA37372",
+          "name": "muscle of hand"
+        },
+        {
+          "id": "FMA37348",
+          "name": "muscle of free upper limb"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus opponens pollicis",
+      "family": "opponenspollicis",
+      "component": null,
+      "elementId": "FJ1501",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37390",
+      "regionId": "muscular:region:arm-right:hand",
+      "moduleId": "muscular:hand-right",
+      "moduleFile": "muscular-hand-right.glb",
+      "proposedParentId": "muscular:region:arm-right:hand",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1501.obj",
+        "bytes": 88703,
+        "compressedBytes": 25426,
+        "crc32": "7aec8f1c",
+        "offset": 43448083,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "hand",
+      "name": "Oponente del pulgar",
+      "en": "left opponens pollicis",
+      "sourceId": "FMA37391",
+      "elementIds": [
+        "FJ1501M"
+      ],
+      "representationId": "BP8596",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37379",
+          "name": "opponens pollicis"
+        },
+        {
+          "id": "FMA64916",
+          "name": "thenar muscle"
+        },
+        {
+          "id": "FMA42380",
+          "name": "intrinsic muscle of hand"
+        },
+        {
+          "id": "FMA37372",
+          "name": "muscle of hand"
+        },
+        {
+          "id": "FMA37348",
+          "name": "muscle of free upper limb"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus opponens pollicis",
+      "family": "opponenspollicis",
+      "component": null,
+      "elementId": "FJ1501M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37391",
+      "regionId": "muscular:region:arm-left:hand",
+      "moduleId": "muscular:hand-left",
+      "moduleFile": "muscular-hand-left.glb",
+      "proposedParentId": "muscular:region:arm-left:hand",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1501M.obj",
+        "bytes": 87812,
+        "compressedBytes": 25440,
+        "crc32": "94b26c4c",
+        "offset": 43473569,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "hand",
+      "name": "Abductor del meñique de la mano",
+      "en": "abductor digiti minimi of right hand",
+      "sourceId": "FMA37396",
+      "elementIds": [
+        "FJ1466"
+      ],
+      "representationId": "BP7569",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37382",
+          "name": "abductor digiti minimi of hand"
+        },
+        {
+          "id": "FMA64917",
+          "name": "hypothenar muscle"
+        },
+        {
+          "id": "FMA42380",
+          "name": "intrinsic muscle of hand"
+        },
+        {
+          "id": "FMA37372",
+          "name": "muscle of hand"
+        },
+        {
+          "id": "FMA37348",
+          "name": "muscle of free upper limb"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus abductor digiti minimi manus",
+      "family": "abductordigitiminimihand",
+      "component": null,
+      "elementId": "FJ1466",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37396",
+      "regionId": "muscular:region:arm-right:hand",
+      "moduleId": "muscular:hand-right",
+      "moduleFile": "muscular-hand-right.glb",
+      "proposedParentId": "muscular:region:arm-right:hand",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1466.obj",
+        "bytes": 52161,
+        "compressedBytes": 15094,
+        "crc32": "42e5697e",
+        "offset": 40243475,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "hand",
+      "name": "Abductor del meñique de la mano",
+      "en": "abductor digiti minimi of left hand",
+      "sourceId": "FMA37397",
+      "elementIds": [
+        "FJ1466M"
+      ],
+      "representationId": "BP8737",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37382",
+          "name": "abductor digiti minimi of hand"
+        },
+        {
+          "id": "FMA64917",
+          "name": "hypothenar muscle"
+        },
+        {
+          "id": "FMA42380",
+          "name": "intrinsic muscle of hand"
+        },
+        {
+          "id": "FMA37372",
+          "name": "muscle of hand"
+        },
+        {
+          "id": "FMA37348",
+          "name": "muscle of free upper limb"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus abductor digiti minimi manus",
+      "family": "abductordigitiminimihand",
+      "component": null,
+      "elementId": "FJ1466M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37397",
+      "regionId": "muscular:region:arm-left:hand",
+      "moduleId": "muscular:hand-left",
+      "moduleFile": "muscular-hand-left.glb",
+      "proposedParentId": "muscular:region:arm-left:hand",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1466M.obj",
+        "bytes": 51150,
+        "compressedBytes": 14952,
+        "crc32": "9d8625d5",
+        "offset": 40258629,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "hand",
+      "name": "Flexor corto del meñique de la mano",
+      "en": "flexor digiti minimi brevis of right hand",
+      "sourceId": "FMA37398",
+      "elementIds": [
+        "FJ1470"
+      ],
+      "representationId": "BP4858",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37383",
+          "name": "flexor digiti minimi brevis of hand"
+        },
+        {
+          "id": "FMA64917",
+          "name": "hypothenar muscle"
+        },
+        {
+          "id": "FMA42380",
+          "name": "intrinsic muscle of hand"
+        },
+        {
+          "id": "FMA37372",
+          "name": "muscle of hand"
+        },
+        {
+          "id": "FMA37348",
+          "name": "muscle of free upper limb"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus flexor digiti minimi brevis manus",
+      "family": "flexordigitiminimibrevishand",
+      "component": null,
+      "elementId": "FJ1470",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37398",
+      "regionId": "muscular:region:arm-right:hand",
+      "moduleId": "muscular:hand-right",
+      "moduleFile": "muscular-hand-right.glb",
+      "proposedParentId": "muscular:region:arm-right:hand",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1470.obj",
+        "bytes": 28038,
+        "compressedBytes": 8837,
+        "crc32": "8547181b",
+        "offset": 40498843,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "hand",
+      "name": "Flexor corto del meñique de la mano",
+      "en": "flexor digiti minimi brevis of left hand",
+      "sourceId": "FMA37399",
+      "elementIds": [
+        "FJ1470M"
+      ],
+      "representationId": "BP8516",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37383",
+          "name": "flexor digiti minimi brevis of hand"
+        },
+        {
+          "id": "FMA64917",
+          "name": "hypothenar muscle"
+        },
+        {
+          "id": "FMA42380",
+          "name": "intrinsic muscle of hand"
+        },
+        {
+          "id": "FMA37372",
+          "name": "muscle of hand"
+        },
+        {
+          "id": "FMA37348",
+          "name": "muscle of free upper limb"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus flexor digiti minimi brevis manus",
+      "family": "flexordigitiminimibrevishand",
+      "component": null,
+      "elementId": "FJ1470M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37399",
+      "regionId": "muscular:region:arm-left:hand",
+      "moduleId": "muscular:hand-left",
+      "moduleFile": "muscular-hand-left.glb",
+      "proposedParentId": "muscular:region:arm-left:hand",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1470M.obj",
+        "bytes": 27733,
+        "compressedBytes": 8832,
+        "crc32": "52069ff8",
+        "offset": 40507740,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "hand",
+      "name": "Oponente del meñique de la mano",
+      "en": "opponens digiti minimi of right hand",
+      "sourceId": "FMA37400",
+      "elementIds": [
+        "FJ1482"
+      ],
+      "representationId": "BP4860",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37384",
+          "name": "opponens digiti minimi of hand"
+        },
+        {
+          "id": "FMA64917",
+          "name": "hypothenar muscle"
+        },
+        {
+          "id": "FMA42380",
+          "name": "intrinsic muscle of hand"
+        },
+        {
+          "id": "FMA37372",
+          "name": "muscle of hand"
+        },
+        {
+          "id": "FMA37348",
+          "name": "muscle of free upper limb"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus opponens digiti minimi manus",
+      "family": "opponensdigitiminimihand",
+      "component": null,
+      "elementId": "FJ1482",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37400",
+      "regionId": "muscular:region:arm-right:hand",
+      "moduleId": "muscular:hand-right",
+      "moduleFile": "muscular-hand-right.glb",
+      "proposedParentId": "muscular:region:arm-right:hand",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1482.obj",
+        "bytes": 51290,
+        "compressedBytes": 14797,
+        "crc32": "e5fa1c36",
+        "offset": 41781820,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "hand",
+      "name": "Oponente del meñique de la mano",
+      "en": "opponens digiti minimi of left hand",
+      "sourceId": "FMA37401",
+      "elementIds": [
+        "FJ1482M"
+      ],
+      "representationId": "BP8204",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37384",
+          "name": "opponens digiti minimi of hand"
+        },
+        {
+          "id": "FMA64917",
+          "name": "hypothenar muscle"
+        },
+        {
+          "id": "FMA42380",
+          "name": "intrinsic muscle of hand"
+        },
+        {
+          "id": "FMA37372",
+          "name": "muscle of hand"
+        },
+        {
+          "id": "FMA37348",
+          "name": "muscle of free upper limb"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus opponens digiti minimi manus",
+      "family": "opponensdigitiminimihand",
+      "component": null,
+      "elementId": "FJ1482M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37401",
+      "regionId": "muscular:region:arm-left:hand",
+      "moduleId": "muscular:hand-left",
+      "moduleFile": "muscular-hand-left.glb",
+      "proposedParentId": "muscular:region:arm-left:hand",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1482M.obj",
+        "bytes": 50465,
+        "compressedBytes": 14724,
+        "crc32": "e078bc42",
+        "offset": 41796677,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "hand",
+      "name": "Aductor del pulgar",
+      "en": "oblique head of right adductor pollicis",
+      "sourceId": "FMA46121",
+      "elementIds": [
+        "FJ1481"
+      ],
+      "representationId": "BP5560",
+      "side": "right",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46119",
+          "name": "oblique head of adductor pollicis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "muscular:muscle:adductorpollicis:right",
+      "latin": "Musculus adductor pollicis",
+      "family": "adductorpollicis",
+      "component": "oblique",
+      "elementId": "FJ1481",
+      "sourceType": "head",
+      "structureId": "muscular:muscle:adductorpollicis:right",
+      "regionId": "muscular:region:arm-right:hand",
+      "moduleId": "muscular:hand-right",
+      "moduleFile": "muscular-hand-right.glb",
+      "proposedParentId": "muscular:muscle:adductorpollicis:right",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1481.obj",
+        "bytes": 63101,
+        "compressedBytes": 18751,
+        "crc32": "154439f5",
+        "offset": 41744207,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "hand",
+      "name": "Aductor del pulgar",
+      "en": "oblique head of left adductor pollicis",
+      "sourceId": "FMA46122",
+      "elementIds": [
+        "FJ1481M"
+      ],
+      "representationId": "BP8248",
+      "side": "left",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46119",
+          "name": "oblique head of adductor pollicis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "muscular:muscle:adductorpollicis:left",
+      "latin": "Musculus adductor pollicis",
+      "family": "adductorpollicis",
+      "component": "oblique",
+      "elementId": "FJ1481M",
+      "sourceType": "head",
+      "structureId": "muscular:muscle:adductorpollicis:left",
+      "regionId": "muscular:region:arm-left:hand",
+      "moduleId": "muscular:hand-left",
+      "moduleFile": "muscular-hand-left.glb",
+      "proposedParentId": "muscular:muscle:adductorpollicis:left",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1481M.obj",
+        "bytes": 62352,
+        "compressedBytes": 18741,
+        "crc32": "c6da628b",
+        "offset": 41763018,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "hand",
+      "name": "Aductor del pulgar",
+      "en": "transverse head of right adductor pollicis",
+      "sourceId": "FMA46123",
+      "elementIds": [
+        "FJ1515"
+      ],
+      "representationId": "BP5543",
+      "side": "right",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46120",
+          "name": "transverse head of adductor pollicis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "muscular:muscle:adductorpollicis:right",
+      "latin": "Musculus adductor pollicis",
+      "family": "adductorpollicis",
+      "component": "transverse",
+      "elementId": "FJ1515",
+      "sourceType": "head",
+      "structureId": "muscular:muscle:adductorpollicis:right",
+      "regionId": "muscular:region:arm-right:hand",
+      "moduleId": "muscular:hand-right",
+      "moduleFile": "muscular-hand-right.glb",
+      "proposedParentId": "muscular:muscle:adductorpollicis:right",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1515.obj",
+        "bytes": 60440,
+        "compressedBytes": 18731,
+        "crc32": "6423ee5c",
+        "offset": 44898990,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "hand",
+      "name": "Aductor del pulgar",
+      "en": "transverse head of left adductor pollicis",
+      "sourceId": "FMA46124",
+      "elementIds": [
+        "FJ1515M"
+      ],
+      "representationId": "BP8885",
+      "side": "left",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46120",
+          "name": "transverse head of adductor pollicis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "muscular:muscle:adductorpollicis:left",
+      "latin": "Musculus adductor pollicis",
+      "family": "adductorpollicis",
+      "component": "transverse",
+      "elementId": "FJ1515M",
+      "sourceType": "head",
+      "structureId": "muscular:muscle:adductorpollicis:left",
+      "regionId": "muscular:region:arm-left:hand",
+      "moduleId": "muscular:hand-left",
+      "moduleFile": "muscular-hand-left.glb",
+      "proposedParentId": "muscular:muscle:adductorpollicis:left",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1515M.obj",
+        "bytes": 59872,
+        "compressedBytes": 18735,
+        "crc32": "ce0cac71",
+        "offset": 44917781,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Abductor del dedo gordo",
+      "en": "right abductor hallucis",
+      "sourceId": "FMA37459",
+      "elementIds": [
+        "FJ1400"
+      ],
+      "representationId": "BP5054",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37448",
+          "name": "abductor hallucis"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus abductor hallucis",
+      "family": "abductorhallucis",
+      "component": null,
+      "elementId": "FJ1400",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37459",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:region:leg-right:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1400.obj",
+        "bytes": 90303,
+        "compressedBytes": 28078,
+        "crc32": "993edda2",
+        "offset": 10114439,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Abductor del dedo gordo",
+      "en": "left abductor hallucis",
+      "sourceId": "FMA37460",
+      "elementIds": [
+        "FJ1400M"
+      ],
+      "representationId": "BP9193",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37448",
+          "name": "abductor hallucis"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus abductor hallucis",
+      "family": "abductorhallucis",
+      "component": null,
+      "elementId": "FJ1400M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37460",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:region:leg-left:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1400M.obj",
+        "bytes": 89074,
+        "compressedBytes": 27986,
+        "crc32": "62f611ad",
+        "offset": 10142577,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Flexor corto de los dedos del pie",
+      "en": "right flexor digitorum brevis",
+      "sourceId": "FMA37461",
+      "elementIds": [
+        "FJ1413"
+      ],
+      "representationId": "BP5048",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37450",
+          "name": "flexor digitorum brevis"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus flexor digitorum brevis",
+      "family": "flexordigitorumbrevis",
+      "component": null,
+      "elementId": "FJ1413",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37461",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:region:leg-right:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1413.obj",
+        "bytes": 227620,
+        "compressedBytes": 72660,
+        "crc32": "ee403dcf",
+        "offset": 11760186,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Flexor corto de los dedos del pie",
+      "en": "left flexor digitorum brevis",
+      "sourceId": "FMA37462",
+      "elementIds": [
+        "FJ1413M"
+      ],
+      "representationId": "BP9215",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37450",
+          "name": "flexor digitorum brevis"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus flexor digitorum brevis",
+      "family": "flexordigitorumbrevis",
+      "component": null,
+      "elementId": "FJ1413M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37462",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:region:leg-left:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1413M.obj",
+        "bytes": 225781,
+        "compressedBytes": 72629,
+        "crc32": "642caf74",
+        "offset": 11832906,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Abductor del quinto dedo del pie",
+      "en": "abductor digiti minimi of right foot",
+      "sourceId": "FMA37463",
+      "elementIds": [
+        "FJ1390"
+      ],
+      "representationId": "BP5056",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37451",
+          "name": "abductor digiti minimi of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus abductor digiti minimi pedis",
+      "family": "abductordigitiminimifoot",
+      "component": null,
+      "elementId": "FJ1390",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37463",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:region:leg-right:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1390.obj",
+        "bytes": 129388,
+        "compressedBytes": 36781,
+        "crc32": "98483b0c",
+        "offset": 8970858,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Abductor del quinto dedo del pie",
+      "en": "abductor digiti minimi of left foot",
+      "sourceId": "FMA37464",
+      "elementIds": [
+        "FJ1390M"
+      ],
+      "representationId": "BP9182",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37451",
+          "name": "abductor digiti minimi of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus abductor digiti minimi pedis",
+      "family": "abductordigitiminimifoot",
+      "component": null,
+      "elementId": "FJ1390M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37464",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:region:leg-left:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1390M.obj",
+        "bytes": 128161,
+        "compressedBytes": 36733,
+        "crc32": "bc8cd973",
+        "offset": 9007699,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Cuadrado plantar",
+      "en": "right flexor accessorius",
+      "sourceId": "FMA37465",
+      "elementIds": [
+        "FJ1412"
+      ],
+      "representationId": "BP5052",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37452",
+          "name": "flexor accessorius"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus quadratus plantae",
+      "family": "quadratusplantae",
+      "component": null,
+      "elementId": "FJ1412",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37465",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:region:leg-right:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1412.obj",
+        "bytes": 67952,
+        "compressedBytes": 21701,
+        "crc32": "931b8818",
+        "offset": 11716682,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Cuadrado plantar",
+      "en": "left flexor accessorius",
+      "sourceId": "FMA37466",
+      "elementIds": [
+        "FJ1412M"
+      ],
+      "representationId": "BP8992",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37452",
+          "name": "flexor accessorius"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus quadratus plantae",
+      "family": "quadratusplantae",
+      "component": null,
+      "elementId": "FJ1412M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37466",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:region:leg-left:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1412M.obj",
+        "bytes": 67233,
+        "compressedBytes": 21682,
+        "crc32": "e4c2a4dd",
+        "offset": 11738443,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Flexor corto del quinto dedo del pie",
+      "en": "flexor digiti minimi brevis of right foot",
+      "sourceId": "FMA37471",
+      "elementIds": [
+        "FJ1391"
+      ],
+      "representationId": "BP5050",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37455",
+          "name": "flexor digiti minimi brevis of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus flexor digiti minimi brevis pedis",
+      "family": "flexordigitiminimibrevisfoot",
+      "component": null,
+      "elementId": "FJ1391",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37471",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:region:leg-right:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1391.obj",
+        "bytes": 72945,
+        "compressedBytes": 21929,
+        "crc32": "2c39f942",
+        "offset": 9044493,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Flexor corto del quinto dedo del pie",
+      "en": "flexor digiti minimi brevis of left foot",
+      "sourceId": "FMA37472",
+      "elementIds": [
+        "FJ1391M"
+      ],
+      "representationId": "BP8065",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37455",
+          "name": "flexor digiti minimi brevis of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus flexor digiti minimi brevis pedis",
+      "family": "flexordigitiminimibrevisfoot",
+      "component": null,
+      "elementId": "FJ1391M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37472",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:region:leg-left:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1391M.obj",
+        "bytes": 71983,
+        "compressedBytes": 21868,
+        "crc32": "4802a372",
+        "offset": 9066482,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Extensor corto del dedo gordo",
+      "en": "right extensor hallucis brevis",
+      "sourceId": "FMA51144",
+      "elementIds": [
+        "FJ1407"
+      ],
+      "representationId": "BP5059",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA51141",
+          "name": "extensor hallucis brevis"
+        },
+        {
+          "id": "FMA65045",
+          "name": "intrinsic muscle of dorsum of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus extensor hallucis brevis",
+      "family": "extensorhallucisbrevis",
+      "component": null,
+      "elementId": "FJ1407",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA51144",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:region:leg-right:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1407.obj",
+        "bytes": 113557,
+        "compressedBytes": 33821,
+        "crc32": "81f2d8bd",
+        "offset": 11207358,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Extensor corto del dedo gordo",
+      "en": "left extensor hallucis brevis",
+      "sourceId": "FMA51145",
+      "elementIds": [
+        "FJ1407M"
+      ],
+      "representationId": "BP8118",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA51141",
+          "name": "extensor hallucis brevis"
+        },
+        {
+          "id": "FMA65045",
+          "name": "intrinsic muscle of dorsum of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus extensor hallucis brevis",
+      "family": "extensorhallucisbrevis",
+      "component": null,
+      "elementId": "FJ1407M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA51145",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:region:leg-left:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1407M.obj",
+        "bytes": 112408,
+        "compressedBytes": 33847,
+        "crc32": "96b3e601",
+        "offset": 11241239,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Primer lumbrical del pie",
+      "en": "first lumbrical of right foot",
+      "sourceId": "FMA37717",
+      "elementIds": [
+        "FJ1383"
+      ],
+      "representationId": "BP5044",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37479",
+          "name": "first lumbrical of foot"
+        },
+        {
+          "id": "FMA37453",
+          "name": "lumbrical of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus lumbricalis primus pedis",
+      "family": "lumbricalfirstfoot",
+      "component": null,
+      "elementId": "FJ1383",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37717",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:region:leg-right:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1383.obj",
+        "bytes": 69503,
+        "compressedBytes": 20039,
+        "crc32": "5c9b407e",
+        "offset": 8756834,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Primer lumbrical del pie",
+      "en": "first lumbrical of left foot",
+      "sourceId": "FMA37718",
+      "elementIds": [
+        "FJ1383M"
+      ],
+      "representationId": "BP9161",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37479",
+          "name": "first lumbrical of foot"
+        },
+        {
+          "id": "FMA37453",
+          "name": "lumbrical of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus lumbricalis primus pedis",
+      "family": "lumbricalfirstfoot",
+      "component": null,
+      "elementId": "FJ1383M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37718",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:region:leg-left:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1383M.obj",
+        "bytes": 68454,
+        "compressedBytes": 20050,
+        "crc32": "7c26a8fa",
+        "offset": 8776933,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Segundo lumbrical del pie",
+      "en": "second lumbrical of right foot",
+      "sourceId": "FMA37719",
+      "elementIds": [
+        "FJ1385"
+      ],
+      "representationId": "BP5040",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37480",
+          "name": "second lumbrical of foot"
+        },
+        {
+          "id": "FMA37453",
+          "name": "lumbrical of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus lumbricalis secundus pedis",
+      "family": "lumbricalsecondfoot",
+      "component": null,
+      "elementId": "FJ1385",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37719",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:region:leg-right:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1385.obj",
+        "bytes": 23781,
+        "compressedBytes": 7702,
+        "crc32": "fe1ba40c",
+        "offset": 8831920,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Segundo lumbrical del pie",
+      "en": "second lumbrical of left foot",
+      "sourceId": "FMA37720",
+      "elementIds": [
+        "FJ1385M"
+      ],
+      "representationId": "BP8179",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37480",
+          "name": "second lumbrical of foot"
+        },
+        {
+          "id": "FMA37453",
+          "name": "lumbrical of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus lumbricalis secundus pedis",
+      "family": "lumbricalsecondfoot",
+      "component": null,
+      "elementId": "FJ1385M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37720",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:region:leg-left:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1385M.obj",
+        "bytes": 23468,
+        "compressedBytes": 7692,
+        "crc32": "4686ef59",
+        "offset": 8839682,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Tercer lumbrical del pie",
+      "en": "third lumbrical of right foot",
+      "sourceId": "FMA37485",
+      "elementIds": [
+        "FJ1387"
+      ],
+      "representationId": "BP5038",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37481",
+          "name": "third lumbrical of foot"
+        },
+        {
+          "id": "FMA37453",
+          "name": "lumbrical of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus lumbricalis tertius pedis",
+      "family": "lumbricalthirdfoot",
+      "component": null,
+      "elementId": "FJ1387",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37485",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:region:leg-right:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1387.obj",
+        "bytes": 41535,
+        "compressedBytes": 12072,
+        "crc32": "53002c65",
+        "offset": 8879712,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Tercer lumbrical del pie",
+      "en": "third lumbrical of left foot",
+      "sourceId": "FMA37486",
+      "elementIds": [
+        "FJ1387M"
+      ],
+      "representationId": "BP8902",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37481",
+          "name": "third lumbrical of foot"
+        },
+        {
+          "id": "FMA37453",
+          "name": "lumbrical of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus lumbricalis tertius pedis",
+      "family": "lumbricalthirdfoot",
+      "component": null,
+      "elementId": "FJ1387M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37486",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:region:leg-left:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1387M.obj",
+        "bytes": 41173,
+        "compressedBytes": 12093,
+        "crc32": "5c29e134",
+        "offset": 8891844,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Cuarto lumbrical del pie",
+      "en": "fourth lumbrical of right foot",
+      "sourceId": "FMA37483",
+      "elementIds": [
+        "FJ1389"
+      ],
+      "representationId": "BP5042",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37482",
+          "name": "fourth lumbrical of foot"
+        },
+        {
+          "id": "FMA37453",
+          "name": "lumbrical of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus lumbricalis quartus pedis",
+      "family": "lumbricalfourthfoot",
+      "component": null,
+      "elementId": "FJ1389",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37483",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:region:leg-right:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1389.obj",
+        "bytes": 34476,
+        "compressedBytes": 10378,
+        "crc32": "6d299a6c",
+        "offset": 8950018,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Cuarto lumbrical del pie",
+      "en": "fourth lumbrical of left foot",
+      "sourceId": "FMA37484",
+      "elementIds": [
+        "FJ1389M"
+      ],
+      "representationId": "BP8943",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37482",
+          "name": "fourth lumbrical of foot"
+        },
+        {
+          "id": "FMA37453",
+          "name": "lumbrical of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus lumbricalis quartus pedis",
+      "family": "lumbricalfourthfoot",
+      "component": null,
+      "elementId": "FJ1389M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37484",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:region:leg-left:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1389M.obj",
+        "bytes": 34068,
+        "compressedBytes": 10341,
+        "crc32": "8e8cc00b",
+        "offset": 8960456,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Primer interóseo plantar",
+      "en": "first plantar interosseous of right foot",
+      "sourceId": "FMA37745",
+      "elementIds": [
+        "FJ1384"
+      ],
+      "representationId": "BP5035",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37738",
+          "name": "first plantar interosseous of foot"
+        },
+        {
+          "id": "FMA37458",
+          "name": "plantar interosseous of foot"
+        },
+        {
+          "id": "FMA37456",
+          "name": "interosseous of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus interosseus plantaris primus",
+      "family": "plantarinterosseousfirst",
+      "component": null,
+      "elementId": "FJ1384",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37745",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:region:leg-right:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1384.obj",
+        "bytes": 53768,
+        "compressedBytes": 17432,
+        "crc32": "cc9143f2",
+        "offset": 8797044,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Primer interóseo plantar",
+      "en": "first plantar interosseous of left foot",
+      "sourceId": "FMA37746",
+      "elementIds": [
+        "FJ1384M"
+      ],
+      "representationId": "BP9251",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37738",
+          "name": "first plantar interosseous of foot"
+        },
+        {
+          "id": "FMA37458",
+          "name": "plantar interosseous of foot"
+        },
+        {
+          "id": "FMA37456",
+          "name": "interosseous of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus interosseus plantaris primus",
+      "family": "plantarinterosseousfirst",
+      "component": null,
+      "elementId": "FJ1384M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37746",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:region:leg-left:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1384M.obj",
+        "bytes": 53026,
+        "compressedBytes": 17323,
+        "crc32": "deebea25",
+        "offset": 8814536,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Segundo interóseo plantar",
+      "en": "second plantar interosseous of right foot",
+      "sourceId": "FMA37743",
+      "elementIds": [
+        "FJ1386"
+      ],
+      "representationId": "BP5033",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37739",
+          "name": "second plantar interosseous of foot"
+        },
+        {
+          "id": "FMA37458",
+          "name": "plantar interosseous of foot"
+        },
+        {
+          "id": "FMA37456",
+          "name": "interosseous of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus interosseus plantaris secundus",
+      "family": "plantarinterosseoussecond",
+      "component": null,
+      "elementId": "FJ1386",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37743",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:region:leg-right:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1386.obj",
+        "bytes": 50098,
+        "compressedBytes": 16078,
+        "crc32": "1fd8cfa7",
+        "offset": 8847435,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Segundo interóseo plantar",
+      "en": "second plantar interosseous of left foot",
+      "sourceId": "FMA37744",
+      "elementIds": [
+        "FJ1386M"
+      ],
+      "representationId": "BP8916",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37739",
+          "name": "second plantar interosseous of foot"
+        },
+        {
+          "id": "FMA37458",
+          "name": "plantar interosseous of foot"
+        },
+        {
+          "id": "FMA37456",
+          "name": "interosseous of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus interosseus plantaris secundus",
+      "family": "plantarinterosseoussecond",
+      "component": null,
+      "elementId": "FJ1386M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37744",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:region:leg-left:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1386M.obj",
+        "bytes": 49624,
+        "compressedBytes": 16078,
+        "crc32": "201c6961",
+        "offset": 8863573,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Tercer interóseo plantar",
+      "en": "third plantar interosseous of right foot",
+      "sourceId": "FMA37741",
+      "elementIds": [
+        "FJ1388"
+      ],
+      "representationId": "BP5031",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37740",
+          "name": "third plantar interosseous of foot"
+        },
+        {
+          "id": "FMA37458",
+          "name": "plantar interosseous of foot"
+        },
+        {
+          "id": "FMA37456",
+          "name": "interosseous of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus interosseus plantaris tertius",
+      "family": "plantarinterosseousthird",
+      "component": null,
+      "elementId": "FJ1388",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37741",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:region:leg-right:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1388.obj",
+        "bytes": 77768,
+        "compressedBytes": 22969,
+        "crc32": "90e0bc6c",
+        "offset": 8903998,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Tercer interóseo plantar",
+      "en": "third plantar interosseous of left foot",
+      "sourceId": "FMA37742",
+      "elementIds": [
+        "FJ1388M"
+      ],
+      "representationId": "BP9175",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37740",
+          "name": "third plantar interosseous of foot"
+        },
+        {
+          "id": "FMA37458",
+          "name": "plantar interosseous of foot"
+        },
+        {
+          "id": "FMA37456",
+          "name": "interosseous of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "No aplica: músculo",
+      "latin": "Musculus interosseus plantaris tertius",
+      "family": "plantarinterosseousthird",
+      "component": null,
+      "elementId": "FJ1388M",
+      "sourceType": "muscle",
+      "structureId": "bp3d:FMA37742",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:region:leg-left:foot",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1388M.obj",
+        "bytes": 76646,
+        "compressedBytes": 22930,
+        "crc32": "438e32d4",
+        "offset": 8927027,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Flexor corto del dedo gordo",
+      "en": "medial head of right flexor hallucis brevis",
+      "sourceId": "FMA45971",
+      "elementIds": [
+        "FJ1396"
+      ],
+      "representationId": "BP5546",
+      "side": "right",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA45969",
+          "name": "medial head of flexor hallucis brevis"
+        },
+        {
+          "id": "FMA45963",
+          "name": "head of flexor hallucis brevis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "muscular:muscle:flexorhallucisbrevis:right",
+      "latin": "Musculus flexor hallucis brevis",
+      "family": "flexorhallucisbrevis",
+      "component": "medial",
+      "elementId": "FJ1396",
+      "sourceType": "head",
+      "structureId": "muscular:muscle:flexorhallucisbrevis:right",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:muscle:flexorhallucisbrevis:right",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1396.obj",
+        "bytes": 102539,
+        "compressedBytes": 29589,
+        "crc32": "e896b46b",
+        "offset": 9816833,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Flexor corto del dedo gordo",
+      "en": "medial head of left flexor hallucis brevis",
+      "sourceId": "FMA45972",
+      "elementIds": [
+        "FJ1396M"
+      ],
+      "representationId": "BP8945",
+      "side": "left",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA45969",
+          "name": "medial head of flexor hallucis brevis"
+        },
+        {
+          "id": "FMA45963",
+          "name": "head of flexor hallucis brevis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "muscular:muscle:flexorhallucisbrevis:left",
+      "latin": "Musculus flexor hallucis brevis",
+      "family": "flexorhallucisbrevis",
+      "component": "medial",
+      "elementId": "FJ1396M",
+      "sourceType": "head",
+      "structureId": "muscular:muscle:flexorhallucisbrevis:left",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:muscle:flexorhallucisbrevis:left",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1396M.obj",
+        "bytes": 101150,
+        "compressedBytes": 29604,
+        "crc32": "408407f5",
+        "offset": 9846482,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Flexor corto del dedo gordo",
+      "en": "lateral head of right flexor hallucis brevis",
+      "sourceId": "FMA45973",
+      "elementIds": [
+        "FJ1393"
+      ],
+      "representationId": "BP5548",
+      "side": "right",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA45970",
+          "name": "lateral head of flexor hallucis brevis"
+        },
+        {
+          "id": "FMA45963",
+          "name": "head of flexor hallucis brevis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "muscular:muscle:flexorhallucisbrevis:right",
+      "latin": "Musculus flexor hallucis brevis",
+      "family": "flexorhallucisbrevis",
+      "component": "lateral",
+      "elementId": "FJ1393",
+      "sourceType": "head",
+      "structureId": "muscular:muscle:flexorhallucisbrevis:right",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:muscle:flexorhallucisbrevis:right",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1393.obj",
+        "bytes": 188933,
+        "compressedBytes": 54167,
+        "crc32": "0e068134",
+        "offset": 9367912,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Flexor corto del dedo gordo",
+      "en": "lateral head of left flexor hallucis brevis",
+      "sourceId": "FMA45974",
+      "elementIds": [
+        "FJ1393M"
+      ],
+      "representationId": "BP8361",
+      "side": "left",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA45970",
+          "name": "lateral head of flexor hallucis brevis"
+        },
+        {
+          "id": "FMA45963",
+          "name": "head of flexor hallucis brevis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "muscular:muscle:flexorhallucisbrevis:left",
+      "latin": "Musculus flexor hallucis brevis",
+      "family": "flexorhallucisbrevis",
+      "component": "lateral",
+      "elementId": "FJ1393M",
+      "sourceType": "head",
+      "structureId": "muscular:muscle:flexorhallucisbrevis:left",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:muscle:flexorhallucisbrevis:left",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1393M.obj",
+        "bytes": 186587,
+        "compressedBytes": 53634,
+        "crc32": "b8a9042f",
+        "offset": 9422139,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Aductor del dedo gordo",
+      "en": "oblique head of right adductor hallucis",
+      "sourceId": "FMA46018",
+      "elementIds": [
+        "FJ1398"
+      ],
+      "representationId": "BP5578",
+      "side": "right",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46014",
+          "name": "oblique head of adductor hallucis"
+        },
+        {
+          "id": "FMA46012",
+          "name": "head of adductor hallucis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "muscular:muscle:adductorhallucis:right",
+      "latin": "Musculus adductor hallucis",
+      "family": "adductorhallucis",
+      "component": "oblique",
+      "elementId": "FJ1398",
+      "sourceType": "head",
+      "structureId": "muscular:muscle:adductorhallucis:right",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:muscle:adductorhallucis:right",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1398.obj",
+        "bytes": 102344,
+        "compressedBytes": 30460,
+        "crc32": "ba9b3bed",
+        "offset": 10040098,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Aductor del dedo gordo",
+      "en": "oblique head of left adductor hallucis",
+      "sourceId": "FMA46019",
+      "elementIds": [
+        "FJ1398M"
+      ],
+      "representationId": "BP8542",
+      "side": "left",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46014",
+          "name": "oblique head of adductor hallucis"
+        },
+        {
+          "id": "FMA46012",
+          "name": "head of adductor hallucis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "muscular:muscle:adductorhallucis:left",
+      "latin": "Musculus adductor hallucis",
+      "family": "adductorhallucis",
+      "component": "oblique",
+      "elementId": "FJ1398M",
+      "sourceType": "head",
+      "structureId": "muscular:muscle:adductorhallucis:left",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:muscle:adductorhallucis:left",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1398M.obj",
+        "bytes": 101039,
+        "compressedBytes": 30385,
+        "crc32": "84c98641",
+        "offset": 10070618,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Aductor del dedo gordo",
+      "en": "transverse head of right adductor hallucis",
+      "sourceId": "FMA46020",
+      "elementIds": [
+        "FJ1445"
+      ],
+      "representationId": "BP5580",
+      "side": "right",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46015",
+          "name": "transverse head of adductor hallucis"
+        },
+        {
+          "id": "FMA46012",
+          "name": "head of adductor hallucis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "muscular:muscle:adductorhallucis:right",
+      "latin": "Musculus adductor hallucis",
+      "family": "adductorhallucis",
+      "component": "transverse",
+      "elementId": "FJ1445",
+      "sourceType": "head",
+      "structureId": "muscular:muscle:adductorhallucis:right",
+      "regionId": "muscular:region:leg-right:foot",
+      "moduleId": "muscular:foot-right",
+      "moduleFile": "muscular-foot-right.glb",
+      "proposedParentId": "muscular:muscle:adductorhallucis:right",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1445.obj",
+        "bytes": 92285,
+        "compressedBytes": 25912,
+        "crc32": "8ff1c805",
+        "offset": 16767450,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    },
+    {
+      "region": "foot",
+      "name": "Aductor del dedo gordo",
+      "en": "transverse head of left adductor hallucis",
+      "sourceId": "FMA46021",
+      "elementIds": [
+        "FJ1445M"
+      ],
+      "representationId": "BP8394",
+      "side": "left",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46015",
+          "name": "transverse head of adductor hallucis"
+        },
+        {
+          "id": "FMA46012",
+          "name": "head of adductor hallucis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "muscular:muscle:adductorhallucis:left",
+      "latin": "Musculus adductor hallucis",
+      "family": "adductorhallucis",
+      "component": "transverse",
+      "elementId": "FJ1445M",
+      "sourceType": "head",
+      "structureId": "muscular:muscle:adductorhallucis:left",
+      "regionId": "muscular:region:leg-left:foot",
+      "moduleId": "muscular:foot-left",
+      "moduleFile": "muscular-foot-left.glb",
+      "proposedParentId": "muscular:muscle:adductorhallucis:left",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1445M.obj",
+        "bytes": 90875,
+        "compressedBytes": 25885,
+        "crc32": "3cbd9ca9",
+        "offset": 16793422,
+        "method": 8
+      },
+      "decision": "APROBADO",
+      "reason": "Identidad nominal, lado y FJ propios. Cabezas conservadas como componentes; integración condicionada a cabecera y geometría originales."
+    }
+  ],
+  "other": [
+    {
+      "region": "face",
+      "name": "right superior rectus",
+      "en": "right superior rectus",
+      "sourceId": "FMA49044",
+      "elementIds": [
+        "FJ1374"
+      ],
+      "representationId": "BP4929",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49035",
+          "name": "superior rectus"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "face",
+      "name": "left superior rectus",
+      "en": "left superior rectus",
+      "sourceId": "FMA49045",
+      "elementIds": [
+        "FJ1323"
+      ],
+      "representationId": "BP4930",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49035",
+          "name": "superior rectus"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "face",
+      "name": "right inferior rectus",
+      "en": "right inferior rectus",
+      "sourceId": "FMA49046",
+      "elementIds": [
+        "FJ1346"
+      ],
+      "representationId": "BP4944",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49036",
+          "name": "inferior rectus"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "face",
+      "name": "left inferior rectus",
+      "en": "left inferior rectus",
+      "sourceId": "FMA49047",
+      "elementIds": [
+        "FJ1295"
+      ],
+      "representationId": "BP4945",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49036",
+          "name": "inferior rectus"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "face",
+      "name": "right levator palpebrae superioris",
+      "en": "right levator palpebrae superioris",
+      "sourceId": "FMA49048",
+      "elementIds": [
+        "FJ1357"
+      ],
+      "representationId": "BP4938",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49041",
+          "name": "levator palpebrae superioris"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "face",
+      "name": "left levator palpebrae superioris",
+      "en": "left levator palpebrae superioris",
+      "sourceId": "FMA49049",
+      "elementIds": [
+        "FJ1306"
+      ],
+      "representationId": "BP4939",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49041",
+          "name": "levator palpebrae superioris"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "face",
+      "name": "right inferior oblique",
+      "en": "right inferior oblique",
+      "sourceId": "FMA49050",
+      "elementIds": [
+        "FJ1345"
+      ],
+      "representationId": "BP4947",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49040",
+          "name": "inferior oblique"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "face",
+      "name": "left inferior oblique",
+      "en": "left inferior oblique",
+      "sourceId": "FMA49051",
+      "elementIds": [
+        "FJ1294"
+      ],
+      "representationId": "BP4948",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49040",
+          "name": "inferior oblique"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "face",
+      "name": "right superior oblique",
+      "en": "right superior oblique",
+      "sourceId": "FMA49052",
+      "elementIds": [
+        "FJ1373"
+      ],
+      "representationId": "BP4932",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49039",
+          "name": "superior oblique"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "face",
+      "name": "left superior oblique",
+      "en": "left superior oblique",
+      "sourceId": "FMA49053",
+      "elementIds": [
+        "FJ1322"
+      ],
+      "representationId": "BP4933",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49039",
+          "name": "superior oblique"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "face",
+      "name": "right lateral rectus",
+      "en": "right lateral rectus",
+      "sourceId": "FMA49054",
+      "elementIds": [
+        "FJ1355"
+      ],
+      "representationId": "BP4941",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49038",
+          "name": "lateral rectus"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "face",
+      "name": "left lateral rectus",
+      "en": "left lateral rectus",
+      "sourceId": "FMA49055",
+      "elementIds": [
+        "FJ1304"
+      ],
+      "representationId": "BP4942",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49038",
+          "name": "lateral rectus"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "face",
+      "name": "right medial rectus",
+      "en": "right medial rectus",
+      "sourceId": "FMA49056",
+      "elementIds": [
+        "FJ1359"
+      ],
+      "representationId": "BP4936",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49037",
+          "name": "medial rectus"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "face",
+      "name": "left medial rectus",
+      "en": "left medial rectus",
+      "sourceId": "FMA49057",
+      "elementIds": [
+        "FJ1308"
+      ],
+      "representationId": "BP4935",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA49037",
+          "name": "medial rectus"
+        },
+        {
+          "id": "FMA49033",
+          "name": "extra-ocular muscle"
+        },
+        {
+          "id": "FMA46751",
+          "name": "muscle of face"
+        },
+        {
+          "id": "FMA9616",
+          "name": "muscle of head"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "DESCARTADO",
+      "reason": "Músculo orbital; no representa masticación ni expresión facial solicitada. No se renombra por posición."
+    },
+    {
+      "region": "hand",
+      "name": "right flexor pollicis brevis",
+      "en": "right flexor pollicis brevis",
+      "sourceId": "FMA37388",
+      "elementIds": [
+        "FJ1469M"
+      ],
+      "representationId": "BP8958",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37378",
+          "name": "flexor pollicis brevis"
+        },
+        {
+          "id": "FMA64916",
+          "name": "thenar muscle"
+        },
+        {
+          "id": "FMA42380",
+          "name": "intrinsic muscle of hand"
+        },
+        {
+          "id": "FMA37372",
+          "name": "muscle of hand"
+        },
+        {
+          "id": "FMA37348",
+          "name": "muscle of free upper limb"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "Flexor corto del pulgar; relación de alcance pendiente",
+      "decision": "APLAZADO",
+      "reason": "Coexisten FJ del músculo completo y de una cabeza superficial sin relación PART-OF que aclare el alcance; no se presume que el FJ completo sea la cabeza profunda. Lados leídos del nombre, nunca del sufijo M."
+    },
+    {
+      "region": "hand",
+      "name": "left flexor pollicis brevis",
+      "en": "left flexor pollicis brevis",
+      "sourceId": "FMA37389",
+      "elementIds": [
+        "FJ1469"
+      ],
+      "representationId": "BP7575",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA37378",
+          "name": "flexor pollicis brevis"
+        },
+        {
+          "id": "FMA64916",
+          "name": "thenar muscle"
+        },
+        {
+          "id": "FMA42380",
+          "name": "intrinsic muscle of hand"
+        },
+        {
+          "id": "FMA37372",
+          "name": "muscle of hand"
+        },
+        {
+          "id": "FMA37348",
+          "name": "muscle of free upper limb"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "Flexor corto del pulgar; relación de alcance pendiente",
+      "decision": "APLAZADO",
+      "reason": "Coexisten FJ del músculo completo y de una cabeza superficial sin relación PART-OF que aclare el alcance; no se presume que el FJ completo sea la cabeza profunda. Lados leídos del nombre, nunca del sufijo M."
+    },
+    {
+      "region": "hand",
+      "name": "superficial head of right flexor pollicis brevis",
+      "en": "superficial head of right flexor pollicis brevis",
+      "sourceId": "FMA65198",
+      "elementIds": [
+        "FJ1514"
+      ],
+      "representationId": "BP5556",
+      "side": "right",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46104",
+          "name": "superficial head of flexor pollicis brevis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "Flexor corto del pulgar; relación de alcance pendiente",
+      "decision": "APLAZADO",
+      "reason": "Coexisten FJ del músculo completo y de una cabeza superficial sin relación PART-OF que aclare el alcance; no se presume que el FJ completo sea la cabeza profunda. Lados leídos del nombre, nunca del sufijo M."
+    },
+    {
+      "region": "hand",
+      "name": "superficial head of left flexor pollicis brevis",
+      "en": "superficial head of left flexor pollicis brevis",
+      "sourceId": "FMA65199",
+      "elementIds": [
+        "FJ1514M"
+      ],
+      "representationId": "BP8722",
+      "side": "left",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA46104",
+          "name": "superficial head of flexor pollicis brevis"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": "Flexor corto del pulgar; relación de alcance pendiente",
+      "decision": "APLAZADO",
+      "reason": "Coexisten FJ del músculo completo y de una cabeza superficial sin relación PART-OF que aclare el alcance; no se presume que el FJ completo sea la cabeza profunda. Lados leídos del nombre, nunca del sufijo M."
+    },
+    {
+      "region": "hand",
+      "name": "set of lumbricals of right hand",
+      "en": "set of lumbricals of right hand",
+      "sourceId": "FMA42398",
+      "elementIds": [
+        "FJ1510"
+      ],
+      "representationId": "BP6633",
+      "side": "right",
+      "isaType": "set of organs",
+      "isaAncestry": [
+        {
+          "id": "FMA71318",
+          "name": "set of lumbricals of hand"
+        },
+        {
+          "id": "FMA50391",
+          "name": "musculature of subdivision of free upper limb"
+        },
+        {
+          "id": "FMA50200",
+          "name": "musculature of subdivision of upper limb"
+        },
+        {
+          "id": "FMA32558",
+          "name": "musculature"
+        },
+        {
+          "id": "FMA70779",
+          "name": "set of organs"
+        },
+        {
+          "id": "FMA55652",
+          "name": "anatomical set"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "APLAZADO",
+      "reason": "Conjunto agregado con un FJ, sin identidades individuales. Requiere curación de cobertura grupal; no se etiqueta como un músculo individual."
+    },
+    {
+      "region": "hand",
+      "name": "set of lumbricals of left hand",
+      "en": "set of lumbricals of left hand",
+      "sourceId": "FMA42399",
+      "elementIds": [
+        "FJ1510M"
+      ],
+      "representationId": "BP8053",
+      "side": "left",
+      "isaType": "set of organs",
+      "isaAncestry": [
+        {
+          "id": "FMA71318",
+          "name": "set of lumbricals of hand"
+        },
+        {
+          "id": "FMA50391",
+          "name": "musculature of subdivision of free upper limb"
+        },
+        {
+          "id": "FMA50200",
+          "name": "musculature of subdivision of upper limb"
+        },
+        {
+          "id": "FMA32558",
+          "name": "musculature"
+        },
+        {
+          "id": "FMA70779",
+          "name": "set of organs"
+        },
+        {
+          "id": "FMA55652",
+          "name": "anatomical set"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "APLAZADO",
+      "reason": "Conjunto agregado con un FJ, sin identidades individuales. Requiere curación de cobertura grupal; no se etiqueta como un músculo individual."
+    },
+    {
+      "region": "hand",
+      "name": "set of palmar interossei of right hand",
+      "en": "set of palmar interossei of right hand",
+      "sourceId": "FMA42402",
+      "elementIds": [
+        "FJ1511"
+      ],
+      "representationId": "BP6631",
+      "side": "right",
+      "isaType": "set of organs",
+      "isaAncestry": [
+        {
+          "id": "FMA71320",
+          "name": "set of palmar interossei of hand"
+        },
+        {
+          "id": "FMA50391",
+          "name": "musculature of subdivision of free upper limb"
+        },
+        {
+          "id": "FMA50200",
+          "name": "musculature of subdivision of upper limb"
+        },
+        {
+          "id": "FMA32558",
+          "name": "musculature"
+        },
+        {
+          "id": "FMA70779",
+          "name": "set of organs"
+        },
+        {
+          "id": "FMA55652",
+          "name": "anatomical set"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "APLAZADO",
+      "reason": "Conjunto agregado con un FJ, sin identidades individuales. Requiere curación de cobertura grupal; no se etiqueta como un músculo individual."
+    },
+    {
+      "region": "hand",
+      "name": "set of palmar interossei of left hand",
+      "en": "set of palmar interossei of left hand",
+      "sourceId": "FMA42403",
+      "elementIds": [
+        "FJ1511M"
+      ],
+      "representationId": "BP8246",
+      "side": "left",
+      "isaType": "set of organs",
+      "isaAncestry": [
+        {
+          "id": "FMA71320",
+          "name": "set of palmar interossei of hand"
+        },
+        {
+          "id": "FMA50391",
+          "name": "musculature of subdivision of free upper limb"
+        },
+        {
+          "id": "FMA50200",
+          "name": "musculature of subdivision of upper limb"
+        },
+        {
+          "id": "FMA32558",
+          "name": "musculature"
+        },
+        {
+          "id": "FMA70779",
+          "name": "set of organs"
+        },
+        {
+          "id": "FMA55652",
+          "name": "anatomical set"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "APLAZADO",
+      "reason": "Conjunto agregado con un FJ, sin identidades individuales. Requiere curación de cobertura grupal; no se etiqueta como un músculo individual."
+    },
+    {
+      "region": "hand",
+      "name": "set of dorsal interossei of right hand",
+      "en": "set of dorsal interossei of right hand",
+      "sourceId": "FMA42404",
+      "elementIds": [
+        "FJ1509"
+      ],
+      "representationId": "BP6629",
+      "side": "right",
+      "isaType": "set of organs",
+      "isaAncestry": [
+        {
+          "id": "FMA71319",
+          "name": "set of dorsal interossei of hand"
+        },
+        {
+          "id": "FMA50391",
+          "name": "musculature of subdivision of free upper limb"
+        },
+        {
+          "id": "FMA50200",
+          "name": "musculature of subdivision of upper limb"
+        },
+        {
+          "id": "FMA32558",
+          "name": "musculature"
+        },
+        {
+          "id": "FMA70779",
+          "name": "set of organs"
+        },
+        {
+          "id": "FMA55652",
+          "name": "anatomical set"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "APLAZADO",
+      "reason": "Conjunto agregado con un FJ, sin identidades individuales. Requiere curación de cobertura grupal; no se etiqueta como un músculo individual."
+    },
+    {
+      "region": "hand",
+      "name": "set of dorsal interossei of left hand",
+      "en": "set of dorsal interossei of left hand",
+      "sourceId": "FMA42405",
+      "elementIds": [
+        "FJ1509M"
+      ],
+      "representationId": "BP8036",
+      "side": "left",
+      "isaType": "set of organs",
+      "isaAncestry": [
+        {
+          "id": "FMA71319",
+          "name": "set of dorsal interossei of hand"
+        },
+        {
+          "id": "FMA50391",
+          "name": "musculature of subdivision of free upper limb"
+        },
+        {
+          "id": "FMA50200",
+          "name": "musculature of subdivision of upper limb"
+        },
+        {
+          "id": "FMA32558",
+          "name": "musculature"
+        },
+        {
+          "id": "FMA70779",
+          "name": "set of organs"
+        },
+        {
+          "id": "FMA55652",
+          "name": "anatomical set"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "APLAZADO",
+      "reason": "Conjunto agregado con un FJ, sin identidades individuales. Requiere curación de cobertura grupal; no se etiqueta como un músculo individual."
+    },
+    {
+      "region": "foot",
+      "name": "opponens digiti minimi of right foot",
+      "en": "opponens digiti minimi of right foot",
+      "sourceId": "FMA86034",
+      "elementIds": [
+        "FJ1399"
+      ],
+      "representationId": "BP5046",
+      "side": "right",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA86033",
+          "name": "opponens digiti minimi of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "APLAZADO",
+      "reason": "Oponente del quinto dedo del pie: representación nominal presente, variante fuera de las familias prioritarias; pendiente revisar independencia anatómica respecto al flexor corto. No se afirma ausencia."
+    },
+    {
+      "region": "foot",
+      "name": "opponens digiti minimi of left foot",
+      "en": "opponens digiti minimi of left foot",
+      "sourceId": "FMA86035",
+      "elementIds": [
+        "FJ1399M"
+      ],
+      "representationId": "BP9018",
+      "side": "left",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA86033",
+          "name": "opponens digiti minimi of foot"
+        },
+        {
+          "id": "FMA65046",
+          "name": "intrinsic muscle of plantar part of foot"
+        },
+        {
+          "id": "FMA65020",
+          "name": "intrinsic muscle of foot"
+        },
+        {
+          "id": "FMA37369",
+          "name": "muscle of foot"
+        },
+        {
+          "id": "FMA37368",
+          "name": "muscle of free lower limb"
+        },
+        {
+          "id": "FMA9622",
+          "name": "muscle of lower limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "muscleParent": null,
+      "decision": "APLAZADO",
+      "reason": "Oponente del quinto dedo del pie: representación nominal presente, variante fuera de las familias prioritarias; pendiente revisar independencia anatómica respecto al flexor corto. No se afirma ausencia."
+    }
+  ],
+  "missingRequestedFamilies": [
+    {
+      "region": "face",
+      "name": "Masetero",
+      "pattern": "\\bmasseter",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Temporal",
+      "pattern": "\\btemporalis\\b|temporal muscle|muscle.*temporal",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Pterigoideo medial",
+      "pattern": "medial pterygoid",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Pterigoideo lateral",
+      "pattern": "lateral pterygoid",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Orbicular del ojo",
+      "pattern": "orbicularis oculi",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Orbicular de la boca",
+      "pattern": "orbicularis oris",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Buccinador",
+      "pattern": "buccinator",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Cigomático mayor",
+      "pattern": "zygomaticus major",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Cigomático menor",
+      "pattern": "zygomaticus minor",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Frontal",
+      "pattern": "frontalis|occipitofrontal",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Occipital",
+      "pattern": "occipitalis|occipital belly",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Elevador del labio superior",
+      "pattern": "levator labii",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Elevador del ángulo de la boca",
+      "pattern": "levator anguli",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Depresor del ángulo de la boca",
+      "pattern": "depressor anguli",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Depresor del labio inferior",
+      "pattern": "depressor labii",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Mentoniano",
+      "pattern": "\\bmentalis\\b",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Risorio",
+      "pattern": "risorius",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Nasal",
+      "pattern": "\\bnasalis\\b",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Corrugador superciliar",
+      "pattern": "corrugator",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "face",
+      "name": "Prócer",
+      "pattern": "procerus",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "hand",
+      "name": "Palmar corto",
+      "pattern": "palmaris brevis",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "foot",
+      "name": "Extensor corto de los dedos",
+      "pattern": "extensor digitorum brevis",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    },
+    {
+      "region": "foot",
+      "name": "Interóseos dorsales del pie",
+      "pattern": "dorsal interosse.*foot|interosse.*dorsal.*foot",
+      "sourceId": null,
+      "elementId": null,
+      "side": "No identificada",
+      "isaType": "Sin concepto nominal identificado",
+      "muscleParent": null,
+      "representationId": null,
+      "decision": "APLAZADO",
+      "reason": "Sin coincidencia nominal en ambas tablas 4.0; no se inventan FMA/FJ ni geometría."
+    }
+  ],
+  "modules": [
+    {
+      "id": "muscular:hand-right",
+      "filename": "muscular-hand-right.glb",
+      "regionId": "muscular:region:arm-right:hand"
+    },
+    {
+      "id": "muscular:hand-left",
+      "filename": "muscular-hand-left.glb",
+      "regionId": "muscular:region:arm-left:hand"
+    },
+    {
+      "id": "muscular:foot-right",
+      "filename": "muscular-foot-right.glb",
+      "regionId": "muscular:region:leg-right:foot"
+    },
+    {
+      "id": "muscular:foot-left",
+      "filename": "muscular-foot-left.glb",
+      "regionId": "muscular:region:leg-left:foot"
+    }
+  ]
+}

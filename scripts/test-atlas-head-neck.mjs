@@ -1,5 +1,6 @@
 // Focused Phase 3DE checks. Historical geometry is not rebuilt or revalidated here.
 import assert from 'node:assert/strict';
+import {cohortCatalog} from './anatomy/cohort-catalog.mjs';
 import {mkdtemp,readFile,writeFile,rm} from 'node:fs/promises';
 import path from 'node:path';
 import {pathToFileURL,fileURLToPath} from 'node:url';
@@ -15,7 +16,7 @@ const oldFetch=globalThis.fetch,oldWindow=globalThis.window;
 const checks=[];
 const check=name=>{checks.push(name);console.log('PASS',name);};
 try{
- const files=['asset-manager','explosion','catalog-index','body-catalog','muscle-education','limb-education','neck-education','camera-framing'];
+ const files=['asset-manager','explosion','catalog-index','body-catalog','muscle-education','limb-education','neck-education','gaps-education','camera-framing'];
  for(const file of files){
   const source=(await readFile(path.join(root,'src/features/anatomy/atlas',file+'.ts'),'utf8')).replaceAll('import.meta.env.BASE_URL',JSON.stringify('/med3d/'));
   let output=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText;
@@ -27,7 +28,7 @@ try{
  const {resolveMuscleDetail,getMuscleContextIds,MUSCLE_EDUCATION}=await load('muscle-education');
  const {createExplosionOffsets,explosionTarget}=await load('explosion');
  const {createAssetLoader,AtlasAssetManager}=await load('asset-manager');
- const skeletal=await json('public/models/anatomy/skeletal/catalog.json'),muscular=await json('public/models/anatomy/muscular/catalog.json');
+ const skeletal=await json('public/models/anatomy/skeletal/catalog.json'),muscular=cohortCatalog(await json('public/models/anatomy/muscular/catalog.json'), ['muscular:upper-right','muscular:upper-left','muscular:thorax-anterior','muscular:abdomen','muscular:back','muscular:forearm-right','muscular:forearm-left','muscular:gluteal-right','muscular:gluteal-left','muscular:thigh-right','muscular:thigh-left','muscular:leg-right','muscular:leg-left','muscular:neck']);
  const catalog=composeBodyCatalog(skeletal,muscular),index=createCatalogIndex(catalog),asset=catalog.assets.find(a=>a.id==='muscular:neck');
  const cohort=muscular.nodes.filter(n=>n.regionId==='muscular:region:neck'),owners=cohort.filter(n=>n.meshNames.length);
  assert.equal(owners.length,20);assert.equal(new Set(owners.map(n=>n.family)).size,10);
@@ -46,7 +47,7 @@ try{
  await writeFile(path.join(temporary,'baseline-education.mjs'),baselineEducation);
  const before=await load('baseline-education');
  for(const n of baseline.nodes)assert.deepEqual(resolveMuscleDetail(n),before.resolveMuscleDetail(n),'Old educational scope '+n.id);
- assert.equal(Object.keys(MUSCLE_EDUCATION).length,55);
+ assert.equal(Object.keys(MUSCLE_EDUCATION).filter(family=>muscular.nodes.some(n=>n.family===family)).length,55);
  check('All 175 previous IDs and 45 educational families preserved; only muscular root grows');
  const selection=await json('research/anatomy/head-neck-selection.json'),manifest=await json('public/models/anatomy/muscular/head-neck-source-manifest.json'),validation=await json('public/models/anatomy/muscular/head-neck-validation.json'),lock=await json('research/anatomy/muscular-head-neck-source-lock.json');
  assert.deepEqual(selection.counts,{families:10,structures:20,meshes:20,modules:1,candidates:60,approvedConceptRows:20,discardedConceptRows:7,deferredConceptRows:33,requestedFamiliesWithoutIdentification:14});

@@ -1,4 +1,5 @@
 import type {AnatomyNode} from './types';
+import {GAPS_EDUCATION, GAPS_COMPONENTS} from './gaps-education';
 import {NECK_EDUCATION} from './neck-education';
 import {LIMB_COMPONENTS, LIMB_EDUCATION, QUADRICEPS_MEMBERS} from './limb-education';
 
@@ -98,6 +99,7 @@ const cuffFunction = 'Contribuye a mantener la cabeza humeral estable en la cavi
 export const MUSCLE_EDUCATION: Record<string, MuscleEducation> = {
   ...LIMB_EDUCATION,
   ...NECK_EDUCATION,
+  ...GAPS_EDUCATION,
   deltoid: {
     name: 'Deltoides', latin: 'Musculus deltoideus', region: 'Hombro', group: 'Musculatura del hombro',
     description: 'Músculo superficial que da forma al hombro. Sus porciones clavicular, acromial y espinal forman una unidad muscular.',
@@ -382,6 +384,7 @@ const trapeziusAscending: ComponentDetail = {
 /** Exact source IDs from docs/phase3-registration.md; no name matching. */
 const components: Record<string, ComponentDetail> = {
   ...LIMB_COMPONENTS,
+  ...GAPS_COMPONENTS,
   FMA34680: deltoidClavicular, FMA34681: deltoidClavicular,
   FMA34682: deltoidAcromial, FMA34683: deltoidAcromial,
   FMA34684: deltoidSpinal, FMA34685: deltoidSpinal,

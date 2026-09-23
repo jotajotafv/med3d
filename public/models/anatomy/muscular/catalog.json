@@ -43,10 +43,14 @@
       "assetIds": [
         "muscular:abdomen",
         "muscular:back",
+        "muscular:foot-left",
+        "muscular:foot-right",
         "muscular:forearm-left",
         "muscular:forearm-right",
         "muscular:gluteal-left",
         "muscular:gluteal-right",
+        "muscular:hand-left",
+        "muscular:hand-right",
         "muscular:leg-left",
         "muscular:leg-right",
         "muscular:neck",
@@ -60,12 +64,12 @@
       "relatedIds": [],
       "bounds": [
         [
-          -0.277863,
-          -0.055900399999999996,
+          -0.30586,
+          -0.0728101,
           -0.0245467
         ],
         [
-          0.277863,
+          0.30586,
           1.50624,
           0.21935300000000002
         ]
@@ -81,11 +85,13 @@
       "children": [
         "muscular:group:arm-right:shoulder",
         "muscular:group:arm-right:arm",
-        "muscular:region:arm-right:forearm"
+        "muscular:region:arm-right:forearm",
+        "muscular:region:arm-right:hand"
       ],
       "kind": "region",
       "assetIds": [
         "muscular:forearm-right",
+        "muscular:hand-right",
         "muscular:upper-right"
       ],
       "meshNames": [],
@@ -96,14 +102,14 @@
       "side": "right",
       "bounds": [
         [
-          -0.277863,
-          0.7791440000000001,
+          -0.30586,
+          0.729636,
           -0.00366613
         ],
         [
           -0.060258400000000004,
           1.35539,
-          0.136406
+          0.152743
         ]
       ]
     },
@@ -927,11 +933,13 @@
       "children": [
         "muscular:group:arm-left:shoulder",
         "muscular:group:arm-left:arm",
-        "muscular:region:arm-left:forearm"
+        "muscular:region:arm-left:forearm",
+        "muscular:region:arm-left:hand"
       ],
       "kind": "region",
       "assetIds": [
         "muscular:forearm-left",
+        "muscular:hand-left",
         "muscular:upper-left"
       ],
       "meshNames": [],
@@ -943,13 +951,13 @@
       "bounds": [
         [
           0.060258400000000004,
-          0.7791440000000001,
+          0.729636,
           -0.00366613
         ],
         [
-          0.277863,
+          0.30586,
           1.35539,
-          0.136407
+          0.152743
         ]
       ]
     },
@@ -3638,10 +3646,12 @@
       "children": [
         "muscular:region:leg-right:gluteal",
         "muscular:region:leg-right:thigh",
-        "muscular:region:leg-right:leg"
+        "muscular:region:leg-right:leg",
+        "muscular:region:leg-right:foot"
       ],
       "kind": "region",
       "assetIds": [
+        "muscular:foot-right",
         "muscular:gluteal-right",
         "muscular:leg-right",
         "muscular:thigh-right"
@@ -3654,14 +3664,14 @@
       "explosionRegionId": "lower-limb-right",
       "bounds": [
         [
-          -0.16003299999999998,
-          -0.055900399999999996,
+          -0.164326,
+          -0.0728101,
           -0.0198663
         ],
         [
           0.00152091,
           0.950903,
-          0.15246600000000002
+          0.218194
         ]
       ]
     },
@@ -4143,10 +4153,12 @@
       "children": [
         "muscular:region:leg-left:gluteal",
         "muscular:region:leg-left:thigh",
-        "muscular:region:leg-left:leg"
+        "muscular:region:leg-left:leg",
+        "muscular:region:leg-left:foot"
       ],
       "kind": "region",
       "assetIds": [
+        "muscular:foot-left",
         "muscular:gluteal-left",
         "muscular:leg-left",
         "muscular:thigh-left"
@@ -4160,13 +4172,13 @@
       "bounds": [
         [
           -0.00152091,
-          -0.055900399999999996,
+          -0.0728101,
           -0.0198663
         ],
         [
-          0.16003299999999998,
+          0.164326,
           0.950903,
-          0.15246600000000002
+          0.218194
         ]
       ]
     },
@@ -8402,6 +8414,2530 @@
           0.160248
         ]
       ]
+    },
+    {
+      "id": "muscular:region:arm-right:hand",
+      "name": "Mano derecha",
+      "anatomicalName": "Mano derecha",
+      "aliases": [
+        "Manus",
+        "Intrinsic hand"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:hand",
+      "parentId": "muscular:region:arm-right",
+      "children": [
+        "bp3d:FMA37386",
+        "bp3d:FMA37390",
+        "bp3d:FMA37396",
+        "bp3d:FMA37398",
+        "bp3d:FMA37400",
+        "muscular:muscle:adductorpollicis:right"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:hand-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-right"
+      ],
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "bounds": [
+        [
+          -0.30586,
+          0.729636,
+          0.123023
+        ],
+        [
+          -0.220817,
+          0.808087,
+          0.152743
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:arm-left:hand",
+      "name": "Mano izquierda",
+      "anatomicalName": "Mano izquierda",
+      "aliases": [
+        "Manus",
+        "Intrinsic hand"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:hand",
+      "parentId": "muscular:region:arm-left",
+      "children": [
+        "bp3d:FMA37387",
+        "bp3d:FMA37391",
+        "bp3d:FMA37397",
+        "bp3d:FMA37399",
+        "bp3d:FMA37401",
+        "muscular:muscle:adductorpollicis:left"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:hand-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-left"
+      ],
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "bounds": [
+        [
+          0.220817,
+          0.729636,
+          0.123023
+        ],
+        [
+          0.30586,
+          0.808087,
+          0.152743
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-right:foot",
+      "name": "Pie derecho",
+      "anatomicalName": "Pie derecho",
+      "aliases": [
+        "Pes",
+        "Intrinsic foot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right",
+      "children": [
+        "bp3d:FMA37459",
+        "bp3d:FMA37461",
+        "bp3d:FMA37463",
+        "bp3d:FMA37465",
+        "bp3d:FMA37471",
+        "bp3d:FMA51144",
+        "bp3d:FMA37717",
+        "bp3d:FMA37719",
+        "bp3d:FMA37485",
+        "bp3d:FMA37483",
+        "bp3d:FMA37745",
+        "bp3d:FMA37743",
+        "bp3d:FMA37741",
+        "muscular:muscle:flexorhallucisbrevis:right",
+        "muscular:muscle:adductorhallucis:right"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right"
+      ],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.164326,
+          -0.0728101,
+          0.043733
+        ],
+        [
+          -0.053871800000000004,
+          -0.0074344400000000005,
+          0.218194
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-left:foot",
+      "name": "Pie izquierdo",
+      "anatomicalName": "Pie izquierdo",
+      "aliases": [
+        "Pes",
+        "Intrinsic foot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left",
+      "children": [
+        "bp3d:FMA37460",
+        "bp3d:FMA37462",
+        "bp3d:FMA37464",
+        "bp3d:FMA37466",
+        "bp3d:FMA37472",
+        "bp3d:FMA51145",
+        "bp3d:FMA37718",
+        "bp3d:FMA37720",
+        "bp3d:FMA37486",
+        "bp3d:FMA37484",
+        "bp3d:FMA37746",
+        "bp3d:FMA37744",
+        "bp3d:FMA37742",
+        "muscular:muscle:flexorhallucisbrevis:left",
+        "muscular:muscle:adductorhallucis:left"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left"
+      ],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0538719,
+          -0.0728101,
+          0.043733
+        ],
+        [
+          0.164326,
+          -0.0074344400000000005,
+          0.218194
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37386",
+      "name": "Abductor corto del pulgar derecho",
+      "anatomicalName": "Abductor corto del pulgar derecho",
+      "aliases": [
+        "right abductor pollicis brevis",
+        "FMA37386",
+        "FJ1483",
+        "Musculus abductor pollicis brevis",
+        "abductorpollicisbrevis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:hand",
+      "parentId": "muscular:region:arm-right:hand",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:hand-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37386_FJ1483"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-right:hand",
+        "bp3d:FMA37387"
+      ],
+      "sourceId": "FMA37386",
+      "family": "abductorpollicisbrevis",
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "latin": "Musculus abductor pollicis brevis",
+      "bounds": [
+        [
+          -0.302539,
+          0.769911,
+          0.123023
+        ],
+        [
+          -0.263352,
+          0.808087,
+          0.152743
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37387",
+      "name": "Abductor corto del pulgar izquierdo",
+      "anatomicalName": "Abductor corto del pulgar izquierdo",
+      "aliases": [
+        "left abductor pollicis brevis",
+        "FMA37387",
+        "FJ1483M",
+        "Musculus abductor pollicis brevis",
+        "abductorpollicisbrevis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:hand",
+      "parentId": "muscular:region:arm-left:hand",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:hand-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37387_FJ1483M"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-left:hand",
+        "bp3d:FMA37386"
+      ],
+      "sourceId": "FMA37387",
+      "family": "abductorpollicisbrevis",
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "latin": "Musculus abductor pollicis brevis",
+      "bounds": [
+        [
+          0.263352,
+          0.769911,
+          0.123023
+        ],
+        [
+          0.302539,
+          0.808087,
+          0.152743
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37390",
+      "name": "Oponente del pulgar derecho",
+      "anatomicalName": "Oponente del pulgar derecho",
+      "aliases": [
+        "right opponens pollicis",
+        "FMA37390",
+        "FJ1501",
+        "Musculus opponens pollicis",
+        "opponenspollicis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:hand",
+      "parentId": "muscular:region:arm-right:hand",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:hand-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37390_FJ1501"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-right:hand",
+        "bp3d:FMA37391"
+      ],
+      "sourceId": "FMA37390",
+      "family": "opponenspollicis",
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "latin": "Musculus opponens pollicis",
+      "bounds": [
+        [
+          -0.30586,
+          0.77383,
+          0.130379
+        ],
+        [
+          -0.258041,
+          0.806003,
+          0.148969
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37391",
+      "name": "Oponente del pulgar izquierdo",
+      "anatomicalName": "Oponente del pulgar izquierdo",
+      "aliases": [
+        "left opponens pollicis",
+        "FMA37391",
+        "FJ1501M",
+        "Musculus opponens pollicis",
+        "opponenspollicis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:hand",
+      "parentId": "muscular:region:arm-left:hand",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:hand-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37391_FJ1501M"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-left:hand",
+        "bp3d:FMA37390"
+      ],
+      "sourceId": "FMA37391",
+      "family": "opponenspollicis",
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "latin": "Musculus opponens pollicis",
+      "bounds": [
+        [
+          0.258041,
+          0.77383,
+          0.130379
+        ],
+        [
+          0.30586,
+          0.806003,
+          0.148969
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37396",
+      "name": "Abductor del meñique de la mano derecho",
+      "anatomicalName": "Abductor del meñique de la mano derecho",
+      "aliases": [
+        "abductor digiti minimi of right hand",
+        "FMA37396",
+        "FJ1466",
+        "Musculus abductor digiti minimi manus",
+        "abductordigitiminimihand"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:hand",
+      "parentId": "muscular:region:arm-right:hand",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:hand-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37396_FJ1466"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-right:hand",
+        "bp3d:FMA37397"
+      ],
+      "sourceId": "FMA37396",
+      "family": "abductordigitiminimihand",
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "latin": "Musculus abductor digiti minimi manus",
+      "bounds": [
+        [
+          -0.238181,
+          0.729636,
+          0.130624
+        ],
+        [
+          -0.220817,
+          0.794682,
+          0.148906
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37397",
+      "name": "Abductor del meñique de la mano izquierdo",
+      "anatomicalName": "Abductor del meñique de la mano izquierdo",
+      "aliases": [
+        "abductor digiti minimi of left hand",
+        "FMA37397",
+        "FJ1466M",
+        "Musculus abductor digiti minimi manus",
+        "abductordigitiminimihand"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:hand",
+      "parentId": "muscular:region:arm-left:hand",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:hand-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37397_FJ1466M"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-left:hand",
+        "bp3d:FMA37396"
+      ],
+      "sourceId": "FMA37397",
+      "family": "abductordigitiminimihand",
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "latin": "Musculus abductor digiti minimi manus",
+      "bounds": [
+        [
+          0.220817,
+          0.729636,
+          0.130624
+        ],
+        [
+          0.238181,
+          0.794682,
+          0.148906
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37398",
+      "name": "Flexor corto del meñique de la mano derecho",
+      "anatomicalName": "Flexor corto del meñique de la mano derecho",
+      "aliases": [
+        "flexor digiti minimi brevis of right hand",
+        "FMA37398",
+        "FJ1470",
+        "Musculus flexor digiti minimi brevis manus",
+        "flexordigitiminimibrevishand"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:hand",
+      "parentId": "muscular:region:arm-right:hand",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:hand-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37398_FJ1470"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-right:hand",
+        "bp3d:FMA37399"
+      ],
+      "sourceId": "FMA37398",
+      "family": "flexordigitiminimibrevishand",
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "latin": "Musculus flexor digiti minimi brevis manus",
+      "bounds": [
+        [
+          -0.244008,
+          0.731789,
+          0.13071100000000002
+        ],
+        [
+          -0.226063,
+          0.791984,
+          0.148017
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37399",
+      "name": "Flexor corto del meñique de la mano izquierdo",
+      "anatomicalName": "Flexor corto del meñique de la mano izquierdo",
+      "aliases": [
+        "flexor digiti minimi brevis of left hand",
+        "FMA37399",
+        "FJ1470M",
+        "Musculus flexor digiti minimi brevis manus",
+        "flexordigitiminimibrevishand"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:hand",
+      "parentId": "muscular:region:arm-left:hand",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:hand-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37399_FJ1470M"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-left:hand",
+        "bp3d:FMA37398"
+      ],
+      "sourceId": "FMA37399",
+      "family": "flexordigitiminimibrevishand",
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "latin": "Musculus flexor digiti minimi brevis manus",
+      "bounds": [
+        [
+          0.226063,
+          0.731789,
+          0.13071100000000002
+        ],
+        [
+          0.244008,
+          0.791984,
+          0.148017
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37400",
+      "name": "Oponente del meñique de la mano derecho",
+      "anatomicalName": "Oponente del meñique de la mano derecho",
+      "aliases": [
+        "opponens digiti minimi of right hand",
+        "FMA37400",
+        "FJ1482",
+        "Musculus opponens digiti minimi manus",
+        "opponensdigitiminimihand"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:hand",
+      "parentId": "muscular:region:arm-right:hand",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:hand-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37400_FJ1482"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-right:hand",
+        "bp3d:FMA37401"
+      ],
+      "sourceId": "FMA37400",
+      "family": "opponensdigitiminimihand",
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "latin": "Musculus opponens digiti minimi manus",
+      "bounds": [
+        [
+          -0.24541900000000003,
+          0.74363,
+          0.127635
+        ],
+        [
+          -0.227464,
+          0.790442,
+          0.142573
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37401",
+      "name": "Oponente del meñique de la mano izquierdo",
+      "anatomicalName": "Oponente del meñique de la mano izquierdo",
+      "aliases": [
+        "opponens digiti minimi of left hand",
+        "FMA37401",
+        "FJ1482M",
+        "Musculus opponens digiti minimi manus",
+        "opponensdigitiminimihand"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:hand",
+      "parentId": "muscular:region:arm-left:hand",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:hand-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37401_FJ1482M"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-left:hand",
+        "bp3d:FMA37400"
+      ],
+      "sourceId": "FMA37401",
+      "family": "opponensdigitiminimihand",
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "latin": "Musculus opponens digiti minimi manus",
+      "bounds": [
+        [
+          0.227464,
+          0.74363,
+          0.127635
+        ],
+        [
+          0.24541900000000003,
+          0.790442,
+          0.142573
+        ]
+      ]
+    },
+    {
+      "id": "muscular:muscle:adductorpollicis:right",
+      "name": "Aductor del pulgar derecho",
+      "anatomicalName": "Aductor del pulgar derecho",
+      "aliases": [
+        "Musculus adductor pollicis",
+        "adductorpollicis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:hand",
+      "parentId": "muscular:region:arm-right:hand",
+      "children": [
+        "bp3d:FMA46121",
+        "bp3d:FMA46123"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:hand-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-right:hand",
+        "muscular:muscle:adductorpollicis:left"
+      ],
+      "family": "adductorpollicis",
+      "side": "right",
+      "latin": "Musculus adductor pollicis",
+      "explosionRegionId": "upper-limb-right",
+      "bounds": [
+        [
+          -0.299765,
+          0.738634,
+          0.12316200000000001
+        ],
+        [
+          -0.256534,
+          0.789784,
+          0.14707
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46121",
+      "name": "Cabeza oblicua del aductor del pulgar derecho",
+      "anatomicalName": "Cabeza oblicua del aductor del pulgar derecho",
+      "aliases": [
+        "oblique head of right adductor pollicis",
+        "FMA46121",
+        "FJ1481",
+        "Musculus adductor pollicis",
+        "adductorpollicis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:hand",
+      "parentId": "muscular:muscle:adductorpollicis:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:hand-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA46121_FJ1481"
+      ],
+      "relatedIds": [
+        "muscular:muscle:adductorpollicis:right"
+      ],
+      "sourceId": "FMA46121",
+      "family": "adductorpollicis",
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "bounds": [
+        [
+          -0.29933600000000005,
+          0.759749,
+          0.12316200000000001
+        ],
+        [
+          -0.256534,
+          0.789784,
+          0.14707
+        ]
+      ]
+    },
+    {
+      "id": "muscular:muscle:adductorpollicis:left",
+      "name": "Aductor del pulgar izquierdo",
+      "anatomicalName": "Aductor del pulgar izquierdo",
+      "aliases": [
+        "Musculus adductor pollicis",
+        "adductorpollicis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:hand",
+      "parentId": "muscular:region:arm-left:hand",
+      "children": [
+        "bp3d:FMA46122",
+        "bp3d:FMA46124"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:hand-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-left:hand",
+        "muscular:muscle:adductorpollicis:right"
+      ],
+      "family": "adductorpollicis",
+      "side": "left",
+      "latin": "Musculus adductor pollicis",
+      "explosionRegionId": "upper-limb-left",
+      "bounds": [
+        [
+          0.256534,
+          0.738634,
+          0.12316200000000001
+        ],
+        [
+          0.299765,
+          0.789784,
+          0.14707
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46122",
+      "name": "Cabeza oblicua del aductor del pulgar izquierdo",
+      "anatomicalName": "Cabeza oblicua del aductor del pulgar izquierdo",
+      "aliases": [
+        "oblique head of left adductor pollicis",
+        "FMA46122",
+        "FJ1481M",
+        "Musculus adductor pollicis",
+        "adductorpollicis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:hand",
+      "parentId": "muscular:muscle:adductorpollicis:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:hand-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA46122_FJ1481M"
+      ],
+      "relatedIds": [
+        "muscular:muscle:adductorpollicis:left"
+      ],
+      "sourceId": "FMA46122",
+      "family": "adductorpollicis",
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "bounds": [
+        [
+          0.256534,
+          0.759749,
+          0.12316200000000001
+        ],
+        [
+          0.29933600000000005,
+          0.789784,
+          0.14707
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46123",
+      "name": "Cabeza transversa del aductor del pulgar derecho",
+      "anatomicalName": "Cabeza transversa del aductor del pulgar derecho",
+      "aliases": [
+        "transverse head of right adductor pollicis",
+        "FMA46123",
+        "FJ1515",
+        "Musculus adductor pollicis",
+        "adductorpollicis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:hand",
+      "parentId": "muscular:muscle:adductorpollicis:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:hand-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA46123_FJ1515"
+      ],
+      "relatedIds": [
+        "muscular:muscle:adductorpollicis:right"
+      ],
+      "sourceId": "FMA46123",
+      "family": "adductorpollicis",
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "bounds": [
+        [
+          -0.299765,
+          0.738634,
+          0.124208
+        ],
+        [
+          -0.258639,
+          0.776706,
+          0.14672100000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46124",
+      "name": "Cabeza transversa del aductor del pulgar izquierdo",
+      "anatomicalName": "Cabeza transversa del aductor del pulgar izquierdo",
+      "aliases": [
+        "transverse head of left adductor pollicis",
+        "FMA46124",
+        "FJ1515M",
+        "Musculus adductor pollicis",
+        "adductorpollicis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:hand",
+      "parentId": "muscular:muscle:adductorpollicis:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:hand-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA46124_FJ1515M"
+      ],
+      "relatedIds": [
+        "muscular:muscle:adductorpollicis:left"
+      ],
+      "sourceId": "FMA46124",
+      "family": "adductorpollicis",
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "bounds": [
+        [
+          0.258639,
+          0.738634,
+          0.124208
+        ],
+        [
+          0.299765,
+          0.776706,
+          0.14672100000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37459",
+      "name": "Abductor del dedo gordo derecho",
+      "anatomicalName": "Abductor del dedo gordo derecho",
+      "aliases": [
+        "right abductor hallucis",
+        "FMA37459",
+        "FJ1400",
+        "Musculus abductor hallucis",
+        "abductorhallucis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37459_FJ1400"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "bp3d:FMA37460"
+      ],
+      "sourceId": "FMA37459",
+      "family": "abductorhallucis",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus abductor hallucis",
+      "bounds": [
+        [
+          -0.08903470000000001,
+          -0.0656836,
+          0.0571954
+        ],
+        [
+          -0.053871800000000004,
+          -0.039650399999999995,
+          0.193433
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37460",
+      "name": "Abductor del dedo gordo izquierdo",
+      "anatomicalName": "Abductor del dedo gordo izquierdo",
+      "aliases": [
+        "left abductor hallucis",
+        "FMA37460",
+        "FJ1400M",
+        "Musculus abductor hallucis",
+        "abductorhallucis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37460_FJ1400M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "bp3d:FMA37459"
+      ],
+      "sourceId": "FMA37460",
+      "family": "abductorhallucis",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus abductor hallucis",
+      "bounds": [
+        [
+          0.0538719,
+          -0.0656836,
+          0.0571954
+        ],
+        [
+          0.08903470000000001,
+          -0.039650399999999995,
+          0.193433
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37461",
+      "name": "Flexor corto de los dedos del pie derecho",
+      "anatomicalName": "Flexor corto de los dedos del pie derecho",
+      "aliases": [
+        "right flexor digitorum brevis",
+        "FMA37461",
+        "FJ1413",
+        "Musculus flexor digitorum brevis",
+        "flexordigitorumbrevis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37461_FJ1413"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "bp3d:FMA37462"
+      ],
+      "sourceId": "FMA37461",
+      "family": "flexordigitorumbrevis",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus flexor digitorum brevis",
+      "bounds": [
+        [
+          -0.164326,
+          -0.0728101,
+          0.0456258
+        ],
+        [
+          -0.058602600000000005,
+          -0.0539255,
+          0.218194
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37462",
+      "name": "Flexor corto de los dedos del pie izquierdo",
+      "anatomicalName": "Flexor corto de los dedos del pie izquierdo",
+      "aliases": [
+        "left flexor digitorum brevis",
+        "FMA37462",
+        "FJ1413M",
+        "Musculus flexor digitorum brevis",
+        "flexordigitorumbrevis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37462_FJ1413M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "bp3d:FMA37461"
+      ],
+      "sourceId": "FMA37462",
+      "family": "flexordigitorumbrevis",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus flexor digitorum brevis",
+      "bounds": [
+        [
+          0.058602600000000005,
+          -0.0728101,
+          0.0456258
+        ],
+        [
+          0.164326,
+          -0.0539255,
+          0.218194
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37463",
+      "name": "Abductor del quinto dedo del pie derecho",
+      "anatomicalName": "Abductor del quinto dedo del pie derecho",
+      "aliases": [
+        "abductor digiti minimi of right foot",
+        "FMA37463",
+        "FJ1390",
+        "Musculus abductor digiti minimi pedis",
+        "abductordigitiminimifoot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37463_FJ1390"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "bp3d:FMA37464"
+      ],
+      "sourceId": "FMA37463",
+      "family": "abductordigitiminimifoot",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus abductor digiti minimi pedis",
+      "bounds": [
+        [
+          -0.15460400000000002,
+          -0.0697144,
+          0.043733
+        ],
+        [
+          -0.0613968,
+          -0.0537564,
+          0.15282300000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37464",
+      "name": "Abductor del quinto dedo del pie izquierdo",
+      "anatomicalName": "Abductor del quinto dedo del pie izquierdo",
+      "aliases": [
+        "abductor digiti minimi of left foot",
+        "FMA37464",
+        "FJ1390M",
+        "Musculus abductor digiti minimi pedis",
+        "abductordigitiminimifoot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37464_FJ1390M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "bp3d:FMA37463"
+      ],
+      "sourceId": "FMA37464",
+      "family": "abductordigitiminimifoot",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus abductor digiti minimi pedis",
+      "bounds": [
+        [
+          0.0613968,
+          -0.0697144,
+          0.043733
+        ],
+        [
+          0.15460400000000002,
+          -0.0537564,
+          0.15282300000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37465",
+      "name": "Cuadrado plantar derecho",
+      "anatomicalName": "Cuadrado plantar derecho",
+      "aliases": [
+        "right flexor accessorius",
+        "FMA37465",
+        "FJ1412",
+        "Musculus quadratus plantae",
+        "quadratusplantae",
+        "Flexor accesorio",
+        "Flexor accessorius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37465_FJ1412"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "bp3d:FMA37466"
+      ],
+      "sourceId": "FMA37465",
+      "family": "quadratusplantae",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus quadratus plantae",
+      "bounds": [
+        [
+          -0.10916100000000001,
+          -0.0624437,
+          0.0502609
+        ],
+        [
+          -0.0600618,
+          -0.0464407,
+          0.11894400000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37466",
+      "name": "Cuadrado plantar izquierdo",
+      "anatomicalName": "Cuadrado plantar izquierdo",
+      "aliases": [
+        "left flexor accessorius",
+        "FMA37466",
+        "FJ1412M",
+        "Musculus quadratus plantae",
+        "quadratusplantae",
+        "Flexor accesorio",
+        "Flexor accessorius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37466_FJ1412M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "bp3d:FMA37465"
+      ],
+      "sourceId": "FMA37466",
+      "family": "quadratusplantae",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus quadratus plantae",
+      "bounds": [
+        [
+          0.0600618,
+          -0.0624437,
+          0.0502609
+        ],
+        [
+          0.10916100000000001,
+          -0.0464407,
+          0.11894400000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37471",
+      "name": "Flexor corto del quinto dedo del pie derecho",
+      "anatomicalName": "Flexor corto del quinto dedo del pie derecho",
+      "aliases": [
+        "flexor digiti minimi brevis of right foot",
+        "FMA37471",
+        "FJ1391",
+        "Musculus flexor digiti minimi brevis pedis",
+        "flexordigitiminimibrevisfoot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37471_FJ1391"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "bp3d:FMA37472"
+      ],
+      "sourceId": "FMA37471",
+      "family": "flexordigitiminimibrevisfoot",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus flexor digiti minimi brevis pedis",
+      "bounds": [
+        [
+          -0.155761,
+          -0.0710547,
+          0.0981942
+        ],
+        [
+          -0.109225,
+          -0.0532491,
+          0.159947
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37472",
+      "name": "Flexor corto del quinto dedo del pie izquierdo",
+      "anatomicalName": "Flexor corto del quinto dedo del pie izquierdo",
+      "aliases": [
+        "flexor digiti minimi brevis of left foot",
+        "FMA37472",
+        "FJ1391M",
+        "Musculus flexor digiti minimi brevis pedis",
+        "flexordigitiminimibrevisfoot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37472_FJ1391M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "bp3d:FMA37471"
+      ],
+      "sourceId": "FMA37472",
+      "family": "flexordigitiminimibrevisfoot",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus flexor digiti minimi brevis pedis",
+      "bounds": [
+        [
+          0.109225,
+          -0.0710547,
+          0.0981942
+        ],
+        [
+          0.155761,
+          -0.0532491,
+          0.159947
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA51144",
+      "name": "Extensor corto del dedo gordo derecho",
+      "anatomicalName": "Extensor corto del dedo gordo derecho",
+      "aliases": [
+        "right extensor hallucis brevis",
+        "FMA51144",
+        "FJ1407",
+        "Musculus extensor hallucis brevis",
+        "extensorhallucisbrevis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA51144_FJ1407"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "bp3d:FMA51145"
+      ],
+      "sourceId": "FMA51144",
+      "family": "extensorhallucisbrevis",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus extensor hallucis brevis",
+      "bounds": [
+        [
+          -0.10434,
+          -0.053359699999999996,
+          0.07813450000000001
+        ],
+        [
+          -0.0903251,
+          -0.0074344400000000005,
+          0.19803700000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA51145",
+      "name": "Extensor corto del dedo gordo izquierdo",
+      "anatomicalName": "Extensor corto del dedo gordo izquierdo",
+      "aliases": [
+        "left extensor hallucis brevis",
+        "FMA51145",
+        "FJ1407M",
+        "Musculus extensor hallucis brevis",
+        "extensorhallucisbrevis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA51145_FJ1407M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "bp3d:FMA51144"
+      ],
+      "sourceId": "FMA51145",
+      "family": "extensorhallucisbrevis",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus extensor hallucis brevis",
+      "bounds": [
+        [
+          0.0903251,
+          -0.053359699999999996,
+          0.07813450000000001
+        ],
+        [
+          0.10434,
+          -0.0074344400000000005,
+          0.19803700000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37717",
+      "name": "Primer lumbrical del pie derecho",
+      "anatomicalName": "Primer lumbrical del pie derecho",
+      "aliases": [
+        "first lumbrical of right foot",
+        "FMA37717",
+        "FJ1383",
+        "Musculus lumbricalis primus pedis",
+        "lumbricalfirstfoot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37717_FJ1383"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "bp3d:FMA37718"
+      ],
+      "sourceId": "FMA37717",
+      "family": "lumbricalfirstfoot",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus lumbricalis primus pedis",
+      "bounds": [
+        [
+          -0.113108,
+          -0.0670652,
+          0.10613500000000001
+        ],
+        [
+          -0.0776868,
+          -0.047434199999999996,
+          0.191523
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37718",
+      "name": "Primer lumbrical del pie izquierdo",
+      "anatomicalName": "Primer lumbrical del pie izquierdo",
+      "aliases": [
+        "first lumbrical of left foot",
+        "FMA37718",
+        "FJ1383M",
+        "Musculus lumbricalis primus pedis",
+        "lumbricalfirstfoot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37718_FJ1383M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "bp3d:FMA37717"
+      ],
+      "sourceId": "FMA37718",
+      "family": "lumbricalfirstfoot",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus lumbricalis primus pedis",
+      "bounds": [
+        [
+          0.0776868,
+          -0.0670653,
+          0.10613500000000001
+        ],
+        [
+          0.113108,
+          -0.047434199999999996,
+          0.191523
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37719",
+      "name": "Segundo lumbrical del pie derecho",
+      "anatomicalName": "Segundo lumbrical del pie derecho",
+      "aliases": [
+        "second lumbrical of right foot",
+        "FMA37719",
+        "FJ1385",
+        "Musculus lumbricalis secundus pedis",
+        "lumbricalsecondfoot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37719_FJ1385"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "bp3d:FMA37720"
+      ],
+      "sourceId": "FMA37719",
+      "family": "lumbricalsecondfoot",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus lumbricalis secundus pedis",
+      "bounds": [
+        [
+          -0.129189,
+          -0.067591,
+          0.12178
+        ],
+        [
+          -0.0885274,
+          -0.053426,
+          0.18440199999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37720",
+      "name": "Segundo lumbrical del pie izquierdo",
+      "anatomicalName": "Segundo lumbrical del pie izquierdo",
+      "aliases": [
+        "second lumbrical of left foot",
+        "FMA37720",
+        "FJ1385M",
+        "Musculus lumbricalis secundus pedis",
+        "lumbricalsecondfoot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37720_FJ1385M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "bp3d:FMA37719"
+      ],
+      "sourceId": "FMA37720",
+      "family": "lumbricalsecondfoot",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus lumbricalis secundus pedis",
+      "bounds": [
+        [
+          0.0885274,
+          -0.067591,
+          0.12178
+        ],
+        [
+          0.129189,
+          -0.053426,
+          0.18440199999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37485",
+      "name": "Tercer lumbrical del pie derecho",
+      "anatomicalName": "Tercer lumbrical del pie derecho",
+      "aliases": [
+        "third lumbrical of right foot",
+        "FMA37485",
+        "FJ1387",
+        "Musculus lumbricalis tertius pedis",
+        "lumbricalthirdfoot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37485_FJ1387"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "bp3d:FMA37486"
+      ],
+      "sourceId": "FMA37485",
+      "family": "lumbricalthirdfoot",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus lumbricalis tertius pedis",
+      "bounds": [
+        [
+          -0.137814,
+          -0.0680428,
+          0.118869
+        ],
+        [
+          -0.0940226,
+          -0.0538249,
+          0.173327
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37486",
+      "name": "Tercer lumbrical del pie izquierdo",
+      "anatomicalName": "Tercer lumbrical del pie izquierdo",
+      "aliases": [
+        "third lumbrical of left foot",
+        "FMA37486",
+        "FJ1387M",
+        "Musculus lumbricalis tertius pedis",
+        "lumbricalthirdfoot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37486_FJ1387M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "bp3d:FMA37485"
+      ],
+      "sourceId": "FMA37486",
+      "family": "lumbricalthirdfoot",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus lumbricalis tertius pedis",
+      "bounds": [
+        [
+          0.0940226,
+          -0.0680428,
+          0.118869
+        ],
+        [
+          0.137814,
+          -0.0538249,
+          0.173327
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37483",
+      "name": "Cuarto lumbrical del pie derecho",
+      "anatomicalName": "Cuarto lumbrical del pie derecho",
+      "aliases": [
+        "fourth lumbrical of right foot",
+        "FMA37483",
+        "FJ1389",
+        "Musculus lumbricalis quartus pedis",
+        "lumbricalfourthfoot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37483_FJ1389"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "bp3d:FMA37484"
+      ],
+      "sourceId": "FMA37483",
+      "family": "lumbricalfourthfoot",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus lumbricalis quartus pedis",
+      "bounds": [
+        [
+          -0.145769,
+          -0.0678147,
+          0.11754099999999999
+        ],
+        [
+          -0.09974899999999999,
+          -0.0537312,
+          0.158245
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37484",
+      "name": "Cuarto lumbrical del pie izquierdo",
+      "anatomicalName": "Cuarto lumbrical del pie izquierdo",
+      "aliases": [
+        "fourth lumbrical of left foot",
+        "FMA37484",
+        "FJ1389M",
+        "Musculus lumbricalis quartus pedis",
+        "lumbricalfourthfoot"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37484_FJ1389M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "bp3d:FMA37483"
+      ],
+      "sourceId": "FMA37484",
+      "family": "lumbricalfourthfoot",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus lumbricalis quartus pedis",
+      "bounds": [
+        [
+          0.09974899999999999,
+          -0.0678147,
+          0.11754099999999999
+        ],
+        [
+          0.145769,
+          -0.0537312,
+          0.158245
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37745",
+      "name": "Primer interóseo plantar derecho",
+      "anatomicalName": "Primer interóseo plantar derecho",
+      "aliases": [
+        "first plantar interosseous of right foot",
+        "FMA37745",
+        "FJ1384",
+        "Musculus interosseus plantaris primus",
+        "plantarinterosseousfirst"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37745_FJ1384"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "bp3d:FMA37746"
+      ],
+      "sourceId": "FMA37745",
+      "family": "plantarinterosseousfirst",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus interosseus plantaris primus",
+      "bounds": [
+        [
+          -0.13175,
+          -0.0626963,
+          0.133599
+        ],
+        [
+          -0.104791,
+          -0.0391441,
+          0.183143
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37746",
+      "name": "Primer interóseo plantar izquierdo",
+      "anatomicalName": "Primer interóseo plantar izquierdo",
+      "aliases": [
+        "first plantar interosseous of left foot",
+        "FMA37746",
+        "FJ1384M",
+        "Musculus interosseus plantaris primus",
+        "plantarinterosseousfirst"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37746_FJ1384M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "bp3d:FMA37745"
+      ],
+      "sourceId": "FMA37746",
+      "family": "plantarinterosseousfirst",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus interosseus plantaris primus",
+      "bounds": [
+        [
+          0.104791,
+          -0.0626963,
+          0.133599
+        ],
+        [
+          0.13175,
+          -0.0391441,
+          0.183143
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37743",
+      "name": "Segundo interóseo plantar derecho",
+      "anatomicalName": "Segundo interóseo plantar derecho",
+      "aliases": [
+        "second plantar interosseous of right foot",
+        "FMA37743",
+        "FJ1386",
+        "Musculus interosseus plantaris secundus",
+        "plantarinterosseoussecond"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37743_FJ1386"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "bp3d:FMA37744"
+      ],
+      "sourceId": "FMA37743",
+      "family": "plantarinterosseoussecond",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus interosseus plantaris secundus",
+      "bounds": [
+        [
+          -0.138428,
+          -0.0623082,
+          0.12656
+        ],
+        [
+          -0.11108499999999999,
+          -0.0420094,
+          0.173392
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37744",
+      "name": "Segundo interóseo plantar izquierdo",
+      "anatomicalName": "Segundo interóseo plantar izquierdo",
+      "aliases": [
+        "second plantar interosseous of left foot",
+        "FMA37744",
+        "FJ1386M",
+        "Musculus interosseus plantaris secundus",
+        "plantarinterosseoussecond"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37744_FJ1386M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "bp3d:FMA37743"
+      ],
+      "sourceId": "FMA37744",
+      "family": "plantarinterosseoussecond",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus interosseus plantaris secundus",
+      "bounds": [
+        [
+          0.11108499999999999,
+          -0.0623082,
+          0.12656
+        ],
+        [
+          0.138428,
+          -0.0420094,
+          0.173392
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37741",
+      "name": "Tercer interóseo plantar derecho",
+      "anatomicalName": "Tercer interóseo plantar derecho",
+      "aliases": [
+        "third plantar interosseous of right foot",
+        "FMA37741",
+        "FJ1388",
+        "Musculus interosseus plantaris tertius",
+        "plantarinterosseousthird"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA37741_FJ1388"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "bp3d:FMA37742"
+      ],
+      "sourceId": "FMA37741",
+      "family": "plantarinterosseousthird",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus interosseus plantaris tertius",
+      "bounds": [
+        [
+          -0.153817,
+          -0.06445730000000001,
+          0.115483
+        ],
+        [
+          -0.113547,
+          -0.050318100000000004,
+          0.159487
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA37742",
+      "name": "Tercer interóseo plantar izquierdo",
+      "anatomicalName": "Tercer interóseo plantar izquierdo",
+      "aliases": [
+        "third plantar interosseous of left foot",
+        "FMA37742",
+        "FJ1388M",
+        "Musculus interosseus plantaris tertius",
+        "plantarinterosseousthird"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA37742_FJ1388M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "bp3d:FMA37741"
+      ],
+      "sourceId": "FMA37742",
+      "family": "plantarinterosseousthird",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus interosseus plantaris tertius",
+      "bounds": [
+        [
+          0.113547,
+          -0.06445730000000001,
+          0.115483
+        ],
+        [
+          0.153817,
+          -0.050318100000000004,
+          0.159487
+        ]
+      ]
+    },
+    {
+      "id": "muscular:muscle:flexorhallucisbrevis:right",
+      "name": "Flexor corto del dedo gordo derecho",
+      "anatomicalName": "Flexor corto del dedo gordo derecho",
+      "aliases": [
+        "Musculus flexor hallucis brevis",
+        "flexorhallucisbrevis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [
+        "bp3d:FMA45971",
+        "bp3d:FMA45973"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "muscular:muscle:flexorhallucisbrevis:left"
+      ],
+      "family": "flexorhallucisbrevis",
+      "side": "right",
+      "latin": "Musculus flexor hallucis brevis",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.10509500000000001,
+          -0.07104940000000001,
+          0.118076
+        ],
+        [
+          -0.0681456,
+          -0.0312599,
+          0.195231
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45971",
+      "name": "Cabeza medial del flexor corto del dedo gordo derecho",
+      "anatomicalName": "Cabeza medial del flexor corto del dedo gordo derecho",
+      "aliases": [
+        "medial head of right flexor hallucis brevis",
+        "FMA45971",
+        "FJ1396",
+        "Musculus flexor hallucis brevis",
+        "flexorhallucisbrevis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:muscle:flexorhallucisbrevis:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA45971_FJ1396"
+      ],
+      "relatedIds": [
+        "muscular:muscle:flexorhallucisbrevis:right"
+      ],
+      "sourceId": "FMA45971",
+      "family": "flexorhallucisbrevis",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.0952413,
+          -0.0690187,
+          0.118076
+        ],
+        [
+          -0.0681456,
+          -0.0312599,
+          0.195006
+        ]
+      ]
+    },
+    {
+      "id": "muscular:muscle:flexorhallucisbrevis:left",
+      "name": "Flexor corto del dedo gordo izquierdo",
+      "anatomicalName": "Flexor corto del dedo gordo izquierdo",
+      "aliases": [
+        "Musculus flexor hallucis brevis",
+        "flexorhallucisbrevis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [
+        "bp3d:FMA45972",
+        "bp3d:FMA45974"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "muscular:muscle:flexorhallucisbrevis:right"
+      ],
+      "family": "flexorhallucisbrevis",
+      "side": "left",
+      "latin": "Musculus flexor hallucis brevis",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0681456,
+          -0.07104940000000001,
+          0.118076
+        ],
+        [
+          0.10509500000000001,
+          -0.0312599,
+          0.195231
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45972",
+      "name": "Cabeza medial del flexor corto del dedo gordo izquierdo",
+      "anatomicalName": "Cabeza medial del flexor corto del dedo gordo izquierdo",
+      "aliases": [
+        "medial head of left flexor hallucis brevis",
+        "FMA45972",
+        "FJ1396M",
+        "Musculus flexor hallucis brevis",
+        "flexorhallucisbrevis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:muscle:flexorhallucisbrevis:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA45972_FJ1396M"
+      ],
+      "relatedIds": [
+        "muscular:muscle:flexorhallucisbrevis:left"
+      ],
+      "sourceId": "FMA45972",
+      "family": "flexorhallucisbrevis",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0681456,
+          -0.0690187,
+          0.118076
+        ],
+        [
+          0.0952413,
+          -0.0312599,
+          0.195006
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45973",
+      "name": "Cabeza lateral del flexor corto del dedo gordo derecho",
+      "anatomicalName": "Cabeza lateral del flexor corto del dedo gordo derecho",
+      "aliases": [
+        "lateral head of right flexor hallucis brevis",
+        "FMA45973",
+        "FJ1393",
+        "Musculus flexor hallucis brevis",
+        "flexorhallucisbrevis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:muscle:flexorhallucisbrevis:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA45973_FJ1393"
+      ],
+      "relatedIds": [
+        "muscular:muscle:flexorhallucisbrevis:right"
+      ],
+      "sourceId": "FMA45973",
+      "family": "flexorhallucisbrevis",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.10509500000000001,
+          -0.07104940000000001,
+          0.118244
+        ],
+        [
+          -0.0684896,
+          -0.0337525,
+          0.195231
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45974",
+      "name": "Cabeza lateral del flexor corto del dedo gordo izquierdo",
+      "anatomicalName": "Cabeza lateral del flexor corto del dedo gordo izquierdo",
+      "aliases": [
+        "lateral head of left flexor hallucis brevis",
+        "FMA45974",
+        "FJ1393M",
+        "Musculus flexor hallucis brevis",
+        "flexorhallucisbrevis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:muscle:flexorhallucisbrevis:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA45974_FJ1393M"
+      ],
+      "relatedIds": [
+        "muscular:muscle:flexorhallucisbrevis:left"
+      ],
+      "sourceId": "FMA45974",
+      "family": "flexorhallucisbrevis",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0684896,
+          -0.07104940000000001,
+          0.118244
+        ],
+        [
+          0.10509500000000001,
+          -0.0337525,
+          0.195231
+        ]
+      ]
+    },
+    {
+      "id": "muscular:muscle:adductorhallucis:right",
+      "name": "Aductor del dedo gordo derecho",
+      "anatomicalName": "Aductor del dedo gordo derecho",
+      "aliases": [
+        "Musculus adductor hallucis",
+        "adductorhallucis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [
+        "bp3d:FMA46018",
+        "bp3d:FMA46020"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right:foot",
+        "muscular:muscle:adductorhallucis:left"
+      ],
+      "family": "adductorhallucis",
+      "side": "right",
+      "latin": "Musculus adductor hallucis",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.140133,
+          -0.0656678,
+          0.107242
+        ],
+        [
+          -0.09530240000000001,
+          -0.0367519,
+          0.178952
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46018",
+      "name": "Cabeza oblicua del aductor del dedo gordo derecho",
+      "anatomicalName": "Cabeza oblicua del aductor del dedo gordo derecho",
+      "aliases": [
+        "oblique head of right adductor hallucis",
+        "FMA46018",
+        "FJ1398",
+        "Musculus adductor hallucis",
+        "adductorhallucis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:muscle:adductorhallucis:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA46018_FJ1398"
+      ],
+      "relatedIds": [
+        "muscular:muscle:adductorhallucis:right"
+      ],
+      "sourceId": "FMA46018",
+      "family": "adductorhallucis",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.113134,
+          -0.0656678,
+          0.107242
+        ],
+        [
+          -0.09530240000000001,
+          -0.0367519,
+          0.17364
+        ]
+      ]
+    },
+    {
+      "id": "muscular:muscle:adductorhallucis:left",
+      "name": "Aductor del dedo gordo izquierdo",
+      "anatomicalName": "Aductor del dedo gordo izquierdo",
+      "aliases": [
+        "Musculus adductor hallucis",
+        "adductorhallucis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [
+        "bp3d:FMA46019",
+        "bp3d:FMA46021"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left:foot",
+        "muscular:muscle:adductorhallucis:right"
+      ],
+      "family": "adductorhallucis",
+      "side": "left",
+      "latin": "Musculus adductor hallucis",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.09530240000000001,
+          -0.0656678,
+          0.107242
+        ],
+        [
+          0.140133,
+          -0.0367519,
+          0.178952
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46019",
+      "name": "Cabeza oblicua del aductor del dedo gordo izquierdo",
+      "anatomicalName": "Cabeza oblicua del aductor del dedo gordo izquierdo",
+      "aliases": [
+        "oblique head of left adductor hallucis",
+        "FMA46019",
+        "FJ1398M",
+        "Musculus adductor hallucis",
+        "adductorhallucis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:muscle:adductorhallucis:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA46019_FJ1398M"
+      ],
+      "relatedIds": [
+        "muscular:muscle:adductorhallucis:left"
+      ],
+      "sourceId": "FMA46019",
+      "family": "adductorhallucis",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.09530240000000001,
+          -0.0656678,
+          0.107242
+        ],
+        [
+          0.113134,
+          -0.0367519,
+          0.17364
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46020",
+      "name": "Cabeza transversa del aductor del dedo gordo derecho",
+      "anatomicalName": "Cabeza transversa del aductor del dedo gordo derecho",
+      "aliases": [
+        "transverse head of right adductor hallucis",
+        "FMA46020",
+        "FJ1445",
+        "Musculus adductor hallucis",
+        "adductorhallucis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:muscle:adductorhallucis:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:foot-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA46020_FJ1445"
+      ],
+      "relatedIds": [
+        "muscular:muscle:adductorhallucis:right"
+      ],
+      "sourceId": "FMA46020",
+      "family": "adductorhallucis",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.140133,
+          -0.0655768,
+          0.147929
+        ],
+        [
+          -0.0983091,
+          -0.058361600000000007,
+          0.178952
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46021",
+      "name": "Cabeza transversa del aductor del dedo gordo izquierdo",
+      "anatomicalName": "Cabeza transversa del aductor del dedo gordo izquierdo",
+      "aliases": [
+        "transverse head of left adductor hallucis",
+        "FMA46021",
+        "FJ1445M",
+        "Musculus adductor hallucis",
+        "adductorhallucis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:muscle:adductorhallucis:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:foot-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA46021_FJ1445M"
+      ],
+      "relatedIds": [
+        "muscular:muscle:adductorhallucis:left"
+      ],
+      "sourceId": "FMA46021",
+      "family": "adductorhallucis",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0983091,
+          -0.0655768,
+          0.147929
+        ],
+        [
+          0.140133,
+          -0.058361600000000007,
+          0.178952
+        ]
+      ]
     }
   ],
   "assets": [
@@ -8740,6 +11276,102 @@
         ]
       ],
       "provenanceId": "bodyparts3d-4.0-muscular-head-neck"
+    },
+    {
+      "id": "muscular:hand-right",
+      "path": "models/anatomy/muscular/muscular-hand-right.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:hand",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 73596,
+      "sha256": "1b60d7a7a488e5fe99871a48a1f90d2d90a0c5fc083338ee9e8659dc07ce516d",
+      "meshCount": 7,
+      "triangles": 4432,
+      "bounds": [
+        [
+          -0.30586,
+          0.729636,
+          0.123023
+        ],
+        [
+          -0.220817,
+          0.808087,
+          0.152743
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-gaps"
+    },
+    {
+      "id": "muscular:hand-left",
+      "path": "models/anatomy/muscular/muscular-hand-left.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:hand",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 73480,
+      "sha256": "6f114f5b8a593657d28968d0c6c0ffda77578623de93be847c9713cf83e7da3e",
+      "meshCount": 7,
+      "triangles": 4432,
+      "bounds": [
+        [
+          0.220817,
+          0.729636,
+          0.123023
+        ],
+        [
+          0.30586,
+          0.808087,
+          0.152743
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-gaps"
+    },
+    {
+      "id": "muscular:foot-right",
+      "path": "models/anatomy/muscular/muscular-foot-right.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 273584,
+      "sha256": "d4eaeb0d95947d4ede5b3ae35c7cab2650193e4d1baec31db9a010c2da54e3c9",
+      "meshCount": 17,
+      "triangles": 15930,
+      "bounds": [
+        [
+          -0.164326,
+          -0.0728101,
+          0.043733
+        ],
+        [
+          -0.053871800000000004,
+          -0.0074344400000000005,
+          0.218194
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-gaps"
+    },
+    {
+      "id": "muscular:foot-left",
+      "path": "models/anatomy/muscular/muscular-foot-left.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 273776,
+      "sha256": "446db5967ff40743b45e6ec95706786ac7835194ea0e06aa26f669050b26bc70",
+      "meshCount": 17,
+      "triangles": 15930,
+      "bounds": [
+        [
+          0.0538719,
+          -0.0728101,
+          0.043733
+        ],
+        [
+          0.164326,
+          -0.0074344400000000005,
+          0.218194
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-gaps"
     }
   ],
   "provenance": [
@@ -8810,23 +11442,40 @@
         "Shared transform (x,y,z) to (x,z,-y)/1000; Float32 positions, Meshopt and 12-bit display normals; no fitting or decimation.",
         "No historical geometry rebuilt. Publisher CC BY 4.0 declaration and original legacy headers retained. No clinical certification."
       ]
+    },
+    {
+      "id": "bodyparts3d-4.0-muscular-gaps",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 · OBJ99 (2013 archive; current license declaration)",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Only 48 audited original elements: 42 bilateral muscles in 21 named intrinsic hand/foot families; 12 heads are components of six parent muscles.",
+        "Head-to-muscle links curated from explicit nominal identity; IS-A ancestry retained separately. Aggregate hand sets and ambiguous FPB scope excluded.",
+        "Original sides, FMA/FJ, positions and oriented triangles preserved; no fitting, mirroring, deformation, recentering or decimation.",
+        "Shared transform (x,y,z) to (x,z,-y)/1000; Float32 positions, Meshopt and 12-bit display normals. Historical GLB untouched.",
+        "DBCLS publisher CC BY 4.0 declaration and original legacy headers retained. No clinical validation."
+      ]
     }
   ],
   "coverage": {
     "title": "Sistema Muscular de MED3D",
-    "structures": 110,
-    "meshes": 134,
-    "note": "Cobertura muscular integrada disponible: 110 músculos, representados por 134 mallas, en cuello, tronco y extremidades. Cabezas y grupos no son músculos adicionales.",
+    "structures": 152,
+    "meshes": 182,
+    "note": "Cobertura muscular integrada disponible: 152 músculos representados por 182 mallas, incluidos intrínsecos de mano y pie. Cabezas y grupos no son músculos adicionales.",
     "limitations": [
       "Cobertura parcial: no es la musculatura completa del cuerpo ni del torso.",
       "No se identificaron recto abdominal, oblicuo interno, transverso abdominal ni dorsal ancho en el inventario BP3D 4.0 auditado.",
       "Intercostales aplazados: los elementos no identifican de forma inequívoca lado y espacio intercostal.",
       "Atlas masculino adulto modelado; no representa variación individual ni acredita precisión clínica.",
       "Origen e inserción son texto educativo; no hay zonas de fijación anotadas sobre las mallas.",
-      "Extremidades con cobertura parcial: se han seleccionado 24 familias; mano y pie intrínsecos siguen pendientes.",
       "Cuádriceps es un grupo de cuatro músculos; se conserva la clasificación BP3D de sus elementos como zonas en la procedencia.",
       "Cabeza sin musculatura facial o masticatoria identificada en las tablas de BP3D 4.0 consultadas; no se representa una cobertura humana completa.",
-      "Cuello parcial: diez familias bilaterales seleccionadas. Digástrico y largo del cuello pendientes de curación de componentes."
+      "Cuello parcial: diez familias bilaterales seleccionadas. Digástrico y largo del cuello pendientes de curación de componentes.",
+      "Intrínsecos de mano/pie: cobertura parcial. Pendientes flexor corto del pulgar, grupos lumbrical/interóseo de mano, palmar corto, extensor corto de los dedos e interóseos dorsales del pie y oponente del quinto dedo del pie."
     ]
   }
 }

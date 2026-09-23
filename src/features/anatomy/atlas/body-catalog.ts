@@ -51,10 +51,10 @@ export function composeBodyCatalog(skeletal: AnatomyCatalog, muscular?: AnatomyC
     bounds: structuredClone(reference.bounds),
   };
   const result: AnatomyCatalog = {
-    schemaVersion: 1, id: 'med3d-body-phase3a', frame: structuredClone(reference),
+    schemaVersion: 1, id: 'med3d-body', frame: structuredClone(reference),
     nodes: [root, ...nodes], assets, provenance: [...provenance.values()],
     coverage: {
-      title: muscular ? 'Sistema óseo y piloto muscular bilateral de hombro y brazo' : skeletal.coverage.title,
+      title: muscular ? 'Sistema óseo y musculatura disponible de hombro, brazo y torso' : skeletal.coverage.title,
       structures: catalogs.reduce((sum, catalog) => sum + catalog.coverage.structures, 0),
       meshes: catalogs.reduce((sum, catalog) => sum + catalog.coverage.meshes, 0),
       note: catalogs.map(catalog => catalog.coverage.note).join(' '),

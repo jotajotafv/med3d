@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "med3d-muscular-pilot-bodyparts3d-4.0",
+  "id": "med3d-muscular-bodyparts3d-4.0",
   "frame": {
     "id": "bodyparts3d-4.0-male",
     "units": "metres",
@@ -22,8 +22,8 @@
   "nodes": [
     {
       "id": "muscular",
-      "name": "Sistema muscular · piloto",
-      "anatomicalName": "Sistema muscular · piloto",
+      "name": "Sistema muscular",
+      "anatomicalName": "Sistema muscular",
       "aliases": [
         "músculos",
         "musculatura",
@@ -33,10 +33,14 @@
       "regionId": "muscular",
       "children": [
         "muscular:region:arm-right",
-        "muscular:region:arm-left"
+        "muscular:region:arm-left",
+        "muscular:region:trunk"
       ],
       "kind": "system",
       "assetIds": [
+        "muscular:abdomen",
+        "muscular:back",
+        "muscular:thorax-anterior",
         "muscular:upper-left",
         "muscular:upper-right"
       ],
@@ -45,13 +49,13 @@
       "bounds": [
         [
           -0.23512100000000002,
-          0.9940720000000001,
-          -0.00366613
+          0.793625,
+          -0.0245467
         ],
         [
           0.23512100000000002,
-          1.35539,
-          0.12133100000000001
+          1.50624,
+          0.21935300000000002
         ]
       ]
     },
@@ -1742,6 +1746,1870 @@
           0.099955
         ]
       ]
+    },
+    {
+      "id": "muscular:region:trunk",
+      "name": "Tronco",
+      "anatomicalName": "Tronco",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:trunk",
+      "parentId": "muscular",
+      "children": [
+        "muscular:region:thorax-anterior",
+        "muscular:region:abdomen",
+        "muscular:region:back"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:abdomen",
+        "muscular:back",
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular"
+      ],
+      "bounds": [
+        [
+          -0.19426200000000002,
+          0.793625,
+          -0.0245467
+        ],
+        [
+          0.19426200000000002,
+          1.50624,
+          0.21935300000000002
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:thorax-anterior",
+      "name": "Tórax anterior",
+      "anatomicalName": "Tórax anterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "muscular:region:trunk",
+      "children": [
+        "med3d:muscle:pectoralismajor:right",
+        "med3d:muscle:pectoralismajor:left",
+        "bp3d:FMA13375",
+        "bp3d:FMA13376",
+        "bp3d:FMA13398",
+        "bp3d:FMA13399",
+        "bp3d:FMA13412",
+        "bp3d:FMA13411"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:trunk"
+      ],
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.19426200000000002,
+          1.07816,
+          -0.00526406
+        ],
+        [
+          0.19426200000000002,
+          1.3483800000000001,
+          0.21935300000000002
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:abdomen",
+      "name": "Abdomen",
+      "anatomicalName": "Abdomen",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:abdomen",
+      "parentId": "muscular:region:trunk",
+      "children": [
+        "bp3d:FMA13336",
+        "bp3d:FMA13337"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:abdomen"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:trunk"
+      ],
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.140823,
+          0.793625,
+          0.0370208
+        ],
+        [
+          0.140823,
+          1.2115799999999999,
+          0.218766
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:back",
+      "name": "Espalda",
+      "anatomicalName": "Espalda",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:region:trunk",
+      "children": [
+        "muscular:group:back:erectors",
+        "muscular:group:back:scapular",
+        "med3d:muscle:trapezius:right",
+        "med3d:muscle:trapezius:left"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:trunk"
+      ],
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.172209,
+          0.830061,
+          -0.0245467
+        ],
+        [
+          0.172209,
+          1.50624,
+          0.10066
+        ]
+      ]
+    },
+    {
+      "id": "muscular:group:back:erectors",
+      "name": "Erectores de la columna · porciones del tronco",
+      "anatomicalName": "Erectores de la columna · porciones del tronco",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:region:back",
+      "children": [
+        "bp3d:FMA22740",
+        "bp3d:FMA22741",
+        "bp3d:FMA22742",
+        "bp3d:FMA22743",
+        "bp3d:FMA22751",
+        "bp3d:FMA22753",
+        "bp3d:FMA22779",
+        "bp3d:FMA22780"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:back"
+      ],
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.102321,
+          0.830061,
+          -0.009151949999999999
+        ],
+        [
+          0.102321,
+          1.3704100000000001,
+          0.0753633
+        ]
+      ]
+    },
+    {
+      "id": "muscular:group:back:scapular",
+      "name": "Músculos escapulares posteriores",
+      "anatomicalName": "Músculos escapulares posteriores",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:region:back",
+      "children": [
+        "bp3d:FMA13381",
+        "bp3d:FMA13382",
+        "bp3d:FMA13383",
+        "bp3d:FMA13384",
+        "bp3d:FMA32551",
+        "bp3d:FMA32552"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:back"
+      ],
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.172209,
+          1.18819,
+          -0.00609221
+        ],
+        [
+          0.172209,
+          1.38751,
+          0.0795569
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:pectoralismajor:right",
+      "name": "Pectoral mayor derecho",
+      "anatomicalName": "Pectoral mayor derecho",
+      "aliases": [
+        "Musculus pectoralis major",
+        "pectoralismajor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "muscular:region:thorax-anterior",
+      "children": [
+        "bp3d:FMA34690",
+        "bp3d:FMA79979",
+        "bp3d:FMA45874"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:thorax-anterior",
+        "med3d:muscle:pectoralismajor:left"
+      ],
+      "family": "pectoralismajor",
+      "side": "right",
+      "latin": "Musculus pectoralis major",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.19426200000000002,
+          1.10478,
+          0.081
+        ],
+        [
+          -0.00481557,
+          1.3359,
+          0.21935300000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA34690",
+      "name": "Porción clavicular del pectoral mayor derecho",
+      "anatomicalName": "Porción clavicular del pectoral mayor derecho",
+      "aliases": [
+        "clavicular part of right pectoralis major",
+        "FMA34690",
+        "FJ1447",
+        "Musculus pectoralis major",
+        "pectoralismajor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "med3d:muscle:pectoralismajor:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [
+        "bp3d_FMA34690_FJ1447"
+      ],
+      "relatedIds": [
+        "med3d:muscle:pectoralismajor:right"
+      ],
+      "sourceId": "FMA34690",
+      "family": "pectoralismajor",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.19426200000000002,
+          1.23451,
+          0.082
+        ],
+        [
+          -0.0264139,
+          1.3359,
+          0.145096
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:pectoralismajor:left",
+      "name": "Pectoral mayor izquierdo",
+      "anatomicalName": "Pectoral mayor izquierdo",
+      "aliases": [
+        "Musculus pectoralis major",
+        "pectoralismajor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "muscular:region:thorax-anterior",
+      "children": [
+        "bp3d:FMA34691",
+        "bp3d:FMA79980",
+        "bp3d:FMA45875"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:thorax-anterior",
+        "med3d:muscle:pectoralismajor:right"
+      ],
+      "family": "pectoralismajor",
+      "side": "left",
+      "latin": "Musculus pectoralis major",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          0.00481557,
+          1.10478,
+          0.081
+        ],
+        [
+          0.19426200000000002,
+          1.3359,
+          0.21935300000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA34691",
+      "name": "Porción clavicular del pectoral mayor izquierdo",
+      "anatomicalName": "Porción clavicular del pectoral mayor izquierdo",
+      "aliases": [
+        "clavicular part of left pectoralis major",
+        "FMA34691",
+        "FJ1447M",
+        "Musculus pectoralis major",
+        "pectoralismajor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "med3d:muscle:pectoralismajor:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [
+        "bp3d_FMA34691_FJ1447M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:pectoralismajor:left"
+      ],
+      "sourceId": "FMA34691",
+      "family": "pectoralismajor",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          0.0264139,
+          1.23451,
+          0.082
+        ],
+        [
+          0.19426200000000002,
+          1.3359,
+          0.145096
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA79979",
+      "name": "Porción esternocostal del pectoral mayor derecho",
+      "anatomicalName": "Porción esternocostal del pectoral mayor derecho",
+      "aliases": [
+        "sternocostal part of right pectoralis major",
+        "FMA79979",
+        "FJ1464",
+        "Musculus pectoralis major",
+        "pectoralismajor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "med3d:muscle:pectoralismajor:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [
+        "bp3d_FMA79979_FJ1464"
+      ],
+      "relatedIds": [
+        "med3d:muscle:pectoralismajor:right"
+      ],
+      "sourceId": "FMA79979",
+      "family": "pectoralismajor",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.18784800000000001,
+          1.14061,
+          0.081
+        ],
+        [
+          -0.00481557,
+          1.3138,
+          0.21935300000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA79980",
+      "name": "Porción esternocostal del pectoral mayor izquierdo",
+      "anatomicalName": "Porción esternocostal del pectoral mayor izquierdo",
+      "aliases": [
+        "sternocostal part of left pectoralis major",
+        "FMA79980",
+        "FJ1464M",
+        "Musculus pectoralis major",
+        "pectoralismajor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "med3d:muscle:pectoralismajor:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [
+        "bp3d_FMA79980_FJ1464M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:pectoralismajor:left"
+      ],
+      "sourceId": "FMA79980",
+      "family": "pectoralismajor",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          0.00481557,
+          1.14061,
+          0.081
+        ],
+        [
+          0.18784800000000001,
+          1.3138,
+          0.21935300000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45874",
+      "name": "Porción abdominal del pectoral mayor derecho",
+      "anatomicalName": "Porción abdominal del pectoral mayor derecho",
+      "aliases": [
+        "abdominal part of right pectoralis major",
+        "FMA45874",
+        "FJ1446",
+        "Musculus pectoralis major",
+        "pectoralismajor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "med3d:muscle:pectoralismajor:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [
+        "bp3d_FMA45874_FJ1446"
+      ],
+      "relatedIds": [
+        "med3d:muscle:pectoralismajor:right"
+      ],
+      "sourceId": "FMA45874",
+      "family": "pectoralismajor",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.180896,
+          1.10478,
+          0.0817564
+        ],
+        [
+          -0.048,
+          1.27794,
+          0.21362799999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45875",
+      "name": "Porción abdominal del pectoral mayor izquierdo",
+      "anatomicalName": "Porción abdominal del pectoral mayor izquierdo",
+      "aliases": [
+        "abdominal part of left pectoralis major",
+        "FMA45875",
+        "FJ1446M",
+        "Musculus pectoralis major",
+        "pectoralismajor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "med3d:muscle:pectoralismajor:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [
+        "bp3d_FMA45875_FJ1446M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:pectoralismajor:left"
+      ],
+      "sourceId": "FMA45875",
+      "family": "pectoralismajor",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          0.048,
+          1.10478,
+          0.0817564
+        ],
+        [
+          0.180896,
+          1.27794,
+          0.21362799999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13375",
+      "name": "Pectoral menor derecho",
+      "anatomicalName": "Pectoral menor derecho",
+      "aliases": [
+        "right pectoralis minor",
+        "FMA13375",
+        "FJ1456",
+        "Musculus pectoralis minor",
+        "pectoralisminor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [
+        "bp3d_FMA13375_FJ1456"
+      ],
+      "relatedIds": [
+        "muscular:region:thorax-anterior",
+        "bp3d:FMA13376"
+      ],
+      "sourceId": "FMA13375",
+      "family": "pectoralisminor",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus pectoralis minor",
+      "bounds": [
+        [
+          -0.130176,
+          1.1816600000000002,
+          0.0803492
+        ],
+        [
+          -0.0697359,
+          1.32667,
+          0.173047
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13376",
+      "name": "Pectoral menor izquierdo",
+      "anatomicalName": "Pectoral menor izquierdo",
+      "aliases": [
+        "left pectoralis minor",
+        "FMA13376",
+        "FJ1456M",
+        "Musculus pectoralis minor",
+        "pectoralisminor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [
+        "bp3d_FMA13376_FJ1456M"
+      ],
+      "relatedIds": [
+        "muscular:region:thorax-anterior",
+        "bp3d:FMA13375"
+      ],
+      "sourceId": "FMA13376",
+      "family": "pectoralisminor",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus pectoralis minor",
+      "bounds": [
+        [
+          0.0697359,
+          1.1816600000000002,
+          0.0803492
+        ],
+        [
+          0.130176,
+          1.32667,
+          0.173047
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13398",
+      "name": "Serrato anterior derecho",
+      "anatomicalName": "Serrato anterior derecho",
+      "aliases": [
+        "right serratus anterior",
+        "FMA13398",
+        "FJ1459",
+        "Musculus serratus anterior",
+        "serratusanterior"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [
+        "bp3d_FMA13398_FJ1459"
+      ],
+      "relatedIds": [
+        "muscular:region:thorax-anterior",
+        "bp3d:FMA13399"
+      ],
+      "sourceId": "FMA13398",
+      "family": "serratusanterior",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus serratus anterior",
+      "bounds": [
+        [
+          -0.144392,
+          1.07816,
+          -0.00526406
+        ],
+        [
+          -0.0577297,
+          1.3483800000000001,
+          0.157592
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13399",
+      "name": "Serrato anterior izquierdo",
+      "anatomicalName": "Serrato anterior izquierdo",
+      "aliases": [
+        "left serratus anterior",
+        "FMA13399",
+        "FJ1459M",
+        "Musculus serratus anterior",
+        "serratusanterior"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [
+        "bp3d_FMA13399_FJ1459M"
+      ],
+      "relatedIds": [
+        "muscular:region:thorax-anterior",
+        "bp3d:FMA13398"
+      ],
+      "sourceId": "FMA13399",
+      "family": "serratusanterior",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus serratus anterior",
+      "bounds": [
+        [
+          0.0577298,
+          1.07816,
+          -0.00526406
+        ],
+        [
+          0.144392,
+          1.3483800000000001,
+          0.157592
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13412",
+      "name": "Subclavio derecho",
+      "anatomicalName": "Subclavio derecho",
+      "aliases": [
+        "right subclavius",
+        "FMA13412",
+        "FJ1460",
+        "Musculus subclavius",
+        "subclavius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [
+        "bp3d_FMA13412_FJ1460"
+      ],
+      "relatedIds": [
+        "muscular:region:thorax-anterior",
+        "bp3d:FMA13411"
+      ],
+      "sourceId": "FMA13412",
+      "family": "subclavius",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus subclavius",
+      "bounds": [
+        [
+          -0.104677,
+          1.31146,
+          0.0740993
+        ],
+        [
+          -0.034288,
+          1.34286,
+          0.134874
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13411",
+      "name": "Subclavio izquierdo",
+      "anatomicalName": "Subclavio izquierdo",
+      "aliases": [
+        "left subclavius",
+        "FMA13411",
+        "FJ1460M",
+        "Musculus subclavius",
+        "subclavius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "parentId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thorax-anterior"
+      ],
+      "meshNames": [
+        "bp3d_FMA13411_FJ1460M"
+      ],
+      "relatedIds": [
+        "muscular:region:thorax-anterior",
+        "bp3d:FMA13412"
+      ],
+      "sourceId": "FMA13411",
+      "family": "subclavius",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus subclavius",
+      "bounds": [
+        [
+          0.034288,
+          1.3114000000000001,
+          0.0740993
+        ],
+        [
+          0.104677,
+          1.34286,
+          0.134874
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13336",
+      "name": "Oblicuo externo del abdomen derecho",
+      "anatomicalName": "Oblicuo externo del abdomen derecho",
+      "aliases": [
+        "right external oblique",
+        "FMA13336",
+        "FJ1452",
+        "Musculus obliquus externus abdominis",
+        "externaloblique"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:abdomen",
+      "parentId": "muscular:region:abdomen",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:abdomen"
+      ],
+      "meshNames": [
+        "bp3d_FMA13336_FJ1452"
+      ],
+      "relatedIds": [
+        "muscular:region:abdomen",
+        "bp3d:FMA13337"
+      ],
+      "sourceId": "FMA13336",
+      "family": "externaloblique",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus obliquus externus abdominis",
+      "bounds": [
+        [
+          -0.140823,
+          0.7936259999999999,
+          0.0370208
+        ],
+        [
+          -0.00344858,
+          1.2115799999999999,
+          0.218766
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13337",
+      "name": "Oblicuo externo del abdomen izquierdo",
+      "anatomicalName": "Oblicuo externo del abdomen izquierdo",
+      "aliases": [
+        "left external oblique",
+        "FMA13337",
+        "FJ1452M",
+        "Musculus obliquus externus abdominis",
+        "externaloblique"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:abdomen",
+      "parentId": "muscular:region:abdomen",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:abdomen"
+      ],
+      "meshNames": [
+        "bp3d_FMA13337_FJ1452M"
+      ],
+      "relatedIds": [
+        "muscular:region:abdomen",
+        "bp3d:FMA13336"
+      ],
+      "sourceId": "FMA13337",
+      "family": "externaloblique",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus obliquus externus abdominis",
+      "bounds": [
+        [
+          0.00344857,
+          0.793625,
+          0.0370208
+        ],
+        [
+          0.140823,
+          1.2115799999999999,
+          0.218766
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:trapezius:right",
+      "name": "Trapecio derecho",
+      "anatomicalName": "Trapecio derecho",
+      "aliases": [
+        "Musculus trapezius",
+        "trapezius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:region:back",
+      "children": [
+        "bp3d:FMA33581",
+        "bp3d:FMA33584",
+        "bp3d:FMA33586"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:back",
+        "med3d:muscle:trapezius:left"
+      ],
+      "family": "trapezius",
+      "side": "right",
+      "latin": "Musculus trapezius",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.163242,
+          1.0540100000000001,
+          -0.0245467
+        ],
+        [
+          0.00387271,
+          1.50624,
+          0.10066
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA33581",
+      "name": "Porción ascendente del trapecio derecho",
+      "anatomicalName": "Porción ascendente del trapecio derecho",
+      "aliases": [
+        "ascending part of right trapezius",
+        "FMA33581",
+        "FJ1520",
+        "Musculus trapezius",
+        "trapezius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "med3d:muscle:trapezius:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA33581_FJ1520"
+      ],
+      "relatedIds": [
+        "med3d:muscle:trapezius:right"
+      ],
+      "sourceId": "FMA33581",
+      "family": "trapezius",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.14858600000000002,
+          1.0540100000000001,
+          -0.0245467
+        ],
+        [
+          0.0032543600000000004,
+          1.34297,
+          0.046963700000000004
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:trapezius:left",
+      "name": "Trapecio izquierdo",
+      "anatomicalName": "Trapecio izquierdo",
+      "aliases": [
+        "Musculus trapezius",
+        "trapezius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:region:back",
+      "children": [
+        "bp3d:FMA33583",
+        "bp3d:FMA33585",
+        "bp3d:FMA33587"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:back",
+        "med3d:muscle:trapezius:right"
+      ],
+      "family": "trapezius",
+      "side": "left",
+      "latin": "Musculus trapezius",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.00387271,
+          1.0540100000000001,
+          -0.024546600000000002
+        ],
+        [
+          0.163242,
+          1.50624,
+          0.10066
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA33583",
+      "name": "Porción ascendente del trapecio izquierdo",
+      "anatomicalName": "Porción ascendente del trapecio izquierdo",
+      "aliases": [
+        "ascending part of left trapezius",
+        "FMA33583",
+        "FJ1520M",
+        "Musculus trapezius",
+        "trapezius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "med3d:muscle:trapezius:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA33583_FJ1520M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:trapezius:left"
+      ],
+      "sourceId": "FMA33583",
+      "family": "trapezius",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.0032543600000000004,
+          1.0540100000000001,
+          -0.024546600000000002
+        ],
+        [
+          0.14858600000000002,
+          1.34297,
+          0.046963700000000004
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA33584",
+      "name": "Porción transversa del trapecio derecho",
+      "anatomicalName": "Porción transversa del trapecio derecho",
+      "aliases": [
+        "transverse part of right trapezius",
+        "FMA33584",
+        "FJ1554",
+        "Musculus trapezius",
+        "trapezius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "med3d:muscle:trapezius:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA33584_FJ1554"
+      ],
+      "relatedIds": [
+        "med3d:muscle:trapezius:right"
+      ],
+      "sourceId": "FMA33584",
+      "family": "trapezius",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.163242,
+          1.30362,
+          -0.010700900000000001
+        ],
+        [
+          0.00387271,
+          1.38211,
+          0.06965389999999999
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA33585",
+      "name": "Porción transversa del trapecio izquierdo",
+      "anatomicalName": "Porción transversa del trapecio izquierdo",
+      "aliases": [
+        "transverse part of left trapezius",
+        "FMA33585",
+        "FJ1554M",
+        "Musculus trapezius",
+        "trapezius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "med3d:muscle:trapezius:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA33585_FJ1554M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:trapezius:left"
+      ],
+      "sourceId": "FMA33585",
+      "family": "trapezius",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.00387271,
+          1.30363,
+          -0.010700900000000001
+        ],
+        [
+          0.163242,
+          1.38211,
+          0.06965389999999999
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA33586",
+      "name": "Porción descendente del trapecio derecho",
+      "anatomicalName": "Porción descendente del trapecio derecho",
+      "aliases": [
+        "descending part of right trapezius",
+        "FMA33586",
+        "FJ1521",
+        "Musculus trapezius",
+        "trapezius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "med3d:muscle:trapezius:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA33586_FJ1521"
+      ],
+      "relatedIds": [
+        "med3d:muscle:trapezius:right"
+      ],
+      "sourceId": "FMA33586",
+      "family": "trapezius",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.13084,
+          1.34059,
+          0.007613480000000001
+        ],
+        [
+          0.0034884200000000003,
+          1.50624,
+          0.10066
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA33587",
+      "name": "Porción descendente del trapecio izquierdo",
+      "anatomicalName": "Porción descendente del trapecio izquierdo",
+      "aliases": [
+        "descending part of left trapezius",
+        "FMA33587",
+        "FJ1521M",
+        "Musculus trapezius",
+        "trapezius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "med3d:muscle:trapezius:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA33587_FJ1521M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:trapezius:left"
+      ],
+      "sourceId": "FMA33587",
+      "family": "trapezius",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "bounds": [
+        [
+          -0.0034884200000000003,
+          1.34059,
+          0.007613480000000001
+        ],
+        [
+          0.13084,
+          1.50624,
+          0.10066
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13381",
+      "name": "Romboides mayor derecho",
+      "anatomicalName": "Romboides mayor derecho",
+      "aliases": [
+        "right rhomboid major",
+        "FMA13381",
+        "FJ1536",
+        "Musculus rhomboideus major",
+        "rhomboidmajor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:scapular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA13381_FJ1536"
+      ],
+      "relatedIds": [
+        "muscular:group:back:scapular",
+        "bp3d:FMA13382"
+      ],
+      "sourceId": "FMA13381",
+      "family": "rhomboidmajor",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus rhomboideus major",
+      "bounds": [
+        [
+          -0.0895036,
+          1.18819,
+          -0.00609221
+        ],
+        [
+          0.0007767570000000001,
+          1.36166,
+          0.0220981
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13382",
+      "name": "Romboides mayor izquierdo",
+      "anatomicalName": "Romboides mayor izquierdo",
+      "aliases": [
+        "left rhomboid major",
+        "FMA13382",
+        "FJ1536M",
+        "Musculus rhomboideus major",
+        "rhomboidmajor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:scapular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA13382_FJ1536M"
+      ],
+      "relatedIds": [
+        "muscular:group:back:scapular",
+        "bp3d:FMA13381"
+      ],
+      "sourceId": "FMA13382",
+      "family": "rhomboidmajor",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus rhomboideus major",
+      "bounds": [
+        [
+          -0.0007767570000000001,
+          1.18819,
+          -0.00609221
+        ],
+        [
+          0.0895036,
+          1.36166,
+          0.0220981
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13383",
+      "name": "Romboides menor derecho",
+      "anatomicalName": "Romboides menor derecho",
+      "aliases": [
+        "right rhomboid minor",
+        "FMA13383",
+        "FJ1537",
+        "Musculus rhomboideus minor",
+        "rhomboidminor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:scapular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA13383_FJ1537"
+      ],
+      "relatedIds": [
+        "muscular:group:back:scapular",
+        "bp3d:FMA13384"
+      ],
+      "sourceId": "FMA13383",
+      "family": "rhomboidminor",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus rhomboideus minor",
+      "bounds": [
+        [
+          -0.0617054,
+          1.2808,
+          0.00481602
+        ],
+        [
+          0.0009160500000000001,
+          1.38751,
+          0.0360764
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13384",
+      "name": "Romboides menor izquierdo",
+      "anatomicalName": "Romboides menor izquierdo",
+      "aliases": [
+        "left rhomboid minor",
+        "FMA13384",
+        "FJ1537M",
+        "Musculus rhomboideus minor",
+        "rhomboidminor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:scapular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA13384_FJ1537M"
+      ],
+      "relatedIds": [
+        "muscular:group:back:scapular",
+        "bp3d:FMA13383"
+      ],
+      "sourceId": "FMA13384",
+      "family": "rhomboidminor",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus rhomboideus minor",
+      "bounds": [
+        [
+          -0.0009160500000000001,
+          1.2808,
+          0.00481602
+        ],
+        [
+          0.0617054,
+          1.38751,
+          0.0360764
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22740",
+      "name": "Iliocostal lumbar derecho",
+      "anatomicalName": "Iliocostal lumbar derecho",
+      "aliases": [
+        "right iliocostalis lumborum",
+        "FMA22740",
+        "FJ1527",
+        "Musculus iliocostalis lumborum",
+        "iliocostalislumborum"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:erectors",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA22740_FJ1527"
+      ],
+      "relatedIds": [
+        "muscular:group:back:erectors",
+        "bp3d:FMA22741"
+      ],
+      "sourceId": "FMA22740",
+      "family": "iliocostalislumborum",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus iliocostalis lumborum",
+      "bounds": [
+        [
+          -0.102321,
+          0.830061,
+          -0.009151949999999999
+        ],
+        [
+          -0.00507706,
+          1.2389000000000001,
+          0.0355677
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22741",
+      "name": "Iliocostal lumbar izquierdo",
+      "anatomicalName": "Iliocostal lumbar izquierdo",
+      "aliases": [
+        "left iliocostalis lumborum",
+        "FMA22741",
+        "FJ1527M",
+        "Musculus iliocostalis lumborum",
+        "iliocostalislumborum"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:erectors",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA22741_FJ1527M"
+      ],
+      "relatedIds": [
+        "muscular:group:back:erectors",
+        "bp3d:FMA22740"
+      ],
+      "sourceId": "FMA22741",
+      "family": "iliocostalislumborum",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus iliocostalis lumborum",
+      "bounds": [
+        [
+          0.00507706,
+          0.830061,
+          -0.009151949999999999
+        ],
+        [
+          0.102321,
+          1.2389000000000001,
+          0.0355677
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22742",
+      "name": "Iliocostal torácico derecho",
+      "anatomicalName": "Iliocostal torácico derecho",
+      "aliases": [
+        "right iliocostalis thoracis",
+        "FMA22742",
+        "FJ1528",
+        "Musculus iliocostalis thoracis",
+        "iliocostalisthoracis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:erectors",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA22742_FJ1528"
+      ],
+      "relatedIds": [
+        "muscular:group:back:erectors",
+        "bp3d:FMA22743"
+      ],
+      "sourceId": "FMA22742",
+      "family": "iliocostalisthoracis",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus iliocostalis thoracis",
+      "bounds": [
+        [
+          -0.092016,
+          1.05662,
+          -0.000696365
+        ],
+        [
+          -0.041852200000000006,
+          1.36101,
+          0.0753633
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22743",
+      "name": "Iliocostal torácico izquierdo",
+      "anatomicalName": "Iliocostal torácico izquierdo",
+      "aliases": [
+        "left iliocostalis thoracis",
+        "FMA22743",
+        "FJ1528M",
+        "Musculus iliocostalis thoracis",
+        "iliocostalisthoracis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:erectors",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA22743_FJ1528M"
+      ],
+      "relatedIds": [
+        "muscular:group:back:erectors",
+        "bp3d:FMA22742"
+      ],
+      "sourceId": "FMA22743",
+      "family": "iliocostalisthoracis",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus iliocostalis thoracis",
+      "bounds": [
+        [
+          0.041852200000000006,
+          1.05662,
+          -0.000696365
+        ],
+        [
+          0.092016,
+          1.36101,
+          0.0753633
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22751",
+      "name": "Longísimo torácico derecho",
+      "anatomicalName": "Longísimo torácico derecho",
+      "aliases": [
+        "right longissimus thoracis",
+        "FMA22751",
+        "FJ1535",
+        "Musculus longissimus thoracis",
+        "longissimusthoracis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:erectors",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA22751_FJ1535"
+      ],
+      "relatedIds": [
+        "muscular:group:back:erectors",
+        "bp3d:FMA22753"
+      ],
+      "sourceId": "FMA22751",
+      "family": "longissimusthoracis",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus longissimus thoracis",
+      "bounds": [
+        [
+          -0.0687416,
+          0.849039,
+          -0.00345524
+        ],
+        [
+          0.000663053,
+          1.3704100000000001,
+          0.07065640000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22753",
+      "name": "Longísimo torácico izquierdo",
+      "anatomicalName": "Longísimo torácico izquierdo",
+      "aliases": [
+        "left longissimus thoracis",
+        "FMA22753",
+        "FJ1535M",
+        "Musculus longissimus thoracis",
+        "longissimusthoracis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:erectors",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA22753_FJ1535M"
+      ],
+      "relatedIds": [
+        "muscular:group:back:erectors",
+        "bp3d:FMA22751"
+      ],
+      "sourceId": "FMA22753",
+      "family": "longissimusthoracis",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus longissimus thoracis",
+      "bounds": [
+        [
+          -0.000663053,
+          0.849039,
+          -0.00345524
+        ],
+        [
+          0.0687416,
+          1.3704100000000001,
+          0.07065640000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22779",
+      "name": "Espinoso torácico derecho",
+      "anatomicalName": "Espinoso torácico derecho",
+      "aliases": [
+        "right spinalis thoracis",
+        "FMA22779",
+        "FJ1544",
+        "Musculus spinalis thoracis",
+        "spinalisthoracis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:erectors",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA22779_FJ1544"
+      ],
+      "relatedIds": [
+        "muscular:group:back:erectors",
+        "bp3d:FMA22780"
+      ],
+      "sourceId": "FMA22779",
+      "family": "spinalisthoracis",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus spinalis thoracis",
+      "bounds": [
+        [
+          -0.012049899999999999,
+          0.9742390000000001,
+          -0.00280701
+        ],
+        [
+          0.00230392,
+          1.3348,
+          0.0438988
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22780",
+      "name": "Espinoso torácico izquierdo",
+      "anatomicalName": "Espinoso torácico izquierdo",
+      "aliases": [
+        "left spinalis thoracis",
+        "FMA22780",
+        "FJ1544M",
+        "Musculus spinalis thoracis",
+        "spinalisthoracis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:erectors",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA22780_FJ1544M"
+      ],
+      "relatedIds": [
+        "muscular:group:back:erectors",
+        "bp3d:FMA22779"
+      ],
+      "sourceId": "FMA22780",
+      "family": "spinalisthoracis",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus spinalis thoracis",
+      "bounds": [
+        [
+          -0.00230392,
+          0.9742390000000001,
+          -0.00280701
+        ],
+        [
+          0.012049899999999999,
+          1.3348,
+          0.0438988
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA32551",
+      "name": "Redondo mayor derecho",
+      "anatomicalName": "Redondo mayor derecho",
+      "aliases": [
+        "right teres major",
+        "FMA32551",
+        "FJ1507",
+        "Musculus teres major",
+        "teresmajor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:scapular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA32551_FJ1507"
+      ],
+      "relatedIds": [
+        "muscular:group:back:scapular",
+        "bp3d:FMA32552"
+      ],
+      "sourceId": "FMA32551",
+      "family": "teresmajor",
+      "side": "right",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus teres major",
+      "bounds": [
+        [
+          -0.172209,
+          1.18965,
+          -0.00155565
+        ],
+        [
+          -0.0861425,
+          1.28535,
+          0.0795569
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA32552",
+      "name": "Redondo mayor izquierdo",
+      "anatomicalName": "Redondo mayor izquierdo",
+      "aliases": [
+        "left teres major",
+        "FMA32552",
+        "FJ1507M",
+        "Musculus teres major",
+        "teresmajor"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "parentId": "muscular:group:back:scapular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:back"
+      ],
+      "meshNames": [
+        "bp3d_FMA32552_FJ1507M"
+      ],
+      "relatedIds": [
+        "muscular:group:back:scapular",
+        "bp3d:FMA32551"
+      ],
+      "sourceId": "FMA32552",
+      "family": "teresmajor",
+      "side": "left",
+      "explosionRegionId": "muscular-trunk",
+      "latin": "Musculus teres major",
+      "bounds": [
+        [
+          0.0861425,
+          1.18965,
+          -0.00155565
+        ],
+        [
+          0.172209,
+          1.28535,
+          0.0795569
+        ]
+      ]
     }
   ],
   "assets": [
@@ -1792,6 +3660,78 @@
         ]
       ],
       "provenanceId": "bodyparts3d-4.0-muscular-pilot"
+    },
+    {
+      "id": "muscular:thorax-anterior",
+      "path": "models/anatomy/muscular/muscular-torso-anterior.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 1372520,
+      "sha256": "0d2938cfcb5d651f97155e4ea4d5d69399e4bf584e99f4321f9a2b95e388356b",
+      "meshCount": 12,
+      "triangles": 141632,
+      "bounds": [
+        [
+          -0.19426200000000002,
+          1.07816,
+          -0.00526406
+        ],
+        [
+          0.19426200000000002,
+          1.3483800000000001,
+          0.21935300000000002
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-torso"
+    },
+    {
+      "id": "muscular:abdomen",
+      "path": "models/anatomy/muscular/muscular-abdomen.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:abdomen",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 1971408,
+      "sha256": "f290f3617effb101f91b9d293361e67075d8a2d38c30e05eedfe738c1b3b78cd",
+      "meshCount": 2,
+      "triangles": 223652,
+      "bounds": [
+        [
+          -0.140823,
+          0.793625,
+          0.0370208
+        ],
+        [
+          0.140823,
+          1.2115799999999999,
+          0.218766
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-torso"
+    },
+    {
+      "id": "muscular:back",
+      "path": "models/anatomy/muscular/muscular-torso-posterior.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:back",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 1862216,
+      "sha256": "149b481048540bd5af3d2d436c904917259304cc702d2e9d0fc44d19ccc25ba5",
+      "meshCount": 20,
+      "triangles": 158592,
+      "bounds": [
+        [
+          -0.172209,
+          0.830061,
+          -0.0245467
+        ],
+        [
+          0.172209,
+          1.50624,
+          0.10066
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-torso"
     }
   ],
   "provenance": [
@@ -1812,18 +3752,36 @@
         "Assigned untextured red display material; Meshopt preserves float32 positions and quantizes normals to 12 bits; decoded geometry is checked against all source triangles.",
         "Current publisher CC BY 4.0 declaration updated 2025-02-27; original OBJ legacy CC BY-SA 2.1 Japan headers remain in the preserved source ZIP."
       ]
+    },
+    {
+      "id": "bodyparts3d-4.0-muscular-torso",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 · OBJ99 (2013 archive; current license declaration)",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selected only the 34 audited original elements representing 26 bilateral torso/scapular muscle units. Pectoralis major and trapezius portions remain components.",
+        "All original triangles, FMA/FJ and side identities retained; no per-mesh fitting, normalization, mirroring, synthesis or simplification.",
+        "Shared transform (x,y,z) to (x,z,-y)/1000; float32 positions; Meshopt and 12-bit display normals as Phase 3A.",
+        "Regional and muscle-parent navigation is anatomically curated, not an automatic conversion of IS-A to PART-OF.",
+        "Current CC BY 4.0 publisher declaration; original legacy license headers preserved. No clinical validation."
+      ]
     }
   ],
   "coverage": {
-    "title": "Sistema muscular · piloto de hombro y brazo",
-    "structures": 16,
-    "meshes": 26,
-    "note": "8 músculos por lado, 16 unidades musculares. Deltoides: 3 porciones; bíceps: 2 cabezas; tríceps: 3 cabezas. No es musculatura corporal completa.",
+    "title": "Sistema muscular · hombro, brazo y torso",
+    "structures": 42,
+    "meshes": 60,
+    "note": "42 unidades musculares bilaterales representadas por 60 mallas: 16 de hombro/brazo y 26 de torso. Las porciones no se cuentan como músculos adicionales.",
     "limitations": [
-      "Sólo hombro y brazo bilateral; no incluye todos los músculos de estas regiones ni del cuerpo.",
+      "Cobertura parcial: no es la musculatura completa del cuerpo ni del torso.",
+      "No se identificaron recto abdominal, oblicuo interno, transverso abdominal ni dorsal ancho en el inventario BP3D 4.0 auditado.",
+      "Intercostales aplazados: los elementos no identifican de forma inequívoca lado y espacio intercostal.",
       "Atlas masculino adulto modelado; no representa variación individual ni acredita precisión clínica.",
-      "Origen e inserción son relaciones educativas textuales; no hay superficies de inserción anotadas.",
-      "Se conserva el marco BP3D compartido; la identidad de fuente no sustituye revisión anatómica."
+      "Origen e inserción son texto educativo; no hay zonas de fijación anotadas sobre las mallas."
     ]
   }
 }

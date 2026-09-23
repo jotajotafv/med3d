@@ -54,7 +54,7 @@ export function flattenTree(catalog: AnatomyCatalog, index: CatalogIndex, expand
 export const SYSTEMS: Array<{id: SystemId; name: string; branches: string}> = [
   {id:'skeletal',name:'Sistema óseo',branches:'Esqueleto axial · esqueleto apendicular'},
   {id:'integumentary',name:'Sistema tegumentario',branches:'Piel · anexos cutáneos'},
-  {id:'muscular',name:'Sistema muscular',branches:'Cabeza y cuello · tronco · miembros'},
+  {id:'muscular',name:'Sistema muscular',branches:'Hombro y brazo · tórax · abdomen · espalda'},
   {id:'nervous',name:'Sistema nervioso',branches:'Central · periférico · autónomo'},
   {id:'cardiovascular',name:'Sistema cardiovascular',branches:'Corazón · arterias · venas'},
   {id:'respiratory',name:'Sistema respiratorio',branches:'Vías respiratorias · pulmones'},

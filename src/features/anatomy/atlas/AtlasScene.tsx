@@ -50,7 +50,12 @@ function useAssets(catalog: AnatomyCatalog, assetIds: string[], reset: number) {
   return { ...snapshot, loadTiming, retry: (id?: string) => manager.current?.retry(id) };
 }
 // Fixed, restrained family tones; these are presentation materials, not tissue labels.
-const MUSCLE_COLORS: Record<string,string> = {deltoid:'#ad6764',bicepsbrachii:'#a95b56',tricepsbrachii:'#b37369',brachialis:'#9d625c',supraspinatus:'#b17a6c',infraspinatus:'#a85f59',teresminor:'#b88174',subscapularis:'#985b57'};
+const MUSCLE_COLORS: Record<string,string> = {
+  deltoid:'#ad6764',bicepsbrachii:'#a95b56',tricepsbrachii:'#b37369',brachialis:'#9d625c',supraspinatus:'#b17a6c',infraspinatus:'#a85f59',teresminor:'#b88174',subscapularis:'#985b57',
+  pectoralismajor:'#ac7068',pectoralisminor:'#94635e',serratusanterior:'#b47e70',subclavius:'#9c7167',externaloblique:'#a97168',
+  trapezius:'#b47c70',rhomboidmajor:'#9d635d',rhomboidminor:'#a47167',teresmajor:'#ae7d71',
+  iliocostalislumborum:'#a77569',iliocostalisthoracis:'#b17e70',longissimusthoracis:'#996b62',spinalisthoracis:'#aa7b6f',
+};
 const materialKey = (system:SystemId,family?:string) => system==='muscular'?system+':'+(family||'muscle'):system;
 function useMaterials(catalog: AnatomyCatalog) {
   const materials = useMemo(() => new Map<string, MaterialVariants>(Array.from(catalog.nodes.filter(node=>node.systemId&&node.meshNames.length).map(node => {

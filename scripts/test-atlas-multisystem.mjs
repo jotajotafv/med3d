@@ -4,6 +4,7 @@ import { mkdtemp, readFile, writeFile, rm } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import ts from 'typescript';
+import {pilotCatalog, PILOT_FAMILIES} from './anatomy/pilot-catalog.mjs';
 
 const project = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const temporary = await mkdtemp(path.join(project, '.multisystem-tests-'));
@@ -21,7 +22,7 @@ try {
   const { createAssetLoader, AtlasAssetManager } = await import(pathToFileURL(path.join(temporary, 'asset-manager.mjs')));
   const { MUSCLE_EDUCATION, resolveMuscleDetail, getMuscleContextIds } = await import(pathToFileURL(path.join(temporary, 'muscle-education.mjs')));
   const skeletal = JSON.parse(await readFile(path.join(project, 'public/models/anatomy/skeletal/catalog.json'), 'utf8'));
-  const muscular = JSON.parse(await readFile(path.join(project, 'public/models/anatomy/muscular/catalog.json'), 'utf8'));
+  const muscular = pilotCatalog(JSON.parse(await readFile(path.join(project, 'public/models/anatomy/muscular/catalog.json'), 'utf8')));
   const originalSkeleton = JSON.stringify(skeletal), originalMuscular = JSON.stringify(muscular);
   const catalog = composeBodyCatalog(skeletal, muscular), index = createCatalogIndex(catalog);
   assert.equal(JSON.stringify(skeletal), originalSkeleton, 'composition must not mutate the source skeleton');
@@ -59,7 +60,8 @@ try {
   const falseBody = structuredClone(catalog); falseBody.nodes[0].systemId = 'skeletal';
   assert.throws(() => createCatalogIndex(falseBody), /neutral/);
   const owners = muscular.nodes.filter(node => node.meshNames.length);
-  assert.equal(Object.keys(MUSCLE_EDUCATION).length, 8, 'eight reviewed muscle families only');
+  assert.equal(PILOT_FAMILIES.filter(family => MUSCLE_EDUCATION[family]).length, 8, 'all eight original reviewed muscle families remain available');
+  assert.deepEqual(new Set(muscular.nodes.filter(node => node.kind === 'structure').map(node => node.family)), new Set(PILOT_FAMILIES), 'original eight-family scope remains exact');
   assert.equal(owners.filter(node => resolveMuscleDetail(node)).length, 26, 'every actual source element resolves to the correct card scope');
   const wholeMuscles = muscular.nodes.filter(node => node.kind === 'structure');
   assert.equal(wholeMuscles.filter(node => resolveMuscleDetail(node)?.scope === 'muscle').length, 16);

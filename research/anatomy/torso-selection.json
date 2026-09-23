@@ -1,0 +1,4249 @@
+{
+  "phase": "3B",
+  "decision": "approved-local-pre-extraction",
+  "checkedDate": "2026-09-21",
+  "baselineCommit": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6",
+  "source": {
+    "name": "BodyParts3D 4.0 OBJ99 / DBCLS",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+    "archiveBytes": 142903898,
+    "centralDirectoryOffset": 142733851,
+    "centralDirectoryBytes": 170025,
+    "centralDirectorySha256": "edde15c7c5f34b2b9743935fb3c1873cce3a9789164427ddf8343c879bcde96b",
+    "archiveEntries": 2234,
+    "fullArchiveDownloaded": false,
+    "geometryExtractedDuringAudit": false,
+    "metadataArchive": "research/anatomy/torso-metadata.zip",
+    "metadataArchiveSha256": "dfd3f6b7e7adab5590b164b58c1c4d9518752e18875f6e5feca21920b82d31ce"
+  },
+  "metadataChecks": [
+    {
+      "filename": "isa_parts_list_e.txt",
+      "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_parts_list_e.txt",
+      "bytes": 128086,
+      "sha256": "ab7796deedd49205e77f3609a1cb8c53e2bbee14ecb5c9a6ca05227469780513",
+      "matchesPhase3AAudit": true
+    },
+    {
+      "filename": "isa_element_parts.txt",
+      "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_element_parts.txt",
+      "bytes": 1142159,
+      "sha256": "a3de74423f943b0d724ae8f59b3a817f87c423a544f8db98113b1980817cbeaf",
+      "matchesPhase3AAudit": true
+    },
+    {
+      "filename": "isa_inclusion_relation_list.txt",
+      "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_inclusion_relation_list.txt",
+      "bytes": 207664,
+      "sha256": "26e7d818e03a8c909fe09c561f38d0d513423c87681f9450a803bc38f5b07564",
+      "matchesPhase3AAudit": true
+    },
+    {
+      "filename": "partof_parts_list_e.txt",
+      "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/partof_parts_list_e.txt",
+      "bytes": 59351,
+      "sha256": "9224080557053e6f1322f1e13ab27f0ecde0db19bb3b505f0631afad230eeebd",
+      "matchesPhase3AAudit": true
+    },
+    {
+      "filename": "partof_element_parts.txt",
+      "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/partof_element_parts.txt",
+      "bytes": 651179,
+      "sha256": "3f5f6df1028eb122b30de77c711597b6bb8e5541658e5985859fd228adbf88ea",
+      "matchesPhase3AAudit": true
+    },
+    {
+      "filename": "partof_inclusion_relation_list.txt",
+      "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/partof_inclusion_relation_list.txt",
+      "bytes": 91241,
+      "sha256": "1b40738270931e3c1d955ce34e0fce0d8d10d8c5ad543463e40b4b4c0243007c",
+      "matchesPhase3AAudit": false
+    }
+  ],
+  "counts": {
+    "families": 13,
+    "structures": 26,
+    "meshes": 34,
+    "rejectedConceptRows": 41,
+    "rejectedUniqueElements": 50,
+    "reviewedUniqueElements": 84,
+    "absentRequestedFamilies": 7,
+    "definition": "34 selected FJ elements form 26 side-specific muscles in 13 families. Candidate totals cover the declared torso/scapular/deep-spinal term search, not the whole body. Aggregate ancestors are not counted again."
+  },
+  "modules": [
+    {
+      "id": "muscular:thorax-anterior",
+      "filename": "muscular-torso-anterior.glb",
+      "regionId": "muscular:region:thorax-anterior",
+      "meshes": 12,
+      "structures": 8,
+      "upstreamObjBytes": 10437232,
+      "upstreamCompressedBytes": 3035200
+    },
+    {
+      "id": "muscular:abdomen",
+      "filename": "muscular-abdomen.glb",
+      "regionId": "muscular:region:abdomen",
+      "meshes": 2,
+      "structures": 2,
+      "upstreamObjBytes": 16558975,
+      "upstreamCompressedBytes": 4753478
+    },
+    {
+      "id": "muscular:back",
+      "filename": "muscular-torso-posterior.glb",
+      "regionId": "muscular:region:back",
+      "meshes": 20,
+      "structures": 16,
+      "upstreamObjBytes": 12403916,
+      "upstreamCompressedBytes": 3860467
+    }
+  ],
+  "approved": [
+    {
+      "elementId": "FJ1447",
+      "sourceId": "FMA34690",
+      "representationId": "BP5582",
+      "en": "clavicular part of right pectoralis major",
+      "name": "Pectoral mayor, porción clavicular",
+      "side": "right",
+      "family": "pectoralismajor",
+      "component": "clavicular",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA34687",
+          "name": "clavicular part of pectoralis major"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "med3d:muscle:pectoralismajor:right",
+      "structureId": "med3d:muscle:pectoralismajor:right",
+      "regionId": "muscular:region:thorax-anterior",
+      "moduleId": "muscular:thorax-anterior",
+      "moduleFile": "muscular-torso-anterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1447.obj",
+        "bytes": 141480,
+        "compressedBytes": 43200,
+        "crc32": "fd22010e",
+        "offset": 16886012,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1447M",
+      "sourceId": "FMA34691",
+      "representationId": "BP9095",
+      "en": "clavicular part of left pectoralis major",
+      "name": "Pectoral mayor, porción clavicular",
+      "side": "left",
+      "family": "pectoralismajor",
+      "component": "clavicular",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA34687",
+          "name": "clavicular part of pectoralis major"
+        },
+        {
+          "id": "FMA85453",
+          "name": "head of muscle organ"
+        },
+        {
+          "id": "FMA45729",
+          "name": "head of organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "med3d:muscle:pectoralismajor:left",
+      "structureId": "med3d:muscle:pectoralismajor:left",
+      "regionId": "muscular:region:thorax-anterior",
+      "moduleId": "muscular:thorax-anterior",
+      "moduleFile": "muscular-torso-anterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1447M.obj",
+        "bytes": 140158,
+        "compressedBytes": 43151,
+        "crc32": "550ff5c7",
+        "offset": 16929272,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1464",
+      "sourceId": "FMA79979",
+      "representationId": "BP5613",
+      "en": "sternocostal part of right pectoralis major",
+      "name": "Pectoral mayor, porción esternocostal",
+      "side": "right",
+      "family": "pectoralismajor",
+      "component": "sternocostal",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA34696",
+          "name": "sternocostal part of pectoralis major"
+        },
+        {
+          "id": "FMA34686",
+          "name": "zone of pectoralis major"
+        },
+        {
+          "id": "FMA10474",
+          "name": "zone of muscle organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "med3d:muscle:pectoralismajor:right",
+      "structureId": "med3d:muscle:pectoralismajor:right",
+      "regionId": "muscular:region:thorax-anterior",
+      "moduleId": "muscular:thorax-anterior",
+      "moduleFile": "muscular-torso-anterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1464.obj",
+        "bytes": 556794,
+        "compressedBytes": 167876,
+        "crc32": "38907963",
+        "offset": 39875859,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1464M",
+      "sourceId": "FMA79980",
+      "representationId": "BP8323",
+      "en": "sternocostal part of left pectoralis major",
+      "name": "Pectoral mayor, porción esternocostal",
+      "side": "left",
+      "family": "pectoralismajor",
+      "component": "sternocostal",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA34696",
+          "name": "sternocostal part of pectoralis major"
+        },
+        {
+          "id": "FMA34686",
+          "name": "zone of pectoralis major"
+        },
+        {
+          "id": "FMA10474",
+          "name": "zone of muscle organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "med3d:muscle:pectoralismajor:left",
+      "structureId": "med3d:muscle:pectoralismajor:left",
+      "regionId": "muscular:region:thorax-anterior",
+      "moduleId": "muscular:thorax-anterior",
+      "moduleFile": "muscular-torso-anterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1464M.obj",
+        "bytes": 551361,
+        "compressedBytes": 167356,
+        "crc32": "786356e6",
+        "offset": 40043795,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1446",
+      "sourceId": "FMA45874",
+      "representationId": "BP5615",
+      "en": "abdominal part of right pectoralis major",
+      "name": "Pectoral mayor, porción abdominal",
+      "side": "right",
+      "family": "pectoralismajor",
+      "component": "abdominal",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA34699",
+          "name": "abdominal part of pectoralis major"
+        },
+        {
+          "id": "FMA34686",
+          "name": "zone of pectoralis major"
+        },
+        {
+          "id": "FMA10474",
+          "name": "zone of muscle organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "med3d:muscle:pectoralismajor:right",
+      "structureId": "med3d:muscle:pectoralismajor:right",
+      "regionId": "muscular:region:thorax-anterior",
+      "moduleId": "muscular:thorax-anterior",
+      "moduleFile": "muscular-torso-anterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1446.obj",
+        "bytes": 105002,
+        "compressedBytes": 33294,
+        "crc32": "fa9ed04a",
+        "offset": 16819368,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1446M",
+      "sourceId": "FMA45875",
+      "representationId": "BP7862",
+      "en": "abdominal part of left pectoralis major",
+      "name": "Pectoral mayor, porción abdominal",
+      "side": "left",
+      "family": "pectoralismajor",
+      "component": "abdominal",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA34699",
+          "name": "abdominal part of pectoralis major"
+        },
+        {
+          "id": "FMA34686",
+          "name": "zone of pectoralis major"
+        },
+        {
+          "id": "FMA10474",
+          "name": "zone of muscle organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "med3d:muscle:pectoralismajor:left",
+      "structureId": "med3d:muscle:pectoralismajor:left",
+      "regionId": "muscular:region:thorax-anterior",
+      "moduleId": "muscular:thorax-anterior",
+      "moduleFile": "muscular-torso-anterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1446M.obj",
+        "bytes": 103977,
+        "compressedBytes": 33229,
+        "crc32": "669f8c36",
+        "offset": 16852722,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1456",
+      "sourceId": "FMA13375",
+      "representationId": "BP4775",
+      "en": "right pectoralis minor",
+      "name": "Pectoral menor",
+      "side": "right",
+      "family": "pectoralisminor",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13109",
+          "name": "pectoralis minor"
+        },
+        {
+          "id": "FMA37349",
+          "name": "pectoral muscle"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:region:thorax-anterior",
+      "structureId": "bp3d:FMA13375",
+      "regionId": "muscular:region:thorax-anterior",
+      "moduleId": "muscular:thorax-anterior",
+      "moduleFile": "muscular-torso-anterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1456.obj",
+        "bytes": 719480,
+        "compressedBytes": 210425,
+        "crc32": "c2ea3354",
+        "offset": 35989316,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1456M",
+      "sourceId": "FMA13376",
+      "representationId": "BP9038",
+      "en": "left pectoralis minor",
+      "name": "Pectoral menor",
+      "side": "left",
+      "family": "pectoralisminor",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13109",
+          "name": "pectoralis minor"
+        },
+        {
+          "id": "FMA37349",
+          "name": "pectoral muscle"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:region:thorax-anterior",
+      "structureId": "bp3d:FMA13376",
+      "regionId": "muscular:region:thorax-anterior",
+      "moduleId": "muscular:thorax-anterior",
+      "moduleFile": "muscular-torso-anterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1456M.obj",
+        "bytes": 712349,
+        "compressedBytes": 209938,
+        "crc32": "ce40bc1d",
+        "offset": 36199801,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1459",
+      "sourceId": "FMA13398",
+      "representationId": "BP4782",
+      "en": "right serratus anterior",
+      "name": "Serrato anterior",
+      "side": "right",
+      "family": "serratusanterior",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13397",
+          "name": "serratus anterior"
+        },
+        {
+          "id": "FMA32518",
+          "name": "deep extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA32516",
+          "name": "extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA33531",
+          "name": "muscle of shoulder"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:region:thorax-anterior",
+      "structureId": "bp3d:FMA13398",
+      "regionId": "muscular:region:thorax-anterior",
+      "moduleId": "muscular:thorax-anterior",
+      "moduleFile": "muscular-torso-anterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1459.obj",
+        "bytes": 3600341,
+        "compressedBytes": 1028319,
+        "crc32": "7f932c05",
+        "offset": 36617223,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1459M",
+      "sourceId": "FMA13399",
+      "representationId": "BP8760",
+      "en": "left serratus anterior",
+      "name": "Serrato anterior",
+      "side": "left",
+      "family": "serratusanterior",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13397",
+          "name": "serratus anterior"
+        },
+        {
+          "id": "FMA32518",
+          "name": "deep extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA32516",
+          "name": "extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA33531",
+          "name": "muscle of shoulder"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:region:thorax-anterior",
+      "structureId": "bp3d:FMA13399",
+      "regionId": "muscular:region:thorax-anterior",
+      "moduleId": "muscular:thorax-anterior",
+      "moduleFile": "muscular-torso-anterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1459M.obj",
+        "bytes": 3571896,
+        "compressedBytes": 1026286,
+        "crc32": "f7fd1aaf",
+        "offset": 37645602,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1460",
+      "sourceId": "FMA13412",
+      "representationId": "BP4773",
+      "en": "right subclavius",
+      "name": "Subclavio",
+      "side": "right",
+      "family": "subclavius",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13410",
+          "name": "subclavius"
+        },
+        {
+          "id": "FMA37349",
+          "name": "pectoral muscle"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:region:thorax-anterior",
+      "structureId": "bp3d:FMA13412",
+      "regionId": "muscular:region:thorax-anterior",
+      "moduleId": "muscular:thorax-anterior",
+      "moduleFile": "muscular-torso-anterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1460.obj",
+        "bytes": 117571,
+        "compressedBytes": 36045,
+        "crc32": "dd8b9d25",
+        "offset": 38671949,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1460M",
+      "sourceId": "FMA13411",
+      "representationId": "BP8460",
+      "en": "left subclavius",
+      "name": "Subclavio",
+      "side": "left",
+      "family": "subclavius",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13410",
+          "name": "subclavius"
+        },
+        {
+          "id": "FMA37349",
+          "name": "pectoral muscle"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:region:thorax-anterior",
+      "structureId": "bp3d:FMA13411",
+      "regionId": "muscular:region:thorax-anterior",
+      "moduleId": "muscular:thorax-anterior",
+      "moduleFile": "muscular-torso-anterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1460M.obj",
+        "bytes": 116823,
+        "compressedBytes": 36081,
+        "crc32": "52b152f4",
+        "offset": 38708054,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1452",
+      "sourceId": "FMA13336",
+      "representationId": "BP4967",
+      "en": "right external oblique",
+      "name": "Oblicuo externo",
+      "side": "right",
+      "family": "externaloblique",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13335",
+          "name": "external oblique"
+        },
+        {
+          "id": "FMA20278",
+          "name": "muscle of anterior abdominal wall"
+        },
+        {
+          "id": "FMA9620",
+          "name": "muscle of abdomen"
+        },
+        {
+          "id": "FMA58274",
+          "name": "muscle of trunk"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:region:abdomen",
+      "structureId": "bp3d:FMA13336",
+      "regionId": "muscular:region:abdomen",
+      "moduleId": "muscular:abdomen",
+      "moduleFile": "muscular-abdomen.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1452.obj",
+        "bytes": 8308376,
+        "compressedBytes": 2379532,
+        "crc32": "925978cc",
+        "offset": 22235189,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1452M",
+      "sourceId": "FMA13337",
+      "representationId": "BP8154",
+      "en": "left external oblique",
+      "name": "Oblicuo externo",
+      "side": "left",
+      "family": "externaloblique",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13335",
+          "name": "external oblique"
+        },
+        {
+          "id": "FMA20278",
+          "name": "muscle of anterior abdominal wall"
+        },
+        {
+          "id": "FMA9620",
+          "name": "muscle of abdomen"
+        },
+        {
+          "id": "FMA58274",
+          "name": "muscle of trunk"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:region:abdomen",
+      "structureId": "bp3d:FMA13337",
+      "regionId": "muscular:region:abdomen",
+      "moduleId": "muscular:abdomen",
+      "moduleFile": "muscular-abdomen.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1452M.obj",
+        "bytes": 8250599,
+        "compressedBytes": 2373946,
+        "crc32": "f2dd742d",
+        "offset": 24614781,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1520",
+      "sourceId": "FMA33581",
+      "representationId": "BP5638",
+      "en": "ascending part of right trapezius",
+      "name": "Trapecio, porción ascendente",
+      "side": "right",
+      "family": "trapezius",
+      "component": "ascending",
+      "sourceType": "portion",
+      "isaType": "organ zone",
+      "isaAncestry": [
+        {
+          "id": "FMA32555",
+          "name": "ascending part of trapezius"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "med3d:muscle:trapezius:right",
+      "structureId": "med3d:muscle:trapezius:right",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1520.obj",
+        "bytes": 812371,
+        "compressedBytes": 254264,
+        "crc32": "dd4634cd",
+        "offset": 45132656,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1520M",
+      "sourceId": "FMA33583",
+      "representationId": "BP8225",
+      "en": "ascending part of left trapezius",
+      "name": "Trapecio, porción ascendente",
+      "side": "left",
+      "family": "trapezius",
+      "component": "ascending",
+      "sourceType": "portion",
+      "isaType": "organ zone",
+      "isaAncestry": [
+        {
+          "id": "FMA32555",
+          "name": "ascending part of trapezius"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "med3d:muscle:trapezius:left",
+      "structureId": "med3d:muscle:trapezius:left",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1520M.obj",
+        "bytes": 807078,
+        "compressedBytes": 253487,
+        "crc32": "d24f80f0",
+        "offset": 45386980,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1554",
+      "sourceId": "FMA33584",
+      "representationId": "BP5610",
+      "en": "transverse part of right trapezius",
+      "name": "Trapecio, porción transversa",
+      "side": "right",
+      "family": "trapezius",
+      "component": "transverse",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32556",
+          "name": "transverse part of trapezius"
+        },
+        {
+          "id": "FMA32529",
+          "name": "zone of trapezius"
+        },
+        {
+          "id": "FMA10474",
+          "name": "zone of muscle organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "med3d:muscle:trapezius:right",
+      "structureId": "med3d:muscle:trapezius:right",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1554.obj",
+        "bytes": 351869,
+        "compressedBytes": 108594,
+        "crc32": "44a69f95",
+        "offset": 53212333,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1554M",
+      "sourceId": "FMA33585",
+      "representationId": "BP8252",
+      "en": "transverse part of left trapezius",
+      "name": "Trapecio, porción transversa",
+      "side": "left",
+      "family": "trapezius",
+      "component": "transverse",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32556",
+          "name": "transverse part of trapezius"
+        },
+        {
+          "id": "FMA32529",
+          "name": "zone of trapezius"
+        },
+        {
+          "id": "FMA10474",
+          "name": "zone of muscle organ"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "med3d:muscle:trapezius:left",
+      "structureId": "med3d:muscle:trapezius:left",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1554M.obj",
+        "bytes": 348493,
+        "compressedBytes": 107714,
+        "crc32": "1b923bea",
+        "offset": 53320987,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1521",
+      "sourceId": "FMA33586",
+      "representationId": "BP5636",
+      "en": "descending part of right trapezius",
+      "name": "Trapecio, porción descendente",
+      "side": "right",
+      "family": "trapezius",
+      "component": "descending",
+      "sourceType": "portion",
+      "isaType": "organ zone",
+      "isaAncestry": [
+        {
+          "id": "FMA32557",
+          "name": "descending part of trapezius"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "med3d:muscle:trapezius:right",
+      "structureId": "med3d:muscle:trapezius:right",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1521.obj",
+        "bytes": 537515,
+        "compressedBytes": 165497,
+        "crc32": "a6bc1fab",
+        "offset": 45640528,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1521M",
+      "sourceId": "FMA33587",
+      "representationId": "BP8267",
+      "en": "descending part of left trapezius",
+      "name": "Trapecio, porción descendente",
+      "side": "left",
+      "family": "trapezius",
+      "component": "descending",
+      "sourceType": "portion",
+      "isaType": "organ zone",
+      "isaAncestry": [
+        {
+          "id": "FMA32557",
+          "name": "descending part of trapezius"
+        },
+        {
+          "id": "FMA55268",
+          "name": "organ zone"
+        },
+        {
+          "id": "FMA67619",
+          "name": "organ region"
+        },
+        {
+          "id": "FMA82472",
+          "name": "cardinal organ part"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "med3d:muscle:trapezius:left",
+      "structureId": "med3d:muscle:trapezius:left",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1521M.obj",
+        "bytes": 532693,
+        "compressedBytes": 164992,
+        "crc32": "72e456a1",
+        "offset": 45806085,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1536",
+      "sourceId": "FMA13381",
+      "representationId": "BP4780",
+      "en": "right rhomboid major",
+      "name": "Romboides mayor",
+      "side": "right",
+      "family": "rhomboidmajor",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13379",
+          "name": "rhomboid major"
+        },
+        {
+          "id": "FMA32518",
+          "name": "deep extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA32516",
+          "name": "extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA33531",
+          "name": "muscle of shoulder"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:scapular",
+      "structureId": "bp3d:FMA13381",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1536.obj",
+        "bytes": 549548,
+        "compressedBytes": 169413,
+        "crc32": "d2872e81",
+        "offset": 49668030,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1536M",
+      "sourceId": "FMA13382",
+      "representationId": "BP9245",
+      "en": "left rhomboid major",
+      "name": "Romboides mayor",
+      "side": "left",
+      "family": "rhomboidmajor",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13379",
+          "name": "rhomboid major"
+        },
+        {
+          "id": "FMA32518",
+          "name": "deep extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA32516",
+          "name": "extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA33531",
+          "name": "muscle of shoulder"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:scapular",
+      "structureId": "bp3d:FMA13382",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1536M.obj",
+        "bytes": 544456,
+        "compressedBytes": 169113,
+        "crc32": "e0c022bf",
+        "offset": 49837503,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1537",
+      "sourceId": "FMA13383",
+      "representationId": "BP4784",
+      "en": "right rhomboid minor",
+      "name": "Romboides menor",
+      "side": "right",
+      "family": "rhomboidminor",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13380",
+          "name": "rhomboid minor"
+        },
+        {
+          "id": "FMA32518",
+          "name": "deep extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA32516",
+          "name": "extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA33531",
+          "name": "muscle of shoulder"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:scapular",
+      "structureId": "bp3d:FMA13383",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1537.obj",
+        "bytes": 157909,
+        "compressedBytes": 49715,
+        "crc32": "54496a78",
+        "offset": 50006677,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1537M",
+      "sourceId": "FMA13384",
+      "representationId": "BP8585",
+      "en": "left rhomboid minor",
+      "name": "Romboides menor",
+      "side": "left",
+      "family": "rhomboidminor",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA13380",
+          "name": "rhomboid minor"
+        },
+        {
+          "id": "FMA32518",
+          "name": "deep extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA32516",
+          "name": "extrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA33531",
+          "name": "muscle of shoulder"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:scapular",
+      "structureId": "bp3d:FMA13384",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1537M.obj",
+        "bytes": 156319,
+        "compressedBytes": 49552,
+        "crc32": "1b7ee9d5",
+        "offset": 50056452,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1527",
+      "sourceId": "FMA22740",
+      "representationId": "BP4753",
+      "en": "right iliocostalis lumborum",
+      "name": "Iliocostal lumbar",
+      "side": "right",
+      "family": "iliocostalislumborum",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22702",
+          "name": "iliocostalis lumborum"
+        },
+        {
+          "id": "FMA77177",
+          "name": "iliocostalis"
+        },
+        {
+          "id": "FMA32559",
+          "name": "superficial postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:erectors",
+      "structureId": "bp3d:FMA22740",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1527.obj",
+        "bytes": 1189971,
+        "compressedBytes": 367351,
+        "crc32": "e54388b3",
+        "offset": 47264463,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1527M",
+      "sourceId": "FMA22741",
+      "representationId": "BP8937",
+      "en": "left iliocostalis lumborum",
+      "name": "Iliocostal lumbar",
+      "side": "left",
+      "family": "iliocostalislumborum",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22702",
+          "name": "iliocostalis lumborum"
+        },
+        {
+          "id": "FMA77177",
+          "name": "iliocostalis"
+        },
+        {
+          "id": "FMA32559",
+          "name": "superficial postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:erectors",
+      "structureId": "bp3d:FMA22741",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1527M.obj",
+        "bytes": 1178614,
+        "compressedBytes": 366357,
+        "crc32": "8299f339",
+        "offset": 47631874,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1528",
+      "sourceId": "FMA22742",
+      "representationId": "BP4751",
+      "en": "right iliocostalis thoracis",
+      "name": "Iliocostal torácico",
+      "side": "right",
+      "family": "iliocostalisthoracis",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22703",
+          "name": "iliocostalis thoracis"
+        },
+        {
+          "id": "FMA77177",
+          "name": "iliocostalis"
+        },
+        {
+          "id": "FMA32559",
+          "name": "superficial postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:erectors",
+      "structureId": "bp3d:FMA22742",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1528.obj",
+        "bytes": 618808,
+        "compressedBytes": 190152,
+        "crc32": "4451d9dd",
+        "offset": 47998292,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1528M",
+      "sourceId": "FMA22743",
+      "representationId": "BP8748",
+      "en": "left iliocostalis thoracis",
+      "name": "Iliocostal torácico",
+      "side": "left",
+      "family": "iliocostalisthoracis",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22703",
+          "name": "iliocostalis thoracis"
+        },
+        {
+          "id": "FMA77177",
+          "name": "iliocostalis"
+        },
+        {
+          "id": "FMA32559",
+          "name": "superficial postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:erectors",
+      "structureId": "bp3d:FMA22743",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1528M.obj",
+        "bytes": 613804,
+        "compressedBytes": 189599,
+        "crc32": "b656106b",
+        "offset": 48188504,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1535",
+      "sourceId": "FMA22751",
+      "representationId": "BP4744",
+      "en": "right longissimus thoracis",
+      "name": "Longísimo torácico",
+      "side": "right",
+      "family": "longissimusthoracis",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22709",
+          "name": "longissimus thoracis"
+        },
+        {
+          "id": "FMA77178",
+          "name": "longissimus"
+        },
+        {
+          "id": "FMA32559",
+          "name": "superficial postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:erectors",
+      "structureId": "bp3d:FMA22751",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1535.obj",
+        "bytes": 1319188,
+        "compressedBytes": 410692,
+        "crc32": "4805d9b4",
+        "offset": 48848126,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1535M",
+      "sourceId": "FMA22753",
+      "representationId": "BP8985",
+      "en": "left longissimus thoracis",
+      "name": "Longísimo torácico",
+      "side": "left",
+      "family": "longissimusthoracis",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22709",
+          "name": "longissimus thoracis"
+        },
+        {
+          "id": "FMA77178",
+          "name": "longissimus"
+        },
+        {
+          "id": "FMA32559",
+          "name": "superficial postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:erectors",
+      "structureId": "bp3d:FMA22753",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1535M.obj",
+        "bytes": 1306680,
+        "compressedBytes": 409091,
+        "crc32": "70b42451",
+        "offset": 49258878,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1544",
+      "sourceId": "FMA22779",
+      "representationId": "BP4763",
+      "en": "right spinalis thoracis",
+      "name": "Espinoso torácico",
+      "side": "right",
+      "family": "spinalisthoracis",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22765",
+          "name": "spinalis thoracis"
+        },
+        {
+          "id": "FMA77179",
+          "name": "spinalis"
+        },
+        {
+          "id": "FMA32559",
+          "name": "superficial postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:erectors",
+      "structureId": "bp3d:FMA22779",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1544.obj",
+        "bytes": 598901,
+        "compressedBytes": 189710,
+        "crc32": "92342d86",
+        "offset": 51775782,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1544M",
+      "sourceId": "FMA22780",
+      "representationId": "BP8979",
+      "en": "left spinalis thoracis",
+      "name": "Espinoso torácico",
+      "side": "left",
+      "family": "spinalisthoracis",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA22765",
+          "name": "spinalis thoracis"
+        },
+        {
+          "id": "FMA77179",
+          "name": "spinalis"
+        },
+        {
+          "id": "FMA32559",
+          "name": "superficial postvertebral muscle"
+        },
+        {
+          "id": "FMA32515",
+          "name": "postvertebral muscle"
+        },
+        {
+          "id": "FMA22594",
+          "name": "muscle of vertebral column"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:erectors",
+      "structureId": "bp3d:FMA22780",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1544M.obj",
+        "bytes": 594041,
+        "compressedBytes": 189162,
+        "crc32": "26a5af46",
+        "offset": 51965552,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1507",
+      "sourceId": "FMA32551",
+      "representationId": "BP4789",
+      "en": "right teres major",
+      "name": "Redondo mayor",
+      "side": "right",
+      "family": "teresmajor",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32549",
+          "name": "teres major"
+        },
+        {
+          "id": "FMA32520",
+          "name": "intrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA33531",
+          "name": "muscle of shoulder"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:scapular",
+      "structureId": "bp3d:FMA32551",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1507.obj",
+        "bytes": 93150,
+        "compressedBytes": 27904,
+        "crc32": "7b58d43e",
+        "offset": 44190756,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    },
+    {
+      "elementId": "FJ1507M",
+      "sourceId": "FMA32552",
+      "representationId": "BP8287",
+      "en": "left teres major",
+      "name": "Redondo mayor",
+      "side": "left",
+      "family": "teresmajor",
+      "component": null,
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "isaAncestry": [
+        {
+          "id": "FMA32549",
+          "name": "teres major"
+        },
+        {
+          "id": "FMA32520",
+          "name": "intrinsic muscle of shoulder"
+        },
+        {
+          "id": "FMA33531",
+          "name": "muscle of shoulder"
+        },
+        {
+          "id": "FMA37347",
+          "name": "muscle of pectoral girdle"
+        },
+        {
+          "id": "FMA9621",
+          "name": "muscle of upper limb"
+        },
+        {
+          "id": "FMA5022",
+          "name": "muscle organ"
+        },
+        {
+          "id": "FMA55665",
+          "name": "nonparenchymatous organ"
+        },
+        {
+          "id": "FMA55670",
+          "name": "solid organ"
+        },
+        {
+          "id": "FMA67498",
+          "name": "organ"
+        },
+        {
+          "id": "FMA67135",
+          "name": "anatomical structure"
+        },
+        {
+          "id": "FMA67165",
+          "name": "material anatomical entity"
+        },
+        {
+          "id": "FMA61775",
+          "name": "physical anatomical entity"
+        },
+        {
+          "id": "FMA62955",
+          "name": "anatomical entity"
+        }
+      ],
+      "proposedParentId": "muscular:group:back:scapular",
+      "structureId": "bp3d:FMA32552",
+      "regionId": "muscular:region:back",
+      "moduleId": "muscular:back",
+      "moduleFile": "muscular-torso-posterior.glb",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1507M.obj",
+        "bytes": 92508,
+        "compressedBytes": 28108,
+        "crc32": "f16b20cc",
+        "offset": 44218720,
+        "method": 8
+      },
+      "originalHeaderNotYetInspected": true
+    }
+  ],
+  "rejected": [
+    {
+      "sourceId": "FMA13295",
+      "representationId": "BP8798",
+      "en": "diaphragm",
+      "side": "unspecified",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ3131"
+      ],
+      "reason": "Presente e identificable; aplazado por alcance: esta entrega se limita a paredes del torso y transición escapular.",
+      "archiveEntries": {
+        "FJ3131": {
+          "path": "isa_BP3D_4.0_obj_99/FJ3131.obj",
+          "bytes": 4828611,
+          "compressedBytes": 1330252,
+          "crc32": "3a0979d0",
+          "offset": 119725405,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA9756",
+      "representationId": "BP8306",
+      "en": "external intercostal muscle",
+      "side": "unspecified",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1451",
+        "FJ1451M"
+      ],
+      "reason": "Un FMA por clase y dos FJ; no identifica espacios costales ni lateralidad por concepto. No se presentará cada FJ como un músculo intercostal individual.",
+      "archiveEntries": {
+        "FJ1451": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1451.obj",
+          "bytes": 9118989,
+          "compressedBytes": 2578978,
+          "crc32": "1c280878",
+          "offset": 17079976,
+          "method": 8
+        },
+        "FJ1451M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1451M.obj",
+          "bytes": 9040548,
+          "compressedBytes": 2576114,
+          "crc32": "58040603",
+          "offset": 19659014,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA9758",
+      "representationId": "BP9146",
+      "en": "innermost intercostal muscle",
+      "side": "unspecified",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1454",
+        "FJ1454M"
+      ],
+      "reason": "Un FMA por clase y dos FJ; no identifica espacios costales ni lateralidad por concepto. No se presentará cada FJ como un músculo intercostal individual.",
+      "archiveEntries": {
+        "FJ1454": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1454.obj",
+          "bytes": 7720469,
+          "compressedBytes": 2213395,
+          "crc32": "35dfe973",
+          "offset": 27087542,
+          "method": 8
+        },
+        "FJ1454M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1454M.obj",
+          "bytes": 7642908,
+          "compressedBytes": 2207534,
+          "crc32": "9829996a",
+          "offset": 29300997,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA9757",
+      "representationId": "BP8018",
+      "en": "internal intercostal muscle",
+      "side": "unspecified",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1455",
+        "FJ1455M"
+      ],
+      "reason": "Un FMA por clase y dos FJ; no identifica espacios costales ni lateralidad por concepto. No se presentará cada FJ como un músculo intercostal individual.",
+      "archiveEntries": {
+        "FJ1455": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1455.obj",
+          "bytes": 7706472,
+          "compressedBytes": 2242785,
+          "crc32": "a94e8356",
+          "offset": 31508592,
+          "method": 8
+        },
+        "FJ1455M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1455M.obj",
+          "bytes": 7632850,
+          "compressedBytes": 2237818,
+          "crc32": "4a4540de",
+          "offset": 33751437,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22850",
+      "representationId": "BP8895",
+      "en": "lateral lumbar intertransversarius",
+      "side": "unspecified",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1547",
+        "FJ1547M"
+      ],
+      "reason": "Conjunto/representación segmentaria sin desglose vertebral o costal completo verificable; requiere una curación específica posterior.",
+      "archiveEntries": {
+        "FJ1547": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1547.obj",
+          "bytes": 139328,
+          "compressedBytes": 40652,
+          "crc32": "d16b3a11",
+          "offset": 52790382,
+          "method": 8
+        },
+        "FJ1547M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1547M.obj",
+          "bytes": 137754,
+          "compressedBytes": 40717,
+          "crc32": "4f9ea83e",
+          "offset": 52831094,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA81753",
+      "representationId": "BP9111",
+      "en": "left cervical rotator",
+      "side": "left",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1524M"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1524M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1524M.obj",
+          "bytes": 382604,
+          "compressedBytes": 115586,
+          "crc32": "e0d4da5e",
+          "offset": 46365209,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22745",
+      "representationId": "BP8048",
+      "en": "left iliocostalis cervicis",
+      "side": "left",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1526M"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1526M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1526M.obj",
+          "bytes": 235971,
+          "compressedBytes": 74085,
+          "crc32": "3f71d8ab",
+          "offset": 47190317,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22891",
+      "representationId": "BP9137",
+      "en": "left interspinalis thoracis",
+      "side": "left",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1551M"
+      ],
+      "reason": "Conjunto/representación segmentaria sin desglose vertebral o costal completo verificable; requiere una curación específica posterior.",
+      "archiveEntries": {
+        "FJ1551M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1551M.obj",
+          "bytes": 36945,
+          "compressedBytes": 11789,
+          "crc32": "6f7eca34",
+          "offset": 53074849,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA32541",
+      "representationId": "BP8746",
+      "en": "left levator scapulae",
+      "side": "left",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1532M"
+      ],
+      "reason": "Identificable, aplazado para contener la extensión cervical; la transición escapular usa romboides y redondo mayor.",
+      "archiveEntries": {
+        "FJ1532M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1532M.obj",
+          "bytes": 353007,
+          "compressedBytes": 108655,
+          "crc32": "33e28fe2",
+          "offset": 48487124,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22756",
+      "representationId": "BP9081",
+      "en": "left longissimus capitis",
+      "side": "left",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1533M"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1533M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1533M.obj",
+          "bytes": 178291,
+          "compressedBytes": 54888,
+          "crc32": "e6fe9b8d",
+          "offset": 48650885,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22758",
+      "representationId": "BP9126",
+      "en": "left longissimus cervicis",
+      "side": "left",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1534M"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1534M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1534M.obj",
+          "bytes": 227947,
+          "compressedBytes": 71028,
+          "crc32": "39121331",
+          "offset": 48777037,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA23090",
+      "representationId": "BP8692",
+      "en": "left lumbar rotator",
+      "side": "left",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1522M"
+      ],
+      "reason": "Conjunto/representación segmentaria sin desglose vertebral o costal completo verificable; requiere una curación específica posterior.",
+      "archiveEntries": {
+        "FJ1522M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1522M.obj",
+          "bytes": 462787,
+          "compressedBytes": 138715,
+          "crc32": "b74860c8",
+          "offset": 46110011,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22877",
+      "representationId": "BP8700",
+      "en": "left semispinalis capitis",
+      "side": "left",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1538M"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1538M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1538M.obj",
+          "bytes": 215105,
+          "compressedBytes": 61441,
+          "crc32": "36b8607f",
+          "offset": 50168059,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22875",
+      "representationId": "BP8930",
+      "en": "left semispinalis cervicis",
+      "side": "left",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1539M"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1539M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1539M.obj",
+          "bytes": 291523,
+          "compressedBytes": 94063,
+          "crc32": "ac6fcdbc",
+          "offset": 50324261,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22873",
+      "representationId": "BP8316",
+      "en": "left semispinalis thoracis",
+      "side": "left",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1540M"
+      ],
+      "reason": "Identificable, aplazado para mantener un conjunto acotado; la espalda profunda ya incluye cuatro subdivisiones verificadas de erectores.",
+      "archiveEntries": {
+        "FJ1540M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1540M.obj",
+          "bytes": 444404,
+          "compressedBytes": 140178,
+          "crc32": "a0de92e7",
+          "offset": 50558957,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA13406",
+      "representationId": "BP9048",
+      "en": "left serratus posterior inferior",
+      "side": "left",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1541M"
+      ],
+      "reason": "Identificable, aplazado para mantener un conjunto acotado; la espalda profunda ya incluye cuatro subdivisiones verificadas de erectores.",
+      "archiveEntries": {
+        "FJ1541M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1541M.obj",
+          "bytes": 969175,
+          "compressedBytes": 296940,
+          "crc32": "9e1dadfe",
+          "offset": 50997350,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA13404",
+      "representationId": "BP8298",
+      "en": "left serratus posterior superior",
+      "side": "left",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1542M"
+      ],
+      "reason": "Identificable, aplazado para mantener un conjunto acotado; la espalda profunda ya incluye cuatro subdivisiones verificadas de erectores.",
+      "archiveEntries": {
+        "FJ1542M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1542M.obj",
+          "bytes": 679307,
+          "compressedBytes": 207848,
+          "crc32": "9f18a7cc",
+          "offset": 51503031,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA9762",
+      "representationId": "BP9030",
+      "en": "left transversus thoracis",
+      "side": "left",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1461M"
+      ],
+      "reason": "Identificable, aplazado para mantener un conjunto acotado; la espalda profunda ya incluye cuatro subdivisiones verificadas de erectores.",
+      "archiveEntries": {
+        "FJ1461M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1461M.obj",
+          "bytes": 417104,
+          "compressedBytes": 122663,
+          "crc32": "fd1e823a",
+          "offset": 38867134,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA11336",
+      "representationId": "BP6616",
+      "en": "linea alba",
+      "side": "unspecified",
+      "sourceType": "set/group or other anatomical entity",
+      "elementIds": [
+        "FJ1448"
+      ],
+      "reason": "Estructura aponeurótica clasificada como unión anatómica, no un músculo; no se añade como unidad muscular.",
+      "archiveEntries": {
+        "FJ1448": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1448.obj",
+          "bytes": 124794,
+          "compressedBytes": 40497,
+          "crc32": "530a35e4",
+          "offset": 16972484,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22851",
+      "representationId": "BP8809",
+      "en": "medial lumbar intertransversarius",
+      "side": "unspecified",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1548",
+        "FJ1548M"
+      ],
+      "reason": "Conjunto/representación segmentaria sin desglose vertebral o costal completo verificable; requiere una curación específica posterior.",
+      "archiveEntries": {
+        "FJ1548": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1548.obj",
+          "bytes": 137074,
+          "compressedBytes": 42368,
+          "crc32": "791b7a91",
+          "offset": 52871872,
+          "method": 8
+        },
+        "FJ1548M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1548M.obj",
+          "bytes": 135455,
+          "compressedBytes": 42271,
+          "crc32": "362d4042",
+          "offset": 52914300,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA81752",
+      "representationId": "BP4731",
+      "en": "right cervical rotator",
+      "side": "right",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1524"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1524": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1524.obj",
+          "bytes": 388160,
+          "compressedBytes": 116362,
+          "crc32": "9231bf42",
+          "offset": 46248787,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22744",
+      "representationId": "BP4755",
+      "en": "right iliocostalis cervicis",
+      "side": "right",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1526"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1526": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1526.obj",
+          "bytes": 237546,
+          "compressedBytes": 74200,
+          "crc32": "82714af5",
+          "offset": 47116057,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22890",
+      "representationId": "BP4725",
+      "en": "right interspinalis thoracis",
+      "side": "right",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1551"
+      ],
+      "reason": "Conjunto/representación segmentaria sin desglose vertebral o costal completo verificable; requiere una curación específica posterior.",
+      "archiveEntries": {
+        "FJ1551": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1551.obj",
+          "bytes": 37133,
+          "compressedBytes": 11793,
+          "crc32": "5109fcaf",
+          "offset": 53062996,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA32540",
+      "representationId": "BP4786",
+      "en": "right levator scapulae",
+      "side": "right",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1532"
+      ],
+      "reason": "Identificable, aplazado para contener la extensión cervical; la transición escapular usa romboides y redondo mayor.",
+      "archiveEntries": {
+        "FJ1532": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1532.obj",
+          "bytes": 355503,
+          "compressedBytes": 108900,
+          "crc32": "e926967d",
+          "offset": 48378164,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22754",
+      "representationId": "BP4748",
+      "en": "right longissimus capitis",
+      "side": "right",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1533"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1533": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1533.obj",
+          "bytes": 179817,
+          "compressedBytes": 54985,
+          "crc32": "897da691",
+          "offset": 48595840,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22757",
+      "representationId": "BP4746",
+      "en": "right longissimus cervicis",
+      "side": "right",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1534"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1534": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1534.obj",
+          "bytes": 229177,
+          "compressedBytes": 71143,
+          "crc32": "e244de1a",
+          "offset": 48705834,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA23089",
+      "representationId": "BP4729",
+      "en": "right lumbar rotator",
+      "side": "right",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1522"
+      ],
+      "reason": "Conjunto/representación segmentaria sin desglose vertebral o costal completo verificable; requiere una curación específica posterior.",
+      "archiveEntries": {
+        "FJ1522": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1522.obj",
+          "bytes": 468269,
+          "compressedBytes": 138813,
+          "crc32": "401c9209",
+          "offset": 45971138,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22876",
+      "representationId": "BP4717",
+      "en": "right semispinalis capitis",
+      "side": "right",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1538"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1538": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1538.obj",
+          "bytes": 219002,
+          "compressedBytes": 61934,
+          "crc32": "08f7e999",
+          "offset": 50106065,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22874",
+      "representationId": "BP4715",
+      "en": "right semispinalis cervicis",
+      "side": "right",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1539"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1539": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1539.obj",
+          "bytes": 294969,
+          "compressedBytes": 94640,
+          "crc32": "010598f3",
+          "offset": 50229561,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA22872",
+      "representationId": "BP4713",
+      "en": "right semispinalis thoracis",
+      "side": "right",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1540"
+      ],
+      "reason": "Identificable, aplazado para mantener un conjunto acotado; la espalda profunda ya incluye cuatro subdivisiones verificadas de erectores.",
+      "archiveEntries": {
+        "FJ1540": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1540.obj",
+          "bytes": 448376,
+          "compressedBytes": 140512,
+          "crc32": "47a71ced",
+          "offset": 50418385,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA13405",
+      "representationId": "BP4768",
+      "en": "right serratus posterior inferior",
+      "side": "right",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1541"
+      ],
+      "reason": "Identificable, aplazado para mantener un conjunto acotado; la espalda profunda ya incluye cuatro subdivisiones verificadas de erectores.",
+      "archiveEntries": {
+        "FJ1541": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1541.obj",
+          "bytes": 977758,
+          "compressedBytes": 298094,
+          "crc32": "a5c12d08",
+          "offset": 50699196,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA13403",
+      "representationId": "BP4766",
+      "en": "right serratus posterior superior",
+      "side": "right",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1542"
+      ],
+      "reason": "Identificable, aplazado para mantener un conjunto acotado; la espalda profunda ya incluye cuatro subdivisiones verificadas de erectores.",
+      "archiveEntries": {
+        "FJ1542": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1542.obj",
+          "bytes": 685962,
+          "compressedBytes": 208620,
+          "crc32": "6fa1147c",
+          "offset": 51294351,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA9761",
+      "representationId": "BP4963",
+      "en": "right transversus thoracis",
+      "side": "right",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1461"
+      ],
+      "reason": "Identificable, aplazado para mantener un conjunto acotado; la espalda profunda ya incluye cuatro subdivisiones verificadas de erectores.",
+      "archiveEntries": {
+        "FJ1461": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1461.obj",
+          "bytes": 421855,
+          "compressedBytes": 122878,
+          "crc32": "60a377f1",
+          "offset": 38744196,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA71442",
+      "representationId": "BP9131",
+      "en": "set of anterior cervical intertransversarii",
+      "side": "unspecified",
+      "sourceType": "set/group or other anatomical entity",
+      "elementIds": [
+        "FJ1549",
+        "FJ1549M"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1549": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1549.obj",
+          "bytes": 97662,
+          "compressedBytes": 30423,
+          "crc32": "12ad840c",
+          "offset": 52956632,
+          "method": 8
+        },
+        "FJ1549M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1549M.obj",
+          "bytes": 96761,
+          "compressedBytes": 30505,
+          "crc32": "a90e6de3",
+          "offset": 52987115,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA74078",
+      "representationId": "BP8675",
+      "en": "set of left levatores costarum breves",
+      "side": "left",
+      "sourceType": "set/group or other anatomical entity",
+      "elementIds": [
+        "FJ1462M"
+      ],
+      "reason": "Conjunto/representación segmentaria sin desglose vertebral o costal completo verificable; requiere una curación específica posterior.",
+      "archiveEntries": {
+        "FJ1462M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1462M.obj",
+          "bytes": 546844,
+          "compressedBytes": 164408,
+          "crc32": "36629ad7",
+          "offset": 39154915,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA74076",
+      "representationId": "BP8466",
+      "en": "set of left levatores costarum longi",
+      "side": "left",
+      "sourceType": "set/group or other anatomical entity",
+      "elementIds": [
+        "FJ1463M"
+      ],
+      "reason": "Conjunto/representación segmentaria sin desglose vertebral o costal completo verificable; requiere una curación específica posterior.",
+      "archiveEntries": {
+        "FJ1463M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1463M.obj",
+          "bytes": 908762,
+          "compressedBytes": 277929,
+          "crc32": "0aa70f77",
+          "offset": 39597869,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA71443",
+      "representationId": "BP8656",
+      "en": "set of posterior cervical intertransversarii",
+      "side": "unspecified",
+      "sourceType": "set/group or other anatomical entity",
+      "elementIds": [
+        "FJ1553",
+        "FJ1553M"
+      ],
+      "reason": "Cuello/cabeza fuera del alcance de Fase 3B; se conservan sólo las subdivisiones torácicas/lumbares aprobadas.",
+      "archiveEntries": {
+        "FJ1553": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1553.obj",
+          "bytes": 96067,
+          "compressedBytes": 29636,
+          "crc32": "5084cf73",
+          "offset": 53152927,
+          "method": 8
+        },
+        "FJ1553M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1553M.obj",
+          "bytes": 95027,
+          "compressedBytes": 29649,
+          "crc32": "1b4050b1",
+          "offset": 53182623,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA74077",
+      "representationId": "BP6639",
+      "en": "set of right levatores costarum breves",
+      "side": "right",
+      "sourceType": "set/group or other anatomical entity",
+      "elementIds": [
+        "FJ1462"
+      ],
+      "reason": "Conjunto/representación segmentaria sin desglose vertebral o costal completo verificable; requiere una curación específica posterior.",
+      "archiveEntries": {
+        "FJ1462": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1462.obj",
+          "bytes": 554594,
+          "compressedBytes": 164997,
+          "crc32": "cc01cb69",
+          "offset": 38989858,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA74075",
+      "representationId": "BP6637",
+      "en": "set of right levatores costarum longi",
+      "side": "right",
+      "sourceType": "set/group or other anatomical entity",
+      "elementIds": [
+        "FJ1463"
+      ],
+      "reason": "Conjunto/representación segmentaria sin desglose vertebral o costal completo verificable; requiere una curación específica posterior.",
+      "archiveEntries": {
+        "FJ1463": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1463.obj",
+          "bytes": 916816,
+          "compressedBytes": 278425,
+          "crc32": "f41c6d40",
+          "offset": 39319384,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA77179",
+      "representationId": "BP8423",
+      "en": "spinalis — elements without narrower represented concept",
+      "side": "unspecified",
+      "sourceType": "group/unresolved subdivision",
+      "elementIds": [
+        "FJ1543",
+        "FJ1543M"
+      ],
+      "reason": "FJ1543/FJ1543M no tienen una subdivisión nominal más específica representada; no se adivina región, lateralidad o identidad por el número de archivo.",
+      "archiveEntries": {
+        "FJ1543": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1543.obj",
+          "bytes": 103745,
+          "compressedBytes": 32333,
+          "crc32": "1120a108",
+          "offset": 51710940,
+          "method": 8
+        },
+        "FJ1543M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1543M.obj",
+          "bytes": 102979,
+          "compressedBytes": 32388,
+          "crc32": "ffd0b118",
+          "offset": 51743333,
+          "method": 8
+        }
+      }
+    },
+    {
+      "sourceId": "FMA23083",
+      "representationId": "BP8398",
+      "en": "thoracic rotator",
+      "side": "unspecified",
+      "sourceType": "muscle organ",
+      "elementIds": [
+        "FJ1525",
+        "FJ1525M"
+      ],
+      "reason": "Conjunto/representación segmentaria sin desglose vertebral o costal completo verificable; requiere una curación específica posterior.",
+      "archiveEntries": {
+        "FJ1525": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1525.obj",
+          "bytes": 1041654,
+          "compressedBytes": 317974,
+          "crc32": "d1585614",
+          "offset": 46480856,
+          "method": 8
+        },
+        "FJ1525M": {
+          "path": "isa_BP3D_4.0_obj_99/FJ1525M.obj",
+          "bytes": 1031392,
+          "compressedBytes": 317106,
+          "crc32": "36e3b038",
+          "offset": 46798890,
+          "method": 8
+        }
+      }
+    }
+  ],
+  "absent": [
+    {
+      "name": "rectus abdominis",
+      "query": "rectus.*abdom|abdom.*rectus",
+      "status": "No identified concept/binding in the two inspected English 4.0 export tables; not a claim about all BP3D versions or the living body."
+    },
+    {
+      "name": "internal oblique",
+      "query": "internal.*obliq|obliq.*intern",
+      "status": "No identified concept/binding in the two inspected English 4.0 export tables; not a claim about all BP3D versions or the living body."
+    },
+    {
+      "name": "transversus abdominis",
+      "query": "transvers.*abdom|abdom.*transvers",
+      "status": "No identified concept/binding in the two inspected English 4.0 export tables; not a claim about all BP3D versions or the living body."
+    },
+    {
+      "name": "latissimus dorsi",
+      "query": "latiss",
+      "status": "No identified concept/binding in the two inspected English 4.0 export tables; not a claim about all BP3D versions or the living body."
+    },
+    {
+      "name": "quadratus lumborum",
+      "query": "quadratus.*lumb|lumb.*quadratus",
+      "status": "No identified concept/binding in the two inspected English 4.0 export tables; not a claim about all BP3D versions or the living body."
+    },
+    {
+      "name": "pyramidalis",
+      "query": "pyramid",
+      "status": "No identified concept/binding in the two inspected English 4.0 export tables; not a claim about all BP3D versions or the living body."
+    },
+    {
+      "name": "multifidus",
+      "query": "multif",
+      "status": "No identified concept/binding in the two inspected English 4.0 export tables; not a claim about all BP3D versions or the living body."
+    }
+  ],
+  "discovery": {
+    "candidatePattern": "pectoralis|serratus|intercostal muscle|external oblique|trapezius|rhomboid|iliocostalis|longissimus|spinalis|diaphragm|subclavius|teres major|rotator|intertransversar|levatores costarum|levator scapulae|linea alba|transversus thoracis",
+    "broadNameQueries": {
+      "abdom": {
+        "isa_parts_list_e.txt": [
+          {
+            "sourceId": "FMA3789",
+            "en": "abdominal aorta"
+          },
+          {
+            "sourceId": "FMA9620",
+            "en": "muscle of abdomen"
+          },
+          {
+            "sourceId": "FMA20278",
+            "en": "muscle of anterior abdominal wall"
+          },
+          {
+            "sourceId": "FMA34699",
+            "en": "abdominal part of pectoralis major"
+          },
+          {
+            "sourceId": "FMA45874",
+            "en": "abdominal part of right pectoralis major"
+          },
+          {
+            "sourceId": "FMA45875",
+            "en": "abdominal part of left pectoralis major"
+          }
+        ],
+        "partof_parts_list_e.txt": [
+          {
+            "sourceId": "FMA3789",
+            "en": "abdominal aorta"
+          },
+          {
+            "sourceId": "FMA9577",
+            "en": "abdomen"
+          },
+          {
+            "sourceId": "FMA10429",
+            "en": "wall of abdomen proper"
+          },
+          {
+            "sourceId": "FMA14627",
+            "en": "anterior abdominal wall"
+          },
+          {
+            "sourceId": "FMA14628",
+            "en": "posterior abdominal wall"
+          },
+          {
+            "sourceId": "FMA45874",
+            "en": "abdominal part of right pectoralis major"
+          },
+          {
+            "sourceId": "FMA45875",
+            "en": "abdominal part of left pectoralis major"
+          },
+          {
+            "sourceId": "FMA61680",
+            "en": "abdomen proper"
+          },
+          {
+            "sourceId": "FMA61681",
+            "en": "back of abdomen"
+          },
+          {
+            "sourceId": "FMA78435",
+            "en": "musculature of anterior abdominal wall"
+          },
+          {
+            "sourceId": "FMA85031",
+            "en": "compartment of abdomen"
+          },
+          {
+            "sourceId": "FMA86917",
+            "en": "musculature of abdomen"
+          },
+          {
+            "sourceId": "FMA259054",
+            "en": "wall of abdomen"
+          },
+          {
+            "sourceId": "FMA259211",
+            "en": "abdominal segment of trunk"
+          },
+          {
+            "sourceId": "FMA259248",
+            "en": "content of abdomen"
+          }
+        ]
+      },
+      "obliq": {
+        "isa_parts_list_e.txt": [
+          {
+            "sourceId": "FMA13335",
+            "en": "external oblique"
+          },
+          {
+            "sourceId": "FMA13336",
+            "en": "right external oblique"
+          },
+          {
+            "sourceId": "FMA13337",
+            "en": "left external oblique"
+          },
+          {
+            "sourceId": "FMA32527",
+            "en": "obliquus capitis superior"
+          },
+          {
+            "sourceId": "FMA32528",
+            "en": "obliquus capitis inferior"
+          },
+          {
+            "sourceId": "FMA32534",
+            "en": "right obliquus capitis superior"
+          },
+          {
+            "sourceId": "FMA32535",
+            "en": "left obliquus capitis superior"
+          },
+          {
+            "sourceId": "FMA32536",
+            "en": "right obliquus capitis inferior"
+          },
+          {
+            "sourceId": "FMA32537",
+            "en": "left obliquus capitis inferior"
+          },
+          {
+            "sourceId": "FMA46014",
+            "en": "oblique head of adductor hallucis"
+          },
+          {
+            "sourceId": "FMA46018",
+            "en": "oblique head of right adductor hallucis"
+          },
+          {
+            "sourceId": "FMA46019",
+            "en": "oblique head of left adductor hallucis"
+          },
+          {
+            "sourceId": "FMA46119",
+            "en": "oblique head of adductor pollicis"
+          },
+          {
+            "sourceId": "FMA46121",
+            "en": "oblique head of right adductor pollicis"
+          },
+          {
+            "sourceId": "FMA46122",
+            "en": "oblique head of left adductor pollicis"
+          },
+          {
+            "sourceId": "FMA46280",
+            "en": "superior oblique part of longus colli"
+          },
+          {
+            "sourceId": "FMA46281",
+            "en": "inferior oblique part of longus colli"
+          },
+          {
+            "sourceId": "FMA46284",
+            "en": "superior oblique part of left longus colli"
+          },
+          {
+            "sourceId": "FMA46288",
+            "en": "inferior oblique part of left longus colli"
+          },
+          {
+            "sourceId": "FMA46583",
+            "en": "oblique arytenoid"
+          },
+          {
+            "sourceId": "FMA46584",
+            "en": "right oblique arytenoid"
+          },
+          {
+            "sourceId": "FMA46585",
+            "en": "left oblique arytenoid"
+          },
+          {
+            "sourceId": "FMA46601",
+            "en": "zone of oblique arytenoid"
+          },
+          {
+            "sourceId": "FMA46610",
+            "en": "oblique part of cricothyroid"
+          },
+          {
+            "sourceId": "FMA46613",
+            "en": "oblique part of right cricothyroid"
+          },
+          {
+            "sourceId": "FMA46614",
+            "en": "oblique part of left cricothyroid"
+          },
+          {
+            "sourceId": "FMA49039",
+            "en": "superior oblique"
+          },
+          {
+            "sourceId": "FMA49040",
+            "en": "inferior oblique"
+          },
+          {
+            "sourceId": "FMA49050",
+            "en": "right inferior oblique"
+          },
+          {
+            "sourceId": "FMA49051",
+            "en": "left inferior oblique"
+          },
+          {
+            "sourceId": "FMA49052",
+            "en": "right superior oblique"
+          },
+          {
+            "sourceId": "FMA49053",
+            "en": "left superior oblique"
+          },
+          {
+            "sourceId": "FMA49065",
+            "en": "trochlea of superior oblique"
+          },
+          {
+            "sourceId": "FMA49067",
+            "en": "trochlea of right superior oblique"
+          },
+          {
+            "sourceId": "FMA49068",
+            "en": "trochlea of left superior oblique"
+          }
+        ],
+        "partof_parts_list_e.txt": [
+          {
+            "sourceId": "FMA13336",
+            "en": "right external oblique"
+          },
+          {
+            "sourceId": "FMA13337",
+            "en": "left external oblique"
+          },
+          {
+            "sourceId": "FMA49050",
+            "en": "right inferior oblique"
+          },
+          {
+            "sourceId": "FMA49051",
+            "en": "left inferior oblique"
+          },
+          {
+            "sourceId": "FMA49052",
+            "en": "right superior oblique"
+          },
+          {
+            "sourceId": "FMA49053",
+            "en": "left superior oblique"
+          }
+        ]
+      },
+      "transvers": {
+        "isa_parts_list_e.txt": [
+          {
+            "sourceId": "FMA9760",
+            "en": "transversus thoracis"
+          },
+          {
+            "sourceId": "FMA9761",
+            "en": "right transversus thoracis"
+          },
+          {
+            "sourceId": "FMA9762",
+            "en": "left transversus thoracis"
+          },
+          {
+            "sourceId": "FMA10664",
+            "en": "transverse cervical artery"
+          },
+          {
+            "sourceId": "FMA10682",
+            "en": "left transverse cervical artery"
+          },
+          {
+            "sourceId": "FMA10699",
+            "en": "right transverse cervical artery"
+          },
+          {
+            "sourceId": "FMA14546",
+            "en": "transverse colon"
+          },
+          {
+            "sourceId": "FMA14647",
+            "en": "transverse mesocolon"
+          },
+          {
+            "sourceId": "FMA22848",
+            "en": "intertransversarius muscle"
+          },
+          {
+            "sourceId": "FMA22849",
+            "en": "lumbar intertransversarius"
+          },
+          {
+            "sourceId": "FMA22850",
+            "en": "lateral lumbar intertransversarius"
+          },
+          {
+            "sourceId": "FMA22851",
+            "en": "medial lumbar intertransversarius"
+          },
+          {
+            "sourceId": "FMA32556",
+            "en": "transverse part of trapezius"
+          },
+          {
+            "sourceId": "FMA33584",
+            "en": "transverse part of right trapezius"
+          },
+          {
+            "sourceId": "FMA33585",
+            "en": "transverse part of left trapezius"
+          },
+          {
+            "sourceId": "FMA46015",
+            "en": "transverse head of adductor hallucis"
+          },
+          {
+            "sourceId": "FMA46020",
+            "en": "transverse head of right adductor hallucis"
+          },
+          {
+            "sourceId": "FMA46021",
+            "en": "transverse head of left adductor hallucis"
+          },
+          {
+            "sourceId": "FMA46120",
+            "en": "transverse head of adductor pollicis"
+          },
+          {
+            "sourceId": "FMA46123",
+            "en": "transverse head of right adductor pollicis"
+          },
+          {
+            "sourceId": "FMA46124",
+            "en": "transverse head of left adductor pollicis"
+          },
+          {
+            "sourceId": "FMA46582",
+            "en": "transverse arytenoid"
+          },
+          {
+            "sourceId": "FMA71442",
+            "en": "set of anterior cervical intertransversarii"
+          },
+          {
+            "sourceId": "FMA71443",
+            "en": "set of posterior cervical intertransversarii"
+          },
+          {
+            "sourceId": "FMA86020",
+            "en": "subdivision of transverse cervical artery"
+          }
+        ],
+        "partof_parts_list_e.txt": [
+          {
+            "sourceId": "FMA9761",
+            "en": "right transversus thoracis"
+          },
+          {
+            "sourceId": "FMA9762",
+            "en": "left transversus thoracis"
+          },
+          {
+            "sourceId": "FMA10682",
+            "en": "left transverse cervical artery"
+          },
+          {
+            "sourceId": "FMA10699",
+            "en": "right transverse cervical artery"
+          },
+          {
+            "sourceId": "FMA14546",
+            "en": "transverse colon"
+          },
+          {
+            "sourceId": "FMA14647",
+            "en": "transverse mesocolon"
+          }
+        ]
+      },
+      "latiss": {
+        "isa_parts_list_e.txt": [],
+        "partof_parts_list_e.txt": []
+      },
+      "rectus": {
+        "isa_parts_list_e.txt": [
+          {
+            "sourceId": "FMA22430",
+            "en": "rectus femoris"
+          },
+          {
+            "sourceId": "FMA32525",
+            "en": "rectus capitis posterior major"
+          },
+          {
+            "sourceId": "FMA32526",
+            "en": "rectus capitis posterior minor"
+          },
+          {
+            "sourceId": "FMA32530",
+            "en": "right rectus capitis posterior major"
+          },
+          {
+            "sourceId": "FMA32531",
+            "en": "left rectus capitis posterior major"
+          },
+          {
+            "sourceId": "FMA32532",
+            "en": "right rectus capitis posterior minor"
+          },
+          {
+            "sourceId": "FMA32533",
+            "en": "left rectus capitis posterior minor"
+          },
+          {
+            "sourceId": "FMA38928",
+            "en": "right rectus femoris"
+          },
+          {
+            "sourceId": "FMA38929",
+            "en": "left rectus femoris"
+          },
+          {
+            "sourceId": "FMA46312",
+            "en": "rectus capitis anterior"
+          },
+          {
+            "sourceId": "FMA46313",
+            "en": "right rectus capitis anterior"
+          },
+          {
+            "sourceId": "FMA46314",
+            "en": "left rectus capitis anterior"
+          },
+          {
+            "sourceId": "FMA46316",
+            "en": "rectus capitis lateralis"
+          },
+          {
+            "sourceId": "FMA46317",
+            "en": "right rectus capitis lateralis"
+          },
+          {
+            "sourceId": "FMA46318",
+            "en": "left rectus capitis lateralis"
+          },
+          {
+            "sourceId": "FMA49035",
+            "en": "superior rectus"
+          },
+          {
+            "sourceId": "FMA49036",
+            "en": "inferior rectus"
+          },
+          {
+            "sourceId": "FMA49037",
+            "en": "medial rectus"
+          },
+          {
+            "sourceId": "FMA49038",
+            "en": "lateral rectus"
+          },
+          {
+            "sourceId": "FMA49044",
+            "en": "right superior rectus"
+          },
+          {
+            "sourceId": "FMA49045",
+            "en": "left superior rectus"
+          },
+          {
+            "sourceId": "FMA49046",
+            "en": "right inferior rectus"
+          },
+          {
+            "sourceId": "FMA49047",
+            "en": "left inferior rectus"
+          },
+          {
+            "sourceId": "FMA49054",
+            "en": "right lateral rectus"
+          },
+          {
+            "sourceId": "FMA49055",
+            "en": "left lateral rectus"
+          },
+          {
+            "sourceId": "FMA49056",
+            "en": "right medial rectus"
+          },
+          {
+            "sourceId": "FMA49057",
+            "en": "left medial rectus"
+          },
+          {
+            "sourceId": "FMA49143",
+            "en": "check ligament of lateral rectus"
+          },
+          {
+            "sourceId": "FMA49144",
+            "en": "check ligament of right lateral rectus"
+          },
+          {
+            "sourceId": "FMA49145",
+            "en": "check ligament of left lateral rectus"
+          },
+          {
+            "sourceId": "FMA49146",
+            "en": "check ligament of medial rectus"
+          },
+          {
+            "sourceId": "FMA49147",
+            "en": "check ligament of right medial rectus"
+          },
+          {
+            "sourceId": "FMA49148",
+            "en": "check ligament of left medial rectus"
+          }
+        ],
+        "partof_parts_list_e.txt": [
+          {
+            "sourceId": "FMA49044",
+            "en": "right superior rectus"
+          },
+          {
+            "sourceId": "FMA49045",
+            "en": "left superior rectus"
+          },
+          {
+            "sourceId": "FMA49046",
+            "en": "right inferior rectus"
+          },
+          {
+            "sourceId": "FMA49047",
+            "en": "left inferior rectus"
+          },
+          {
+            "sourceId": "FMA49054",
+            "en": "right lateral rectus"
+          },
+          {
+            "sourceId": "FMA49055",
+            "en": "left lateral rectus"
+          },
+          {
+            "sourceId": "FMA49056",
+            "en": "right medial rectus"
+          },
+          {
+            "sourceId": "FMA49057",
+            "en": "left medial rectus"
+          }
+        ]
+      },
+      "quadratus": {
+        "isa_parts_list_e.txt": [
+          {
+            "sourceId": "FMA22321",
+            "en": "quadratus femoris"
+          },
+          {
+            "sourceId": "FMA22338",
+            "en": "right quadratus femoris"
+          },
+          {
+            "sourceId": "FMA22339",
+            "en": "left quadratus femoris"
+          },
+          {
+            "sourceId": "FMA38453",
+            "en": "pronator quadratus"
+          },
+          {
+            "sourceId": "FMA38454",
+            "en": "right pronator quadratus"
+          },
+          {
+            "sourceId": "FMA38455",
+            "en": "left pronator quadratus"
+          }
+        ],
+        "partof_parts_list_e.txt": []
+      },
+      "pyramid": {
+        "isa_parts_list_e.txt": [],
+        "partof_parts_list_e.txt": []
+      },
+      "multif": {
+        "isa_parts_list_e.txt": [],
+        "partof_parts_list_e.txt": []
+      }
+    }
+  },
+  "groupingNotes": [
+    "Editorial muscle parents aggregate the three named pectoralis major/trapezius portions; no IS-A edge is promoted to PART-OF.",
+    "PART-OF names pectoralis major FMA13373/FMA13374 but includes only sternocostal and abdominal portions. Its omission of the clavicular portion is preserved as export incompleteness.",
+    "Clavicular pectoralis is labelled part but classified under head of muscle organ. Both classifications are preserved.",
+    "Ascending and descending trapezius are under organ zone FMA55268, outside the previous 403-element union. The transverse portion is under zone of muscle organ.",
+    "The four selected erector subdivisions do not represent the complete erector spinae group. No synthetic complete-group geometry is created.",
+    "Back is an editorial study region. Teres major belongs to the scapulohumeral transition, not to intrinsic spinal musculature.",
+    "No source OBJ header, geometry, vertex count, triangle count or anatomical fit is claimed validated by this metadata audit."
+  ],
+  "groupingSources": [
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/partof_inclusion_relation_list.txt"
+  ]
+}

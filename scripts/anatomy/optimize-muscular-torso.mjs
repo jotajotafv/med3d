@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Meshopt compression + source-to-decoded validation for all 26 pilot OBJ.
+/** Meshopt compression + source-to-decoded validation for all 34 audited torso OBJ.
  * No decimation. Validates each triangle (including orientation and duplicates),
  * every used source vertex, source/GLB names, FMA/FJ ownership, and global metres.
  */
@@ -15,7 +15,7 @@ const args = process.argv.slice(2);
 const option = (name, fallback) => args.includes(name) ? args[args.indexOf(name) + 1] : fallback;
 const out = path.resolve(option('--output', path.join(root, 'public/models/anatomy/muscular')));
 const toolsDir = path.resolve(option('--tools-dir', path.join(root, '.cache/anatomy-tools')));
-const sourceZip = path.resolve(option('--source', path.join(root, 'research/anatomy/muscular-pilot-originals.zip')));
+const sourceZip = path.resolve(option('--source', path.join(root, 'research/anatomy/muscular-torso-originals.zip')));
 const verifyOnly = args.includes('--verify-only');
 const require = createRequire(path.join(toolsDir, 'package.json'));
 const imp = async name => import(pathToFileURL(require.resolve(name)).href);
@@ -26,7 +26,7 @@ await Promise.all([MeshoptEncoder.ready, MeshoptDecoder.ready]);
 const io = new NodeIO().registerExtensions(ALL_EXTENSIONS)
   .registerDependencies({ 'meshopt.encoder': MeshoptEncoder, 'meshopt.decoder': MeshoptDecoder });
 const catalog = JSON.parse(await fs.readFile(path.join(out, 'catalog.json'), 'utf8'));
-const manifest = JSON.parse(await fs.readFile(path.join(out, 'source-manifest.json'), 'utf8'));
+const manifest = JSON.parse(await fs.readFile(path.join(out, 'torso-source-manifest.json'), 'utf8'));
 const hash = data => crypto.createHash('sha256').update(data).digest('hex');
 if (hash(await fs.readFile(sourceZip)) !== manifest.sourceZipSha256) throw Error('Source ZIP SHA-256 mismatch');
 
@@ -50,10 +50,10 @@ with zipfile.ZipFile(sys.argv[1]) as z:
   result[filename.rsplit('/',1)[-1][:-4]]=dict(positions=positions,faces=faces,sha256=hashlib.sha256(data).hexdigest())
 print(json.dumps(result,separators=(',',':')))
 `;
-const parsed = spawnSync(process.env.ANATOMY_PYTHON || 'python', ['-c', originalParser, sourceZip], { encoding: 'utf8', maxBuffer: 32 * 1024 * 1024 });
+const parsed = spawnSync(process.env.ANATOMY_PYTHON || 'python', ['-c', originalParser, sourceZip], { encoding: 'utf8', maxBuffer: 128 * 1024 * 1024 });
 if (parsed.status !== 0) throw Error(parsed.stderr || 'Could not read original OBJ references');
 const originals = JSON.parse(parsed.stdout);
-if (Object.keys(originals).length !== 26) throw Error('Expected exactly 26 original pilot elements');
+if (Object.keys(originals).length !== 34) throw Error('Expected exactly 34 approved torso elements');
 const tolerance = 0.00005; // 0.05 mm numerical conversion tolerance, not clinical accuracy.
 
 function canonicalTriangle(a, b, c) {
@@ -118,14 +118,12 @@ const report = { pipeline: '@gltf-transform 4.5.0; meshoptimizer 1.2.0', positio
   method: 'Original OBJ double coordinates transformed once; decoded GLB world positions nearest-matched within 0.05 mm; every oriented source triangle and duplicate occurrence matched, and every used source position retained.',
   sourceZipSha256: manifest.sourceZipSha256, modules: [], totalBytes: 0, totalTriangles: 0, totalMeshes: 0,
   totalVertices: 0, totalDecodedAccessorBytes: 0, maxPositionErrorMetres: 0, maxBoundsErrorMetres: 0 };
-// Preserve the original cohort when the public catalog also contains torso.
-const pilotAssets = catalog.assets.filter(asset => asset.provenanceId === 'bodyparts3d-4.0-muscular-pilot');
-for (const asset of pilotAssets) {
+for (const asset of catalog.assets.filter(asset => asset.provenanceId === 'bodyparts3d-4.0-muscular-torso')) {
   const file = path.join(out, path.basename(asset.path));
   const doc = await io.read(file);
   const compressed = doc.getRoot().listExtensionsUsed().some(e => e.extensionName === 'EXT_meshopt_compression');
   if (!verifyOnly) {
-    if (compressed) throw Error('Run build-muscular-pilot.py first; do not repeatedly quantize output.');
+    if (compressed) throw Error('Run build-muscular-torso.py first; do not repeatedly quantize output.');
     // Source positions can be much closer than a 16-bit grid interval. Retain
     // float32 POSITION losslessly under Meshopt; quantize only display normals.
     await doc.transform(reorder({ encoder: MeshoptEncoder, target: 'size' }),
@@ -136,7 +134,7 @@ for (const asset of pilotAssets) {
     doc.createExtension(EXTMeshoptCompression).setRequired(true)
       .setEncoderOptions({ method: EXTMeshoptCompression.EncoderMethod.QUANTIZE });
     await io.write(file, doc);
-  } else if (!compressed) throw Error('Final pilot module must use Meshopt');
+  } else if (!compressed) throw Error('Final torso module must use Meshopt');
   const verified = await io.read(file);
   const meshNodes = verified.getRoot().listNodes().filter(n => n.getMesh());
   const expected = catalog.nodes.flatMap(n => n.assetIds.includes(asset.id) ? n.meshNames : []).sort();
@@ -175,12 +173,12 @@ for (const asset of pilotAssets) {
   report.maxPositionErrorMetres = Math.max(report.maxPositionErrorMetres, module.maxPositionErrorMetres);
   report.maxBoundsErrorMetres = Math.max(report.maxBoundsErrorMetres, module.maxBoundsErrorMetres);
 }
-if (report.totalMeshes !== 26 || catalog.nodes.filter(n => n.kind === 'structure' && n.assetIds.some(id => pilotAssets.some(a => a.id === id))).length !== 16) throw Error('Expected 16 muscles / 26 components');
+if (report.totalMeshes !== 34 || catalog.nodes.filter(n => n.kind === 'structure').length !== 42 || catalog.coverage.structures !== 42) throw Error('Expected 26 new muscles / 34 elements and 42 total muscle units');
 if (!verifyOnly) {
   await fs.writeFile(path.join(out, 'catalog.json'), JSON.stringify(catalog, null, 2) + '\n');
-  await fs.writeFile(path.join(out, 'validation.json'), JSON.stringify(report, null, 2) + '\n');
+  await fs.writeFile(path.join(out, 'torso-validation.json'), JSON.stringify(report, null, 2) + '\n');
 } else {
-  const saved = JSON.parse(await fs.readFile(path.join(out, 'validation.json'), 'utf8'));
+  const saved = JSON.parse(await fs.readFile(path.join(out, 'torso-validation.json'), 'utf8'));
   if (JSON.stringify(saved) !== JSON.stringify(report)) throw Error('Saved numerical validation report differs from rechecked geometry');
 }
 console.log(JSON.stringify({ totalBytes: report.totalBytes, totalMeshes: report.totalMeshes, totalTriangles: report.totalTriangles,

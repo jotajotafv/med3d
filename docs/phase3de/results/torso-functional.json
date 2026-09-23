@@ -1,0 +1,159 @@
+{
+  "date": "2026-09-23T22:21:01.848Z",
+  "mode": "functional",
+  "source": "Local production build over unthrottled loopback HTTP; no-store responses",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "deviceScaleFactor": 1,
+    "physicalGpuTested": false
+  },
+  "checks": [
+    {
+      "name": "Full registered body loads original pilot plus 26 torso units / 34 new meshes",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 12,
+      "meshCount": 265,
+      "triangleCount": 1075930,
+      "geometryBytes": 18359392,
+      "drawCalls": 265,
+      "renderGeometries": 269,
+      "renderTextures": 4,
+      "loadMs": 229.59999999403954,
+      "firstGeometryMs": 357.59999999403954,
+      "fullSystemMs": 769.0999999940395
+    },
+    {
+      "name": "Independent torso module load, full release and reload muscular:thorax-anterior",
+      "meshes": 12,
+      "geometryBytes": 2623512
+    },
+    {
+      "name": "Independent torso module load, full release and reload muscular:abdomen",
+      "meshes": 2,
+      "geometryBytes": 3897912
+    },
+    {
+      "name": "Independent torso module load, full release and reload muscular:back",
+      "meshes": 20,
+      "geometryBytes": 3295432
+    },
+    {
+      "name": "All 26 actual torso muscles select through search and expose sourced educational cards at 14 px or larger"
+    },
+    {
+      "name": "Torso Spanish uppercase, accents and documented Latin search keeps type/system/region labels"
+    },
+    {
+      "name": "Expanded torso hierarchy remains virtualized with visible Home/End selection"
+    },
+    {
+      "name": "Anterior, abdominal, posterior and deep posterior muscles preserve selection/isolation/hiding across all six camera views"
+    },
+    {
+      "name": "Pectoral raycast, hover and cyan selection remain distinct",
+      "id": "bp3d:FMA79979"
+    },
+    {
+      "name": "Curated muscle-bone context pectoralismajor",
+      "visibleIds": [
+        "bp3d:FMA13322",
+        "bp3d:FMA23130",
+        "bp3d:FMA34690",
+        "bp3d:FMA45874",
+        "bp3d:FMA7486",
+        "bp3d:FMA7487",
+        "bp3d:FMA7488",
+        "bp3d:FMA79979"
+      ]
+    },
+    {
+      "name": "Curated muscle-bone context externaloblique",
+      "visibleIds": [
+        "bp3d:FMA13336",
+        "bp3d:FMA16586",
+        "bp3d:FMA8066",
+        "bp3d:FMA8175",
+        "bp3d:FMA8229",
+        "bp3d:FMA8283",
+        "bp3d:FMA8364",
+        "bp3d:FMA8445",
+        "bp3d:FMA8531",
+        "bp3d:FMA8533"
+      ]
+    },
+    {
+      "name": "Curated muscle-bone context trapezius",
+      "visibleIds": [
+        "bp3d:FMA10014",
+        "bp3d:FMA10037",
+        "bp3d:FMA10059",
+        "bp3d:FMA10081",
+        "bp3d:FMA12525",
+        "bp3d:FMA13322",
+        "bp3d:FMA13395",
+        "bp3d:FMA33581",
+        "bp3d:FMA33584",
+        "bp3d:FMA33586",
+        "bp3d:FMA52735",
+        "bp3d:FMA9165",
+        "bp3d:FMA9187",
+        "bp3d:FMA9209",
+        "bp3d:FMA9248",
+        "bp3d:FMA9922",
+        "bp3d:FMA9945",
+        "bp3d:FMA9968",
+        "bp3d:FMA9991"
+      ]
+    },
+    {
+      "name": "Curated muscle-bone context rhomboidmajor",
+      "visibleIds": [
+        "bp3d:FMA13381",
+        "bp3d:FMA13395",
+        "bp3d:FMA9187",
+        "bp3d:FMA9209",
+        "bp3d:FMA9248",
+        "bp3d:FMA9922"
+      ]
+    },
+    {
+      "name": "100/75/50/25/10% torso material states over opaque bone in anterior/posterior/lateral views"
+    },
+    {
+      "name": "All explosion levels retain ownership, coherent torso block, determinism and exact restoration"
+    },
+    {
+      "name": "Torso unload/reload releases owned buffers without growth"
+    },
+    {
+      "name": "Rapid torso module cancellation/reload remains bounded"
+    },
+    {
+      "name": "Torso network failure retains healthy anatomy until explicit retry",
+      "attempts": 2,
+      "retainedMeshes": 253
+    },
+    {
+      "name": "Torso tree/search/layers/card responsive 1366"
+    },
+    {
+      "name": "Torso tree/search/layers/card responsive 1050"
+    },
+    {
+      "name": "Torso tree/search/layers/card responsive 900"
+    },
+    {
+      "name": "Torso tree/search/layers/card responsive 390"
+    },
+    {
+      "name": "All existing procedure and first-aid routes remain readable"
+    }
+  ],
+  "captures": [],
+  "measurements": {},
+  "errors": [],
+  "badRequests": [],
+  "success": true
+}

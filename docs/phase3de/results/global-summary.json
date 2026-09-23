@@ -1,0 +1,27 @@
+{
+  "codeCommit": "93bbbd7349f9c5cb66213211d7df52dd1ecc3f6d",
+  "globalRegressionCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+  "targetedCorrectionCommit": "93bbbd7349f9c5cb66213211d7df52dd1ecc3f6d",
+  "globalPasses": 1,
+  "executions": 15,
+  "allExitCodesZero": true,
+  "functionalCheckGroups": {
+    "skeletal": 26,
+    "pilot-functional": 30,
+    "pilot-tree": 1,
+    "torso-functional": 23,
+    "limbs-functional": 32,
+    "final-functional": 13,
+    "site-routes": 3,
+    "search-kind-correction": 9
+  },
+  "totalFunctionalCheckGroups": 137,
+  "capturedConfigurations": [
+    "A-skeletal",
+    "B-muscular",
+    "C-combined",
+    "D-neck"
+  ],
+  "historicalGeometryRebuilt": false,
+  "success": true
+}

@@ -1,0 +1,188 @@
+{
+  "date": "2026-09-23T22:25:16.082Z",
+  "mode": "functional",
+  "source": "Local production build over unthrottled loopback HTTP; no-store responses",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "deviceScaleFactor": 1,
+    "physicalGpuTested": false,
+    "suiteTimeoutMs": 2400000
+  },
+  "checks": [
+    {
+      "name": "Full registered body loads original pilot plus 48 limb muscles / 54 new meshes",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 20,
+      "meshCount": 319,
+      "triangleCount": 1255886,
+      "geometryBytes": 21910788,
+      "drawCalls": 319,
+      "renderGeometries": 323,
+      "renderTextures": 4,
+      "loadMs": 450.39999997615814,
+      "firstGeometryMs": 341.39999997615814,
+      "fullSystemMs": 800
+    },
+    {
+      "name": "Independent limbs module load, full release and reload muscular:gluteal-right",
+      "meshes": 4,
+      "geometryBytes": 237524
+    },
+    {
+      "name": "Independent limbs module load, full release and reload muscular:gluteal-left",
+      "meshes": 4,
+      "geometryBytes": 237444
+    },
+    {
+      "name": "Independent limbs module load, full release and reload muscular:thigh-right",
+      "meshes": 11,
+      "geometryBytes": 817952
+    },
+    {
+      "name": "Independent limbs module load, full release and reload muscular:thigh-left",
+      "meshes": 11,
+      "geometryBytes": 817852
+    },
+    {
+      "name": "Independent limbs module load, full release and reload muscular:leg-right",
+      "meshes": 7,
+      "geometryBytes": 517084
+    },
+    {
+      "name": "Independent limbs module load, full release and reload muscular:leg-left",
+      "meshes": 7,
+      "geometryBytes": 517084
+    },
+    {
+      "name": "Independent limbs module load, full release and reload muscular:forearm-right",
+      "meshes": 5,
+      "geometryBytes": 202948
+    },
+    {
+      "name": "Independent limbs module load, full release and reload muscular:forearm-left",
+      "meshes": 5,
+      "geometryBytes": 203508
+    },
+    {
+      "name": "All 48 actual limb muscles select through search and expose sourced educational cards at 14 px or larger"
+    },
+    {
+      "name": "All 12 source heads retain component cards and short biceps innervation"
+    },
+    {
+      "name": "Quadriceps remains four muscles with grouped ipsilateral bone context on both sides"
+    },
+    {
+      "name": "Limbs Spanish uppercase, accents and documented Latin search keeps type/system/region labels"
+    },
+    {
+      "name": "Expanded limbs hierarchy remains virtualized with visible Home/End selection"
+    },
+    {
+      "name": "Thigh, leg and forearm muscles preserve selection/isolation/hiding across all six camera views"
+    },
+    {
+      "name": "Rectus femoris raycast, hover and cyan selection remain distinct",
+      "id": "bp3d:FMA38928"
+    },
+    {
+      "name": "Curated muscle-bone context rectusfemoris",
+      "visibleIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24477",
+        "bp3d:FMA24486",
+        "bp3d:FMA38928"
+      ]
+    },
+    {
+      "name": "Curated muscle-bone context sartorius",
+      "visibleIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA22354",
+        "bp3d:FMA24477"
+      ]
+    },
+    {
+      "name": "Curated muscle-bone context bicepsfemoris",
+      "visibleIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA24477",
+        "bp3d:FMA24480",
+        "bp3d:FMA45888",
+        "bp3d:FMA45891"
+      ]
+    },
+    {
+      "name": "Curated muscle-bone context tibialisposterior",
+      "visibleIds": [
+        "bp3d:FMA24477",
+        "bp3d:FMA24480",
+        "bp3d:FMA24500",
+        "bp3d:FMA24509",
+        "bp3d:FMA24511",
+        "bp3d:FMA24513",
+        "bp3d:FMA24523",
+        "bp3d:FMA65018"
+      ]
+    },
+    {
+      "name": "Curated muscle-bone context gastrocnemius",
+      "visibleIds": [
+        "bp3d:FMA24474",
+        "bp3d:FMA24497",
+        "bp3d:FMA45957",
+        "bp3d:FMA45960"
+      ]
+    },
+    {
+      "name": "Curated muscle-bone context pronatorteres",
+      "visibleIds": [
+        "bp3d:FMA23130",
+        "bp3d:FMA23464",
+        "bp3d:FMA23467",
+        "bp3d:FMA38560",
+        "bp3d:FMA38562"
+      ]
+    },
+    {
+      "name": "100/75/50/25/10% limbs material states over opaque bone in anterior/posterior/lateral views"
+    },
+    {
+      "name": "All explosion levels retain ownership, coherent limbs block, determinism and exact restoration"
+    },
+    {
+      "name": "Limbs unload/reload releases owned buffers without growth"
+    },
+    {
+      "name": "Rapid limbs module cancellation/reload remains bounded"
+    },
+    {
+      "name": "Limbs network failure retains healthy anatomy until explicit retry",
+      "attempts": 2,
+      "retainedMeshes": 308
+    },
+    {
+      "name": "Limbs tree/search/layers/card responsive 1366"
+    },
+    {
+      "name": "Limbs tree/search/layers/card responsive 1050"
+    },
+    {
+      "name": "Limbs tree/search/layers/card responsive 900"
+    },
+    {
+      "name": "Limbs tree/search/layers/card responsive 390"
+    },
+    {
+      "name": "All existing procedure and first-aid routes remain readable"
+    }
+  ],
+  "captures": [],
+  "measurements": {},
+  "errors": [],
+  "badRequests": [],
+  "success": true
+}

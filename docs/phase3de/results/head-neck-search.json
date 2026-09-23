@@ -1,0 +1,57 @@
+{
+  "codeCommit": "93bbbd7349f9c5cb66213211d7df52dd1ecc3f6d",
+  "workingTreeDirty": true,
+  "implementationDirty": false,
+  "date": "2026-09-23T22:40:26.583Z",
+  "mode": "search",
+  "source": "Local production build over unthrottled loopback HTTP; no-store responses",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "deviceScaleFactor": 1,
+    "physicalGpuTested": false
+  },
+  "checks": [
+    {
+      "name": "Precise legacy search kind Corazón",
+      "expected": "Órgano"
+    },
+    {
+      "name": "Precise legacy search kind Encéfalo",
+      "expected": "Órgano"
+    },
+    {
+      "name": "Precise legacy search kind Pulmón izquierdo",
+      "expected": "Órgano"
+    },
+    {
+      "name": "Precise legacy search kind Pulmones",
+      "expected": "Grupo de órganos"
+    },
+    {
+      "name": "Precise legacy search kind Ventrículo derecho",
+      "expected": "Componente"
+    },
+    {
+      "name": "Precise body search kind Frontal",
+      "expected": "Hueso"
+    },
+    {
+      "name": "Precise body search kind Esternocleidomastoideo derecho",
+      "expected": "Músculo"
+    },
+    {
+      "name": "Precise body search kind Porción clavicular del deltoides derecho",
+      "expected": "Componente"
+    },
+    {
+      "name": "Precise body search kind Cuello",
+      "expected": "Región"
+    }
+  ],
+  "captures": [],
+  "measurements": {},
+  "errors": [],
+  "badRequests": [],
+  "success": true
+}

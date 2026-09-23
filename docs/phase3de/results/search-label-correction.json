@@ -1,0 +1,20 @@
+{
+  "integrationCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+  "finalCodeCommit": "93bbbd7349f9c5cb66213211d7df52dd1ecc3f6d",
+  "trigger": "Individual inspection of capture 21 found ambiguous Organ/component label; bone structures also had a generic Structure label.",
+  "changedFiles": [
+    "scripts/anatomy/head-neck-qa.mjs",
+    "src/features/anatomy/atlas/SkeletalAtlas.tsx"
+  ],
+  "newChecks": 9,
+  "globalRegressionRepeated": false,
+  "affectedValidation": [
+    "typecheck",
+    "production build",
+    "nine search-kind browser cases",
+    "updated capture 21"
+  ],
+  "geometryCatalogMaterialsCameraExplosionLoaderChanged": false,
+  "performanceRetainedFromIntegrationCommit": true,
+  "browserTeardownNote": "The targeted runner logged a 5-second browser teardown deadline after all nine checks; exit code 0, no page or HTTP errors."
+}

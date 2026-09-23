@@ -1,0 +1,10 @@
+PASS Precise legacy search kind Corazón {"expected":"Órgano"}
+PASS Precise legacy search kind Encéfalo {"expected":"Órgano"}
+PASS Precise legacy search kind Pulmón izquierdo {"expected":"Órgano"}
+PASS Precise legacy search kind Pulmones {"expected":"Grupo de órganos"}
+PASS Precise legacy search kind Ventrículo derecho {"expected":"Componente"}
+PASS Precise body search kind Frontal {"expected":"Hueso"}
+PASS Precise body search kind Esternocleidomastoideo derecho {"expected":"Músculo"}
+PASS Precise body search kind Porción clavicular del deltoides derecho {"expected":"Componente"}
+PASS Precise body search kind Cuello {"expected":"Región"}
+Browser teardown: exceeded 5000 ms; partial evidence is retained.

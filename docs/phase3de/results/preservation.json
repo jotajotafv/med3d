@@ -1,0 +1,47 @@
+{
+  "baselineCommit": "5ba794438287a16b6482c6a63d3d2b6ca8ee6542",
+  "codeCommit": "93bbbd7349f9c5cb66213211d7df52dd1ecc3f6d",
+  "method": "Git path diff and exact JSON object equality; no historical binary rebuild or new hash audit.",
+  "changedImplementationPaths": [
+    "package.json",
+    "public/models/anatomy/muscular/catalog.json",
+    "public/models/anatomy/muscular/head-neck-source-manifest.json",
+    "public/models/anatomy/muscular/head-neck-validation.json",
+    "public/models/anatomy/muscular/muscular-neck.glb",
+    "research/anatomy/head-neck-selection.json",
+    "research/anatomy/muscular-head-neck-originals.zip",
+    "research/anatomy/muscular-head-neck-source-lock.json",
+    "scripts/anatomy/audit-head-neck-inventory.py",
+    "scripts/anatomy/build-muscular-head-neck.py",
+    "scripts/anatomy/head-neck-qa.mjs",
+    "scripts/anatomy/limbs-catalog.mjs",
+    "scripts/anatomy/limbs-qa.mjs",
+    "scripts/anatomy/optimize-muscular-head-neck.mjs",
+    "scripts/anatomy/validate-muscular-gltf.mjs",
+    "scripts/test-atlas-head-neck.mjs",
+    "scripts/test-atlas-limbs.mjs",
+    "scripts/test-atlas-multisystem.mjs",
+    "scripts/test-atlas-torso.mjs",
+    "src/features/anatomy/atlas/AtlasScene.tsx",
+    "src/features/anatomy/atlas/SkeletalAtlas.tsx",
+    "src/features/anatomy/atlas/body-catalog.ts",
+    "src/features/anatomy/atlas/catalog-index.ts",
+    "src/features/anatomy/atlas/muscle-education.ts",
+    "src/features/anatomy/atlas/neck-education.ts"
+  ],
+  "historicalGlbFilesChanged": 0,
+  "historicalMuscularIdsPreserved": 175,
+  "historicalMuscularNodesExactlyUnchanged": 174,
+  "expandedHistoricalNodes": [
+    "muscular"
+  ],
+  "newMuscularNodes": 27,
+  "historicalMuscularAssetMetadataPreserved": true,
+  "homeProceduresFirstAidImplementationChanged": false,
+  "success": true,
+  "integrationCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+  "lateCorrectionScope": [
+    "scripts/anatomy/head-neck-qa.mjs",
+    "src/features/anatomy/atlas/SkeletalAtlas.tsx"
+  ]
+}

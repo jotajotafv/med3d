@@ -1,0 +1,882 @@
+{
+  "codeCommitFinal": "93bbbd7349f9c5cb66213211d7df52dd1ecc3f6d",
+  "initialCaptureCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+  "count": 30,
+  "reviewer": "Codex visual inspection of each original PNG",
+  "clinicalValidation": false,
+  "replacement": "21 replaces the ambiguous legacy kind label; acquisition is in site-routes.json.",
+  "addition": "30 documents the existing zoom-out remedy for the fixed title overlay in capture 10.",
+  "unchangedCapturesRetained": "Other views remain valid: the final code changes only search/detail type text, not anatomy or rendering.",
+  "captures": [
+    {
+      "file": "01-cabeza-anterior.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "Cranial bone context. Facial/masticatory coverage absent from the audited tables; no empty muscular head region.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 98,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 92.5,
+        "firstGeometryMs": 518.8000000119209,
+        "fullSystemMs": 518.8000000119209
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 319242,
+      "sha256": "d637406cbebdd6730c04bc98814385bbcdabccda559f19c7a247ff605b12df27",
+      "individuallyInspected": true,
+      "observation": "Cráneo completo en vista anterior, sin recorte superior; sólo contexto óseo y musculatura cervical disponible. Ausencia facial explícita."
+    },
+    {
+      "file": "02-cabeza-lateral.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "Cranial bone context. Facial/masticatory coverage absent from the audited tables; no empty muscular head region.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 87,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 92.5,
+        "firstGeometryMs": 518.8000000119209,
+        "fullSystemMs": 518.8000000119209
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 323652,
+      "sha256": "b2269fbc5521c5b37214701214c416bcd518c10935e28bbf1a7a080204695ac1",
+      "individuallyInspected": true,
+      "observation": "Lateral derecha coherente con el indicador de ejes; cráneo y mandíbula encuadrados, fijaciones cervicales en su marco original."
+    },
+    {
+      "file": "03-cabeza-posterior.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "Cranial bone context. Facial/masticatory coverage absent from the audited tables; no empty muscular head region.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 84,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 92.5,
+        "firstGeometryMs": 518.8000000119209,
+        "fullSystemMs": 518.8000000119209
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 297390,
+      "sha256": "80ed31df0d991c24ae450ca93a73bcf58d942c58a752e2164550b02b24b8cc41",
+      "individuallyInspected": true,
+      "observation": "Occipital y cuello posterior centrados; superposición cervical esperable, sin duplicación visible."
+    },
+    {
+      "file": "04-cuello-anterior.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 138,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 92.5,
+        "firstGeometryMs": 518.8000000119209,
+        "fullSystemMs": 518.8000000119209
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 434454,
+      "sha256": "6be8f4c4749e27e98c7599c7f12e5fe4633692a5d3e77ec4367f46e65da90dd5",
+      "individuallyInspected": true,
+      "observation": "Cuello completo y bilateral en contexto del tórax; la bóveda craneal queda fuera por el enfoque regional. Platisma superficial oculta estructuras profundas."
+    },
+    {
+      "file": "05-cuello-lateral.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 141,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 92.5,
+        "firstGeometryMs": 518.8000000119209,
+        "fullSystemMs": 518.8000000119209
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 377480,
+      "sha256": "f8e5cff6c7d54b94cd01790def60c5e30f9c643966c3a47b15e2b8f8b37c2f47",
+      "individuallyInspected": true,
+      "observation": "Perfil cervical derecho coherente; ECM y platisma se superponen con trapecio/torso. No se desplaza geometría para despejar planos."
+    },
+    {
+      "file": "06-cuello-posterior.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 137,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 92.5,
+        "firstGeometryMs": 518.8000000119209,
+        "fullSystemMs": 518.8000000119209
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 407577,
+      "sha256": "84c9e8599ca9b0647630786bad9d712cca87ab07794cd1a4d604a19eb0841f53",
+      "individuallyInspected": true,
+      "observation": "Trapecio histórico cubre gran parte de los nuevos músculos posteriores; oclusión esperable. Cuello y hombros conservan escala y continuidad de contexto."
+    },
+    {
+      "file": "07-platisma-seleccionado.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Platisma derecho",
+      "note": "Cervical muscle participating in facial expression; not a substitute for absent facial muscles.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 126,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 92.5,
+        "firstGeometryMs": 518.8000000119209,
+        "fullSystemMs": 518.8000000119209
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 409349,
+      "sha256": "959322431b4e83f13c796ea8a55a5251a119307a148a7e58d59a38e299c6638c",
+      "individuallyInspected": true,
+      "observation": "Platisma derecho resaltado en cian y ficha coherente; el enfoque unilateral recorta contexto distante, no la estructura seleccionada."
+    },
+    {
+      "file": "08-platisma-aislado.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Platisma derecho",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 1,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 92.5,
+        "firstGeometryMs": 518.8000000119209,
+        "fullSystemMs": 518.8000000119209
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 293974,
+      "sha256": "84484c5cbee851f5b204e1de949b6d1e69a755d7ad7c6bfcb14dbd21ebe052fb",
+      "individuallyInspected": true,
+      "observation": "Una sola lámina muscular, completa y sin duplicaciones; aislamiento voluntario hace legible su contorno. Faceteado original visible."
+    },
+    {
+      "file": "09-cervical-seleccionado.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Esternocleidomastoideo derecho",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 134,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 92.5,
+        "firstGeometryMs": 518.8000000119209,
+        "fullSystemMs": 518.8000000119209
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 370586,
+      "sha256": "addc797ea9bb5bc5a3cbfe1a544aaa82d8e6caa4923b1a61cba096029545fd70",
+      "individuallyInspected": true,
+      "observation": "ECM derecho visible en cian bajo contexto superficial; lateralidad y ficha corresponden. Parte proximal queda bajo la etiqueta superpuesta del visor."
+    },
+    {
+      "file": "10-cervical-aislado.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Esternocleidomastoideo derecho",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 1,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 92.5,
+        "firstGeometryMs": 518.8000000119209,
+        "fullSystemMs": 518.8000000119209
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 272832,
+      "sha256": "2f04b59cd4007243902f17dae366d7cea161bc55a545b75ae495c1c84d4b54ac",
+      "individuallyInspected": true,
+      "observation": "Una única malla de ECM aislada; contorno distal visible y faceteado de fuente conservado. La etiqueta del visor tapa parte del extremo superior; se añade la captura 30 con zoom menor."
+    },
+    {
+      "file": "11-muscular-anterior.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "Integrated available coverage; not a complete human muscular system.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 14,
+        "meshCount": 134,
+        "triangleCount": 845136,
+        "geometryBytes": 16167256,
+        "drawCalls": 134,
+        "renderGeometries": 138,
+        "renderTextures": 4,
+        "loadMs": 140.5,
+        "firstGeometryMs": 340.89999997615814,
+        "fullSystemMs": 625.5
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 304385,
+      "sha256": "a9c99a4176f09d7e18daf5f3d8c0fb835fe81eaa1359b1f956a7fdaf28df5c43",
+      "individuallyInspected": true,
+      "observation": "110 músculos disponibles en vista anterior, sin sistema óseo visible; ausencias de cabeza, mano/pie y abdomen completo no se rellenan."
+    },
+    {
+      "file": "12-muscular-posterior.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "Integrated available coverage; not a complete human muscular system.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 14,
+        "meshCount": 134,
+        "triangleCount": 845136,
+        "geometryBytes": 16167256,
+        "drawCalls": 134,
+        "renderGeometries": 138,
+        "renderTextures": 4,
+        "loadMs": 135,
+        "firstGeometryMs": 312.59999999403954,
+        "fullSystemMs": 591.8999999761581
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 300620,
+      "sha256": "32afdf28b6ec6ffb5bdc333d1ec6b47d6551f435da6fa9d6a8265bc7d42e9f0a",
+      "individuallyInspected": true,
+      "observation": "Cobertura posterior bilateral coherente; huecos y planos musculares reflejan cobertura parcial, sin duplicación nueva."
+    },
+    {
+      "file": "13-muscular-lateral.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "Integrated available coverage; not a complete human muscular system.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 14,
+        "meshCount": 134,
+        "triangleCount": 845136,
+        "geometryBytes": 16167256,
+        "drawCalls": 134,
+        "renderGeometries": 138,
+        "renderTextures": 4,
+        "loadMs": 184.89999997615814,
+        "firstGeometryMs": 415.80000001192093,
+        "fullSystemMs": 650.9000000059605
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 277435,
+      "sha256": "963aab1a1204e369d4c2e167e7c28254725b6767ef59ed7bde04e726119810db",
+      "individuallyInspected": true,
+      "observation": "Vista lateral derecha del conjunto disponible, sin corte de los extremos visibles ni desplazamientos aislados nuevos."
+    },
+    {
+      "file": "14-oseo-muscular.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 339,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 293.2000000178814,
+        "firstGeometryMs": 309.69999998807907,
+        "fullSystemMs": 718.3000000119209
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 312573,
+      "sha256": "d5282690cac5051127a02eaa19ef24a250320f1a89b781b483e96d2b032b32cb",
+      "individuallyInspected": true,
+      "observation": "Esqueleto y 110 músculos en un único marco corporal; cabeza ósea, manos y pies hacen visibles las ausencias musculares."
+    },
+    {
+      "file": "15-solo-muscular.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 14,
+        "meshCount": 134,
+        "triangleCount": 845136,
+        "geometryBytes": 16167256,
+        "drawCalls": 134,
+        "renderGeometries": 138,
+        "renderTextures": 4,
+        "loadMs": 414.59999999403954,
+        "firstGeometryMs": 408.5,
+        "fullSystemMs": 767.3999999761581
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 304385,
+      "sha256": "a9c99a4176f09d7e18daf5f3d8c0fb835fe81eaa1359b1f956a7fdaf28df5c43",
+      "individuallyInspected": true,
+      "observation": "Se retira el sistema óseo y permanecen 110 estructuras musculares. El árbol conserva el catálogo global, aunque haya módulos descargados."
+    },
+    {
+      "file": "16-cuello-transparencia-50.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 214,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 259.69999998807907,
+        "firstGeometryMs": 278.10000002384186,
+        "fullSystemMs": 683.8000000119209
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 468403,
+      "sha256": "63ce2c72879a1813a8c9ddf56adc9cf448bae64820214433d08852bc27cdb8a4",
+      "individuallyInspected": true,
+      "observation": "Alpha al 50 % permite leer huesos y planos profundos; bandas por acumulación y superposición visibles, sin desaparición del contexto óseo."
+    },
+    {
+      "file": "17-exploded-sistemas.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "Bounded educational displacement; zero restores rest.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 339,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 352.09999999403954,
+        "firstGeometryMs": 250.2000000178814,
+        "fullSystemMs": 896
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 345476,
+      "sha256": "fb06f1c69bc30d57236e36bf85cb0ba9b45278bda529ddf3d2b673d9aa07c990",
+      "individuallyInspected": true,
+      "observation": "Óseo y muscular se separan como dos conjuntos; cada sistema conserva su forma interna. La ausencia de musculatura craneofacial sigue visible."
+    },
+    {
+      "file": "18-exploded-regiones.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "Bounded educational displacement; zero restores rest.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 339,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 345.10000002384186,
+        "firstGeometryMs": 340.09999999403954,
+        "fullSystemMs": 821.5
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 304679,
+      "sha256": "6ca4f61dfc102ea5b3e93962f18408870eea80953ae8e07db460c62fdc830eeb",
+      "individuallyInspected": true,
+      "observation": "Cabeza/cuello, tronco y miembros quedan en bloques reconocibles, con separación acotada; no se cortan músculos largos para aumentar distancias."
+    },
+    {
+      "file": "19-exploded-estructuras.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuello",
+      "note": "Bounded educational displacement; zero restores rest.",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 126,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 294.19999998807907,
+        "firstGeometryMs": 293.2999999821186,
+        "fullSystemMs": 731.5999999940395
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 509825,
+      "sha256": "3e357a4b8d3b287067a1f8dab86749b2a3c85d678c704163860ec5719c5a0cc2",
+      "individuallyInspected": true,
+      "observation": "Músculos cervicales resaltados se separan enteros; huesos de contexto también se desplazan. El encuadre regional recorta cráneo/torso alejados, no las unidades cervicales enfocadas."
+    },
+    {
+      "file": "20-contexto-cervical.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Esternocleidomastoideo derecho",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": null,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 7,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 288.40000000596046,
+        "firstGeometryMs": 277.30000001192093,
+        "fullSystemMs": 715.5
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 269109,
+      "sha256": "5403d18ef7c0dc370cfabf8a27427192603e749ff9c5c6bdc5e0cd78c0005c4c",
+      "individuallyInspected": true,
+      "observation": "ECM derecho con temporal derecho, occipital, clavícula derecha y esternón; no aparecen huesos inferidos por proximidad ni puntos de fijación inventados."
+    },
+    {
+      "file": "21-busqueda-global.png",
+      "codeCommit": "93bbbd7349f9c5cb66213211d7df52dd1ecc3f6d",
+      "note": "Replaces the first capture after correcting the ambiguous organ/component label; same body geometry.",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 339,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 57.69999998807907,
+        "firstGeometryMs": 990.5,
+        "fullSystemMs": 990.5
+      },
+      "acquisition": "site-routes.json",
+      "bytes": 299943,
+      "sha256": "29c5e1420151999446705fe06427d86a9ab305bf20438f27619e78883afafb00",
+      "individuallyInspected": true,
+      "observation": "Captura sustituida tras la corrección: Corazón figura inequívocamente como Órgano, con sistema/región y enlace al modelo independiente."
+    },
+    {
+      "file": "22-arbol-global.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuello",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 138,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 143.5,
+        "firstGeometryMs": 376.40000000596046,
+        "fullSystemMs": 633.4000000059605
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 420904,
+      "sha256": "7abf155a0dda660de924b80dd26136ebbe3403c0ed3268d91b514bcaff0edb93",
+      "individuallyInspected": true,
+      "observation": "Cuello aparece bajo Sistema muscular y despliega sus divisiones y lados; selección visible. Los nombres largos usan elipsis en la columna y se leen completos en la ficha."
+    },
+    {
+      "file": "23-laptop.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "selection": "Cuerpo humano",
+      "note": "Responsive desktop viewport, not a physical device benchmark.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 339,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 378.59999999403954,
+        "firstGeometryMs": 306.09999999403954,
+        "fullSystemMs": 901.6999999880791
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 241844,
+      "sha256": "f7554f6e2b756b9bb4228cad07d5700f175f52e8a5be0faa8eb843648a504bf9",
+      "individuallyInspected": true,
+      "observation": "1366×768: tres paneles y controles disponibles, cuerpo completo dentro del visor y sin desbordamiento horizontal."
+    },
+    {
+      "file": "24-tablet.png",
+      "viewport": {
+        "width": 900,
+        "height": 1000
+      },
+      "selection": "Cuerpo humano",
+      "note": "Responsive desktop viewport, not a physical device benchmark.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 339,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 423.30000001192093,
+        "firstGeometryMs": 264.59999999403954,
+        "fullSystemMs": 865.0999999940395
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 278323,
+      "sha256": "53cb7ac7201229a97d522dd540a436a40f69b11bf3f6eee0d31da93496996150",
+      "individuallyInspected": true,
+      "observation": "900×1000: árbol lateral legible, inspección mediante botón y modelo completo; Cuello figura en el mismo sistema muscular."
+    },
+    {
+      "file": "25-movil.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selection": "Cuerpo humano",
+      "note": "Responsive desktop viewport, not a physical device benchmark.",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 339,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 562,
+        "firstGeometryMs": 290.7999999821186,
+        "fullSystemMs": 1068.5
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 123610,
+      "sha256": "aa8cdad68e0a20849eee676468b61543357fbe07cc1224be56234a23fa8b77eb",
+      "individuallyInspected": true,
+      "observation": "390×844: modelo íntegro, controles táctiles y despiece visibles; paneles secundarios cerrados y sin desbordamiento horizontal."
+    },
+    {
+      "file": "26-movil-ficha.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selection": "Esternocleidomastoideo derecho",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 137,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 562,
+        "firstGeometryMs": 290.7999999821186,
+        "fullSystemMs": 1068.5
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 66540,
+      "sha256": "dc0e2222bcaebdaee9a867846ad8ff342aa74b5981c7f966d349da973b65e37e",
+      "individuallyInspected": true,
+      "observation": "Nombre largo se adapta a dos líneas; acciones y contexto legibles en panel desplazable. El contenido educativo inferior requiere scroll, sin truncamiento de datos."
+    },
+    {
+      "file": "27-movil-capas.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selection": "Esternocleidomastoideo derecho",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 137,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 562,
+        "firstGeometryMs": 290.7999999821186,
+        "fullSystemMs": 1068.5
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 60019,
+      "sha256": "859ec32c25528bade5259af176d27ddd16ee7d2bf5cf0a5ea2f581f215b6baa8",
+      "individuallyInspected": true,
+      "observation": "Módulo Cuello accesible dentro del panel de capas desplazable, junto a módulos previos; referencias de órganos permanecen separadas."
+    },
+    {
+      "file": "28-cuello-transparencia-25.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Cuerpo humano",
+      "note": "",
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 214,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 288.2999999821186,
+        "firstGeometryMs": 325.30000001192093,
+        "fullSystemMs": 750.7000000178814
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 485541,
+      "sha256": "3302770e48dbdfe824704dcf8085466b7cc1519567d260cba94cbda61097df3c",
+      "individuallyInspected": true,
+      "observation": "Huesos permanecen opacos y el cuello profundo se distingue más; acumulación de superficies transparentes y bandas visibles pero utilizables."
+    },
+    {
+      "file": "29-prevertebral-aislado.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Largo de la cabeza derecho",
+      "note": "",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 1,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 365.90000000596046,
+        "firstGeometryMs": 260.09999999403954,
+        "fullSystemMs": 805.5
+      },
+      "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98",
+      "acquisition": "head-neck-captures.json",
+      "bytes": 255737,
+      "sha256": "bc12c4c06ab18ad36c93ffbf544c825318c4060e7be16755f038326c2eaa37bf",
+      "individuallyInspected": true,
+      "observation": "Largo de la cabeza derecho completo, aislado y dentro del visor; no se desplaza ni deforma para exponerlo."
+    },
+    {
+      "file": "30-ecm-aislado-encuadre-completo.png",
+      "codeCommit": "93bbbd7349f9c5cb66213211d7df52dd1ecc3f6d",
+      "note": "Two existing zoom-out steps keep the isolated proximal ECM end clear of the fixed title overlay seen in capture 10. No camera algorithm or geometry changed.",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "selection": "Esternocleidomastoideo derecho",
+      "metrics": {
+        "selectedId": null,
+        "contextIds": 0,
+        "loadedAssets": 21,
+        "meshCount": 339,
+        "triangleCount": 1357586,
+        "geometryBytes": 23777028,
+        "drawCalls": 1,
+        "renderGeometries": 343,
+        "renderTextures": 4,
+        "loadMs": 57.69999998807907,
+        "firstGeometryMs": 990.5,
+        "fullSystemMs": 990.5
+      },
+      "acquisition": "site-routes.json",
+      "bytes": 257385,
+      "sha256": "3436d80222aae48e4fc999777e4672fd81a37988df394f7b2a6f81dadff9d380",
+      "individuallyInspected": true,
+      "observation": "Dos pasos de Alejar muestran el ECM derecho completo, con ambos extremos fuera de la etiqueta fija; cambia sólo la cámara, sin modificar la malla."
+    }
+  ]
+}

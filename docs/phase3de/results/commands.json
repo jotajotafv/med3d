@@ -1,0 +1,122 @@
+[
+  {
+    "exitCode": 0,
+    "elapsedSeconds": 15.619435,
+    "command": "npm.cmd run typecheck",
+    "started": "2026-09-23T22:16:17.5261533Z",
+    "name": "typecheck",
+    "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98"
+  },
+  {
+    "exitCode": 0,
+    "elapsedSeconds": 7.7883914,
+    "command": "npm.cmd run verify:anatomy",
+    "started": "2026-09-23T22:16:33.2430153Z",
+    "name": "verify-anatomy",
+    "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98"
+  },
+  {
+    "exitCode": 0,
+    "elapsedSeconds": 26.4810722,
+    "command": "npm.cmd run build",
+    "started": "2026-09-23T22:16:41.0478293Z",
+    "name": "build",
+    "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98"
+  },
+  {
+    "exitCode": 0,
+    "elapsedSeconds": 53.3947611,
+    "command": "node scripts/anatomy/browser-qa.mjs",
+    "started": "2026-09-23T22:17:07.5501452Z",
+    "name": "skeletal",
+    "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98"
+  },
+  {
+    "exitCode": 0,
+    "elapsedSeconds": 155.7408828,
+    "command": "node scripts/anatomy/pilot-qa.mjs --functional",
+    "started": "2026-09-23T22:18:00.9727133Z",
+    "name": "pilot-functional",
+    "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98"
+  },
+  {
+    "exitCode": 0,
+    "elapsedSeconds": 23.769723,
+    "command": "node scripts/anatomy/pilot-qa.mjs --tree",
+    "started": "2026-09-23T22:20:36.7377914Z",
+    "name": "pilot-tree",
+    "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98"
+  },
+  {
+    "exitCode": 0,
+    "elapsedSeconds": 254.0274047,
+    "command": "node scripts/anatomy/torso-qa.mjs --functional",
+    "started": "2026-09-23T22:21:00.5323333Z",
+    "name": "torso-functional",
+    "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98"
+  },
+  {
+    "exitCode": 0,
+    "elapsedSeconds": 368.854819,
+    "command": "node scripts/anatomy/limbs-qa.mjs --functional",
+    "started": "2026-09-23T22:25:14.5906369Z",
+    "name": "limbs-functional",
+    "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98"
+  },
+  {
+    "exitCode": 0,
+    "elapsedSeconds": 95.3484111,
+    "command": "node scripts/anatomy/head-neck-qa.mjs --functional",
+    "started": "2026-09-23T22:31:23.4680650Z",
+    "name": "final-functional",
+    "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98"
+  },
+  {
+    "exitCode": 0,
+    "elapsedSeconds": 38.7789482,
+    "command": "node scripts/anatomy/head-neck-qa.mjs --performance",
+    "started": "2026-09-23T22:32:58.8713288Z",
+    "name": "final-performance",
+    "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98"
+  },
+  {
+    "exitCode": 0,
+    "elapsedSeconds": 126.1126227,
+    "command": "node scripts/anatomy/head-neck-qa.mjs --captures",
+    "started": "2026-09-23T22:33:37.7194569Z",
+    "name": "final-captures",
+    "codeCommit": "7ce40479e469b2d846bffae24be2aed5c30b7b98"
+  },
+  {
+    "elapsedSeconds": 22.0550576,
+    "started": "2026-09-23T22:39:24.7238711Z",
+    "codeCommit": "93bbbd7349f9c5cb66213211d7df52dd1ecc3f6d",
+    "command": "npm.cmd run typecheck",
+    "name": "targeted-typecheck",
+    "exitCode": 0
+  },
+  {
+    "elapsedSeconds": 35.7554443,
+    "started": "2026-09-23T22:39:46.8791005Z",
+    "codeCommit": "93bbbd7349f9c5cb66213211d7df52dd1ecc3f6d",
+    "command": "npm.cmd run build",
+    "name": "targeted-build",
+    "exitCode": 0
+  },
+  {
+    "elapsedSeconds": 12.1716791,
+    "started": "2026-09-23T22:40:22.6663592Z",
+    "codeCommit": "93bbbd7349f9c5cb66213211d7df52dd1ecc3f6d",
+    "command": "node scripts/anatomy/head-neck-qa.mjs --search",
+    "name": "targeted-search",
+    "exitCode": 0
+  },
+  {
+    "started": "2026-09-23T22:41:07.0442506Z",
+    "codeCommit": "93bbbd7349f9c5cb66213211d7df52dd1ecc3f6d",
+    "name": "site-routes-and-review",
+    "command": "node .cache/phase3de/check-site.mjs",
+    "elapsedSeconds": 10.9173915,
+    "exitCode": 0
+  }
+]

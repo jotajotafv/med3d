@@ -1,0 +1,2522 @@
+{
+  "sourceArchive": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+  "sourceVersion": "4.0 OBJ99",
+  "sourceLicenseDeclaration": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "sourceZip": "research/anatomy/muscular-limbs-originals.zip",
+  "sourceZipSha256": "ffc90ccfe0ae6b3d12e87fa556417b259801d7191ec2dc5014c83ce80522defb",
+  "sourceLock": "research/anatomy/muscular-limbs-source-lock.json",
+  "selectionSha256": "67b6b1fc3a525d22c0ee8bef6a317eee0fcf65bf6581580519d86adf73f1228c",
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "additionalRegistration": "none",
+  "files": [
+    {
+      "elementId": "FJ1394",
+      "sourceId": "FMA45960",
+      "side": "right",
+      "representationId": "BP5541",
+      "path": "isa_BP3D_4.0_obj_99/FJ1394.obj",
+      "bytes": 201640,
+      "sha256": "621dc10e974bcc1c53a8843bf1db3a1c322c8327d279010c58533bd28952bf08",
+      "crc32": "1d3a08c1",
+      "compressedBytesUpstream": 64734,
+      "anatomyId": "bp3d:FMA45960",
+      "family": "gastrocnemius",
+      "moduleId": "muscular:leg-right",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "triangles": 3052,
+      "faces": 3052,
+      "sourcePositionCount": 1748,
+      "vertices": 1748,
+      "boundsMetres": [
+        [
+          -0.11699200000000001,
+          0.132801,
+          0.00580911
+        ],
+        [
+          -0.061167000000000006,
+          0.42326100000000005,
+          0.0806506
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -116.992,
+          -80.6506,
+          132.801
+        ],
+        [
+          -61.167,
+          -5.80911,
+          423.261
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1394M",
+      "sourceId": "FMA45961",
+      "side": "left",
+      "representationId": "BP7939",
+      "path": "isa_BP3D_4.0_obj_99/FJ1394M.obj",
+      "bytes": 200155,
+      "sha256": "18df6c6fe718aa0d60f4a98ad9ed3dab7d95c1da0aacd641a498b97ddf31ceb6",
+      "crc32": "2805fd0a",
+      "compressedBytesUpstream": 64588,
+      "anatomyId": "bp3d:FMA45961",
+      "family": "gastrocnemius",
+      "moduleId": "muscular:leg-left",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "triangles": 3052,
+      "faces": 3052,
+      "sourcePositionCount": 1746,
+      "vertices": 1746,
+      "boundsMetres": [
+        [
+          0.061167000000000006,
+          0.132801,
+          0.00580911
+        ],
+        [
+          0.11699200000000001,
+          0.42326100000000005,
+          0.0806506
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          61.167,
+          -80.6506,
+          132.801
+        ],
+        [
+          116.992,
+          -5.80911,
+          423.261
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1395",
+      "sourceId": "FMA45888",
+      "side": "right",
+      "representationId": "BP5575",
+      "path": "isa_BP3D_4.0_obj_99/FJ1395.obj",
+      "bytes": 341489,
+      "sha256": "0c22806bfd2a0f8745023a7d438250411f9d013f3d966c5c75335f5b57f8e142",
+      "crc32": "7e8f6154",
+      "compressedBytesUpstream": 106056,
+      "anatomyId": "bp3d:FMA45888",
+      "family": "bicepsfemoris",
+      "moduleId": "muscular:thigh-right",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "triangles": 5110,
+      "faces": 5110,
+      "sourcePositionCount": 2838,
+      "vertices": 2838,
+      "boundsMetres": [
+        [
+          -0.126642,
+          0.327905,
+          0.0183096
+        ],
+        [
+          -0.0486928,
+          0.764753,
+          0.0721878
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -126.642,
+          -72.1878,
+          327.905
+        ],
+        [
+          -48.6928,
+          -18.3096,
+          764.753
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1395M",
+      "sourceId": "FMA45889",
+      "side": "left",
+      "representationId": "BP8331",
+      "path": "isa_BP3D_4.0_obj_99/FJ1395M.obj",
+      "bytes": 338042,
+      "sha256": "f9b7a8bc5db9ff1c7a6dc25fb15cdac175c96d4a52ec9304709dff5468e8a11b",
+      "crc32": "c04cf90e",
+      "compressedBytesUpstream": 105379,
+      "anatomyId": "bp3d:FMA45889",
+      "family": "bicepsfemoris",
+      "moduleId": "muscular:thigh-left",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "triangles": 5110,
+      "faces": 5110,
+      "sourcePositionCount": 2837,
+      "vertices": 2837,
+      "boundsMetres": [
+        [
+          0.048692700000000005,
+          0.327905,
+          0.0183095
+        ],
+        [
+          0.126642,
+          0.764753,
+          0.0721878
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          48.6927,
+          -72.1878,
+          327.905
+        ],
+        [
+          126.642,
+          -18.3095,
+          764.753
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1397",
+      "sourceId": "FMA45957",
+      "side": "right",
+      "representationId": "BP5539",
+      "path": "isa_BP3D_4.0_obj_99/FJ1397.obj",
+      "bytes": 260975,
+      "sha256": "d7f3aa44801171baade1a59c40a8f8bda72097bec07047f93f24ebaac4546cb4",
+      "crc32": "186ba2b2",
+      "compressedBytesUpstream": 82065,
+      "anatomyId": "bp3d:FMA45957",
+      "family": "gastrocnemius",
+      "moduleId": "muscular:leg-right",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "triangles": 3842,
+      "faces": 3842,
+      "sourcePositionCount": 2263,
+      "vertices": 2263,
+      "boundsMetres": [
+        [
+          -0.0742357,
+          0.122833,
+          0.0136614
+        ],
+        [
+          -0.0217597,
+          0.432102,
+          0.0926934
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -74.2357,
+          -92.6934,
+          122.833
+        ],
+        [
+          -21.7597,
+          -13.6614,
+          432.102
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1397M",
+      "sourceId": "FMA45958",
+      "side": "left",
+      "representationId": "BP9217",
+      "path": "isa_BP3D_4.0_obj_99/FJ1397M.obj",
+      "bytes": 258641,
+      "sha256": "43545b226adb517579273570e6bcb30943c5f22a1687aba6e11d6e1634175f05",
+      "crc32": "0263516f",
+      "compressedBytesUpstream": 81765,
+      "anatomyId": "bp3d:FMA45958",
+      "family": "gastrocnemius",
+      "moduleId": "muscular:leg-left",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "triangles": 3842,
+      "faces": 3842,
+      "sourcePositionCount": 2264,
+      "vertices": 2264,
+      "boundsMetres": [
+        [
+          0.0217597,
+          0.122833,
+          0.0136614
+        ],
+        [
+          0.0742358,
+          0.432102,
+          0.0926934
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          21.7597,
+          -92.6934,
+          122.833
+        ],
+        [
+          74.2358,
+          -13.6614,
+          432.102
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1402",
+      "sourceId": "FMA22456",
+      "side": "right",
+      "representationId": "BP4984",
+      "path": "isa_BP3D_4.0_obj_99/FJ1402.obj",
+      "bytes": 174040,
+      "sha256": "f5165be945dbae2a81a1261b5f5c169c9ba677e80c70af263a08efc2f57f3f53",
+      "crc32": "08369e0f",
+      "compressedBytesUpstream": 55741,
+      "anatomyId": "bp3d:FMA22456",
+      "family": "adductorlongus",
+      "moduleId": "muscular:thigh-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2616,
+      "faces": 2616,
+      "sourcePositionCount": 1536,
+      "vertices": 1536,
+      "boundsMetres": [
+        [
+          -0.0941022,
+          0.510204,
+          0.0893758
+        ],
+        [
+          -0.0170401,
+          0.799665,
+          0.136972
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -94.1022,
+          -136.972,
+          510.204
+        ],
+        [
+          -17.0401,
+          -89.3758,
+          799.665
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1402M",
+      "sourceId": "FMA22457",
+      "side": "left",
+      "representationId": "BP8604",
+      "path": "isa_BP3D_4.0_obj_99/FJ1402M.obj",
+      "bytes": 172318,
+      "sha256": "6b2f97b45dddd3045655cd1495f09db6baa4d3b9c19a84af5e00f0745c193d88",
+      "crc32": "6d78cf6d",
+      "compressedBytesUpstream": 55344,
+      "anatomyId": "bp3d:FMA22457",
+      "family": "adductorlongus",
+      "moduleId": "muscular:thigh-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2616,
+      "faces": 2616,
+      "sourcePositionCount": 1536,
+      "vertices": 1536,
+      "boundsMetres": [
+        [
+          0.0170402,
+          0.510204,
+          0.0893758
+        ],
+        [
+          0.0941022,
+          0.799665,
+          0.136971
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          17.0402,
+          -136.971,
+          510.204
+        ],
+        [
+          94.1022,
+          -89.3758,
+          799.665
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1409",
+      "sourceId": "FMA22554",
+      "side": "right",
+      "representationId": "BP5015",
+      "path": "isa_BP3D_4.0_obj_99/FJ1409.obj",
+      "bytes": 151020,
+      "sha256": "ba330adc0128b26a50b4a5bd0a0cedcd3f32dbf09ae25f4e0587949dbd9d3d11",
+      "crc32": "4cb22cb3",
+      "compressedBytesUpstream": 45348,
+      "anatomyId": "bp3d:FMA22554",
+      "family": "fibularisbrevis",
+      "moduleId": "muscular:leg-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 1766,
+      "faces": 1766,
+      "sourcePositionCount": 1605,
+      "vertices": 1605,
+      "boundsMetres": [
+        [
+          -0.117745,
+          -0.055900399999999996,
+          0.0427176
+        ],
+        [
+          -0.08214310000000001,
+          0.188796,
+          0.0952255
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -117.745,
+          -95.2255,
+          -55.9004
+        ],
+        [
+          -82.1431,
+          -42.7176,
+          188.796
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1409M",
+      "sourceId": "FMA22555",
+      "side": "left",
+      "representationId": "BP8977",
+      "path": "isa_BP3D_4.0_obj_99/FJ1409M.obj",
+      "bytes": 149364,
+      "sha256": "00da03d824ec49bb50df14bf8f75af06e9fa095694ee215ae4ade2e42dd529cd",
+      "crc32": "6e6361a6",
+      "compressedBytesUpstream": 45229,
+      "anatomyId": "bp3d:FMA22555",
+      "family": "fibularisbrevis",
+      "moduleId": "muscular:leg-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 1766,
+      "faces": 1766,
+      "sourcePositionCount": 1605,
+      "vertices": 1605,
+      "boundsMetres": [
+        [
+          0.08214300000000001,
+          -0.055900399999999996,
+          0.0427176
+        ],
+        [
+          0.117745,
+          0.188796,
+          0.0952255
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          82.143,
+          -95.2255,
+          -55.9004
+        ],
+        [
+          117.745,
+          -42.7176,
+          188.796
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1410",
+      "sourceId": "FMA22552",
+      "side": "right",
+      "representationId": "BP5013",
+      "path": "isa_BP3D_4.0_obj_99/FJ1410.obj",
+      "bytes": 304555,
+      "sha256": "40c36bc4dc24e161c84daf6e96017f9d78b4cf964579a873e267d2619be4aa2c",
+      "crc32": "62d8452e",
+      "compressedBytesUpstream": 94951,
+      "anatomyId": "bp3d:FMA22552",
+      "family": "fibularislongus",
+      "moduleId": "muscular:leg-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3860,
+      "faces": 3860,
+      "sourcePositionCount": 2946,
+      "vertices": 2946,
+      "boundsMetres": [
+        [
+          -0.126428,
+          -0.0528049,
+          0.0408001
+        ],
+        [
+          -0.08240420000000001,
+          0.35176999999999997,
+          0.136529
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -126.428,
+          -136.529,
+          -52.8049
+        ],
+        [
+          -82.4042,
+          -40.8001,
+          351.77
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1410M",
+      "sourceId": "FMA22553",
+      "side": "left",
+      "representationId": "BP8846",
+      "path": "isa_BP3D_4.0_obj_99/FJ1410M.obj",
+      "bytes": 301944,
+      "sha256": "6a1b953dd854c4b09c59f52752ec38c38d5784c40d7da2bbbce94c713f52b8f4",
+      "crc32": "e69dfc09",
+      "compressedBytesUpstream": 94387,
+      "anatomyId": "bp3d:FMA22553",
+      "family": "fibularislongus",
+      "moduleId": "muscular:leg-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3860,
+      "faces": 3860,
+      "sourcePositionCount": 2947,
+      "vertices": 2947,
+      "boundsMetres": [
+        [
+          0.08240420000000001,
+          -0.0528049,
+          0.0408001
+        ],
+        [
+          0.126428,
+          0.35176999999999997,
+          0.136529
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          82.4042,
+          -136.529,
+          -52.8049
+        ],
+        [
+          126.428,
+          -40.8001,
+          351.77
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1418",
+      "sourceId": "FMA22328",
+      "side": "right",
+      "representationId": "BP5065",
+      "path": "isa_BP3D_4.0_obj_99/FJ1418.obj",
+      "bytes": 197385,
+      "sha256": "e576dd907b8bb9b373beda7ba9cb14cce4c958def4b782ad6563b6e2fbe71d46",
+      "crc32": "a03e4e4a",
+      "compressedBytesUpstream": 60647,
+      "anatomyId": "bp3d:FMA22328",
+      "family": "gluteusmaximus",
+      "moduleId": "muscular:gluteal-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2376,
+      "faces": 2376,
+      "sourcePositionCount": 2053,
+      "vertices": 2053,
+      "boundsMetres": [
+        [
+          -0.145401,
+          0.667745,
+          -0.0198663
+        ],
+        [
+          0.00152091,
+          0.9325570000000001,
+          0.0780115
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -145.401,
+          -78.0115,
+          667.745
+        ],
+        [
+          1.52091,
+          19.8663,
+          932.557
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1418M",
+      "sourceId": "FMA22329",
+      "side": "left",
+      "representationId": "BP8401",
+      "path": "isa_BP3D_4.0_obj_99/FJ1418M.obj",
+      "bytes": 195419,
+      "sha256": "abde060eaa4c4e1b3da0a865a804a2c8b7790d2994cc1fe8c133dd541c92d90e",
+      "crc32": "f845b4a0",
+      "compressedBytesUpstream": 60553,
+      "anatomyId": "bp3d:FMA22329",
+      "family": "gluteusmaximus",
+      "moduleId": "muscular:gluteal-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2376,
+      "faces": 2376,
+      "sourcePositionCount": 2053,
+      "vertices": 2053,
+      "boundsMetres": [
+        [
+          -0.00152091,
+          0.667745,
+          -0.0198663
+        ],
+        [
+          0.145401,
+          0.9325570000000001,
+          0.0780115
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -1.52091,
+          -78.0115,
+          667.745
+        ],
+        [
+          145.401,
+          19.8663,
+          932.557
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1419",
+      "sourceId": "FMA22330",
+      "side": "right",
+      "representationId": "BP5063",
+      "path": "isa_BP3D_4.0_obj_99/FJ1419.obj",
+      "bytes": 246651,
+      "sha256": "e2e06899b8a61640b32086432ec4b577b2bf2db6f044d469c01bdceb38bd3831",
+      "crc32": "c8fb0019",
+      "compressedBytesUpstream": 76923,
+      "anatomyId": "bp3d:FMA22330",
+      "family": "gluteusmedius",
+      "moduleId": "muscular:gluteal-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3356,
+      "faces": 3356,
+      "sourcePositionCount": 2312,
+      "vertices": 2312,
+      "boundsMetres": [
+        [
+          -0.14973599999999998,
+          0.7887430000000001,
+          0.0169342
+        ],
+        [
+          -0.0595963,
+          0.950903,
+          0.101998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -149.736,
+          -101.998,
+          788.743
+        ],
+        [
+          -59.5963,
+          -16.9342,
+          950.903
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1419M",
+      "sourceId": "FMA22331",
+      "side": "left",
+      "representationId": "BP9213",
+      "path": "isa_BP3D_4.0_obj_99/FJ1419M.obj",
+      "bytes": 244392,
+      "sha256": "37f92300b952b93099dd8dd417b154b1af7484fd28780d990ff21e0e7684af84",
+      "crc32": "d506aed2",
+      "compressedBytesUpstream": 76537,
+      "anatomyId": "bp3d:FMA22331",
+      "family": "gluteusmedius",
+      "moduleId": "muscular:gluteal-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3356,
+      "faces": 3356,
+      "sourcePositionCount": 2308,
+      "vertices": 2308,
+      "boundsMetres": [
+        [
+          0.0595963,
+          0.7887430000000001,
+          0.0169342
+        ],
+        [
+          0.149735,
+          0.950903,
+          0.101998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          59.5963,
+          -101.998,
+          788.743
+        ],
+        [
+          149.735,
+          -16.9342,
+          950.903
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1420",
+      "sourceId": "FMA22332",
+      "side": "right",
+      "representationId": "BP5083",
+      "path": "isa_BP3D_4.0_obj_99/FJ1420.obj",
+      "bytes": 321500,
+      "sha256": "61ebd1c4cd97adb69324aa74325c05425dbf37f83862a34c6a2f7400c3c017cd",
+      "crc32": "70658c0e",
+      "compressedBytesUpstream": 97776,
+      "anatomyId": "bp3d:FMA22332",
+      "family": "gluteusminimus",
+      "moduleId": "muscular:gluteal-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 4208,
+      "faces": 4208,
+      "sourcePositionCount": 3066,
+      "vertices": 3066,
+      "boundsMetres": [
+        [
+          -0.14513700000000002,
+          0.78328,
+          0.0463719
+        ],
+        [
+          -0.0677084,
+          0.923255,
+          0.102277
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -145.137,
+          -102.277,
+          783.28
+        ],
+        [
+          -67.7084,
+          -46.3719,
+          923.255
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1420M",
+      "sourceId": "FMA22333",
+      "side": "left",
+      "representationId": "BP8623",
+      "path": "isa_BP3D_4.0_obj_99/FJ1420M.obj",
+      "bytes": 318764,
+      "sha256": "d4fd7a31338758607094164c2d8e3a39f8cd1f5baee7624a0391a7ddd8168272",
+      "crc32": "7636830d",
+      "compressedBytesUpstream": 97332,
+      "anatomyId": "bp3d:FMA22333",
+      "family": "gluteusminimus",
+      "moduleId": "muscular:gluteal-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 4208,
+      "faces": 4208,
+      "sourcePositionCount": 3066,
+      "vertices": 3066,
+      "boundsMetres": [
+        [
+          0.0677084,
+          0.78328,
+          0.0463719
+        ],
+        [
+          0.14513700000000002,
+          0.923255,
+          0.102277
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          67.7084,
+          -102.277,
+          783.28
+        ],
+        [
+          145.137,
+          -46.3719,
+          923.255
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1421",
+      "sourceId": "FMA43883",
+      "side": "right",
+      "representationId": "BP4976",
+      "path": "isa_BP3D_4.0_obj_99/FJ1421.obj",
+      "bytes": 227763,
+      "sha256": "82d12d8359e66303a7e5a21c2b9b24b26d33b8bbeab55f8f97c87881e25e5fa7",
+      "crc32": "2fea16e5",
+      "compressedBytesUpstream": 71835,
+      "anatomyId": "bp3d:FMA43883",
+      "family": "gracilis",
+      "moduleId": "muscular:thigh-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3172,
+      "faces": 3172,
+      "sourcePositionCount": 2086,
+      "vertices": 2086,
+      "boundsMetres": [
+        [
+          -0.0704152,
+          0.28301400000000004,
+          0.06535039999999999
+        ],
+        [
+          -0.0120663,
+          0.797563,
+          0.13253299999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -70.4152,
+          -132.533,
+          283.014
+        ],
+        [
+          -12.0663,
+          -65.3504,
+          797.563
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1421M",
+      "sourceId": "FMA43884",
+      "side": "left",
+      "representationId": "BP8926",
+      "path": "isa_BP3D_4.0_obj_99/FJ1421M.obj",
+      "bytes": 225310,
+      "sha256": "1c760938cc531c810758cf5f9fb25ff3a6a0cfd7798d102da95b3269f6741b00",
+      "crc32": "ed1c186a",
+      "compressedBytesUpstream": 71616,
+      "anatomyId": "bp3d:FMA43884",
+      "family": "gracilis",
+      "moduleId": "muscular:thigh-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3172,
+      "faces": 3172,
+      "sourcePositionCount": 2085,
+      "vertices": 2085,
+      "boundsMetres": [
+        [
+          0.0120663,
+          0.28301400000000004,
+          0.06535039999999999
+        ],
+        [
+          0.0704152,
+          0.797563,
+          0.13253299999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          12.0663,
+          -132.533,
+          283.014
+        ],
+        [
+          70.4152,
+          -65.3504,
+          797.563
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1433",
+      "sourceId": "FMA38928",
+      "side": "right",
+      "representationId": "BP5598",
+      "path": "isa_BP3D_4.0_obj_99/FJ1433.obj",
+      "bytes": 389745,
+      "sha256": "a5f75907d784dd2a44d7efa96cb31009aba2afe43465336b105561751b19f8ef",
+      "crc32": "56a6fcb6",
+      "compressedBytesUpstream": 119300,
+      "anatomyId": "bp3d:FMA38928",
+      "family": "rectusfemoris",
+      "moduleId": "muscular:thigh-right",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "triangles": 5688,
+      "faces": 5688,
+      "sourcePositionCount": 3326,
+      "vertices": 3326,
+      "boundsMetres": [
+        [
+          -0.154449,
+          0.31470800000000004,
+          0.0838998
+        ],
+        [
+          -0.0629145,
+          0.8711040000000001,
+          0.15246600000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -154.449,
+          -152.466,
+          314.708
+        ],
+        [
+          -62.9145,
+          -83.8998,
+          871.104
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1433M",
+      "sourceId": "FMA38929",
+      "side": "left",
+      "representationId": "BP8094",
+      "path": "isa_BP3D_4.0_obj_99/FJ1433M.obj",
+      "bytes": 386385,
+      "sha256": "3871310f1c1f76ca55cfa4fe043d2e3a25488903fe695674a87c7c893cdc99ae",
+      "crc32": "880a13c5",
+      "compressedBytesUpstream": 118833,
+      "anatomyId": "bp3d:FMA38929",
+      "family": "rectusfemoris",
+      "moduleId": "muscular:thigh-left",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "triangles": 5688,
+      "faces": 5688,
+      "sourcePositionCount": 3326,
+      "vertices": 3326,
+      "boundsMetres": [
+        [
+          0.0629145,
+          0.31470800000000004,
+          0.0838998
+        ],
+        [
+          0.154449,
+          0.8711040000000001,
+          0.15246600000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          62.9145,
+          -152.466,
+          314.708
+        ],
+        [
+          154.449,
+          -83.8998,
+          871.104
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1434",
+      "sourceId": "FMA22354",
+      "side": "right",
+      "representationId": "BP4994",
+      "path": "isa_BP3D_4.0_obj_99/FJ1434.obj",
+      "bytes": 270306,
+      "sha256": "670d0351a8f017d4792ee7c5780557b5468a298e128cf44da9443d2712d24eb7",
+      "crc32": "adc88d7e",
+      "compressedBytesUpstream": 82485,
+      "anatomyId": "bp3d:FMA22354",
+      "family": "sartorius",
+      "moduleId": "muscular:thigh-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3444,
+      "faces": 3444,
+      "sourcePositionCount": 2630,
+      "vertices": 2630,
+      "boundsMetres": [
+        [
+          -0.131186,
+          0.27419,
+          0.0839907
+        ],
+        [
+          -0.0206605,
+          0.901792,
+          0.140956
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -131.186,
+          -140.956,
+          274.19
+        ],
+        [
+          -20.6605,
+          -83.9907,
+          901.792
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1434M",
+      "sourceId": "FMA22355",
+      "side": "left",
+      "representationId": "BP8876",
+      "path": "isa_BP3D_4.0_obj_99/FJ1434M.obj",
+      "bytes": 267711,
+      "sha256": "4c32d96cf9113542f135a32f8a709505fee10796b9b076cc16c7efe665778bc8",
+      "crc32": "77049f4f",
+      "compressedBytesUpstream": 82253,
+      "anatomyId": "bp3d:FMA22355",
+      "family": "sartorius",
+      "moduleId": "muscular:thigh-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3444,
+      "faces": 3444,
+      "sourcePositionCount": 2633,
+      "vertices": 2633,
+      "boundsMetres": [
+        [
+          0.0206605,
+          0.27419,
+          0.0839907
+        ],
+        [
+          0.131186,
+          0.901792,
+          0.140956
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          20.6605,
+          -140.956,
+          274.19
+        ],
+        [
+          131.186,
+          -83.9907,
+          901.792
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1435",
+      "sourceId": "FMA22448",
+      "side": "right",
+      "representationId": "BP4989",
+      "path": "isa_BP3D_4.0_obj_99/FJ1435.obj",
+      "bytes": 307942,
+      "sha256": "1fdce0f7db538e4731207af06a293e41037c2474192f61ca2cb5b0d663b16894",
+      "crc32": "af619699",
+      "compressedBytesUpstream": 97243,
+      "anatomyId": "bp3d:FMA22448",
+      "family": "semimembranosus",
+      "moduleId": "muscular:thigh-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 4612,
+      "faces": 4612,
+      "sourcePositionCount": 2588,
+      "vertices": 2588,
+      "boundsMetres": [
+        [
+          -0.0709992,
+          0.315926,
+          0.0373297
+        ],
+        [
+          -0.0131749,
+          0.754438,
+          0.103495
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -70.9992,
+          -103.495,
+          315.926
+        ],
+        [
+          -13.1749,
+          -37.3297,
+          754.438
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1435M",
+      "sourceId": "FMA22449",
+      "side": "left",
+      "representationId": "BP7829",
+      "path": "isa_BP3D_4.0_obj_99/FJ1435M.obj",
+      "bytes": 305370,
+      "sha256": "27c6f7bdf85a103b4247153f4ca08c846ef0037b92d5032af542496822647cad",
+      "crc32": "39c05ad2",
+      "compressedBytesUpstream": 96862,
+      "anatomyId": "bp3d:FMA22449",
+      "family": "semimembranosus",
+      "moduleId": "muscular:thigh-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 4612,
+      "faces": 4612,
+      "sourcePositionCount": 2588,
+      "vertices": 2588,
+      "boundsMetres": [
+        [
+          0.0131749,
+          0.315926,
+          0.0373296
+        ],
+        [
+          0.0709991,
+          0.754438,
+          0.103495
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          13.1749,
+          -103.495,
+          315.926
+        ],
+        [
+          70.9991,
+          -37.3296,
+          754.438
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1436",
+      "sourceId": "FMA22358",
+      "side": "right",
+      "representationId": "BP4991",
+      "path": "isa_BP3D_4.0_obj_99/FJ1436.obj",
+      "bytes": 195220,
+      "sha256": "a9351992df5093e761784b73ca3f4a7d09d0c997e3cef2f840a45b863eb7097d",
+      "crc32": "d467d1a5",
+      "compressedBytesUpstream": 62124,
+      "anatomyId": "bp3d:FMA22358",
+      "family": "semitendinosus",
+      "moduleId": "muscular:thigh-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2712,
+      "faces": 2712,
+      "sourcePositionCount": 1812,
+      "vertices": 1812,
+      "boundsMetres": [
+        [
+          -0.0682937,
+          0.283125,
+          0.0247803
+        ],
+        [
+          -0.0269358,
+          0.763703,
+          0.09858650000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -68.2937,
+          -98.5865,
+          283.125
+        ],
+        [
+          -26.9358,
+          -24.7803,
+          763.703
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1436M",
+      "sourceId": "FMA22359",
+      "side": "left",
+      "representationId": "BP9066",
+      "path": "isa_BP3D_4.0_obj_99/FJ1436M.obj",
+      "bytes": 192790,
+      "sha256": "e97560023348e6d7aa6d1586862a9717b6ae6ffb72f8ceee8ecf43f3f63c567f",
+      "crc32": "e5c3adcd",
+      "compressedBytesUpstream": 61764,
+      "anatomyId": "bp3d:FMA22359",
+      "family": "semitendinosus",
+      "moduleId": "muscular:thigh-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2712,
+      "faces": 2712,
+      "sourcePositionCount": 1808,
+      "vertices": 1808,
+      "boundsMetres": [
+        [
+          0.0269357,
+          0.283125,
+          0.0247803
+        ],
+        [
+          0.0682937,
+          0.763703,
+          0.09858650000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          26.9357,
+          -98.5865,
+          283.125
+        ],
+        [
+          68.2937,
+          -24.7803,
+          763.703
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1437",
+      "sourceId": "FMA22558",
+      "side": "right",
+      "representationId": "BP4999",
+      "path": "isa_BP3D_4.0_obj_99/FJ1437.obj",
+      "bytes": 307036,
+      "sha256": "c9c62b720ffe375a8eddf390608684a796f1ea54880a5c34fa440404addc399e",
+      "crc32": "df38f2ac",
+      "compressedBytesUpstream": 96287,
+      "anatomyId": "bp3d:FMA22558",
+      "family": "soleus",
+      "moduleId": "muscular:leg-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 4418,
+      "faces": 4418,
+      "sourcePositionCount": 2674,
+      "vertices": 2674,
+      "boundsMetres": [
+        [
+          -0.115785,
+          0.032464,
+          0.0321986
+        ],
+        [
+          -0.035600099999999996,
+          0.358617,
+          0.0911189
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -115.785,
+          -91.1189,
+          32.464
+        ],
+        [
+          -35.6001,
+          -32.1986,
+          358.617
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1437M",
+      "sourceId": "FMA22559",
+      "side": "left",
+      "representationId": "BP8819",
+      "path": "isa_BP3D_4.0_obj_99/FJ1437M.obj",
+      "bytes": 303662,
+      "sha256": "66d10b2e0d114158a9b2aa8751b5967ca24f1231f2e2905ebde4755cab62902c",
+      "crc32": "8168f30f",
+      "compressedBytesUpstream": 95773,
+      "anatomyId": "bp3d:FMA22559",
+      "family": "soleus",
+      "moduleId": "muscular:leg-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 4418,
+      "faces": 4418,
+      "sourcePositionCount": 2674,
+      "vertices": 2674,
+      "boundsMetres": [
+        [
+          0.035600099999999996,
+          0.032464,
+          0.0321986
+        ],
+        [
+          0.115785,
+          0.358617,
+          0.0911189
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          35.6001,
+          -91.1189,
+          32.464
+        ],
+        [
+          115.785,
+          -32.1986,
+          358.617
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1438",
+      "sourceId": "FMA22425",
+      "side": "right",
+      "representationId": "BP5072",
+      "path": "isa_BP3D_4.0_obj_99/FJ1438.obj",
+      "bytes": 102407,
+      "sha256": "181553f080c8fad285e54ebca81432a691442a44d2e23d2dde6c21e000bc9ab0",
+      "crc32": "51a4a4b8",
+      "compressedBytesUpstream": 31567,
+      "anatomyId": "bp3d:FMA22425",
+      "family": "tensorfasciaelatae",
+      "moduleId": "muscular:gluteal-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 1254,
+      "faces": 1254,
+      "sourcePositionCount": 1087,
+      "vertices": 1087,
+      "boundsMetres": [
+        [
+          -0.16003299999999998,
+          0.759846,
+          0.09387670000000001
+        ],
+        [
+          -0.128202,
+          0.918714,
+          0.133305
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -160.033,
+          -133.305,
+          759.846
+        ],
+        [
+          -128.202,
+          -93.8767,
+          918.714
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1438M",
+      "sourceId": "FMA22426",
+      "side": "left",
+      "representationId": "BP9184",
+      "path": "isa_BP3D_4.0_obj_99/FJ1438M.obj",
+      "bytes": 101378,
+      "sha256": "4a1bf02b6a7b3574d60f61ed9bbd264e9e52693b9b4a68dbfb6ac6474245f272",
+      "crc32": "b112cb4e",
+      "compressedBytesUpstream": 31629,
+      "anatomyId": "bp3d:FMA22426",
+      "family": "tensorfasciaelatae",
+      "moduleId": "muscular:gluteal-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 1254,
+      "faces": 1254,
+      "sourcePositionCount": 1087,
+      "vertices": 1087,
+      "boundsMetres": [
+        [
+          0.128202,
+          0.759846,
+          0.09387670000000001
+        ],
+        [
+          0.16003299999999998,
+          0.918714,
+          0.133305
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          128.202,
+          -133.305,
+          759.846
+        ],
+        [
+          160.033,
+          -93.8767,
+          918.714
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1439",
+      "sourceId": "FMA22544",
+      "side": "right",
+      "representationId": "BP5018",
+      "path": "isa_BP3D_4.0_obj_99/FJ1439.obj",
+      "bytes": 213354,
+      "sha256": "b03d2f54644969d153d3dfe4025ee629858e72c1e5ee3b0e7d5f16f54dc505b3",
+      "crc32": "8e090aca",
+      "compressedBytesUpstream": 66133,
+      "anatomyId": "bp3d:FMA22544",
+      "family": "tibialisanterior",
+      "moduleId": "muscular:leg-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2510,
+      "faces": 2510,
+      "sourcePositionCount": 2204,
+      "vertices": 2204,
+      "boundsMetres": [
+        [
+          -0.116779,
+          -0.0388064,
+          0.0728246
+        ],
+        [
+          -0.066967,
+          0.355269,
+          0.1496
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -116.779,
+          -149.6,
+          -38.8064
+        ],
+        [
+          -66.967,
+          -72.8246,
+          355.269
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1439M",
+      "sourceId": "FMA22545",
+      "side": "left",
+      "representationId": "BP8720",
+      "path": "isa_BP3D_4.0_obj_99/FJ1439M.obj",
+      "bytes": 211659,
+      "sha256": "948b094bcc119ddbfcfeec4cd27cf21125f27d2d3c25c5344091fbc05833e971",
+      "crc32": "d7ddc125",
+      "compressedBytesUpstream": 65835,
+      "anatomyId": "bp3d:FMA22545",
+      "family": "tibialisanterior",
+      "moduleId": "muscular:leg-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2510,
+      "faces": 2510,
+      "sourcePositionCount": 2206,
+      "vertices": 2206,
+      "boundsMetres": [
+        [
+          0.066967,
+          -0.0388064,
+          0.0728246
+        ],
+        [
+          0.116779,
+          0.355269,
+          0.1496
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          66.967,
+          -149.6,
+          -38.8064
+        ],
+        [
+          116.779,
+          -72.8246,
+          355.269
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1440",
+      "sourceId": "FMA65018",
+      "side": "right",
+      "representationId": "BP5004",
+      "path": "isa_BP3D_4.0_obj_99/FJ1440.obj",
+      "bytes": 476926,
+      "sha256": "6fc367885524fc416139372b55c64d8e1e4bc9010bee64020a72ad8e6f34a57d",
+      "crc32": "61e45e90",
+      "compressedBytesUpstream": 146969,
+      "anatomyId": "bp3d:FMA65018",
+      "family": "tibialisposterior",
+      "moduleId": "muscular:leg-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 5136,
+      "faces": 5136,
+      "sourcePositionCount": 5039,
+      "vertices": 5039,
+      "boundsMetres": [
+        [
+          -0.104926,
+          -0.042579099999999995,
+          0.059418900000000004
+        ],
+        [
+          -0.0426838,
+          0.335745,
+          0.13286699999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -104.926,
+          -132.867,
+          -42.5791
+        ],
+        [
+          -42.6838,
+          -59.4189,
+          335.745
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1440M",
+      "sourceId": "FMA65019",
+      "side": "left",
+      "representationId": "BP9159",
+      "path": "isa_BP3D_4.0_obj_99/FJ1440M.obj",
+      "bytes": 471162,
+      "sha256": "889b43062ffa5bc75a7acd866f8a9cc5a6296413c5d0fcefd2f5cb144c82ac9a",
+      "crc32": "7332c76a",
+      "compressedBytesUpstream": 146427,
+      "anatomyId": "bp3d:FMA65019",
+      "family": "tibialisposterior",
+      "moduleId": "muscular:leg-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 5136,
+      "faces": 5136,
+      "sourcePositionCount": 5037,
+      "vertices": 5037,
+      "boundsMetres": [
+        [
+          0.042683700000000005,
+          -0.0425792,
+          0.059418900000000004
+        ],
+        [
+          0.104926,
+          0.335745,
+          0.13286699999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          42.6837,
+          -132.867,
+          -42.5792
+        ],
+        [
+          104.926,
+          -59.4189,
+          335.745
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1441",
+      "sourceId": "FMA38934",
+      "side": "right",
+      "representationId": "BP5604",
+      "path": "isa_BP3D_4.0_obj_99/FJ1441.obj",
+      "bytes": 305079,
+      "sha256": "c609da3e64f0fc6c295b66b575503e61cacc8bfd9a5e5ec9b79e4eb476da5bab",
+      "crc32": "8e024bcf",
+      "compressedBytesUpstream": 94526,
+      "anatomyId": "bp3d:FMA38934",
+      "family": "vastusintermedius",
+      "moduleId": "muscular:thigh-right",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "triangles": 4260,
+      "faces": 4260,
+      "sourcePositionCount": 2748,
+      "vertices": 2748,
+      "boundsMetres": [
+        [
+          -0.133095,
+          0.34248500000000004,
+          0.0762608
+        ],
+        [
+          -0.0762071,
+          0.7697440000000001,
+          0.135139
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -133.095,
+          -135.139,
+          342.485
+        ],
+        [
+          -76.2071,
+          -76.2608,
+          769.744
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1441M",
+      "sourceId": "FMA38935",
+      "side": "left",
+      "representationId": "BP9207",
+      "path": "isa_BP3D_4.0_obj_99/FJ1441M.obj",
+      "bytes": 302163,
+      "sha256": "5245d285eb09ba0364a1b4ad8a21a6621183310c544c412bb39542e1517815db",
+      "crc32": "54c7617a",
+      "compressedBytesUpstream": 94047,
+      "anatomyId": "bp3d:FMA38935",
+      "family": "vastusintermedius",
+      "moduleId": "muscular:thigh-left",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "triangles": 4260,
+      "faces": 4260,
+      "sourcePositionCount": 2744,
+      "vertices": 2744,
+      "boundsMetres": [
+        [
+          0.0762071,
+          0.34248500000000004,
+          0.0762608
+        ],
+        [
+          0.13309600000000002,
+          0.7697440000000001,
+          0.135139
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          76.2071,
+          -135.139,
+          342.485
+        ],
+        [
+          133.096,
+          -76.2608,
+          769.744
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1442",
+      "sourceId": "FMA38930",
+      "side": "right",
+      "representationId": "BP5602",
+      "path": "isa_BP3D_4.0_obj_99/FJ1442.obj",
+      "bytes": 464679,
+      "sha256": "f67be78d7d0ddc6e78c0683ce4bd5be7492e4137f8661bc54039cbf535a88880",
+      "crc32": "1d2236a4",
+      "compressedBytesUpstream": 141490,
+      "anatomyId": "bp3d:FMA38930",
+      "family": "vastuslateralis",
+      "moduleId": "muscular:thigh-right",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "triangles": 6688,
+      "faces": 6688,
+      "sourcePositionCount": 3975,
+      "vertices": 3975,
+      "boundsMetres": [
+        [
+          -0.159632,
+          0.31793200000000005,
+          0.057503200000000004
+        ],
+        [
+          -0.0840565,
+          0.7881670000000001,
+          0.13705099999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -159.632,
+          -137.051,
+          317.932
+        ],
+        [
+          -84.0565,
+          -57.5032,
+          788.167
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1442M",
+      "sourceId": "FMA38931",
+      "side": "left",
+      "representationId": "BP8754",
+      "path": "isa_BP3D_4.0_obj_99/FJ1442M.obj",
+      "bytes": 460942,
+      "sha256": "507caa464730c508c2fd2f6958f9a5660fb6ca188bc38fafb5c9b5556ac6732b",
+      "crc32": "4c021fed",
+      "compressedBytesUpstream": 140973,
+      "anatomyId": "bp3d:FMA38931",
+      "family": "vastuslateralis",
+      "moduleId": "muscular:thigh-left",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "triangles": 6688,
+      "faces": 6688,
+      "sourcePositionCount": 3974,
+      "vertices": 3974,
+      "boundsMetres": [
+        [
+          0.0840565,
+          0.31793200000000005,
+          0.057503200000000004
+        ],
+        [
+          0.15963300000000002,
+          0.7881670000000001,
+          0.13705099999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          84.0565,
+          -137.051,
+          317.932
+        ],
+        [
+          159.633,
+          -57.5032,
+          788.167
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1443",
+      "sourceId": "FMA38932",
+      "side": "right",
+      "representationId": "BP5600",
+      "path": "isa_BP3D_4.0_obj_99/FJ1443.obj",
+      "bytes": 317804,
+      "sha256": "5bdb79f52849241e20ff2280332f20efd38f1b4bda1fb1337e10a5c3e466002b",
+      "crc32": "c4e375dc",
+      "compressedBytesUpstream": 99618,
+      "anatomyId": "bp3d:FMA38932",
+      "family": "vastusmedialis",
+      "moduleId": "muscular:thigh-right",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "triangles": 4552,
+      "faces": 4552,
+      "sourcePositionCount": 2773,
+      "vertices": 2773,
+      "boundsMetres": [
+        [
+          -0.105601,
+          0.340548,
+          0.089132
+        ],
+        [
+          -0.034939200000000004,
+          0.738179,
+          0.146901
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -105.601,
+          -146.901,
+          340.548
+        ],
+        [
+          -34.9392,
+          -89.132,
+          738.179
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1443M",
+      "sourceId": "FMA38933",
+      "side": "left",
+      "representationId": "BP9128",
+      "path": "isa_BP3D_4.0_obj_99/FJ1443M.obj",
+      "bytes": 315070,
+      "sha256": "8ca4d66734150402401722e8a82f52ada8af9d6973592e127431b742dfe46ad4",
+      "crc32": "c50c7990",
+      "compressedBytesUpstream": 98951,
+      "anatomyId": "bp3d:FMA38933",
+      "family": "vastusmedialis",
+      "moduleId": "muscular:thigh-left",
+      "sourceType": "portion",
+      "isaType": "zone of muscle organ",
+      "triangles": 4552,
+      "faces": 4552,
+      "sourcePositionCount": 2772,
+      "vertices": 2772,
+      "boundsMetres": [
+        [
+          0.034939300000000006,
+          0.340548,
+          0.089132
+        ],
+        [
+          0.105601,
+          0.738179,
+          0.146901
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          34.9393,
+          -146.901,
+          340.548
+        ],
+        [
+          105.601,
+          -89.132,
+          738.179
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1444",
+      "sourceId": "FMA45891",
+      "side": "right",
+      "representationId": "BP5573",
+      "path": "isa_BP3D_4.0_obj_99/FJ1444.obj",
+      "bytes": 124350,
+      "sha256": "c071097501796cee5ff2a011b3d84c7bea4cb153241fce0f8b0a73d070bd990f",
+      "crc32": "e3ce7913",
+      "compressedBytesUpstream": 39570,
+      "anatomyId": "bp3d:FMA45891",
+      "family": "bicepsfemoris",
+      "moduleId": "muscular:thigh-right",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "triangles": 1728,
+      "faces": 1728,
+      "sourcePositionCount": 1211,
+      "vertices": 1211,
+      "boundsMetres": [
+        [
+          -0.11740900000000001,
+          0.32819,
+          0.0508818
+        ],
+        [
+          -0.0806712,
+          0.64662,
+          0.0874787
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -117.409,
+          -87.4787,
+          328.19
+        ],
+        [
+          -80.6712,
+          -50.8818,
+          646.62
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1444M",
+      "sourceId": "FMA45892",
+      "side": "left",
+      "representationId": "BP8616",
+      "path": "isa_BP3D_4.0_obj_99/FJ1444M.obj",
+      "bytes": 123463,
+      "sha256": "2794a3899545d9b66f61fb9de3459132b577939c63b527fae101d497e28b154e",
+      "crc32": "8ba350d6",
+      "compressedBytesUpstream": 39597,
+      "anatomyId": "bp3d:FMA45892",
+      "family": "bicepsfemoris",
+      "moduleId": "muscular:thigh-left",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "triangles": 1728,
+      "faces": 1728,
+      "sourcePositionCount": 1215,
+      "vertices": 1215,
+      "boundsMetres": [
+        [
+          0.0806712,
+          0.32819,
+          0.0508818
+        ],
+        [
+          0.11740900000000001,
+          0.64662,
+          0.0874787
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          80.6712,
+          -87.4787,
+          328.19
+        ],
+        [
+          117.409,
+          -50.8818,
+          646.62
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1474",
+      "sourceId": "FMA38560",
+      "side": "right",
+      "representationId": "BP5568",
+      "path": "isa_BP3D_4.0_obj_99/FJ1474.obj",
+      "bytes": 151318,
+      "sha256": "589e18d8dd9eac471404fae1035b01476ed0021af1cb2822c8c759164a2a45ba",
+      "crc32": "a866e7e6",
+      "compressedBytesUpstream": 44881,
+      "anatomyId": "bp3d:FMA38560",
+      "family": "pronatorteres",
+      "moduleId": "muscular:forearm-right",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "triangles": 1846,
+      "faces": 1846,
+      "sourcePositionCount": 1588,
+      "vertices": 1588,
+      "boundsMetres": [
+        [
+          -0.257321,
+          0.916652,
+          0.0676887
+        ],
+        [
+          -0.187418,
+          1.0653800000000002,
+          0.102553
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -257.321,
+          -102.553,
+          916.652
+        ],
+        [
+          -187.418,
+          -67.6887,
+          1065.38
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1474M",
+      "sourceId": "FMA38561",
+      "side": "left",
+      "representationId": "BP8015",
+      "path": "isa_BP3D_4.0_obj_99/FJ1474M.obj",
+      "bytes": 150642,
+      "sha256": "441ab2758c6c7f27fc5835edc070c02b2355e5222bf3a65c728853c38b424aa7",
+      "crc32": "ce88fbf8",
+      "compressedBytesUpstream": 45033,
+      "anatomyId": "bp3d:FMA38561",
+      "family": "pronatorteres",
+      "moduleId": "muscular:forearm-left",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "triangles": 1846,
+      "faces": 1846,
+      "sourcePositionCount": 1599,
+      "vertices": 1599,
+      "boundsMetres": [
+        [
+          0.187418,
+          0.916652,
+          0.0676887
+        ],
+        [
+          0.257321,
+          1.0653800000000002,
+          0.102553
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          187.418,
+          -102.553,
+          916.652
+        ],
+        [
+          257.321,
+          -67.6887,
+          1065.38
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1490",
+      "sourceId": "FMA38495",
+      "side": "right",
+      "representationId": "BP4831",
+      "path": "isa_BP3D_4.0_obj_99/FJ1490.obj",
+      "bytes": 179061,
+      "sha256": "8b6ec821491a2eafaee8c813cfad4532beae94c354595cc3e922d8cdbb36fb32",
+      "crc32": "b1851832",
+      "compressedBytesUpstream": 56132,
+      "anatomyId": "bp3d:FMA38495",
+      "family": "extensorcarpiradialislongus",
+      "moduleId": "muscular:forearm-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2474,
+      "faces": 2474,
+      "sourcePositionCount": 1696,
+      "vertices": 1696,
+      "boundsMetres": [
+        [
+          -0.277863,
+          0.7791440000000001,
+          0.0532059
+        ],
+        [
+          -0.220086,
+          1.10161,
+          0.120979
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -277.863,
+          -120.979,
+          779.144
+        ],
+        [
+          -220.086,
+          -53.2059,
+          1101.61
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1490M",
+      "sourceId": "FMA38496",
+      "side": "left",
+      "representationId": "BP9280",
+      "path": "isa_BP3D_4.0_obj_99/FJ1490M.obj",
+      "bytes": 177891,
+      "sha256": "f0ed6a659b2a1fd0d9138d2b7ca91535f62b70b9bc16f862173fdd85f69372d2",
+      "crc32": "266dc5b3",
+      "compressedBytesUpstream": 55960,
+      "anatomyId": "bp3d:FMA38496",
+      "family": "extensorcarpiradialislongus",
+      "moduleId": "muscular:forearm-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 2474,
+      "faces": 2474,
+      "sourcePositionCount": 1702,
+      "vertices": 1702,
+      "boundsMetres": [
+        [
+          0.220068,
+          0.7791440000000001,
+          0.0532059
+        ],
+        [
+          0.277863,
+          1.10161,
+          0.120979
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          220.068,
+          -120.979,
+          779.144
+        ],
+        [
+          277.863,
+          -53.2059,
+          1101.61
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1496",
+      "sourceId": "FMA38460",
+      "side": "right",
+      "representationId": "BP4841",
+      "path": "isa_BP3D_4.0_obj_99/FJ1496.obj",
+      "bytes": 82751,
+      "sha256": "8e83c638e2353bb8ba65547f4b846d89a1f393c4761806faf8e09970c9b6b6bf",
+      "crc32": "f80e4045",
+      "compressedBytesUpstream": 26535,
+      "anatomyId": "bp3d:FMA38460",
+      "family": "flexorcarpiradialis",
+      "moduleId": "muscular:forearm-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 1148,
+      "faces": 1148,
+      "sourcePositionCount": 819,
+      "vertices": 819,
+      "boundsMetres": [
+        [
+          -0.272111,
+          0.780697,
+          0.0708677
+        ],
+        [
+          -0.18436000000000002,
+          1.05748,
+          0.136406
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -272.111,
+          -136.406,
+          780.697
+        ],
+        [
+          -184.36,
+          -70.8677,
+          1057.48
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1496M",
+      "sourceId": "FMA38461",
+      "side": "left",
+      "representationId": "BP8940",
+      "path": "isa_BP3D_4.0_obj_99/FJ1496M.obj",
+      "bytes": 82024,
+      "sha256": "3ee91fd59707361cb9fd6c55fa51c677df1744a779965c987e789e2be52758a2",
+      "crc32": "12bd84fc",
+      "compressedBytesUpstream": 26572,
+      "anatomyId": "bp3d:FMA38461",
+      "family": "flexorcarpiradialis",
+      "moduleId": "muscular:forearm-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 1148,
+      "faces": 1148,
+      "sourcePositionCount": 819,
+      "vertices": 819,
+      "boundsMetres": [
+        [
+          0.18436000000000002,
+          0.780697,
+          0.0708677
+        ],
+        [
+          0.272111,
+          1.05748,
+          0.136407
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          184.36,
+          -136.407,
+          780.697
+        ],
+        [
+          272.111,
+          -70.8677,
+          1057.48
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1505",
+      "sourceId": "FMA38513",
+      "side": "right",
+      "representationId": "BP4814",
+      "path": "isa_BP3D_4.0_obj_99/FJ1505.obj",
+      "bytes": 241649,
+      "sha256": "83c5940f2c6516ecf5b0eb69de5dc0a056177b29f7bc046b94cc20c85460ae46",
+      "crc32": "b08379d6",
+      "compressedBytesUpstream": 73685,
+      "anatomyId": "bp3d:FMA38513",
+      "family": "supinator",
+      "moduleId": "muscular:forearm-right",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3110,
+      "faces": 3110,
+      "sourcePositionCount": 2368,
+      "vertices": 2368,
+      "boundsMetres": [
+        [
+          -0.254094,
+          0.932534,
+          0.0562606
+        ],
+        [
+          -0.222361,
+          1.05638,
+          0.0905488
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -254.094,
+          -90.5488,
+          932.534
+        ],
+        [
+          -222.361,
+          -56.2606,
+          1056.38
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1505M",
+      "sourceId": "FMA38514",
+      "side": "left",
+      "representationId": "BP8499",
+      "path": "isa_BP3D_4.0_obj_99/FJ1505M.obj",
+      "bytes": 240547,
+      "sha256": "bfc240c7d0db047b5defe13bad862115bfcd7ec3cb426c40630ed1738c3cd3d5",
+      "crc32": "0ec74689",
+      "compressedBytesUpstream": 73602,
+      "anatomyId": "bp3d:FMA38514",
+      "family": "supinator",
+      "moduleId": "muscular:forearm-left",
+      "sourceType": "muscle",
+      "isaType": "muscle organ",
+      "triangles": 3110,
+      "faces": 3110,
+      "sourcePositionCount": 2379,
+      "vertices": 2379,
+      "boundsMetres": [
+        [
+          0.222361,
+          0.932534,
+          0.0562606
+        ],
+        [
+          0.254095,
+          1.05638,
+          0.0905488
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          222.361,
+          -90.5488,
+          932.534
+        ],
+        [
+          254.095,
+          -56.2606,
+          1056.38
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1516",
+      "sourceId": "FMA38562",
+      "side": "right",
+      "representationId": "BP5552",
+      "path": "isa_BP3D_4.0_obj_99/FJ1516.obj",
+      "bytes": 77585,
+      "sha256": "62058afdb37b3637c21f7ad15fe681acced1e36c986190a692f1733cb0a79760",
+      "crc32": "c5f87aa9",
+      "compressedBytesUpstream": 24647,
+      "anatomyId": "bp3d:FMA38562",
+      "family": "pronatorteres",
+      "moduleId": "muscular:forearm-right",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "triangles": 1040,
+      "faces": 1040,
+      "sourcePositionCount": 791,
+      "vertices": 791,
+      "boundsMetres": [
+        [
+          -0.25631400000000004,
+          0.9277430000000001,
+          0.0740591
+        ],
+        [
+          -0.204265,
+          1.02343,
+          0.0983823
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -256.314,
+          -98.3823,
+          927.743
+        ],
+        [
+          -204.265,
+          -74.0591,
+          1023.43
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1516M",
+      "sourceId": "FMA38563",
+      "side": "left",
+      "representationId": "BP9043",
+      "path": "isa_BP3D_4.0_obj_99/FJ1516M.obj",
+      "bytes": 76834,
+      "sha256": "f4e663154e28ab0ad13e6c4facce145b50460bf5f2bbdb7d0199867a6d735b84",
+      "crc32": "dbaf828d",
+      "compressedBytesUpstream": 24657,
+      "anatomyId": "bp3d:FMA38563",
+      "family": "pronatorteres",
+      "moduleId": "muscular:forearm-left",
+      "sourceType": "head",
+      "isaType": "head of muscle organ",
+      "triangles": 1040,
+      "faces": 1040,
+      "sourcePositionCount": 791,
+      "vertices": 791,
+      "boundsMetres": [
+        [
+          0.204265,
+          0.9277430000000001,
+          0.0740591
+        ],
+        [
+          0.25631400000000004,
+          1.02343,
+          0.0983823
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          204.265,
+          -98.3823,
+          927.743
+        ],
+        [
+          256.314,
+          -74.0591,
+          1023.43
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    }
+  ]
+}

@@ -2,16 +2,20 @@ import {ArrowSquareOut} from '@phosphor-icons/react';
 import SiteLink from '../../../components/SiteLink';
 import type {AnatomyNode} from './types';
 import {resolveMuscleDetail} from './muscle-education';
+import {QUADRICEPS_MEMBERS} from './limb-education';
 
 export default function MuscleInformation({node}: {node: AnatomyNode}) {
   const detail = resolveMuscleDetail(node);
+  if (node.kind === 'division' && QUADRICEPS_MEMBERS[node.id]) return <p>El cuádriceps reúne el recto femoral y los vastos lateral, medial e intermedio. Selecciona cada músculo para consultar su ficha. «Mostrar contexto» reúne los huesos de sus fijaciones documentadas.</p>;
   if (!detail) return <p>{node.children.length
     ? 'Selecciona un músculo o componente de este grupo para estudiar su anatomía.'
     : 'La ficha de esta estructura muscular está pendiente de documentación.'}</p>;
   return <section className="atlas-muscle-information" aria-label={'Información muscular de '+node.name}>
     <p><strong>{detail.name}</strong><br/><em lang="la">{detail.latin}</em></p>
     <p>Sistema muscular · {detail.region}<br/>{detail.group}</p>
-    {detail.scope === 'component' && <p>Componente de {detail.muscleName.toLowerCase()}. {detail.attachmentScope === 'origin-and-insertion'
+    {detail.scope === 'component' && <p>Componente de {detail.muscleName.toLowerCase()}. {detail.innervationScope === 'component'
+      ? 'El origen, la acción y la inervación corresponden a esta cabeza; la inserción se resume para el músculo.'
+      : detail.attachmentScope === 'origin-and-insertion'
       ? 'El origen y la inserción corresponden a esta porción; la inervación se resume para el músculo.'
       : 'La inserción y la inervación descritas corresponden al músculo; el origen corresponde a esta porción o cabeza.'}</p>}
     <h3>Descripción</h3><p>{detail.description}</p>

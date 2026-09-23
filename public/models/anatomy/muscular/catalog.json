@@ -34,12 +34,22 @@
       "children": [
         "muscular:region:arm-right",
         "muscular:region:arm-left",
-        "muscular:region:trunk"
+        "muscular:region:trunk",
+        "muscular:region:leg-right",
+        "muscular:region:leg-left"
       ],
       "kind": "system",
       "assetIds": [
         "muscular:abdomen",
         "muscular:back",
+        "muscular:forearm-left",
+        "muscular:forearm-right",
+        "muscular:gluteal-left",
+        "muscular:gluteal-right",
+        "muscular:leg-left",
+        "muscular:leg-right",
+        "muscular:thigh-left",
+        "muscular:thigh-right",
         "muscular:thorax-anterior",
         "muscular:upper-left",
         "muscular:upper-right"
@@ -48,12 +58,12 @@
       "relatedIds": [],
       "bounds": [
         [
-          -0.23512100000000002,
-          0.793625,
+          -0.277863,
+          -0.055900399999999996,
           -0.0245467
         ],
         [
-          0.23512100000000002,
+          0.277863,
           1.50624,
           0.21935300000000002
         ]
@@ -61,17 +71,19 @@
     },
     {
       "id": "muscular:region:arm-right",
-      "name": "Hombro y brazo derecho",
-      "anatomicalName": "Hombro y brazo derecho",
+      "name": "Miembro superior derecho",
+      "anatomicalName": "Miembro superior derecho",
       "aliases": [],
       "systemId": "muscular",
       "regionId": "muscular:region:arm-right",
       "children": [
         "muscular:group:arm-right:shoulder",
-        "muscular:group:arm-right:arm"
+        "muscular:group:arm-right:arm",
+        "muscular:region:arm-right:forearm"
       ],
       "kind": "region",
       "assetIds": [
+        "muscular:forearm-right",
         "muscular:upper-right"
       ],
       "meshNames": [],
@@ -82,14 +94,14 @@
       "side": "right",
       "bounds": [
         [
-          -0.23512100000000002,
-          0.9940720000000001,
+          -0.277863,
+          0.7791440000000001,
           -0.00366613
         ],
         [
           -0.060258400000000004,
           1.35539,
-          0.12133100000000001
+          0.136406
         ]
       ]
     },
@@ -905,17 +917,19 @@
     },
     {
       "id": "muscular:region:arm-left",
-      "name": "Hombro y brazo izquierdo",
-      "anatomicalName": "Hombro y brazo izquierdo",
+      "name": "Miembro superior izquierdo",
+      "anatomicalName": "Miembro superior izquierdo",
       "aliases": [],
       "systemId": "muscular",
       "regionId": "muscular:region:arm-left",
       "children": [
         "muscular:group:arm-left:shoulder",
-        "muscular:group:arm-left:arm"
+        "muscular:group:arm-left:arm",
+        "muscular:region:arm-left:forearm"
       ],
       "kind": "region",
       "assetIds": [
+        "muscular:forearm-left",
         "muscular:upper-left"
       ],
       "meshNames": [],
@@ -927,13 +941,13 @@
       "bounds": [
         [
           0.060258400000000004,
-          0.9940720000000001,
+          0.7791440000000001,
           -0.00366613
         ],
         [
-          0.23512100000000002,
+          0.277863,
           1.35539,
-          0.12133100000000001
+          0.136407
         ]
       ]
     },
@@ -3610,6 +3624,3636 @@
           0.0795569
         ]
       ]
+    },
+    {
+      "id": "muscular:region:leg-right",
+      "name": "Miembro inferior derecho",
+      "anatomicalName": "Miembro inferior derecho",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right",
+      "parentId": "muscular",
+      "children": [
+        "muscular:region:leg-right:gluteal",
+        "muscular:region:leg-right:thigh",
+        "muscular:region:leg-right:leg"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:gluteal-right",
+        "muscular:leg-right",
+        "muscular:thigh-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular"
+      ],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.16003299999999998,
+          -0.055900399999999996,
+          -0.0198663
+        ],
+        [
+          0.00152091,
+          0.950903,
+          0.15246600000000002
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-right:gluteal",
+      "name": "Región glútea derecha",
+      "anatomicalName": "Región glútea derecha",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:gluteal",
+      "parentId": "muscular:region:leg-right",
+      "children": [
+        "bp3d:FMA22328",
+        "bp3d:FMA22330",
+        "bp3d:FMA22332",
+        "bp3d:FMA22425"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:gluteal-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right"
+      ],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.16003299999999998,
+          0.667745,
+          -0.0198663
+        ],
+        [
+          0.00152091,
+          0.950903,
+          0.133305
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-right:thigh",
+      "name": "Muslo derecho",
+      "anatomicalName": "Muslo derecho",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:region:leg-right",
+      "children": [
+        "muscular:region:leg-right:thigh:anterior",
+        "muscular:region:leg-right:thigh:medial",
+        "muscular:region:leg-right:thigh:posterior"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right"
+      ],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.159632,
+          0.27419,
+          0.0183096
+        ],
+        [
+          -0.0120663,
+          0.901792,
+          0.15246600000000002
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-right:thigh:anterior",
+      "name": "Compartimento anterior",
+      "anatomicalName": "Compartimento anterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:region:leg-right:thigh",
+      "children": [
+        "muscular:group:quadriceps:right",
+        "bp3d:FMA22354"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right:thigh"
+      ],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.159632,
+          0.27419,
+          0.057503200000000004
+        ],
+        [
+          -0.0206605,
+          0.901792,
+          0.15246600000000002
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-right:thigh:medial",
+      "name": "Compartimento medial",
+      "anatomicalName": "Compartimento medial",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:region:leg-right:thigh",
+      "children": [
+        "bp3d:FMA22456",
+        "bp3d:FMA43883"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right:thigh"
+      ],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.0941022,
+          0.28301400000000004,
+          0.06535039999999999
+        ],
+        [
+          -0.0120663,
+          0.799665,
+          0.136972
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-right:thigh:posterior",
+      "name": "Compartimento posterior",
+      "anatomicalName": "Compartimento posterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:region:leg-right:thigh",
+      "children": [
+        "med3d:muscle:bicepsfemoris:right",
+        "bp3d:FMA22358",
+        "bp3d:FMA22448"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right:thigh"
+      ],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.126642,
+          0.283125,
+          0.0183096
+        ],
+        [
+          -0.0131749,
+          0.764753,
+          0.103495
+        ]
+      ]
+    },
+    {
+      "id": "muscular:group:quadriceps:right",
+      "name": "Cuádriceps derecho",
+      "anatomicalName": "Cuádriceps derecho",
+      "aliases": [
+        "Cuadriceps femoris",
+        "Quadriceps femoris",
+        "Grupo cuádriceps",
+        "Cuatro músculos extensores de la rodilla"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:region:leg-right:thigh:anterior",
+      "children": [
+        "bp3d:FMA38928",
+        "bp3d:FMA38930",
+        "bp3d:FMA38932",
+        "bp3d:FMA38934"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right:thigh:anterior"
+      ],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.159632,
+          0.31470800000000004,
+          0.057503200000000004
+        ],
+        [
+          -0.034939200000000004,
+          0.8711040000000001,
+          0.15246600000000002
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-right:leg",
+      "name": "Pierna derecha",
+      "anatomicalName": "Pierna derecha",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:leg",
+      "parentId": "muscular:region:leg-right",
+      "children": [
+        "muscular:region:leg-right:leg:anterior",
+        "muscular:region:leg-right:leg:lateral",
+        "muscular:region:leg-right:leg:posterior"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:leg-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right"
+      ],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.126428,
+          -0.055900399999999996,
+          0.00580911
+        ],
+        [
+          -0.0217597,
+          0.432102,
+          0.1496
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-right:leg:anterior",
+      "name": "Compartimento anterior",
+      "anatomicalName": "Compartimento anterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:leg",
+      "parentId": "muscular:region:leg-right:leg",
+      "children": [
+        "bp3d:FMA22544"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:leg-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right:leg"
+      ],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.116779,
+          -0.0388064,
+          0.0728246
+        ],
+        [
+          -0.066967,
+          0.355269,
+          0.1496
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-right:leg:lateral",
+      "name": "Compartimento lateral",
+      "anatomicalName": "Compartimento lateral",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:leg",
+      "parentId": "muscular:region:leg-right:leg",
+      "children": [
+        "bp3d:FMA22552",
+        "bp3d:FMA22554"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:leg-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right:leg"
+      ],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.126428,
+          -0.055900399999999996,
+          0.0408001
+        ],
+        [
+          -0.08214310000000001,
+          0.35176999999999997,
+          0.136529
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-right:leg:posterior",
+      "name": "Compartimento posterior",
+      "anatomicalName": "Compartimento posterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:leg",
+      "parentId": "muscular:region:leg-right:leg",
+      "children": [
+        "med3d:muscle:gastrocnemius:right",
+        "bp3d:FMA22558",
+        "bp3d:FMA65018"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:leg-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right:leg"
+      ],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.11699200000000001,
+          -0.042579099999999995,
+          0.00580911
+        ],
+        [
+          -0.0217597,
+          0.432102,
+          0.13286699999999999
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:arm-right:forearm",
+      "name": "Antebrazo derecho",
+      "anatomicalName": "Antebrazo derecho",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:forearm",
+      "parentId": "muscular:region:arm-right",
+      "children": [
+        "muscular:region:arm-right:forearm:anterior",
+        "muscular:region:arm-right:forearm:posterior"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:forearm-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-right"
+      ],
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "bounds": [
+        [
+          -0.277863,
+          0.7791440000000001,
+          0.0532059
+        ],
+        [
+          -0.18436000000000002,
+          1.10161,
+          0.136406
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:arm-right:forearm:anterior",
+      "name": "Compartimento anterior",
+      "anatomicalName": "Compartimento anterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:forearm",
+      "parentId": "muscular:region:arm-right:forearm",
+      "children": [
+        "bp3d:FMA38460",
+        "med3d:muscle:pronatorteres:right"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:forearm-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-right:forearm"
+      ],
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "bounds": [
+        [
+          -0.272111,
+          0.780697,
+          0.0676887
+        ],
+        [
+          -0.18436000000000002,
+          1.0653800000000002,
+          0.136406
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:arm-right:forearm:posterior",
+      "name": "Compartimento posterior",
+      "anatomicalName": "Compartimento posterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:forearm",
+      "parentId": "muscular:region:arm-right:forearm",
+      "children": [
+        "bp3d:FMA38495",
+        "bp3d:FMA38513"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:forearm-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-right:forearm"
+      ],
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "bounds": [
+        [
+          -0.277863,
+          0.7791440000000001,
+          0.0532059
+        ],
+        [
+          -0.220086,
+          1.10161,
+          0.120979
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-left",
+      "name": "Miembro inferior izquierdo",
+      "anatomicalName": "Miembro inferior izquierdo",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left",
+      "parentId": "muscular",
+      "children": [
+        "muscular:region:leg-left:gluteal",
+        "muscular:region:leg-left:thigh",
+        "muscular:region:leg-left:leg"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:gluteal-left",
+        "muscular:leg-left",
+        "muscular:thigh-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular"
+      ],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          -0.00152091,
+          -0.055900399999999996,
+          -0.0198663
+        ],
+        [
+          0.16003299999999998,
+          0.950903,
+          0.15246600000000002
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-left:gluteal",
+      "name": "Región glútea izquierda",
+      "anatomicalName": "Región glútea izquierda",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:gluteal",
+      "parentId": "muscular:region:leg-left",
+      "children": [
+        "bp3d:FMA22329",
+        "bp3d:FMA22331",
+        "bp3d:FMA22333",
+        "bp3d:FMA22426"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:gluteal-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left"
+      ],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          -0.00152091,
+          0.667745,
+          -0.0198663
+        ],
+        [
+          0.16003299999999998,
+          0.950903,
+          0.133305
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-left:thigh",
+      "name": "Muslo izquierdo",
+      "anatomicalName": "Muslo izquierdo",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:region:leg-left",
+      "children": [
+        "muscular:region:leg-left:thigh:anterior",
+        "muscular:region:leg-left:thigh:medial",
+        "muscular:region:leg-left:thigh:posterior"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left"
+      ],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0120663,
+          0.27419,
+          0.0183095
+        ],
+        [
+          0.15963300000000002,
+          0.901792,
+          0.15246600000000002
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-left:thigh:anterior",
+      "name": "Compartimento anterior",
+      "anatomicalName": "Compartimento anterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:region:leg-left:thigh",
+      "children": [
+        "muscular:group:quadriceps:left",
+        "bp3d:FMA22355"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left:thigh"
+      ],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0206605,
+          0.27419,
+          0.057503200000000004
+        ],
+        [
+          0.15963300000000002,
+          0.901792,
+          0.15246600000000002
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-left:thigh:medial",
+      "name": "Compartimento medial",
+      "anatomicalName": "Compartimento medial",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:region:leg-left:thigh",
+      "children": [
+        "bp3d:FMA22457",
+        "bp3d:FMA43884"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left:thigh"
+      ],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0120663,
+          0.28301400000000004,
+          0.06535039999999999
+        ],
+        [
+          0.0941022,
+          0.799665,
+          0.136971
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-left:thigh:posterior",
+      "name": "Compartimento posterior",
+      "anatomicalName": "Compartimento posterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:region:leg-left:thigh",
+      "children": [
+        "med3d:muscle:bicepsfemoris:left",
+        "bp3d:FMA22359",
+        "bp3d:FMA22449"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left:thigh"
+      ],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0131749,
+          0.283125,
+          0.0183095
+        ],
+        [
+          0.126642,
+          0.764753,
+          0.103495
+        ]
+      ]
+    },
+    {
+      "id": "muscular:group:quadriceps:left",
+      "name": "Cuádriceps izquierdo",
+      "anatomicalName": "Cuádriceps izquierdo",
+      "aliases": [
+        "Cuadriceps femoris",
+        "Quadriceps femoris",
+        "Grupo cuádriceps",
+        "Cuatro músculos extensores de la rodilla"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:region:leg-left:thigh:anterior",
+      "children": [
+        "bp3d:FMA38929",
+        "bp3d:FMA38931",
+        "bp3d:FMA38933",
+        "bp3d:FMA38935"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left:thigh:anterior"
+      ],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.034939300000000006,
+          0.31470800000000004,
+          0.057503200000000004
+        ],
+        [
+          0.15963300000000002,
+          0.8711040000000001,
+          0.15246600000000002
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-left:leg",
+      "name": "Pierna izquierda",
+      "anatomicalName": "Pierna izquierda",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:leg",
+      "parentId": "muscular:region:leg-left",
+      "children": [
+        "muscular:region:leg-left:leg:anterior",
+        "muscular:region:leg-left:leg:lateral",
+        "muscular:region:leg-left:leg:posterior"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:leg-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left"
+      ],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0217597,
+          -0.055900399999999996,
+          0.00580911
+        ],
+        [
+          0.126428,
+          0.432102,
+          0.1496
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-left:leg:anterior",
+      "name": "Compartimento anterior",
+      "anatomicalName": "Compartimento anterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:leg",
+      "parentId": "muscular:region:leg-left:leg",
+      "children": [
+        "bp3d:FMA22545"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:leg-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left:leg"
+      ],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.066967,
+          -0.0388064,
+          0.0728246
+        ],
+        [
+          0.116779,
+          0.355269,
+          0.1496
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-left:leg:lateral",
+      "name": "Compartimento lateral",
+      "anatomicalName": "Compartimento lateral",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:leg",
+      "parentId": "muscular:region:leg-left:leg",
+      "children": [
+        "bp3d:FMA22553",
+        "bp3d:FMA22555"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:leg-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left:leg"
+      ],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.08214300000000001,
+          -0.055900399999999996,
+          0.0408001
+        ],
+        [
+          0.126428,
+          0.35176999999999997,
+          0.136529
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:leg-left:leg:posterior",
+      "name": "Compartimento posterior",
+      "anatomicalName": "Compartimento posterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:leg",
+      "parentId": "muscular:region:leg-left:leg",
+      "children": [
+        "med3d:muscle:gastrocnemius:left",
+        "bp3d:FMA22559",
+        "bp3d:FMA65019"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:leg-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left:leg"
+      ],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0217597,
+          -0.0425792,
+          0.00580911
+        ],
+        [
+          0.11699200000000001,
+          0.432102,
+          0.13286699999999999
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:arm-left:forearm",
+      "name": "Antebrazo izquierdo",
+      "anatomicalName": "Antebrazo izquierdo",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:forearm",
+      "parentId": "muscular:region:arm-left",
+      "children": [
+        "muscular:region:arm-left:forearm:anterior",
+        "muscular:region:arm-left:forearm:posterior"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:forearm-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-left"
+      ],
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "bounds": [
+        [
+          0.18436000000000002,
+          0.7791440000000001,
+          0.0532059
+        ],
+        [
+          0.277863,
+          1.10161,
+          0.136407
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:arm-left:forearm:anterior",
+      "name": "Compartimento anterior",
+      "anatomicalName": "Compartimento anterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:forearm",
+      "parentId": "muscular:region:arm-left:forearm",
+      "children": [
+        "bp3d:FMA38461",
+        "med3d:muscle:pronatorteres:left"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:forearm-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-left:forearm"
+      ],
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "bounds": [
+        [
+          0.18436000000000002,
+          0.780697,
+          0.0676887
+        ],
+        [
+          0.272111,
+          1.0653800000000002,
+          0.136407
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:arm-left:forearm:posterior",
+      "name": "Compartimento posterior",
+      "anatomicalName": "Compartimento posterior",
+      "aliases": [],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:forearm",
+      "parentId": "muscular:region:arm-left:forearm",
+      "children": [
+        "bp3d:FMA38496",
+        "bp3d:FMA38514"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "muscular:forearm-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-left:forearm"
+      ],
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "bounds": [
+        [
+          0.220068,
+          0.7791440000000001,
+          0.0532059
+        ],
+        [
+          0.277863,
+          1.10161,
+          0.120979
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22328",
+      "name": "Glúteo mayor derecho",
+      "anatomicalName": "Glúteo mayor derecho",
+      "aliases": [
+        "right gluteus maximus",
+        "FMA22328",
+        "FJ1418",
+        "Musculus gluteus maximus",
+        "gluteusmaximus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:gluteal",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:gluteal-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22328_FJ1418"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:gluteal",
+        "bp3d:FMA22329"
+      ],
+      "sourceId": "FMA22328",
+      "family": "gluteusmaximus",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus gluteus maximus",
+      "bounds": [
+        [
+          -0.145401,
+          0.667745,
+          -0.0198663
+        ],
+        [
+          0.00152091,
+          0.9325570000000001,
+          0.0780115
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22329",
+      "name": "Glúteo mayor izquierdo",
+      "anatomicalName": "Glúteo mayor izquierdo",
+      "aliases": [
+        "left gluteus maximus",
+        "FMA22329",
+        "FJ1418M",
+        "Musculus gluteus maximus",
+        "gluteusmaximus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:gluteal",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:gluteal-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22329_FJ1418M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:gluteal",
+        "bp3d:FMA22328"
+      ],
+      "sourceId": "FMA22329",
+      "family": "gluteusmaximus",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus gluteus maximus",
+      "bounds": [
+        [
+          -0.00152091,
+          0.667745,
+          -0.0198663
+        ],
+        [
+          0.145401,
+          0.9325570000000001,
+          0.0780115
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22330",
+      "name": "Glúteo medio derecho",
+      "anatomicalName": "Glúteo medio derecho",
+      "aliases": [
+        "right gluteus medius",
+        "FMA22330",
+        "FJ1419",
+        "Musculus gluteus medius",
+        "gluteusmedius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:gluteal",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:gluteal-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22330_FJ1419"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:gluteal",
+        "bp3d:FMA22331"
+      ],
+      "sourceId": "FMA22330",
+      "family": "gluteusmedius",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus gluteus medius",
+      "bounds": [
+        [
+          -0.14973599999999998,
+          0.7887430000000001,
+          0.0169342
+        ],
+        [
+          -0.0595963,
+          0.950903,
+          0.101998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22331",
+      "name": "Glúteo medio izquierdo",
+      "anatomicalName": "Glúteo medio izquierdo",
+      "aliases": [
+        "left gluteus medius",
+        "FMA22331",
+        "FJ1419M",
+        "Musculus gluteus medius",
+        "gluteusmedius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:gluteal",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:gluteal-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22331_FJ1419M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:gluteal",
+        "bp3d:FMA22330"
+      ],
+      "sourceId": "FMA22331",
+      "family": "gluteusmedius",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus gluteus medius",
+      "bounds": [
+        [
+          0.0595963,
+          0.7887430000000001,
+          0.0169342
+        ],
+        [
+          0.149735,
+          0.950903,
+          0.101998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22332",
+      "name": "Glúteo menor derecho",
+      "anatomicalName": "Glúteo menor derecho",
+      "aliases": [
+        "right gluteus minimus",
+        "FMA22332",
+        "FJ1420",
+        "Musculus gluteus minimus",
+        "gluteusminimus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:gluteal",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:gluteal-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22332_FJ1420"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:gluteal",
+        "bp3d:FMA22333"
+      ],
+      "sourceId": "FMA22332",
+      "family": "gluteusminimus",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus gluteus minimus",
+      "bounds": [
+        [
+          -0.14513700000000002,
+          0.78328,
+          0.0463719
+        ],
+        [
+          -0.0677084,
+          0.923255,
+          0.102277
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22333",
+      "name": "Glúteo menor izquierdo",
+      "anatomicalName": "Glúteo menor izquierdo",
+      "aliases": [
+        "left gluteus minimus",
+        "FMA22333",
+        "FJ1420M",
+        "Musculus gluteus minimus",
+        "gluteusminimus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:gluteal",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:gluteal-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22333_FJ1420M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:gluteal",
+        "bp3d:FMA22332"
+      ],
+      "sourceId": "FMA22333",
+      "family": "gluteusminimus",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus gluteus minimus",
+      "bounds": [
+        [
+          0.0677084,
+          0.78328,
+          0.0463719
+        ],
+        [
+          0.14513700000000002,
+          0.923255,
+          0.102277
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22425",
+      "name": "Tensor de la fascia lata derecho",
+      "anatomicalName": "Tensor de la fascia lata derecho",
+      "aliases": [
+        "right tensor fasciae latae",
+        "FMA22425",
+        "FJ1438",
+        "Musculus tensor fasciae latae",
+        "tensorfasciaelatae"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:gluteal",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:gluteal-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22425_FJ1438"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:gluteal",
+        "bp3d:FMA22426"
+      ],
+      "sourceId": "FMA22425",
+      "family": "tensorfasciaelatae",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus tensor fasciae latae",
+      "bounds": [
+        [
+          -0.16003299999999998,
+          0.759846,
+          0.09387670000000001
+        ],
+        [
+          -0.128202,
+          0.918714,
+          0.133305
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22426",
+      "name": "Tensor de la fascia lata izquierdo",
+      "anatomicalName": "Tensor de la fascia lata izquierdo",
+      "aliases": [
+        "left tensor fasciae latae",
+        "FMA22426",
+        "FJ1438M",
+        "Musculus tensor fasciae latae",
+        "tensorfasciaelatae"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:gluteal",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:gluteal-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22426_FJ1438M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:gluteal",
+        "bp3d:FMA22425"
+      ],
+      "sourceId": "FMA22426",
+      "family": "tensorfasciaelatae",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus tensor fasciae latae",
+      "bounds": [
+        [
+          0.128202,
+          0.759846,
+          0.09387670000000001
+        ],
+        [
+          0.16003299999999998,
+          0.918714,
+          0.133305
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38928",
+      "name": "Recto femoral derecho",
+      "anatomicalName": "Recto femoral derecho",
+      "aliases": [
+        "right rectus femoris",
+        "FMA38928",
+        "FJ1433",
+        "Musculus rectus femoris",
+        "rectusfemoris",
+        "Cuádriceps",
+        "Quadriceps femoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:group:quadriceps:right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA38928_FJ1433"
+      ],
+      "relatedIds": [
+        "muscular:group:quadriceps:right",
+        "bp3d:FMA38929"
+      ],
+      "sourceId": "FMA38928",
+      "family": "rectusfemoris",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus rectus femoris",
+      "bounds": [
+        [
+          -0.154449,
+          0.31470800000000004,
+          0.0838998
+        ],
+        [
+          -0.0629145,
+          0.8711040000000001,
+          0.15246600000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38929",
+      "name": "Recto femoral izquierdo",
+      "anatomicalName": "Recto femoral izquierdo",
+      "aliases": [
+        "left rectus femoris",
+        "FMA38929",
+        "FJ1433M",
+        "Musculus rectus femoris",
+        "rectusfemoris",
+        "Cuádriceps",
+        "Quadriceps femoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:group:quadriceps:left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA38929_FJ1433M"
+      ],
+      "relatedIds": [
+        "muscular:group:quadriceps:left",
+        "bp3d:FMA38928"
+      ],
+      "sourceId": "FMA38929",
+      "family": "rectusfemoris",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus rectus femoris",
+      "bounds": [
+        [
+          0.0629145,
+          0.31470800000000004,
+          0.0838998
+        ],
+        [
+          0.154449,
+          0.8711040000000001,
+          0.15246600000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38930",
+      "name": "Vasto lateral derecho",
+      "anatomicalName": "Vasto lateral derecho",
+      "aliases": [
+        "right vastus lateralis",
+        "FMA38930",
+        "FJ1442",
+        "Musculus vastus lateralis",
+        "vastuslateralis",
+        "Cuádriceps",
+        "Quadriceps femoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:group:quadriceps:right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA38930_FJ1442"
+      ],
+      "relatedIds": [
+        "muscular:group:quadriceps:right",
+        "bp3d:FMA38931"
+      ],
+      "sourceId": "FMA38930",
+      "family": "vastuslateralis",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus vastus lateralis",
+      "bounds": [
+        [
+          -0.159632,
+          0.31793200000000005,
+          0.057503200000000004
+        ],
+        [
+          -0.0840565,
+          0.7881670000000001,
+          0.13705099999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38931",
+      "name": "Vasto lateral izquierdo",
+      "anatomicalName": "Vasto lateral izquierdo",
+      "aliases": [
+        "left vastus lateralis",
+        "FMA38931",
+        "FJ1442M",
+        "Musculus vastus lateralis",
+        "vastuslateralis",
+        "Cuádriceps",
+        "Quadriceps femoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:group:quadriceps:left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA38931_FJ1442M"
+      ],
+      "relatedIds": [
+        "muscular:group:quadriceps:left",
+        "bp3d:FMA38930"
+      ],
+      "sourceId": "FMA38931",
+      "family": "vastuslateralis",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus vastus lateralis",
+      "bounds": [
+        [
+          0.0840565,
+          0.31793200000000005,
+          0.057503200000000004
+        ],
+        [
+          0.15963300000000002,
+          0.7881670000000001,
+          0.13705099999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38932",
+      "name": "Vasto medial derecho",
+      "anatomicalName": "Vasto medial derecho",
+      "aliases": [
+        "right vastus medialis",
+        "FMA38932",
+        "FJ1443",
+        "Musculus vastus medialis",
+        "vastusmedialis",
+        "Cuádriceps",
+        "Quadriceps femoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:group:quadriceps:right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA38932_FJ1443"
+      ],
+      "relatedIds": [
+        "muscular:group:quadriceps:right",
+        "bp3d:FMA38933"
+      ],
+      "sourceId": "FMA38932",
+      "family": "vastusmedialis",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus vastus medialis",
+      "bounds": [
+        [
+          -0.105601,
+          0.340548,
+          0.089132
+        ],
+        [
+          -0.034939200000000004,
+          0.738179,
+          0.146901
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38933",
+      "name": "Vasto medial izquierdo",
+      "anatomicalName": "Vasto medial izquierdo",
+      "aliases": [
+        "left vastus medialis",
+        "FMA38933",
+        "FJ1443M",
+        "Musculus vastus medialis",
+        "vastusmedialis",
+        "Cuádriceps",
+        "Quadriceps femoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:group:quadriceps:left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA38933_FJ1443M"
+      ],
+      "relatedIds": [
+        "muscular:group:quadriceps:left",
+        "bp3d:FMA38932"
+      ],
+      "sourceId": "FMA38933",
+      "family": "vastusmedialis",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus vastus medialis",
+      "bounds": [
+        [
+          0.034939300000000006,
+          0.340548,
+          0.089132
+        ],
+        [
+          0.105601,
+          0.738179,
+          0.146901
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38934",
+      "name": "Vasto intermedio derecho",
+      "anatomicalName": "Vasto intermedio derecho",
+      "aliases": [
+        "right vastus intermedius",
+        "FMA38934",
+        "FJ1441",
+        "Musculus vastus intermedius",
+        "vastusintermedius",
+        "Cuádriceps",
+        "Quadriceps femoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:group:quadriceps:right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA38934_FJ1441"
+      ],
+      "relatedIds": [
+        "muscular:group:quadriceps:right",
+        "bp3d:FMA38935"
+      ],
+      "sourceId": "FMA38934",
+      "family": "vastusintermedius",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus vastus intermedius",
+      "bounds": [
+        [
+          -0.133095,
+          0.34248500000000004,
+          0.0762608
+        ],
+        [
+          -0.0762071,
+          0.7697440000000001,
+          0.135139
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38935",
+      "name": "Vasto intermedio izquierdo",
+      "anatomicalName": "Vasto intermedio izquierdo",
+      "aliases": [
+        "left vastus intermedius",
+        "FMA38935",
+        "FJ1441M",
+        "Musculus vastus intermedius",
+        "vastusintermedius",
+        "Cuádriceps",
+        "Quadriceps femoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:group:quadriceps:left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA38935_FJ1441M"
+      ],
+      "relatedIds": [
+        "muscular:group:quadriceps:left",
+        "bp3d:FMA38934"
+      ],
+      "sourceId": "FMA38935",
+      "family": "vastusintermedius",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus vastus intermedius",
+      "bounds": [
+        [
+          0.0762071,
+          0.34248500000000004,
+          0.0762608
+        ],
+        [
+          0.13309600000000002,
+          0.7697440000000001,
+          0.135139
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22354",
+      "name": "Sartorio derecho",
+      "anatomicalName": "Sartorio derecho",
+      "aliases": [
+        "right sartorius",
+        "FMA22354",
+        "FJ1434",
+        "Musculus sartorius",
+        "sartorius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:region:leg-right:thigh:anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22354_FJ1434"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:thigh:anterior",
+        "bp3d:FMA22355"
+      ],
+      "sourceId": "FMA22354",
+      "family": "sartorius",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus sartorius",
+      "bounds": [
+        [
+          -0.131186,
+          0.27419,
+          0.0839907
+        ],
+        [
+          -0.0206605,
+          0.901792,
+          0.140956
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22355",
+      "name": "Sartorio izquierdo",
+      "anatomicalName": "Sartorio izquierdo",
+      "aliases": [
+        "left sartorius",
+        "FMA22355",
+        "FJ1434M",
+        "Musculus sartorius",
+        "sartorius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:region:leg-left:thigh:anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22355_FJ1434M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:thigh:anterior",
+        "bp3d:FMA22354"
+      ],
+      "sourceId": "FMA22355",
+      "family": "sartorius",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus sartorius",
+      "bounds": [
+        [
+          0.0206605,
+          0.27419,
+          0.0839907
+        ],
+        [
+          0.131186,
+          0.901792,
+          0.140956
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22456",
+      "name": "Aductor largo derecho",
+      "anatomicalName": "Aductor largo derecho",
+      "aliases": [
+        "right adductor longus",
+        "FMA22456",
+        "FJ1402",
+        "Musculus adductor longus",
+        "adductorlongus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:region:leg-right:thigh:medial",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22456_FJ1402"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:thigh:medial",
+        "bp3d:FMA22457"
+      ],
+      "sourceId": "FMA22456",
+      "family": "adductorlongus",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus adductor longus",
+      "bounds": [
+        [
+          -0.0941022,
+          0.510204,
+          0.0893758
+        ],
+        [
+          -0.0170401,
+          0.799665,
+          0.136972
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22457",
+      "name": "Aductor largo izquierdo",
+      "anatomicalName": "Aductor largo izquierdo",
+      "aliases": [
+        "left adductor longus",
+        "FMA22457",
+        "FJ1402M",
+        "Musculus adductor longus",
+        "adductorlongus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:region:leg-left:thigh:medial",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22457_FJ1402M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:thigh:medial",
+        "bp3d:FMA22456"
+      ],
+      "sourceId": "FMA22457",
+      "family": "adductorlongus",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus adductor longus",
+      "bounds": [
+        [
+          0.0170402,
+          0.510204,
+          0.0893758
+        ],
+        [
+          0.0941022,
+          0.799665,
+          0.136971
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA43883",
+      "name": "Grácil derecho",
+      "anatomicalName": "Grácil derecho",
+      "aliases": [
+        "right gracilis",
+        "FMA43883",
+        "FJ1421",
+        "Musculus gracilis",
+        "gracilis",
+        "Recto interno derecho"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:region:leg-right:thigh:medial",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA43883_FJ1421"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:thigh:medial",
+        "bp3d:FMA43884"
+      ],
+      "sourceId": "FMA43883",
+      "family": "gracilis",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus gracilis",
+      "bounds": [
+        [
+          -0.0704152,
+          0.28301400000000004,
+          0.06535039999999999
+        ],
+        [
+          -0.0120663,
+          0.797563,
+          0.13253299999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA43884",
+      "name": "Grácil izquierdo",
+      "anatomicalName": "Grácil izquierdo",
+      "aliases": [
+        "left gracilis",
+        "FMA43884",
+        "FJ1421M",
+        "Musculus gracilis",
+        "gracilis",
+        "Recto interno izquierdo"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:region:leg-left:thigh:medial",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA43884_FJ1421M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:thigh:medial",
+        "bp3d:FMA43883"
+      ],
+      "sourceId": "FMA43884",
+      "family": "gracilis",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus gracilis",
+      "bounds": [
+        [
+          0.0120663,
+          0.28301400000000004,
+          0.06535039999999999
+        ],
+        [
+          0.0704152,
+          0.797563,
+          0.13253299999999998
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:bicepsfemoris:right",
+      "name": "Bíceps femoral derecho",
+      "anatomicalName": "Bíceps femoral derecho",
+      "aliases": [
+        "Musculus biceps femoris",
+        "bicepsfemoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:region:leg-right:thigh:posterior",
+      "children": [
+        "bp3d:FMA45888",
+        "bp3d:FMA45891"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right:thigh:posterior",
+        "med3d:muscle:bicepsfemoris:left"
+      ],
+      "family": "bicepsfemoris",
+      "side": "right",
+      "latin": "Musculus biceps femoris",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.126642,
+          0.327905,
+          0.0183096
+        ],
+        [
+          -0.0486928,
+          0.764753,
+          0.0874787
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45888",
+      "name": "Cabeza larga del bíceps femoral derecho",
+      "anatomicalName": "Cabeza larga del bíceps femoral derecho",
+      "aliases": [
+        "long head of right biceps femoris",
+        "FMA45888",
+        "FJ1395",
+        "Musculus biceps femoris",
+        "bicepsfemoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "med3d:muscle:bicepsfemoris:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA45888_FJ1395"
+      ],
+      "relatedIds": [
+        "med3d:muscle:bicepsfemoris:right"
+      ],
+      "sourceId": "FMA45888",
+      "family": "bicepsfemoris",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.126642,
+          0.327905,
+          0.0183096
+        ],
+        [
+          -0.0486928,
+          0.764753,
+          0.0721878
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:bicepsfemoris:left",
+      "name": "Bíceps femoral izquierdo",
+      "anatomicalName": "Bíceps femoral izquierdo",
+      "aliases": [
+        "Musculus biceps femoris",
+        "bicepsfemoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:region:leg-left:thigh:posterior",
+      "children": [
+        "bp3d:FMA45889",
+        "bp3d:FMA45892"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left:thigh:posterior",
+        "med3d:muscle:bicepsfemoris:right"
+      ],
+      "family": "bicepsfemoris",
+      "side": "left",
+      "latin": "Musculus biceps femoris",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.048692700000000005,
+          0.327905,
+          0.0183095
+        ],
+        [
+          0.126642,
+          0.764753,
+          0.0874787
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45889",
+      "name": "Cabeza larga del bíceps femoral izquierdo",
+      "anatomicalName": "Cabeza larga del bíceps femoral izquierdo",
+      "aliases": [
+        "long head of left biceps femoris",
+        "FMA45889",
+        "FJ1395M",
+        "Musculus biceps femoris",
+        "bicepsfemoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "med3d:muscle:bicepsfemoris:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA45889_FJ1395M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:bicepsfemoris:left"
+      ],
+      "sourceId": "FMA45889",
+      "family": "bicepsfemoris",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.048692700000000005,
+          0.327905,
+          0.0183095
+        ],
+        [
+          0.126642,
+          0.764753,
+          0.0721878
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45891",
+      "name": "Cabeza corta del bíceps femoral derecho",
+      "anatomicalName": "Cabeza corta del bíceps femoral derecho",
+      "aliases": [
+        "short head of right biceps femoris",
+        "FMA45891",
+        "FJ1444",
+        "Musculus biceps femoris",
+        "bicepsfemoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "med3d:muscle:bicepsfemoris:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA45891_FJ1444"
+      ],
+      "relatedIds": [
+        "med3d:muscle:bicepsfemoris:right"
+      ],
+      "sourceId": "FMA45891",
+      "family": "bicepsfemoris",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.11740900000000001,
+          0.32819,
+          0.0508818
+        ],
+        [
+          -0.0806712,
+          0.64662,
+          0.0874787
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45892",
+      "name": "Cabeza corta del bíceps femoral izquierdo",
+      "anatomicalName": "Cabeza corta del bíceps femoral izquierdo",
+      "aliases": [
+        "short head of left biceps femoris",
+        "FMA45892",
+        "FJ1444M",
+        "Musculus biceps femoris",
+        "bicepsfemoris"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "med3d:muscle:bicepsfemoris:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA45892_FJ1444M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:bicepsfemoris:left"
+      ],
+      "sourceId": "FMA45892",
+      "family": "bicepsfemoris",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0806712,
+          0.32819,
+          0.0508818
+        ],
+        [
+          0.11740900000000001,
+          0.64662,
+          0.0874787
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22358",
+      "name": "Semitendinoso derecho",
+      "anatomicalName": "Semitendinoso derecho",
+      "aliases": [
+        "right semitendinosus",
+        "FMA22358",
+        "FJ1436",
+        "Musculus semitendinosus",
+        "semitendinosus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:region:leg-right:thigh:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22358_FJ1436"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:thigh:posterior",
+        "bp3d:FMA22359"
+      ],
+      "sourceId": "FMA22358",
+      "family": "semitendinosus",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus semitendinosus",
+      "bounds": [
+        [
+          -0.0682937,
+          0.283125,
+          0.0247803
+        ],
+        [
+          -0.0269358,
+          0.763703,
+          0.09858650000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22359",
+      "name": "Semitendinoso izquierdo",
+      "anatomicalName": "Semitendinoso izquierdo",
+      "aliases": [
+        "left semitendinosus",
+        "FMA22359",
+        "FJ1436M",
+        "Musculus semitendinosus",
+        "semitendinosus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:region:leg-left:thigh:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22359_FJ1436M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:thigh:posterior",
+        "bp3d:FMA22358"
+      ],
+      "sourceId": "FMA22359",
+      "family": "semitendinosus",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus semitendinosus",
+      "bounds": [
+        [
+          0.0269357,
+          0.283125,
+          0.0247803
+        ],
+        [
+          0.0682937,
+          0.763703,
+          0.09858650000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22448",
+      "name": "Semimembranoso derecho",
+      "anatomicalName": "Semimembranoso derecho",
+      "aliases": [
+        "right semimembranosus",
+        "FMA22448",
+        "FJ1435",
+        "Musculus semimembranosus",
+        "semimembranosus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "parentId": "muscular:region:leg-right:thigh:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22448_FJ1435"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:thigh:posterior",
+        "bp3d:FMA22449"
+      ],
+      "sourceId": "FMA22448",
+      "family": "semimembranosus",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus semimembranosus",
+      "bounds": [
+        [
+          -0.0709992,
+          0.315926,
+          0.0373297
+        ],
+        [
+          -0.0131749,
+          0.754438,
+          0.103495
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22449",
+      "name": "Semimembranoso izquierdo",
+      "anatomicalName": "Semimembranoso izquierdo",
+      "aliases": [
+        "left semimembranosus",
+        "FMA22449",
+        "FJ1435M",
+        "Musculus semimembranosus",
+        "semimembranosus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "parentId": "muscular:region:leg-left:thigh:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:thigh-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22449_FJ1435M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:thigh:posterior",
+        "bp3d:FMA22448"
+      ],
+      "sourceId": "FMA22449",
+      "family": "semimembranosus",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus semimembranosus",
+      "bounds": [
+        [
+          0.0131749,
+          0.315926,
+          0.0373296
+        ],
+        [
+          0.0709991,
+          0.754438,
+          0.103495
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22544",
+      "name": "Tibial anterior derecho",
+      "anatomicalName": "Tibial anterior derecho",
+      "aliases": [
+        "right tibialis anterior",
+        "FMA22544",
+        "FJ1439",
+        "Musculus tibialis anterior",
+        "tibialisanterior"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:leg",
+      "parentId": "muscular:region:leg-right:leg:anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:leg-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22544_FJ1439"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:leg:anterior",
+        "bp3d:FMA22545"
+      ],
+      "sourceId": "FMA22544",
+      "family": "tibialisanterior",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus tibialis anterior",
+      "bounds": [
+        [
+          -0.116779,
+          -0.0388064,
+          0.0728246
+        ],
+        [
+          -0.066967,
+          0.355269,
+          0.1496
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22545",
+      "name": "Tibial anterior izquierdo",
+      "anatomicalName": "Tibial anterior izquierdo",
+      "aliases": [
+        "left tibialis anterior",
+        "FMA22545",
+        "FJ1439M",
+        "Musculus tibialis anterior",
+        "tibialisanterior"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:leg",
+      "parentId": "muscular:region:leg-left:leg:anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:leg-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22545_FJ1439M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:leg:anterior",
+        "bp3d:FMA22544"
+      ],
+      "sourceId": "FMA22545",
+      "family": "tibialisanterior",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus tibialis anterior",
+      "bounds": [
+        [
+          0.066967,
+          -0.0388064,
+          0.0728246
+        ],
+        [
+          0.116779,
+          0.355269,
+          0.1496
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22552",
+      "name": "Fibular largo derecho",
+      "anatomicalName": "Fibular largo derecho",
+      "aliases": [
+        "right fibularis longus",
+        "FMA22552",
+        "FJ1410",
+        "Musculus fibularis longus",
+        "fibularislongus",
+        "Peroneo largo derecho"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:leg",
+      "parentId": "muscular:region:leg-right:leg:lateral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:leg-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22552_FJ1410"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:leg:lateral",
+        "bp3d:FMA22553"
+      ],
+      "sourceId": "FMA22552",
+      "family": "fibularislongus",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus fibularis longus",
+      "bounds": [
+        [
+          -0.126428,
+          -0.0528049,
+          0.0408001
+        ],
+        [
+          -0.08240420000000001,
+          0.35176999999999997,
+          0.136529
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22553",
+      "name": "Fibular largo izquierdo",
+      "anatomicalName": "Fibular largo izquierdo",
+      "aliases": [
+        "left fibularis longus",
+        "FMA22553",
+        "FJ1410M",
+        "Musculus fibularis longus",
+        "fibularislongus",
+        "Peroneo largo izquierdo"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:leg",
+      "parentId": "muscular:region:leg-left:leg:lateral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:leg-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22553_FJ1410M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:leg:lateral",
+        "bp3d:FMA22552"
+      ],
+      "sourceId": "FMA22553",
+      "family": "fibularislongus",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus fibularis longus",
+      "bounds": [
+        [
+          0.08240420000000001,
+          -0.0528049,
+          0.0408001
+        ],
+        [
+          0.126428,
+          0.35176999999999997,
+          0.136529
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22554",
+      "name": "Fibular corto derecho",
+      "anatomicalName": "Fibular corto derecho",
+      "aliases": [
+        "right fibularis brevis",
+        "FMA22554",
+        "FJ1409",
+        "Musculus fibularis brevis",
+        "fibularisbrevis",
+        "Peroneo corto derecho"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:leg",
+      "parentId": "muscular:region:leg-right:leg:lateral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:leg-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22554_FJ1409"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:leg:lateral",
+        "bp3d:FMA22555"
+      ],
+      "sourceId": "FMA22554",
+      "family": "fibularisbrevis",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus fibularis brevis",
+      "bounds": [
+        [
+          -0.117745,
+          -0.055900399999999996,
+          0.0427176
+        ],
+        [
+          -0.08214310000000001,
+          0.188796,
+          0.0952255
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22555",
+      "name": "Fibular corto izquierdo",
+      "anatomicalName": "Fibular corto izquierdo",
+      "aliases": [
+        "left fibularis brevis",
+        "FMA22555",
+        "FJ1409M",
+        "Musculus fibularis brevis",
+        "fibularisbrevis",
+        "Peroneo corto izquierdo"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:leg",
+      "parentId": "muscular:region:leg-left:leg:lateral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:leg-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22555_FJ1409M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:leg:lateral",
+        "bp3d:FMA22554"
+      ],
+      "sourceId": "FMA22555",
+      "family": "fibularisbrevis",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus fibularis brevis",
+      "bounds": [
+        [
+          0.08214300000000001,
+          -0.055900399999999996,
+          0.0427176
+        ],
+        [
+          0.117745,
+          0.188796,
+          0.0952255
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:gastrocnemius:right",
+      "name": "Gastrocnemio derecho",
+      "anatomicalName": "Gastrocnemio derecho",
+      "aliases": [
+        "Musculus gastrocnemius",
+        "gastrocnemius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:leg",
+      "parentId": "muscular:region:leg-right:leg:posterior",
+      "children": [
+        "bp3d:FMA45957",
+        "bp3d:FMA45960"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:leg-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-right:leg:posterior",
+        "med3d:muscle:gastrocnemius:left"
+      ],
+      "family": "gastrocnemius",
+      "side": "right",
+      "latin": "Musculus gastrocnemius",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.11699200000000001,
+          0.122833,
+          0.00580911
+        ],
+        [
+          -0.0217597,
+          0.432102,
+          0.0926934
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45957",
+      "name": "Cabeza medial del gastrocnemio derecho",
+      "anatomicalName": "Cabeza medial del gastrocnemio derecho",
+      "aliases": [
+        "medial head of right gastrocnemius",
+        "FMA45957",
+        "FJ1397",
+        "Musculus gastrocnemius",
+        "gastrocnemius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:leg",
+      "parentId": "med3d:muscle:gastrocnemius:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:leg-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA45957_FJ1397"
+      ],
+      "relatedIds": [
+        "med3d:muscle:gastrocnemius:right"
+      ],
+      "sourceId": "FMA45957",
+      "family": "gastrocnemius",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.0742357,
+          0.122833,
+          0.0136614
+        ],
+        [
+          -0.0217597,
+          0.432102,
+          0.0926934
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:gastrocnemius:left",
+      "name": "Gastrocnemio izquierdo",
+      "anatomicalName": "Gastrocnemio izquierdo",
+      "aliases": [
+        "Musculus gastrocnemius",
+        "gastrocnemius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:leg",
+      "parentId": "muscular:region:leg-left:leg:posterior",
+      "children": [
+        "bp3d:FMA45958",
+        "bp3d:FMA45961"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:leg-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:leg-left:leg:posterior",
+        "med3d:muscle:gastrocnemius:right"
+      ],
+      "family": "gastrocnemius",
+      "side": "left",
+      "latin": "Musculus gastrocnemius",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0217597,
+          0.122833,
+          0.00580911
+        ],
+        [
+          0.11699200000000001,
+          0.432102,
+          0.0926934
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45958",
+      "name": "Cabeza medial del gastrocnemio izquierdo",
+      "anatomicalName": "Cabeza medial del gastrocnemio izquierdo",
+      "aliases": [
+        "medial head of left gastrocnemius",
+        "FMA45958",
+        "FJ1397M",
+        "Musculus gastrocnemius",
+        "gastrocnemius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:leg",
+      "parentId": "med3d:muscle:gastrocnemius:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:leg-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA45958_FJ1397M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:gastrocnemius:left"
+      ],
+      "sourceId": "FMA45958",
+      "family": "gastrocnemius",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0217597,
+          0.122833,
+          0.0136614
+        ],
+        [
+          0.0742358,
+          0.432102,
+          0.0926934
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45960",
+      "name": "Cabeza lateral del gastrocnemio derecho",
+      "anatomicalName": "Cabeza lateral del gastrocnemio derecho",
+      "aliases": [
+        "lateral head of right gastrocnemius",
+        "FMA45960",
+        "FJ1394",
+        "Musculus gastrocnemius",
+        "gastrocnemius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:leg",
+      "parentId": "med3d:muscle:gastrocnemius:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:leg-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA45960_FJ1394"
+      ],
+      "relatedIds": [
+        "med3d:muscle:gastrocnemius:right"
+      ],
+      "sourceId": "FMA45960",
+      "family": "gastrocnemius",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.11699200000000001,
+          0.132801,
+          0.00580911
+        ],
+        [
+          -0.061167000000000006,
+          0.42326100000000005,
+          0.0806506
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45961",
+      "name": "Cabeza lateral del gastrocnemio izquierdo",
+      "anatomicalName": "Cabeza lateral del gastrocnemio izquierdo",
+      "aliases": [
+        "lateral head of left gastrocnemius",
+        "FMA45961",
+        "FJ1394M",
+        "Musculus gastrocnemius",
+        "gastrocnemius"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:leg",
+      "parentId": "med3d:muscle:gastrocnemius:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:leg-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA45961_FJ1394M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:gastrocnemius:left"
+      ],
+      "sourceId": "FMA45961",
+      "family": "gastrocnemius",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.061167000000000006,
+          0.132801,
+          0.00580911
+        ],
+        [
+          0.11699200000000001,
+          0.42326100000000005,
+          0.0806506
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22558",
+      "name": "Sóleo derecho",
+      "anatomicalName": "Sóleo derecho",
+      "aliases": [
+        "right soleus",
+        "FMA22558",
+        "FJ1437",
+        "Musculus soleus",
+        "soleus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:leg",
+      "parentId": "muscular:region:leg-right:leg:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:leg-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22558_FJ1437"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:leg:posterior",
+        "bp3d:FMA22559"
+      ],
+      "sourceId": "FMA22558",
+      "family": "soleus",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus soleus",
+      "bounds": [
+        [
+          -0.115785,
+          0.032464,
+          0.0321986
+        ],
+        [
+          -0.035600099999999996,
+          0.358617,
+          0.0911189
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22559",
+      "name": "Sóleo izquierdo",
+      "anatomicalName": "Sóleo izquierdo",
+      "aliases": [
+        "left soleus",
+        "FMA22559",
+        "FJ1437M",
+        "Musculus soleus",
+        "soleus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:leg",
+      "parentId": "muscular:region:leg-left:leg:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:leg-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22559_FJ1437M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:leg:posterior",
+        "bp3d:FMA22558"
+      ],
+      "sourceId": "FMA22559",
+      "family": "soleus",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus soleus",
+      "bounds": [
+        [
+          0.035600099999999996,
+          0.032464,
+          0.0321986
+        ],
+        [
+          0.115785,
+          0.358617,
+          0.0911189
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA65018",
+      "name": "Tibial posterior derecho",
+      "anatomicalName": "Tibial posterior derecho",
+      "aliases": [
+        "right tibialis posterior",
+        "FMA65018",
+        "FJ1440",
+        "Musculus tibialis posterior",
+        "tibialisposterior"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:leg",
+      "parentId": "muscular:region:leg-right:leg:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:leg-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA65018_FJ1440"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-right:leg:posterior",
+        "bp3d:FMA65019"
+      ],
+      "sourceId": "FMA65018",
+      "family": "tibialisposterior",
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "latin": "Musculus tibialis posterior",
+      "bounds": [
+        [
+          -0.104926,
+          -0.042579099999999995,
+          0.059418900000000004
+        ],
+        [
+          -0.0426838,
+          0.335745,
+          0.13286699999999999
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA65019",
+      "name": "Tibial posterior izquierdo",
+      "anatomicalName": "Tibial posterior izquierdo",
+      "aliases": [
+        "left tibialis posterior",
+        "FMA65019",
+        "FJ1440M",
+        "Musculus tibialis posterior",
+        "tibialisposterior"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:leg",
+      "parentId": "muscular:region:leg-left:leg:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:leg-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA65019_FJ1440M"
+      ],
+      "relatedIds": [
+        "muscular:region:leg-left:leg:posterior",
+        "bp3d:FMA65018"
+      ],
+      "sourceId": "FMA65019",
+      "family": "tibialisposterior",
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "latin": "Musculus tibialis posterior",
+      "bounds": [
+        [
+          0.042683700000000005,
+          -0.0425792,
+          0.059418900000000004
+        ],
+        [
+          0.104926,
+          0.335745,
+          0.13286699999999999
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38460",
+      "name": "Flexor radial del carpo derecho",
+      "anatomicalName": "Flexor radial del carpo derecho",
+      "aliases": [
+        "right flexor carpi radialis",
+        "FMA38460",
+        "FJ1496",
+        "Musculus flexor carpi radialis",
+        "flexorcarpiradialis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:forearm",
+      "parentId": "muscular:region:arm-right:forearm:anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:forearm-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA38460_FJ1496"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-right:forearm:anterior",
+        "bp3d:FMA38461"
+      ],
+      "sourceId": "FMA38460",
+      "family": "flexorcarpiradialis",
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "latin": "Musculus flexor carpi radialis",
+      "bounds": [
+        [
+          -0.272111,
+          0.780697,
+          0.0708677
+        ],
+        [
+          -0.18436000000000002,
+          1.05748,
+          0.136406
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38461",
+      "name": "Flexor radial del carpo izquierdo",
+      "anatomicalName": "Flexor radial del carpo izquierdo",
+      "aliases": [
+        "left flexor carpi radialis",
+        "FMA38461",
+        "FJ1496M",
+        "Musculus flexor carpi radialis",
+        "flexorcarpiradialis"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:forearm",
+      "parentId": "muscular:region:arm-left:forearm:anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:forearm-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA38461_FJ1496M"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-left:forearm:anterior",
+        "bp3d:FMA38460"
+      ],
+      "sourceId": "FMA38461",
+      "family": "flexorcarpiradialis",
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "latin": "Musculus flexor carpi radialis",
+      "bounds": [
+        [
+          0.18436000000000002,
+          0.780697,
+          0.0708677
+        ],
+        [
+          0.272111,
+          1.05748,
+          0.136407
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:pronatorteres:right",
+      "name": "Pronador redondo derecho",
+      "anatomicalName": "Pronador redondo derecho",
+      "aliases": [
+        "Musculus pronator teres",
+        "pronatorteres"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:forearm",
+      "parentId": "muscular:region:arm-right:forearm:anterior",
+      "children": [
+        "bp3d:FMA38560",
+        "bp3d:FMA38562"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:forearm-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-right:forearm:anterior",
+        "med3d:muscle:pronatorteres:left"
+      ],
+      "family": "pronatorteres",
+      "side": "right",
+      "latin": "Musculus pronator teres",
+      "explosionRegionId": "upper-limb-right",
+      "bounds": [
+        [
+          -0.257321,
+          0.916652,
+          0.0676887
+        ],
+        [
+          -0.187418,
+          1.0653800000000002,
+          0.102553
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38560",
+      "name": "Cabeza humeral del pronador redondo derecho",
+      "anatomicalName": "Cabeza humeral del pronador redondo derecho",
+      "aliases": [
+        "humeral head of right pronator teres",
+        "FMA38560",
+        "FJ1474",
+        "Musculus pronator teres",
+        "pronatorteres"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:forearm",
+      "parentId": "med3d:muscle:pronatorteres:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:forearm-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA38560_FJ1474"
+      ],
+      "relatedIds": [
+        "med3d:muscle:pronatorteres:right"
+      ],
+      "sourceId": "FMA38560",
+      "family": "pronatorteres",
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "bounds": [
+        [
+          -0.257321,
+          0.916652,
+          0.0676887
+        ],
+        [
+          -0.187418,
+          1.0653800000000002,
+          0.102553
+        ]
+      ]
+    },
+    {
+      "id": "med3d:muscle:pronatorteres:left",
+      "name": "Pronador redondo izquierdo",
+      "anatomicalName": "Pronador redondo izquierdo",
+      "aliases": [
+        "Musculus pronator teres",
+        "pronatorteres"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:forearm",
+      "parentId": "muscular:region:arm-left:forearm:anterior",
+      "children": [
+        "bp3d:FMA38561",
+        "bp3d:FMA38563"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:forearm-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "muscular:region:arm-left:forearm:anterior",
+        "med3d:muscle:pronatorteres:right"
+      ],
+      "family": "pronatorteres",
+      "side": "left",
+      "latin": "Musculus pronator teres",
+      "explosionRegionId": "upper-limb-left",
+      "bounds": [
+        [
+          0.187418,
+          0.916652,
+          0.0676887
+        ],
+        [
+          0.257321,
+          1.0653800000000002,
+          0.102553
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38561",
+      "name": "Cabeza humeral del pronador redondo izquierdo",
+      "anatomicalName": "Cabeza humeral del pronador redondo izquierdo",
+      "aliases": [
+        "humeral head of left pronator teres",
+        "FMA38561",
+        "FJ1474M",
+        "Musculus pronator teres",
+        "pronatorteres"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:forearm",
+      "parentId": "med3d:muscle:pronatorteres:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:forearm-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA38561_FJ1474M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:pronatorteres:left"
+      ],
+      "sourceId": "FMA38561",
+      "family": "pronatorteres",
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "bounds": [
+        [
+          0.187418,
+          0.916652,
+          0.0676887
+        ],
+        [
+          0.257321,
+          1.0653800000000002,
+          0.102553
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38562",
+      "name": "Cabeza ulnar del pronador redondo derecho",
+      "anatomicalName": "Cabeza ulnar del pronador redondo derecho",
+      "aliases": [
+        "ulnar head of right pronator teres",
+        "FMA38562",
+        "FJ1516",
+        "Musculus pronator teres",
+        "pronatorteres"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:forearm",
+      "parentId": "med3d:muscle:pronatorteres:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:forearm-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA38562_FJ1516"
+      ],
+      "relatedIds": [
+        "med3d:muscle:pronatorteres:right"
+      ],
+      "sourceId": "FMA38562",
+      "family": "pronatorteres",
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "bounds": [
+        [
+          -0.25631400000000004,
+          0.9277430000000001,
+          0.0740591
+        ],
+        [
+          -0.204265,
+          1.02343,
+          0.0983823
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38563",
+      "name": "Cabeza ulnar del pronador redondo izquierdo",
+      "anatomicalName": "Cabeza ulnar del pronador redondo izquierdo",
+      "aliases": [
+        "ulnar head of left pronator teres",
+        "FMA38563",
+        "FJ1516M",
+        "Musculus pronator teres",
+        "pronatorteres"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:forearm",
+      "parentId": "med3d:muscle:pronatorteres:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "muscular:forearm-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA38563_FJ1516M"
+      ],
+      "relatedIds": [
+        "med3d:muscle:pronatorteres:left"
+      ],
+      "sourceId": "FMA38563",
+      "family": "pronatorteres",
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "bounds": [
+        [
+          0.204265,
+          0.9277430000000001,
+          0.0740591
+        ],
+        [
+          0.25631400000000004,
+          1.02343,
+          0.0983823
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38495",
+      "name": "Extensor radial largo del carpo derecho",
+      "anatomicalName": "Extensor radial largo del carpo derecho",
+      "aliases": [
+        "right extensor carpi radialis longus",
+        "FMA38495",
+        "FJ1490",
+        "Musculus extensor carpi radialis longus",
+        "extensorcarpiradialislongus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:forearm",
+      "parentId": "muscular:region:arm-right:forearm:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:forearm-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA38495_FJ1490"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-right:forearm:posterior",
+        "bp3d:FMA38496"
+      ],
+      "sourceId": "FMA38495",
+      "family": "extensorcarpiradialislongus",
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "latin": "Musculus extensor carpi radialis longus",
+      "bounds": [
+        [
+          -0.277863,
+          0.7791440000000001,
+          0.0532059
+        ],
+        [
+          -0.220086,
+          1.10161,
+          0.120979
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38496",
+      "name": "Extensor radial largo del carpo izquierdo",
+      "anatomicalName": "Extensor radial largo del carpo izquierdo",
+      "aliases": [
+        "left extensor carpi radialis longus",
+        "FMA38496",
+        "FJ1490M",
+        "Musculus extensor carpi radialis longus",
+        "extensorcarpiradialislongus"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:forearm",
+      "parentId": "muscular:region:arm-left:forearm:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:forearm-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA38496_FJ1490M"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-left:forearm:posterior",
+        "bp3d:FMA38495"
+      ],
+      "sourceId": "FMA38496",
+      "family": "extensorcarpiradialislongus",
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "latin": "Musculus extensor carpi radialis longus",
+      "bounds": [
+        [
+          0.220068,
+          0.7791440000000001,
+          0.0532059
+        ],
+        [
+          0.277863,
+          1.10161,
+          0.120979
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38513",
+      "name": "Supinador derecho",
+      "anatomicalName": "Supinador derecho",
+      "aliases": [
+        "right supinator",
+        "FMA38513",
+        "FJ1505",
+        "Musculus supinator",
+        "supinator"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:forearm",
+      "parentId": "muscular:region:arm-right:forearm:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:forearm-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA38513_FJ1505"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-right:forearm:posterior",
+        "bp3d:FMA38514"
+      ],
+      "sourceId": "FMA38513",
+      "family": "supinator",
+      "side": "right",
+      "explosionRegionId": "upper-limb-right",
+      "latin": "Musculus supinator",
+      "bounds": [
+        [
+          -0.254094,
+          0.932534,
+          0.0562606
+        ],
+        [
+          -0.222361,
+          1.05638,
+          0.0905488
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA38514",
+      "name": "Supinador izquierdo",
+      "anatomicalName": "Supinador izquierdo",
+      "aliases": [
+        "left supinator",
+        "FMA38514",
+        "FJ1505M",
+        "Musculus supinator",
+        "supinator"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:forearm",
+      "parentId": "muscular:region:arm-left:forearm:posterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:forearm-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA38514_FJ1505M"
+      ],
+      "relatedIds": [
+        "muscular:region:arm-left:forearm:posterior",
+        "bp3d:FMA38513"
+      ],
+      "sourceId": "FMA38514",
+      "family": "supinator",
+      "side": "left",
+      "explosionRegionId": "upper-limb-left",
+      "latin": "Musculus supinator",
+      "bounds": [
+        [
+          0.222361,
+          0.932534,
+          0.0562606
+        ],
+        [
+          0.254095,
+          1.05638,
+          0.0905488
+        ]
+      ]
     }
   ],
   "assets": [
@@ -3732,6 +7376,198 @@
         ]
       ],
       "provenanceId": "bodyparts3d-4.0-muscular-torso"
+    },
+    {
+      "id": "muscular:gluteal-right",
+      "path": "models/anatomy/muscular/muscular-gluteal-right.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:gluteal",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 134776,
+      "sha256": "be87371801af26c861945e687dc2380b28c04854eb5f578b6a8886db1b3d18a9",
+      "meshCount": 4,
+      "triangles": 11194,
+      "bounds": [
+        [
+          -0.16003299999999998,
+          0.667745,
+          -0.0198663
+        ],
+        [
+          0.00152091,
+          0.950903,
+          0.133305
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-limbs"
+    },
+    {
+      "id": "muscular:gluteal-left",
+      "path": "models/anatomy/muscular/muscular-gluteal-left.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:gluteal",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 134860,
+      "sha256": "14f83ce22f7f1cdeee39d408208bd80e24ea21976cb6ee9aacb5f354b58b7277",
+      "meshCount": 4,
+      "triangles": 11194,
+      "bounds": [
+        [
+          -0.00152091,
+          0.667745,
+          -0.0198663
+        ],
+        [
+          0.16003299999999998,
+          0.950903,
+          0.133305
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-limbs"
+    },
+    {
+      "id": "muscular:thigh-right",
+      "path": "models/anatomy/muscular/muscular-thigh-right.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:thigh",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 446544,
+      "sha256": "ce1dd0e234da9c4453f4c00742635593c1aaeb9fa8f88a6e7e8ffd8b81b4377d",
+      "meshCount": 11,
+      "triangles": 44582,
+      "bounds": [
+        [
+          -0.159632,
+          0.27419,
+          0.0183096
+        ],
+        [
+          -0.0120663,
+          0.901792,
+          0.15246600000000002
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-limbs"
+    },
+    {
+      "id": "muscular:thigh-left",
+      "path": "models/anatomy/muscular/muscular-thigh-left.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:thigh",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 446536,
+      "sha256": "133cbefa198db25c986ff82b23a63b973deefacc3d7fe21a8a6c8ab26d493806",
+      "meshCount": 11,
+      "triangles": 44582,
+      "bounds": [
+        [
+          0.0120663,
+          0.27419,
+          0.0183095
+        ],
+        [
+          0.15963300000000002,
+          0.901792,
+          0.15246600000000002
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-limbs"
+    },
+    {
+      "id": "muscular:leg-right",
+      "path": "models/anatomy/muscular/muscular-leg-right.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:leg",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 291172,
+      "sha256": "5cdd6f97d812b603c9423e381bc2de58f64d9edfa473381a54be57b3cfdaafb2",
+      "meshCount": 7,
+      "triangles": 24584,
+      "bounds": [
+        [
+          -0.126428,
+          -0.055900399999999996,
+          0.00580911
+        ],
+        [
+          -0.0217597,
+          0.432102,
+          0.1496
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-limbs"
+    },
+    {
+      "id": "muscular:leg-left",
+      "path": "models/anatomy/muscular/muscular-leg-left.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:leg",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 291188,
+      "sha256": "0ecaddb994e38fca93c77105a8b0551a30f9fc88c7d52414c536d606cf90c6f3",
+      "meshCount": 7,
+      "triangles": 24584,
+      "bounds": [
+        [
+          0.0217597,
+          -0.055900399999999996,
+          0.00580911
+        ],
+        [
+          0.126428,
+          0.432102,
+          0.1496
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-limbs"
+    },
+    {
+      "id": "muscular:forearm-right",
+      "path": "models/anatomy/muscular/muscular-forearm-right.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-right:forearm",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 113968,
+      "sha256": "cac92857c59bb202f6161ba83531e061f8922c8790b8c2d83807916b8aa4c7be",
+      "meshCount": 5,
+      "triangles": 9618,
+      "bounds": [
+        [
+          -0.277863,
+          0.7791440000000001,
+          0.0532059
+        ],
+        [
+          -0.18436000000000002,
+          1.10161,
+          0.136406
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-limbs"
+    },
+    {
+      "id": "muscular:forearm-left",
+      "path": "models/anatomy/muscular/muscular-forearm-left.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:arm-left:forearm",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 114312,
+      "sha256": "77d25ab61c3a3308f1a2dd5bc0d923378d631ace49b7cc0a52a1c41365560aec",
+      "meshCount": 5,
+      "triangles": 9618,
+      "bounds": [
+        [
+          0.18436000000000002,
+          0.7791440000000001,
+          0.0532059
+        ],
+        [
+          0.277863,
+          1.10161,
+          0.136407
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-muscular-limbs"
     }
   ],
   "provenance": [
@@ -3769,19 +7605,38 @@
         "Regional and muscle-parent navigation is anatomically curated, not an automatic conversion of IS-A to PART-OF.",
         "Current CC BY 4.0 publisher declaration; original legacy license headers preserved. No clinical validation."
       ]
+    },
+    {
+      "id": "bodyparts3d-4.0-muscular-limbs",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 · OBJ99 (2013 archive; current license declaration)",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selected only 54 audited original elements representing 48 bilateral muscles in 24 families; six heads per side remain components of three muscles.",
+        "Quadriceps is an editorial group of four named muscles per side. Source zone classification retained in manifest; no automatic IS-A to PART-OF conversion.",
+        "Every original triangle, FMA/FJ and side identity retained; no fitting, normalization, mirroring, synthesis, deformation or simplification.",
+        "Shared transform (x,y,z) to (x,z,-y)/1000; float32 positions; Meshopt and 12-bit display normals as Phase 3A/3B.",
+        "Current CC BY 4.0 publisher declaration; original legacy license headers preserved. No clinical validation."
+      ]
     }
   ],
   "coverage": {
-    "title": "Sistema muscular · hombro, brazo y torso",
-    "structures": 42,
-    "meshes": 60,
-    "note": "42 unidades musculares bilaterales representadas por 60 mallas: 16 de hombro/brazo y 26 de torso. Las porciones no se cuentan como músculos adicionales.",
+    "title": "Sistema muscular · torso y extremidades",
+    "structures": 90,
+    "meshes": 114,
+    "note": "90 músculos bilaterales representados por 114 mallas: 16 de hombro/brazo, 26 del torso y 48 de glúteos, muslo, pierna y antebrazo. Cabezas y grupos no se cuentan como músculos adicionales.",
     "limitations": [
       "Cobertura parcial: no es la musculatura completa del cuerpo ni del torso.",
       "No se identificaron recto abdominal, oblicuo interno, transverso abdominal ni dorsal ancho en el inventario BP3D 4.0 auditado.",
       "Intercostales aplazados: los elementos no identifican de forma inequívoca lado y espacio intercostal.",
       "Atlas masculino adulto modelado; no representa variación individual ni acredita precisión clínica.",
-      "Origen e inserción son texto educativo; no hay zonas de fijación anotadas sobre las mallas."
+      "Origen e inserción son texto educativo; no hay zonas de fijación anotadas sobre las mallas.",
+      "Extremidades con cobertura parcial: se han seleccionado 24 familias; mano y pie intrínsecos siguen pendientes.",
+      "Cuádriceps es un grupo de cuatro músculos; se conserva la clasificación BP3D de sus elementos como zonas en la procedencia."
     ]
   }
 }

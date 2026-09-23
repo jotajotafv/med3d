@@ -1,4 +1,5 @@
 import type {AnatomyNode} from './types';
+import {LIMB_COMPONENTS, LIMB_EDUCATION, QUADRICEPS_MEMBERS} from './limb-education';
 
 /** Curated anatomy, independent of mesh geometry. Reviewed 21 September 2026. */
 export interface MuscleSource {title: string; url: string}
@@ -29,6 +30,7 @@ export interface MuscleDetail extends MuscleEducation {
   muscleName: string;
   componentName?: string;
   attachmentScope?: 'origin' | 'origin-and-insertion';
+  innervationScope?: 'component';
 }
 
 const uw = (slug: string, title: string): MuscleSource => ({
@@ -93,6 +95,7 @@ const cuffFunction = 'Contribuye a mantener la cabeza humeral estable en la cavi
  * No source illustrations are redistributed.
  */
 export const MUSCLE_EDUCATION: Record<string, MuscleEducation> = {
+  ...LIMB_EDUCATION,
   deltoid: {
     name: 'Deltoides', latin: 'Musculus deltoideus', region: 'Hombro', group: 'Musculatura del hombro',
     description: 'Músculo superficial que da forma al hombro. Sus porciones clavicular, acromial y espinal forman una unidad muscular.',
@@ -330,7 +333,7 @@ export const MUSCLE_EDUCATION: Record<string, MuscleEducation> = {
   },
 };
 
-interface ComponentDetail {
+export interface ComponentDetail {
   family: string;
   name: string;
   latin: string;
@@ -339,6 +342,8 @@ interface ComponentDetail {
   origins?: MuscleAttachment[];
   insertions?: MuscleAttachment[];
   relations?: string;
+  innervation?: string;
+  sources?: MuscleSource[];
 }
 const deltoidClavicular: ComponentDetail = {family: 'deltoid', name: 'Porción clavicular', latin: 'Pars clavicularis musculi deltoidei', originIndex: 0, action: 'Contribuye a la flexión y a la rotación medial del brazo.'};
 const deltoidAcromial: ComponentDetail = {family: 'deltoid', name: 'Porción acromial', latin: 'Pars acromialis musculi deltoidei', originIndex: 1, action: 'Contribuye a la abducción del brazo.'};
@@ -374,6 +379,7 @@ const trapeziusAscending: ComponentDetail = {
 
 /** Exact source IDs from docs/phase3-registration.md; no name matching. */
 const components: Record<string, ComponentDetail> = {
+  ...LIMB_COMPONENTS,
   FMA34680: deltoidClavicular, FMA34681: deltoidClavicular,
   FMA34682: deltoidAcromial, FMA34683: deltoidAcromial,
   FMA34684: deltoidSpinal, FMA34685: deltoidSpinal,
@@ -421,6 +427,9 @@ export function resolveMuscleDetail(node?: AnatomyNode): MuscleDetail | undefine
     origins: component.origins || [education.origins[component.originIndex]],
     insertions: component.insertions || education.insertions,
     relations: component.relations || education.relations,
+    innervation: component.innervation || education.innervation,
+    innervationScope: component.innervation ? 'component' : undefined,
+    sources: component.sources || education.sources,
   };
 }
 
@@ -437,6 +446,9 @@ export const MUSCLE_CONTEXT_BONE_IDS: Record<'right' | 'left', Record<BoneFamily
  * are omitted without geometric, tissue-surrogate or contralateral fallback.
  */
 export function getMuscleContextIds(node: AnatomyNode | undefined, byId: ReadonlyMap<string, AnatomyNode>): string[] {
+  if (node?.systemId === 'muscular' && node.kind === 'division' && QUADRICEPS_MEMBERS[node.id]) {
+    return [...new Set(QUADRICEPS_MEMBERS[node.id].flatMap(id => getMuscleContextIds(byId.get(id), byId)))];
+  }
   const detail = resolveMuscleDetail(node);
   if (!detail || !node || (node.side !== 'right' && node.side !== 'left')) return [];
   const side = node.side;

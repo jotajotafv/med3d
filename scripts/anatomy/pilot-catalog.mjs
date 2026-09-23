@@ -1,13 +1,14 @@
 // Keep the original Fase 3A regression cohort explicit as the live catalog grows.
 // This is a test view of the real source catalog, never a replacement asset.
 import assert from 'node:assert/strict';
+import {cohortCatalog} from './cohort-catalog.mjs';
 
 export const PILOT_ASSET_IDS = ['muscular:upper-right', 'muscular:upper-left'];
 export const PILOT_FAMILIES = ['deltoid', 'bicepsbrachii', 'tricepsbrachii', 'brachialis', 'supraspinatus', 'infraspinatus', 'teresminor', 'subscapularis'];
 export const PILOT_MODULE_QUERY = 'modules=' + PILOT_ASSET_IDS.join(',');
 
 export function pilotCatalog(source) {
-  const catalog = structuredClone(source), ids = new Set(PILOT_ASSET_IDS);
+  const catalog = cohortCatalog(source, PILOT_ASSET_IDS), ids = new Set(PILOT_ASSET_IDS);
   catalog.assets = catalog.assets.filter(asset => ids.has(asset.id));
   assert.deepEqual(new Set(catalog.assets.map(asset => asset.id)), ids, 'Both original Fase 3A modules must remain available');
   catalog.nodes = catalog.nodes.filter(node => node.id === 'muscular' || node.assetIds.some(id => ids.has(id)));

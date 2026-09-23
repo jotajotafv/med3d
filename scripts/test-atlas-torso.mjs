@@ -6,6 +6,7 @@ import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import ts from 'typescript';
 import {PILOT_ASSET_IDS,PILOT_FAMILIES,pilotCatalog} from './anatomy/pilot-catalog.mjs';
+import {torsoCatalog,PHASE3B_FAMILIES} from './anatomy/torso-catalog.mjs';
 
 const project=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const temporary=await mkdtemp(path.join(project,'.torso-tests-'));
@@ -13,17 +14,17 @@ const json=async file=>JSON.parse(await readFile(path.join(project,file),'utf8')
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const previousFetch=globalThis.fetch,previousWindow=globalThis.window;
 try {
-  for(const file of ['asset-manager','explosion','catalog-index','body-catalog','muscle-education']){
+  for(const file of ['asset-manager','explosion','catalog-index','body-catalog','muscle-education','limb-education']){
     const source=(await readFile(path.join(project,'src/features/anatomy/atlas',file+'.ts'),'utf8')).replaceAll('import.meta.env.BASE_URL',JSON.stringify('/med3d/'));
     const compiled=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}});
-    await writeFile(path.join(temporary,file+'.mjs'),compiled.outputText.replaceAll("'./catalog-index'","'./catalog-index.mjs'"));
+    await writeFile(path.join(temporary,file+'.mjs'),compiled.outputText.replaceAll("'./catalog-index'","'./catalog-index.mjs'").replaceAll("'./limb-education'","'./limb-education.mjs'"));
   }
   const {composeBodyCatalog,BODY_ROOT_ID}=await import(pathToFileURL(path.join(temporary,'body-catalog.mjs')));
   const {createCatalogIndex}=await import(pathToFileURL(path.join(temporary,'catalog-index.mjs')));
   const {createAssetLoader,AtlasAssetManager}=await import(pathToFileURL(path.join(temporary,'asset-manager.mjs')));
   const {createExplosionOffsets,explosionTarget}=await import(pathToFileURL(path.join(temporary,'explosion.mjs')));
   const {MUSCLE_EDUCATION,resolveMuscleDetail,getMuscleContextIds}=await import(pathToFileURL(path.join(temporary,'muscle-education.mjs')));
-  const skeletal=await json('public/models/anatomy/skeletal/catalog.json'),muscular=await json('public/models/anatomy/muscular/catalog.json');
+  const skeletal=await json('public/models/anatomy/skeletal/catalog.json'),muscular=torsoCatalog(await json('public/models/anatomy/muscular/catalog.json'));
   const originals=JSON.stringify([skeletal,muscular]),catalog=composeBodyCatalog(skeletal,muscular),index=createCatalogIndex(catalog);
   assert.equal(JSON.stringify([skeletal,muscular]),originals,'Full composition never mutates the source catalogs');
   const torsoAssets=muscular.assets.filter(asset=>!PILOT_ASSET_IDS.includes(asset.id)),torsoAssetIds=new Set(torsoAssets.map(asset=>asset.id));
@@ -31,7 +32,7 @@ try {
   const families=['pectoralismajor','pectoralisminor','serratusanterior','subclavius','externaloblique','trapezius','rhomboidmajor','rhomboidminor','iliocostalislumborum','iliocostalisthoracis','longissimusthoracis','spinalisthoracis','teresmajor'];
   assert.deepEqual(new Set(torsoAssets.map(asset=>asset.id)),new Set(['muscular:thorax-anterior','muscular:abdomen','muscular:back']));
   assert.equal(catalog.assets.length,12);assert.equal(catalog.coverage.meshes,265);assert.equal(muscular.coverage.meshes,60);assert.equal(whole.length,26);assert.equal(owners.length,34);assert.equal(owners.filter(node=>node.kind==='component').length,12);
-  assert.deepEqual(new Set(whole.map(node=>node.family)),new Set(families));assert.equal(Object.keys(MUSCLE_EDUCATION).length,21);
+  assert.deepEqual(new Set(whole.map(node=>node.family)),new Set(families));assert.equal(Object.keys(MUSCLE_EDUCATION).filter(family=>PHASE3B_FAMILIES.includes(family)).length,21);
   assert.deepEqual(catalog.frame,skeletal.frame);assert.equal(catalog.frame.id,'bodyparts3d-4.0-male');assert.equal(index.byId.get(BODY_ROOT_ID).systemId,undefined);
   assert.ok(index.inside('muscular:region:thorax-anterior','muscular:region:trunk'));assert.ok(index.inside('muscular:region:abdomen','muscular:region:trunk'));assert.ok(index.inside('muscular:region:back','muscular:region:trunk'));
   for(const region of ['muscular:region:thorax-anterior','muscular:region:abdomen','muscular:region:back'])assert.equal(index.byId.get(region).systemId,'muscular','Torso is a region, never a new system');

@@ -51,6 +51,11 @@ function useAssets(catalog: AnatomyCatalog, assetIds: string[], reset: number) {
 }
 // Fixed, restrained family tones; these are presentation materials, not tissue labels.
 const MUSCLE_COLORS: Record<string,string> = {
+  gluteusmaximus:'#a97065',gluteusmedius:'#b17a6d',gluteusminimus:'#98655e',tensorfasciaelatae:'#af8174',
+  rectusfemoris:'#b57969',vastuslateralis:'#a66c61',vastusmedialis:'#b18070',vastusintermedius:'#99675f',sartorius:'#ba8879',
+  adductorlongus:'#a7786b',gracilis:'#b48a7b',bicepsfemoris:'#9d6c65',semitendinosus:'#ac7a6c',semimembranosus:'#a16e61',
+  tibialisanterior:'#b08273',fibularislongus:'#aa7468',fibularisbrevis:'#b48678',gastrocnemius:'#a36d62',soleus:'#b47c6c',tibialisposterior:'#95635b',
+  flexorcarpiradialis:'#b08071',pronatorteres:'#a56e65',extensorcarpiradialislongus:'#b18475',supinator:'#9d7167',
   deltoid:'#ad6764',bicepsbrachii:'#a95b56',tricepsbrachii:'#b37369',brachialis:'#9d625c',supraspinatus:'#b17a6c',infraspinatus:'#a85f59',teresminor:'#b88174',subscapularis:'#985b57',
   pectoralismajor:'#ac7068',pectoralisminor:'#94635e',serratusanterior:'#b47e70',subclavius:'#9c7167',externaloblique:'#a97168',
   trapezius:'#b47c70',rhomboidmajor:'#9d635d',rhomboidminor:'#a47167',teresmajor:'#ae7d71',

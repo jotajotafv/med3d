@@ -35,12 +35,18 @@ export function composeBodyCatalog(skeletal: AnatomyCatalog, muscular?: AnatomyC
     const upperSide = node.systemId === 'muscular'
       ? /(?:^|:)arm-(right|left)(?::|$)/.exec(node.regionId)?.[1]
       : /^skeletal:region:arm-(right|left)$/.exec(node.regionId)?.[1];
+    // Gluteal, thigh and leg muscles may cross the hip, knee or ankle. Keep
+    // all available structures of each lower limb in a shared regional block.
+    const lowerSide = node.systemId === 'muscular'
+      ? /(?:^|:)leg-(right|left)(?::|$)/.exec(node.regionId)?.[1]
+      : /^skeletal:region:leg-(right|left)$/.exec(node.regionId)?.[1];
     return {
       ...node,
       aliases: [...node.aliases], children: [...node.children], assetIds: [...node.assetIds],
       meshNames: [...node.meshNames], relatedIds: [...node.relatedIds],
       ...(!node.parentId ? { parentId: BODY_ROOT_ID } : {}),
       ...(upperSide ? { explosionRegionId: `upper-limb-${upperSide}` } : {}),
+      ...(lowerSide ? { explosionRegionId: `lower-limb-${lowerSide}` } : {}),
     };
   }));
   const assets = catalogs.flatMap(catalog => catalog.assets);
@@ -54,7 +60,7 @@ export function composeBodyCatalog(skeletal: AnatomyCatalog, muscular?: AnatomyC
     schemaVersion: 1, id: 'med3d-body', frame: structuredClone(reference),
     nodes: [root, ...nodes], assets, provenance: [...provenance.values()],
     coverage: {
-      title: muscular ? 'Sistema óseo y musculatura disponible de hombro, brazo y torso' : skeletal.coverage.title,
+      title: muscular ? 'Sistema óseo y musculatura disponible del torso y las extremidades' : skeletal.coverage.title,
       structures: catalogs.reduce((sum, catalog) => sum + catalog.coverage.structures, 0),
       meshes: catalogs.reduce((sum, catalog) => sum + catalog.coverage.meshes, 0),
       note: catalogs.map(catalog => catalog.coverage.note).join(' '),

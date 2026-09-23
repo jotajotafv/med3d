@@ -1,0 +1,18 @@
+{
+  "codeSha": "eb84c2d206b0bda73bfa5112d9f7943ab3985126",
+  "method": "Read-only Win32_Process query for chrome.exe browser roots with --remote-debugging-pipe and without --type=; no user browsers terminated.",
+  "reason": "pilot-functional finished 30 assertions with exit 0 but logged Browser teardown: exceeded 5000ms; later process checks confirm the browser did exit.",
+  "duringPerformance": {
+    "checkedUtc": "2026-09-23T20:31:59.0699938Z",
+    "qaBrowserRootCount": 1,
+    "processId": 7436,
+    "parentProcessId": 21240,
+    "creationUnixMs": 1790195505746,
+    "interpretation": "Only the current performance browser remained; the earlier pilot browser had exited."
+  },
+  "afterAllCaptures": {
+    "checkedUtc": "2026-09-23T20:52:54.4961209Z",
+    "qaBrowserRootCount": 0,
+    "processes": []
+  }
+}

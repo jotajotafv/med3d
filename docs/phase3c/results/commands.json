@@ -1,0 +1,172 @@
+{
+  "codeCommit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126",
+  "suiteTimeoutMs": 2400000,
+  "checks": [
+    {
+      "name": "typecheck",
+      "program": "npm.cmd",
+      "arguments": [
+        "run",
+        "typecheck"
+      ],
+      "startedUtc": "2026-09-23T20:07:38.0307036Z",
+      "finishedUtc": "2026-09-23T20:07:52.0077891Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    },
+    {
+      "name": "verify-anatomy",
+      "program": "npm.cmd",
+      "arguments": [
+        "run",
+        "verify:anatomy"
+      ],
+      "startedUtc": "2026-09-23T20:07:52.0998789Z",
+      "finishedUtc": "2026-09-23T20:08:00.2175029Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    },
+    {
+      "name": "pilot-geometry",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/optimize-muscular-pilot.mjs",
+        "--verify-only"
+      ],
+      "startedUtc": "2026-09-23T20:08:00.2280815Z",
+      "finishedUtc": "2026-09-23T20:08:01.6454035Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    },
+    {
+      "name": "torso-geometry",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/optimize-muscular-torso.mjs",
+        "--verify-only"
+      ],
+      "startedUtc": "2026-09-23T20:08:01.6586672Z",
+      "finishedUtc": "2026-09-23T20:08:18.0198222Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    },
+    {
+      "name": "limbs-geometry",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/optimize-muscular-limbs.mjs",
+        "--verify-only"
+      ],
+      "startedUtc": "2026-09-23T20:08:18.0277298Z",
+      "finishedUtc": "2026-09-23T20:08:22.9038753Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    },
+    {
+      "name": "gltf",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/validate-muscular-gltf.mjs"
+      ],
+      "startedUtc": "2026-09-23T20:08:22.9144081Z",
+      "finishedUtc": "2026-09-23T20:08:24.0256003Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    },
+    {
+      "name": "build",
+      "program": "npm.cmd",
+      "arguments": [
+        "run",
+        "build"
+      ],
+      "startedUtc": "2026-09-23T20:08:24.0345981Z",
+      "finishedUtc": "2026-09-23T20:08:40.8482040Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    },
+    {
+      "name": "limbs-functional",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/limbs-qa.mjs",
+        "--functional"
+      ],
+      "startedUtc": "2026-09-23T20:08:40.8603583Z",
+      "finishedUtc": "2026-09-23T20:18:02.2343150Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    },
+    {
+      "name": "torso-functional",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/torso-qa.mjs",
+        "--functional"
+      ],
+      "startedUtc": "2026-09-23T20:18:02.2393181Z",
+      "finishedUtc": "2026-09-23T20:23:01.9252369Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    },
+    {
+      "name": "pilot-functional",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/pilot-qa.mjs",
+        "--functional"
+      ],
+      "startedUtc": "2026-09-23T20:23:01.9312362Z",
+      "finishedUtc": "2026-09-23T20:29:00.6352114Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    },
+    {
+      "name": "skeletal-functional",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/browser-qa.mjs"
+      ],
+      "startedUtc": "2026-09-23T20:29:00.6459642Z",
+      "finishedUtc": "2026-09-23T20:31:13.0566392Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    },
+    {
+      "name": "pilot-tree",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/pilot-qa.mjs",
+        "--tree"
+      ],
+      "startedUtc": "2026-09-23T20:31:13.3556643Z",
+      "finishedUtc": "2026-09-23T20:31:45.0857499Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    },
+    {
+      "name": "performance",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/limbs-qa.mjs",
+        "--performance"
+      ],
+      "startedUtc": "2026-09-23T20:31:45.0910512Z",
+      "finishedUtc": "2026-09-23T20:32:42.1501994Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    },
+    {
+      "name": "captures",
+      "program": "node",
+      "arguments": [
+        "scripts/anatomy/limbs-qa.mjs",
+        "--captures"
+      ],
+      "startedUtc": "2026-09-23T20:32:42.1554709Z",
+      "finishedUtc": "2026-09-23T20:38:35.1718705Z",
+      "exitCode": 0,
+      "commit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126"
+    }
+  ]
+}

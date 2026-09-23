@@ -1,0 +1,226 @@
+{
+  "codeCommit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126",
+  "supersededCommit": "09272a1b34074b405f17cd7ba1873fc2979da6cb",
+  "opacitySynchronization": {
+    "attemptCommit": "b8168cdd3298ada5eaa44e18a7be1a03668f2e11",
+    "passedChecks": 22,
+    "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(state.filter(part=>part.systemId==='muscular').every(part=>Math.abs(part.opacity-value/100)<1e-8&&part.transparent===(value<100)&&part.depthWrite===(value===100)))\n\n    at Object.functional (file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/limbs-qa.mjs:72:176)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/limbs-qa.mjs:143:38\n    at async withinQaDeadline (file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/browser-qa.mjs:16:12)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/limbs-qa.mjs:143:5",
+    "focusedDiagnostic": {
+      "checks": [
+        {
+          "direction": "anterior",
+          "value": 100,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 458.60619999999926
+        },
+        {
+          "direction": "anterior",
+          "value": 75,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 2040.9184000000005
+        },
+        {
+          "direction": "anterior",
+          "value": 50,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 379.1098000000002
+        },
+        {
+          "direction": "anterior",
+          "value": 25,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 393.40740000000005
+        },
+        {
+          "direction": "anterior",
+          "value": 10,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 400.1894000000011
+        },
+        {
+          "direction": "posterior",
+          "value": 100,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 397.3119000000006
+        },
+        {
+          "direction": "posterior",
+          "value": 75,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 392.60109999999986
+        },
+        {
+          "direction": "posterior",
+          "value": 50,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 391.6485999999986
+        },
+        {
+          "direction": "posterior",
+          "value": 25,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 386.9901000000009
+        },
+        {
+          "direction": "posterior",
+          "value": 10,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 390.452299999999
+        },
+        {
+          "direction": "right",
+          "value": 100,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 393.1733000000004
+        },
+        {
+          "direction": "right",
+          "value": 75,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 390.7479000000003
+        },
+        {
+          "direction": "right",
+          "value": 50,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 390.33359999999993
+        },
+        {
+          "direction": "right",
+          "value": 25,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 389.0554999999986
+        },
+        {
+          "direction": "right",
+          "value": 10,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 387.118199999999
+        },
+        {
+          "direction": "anterior",
+          "value": 100,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 394.5449000000008
+        },
+        {
+          "direction": "anterior",
+          "value": 75,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 387.84409999999843
+        },
+        {
+          "direction": "anterior",
+          "value": 50,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 390.45939999999973
+        },
+        {
+          "direction": "anterior",
+          "value": 25,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 440.96039999999994
+        },
+        {
+          "direction": "anterior",
+          "value": 10,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 386.6725000000006
+        },
+        {
+          "direction": "right",
+          "value": 100,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 379.3722999999991
+        },
+        {
+          "direction": "right",
+          "value": 75,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 397.2497999999978
+        },
+        {
+          "direction": "right",
+          "value": 50,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 398.4340000000011
+        },
+        {
+          "direction": "right",
+          "value": 25,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 387.4313000000002
+        },
+        {
+          "direction": "right",
+          "value": 10,
+          "earlyStateMatched": true,
+          "nonmatchingEarlyParts": [],
+          "stableAfterMs": 389.4015999999974
+        }
+      ],
+      "errors": [],
+      "badRequests": []
+    },
+    "resolution": "The fixed 350 ms pause did not guarantee the expected material state in one suite run. A focused 25-case diagnostic did not reproduce a persistent viewer failure. The final helper waits for actual material properties and retains all assertions. Explosion waits also require the requested rest/displaced state, not just an earlier completed target."
+  },
+  "softwareWebglTimeout": {
+    "attemptCommit": "60c7cccb9af36e08bcfd3db840e6e0381255a9cf",
+    "passedChecks": 29,
+    "error": "Error: Fase 3C functional: exceeded 1200000 ms; partial evidence is retained.\n    at Timeout.<anonymous> (file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/browser-qa.mjs:17:35)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)",
+    "browserErrors": [],
+    "badRequests": [],
+    "resolution": "Added QA_SUITE_TIMEOUT_MS configuration for the whole runner; final run uses 2400000 ms. All assertions and measured latency fields remain unchanged."
+  },
+  "searchAssertionResolution": "Only the regional label expectation changed in this assertion. It still verifies muscle, component, system and now both real upper-limb region labels. No check was removed. Final critical tests are rerun on codeCommit.",
+  "attempts": [
+    {
+      "sourceAttempt": ".cache/phase3c/attempt-09272a1/pilot-functional/pilot-functional.json",
+      "date": "2026-09-23T19:11:54.546Z",
+      "success": false,
+      "passedChecks": 8,
+      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Hombro|Brazo|brazo/. Input:\n\n'8 resultados en el atlas disponible\\n' +\n  '\\n' +\n  'Deltoides derecho\\n' +\n  'Musculus deltoideus\\n' +\n  'Músculo · Sistema muscular · Miembro superior derecho\\n' +\n  'Deltoides izquierdo\\n' +\n  'Musculus deltoideus\\n' +\n  'Músculo · Sistema muscular · Miembro superior izquierdo\\n' +\n  'Porción clavicular del deltoides derecho\\n' +\n  'Componente · Sistema muscular · Miembro superior derecho\\n' +\n  'Porción acromial del deltoides derecho\\n' +\n  'Componente · Sistema muscular · Miembro superior derecho\\n' +\n  'Porción espinal del deltoides derecho\\n' +\n  'Componente · Sistema muscular · Miembro superior derecho\\n' +\n  'Porción clavicular del deltoides izquierdo\\n' +\n  'Componente · Sistema muscular · Miembro superior izquierdo\\n' +\n  'Porción acromial del deltoides izquierdo\\n' +\n  'Componente · Sistema muscular · Miembro superior izquierdo\\n' +\n  'Porción espinal del deltoides izquierdo\\n' +\n  'Componente · Sistema muscular · Miembro superior izquierdo'\n\n    at Object.functional (file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/pilot-qa.mjs:114:230)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/pilot-qa.mjs:180:38\n    at async withinQaDeadline (file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/browser-qa.mjs:16:12)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/pilot-qa.mjs:180:5",
+      "explanation": "The old search assertion required Hombro/Brazo, while the enlarged parent region is Miembro superior."
+    },
+    {
+      "sourceAttempt": ".cache/phase3c/pre-pilot-fixed/pilot-functional.json",
+      "date": "2026-09-23T19:14:04.435Z",
+      "success": false,
+      "passedChecks": 8,
+      "error": "AssertionError [ERR_ASSERTION]: Search identifies the real bilateral region: Hombro derecho\n    at Object.functional (file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/pilot-qa.mjs:114:300)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/pilot-qa.mjs:180:38\n    at async withinQaDeadline (file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/browser-qa.mjs:16:12)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/pilot-qa.mjs:180:5",
+      "explanation": "An intermediate assertion incorrectly required every regional subgroup name in the two muscle search results."
+    },
+    {
+      "sourceAttempt": ".cache/phase3c/pre-pilot-regions/pilot-functional.json",
+      "date": "2026-09-23T19:19:21.988Z",
+      "success": true,
+      "passedChecks": 30,
+      "error": null,
+      "explanation": "The corrected assertion requires the two actual region IDs arm-right/arm-left; all original pilot checks passed."
+    }
+  ]
+}

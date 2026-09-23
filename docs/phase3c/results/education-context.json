@@ -1,0 +1,5121 @@
+{
+  "codeCommit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126",
+  "families": {
+    "gluteusmaximus": {
+      "name": "Glúteo mayor",
+      "latin": "Musculus gluteus maximus",
+      "region": "Región glútea",
+      "group": "Grupo glúteo",
+      "description": "Músculo extensor de la cadera con fijaciones óseas y fasciales.",
+      "function": "Contribuye a impulsar el muslo hacia atrás.",
+      "action": "Extiende y ayuda a rotar lateralmente la cadera.",
+      "origins": [
+        {
+          "label": "Ilion posterior y cresta ilíaca posterior.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA16586"
+            ],
+            "left": [
+              "bp3d:FMA16587"
+            ]
+          }
+        },
+        {
+          "label": "Cara posterior del sacro.",
+          "boneIds": {
+            "midline": [
+              "bp3d:FMA16202"
+            ]
+          }
+        },
+        {
+          "label": "Cóccix y ligamento sacrotuberoso. El cóccix aún no está disponible en el atlas."
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Tuberosidad glútea del fémur.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24474"
+            ],
+            "left": [
+              "bp3d:FMA24475"
+            ]
+          }
+        },
+        {
+          "label": "Tracto iliotibial de la fascia lata."
+        }
+      ],
+      "innervation": "Nervio glúteo inferior.",
+      "relations": "Sus fijaciones incluyen el tracto iliotibial; esta fascia no se sustituye por un hueso en el contexto.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · gluteus maximus",
+          "url": "https://rad.uw.edu/muscle-atlas/gluteus-maximus"
+        }
+      ]
+    },
+    "gluteusmedius": {
+      "name": "Glúteo medio",
+      "latin": "Musculus gluteus medius",
+      "region": "Región glútea",
+      "group": "Grupo glúteo",
+      "description": "Músculo que conecta el ilion con el trocánter mayor.",
+      "function": "Participa en la separación del muslo y el control de la cadera.",
+      "action": "Abduce el muslo; sus fibras anteriores ayudan a la rotación medial y las posteriores a la lateral.",
+      "origins": [
+        {
+          "label": "Cara externa del ilion, inferior a la cresta ilíaca.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA16586"
+            ],
+            "left": [
+              "bp3d:FMA16587"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Superficies lateral y superior del trocánter mayor del fémur.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24474"
+            ],
+            "left": [
+              "bp3d:FMA24475"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio glúteo superior.",
+      "relations": "Comparte con el glúteo menor una inserción trocantérica, en superficies diferentes.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · gluteus medius",
+          "url": "https://rad.uw.edu/muscle-atlas/gluteus-medius"
+        },
+        {
+          "title": "University of Washington · Muscle Atlas · gluteus minimus",
+          "url": "https://rad.uw.edu/muscle-atlas/gluteus-minimus"
+        }
+      ]
+    },
+    "gluteusminimus": {
+      "name": "Glúteo menor",
+      "latin": "Musculus gluteus minimus",
+      "region": "Región glútea",
+      "group": "Grupo glúteo",
+      "description": "Músculo glúteo que se fija en la cara anterior del trocánter mayor.",
+      "function": "Colabora en el control del movimiento de la cadera.",
+      "action": "Abduce y rota medialmente el muslo.",
+      "origins": [
+        {
+          "label": "Ilion entre las líneas glúteas anterior e inferior.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA16586"
+            ],
+            "left": [
+              "bp3d:FMA16587"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Cara anterior del trocánter mayor del fémur.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24474"
+            ],
+            "left": [
+              "bp3d:FMA24475"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio glúteo superior.",
+      "relations": "Su fijación trocantérica anterior es distinta de la lateral del glúteo medio.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · gluteus minimus",
+          "url": "https://rad.uw.edu/muscle-atlas/gluteus-minimus"
+        },
+        {
+          "title": "University of Washington · Muscle Atlas · gluteus medius",
+          "url": "https://rad.uw.edu/muscle-atlas/gluteus-medius"
+        }
+      ]
+    },
+    "tensorfasciaelatae": {
+      "name": "Tensor de la fascia lata",
+      "latin": "Musculus tensor fasciae latae",
+      "region": "Región glútea y muslo lateral",
+      "group": "Grupo glúteo",
+      "description": "Músculo que transmite tensión al tracto iliotibial.",
+      "function": "Ayuda a estabilizar la cadera y la rodilla mediante la fascia.",
+      "action": "Tensa el tracto iliotibial; ayuda a flexionar y abducir el muslo.",
+      "origins": [
+        {
+          "label": "Espina ilíaca anterosuperior y labio externo de la cresta ilíaca anterior.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA16586"
+            ],
+            "left": [
+              "bp3d:FMA16587"
+            ]
+          }
+        },
+        {
+          "label": "Fascia lata."
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Tracto iliotibial. No se presenta como una inserción ósea directa."
+        }
+      ],
+      "innervation": "Nervio glúteo superior.",
+      "relations": "Su acción sobre la rodilla se transmite por el tracto iliotibial.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · tensor fascia lata",
+          "url": "https://rad.uw.edu/muscle-atlas/tensor-fascia-lata"
+        },
+        {
+          "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+        }
+      ]
+    },
+    "rectusfemoris": {
+      "name": "Recto femoral",
+      "latin": "Musculus rectus femoris",
+      "region": "Muslo",
+      "group": "Compartimento anterior · grupo cuádriceps",
+      "description": "Uno de los cuatro músculos del cuádriceps; cruza la cadera y la rodilla.",
+      "function": "Participa en la extensión de la rodilla.",
+      "action": "Extiende la rodilla y ayuda a flexionar la cadera.",
+      "origins": [
+        {
+          "label": "Espina ilíaca anteroinferior y región supraacetabular.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA16586"
+            ],
+            "left": [
+              "bp3d:FMA16587"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Patela mediante el tendón del cuádriceps; continuidad hasta la tuberosidad tibial mediante el ligamento patelar.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24486",
+              "bp3d:FMA24477"
+            ],
+            "left": [
+              "bp3d:FMA24487",
+              "bp3d:FMA24478"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio femoral.",
+      "relations": "Comparte el aparato extensor con los tres vastos. El grupo cuádriceps no añade un quinto músculo.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · rectus femoris",
+          "url": "https://rad.uw.edu/muscle-atlas/rectus-femoris"
+        },
+        {
+          "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+        }
+      ]
+    },
+    "vastuslateralis": {
+      "name": "Vasto lateral",
+      "latin": "Musculus vastus lateralis",
+      "region": "Muslo",
+      "group": "Compartimento anterior · grupo cuádriceps",
+      "description": "Componente muscular lateral del cuádriceps.",
+      "function": "Contribuye al aparato extensor de la rodilla.",
+      "action": "Extiende la rodilla.",
+      "origins": [
+        {
+          "label": "Región proximal del fémur, trocánter mayor y labio lateral de la línea áspera.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24474"
+            ],
+            "left": [
+              "bp3d:FMA24475"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Patela mediante el tendón del cuádriceps; continuidad hasta la tuberosidad tibial mediante el ligamento patelar.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24486",
+              "bp3d:FMA24477"
+            ],
+            "left": [
+              "bp3d:FMA24487",
+              "bp3d:FMA24478"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio femoral.",
+      "relations": "Sus fibras llegan a la región lateral de la patela mediante el tendón y retináculo patelares.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · vastus lateralis",
+          "url": "https://rad.uw.edu/muscle-atlas/vastus-lateralis"
+        },
+        {
+          "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+        }
+      ]
+    },
+    "vastusmedialis": {
+      "name": "Vasto medial",
+      "latin": "Musculus vastus medialis",
+      "region": "Muslo",
+      "group": "Compartimento anterior · grupo cuádriceps",
+      "description": "Componente muscular medial del cuádriceps.",
+      "function": "Contribuye al aparato extensor de la rodilla.",
+      "action": "Extiende la rodilla.",
+      "origins": [
+        {
+          "label": "Porción inferior de la línea intertrocantérica, línea espiral y labio medial de la línea áspera del fémur.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24474"
+            ],
+            "left": [
+              "bp3d:FMA24475"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Patela mediante el tendón del cuádriceps; continuidad hasta la tuberosidad tibial mediante el ligamento patelar.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24486",
+              "bp3d:FMA24477"
+            ],
+            "left": [
+              "bp3d:FMA24487",
+              "bp3d:FMA24478"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio femoral.",
+      "relations": "Su tendón y retináculo alcanzan el borde medial de la patela.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · vastus medialis",
+          "url": "https://rad.uw.edu/muscle-atlas/vastus-medialis"
+        },
+        {
+          "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+        }
+      ]
+    },
+    "vastusintermedius": {
+      "name": "Vasto intermedio",
+      "latin": "Musculus vastus intermedius",
+      "region": "Muslo",
+      "group": "Compartimento anterior · grupo cuádriceps",
+      "description": "Músculo del cuádriceps situado profundo al recto femoral.",
+      "function": "Contribuye al aparato extensor de la rodilla.",
+      "action": "Extiende la rodilla.",
+      "origins": [
+        {
+          "label": "Dos tercios proximales de las caras anterior y lateral del fémur.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24474"
+            ],
+            "left": [
+              "bp3d:FMA24475"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Patela mediante el tendón del cuádriceps; continuidad hasta la tuberosidad tibial mediante el ligamento patelar.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24486",
+              "bp3d:FMA24477"
+            ],
+            "left": [
+              "bp3d:FMA24487",
+              "bp3d:FMA24478"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio femoral.",
+      "relations": "Se dispone entre los vastos medial y lateral y profundo al recto femoral.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · vastus intermedius",
+          "url": "https://rad.uw.edu/muscle-atlas/vastus-intermedius"
+        },
+        {
+          "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+        }
+      ]
+    },
+    "sartorius": {
+      "name": "Sartorio",
+      "latin": "Musculus sartorius",
+      "region": "Muslo",
+      "group": "Compartimento anterior",
+      "description": "Músculo largo que conecta el ilion con la tibia medial.",
+      "function": "Coordina movimientos de cadera y rodilla.",
+      "action": "Flexiona y rota lateralmente la cadera; flexiona la rodilla.",
+      "origins": [
+        {
+          "label": "Espina ilíaca anterosuperior.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA16586"
+            ],
+            "left": [
+              "bp3d:FMA16587"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Superficie medial proximal de la tibia, cerca de la tuberosidad tibial.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24477"
+            ],
+            "left": [
+              "bp3d:FMA24478"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio femoral.",
+      "relations": "Cruza dos articulaciones; se conserva íntegro al desplazar el miembro por regiones.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · sartorius",
+          "url": "https://rad.uw.edu/muscle-atlas/sartorius"
+        }
+      ]
+    },
+    "adductorlongus": {
+      "name": "Aductor largo",
+      "latin": "Musculus adductor longus",
+      "region": "Muslo",
+      "group": "Compartimento medial",
+      "description": "Músculo aductor que conecta el pubis con la diáfisis femoral.",
+      "function": "Acerca el muslo a la línea media.",
+      "action": "Aduce y ayuda a flexionar el muslo.",
+      "origins": [
+        {
+          "label": "Cara anterior del cuerpo del pubis, lateral a la sínfisis.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA16586"
+            ],
+            "left": [
+              "bp3d:FMA16587"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Tercio medio de la línea áspera del fémur.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24474"
+            ],
+            "left": [
+              "bp3d:FMA24475"
+            ]
+          }
+        }
+      ],
+      "innervation": "División anterior del nervio obturador.",
+      "relations": "Su inserción se relaciona con las de otros aductores y con el origen del vasto medial.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · adductor longus",
+          "url": "https://rad.uw.edu/muscle-atlas/adductor-longus"
+        }
+      ]
+    },
+    "gracilis": {
+      "name": "Grácil",
+      "latin": "Musculus gracilis",
+      "region": "Muslo",
+      "group": "Compartimento medial",
+      "description": "También llamado recto interno; alcanza la tibia desde la región púbica.",
+      "function": "Participa en movimientos de cadera y rodilla.",
+      "action": "Aduce el muslo, flexiona la rodilla y ayuda a rotar medialmente la tibia.",
+      "origins": [
+        {
+          "label": "Rama inferior del pubis y rama isquiática adyacente.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA16586"
+            ],
+            "left": [
+              "bp3d:FMA16587"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Cara medial proximal de la tibia.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24477"
+            ],
+            "left": [
+              "bp3d:FMA24478"
+            ]
+          }
+        }
+      ],
+      "innervation": "División anterior del nervio obturador.",
+      "relations": "Se inserta por detrás del sartorio en la tibia medial.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · gracilis",
+          "url": "https://rad.uw.edu/muscle-atlas/gracilis"
+        }
+      ]
+    },
+    "bicepsfemoris": {
+      "name": "Bíceps femoral",
+      "latin": "Musculus biceps femoris",
+      "region": "Muslo",
+      "group": "Compartimento posterior",
+      "description": "Músculo de dos cabezas, larga y corta, con origen e inervación diferentes.",
+      "function": "Participa en el movimiento posterior del miembro inferior.",
+      "action": "Flexiona la rodilla y rota lateralmente la tibia; sólo la cabeza larga extiende la cadera.",
+      "origins": [
+        {
+          "label": "Cabeza larga: tuberosidad isquiática, compartiendo un tendón proximal con el semitendinoso.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA16586"
+            ],
+            "left": [
+              "bp3d:FMA16587"
+            ]
+          }
+        },
+        {
+          "label": "Cabeza corta: labio lateral de la línea áspera y línea supracondílea lateral del fémur.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24474"
+            ],
+            "left": [
+              "bp3d:FMA24475"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Principalmente cabeza de la fíbula; también expansiones al cóndilo tibial lateral.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24480",
+              "bp3d:FMA24477"
+            ],
+            "left": [
+              "bp3d:FMA24481",
+              "bp3d:FMA24478"
+            ]
+          }
+        },
+        {
+          "label": "Expansiones al ligamento colateral fibular."
+        }
+      ],
+      "innervation": "Cabeza larga: división tibial del ciático. Cabeza corta: división fibular común del ciático.",
+      "relations": "La cabeza corta nace en el fémur y no cruza la cadera. La larga comparte origen tendinoso con el semitendinoso.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · biceps femoris long head",
+          "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-long-head"
+        },
+        {
+          "title": "University of Washington · Muscle Atlas · biceps femoris short head",
+          "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-short-head"
+        }
+      ]
+    },
+    "semitendinosus": {
+      "name": "Semitendinoso",
+      "latin": "Musculus semitendinosus",
+      "region": "Muslo",
+      "group": "Compartimento posterior · isquiotibiales",
+      "description": "Músculo posterior entre la tuberosidad isquiática y la tibia medial.",
+      "function": "Participa en movimientos de cadera y rodilla.",
+      "action": "Extiende la cadera, flexiona la rodilla y rota medialmente la tibia con la rodilla flexionada.",
+      "origins": [
+        {
+          "label": "Tuberosidad isquiática, mediante un tendón común con la cabeza larga del bíceps femoral.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA16586"
+            ],
+            "left": [
+              "bp3d:FMA16587"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Cara medial proximal de la tibia.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24477"
+            ],
+            "left": [
+              "bp3d:FMA24478"
+            ]
+          }
+        }
+      ],
+      "innervation": "División tibial del nervio ciático.",
+      "relations": "Comparte el origen proximal con la cabeza larga del bíceps femoral.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · semitendinosus",
+          "url": "https://rad.uw.edu/muscle-atlas/semitendinosus"
+        }
+      ]
+    },
+    "semimembranosus": {
+      "name": "Semimembranoso",
+      "latin": "Musculus semimembranosus",
+      "region": "Muslo",
+      "group": "Compartimento posterior · isquiotibiales",
+      "description": "Músculo posterior con inserción en el cóndilo tibial medial.",
+      "function": "Participa en movimientos de cadera y rodilla.",
+      "action": "Extiende la cadera, flexiona la rodilla y rota medialmente la tibia con la rodilla flexionada.",
+      "origins": [
+        {
+          "label": "Cuadrante superolateral de la tuberosidad isquiática.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA16586"
+            ],
+            "left": [
+              "bp3d:FMA16587"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Cara posterior del cóndilo medial de la tibia.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24477"
+            ],
+            "left": [
+              "bp3d:FMA24478"
+            ]
+          }
+        }
+      ],
+      "innervation": "División tibial del nervio ciático.",
+      "relations": "Su fijación tibial es posterior y proximal respecto a la del semitendinoso.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · semimembranosus",
+          "url": "https://rad.uw.edu/muscle-atlas/semimembranosus"
+        },
+        {
+          "title": "University of Washington · Muscle Atlas · semitendinosus",
+          "url": "https://rad.uw.edu/muscle-atlas/semitendinosus"
+        }
+      ]
+    },
+    "tibialisanterior": {
+      "name": "Tibial anterior",
+      "latin": "Musculus tibialis anterior",
+      "region": "Pierna",
+      "group": "Compartimento anterior",
+      "description": "Músculo anterior que alcanza el borde medial del pie.",
+      "function": "Eleva el antepié durante la dorsiflexión.",
+      "action": "Dorsiflexiona el tobillo e invierte el pie.",
+      "origins": [
+        {
+          "label": "Cóndilo lateral y porción proximal de la cara lateral de la tibia.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24477"
+            ],
+            "left": [
+              "bp3d:FMA24478"
+            ]
+          }
+        },
+        {
+          "label": "Membrana interósea y fascia de la pierna."
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Cuneiforme medial y base del primer metatarsiano.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24521",
+              "bp3d:FMA24507"
+            ],
+            "left": [
+              "bp3d:FMA24522",
+              "bp3d:FMA24508"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio fibular profundo (peroneo profundo).",
+      "relations": "El contexto incluye la tibia y sus fijaciones óseas mediales del pie.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · tibialis anterior",
+          "url": "https://rad.uw.edu/muscle-atlas/tibialis-anterior"
+        }
+      ]
+    },
+    "fibularislongus": {
+      "name": "Fibular largo",
+      "latin": "Musculus fibularis longus",
+      "region": "Pierna",
+      "group": "Compartimento lateral",
+      "description": "También llamado peroneo largo; alcanza la región plantar medial del pie.",
+      "function": "Contribuye al soporte del arco transverso.",
+      "action": "Evierte el pie y ayuda a la flexión plantar del tobillo.",
+      "origins": [
+        {
+          "label": "Cabeza y porción proximal de la superficie lateral de la fíbula.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24480"
+            ],
+            "left": [
+              "bp3d:FMA24481"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Cuneiforme medial y base del primer metatarsiano por su superficie plantar.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24521",
+              "bp3d:FMA24507"
+            ],
+            "left": [
+              "bp3d:FMA24522",
+              "bp3d:FMA24508"
+            ]
+          }
+        }
+      ],
+      "innervation": "Principalmente nervio fibular superficial (peroneo superficial).",
+      "relations": "Comparte el compartimento lateral con el fibular corto, pero tiene una inserción diferente.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · peroneus longus",
+          "url": "https://rad.uw.edu/muscle-atlas/peroneus-longus"
+        },
+        {
+          "title": "University of Washington · Muscle Atlas · peroneus brevis",
+          "url": "https://rad.uw.edu/muscle-atlas/peroneus-brevis"
+        }
+      ]
+    },
+    "fibularisbrevis": {
+      "name": "Fibular corto",
+      "latin": "Musculus fibularis brevis",
+      "region": "Pierna",
+      "group": "Compartimento lateral",
+      "description": "También llamado peroneo corto; termina en el quinto metatarsiano.",
+      "function": "Participa en el control lateral del pie.",
+      "action": "Evierte el pie y ayuda a la flexión plantar del tobillo.",
+      "origins": [
+        {
+          "label": "Dos tercios distales de la cara lateral de la fíbula.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24480"
+            ],
+            "left": [
+              "bp3d:FMA24481"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Tuberosidad de la base del quinto metatarsiano.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24515"
+            ],
+            "left": [
+              "bp3d:FMA24516"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio fibular superficial (peroneo superficial).",
+      "relations": "Su inserción lateral en el pie difiere de la inserción plantar medial del fibular largo.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · peroneus brevis",
+          "url": "https://rad.uw.edu/muscle-atlas/peroneus-brevis"
+        },
+        {
+          "title": "University of Washington · Muscle Atlas · peroneus longus",
+          "url": "https://rad.uw.edu/muscle-atlas/peroneus-longus"
+        }
+      ]
+    },
+    "gastrocnemius": {
+      "name": "Gastrocnemio",
+      "latin": "Musculus gastrocnemius",
+      "region": "Pierna",
+      "group": "Compartimento posterior superficial",
+      "description": "Músculo de la pantorrilla formado por cabezas medial y lateral.",
+      "function": "Participa en la propulsión mediante el tendón calcáneo.",
+      "action": "Flexiona plantarmente el tobillo y ayuda a flexionar la rodilla.",
+      "origins": [
+        {
+          "label": "Cabeza medial: cara posterior no articular del cóndilo medial del fémur.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24474"
+            ],
+            "left": [
+              "bp3d:FMA24475"
+            ]
+          }
+        },
+        {
+          "label": "Cabeza lateral: superficie lateral del cóndilo lateral del fémur.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24474"
+            ],
+            "left": [
+              "bp3d:FMA24475"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Cara posterior del calcáneo mediante el tendón calcáneo (de Aquiles).",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24497"
+            ],
+            "left": [
+              "bp3d:FMA24498"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio tibial.",
+      "relations": "Su aponeurosis se une con el tendón del sóleo; ambas cabezas forman un solo músculo.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · gastrocnemius",
+          "url": "https://rad.uw.edu/muscle-atlas/gastrocnemius"
+        },
+        {
+          "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+        }
+      ]
+    },
+    "soleus": {
+      "name": "Sóleo",
+      "latin": "Musculus soleus",
+      "region": "Pierna",
+      "group": "Compartimento posterior superficial",
+      "description": "Músculo de la pantorrilla profundo al gastrocnemio.",
+      "function": "Participa en el apoyo y la propulsión del cuerpo.",
+      "action": "Flexiona plantarmente el tobillo.",
+      "origins": [
+        {
+          "label": "Cara posterior proximal de la fíbula y borde medial de la tibia.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24480",
+              "bp3d:FMA24477"
+            ],
+            "left": [
+              "bp3d:FMA24481",
+              "bp3d:FMA24478"
+            ]
+          }
+        },
+        {
+          "label": "Arco tendinoso entre sus fijaciones óseas."
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Cara posterior del calcáneo mediante el tendón calcáneo (de Aquiles).",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24497"
+            ],
+            "left": [
+              "bp3d:FMA24498"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio tibial.",
+      "relations": "Se une con la aponeurosis del gastrocnemio para formar el tendón calcáneo.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · soleus",
+          "url": "https://rad.uw.edu/muscle-atlas/soleus"
+        },
+        {
+          "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+        }
+      ]
+    },
+    "tibialisposterior": {
+      "name": "Tibial posterior",
+      "latin": "Musculus tibialis posterior",
+      "region": "Pierna",
+      "group": "Compartimento posterior profundo",
+      "description": "Músculo posterior profundo con varias expansiones tendinosas en el pie.",
+      "function": "Controla la inversión del pie.",
+      "action": "Invierte y aduce el pie; ayuda a la flexión plantar del tobillo.",
+      "origins": [
+        {
+          "label": "Superficies posteriores proximales de la tibia y la fíbula.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24477",
+              "bp3d:FMA24480"
+            ],
+            "left": [
+              "bp3d:FMA24478",
+              "bp3d:FMA24481"
+            ]
+          }
+        },
+        {
+          "label": "Membrana interósea y tabiques fasciales."
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Tuberosidad del navicular; expansiones al cuneiforme intermedio y bases de los metatarsianos 2–4, según la descripción de UW.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24500",
+              "bp3d:FMA24523",
+              "bp3d:FMA24509",
+              "bp3d:FMA24511",
+              "bp3d:FMA24513"
+            ],
+            "left": [
+              "bp3d:FMA24501",
+              "bp3d:FMA24524",
+              "bp3d:FMA24510",
+              "bp3d:FMA24512",
+              "bp3d:FMA24514"
+            ]
+          }
+        },
+        {
+          "label": "La extensión al cuneiforme medial es variable; no se presupone en este espécimen."
+        }
+      ],
+      "innervation": "Nervio tibial.",
+      "relations": "La ficha resume el patrón descrito por UW; las expansiones no están anotadas como superficies en las mallas.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · tibialis posterior",
+          "url": "https://rad.uw.edu/muscle-atlas/tibialis-posterior"
+        }
+      ]
+    },
+    "flexorcarpiradialis": {
+      "name": "Flexor radial del carpo",
+      "latin": "Musculus flexor carpi radialis",
+      "region": "Antebrazo",
+      "group": "Compartimento anterior",
+      "description": "Músculo flexor de la muñeca con inserción en el segundo metacarpiano.",
+      "function": "Controla la flexión y desviación radial de la mano.",
+      "action": "Flexiona y abduce la mano en la muñeca.",
+      "origins": [
+        {
+          "label": "Epicóndilo medial del húmero.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA23130"
+            ],
+            "left": [
+              "bp3d:FMA23131"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Base del segundo metacarpiano.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24466"
+            ],
+            "left": [
+              "bp3d:FMA24467"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio mediano.",
+      "relations": "Une el origen humeral medial con la base del segundo metacarpiano.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · flexor carpi radialis",
+          "url": "https://rad.uw.edu/muscle-atlas/flexor-carpi-radialis"
+        }
+      ]
+    },
+    "pronatorteres": {
+      "name": "Pronador redondo",
+      "latin": "Musculus pronator teres",
+      "region": "Antebrazo",
+      "group": "Compartimento anterior",
+      "description": "Músculo pronador con cabezas humeral y ulnar.",
+      "function": "Orienta la palma mediante la rotación del radio.",
+      "action": "Prona el antebrazo y ayuda a flexionarlo en el codo.",
+      "origins": [
+        {
+          "label": "Cabeza humeral: epicóndilo medial del húmero.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA23130"
+            ],
+            "left": [
+              "bp3d:FMA23131"
+            ]
+          }
+        },
+        {
+          "label": "Cabeza ulnar: apófisis coronoides de la ulna.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA23467"
+            ],
+            "left": [
+              "bp3d:FMA23468"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Porción media de la cara lateral del radio.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA23464"
+            ],
+            "left": [
+              "bp3d:FMA23465"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio mediano.",
+      "relations": "Las dos cabezas tienen orígenes diferentes y una inserción radial compartida.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · pronator teres",
+          "url": "https://rad.uw.edu/muscle-atlas/pronator-teres"
+        }
+      ]
+    },
+    "extensorcarpiradialislongus": {
+      "name": "Extensor radial largo del carpo",
+      "latin": "Musculus extensor carpi radialis longus",
+      "region": "Antebrazo",
+      "group": "Compartimento posterior",
+      "description": "Músculo extensor que une el húmero lateral con la mano.",
+      "function": "Controla la extensión y desviación radial de la muñeca.",
+      "action": "Extiende y abduce la mano en la muñeca.",
+      "origins": [
+        {
+          "label": "Cresta supracondílea lateral del húmero.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA23130"
+            ],
+            "left": [
+              "bp3d:FMA23131"
+            ]
+          }
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Base del segundo metacarpiano.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA24466"
+            ],
+            "left": [
+              "bp3d:FMA24467"
+            ]
+          }
+        }
+      ],
+      "innervation": "Nervio radial.",
+      "relations": "Se fija en el mismo metacarpiano que el flexor radial, con acción extensora.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · extensor carpi radialis longus",
+          "url": "https://rad.uw.edu/muscle-atlas/extensor-carpi-radialis-longus"
+        },
+        {
+          "title": "University of Washington · Muscle Atlas · flexor carpi radialis",
+          "url": "https://rad.uw.edu/muscle-atlas/flexor-carpi-radialis"
+        }
+      ]
+    },
+    "supinator": {
+      "name": "Supinador",
+      "latin": "Musculus supinator",
+      "region": "Antebrazo",
+      "group": "Compartimento posterior profundo",
+      "description": "Músculo que se fija alrededor de la porción proximal del radio.",
+      "function": "Orienta la palma hacia anterior en posición anatómica.",
+      "action": "Supina el antebrazo.",
+      "origins": [
+        {
+          "label": "Epicóndilo lateral del húmero y cresta/fosa del supinador en la ulna.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA23130",
+              "bp3d:FMA23467"
+            ],
+            "left": [
+              "bp3d:FMA23131",
+              "bp3d:FMA23468"
+            ]
+          }
+        },
+        {
+          "label": "Ligamentos colateral radial y anular."
+        }
+      ],
+      "insertions": [
+        {
+          "label": "Caras lateral, posterior y anterior del tercio proximal del radio.",
+          "boneIds": {
+            "right": [
+              "bp3d:FMA23464"
+            ],
+            "left": [
+              "bp3d:FMA23465"
+            ]
+          }
+        }
+      ],
+      "innervation": "Rama profunda del nervio radial.",
+      "relations": "Su inserción abarca varias caras del radio proximal; los ligamentos de origen se conservan sólo como texto.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · supinator",
+          "url": "https://rad.uw.edu/muscle-atlas/supinator"
+        }
+      ]
+    }
+  },
+  "components": {
+    "FMA45888": {
+      "family": "bicepsfemoris",
+      "name": "Cabeza larga",
+      "latin": "Caput longum musculi bicipitis femoris",
+      "originIndex": 0,
+      "action": "Flexiona la rodilla, rota lateralmente la tibia y extiende la cadera.",
+      "innervation": "División tibial del nervio ciático.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · biceps femoris long head",
+          "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-long-head"
+        }
+      ]
+    },
+    "FMA45889": {
+      "family": "bicepsfemoris",
+      "name": "Cabeza larga",
+      "latin": "Caput longum musculi bicipitis femoris",
+      "originIndex": 0,
+      "action": "Flexiona la rodilla, rota lateralmente la tibia y extiende la cadera.",
+      "innervation": "División tibial del nervio ciático.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · biceps femoris long head",
+          "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-long-head"
+        }
+      ]
+    },
+    "FMA45891": {
+      "family": "bicepsfemoris",
+      "name": "Cabeza corta",
+      "latin": "Caput breve musculi bicipitis femoris",
+      "originIndex": 1,
+      "action": "Flexiona la rodilla y rota lateralmente la tibia; no extiende la cadera.",
+      "innervation": "División fibular común del nervio ciático.",
+      "relations": "Nace en el fémur y no cruza la articulación de la cadera.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · biceps femoris short head",
+          "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-short-head"
+        }
+      ]
+    },
+    "FMA45892": {
+      "family": "bicepsfemoris",
+      "name": "Cabeza corta",
+      "latin": "Caput breve musculi bicipitis femoris",
+      "originIndex": 1,
+      "action": "Flexiona la rodilla y rota lateralmente la tibia; no extiende la cadera.",
+      "innervation": "División fibular común del nervio ciático.",
+      "relations": "Nace en el fémur y no cruza la articulación de la cadera.",
+      "sources": [
+        {
+          "title": "University of Washington · Muscle Atlas · biceps femoris short head",
+          "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-short-head"
+        }
+      ]
+    },
+    "FMA45957": {
+      "family": "gastrocnemius",
+      "name": "Cabeza medial",
+      "latin": "Caput mediale musculi gastrocnemii",
+      "originIndex": 0
+    },
+    "FMA45958": {
+      "family": "gastrocnemius",
+      "name": "Cabeza medial",
+      "latin": "Caput mediale musculi gastrocnemii",
+      "originIndex": 0
+    },
+    "FMA45960": {
+      "family": "gastrocnemius",
+      "name": "Cabeza lateral",
+      "latin": "Caput laterale musculi gastrocnemii",
+      "originIndex": 1
+    },
+    "FMA45961": {
+      "family": "gastrocnemius",
+      "name": "Cabeza lateral",
+      "latin": "Caput laterale musculi gastrocnemii",
+      "originIndex": 1
+    },
+    "FMA38560": {
+      "family": "pronatorteres",
+      "name": "Cabeza humeral",
+      "latin": "Caput humerale musculi pronatoris teretis",
+      "originIndex": 0
+    },
+    "FMA38561": {
+      "family": "pronatorteres",
+      "name": "Cabeza humeral",
+      "latin": "Caput humerale musculi pronatoris teretis",
+      "originIndex": 0
+    },
+    "FMA38562": {
+      "family": "pronatorteres",
+      "name": "Cabeza ulnar",
+      "latin": "Caput ulnare musculi pronatoris teretis",
+      "originIndex": 1
+    },
+    "FMA38563": {
+      "family": "pronatorteres",
+      "name": "Cabeza ulnar",
+      "latin": "Caput ulnare musculi pronatoris teretis",
+      "originIndex": 1
+    }
+  },
+  "bones": {
+    "hip": [
+      "FMA16586",
+      "FMA16587"
+    ],
+    "femur": [
+      "FMA24474",
+      "FMA24475"
+    ],
+    "patella": [
+      "FMA24486",
+      "FMA24487"
+    ],
+    "tibia": [
+      "FMA24477",
+      "FMA24478"
+    ],
+    "fibula": [
+      "FMA24480",
+      "FMA24481"
+    ],
+    "calcaneus": [
+      "FMA24497",
+      "FMA24498"
+    ],
+    "navicular": [
+      "FMA24500",
+      "FMA24501"
+    ],
+    "medialCuneiform": [
+      "FMA24521",
+      "FMA24522"
+    ],
+    "intermediateCuneiform": [
+      "FMA24523",
+      "FMA24524"
+    ],
+    "mt1": [
+      "FMA24507",
+      "FMA24508"
+    ],
+    "mt2": [
+      "FMA24509",
+      "FMA24510"
+    ],
+    "mt3": [
+      "FMA24511",
+      "FMA24512"
+    ],
+    "mt4": [
+      "FMA24513",
+      "FMA24514"
+    ],
+    "mt5": [
+      "FMA24515",
+      "FMA24516"
+    ],
+    "humerus": [
+      "FMA23130",
+      "FMA23131"
+    ],
+    "ulna": [
+      "FMA23467",
+      "FMA23468"
+    ],
+    "radius": [
+      "FMA23464",
+      "FMA23465"
+    ],
+    "mc2": [
+      "FMA24466",
+      "FMA24467"
+    ]
+  },
+  "quadriceps": {
+    "muscular:group:quadriceps:right": [
+      "bp3d:FMA38928",
+      "bp3d:FMA38930",
+      "bp3d:FMA38932",
+      "bp3d:FMA38934"
+    ],
+    "muscular:group:quadriceps:left": [
+      "bp3d:FMA38929",
+      "bp3d:FMA38931",
+      "bp3d:FMA38933",
+      "bp3d:FMA38935"
+    ]
+  },
+  "cards": [
+    {
+      "id": "bp3d:FMA22328",
+      "sourceId": "FMA22328",
+      "side": "right",
+      "kind": "structure",
+      "family": "gluteusmaximus",
+      "detail": {
+        "name": "Glúteo mayor derecho",
+        "latin": "Musculus gluteus maximus",
+        "region": "Región glútea",
+        "group": "Grupo glúteo",
+        "description": "Músculo extensor de la cadera con fijaciones óseas y fasciales.",
+        "function": "Contribuye a impulsar el muslo hacia atrás.",
+        "action": "Extiende y ayuda a rotar lateralmente la cadera.",
+        "origins": [
+          {
+            "label": "Ilion posterior y cresta ilíaca posterior.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          },
+          {
+            "label": "Cara posterior del sacro.",
+            "boneIds": {
+              "midline": [
+                "bp3d:FMA16202"
+              ]
+            }
+          },
+          {
+            "label": "Cóccix y ligamento sacrotuberoso. El cóccix aún no está disponible en el atlas."
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Tuberosidad glútea del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          },
+          {
+            "label": "Tracto iliotibial de la fascia lata."
+          }
+        ],
+        "innervation": "Nervio glúteo inferior.",
+        "relations": "Sus fijaciones incluyen el tracto iliotibial; esta fascia no se sustituye por un hueso en el contexto.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gluteus maximus",
+            "url": "https://rad.uw.edu/muscle-atlas/gluteus-maximus"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Glúteo mayor"
+      },
+      "context": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16202",
+        "bp3d:FMA24474"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22329",
+      "sourceId": "FMA22329",
+      "side": "left",
+      "kind": "structure",
+      "family": "gluteusmaximus",
+      "detail": {
+        "name": "Glúteo mayor izquierdo",
+        "latin": "Musculus gluteus maximus",
+        "region": "Región glútea",
+        "group": "Grupo glúteo",
+        "description": "Músculo extensor de la cadera con fijaciones óseas y fasciales.",
+        "function": "Contribuye a impulsar el muslo hacia atrás.",
+        "action": "Extiende y ayuda a rotar lateralmente la cadera.",
+        "origins": [
+          {
+            "label": "Ilion posterior y cresta ilíaca posterior.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          },
+          {
+            "label": "Cara posterior del sacro.",
+            "boneIds": {
+              "midline": [
+                "bp3d:FMA16202"
+              ]
+            }
+          },
+          {
+            "label": "Cóccix y ligamento sacrotuberoso. El cóccix aún no está disponible en el atlas."
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Tuberosidad glútea del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          },
+          {
+            "label": "Tracto iliotibial de la fascia lata."
+          }
+        ],
+        "innervation": "Nervio glúteo inferior.",
+        "relations": "Sus fijaciones incluyen el tracto iliotibial; esta fascia no se sustituye por un hueso en el contexto.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gluteus maximus",
+            "url": "https://rad.uw.edu/muscle-atlas/gluteus-maximus"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Glúteo mayor"
+      },
+      "context": [
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "bp3d:FMA24475"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22330",
+      "sourceId": "FMA22330",
+      "side": "right",
+      "kind": "structure",
+      "family": "gluteusmedius",
+      "detail": {
+        "name": "Glúteo medio derecho",
+        "latin": "Musculus gluteus medius",
+        "region": "Región glútea",
+        "group": "Grupo glúteo",
+        "description": "Músculo que conecta el ilion con el trocánter mayor.",
+        "function": "Participa en la separación del muslo y el control de la cadera.",
+        "action": "Abduce el muslo; sus fibras anteriores ayudan a la rotación medial y las posteriores a la lateral.",
+        "origins": [
+          {
+            "label": "Cara externa del ilion, inferior a la cresta ilíaca.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Superficies lateral y superior del trocánter mayor del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio glúteo superior.",
+        "relations": "Comparte con el glúteo menor una inserción trocantérica, en superficies diferentes.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gluteus medius",
+            "url": "https://rad.uw.edu/muscle-atlas/gluteus-medius"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · gluteus minimus",
+            "url": "https://rad.uw.edu/muscle-atlas/gluteus-minimus"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Glúteo medio"
+      },
+      "context": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22331",
+      "sourceId": "FMA22331",
+      "side": "left",
+      "kind": "structure",
+      "family": "gluteusmedius",
+      "detail": {
+        "name": "Glúteo medio izquierdo",
+        "latin": "Musculus gluteus medius",
+        "region": "Región glútea",
+        "group": "Grupo glúteo",
+        "description": "Músculo que conecta el ilion con el trocánter mayor.",
+        "function": "Participa en la separación del muslo y el control de la cadera.",
+        "action": "Abduce el muslo; sus fibras anteriores ayudan a la rotación medial y las posteriores a la lateral.",
+        "origins": [
+          {
+            "label": "Cara externa del ilion, inferior a la cresta ilíaca.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Superficies lateral y superior del trocánter mayor del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio glúteo superior.",
+        "relations": "Comparte con el glúteo menor una inserción trocantérica, en superficies diferentes.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gluteus medius",
+            "url": "https://rad.uw.edu/muscle-atlas/gluteus-medius"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · gluteus minimus",
+            "url": "https://rad.uw.edu/muscle-atlas/gluteus-minimus"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Glúteo medio"
+      },
+      "context": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22332",
+      "sourceId": "FMA22332",
+      "side": "right",
+      "kind": "structure",
+      "family": "gluteusminimus",
+      "detail": {
+        "name": "Glúteo menor derecho",
+        "latin": "Musculus gluteus minimus",
+        "region": "Región glútea",
+        "group": "Grupo glúteo",
+        "description": "Músculo glúteo que se fija en la cara anterior del trocánter mayor.",
+        "function": "Colabora en el control del movimiento de la cadera.",
+        "action": "Abduce y rota medialmente el muslo.",
+        "origins": [
+          {
+            "label": "Ilion entre las líneas glúteas anterior e inferior.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara anterior del trocánter mayor del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio glúteo superior.",
+        "relations": "Su fijación trocantérica anterior es distinta de la lateral del glúteo medio.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gluteus minimus",
+            "url": "https://rad.uw.edu/muscle-atlas/gluteus-minimus"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · gluteus medius",
+            "url": "https://rad.uw.edu/muscle-atlas/gluteus-medius"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Glúteo menor"
+      },
+      "context": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22333",
+      "sourceId": "FMA22333",
+      "side": "left",
+      "kind": "structure",
+      "family": "gluteusminimus",
+      "detail": {
+        "name": "Glúteo menor izquierdo",
+        "latin": "Musculus gluteus minimus",
+        "region": "Región glútea",
+        "group": "Grupo glúteo",
+        "description": "Músculo glúteo que se fija en la cara anterior del trocánter mayor.",
+        "function": "Colabora en el control del movimiento de la cadera.",
+        "action": "Abduce y rota medialmente el muslo.",
+        "origins": [
+          {
+            "label": "Ilion entre las líneas glúteas anterior e inferior.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara anterior del trocánter mayor del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio glúteo superior.",
+        "relations": "Su fijación trocantérica anterior es distinta de la lateral del glúteo medio.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gluteus minimus",
+            "url": "https://rad.uw.edu/muscle-atlas/gluteus-minimus"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · gluteus medius",
+            "url": "https://rad.uw.edu/muscle-atlas/gluteus-medius"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Glúteo menor"
+      },
+      "context": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22425",
+      "sourceId": "FMA22425",
+      "side": "right",
+      "kind": "structure",
+      "family": "tensorfasciaelatae",
+      "detail": {
+        "name": "Tensor de la fascia lata derecho",
+        "latin": "Musculus tensor fasciae latae",
+        "region": "Región glútea y muslo lateral",
+        "group": "Grupo glúteo",
+        "description": "Músculo que transmite tensión al tracto iliotibial.",
+        "function": "Ayuda a estabilizar la cadera y la rodilla mediante la fascia.",
+        "action": "Tensa el tracto iliotibial; ayuda a flexionar y abducir el muslo.",
+        "origins": [
+          {
+            "label": "Espina ilíaca anterosuperior y labio externo de la cresta ilíaca anterior.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          },
+          {
+            "label": "Fascia lata."
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Tracto iliotibial. No se presenta como una inserción ósea directa."
+          }
+        ],
+        "innervation": "Nervio glúteo superior.",
+        "relations": "Su acción sobre la rodilla se transmite por el tracto iliotibial.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · tensor fascia lata",
+            "url": "https://rad.uw.edu/muscle-atlas/tensor-fascia-lata"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Tensor de la fascia lata"
+      },
+      "context": [
+        "bp3d:FMA16586"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22426",
+      "sourceId": "FMA22426",
+      "side": "left",
+      "kind": "structure",
+      "family": "tensorfasciaelatae",
+      "detail": {
+        "name": "Tensor de la fascia lata izquierdo",
+        "latin": "Musculus tensor fasciae latae",
+        "region": "Región glútea y muslo lateral",
+        "group": "Grupo glúteo",
+        "description": "Músculo que transmite tensión al tracto iliotibial.",
+        "function": "Ayuda a estabilizar la cadera y la rodilla mediante la fascia.",
+        "action": "Tensa el tracto iliotibial; ayuda a flexionar y abducir el muslo.",
+        "origins": [
+          {
+            "label": "Espina ilíaca anterosuperior y labio externo de la cresta ilíaca anterior.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          },
+          {
+            "label": "Fascia lata."
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Tracto iliotibial. No se presenta como una inserción ósea directa."
+          }
+        ],
+        "innervation": "Nervio glúteo superior.",
+        "relations": "Su acción sobre la rodilla se transmite por el tracto iliotibial.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · tensor fascia lata",
+            "url": "https://rad.uw.edu/muscle-atlas/tensor-fascia-lata"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Tensor de la fascia lata"
+      },
+      "context": [
+        "bp3d:FMA16587"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38928",
+      "sourceId": "FMA38928",
+      "side": "right",
+      "kind": "structure",
+      "family": "rectusfemoris",
+      "detail": {
+        "name": "Recto femoral derecho",
+        "latin": "Musculus rectus femoris",
+        "region": "Muslo",
+        "group": "Compartimento anterior · grupo cuádriceps",
+        "description": "Uno de los cuatro músculos del cuádriceps; cruza la cadera y la rodilla.",
+        "function": "Participa en la extensión de la rodilla.",
+        "action": "Extiende la rodilla y ayuda a flexionar la cadera.",
+        "origins": [
+          {
+            "label": "Espina ilíaca anteroinferior y región supraacetabular.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Patela mediante el tendón del cuádriceps; continuidad hasta la tuberosidad tibial mediante el ligamento patelar.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24486",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24487",
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio femoral.",
+        "relations": "Comparte el aparato extensor con los tres vastos. El grupo cuádriceps no añade un quinto músculo.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · rectus femoris",
+            "url": "https://rad.uw.edu/muscle-atlas/rectus-femoris"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Recto femoral"
+      },
+      "context": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24486",
+        "bp3d:FMA24477"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38929",
+      "sourceId": "FMA38929",
+      "side": "left",
+      "kind": "structure",
+      "family": "rectusfemoris",
+      "detail": {
+        "name": "Recto femoral izquierdo",
+        "latin": "Musculus rectus femoris",
+        "region": "Muslo",
+        "group": "Compartimento anterior · grupo cuádriceps",
+        "description": "Uno de los cuatro músculos del cuádriceps; cruza la cadera y la rodilla.",
+        "function": "Participa en la extensión de la rodilla.",
+        "action": "Extiende la rodilla y ayuda a flexionar la cadera.",
+        "origins": [
+          {
+            "label": "Espina ilíaca anteroinferior y región supraacetabular.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Patela mediante el tendón del cuádriceps; continuidad hasta la tuberosidad tibial mediante el ligamento patelar.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24486",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24487",
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio femoral.",
+        "relations": "Comparte el aparato extensor con los tres vastos. El grupo cuádriceps no añade un quinto músculo.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · rectus femoris",
+            "url": "https://rad.uw.edu/muscle-atlas/rectus-femoris"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Recto femoral"
+      },
+      "context": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24487",
+        "bp3d:FMA24478"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38930",
+      "sourceId": "FMA38930",
+      "side": "right",
+      "kind": "structure",
+      "family": "vastuslateralis",
+      "detail": {
+        "name": "Vasto lateral derecho",
+        "latin": "Musculus vastus lateralis",
+        "region": "Muslo",
+        "group": "Compartimento anterior · grupo cuádriceps",
+        "description": "Componente muscular lateral del cuádriceps.",
+        "function": "Contribuye al aparato extensor de la rodilla.",
+        "action": "Extiende la rodilla.",
+        "origins": [
+          {
+            "label": "Región proximal del fémur, trocánter mayor y labio lateral de la línea áspera.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Patela mediante el tendón del cuádriceps; continuidad hasta la tuberosidad tibial mediante el ligamento patelar.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24486",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24487",
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio femoral.",
+        "relations": "Sus fibras llegan a la región lateral de la patela mediante el tendón y retináculo patelares.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · vastus lateralis",
+            "url": "https://rad.uw.edu/muscle-atlas/vastus-lateralis"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Vasto lateral"
+      },
+      "context": [
+        "bp3d:FMA24474",
+        "bp3d:FMA24486",
+        "bp3d:FMA24477"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38931",
+      "sourceId": "FMA38931",
+      "side": "left",
+      "kind": "structure",
+      "family": "vastuslateralis",
+      "detail": {
+        "name": "Vasto lateral izquierdo",
+        "latin": "Musculus vastus lateralis",
+        "region": "Muslo",
+        "group": "Compartimento anterior · grupo cuádriceps",
+        "description": "Componente muscular lateral del cuádriceps.",
+        "function": "Contribuye al aparato extensor de la rodilla.",
+        "action": "Extiende la rodilla.",
+        "origins": [
+          {
+            "label": "Región proximal del fémur, trocánter mayor y labio lateral de la línea áspera.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Patela mediante el tendón del cuádriceps; continuidad hasta la tuberosidad tibial mediante el ligamento patelar.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24486",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24487",
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio femoral.",
+        "relations": "Sus fibras llegan a la región lateral de la patela mediante el tendón y retináculo patelares.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · vastus lateralis",
+            "url": "https://rad.uw.edu/muscle-atlas/vastus-lateralis"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Vasto lateral"
+      },
+      "context": [
+        "bp3d:FMA24475",
+        "bp3d:FMA24487",
+        "bp3d:FMA24478"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38932",
+      "sourceId": "FMA38932",
+      "side": "right",
+      "kind": "structure",
+      "family": "vastusmedialis",
+      "detail": {
+        "name": "Vasto medial derecho",
+        "latin": "Musculus vastus medialis",
+        "region": "Muslo",
+        "group": "Compartimento anterior · grupo cuádriceps",
+        "description": "Componente muscular medial del cuádriceps.",
+        "function": "Contribuye al aparato extensor de la rodilla.",
+        "action": "Extiende la rodilla.",
+        "origins": [
+          {
+            "label": "Porción inferior de la línea intertrocantérica, línea espiral y labio medial de la línea áspera del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Patela mediante el tendón del cuádriceps; continuidad hasta la tuberosidad tibial mediante el ligamento patelar.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24486",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24487",
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio femoral.",
+        "relations": "Su tendón y retináculo alcanzan el borde medial de la patela.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · vastus medialis",
+            "url": "https://rad.uw.edu/muscle-atlas/vastus-medialis"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Vasto medial"
+      },
+      "context": [
+        "bp3d:FMA24474",
+        "bp3d:FMA24486",
+        "bp3d:FMA24477"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38933",
+      "sourceId": "FMA38933",
+      "side": "left",
+      "kind": "structure",
+      "family": "vastusmedialis",
+      "detail": {
+        "name": "Vasto medial izquierdo",
+        "latin": "Musculus vastus medialis",
+        "region": "Muslo",
+        "group": "Compartimento anterior · grupo cuádriceps",
+        "description": "Componente muscular medial del cuádriceps.",
+        "function": "Contribuye al aparato extensor de la rodilla.",
+        "action": "Extiende la rodilla.",
+        "origins": [
+          {
+            "label": "Porción inferior de la línea intertrocantérica, línea espiral y labio medial de la línea áspera del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Patela mediante el tendón del cuádriceps; continuidad hasta la tuberosidad tibial mediante el ligamento patelar.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24486",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24487",
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio femoral.",
+        "relations": "Su tendón y retináculo alcanzan el borde medial de la patela.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · vastus medialis",
+            "url": "https://rad.uw.edu/muscle-atlas/vastus-medialis"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Vasto medial"
+      },
+      "context": [
+        "bp3d:FMA24475",
+        "bp3d:FMA24487",
+        "bp3d:FMA24478"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38934",
+      "sourceId": "FMA38934",
+      "side": "right",
+      "kind": "structure",
+      "family": "vastusintermedius",
+      "detail": {
+        "name": "Vasto intermedio derecho",
+        "latin": "Musculus vastus intermedius",
+        "region": "Muslo",
+        "group": "Compartimento anterior · grupo cuádriceps",
+        "description": "Músculo del cuádriceps situado profundo al recto femoral.",
+        "function": "Contribuye al aparato extensor de la rodilla.",
+        "action": "Extiende la rodilla.",
+        "origins": [
+          {
+            "label": "Dos tercios proximales de las caras anterior y lateral del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Patela mediante el tendón del cuádriceps; continuidad hasta la tuberosidad tibial mediante el ligamento patelar.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24486",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24487",
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio femoral.",
+        "relations": "Se dispone entre los vastos medial y lateral y profundo al recto femoral.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · vastus intermedius",
+            "url": "https://rad.uw.edu/muscle-atlas/vastus-intermedius"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Vasto intermedio"
+      },
+      "context": [
+        "bp3d:FMA24474",
+        "bp3d:FMA24486",
+        "bp3d:FMA24477"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38935",
+      "sourceId": "FMA38935",
+      "side": "left",
+      "kind": "structure",
+      "family": "vastusintermedius",
+      "detail": {
+        "name": "Vasto intermedio izquierdo",
+        "latin": "Musculus vastus intermedius",
+        "region": "Muslo",
+        "group": "Compartimento anterior · grupo cuádriceps",
+        "description": "Músculo del cuádriceps situado profundo al recto femoral.",
+        "function": "Contribuye al aparato extensor de la rodilla.",
+        "action": "Extiende la rodilla.",
+        "origins": [
+          {
+            "label": "Dos tercios proximales de las caras anterior y lateral del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Patela mediante el tendón del cuádriceps; continuidad hasta la tuberosidad tibial mediante el ligamento patelar.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24486",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24487",
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio femoral.",
+        "relations": "Se dispone entre los vastos medial y lateral y profundo al recto femoral.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · vastus intermedius",
+            "url": "https://rad.uw.edu/muscle-atlas/vastus-intermedius"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Vasto intermedio"
+      },
+      "context": [
+        "bp3d:FMA24475",
+        "bp3d:FMA24487",
+        "bp3d:FMA24478"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22354",
+      "sourceId": "FMA22354",
+      "side": "right",
+      "kind": "structure",
+      "family": "sartorius",
+      "detail": {
+        "name": "Sartorio derecho",
+        "latin": "Musculus sartorius",
+        "region": "Muslo",
+        "group": "Compartimento anterior",
+        "description": "Músculo largo que conecta el ilion con la tibia medial.",
+        "function": "Coordina movimientos de cadera y rodilla.",
+        "action": "Flexiona y rota lateralmente la cadera; flexiona la rodilla.",
+        "origins": [
+          {
+            "label": "Espina ilíaca anterosuperior.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Superficie medial proximal de la tibia, cerca de la tuberosidad tibial.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio femoral.",
+        "relations": "Cruza dos articulaciones; se conserva íntegro al desplazar el miembro por regiones.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · sartorius",
+            "url": "https://rad.uw.edu/muscle-atlas/sartorius"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Sartorio"
+      },
+      "context": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24477"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22355",
+      "sourceId": "FMA22355",
+      "side": "left",
+      "kind": "structure",
+      "family": "sartorius",
+      "detail": {
+        "name": "Sartorio izquierdo",
+        "latin": "Musculus sartorius",
+        "region": "Muslo",
+        "group": "Compartimento anterior",
+        "description": "Músculo largo que conecta el ilion con la tibia medial.",
+        "function": "Coordina movimientos de cadera y rodilla.",
+        "action": "Flexiona y rota lateralmente la cadera; flexiona la rodilla.",
+        "origins": [
+          {
+            "label": "Espina ilíaca anterosuperior.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Superficie medial proximal de la tibia, cerca de la tuberosidad tibial.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio femoral.",
+        "relations": "Cruza dos articulaciones; se conserva íntegro al desplazar el miembro por regiones.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · sartorius",
+            "url": "https://rad.uw.edu/muscle-atlas/sartorius"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Sartorio"
+      },
+      "context": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24478"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22456",
+      "sourceId": "FMA22456",
+      "side": "right",
+      "kind": "structure",
+      "family": "adductorlongus",
+      "detail": {
+        "name": "Aductor largo derecho",
+        "latin": "Musculus adductor longus",
+        "region": "Muslo",
+        "group": "Compartimento medial",
+        "description": "Músculo aductor que conecta el pubis con la diáfisis femoral.",
+        "function": "Acerca el muslo a la línea media.",
+        "action": "Aduce y ayuda a flexionar el muslo.",
+        "origins": [
+          {
+            "label": "Cara anterior del cuerpo del pubis, lateral a la sínfisis.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Tercio medio de la línea áspera del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "innervation": "División anterior del nervio obturador.",
+        "relations": "Su inserción se relaciona con las de otros aductores y con el origen del vasto medial.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · adductor longus",
+            "url": "https://rad.uw.edu/muscle-atlas/adductor-longus"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Aductor largo"
+      },
+      "context": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22457",
+      "sourceId": "FMA22457",
+      "side": "left",
+      "kind": "structure",
+      "family": "adductorlongus",
+      "detail": {
+        "name": "Aductor largo izquierdo",
+        "latin": "Musculus adductor longus",
+        "region": "Muslo",
+        "group": "Compartimento medial",
+        "description": "Músculo aductor que conecta el pubis con la diáfisis femoral.",
+        "function": "Acerca el muslo a la línea media.",
+        "action": "Aduce y ayuda a flexionar el muslo.",
+        "origins": [
+          {
+            "label": "Cara anterior del cuerpo del pubis, lateral a la sínfisis.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Tercio medio de la línea áspera del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "innervation": "División anterior del nervio obturador.",
+        "relations": "Su inserción se relaciona con las de otros aductores y con el origen del vasto medial.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · adductor longus",
+            "url": "https://rad.uw.edu/muscle-atlas/adductor-longus"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Aductor largo"
+      },
+      "context": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475"
+      ]
+    },
+    {
+      "id": "bp3d:FMA43883",
+      "sourceId": "FMA43883",
+      "side": "right",
+      "kind": "structure",
+      "family": "gracilis",
+      "detail": {
+        "name": "Grácil derecho",
+        "latin": "Musculus gracilis",
+        "region": "Muslo",
+        "group": "Compartimento medial",
+        "description": "También llamado recto interno; alcanza la tibia desde la región púbica.",
+        "function": "Participa en movimientos de cadera y rodilla.",
+        "action": "Aduce el muslo, flexiona la rodilla y ayuda a rotar medialmente la tibia.",
+        "origins": [
+          {
+            "label": "Rama inferior del pubis y rama isquiática adyacente.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara medial proximal de la tibia.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "División anterior del nervio obturador.",
+        "relations": "Se inserta por detrás del sartorio en la tibia medial.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gracilis",
+            "url": "https://rad.uw.edu/muscle-atlas/gracilis"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Grácil"
+      },
+      "context": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24477"
+      ]
+    },
+    {
+      "id": "bp3d:FMA43884",
+      "sourceId": "FMA43884",
+      "side": "left",
+      "kind": "structure",
+      "family": "gracilis",
+      "detail": {
+        "name": "Grácil izquierdo",
+        "latin": "Musculus gracilis",
+        "region": "Muslo",
+        "group": "Compartimento medial",
+        "description": "También llamado recto interno; alcanza la tibia desde la región púbica.",
+        "function": "Participa en movimientos de cadera y rodilla.",
+        "action": "Aduce el muslo, flexiona la rodilla y ayuda a rotar medialmente la tibia.",
+        "origins": [
+          {
+            "label": "Rama inferior del pubis y rama isquiática adyacente.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara medial proximal de la tibia.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "División anterior del nervio obturador.",
+        "relations": "Se inserta por detrás del sartorio en la tibia medial.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gracilis",
+            "url": "https://rad.uw.edu/muscle-atlas/gracilis"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Grácil"
+      },
+      "context": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24478"
+      ]
+    },
+    {
+      "id": "med3d:muscle:bicepsfemoris:right",
+      "side": "right",
+      "kind": "structure",
+      "family": "bicepsfemoris",
+      "detail": {
+        "name": "Bíceps femoral derecho",
+        "latin": "Musculus biceps femoris",
+        "region": "Muslo",
+        "group": "Compartimento posterior",
+        "description": "Músculo de dos cabezas, larga y corta, con origen e inervación diferentes.",
+        "function": "Participa en el movimiento posterior del miembro inferior.",
+        "action": "Flexiona la rodilla y rota lateralmente la tibia; sólo la cabeza larga extiende la cadera.",
+        "origins": [
+          {
+            "label": "Cabeza larga: tuberosidad isquiática, compartiendo un tendón proximal con el semitendinoso.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          },
+          {
+            "label": "Cabeza corta: labio lateral de la línea áspera y línea supracondílea lateral del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Principalmente cabeza de la fíbula; también expansiones al cóndilo tibial lateral.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24480",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24481",
+                "bp3d:FMA24478"
+              ]
+            }
+          },
+          {
+            "label": "Expansiones al ligamento colateral fibular."
+          }
+        ],
+        "innervation": "Cabeza larga: división tibial del ciático. Cabeza corta: división fibular común del ciático.",
+        "relations": "La cabeza corta nace en el fémur y no cruza la cadera. La larga comparte origen tendinoso con el semitendinoso.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · biceps femoris long head",
+            "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-long-head"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · biceps femoris short head",
+            "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-short-head"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Bíceps femoral"
+      },
+      "context": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA24480",
+        "bp3d:FMA24477"
+      ]
+    },
+    {
+      "id": "bp3d:FMA45888",
+      "sourceId": "FMA45888",
+      "side": "right",
+      "kind": "component",
+      "family": "bicepsfemoris",
+      "detail": {
+        "name": "Cabeza larga del bíceps femoral derecho",
+        "latin": "Caput longum musculi bicipitis femoris",
+        "region": "Muslo",
+        "group": "Compartimento posterior",
+        "description": "Cabeza larga del bíceps femoral. Forma parte de ese músculo y no se contabiliza como otro músculo independiente.",
+        "function": "Participa en el movimiento posterior del miembro inferior.",
+        "action": "Flexiona la rodilla, rota lateralmente la tibia y extiende la cadera.",
+        "origins": [
+          {
+            "label": "Cabeza larga: tuberosidad isquiática, compartiendo un tendón proximal con el semitendinoso.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Principalmente cabeza de la fíbula; también expansiones al cóndilo tibial lateral.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24480",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24481",
+                "bp3d:FMA24478"
+              ]
+            }
+          },
+          {
+            "label": "Expansiones al ligamento colateral fibular."
+          }
+        ],
+        "innervation": "División tibial del nervio ciático.",
+        "relations": "La cabeza corta nace en el fémur y no cruza la cadera. La larga comparte origen tendinoso con el semitendinoso.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · biceps femoris long head",
+            "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-long-head"
+          }
+        ],
+        "muscleName": "Bíceps femoral",
+        "componentName": "Cabeza larga",
+        "scope": "component",
+        "attachmentScope": "origin",
+        "innervationScope": "component"
+      },
+      "context": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24480",
+        "bp3d:FMA24477"
+      ]
+    },
+    {
+      "id": "med3d:muscle:bicepsfemoris:left",
+      "side": "left",
+      "kind": "structure",
+      "family": "bicepsfemoris",
+      "detail": {
+        "name": "Bíceps femoral izquierdo",
+        "latin": "Musculus biceps femoris",
+        "region": "Muslo",
+        "group": "Compartimento posterior",
+        "description": "Músculo de dos cabezas, larga y corta, con origen e inervación diferentes.",
+        "function": "Participa en el movimiento posterior del miembro inferior.",
+        "action": "Flexiona la rodilla y rota lateralmente la tibia; sólo la cabeza larga extiende la cadera.",
+        "origins": [
+          {
+            "label": "Cabeza larga: tuberosidad isquiática, compartiendo un tendón proximal con el semitendinoso.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          },
+          {
+            "label": "Cabeza corta: labio lateral de la línea áspera y línea supracondílea lateral del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Principalmente cabeza de la fíbula; también expansiones al cóndilo tibial lateral.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24480",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24481",
+                "bp3d:FMA24478"
+              ]
+            }
+          },
+          {
+            "label": "Expansiones al ligamento colateral fibular."
+          }
+        ],
+        "innervation": "Cabeza larga: división tibial del ciático. Cabeza corta: división fibular común del ciático.",
+        "relations": "La cabeza corta nace en el fémur y no cruza la cadera. La larga comparte origen tendinoso con el semitendinoso.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · biceps femoris long head",
+            "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-long-head"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · biceps femoris short head",
+            "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-short-head"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Bíceps femoral"
+      },
+      "context": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA24481",
+        "bp3d:FMA24478"
+      ]
+    },
+    {
+      "id": "bp3d:FMA45889",
+      "sourceId": "FMA45889",
+      "side": "left",
+      "kind": "component",
+      "family": "bicepsfemoris",
+      "detail": {
+        "name": "Cabeza larga del bíceps femoral izquierdo",
+        "latin": "Caput longum musculi bicipitis femoris",
+        "region": "Muslo",
+        "group": "Compartimento posterior",
+        "description": "Cabeza larga del bíceps femoral. Forma parte de ese músculo y no se contabiliza como otro músculo independiente.",
+        "function": "Participa en el movimiento posterior del miembro inferior.",
+        "action": "Flexiona la rodilla, rota lateralmente la tibia y extiende la cadera.",
+        "origins": [
+          {
+            "label": "Cabeza larga: tuberosidad isquiática, compartiendo un tendón proximal con el semitendinoso.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Principalmente cabeza de la fíbula; también expansiones al cóndilo tibial lateral.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24480",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24481",
+                "bp3d:FMA24478"
+              ]
+            }
+          },
+          {
+            "label": "Expansiones al ligamento colateral fibular."
+          }
+        ],
+        "innervation": "División tibial del nervio ciático.",
+        "relations": "La cabeza corta nace en el fémur y no cruza la cadera. La larga comparte origen tendinoso con el semitendinoso.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · biceps femoris long head",
+            "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-long-head"
+          }
+        ],
+        "muscleName": "Bíceps femoral",
+        "componentName": "Cabeza larga",
+        "scope": "component",
+        "attachmentScope": "origin",
+        "innervationScope": "component"
+      },
+      "context": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24481",
+        "bp3d:FMA24478"
+      ]
+    },
+    {
+      "id": "bp3d:FMA45891",
+      "sourceId": "FMA45891",
+      "side": "right",
+      "kind": "component",
+      "family": "bicepsfemoris",
+      "detail": {
+        "name": "Cabeza corta del bíceps femoral derecho",
+        "latin": "Caput breve musculi bicipitis femoris",
+        "region": "Muslo",
+        "group": "Compartimento posterior",
+        "description": "Cabeza corta del bíceps femoral. Forma parte de ese músculo y no se contabiliza como otro músculo independiente.",
+        "function": "Participa en el movimiento posterior del miembro inferior.",
+        "action": "Flexiona la rodilla y rota lateralmente la tibia; no extiende la cadera.",
+        "origins": [
+          {
+            "label": "Cabeza corta: labio lateral de la línea áspera y línea supracondílea lateral del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Principalmente cabeza de la fíbula; también expansiones al cóndilo tibial lateral.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24480",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24481",
+                "bp3d:FMA24478"
+              ]
+            }
+          },
+          {
+            "label": "Expansiones al ligamento colateral fibular."
+          }
+        ],
+        "innervation": "División fibular común del nervio ciático.",
+        "relations": "Nace en el fémur y no cruza la articulación de la cadera.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · biceps femoris short head",
+            "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-short-head"
+          }
+        ],
+        "muscleName": "Bíceps femoral",
+        "componentName": "Cabeza corta",
+        "scope": "component",
+        "attachmentScope": "origin",
+        "innervationScope": "component"
+      },
+      "context": [
+        "bp3d:FMA24474",
+        "bp3d:FMA24480",
+        "bp3d:FMA24477"
+      ]
+    },
+    {
+      "id": "bp3d:FMA45892",
+      "sourceId": "FMA45892",
+      "side": "left",
+      "kind": "component",
+      "family": "bicepsfemoris",
+      "detail": {
+        "name": "Cabeza corta del bíceps femoral izquierdo",
+        "latin": "Caput breve musculi bicipitis femoris",
+        "region": "Muslo",
+        "group": "Compartimento posterior",
+        "description": "Cabeza corta del bíceps femoral. Forma parte de ese músculo y no se contabiliza como otro músculo independiente.",
+        "function": "Participa en el movimiento posterior del miembro inferior.",
+        "action": "Flexiona la rodilla y rota lateralmente la tibia; no extiende la cadera.",
+        "origins": [
+          {
+            "label": "Cabeza corta: labio lateral de la línea áspera y línea supracondílea lateral del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Principalmente cabeza de la fíbula; también expansiones al cóndilo tibial lateral.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24480",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24481",
+                "bp3d:FMA24478"
+              ]
+            }
+          },
+          {
+            "label": "Expansiones al ligamento colateral fibular."
+          }
+        ],
+        "innervation": "División fibular común del nervio ciático.",
+        "relations": "Nace en el fémur y no cruza la articulación de la cadera.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · biceps femoris short head",
+            "url": "https://rad.uw.edu/muscle-atlas/biceps-femoris-short-head"
+          }
+        ],
+        "muscleName": "Bíceps femoral",
+        "componentName": "Cabeza corta",
+        "scope": "component",
+        "attachmentScope": "origin",
+        "innervationScope": "component"
+      },
+      "context": [
+        "bp3d:FMA24475",
+        "bp3d:FMA24481",
+        "bp3d:FMA24478"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22358",
+      "sourceId": "FMA22358",
+      "side": "right",
+      "kind": "structure",
+      "family": "semitendinosus",
+      "detail": {
+        "name": "Semitendinoso derecho",
+        "latin": "Musculus semitendinosus",
+        "region": "Muslo",
+        "group": "Compartimento posterior · isquiotibiales",
+        "description": "Músculo posterior entre la tuberosidad isquiática y la tibia medial.",
+        "function": "Participa en movimientos de cadera y rodilla.",
+        "action": "Extiende la cadera, flexiona la rodilla y rota medialmente la tibia con la rodilla flexionada.",
+        "origins": [
+          {
+            "label": "Tuberosidad isquiática, mediante un tendón común con la cabeza larga del bíceps femoral.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara medial proximal de la tibia.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "División tibial del nervio ciático.",
+        "relations": "Comparte el origen proximal con la cabeza larga del bíceps femoral.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · semitendinosus",
+            "url": "https://rad.uw.edu/muscle-atlas/semitendinosus"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Semitendinoso"
+      },
+      "context": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24477"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22359",
+      "sourceId": "FMA22359",
+      "side": "left",
+      "kind": "structure",
+      "family": "semitendinosus",
+      "detail": {
+        "name": "Semitendinoso izquierdo",
+        "latin": "Musculus semitendinosus",
+        "region": "Muslo",
+        "group": "Compartimento posterior · isquiotibiales",
+        "description": "Músculo posterior entre la tuberosidad isquiática y la tibia medial.",
+        "function": "Participa en movimientos de cadera y rodilla.",
+        "action": "Extiende la cadera, flexiona la rodilla y rota medialmente la tibia con la rodilla flexionada.",
+        "origins": [
+          {
+            "label": "Tuberosidad isquiática, mediante un tendón común con la cabeza larga del bíceps femoral.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara medial proximal de la tibia.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "División tibial del nervio ciático.",
+        "relations": "Comparte el origen proximal con la cabeza larga del bíceps femoral.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · semitendinosus",
+            "url": "https://rad.uw.edu/muscle-atlas/semitendinosus"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Semitendinoso"
+      },
+      "context": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24478"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22448",
+      "sourceId": "FMA22448",
+      "side": "right",
+      "kind": "structure",
+      "family": "semimembranosus",
+      "detail": {
+        "name": "Semimembranoso derecho",
+        "latin": "Musculus semimembranosus",
+        "region": "Muslo",
+        "group": "Compartimento posterior · isquiotibiales",
+        "description": "Músculo posterior con inserción en el cóndilo tibial medial.",
+        "function": "Participa en movimientos de cadera y rodilla.",
+        "action": "Extiende la cadera, flexiona la rodilla y rota medialmente la tibia con la rodilla flexionada.",
+        "origins": [
+          {
+            "label": "Cuadrante superolateral de la tuberosidad isquiática.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara posterior del cóndilo medial de la tibia.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "División tibial del nervio ciático.",
+        "relations": "Su fijación tibial es posterior y proximal respecto a la del semitendinoso.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · semimembranosus",
+            "url": "https://rad.uw.edu/muscle-atlas/semimembranosus"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · semitendinosus",
+            "url": "https://rad.uw.edu/muscle-atlas/semitendinosus"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Semimembranoso"
+      },
+      "context": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24477"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22449",
+      "sourceId": "FMA22449",
+      "side": "left",
+      "kind": "structure",
+      "family": "semimembranosus",
+      "detail": {
+        "name": "Semimembranoso izquierdo",
+        "latin": "Musculus semimembranosus",
+        "region": "Muslo",
+        "group": "Compartimento posterior · isquiotibiales",
+        "description": "Músculo posterior con inserción en el cóndilo tibial medial.",
+        "function": "Participa en movimientos de cadera y rodilla.",
+        "action": "Extiende la cadera, flexiona la rodilla y rota medialmente la tibia con la rodilla flexionada.",
+        "origins": [
+          {
+            "label": "Cuadrante superolateral de la tuberosidad isquiática.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA16586"
+              ],
+              "left": [
+                "bp3d:FMA16587"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara posterior del cóndilo medial de la tibia.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24478"
+              ]
+            }
+          }
+        ],
+        "innervation": "División tibial del nervio ciático.",
+        "relations": "Su fijación tibial es posterior y proximal respecto a la del semitendinoso.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · semimembranosus",
+            "url": "https://rad.uw.edu/muscle-atlas/semimembranosus"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · semitendinosus",
+            "url": "https://rad.uw.edu/muscle-atlas/semitendinosus"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Semimembranoso"
+      },
+      "context": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24478"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22544",
+      "sourceId": "FMA22544",
+      "side": "right",
+      "kind": "structure",
+      "family": "tibialisanterior",
+      "detail": {
+        "name": "Tibial anterior derecho",
+        "latin": "Musculus tibialis anterior",
+        "region": "Pierna",
+        "group": "Compartimento anterior",
+        "description": "Músculo anterior que alcanza el borde medial del pie.",
+        "function": "Eleva el antepié durante la dorsiflexión.",
+        "action": "Dorsiflexiona el tobillo e invierte el pie.",
+        "origins": [
+          {
+            "label": "Cóndilo lateral y porción proximal de la cara lateral de la tibia.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24478"
+              ]
+            }
+          },
+          {
+            "label": "Membrana interósea y fascia de la pierna."
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cuneiforme medial y base del primer metatarsiano.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24521",
+                "bp3d:FMA24507"
+              ],
+              "left": [
+                "bp3d:FMA24522",
+                "bp3d:FMA24508"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio fibular profundo (peroneo profundo).",
+        "relations": "El contexto incluye la tibia y sus fijaciones óseas mediales del pie.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · tibialis anterior",
+            "url": "https://rad.uw.edu/muscle-atlas/tibialis-anterior"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Tibial anterior"
+      },
+      "context": [
+        "bp3d:FMA24477",
+        "bp3d:FMA24521",
+        "bp3d:FMA24507"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22545",
+      "sourceId": "FMA22545",
+      "side": "left",
+      "kind": "structure",
+      "family": "tibialisanterior",
+      "detail": {
+        "name": "Tibial anterior izquierdo",
+        "latin": "Musculus tibialis anterior",
+        "region": "Pierna",
+        "group": "Compartimento anterior",
+        "description": "Músculo anterior que alcanza el borde medial del pie.",
+        "function": "Eleva el antepié durante la dorsiflexión.",
+        "action": "Dorsiflexiona el tobillo e invierte el pie.",
+        "origins": [
+          {
+            "label": "Cóndilo lateral y porción proximal de la cara lateral de la tibia.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24478"
+              ]
+            }
+          },
+          {
+            "label": "Membrana interósea y fascia de la pierna."
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cuneiforme medial y base del primer metatarsiano.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24521",
+                "bp3d:FMA24507"
+              ],
+              "left": [
+                "bp3d:FMA24522",
+                "bp3d:FMA24508"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio fibular profundo (peroneo profundo).",
+        "relations": "El contexto incluye la tibia y sus fijaciones óseas mediales del pie.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · tibialis anterior",
+            "url": "https://rad.uw.edu/muscle-atlas/tibialis-anterior"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Tibial anterior"
+      },
+      "context": [
+        "bp3d:FMA24478",
+        "bp3d:FMA24522",
+        "bp3d:FMA24508"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22552",
+      "sourceId": "FMA22552",
+      "side": "right",
+      "kind": "structure",
+      "family": "fibularislongus",
+      "detail": {
+        "name": "Fibular largo derecho",
+        "latin": "Musculus fibularis longus",
+        "region": "Pierna",
+        "group": "Compartimento lateral",
+        "description": "También llamado peroneo largo; alcanza la región plantar medial del pie.",
+        "function": "Contribuye al soporte del arco transverso.",
+        "action": "Evierte el pie y ayuda a la flexión plantar del tobillo.",
+        "origins": [
+          {
+            "label": "Cabeza y porción proximal de la superficie lateral de la fíbula.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24480"
+              ],
+              "left": [
+                "bp3d:FMA24481"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cuneiforme medial y base del primer metatarsiano por su superficie plantar.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24521",
+                "bp3d:FMA24507"
+              ],
+              "left": [
+                "bp3d:FMA24522",
+                "bp3d:FMA24508"
+              ]
+            }
+          }
+        ],
+        "innervation": "Principalmente nervio fibular superficial (peroneo superficial).",
+        "relations": "Comparte el compartimento lateral con el fibular corto, pero tiene una inserción diferente.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · peroneus longus",
+            "url": "https://rad.uw.edu/muscle-atlas/peroneus-longus"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · peroneus brevis",
+            "url": "https://rad.uw.edu/muscle-atlas/peroneus-brevis"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Fibular largo"
+      },
+      "context": [
+        "bp3d:FMA24480",
+        "bp3d:FMA24521",
+        "bp3d:FMA24507"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22553",
+      "sourceId": "FMA22553",
+      "side": "left",
+      "kind": "structure",
+      "family": "fibularislongus",
+      "detail": {
+        "name": "Fibular largo izquierdo",
+        "latin": "Musculus fibularis longus",
+        "region": "Pierna",
+        "group": "Compartimento lateral",
+        "description": "También llamado peroneo largo; alcanza la región plantar medial del pie.",
+        "function": "Contribuye al soporte del arco transverso.",
+        "action": "Evierte el pie y ayuda a la flexión plantar del tobillo.",
+        "origins": [
+          {
+            "label": "Cabeza y porción proximal de la superficie lateral de la fíbula.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24480"
+              ],
+              "left": [
+                "bp3d:FMA24481"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cuneiforme medial y base del primer metatarsiano por su superficie plantar.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24521",
+                "bp3d:FMA24507"
+              ],
+              "left": [
+                "bp3d:FMA24522",
+                "bp3d:FMA24508"
+              ]
+            }
+          }
+        ],
+        "innervation": "Principalmente nervio fibular superficial (peroneo superficial).",
+        "relations": "Comparte el compartimento lateral con el fibular corto, pero tiene una inserción diferente.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · peroneus longus",
+            "url": "https://rad.uw.edu/muscle-atlas/peroneus-longus"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · peroneus brevis",
+            "url": "https://rad.uw.edu/muscle-atlas/peroneus-brevis"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Fibular largo"
+      },
+      "context": [
+        "bp3d:FMA24481",
+        "bp3d:FMA24522",
+        "bp3d:FMA24508"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22554",
+      "sourceId": "FMA22554",
+      "side": "right",
+      "kind": "structure",
+      "family": "fibularisbrevis",
+      "detail": {
+        "name": "Fibular corto derecho",
+        "latin": "Musculus fibularis brevis",
+        "region": "Pierna",
+        "group": "Compartimento lateral",
+        "description": "También llamado peroneo corto; termina en el quinto metatarsiano.",
+        "function": "Participa en el control lateral del pie.",
+        "action": "Evierte el pie y ayuda a la flexión plantar del tobillo.",
+        "origins": [
+          {
+            "label": "Dos tercios distales de la cara lateral de la fíbula.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24480"
+              ],
+              "left": [
+                "bp3d:FMA24481"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Tuberosidad de la base del quinto metatarsiano.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24515"
+              ],
+              "left": [
+                "bp3d:FMA24516"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio fibular superficial (peroneo superficial).",
+        "relations": "Su inserción lateral en el pie difiere de la inserción plantar medial del fibular largo.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · peroneus brevis",
+            "url": "https://rad.uw.edu/muscle-atlas/peroneus-brevis"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · peroneus longus",
+            "url": "https://rad.uw.edu/muscle-atlas/peroneus-longus"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Fibular corto"
+      },
+      "context": [
+        "bp3d:FMA24480",
+        "bp3d:FMA24515"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22555",
+      "sourceId": "FMA22555",
+      "side": "left",
+      "kind": "structure",
+      "family": "fibularisbrevis",
+      "detail": {
+        "name": "Fibular corto izquierdo",
+        "latin": "Musculus fibularis brevis",
+        "region": "Pierna",
+        "group": "Compartimento lateral",
+        "description": "También llamado peroneo corto; termina en el quinto metatarsiano.",
+        "function": "Participa en el control lateral del pie.",
+        "action": "Evierte el pie y ayuda a la flexión plantar del tobillo.",
+        "origins": [
+          {
+            "label": "Dos tercios distales de la cara lateral de la fíbula.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24480"
+              ],
+              "left": [
+                "bp3d:FMA24481"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Tuberosidad de la base del quinto metatarsiano.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24515"
+              ],
+              "left": [
+                "bp3d:FMA24516"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio fibular superficial (peroneo superficial).",
+        "relations": "Su inserción lateral en el pie difiere de la inserción plantar medial del fibular largo.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · peroneus brevis",
+            "url": "https://rad.uw.edu/muscle-atlas/peroneus-brevis"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · peroneus longus",
+            "url": "https://rad.uw.edu/muscle-atlas/peroneus-longus"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Fibular corto"
+      },
+      "context": [
+        "bp3d:FMA24481",
+        "bp3d:FMA24516"
+      ]
+    },
+    {
+      "id": "med3d:muscle:gastrocnemius:right",
+      "side": "right",
+      "kind": "structure",
+      "family": "gastrocnemius",
+      "detail": {
+        "name": "Gastrocnemio derecho",
+        "latin": "Musculus gastrocnemius",
+        "region": "Pierna",
+        "group": "Compartimento posterior superficial",
+        "description": "Músculo de la pantorrilla formado por cabezas medial y lateral.",
+        "function": "Participa en la propulsión mediante el tendón calcáneo.",
+        "action": "Flexiona plantarmente el tobillo y ayuda a flexionar la rodilla.",
+        "origins": [
+          {
+            "label": "Cabeza medial: cara posterior no articular del cóndilo medial del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          },
+          {
+            "label": "Cabeza lateral: superficie lateral del cóndilo lateral del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara posterior del calcáneo mediante el tendón calcáneo (de Aquiles).",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24497"
+              ],
+              "left": [
+                "bp3d:FMA24498"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio tibial.",
+        "relations": "Su aponeurosis se une con el tendón del sóleo; ambas cabezas forman un solo músculo.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gastrocnemius",
+            "url": "https://rad.uw.edu/muscle-atlas/gastrocnemius"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Gastrocnemio"
+      },
+      "context": [
+        "bp3d:FMA24474",
+        "bp3d:FMA24497"
+      ]
+    },
+    {
+      "id": "bp3d:FMA45957",
+      "sourceId": "FMA45957",
+      "side": "right",
+      "kind": "component",
+      "family": "gastrocnemius",
+      "detail": {
+        "name": "Cabeza medial del gastrocnemio derecho",
+        "latin": "Caput mediale musculi gastrocnemii",
+        "region": "Pierna",
+        "group": "Compartimento posterior superficial",
+        "description": "Cabeza medial del gastrocnemio. Forma parte de ese músculo y no se contabiliza como otro músculo independiente.",
+        "function": "Participa en la propulsión mediante el tendón calcáneo.",
+        "action": "Flexiona plantarmente el tobillo y ayuda a flexionar la rodilla.",
+        "origins": [
+          {
+            "label": "Cabeza medial: cara posterior no articular del cóndilo medial del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara posterior del calcáneo mediante el tendón calcáneo (de Aquiles).",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24497"
+              ],
+              "left": [
+                "bp3d:FMA24498"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio tibial.",
+        "relations": "Su aponeurosis se une con el tendón del sóleo; ambas cabezas forman un solo músculo.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gastrocnemius",
+            "url": "https://rad.uw.edu/muscle-atlas/gastrocnemius"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "muscleName": "Gastrocnemio",
+        "componentName": "Cabeza medial",
+        "scope": "component",
+        "attachmentScope": "origin"
+      },
+      "context": [
+        "bp3d:FMA24474",
+        "bp3d:FMA24497"
+      ]
+    },
+    {
+      "id": "med3d:muscle:gastrocnemius:left",
+      "side": "left",
+      "kind": "structure",
+      "family": "gastrocnemius",
+      "detail": {
+        "name": "Gastrocnemio izquierdo",
+        "latin": "Musculus gastrocnemius",
+        "region": "Pierna",
+        "group": "Compartimento posterior superficial",
+        "description": "Músculo de la pantorrilla formado por cabezas medial y lateral.",
+        "function": "Participa en la propulsión mediante el tendón calcáneo.",
+        "action": "Flexiona plantarmente el tobillo y ayuda a flexionar la rodilla.",
+        "origins": [
+          {
+            "label": "Cabeza medial: cara posterior no articular del cóndilo medial del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          },
+          {
+            "label": "Cabeza lateral: superficie lateral del cóndilo lateral del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara posterior del calcáneo mediante el tendón calcáneo (de Aquiles).",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24497"
+              ],
+              "left": [
+                "bp3d:FMA24498"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio tibial.",
+        "relations": "Su aponeurosis se une con el tendón del sóleo; ambas cabezas forman un solo músculo.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gastrocnemius",
+            "url": "https://rad.uw.edu/muscle-atlas/gastrocnemius"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Gastrocnemio"
+      },
+      "context": [
+        "bp3d:FMA24475",
+        "bp3d:FMA24498"
+      ]
+    },
+    {
+      "id": "bp3d:FMA45958",
+      "sourceId": "FMA45958",
+      "side": "left",
+      "kind": "component",
+      "family": "gastrocnemius",
+      "detail": {
+        "name": "Cabeza medial del gastrocnemio izquierdo",
+        "latin": "Caput mediale musculi gastrocnemii",
+        "region": "Pierna",
+        "group": "Compartimento posterior superficial",
+        "description": "Cabeza medial del gastrocnemio. Forma parte de ese músculo y no se contabiliza como otro músculo independiente.",
+        "function": "Participa en la propulsión mediante el tendón calcáneo.",
+        "action": "Flexiona plantarmente el tobillo y ayuda a flexionar la rodilla.",
+        "origins": [
+          {
+            "label": "Cabeza medial: cara posterior no articular del cóndilo medial del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara posterior del calcáneo mediante el tendón calcáneo (de Aquiles).",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24497"
+              ],
+              "left": [
+                "bp3d:FMA24498"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio tibial.",
+        "relations": "Su aponeurosis se une con el tendón del sóleo; ambas cabezas forman un solo músculo.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gastrocnemius",
+            "url": "https://rad.uw.edu/muscle-atlas/gastrocnemius"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "muscleName": "Gastrocnemio",
+        "componentName": "Cabeza medial",
+        "scope": "component",
+        "attachmentScope": "origin"
+      },
+      "context": [
+        "bp3d:FMA24475",
+        "bp3d:FMA24498"
+      ]
+    },
+    {
+      "id": "bp3d:FMA45960",
+      "sourceId": "FMA45960",
+      "side": "right",
+      "kind": "component",
+      "family": "gastrocnemius",
+      "detail": {
+        "name": "Cabeza lateral del gastrocnemio derecho",
+        "latin": "Caput laterale musculi gastrocnemii",
+        "region": "Pierna",
+        "group": "Compartimento posterior superficial",
+        "description": "Cabeza lateral del gastrocnemio. Forma parte de ese músculo y no se contabiliza como otro músculo independiente.",
+        "function": "Participa en la propulsión mediante el tendón calcáneo.",
+        "action": "Flexiona plantarmente el tobillo y ayuda a flexionar la rodilla.",
+        "origins": [
+          {
+            "label": "Cabeza lateral: superficie lateral del cóndilo lateral del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara posterior del calcáneo mediante el tendón calcáneo (de Aquiles).",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24497"
+              ],
+              "left": [
+                "bp3d:FMA24498"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio tibial.",
+        "relations": "Su aponeurosis se une con el tendón del sóleo; ambas cabezas forman un solo músculo.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gastrocnemius",
+            "url": "https://rad.uw.edu/muscle-atlas/gastrocnemius"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "muscleName": "Gastrocnemio",
+        "componentName": "Cabeza lateral",
+        "scope": "component",
+        "attachmentScope": "origin"
+      },
+      "context": [
+        "bp3d:FMA24474",
+        "bp3d:FMA24497"
+      ]
+    },
+    {
+      "id": "bp3d:FMA45961",
+      "sourceId": "FMA45961",
+      "side": "left",
+      "kind": "component",
+      "family": "gastrocnemius",
+      "detail": {
+        "name": "Cabeza lateral del gastrocnemio izquierdo",
+        "latin": "Caput laterale musculi gastrocnemii",
+        "region": "Pierna",
+        "group": "Compartimento posterior superficial",
+        "description": "Cabeza lateral del gastrocnemio. Forma parte de ese músculo y no se contabiliza como otro músculo independiente.",
+        "function": "Participa en la propulsión mediante el tendón calcáneo.",
+        "action": "Flexiona plantarmente el tobillo y ayuda a flexionar la rodilla.",
+        "origins": [
+          {
+            "label": "Cabeza lateral: superficie lateral del cóndilo lateral del fémur.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24474"
+              ],
+              "left": [
+                "bp3d:FMA24475"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara posterior del calcáneo mediante el tendón calcáneo (de Aquiles).",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24497"
+              ],
+              "left": [
+                "bp3d:FMA24498"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio tibial.",
+        "relations": "Su aponeurosis se une con el tendón del sóleo; ambas cabezas forman un solo músculo.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · gastrocnemius",
+            "url": "https://rad.uw.edu/muscle-atlas/gastrocnemius"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "muscleName": "Gastrocnemio",
+        "componentName": "Cabeza lateral",
+        "scope": "component",
+        "attachmentScope": "origin"
+      },
+      "context": [
+        "bp3d:FMA24475",
+        "bp3d:FMA24498"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22558",
+      "sourceId": "FMA22558",
+      "side": "right",
+      "kind": "structure",
+      "family": "soleus",
+      "detail": {
+        "name": "Sóleo derecho",
+        "latin": "Musculus soleus",
+        "region": "Pierna",
+        "group": "Compartimento posterior superficial",
+        "description": "Músculo de la pantorrilla profundo al gastrocnemio.",
+        "function": "Participa en el apoyo y la propulsión del cuerpo.",
+        "action": "Flexiona plantarmente el tobillo.",
+        "origins": [
+          {
+            "label": "Cara posterior proximal de la fíbula y borde medial de la tibia.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24480",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24481",
+                "bp3d:FMA24478"
+              ]
+            }
+          },
+          {
+            "label": "Arco tendinoso entre sus fijaciones óseas."
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara posterior del calcáneo mediante el tendón calcáneo (de Aquiles).",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24497"
+              ],
+              "left": [
+                "bp3d:FMA24498"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio tibial.",
+        "relations": "Se une con la aponeurosis del gastrocnemio para formar el tendón calcáneo.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · soleus",
+            "url": "https://rad.uw.edu/muscle-atlas/soleus"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Sóleo"
+      },
+      "context": [
+        "bp3d:FMA24480",
+        "bp3d:FMA24477",
+        "bp3d:FMA24497"
+      ]
+    },
+    {
+      "id": "bp3d:FMA22559",
+      "sourceId": "FMA22559",
+      "side": "left",
+      "kind": "structure",
+      "family": "soleus",
+      "detail": {
+        "name": "Sóleo izquierdo",
+        "latin": "Musculus soleus",
+        "region": "Pierna",
+        "group": "Compartimento posterior superficial",
+        "description": "Músculo de la pantorrilla profundo al gastrocnemio.",
+        "function": "Participa en el apoyo y la propulsión del cuerpo.",
+        "action": "Flexiona plantarmente el tobillo.",
+        "origins": [
+          {
+            "label": "Cara posterior proximal de la fíbula y borde medial de la tibia.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24480",
+                "bp3d:FMA24477"
+              ],
+              "left": [
+                "bp3d:FMA24481",
+                "bp3d:FMA24478"
+              ]
+            }
+          },
+          {
+            "label": "Arco tendinoso entre sus fijaciones óseas."
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Cara posterior del calcáneo mediante el tendón calcáneo (de Aquiles).",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24497"
+              ],
+              "left": [
+                "bp3d:FMA24498"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio tibial.",
+        "relations": "Se une con la aponeurosis del gastrocnemio para formar el tendón calcáneo.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · soleus",
+            "url": "https://rad.uw.edu/muscle-atlas/soleus"
+          },
+          {
+            "title": "OpenStax · Anatomy and Physiology 2e · 11.6 Miembro inferior",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Sóleo"
+      },
+      "context": [
+        "bp3d:FMA24481",
+        "bp3d:FMA24478",
+        "bp3d:FMA24498"
+      ]
+    },
+    {
+      "id": "bp3d:FMA65018",
+      "sourceId": "FMA65018",
+      "side": "right",
+      "kind": "structure",
+      "family": "tibialisposterior",
+      "detail": {
+        "name": "Tibial posterior derecho",
+        "latin": "Musculus tibialis posterior",
+        "region": "Pierna",
+        "group": "Compartimento posterior profundo",
+        "description": "Músculo posterior profundo con varias expansiones tendinosas en el pie.",
+        "function": "Controla la inversión del pie.",
+        "action": "Invierte y aduce el pie; ayuda a la flexión plantar del tobillo.",
+        "origins": [
+          {
+            "label": "Superficies posteriores proximales de la tibia y la fíbula.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24477",
+                "bp3d:FMA24480"
+              ],
+              "left": [
+                "bp3d:FMA24478",
+                "bp3d:FMA24481"
+              ]
+            }
+          },
+          {
+            "label": "Membrana interósea y tabiques fasciales."
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Tuberosidad del navicular; expansiones al cuneiforme intermedio y bases de los metatarsianos 2–4, según la descripción de UW.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24500",
+                "bp3d:FMA24523",
+                "bp3d:FMA24509",
+                "bp3d:FMA24511",
+                "bp3d:FMA24513"
+              ],
+              "left": [
+                "bp3d:FMA24501",
+                "bp3d:FMA24524",
+                "bp3d:FMA24510",
+                "bp3d:FMA24512",
+                "bp3d:FMA24514"
+              ]
+            }
+          },
+          {
+            "label": "La extensión al cuneiforme medial es variable; no se presupone en este espécimen."
+          }
+        ],
+        "innervation": "Nervio tibial.",
+        "relations": "La ficha resume el patrón descrito por UW; las expansiones no están anotadas como superficies en las mallas.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · tibialis posterior",
+            "url": "https://rad.uw.edu/muscle-atlas/tibialis-posterior"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Tibial posterior"
+      },
+      "context": [
+        "bp3d:FMA24477",
+        "bp3d:FMA24480",
+        "bp3d:FMA24500",
+        "bp3d:FMA24523",
+        "bp3d:FMA24509",
+        "bp3d:FMA24511",
+        "bp3d:FMA24513"
+      ]
+    },
+    {
+      "id": "bp3d:FMA65019",
+      "sourceId": "FMA65019",
+      "side": "left",
+      "kind": "structure",
+      "family": "tibialisposterior",
+      "detail": {
+        "name": "Tibial posterior izquierdo",
+        "latin": "Musculus tibialis posterior",
+        "region": "Pierna",
+        "group": "Compartimento posterior profundo",
+        "description": "Músculo posterior profundo con varias expansiones tendinosas en el pie.",
+        "function": "Controla la inversión del pie.",
+        "action": "Invierte y aduce el pie; ayuda a la flexión plantar del tobillo.",
+        "origins": [
+          {
+            "label": "Superficies posteriores proximales de la tibia y la fíbula.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24477",
+                "bp3d:FMA24480"
+              ],
+              "left": [
+                "bp3d:FMA24478",
+                "bp3d:FMA24481"
+              ]
+            }
+          },
+          {
+            "label": "Membrana interósea y tabiques fasciales."
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Tuberosidad del navicular; expansiones al cuneiforme intermedio y bases de los metatarsianos 2–4, según la descripción de UW.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24500",
+                "bp3d:FMA24523",
+                "bp3d:FMA24509",
+                "bp3d:FMA24511",
+                "bp3d:FMA24513"
+              ],
+              "left": [
+                "bp3d:FMA24501",
+                "bp3d:FMA24524",
+                "bp3d:FMA24510",
+                "bp3d:FMA24512",
+                "bp3d:FMA24514"
+              ]
+            }
+          },
+          {
+            "label": "La extensión al cuneiforme medial es variable; no se presupone en este espécimen."
+          }
+        ],
+        "innervation": "Nervio tibial.",
+        "relations": "La ficha resume el patrón descrito por UW; las expansiones no están anotadas como superficies en las mallas.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · tibialis posterior",
+            "url": "https://rad.uw.edu/muscle-atlas/tibialis-posterior"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Tibial posterior"
+      },
+      "context": [
+        "bp3d:FMA24478",
+        "bp3d:FMA24481",
+        "bp3d:FMA24501",
+        "bp3d:FMA24524",
+        "bp3d:FMA24510",
+        "bp3d:FMA24512",
+        "bp3d:FMA24514"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38460",
+      "sourceId": "FMA38460",
+      "side": "right",
+      "kind": "structure",
+      "family": "flexorcarpiradialis",
+      "detail": {
+        "name": "Flexor radial del carpo derecho",
+        "latin": "Musculus flexor carpi radialis",
+        "region": "Antebrazo",
+        "group": "Compartimento anterior",
+        "description": "Músculo flexor de la muñeca con inserción en el segundo metacarpiano.",
+        "function": "Controla la flexión y desviación radial de la mano.",
+        "action": "Flexiona y abduce la mano en la muñeca.",
+        "origins": [
+          {
+            "label": "Epicóndilo medial del húmero.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23130"
+              ],
+              "left": [
+                "bp3d:FMA23131"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Base del segundo metacarpiano.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24466"
+              ],
+              "left": [
+                "bp3d:FMA24467"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio mediano.",
+        "relations": "Une el origen humeral medial con la base del segundo metacarpiano.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · flexor carpi radialis",
+            "url": "https://rad.uw.edu/muscle-atlas/flexor-carpi-radialis"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Flexor radial del carpo"
+      },
+      "context": [
+        "bp3d:FMA23130",
+        "bp3d:FMA24466"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38461",
+      "sourceId": "FMA38461",
+      "side": "left",
+      "kind": "structure",
+      "family": "flexorcarpiradialis",
+      "detail": {
+        "name": "Flexor radial del carpo izquierdo",
+        "latin": "Musculus flexor carpi radialis",
+        "region": "Antebrazo",
+        "group": "Compartimento anterior",
+        "description": "Músculo flexor de la muñeca con inserción en el segundo metacarpiano.",
+        "function": "Controla la flexión y desviación radial de la mano.",
+        "action": "Flexiona y abduce la mano en la muñeca.",
+        "origins": [
+          {
+            "label": "Epicóndilo medial del húmero.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23130"
+              ],
+              "left": [
+                "bp3d:FMA23131"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Base del segundo metacarpiano.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24466"
+              ],
+              "left": [
+                "bp3d:FMA24467"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio mediano.",
+        "relations": "Une el origen humeral medial con la base del segundo metacarpiano.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · flexor carpi radialis",
+            "url": "https://rad.uw.edu/muscle-atlas/flexor-carpi-radialis"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Flexor radial del carpo"
+      },
+      "context": [
+        "bp3d:FMA23131",
+        "bp3d:FMA24467"
+      ]
+    },
+    {
+      "id": "med3d:muscle:pronatorteres:right",
+      "side": "right",
+      "kind": "structure",
+      "family": "pronatorteres",
+      "detail": {
+        "name": "Pronador redondo derecho",
+        "latin": "Musculus pronator teres",
+        "region": "Antebrazo",
+        "group": "Compartimento anterior",
+        "description": "Músculo pronador con cabezas humeral y ulnar.",
+        "function": "Orienta la palma mediante la rotación del radio.",
+        "action": "Prona el antebrazo y ayuda a flexionarlo en el codo.",
+        "origins": [
+          {
+            "label": "Cabeza humeral: epicóndilo medial del húmero.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23130"
+              ],
+              "left": [
+                "bp3d:FMA23131"
+              ]
+            }
+          },
+          {
+            "label": "Cabeza ulnar: apófisis coronoides de la ulna.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23467"
+              ],
+              "left": [
+                "bp3d:FMA23468"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Porción media de la cara lateral del radio.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23464"
+              ],
+              "left": [
+                "bp3d:FMA23465"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio mediano.",
+        "relations": "Las dos cabezas tienen orígenes diferentes y una inserción radial compartida.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · pronator teres",
+            "url": "https://rad.uw.edu/muscle-atlas/pronator-teres"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Pronador redondo"
+      },
+      "context": [
+        "bp3d:FMA23130",
+        "bp3d:FMA23467",
+        "bp3d:FMA23464"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38560",
+      "sourceId": "FMA38560",
+      "side": "right",
+      "kind": "component",
+      "family": "pronatorteres",
+      "detail": {
+        "name": "Cabeza humeral del pronador redondo derecho",
+        "latin": "Caput humerale musculi pronatoris teretis",
+        "region": "Antebrazo",
+        "group": "Compartimento anterior",
+        "description": "Cabeza humeral del pronador redondo. Forma parte de ese músculo y no se contabiliza como otro músculo independiente.",
+        "function": "Orienta la palma mediante la rotación del radio.",
+        "action": "Prona el antebrazo y ayuda a flexionarlo en el codo.",
+        "origins": [
+          {
+            "label": "Cabeza humeral: epicóndilo medial del húmero.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23130"
+              ],
+              "left": [
+                "bp3d:FMA23131"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Porción media de la cara lateral del radio.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23464"
+              ],
+              "left": [
+                "bp3d:FMA23465"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio mediano.",
+        "relations": "Las dos cabezas tienen orígenes diferentes y una inserción radial compartida.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · pronator teres",
+            "url": "https://rad.uw.edu/muscle-atlas/pronator-teres"
+          }
+        ],
+        "muscleName": "Pronador redondo",
+        "componentName": "Cabeza humeral",
+        "scope": "component",
+        "attachmentScope": "origin"
+      },
+      "context": [
+        "bp3d:FMA23130",
+        "bp3d:FMA23464"
+      ]
+    },
+    {
+      "id": "med3d:muscle:pronatorteres:left",
+      "side": "left",
+      "kind": "structure",
+      "family": "pronatorteres",
+      "detail": {
+        "name": "Pronador redondo izquierdo",
+        "latin": "Musculus pronator teres",
+        "region": "Antebrazo",
+        "group": "Compartimento anterior",
+        "description": "Músculo pronador con cabezas humeral y ulnar.",
+        "function": "Orienta la palma mediante la rotación del radio.",
+        "action": "Prona el antebrazo y ayuda a flexionarlo en el codo.",
+        "origins": [
+          {
+            "label": "Cabeza humeral: epicóndilo medial del húmero.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23130"
+              ],
+              "left": [
+                "bp3d:FMA23131"
+              ]
+            }
+          },
+          {
+            "label": "Cabeza ulnar: apófisis coronoides de la ulna.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23467"
+              ],
+              "left": [
+                "bp3d:FMA23468"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Porción media de la cara lateral del radio.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23464"
+              ],
+              "left": [
+                "bp3d:FMA23465"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio mediano.",
+        "relations": "Las dos cabezas tienen orígenes diferentes y una inserción radial compartida.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · pronator teres",
+            "url": "https://rad.uw.edu/muscle-atlas/pronator-teres"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Pronador redondo"
+      },
+      "context": [
+        "bp3d:FMA23131",
+        "bp3d:FMA23468",
+        "bp3d:FMA23465"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38561",
+      "sourceId": "FMA38561",
+      "side": "left",
+      "kind": "component",
+      "family": "pronatorteres",
+      "detail": {
+        "name": "Cabeza humeral del pronador redondo izquierdo",
+        "latin": "Caput humerale musculi pronatoris teretis",
+        "region": "Antebrazo",
+        "group": "Compartimento anterior",
+        "description": "Cabeza humeral del pronador redondo. Forma parte de ese músculo y no se contabiliza como otro músculo independiente.",
+        "function": "Orienta la palma mediante la rotación del radio.",
+        "action": "Prona el antebrazo y ayuda a flexionarlo en el codo.",
+        "origins": [
+          {
+            "label": "Cabeza humeral: epicóndilo medial del húmero.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23130"
+              ],
+              "left": [
+                "bp3d:FMA23131"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Porción media de la cara lateral del radio.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23464"
+              ],
+              "left": [
+                "bp3d:FMA23465"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio mediano.",
+        "relations": "Las dos cabezas tienen orígenes diferentes y una inserción radial compartida.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · pronator teres",
+            "url": "https://rad.uw.edu/muscle-atlas/pronator-teres"
+          }
+        ],
+        "muscleName": "Pronador redondo",
+        "componentName": "Cabeza humeral",
+        "scope": "component",
+        "attachmentScope": "origin"
+      },
+      "context": [
+        "bp3d:FMA23131",
+        "bp3d:FMA23465"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38562",
+      "sourceId": "FMA38562",
+      "side": "right",
+      "kind": "component",
+      "family": "pronatorteres",
+      "detail": {
+        "name": "Cabeza ulnar del pronador redondo derecho",
+        "latin": "Caput ulnare musculi pronatoris teretis",
+        "region": "Antebrazo",
+        "group": "Compartimento anterior",
+        "description": "Cabeza ulnar del pronador redondo. Forma parte de ese músculo y no se contabiliza como otro músculo independiente.",
+        "function": "Orienta la palma mediante la rotación del radio.",
+        "action": "Prona el antebrazo y ayuda a flexionarlo en el codo.",
+        "origins": [
+          {
+            "label": "Cabeza ulnar: apófisis coronoides de la ulna.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23467"
+              ],
+              "left": [
+                "bp3d:FMA23468"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Porción media de la cara lateral del radio.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23464"
+              ],
+              "left": [
+                "bp3d:FMA23465"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio mediano.",
+        "relations": "Las dos cabezas tienen orígenes diferentes y una inserción radial compartida.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · pronator teres",
+            "url": "https://rad.uw.edu/muscle-atlas/pronator-teres"
+          }
+        ],
+        "muscleName": "Pronador redondo",
+        "componentName": "Cabeza ulnar",
+        "scope": "component",
+        "attachmentScope": "origin"
+      },
+      "context": [
+        "bp3d:FMA23467",
+        "bp3d:FMA23464"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38563",
+      "sourceId": "FMA38563",
+      "side": "left",
+      "kind": "component",
+      "family": "pronatorteres",
+      "detail": {
+        "name": "Cabeza ulnar del pronador redondo izquierdo",
+        "latin": "Caput ulnare musculi pronatoris teretis",
+        "region": "Antebrazo",
+        "group": "Compartimento anterior",
+        "description": "Cabeza ulnar del pronador redondo. Forma parte de ese músculo y no se contabiliza como otro músculo independiente.",
+        "function": "Orienta la palma mediante la rotación del radio.",
+        "action": "Prona el antebrazo y ayuda a flexionarlo en el codo.",
+        "origins": [
+          {
+            "label": "Cabeza ulnar: apófisis coronoides de la ulna.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23467"
+              ],
+              "left": [
+                "bp3d:FMA23468"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Porción media de la cara lateral del radio.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23464"
+              ],
+              "left": [
+                "bp3d:FMA23465"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio mediano.",
+        "relations": "Las dos cabezas tienen orígenes diferentes y una inserción radial compartida.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · pronator teres",
+            "url": "https://rad.uw.edu/muscle-atlas/pronator-teres"
+          }
+        ],
+        "muscleName": "Pronador redondo",
+        "componentName": "Cabeza ulnar",
+        "scope": "component",
+        "attachmentScope": "origin"
+      },
+      "context": [
+        "bp3d:FMA23468",
+        "bp3d:FMA23465"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38495",
+      "sourceId": "FMA38495",
+      "side": "right",
+      "kind": "structure",
+      "family": "extensorcarpiradialislongus",
+      "detail": {
+        "name": "Extensor radial largo del carpo derecho",
+        "latin": "Musculus extensor carpi radialis longus",
+        "region": "Antebrazo",
+        "group": "Compartimento posterior",
+        "description": "Músculo extensor que une el húmero lateral con la mano.",
+        "function": "Controla la extensión y desviación radial de la muñeca.",
+        "action": "Extiende y abduce la mano en la muñeca.",
+        "origins": [
+          {
+            "label": "Cresta supracondílea lateral del húmero.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23130"
+              ],
+              "left": [
+                "bp3d:FMA23131"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Base del segundo metacarpiano.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24466"
+              ],
+              "left": [
+                "bp3d:FMA24467"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio radial.",
+        "relations": "Se fija en el mismo metacarpiano que el flexor radial, con acción extensora.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · extensor carpi radialis longus",
+            "url": "https://rad.uw.edu/muscle-atlas/extensor-carpi-radialis-longus"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · flexor carpi radialis",
+            "url": "https://rad.uw.edu/muscle-atlas/flexor-carpi-radialis"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Extensor radial largo del carpo"
+      },
+      "context": [
+        "bp3d:FMA23130",
+        "bp3d:FMA24466"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38496",
+      "sourceId": "FMA38496",
+      "side": "left",
+      "kind": "structure",
+      "family": "extensorcarpiradialislongus",
+      "detail": {
+        "name": "Extensor radial largo del carpo izquierdo",
+        "latin": "Musculus extensor carpi radialis longus",
+        "region": "Antebrazo",
+        "group": "Compartimento posterior",
+        "description": "Músculo extensor que une el húmero lateral con la mano.",
+        "function": "Controla la extensión y desviación radial de la muñeca.",
+        "action": "Extiende y abduce la mano en la muñeca.",
+        "origins": [
+          {
+            "label": "Cresta supracondílea lateral del húmero.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23130"
+              ],
+              "left": [
+                "bp3d:FMA23131"
+              ]
+            }
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Base del segundo metacarpiano.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA24466"
+              ],
+              "left": [
+                "bp3d:FMA24467"
+              ]
+            }
+          }
+        ],
+        "innervation": "Nervio radial.",
+        "relations": "Se fija en el mismo metacarpiano que el flexor radial, con acción extensora.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · extensor carpi radialis longus",
+            "url": "https://rad.uw.edu/muscle-atlas/extensor-carpi-radialis-longus"
+          },
+          {
+            "title": "University of Washington · Muscle Atlas · flexor carpi radialis",
+            "url": "https://rad.uw.edu/muscle-atlas/flexor-carpi-radialis"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Extensor radial largo del carpo"
+      },
+      "context": [
+        "bp3d:FMA23131",
+        "bp3d:FMA24467"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38513",
+      "sourceId": "FMA38513",
+      "side": "right",
+      "kind": "structure",
+      "family": "supinator",
+      "detail": {
+        "name": "Supinador derecho",
+        "latin": "Musculus supinator",
+        "region": "Antebrazo",
+        "group": "Compartimento posterior profundo",
+        "description": "Músculo que se fija alrededor de la porción proximal del radio.",
+        "function": "Orienta la palma hacia anterior en posición anatómica.",
+        "action": "Supina el antebrazo.",
+        "origins": [
+          {
+            "label": "Epicóndilo lateral del húmero y cresta/fosa del supinador en la ulna.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23130",
+                "bp3d:FMA23467"
+              ],
+              "left": [
+                "bp3d:FMA23131",
+                "bp3d:FMA23468"
+              ]
+            }
+          },
+          {
+            "label": "Ligamentos colateral radial y anular."
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Caras lateral, posterior y anterior del tercio proximal del radio.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23464"
+              ],
+              "left": [
+                "bp3d:FMA23465"
+              ]
+            }
+          }
+        ],
+        "innervation": "Rama profunda del nervio radial.",
+        "relations": "Su inserción abarca varias caras del radio proximal; los ligamentos de origen se conservan sólo como texto.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · supinator",
+            "url": "https://rad.uw.edu/muscle-atlas/supinator"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Supinador"
+      },
+      "context": [
+        "bp3d:FMA23130",
+        "bp3d:FMA23467",
+        "bp3d:FMA23464"
+      ]
+    },
+    {
+      "id": "bp3d:FMA38514",
+      "sourceId": "FMA38514",
+      "side": "left",
+      "kind": "structure",
+      "family": "supinator",
+      "detail": {
+        "name": "Supinador izquierdo",
+        "latin": "Musculus supinator",
+        "region": "Antebrazo",
+        "group": "Compartimento posterior profundo",
+        "description": "Músculo que se fija alrededor de la porción proximal del radio.",
+        "function": "Orienta la palma hacia anterior en posición anatómica.",
+        "action": "Supina el antebrazo.",
+        "origins": [
+          {
+            "label": "Epicóndilo lateral del húmero y cresta/fosa del supinador en la ulna.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23130",
+                "bp3d:FMA23467"
+              ],
+              "left": [
+                "bp3d:FMA23131",
+                "bp3d:FMA23468"
+              ]
+            }
+          },
+          {
+            "label": "Ligamentos colateral radial y anular."
+          }
+        ],
+        "insertions": [
+          {
+            "label": "Caras lateral, posterior y anterior del tercio proximal del radio.",
+            "boneIds": {
+              "right": [
+                "bp3d:FMA23464"
+              ],
+              "left": [
+                "bp3d:FMA23465"
+              ]
+            }
+          }
+        ],
+        "innervation": "Rama profunda del nervio radial.",
+        "relations": "Su inserción abarca varias caras del radio proximal; los ligamentos de origen se conservan sólo como texto.",
+        "sources": [
+          {
+            "title": "University of Washington · Muscle Atlas · supinator",
+            "url": "https://rad.uw.edu/muscle-atlas/supinator"
+          }
+        ],
+        "scope": "muscle",
+        "muscleName": "Supinador"
+      },
+      "context": [
+        "bp3d:FMA23131",
+        "bp3d:FMA23468",
+        "bp3d:FMA23465"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "codeCommit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126",
+  "completedUtc": "2026-09-23T20:54:52.694935+00:00",
+  "method": "Each final PNG was opened separately through the image viewer; no montage-only assessment.",
+  "clinicalCertification": false,
+  "captures": [
+    {
+      "file": "01-cuerpo-anterior.png",
+      "sha256": "8074b041c237a16d4404307cbce7364597c0770c5eb9b3bc16be2e1f4496f5d2",
+      "inspected": true,
+      "observation": "Cuerpo completo dentro del visor, con musculatura bilateral de muslos y piernas alineada con el esqueleto. No se aprecia cambio de escala ni desplazamiento regional. Mano, pie y cabeza conservan la cobertura ósea esperada."
+    },
+    {
+      "file": "02-cuerpo-posterior.png",
+      "sha256": "9d09934f9d96cfead4f257722439a8bc09f40a45c646c78989ce1d0ab868c201",
+      "inspected": true,
+      "observation": "Glúteos y pantorrillas bilaterales se leen en continuidad con pelvis y piernas; espalda parcial previa conservada. No se observa una duplicación ni una pieza desplazada a escala corporal."
+    },
+    {
+      "file": "03-lateral-derecho.png",
+      "sha256": "40117476df8f058a489a8faf6007e200fd2472b39496ee146bafe43c4b56d303",
+      "inspected": true,
+      "observation": "Perfil derecho completo, con muslo y pantorrilla en continuidad y pies dentro del encuadre. La superposición de los miembros oculta parte del lado opuesto; no indica duplicación."
+    },
+    {
+      "file": "04-lateral-izquierdo.png",
+      "sha256": "d672ce954d3248e6f8b4455df92f0d94084e7db830bb76be3a5155714891a5b7",
+      "inspected": true,
+      "observation": "Perfil izquierdo opuesto al derecho, con cabeza y pies completos. La escala de glúteo, muslo y pierna permanece coherente; no se aprecia clipping del cuerpo ni desplazamiento del antebrazo."
+    },
+    {
+      "file": "05-region-glutea.png",
+      "sha256": "71d3ad84d806fa6594ece8f30e2eab37ed9eca7c18e6ab0a00c27bc7da56810d",
+      "inspected": true,
+      "observation": "Ambos glúteos mayores se ven bajo las crestas ilíacas y a ambos lados del sacro. El acercamiento conserva vecinos y recorta torso/muslo fuera del foco. Los planos profundos permanecen cubiertos y hay faceteado visible de la fuente."
+    },
+    {
+      "file": "06-muslo-anterior.png",
+      "sha256": "30b2eb484f121983a3e66267658acc26a624cec309a088a96b532c9baefb2b6d",
+      "inspected": true,
+      "observation": "Se reconocen los vientres anteriores y las bandas oblicuas del sartorio sobre ambos muslos, con patelas visibles. La cámara encuadra la región; el resto del cuerpo queda fuera del campo sin evidencia de un plano de corte dentro del objetivo."
+    },
+    {
+      "file": "07-muslo-medial.png",
+      "sha256": "7a58bba25748c59312d882fa2b4449ccb4c8236c0de08ae28bca57498f999847",
+      "inspected": true,
+      "observation": "El enfoque del compartimento medial conserva todos los vecinos y el miembro contralateral oculta parte del objetivo desde esta vista. Esta toma contextual no permite separar bien aductor largo y grácil; se añade una toma aislada complementaria."
+    },
+    {
+      "file": "08-muslo-posterior.png",
+      "sha256": "abd3b955699c80ab6f8d410008bbdd33bfe46aed069500f1961fb5d127f2ac1d",
+      "inspected": true,
+      "observation": "Vista posterior de ambos muslos con continuidad hacia la rodilla y pantorrilla. Los glúteos cubren los extremos proximales y los vientres profundos se superponen; la captura aislada posterior permite distinguir el grupo."
+    },
+    {
+      "file": "09-pierna-anterior.png",
+      "sha256": "3513690ff4a22b62749cbde1fa08d221b87afba047c8effe8a840ae1b7711293",
+      "inspected": true,
+      "observation": "Tibias, músculos anteriores y sus trayectos distales se distinguen bilateralmente. El encuadre enfatiza pierna y tobillo; parte de los dedos queda en el borde inferior, sin cortar el vientre muscular estudiado."
+    },
+    {
+      "file": "10-pierna-lateral.png",
+      "sha256": "80e6f23959841df15bfbd85b68a2f282e1dd5dd750b211101e4f4b1d70243a31",
+      "inspected": true,
+      "observation": "Perfil de pierna y tobillo con trayectos musculares laterales conservados junto al esqueleto. Los pies y miembros se superponen en profundidad; no se aprecia flotación ni un cambio de escala local."
+    },
+    {
+      "file": "11-pantorrilla-posterior.png",
+      "sha256": "1e1942f01b5e86e0a606b83a9965e31344f7a04da7d76bed09f549aa31caa8e9",
+      "inspected": true,
+      "observation": "Las pantorrillas se ven bilateralmente con dos vientres superiores por gastrocnemio y continuidad distal hacia el talón. Sóleo y planos profundos se superponen de forma contextual; no se aprecia cambio de escala entre lados."
+    },
+    {
+      "file": "12-cuadriceps-seleccionado.png",
+      "sha256": "9f00938d47a4b4d45d36b3a4c4c2cdfa66a8a21e7f357ec4b4cbb9d4a5312700",
+      "inspected": true,
+      "observation": "El cuádriceps derecho aparece cian en el lado anatómico correcto. La búsqueda distingue el grupo de sus cuatro músculos; el sartorio vecino permanece con tono normal y el intermedio está cubierto."
+    },
+    {
+      "file": "13-cuadriceps-aislado.png",
+      "sha256": "36f4c36d08d241ffed3946ec6fead589b4ca896761917fdb9d0bda527e2b50e8",
+      "inspected": true,
+      "observation": "Se ocultan huesos y vecinos, quedando el conjunto cuadricipital cian completo dentro del visor. Las cuatro mallas conservan superposición y límites de la fuente; el grupo no se representa como un quinto músculo."
+    },
+    {
+      "file": "14-muslo-posterior-aislado.png",
+      "sha256": "f95ea78b4ac1906facf183ea760717b624b74200baa018eb069097181e099626",
+      "inspected": true,
+      "observation": "El grupo posterior derecho queda aislado en cian, con varios vientres y trayectos distales diferenciados. El objetivo está completo en pantalla; la cabeza corta del bíceps permanece dentro del grupo, sin presentarla como isquiotibial que cruza la cadera."
+    },
+    {
+      "file": "15-gastrocnemio.png",
+      "sha256": "a252e281c6eeff0136e39abbedf4905c529e7c8ce5a50598a0e61d0177e3a6f1",
+      "inspected": true,
+      "observation": "El gastrocnemio derecho aparece cian con sus dos cabezas distinguibles en la vista posterior. La búsqueda muestra un músculo y dos componentes; el lado opuesto y el sóleo vecino conservan su tono normal."
+    },
+    {
+      "file": "16-soleo-contextual.png",
+      "sha256": "5088745ea34c135097f998ea09e5f9d5d8af7274dd6686790305f0ef9498b5ab",
+      "inspected": true,
+      "observation": "El sóleo derecho seleccionado sólo asoma distalmente en cian bajo el gastrocnemio, que mantiene su tono normal. La oclusión se conserva y la interfaz explica el uso de Aislar; la toma 16b muestra el músculo completo."
+    },
+    {
+      "file": "16b-soleo-aislado.png",
+      "sha256": "7444376eb70042624ccea961b4b0e748cc79d09fbe3a70200eda18d35c2a40af",
+      "inspected": true,
+      "observation": "El sóleo aislado se muestra completo, con contorno aplanado y faceteado de la malla original. No aparecen huesos ni gastrocnemio; selección cian y controles permanecen legibles."
+    },
+    {
+      "file": "17-antebrazo-anterior.png",
+      "sha256": "6ea2f5f2bd6ea81af99955dd6004a8d1ea83efeab29e061762262c7ff95722ca",
+      "inspected": true,
+      "observation": "El antebrazo anterior derecho muestra el trayecto oblicuo proximal y el flexor largo hacia la muñeca junto a radio/cúbito. La cobertura es parcial, con hueso expuesto; mano y torso vecinos quedan parcialmente fuera del encuadre regional."
+    },
+    {
+      "file": "18-antebrazo-posterior.png",
+      "sha256": "e13c768e20a6e42948632645f5470a8b92106497d0c7cfa5acfd3cd76afb9228",
+      "inspected": true,
+      "observation": "Vista posterior del antebrazo derecho con músculo extensor lateral y abundante hueso visible por cobertura acotada. Codo y muñeca permanecen alineados; los músculos profundos no se revelan automáticamente."
+    },
+    {
+      "file": "19-tibial-posterior-aislado.png",
+      "sha256": "0ad07388eff6059aa4e79dd2bf0d5a5e87de63d2d0e5709f29689c7d10bc4203",
+      "inspected": true,
+      "observation": "El tibial posterior derecho aparece completo en cian, con vientre proximal estrecho y prolongación distal curvada. El aislamiento elimina la oclusión de la pantorrilla; los detalles tendinosos conservan el aspecto de la fuente."
+    },
+    {
+      "file": "20-supinador-aislado.png",
+      "sha256": "eed535e8cca402c9370c6641bb0bcda750e5b0e9191721f3ef51e0d6d2ad0c8d",
+      "inspected": true,
+      "observation": "El supinador derecho queda completo y aislado en cian. Su lámina curvada y borde facetado son visibles; no se corrigen mediante deformación. El resultado y el panel identifican músculo, lado y antebrazo."
+    },
+    {
+      "file": "21-muscular-50-oseo-100.png",
+      "sha256": "d1433b6596e3a0b0f0ef745df04fe808aaeb8d2eb6697837a1431a364872f1f7",
+      "inspected": true,
+      "observation": "Con muscular al 50 %, el esqueleto se distingue a través del torso y parcialmente de los miembros. Hay acumulación donde coinciden capas; la silueta corporal permanece legible y los huesos mantienen opacidad propia."
+    },
+    {
+      "file": "22-solo-muscular.png",
+      "sha256": "17a32c4ff743d011f37873e10335a4ba78abba3eb0c223ff3dcbdb03db75b3da",
+      "inspected": true,
+      "observation": "Al desactivar óseo quedan 90 estructuras musculares disponibles, sin cráneo, manos ni esqueleto residual. Los vacíos de cobertura se hacen evidentes y no se rellenan con geometría inventada."
+    },
+    {
+      "file": "23-solo-oseo.png",
+      "sha256": "d4611a26c19f8daf75fa9aac58fa68e1fde6014f6ef9d73019b6ea2eed6bacde",
+      "inspected": true,
+      "observation": "Con muscular desactivado se ve únicamente el esqueleto, con 203 estructuras indicadas y sin restos musculares. Cráneo, manos y pies quedan dentro del encuadre; los controles conservan la distinción entre sistemas."
+    },
+    {
+      "file": "24-exploded-sistemas.png",
+      "sha256": "f0f8fe2a5f0a4716decae5b51fc8f306c86ea1cdb6074cbb75b67aa81f168996",
+      "inspected": true,
+      "observation": "Óseo y muscular se desplazan como dos conjuntos reconocibles al 100 %, sin fragmentar los músculos dentro de cada sistema. Ambos cuerpos caben en el visor; permanecen algunas proximidades entre brazos por el desplazamiento acotado."
+    },
+    {
+      "file": "25-exploded-regiones.png",
+      "sha256": "504ecc72a1d35fa0df2b8b98d84d69431247f39ef826629507af3467503276e4",
+      "inspected": true,
+      "observation": "El despiece regional separa torso y extremidades. Cada miembro inferior conserva continuidad interna de cadera, muslo, rodilla y pierna; la separación respecto al tronco es el efecto didáctico solicitado."
+    },
+    {
+      "file": "26-exploded-estructuras.png",
+      "sha256": "ad841e8bbb297612c520edea094af530f59ac21a7387c19c86c7c1fbbf2eeb3d",
+      "inspected": true,
+      "observation": "Las estructuras del muslo derecho se distinguen en cian alrededor del fémur desplazado. El despiece conserva solapamientos y no busca una separación total; huesos vecinos también se desplazan por el modo global."
+    },
+    {
+      "file": "27-contexto-recto-femoral.png",
+      "sha256": "5c51fa04d884150b613b803e0e1bd1ca8eb0dd71cfa7b5b15142877c64616351",
+      "inspected": true,
+      "observation": "El recto femoral cian aparece con coxal, patela y tibia derechos, que el panel enumera. La ausencia del fémur es deliberada en este contexto de fijaciones del recto femoral; no hay zonas de inserción pintadas."
+    },
+    {
+      "file": "27b-contexto-gastrocnemio.png",
+      "sha256": "40113edd661753808127656c412da39b645ea1d6cf09f93eee4ad163a5b2f3a9",
+      "inspected": true,
+      "observation": "Las dos cabezas cian aparecen con fémur y calcáneo derechos. Se observa un hueco distal entre las cabezas modeladas y el calcáneo: esta geometría no muestra una continuidad tendinosa completa. El contexto indica relaciones educativas, no landmarks o unión geométrica validados."
+    },
+    {
+      "file": "27c-contexto-tibial-anterior.png",
+      "sha256": "70b53b31a701ce82bb8f580d4aa9dd2ea28e32ac02c3c36360ee06d3a974d631",
+      "inspected": true,
+      "observation": "El tibial anterior cian se ve junto a la tibia derecha y las piezas distales explícitas indicadas en el panel. Los demás huesos del pie están ocultos deliberadamente; no se interpreta esa selección parcial como un pie completo."
+    },
+    {
+      "file": "27d-contexto-cuadriceps.png",
+      "sha256": "18b38b684b5ce5cb0a05639cf881856a62657963418769ed51f9fafc3407f97b",
+      "inspected": true,
+      "observation": "Cuádriceps derecho en cian con coxal, fémur, patela y tibia del mismo lado. El fémur queda en gran parte cubierto por los músculos, mientras el panel identifica el conjunto óseo; no hay resaltado de superficies de fijación."
+    },
+    {
+      "file": "28-laptop-1366.png",
+      "sha256": "f0d47e438a04603aae5d8fd4cb971e7f428a36205748079c183dcdc23c8b7bfd",
+      "inspected": true,
+      "observation": "A 1366 × 768 se mantienen los tres paneles, los controles y el cuerpo completo. El modelo se reduce para caber en altura; los paneles largos requieren scroll, sin solapamiento horizontal apreciable."
+    },
+    {
+      "file": "28b-laptop-1050.png",
+      "sha256": "8080913d4b4f392fedf4c4d3bc4395f635d3c97582f93120103205790bfbdd79",
+      "inspected": true,
+      "observation": "A 1050 × 844 se conserva el panel de estructuras y la inspección pasa a botón. El cuerpo completo, la perspectiva y el control de despiece caben sin invadir la columna lateral."
+    },
+    {
+      "file": "29-tablet-900.png",
+      "sha256": "321ff9de2ff888b5a3ac6685bf1db816f8b78972ab87f9d58994a31b16b501dd",
+      "inspected": true,
+      "observation": "A 900 × 1000 el visor mantiene cuerpo completo y controles laterales; capas ósea y muscular son legibles en el panel desplazable. Inspección queda accesible como panel emergente."
+    },
+    {
+      "file": "30-movil-390.png",
+      "sha256": "73e8e0d8a9296b650462af3fabea36c754134e442cb0ae30e97b4916a27b475e",
+      "inspected": true,
+      "observation": "A 390 × 844 el cuerpo completo cabe en el viewport, con botones Estructuras/Inspección, perspectiva, zoom y despiece accesibles. No se ve recorte horizontal; la navegación principal se compacta."
+    },
+    {
+      "file": "30b-movil-capas-inferiores.png",
+      "sha256": "eb7057417415e0cfc8c0fe1e711a2037697ccaa5202de6e60d81deb1d4695189",
+      "inspected": true,
+      "observation": "El panel móvil muestra controles separados para glúteos, muslos, piernas y antebrazos bilaterales. Las etiquetas y casillas caben; el botón de cierre permanece visible y el panel cubre deliberadamente el visor."
+    },
+    {
+      "file": "30c-movil-capas-antebrazo.png",
+      "sha256": "55c2e37652fe4edd011baab130750a1ea9b5c3fe06cb77508997becb17bdbd90",
+      "inspected": true,
+      "observation": "Tras desplazar el panel móvil quedan accesibles ambos módulos de antebrazo al final de la lista. El borde superior recorta filas anteriores por el scroll normal, mientras búsqueda, pestañas y cierre permanecen fijos."
+    },
+    {
+      "file": "30d-movil-arbol.png",
+      "sha256": "32531c43cc8321f41ba54f8c4ddbfcb5ab67282eb8e97393337536fab5cce30a",
+      "inspected": true,
+      "observation": "El árbol móvil mantiene el bíceps femoral derecho seleccionado y visible, con sus dos cabezas expandidas y grupos vecinos. Los nombres largos de cabezas usan elipsis; la jerarquía y las acciones de visibilidad permanecen accesibles."
+    },
+    {
+      "file": "30e-movil-ficha.png",
+      "sha256": "0b68efb6c25625110be2e5c2ff0d24a4243ef25c55a5da9cdf86b08e9d9ed82f",
+      "inspected": true,
+      "observation": "La ficha móvil muestra nombre, latín, ruta anatómica y acciones en dos columnas sin desbordarse. El aviso de oclusión y Mostrar contexto son legibles; el contenido inferior se consulta con scroll."
+    },
+    {
+      "file": "30f-movil-inervacion.png",
+      "sha256": "27713700aa6fc4c12eb64d0ee4edff19c2696739e8818d967055a89927cfbb2e",
+      "inspected": true,
+      "observation": "Al desplazar la ficha se leen inserción e inervación diferenciadas para cabeza larga y corta. El texto señala que la cabeza corta no cruza la cadera; los párrafos se ajustan al ancho y el cierre sigue accesible."
+    },
+    {
+      "file": "opacity-thigh-100.png",
+      "sha256": "86d7d83ec94173c3f23d051ddfff66912741c50ddf81a7b20a9d4e7a1b1ff33c",
+      "inspected": true,
+      "observation": "Muslo al 100 %: los vientres y el sartorio se leen con superficie opaca; el fémur queda cubierto. No se observan bandas de transparencia en este estado."
+    },
+    {
+      "file": "opacity-thigh-075.png",
+      "sha256": "bc9429e0189b655ab60262889c1d822585e3ad86ae7c6676406f061905cb72af",
+      "inspected": true,
+      "observation": "Muslo al 75 %: comienzan a distinguirse límites y capas superpuestas, pero el fémur sigue muy oculto por acumulación. La silueta permanece estable respecto al 100 %."
+    },
+    {
+      "file": "opacity-thigh-050.png",
+      "sha256": "5850e27a2fef77285a96a77001a40a3f901d9388e1b934d770f335b3d1143efb",
+      "inspected": true,
+      "observation": "Muslo al 50 %: el fémur empieza a verse a través de varias capas; aparecen bandas tonales en cruces de músculos. Sirve como contexto general, sin separar de forma inequívoca cada plano profundo."
+    },
+    {
+      "file": "opacity-thigh-025.png",
+      "sha256": "bddb667436799c7e48399b2722be2263d318329d790e785416456e4a7323f157",
+      "inspected": true,
+      "observation": "Muslo al 25 %: pelvis y fémures se leen mejor, con músculos como láminas translúcidas superpuestas. Persiste acumulación en cruces, sin desaparición o desplazamiento de piezas."
+    },
+    {
+      "file": "opacity-thigh-010.png",
+      "sha256": "c3553c4d7e1ed3947f94748a5526df986b7cf4b0d615a10e7b9024e618df9d6e",
+      "inspected": true,
+      "observation": "Muslo al 10 %: predominan los huesos opacos y quedan contornos musculares tenues con cruces tonales. La baja opacidad facilita ver el fémur, pero reduce la lectura individual de músculos."
+    },
+    {
+      "file": "opacity-leg-100.png",
+      "sha256": "386d7b010560596709d0fe30d59904ae5c0693850c89e29164ae994611726002",
+      "inspected": true,
+      "observation": "Pantorrilla al 100 %: gastrocnemios y parte distal del sóleo cubren los planos profundos; ambos talones quedan visibles. La superficie opaca conserva el faceteado original."
+    },
+    {
+      "file": "opacity-leg-075.png",
+      "sha256": "cd81938582d244fec5fae7610b43e745ef05db36ad4e60c3d9a202436774bed7",
+      "inspected": true,
+      "observation": "Pantorrilla al 75 %: se insinúan límites posteriores profundos, con marcada acumulación sobre sóleo y gastrocnemios. La silueta bilateral y el encuadre no cambian."
+    },
+    {
+      "file": "opacity-leg-050.png",
+      "sha256": "7cb3b850eb255c69785a226e98af97e93f1ca5a58a3c336658a407658e772b0e",
+      "inspected": true,
+      "observation": "Pantorrilla al 50 %: aparecen huesos alrededor de las rodillas y capas musculares translúcidas. La acumulación aún impide leer todas las estructuras profundas por separado; el aislamiento sigue siendo necesario."
+    },
+    {
+      "file": "opacity-leg-025.png",
+      "sha256": "32deb20387f7c85b42c45b43f03b3b54d11f5303b159ac8213ab8a26fabeac2b",
+      "inspected": true,
+      "observation": "Pantorrilla al 25 %: tibia y fíbula se reconocen mejor bajo los vientres posteriores. Las bandas de superposición siguen visibles, sin anular la lectura de los huesos o cambiar sus posiciones."
+    },
+    {
+      "file": "opacity-leg-010.png",
+      "sha256": "19cc7a40d2bd77f7665742773eeb3cc0268d01d64fdf274ff3dd8a39135bc1bb",
+      "inspected": true,
+      "observation": "Pantorrilla al 10 %: los huesos opacos dominan y los contornos musculares quedan suaves y tenues. Los talones permanecen nítidos; este estado favorece relación espacial sobre detalle muscular."
+    },
+    {
+      "file": "opacity-forearm-100.png",
+      "sha256": "e0622d30ed39867e5fef4e4632fe57442eba1c5151e095b3892e29e21bfcdf37",
+      "inspected": true,
+      "observation": "Antebrazo al 100 %: los músculos aprobados se ven opacos junto a radio/cúbito, con muñeca y torso vecino en contexto. No hay cobertura artificial sobre las zonas musculares todavía ausentes."
+    },
+    {
+      "file": "opacity-forearm-075.png",
+      "sha256": "52ee2e4995c352a797f5ec994a8b45c0db3b3096d981faf064f2ba375687f689",
+      "inspected": true,
+      "observation": "Antebrazo al 75 %: se insinúa hueso bajo los músculos proximales; las zonas con pocos planos siguen claras. El torso vecino acumula más opacidad y no se interpreta como una capa única."
+    },
+    {
+      "file": "opacity-forearm-050.png",
+      "sha256": "efca99d983fa2741faf53a5057e162d06fc5e58936a1036277d2f3bdc63aaa37",
+      "inspected": true,
+      "observation": "Antebrazo al 50 %: se aprecia el hueso bajo el pronador y los vientres conservan límites translúcidos. El tono se acumula en cruces; no se ve una separación falsa de las piezas respecto al esqueleto."
+    },
+    {
+      "file": "opacity-forearm-025.png",
+      "sha256": "55fde35ae9ec3e605839d482678fa3e31815f818659a74a1010d9a2c7d8100d2",
+      "inspected": true,
+      "observation": "Antebrazo al 25 %: radio, cúbito y codo ganan claridad mientras los músculos se mantienen como contornos suaves. El torso vecino muestra capas acumuladas, sin que ello impida ver el antebrazo."
+    },
+    {
+      "file": "opacity-forearm-010.png",
+      "sha256": "9b80255d497d97c96f8f5e8e7d9fb3a35f251b4aa8ac9cf86faf93f30d5a8d2b",
+      "inspected": true,
+      "observation": "Antebrazo al 10 %: predominan los huesos y se conserva una silueta muscular muy tenue. Sirve para orientación espacial, pero el contraste muscular bajo requiere seleccionar o aislar para estudio individual."
+    },
+    {
+      "file": "deep-gluteusminimus-contextual.png",
+      "sha256": "fa3b3505c455093c5e5c2d5d9a58823f4cf3f155c3c5a8bd6418e0f8fc6ffa5d",
+      "inspected": true,
+      "observation": "El glúteo menor derecho seleccionado asoma como una franja cian bajo los glúteos superficiales; huesos del antebrazo vecino cruzan el campo del acercamiento. La cámara conserva vecinos y no oculta automáticamente la oclusión."
+    },
+    {
+      "file": "deep-gluteusminimus-isolated.png",
+      "sha256": "9c6502959c985e2c50cdeaee6ba67a06d23eaec53e2a873b4724b20e8eb13619",
+      "inspected": true,
+      "observation": "Glúteo menor derecho aislado y completo, con forma laminar convergente y facetas originales visibles; el encuadre permite estudiar el músculo que quedaba parcialmente cubierto en contexto."
+    },
+    {
+      "file": "deep-vastusintermedius-contextual.png",
+      "sha256": "b65b6ddda0e53d20556581128c026c720925d4bddf960181c54c5a570aa631ef",
+      "inspected": true,
+      "observation": "Vasto intermedio seleccionado en el muslo anterior: casi toda su superficie queda cubierta por recto femoral y vecinos opacos, con una franja cian mínima; el panel explica la profundidad y ofrece Aislar."
+    },
+    {
+      "file": "deep-vastusintermedius-isolated.png",
+      "sha256": "688a6182ed911397dc63dc76279f18a597816ae8de3eec993f2e938b5dfa7083",
+      "inspected": true,
+      "observation": "Vasto intermedio aislado, cian, completo y sin músculos o huesos residuales; la vista anterior muestra su silueta estrecha y extremo distal, con holgura respecto al borde del viewport."
+    },
+    {
+      "file": "exploded-leg-structures.png",
+      "sha256": "49d713f4f0ce9b8b73bd1d285da82f180334c6c506295bed417effe8c1f43355",
+      "inspected": true,
+      "observation": "Despiece por estructuras al 100 %: las dos cabezas del gastrocnemio se separan junto al sóleo y músculos largos, con desplazamientos acotados alrededor de las piernas; persisten solapes parciales y el cian identifica el lado derecho."
+    },
+    {
+      "file": "exploded-forearm-structures.png",
+      "sha256": "51b4c633337c9e8844f1096b6e492080d8770e4e9c69c5a4429e9a902ad71605",
+      "inspected": true,
+      "observation": "Despiece de antebrazo al 100 %: músculos seleccionados en cian desplazados alrededor de radio y cúbito, con solapes parciales y tendones completos; la mano vecina queda parcialmente recortada por el encuadre regional."
+    },
+    {
+      "file": "regression-tree-expand-all.png",
+      "sha256": "0630af0bea93f756fdcc41be5c5afc1564329a819120acbbfe509c857a97487d",
+      "inspected": true,
+      "observation": "Regresión del árbol del piloto: hombro derecho seleccionado, ancestros expandidos y porciones del deltoides visibles en la lista con scroll; la selección cian concuerda con el hombro y el texto largo usa elipsis."
+    },
+    {
+      "file": "07b-muslo-medial-aislado.png",
+      "sha256": "1376a42d3d6a2aa77215468ccc5424725d6d9cae2d97e61f57e3edebca7a37ec",
+      "inspected": true,
+      "observation": "Compartimento medial derecho aislado con aductor largo y grácil confirmados por el reporte: siluetas cian superpuestas en esta perspectiva estrecha, sin oclusión de la extremidad contralateral; no se afirma separación completa entre ambos."
+    }
+  ]
+}

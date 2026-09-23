@@ -1,0 +1,13 @@
+
+> med3d@1.0.0 verify:anatomy
+> node scripts/test-atlas-catalog.mjs && node scripts/test-atlas-renderer.mjs && node scripts/test-atlas-multisystem.mjs && node scripts/test-atlas-torso.mjs && node scripts/test-atlas-limbs.mjs
+
+{"realNodes":249,"meshes":205,"boneCards":20,"detailedStructures":33,"syntheticMetadataNodes":10000,"indexMs":20,"searchMs":10,"flattenMs":3}
+Atlas catalog: source identities, hierarchy, multilingual search, reveal, ownership, individual bone cards and scale passed.
+Atlas camera: six anatomical views, oblique/aspect-aware framing, tiny-bone focus, near clipping and stable view transitions passed.
+Atlas renderer: bounded concurrency, cancellation, retained ownership, retry, memory accounting and hierarchical explosion passed.
+Real GLB renderer parsing: {"meshes":205,"triangles":512450,"geometryBytes":7609772,"localTransportAndDecodeMs":101}
+Multisystem source catalogs, neutral body, hierarchy, frame rejection, owner rejection, shared regional and deterministic system explosion passed.
+Nine actual GLBs, unilateral/bilateral loading, partial failure/retry, retained other system, regional reload and rapid switching passed: {"meshes":231,"triangles":552054,"geometryBytes":8542536}
+Torso audit/bindings, pilot binaries, preserved frame, 26 sourced cards, scoped context, exact restoration, all 12 real GLBs and every regional failure/reload/cancellation passed: {"meshes":265,"triangles":1075930,"geometryBytes":18359392}
+Limbs audit/bindings, pilot binaries, preserved frame, 48 sourced cards, scoped context, exact restoration, all 20 real GLBs and every regional failure/reload/cancellation passed: {"meshes":319,"triangles":1255886,"geometryBytes":21910788}

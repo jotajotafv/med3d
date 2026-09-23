@@ -1,0 +1,2317 @@
+{
+  "baseline": "1d58140bec7cdf946f3400d461a218756799bbc5",
+  "codeCommit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126",
+  "checkedFiles": 321,
+  "checks": [
+    {
+      "file": ".github/workflows/anatomy-visual-validation.yml",
+      "baseGitBlob": "3830528524b22b8d1da6cba518881fea808c480d",
+      "sha256": "a6a54eb100e6757e656b53fa7376c0e24ada158edda81957f86fde8c80779dfd",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": ".github/workflows/deploy-pages.yml",
+      "baseGitBlob": "daebaf24cc2408b3f360a3fddaff9cdcfde08d4b",
+      "sha256": "7d240c04ab64149410a2cdc2a219273c7348787c3ea070c1b7e6715060d8e917",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": ".gitignore",
+      "baseGitBlob": "6a2aa2829f1c1323c5b8c4a9900dfbde6ab8adff",
+      "sha256": "7899729655803a2ae23795bf2e9e661ed1d3e783ee226057e28c36101371a274",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "README.md",
+      "baseGitBlob": "021162991299fe5defe15f8be0a512a4ca2c1787",
+      "sha256": "89b4e7b4bf26ab55df7e6564cb872ca0ca64799a7d6bb9110bad34e5b8341178",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "design-brief.md",
+      "baseGitBlob": "b1103b1b130a957c9c65d5c260b8fa45463a93e5",
+      "sha256": "daec260c5d2d6140f382d10f64f0d20cefa28073823d5f66fb8ecfc40649328a",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/architecture.md",
+      "baseGitBlob": "2461aea342cd729b9171cf5dc972b289837bfbae",
+      "sha256": "58e389e5fe0025aaf1f05d7fdccb92091563e0bd250188b9dc36cc1f1bf7f5fc",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/model-licenses.md",
+      "baseGitBlob": "8a27415a3405ff68870321d0052f24515c16e1ed",
+      "sha256": "97df9376dccb08ff2b19ebc47e99fabedb68853a2a341c9fa44feb8ee8ff50b8",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2-architecture.md",
+      "baseGitBlob": "5a0717aa27e4b9b5bbbfeda31d040b5296a3a203",
+      "sha256": "b3a3916273a750d6f18a6ec45ea5115ff9debe1a4b458eb807d1405a3deca3cc",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2-audit.md",
+      "baseGitBlob": "a1b89f29d5e1e78e4af1f519028ddf034e7305bc",
+      "sha256": "27fb73a0a97e7cda2c0636598696c1758321404e4be646a6bc30cada8fbdad75",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2-bone-information.md",
+      "baseGitBlob": "d9f397d33255719819a9806aa35035d07f3f33e8",
+      "sha256": "a624b4adb91d9650ca2385d4a62e001eb041f625a6389152b186a3e02e138f7f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2-glb-metadata-audit.json",
+      "baseGitBlob": "82bb6fedfe881eef22b9f48a01fac99d9ba835e7",
+      "sha256": "49359552a7b46dd45a2db5d1eb4c1489ea8b5fd62784c4339280708aab4d629f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2-higgsfield.md",
+      "baseGitBlob": "8b9bacb0bb9fe24a5f1384179d9ff90c2382ca45",
+      "sha256": "6c97fd7e563d75318a28914bcf7609111e845515c48493a24448753a2c234e85",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2-missing-bones.md",
+      "baseGitBlob": "8aa3fa3ab5238645c353da0445c8bae0028e2ba0",
+      "sha256": "e0fea860239cdf2ba8f11f9cc8b5800559eaba70786319bdcedc21423edc5bb7",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2-sources.md",
+      "baseGitBlob": "aaade33e8091249841a6dac80295fc6ca660ab2e",
+      "sha256": "50b54f116dbf3b2bb11c2c4b8a344197f4c8d4c15dd3f1994d35aea56f852a98",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2-validation.md",
+      "baseGitBlob": "a4ac7fae2d04d87fe6eee9d10e97c42f0eab0eb4",
+      "sha256": "e941edf8dd3cc103815127c38316c9bc8ec9f9ad74fcc4167dffd75ee7432d38",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1-browser-setup.md",
+      "baseGitBlob": "49ca6f47276930b0652aa7eef839502cab0ddee6",
+      "sha256": "438c05cf22793b6e510f3a512466804bdf6f40597b98f32fdd74642ac107ee98",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1-education.md",
+      "baseGitBlob": "38e95da3032fcd7679e46c35db21001c65a004d1",
+      "sha256": "dd96fa12f42a35c0ec5a7e184c32616ec3be22183e702b5933b37d7bfdd1c07e",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1-performance.md",
+      "baseGitBlob": "cce66aad58d387a41452484c39f8596eed284423",
+      "sha256": "965a2911a314611326b25ade6be92eba6babd831433738b12d17dcddf695cbd4",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1-registration.md",
+      "baseGitBlob": "2fd41b6f68897ae8ba78a18f4b8cf991ae86fb1d",
+      "sha256": "f2c89b0cb6c2adea71d77e2306223ae25e03993c3b437d3325fd1ff5be44b758",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1-validation.md",
+      "baseGitBlob": "081f08d643f4045ff3684439c1c7c35281588375",
+      "sha256": "0e38c0d4b3a13ba5f6c53fffc9d4c13a36cfb8b01fc55b5d0d2d2335b479d9dc",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/01-esqueleto-frontal.png",
+      "baseGitBlob": "a3a1fe51116cce2ebd114e0bfc53eb616f6d34fe",
+      "sha256": "34ad9d74103d606326503273a26e878b2453dc61f5ed1b7fed4192185f92704e",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/02-esqueleto-posterior.png",
+      "baseGitBlob": "5673956596fe9807eac4ea631ca69782e491d9b9",
+      "sha256": "c1f9dd4b08a421d68bcd5be057909885c51d3361fb5a7bf91dc929a5b8d5f5fe",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/03-lateral-izquierda.png",
+      "baseGitBlob": "eae7b3317689c6334ca0c061faa1970f67c3dd64",
+      "sha256": "cdbbf409e95368af295b27e1c1828bdf84c32a56340acaae1d8d25e1d8ab4b7f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/04-lateral-derecha.png",
+      "baseGitBlob": "14efc3ababdc932b081561d213a6d17616310dd2",
+      "sha256": "edadfc8567f8b048c47e8f71b52ff8acde4cd329677c458ad8e4a37e37e155c5",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/05-craneo-superior.png",
+      "baseGitBlob": "a7c174b2cbfa6ba50786a794baecadb3485fd5fe",
+      "sha256": "ecfd2fea1b4cc12c075a32dcc1aeec79366d0ae211e54a4b7105960ea84f043b",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/06-craneo-inferior.png",
+      "baseGitBlob": "63f68162d40b064ad8b583dd344211c18b9c6642",
+      "sha256": "e73dc846ccb431233fb4a7cea4b166a2a63e1533cd6799cd5d6d908892733b3b",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/07-craneo-frontal.png",
+      "baseGitBlob": "1ac9b13fbcd13edddf6d5468daff55f9fe8a0e6e",
+      "sha256": "a0c7e248ace09feba33b252dd4d63ea919bf8dddfb67815753cba248e0538b16",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/08-columna.png",
+      "baseGitBlob": "2567478bb29c104d0f34130540c271fa25fa0473",
+      "sha256": "841cf107002f38c0a3016eea60df4000707f500ad2c11f1b9fa7b8e54e12fde3",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/09-caja-toracica.png",
+      "baseGitBlob": "679f69d0e9332a3672b4870aceebaaa1c0d20739",
+      "sha256": "478c5aa174a24986736b71587e4d5f476ac26a6d99bee52f58c3429a7fdc3288",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/10-pelvis.png",
+      "baseGitBlob": "3e45a7bda0a28b56246983a331e1fec7beef52a2",
+      "sha256": "3c411b6e32d47c43254dfc7124812adc4a95df2de660d1ff3c9c4d3395db2aee",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/11-mano.png",
+      "baseGitBlob": "c33338508a0157d33b16301deeda74bd1b8e2576",
+      "sha256": "8070ed615a94076dc93fe16149844a1ac8f9b53ea5d37587a1ea0c91435c048e",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/12-pie.png",
+      "baseGitBlob": "1f8a2387eef85d71a7e987a41a4878da441e91ce",
+      "sha256": "64c800c5d48da9b08283526a0f3b83c3befc322211437e93588e9df455d8eb76",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/13-femur-seleccionado.png",
+      "baseGitBlob": "2741922e7bf5e01a8c604264fc337abf014bfce5",
+      "sha256": "e0bb4772e5e4c80064b6a43d7a2585ffea3622206b848f0a5fca3fb58558b89b",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/14-femur-aislado.png",
+      "baseGitBlob": "f9696713cf90e5c998f872637496b68b5070acd0",
+      "sha256": "151cd9f0204e2bb3037d98ace2bfc7b079f5b5cb1ad068f762a8f7ad7b8d899d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/15-exploded-regiones.png",
+      "baseGitBlob": "ac7035c5a735207e6cf97014a52dd667f59829ae",
+      "sha256": "2526c1d0e0727bc8f741ddad7d5addcad254ee1996a473c2e5f0bb05953d3f1e",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/16-exploded-estructuras.png",
+      "baseGitBlob": "93a3b85cd5d338868b6b460caa3cff444ad90f48",
+      "sha256": "52a9ab3d67169051f01083776ac7df054d6d1d34ccb6181266a9689f4f627aea",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/17-craneo-exploded.png",
+      "baseGitBlob": "25e5fb8e79dd693f2da76933481e9ef6651a7a2a",
+      "sha256": "00ad6a25944a81adda9966add2067fd4c986252e4162e2f77cb7de44ba8348cd",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/18-columna-exploded.png",
+      "baseGitBlob": "06cdb6a1419007422d956c6ed22d6c057f2ff68f",
+      "sha256": "1e8cc4f7d2e478ed7c2c4c25183d0a7811bedf1315383828924817a30df9f5e7",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/19-torax-exploded.png",
+      "baseGitBlob": "80cc5b6828a3e03e9f5c3238aa49125ea7ff1402",
+      "sha256": "ede46e6d3c926365bb9f40da6a71dbc3efe293c202972a170ae65330c94d21a6",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/20-mano-exploded.png",
+      "baseGitBlob": "220273498a44a5d81ec0f10e671dea6e457f5f63",
+      "sha256": "b08ba4633213ed9a52a79498b9b66ab638cc38d630b2d5384cc8fc1d27d299c4",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/21-pie-exploded.png",
+      "baseGitBlob": "a2ff98ed1d056989e4b954d4ac32f3a90b6e6887",
+      "sha256": "11a5ef5953f60a16b4c97821e9fefc60f412a1c9f2971a0fd42a1719facb9fc3",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/22-carpo-seleccionado.png",
+      "baseGitBlob": "10b65eb51d77fb9fce2fdcd560902cfa3ef196f5",
+      "sha256": "1838764750ed2af21e9a353aced1e3371bbd463d53814d8e66e6f51a5a304a74",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/23-carpo-transparente.png",
+      "baseGitBlob": "bc52fa0e5fa43f3af3e587be3c1cdb72a0f1152b",
+      "sha256": "ec0c1fe0122aa3567935d93ece0ed9f29606cf9cf1ab5e73ac4052806d225903",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/24-carpo-oculto.png",
+      "baseGitBlob": "725354a31357df9b6151414cbcfa67e836e74159",
+      "sha256": "f0e0b6d726cb1dd66e2101acf8524ceb5b3f25f65945003bf95afda50dc3dfc6",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/25-hover.png",
+      "baseGitBlob": "6fcec80bd2f3bd345724b1431fd02f9882924834",
+      "sha256": "f9029100c6aa7ab9f7001f1e5fa735b13313c8bcce80c1ee8531cebbf1788956",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/26-laptop-1366.png",
+      "baseGitBlob": "53d9a0148872924909922993dda639a7d853bb53",
+      "sha256": "ffe4597cba1d4b37b40519e854936166638360f69cd9657ef6c0778ed879adca",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/27-laptop-1050.png",
+      "baseGitBlob": "374805f1bca7d7d3ad0de5d34a8da306bc3bb173",
+      "sha256": "a01c54d4285f368eb0d8a1f915f3a53ae5297da9f44b6d7088b00a99c9084ebe",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/28-tablet-900.png",
+      "baseGitBlob": "3e21188023ab275956b62185afe6c38c5e6440bf",
+      "sha256": "b54604d97354b386eafb2b184fb933440031ce516c50d58f5af41e42a8d0701b",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/29-mobile.png",
+      "baseGitBlob": "18150bf2461eef9d5df8d255a3e5b580e8981ab1",
+      "sha256": "52643ab722977c4894ed87d69989ef2a79ca462ce0ee5bbb794a22ff1b0ab886",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/30-mobile-ficha.png",
+      "baseGitBlob": "dc96f3c988db498acbb450358a447d8561e2d9d0",
+      "sha256": "3439a8946e61764ba80cb46eabc0650f1151cdc8c6fad478a7c462da0618caf0",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/31-tarso-superior-aislado.png",
+      "baseGitBlob": "6f648ab77829aba205bd0ba25a0546cb85ce8834",
+      "sha256": "915cf11954d1f5c1f8e1a87f1aa7c34817d75c6143dfc4b73dc2082c96a99640",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/32-neurocraneo-inferior-aislado.png",
+      "baseGitBlob": "97516d2d438071eb8682e35a32fa75f49d83087c",
+      "sha256": "81eda2f010e4ffe78eef07c5cca89ca65e2558c94dd40d66177e89899860a158",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/captures/capture-manifest.json",
+      "baseGitBlob": "040887726fa7330cbb26fcb536ade5d05d68eca2",
+      "sha256": "f33cde148d2ab1aeb6c4fa9b9b77d90abd2814dc2b54cf58f4c885e49f673cc6",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/results/browser-qa.json",
+      "baseGitBlob": "e07da6ccf624be5ef14be53c6d971fa62d245bd1",
+      "sha256": "72f2821097eda3199013b752925f6e2d3d672cafbe25c99b66a45899ac2d28b9",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/results/build.json",
+      "baseGitBlob": "bc250acae05424733098482bced9667c7c7c13c1",
+      "sha256": "b1750dfaed9ea39c5e5b808b9fe65b16f91f9ea206d1b30018cf67389c428637",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/results/capture-hashes.json",
+      "baseGitBlob": "d4f549ebe0b11c852b1ec387f170380fa5769045",
+      "sha256": "b0373659f89f4c2f9357bd981bb737d6efeba9045b66bf99e8e6aff81c9f3d44",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/results/deployment.json",
+      "baseGitBlob": "6062d8e7b2c74bdcdebf40e09f17a196289b2412",
+      "sha256": "2975a54ff89b5d63f2af3c95270af451f188db607aab14aa6bafb20e9d26e54f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase2.1/results/performance-qa.json",
+      "baseGitBlob": "a1c93ca6c2350f4656b0d976ae3d4ae15f545551",
+      "sha256": "87f4197f176cf16164145fa5f62672c4bf7bf9fc573d154687ce767de807c892",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3-audit.md",
+      "baseGitBlob": "7c8ce5fc51254862496ae682c1395da47de911b8",
+      "sha256": "9851d46290571f94b1a906e5eb48e01d7f33e7f6ff8dfa8433d3a8c570ab23c4",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3-delivery.md",
+      "baseGitBlob": "83a67ec3f40402f29ecb8007bd1862c3994fedbb",
+      "sha256": "ba5de9f6fbb5f3a98b3357348cb6adda7f39b92942e5c6d947a198e59578a4d5",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3-model-sources.md",
+      "baseGitBlob": "d84e4b34719ced128168d6371e33302f79d8a083",
+      "sha256": "16160aa00b9294da4df6f30e6dd52eaf15fc97b6764528ecb8229794efc824b6",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3-performance.md",
+      "baseGitBlob": "7b00da82cf67470993b4281c9b0df82ec6b1fbd4",
+      "sha256": "8140b00ff50d906c348913916c937218b8c018602c6162037aec69e8f115446b",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3-registration.md",
+      "baseGitBlob": "56e0315154bea53f83cdf1bb248b8c514e1cdd1c",
+      "sha256": "eed266c80ea1c1d1c0f5e73cd24ac42d0f8b2637650ee0c3084f73b3fe0b9bd7",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3-validation.md",
+      "baseGitBlob": "99205dc0ce0734d56769e32cb4f69e5542ce0f3a",
+      "sha256": "7246b3c76e8a507fcc97131ad86d8d2a338d55d9758b28b72ef95ce3d99d0b7f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/01-anterior-oseo-muscular.png",
+      "baseGitBlob": "97d00e2d31186a0e7dddc1a554e6cc33d459c2aa",
+      "sha256": "32a0d3ffbc1319d0ec46ff2fea8708d5ded42f11650af4c43fae28868295fd84",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/02-posterior-oseo-muscular.png",
+      "baseGitBlob": "a8067bd6d9a20a81ecd080e09b6591ee9f35acc8",
+      "sha256": "56bc1ab7adf8830df4714dbb26d115da538629b8729439b220ba0c70a9927b3e",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/03-lateral-derecho.png",
+      "baseGitBlob": "4463f4d330fdae31b8a1d034305be34df2979236",
+      "sha256": "353b79ddbb68923355b401e0b6a3475877bd6a8a8ac3e1a78c1bec29038dfac3",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/04-lateral-izquierdo.png",
+      "baseGitBlob": "8c68416a2affe84099fd6292521d129f25761101",
+      "sha256": "75c002cde3138d56be8316b3c2b2a27893eac570315ff0de0d963ec71a7a1a68",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/05-hombro-derecho.png",
+      "baseGitBlob": "3488ec4d743d090fad09e18d799548915997f5ed",
+      "sha256": "3b571bd5de4bbea9cc4d5c9e82a5bf1ced3e3be05f0330585c9a25f08676636a",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/06-hombro-izquierdo.png",
+      "baseGitBlob": "2b90367c931f3d0637df9cf254ce65add9cfe9c4",
+      "sha256": "74f3c48d47db047a4b8dc60e4507542c9d8edf0134d2f5363601dee1795bd4d1",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/07-brazo-derecho.png",
+      "baseGitBlob": "b9af51ad1cc3570be97e52ce5fe5910f1038c567",
+      "sha256": "786128463c22d3be4cb11b6928a7a970a7c9703e7106027903867103d6f2ffad",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/08-brazo-izquierdo.png",
+      "baseGitBlob": "be6059d2cca0946316f35bda1420dcaa104c27ea",
+      "sha256": "8829274d84f99228b211474a56d310a50745b5d61a88e751710f70a9822c4e73",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/09-deltoides-seleccionado.png",
+      "baseGitBlob": "3090835548a50dbc98002f67657993cfab611a22",
+      "sha256": "396109bacc5b2ae28e380334d44bb8b1e1f1a5e2fe6ad159fbd8e66e6932f920",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/10-deltoides-aislado.png",
+      "baseGitBlob": "a18d88f45fcc7a832d9d9051ef43505ed4cabfef",
+      "sha256": "80430aa733d39679c95a912b03c28928f9248372bc2af1d1f59236c62a8eb04e",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/11-biceps-seleccionado.png",
+      "baseGitBlob": "897ca2d01ee616e92acd9638aa574be6aa73aebe",
+      "sha256": "87475a41202718f9612c8caca406cb34982fcff7e11547a0bf64fb8a83f713a8",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/12-biceps-aislado.png",
+      "baseGitBlob": "b960c6257e0b37a5cb55746fad6fcdc1af7b6f3c",
+      "sha256": "1a41ee98f4b31a2ac90abfbd878b226b3a865ccf3a3d16521d544ecbf254f486",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/13-triceps.png",
+      "baseGitBlob": "ff2edf2b7a8831cfaf6f2806c1effcea2da112b1",
+      "sha256": "1363d6b7a702672726d1b2abf23964209462256a9b5bb99caf0dc0a44b4e9e89",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/14-manguito-rotador-posterior.png",
+      "baseGitBlob": "473222315c23f909f8be9b8c86dca0e87ca6d226",
+      "sha256": "fc29ec098454bb0d3aa63ce068c258be12aab9367eb7397d805ffa2e3c44c0d0",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/14b-manguito-sin-deltoides.png",
+      "baseGitBlob": "544b073521ef8ed8f96a27d2623b29267c240f3f",
+      "sha256": "f2fcba567dd85a9e01d848b0bb27537eae4a0f98f2156c0c435484ab58958c10",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/15-subescapular.png",
+      "baseGitBlob": "f6daff484013d6e75045947e3bd70fdb89ff9d9e",
+      "sha256": "1658b2dfb74e860c1a8f36d6f1701e4d7d47fe74741ce4427cf2d66775463aba",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/15b-subescapular-aislado.png",
+      "baseGitBlob": "2528c59371ca7db4e5207e2006365a58ea50f757",
+      "sha256": "9076c8f9bdf570f4379c49a272d1778b7b2157bc57c9c85836346207dfb8c590",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/16-muscular-50-oseo-100.png",
+      "baseGitBlob": "7719662ffd584ed9bf528e9f3a5e8639d6407603",
+      "sha256": "4e16aa7854345e1bc53c328a181a97b0d643c48f3fec3cc7bdc2de4ed6801032",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/17-solo-musculos.png",
+      "baseGitBlob": "0f0aef4a0488d80c2f92757bca5e8dda68ef64fa",
+      "sha256": "55791631aa5ffb3034b67ae4016195c8250a8c05d49277ebad003d424757cd7f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/18-solo-huesos.png",
+      "baseGitBlob": "bfb9c6becb0b25178d9da3048dd316dd852abe25",
+      "sha256": "2bf6a930d0cad7ddce1d40966649a992d2e02578ccc380349e735fb91f083111",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/19-exploded-sistemas.png",
+      "baseGitBlob": "3b8a3fc39158a6adbfc987c5c164a14f923ecf48",
+      "sha256": "1efddc2cb3d04d9f2c5a7f9734a50b1a39a40cbe0903c23ccd5d0a6cc506e314",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/20-exploded-regiones.png",
+      "baseGitBlob": "59eb00ad6928f96126b5bab1b65c288efe51d92d",
+      "sha256": "92d0ce41b99ec133ae3a697853bc298534533c347e32c1254b4c9549e2e51bc5",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/21-exploded-estructuras.png",
+      "baseGitBlob": "01456dd7c471b1d2114ffeacdbb683338c4aea83",
+      "sha256": "9cf6792134fe0b50d4d469d82e4abb98c08a45f2f9b4d2d249314a68431a990b",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/21b-biceps-componentes.png",
+      "baseGitBlob": "14bbf9c873c11ed25472602bf9b3b468b3b92381",
+      "sha256": "5e96e9743ae5b2cb778c78784d18e58c9b174666585e0d573afc3610d69b5c92",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/21c-triceps-componentes.png",
+      "baseGitBlob": "f0b31443affabe28c40a7efa93227e7349dfd181",
+      "sha256": "e6b58edc33c100b72db3c587b15d79c42b6db62483ba1ab43b0ba726376dc32f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/22-laptop-1366.png",
+      "baseGitBlob": "cc21814e0ceac90710038aa756581aa2db08eba8",
+      "sha256": "4e4a3031f4172d2d82bbc12e3db48dc8a1a322ba8cca9ac3979edb310d3bb8dd",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/22b-laptop-1050.png",
+      "baseGitBlob": "a159830b632fc35aaffa28703117549173b945a5",
+      "sha256": "c1840e69c05894e0137ad455a14a46f50dd28bd6cca4085b8e8026418eff1bbf",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/23-tablet-900.png",
+      "baseGitBlob": "5b663a7b891bc7de6102087e1e50ba06e5bb0557",
+      "sha256": "1a3354cf8ae3f4de1de0b0413971d8d629505df12b56981d177f46eec01e593a",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/24-movil-390.png",
+      "baseGitBlob": "26959b00085b8fe78bfcaaca82193543a5d67f2b",
+      "sha256": "d7f8760872012a9af26f11857929b67b68b281b9ed1f31ec7f7a5a3cc57b5599",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/24b-movil-capas.png",
+      "baseGitBlob": "63c9e18a6f769c2f5a08fc08ffa08491eca1a332",
+      "sha256": "b263843ec9efb509fe24ff3521e04e797f8b188465cbace09313f80ace736874",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/24c-movil-ficha.png",
+      "baseGitBlob": "e5584e846fee741654840932cd4e92fdf79ee284",
+      "sha256": "f6364c20defe51d2cdb02a0715befb4bac7550f1a0b5a0716d89a08db93296bf",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/25-biceps-contexto.png",
+      "baseGitBlob": "b4102988e4996a14f080265d5bcaaa97808d1fb2",
+      "sha256": "860528d132b1b1f4e27820d18192970c64b7d934225884626399ef5398c73925",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/opacity-010.png",
+      "baseGitBlob": "1af9e5e0a9f9ff6cc254748bc1d1c66fb9ae1410",
+      "sha256": "7e8665b44ce7640f79fd23d4cbeb7bed404e7fa0efa48f23674b0ab7fe88f127",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/opacity-025.png",
+      "baseGitBlob": "646635fcef202004fa6e968348fc5327427d9238",
+      "sha256": "8a83a69775f5a2c53ec19a2551e218a61e08526f3ec31c67f16e13336cc27afd",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/opacity-050-selected.png",
+      "baseGitBlob": "e4bb3ebdcf8c6dc95266ef1e0b72604c0003c0d9",
+      "sha256": "0b1039a6a6da9f3a9486f9d333248d2c7570ee225fc31363204ad7d9faed6e50",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/opacity-050.png",
+      "baseGitBlob": "f9eff390687c1738aa4d30b7950493bd5d520f07",
+      "sha256": "181099fa9f9113df8c6f9f0b1be42a6875b0e853583a9d70e7f097192c3faa68",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/opacity-075.png",
+      "baseGitBlob": "8f27ec5ef3019020e506a7bba34bdcdd2e8a00ba",
+      "sha256": "166baa4a6e4f53fe86e7a08adc898c02350cd3746f7e5a3ded0dfcbaa2e68688",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/captures/opacity-100.png",
+      "baseGitBlob": "22ced49681dbfbccf9b217879753e4366e0233f1",
+      "sha256": "db994dc397273d463592c1f056386ae9b4e84c800db5f11c875ce7aef20d8482",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/research/source-audit.json",
+      "baseGitBlob": "dcb3394017d3d9183ea6dae50a1f846f9afc8ecf",
+      "sha256": "656c9d68dbe1cb00cc7cf18610ca679768c72cfd7d9e80fc4cddb8eb5b982d66",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/browser-qa.json",
+      "baseGitBlob": "9c0fb5073ab3ff920a8031d920cd68fc2d7aee6e",
+      "sha256": "08ad96f69d55676299300f735a8676aa4cb0bdd1090a6b0cd0cdf328b7941a1c",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/build.json",
+      "baseGitBlob": "bb669296bc983c3cf0fc0d41d52b30579a1d252d",
+      "sha256": "7d060aa8b754aea408990500fffa69f8f561f9f55cfa51be0875ec4822d0288f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/capture-hashes.json",
+      "baseGitBlob": "5e0624603bbc3ef409bed793015ecb66cf74c6b6",
+      "sha256": "0df000878729ade8e00a15daba436af795aa7f5f258ad8fe2479222a4f7fdaf8",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/capture-manifest.json",
+      "baseGitBlob": "eed6753866963f77a9353271abd6e9416bbb83a4",
+      "sha256": "f1746c0e1284655e29dc09f8dd84dc388510d41a13b77a7baaa875ff07373829",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/deployment.json",
+      "baseGitBlob": "839a37c4427303b68f7917b960accc18b1f5b39d",
+      "sha256": "3970509f2ea22fc7a397932e5e831b6957e3936d8a1808c2bedbebe86fb71ec7",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/gltf-validation.json",
+      "baseGitBlob": "b7b92e4afd4bb85c4a04a7f4867eae4a161e5b57",
+      "sha256": "bfb91821f80c4482dec3fcbfce4d3961ed68ee241f0af954f4a661bca23aeca6",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/initial-browser-failures.json",
+      "baseGitBlob": "e53de547f26dfa369661bb41f5a1bab9f99c3fbf",
+      "sha256": "5da20471ad1997676c3ea3931c71b5434ba92b8bd621839cc5556fe348a95fda",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/initial-tree-failure.png",
+      "baseGitBlob": "1fc4cd9864f39a04c34b44a9a58efb4931b4c885",
+      "sha256": "a0b3b6ef1a3e08b7d2d79b38e2d68b048f4465de6c47a72d169971f011408bc1",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/performance-qa.json",
+      "baseGitBlob": "55b1cd324e1c3caa3a3c6e521c5cdb1d9afaa16c",
+      "sha256": "10725c953f792c0df23ce97506be7b6ec00d5dd5808c85240846d449f87d6221",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/pilot-captures.json",
+      "baseGitBlob": "29e0d3c8a9b2e64c8e47d96d3f9f2aa79fff6dd4",
+      "sha256": "158e64e310b49d0ed4360926c280c0b44b94a85222ef7c68d4d35c744b8f1f71",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/pilot-functional.json",
+      "baseGitBlob": "c08c1cd34cc180e278ec91438c6f149ebca1d1a4",
+      "sha256": "f8b67d4c9aeac8d1fce918c94df6afd22e2820197f1e96a63029a09f84b1c6d4",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/pilot-performance.json",
+      "baseGitBlob": "bba7685cdb67ed51869c7e1d64bab53778e1897f",
+      "sha256": "ba3ae10cfb2c1d67b322cba56be4a78cba64a845c446a4e3398d6db8c7efd7ab",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/pilot-tree.json",
+      "baseGitBlob": "16ed56a2a2a34888ed881a3e7470b8b32fb45141",
+      "sha256": "f07f15b14666b0f9aa899a0cf8399588f43b9d8c0051b222f30d31e99f81990d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/tree-expansion-followup-failure.json",
+      "baseGitBlob": "222578cab0292089ff6d2faa481f4dfbbe5c0929",
+      "sha256": "9d514038f755f300ce10d822c296414f1c3d6070773d52e8c79b64c6bdf36501",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/tree-transition-diagnostic.json",
+      "baseGitBlob": "6e703d62f64dd73d2f2cc145fee86603b38f8bee",
+      "sha256": "16265df495b278ad80dde41a28cec16d4d9b63e4d42ba86a68b49f2ada2cfee9",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3/results/visual-review.md",
+      "baseGitBlob": "90edfa33375c101d5613aadba1b22db3b7dc2930",
+      "sha256": "f0473ddf1b35a617752bdb8b2bc682c9e9165c3b6efe5a9a2db6bc1e462b0624",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b-audit.md",
+      "baseGitBlob": "d408c1a011633a8dc7536de6d9adf8e552f8210c",
+      "sha256": "0c264a0327bcaf04be04708796b3981d4b38969458c8370d5c444dffd33e1033",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b-delivery.md",
+      "baseGitBlob": "21fde837f414e209fd96474ae07efda6fcea2866",
+      "sha256": "e339ca9b132c7ecbe7279a7c4813a7904e83826d78bd85f78a05e98be20452e5",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b-education.md",
+      "baseGitBlob": "b1f1c7329758eaed75e1df84896668e71fab38f8",
+      "sha256": "73329d5502f01f886032483089f48f8d0409b520580d1e8dc95ef3f65df6f9c6",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b-performance.md",
+      "baseGitBlob": "e63757603cf3647acaefc3e958ca4323629b6a09",
+      "sha256": "3f1435e0e92a5878a81cf1e43fbe2f38099a8b767e80f458184b82256a3b3c36",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b-registration.md",
+      "baseGitBlob": "e622cc499b7e17d0831aef400485190e2605d0d6",
+      "sha256": "bf69edb9a75ade785941028c5164f1d059e5e9ae635ec314155fd579f4e477dc",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b-validation.md",
+      "baseGitBlob": "08238170f95e2246527d654d3e277cbd9593bf6d",
+      "sha256": "a097f09e45650b8544f856c439c9255ccb63a0f6848a3558baee7f5cd548d550",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/01-cuerpo-anterior.png",
+      "baseGitBlob": "1e56b398bcd4ffa3b0a5538a86b9d6f2e84ad4f2",
+      "sha256": "6d0029a1c53ba4a1709f25fb528f9c7e49a1492ce488ad883c06bccdbb175c5e",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/02-cuerpo-posterior.png",
+      "baseGitBlob": "bc063a2dfa657f754d2c841d6726c5b7ae07df62",
+      "sha256": "a9836608d7a179ea4da56d0283ab30847abae1e082e966698f95fe6790a81fc6",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/03-torso-anterior.png",
+      "baseGitBlob": "d523960c0c0f0c042181ef3de6b9ce89dbaf7f1f",
+      "sha256": "681ae02f9f0f64de95d9e9506ac29a1261b6284d83b38a1acf0c40418e098f29",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/04-torso-posterior.png",
+      "baseGitBlob": "52398fbb414035d127601ad14f8bc6dbdc654724",
+      "sha256": "72071e4f34f41d1bd3588d6bcb0dae5abf73bb8802c567fcd1953abfd9727d86",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/05-lateral-derecho.png",
+      "baseGitBlob": "1f8b4665b80321a07072fb9e86b70709a930ad5c",
+      "sha256": "cfeb6f8f2d54766385ff4de578acb71300d8e25f6a4dae380855ed75a38dd9d2",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/06-lateral-izquierdo.png",
+      "baseGitBlob": "6278f9856afb2df3477e35c08218243f4860ddea",
+      "sha256": "b55ccf8341ac5a97b399fb6a01b3f525406ff9548646d7418b334789907785f5",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/07-pectoral-mayor-seleccionado.png",
+      "baseGitBlob": "fb9096c8e17e6f8ae0cd89c13c0e556b8a44a25c",
+      "sha256": "0fd7727dcee27f60702e1f857d9b9e4f94db46ce56e809241431054529b1935f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/08-pectoral-mayor-aislado.png",
+      "baseGitBlob": "05b29a1cca959a0ec98f471ad9fa9f4ff850363f",
+      "sha256": "ad68039f7a2db1598b1391d1428f218cfcb3e514a8dfeef425320c71b25aece6",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/09-abdomen-superficial.png",
+      "baseGitBlob": "9df6afe565e504106f7e762e444b7e7aca0c8ed5",
+      "sha256": "0620c763270bccaf9b35cbb90989f491ac0bf37372aeed5798e91cf190b30340",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/10-abdomen-profundo-no-disponible.png",
+      "baseGitBlob": "61678ae2d7e54c621f0fd3c24fad74ce7d22c3b6",
+      "sha256": "82c565becd5a06d35d44f5dba4f70d427500704dc554f9962a6d7c563dfc4291",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/11-trapecio.png",
+      "baseGitBlob": "b8302a4ecde15a3885b17f9bbff8eca28e051dd6",
+      "sha256": "ffd746619975fdfd5299e2d2ca6969299476df1afa7d7a840286c7e8c990b228",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/12-dorsal-ancho-no-disponible.png",
+      "baseGitBlob": "dcc6c0736bf91d29517d24f9c1ace2bf41797c95",
+      "sha256": "3f18176ac5ff82f1d9bf8802b58db27d2ac509614cf51d6078abefce1497579c",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/13-posterior-profundo-contextual.png",
+      "baseGitBlob": "9013e8691039dcfa586b6498c4b596436e79a6d1",
+      "sha256": "bbbeb7769eafdf03fd10ec4f2d4d3e624582fd808dd77039a9bb79129e4575b3",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/13b-romboides-aislado.png",
+      "baseGitBlob": "6e59543f232ef71db2934f929b65170d283f00ee",
+      "sha256": "218b329c506641e366928f30a94b19e78695788fca1428e7e1f6619cb3707ce7",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/14-muscular-50-oseo-100.png",
+      "baseGitBlob": "8dee62f1c994b3595392fd825243a72805289b23",
+      "sha256": "4bd455291325eba2a59c120037e7011a9b328824c2690d7f929ca52e57e2e328",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/15-solo-muscular.png",
+      "baseGitBlob": "508eb9ea49724cad18221a5d4de5c2c4c07b56b2",
+      "sha256": "e8690d106eedd2d447f151c50349b680eb8a2ba628bd7e3e31e380650a4b2526",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/16-solo-oseo.png",
+      "baseGitBlob": "decb0f88153629918c5ea8f09a179260cc8f2aab",
+      "sha256": "1d0dcd23303b6686e860e728eddbe3e0488e06eb69f91b6734838feb3638ad58",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/17-exploded-sistemas.png",
+      "baseGitBlob": "3bf61a84a4a1a60206dc1ceae5dbfbeb189d0589",
+      "sha256": "e3891ed435325a6b79f164be2142888b2b38fe5a4063676382b59dac05d08b32",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/18-exploded-regiones.png",
+      "baseGitBlob": "430f81f1c9ed23d4376d525e9c27237855121275",
+      "sha256": "7a7f6480e1daf8579a14b0a57e7c748e7812c5ca4da2b61c7c0db60c28a80bba",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/19-exploded-estructuras.png",
+      "baseGitBlob": "0ffc35ec0c9394ad289ff568a14855c55241e446",
+      "sha256": "e3ecd978bb25be488ac76e5dfa4c20d74df96db2d2879999a17c8bda01a35283",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/20-contexto-anterior.png",
+      "baseGitBlob": "e65e6dee601dc2c0a70177700081c843a3808da0",
+      "sha256": "ef02812a382af25f9bca6d228d07978ee59ea6ff7b1bab5169a06d2d8e6cc2e8",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/21-contexto-posterior.png",
+      "baseGitBlob": "cced509c140a4a71577ccfe9660a1ebeb73629ef",
+      "sha256": "8e51d59b1ea9ef8874d83c8b56427998cd12271e11efb2a3c3cb97820279a300",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/22-laptop-1366.png",
+      "baseGitBlob": "f5572149e03c4a99496f217d219a1c6e80fb3275",
+      "sha256": "cdd0867209076c267b6422bfdc637ad2e87f22f7bb34da7bbf44bc546cbc2602",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/23-laptop-1050.png",
+      "baseGitBlob": "b06f31876fcaeb4cc58bb609792ef935678cb060",
+      "sha256": "ae74fbf302314c82ba530990139112994e67b8c0e6413a34860f37f51aae79af",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/24-tablet-900.png",
+      "baseGitBlob": "b791f9069fb638885f037b8f19d7e4132fafdc82",
+      "sha256": "d34ccac29a11cd9e56bbcd24ff45b1bb07b2541ca4fcfdc82e05df27efe9fecd",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/25-movil-390.png",
+      "baseGitBlob": "2d9102da2663137af314037d4abbdc7cb23667b9",
+      "sha256": "7fc9041bd240b7e3b4a4f408e90472d43e859deceb7e648aae031854e149010e",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/25b-movil-capas.png",
+      "baseGitBlob": "49353736cbd3946b6792fa73b53eebe4a770a70b",
+      "sha256": "6c446487503e7f6a7c8741f515808ee12f8bffe9f202c2ec514c56448d9296dd",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/25c-movil-ficha.png",
+      "baseGitBlob": "0a35334f93e56f6a1a41c08f5fed91aa2f25a042",
+      "sha256": "386a7287bef3607914ffef9d73f04cc819ccefa6f3d06f6e17ab99de65ffb4af",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/25d-movil-modulos-musculares.png",
+      "baseGitBlob": "9b3e012eaa8e146d293e0223176d177012367872",
+      "sha256": "2badfb7071790c4d5c6c701cee93e7245c10923b1fb3a352112319762c06d88b",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/25e-movil-ficha-origen.png",
+      "baseGitBlob": "f261b4a464a30c477d9b4a61bd58fe5917293235",
+      "sha256": "8267e909e70ce8c3714f3126299df9af316f4f8ab70398871f8cb32a1cf663c0",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/26-pectoral-menor-contextual.png",
+      "baseGitBlob": "f37f9ef878177c237ddd71cb09ad7e6b757519ce",
+      "sha256": "0982d27be6f523eab5a81bd27caccf8503b38e9b745e034443be906deecb1a40",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/26b-pectoral-menor-aislado.png",
+      "baseGitBlob": "91ce92e4d7ec893c25c372495f69e79d3eeac72c",
+      "sha256": "5d58987d6926d6f44b66af28fbfedad956ef784ad22677544effcef4532422dc",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/27-erectores-posteriores.png",
+      "baseGitBlob": "553631e8af53f57ed34814d2623ef370259b480d",
+      "sha256": "d5422768cc1c769652727cd98f63775e9dcbc3b49ef8921d5c2d8a930d5b2098",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-anterior-010.png",
+      "baseGitBlob": "b1de769579c8ead97b832309b4c75c42e430da70",
+      "sha256": "e109e2543138197c6e944ae570e6411f941a2bc37d86c926f409fd2c699b3ab7",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-anterior-025.png",
+      "baseGitBlob": "1d91b2232dd60690e059f15a85e002f38756657b",
+      "sha256": "654cf7c4e77871581febda348a04ac4104b296179ee2a44f1394430b5621f46d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-anterior-050.png",
+      "baseGitBlob": "7cb487576d7d96ca8edb2bc81212527af63432d9",
+      "sha256": "4c758d90fbc72230ba1c36c8949c397eab139a53960f4d2559e897d8e1a9fda8",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-anterior-075.png",
+      "baseGitBlob": "601c88cb3eaec3cf744d28cf6e3e7e3f47c8d611",
+      "sha256": "013b4903973884266d4f2272461fe5c37af78af3677cb3a12914b6c8856e6553",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-anterior-100.png",
+      "baseGitBlob": "94325fd3b3ab49b89f7d37751520cd3f7326b4d2",
+      "sha256": "d4396105afd2f1db569ba641f96d258c5db6709318a3b5a4e25d1beb37a80f37",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-posterior-010.png",
+      "baseGitBlob": "0cc471ccfb5b57d07b0fec0812ee4e4fc00de920",
+      "sha256": "6c5dabf73e232488a90e0cccaaf19ab8d89bddec0914e223a13e4125b23d3030",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-posterior-025.png",
+      "baseGitBlob": "324b32c5a7586fcf805f6a28216bfbc7a76a635b",
+      "sha256": "748d5a430b00c936d008248469aa2950b50a28934b748def6f318b2cec0eb6b0",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-posterior-050.png",
+      "baseGitBlob": "3b7c87e9921d178c7c5800366e8849802b4f3d2d",
+      "sha256": "5f493039231f319685994ec0eba4a6e1d046622ebeb94b59916f2e1916d68a12",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-posterior-075.png",
+      "baseGitBlob": "c992c42faa25a5d106f536b6d58c7be00f9e7833",
+      "sha256": "83a7a99e1685fe0702639541b6ba175f5c9a67b90b7d051116f19f4a7b12642f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-posterior-100.png",
+      "baseGitBlob": "3e234f7ebfaeba7ce33e6f3cc6d1575b068c75a6",
+      "sha256": "48b681a57e682abf73b38e74066c712a71c90402ec8de709208ec2008cb85964",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-right-010.png",
+      "baseGitBlob": "64680317118af223cf5a19826fbc2ed6aecd41a8",
+      "sha256": "4cae407d044ea41de65f44f97fef5dd76aa4ae058cff5c460a7fec1b751e0fea",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-right-025.png",
+      "baseGitBlob": "4b9e92989c73e177c5593f6fe49eb309447e803c",
+      "sha256": "d47a1b1248aee1ae9496bed8a56b1618047b428c092e680c5535a7559924c6bb",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-right-050.png",
+      "baseGitBlob": "8bad094bb1be26f17d4ab2d203d42fdf6f091fa2",
+      "sha256": "2c53b312bf17f127efe4ec9aea068737dac4a06485cecee9b5b73b51c5ad6fd3",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-right-075.png",
+      "baseGitBlob": "f2bace67200d8ace725969a919babf6af31a5a91",
+      "sha256": "23c3eda0a5434984489fc33f904ac84edb3630ea5383b6913776f24986515c0d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/captures/opacity-right-100.png",
+      "baseGitBlob": "f86a6a07371529bfcc69d93ebef80ecb51df59a8",
+      "sha256": "ba8c17b60eb8fb2daae83bab9cfe37c0a885858aaf4b4f9f6e961fc859297a58",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/evidence-manifest.json",
+      "baseGitBlob": "ac8d88381e6fa7711d606a178f173222f4f42215",
+      "sha256": "175a55254e679e5ae4bffeb7cc6c9eeb69b056585a95beaf718c8919b3e44744",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/browser-qa.json",
+      "baseGitBlob": "9b75bf735be53976bffa3729418e66a7eaaf69dd",
+      "sha256": "43ba03af8a00f2c458c1a26d97e0a9af205b041a9da62609768a5b62c7c7e29f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/build-identity.json",
+      "baseGitBlob": "aef2d89b8af5d14032c2cd44dbab67a2603e0005",
+      "sha256": "f4ae1385043562f98dc0df56811f3b7b26579b0a2d0df4ca19e6088dc593b9f7",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/build.txt",
+      "baseGitBlob": "e8854dfe0a274465b44bbe2c201f33f3cdf3f23d",
+      "sha256": "c729731fd1748605089937e0ccdfef4eff739dda3551383674012a06799e519f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/captures.txt",
+      "baseGitBlob": "612be57a256400b96a13ac3fdb8ba3c6ce3ce162",
+      "sha256": "91d5e53f05fd2498f6d55cf9bf41e7a47b2188c8aa691e6be060f566d7b2dbf7",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/commands.json",
+      "baseGitBlob": "19ec60e891f882afd22ae009d8346d6e55d2a7fc",
+      "sha256": "507b8f4f51665e8d9f2aeecd544b5a99775da5743ff9dc3f4b1873596df334fb",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/delivery-checks.json",
+      "baseGitBlob": "2555989a3d67cc482a1cbdd8503974c144f60e9f",
+      "sha256": "83643b3fa77b2c4cca71d6e914ded46b57b00fdc779a37b1f0753e4890b8962c",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/gltf-validation.json",
+      "baseGitBlob": "aa077f81993b13c27a66ee25fc7e47cc862d8f44",
+      "sha256": "c76fbfee3e9a855d748f57ba64825e6a20d0d5ee90749feaff2bab375d83ca06",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/gltf.txt",
+      "baseGitBlob": "d653d0184a4e7ba1fe6ae25dfdc86f7f5d344fd0",
+      "sha256": "0804a8696b13cf7d9afb9b9bbc6b00535cc0ee5fff04aa80b98f2aada832aa6e",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/performance.txt",
+      "baseGitBlob": "0dc7159a5ffa144156756a3caf73640c5f4b7c7a",
+      "sha256": "b6aa24056150b4e123b63adf18f9dbd64066ee3200e69428906d085b386c4fb0",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/pilot-functional.json",
+      "baseGitBlob": "5d1f3cca2fdb4b91108bc7ff074658acebd833e0",
+      "sha256": "8bf787d7e0afd0a07104c8085db69cffc814c0ab6e7f9e9a60497947ac960624",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/pilot-functional.txt",
+      "baseGitBlob": "408bfc0fce15bf8b63ab53b58e3333d6c85e60d3",
+      "sha256": "4b84327868761ab7663c602759644d81c2395fdc3faa8a42f7a4eb2a4417be11",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/pilot-geometry.txt",
+      "baseGitBlob": "b22ff1f2e9a118c4fb71cdca79e4a6a5b6f045d5",
+      "sha256": "fe95191f21fea764b4feaee620560a39d93ef08aa73490e56a7511a42a9066a7",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/pilot-tree.json",
+      "baseGitBlob": "853eaf1926ac1d5b4d7d349a4f98313a2e621c98",
+      "sha256": "787aee48f3592306c846d6f457bd9d3baa9346f9f9beca282d6974927bbbbffb",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/pilot-tree.txt",
+      "baseGitBlob": "471056aa8d7fa2b19031411fd7648842f347ed22",
+      "sha256": "ca051671a392aa86f0fd435a82b8b2870b1e2784284361a5e6347d59459bbef8",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/preservation.json",
+      "baseGitBlob": "d8096d639a85ee13835b4e31e814a087f3557202",
+      "sha256": "69cf0d87c098b38a1761042a05c15efcd617ff61dbc2a4d3423f2508cd8219ad",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/reproduction.json",
+      "baseGitBlob": "ffe1e9e0336c8d9fae461c3cc0bd2e2877c668c2",
+      "sha256": "32b7d8373a645c5fef153f52a2044becad236e341a4bf7d0c464d2de016f3c1d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/resumed-status.txt",
+      "baseGitBlob": "bfa605119ddeb762ab5a2c4faa20121fc27507cf",
+      "sha256": "2f0b1ab5f7139293b7de4fe1c4ed7a6e4bd71f9d08fba636c7ada725ac850f30",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/runtime-environment.json",
+      "baseGitBlob": "896e5430b215d81d63f99f41bf6d072059b5b959",
+      "sha256": "4eafc9363e54286fc3f67cfab2f210f22699162369c459b2145e801aae59ccc0",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/skeletal-functional.txt",
+      "baseGitBlob": "d687497cd9dc9efc94379b8432427a7887146161",
+      "sha256": "305a2aa687676289fc29aba8b6552f29146df656148273173b36eeb50b5eb19c",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/torso-captures.json",
+      "baseGitBlob": "a511efc91d6a69c8d31eb2fbd9ad5b1145d5199d",
+      "sha256": "63961863f1bba5c8a627beb12297fbea7d2e656743a965d4e35aecd3328f2fba",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/torso-functional.json",
+      "baseGitBlob": "298b03560c27cb5b6b11a2f56b25af9414528a40",
+      "sha256": "0dd1c8e2dcd17e5cd77371fc7e61ca8fd8d986610599ede496f784546a7c9e08",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/torso-functional.txt",
+      "baseGitBlob": "75040ab6e42b00d77c650e2113e164a2c4462927",
+      "sha256": "79849785f36edb0a4c011a4835b16f7f3693ad27818c60e7e70cbb1da1abc0ab",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/torso-geometry.txt",
+      "baseGitBlob": "b27a93a6d82a4761e869dab2db85d4d179a2b213",
+      "sha256": "9e72ee679dfd7e6aa06e0c48e27be9fe4663ee4d463b593daf8051ca6b715143",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/torso-performance.json",
+      "baseGitBlob": "669a10a45339be53d758557ad287e7d331873088",
+      "sha256": "395a876b8962d9fd1e857a6d6a3ef5a890cbef6b896d6c9a7948c982ce342b2c",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/typecheck.txt",
+      "baseGitBlob": "89c17365ac3ecf725fa567c0048f89e1c65a8171",
+      "sha256": "39b3f7b3e8762f103c196fbb53f030031188b14c60e215fa21c8e3976234658f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/results/verify-anatomy.txt",
+      "baseGitBlob": "18f574ff93b5aed018f0e58236a6703231db0763",
+      "sha256": "caf15afaba59163552a09d86fe2edb5dc2e5f3ec694d559870f3a537cf93a61b",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/phase3b/visual-review.md",
+      "baseGitBlob": "cf9b15bc29c6799a7014835b2070e32c6820b67a",
+      "sha256": "4fd841b56f38fe85ac10c630377a1c276d5c399899b5a4f232f87589bfa29133",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "docs/validation.md",
+      "baseGitBlob": "d6b512a7882d952d3460aa6c6551e76c5cdac334",
+      "sha256": "6aadcbcf311f7458eb5ee7956a6a160ff560aa87ff2b4d98ff0d52568e632504",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "index.html",
+      "baseGitBlob": "4da31c340460f26cb71660f32a2254acbd0a5b6f",
+      "sha256": "01aa5eb1243a184a9132ef5d4330c8f571696cc466df9fc629af040c727c83bb",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "package-lock.json",
+      "baseGitBlob": "184e757678b4f3abc1a11adc23f9bb5e18645391",
+      "sha256": "ca04ec7c383d6e326391d6f3d1f77867d9e81c4ce15f4924a63146968d25251a",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/apple-touch-icon.png",
+      "baseGitBlob": "9059b283f113d6f86efe98a197938d26cb4f2b03",
+      "sha256": "7ae755f3a3ed4f2ffc6206a3b31ff75fed0ac461b4ad7f4680815f027e71aca3",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/assets/cover.webp",
+      "baseGitBlob": "e4cfb492aef6d4ad07d981ba661202006d695abe",
+      "sha256": "4f76e6c83020479a51ea6626d3cb54d291232caad3621bacf9b938c78813327b",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/assets/cpr.webp",
+      "baseGitBlob": "a92093519209d29484d151c418d8e71de8d15d17",
+      "sha256": "0350b6390a1bcee37af088713614b383db765f5f99e357bb090f26817678bd31",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/assets/og-wide.webp",
+      "baseGitBlob": "1f4d4f1ad43db5622fd79fdd1e0d358ebfce15d7",
+      "sha256": "3a4097feb9850785c05ef310138a47aadef7cfe072c159b2a007df0b621695da",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/assets/og.webp",
+      "baseGitBlob": "f940510a10e57a4d916d7d40bd9cf59ddca6d3bc",
+      "sha256": "5a99abc4b7dddf1b518cdafe0d1b9b3189d4e672441cc61670d266119846d5b3",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/assets/pressure.webp",
+      "baseGitBlob": "206acb5b4f30e152ec93c83b096a0c3afb6c9233",
+      "sha256": "a8960864a6da689fbd640046cef514368325d3be31bf37751462da8faa2952c3",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/favicon-16.png",
+      "baseGitBlob": "99939b1f460498795469110724b0767577a1c7ce",
+      "sha256": "6fcce6b783d1fc938583fdab8fdce5c9b5a17f36911972f30ea5963b825641a4",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/favicon-32.png",
+      "baseGitBlob": "255d65138c011a2a3f38e2d5dbed34936e16df3d",
+      "sha256": "8217ee1c68368c34048c081b610b9c345a9ad5ac3d6e6e0a9f7e34fad78a01e6",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/favicon.ico",
+      "baseGitBlob": "6426abe21b35af53006f40fd9883ea9adfbf2e4f",
+      "sha256": "853a074ceca236c7de6d015afe4919f6052642c349257ab4dc1b58323f2f3cf4",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/favicon.svg",
+      "baseGitBlob": "c0cb2e9c9b73dd5cd1c8ceb6d373085caef0c6f4",
+      "sha256": "546eefb78d7b53471566d92f77a35967a5f4f6b2d2f6dcc4a75e3916c2ebc819",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/icon-192.png",
+      "baseGitBlob": "72622f7d2ba7e4a2809831266f947fda8b5daaa6",
+      "sha256": "2e969f8f6ca6a39de87f19751601ac8e4675fe85b58d0eb5e7cbf4ca492726ba",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/icon-512.png",
+      "baseGitBlob": "f65fcbc42bdc86ebaa937d0b7acc593c2933f1a3",
+      "sha256": "506ecc794ac137819923e7e752fd975e738385fd49d71d34ef62924bbc6cdc2c",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/icon-maskable.png",
+      "baseGitBlob": "f65fcbc42bdc86ebaa937d0b7acc593c2933f1a3",
+      "sha256": "506ecc794ac137819923e7e752fd975e738385fd49d71d34ef62924bbc6cdc2c",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/LICENSE.txt",
+      "baseGitBlob": "da6ab6cc8f333d7e89a99812866df8f24374d47c",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/muscular/muscular-abdomen.glb",
+      "baseGitBlob": "eff4529f5056d62c38dfe603580c3690b09a02a2",
+      "sha256": "f290f3617effb101f91b9d293361e67075d8a2d38c30e05eedfe738c1b3b78cd",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/muscular/muscular-torso-anterior.glb",
+      "baseGitBlob": "be5fc78322b40ce3f2b2bd213efeca6260c75c53",
+      "sha256": "0d2938cfcb5d651f97155e4ea4d5d69399e4bf584e99f4321f9a2b95e388356b",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/muscular/muscular-torso-posterior.glb",
+      "baseGitBlob": "de9743a45dc7d6e44f40aae68e1da09b50dd2071",
+      "sha256": "149b481048540bd5af3d2d436c904917259304cc702d2e9d0fc44d19ccc25ba5",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/muscular/muscular-upper-left.glb",
+      "baseGitBlob": "ee4ac92b697f3ba6c862e4c8d7d065226e90d5a6",
+      "sha256": "1a5885fe1258bde59dfc88437726f3ddb9db7dee4c3e4c2ae834feb701c3b559",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/muscular/muscular-upper-right.glb",
+      "baseGitBlob": "a17051037b8403c85780eaf6b3b804dec26eacdc",
+      "sha256": "9aea14bb438f006103f48cf0f42cd2c9d58031973a0e3c355c033f880b719d21",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/muscular/source-manifest.json",
+      "baseGitBlob": "73d1ff0acdfa9bdc8b9cc5184a0c417831226474",
+      "sha256": "745f40edbcc039380060ea20774d186c154ea3a8835988bcd25a45cc6461cfed",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/muscular/torso-source-manifest.json",
+      "baseGitBlob": "a27ae194998fdec8134935ee260e9a96f760947c",
+      "sha256": "f77ccd8cce08219039cba2933ce27b908084fb58d70e6fe01afc50311fe78219",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/muscular/torso-validation.json",
+      "baseGitBlob": "d703baa530bfa3de145b7c6d7b98c2207e6cdca9",
+      "sha256": "560f8703083a101d0d8767324ab89553b948c4db1009276359effe029ace81c0",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/muscular/validation.json",
+      "baseGitBlob": "b5fc3ed2eac6cc4596d22f50e80713c9269ab481",
+      "sha256": "4ba5d57e51f1a9d37e93264abe76aeea840df7ced73353df4fe448745dfedf07",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/skeletal/LICENSE.txt",
+      "baseGitBlob": "c00549a8b781c6b104b82db43620bee80e5adc27",
+      "sha256": "8701492dae56848477416b696ae91abff459feab87371620e1662dedf5d59444",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/skeletal/arm-left.glb",
+      "baseGitBlob": "4e353444873bd08f57facbf6a3405d8e4641710d",
+      "sha256": "688937b1d1eb08e1518e27c035e9d8d9729a470ff70b8c9e2d25aecef29db904",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/skeletal/arm-right.glb",
+      "baseGitBlob": "776cf7725d8238919c014512d4a0e061b5ea3b74",
+      "sha256": "ebfe485840fd737b8eaa573dbd4bf13b11cb30542b93273af2ae8417835a06ba",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/skeletal/catalog.json",
+      "baseGitBlob": "6724f96c1106971e9dc8100036a0991ddbeff8eb",
+      "sha256": "9e6888913a5d997cc467819d9a2bed7c15d5c8ac09fc3c34076b8a7391d98c60",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/skeletal/leg-left.glb",
+      "baseGitBlob": "9f73958d2a6d0c511b7fc8e397be94571a1f49a6",
+      "sha256": "6e70fd15a54b1dcbf26aafad860cb282b1e6364c064cdd41e0822beef37b2f1d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/skeletal/leg-right.glb",
+      "baseGitBlob": "e13a409d526326bf359c3c1f61a37de4cbe35f34",
+      "sha256": "06ced279676f896dbc4176e99931e4e77dd60734bcdccf108b3be2a96fffb806",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/skeletal/skull.glb",
+      "baseGitBlob": "f06c51203f8bc93fe807f002a0ce6ab4d6dabfb5",
+      "sha256": "835b8ad861d6dcdd92a7cbeeddc8c8586f7a0c11356670274467f2f62730e5ba",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/skeletal/source-manifest.json",
+      "baseGitBlob": "d56cfb175c8b057c93b384eb12bdf035b813777a",
+      "sha256": "d5b80328caffd0bd538c416b70f3bbdabf4754c39f01577e57ca8c2dd7f8a274",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/skeletal/spine.glb",
+      "baseGitBlob": "848dda5ccea12a237da56cfe22226661ecb0ed40",
+      "sha256": "d0a338e305718d9e7820e9df732e0b9743712ad94ec9b3ca27a8df8958dd6e65",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/skeletal/thorax.glb",
+      "baseGitBlob": "8ec389e1771b9c02f1d7b155d285680201d450f9",
+      "sha256": "4d13ab0f94f1b41c81c17402d4830dcc3b28cca7d6b91c075d0ba9e77fb606d9",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/anatomy/skeletal/validation.json",
+      "baseGitBlob": "9a9e47c7c3bc69131a1a53344e9c3273ec7863dc",
+      "sha256": "9cad58f9276313a40dafb92aead9a67913212efc0418167e3c9e1a49b5a62dba",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/brain.glb",
+      "baseGitBlob": "8442efd87630a7fe5e2697cad6a3af3c5c134d33",
+      "sha256": "ecda8d7886b75241c36eefebf7796ec5ed38cd4495c8eb96e50595ee733c52e6",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/heart.glb",
+      "baseGitBlob": "d684eb1025958ce0c6d7e336688b72e3f21c4962",
+      "sha256": "4637d0779ee7c278cf81a326c933528421372bf0aa709188c20308a6ad81b3a1",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/lungs.glb",
+      "baseGitBlob": "7ee4407bc2aae35d791a8cddd54e5e190887f821",
+      "sha256": "5e7959b7842d46c2ad7d47770d8bfbd5aa0a06c1a7476cf5b779e9c0462e5a29",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/manifest.json",
+      "baseGitBlob": "e3e5aa5c7ee91a904a07aee1a16abcb34161bbae",
+      "sha256": "ca9935a4121b93ddd9dd2c302579d6c62353a034efd6653a2233e17010d3948c",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/models/skin.glb",
+      "baseGitBlob": "4c9287ada59e274ab32ba6acf5d7c7368afb8689",
+      "sha256": "7ff23b72499707b9d0f5c65029cabcce4e9be8414dc05aed5ee1de867d1d8b43",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "public/site.webmanifest",
+      "baseGitBlob": "1352693fdf5444dc1e656e779612697dd7d7acab",
+      "sha256": "fe2fdb080d77a393cdae39fdd9eb0a6630da0927e9b0084a4aebc2e4ea758290",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "research/anatomy/README.md",
+      "baseGitBlob": "c7e72cf7d52f2635f9ae741cdb6f987b2f9f0a81",
+      "sha256": "38c52f66e5a56b52c01ef63424eb1f389432ee7939491cce37e4c89ea6c7ffd9",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "research/anatomy/muscular-pilot-originals.zip",
+      "baseGitBlob": "9ceb4444864ef9b85c4aeeb1e884771ebac6027e",
+      "sha256": "251bf962442e4077d258ee164bc6af68f51ec89f888ae1051f4f7dc611238844",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "research/anatomy/muscular-pilot-source-lock.json",
+      "baseGitBlob": "ebadfd945fe581aa56f80fb1e0fc5bf78f0d407d",
+      "sha256": "8bb9705f17d89913f4833c5b1dff0f4aac9648e914a26be8960b8a8787f2631c",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "research/anatomy/muscular-torso-originals.zip",
+      "baseGitBlob": "03d59008702a687df919e10af6cd286f8cdd26cc",
+      "sha256": "5759ce2cb62c36f21d7a221b77f053794c053a256a80a5999091f3e1581b2c74",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "research/anatomy/muscular-torso-source-lock.json",
+      "baseGitBlob": "340d61b8e883cd615178c4ef0ba63ee19fd2943b",
+      "sha256": "e3d1163c09a62049e11e93a20c2d14fa6b47973e9cb184843d2b76b4e718d127",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "research/anatomy/source-candidates-manifest.json",
+      "baseGitBlob": "2dc4e9989db97ccd7b92792a20917a0f0e3c8f97",
+      "sha256": "190a100f89cce7cd89cb437779835f5d4a2934843ed3582da33902abef4e3282",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "research/anatomy/source-candidates.zip",
+      "baseGitBlob": "c9e6b088a7eff2c27718efc7f300519eb21e04d7",
+      "sha256": "ba24f1e090283a4bd1a9c06dbb44380728152b216d18e68cc3851325b3fc327c",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "research/anatomy/torso-metadata.zip",
+      "baseGitBlob": "39aa9367d1d8f294bbf4c6264ba95a66f66c4c54",
+      "sha256": "dfd3f6b7e7adab5590b164b58c1c4d9518752e18875f6e5feca21920b82d31ce",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "research/anatomy/torso-selection.json",
+      "baseGitBlob": "fb615437bdf7faef39d732d4df7e0fe2aa41a1d6",
+      "sha256": "9c14ae07f508cae314ba2c6f69b414c56239214d5d28e43a1eab01dce419e801",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/README.md",
+      "baseGitBlob": "a3f207dae2829f7cfe44d8d943ae6b011447149f",
+      "sha256": "fa72746df0f3150354870c8c91ad8258ed9af27d85b40a8611d3e8f2d5429d10",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/audit-torso-inventory.py",
+      "baseGitBlob": "9aff9fc88f071f08449a6255bc5e48dc7f706bcb",
+      "sha256": "144b93c6c92e6bb10fdbbe157041a07f7cc2d76265d2a0b9f17f13362580491e",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/browser-qa.mjs",
+      "baseGitBlob": "cbc97460a30240abc55403ee952d7a949871f03b",
+      "sha256": "467f15275d01167924bab192f572d45e071d8271a9a4c06abd1c25b923ac0c1a",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/build-muscular-pilot.py",
+      "baseGitBlob": "61ef55c8812d29b0aa48c672ab0c2169629f2a7a",
+      "sha256": "47dec45b45ffbe4473d8fb7e07d00fb5b4b23181cf65db397c80bbc314253cbe",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/build-muscular-torso.py",
+      "baseGitBlob": "f189c54480e6775905b0fef0ad4da3542e6d1c9f",
+      "sha256": "d989b7c82ab54eeb6bc96cec57d58991a2e676865a7933efbe8229293b9742d9",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/build-skeleton.py",
+      "baseGitBlob": "9fd9b960f8a39a5f74967dc6bad993385459a49e",
+      "sha256": "c469d0a904ee0d4c0bb1797cf466d272ff47f9338a2b6e5d8d3fa658c37cd51d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/download-source.py",
+      "baseGitBlob": "ab01e535c99e34bb0b5443195f851b2868cf1a10",
+      "sha256": "f70b07927c511f595f2bc6a613157a063b01ad0aab27772b51f6097e4063001d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/optimize-muscular-pilot.mjs",
+      "baseGitBlob": "4daff0f96588d3dbcd6bb9940bbfbda39c38cdef",
+      "sha256": "fe7c54c50f402c1f240fbb23b26f6d489599486a7b5b0da611018ad4fa206d44",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/optimize-skeleton.mjs",
+      "baseGitBlob": "223fe76fbd229653ce24cd7aae12df972a0759eb",
+      "sha256": "41cf691a5c704b5d8a08cbcd7395e7b39c496664ba4b0c9d930c9238d3161e73",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/performance-qa.mjs",
+      "baseGitBlob": "0b6f94537dc10f12ea155b5125410f2d60bafba5",
+      "sha256": "14b8a9fdf0e2cc14c92402ac475518093dfffe9db041589f07ab3c6a1887a252",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/registration-research/candidate-matrices-2026-09-14.json",
+      "baseGitBlob": "6448eb9cf3c2c738583e8d6be81243781b1f2c1e",
+      "sha256": "63309da7c48818e76b063f799ad6e4e7d762514a32c2d6d49e7528c0e457eb15",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/registration-research/openear-headers-2026-09-14.jsonl",
+      "baseGitBlob": "403969687d1ce7dd4df0ea29c37de0e1e0d8e90e",
+      "sha256": "1d635820c7ce2a3a73f4b60bdf26a4b931a7e219ba1e3ef8f2eb060243dbd4a5",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/registration-research/openear_headers.py",
+      "baseGitBlob": "a02db1201b2759e660006bd9ab7aa41a8d490ba0",
+      "sha256": "857745031b083ad45c850e3e5334390c52ae9cb4fc1421ec78c106963f4f06d5",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/registration-research/verify_candidates.py",
+      "baseGitBlob": "91817f4fa9588e6b555cdbe49c16d68f4eadadee",
+      "sha256": "0fd0510c5e42ab901cf058e948ef716890795d3f24260905ded5a0f11de2beb4",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/source-lock.json",
+      "baseGitBlob": "ec2599c7c1b4029b9c6103560686ec42ee89980f",
+      "sha256": "3c1b51204a52ba7302b6101717201baf4d6bc14e1c2f25754308eec025ef156b",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/validate-muscular-gltf.mjs",
+      "baseGitBlob": "072772fd0341be3fcaac194485048dd7cc5f8de1",
+      "sha256": "f474ca1b34dbb11b73b7eeab9b66b934fd1b52d6b916353b908ad195e57ff81f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/anatomy/visual-qa.mjs",
+      "baseGitBlob": "c307607eb980e474260f334d859ac24438b50acf",
+      "sha256": "01103d83d7cd84a236260e5259eb43422ec056d1681e2d921329761a03d2d974",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/static-routes.mjs",
+      "baseGitBlob": "8f48d9253bc2a1ae2d4e3a9ddd6989a95aa20b18",
+      "sha256": "307da0169f990c588ea3ac47d8c6544a3156e514767319994ef0d3d2eabac926",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/test-atlas-catalog.mjs",
+      "baseGitBlob": "ef1e75bd6f228033226bf858f9d78fa55ed599a6",
+      "sha256": "bf72a4f27f400ae2c93385d311b78c9b43381055fbd75092a3b8fa7b134afbf4",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "scripts/test-atlas-renderer.mjs",
+      "baseGitBlob": "2db96e3200d7abc6fe800bbd947ade4500f2bfea",
+      "sha256": "b9caec5c1bcf2a5da19560222b90276cf12202fd96559316549a534c12714527",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/app-meta.json",
+      "baseGitBlob": "e0544f7b9a74c265c509416c69ee6c259124704b",
+      "sha256": "38a20eaaaaa7c614befd21b4386516225b73d46345ef7c2f18bda7a75ec91b87",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/components/SiteFooter.tsx",
+      "baseGitBlob": "7655c0cbf2616f6e8af8925c2dbace73c392a0bc",
+      "sha256": "fc353125ec4eed29f7dae0fc2a9636452b6a40649c10664d540988600a48a404",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/components/SiteHeader.tsx",
+      "baseGitBlob": "c8d287bf583cddbe7b5695e8e0a4f6e09d0b3072",
+      "sha256": "c67449f400a750e54e87857f87c72a90a0973e6e2b644bfd7eae1d647c39b896",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/components/SiteLink.tsx",
+      "baseGitBlob": "e501723e0585781699c809a8a38875becee597f7",
+      "sha256": "ad8a95a9a38cf0b0cf1301f8562f2dd7f75db595ddc9d66aacd0568b68fecf36",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/about/AboutPage.tsx",
+      "baseGitBlob": "1cbfaaa89d529b7e08939133cdd93f8a43c7d808",
+      "sha256": "0fb737aa6d15c3c74c23cac7c7bc59af06af96dae1356becf488c333f06e96a6",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/about/ArchitecturePage.tsx",
+      "baseGitBlob": "cb67ff0433a87eae71771660a8485d132f84641d",
+      "sha256": "82e64c6c73513bcae517ff21856b4719cba722e1f28d2230d181cf8a10ff3f2e",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/about/about.css",
+      "baseGitBlob": "8d4e4978da946a157ebcdecc669ec9ff0bcfae99",
+      "sha256": "f63677010c4dcb75718cbb66219968e232d8d4ba319c7a9c739a6326ff61c6d4",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/AnatomyHero.tsx",
+      "baseGitBlob": "7523cb209a887ccbdcf2b363e979992a63a59932",
+      "sha256": "043beb2e94a722293b1b8324fb233c980f8ac55e45f98a9552832b0452a897b0",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/AnatomyPage.tsx",
+      "baseGitBlob": "e871819b994f0c93a5266b81ded33c7da3448422",
+      "sha256": "bd01827c5210fd10684510bb678aa1c9d29770971c2ac410eda3d36702581ecc",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/AnatomyScene.tsx",
+      "baseGitBlob": "8e997a59dda0f03accaa2d07eb19ac0ea23e6370",
+      "sha256": "60811d97e34743883f7c1dcd98ea70687fd0b9c0c482f7d70ecd9746312d735f",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/LegacyOrganAtlas.tsx",
+      "baseGitBlob": "5ba38c853b51a48f80fed49dc34436fdba40b593",
+      "sha256": "4cb43e722e28aef7196d95acdf045bb9f3ac5eed611375257f12023b038f54f7",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/SceneBoundary.tsx",
+      "baseGitBlob": "0d93e7f7dba7455fb72f634dee337128c675496a",
+      "sha256": "1c4d64303176a25814f53d6bb44b8f8d0f708bd6e72409f2150adf4f810801c8",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/anatomy.css",
+      "baseGitBlob": "ed885e1b28ea3f12273ef36baf5fbda1abd33769",
+      "sha256": "b49cb183469abe1b0964e3cbf926d08a2bcb3460d0a362eea544b47c23ac1072",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/atlas/AnatomyInformation.tsx",
+      "baseGitBlob": "f60f5ee3d2d2c5b552cc2447b33ccce49daa63ea",
+      "sha256": "16b0756f994f2e2424f46da73626102b7723430e49340bb009cbf6b6409b2607",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/atlas/BoneInformation.tsx",
+      "baseGitBlob": "3b8d04a5eb69d43fcfaacacd2b2d92168089df64",
+      "sha256": "864e9ab51a1d5ae1e0d64b4ca58f4db9483cd1cfc7ca2f05800226498b481534",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/atlas/VirtualTree.tsx",
+      "baseGitBlob": "588e5bf01adbd15d22384c025050ade7e1f83d3b",
+      "sha256": "965f7c669ec8587dddbf3c28dad9f7a2145f5411c8ec745c9e8ba48acc76499d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/atlas/asset-manager.ts",
+      "baseGitBlob": "bee24f4421a52b63f81ac5f51a0bb70de9c1acda",
+      "sha256": "2fe057c85e85a80b4a367cc164094d0c7a181a9c723c92f3970342917d9be98b",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/atlas/atlas.css",
+      "baseGitBlob": "fae42b5717777bc56b14bbf792dd01587cb856a8",
+      "sha256": "8a1aecacf4289bd457dadbb0f77f0f040bcd142a1e09c32581bd045a6864f21c",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/atlas/bone-details.ts",
+      "baseGitBlob": "4ec85e077c9300be3cab8139474e9e299cd24fb7",
+      "sha256": "a99a25b7eb3b26d920be509f1cd6bb0b05738c730274d4bd00fc60fdc531e3a3",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/atlas/bone-education.ts",
+      "baseGitBlob": "af2d23565ceb4d03d7c42d236face1ada8682686",
+      "sha256": "25aea6344558e1ec6ae6f54a34178f7f38085670ed4d83b86a21a535720b3129",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/atlas/camera-framing.ts",
+      "baseGitBlob": "07496d4d130d8c43b0fd0959ddb06c3b7205f338",
+      "sha256": "0fce8fc611b419b417b2e29969f5b4d0071342beef66d19ade82191eed25fc2d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/atlas/explosion.ts",
+      "baseGitBlob": "2e6dc6bb47e542f60c32b42345e62bee7ab869df",
+      "sha256": "55c4053931fb31439bc3b277dcf9c83e925848aba64567c1612e2bbd15f01051",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/atlas/types.ts",
+      "baseGitBlob": "4b5dca62542d7795069852280ac455f2900f1de0",
+      "sha256": "1afe240a742ec6863c78be6fab3a01fd8714c4fbbe13645af9aaf15202ac03f7",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/data.ts",
+      "baseGitBlob": "ebe3564725f56e41ea94fb89bdb80b1e8324339c",
+      "sha256": "73b3441cb8b1305ce1004ed280032fd9f2b5bb54a5323cf5b6f79bf0a55057c1",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/education.ts",
+      "baseGitBlob": "d9096c90e35c9759bc612913890f30064bdc61ac",
+      "sha256": "7f251aa2c9c9fccfa819a53a32a053124f32ce2a13bd85f9497f4d282ee0e08d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/anatomy/model-index.ts",
+      "baseGitBlob": "c0e199d47552cbfeeede921b52a02890414e2cf5",
+      "sha256": "7ac26ffcb6bcc87c04029639d99ea9c7d9c9cfdd8e3fdc649601310c7fc73ac8",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/home/HomePage.tsx",
+      "baseGitBlob": "72038cba2822b1ca4dae5042661ba6472ca355e2",
+      "sha256": "2bf3157cc548d5509d3b74e8a122eb0293d743c81c17460834d66cdd7ef07d5d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/home/home.css",
+      "baseGitBlob": "71169bd2bc2c5eb2718a2baacd92fc6567b288b3",
+      "sha256": "0f54de0f40a56fb010a768e5f6a7b9f881ebfcc8b3d9a87dd7ebc4663c96d317",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/learning/LearningCatalog.tsx",
+      "baseGitBlob": "63e879918105c206f7c173b62e6dab372913021e",
+      "sha256": "4d4370772cbfc0e8ddd9ca949e9cd0fc8cc198e05758ad98c06aaada199d1312",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/learning/LearningScene.tsx",
+      "baseGitBlob": "3dc9287e48da279d45c3adcf6165f688650d117b",
+      "sha256": "59f24eeaf7388914a303671375c76adebfd8238149525be630560fe36f65e731",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/learning/LessonPage.tsx",
+      "baseGitBlob": "f296c2c0ec8a1aac84c451d42723beb048b92cae",
+      "sha256": "fc0e2e6f4be8415d2be1b85dbd3fc4d55bfec68d94db15e939886f3ca90dcfe4",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/learning/content.ts",
+      "baseGitBlob": "00a0cd55f6f1fb42d976b22d1432f9db9b1f6a38",
+      "sha256": "83052a39e2fa37b97390bb6fbf82753cbff4143bd1f5977d7f0df8d3362821f3",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/features/learning/learning.css",
+      "baseGitBlob": "ed9c07fcd03efbb358466c89a616978b8fdf8494",
+      "sha256": "2ed9691f3e9dc73f9bdb4abd48acdd484ef2632133610f6206f879fc43011bfb",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/main.tsx",
+      "baseGitBlob": "9bd8d97df773df2b322cdcb550413b2954d7152d",
+      "sha256": "37ae48abdad5f045c268b28c11c30630df3f5e8b72aa8dc2b513f23f02619d83",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/routeTree.gen.ts",
+      "baseGitBlob": "580cc0f19faade1dfe37ab08955161d34756fd5f",
+      "sha256": "15df4dfe3c2e59dbcba0f5f965caea51fcef14667558c227371d152b222869f9",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/router.tsx",
+      "baseGitBlob": "d1015d7a913d780246666d83401548ac595599b0",
+      "sha256": "ac7fde9c6291600eff5334002f95955618aca7974cbbebf1d8e966eb5ac183dc",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/routes/__root.tsx",
+      "baseGitBlob": "1b1b625371e1d3a762d328ec4bf95cc6a23300af",
+      "sha256": "12ae3337508565c9c33f4aab9855bcdac968b9781840425b563eb1884c636d8c",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/routes/acerca.tsx",
+      "baseGitBlob": "7280330844d15c3034c5b42d55156649aab87df9",
+      "sha256": "ea3f481c1644d2d1f740813f268bb544323653f792f5589f97f2125cca8f1c0c",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/routes/anatomia.tsx",
+      "baseGitBlob": "5750f69bbc3cbb62cc20bb78ef1e7e499698d9f6",
+      "sha256": "836cf9198930e20b9796eac23ea6c45631b06583c7f4dd57c4af185272a5cec3",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/routes/arquitectura.tsx",
+      "baseGitBlob": "9849bc70e94897c7e96f302347773e4584525332",
+      "sha256": "a1a5dedd4b1fe25f55a5dbcf92a0d22d994c2aca5548ad7ed033c4201c914e66",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/routes/index.tsx",
+      "baseGitBlob": "58d89bc29fed52211ccb5b08f5ae27771efbdd50",
+      "sha256": "5d0216f135a48f546c5966dea2fd19350177990a6f3b36b680f5961ff7afb2e6",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/routes/primeros-auxilios/$slug.tsx",
+      "baseGitBlob": "76505a476176d4934d14528142dfc3ab66084147",
+      "sha256": "7c3f91e0931412b9792562153bc5b6a7dce3996ff5537b6ab6f74f88e6f04fb6",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/routes/primeros-auxilios/index.tsx",
+      "baseGitBlob": "47ee0a2a9994c24bbdbbe41917d988dc596fd0df",
+      "sha256": "65cab92f7a4b9902cdc090e0f465b62305ac3423d45c1eda35e577a385726261",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/routes/procedimientos/$slug.tsx",
+      "baseGitBlob": "5c7d4302936a634a89f5d4328a610a8ca83bd4b1",
+      "sha256": "77a27643c6ae9392e4aa6c0df7dde977916c0df67c109724fca213429aa85056",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/routes/procedimientos/index.tsx",
+      "baseGitBlob": "ba79d36c8a714b8747e31953071dd2ab3c583f10",
+      "sha256": "0fa02a695eaaa66b2c39d73e4ad3f564a85ecd202a457e47e87bf2050af53d0d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "src/styles.css",
+      "baseGitBlob": "e107d73c8d69a13537c3d078a0e42ec4e7ceb837",
+      "sha256": "d04802d04c0ccf4b52905542a0329ddc86e338fdc991d379ed9976e2187e9430",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "tsconfig.json",
+      "baseGitBlob": "a93a67564772c55d277b7517d5383484947ace6a",
+      "sha256": "ec0b2ee61a0b33c23d764773c7de1fc71fd6d2919bfa143a1476756425241f2d",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "vite.config.ts",
+      "baseGitBlob": "48eaf1e1aa9b2f58bd920f4e55a67342a5f76471",
+      "sha256": "dd80585fd9d39710315aa6b7037c9aa83067f7ccd1d857d32630a2534f335f61",
+      "unchanged": true,
+      "comparison": "exact bytes"
+    }
+  ],
+  "originalMuscularNodes": 87,
+  "preservedMuscularIds": true,
+  "permittedAncestorChanges": {
+    "muscular": [
+      "assetIds",
+      "bounds",
+      "children"
+    ],
+    "muscular:region:arm-right": [
+      "anatomicalName",
+      "assetIds",
+      "bounds",
+      "children",
+      "name"
+    ],
+    "muscular:region:arm-left": [
+      "anatomicalName",
+      "assetIds",
+      "bounds",
+      "children",
+      "name"
+    ]
+  },
+  "originalMuscularAssetsAndFrameUnchanged": true,
+  "modifiedImplementationPaths": [
+    "package.json",
+    "public/models/anatomy/muscular/catalog.json",
+    "public/models/anatomy/muscular/limbs-source-manifest.json",
+    "public/models/anatomy/muscular/limbs-validation.json",
+    "public/models/anatomy/muscular/muscular-forearm-left.glb",
+    "public/models/anatomy/muscular/muscular-forearm-right.glb",
+    "public/models/anatomy/muscular/muscular-gluteal-left.glb",
+    "public/models/anatomy/muscular/muscular-gluteal-right.glb",
+    "public/models/anatomy/muscular/muscular-leg-left.glb",
+    "public/models/anatomy/muscular/muscular-leg-right.glb",
+    "public/models/anatomy/muscular/muscular-thigh-left.glb",
+    "public/models/anatomy/muscular/muscular-thigh-right.glb",
+    "research/anatomy/limbs-selection.json",
+    "research/anatomy/muscular-limbs-originals.zip",
+    "research/anatomy/muscular-limbs-source-lock.json",
+    "scripts/anatomy/audit-limbs-inventory.py",
+    "scripts/anatomy/build-muscular-limbs.py",
+    "scripts/anatomy/cohort-catalog.mjs",
+    "scripts/anatomy/limbs-qa.mjs",
+    "scripts/anatomy/optimize-muscular-limbs.mjs",
+    "scripts/anatomy/optimize-muscular-torso.mjs",
+    "scripts/anatomy/pilot-catalog.mjs",
+    "scripts/anatomy/pilot-qa.mjs",
+    "scripts/anatomy/torso-catalog.mjs",
+    "scripts/anatomy/torso-qa.mjs",
+    "scripts/test-atlas-limbs.mjs",
+    "scripts/test-atlas-multisystem.mjs",
+    "scripts/test-atlas-torso.mjs",
+    "src/features/anatomy/atlas/AtlasScene.tsx",
+    "src/features/anatomy/atlas/MuscleInformation.tsx",
+    "src/features/anatomy/atlas/SkeletalAtlas.tsx",
+    "src/features/anatomy/atlas/body-catalog.ts",
+    "src/features/anatomy/atlas/catalog-index.ts",
+    "src/features/anatomy/atlas/limb-education.ts",
+    "src/features/anatomy/atlas/muscle-education.ts"
+  ],
+  "main": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6",
+  "originMain": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6"
+}

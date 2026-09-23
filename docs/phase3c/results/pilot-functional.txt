@@ -1,0 +1,36 @@
+PASS Combined registered skeletal + 26-component, 16-muscle pilot loads {"selectedId":0,"contextIds":0,"loadedAssets":9,"meshCount":231,"triangleCount":552054,"geometryBytes":8542536,"drawCalls":231,"renderGeometries":235,"renderTextures":4,"loadMs":39.79999998211861,"firstGeometryMs":776.4000000059605,"fullSystemMs":776.5}
+PASS Skeletal layer unload retains complete muscular pilot {"selectedId":0,"contextIds":0,"loadedAssets":2,"meshCount":26,"triangleCount":39604,"geometryBytes":932764,"drawCalls":26,"renderGeometries":30,"renderTextures":4,"loadMs":14.800000011920929,"firstGeometryMs":776.4000000059605,"fullSystemMs":776.5}
+PASS Right muscular module alone loads {"meshes":13}
+PASS System activation restores its chosen module subset {}
+PASS Left muscular module alone loads {"meshes":13}
+PASS Both muscular modules reload without geometry growth {}
+PASS Muscular layer unload preserves skeleton {}
+PASS Independent opacities and depth-write states persist across system unload {}
+PASS Global accent-aware search finds all required muscles, bones and legacy organs {}
+PASS Neutral body root and virtualized multisystem keyboard tree {}
+PASS Specialized muscle card includes curated attachment and innervation text {"minimumFontPx":14}
+PASS Whole deltoid isolation, hide and reveal preserves 3 component ownership {}
+PASS Actual raycast selects a component, with distinct hover and selection {"id":"bp3d:FMA34684"}
+PASS Six camera views execute for superficial muscles and rotator cuff; occlusion remains explicit {}
+PASS Explicit curated biceps context shows muscle plus related bones {"visibleIds":["bp3d:FMA13395","bp3d:FMA23464","bp3d:FMA37684","bp3d:FMA37686"]}
+PASS Leaving muscle isolation preserves a disabled muscular layer and restores visible bones {}
+PASS Hidden muscle accepts posterior camera requests without implicit reveal or mesh transform changes {}
+PASS Three explosion levels are deterministic and return exactly to original mesh positions {}
+PASS Biceps two heads separate distinctly as components {}
+PASS Muscular module unload/reload cycles release buffers and remain bounded {}
+PASS Rapid muscular layer changes leave no unexpected CPU or renderer geometry growth {}
+PASS Partial muscular network failure retains healthy modules and recovers only on explicit retry {"attempts":2}
+PASS Responsive two-system panels 1366 {}
+PASS Responsive two-system panels 1050 {}
+PASS Responsive two-system panels 900 {}
+PASS Reopened mobile tree retains its selected muscle without manual scrolling {}
+PASS Responsive two-system panels 390 {}
+PASS Legacy heart still renders actual WebGL {}
+PASS Legacy lungs still renders actual WebGL {}
+PASS Legacy brain still renders actual WebGL {}
+node.exe : Browser teardown: exceeded 5000 ms; partial evidence is retained.
+En C:\Users\jotaj\Desktop\med3d\.cache\phase3c\run-final.ps1: 12 Carácter: 3
++   & $program @arguments 2>&1 | Tee-Object -FilePath (Join-Path $evide ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Browser teardow...ce is retained.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError

@@ -1,0 +1,18 @@
+{
+  "codeCommit": "eb84c2d206b0bda73bfa5112d9f7943ab3985126",
+  "success": true,
+  "documents": 7,
+  "deliveryPoints": 39,
+  "localLinks": 104,
+  "verifiedCaptures": 63,
+  "finalCommands": 14,
+  "checks": [
+    "All evidence identities reference codeCommit",
+    "All 63 capture hashes and individual observations match",
+    "All final command records pass on codeCommit",
+    "All current build files match recorded hashes",
+    "Every local documentation link resolves",
+    "Implementation remains identical to codeCommit",
+    "Base, branch and main match required identities"
+  ]
+}

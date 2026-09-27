@@ -1,0 +1,2092 @@
+{
+  "status": "PAUSED_BEFORE_EXTRACTION_SCOPE_DECISION_REQUIRED",
+  "date": "2026-09-27",
+  "base": "3373a06bed350c7af13f26dd1c461448c0650885",
+  "metadataArchive": "research/anatomy/torso-metadata.zip",
+  "sourceUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/",
+  "metadataRows": {
+    "isa_element_parts.txt": 29549,
+    "isa_inclusion_relation_list.txt": 2904,
+    "isa_parts_list_e.txt": 2905,
+    "partof_element_parts.txt": 17943,
+    "partof_inclusion_relation_list.txt": 1367,
+    "partof_parts_list_e.txt": 1368
+  },
+  "archiveDirectoryEntries": 2234,
+  "geometryExtracted": false,
+  "decisions": {
+    "APLAZADO": 38,
+    "DESCARTADO": 1
+  },
+  "approvedForIntegration": 0,
+  "rows": [
+    {
+      "name": "Encéfalo",
+      "latin": "Encephalon",
+      "fma": "FMA50801",
+      "fj": [
+        "FJ1730",
+        "FJ1731",
+        "FJ1732",
+        "FJ1733",
+        "FJ1738",
+        "FJ1739",
+        "FJ1740",
+        "FJ1743",
+        "FJ1744",
+        "FJ1745",
+        "FJ1746",
+        "FJ1747",
+        "FJ1748",
+        "FJ1749",
+        "FJ1750",
+        "FJ1751",
+        "FJ1758",
+        "FJ1759",
+        "FJ1760",
+        "FJ1762",
+        "FJ1767",
+        "FJ1769",
+        "FJ1770",
+        "FJ1775",
+        "FJ1779",
+        "FJ1780",
+        "FJ1781",
+        "FJ1783",
+        "FJ1784",
+        "FJ1785",
+        "FJ1786",
+        "FJ1787",
+        "FJ1788",
+        "FJ1789",
+        "FJ1790",
+        "FJ1791",
+        "FJ1792",
+        "FJ1795",
+        "FJ1797",
+        "FJ1798",
+        "FJ1800",
+        "FJ1801",
+        "FJ1806",
+        "FJ1807",
+        "FJ1808",
+        "FJ1810",
+        "FJ1814",
+        "FJ1817",
+        "FJ1822",
+        "FJ1826",
+        "FJ1828",
+        "FJ1830",
+        "FJ1831",
+        "FJ1833",
+        "FJ1834",
+        "FJ1835",
+        "FJ1836",
+        "FJ1841",
+        "FJ1842"
+      ],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "partof",
+      "type": "órgano compuesto",
+      "system": "nervioso",
+      "subdivision": "SNC",
+      "region": "cabeza",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1730.obj",
+          "bytes": 245099
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1731.obj",
+          "bytes": 447538
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1732.obj",
+          "bytes": 236788
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1733.obj",
+          "bytes": 239530
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1738.obj",
+          "bytes": 33446
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1739.obj",
+          "bytes": 154389
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1740.obj",
+          "bytes": 151331
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1743.obj",
+          "bytes": 27755
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1744.obj",
+          "bytes": 218647
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1745.obj",
+          "bytes": 220234
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1746.obj",
+          "bytes": 177780
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1747.obj",
+          "bytes": 182921
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1748.obj",
+          "bytes": 148027
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1749.obj",
+          "bytes": 150490
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1750.obj",
+          "bytes": 686435
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1751.obj",
+          "bytes": 693186
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1758.obj",
+          "bytes": 1837827
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1759.obj",
+          "bytes": 57341
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1760.obj",
+          "bytes": 132131
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1762.obj",
+          "bytes": 9042
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1767.obj",
+          "bytes": 1158407
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1769.obj",
+          "bytes": 392219
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1770.obj",
+          "bytes": 468005
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1775.obj",
+          "bytes": 697135
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1779.obj",
+          "bytes": 10340
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1780.obj",
+          "bytes": 60641
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1781.obj",
+          "bytes": 1579646
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1783.obj",
+          "bytes": 96372
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1784.obj",
+          "bytes": 101913
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1785.obj",
+          "bytes": 47143
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1786.obj",
+          "bytes": 54449
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1787.obj",
+          "bytes": 226086
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1788.obj",
+          "bytes": 224095
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1789.obj",
+          "bytes": 174631
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1790.obj",
+          "bytes": 179357
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1791.obj",
+          "bytes": 293610
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1792.obj",
+          "bytes": 307991
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1795.obj",
+          "bytes": 34031
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1797.obj",
+          "bytes": 236182
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1798.obj",
+          "bytes": 238993
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1800.obj",
+          "bytes": 270175
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1801.obj",
+          "bytes": 274741
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1806.obj",
+          "bytes": 1922977
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1807.obj",
+          "bytes": 60478
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1808.obj",
+          "bytes": 131989
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1810.obj",
+          "bytes": 11681
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1814.obj",
+          "bytes": 1168390
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1817.obj",
+          "bytes": 461102
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1822.obj",
+          "bytes": 727798
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1826.obj",
+          "bytes": 10171
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1828.obj",
+          "bytes": 65789
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1830.obj",
+          "bytes": 1598659
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1831.obj",
+          "bytes": 401304
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1833.obj",
+          "bytes": 432276
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1834.obj",
+          "bytes": 437650
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1835.obj",
+          "bytes": 366912
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1836.obj",
+          "bytes": 383555
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1841.obj",
+          "bytes": 149885
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1842.obj",
+          "bytes": 152420
+        }
+      ],
+      "bytes": 21659135,
+      "decision": "APLAZADO",
+      "reason": "Identidad y FJ presentes; candidato a revisión geométrica. Integración suspendida por decisión de alcance, no por ausencia. Los compuestos no se contarían además de sus componentes."
+    },
+    {
+      "name": "Cerebelo",
+      "latin": "Cerebellum",
+      "fma": "FMA67944",
+      "fj": [
+        "FJ1781",
+        "FJ1830"
+      ],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "región",
+      "system": "nervioso",
+      "subdivision": "SNC",
+      "region": "cabeza",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1781.obj",
+          "bytes": 1579646
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1830.obj",
+          "bytes": 1598659
+        }
+      ],
+      "bytes": 3178305,
+      "decision": "APLAZADO",
+      "reason": "Identidad y FJ presentes; candidato a revisión geométrica. Integración suspendida por decisión de alcance, no por ausencia. Los compuestos no se contarían además de sus componentes."
+    },
+    {
+      "name": "Tronco encefálico",
+      "latin": "Truncus encephali",
+      "fma": "FMA79876",
+      "fj": [
+        "FJ1738",
+        "FJ1762",
+        "FJ1769",
+        "FJ1770",
+        "FJ1775",
+        "FJ1779",
+        "FJ1810",
+        "FJ1817",
+        "FJ1822",
+        "FJ1826",
+        "FJ1831"
+      ],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "partof",
+      "type": "región compuesta",
+      "system": "nervioso",
+      "subdivision": "SNC",
+      "region": "cabeza",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1738.obj",
+          "bytes": 33446
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1762.obj",
+          "bytes": 9042
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1769.obj",
+          "bytes": 392219
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1770.obj",
+          "bytes": 468005
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1775.obj",
+          "bytes": 697135
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1779.obj",
+          "bytes": 10340
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1810.obj",
+          "bytes": 11681
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1817.obj",
+          "bytes": 461102
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1822.obj",
+          "bytes": 727798
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1826.obj",
+          "bytes": 10171
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1831.obj",
+          "bytes": 401304
+        }
+      ],
+      "bytes": 3222243,
+      "decision": "APLAZADO",
+      "reason": "Identidad y FJ presentes; candidato a revisión geométrica. Integración suspendida por decisión de alcance, no por ausencia. Los compuestos no se contarían además de sus componentes."
+    },
+    {
+      "name": "Mesencéfalo",
+      "latin": "Mesencephalon",
+      "fma": "FMA61993",
+      "fj": [
+        "FJ1770",
+        "FJ1817"
+      ],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "región",
+      "system": "nervioso",
+      "subdivision": "SNC",
+      "region": "cabeza",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1770.obj",
+          "bytes": 468005
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1817.obj",
+          "bytes": 461102
+        }
+      ],
+      "bytes": 929107,
+      "decision": "APLAZADO",
+      "reason": "Identidad y FJ presentes; candidato a revisión geométrica. Integración suspendida por decisión de alcance, no por ausencia. Los compuestos no se contarían además de sus componentes."
+    },
+    {
+      "name": "Puente",
+      "latin": "Pons",
+      "fma": "FMA67943",
+      "fj": [
+        "FJ1775",
+        "FJ1822"
+      ],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "región",
+      "system": "nervioso",
+      "subdivision": "SNC",
+      "region": "cabeza",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1775.obj",
+          "bytes": 697135
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1822.obj",
+          "bytes": 727798
+        }
+      ],
+      "bytes": 1424933,
+      "decision": "APLAZADO",
+      "reason": "Identidad y FJ presentes; candidato a revisión geométrica. Integración suspendida por decisión de alcance, no por ausencia. Los compuestos no se contarían además de sus componentes."
+    },
+    {
+      "name": "Bulbo raquídeo",
+      "latin": "Medulla oblongata",
+      "fma": "FMA62004",
+      "fj": [
+        "FJ1769",
+        "FJ1831"
+      ],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "región",
+      "system": "nervioso",
+      "subdivision": "SNC",
+      "region": "cabeza",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1769.obj",
+          "bytes": 392219
+        },
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1831.obj",
+          "bytes": 401304
+        }
+      ],
+      "bytes": 793523,
+      "decision": "APLAZADO",
+      "reason": "Identidad y FJ presentes; candidato a revisión geométrica. Integración suspendida por decisión de alcance, no por ausencia. Los compuestos no se contarían además de sus componentes."
+    },
+    {
+      "name": "Médula espinal",
+      "latin": "Medulla spinalis",
+      "fma": "FMA7647",
+      "fj": [
+        "FJ1737"
+      ],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "partof",
+      "type": "órgano",
+      "system": "nervioso",
+      "subdivision": "SNC",
+      "region": "columna",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1737.obj",
+          "bytes": 46908
+        }
+      ],
+      "bytes": 46908,
+      "decision": "APLAZADO",
+      "reason": "La única unión es FJ1737, compartida con FMA78497 (conducto central). No se demuestra geometría de médula completa."
+    },
+    {
+      "name": "Conducto central usado como médula completa",
+      "latin": "Canalis centralis",
+      "fma": "FMA78497",
+      "fj": [
+        "FJ1737"
+      ],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "cavidad/conducto",
+      "system": "nervioso",
+      "subdivision": "SNC",
+      "region": "columna",
+      "side": "no especificado",
+      "parent": "FMA7647 en PART-OF",
+      "files": [
+        {
+          "file": "isa_BP3D_4.0_obj_99/FJ1737.obj",
+          "bytes": 46908
+        }
+      ],
+      "bytes": 46908,
+      "decision": "DESCARTADO",
+      "reason": "Se descarta esta sustitución semántica: un conducto no acredita el tejido de la médula. No se descarta la identidad original del conducto."
+    },
+    {
+      "name": "I Olfatorio",
+      "latin": "Nervus olfactorius",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio craneal o familia",
+      "system": "nervioso",
+      "subdivision": "pares craneales",
+      "region": "cabeza",
+      "side": "par bilateral por auditar",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en ninguna de las dos tablas consultadas; no equivale a ausencia en todas las versiones de BP3D."
+    },
+    {
+      "name": "II Óptico",
+      "latin": "Nervus opticus",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio craneal o familia",
+      "system": "nervioso",
+      "subdivision": "pares craneales",
+      "region": "cabeza",
+      "side": "par bilateral por auditar",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Nervio Óptico identificado por lado: FMA50875→FJ1364,FJ1819; FMA50878→FJ1313,FJ1772. Desglose pendiente; no se clasifica automáticamente como nervio periférico ordinario."
+    },
+    {
+      "name": "III Oculomotor",
+      "latin": "Nervus oculomotorius",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio craneal o familia",
+      "system": "nervioso",
+      "subdivision": "pares craneales",
+      "region": "cabeza",
+      "side": "par bilateral por auditar",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sólo ramas superior/inferior identificadas por lado; no acredita nervio oculomotor completo."
+    },
+    {
+      "name": "IV Troclear",
+      "latin": "Nervus trochlearis",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio craneal o familia",
+      "system": "nervioso",
+      "subdivision": "pares craneales",
+      "region": "cabeza",
+      "side": "par bilateral por auditar",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Troclear derecho FMA50881→FJ1381 e izquierdo FMA50882→FJ1330 identificados; sin validación geométrica aún."
+    },
+    {
+      "name": "V Trigémino",
+      "latin": "Nervus trigeminus",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio craneal o familia",
+      "system": "nervioso",
+      "subdivision": "pares craneales",
+      "region": "cabeza",
+      "side": "par bilateral por auditar",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Rama oftálmica y ramas orbitarias presentes; no acredita V completo, V2 ni V3."
+    },
+    {
+      "name": "VI Abducens",
+      "latin": "Nervus abducens",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio craneal o familia",
+      "system": "nervioso",
+      "subdivision": "pares craneales",
+      "region": "cabeza",
+      "side": "par bilateral por auditar",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en ninguna de las dos tablas consultadas; no equivale a ausencia en todas las versiones de BP3D."
+    },
+    {
+      "name": "VII Facial",
+      "latin": "Nervus facialis",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio craneal o familia",
+      "system": "nervioso",
+      "subdivision": "pares craneales",
+      "region": "cabeza",
+      "side": "par bilateral por auditar",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en ninguna de las dos tablas consultadas; no equivale a ausencia en todas las versiones de BP3D."
+    },
+    {
+      "name": "VIII Vestibulococlear",
+      "latin": "Nervus vestibulocochlearis",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio craneal o familia",
+      "system": "nervioso",
+      "subdivision": "pares craneales",
+      "region": "cabeza",
+      "side": "par bilateral por auditar",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en ninguna de las dos tablas consultadas; no equivale a ausencia en todas las versiones de BP3D."
+    },
+    {
+      "name": "IX Glosofaríngeo",
+      "latin": "Nervus glossopharyngeus",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio craneal o familia",
+      "system": "nervioso",
+      "subdivision": "pares craneales",
+      "region": "cabeza",
+      "side": "par bilateral por auditar",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en ninguna de las dos tablas consultadas; no equivale a ausencia en todas las versiones de BP3D."
+    },
+    {
+      "name": "X Vago",
+      "latin": "Nervus vagus",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio craneal o familia",
+      "system": "nervioso",
+      "subdivision": "pares craneales",
+      "region": "cabeza",
+      "side": "par bilateral por auditar",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en ninguna de las dos tablas consultadas; no equivale a ausencia en todas las versiones de BP3D."
+    },
+    {
+      "name": "XI Accesorio",
+      "latin": "Nervus accessorius",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio craneal o familia",
+      "system": "nervioso",
+      "subdivision": "pares craneales",
+      "region": "cabeza",
+      "side": "par bilateral por auditar",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en ninguna de las dos tablas consultadas; no equivale a ausencia en todas las versiones de BP3D."
+    },
+    {
+      "name": "XII Hipogloso",
+      "latin": "Nervus hypoglossus",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio craneal o familia",
+      "system": "nervioso",
+      "subdivision": "pares craneales",
+      "region": "cabeza",
+      "side": "par bilateral por auditar",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en ninguna de las dos tablas consultadas; no equivale a ausencia en todas las versiones de BP3D."
+    },
+    {
+      "name": "Plexo cervical",
+      "latin": "Plexus cervicalis",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "plexo",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "cuello",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Plexo braquial",
+      "latin": "Plexus brachialis",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "plexo",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro superior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Plexo lumbar",
+      "latin": "Plexus lumbalis",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "plexo",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro inferior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Plexo sacro",
+      "latin": "Plexus sacralis",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "plexo",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro inferior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Axilar",
+      "latin": "Nervus axillaris",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro superior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Musculocutáneo",
+      "latin": "Nervus musculocutaneus",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro superior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Mediano",
+      "latin": "Nervus medianus",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro superior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Ulnar / cubital",
+      "latin": "Nervus ulnaris",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro superior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Radial",
+      "latin": "Nervus radialis",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro superior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Femoral",
+      "latin": "Nervus femoralis",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro inferior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Obturador",
+      "latin": "Nervus obturatorius",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro inferior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Ciático",
+      "latin": "Nervus ischiadicus",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro inferior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Tibial",
+      "latin": "Nervus tibialis",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro inferior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Fibular común",
+      "latin": "Nervus fibularis communis",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro inferior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Fibular superficial",
+      "latin": "Nervus fibularis superficialis",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro inferior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Fibular profundo",
+      "latin": "Nervus fibularis profundus",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "miembro inferior",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Nervios glúteos",
+      "latin": "Nervi glutei",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "pelvis",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Nervios espinales",
+      "latin": "Nervi spinales",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "nervio",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "columna",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    },
+    {
+      "name": "Raíces espinales",
+      "latin": "Radices nervorum spinalium",
+      "fma": null,
+      "fj": [],
+      "source": "BodyParts3D 4.0 OBJ99 / DBCLS",
+      "sourceTable": "isa",
+      "type": "raíz",
+      "system": "nervioso",
+      "subdivision": "SNP",
+      "region": "columna",
+      "side": "no especificado",
+      "parent": "sin curar",
+      "files": [],
+      "bytes": 0,
+      "decision": "APLAZADO",
+      "reason": "Sin identificación nominal en las tablas IS-A y PART-OF 4.0 consultadas. No se asignan FMA, FJ ni geometría supuesta."
+    }
+  ],
+  "queries": [
+    {
+      "name": "I Olfatorio",
+      "query": "olfactory nerve",
+      "matches": []
+    },
+    {
+      "name": "II Óptico",
+      "query": "optic nerve",
+      "matches": [
+        {
+          "table": "isa",
+          "fma": "FMA50863",
+          "name": "optic nerve",
+          "fj": [
+            "FJ1313",
+            "FJ1364",
+            "FJ1772",
+            "FJ1819"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA50875",
+          "name": "right optic nerve",
+          "fj": [
+            "FJ1364",
+            "FJ1819"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA50878",
+          "name": "left optic nerve",
+          "fj": [
+            "FJ1313",
+            "FJ1772"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "III Oculomotor",
+      "query": "oculomotor nerve",
+      "matches": [
+        {
+          "table": "isa",
+          "fma": "FMA52571",
+          "name": "branch of oculomotor nerve",
+          "fj": [
+            "FJ1293",
+            "FJ1321",
+            "FJ1344",
+            "FJ1372"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52572",
+          "name": "superior branch of oculomotor nerve",
+          "fj": [
+            "FJ1321",
+            "FJ1372"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52573",
+          "name": "inferior branch of oculomotor nerve",
+          "fj": [
+            "FJ1293",
+            "FJ1344"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52574",
+          "name": "superior branch of right oculomotor nerve",
+          "fj": [
+            "FJ1372"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52575",
+          "name": "superior branch of left oculomotor nerve",
+          "fj": [
+            "FJ1321"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52576",
+          "name": "inferior branch of right oculomotor nerve",
+          "fj": [
+            "FJ1344"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52577",
+          "name": "inferior branch of left oculomotor nerve",
+          "fj": [
+            "FJ1293"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "IV Troclear",
+      "query": "trochlear nerve",
+      "matches": [
+        {
+          "table": "isa",
+          "fma": "FMA50865",
+          "name": "trochlear nerve",
+          "fj": [
+            "FJ1330",
+            "FJ1381"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA50881",
+          "name": "right trochlear nerve",
+          "fj": [
+            "FJ1381"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA50882",
+          "name": "left trochlear nerve",
+          "fj": [
+            "FJ1330"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52642",
+          "name": "supratrochlear nerve",
+          "fj": [
+            "FJ1326",
+            "FJ1377"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52643",
+          "name": "right supratrochlear nerve",
+          "fj": [
+            "FJ1377"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52644",
+          "name": "left supratrochlear nerve",
+          "fj": [
+            "FJ1326"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52693",
+          "name": "infratrochlear nerve",
+          "fj": [
+            "FJ1296",
+            "FJ1347"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52698",
+          "name": "right infratrochlear nerve",
+          "fj": [
+            "FJ1347"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52699",
+          "name": "left infratrochlear nerve",
+          "fj": [
+            "FJ1296"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V Trigémino",
+      "query": "trigeminal nerve|ophthalmic nerve",
+      "matches": [
+        {
+          "table": "isa",
+          "fma": "FMA52607",
+          "name": "branch of trigeminal nerve",
+          "fj": [
+            "FJ1283",
+            "FJ1290",
+            "FJ1296",
+            "FJ1300",
+            "FJ1310",
+            "FJ1311",
+            "FJ1312",
+            "FJ1315",
+            "FJ1318",
+            "FJ1325",
+            "FJ1326",
+            "FJ1333",
+            "FJ1341",
+            "FJ1347",
+            "FJ1351",
+            "FJ1361",
+            "FJ1362",
+            "FJ1363",
+            "FJ1366",
+            "FJ1369",
+            "FJ1376",
+            "FJ1377"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52621",
+          "name": "ophthalmic nerve",
+          "fj": [
+            "FJ1312",
+            "FJ1363"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52622",
+          "name": "right ophthalmic nerve",
+          "fj": [
+            "FJ1363"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52623",
+          "name": "left ophthalmic nerve",
+          "fj": [
+            "FJ1312"
+          ]
+        },
+        {
+          "table": "isa",
+          "fma": "FMA52624",
+          "name": "branch of ophthalmic nerve",
+          "fj": [
+            "FJ1283",
+            "FJ1290",
+            "FJ1296",
+            "FJ1300",
+            "FJ1310",
+            "FJ1311",
+            "FJ1315",
+            "FJ1318",
+            "FJ1325",
+            "FJ1326",
+            "FJ1333",
+            "FJ1341",
+            "FJ1347",
+            "FJ1351",
+            "FJ1361",
+            "FJ1362",
+            "FJ1366",
+            "FJ1369",
+            "FJ1376",
+            "FJ1377"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VI Abducens",
+      "query": "abducens nerve|abducent nerve",
+      "matches": []
+    },
+    {
+      "name": "VII Facial",
+      "query": "facial nerve",
+      "matches": []
+    },
+    {
+      "name": "VIII Vestibulococlear",
+      "query": "vestibulocochlear nerve|vestibular nerve|cochlear nerve|acoustic nerve",
+      "matches": []
+    },
+    {
+      "name": "IX Glosofaríngeo",
+      "query": "glossopharyngeal nerve",
+      "matches": []
+    },
+    {
+      "name": "X Vago",
+      "query": "vagus nerve|vagal nerve",
+      "matches": []
+    },
+    {
+      "name": "XI Accesorio",
+      "query": "accessory nerve",
+      "matches": []
+    },
+    {
+      "name": "XII Hipogloso",
+      "query": "hypoglossal nerve",
+      "matches": []
+    },
+    {
+      "name": "Plexo cervical",
+      "query": "cervical plexus",
+      "matches": []
+    },
+    {
+      "name": "Plexo braquial",
+      "query": "brachial plexus",
+      "matches": []
+    },
+    {
+      "name": "Plexo lumbar",
+      "query": "lumbar plexus",
+      "matches": []
+    },
+    {
+      "name": "Plexo sacro",
+      "query": "sacral plexus|lumbosacral plexus",
+      "matches": []
+    },
+    {
+      "name": "Axilar",
+      "query": "axillary nerve",
+      "matches": []
+    },
+    {
+      "name": "Musculocutáneo",
+      "query": "musculocutaneous nerve",
+      "matches": []
+    },
+    {
+      "name": "Mediano",
+      "query": "median nerve",
+      "matches": []
+    },
+    {
+      "name": "Ulnar / cubital",
+      "query": "ulnar nerve",
+      "matches": []
+    },
+    {
+      "name": "Radial",
+      "query": "radial nerve",
+      "matches": []
+    },
+    {
+      "name": "Femoral",
+      "query": "femoral nerve",
+      "matches": []
+    },
+    {
+      "name": "Obturador",
+      "query": "obturator nerve",
+      "matches": []
+    },
+    {
+      "name": "Ciático",
+      "query": "sciatic nerve|ischiadic nerve",
+      "matches": []
+    },
+    {
+      "name": "Tibial",
+      "query": "tibial nerve",
+      "matches": []
+    },
+    {
+      "name": "Fibular común",
+      "query": "common (fibular|peroneal) nerve",
+      "matches": []
+    },
+    {
+      "name": "Fibular superficial",
+      "query": "superficial (fibular|peroneal) nerve",
+      "matches": []
+    },
+    {
+      "name": "Fibular profundo",
+      "query": "deep (fibular|peroneal) nerve",
+      "matches": []
+    },
+    {
+      "name": "Nervios glúteos",
+      "query": "gluteal nerve",
+      "matches": []
+    },
+    {
+      "name": "Nervios espinales",
+      "query": "spinal nerve",
+      "matches": []
+    },
+    {
+      "name": "Raíces espinales",
+      "query": "(ventral|dorsal|anterior|posterior) root|root of.*spinal",
+      "matches": []
+    }
+  ],
+  "lexicalTerminalNerveGanglionMatches": [
+    {
+      "fma": "FMA7041",
+      "name": "short ciliary nerve",
+      "fj": [
+        "FJ1319",
+        "FJ1370"
+      ]
+    },
+    {
+      "fma": "FMA50875",
+      "name": "right optic nerve",
+      "fj": [
+        "FJ1364",
+        "FJ1819"
+      ]
+    },
+    {
+      "fma": "FMA50878",
+      "name": "left optic nerve",
+      "fj": [
+        "FJ1313",
+        "FJ1772"
+      ]
+    },
+    {
+      "fma": "FMA50881",
+      "name": "right trochlear nerve",
+      "fj": [
+        "FJ1381"
+      ]
+    },
+    {
+      "fma": "FMA50882",
+      "name": "left trochlear nerve",
+      "fj": [
+        "FJ1330"
+      ]
+    },
+    {
+      "fma": "FMA52574",
+      "name": "superior branch of right oculomotor nerve",
+      "fj": [
+        "FJ1372"
+      ]
+    },
+    {
+      "fma": "FMA52575",
+      "name": "superior branch of left oculomotor nerve",
+      "fj": [
+        "FJ1321"
+      ]
+    },
+    {
+      "fma": "FMA52576",
+      "name": "inferior branch of right oculomotor nerve",
+      "fj": [
+        "FJ1344"
+      ]
+    },
+    {
+      "fma": "FMA52577",
+      "name": "inferior branch of left oculomotor nerve",
+      "fj": [
+        "FJ1293"
+      ]
+    },
+    {
+      "fma": "FMA52622",
+      "name": "right ophthalmic nerve",
+      "fj": [
+        "FJ1363"
+      ]
+    },
+    {
+      "fma": "FMA52623",
+      "name": "left ophthalmic nerve",
+      "fj": [
+        "FJ1312"
+      ]
+    },
+    {
+      "fma": "FMA52629",
+      "name": "right lacrimal nerve",
+      "fj": [
+        "FJ1351"
+      ]
+    },
+    {
+      "fma": "FMA52630",
+      "name": "left lacrimal nerve",
+      "fj": [
+        "FJ1300"
+      ]
+    },
+    {
+      "fma": "FMA52639",
+      "name": "right frontal nerve",
+      "fj": [
+        "FJ1341"
+      ]
+    },
+    {
+      "fma": "FMA52640",
+      "name": "left frontal nerve",
+      "fj": [
+        "FJ1290"
+      ]
+    },
+    {
+      "fma": "FMA52643",
+      "name": "right supratrochlear nerve",
+      "fj": [
+        "FJ1377"
+      ]
+    },
+    {
+      "fma": "FMA52644",
+      "name": "left supratrochlear nerve",
+      "fj": [
+        "FJ1326"
+      ]
+    },
+    {
+      "fma": "FMA52656",
+      "name": "right supra-orbital nerve",
+      "fj": [
+        "FJ1376"
+      ]
+    },
+    {
+      "fma": "FMA52657",
+      "name": "left supra-orbital nerve",
+      "fj": [
+        "FJ1325"
+      ]
+    },
+    {
+      "fma": "FMA52669",
+      "name": "right nasociliary nerve",
+      "fj": [
+        "FJ1361"
+      ]
+    },
+    {
+      "fma": "FMA52670",
+      "name": "left nasociliary nerve",
+      "fj": [
+        "FJ1310"
+      ]
+    },
+    {
+      "fma": "FMA52673",
+      "name": "communicating branch of right nasociliary nerve with right ciliary ganglion",
+      "fj": [
+        "FJ1362"
+      ]
+    },
+    {
+      "fma": "FMA52674",
+      "name": "communicating branch of left nasociliary nerve with left ciliary ganglion",
+      "fj": [
+        "FJ1311"
+      ]
+    },
+    {
+      "fma": "FMA52676",
+      "name": "right anterior ethmoidal nerve",
+      "fj": [
+        "FJ1333"
+      ]
+    },
+    {
+      "fma": "FMA52677",
+      "name": "left anterior ethmoidal nerve",
+      "fj": [
+        "FJ1283"
+      ]
+    },
+    {
+      "fma": "FMA52698",
+      "name": "right infratrochlear nerve",
+      "fj": [
+        "FJ1347"
+      ]
+    },
+    {
+      "fma": "FMA52699",
+      "name": "left infratrochlear nerve",
+      "fj": [
+        "FJ1296"
+      ]
+    },
+    {
+      "fma": "FMA52715",
+      "name": "right posterior ethmoidal nerve",
+      "fj": [
+        "FJ1366"
+      ]
+    },
+    {
+      "fma": "FMA52716",
+      "name": "left posterior ethmoidal nerve",
+      "fj": [
+        "FJ1315"
+      ]
+    },
+    {
+      "fma": "FMA53549",
+      "name": "right ciliary ganglion",
+      "fj": [
+        "FJ1339"
+      ]
+    },
+    {
+      "fma": "FMA53550",
+      "name": "left ciliary ganglion",
+      "fj": [
+        "FJ1288"
+      ]
+    },
+    {
+      "fma": "FMA82734",
+      "name": "right long ciliary nerve",
+      "fj": [
+        "FJ1369"
+      ]
+    },
+    {
+      "fma": "FMA82735",
+      "name": "left long ciliary nerve",
+      "fj": [
+        "FJ1318"
+      ]
+    }
+  ],
+  "hraBrain": {
+    "url": "/models/brain.glb",
+    "sourceUrl": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/main/VH_Male/v1.2/Allen_M_Brain.glb",
+    "sourceBytes": 11977312,
+    "sourceSha256": "2b9ad5b53e40e9f0936da74f7be38d2eed15604e26358c3870a0ea13499b9a35",
+    "bytes": 3496140,
+    "sha256": "ecda8d7886b75241c36eefebf7796ec5ed38cd4495c8eb96e50595ee733c52e6",
+    "meshes": 283,
+    "license": "CC-BY-4.0",
+    "nodes": 286,
+    "triangles": 656268,
+    "rootId": "Allen_brain",
+    "nodeIds": [
+      "Allen_brain",
+      "Allen_brain_Hemisphere_L",
+      "Allen_olfactory_bulb_L",
+      "Allen_anterior_olfactory_nucleus_L",
+      "Allen_piriform_region_L",
+      "Allen_frontal_agranular_insular_cortex_area_Fl_L",
+      "Allen_temporal_agranular_insular_cortex_area_Tl_L",
+      "Allen_head_of_caudate_L",
+      "Allen_body_of_caudate_L",
+      "Allen_tail_of_caudate_L",
+      "Allen_putamen_L",
+      "Allen_nucleus_accumbens_L",
+      "Allen_external_segment_of_globus_pallidus_L",
+      "Allen_internal_segment_of_globus_pallidus_L",
+      "Allen_claustrum_L",
+      "Allen_basal_forebrain_L",
+      "Allen_septal_nuclei_L",
+      "Allen_amygdaloid_complex_L",
+      "Allen_anterior_amygdaloid_area_L",
+      "Allen_central_nuclear_group_L",
+      "Allen_lateral_nucleus_L",
+      "Allen_basolateral_nucleus_basal_nucleus_L",
+      "Allen_basomedial_nucleus_accessory_basal_nucleus_L",
+      "Allen_anterior_cortical_nucleus_L",
+      "Allen_posterior_cortical_nucleus_L",
+      "Allen_medial_nucleus_L",
+      "Allen_amygdalohippocampal_area_L",
+      "Allen_bed_nucleus_of_stria_terminalis_L",
+      "Allen_thalamus_L",
+      "Allen_anterior_nuclear_complex_of_thalamus_L",
+      "Allen_lateral_dorsal_nucleus_of_thalamus_L",
+      "Allen_mediodorsal_nucleus_of_thalamus_L",
+      "Allen_reuniens_nucleus_medioventral_nucleus_of_thalamus_L",
+      "Allen_lateral_posterior_nucleus_of_thalamus_L",
+      "Allen_pulvinar_of_thalamus_L",
+      "Allen_ventral_anterior_nucleus_of_thalamus_L",
+      "Allen_ventral_lateral_nucleus_of_thalamus_L",
+      "Allen_ventral_posterior_lateral_nucleus_L",
+      "Allen_ventral_posterior_medial_nucleus_L",
+      "Allen_dorsal_lateral_geniculate_nucleus_L",
+      "Allen_medial_geniculate_nuclei_L",
+      "Allen_centromedian_nucleus_of_thalamus_L",
+      "Allen_parafascicular_nucleus_of_thalamus_L",
+      "Allen_habenular_nuclei_L",
+      "Allen_pineal_body_L",
+      "Allen_zona_incerta_L",
+      "Allen_supraoptic_region_of_HTH_L",
+      "Allen_preoptic_region_of_HTH_L",
+      "Allen_tuberal_region_of_HTH_L",
+      "Allen_white_matter_of_forebrain_L",
+      "Allen_anterior_commissure_L",
+      "Allen_corpus_callosum_L",
+      "Allen_fornix_L",
+      "Allen_mammillothalamic_tract_L",
+      "Allen_optic_tract_L",
+      "Allen_anterior_horn_of_lateral_ventricle_L",
+      "Allen_body_of_lateral_ventricle_L",
+      "Allen_posterior_horn_of_lateral_ventricle_L",
+      "Allen_inferior_horn_of_lateral_ventricle_L",
+      "Allen_third_ventricle_L",
+      "Allen_cerebellar_vermis_L",
+      "Allen_cerebellar_deep_nuclei_L",
+      "Allen_white_matter_of_hindbrain_L",
+      "Allen_olfactory_tract_L",
+      "Allen_precentral_gyrus_L",
+      "Allen_superior_frontal_gyrus_L",
+      "Allen_middle_frontal_gyrus_L",
+      "Allen_inferior_frontal_gyrus_triangular_part_L",
+      "Allen_inferior_frontal_gyrus_opercular_part_L",
+      "Allen_gyrus_rectus_straight_gyrus_L",
+      "Allen_medial_orbital_gyrus_L",
+      "Allen_anterior_intermediate_orbital_gyrus_L",
+      "Allen_posterior_intermediate_orbital_gyrus_L",
+      "Allen_lateral_orbital_gyrus_L",
+      "Allen_paracentral_lobule_rostral_part_L",
+      "Allen_frontal_operculum_L",
+      "Allen_postcentral_gyrus_L",
+      "Allen_supraparietal_lobule_L",
+      "Allen_supramarginal_gyrus_L",
+      "Allen_angular_gyrus_L",
+      "Allen_precuneus_L",
+      "Allen_paracentral_lobule_caudal_part_L",
+      "Allen_superior_temporal_gyrus_L",
+      "Allen_middle_temporal_gyrus_L",
+      "Allen_inferior_temporal_gyrus_L",
+      "Allen_occipitotemporal_fusiform_gyrus_temporal_part_L",
+      "Allen_transverse_temporal_gyrus_Heschls_gyrus_L",
+      "Allen_planum_temporale_L",
+      "Allen_temporal_pole_L",
+      "Allen_planum_polare_L",
+      "Allen_occipital_pole_L",
+      "Allen_cuneus_L",
+      "Allen_lingual_gyrus_medial_occipitotemporal_gyrus_L",
+      "Allen_lateral_occipitotemporal_fusiform_gyrus_occipital_part_L",
+      "Allen_inferior_occipital_gyrus_L",
+      "Allen_superior_occipital_gyrus_L",
+      "Allen_cingulate_gyrus_rostral_anterior_part_L",
+      "Allen_cingulate_gyrus_caudal_posterior_part_L",
+      "Allen_ingulo_parahippocampal_isthmus_L",
+      "Allen_subcallosal_gyrus_parolfactory_gyrus_L",
+      "Allen_anterior_parahippocampal_gyrus_L",
+      "Allen_posterior_parahippocampal_gyrus_L",
+      "Allen_gyrus_ambiens_L",
+      "Allen_head_of_hippocampus_L",
+      "Allen_body_of_hippocampus_L",
+      "Allen_tail_of_hippocampus_L",
+      "Allen_long_insular_gyri_L",
+      "Allen_short_insular_gyri_L",
+      "Allen_limen_insula_L",
+      "Allen_pretectal_region_L",
+      "Allen_substantia_nigra_L",
+      "Allen_superior_colliculus_L",
+      "Allen_cerebral_peduncle_crus_cerebri_L",
+      "Allen_superior_cerebellar_peduncle_brachium_conjunctivum_L",
+      "Allen_cerebral_aqueduct_L",
+      "Allen_paravermis_of_cerebellum_L",
+      "Allen_lateral_hemisphere_of_cerebellum_L",
+      "Allen_basilar_part_of_pons_L",
+      "Allen_pontine_tegmentum_L",
+      "Allen_pyramidal_part_of_medulla_oblongata_L",
+      "Allen_tegmentum_of_medulla_oblongata_L",
+      "Allen_inferior_olive_L",
+      "Allen_middle_cerebellar_peduncle_L",
+      "Allen_fourth_ventricle_L",
+      "Allen_central_canal_of_medulla_oblongata_L",
+      "Allen_midline_nuclear_complex_L",
+      "Allen_lateral_olfactory_gyrus_L",
+      "Allen_parietal_operculum_L",
+      "Allen_optic_radiation_L",
+      "Allen_posteroventral_putamen_L",
+      "Allen_atrium_of_lateral_ventricle_L",
+      "Allen_paracingulate_gyrus_L",
+      "Allen_rostral_gyrus_L",
+      "Allen_frontomarginal_gyrus_L",
+      "Allen_frontal_pole_L",
+      "Allen_inferior_cerebellar_peduncle_L",
+      "Allen_perirhinal_gyrus_rostral_part_of_FuGt_L",
+      "Allen_brain_Hemisphere_R",
+      "Allen_olfactory_bulb_R",
+      "Allen_anterior_olfactory_nucleus_R",
+      "Allen_piriform_region_R",
+      "Allen_frontal_agranular_insular_cortex_area_Fl_R",
+      "Allen_temporal_agranular_insular_cortex_area_Tl_R",
+      "Allen_head_of_caudate_R",
+      "Allen_body_of_caudate_R",
+      "Allen_tail_of_caudate_R",
+      "Allen_putamen_R",
+      "Allen_nucleus_accumbens_R",
+      "Allen_external_segment_of_globus_pallidus_R",
+      "Allen_internal_segment_of_globus_pallidus_R",
+      "Allen_claustrum_R",
+      "Allen_basal_forebrain_R",
+      "Allen_septal_nuclei_R",
+      "Allen_amygdaloid_complex_R",
+      "Allen_anterior_amygdaloid_area_R",
+      "Allen_central_nuclear_group_R",
+      "Allen_lateral_nucleus_R",
+      "Allen_basolateral_nucleus_basal_nucleus_R",
+      "Allen_basomedial_nucleus_accessory_basal_nucleus_R",
+      "Allen_anterior_cortical_nucleus_R",
+      "Allen_posterior_cortical_nucleus_R",
+      "Allen_medial_nucleus_R",
+      "Allen_amygdalohippocampal_area_R",
+      "Allen_bed_nucleus_of_stria_terminalis_R",
+      "Allen_thalamus_R",
+      "Allen_anterior_nuclear_complex_of_thalamus_R",
+      "Allen_lateral_dorsal_nucleus_of_thalamus_R",
+      "Allen_mediodorsal_nucleus_of_thalamus_R",
+      "Allen_reuniens_nucleus_medioventral_nucleus_of_thalamus_R",
+      "Allen_lateral_posterior_nucleus_of_thalamus_R",
+      "Allen_pulvinar_of_thalamus_R",
+      "Allen_ventral_anterior_nucleus_of_thalamus_R",
+      "Allen_ventral_lateral_nucleus_of_thalamus_R",
+      "Allen_ventral_posterior_lateral_nucleus_R",
+      "Allen_ventral_posterior_medial_nucleus_R",
+      "Allen_dorsal_lateral_geniculate_nucleus_R",
+      "Allen_medial_geniculate_nuclei_R",
+      "Allen_centromedian_nucleus_of_thalamus_R",
+      "Allen_parafascicular_nucleus_of_thalamus_R",
+      "Allen_habenular_nuclei_R",
+      "Allen_pineal_body_R",
+      "Allen_zona_incerta_R",
+      "Allen_supraoptic_region_of_HTH_R",
+      "Allen_white_matter_of_forebrain_R",
+      "Allen_anterior_commissure_R",
+      "Allen_corpus_callosum_R",
+      "Allen_fornix_R",
+      "Allen_mammillothalamic_tract_R",
+      "Allen_optic_tract_R",
+      "Allen_anterior_horn_of_lateral_ventricle_R",
+      "Allen_body_of_lateral_ventricle_R",
+      "Allen_posterior_horn_of_lateral_ventricle_R",
+      "Allen_inferior_horn_of_lateral_ventricle_R",
+      "Allen_third_ventricle_R",
+      "Allen_cerebellar_vermis_R",
+      "Allen_cerebellar_deep_nuclei_R",
+      "Allen_white_matter_of_hindbrain_R",
+      "Allen_olfactory_tract_R",
+      "Allen_precentral_gyrus_R",
+      "Allen_superior_frontal_gyrus_R",
+      "Allen_middle_frontal_gyrus_R",
+      "Allen_inferior_frontal_gyrus_triangular_part_R",
+      "Allen_inferior_frontal_gyrus_opercular_part_R",
+      "Allen_gyrus_rectus_straight_gyrus_R",
+      "Allen_medial_orbital_gyrus_R",
+      "Allen_anterior_intermediate_orbital_gyrus_R",
+      "Allen_posterior_intermediate_orbital_gyrus_R",
+      "Allen_lateral_orbital_gyrus_R",
+      "Allen_paracentral_lobule_rostral_part_R",
+      "Allen_frontal_operculum_R",
+      "Allen_postcentral_gyrus_R",
+      "Allen_supraparietal_lobule_R",
+      "Allen_supramarginal_gyrus_R",
+      "Allen_angular_gyrus_R",
+      "Allen_precuneus_R",
+      "Allen_paracentral_lobule_caudal_part_R",
+      "Allen_superior_temporal_gyrus_R",
+      "Allen_middle_temporal_gyrus_R",
+      "Allen_inferior_temporal_gyrus_R",
+      "Allen_occipitotemporal_fusiform_gyrus_temporal_part_R",
+      "Allen_transverse_temporal_gyrus_Heschls_gyrus_R",
+      "Allen_planum_temporale_R",
+      "Allen_temporal_pole_R",
+      "Allen_planum_polare_R",
+      "Allen_occipital_pole_R",
+      "Allen_cuneus_R",
+      "Allen_lingual_gyrus_medial_occipitotemporal_gyrus_R",
+      "Allen_lateral_occipitotemporal_fusiform_gyrus_occipital_part_R",
+      "Allen_inferior_occipital_gyrus_R",
+      "Allen_superior_occipital_gyrus_R",
+      "Allen_cingulate_gyrus_rostral_anterior_part_R",
+      "Allen_cingulate_gyrus_caudal_posterior_part_R",
+      "Allen_ingulo_parahippocampal_isthmus_R",
+      "Allen_subcallosal_gyrus_parolfactory_gyrus_R",
+      "Allen_anterior_parahippocampal_gyrus_R",
+      "Allen_posterior_parahippocampal_gyrus_R",
+      "Allen_gyrus_ambiens_R",
+      "Allen_head_of_hippocampus_R",
+      "Allen_body_of_hippocampus_R",
+      "Allen_tail_of_hippocampus_R",
+      "Allen_long_insular_gyri_R",
+      "Allen_short_insular_gyri_R",
+      "Allen_limen_insula_R",
+      "Allen_pretectal_region_R",
+      "Allen_red_nucleus_R",
+      "Allen_substantia_nigra_R",
+      "Allen_superior_colliculus_R",
+      "Allen_inferior_colliculus_R",
+      "Allen_cerebral_peduncle_crus_cerebri_R",
+      "Allen_superior_cerebellar_peduncle_brachium_conjunctivum_R",
+      "Allen_cerebral_aqueduct_R",
+      "Allen_paravermis_of_cerebellum_R",
+      "Allen_lateral_hemisphere_of_cerebellum_R",
+      "Allen_basilar_part_of_pons_R",
+      "Allen_pontine_tegmentum_R",
+      "Allen_pyramidal_part_of_medulla_oblongata_R",
+      "Allen_tegmentum_of_medulla_oblongata_R",
+      "Allen_inferior_olive_R",
+      "Allen_inferior_cerebellar_peduncle_R",
+      "Allen_middle_cerebellar_peduncle_R",
+      "Allen_fourth_ventricle_R",
+      "Allen_central_canal_of_medulla_oblongata_R",
+      "Allen_midline_nuclear_complex_R",
+      "Allen_lateral_olfactory_gyrus_R",
+      "Allen_parietal_operculum_R",
+      "Allen_optic_radiation_R",
+      "Allen_posteroventral_putamen_R",
+      "Allen_atrium_of_lateral_ventricle_R",
+      "Allen_paracingulate_gyrus_R",
+      "Allen_rostral_gyrus_R",
+      "Allen_frontomarginal_gyrus_R",
+      "Allen_frontal_pole_R",
+      "Allen_perirhinal_gyrus_rostral_part_of_FuGt_R",
+      "Allen_hypothalamus_L",
+      "Allen_hypothalamus_R",
+      "Allen_subthalamic_nucleus_R",
+      "Allen_mammillary_region_of_HTH_R",
+      "Allen_midbrain_tegmentum_R",
+      "Allen_tuberal_region_of_HTH_R",
+      "Allen_preoptic_region_of_HTH_R",
+      "Allen_midbrain_tegmentum_L",
+      "Allen_red_nucleus_L",
+      "Allen_inferior_colliculus_L",
+      "Allen_mammillary_region_of_HTH_L",
+      "Allen_subthalamic_nucleus_L",
+      "VH_M_optic_chiasm"
+    ],
+    "extensionsUsed": [
+      "EXT_meshopt_compression",
+      "KHR_mesh_quantization"
+    ],
+    "registrationToBodyParts3D": null,
+    "presentationTransform": "World node matrices baked per mesh; whole loaded group centered and scaled by 3.45/maxExtent for viewing. This is not anatomical registration."
+  }
+}

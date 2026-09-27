@@ -1,0 +1,151 @@
+{
+  "date": "2026-09-27",
+  "status": "RESEARCH_COMPLETE_FOR_USER_REVIEW_INTEGRATION_STOPPED",
+  "recommendation": "D",
+  "recommendationDetail": "Keep HRA brain independent; resolve BP3D 4.3 identification first; HRA is qualified spinal-cord alternative, Open3DModel remains conditional peripheral lead. No whole-body multi-source integration approved.",
+  "branch": "phase4-nervous-system",
+  "gitRefs": {
+    "HEAD": "3373a06bed350c7af13f26dd1c461448c0650885",
+    "main": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6",
+    "origin/main": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6",
+    "phase11-first-aid": "a391093cd28b975673fd0fc1e6b87fa1aeafed29"
+  },
+  "constraints": {
+    "newGeometryDownloaded": false,
+    "geometryIntegrated": false,
+    "newGeometryApproved": 0,
+    "applicationModified": false,
+    "commitsCreated": 0,
+    "pushPerformed": false,
+    "mergePerformed": false,
+    "phase5Started": false,
+    "messagesSentToAuthors": false
+  },
+  "preservedPreauditSha256": {
+    "docs/phase4-audit.md": "b79c7749e91e974f2e4fc504022e1aa9a0428d446c1372c4713fa3ec84a2b12c",
+    "docs/phase4-sources.md": "817093d503928fa33ee3407972727ce63b64804d6a88e3a9ac21fc6ca66c4df1",
+    "docs/phase4/preaudit.json": "74ddc8718102d61e54925f2125c6e788b472d93fc2e0155f7202faf69b53816f"
+  },
+  "sourceDecisions": [
+    {
+      "id": "bp3d_4_0",
+      "decision": "POSIBLE",
+      "scope": "base partial; no new improvement over itself",
+      "registration": "A",
+      "license": "CC-BY-4.0",
+      "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html"
+    },
+    {
+      "id": "bp3d_4_3",
+      "decision": "POSIBLE",
+      "rank": 2,
+      "scope": "additional nervous elements; terminal identification incomplete",
+      "registration": "B provisional",
+      "license": "CC-BY-4.0 per DBCLS database license; retain source version notices",
+      "url": "https://lifesciencedb.jp/bp3d/get-info.cgi?version=4.3&cmd=concept-objfiles-list",
+      "metadataEvidence": "bp3d-4.3-nervous-metadata.json"
+    },
+    {
+      "id": "hra_male_spinal_cord",
+      "decision": "RECOMENDADA",
+      "rank": 1,
+      "scope": "spinal cord alternative only; no approval for integration",
+      "registration": "C proposed, not validated",
+      "license": "CC-BY-4.0",
+      "url": "https://3d.nih.gov/entries/3DPX-021018?version=1",
+      "metadataEvidence": "hra-spinal-metadata.json"
+    },
+    {
+      "id": "open3dmodel",
+      "decision": "POSIBLE",
+      "scope": "institutional peripheral candidate, per-asset coverage not confirmed",
+      "registration": "B provisional; C if changed pose/proportions",
+      "license": "CC BY-SA announced by project authors; exact version and per-asset chain not verified",
+      "url": "https://openonlineonderwijs.surf.nl/projecten/open-anatomisch-3d-model-in-het-onderwijs/",
+      "lateralityRisk": "Official viewer tutorial supports cloning right objects to left; do not infer independently sourced bilateral geometry."
+    },
+    {
+      "id": "z_anatomy",
+      "decision": "POSIBLE",
+      "scope": "traceable clean subset only, not full archive",
+      "registration": "C; B only for a demonstrated subset",
+      "license": "CC-BY-SA-4.0 general; credits also CC-BY-4.0, CC-BY-NC-4.0, CC-BY-NC-SA-4.0",
+      "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy/blob/master/License.txt",
+      "snapshotCommit": "38649f4193adbe58e426ccac5670b8c4dde474ec"
+    },
+    {
+      "id": "open_anatomy_spl",
+      "decision": "POSIBLE",
+      "scope": "regional atlas only, not full CNS/PNS body solution",
+      "registration": "C brain / B knee proposed",
+      "license": "3D Slicer License section B",
+      "url": "https://www.openanatomy.org/atlas-pages/"
+    },
+    {
+      "id": "visible_human_nlm_raw",
+      "decision": "DESCARTADA",
+      "scope": "not ready-to-integrate nerve geometry; requires reconstruction",
+      "registration": "C",
+      "license": "NLM Terms and Conditions; derivative licenses separate",
+      "url": "https://www.nlm.nih.gov/databases/download/terms_and_conditions.html"
+    },
+    {
+      "id": "visible_korean",
+      "decision": "DESCARTADA",
+      "scope": "current evidence insufficient for model redistribution rights",
+      "registration": "C",
+      "license": "Article CC-BY-NC-3.0 does not establish license of each model",
+      "url": "https://doi.org/10.3346/jkms.2012.27.8.849"
+    },
+    {
+      "id": "itis_virtual_population",
+      "decision": "DESCARTADA",
+      "scope": "published terms/workflow do not permit proposed public GLB reuse",
+      "registration": "C anatomically hypothetical; blocked by licensing/access",
+      "license": "Restricted academic/commercial agreements; V3/V4 Sim4Life only",
+      "url": "https://itis.swiss/virtual-population/virtual-population/overview-human-models/faq"
+    },
+    {
+      "id": "dundee_cranial_lead",
+      "decision": "POSIBLE",
+      "scope": "lead only; Cranial Nerves must not be conflated with Cranial Nerves and Foramina",
+      "registration": "B hypothesis only",
+      "license": "exact model download license not verified",
+      "url": "https://sketchfab.com/3d-models/cranial-nerves-82d87cb89d6c48f0984a59c4f2a4cf9a"
+    }
+  ],
+  "accessLimitations": [
+    {
+      "source": "BP3D live catalog",
+      "result": "upload-all-list metadata load returned HTTP 500 or timeouts; get-fma and get-contents name/detail calls timed out; 4.3 text manifest retrieved successfully",
+      "consequence": "FMA242005 label unresolved; cannot conclude full PNS absent from 4.3"
+    },
+    {
+      "source": "AnatomyTOOL",
+      "urls": [
+        "https://anatomytool.org/open3dmodel",
+        "https://anatomytool.org/open3dmodel-create",
+        "https://anatomytool.org/content/open3dmodel-upper-limb-english-labels"
+      ],
+      "result": "HTTP 403 with web reader and timeouts with direct requests",
+      "consequence": "no verified versioned per-model license or named original bilateral inventory"
+    },
+    {
+      "source": "LUMC caskanatomy viewer",
+      "result": "official text pages accessible to web reader; direct HTML fetch timed out",
+      "consequence": "did not execute viewer or request its GLB; tutorial statements are not proof of a particular mesh list"
+    }
+  ],
+  "evidenceFiles": [
+    {
+      "path": "bp3d-4.3-nervous-metadata.json",
+      "sha256": "96f7f9fb9e1899fd6a973c59a0988157cf6a78f379e5251ae8f6a289e7a03e9c"
+    },
+    {
+      "path": "hra-spinal-metadata.json",
+      "sha256": "9b6f86030fe70cf71d305f97c8a5126d623d0be322d278e13d387d28ecef55de"
+    }
+  ],
+  "metadataCacheOnly": ".cache/phase4-source-research/ (ignored; text/JSON/CSV/HTML/JS only)",
+  "noClinicalValidation": true
+}

@@ -1,0 +1,1338 @@
+{
+  "date": "2026-09-27",
+  "source": "DBCLS BodyParts3D / Anatomography",
+  "url": "https://lifesciencedb.jp/bp3d/get-info.cgi?version=4.3&cmd=concept-objfiles-list",
+  "retrievedContent": "ZIP containing text metadata only; no geometry",
+  "manifestHeader": [
+    "# Data Version\t4.3",
+    "# Objects set\t4.3",
+    "# Tree version\tFMA3.0",
+    "# FMA ID\tis_a/part_of\tmodel component"
+  ],
+  "manifestBytes": 605737,
+  "manifestSha256": "c3d16c891016da13447de2fc3241d05d92e8f9dc460e363233c03f420b935d4f",
+  "allBodyConceptRelationRows": 5614,
+  "allBodyUniqueFj": 3210,
+  "selectedRows": [
+    {
+      "fma": "FMA242005",
+      "relation": "is_a",
+      "fj": [
+        "FJ4426"
+      ],
+      "labelFromOfficial4_0Table": null,
+      "labelStatus": "unresolved",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA50863",
+      "relation": "is_a",
+      "fj": [
+        "FJ7501",
+        "FJ7501M"
+      ],
+      "labelFromOfficial4_0Table": "optic nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA50865",
+      "relation": "is_a",
+      "fj": [
+        "FJ1381",
+        "FJ3981",
+        "FJ4039"
+      ],
+      "labelFromOfficial4_0Table": "trochlear nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA50875",
+      "relation": "is_a",
+      "fj": [
+        "FJ7501"
+      ],
+      "labelFromOfficial4_0Table": "right optic nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA50878",
+      "relation": "is_a",
+      "fj": [
+        "FJ7501M"
+      ],
+      "labelFromOfficial4_0Table": "left optic nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA50881",
+      "relation": "is_a",
+      "fj": [
+        "FJ1381",
+        "FJ4039"
+      ],
+      "labelFromOfficial4_0Table": "right trochlear nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA50882",
+      "relation": "is_a",
+      "fj": [
+        "FJ3981"
+      ],
+      "labelFromOfficial4_0Table": "left trochlear nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52570",
+      "relation": "is_a",
+      "fj": [
+        "FJ1283",
+        "FJ1290",
+        "FJ1293",
+        "FJ1296",
+        "FJ1300",
+        "FJ1310",
+        "FJ1311",
+        "FJ1315",
+        "FJ1318",
+        "FJ1321",
+        "FJ1326",
+        "FJ1333",
+        "FJ1341",
+        "FJ1344",
+        "FJ1347",
+        "FJ1351",
+        "FJ1361",
+        "FJ1362",
+        "FJ1363",
+        "FJ1366",
+        "FJ1369",
+        "FJ1372",
+        "FJ1376",
+        "FJ1377",
+        "FJ3892",
+        "FJ3895",
+        "FJ3896",
+        "FJ3897",
+        "FJ3898",
+        "FJ3900",
+        "FJ3902",
+        "FJ3904",
+        "FJ3905",
+        "FJ3906",
+        "FJ3907",
+        "FJ3908",
+        "FJ3909",
+        "FJ3910",
+        "FJ3911",
+        "FJ3912",
+        "FJ3913",
+        "FJ3921",
+        "FJ3922",
+        "FJ3924",
+        "FJ3925",
+        "FJ3929",
+        "FJ3930",
+        "FJ3933",
+        "FJ3934",
+        "FJ3935",
+        "FJ3936",
+        "FJ3937",
+        "FJ3940",
+        "FJ3943",
+        "FJ3944",
+        "FJ3945",
+        "FJ3946",
+        "FJ3947",
+        "FJ3948",
+        "FJ3950",
+        "FJ3951",
+        "FJ3952",
+        "FJ3953",
+        "FJ3955",
+        "FJ3956",
+        "FJ3957",
+        "FJ3959",
+        "FJ3960",
+        "FJ3961",
+        "FJ3963",
+        "FJ3964",
+        "FJ3965",
+        "FJ3966",
+        "FJ3967",
+        "FJ3969",
+        "FJ3970",
+        "FJ3971",
+        "FJ3972",
+        "FJ3974",
+        "FJ3975",
+        "FJ3976",
+        "FJ3977",
+        "FJ3978",
+        "FJ3983",
+        "FJ3985",
+        "FJ3986",
+        "FJ3987",
+        "FJ3989",
+        "FJ3990",
+        "FJ3991",
+        "FJ3993",
+        "FJ3994",
+        "FJ3995",
+        "FJ3997",
+        "FJ3998",
+        "FJ3999",
+        "FJ4000",
+        "FJ4002",
+        "FJ4003",
+        "FJ4004",
+        "FJ4005",
+        "FJ4006",
+        "FJ4007",
+        "FJ4008",
+        "FJ4009",
+        "FJ4010",
+        "FJ4011",
+        "FJ4019",
+        "FJ4020",
+        "FJ4022",
+        "FJ4023",
+        "FJ4026",
+        "FJ4028",
+        "FJ4029",
+        "FJ4030",
+        "FJ4031",
+        "FJ4032",
+        "FJ4035",
+        "FJ4037",
+        "FJ4042"
+      ],
+      "labelFromOfficial4_0Table": "branch of cranial nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52571",
+      "relation": "is_a",
+      "fj": [
+        "FJ1293",
+        "FJ1321",
+        "FJ1344",
+        "FJ1372",
+        "FJ3965",
+        "FJ3966",
+        "FJ3967",
+        "FJ3969",
+        "FJ3970",
+        "FJ3977",
+        "FJ4030",
+        "FJ4031",
+        "FJ4032",
+        "FJ4035",
+        "FJ4037"
+      ],
+      "labelFromOfficial4_0Table": "branch of oculomotor nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52572",
+      "relation": "is_a",
+      "fj": [
+        "FJ1321",
+        "FJ1372"
+      ],
+      "labelFromOfficial4_0Table": "superior branch of oculomotor nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52573",
+      "relation": "is_a",
+      "fj": [
+        "FJ1293",
+        "FJ1344"
+      ],
+      "labelFromOfficial4_0Table": "inferior branch of oculomotor nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52574",
+      "relation": "is_a",
+      "fj": [
+        "FJ1372"
+      ],
+      "labelFromOfficial4_0Table": "superior branch of right oculomotor nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52575",
+      "relation": "is_a",
+      "fj": [
+        "FJ1321"
+      ],
+      "labelFromOfficial4_0Table": "superior branch of left oculomotor nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52576",
+      "relation": "is_a",
+      "fj": [
+        "FJ1344"
+      ],
+      "labelFromOfficial4_0Table": "inferior branch of right oculomotor nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52577",
+      "relation": "is_a",
+      "fj": [
+        "FJ1293"
+      ],
+      "labelFromOfficial4_0Table": "inferior branch of left oculomotor nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52607",
+      "relation": "is_a",
+      "fj": [
+        "FJ1283",
+        "FJ1290",
+        "FJ1296",
+        "FJ1300",
+        "FJ1310",
+        "FJ1311",
+        "FJ1315",
+        "FJ1318",
+        "FJ1326",
+        "FJ1333",
+        "FJ1341",
+        "FJ1347",
+        "FJ1351",
+        "FJ1361",
+        "FJ1362",
+        "FJ1363",
+        "FJ1366",
+        "FJ1369",
+        "FJ1376",
+        "FJ1377",
+        "FJ3892",
+        "FJ3895",
+        "FJ3897",
+        "FJ3900",
+        "FJ3902",
+        "FJ3904",
+        "FJ3905",
+        "FJ3906",
+        "FJ3907",
+        "FJ3908",
+        "FJ3909",
+        "FJ3910",
+        "FJ3911",
+        "FJ3912",
+        "FJ3913",
+        "FJ3921",
+        "FJ3922",
+        "FJ3924",
+        "FJ3925",
+        "FJ3929",
+        "FJ3930",
+        "FJ3933",
+        "FJ3935",
+        "FJ3937",
+        "FJ3940",
+        "FJ3943",
+        "FJ3944",
+        "FJ3945",
+        "FJ3946",
+        "FJ3947",
+        "FJ3948",
+        "FJ3950",
+        "FJ3951",
+        "FJ3953",
+        "FJ3955",
+        "FJ3956",
+        "FJ3957",
+        "FJ3959",
+        "FJ3960",
+        "FJ3961",
+        "FJ3963",
+        "FJ3971",
+        "FJ3972",
+        "FJ3974",
+        "FJ3975",
+        "FJ3976",
+        "FJ3978",
+        "FJ3983",
+        "FJ3985",
+        "FJ3987",
+        "FJ3989",
+        "FJ3990",
+        "FJ3991",
+        "FJ3993",
+        "FJ3994",
+        "FJ3995",
+        "FJ3997",
+        "FJ3999",
+        "FJ4000",
+        "FJ4002",
+        "FJ4003",
+        "FJ4004",
+        "FJ4005",
+        "FJ4006",
+        "FJ4007",
+        "FJ4008",
+        "FJ4009",
+        "FJ4010",
+        "FJ4011",
+        "FJ4019",
+        "FJ4020",
+        "FJ4022",
+        "FJ4023",
+        "FJ4026",
+        "FJ4028",
+        "FJ4029",
+        "FJ4042"
+      ],
+      "labelFromOfficial4_0Table": "branch of trigeminal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52621",
+      "relation": "is_a",
+      "fj": [
+        "FJ1363",
+        "FJ3921",
+        "FJ4019"
+      ],
+      "labelFromOfficial4_0Table": "ophthalmic nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52622",
+      "relation": "is_a",
+      "fj": [
+        "FJ1363",
+        "FJ4019"
+      ],
+      "labelFromOfficial4_0Table": "right ophthalmic nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52623",
+      "relation": "is_a",
+      "fj": [
+        "FJ3921"
+      ],
+      "labelFromOfficial4_0Table": "left ophthalmic nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52624",
+      "relation": "is_a",
+      "fj": [
+        "FJ1283",
+        "FJ1290",
+        "FJ1296",
+        "FJ1300",
+        "FJ1310",
+        "FJ1311",
+        "FJ1315",
+        "FJ1318",
+        "FJ1326",
+        "FJ1333",
+        "FJ1341",
+        "FJ1347",
+        "FJ1351",
+        "FJ1361",
+        "FJ1362",
+        "FJ1366",
+        "FJ1369",
+        "FJ1376",
+        "FJ1377",
+        "FJ3908",
+        "FJ3909",
+        "FJ3910",
+        "FJ3911",
+        "FJ3912",
+        "FJ3913",
+        "FJ3922",
+        "FJ3924",
+        "FJ3925",
+        "FJ3937",
+        "FJ3947",
+        "FJ3948",
+        "FJ3950",
+        "FJ4006",
+        "FJ4007",
+        "FJ4008",
+        "FJ4009",
+        "FJ4010",
+        "FJ4011",
+        "FJ4020",
+        "FJ4022",
+        "FJ4023",
+        "FJ4026",
+        "FJ4028",
+        "FJ4029"
+      ],
+      "labelFromOfficial4_0Table": "branch of ophthalmic nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52628",
+      "relation": "is_a",
+      "fj": [
+        "FJ1300",
+        "FJ1351",
+        "FJ3912",
+        "FJ4010"
+      ],
+      "labelFromOfficial4_0Table": "lacrimal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52629",
+      "relation": "is_a",
+      "fj": [
+        "FJ1351",
+        "FJ4010"
+      ],
+      "labelFromOfficial4_0Table": "right lacrimal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52630",
+      "relation": "is_a",
+      "fj": [
+        "FJ1300",
+        "FJ3912"
+      ],
+      "labelFromOfficial4_0Table": "left lacrimal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52638",
+      "relation": "is_a",
+      "fj": [
+        "FJ1290",
+        "FJ1341",
+        "FJ3910",
+        "FJ4008"
+      ],
+      "labelFromOfficial4_0Table": "frontal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52639",
+      "relation": "is_a",
+      "fj": [
+        "FJ1341",
+        "FJ4008"
+      ],
+      "labelFromOfficial4_0Table": "right frontal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52640",
+      "relation": "is_a",
+      "fj": [
+        "FJ1290",
+        "FJ3910"
+      ],
+      "labelFromOfficial4_0Table": "left frontal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52641",
+      "relation": "is_a",
+      "fj": [
+        "FJ1283",
+        "FJ1296",
+        "FJ1310",
+        "FJ1311",
+        "FJ1315",
+        "FJ1318",
+        "FJ1326",
+        "FJ1333",
+        "FJ1347",
+        "FJ1361",
+        "FJ1362",
+        "FJ1366",
+        "FJ1369",
+        "FJ1376",
+        "FJ1377",
+        "FJ3908",
+        "FJ3909",
+        "FJ3911",
+        "FJ3913",
+        "FJ3922",
+        "FJ3924",
+        "FJ3925",
+        "FJ3937",
+        "FJ3947",
+        "FJ3948",
+        "FJ3950",
+        "FJ4006",
+        "FJ4007",
+        "FJ4009",
+        "FJ4011",
+        "FJ4020",
+        "FJ4022",
+        "FJ4023",
+        "FJ4026",
+        "FJ4028",
+        "FJ4029"
+      ],
+      "labelFromOfficial4_0Table": "branch of frontal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52642",
+      "relation": "is_a",
+      "fj": [
+        "FJ1326",
+        "FJ1377",
+        "FJ3925",
+        "FJ4023"
+      ],
+      "labelFromOfficial4_0Table": "supratrochlear nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52643",
+      "relation": "is_a",
+      "fj": [
+        "FJ1377",
+        "FJ4023"
+      ],
+      "labelFromOfficial4_0Table": "right supratrochlear nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52644",
+      "relation": "is_a",
+      "fj": [
+        "FJ1326",
+        "FJ3925"
+      ],
+      "labelFromOfficial4_0Table": "left supratrochlear nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52655",
+      "relation": "is_a",
+      "fj": [
+        "FJ1376",
+        "FJ3924",
+        "FJ4022"
+      ],
+      "labelFromOfficial4_0Table": "supra-orbital nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52656",
+      "relation": "is_a",
+      "fj": [
+        "FJ1376",
+        "FJ4022"
+      ],
+      "labelFromOfficial4_0Table": "right supra-orbital nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52657",
+      "relation": "is_a",
+      "fj": [
+        "FJ3924"
+      ],
+      "labelFromOfficial4_0Table": "left supra-orbital nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52668",
+      "relation": "is_a",
+      "fj": [
+        "FJ1310",
+        "FJ1361",
+        "FJ3913"
+      ],
+      "labelFromOfficial4_0Table": "nasociliary nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52669",
+      "relation": "is_a",
+      "fj": [
+        "FJ1361"
+      ],
+      "labelFromOfficial4_0Table": "right nasociliary nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52670",
+      "relation": "is_a",
+      "fj": [
+        "FJ1310",
+        "FJ3913"
+      ],
+      "labelFromOfficial4_0Table": "left nasociliary nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52671",
+      "relation": "is_a",
+      "fj": [
+        "FJ1283",
+        "FJ1296",
+        "FJ1311",
+        "FJ1315",
+        "FJ1318",
+        "FJ1333",
+        "FJ1347",
+        "FJ1362",
+        "FJ1366",
+        "FJ1369",
+        "FJ3908",
+        "FJ3909",
+        "FJ3911",
+        "FJ3922",
+        "FJ3937",
+        "FJ3947",
+        "FJ3948",
+        "FJ3950",
+        "FJ4006",
+        "FJ4007",
+        "FJ4009",
+        "FJ4011",
+        "FJ4020",
+        "FJ4026",
+        "FJ4028",
+        "FJ4029"
+      ],
+      "labelFromOfficial4_0Table": "branch of nasociliary nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52672",
+      "relation": "is_a",
+      "fj": [
+        "FJ1311",
+        "FJ1362",
+        "FJ3909",
+        "FJ4007"
+      ],
+      "labelFromOfficial4_0Table": "communicating branch of nasociliary nerve with ciliary ganglion",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52673",
+      "relation": "is_a",
+      "fj": [
+        "FJ1362",
+        "FJ4007"
+      ],
+      "labelFromOfficial4_0Table": "communicating branch of right nasociliary nerve with right ciliary ganglion",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52674",
+      "relation": "is_a",
+      "fj": [
+        "FJ1311",
+        "FJ3909"
+      ],
+      "labelFromOfficial4_0Table": "communicating branch of left nasociliary nerve with left ciliary ganglion",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52675",
+      "relation": "is_a",
+      "fj": [
+        "FJ1283",
+        "FJ1333",
+        "FJ3908",
+        "FJ4006"
+      ],
+      "labelFromOfficial4_0Table": "anterior ethmoidal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52676",
+      "relation": "is_a",
+      "fj": [
+        "FJ1333",
+        "FJ4006"
+      ],
+      "labelFromOfficial4_0Table": "right anterior ethmoidal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52677",
+      "relation": "is_a",
+      "fj": [
+        "FJ1283",
+        "FJ3908"
+      ],
+      "labelFromOfficial4_0Table": "left anterior ethmoidal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52691",
+      "relation": "is_a",
+      "fj": [
+        "FJ1318",
+        "FJ1369",
+        "FJ3950"
+      ],
+      "labelFromOfficial4_0Table": "long ciliary nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52693",
+      "relation": "is_a",
+      "fj": [
+        "FJ1296",
+        "FJ1347",
+        "FJ3911",
+        "FJ4011"
+      ],
+      "labelFromOfficial4_0Table": "infratrochlear nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52698",
+      "relation": "is_a",
+      "fj": [
+        "FJ1347",
+        "FJ4011"
+      ],
+      "labelFromOfficial4_0Table": "right infratrochlear nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52699",
+      "relation": "is_a",
+      "fj": [
+        "FJ1296",
+        "FJ3911"
+      ],
+      "labelFromOfficial4_0Table": "left infratrochlear nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52714",
+      "relation": "is_a",
+      "fj": [
+        "FJ1315",
+        "FJ1366",
+        "FJ3922",
+        "FJ4020"
+      ],
+      "labelFromOfficial4_0Table": "posterior ethmoidal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52715",
+      "relation": "is_a",
+      "fj": [
+        "FJ1366",
+        "FJ4020"
+      ],
+      "labelFromOfficial4_0Table": "right posterior ethmoidal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA52716",
+      "relation": "is_a",
+      "fj": [
+        "FJ1315",
+        "FJ3922"
+      ],
+      "labelFromOfficial4_0Table": "left posterior ethmoidal nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA53549",
+      "relation": "is_a",
+      "fj": [
+        "FJ1339"
+      ],
+      "labelFromOfficial4_0Table": "right ciliary ganglion",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA53550",
+      "relation": "is_a",
+      "fj": [
+        "FJ1288"
+      ],
+      "labelFromOfficial4_0Table": "left ciliary ganglion",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA5865",
+      "relation": "is_a",
+      "fj": [
+        "FJ1381",
+        "FJ3891",
+        "FJ3894",
+        "FJ3901",
+        "FJ3927",
+        "FJ3932",
+        "FJ3939",
+        "FJ3981",
+        "FJ4039"
+      ],
+      "labelFromOfficial4_0Table": "cranial nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA5884",
+      "relation": "is_a",
+      "fj": [
+        "FJ1288",
+        "FJ1339"
+      ],
+      "labelFromOfficial4_0Table": "ganglion",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA5889",
+      "relation": "is_a",
+      "fj": [
+        "FJ1288",
+        "FJ1339"
+      ],
+      "labelFromOfficial4_0Table": "autonomic ganglion",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA5894",
+      "relation": "is_a",
+      "fj": [
+        "FJ1288",
+        "FJ1339"
+      ],
+      "labelFromOfficial4_0Table": "parasympathetic ganglion",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA5895",
+      "relation": "is_a",
+      "fj": [
+        "FJ1288",
+        "FJ1339"
+      ],
+      "labelFromOfficial4_0Table": "cranial parasympathetic ganglion",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA5913",
+      "relation": "is_a",
+      "fj": [
+        "FJ3893",
+        "FJ3899",
+        "FJ3903",
+        "FJ3923",
+        "FJ3926",
+        "FJ3928",
+        "FJ3931",
+        "FJ3938",
+        "FJ3941",
+        "FJ3942",
+        "FJ3949",
+        "FJ3954",
+        "FJ3958",
+        "FJ3962",
+        "FJ3968",
+        "FJ3973",
+        "FJ3979",
+        "FJ3980",
+        "FJ3982",
+        "FJ3984",
+        "FJ3988",
+        "FJ3992",
+        "FJ3996",
+        "FJ4001",
+        "FJ4021",
+        "FJ4024",
+        "FJ4025",
+        "FJ4027",
+        "FJ4033",
+        "FJ4034",
+        "FJ4038",
+        "FJ4040",
+        "FJ4041",
+        "FJ4157",
+        "FJ4173",
+        "FJ4174",
+        "FJ4178",
+        "FJ4222",
+        "FJ4241",
+        "FJ4245",
+        "FJ4248",
+        "FJ4261",
+        "FJ4262",
+        "FJ4263",
+        "FJ4264",
+        "FJ4265",
+        "FJ4266",
+        "FJ4267",
+        "FJ4272",
+        "FJ4273",
+        "FJ4274",
+        "FJ4275",
+        "FJ4276",
+        "FJ4279",
+        "FJ4280",
+        "FJ4289",
+        "FJ4290",
+        "FJ7501",
+        "FJ7501M",
+        "FJ7502",
+        "FJ7502M",
+        "FJ7503",
+        "FJ7503M",
+        "FJ7505",
+        "FJ7505M"
+      ],
+      "labelFromOfficial4_0Table": "nerve trunk",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA62514",
+      "relation": "is_a",
+      "fj": [
+        "FJ1753",
+        "FJ1829"
+      ],
+      "labelFromOfficial4_0Table": "basal ganglion of telencephalon",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA65132",
+      "relation": "is_a",
+      "fj": [
+        "FJ1283",
+        "FJ1290",
+        "FJ1293",
+        "FJ1296",
+        "FJ1300",
+        "FJ1310",
+        "FJ1311",
+        "FJ1315",
+        "FJ1318",
+        "FJ1321",
+        "FJ1326",
+        "FJ1333",
+        "FJ1341",
+        "FJ1344",
+        "FJ1347",
+        "FJ1351",
+        "FJ1361",
+        "FJ1362",
+        "FJ1363",
+        "FJ1366",
+        "FJ1369",
+        "FJ1372",
+        "FJ1376",
+        "FJ1377",
+        "FJ3892",
+        "FJ3895",
+        "FJ3896",
+        "FJ3897",
+        "FJ3898",
+        "FJ3900",
+        "FJ3902",
+        "FJ3904",
+        "FJ3905",
+        "FJ3906",
+        "FJ3907",
+        "FJ3908",
+        "FJ3909",
+        "FJ3910",
+        "FJ3911",
+        "FJ3912",
+        "FJ3913",
+        "FJ3921",
+        "FJ3922",
+        "FJ3924",
+        "FJ3925",
+        "FJ3929",
+        "FJ3930",
+        "FJ3933",
+        "FJ3934",
+        "FJ3935",
+        "FJ3936",
+        "FJ3937",
+        "FJ3940",
+        "FJ3943",
+        "FJ3944",
+        "FJ3945",
+        "FJ3946",
+        "FJ3947",
+        "FJ3948",
+        "FJ3950",
+        "FJ3951",
+        "FJ3952",
+        "FJ3953",
+        "FJ3955",
+        "FJ3956",
+        "FJ3957",
+        "FJ3959",
+        "FJ3960",
+        "FJ3961",
+        "FJ3963",
+        "FJ3964",
+        "FJ3965",
+        "FJ3966",
+        "FJ3967",
+        "FJ3969",
+        "FJ3970",
+        "FJ3971",
+        "FJ3972",
+        "FJ3974",
+        "FJ3975",
+        "FJ3976",
+        "FJ3977",
+        "FJ3978",
+        "FJ3983",
+        "FJ3985",
+        "FJ3986",
+        "FJ3987",
+        "FJ3989",
+        "FJ3990",
+        "FJ3991",
+        "FJ3993",
+        "FJ3994",
+        "FJ3995",
+        "FJ3997",
+        "FJ3998",
+        "FJ3999",
+        "FJ4000",
+        "FJ4002",
+        "FJ4003",
+        "FJ4004",
+        "FJ4005",
+        "FJ4006",
+        "FJ4007",
+        "FJ4008",
+        "FJ4009",
+        "FJ4010",
+        "FJ4011",
+        "FJ4019",
+        "FJ4020",
+        "FJ4022",
+        "FJ4023",
+        "FJ4026",
+        "FJ4028",
+        "FJ4029",
+        "FJ4030",
+        "FJ4031",
+        "FJ4032",
+        "FJ4035",
+        "FJ4037",
+        "FJ4042",
+        "FJ4156",
+        "FJ4158",
+        "FJ4159",
+        "FJ4163",
+        "FJ4185",
+        "FJ4197",
+        "FJ4209",
+        "FJ4213",
+        "FJ4221",
+        "FJ4226",
+        "FJ4268",
+        "FJ4269",
+        "FJ4270",
+        "FJ4271",
+        "FJ4278",
+        "FJ4281",
+        "FJ4282",
+        "FJ4283",
+        "FJ4284",
+        "FJ4285",
+        "FJ4286",
+        "FJ4287"
+      ],
+      "labelFromOfficial4_0Table": "nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA6964",
+      "relation": "is_a",
+      "fj": [
+        "FJ1288",
+        "FJ1339"
+      ],
+      "labelFromOfficial4_0Table": "ciliary ganglion",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA7037",
+      "relation": "is_a",
+      "fj": [
+        "FJ1319",
+        "FJ1370"
+      ],
+      "labelFromOfficial4_0Table": "branch of ciliary ganglion",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA7041",
+      "relation": "is_a",
+      "fj": [
+        "FJ1319",
+        "FJ1370"
+      ],
+      "labelFromOfficial4_0Table": "short ciliary nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA78497",
+      "relation": "is_a",
+      "fj": [
+        "FJ1737"
+      ],
+      "labelFromOfficial4_0Table": "central canal of spinal cord",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA82734",
+      "relation": "is_a",
+      "fj": [
+        "FJ1369"
+      ],
+      "labelFromOfficial4_0Table": "right long ciliary nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA82735",
+      "relation": "is_a",
+      "fj": [
+        "FJ1318",
+        "FJ3950"
+      ],
+      "labelFromOfficial4_0Table": "left long ciliary nerve",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA9642",
+      "relation": "is_a",
+      "fj": [
+        "FJ4426"
+      ],
+      "labelFromOfficial4_0Table": null,
+      "labelStatus": "unresolved",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA242005",
+      "relation": "part_of",
+      "fj": [
+        "FJ4426"
+      ],
+      "labelFromOfficial4_0Table": null,
+      "labelStatus": "unresolved",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA70954",
+      "relation": "part_of",
+      "fj": [
+        "FJ4426"
+      ],
+      "labelFromOfficial4_0Table": null,
+      "labelStatus": "unresolved",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA7647",
+      "relation": "part_of",
+      "fj": [
+        "FJ1737",
+        "FJ4426"
+      ],
+      "labelFromOfficial4_0Table": "spinal cord",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    },
+    {
+      "fma": "FMA78497",
+      "relation": "part_of",
+      "fj": [
+        "FJ1737"
+      ],
+      "labelFromOfficial4_0Table": "central canal of spinal cord",
+      "labelStatus": "verified_shared_id_label",
+      "geometryInspected": false
+    }
+  ],
+  "note": "These are ontology-to-element associations, not inspected meshes or counts of complete nerves. Shared ID labels use preserved official 4.0 tables, not a resolved 4.3 name service.",
+  "geometryDownloaded": false,
+  "geometryApproved": 0
+}

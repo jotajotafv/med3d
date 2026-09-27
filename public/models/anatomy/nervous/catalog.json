@@ -1,0 +1,3926 @@
+{
+  "schemaVersion": 1,
+  "id": "med3d-nervous",
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "nodes": [
+    {
+      "id": "nervous",
+      "name": "Sistema nervioso",
+      "anatomicalName": "Sistema nervioso",
+      "aliases": [],
+      "systemId": "nervous",
+      "regionId": "nervous",
+      "explosionRegionId": "head-neck",
+      "children": [
+        "nervous:cns",
+        "nervous:pns"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "nervous:cns",
+        "nervous:cranial"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Systema nervosum",
+      "bounds": [
+        [
+          -0.0699404,
+          1.4645000000000001,
+          -0.0103293
+        ],
+        [
+          0.06889340000000001,
+          1.63046,
+          0.185476
+        ]
+      ]
+    },
+    {
+      "id": "nervous:cns",
+      "name": "Sistema nervioso central",
+      "anatomicalName": "Sistema nervioso central",
+      "aliases": [
+        "SNC",
+        "CNS"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous",
+      "explosionRegionId": "head-neck",
+      "children": [
+        "nervous:brain",
+        "nervous:optic"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "nervous"
+      ],
+      "latin": "Systema nervosum centrale",
+      "parentId": "nervous",
+      "bounds": [
+        [
+          -0.0699404,
+          1.4645000000000001,
+          -0.0103293
+        ],
+        [
+          0.06889340000000001,
+          1.63046,
+          0.169677
+        ]
+      ]
+    },
+    {
+      "id": "nervous:brain",
+      "name": "Encéfalo",
+      "anatomicalName": "Encéfalo",
+      "aliases": [
+        "Brain",
+        "encéfalo corporal",
+        "FMA50801"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:brain",
+      "explosionRegionId": "head-neck",
+      "children": [
+        "nervous:cerebrum",
+        "nervous:diencephalon",
+        "nervous:brainstem",
+        "bp3d:FMA67944"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "nervous:cns"
+      ],
+      "sourceId": "FMA50801",
+      "latin": "Encephalon",
+      "parentId": "nervous:cns",
+      "bounds": [
+        [
+          -0.0699404,
+          1.4645000000000001,
+          -0.0103293
+        ],
+        [
+          0.06889340000000001,
+          1.63046,
+          0.169677
+        ]
+      ]
+    },
+    {
+      "id": "nervous:cerebrum",
+      "name": "Cerebro · regiones disponibles",
+      "anatomicalName": "Cerebro · regiones disponibles",
+      "aliases": [],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [
+        "bp3d:FMA72670",
+        "bp3d:FMA72669",
+        "bp3d:FMA72718",
+        "bp3d:FMA72717",
+        "bp3d:FMA72658",
+        "bp3d:FMA72657",
+        "bp3d:FMA72688",
+        "bp3d:FMA72687",
+        "bp3d:FMA72978",
+        "bp3d:FMA72977",
+        "bp3d:FMA72907",
+        "bp3d:FMA72906",
+        "bp3d:FMA260794",
+        "bp3d:FMA260791",
+        "bp3d:FMA72714",
+        "bp3d:FMA72713",
+        "bp3d:FMA72690",
+        "bp3d:FMA72689",
+        "bp3d:FMA72706",
+        "bp3d:FMA72705",
+        "bp3d:FMA72656",
+        "bp3d:FMA72655",
+        "bp3d:FMA72686",
+        "bp3d:FMA72685",
+        "bp3d:FMA72976",
+        "bp3d:FMA72975",
+        "bp3d:FMA72666",
+        "bp3d:FMA72665",
+        "bp3d:FMA72662",
+        "bp3d:FMA72661",
+        "bp3d:FMA72654",
+        "bp3d:FMA72653",
+        "bp3d:FMA72672",
+        "bp3d:FMA72671",
+        "bp3d:FMA72668",
+        "bp3d:FMA72667"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "nervous:brain"
+      ],
+      "latin": "Cerebrum",
+      "parentId": "nervous:brain",
+      "bounds": [
+        [
+          -0.0699404,
+          1.5135,
+          -0.0103293
+        ],
+        [
+          0.06889340000000001,
+          1.63046,
+          0.169677
+        ]
+      ]
+    },
+    {
+      "id": "nervous:diencephalon",
+      "name": "Diencéfalo · regiones disponibles",
+      "anatomicalName": "Diencéfalo · regiones disponibles",
+      "aliases": [],
+      "systemId": "nervous",
+      "regionId": "nervous:diencephalon",
+      "explosionRegionId": "head-neck",
+      "children": [
+        "bp3d:FMA62008",
+        "bp3d:FMA62032"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "nervous:brain"
+      ],
+      "latin": "Diencephalon",
+      "parentId": "nervous:brain",
+      "bounds": [
+        [
+          -0.00924961,
+          1.53212,
+          0.0669468
+        ],
+        [
+          0.00793961,
+          1.5521,
+          0.11017700000000001
+        ]
+      ]
+    },
+    {
+      "id": "nervous:brainstem",
+      "name": "Tronco encefálico",
+      "anatomicalName": "Tronco encefálico",
+      "aliases": [
+        "Brainstem",
+        "FMA79876"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:brainstem",
+      "explosionRegionId": "head-neck",
+      "children": [
+        "bp3d:FMA62004",
+        "bp3d:FMA61993",
+        "bp3d:FMA67943"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "nervous:brain"
+      ],
+      "sourceId": "FMA79876",
+      "latin": "Truncus encephali",
+      "parentId": "nervous:brain",
+      "bounds": [
+        [
+          -0.0217505,
+          1.4645000000000001,
+          0.0512391
+        ],
+        [
+          0.0204466,
+          1.54553,
+          0.09698659999999999
+        ]
+      ]
+    },
+    {
+      "id": "nervous:optic",
+      "name": "Vía óptica · nervios ópticos",
+      "anatomicalName": "Vía óptica · nervios ópticos",
+      "aliases": [
+        "II",
+        "segundo par craneal"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:optic",
+      "explosionRegionId": "head-neck",
+      "children": [
+        "bp3d:FMA50875",
+        "bp3d:FMA50878"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "nervous:cns"
+      ],
+      "latin": "Nervi optici",
+      "parentId": "nervous:cns",
+      "bounds": [
+        [
+          -0.0333074,
+          1.51828,
+          0.10214100000000001
+        ],
+        [
+          0.0319976,
+          1.54231,
+          0.15174600000000002
+        ]
+      ]
+    },
+    {
+      "id": "nervous:pns",
+      "name": "Sistema nervioso periférico",
+      "anatomicalName": "Sistema nervioso periférico",
+      "aliases": [
+        "SNP",
+        "PNS"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous",
+      "explosionRegionId": "head-neck",
+      "children": [
+        "nervous:cranial"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "nervous"
+      ],
+      "latin": "Systema nervosum periphericum",
+      "parentId": "nervous",
+      "bounds": [
+        [
+          -0.0441304,
+          1.50579,
+          0.0716888
+        ],
+        [
+          0.0428233,
+          1.5605499999999999,
+          0.185476
+        ]
+      ]
+    },
+    {
+      "id": "nervous:cranial",
+      "name": "Nervios craneales · cobertura orbitaria",
+      "anatomicalName": "Nervios craneales · cobertura orbitaria",
+      "aliases": [
+        "III",
+        "IV",
+        "V1",
+        "órbita",
+        "trigémino",
+        "oculomotor"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [
+        "bp3d:FMA50881",
+        "bp3d:FMA50882",
+        "bp3d:FMA52577",
+        "bp3d:FMA52576",
+        "bp3d:FMA52575",
+        "bp3d:FMA52574",
+        "bp3d:FMA52623",
+        "bp3d:FMA52622",
+        "bp3d:FMA52640",
+        "bp3d:FMA52639",
+        "bp3d:FMA52630",
+        "bp3d:FMA52629",
+        "bp3d:FMA52670",
+        "bp3d:FMA52669",
+        "bp3d:FMA52657",
+        "bp3d:FMA52656",
+        "bp3d:FMA52644",
+        "bp3d:FMA52643",
+        "bp3d:FMA52677",
+        "bp3d:FMA52676",
+        "bp3d:FMA52716",
+        "bp3d:FMA52715",
+        "bp3d:FMA52699",
+        "bp3d:FMA52698",
+        "bp3d:FMA82735",
+        "bp3d:FMA82734",
+        "bp3d:FMA52674",
+        "bp3d:FMA52673",
+        "bp3d:FMA53549",
+        "bp3d:FMA53550"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "nervous:pns"
+      ],
+      "latin": "Nervi craniales",
+      "parentId": "nervous:pns",
+      "bounds": [
+        [
+          -0.0441304,
+          1.50579,
+          0.0716888
+        ],
+        [
+          0.0428233,
+          1.5605499999999999,
+          0.185476
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72670",
+      "name": "Giro angular · izquierdo",
+      "anatomicalName": "Giro angular · izquierdo",
+      "aliases": [
+        "left angular gyrus",
+        "FMA72670",
+        "FMA61898",
+        "FJ1732"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72670_FJ1732"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72670",
+      "family": "FMA61898",
+      "latin": "Gyrus angularis",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.0219721,
+          1.53929,
+          -0.00104246
+        ],
+        [
+          0.0646114,
+          1.6026600000000002,
+          0.044554
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72669",
+      "name": "Giro angular · derecho",
+      "anatomicalName": "Giro angular · derecho",
+      "aliases": [
+        "right angular gyrus",
+        "FMA72669",
+        "FMA61898",
+        "FJ1733"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72669_FJ1733"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72669",
+      "family": "FMA61898",
+      "latin": "Gyrus angularis",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0659613,
+          1.53939,
+          -0.0011586
+        ],
+        [
+          -0.0231652,
+          1.60278,
+          0.044750500000000006
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72718",
+      "name": "Giro del cíngulo · izquierdo",
+      "anatomicalName": "Giro del cíngulo · izquierdo",
+      "aliases": [
+        "left cingulate gyrus",
+        "FMA72718",
+        "FMA62434",
+        "FJ1739"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72718_FJ1739"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72718",
+      "family": "FMA62434",
+      "latin": "Gyrus cinguli",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.000041231200000000006,
+          1.53058,
+          0.0307274
+        ],
+        [
+          0.0283306,
+          1.5972300000000001,
+          0.142072
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72717",
+      "name": "Giro del cíngulo · derecho",
+      "anatomicalName": "Giro del cíngulo · derecho",
+      "aliases": [
+        "right cingulate gyrus",
+        "FMA72717",
+        "FMA62434",
+        "FJ1740"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72717_FJ1740"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72717",
+      "family": "FMA62434",
+      "latin": "Gyrus cinguli",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.029615700000000002,
+          1.53061,
+          0.030829000000000002
+        ],
+        [
+          -0.00145084,
+          1.59722,
+          0.142106
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72658",
+      "name": "Giro frontal inferior · izquierdo",
+      "anatomicalName": "Giro frontal inferior · izquierdo",
+      "aliases": [
+        "left inferior frontal gyrus",
+        "FMA72658",
+        "FMA61860",
+        "FJ1744"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72658_FJ1744"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72658",
+      "family": "FMA61860",
+      "latin": "Gyrus frontalis inferior",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.0259424,
+          1.5469000000000002,
+          0.08967850000000001
+        ],
+        [
+          0.0609161,
+          1.60707,
+          0.152928
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72657",
+      "name": "Giro frontal inferior · derecho",
+      "anatomicalName": "Giro frontal inferior · derecho",
+      "aliases": [
+        "right inferior frontal gyrus",
+        "FMA72657",
+        "FMA61860",
+        "FJ1745"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72657_FJ1745"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72657",
+      "family": "FMA61860",
+      "latin": "Gyrus frontalis inferior",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0622117,
+          1.54648,
+          0.0898858
+        ],
+        [
+          -0.0272581,
+          1.60706,
+          0.152971
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72688",
+      "name": "Giro temporal inferior · izquierdo",
+      "anatomicalName": "Giro temporal inferior · izquierdo",
+      "aliases": [
+        "left inferior temporal gyrus",
+        "FMA72688",
+        "FMA61907",
+        "FJ1746"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72688_FJ1746"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72688",
+      "family": "FMA61907",
+      "latin": "Gyrus temporalis inferior",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.0169989,
+          1.5135,
+          0.0264603
+        ],
+        [
+          0.0606468,
+          1.54284,
+          0.122205
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72687",
+      "name": "Giro temporal inferior · derecho",
+      "anatomicalName": "Giro temporal inferior · derecho",
+      "aliases": [
+        "right inferior temporal gyrus",
+        "FMA72687",
+        "FMA61907",
+        "FJ1747"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72687_FJ1747"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72687",
+      "family": "FMA61907",
+      "latin": "Gyrus temporalis inferior",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0611894,
+          1.51355,
+          0.0265085
+        ],
+        [
+          -0.0180979,
+          1.5428199999999999,
+          0.12242700000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72978",
+      "name": "Ínsula · izquierdo",
+      "anatomicalName": "Ínsula · izquierdo",
+      "aliases": [
+        "left insula",
+        "FMA72978",
+        "FMA67329",
+        "FJ1748"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72978_FJ1748"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72978",
+      "family": "FMA67329",
+      "latin": "Insula",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.0250155,
+          1.54553,
+          0.0706417
+        ],
+        [
+          0.044279400000000003,
+          1.5800999999999998,
+          0.122271
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72977",
+      "name": "Ínsula · derecho",
+      "anatomicalName": "Ínsula · derecho",
+      "aliases": [
+        "right insula",
+        "FMA72977",
+        "FMA67329",
+        "FJ1749"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72977_FJ1749"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72977",
+      "family": "FMA67329",
+      "latin": "Insula",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0455903,
+          1.54558,
+          0.0706754
+        ],
+        [
+          -0.0263446,
+          1.58006,
+          0.122423
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72907",
+      "name": "Cápsula interna · izquierdo",
+      "anatomicalName": "Cápsula interna · izquierdo",
+      "aliases": [
+        "left internal capsule",
+        "FMA72907",
+        "FMA61950",
+        "FJ1750"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72907_FJ1750"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72907",
+      "family": "FMA61950",
+      "latin": "Capsula interna",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.00681658,
+          1.54386,
+          0.064511
+        ],
+        [
+          0.029714200000000003,
+          1.57711,
+          0.11868000000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72906",
+      "name": "Cápsula interna · derecho",
+      "anatomicalName": "Cápsula interna · derecho",
+      "aliases": [
+        "right internal capsule",
+        "FMA72906",
+        "FMA61950",
+        "FJ1751"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72906_FJ1751"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72906",
+      "family": "FMA61950",
+      "latin": "Capsula interna",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0310381,
+          1.54385,
+          0.0645003
+        ],
+        [
+          -0.00813108,
+          1.57711,
+          0.118695
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA260794",
+      "name": "Sustancia blanca cerebral · izquierdo",
+      "anatomicalName": "Sustancia blanca cerebral · izquierdo",
+      "aliases": [
+        "white matter of left cerebral hemisphere",
+        "FMA260794",
+        "FMA241998",
+        "FJ1758"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA260794_FJ1758"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA260794",
+      "family": "FMA241998",
+      "latin": "Substantia alba cerebri",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.0029686499999999998,
+          1.52191,
+          -0.000682724
+        ],
+        [
+          0.062458,
+          1.62294,
+          0.162423
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA260791",
+      "name": "Sustancia blanca cerebral · derecho",
+      "anatomicalName": "Sustancia blanca cerebral · derecho",
+      "aliases": [
+        "white matter of right cerebral hemisphere",
+        "FMA260791",
+        "FMA241998",
+        "FJ1806"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA260791_FJ1806"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA260791",
+      "family": "FMA241998",
+      "latin": "Substantia alba cerebri",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.06379370000000001,
+          1.5219200000000002,
+          -0.000628044
+        ],
+        [
+          -0.0044517,
+          1.623,
+          0.162539
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72714",
+      "name": "Hipocampo · izquierdo",
+      "anatomicalName": "Hipocampo · izquierdo",
+      "aliases": [
+        "left hippocampus",
+        "FMA72714",
+        "FMA62493",
+        "FJ1759"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72714_FJ1759"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72714",
+      "family": "FMA62493",
+      "latin": "Hippocampus",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.0166369,
+          1.52925,
+          0.0594461
+        ],
+        [
+          0.0366013,
+          1.55124,
+          0.102339
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72713",
+      "name": "Hipocampo · derecho",
+      "anatomicalName": "Hipocampo · derecho",
+      "aliases": [
+        "right hippocampus",
+        "FMA72713",
+        "FMA62493",
+        "FJ1807"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72713_FJ1807"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72713",
+      "family": "FMA62493",
+      "latin": "Hippocampus",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.037906100000000005,
+          1.52927,
+          0.0595233
+        ],
+        [
+          -0.0179088,
+          1.55124,
+          0.102368
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA62008",
+      "name": "Hipotálamo",
+      "anatomicalName": "Hipotálamo",
+      "aliases": [
+        "hypothalamus",
+        "FMA62008",
+        "FMA62008",
+        "FJ1760",
+        "FJ1808"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:diencephalon",
+      "explosionRegionId": "head-neck",
+      "children": [
+        "bp3d:FMA62327"
+      ],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA62008_FJ1760",
+        "bp3d_FMA62008_FJ1808"
+      ],
+      "relatedIds": [
+        "nervous:diencephalon"
+      ],
+      "sourceId": "FMA62008",
+      "family": "FMA62008",
+      "latin": "Hypothalamus",
+      "side": "midline",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:diencephalon",
+      "bounds": [
+        [
+          -0.00924961,
+          1.53212,
+          0.0922362
+        ],
+        [
+          0.00793961,
+          1.5521,
+          0.11017700000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA62032",
+      "name": "Habénula",
+      "anatomicalName": "Habénula",
+      "aliases": [
+        "habenula",
+        "FMA62032",
+        "FMA62032",
+        "FJ1743"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:diencephalon",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA62032_FJ1743"
+      ],
+      "relatedIds": [
+        "nervous:diencephalon"
+      ],
+      "sourceId": "FMA62032",
+      "family": "FMA62032",
+      "latin": "Habenula",
+      "side": "midline",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:diencephalon",
+      "bounds": [
+        [
+          -0.0044439399999999995,
+          1.54475,
+          0.0669468
+        ],
+        [
+          0.0031286200000000004,
+          1.54889,
+          0.0721112
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA62327",
+      "name": "Túber cinéreo",
+      "anatomicalName": "Túber cinéreo",
+      "aliases": [
+        "tuber cinereum",
+        "FMA62327",
+        "FMA62327",
+        "FJ1780",
+        "FJ1828"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:diencephalon",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA62327_FJ1780",
+        "bp3d_FMA62327_FJ1828"
+      ],
+      "relatedIds": [
+        "bp3d:FMA62008"
+      ],
+      "sourceId": "FMA62327",
+      "family": "FMA62327",
+      "latin": "Tuber cinereum",
+      "side": "midline",
+      "neuralType": "componente encefálico",
+      "parentId": "bp3d:FMA62008",
+      "bounds": [
+        [
+          -0.00924961,
+          1.53212,
+          0.0941626
+        ],
+        [
+          0.00793961,
+          1.5431199999999998,
+          0.10374599999999999
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA73435",
+      "name": "Colículo inferior · izquierdo",
+      "anatomicalName": "Colículo inferior · izquierdo",
+      "aliases": [
+        "left inferior colliculus",
+        "FMA73435",
+        "FMA62404",
+        "FJ1762"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:brainstem",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA73435_FJ1762"
+      ],
+      "relatedIds": [
+        "bp3d:FMA61993"
+      ],
+      "sourceId": "FMA73435",
+      "family": "FMA62404",
+      "latin": "Colliculus inferior",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "bp3d:FMA61993",
+      "bounds": [
+        [
+          -0.00030206300000000004,
+          1.52882,
+          0.06748359999999999
+        ],
+        [
+          0.00734689,
+          1.53644,
+          0.0752808
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA73434",
+      "name": "Colículo inferior · derecho",
+      "anatomicalName": "Colículo inferior · derecho",
+      "aliases": [
+        "right inferior colliculus",
+        "FMA73434",
+        "FMA62404",
+        "FJ1810"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:brainstem",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA73434_FJ1810"
+      ],
+      "relatedIds": [
+        "bp3d:FMA61993"
+      ],
+      "sourceId": "FMA73434",
+      "family": "FMA62404",
+      "latin": "Colliculus inferior",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "bp3d:FMA61993",
+      "bounds": [
+        [
+          -0.00871285,
+          1.5288599999999999,
+          0.067535
+        ],
+        [
+          -0.000922659,
+          1.53653,
+          0.07534170000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA73423",
+      "name": "Colículo superior · izquierdo",
+      "anatomicalName": "Colículo superior · izquierdo",
+      "aliases": [
+        "left superior colliculus",
+        "FMA73423",
+        "FMA62403",
+        "FJ1779"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:brainstem",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA73423_FJ1779"
+      ],
+      "relatedIds": [
+        "bp3d:FMA61993"
+      ],
+      "sourceId": "FMA73423",
+      "family": "FMA62403",
+      "latin": "Colliculus superior",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "bp3d:FMA61993",
+      "bounds": [
+        [
+          -0.000557623,
+          1.53737,
+          0.0682338
+        ],
+        [
+          0.00720012,
+          1.54337,
+          0.0742727
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA73422",
+      "name": "Colículo superior · derecho",
+      "anatomicalName": "Colículo superior · derecho",
+      "aliases": [
+        "right superior colliculus",
+        "FMA73422",
+        "FMA62403",
+        "FJ1826"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:brainstem",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA73422_FJ1826"
+      ],
+      "relatedIds": [
+        "bp3d:FMA61993"
+      ],
+      "sourceId": "FMA73422",
+      "family": "FMA62403",
+      "latin": "Colliculus superior",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "bp3d:FMA61993",
+      "bounds": [
+        [
+          -0.00851769,
+          1.53734,
+          0.068259
+        ],
+        [
+          -0.000815126,
+          1.54331,
+          0.0742794
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA62004",
+      "name": "Bulbo raquídeo",
+      "anatomicalName": "Bulbo raquídeo",
+      "aliases": [
+        "medulla oblongata",
+        "FMA62004",
+        "FMA62004",
+        "FJ1769",
+        "FJ1831"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:brainstem",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA62004_FJ1769",
+        "bp3d_FMA62004_FJ1831"
+      ],
+      "relatedIds": [
+        "nervous:brainstem"
+      ],
+      "sourceId": "FMA62004",
+      "family": "FMA62004",
+      "latin": "Medulla oblongata",
+      "side": "midline",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:brainstem",
+      "bounds": [
+        [
+          -0.0140204,
+          1.4645000000000001,
+          0.0512391
+        ],
+        [
+          0.012713100000000001,
+          1.50578,
+          0.0844395
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA61993",
+      "name": "Mesencéfalo",
+      "anatomicalName": "Mesencéfalo",
+      "aliases": [
+        "midbrain",
+        "FMA61993",
+        "FMA61993",
+        "FJ1770",
+        "FJ1817"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:brainstem",
+      "explosionRegionId": "head-neck",
+      "children": [
+        "bp3d:FMA73435",
+        "bp3d:FMA73434",
+        "bp3d:FMA73423",
+        "bp3d:FMA73422"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA61993_FJ1770",
+        "bp3d_FMA61993_FJ1817"
+      ],
+      "relatedIds": [
+        "nervous:brainstem"
+      ],
+      "sourceId": "FMA61993",
+      "family": "FMA61993",
+      "latin": "Mesencephalon",
+      "side": "midline",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:brainstem",
+      "bounds": [
+        [
+          -0.015322200000000001,
+          1.5284900000000001,
+          0.0665809
+        ],
+        [
+          0.0140111,
+          1.54553,
+          0.0959517
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA67943",
+      "name": "Puente",
+      "anatomicalName": "Puente",
+      "aliases": [
+        "pons",
+        "FMA67943",
+        "FMA67943",
+        "FJ1775",
+        "FJ1822"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:brainstem",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA67943_FJ1775",
+        "bp3d_FMA67943_FJ1822"
+      ],
+      "relatedIds": [
+        "nervous:brainstem"
+      ],
+      "sourceId": "FMA67943",
+      "family": "FMA67943",
+      "latin": "Pons",
+      "side": "midline",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:brainstem",
+      "bounds": [
+        [
+          -0.0217505,
+          1.50207,
+          0.0625806
+        ],
+        [
+          0.0204466,
+          1.53069,
+          0.09698659999999999
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA67944",
+      "name": "Cerebelo",
+      "anatomicalName": "Cerebelo",
+      "aliases": [
+        "cerebellum",
+        "FMA67944",
+        "FMA67944",
+        "FJ1781",
+        "FJ1830"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:brain",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA67944_FJ1781",
+        "bp3d_FMA67944_FJ1830"
+      ],
+      "relatedIds": [
+        "nervous:brain"
+      ],
+      "sourceId": "FMA67944",
+      "family": "FMA67944",
+      "latin": "Cerebellum",
+      "side": "midline",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:brain",
+      "bounds": [
+        [
+          -0.0539299,
+          1.4872400000000001,
+          0.0121743
+        ],
+        [
+          0.0526099,
+          1.54051,
+          0.0684661
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72690",
+      "name": "Giro fusiforme · izquierdo",
+      "anatomicalName": "Giro fusiforme · izquierdo",
+      "aliases": [
+        "left fusiform gyrus",
+        "FMA72690",
+        "FMA61908",
+        "FJ1783"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72690_FJ1783"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72690",
+      "family": "FMA61908",
+      "latin": "Gyrus fusiformis",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.010537900000000001,
+          1.51575,
+          0.0496757
+        ],
+        [
+          0.0421819,
+          1.54224,
+          0.110613
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72689",
+      "name": "Giro fusiforme · derecho",
+      "anatomicalName": "Giro fusiforme · derecho",
+      "aliases": [
+        "right fusiform gyrus",
+        "FMA72689",
+        "FMA61908",
+        "FJ1784"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72689_FJ1784"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72689",
+      "family": "FMA61908",
+      "latin": "Gyrus fusiformis",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0434271,
+          1.51561,
+          0.04970020000000001
+        ],
+        [
+          -0.0118315,
+          1.54227,
+          0.110484
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72706",
+      "name": "Giro parahipocampal · izquierdo",
+      "anatomicalName": "Giro parahipocampal · izquierdo",
+      "aliases": [
+        "left parahippocampal gyrus",
+        "FMA72706",
+        "FMA61918",
+        "FJ1785"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72706_FJ1785"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72706",
+      "family": "FMA61918",
+      "latin": "Gyrus parahippocampalis",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.008932180000000001,
+          1.52164,
+          0.051282400000000006
+        ],
+        [
+          0.029918600000000004,
+          1.54369,
+          0.100708
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72705",
+      "name": "Giro parahipocampal · derecho",
+      "anatomicalName": "Giro parahipocampal · derecho",
+      "aliases": [
+        "right parahippocampal gyrus",
+        "FMA72705",
+        "FMA61918",
+        "FJ1786"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72705_FJ1786"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72705",
+      "family": "FMA61918",
+      "latin": "Gyrus parahippocampalis",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0312721,
+          1.52177,
+          0.051266900000000004
+        ],
+        [
+          -0.010180199999999999,
+          1.54369,
+          0.100797
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72656",
+      "name": "Giro frontal medio · izquierdo",
+      "anatomicalName": "Giro frontal medio · izquierdo",
+      "aliases": [
+        "left middle frontal gyrus",
+        "FMA72656",
+        "FMA61859",
+        "FJ1787"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72656_FJ1787"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72656",
+      "family": "FMA61859",
+      "latin": "Gyrus frontalis medius",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.0145999,
+          1.5604200000000001,
+          0.0741993
+        ],
+        [
+          0.049143,
+          1.6223900000000002,
+          0.159172
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72655",
+      "name": "Giro frontal medio · derecho",
+      "anatomicalName": "Giro frontal medio · derecho",
+      "aliases": [
+        "right middle frontal gyrus",
+        "FMA72655",
+        "FMA61859",
+        "FJ1788"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72655_FJ1788"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72655",
+      "family": "FMA61859",
+      "latin": "Gyrus frontalis medius",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0505134,
+          1.5604300000000002,
+          0.07383830000000001
+        ],
+        [
+          -0.0159333,
+          1.6223,
+          0.15919999999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72686",
+      "name": "Giro temporal medio · izquierdo",
+      "anatomicalName": "Giro temporal medio · izquierdo",
+      "aliases": [
+        "left middle temporal gyrus",
+        "FMA72686",
+        "FMA61906",
+        "FJ1789"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72686_FJ1789"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72686",
+      "family": "FMA61906",
+      "latin": "Gyrus temporalis medius",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.033121000000000005,
+          1.52226,
+          0.0139933
+        ],
+        [
+          0.06889340000000001,
+          1.55585,
+          0.124954
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72685",
+      "name": "Giro temporal medio · derecho",
+      "anatomicalName": "Giro temporal medio · derecho",
+      "aliases": [
+        "right middle temporal gyrus",
+        "FMA72685",
+        "FMA61906",
+        "FJ1790"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72685_FJ1790"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72685",
+      "family": "FMA61906",
+      "latin": "Gyrus temporalis medius",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0699404,
+          1.52244,
+          0.0142936
+        ],
+        [
+          -0.0343913,
+          1.5557,
+          0.12495200000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72976",
+      "name": "Lóbulo occipital · izquierdo",
+      "anatomicalName": "Lóbulo occipital · izquierdo",
+      "aliases": [
+        "left occipital lobe",
+        "FMA72976",
+        "FMA67325",
+        "FJ1791"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72976_FJ1791"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72976",
+      "family": "FMA67325",
+      "latin": "Lobus occipitalis",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.00011104700000000001,
+          1.51778,
+          -0.0103293
+        ],
+        [
+          0.043527,
+          1.57153,
+          0.0529323
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72975",
+      "name": "Lóbulo occipital · derecho",
+      "anatomicalName": "Lóbulo occipital · derecho",
+      "aliases": [
+        "right occipital lobe",
+        "FMA72975",
+        "FMA67325",
+        "FJ1792"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72975_FJ1792"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72975",
+      "family": "FMA67325",
+      "latin": "Lobus occipitalis",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0448244,
+          1.51774,
+          -0.0102618
+        ],
+        [
+          -0.00155616,
+          1.57156,
+          0.052951500000000006
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72666",
+      "name": "Giro poscentral · izquierdo",
+      "anatomicalName": "Giro poscentral · izquierdo",
+      "aliases": [
+        "left postcentral gyrus",
+        "FMA72666",
+        "FMA61896",
+        "FJ1797"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72666_FJ1797"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72666",
+      "family": "FMA61896",
+      "latin": "Gyrus postcentralis",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.000609649,
+          1.5639,
+          0.024271
+        ],
+        [
+          0.0671837,
+          1.62368,
+          0.08791670000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72665",
+      "name": "Giro poscentral · derecho",
+      "anatomicalName": "Giro poscentral · derecho",
+      "aliases": [
+        "right postcentral gyrus",
+        "FMA72665",
+        "FMA61896",
+        "FJ1798"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72665_FJ1798"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72665",
+      "family": "FMA61896",
+      "latin": "Gyrus postcentralis",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0683975,
+          1.56414,
+          0.024257300000000002
+        ],
+        [
+          -0.0017481,
+          1.62369,
+          0.0877679
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72662",
+      "name": "Giro precentral · izquierdo",
+      "anatomicalName": "Giro precentral · izquierdo",
+      "aliases": [
+        "left precentral gyrus",
+        "FMA72662",
+        "FMA61894",
+        "FJ1800"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72662_FJ1800"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72662",
+      "family": "FMA61894",
+      "latin": "Gyrus precentralis",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.0005947190000000001,
+          1.5607,
+          0.0392726
+        ],
+        [
+          0.0628854,
+          1.6266900000000002,
+          0.104839
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72661",
+      "name": "Giro precentral · derecho",
+      "anatomicalName": "Giro precentral · derecho",
+      "aliases": [
+        "right precentral gyrus",
+        "FMA72661",
+        "FMA61894",
+        "FJ1801"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72661_FJ1801"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72661",
+      "family": "FMA61894",
+      "latin": "Gyrus precentralis",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0641509,
+          1.5605499999999999,
+          0.0393459
+        ],
+        [
+          -0.0016214900000000002,
+          1.62655,
+          0.104658
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72654",
+      "name": "Giro frontal superior · izquierdo",
+      "anatomicalName": "Giro frontal superior · izquierdo",
+      "aliases": [
+        "left superior frontal gyrus",
+        "FMA72654",
+        "FMA61857",
+        "FJ1833"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72654_FJ1833"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72654",
+      "family": "FMA61857",
+      "latin": "Gyrus frontalis superior",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.000190459,
+          1.5521800000000001,
+          0.0536994
+        ],
+        [
+          0.0317068,
+          1.63046,
+          0.169677
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72653",
+      "name": "Giro frontal superior · derecho",
+      "anatomicalName": "Giro frontal superior · derecho",
+      "aliases": [
+        "right superior frontal gyrus",
+        "FMA72653",
+        "FMA61857",
+        "FJ1834"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72653_FJ1834"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72653",
+      "family": "FMA61857",
+      "latin": "Gyrus frontalis superior",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0331443,
+          1.5520100000000001,
+          0.053709400000000004
+        ],
+        [
+          -0.00155451,
+          1.6304200000000002,
+          0.16966900000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72672",
+      "name": "Lobulillo parietal superior · izquierdo",
+      "anatomicalName": "Lobulillo parietal superior · izquierdo",
+      "aliases": [
+        "left superior parietal lobule",
+        "FMA72672",
+        "FMA61899",
+        "FJ1835"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72672_FJ1835"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72672",
+      "family": "FMA61899",
+      "latin": "Lobulus parietalis superior",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.00018333,
+          1.54961,
+          -0.00630488
+        ],
+        [
+          0.036074800000000004,
+          1.6171099999999998,
+          0.0502444
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72671",
+      "name": "Lobulillo parietal superior · derecho",
+      "anatomicalName": "Lobulillo parietal superior · derecho",
+      "aliases": [
+        "right superior parietal lobule",
+        "FMA72671",
+        "FMA61899",
+        "FJ1836"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72671_FJ1836"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72671",
+      "family": "FMA61899",
+      "latin": "Lobulus parietalis superior",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.0375771,
+          1.54961,
+          -0.0064577
+        ],
+        [
+          -0.0014454700000000001,
+          1.6170799999999999,
+          0.050232900000000004
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72668",
+      "name": "Giro supramarginal · izquierdo",
+      "anatomicalName": "Giro supramarginal · izquierdo",
+      "aliases": [
+        "left supramarginal gyrus",
+        "FMA72668",
+        "FMA61897",
+        "FJ1841"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72668_FJ1841"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72668",
+      "family": "FMA61897",
+      "latin": "Gyrus supramarginalis",
+      "side": "left",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          0.0231495,
+          1.56124,
+          0.035459899999999996
+        ],
+        [
+          0.0687863,
+          1.60282,
+          0.0731168
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72667",
+      "name": "Giro supramarginal · derecho",
+      "anatomicalName": "Giro supramarginal · derecho",
+      "aliases": [
+        "right supramarginal gyrus",
+        "FMA72667",
+        "FMA61897",
+        "FJ1842"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA72667_FJ1842"
+      ],
+      "relatedIds": [
+        "nervous:cerebrum"
+      ],
+      "sourceId": "FMA72667",
+      "family": "FMA61897",
+      "latin": "Gyrus supramarginalis",
+      "side": "right",
+      "neuralType": "componente encefálico",
+      "parentId": "nervous:cerebrum",
+      "bounds": [
+        [
+          -0.06970520000000001,
+          1.56137,
+          0.0354275
+        ],
+        [
+          -0.0243919,
+          1.6024500000000002,
+          0.07312590000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA50875",
+      "name": "Nervio óptico derecho",
+      "anatomicalName": "Nervio óptico derecho",
+      "aliases": [
+        "right optic nerve",
+        "FMA50875",
+        "FMA50875",
+        "FJ1364",
+        "FJ1819"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:optic",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA50875_FJ1364",
+        "bp3d_FMA50875_FJ1819"
+      ],
+      "relatedIds": [
+        "nervous:optic"
+      ],
+      "sourceId": "FMA50875",
+      "family": "FMA50875",
+      "latin": "Nervus opticus dexter",
+      "side": "right",
+      "neuralType": "nervio",
+      "parentId": "nervous:optic",
+      "bounds": [
+        [
+          -0.0333074,
+          1.51829,
+          0.102147
+        ],
+        [
+          -0.00128971,
+          1.54231,
+          0.15174600000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA50878",
+      "name": "Nervio óptico izquierdo",
+      "anatomicalName": "Nervio óptico izquierdo",
+      "aliases": [
+        "left optic nerve",
+        "FMA50878",
+        "FMA50878",
+        "FJ1313",
+        "FJ1772"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:optic",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cns"
+      ],
+      "meshNames": [
+        "bp3d_FMA50878_FJ1313",
+        "bp3d_FMA50878_FJ1772"
+      ],
+      "relatedIds": [
+        "nervous:optic"
+      ],
+      "sourceId": "FMA50878",
+      "family": "FMA50878",
+      "latin": "Nervus opticus sinister",
+      "side": "left",
+      "neuralType": "nervio",
+      "parentId": "nervous:optic",
+      "bounds": [
+        [
+          -0.00000264154,
+          1.51828,
+          0.10214100000000001
+        ],
+        [
+          0.0319976,
+          1.54231,
+          0.151743
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA50881",
+      "name": "Nervio troclear derecho",
+      "anatomicalName": "Nervio troclear derecho",
+      "aliases": [
+        "right trochlear nerve",
+        "FMA50881",
+        "FMA50881",
+        "FJ1381"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA50881_FJ1381"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA50881",
+      "family": "FMA50881",
+      "latin": "Nervus trochlearis dexter",
+      "side": "right",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.020756900000000002,
+          1.5221099999999999,
+          0.0716888
+        ],
+        [
+          -0.0116316,
+          1.53394,
+          0.15083600000000003
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA50882",
+      "name": "Nervio troclear izquierdo",
+      "anatomicalName": "Nervio troclear izquierdo",
+      "aliases": [
+        "left trochlear nerve",
+        "FMA50882",
+        "FMA50882",
+        "FJ1330"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA50882_FJ1330"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA50882",
+      "family": "FMA50882",
+      "latin": "Nervus trochlearis sinister",
+      "side": "left",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.010328200000000001,
+          1.5221099999999999,
+          0.07169320000000001
+        ],
+        [
+          0.0194537,
+          1.53393,
+          0.150837
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52577",
+      "name": "Rama inferior del nervio oculomotor · izquierdo",
+      "anatomicalName": "Rama inferior del nervio oculomotor · izquierdo",
+      "aliases": [
+        "inferior branch of left oculomotor nerve",
+        "FMA52577",
+        "FMA52573",
+        "FJ1293"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52577_FJ1293"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52577",
+      "family": "FMA52573",
+      "latin": "Ramus inferior nervi oculomotorii",
+      "side": "left",
+      "neuralType": "rama nerviosa",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.01316,
+          1.5058,
+          0.114208
+        ],
+        [
+          0.037741500000000004,
+          1.53101,
+          0.150075
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52576",
+      "name": "Rama inferior del nervio oculomotor · derecho",
+      "anatomicalName": "Rama inferior del nervio oculomotor · derecho",
+      "aliases": [
+        "inferior branch of right oculomotor nerve",
+        "FMA52576",
+        "FMA52573",
+        "FJ1344"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52576_FJ1344"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52576",
+      "family": "FMA52573",
+      "latin": "Ramus inferior nervi oculomotorii",
+      "side": "right",
+      "neuralType": "rama nerviosa",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.0390562,
+          1.50579,
+          0.11421100000000001
+        ],
+        [
+          -0.0144296,
+          1.53102,
+          0.15007900000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52575",
+      "name": "Rama superior del nervio oculomotor · izquierdo",
+      "anatomicalName": "Rama superior del nervio oculomotor · izquierdo",
+      "aliases": [
+        "superior branch of left oculomotor nerve",
+        "FMA52575",
+        "FMA52572",
+        "FJ1321"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52575_FJ1321"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52575",
+      "family": "FMA52572",
+      "latin": "Ramus superior nervi oculomotorii",
+      "side": "left",
+      "neuralType": "rama nerviosa",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.0159428,
+          1.52569,
+          0.120291
+        ],
+        [
+          0.0283555,
+          1.53534,
+          0.14638
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52574",
+      "name": "Rama superior del nervio oculomotor · derecho",
+      "anatomicalName": "Rama superior del nervio oculomotor · derecho",
+      "aliases": [
+        "superior branch of right oculomotor nerve",
+        "FMA52574",
+        "FMA52572",
+        "FJ1372"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52574_FJ1372"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52574",
+      "family": "FMA52572",
+      "latin": "Ramus superior nervi oculomotorii",
+      "side": "right",
+      "neuralType": "rama nerviosa",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.029670500000000002,
+          1.5256800000000001,
+          0.120285
+        ],
+        [
+          -0.0172229,
+          1.53535,
+          0.14638700000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52623",
+      "name": "Nervio oftálmico · izquierdo",
+      "anatomicalName": "Nervio oftálmico · izquierdo",
+      "aliases": [
+        "left ophthalmic nerve",
+        "FMA52623",
+        "FMA52621",
+        "FJ1312"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52623_FJ1312"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52623",
+      "family": "FMA52621",
+      "latin": "Nervus ophthalmicus",
+      "side": "left",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.0164315,
+          1.52142,
+          0.0944893
+        ],
+        [
+          0.0210625,
+          1.52999,
+          0.121822
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52622",
+      "name": "Nervio oftálmico · derecho",
+      "anatomicalName": "Nervio oftálmico · derecho",
+      "aliases": [
+        "right ophthalmic nerve",
+        "FMA52622",
+        "FMA52621",
+        "FJ1363"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52622_FJ1363"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52622",
+      "family": "FMA52621",
+      "latin": "Nervus ophthalmicus",
+      "side": "right",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.022371300000000004,
+          1.52142,
+          0.09448999999999999
+        ],
+        [
+          -0.0177427,
+          1.5299800000000001,
+          0.121824
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52640",
+      "name": "Nervio frontal · izquierdo",
+      "anatomicalName": "Nervio frontal · izquierdo",
+      "aliases": [
+        "left frontal nerve",
+        "FMA52640",
+        "FMA52638",
+        "FJ1290"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52640_FJ1290"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52640",
+      "family": "FMA52638",
+      "latin": "Nervus frontalis",
+      "side": "left",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.019191,
+          1.5284600000000002,
+          0.12030500000000001
+        ],
+        [
+          0.0245779,
+          1.54029,
+          0.14194900000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52639",
+      "name": "Nervio frontal · derecho",
+      "anatomicalName": "Nervio frontal · derecho",
+      "aliases": [
+        "right frontal nerve",
+        "FMA52639",
+        "FMA52638",
+        "FJ1341"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52639_FJ1341"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52639",
+      "family": "FMA52638",
+      "latin": "Nervus frontalis",
+      "side": "right",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.025887300000000002,
+          1.5284600000000002,
+          0.120306
+        ],
+        [
+          -0.020503,
+          1.54029,
+          0.141956
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52630",
+      "name": "Nervio lagrimal · izquierdo",
+      "anatomicalName": "Nervio lagrimal · izquierdo",
+      "aliases": [
+        "left lacrimal nerve",
+        "FMA52630",
+        "FMA52628",
+        "FJ1300"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52630_FJ1300"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52630",
+      "family": "FMA52628",
+      "latin": "Nervus lacrimalis",
+      "side": "left",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.0194801,
+          1.52696,
+          0.120507
+        ],
+        [
+          0.0428233,
+          1.5348,
+          0.15597
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52629",
+      "name": "Nervio lagrimal · derecho",
+      "anatomicalName": "Nervio lagrimal · derecho",
+      "aliases": [
+        "right lacrimal nerve",
+        "FMA52629",
+        "FMA52628",
+        "FJ1351"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52629_FJ1351"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52629",
+      "family": "FMA52628",
+      "latin": "Nervus lacrimalis",
+      "side": "right",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.0441304,
+          1.5269700000000002,
+          0.120507
+        ],
+        [
+          -0.020790299999999998,
+          1.53481,
+          0.155976
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52670",
+      "name": "Nervio nasociliar · izquierdo",
+      "anatomicalName": "Nervio nasociliar · izquierdo",
+      "aliases": [
+        "left nasociliary nerve",
+        "FMA52670",
+        "FMA52668",
+        "FJ1310"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52670_FJ1310"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52670",
+      "family": "FMA52668",
+      "latin": "Nervus nasociliaris",
+      "side": "left",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.0016304000000000002,
+          1.51502,
+          0.110705
+        ],
+        [
+          0.019426,
+          1.53051,
+          0.185433
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52669",
+      "name": "Nervio nasociliar · derecho",
+      "anatomicalName": "Nervio nasociliar · derecho",
+      "aliases": [
+        "right nasociliary nerve",
+        "FMA52669",
+        "FMA52668",
+        "FJ1361"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52669_FJ1361"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52669",
+      "family": "FMA52668",
+      "latin": "Nervus nasociliaris",
+      "side": "right",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.0207466,
+          1.51502,
+          0.110701
+        ],
+        [
+          -0.0029294,
+          1.53052,
+          0.185476
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52657",
+      "name": "Nervio supraorbitario · izquierdo",
+      "anatomicalName": "Nervio supraorbitario · izquierdo",
+      "aliases": [
+        "left supra-orbital nerve",
+        "FMA52657",
+        "FMA52655",
+        "FJ1325"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52657_FJ1325"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52657",
+      "family": "FMA52655",
+      "latin": "Nervus supraorbitalis",
+      "side": "left",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.022602900000000002,
+          1.5389300000000001,
+          0.140588
+        ],
+        [
+          0.0297257,
+          1.5605499999999999,
+          0.175819
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52656",
+      "name": "Nervio supraorbitario · derecho",
+      "anatomicalName": "Nervio supraorbitario · derecho",
+      "aliases": [
+        "right supra-orbital nerve",
+        "FMA52656",
+        "FMA52655",
+        "FJ1376"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52656_FJ1376"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52656",
+      "family": "FMA52655",
+      "latin": "Nervus supraorbitalis",
+      "side": "right",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.0310399,
+          1.5389300000000001,
+          0.140588
+        ],
+        [
+          -0.0239019,
+          1.5605499999999999,
+          0.175822
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52644",
+      "name": "Nervio supratroclear · izquierdo",
+      "anatomicalName": "Nervio supratroclear · izquierdo",
+      "aliases": [
+        "left supratrochlear nerve",
+        "FMA52644",
+        "FMA52642",
+        "FJ1326"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52644_FJ1326"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52644",
+      "family": "FMA52642",
+      "latin": "Nervus supratrochlearis",
+      "side": "left",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.00130656,
+          1.53106,
+          0.14058600000000002
+        ],
+        [
+          0.0244917,
+          1.55121,
+          0.177977
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52643",
+      "name": "Nervio supratroclear · derecho",
+      "anatomicalName": "Nervio supratroclear · derecho",
+      "aliases": [
+        "right supratrochlear nerve",
+        "FMA52643",
+        "FMA52642",
+        "FJ1377"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52643_FJ1377"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52643",
+      "family": "FMA52642",
+      "latin": "Nervus supratrochlearis",
+      "side": "right",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.0258003,
+          1.53105,
+          0.140574
+        ],
+        [
+          -0.00261766,
+          1.55122,
+          0.177977
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52677",
+      "name": "Nervio etmoidal anterior · izquierdo",
+      "anatomicalName": "Nervio etmoidal anterior · izquierdo",
+      "aliases": [
+        "left anterior ethmoidal nerve",
+        "FMA52677",
+        "FMA52675",
+        "FJ1283"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52677_FJ1283"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52677",
+      "family": "FMA52675",
+      "latin": "Nervus ethmoidalis anterior",
+      "side": "left",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.0080001,
+          1.5271400000000002,
+          0.140064
+        ],
+        [
+          0.0157256,
+          1.5286,
+          0.144456
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52676",
+      "name": "Nervio etmoidal anterior · derecho",
+      "anatomicalName": "Nervio etmoidal anterior · derecho",
+      "aliases": [
+        "right anterior ethmoidal nerve",
+        "FMA52676",
+        "FMA52675",
+        "FJ1333"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52676_FJ1333"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52676",
+      "family": "FMA52675",
+      "latin": "Nervus ethmoidalis anterior",
+      "side": "right",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.0170401,
+          1.52711,
+          0.14008
+        ],
+        [
+          -0.00930044,
+          1.52859,
+          0.144435
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52716",
+      "name": "Nervio etmoidal posterior · izquierdo",
+      "anatomicalName": "Nervio etmoidal posterior · izquierdo",
+      "aliases": [
+        "left posterior ethmoidal nerve",
+        "FMA52716",
+        "FMA52714",
+        "FJ1315"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52716_FJ1315"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52716",
+      "family": "FMA52714",
+      "latin": "Nervus ethmoidalis posterior",
+      "side": "left",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.00831545,
+          1.52687,
+          0.132666
+        ],
+        [
+          0.0160763,
+          1.52872,
+          0.13525299999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52715",
+      "name": "Nervio etmoidal posterior · derecho",
+      "anatomicalName": "Nervio etmoidal posterior · derecho",
+      "aliases": [
+        "right posterior ethmoidal nerve",
+        "FMA52715",
+        "FMA52714",
+        "FJ1366"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52715_FJ1366"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52715",
+      "family": "FMA52714",
+      "latin": "Nervus ethmoidalis posterior",
+      "side": "right",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.017372699999999998,
+          1.52687,
+          0.13265100000000002
+        ],
+        [
+          -0.00961228,
+          1.52872,
+          0.13528
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52699",
+      "name": "Nervio infratroclear · izquierdo",
+      "anatomicalName": "Nervio infratroclear · izquierdo",
+      "aliases": [
+        "left infratrochlear nerve",
+        "FMA52699",
+        "FMA52693",
+        "FJ1296"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52699_FJ1296"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52699",
+      "family": "FMA52693",
+      "latin": "Nervus infratrochlearis",
+      "side": "left",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.00702135,
+          1.5207000000000002,
+          0.16838399999999998
+        ],
+        [
+          0.0105688,
+          1.53033,
+          0.173541
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52698",
+      "name": "Nervio infratroclear · derecho",
+      "anatomicalName": "Nervio infratroclear · derecho",
+      "aliases": [
+        "right infratrochlear nerve",
+        "FMA52698",
+        "FMA52693",
+        "FJ1347"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52698_FJ1347"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52698",
+      "family": "FMA52693",
+      "latin": "Nervus infratrochlearis",
+      "side": "right",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.011885300000000001,
+          1.52072,
+          0.168379
+        ],
+        [
+          -0.00831282,
+          1.53032,
+          0.17355500000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA82735",
+      "name": "Nervio ciliar largo · izquierdo",
+      "anatomicalName": "Nervio ciliar largo · izquierdo",
+      "aliases": [
+        "left long ciliary nerve",
+        "FMA82735",
+        "FMA52691",
+        "FJ1318"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA82735_FJ1318"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA82735",
+      "family": "FMA52691",
+      "latin": "Nervus ciliaris longus",
+      "side": "left",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.015603,
+          1.5213,
+          0.131752
+        ],
+        [
+          0.027534700000000002,
+          1.52766,
+          0.14752500000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA82734",
+      "name": "Nervio ciliar largo · derecho",
+      "anatomicalName": "Nervio ciliar largo · derecho",
+      "aliases": [
+        "right long ciliary nerve",
+        "FMA82734",
+        "FMA52691",
+        "FJ1369"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA82734_FJ1369"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA82734",
+      "family": "FMA52691",
+      "latin": "Nervus ciliaris longus",
+      "side": "right",
+      "neuralType": "nervio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.028853100000000003,
+          1.52129,
+          0.131766
+        ],
+        [
+          -0.016875499999999998,
+          1.52767,
+          0.147531
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52674",
+      "name": "Rama comunicante nasociliar con el ganglio ciliar · izquierdo",
+      "anatomicalName": "Rama comunicante nasociliar con el ganglio ciliar · izquierdo",
+      "aliases": [
+        "communicating branch of left nasociliary nerve with left ciliary ganglion",
+        "FMA52674",
+        "FMA52672",
+        "FJ1311"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52674_FJ1311"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52674",
+      "family": "FMA52672",
+      "latin": "Ramus communicans cum ganglio ciliari",
+      "side": "left",
+      "neuralType": "rama nerviosa",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.0163791,
+          1.52492,
+          0.125931
+        ],
+        [
+          0.024685400000000003,
+          1.52908,
+          0.13220500000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA52673",
+      "name": "Rama comunicante nasociliar con el ganglio ciliar · derecho",
+      "anatomicalName": "Rama comunicante nasociliar con el ganglio ciliar · derecho",
+      "aliases": [
+        "communicating branch of right nasociliary nerve with right ciliary ganglion",
+        "FMA52673",
+        "FMA52672",
+        "FJ1362"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA52673_FJ1362"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA52673",
+      "family": "FMA52672",
+      "latin": "Ramus communicans cum ganglio ciliari",
+      "side": "right",
+      "neuralType": "rama nerviosa",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.026000699999999998,
+          1.5249300000000001,
+          0.12587900000000002
+        ],
+        [
+          -0.017691600000000002,
+          1.52908,
+          0.132236
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA53549",
+      "name": "Ganglio ciliar derecho",
+      "anatomicalName": "Ganglio ciliar derecho",
+      "aliases": [
+        "right ciliary ganglion",
+        "FMA53549",
+        "FMA53549",
+        "FJ1339"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA53549_FJ1339"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA53549",
+      "family": "FMA53549",
+      "latin": "Ganglion ciliare dextrum",
+      "side": "right",
+      "neuralType": "ganglio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          -0.027039100000000003,
+          1.52396,
+          0.130799
+        ],
+        [
+          -0.023795200000000002,
+          1.52653,
+          0.13405799999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA53550",
+      "name": "Ganglio ciliar izquierdo",
+      "anatomicalName": "Ganglio ciliar izquierdo",
+      "aliases": [
+        "left ciliary ganglion",
+        "FMA53550",
+        "FMA53550",
+        "FJ1288"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "explosionRegionId": "head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:cranial"
+      ],
+      "meshNames": [
+        "bp3d_FMA53550_FJ1288"
+      ],
+      "relatedIds": [
+        "nervous:cranial"
+      ],
+      "sourceId": "FMA53550",
+      "family": "FMA53550",
+      "latin": "Ganglion ciliare sinistrum",
+      "side": "left",
+      "neuralType": "ganglio",
+      "parentId": "nervous:cranial",
+      "bounds": [
+        [
+          0.0224981,
+          1.5239500000000001,
+          0.13081
+        ],
+        [
+          0.0257193,
+          1.52651,
+          0.134028
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "nervous:cns",
+      "path": "models/anatomy/nervous/cns.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:cns",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 2600372,
+      "sha256": "b6980f1ada1426c11d1b96fc1c35194be7ac92a75e0349fb08ef4ac002577c33",
+      "meshCount": 57,
+      "triangles": 282842,
+      "bounds": [
+        [
+          -0.0699404,
+          1.4645000000000001,
+          -0.0103293
+        ],
+        [
+          0.06889340000000001,
+          1.63046,
+          0.169677
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-nervous"
+    },
+    {
+      "id": "nervous:cranial",
+      "path": "models/anatomy/nervous/cranial.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:cranial",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 332748,
+      "sha256": "4f74ac231ee14b3cd403732267155b08d246b4286df392b0563a720f8de6adce",
+      "meshCount": 30,
+      "triangles": 34832,
+      "bounds": [
+        [
+          -0.0441304,
+          1.50579,
+          0.0716888
+        ],
+        [
+          0.0428233,
+          1.5605499999999999,
+          0.185476
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-nervous"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "bodyparts3d-4.0-nervous",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 · OBJ99 (2013 archive; current license declaration)",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Scoped nervous cohort; original FMA/FJ and source OBJ retained.",
+        "Shared transform (x,y,z) to (x,z,-y)/1000; Float32 positions; Meshopt; normal quantization only. No decimation, mirroring or per-piece fitting.",
+        "Brain regions are components, not additional whole brains. Orbital branches do not imply complete cranial nerves.",
+        "Publisher CC BY 4.0 declaration supersedes preserved legacy headers. No clinical certification."
+      ]
+    }
+  ],
+  "coverage": {
+    "title": "Cobertura nerviosa disponible",
+    "structures": 30,
+    "meshes": 87,
+    "note": "30 estructuras nerviosas y 49 componentes identificados; encéfalo regional y cobertura orbitaria. Los componentes no son órganos adicionales.",
+    "limitations": [
+      "Sin médula espinal, raíces, plexos ni nervios de extremidades registrados.",
+      "Encéfalo y nervios craneales parciales: no se reconstruyen estructuras ausentes.",
+      "II se presenta en SNC; III sólo mediante ramas; V sólo división oftálmica y ramas.",
+      "El encéfalo HRA permanece como explorador independiente, sin superposición corporal."
+    ]
+  }
+}

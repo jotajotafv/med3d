@@ -20,7 +20,7 @@ function useReducedMotionPreference() {
   return reduced;
 }
 const SYSTEM_COLORS: Record<SystemId, string> = {
-  skeletal: '#d7c6a1', integumentary: '#cdb3a0', muscular: '#b67070', nervous: '#d7c487',
+  skeletal: '#d7c6a1', integumentary: '#cdb3a0', muscular: '#b67070', nervous: '#cbb05b',
   cardiovascular: '#ba7770', respiratory: '#caa1a1', digestive: '#c49f8c', urinary: '#af8175',
   endocrine: '#bba287', lymphatic: '#94b29a', reproductive: '#b9969a',
 };
@@ -73,7 +73,7 @@ function useMaterials(catalog: AnatomyCatalog) {
     const options = { color, roughness: .78, metalness: .015, side: THREE.DoubleSide };
     return [key, {
       systemId:system,
-      base: new THREE.MeshStandardMaterial(options),
+      base: new THREE.MeshStandardMaterial({ ...options, ...(system==='nervous'?{emissive:color,emissiveIntensity:.045}:{}) }),
       selected: new THREE.MeshStandardMaterial({ ...options, color: '#36bcb1', emissive: '#36bcb1', emissiveIntensity: .16 }),
       hover: new THREE.MeshStandardMaterial({ ...options, emissive: color, emissiveIntensity: .22 }),
     }];
@@ -288,7 +288,8 @@ function SceneInspection({resources}:{resources:AtlasResource[]}) {
     const inspect=()=>({
       parts:resources.flatMap(resource=>resource.parts.map(part=>{
         const material=part.mesh.material as THREE.MeshStandardMaterial;
-        return {id:part.node.id,systemId:part.node.systemId,assetId:resource.asset.id,visible:part.mesh.visible,
+        const screenCenter = part.mesh.geometry.boundingBox?.getCenter(new THREE.Vector3()).applyMatrix4(part.mesh.matrixWorld).project(camera).toArray();
+        return {id:part.node.id,meshName:part.mesh.name,screenCenter,emissiveIntensity:material.emissiveIntensity,depthTest:material.depthTest,side:material.side,systemId:part.node.systemId,assetId:resource.asset.id,visible:part.mesh.visible,
           position:part.mesh.position.toArray(),restPosition:part.basePosition.toArray(),targetPosition:part.basePosition.clone().add(part.targetOffset).toArray(),
           opacity:material.opacity,transparent:material.transparent,depthWrite:material.depthWrite,color:material.color.getHexString()};
       })).sort((a,b)=>a.id.localeCompare(b.id)),

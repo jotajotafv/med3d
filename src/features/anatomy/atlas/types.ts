@@ -20,6 +20,8 @@ export interface AnatomyNode {
   assetIds: string[];
   meshNames: string[];
   family?: string;
+  /** Curated nervous entity type; independent of mesh subdivision. */
+  neuralType?: string;
   side?: 'left' | 'right' | 'midline';
   relatedIds: string[];
   bounds?: Bounds;

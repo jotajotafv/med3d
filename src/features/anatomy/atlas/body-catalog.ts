@@ -7,8 +7,8 @@ export const BODY_ROOT_ID = 'body';
  * The skeletal whole-body frame remains the fixed viewer reference even when
  * only a single muscular module is enabled. This is not a registration solver.
  */
-export function composeBodyCatalog(skeletal: AnatomyCatalog, muscular?: AnatomyCatalog): AnatomyCatalog {
-  const catalogs = muscular ? [skeletal, muscular] : [skeletal];
+export function composeBodyCatalog(skeletal: AnatomyCatalog, muscular?: AnatomyCatalog, nervous?: AnatomyCatalog): AnatomyCatalog {
+  const catalogs = [skeletal, ...(muscular ? [muscular] : []), ...(nervous ? [nervous] : [])];
   const reference = skeletal.frame;
   if (reference.units !== 'metres' || reference.up !== 'Y') throw new Error('El cuerpo requiere el marco común en metros con eje superior Y.');
   const provenance = new Map<string, AssetProvenance>();
@@ -63,7 +63,7 @@ export function composeBodyCatalog(skeletal: AnatomyCatalog, muscular?: AnatomyC
     schemaVersion: 1, id: 'med3d-body', frame: structuredClone(reference),
     nodes: [root, ...nodes], assets, provenance: [...provenance.values()],
     coverage: {
-      title: muscular ? 'Sistema óseo y cobertura muscular integrada disponible' : skeletal.coverage.title,
+      title: nervous ? 'Cobertura ósea, muscular y nerviosa disponible' : muscular ? 'Sistema óseo y cobertura muscular integrada disponible' : skeletal.coverage.title,
       structures: catalogs.reduce((sum, catalog) => sum + catalog.coverage.structures, 0),
       meshes: catalogs.reduce((sum, catalog) => sum + catalog.coverage.meshes, 0),
       note: catalogs.map(catalog => catalog.coverage.note).join(' '),

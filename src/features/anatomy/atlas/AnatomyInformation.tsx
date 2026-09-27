@@ -1,9 +1,11 @@
 import type {AnatomyNode} from './types';
 import BoneInformation from './BoneInformation';
+import NerveInformation from './NerveInformation';
 import MuscleInformation from './MuscleInformation';
 
 /** System-neutral routing; a body root must not inherit a bone information card. */
 export default function AnatomyInformation({node}: {node: AnatomyNode}) {
+  if (node.systemId === 'nervous') return <NerveInformation node={node}/>;
   if (node.systemId === 'skeletal') return <BoneInformation node={node}/>;
   if (node.systemId === 'muscular') return <MuscleInformation node={node}/>;
   return <p>{node.children.length

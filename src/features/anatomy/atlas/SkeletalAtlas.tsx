@@ -7,15 +7,16 @@ import {createCatalogIndex, normalizeSearch, SYSTEMS} from './catalog-index';
 import type {AnatomyCatalog, AnatomyNode, AssetLoadStatus, AtlasCameraRequest, AtlasMetrics, ExplodeLevel, SystemId} from './types';
 import VirtualTree from './VirtualTree';
 import AnatomyInformation from './AnatomyInformation';
+import {getNerveContextIds} from './nerve-education';
 import {getMuscleContextIds} from './muscle-education';
 import {composeBodyCatalog} from './body-catalog';
 import '../anatomy.css';
 import './atlas.css';
 
 const Scene = lazy(() => import('./AtlasScene'));
-const CATALOG_PATHS = ['models/anatomy/skeletal/catalog.json','models/anatomy/muscular/catalog.json'];
-const initialOpacity: Partial<Record<SystemId, number>> = {skeletal: 1, muscular: 1};
-const kindName = (node: AnatomyNode) => node.kind==='structure'&&node.systemId==='muscular'?'Músculo':node.kind==='structure'&&node.systemId==='skeletal'?'Hueso':({body:'Cuerpo',system:'Sistema',division:'Grupo anatómico',region:'Región',structure:'Estructura',component:'Componente'} as const)[node.kind];
+const CATALOG_PATHS = ['models/anatomy/skeletal/catalog.json','models/anatomy/muscular/catalog.json','models/anatomy/nervous/catalog.json'];
+const initialOpacity: Partial<Record<SystemId, number>> = {skeletal: 1, muscular: 1, nervous: 1};
+const kindName = (node: AnatomyNode) => node.systemId==='nervous'&&node.neuralType?node.neuralType: node.kind==='structure'&&node.systemId==='muscular'?'Músculo':node.kind==='structure'&&node.systemId==='skeletal'?'Hueso':({body:'Cuerpo',system:'Sistema',division:'Grupo anatómico',region:'Región',structure:'Estructura',component:'Componente'} as const)[node.kind];
 const systemName = (id?:SystemId) => SYSTEMS.find(system=>system.id===id)?.name||'Cuerpo humano';
 const ORGAN_IDS: OrganId[] = ['heart','lungs','brain'];
 const LEGACY_ORGAN_IDS = new Set(['VH_M_heart','VH_M_lungs_L','VH_M_lungs_R','Allen_brain']);
@@ -29,13 +30,13 @@ export default function SkeletalAtlas() {
   const [hidden,setHidden] = useState<string[]>([]), [isolated,setIsolated] = useState<string|null>(null);
   const [contextIds,setContextIds] = useState<string[]>([]);
   const rememberedAssets = useRef<Partial<Record<SystemId,string[]>>>({});
-  const initialSystems = useRef(new URLSearchParams(window.location.search).get('systems')?.split(',')||['skeletal','muscular']);
+  const initialSystems = useRef(new URLSearchParams(window.location.search).get('systems')?.split(',')||['skeletal','muscular','nervous']);
   // Optional regional entry point. Unknown IDs are ignored; the global catalog
   // remains searchable and selecting another region explicitly loads it.
   const initialModules = useRef(new URLSearchParams(window.location.search).get('modules')?.split(','));
   const initialAssets = (value:AnatomyCatalog,system?:SystemId) => value.assets.filter(asset=>
     (system?asset.systemId===system:initialSystems.current.includes(asset.systemId))&&
-    (asset.systemId!=='muscular'||!initialModules.current||initialModules.current.includes(asset.id))).map(asset=>asset.id);
+    (asset.systemId==='skeletal'||!initialModules.current||initialModules.current.includes(asset.id))).map(asset=>asset.id);
   const [opacityBySystem,setOpacityBySystem] = useState(initialOpacity), [exploded,setExploded] = useState(0), [explodeLevel,setExplodeLevel] = useState<ExplodeLevel>('regions');
   const [searchPage,setSearchPage] = useState(0);
   const [query,setQuery] = useState(''), [expanded,setExpanded] = useState<Set<string>>(new Set());
@@ -48,8 +49,8 @@ export default function SkeletalAtlas() {
       const response=await fetch(import.meta.env.BASE_URL+path,{signal:abort.signal});
       if(!response.ok)throw new Error('No se pudo descargar el catálogo anatómico.');
       return await response.json() as AnatomyCatalog;
-    })).then(([skeletal,muscular]) => {
-      const value=composeBodyCatalog(skeletal,muscular);
+    })).then(([skeletal,muscular,nervous]) => {
+      const value=composeBodyCatalog(skeletal,muscular,nervous);
       createCatalogIndex(value);
       if (abort.signal.aborted) return;
       setCatalog(value); setAssetIds(initialAssets(value));
@@ -80,7 +81,7 @@ export default function SkeletalAtlas() {
   const source = catalog?.provenance.find(item=>item.id===catalog.assets.find(asset=>current?.assetIds.includes(asset.id))?.provenanceId)||catalog?.provenance[0];
   const request = (kind:AtlasCameraRequest['kind'],id?:string|null)=>setCameraRequest(value=>({kind,id,version:value.version+1}));
   const detailSystem=current?.systemId||'skeletal';
-  const relatedContext = current&&index?getMuscleContextIds(current,index.byId):[];
+  const relatedContext = current&&index?(current.systemId==='nervous'?getNerveContextIds(current,index.byId):getMuscleContextIds(current,index.byId)):[];
   function choose(id:string) {
     if(!index)return;
     setSelected(id);setHidden(value=>index.reveal(value,id));setIsolated(null);setContextIds([]);
@@ -95,7 +96,9 @@ export default function SkeletalAtlas() {
     const assets=catalog?.assets.filter(asset=>asset.systemId===systemId).map(asset=>asset.id)||[];
     const active=assetIds.filter(id=>assets.includes(id));
     if(active.length)rememberedAssets.current[systemId]=active;
-    setAssetIds(value=>active.length?value.filter(id=>!assets.includes(id)):[...new Set([...value,...(rememberedAssets.current[systemId]||(catalog?initialAssets(catalog,systemId):assets))])]);
+    const regionalDefaults=catalog?initialAssets(catalog,systemId):assets;
+    const defaults=regionalDefaults.length?regionalDefaults:assets;
+    setAssetIds(value=>active.length?value.filter(id=>!assets.includes(id)):[...new Set([...value,...(rememberedAssets.current[systemId]||defaults)])]);
   }
   function showContext() {
     if(!current||!index||!relatedContext.length)return;
@@ -122,7 +125,7 @@ export default function SkeletalAtlas() {
     setAssetIds(value=>[...new Set([...value,...(index?.assetIdsFor(current.id)||[])])]);
     setIsolated(current.id);request('focus',current.id);
   }
-  function regionName(id:string) {return index?.byId.get(id)?.name||id;}
+  function regionName(id:string) {return index?.byId.get(id)?.name||(id==='nervous:head'?'Cabeza':id);}
   const nodeKind = current?kindName(current):'Cuerpo';
   const availableStructures = catalog?.nodes.filter(node=>node.kind==='structure'&&node.assetIds.some(id=>loadedIds.has(id))).length||0;
   const selectionHidden = !!current&&isHidden(current.id);
@@ -157,9 +160,9 @@ export default function SkeletalAtlas() {
           <div className="atlas-sidebar-footer"><span className="atlas-status-dot"/>{publicStatus}</div>
         </aside>
         <section className="atlas-viewport" aria-label="Modelo interactivo del cuerpo humano" data-selected-id={selected||''} data-context-ids={contextIds.join(',')} aria-busy={statuses.some(status=>status.state==='loading'||status.state==='queued')} data-loaded-assets={metrics?.loadedAssets||0} data-mesh-count={metrics?.meshes||0} data-triangle-count={metrics?.triangles||0} data-geometry-bytes={metrics?.geometryBytes||0} data-draw-calls={metrics?.drawCalls||0} data-render-geometries={metrics?.renderGeometries||0} data-render-textures={metrics?.renderTextures||0} data-load-ms={metrics?.loadMs||0} data-first-geometry-ms={metrics?.firstGeometryMs||0} data-full-system-ms={metrics?.fullSystemMs||0}>
-          <div className="atlas-viewbar"><span><Bone size={15}/><strong>Óseo y muscular</strong></span><button onClick={reset} aria-label="Restablecer atlas"><ArrowCounterClockwise size={16}/><span>Restablecer</span></button></div>
+          <div className="atlas-viewbar"><span><Bone size={15}/><strong>Óseo · Muscular · Nervioso</strong></span><button onClick={reset} aria-label="Restablecer atlas"><ArrowCounterClockwise size={16}/><span>Restablecer</span></button></div>
           <div className="atlas-canvas"><Suspense fallback={<div className="model-loading">Preparando el visor anatómico…</div>}><Scene catalog={catalog} assetIds={assetIds} selected={selected} hidden={hidden} isolated={isolated} contextIds={contextIds} opacityBySystem={opacityBySystem} exploded={exploded/100} explodeLevel={explodeLevel} cameraRequest={cameraRequest} onSelect={selectByPointer} onLoadStatus={setStatuses} onMetrics={setMetrics}/></Suspense></div>
-          <div className="atlas-model-title"><span className="atlas-mono">{current?.systemId==='muscular'?'Systema musculare':current?.systemId==='skeletal'?'Systema skeletale':'Corpus humanum'}</span><h2>{current?.name||'Cuerpo humano'}</h2><p>{selectionHidden?'Estructura oculta':contextIds.length?'Contexto anatómico seleccionado':isolated?'Estructura aislada':current?nodeKind:'Modelo anatómico de referencia'}</p></div>
+          <div className="atlas-model-title"><span className="atlas-mono">{current?.systemId==='nervous'?'Systema nervosum':current?.systemId==='muscular'?'Systema musculare':current?.systemId==='skeletal'?'Systema skeletale':'Corpus humanum'}</span><h2>{current?.name||'Cuerpo humano'}</h2><p>{selectionHidden?'Estructura oculta':contextIds.length?'Contexto anatómico seleccionado':isolated?'Estructura aislada':current?nodeKind:'Modelo anatómico de referencia'}</p></div>
           <label className="atlas-view-picker"><span>Vista</span><select aria-label="Vista anatómica" value="" onChange={event=>{const view=event.target.value as NonNullable<AtlasCameraRequest['view']>;setCameraRequest(value=>({kind:'view',view,id:selected,version:value.version+1}));}}><option value="" disabled>Elegir perspectiva</option><option value="anterior">Frontal</option><option value="posterior">Posterior</option><option value="left">Lateral izquierda</option><option value="right">Lateral derecha</option><option value="superior">Superior</option><option value="inferior">Inferior</option></select></label>
           {!assetIds.length&&<div className="atlas-nolayers"><Stack size={26}/><p>Activa una capa para explorar el cuerpo.</p><button onClick={()=>{setMobileTab('layers');setPanel('structures');}}>Elegir capas</button></div>}
           <div className="atlas-view-controls"><button aria-label="Acercar" onClick={()=>request('zoomIn')}><Plus size={18}/></button><button aria-label="Alejar" onClick={()=>request('zoomOut')}><Minus size={18}/></button><span/><button aria-label="Centrar modelo" onClick={()=>request('reset')}><ArrowsOut size={18}/></button><button aria-label="Enfocar selección" disabled={!selected} onClick={()=>request('focus',selected)}><Scan size={18}/></button></div>
@@ -172,12 +175,13 @@ export default function SkeletalAtlas() {
           <div className="atlas-panel-heading"><span>INSPECCIÓN</span><button className="atlas-mobile-close" onClick={()=>setPanel(null)} aria-label="Cerrar inspección"><X size={18}/></button><Cube size={16}/></div>
           <div className="atlas-detail-content"><div className="atlas-detail-icon"><Bone size={26}/></div><span className="anatomy-eyebrow">{nodeKind.toUpperCase()}</span><h2>{current?.name||'Cuerpo humano'}</h2><p className="atlas-latin">{current?.latin||terms?.latin||(!current?'Corpus humanum':'')}</p>
             {current&&<><nav className="atlas-hierarchy-path" aria-label="Ubicación anatómica">{path.map(id=><button key={id} onClick={()=>choose(id)}>{index?.byId.get(id)?.name}<CaretRight size={10}/></button>)}</nav></>}
-            {current?<div className="atlas-selection-actions"><button onClick={()=>request('focus',current.id)}><Scan size={17}/> Enfocar</button><button className={isolated===current.id?'is-active':''} onClick={isolate}><ArrowsOut size={17}/>{isolated===current.id?'Ver conjunto':'Aislar'}</button><button onClick={()=>hide(current.id)}>{isHidden(current.id)?<Eye size={17}/>:<EyeSlash size={17}/>} {isHidden(current.id)?'Mostrar':'Ocultar'}</button><button onClick={()=>setSelected(null)}><X size={17}/> Deseleccionar</button></div>:<div className="atlas-select-hint"><Scan size={19}/><p>Selecciona un hueso o músculo en el modelo o búscalo por su nombre.</p></div>}
-            {relatedContext.length>0&&<div className="atlas-context-actions"><button className="atlas-show-context" onClick={showContext}><Eye size={16}/> Mostrar contexto</button><p>{current?.kind==='division'?'Grupo muscular':'Músculo'} y huesos relacionados según sus referencias anatómicas. Esta acción limita las piezas visibles.</p></div>}
+            {current?<div className="atlas-selection-actions"><button onClick={()=>request('focus',current.id)}><Scan size={17}/> Enfocar</button><button className={isolated===current.id?'is-active':''} onClick={isolate}><ArrowsOut size={17}/>{isolated===current.id?'Ver conjunto':'Aislar'}</button><button onClick={()=>hide(current.id)}>{isHidden(current.id)?<Eye size={17}/>:<EyeSlash size={17}/>} {isHidden(current.id)?'Mostrar':'Ocultar'}</button><button onClick={()=>setSelected(null)}><X size={17}/> Deseleccionar</button></div>:<div className="atlas-select-hint"><Scan size={19}/><p>Selecciona una estructura en el modelo o búscala por su nombre.</p></div>}
+            {relatedContext.length>0&&<div className="atlas-context-actions"><button className="atlas-show-context" onClick={showContext}><Eye size={16}/> Mostrar contexto</button><p>{current?.systemId==='nervous'?'Estructura nerviosa y referencias óseas curadas':current?.kind==='division'?'Grupo muscular y huesos relacionados':'Músculo y huesos relacionados'} según sus referencias anatómicas. Esta acción limita las piezas visibles.</p></div>}
             {contextIds.length>0&&<p className="atlas-context-note" role="status">Contexto activo: {contextIds.map(regionName).join(' · ')}.</p>}
+            {current?.systemId==='nervous'&&!isolated&&!contextIds.length&&<p className="atlas-context-note">Cobertura parcial del encéfalo y la región orbitaria. Usa Aislar o reduce la opacidad de las otras capas para ver las estructuras profundas.</p>}
             {current?.systemId==='muscular'&&!isolated&&!contextIds.length&&<p className="atlas-context-note">Los músculos profundos pueden quedar cubiertos. Usa Aislar para estudiarlos; cambiar la vista conserva el contexto.</p>}
             <div className="atlas-education"><dl><div><dt>SISTEMA</dt><dd>{systemName(current?.systemId)}</dd></div><div><dt>REGIÓN</dt><dd>{current?regionName(current.regionId):'Cuerpo humano'}</dd></div></dl>
-              {current?<AnatomyInformation node={current}/>:<p>Explora el esqueleto y la musculatura disponible del cuello, tronco y extremidades. Activa las regiones en Capas y selecciona una estructura para estudiar su anatomía.</p>}
+              {current?<AnatomyInformation node={current}/>:<p>Explora el sistema óseo, la musculatura y la cobertura nerviosa disponible. El encéfalo corporal y los nervios orbitarios se estudian en la capa Nervioso. Activa las regiones en Capas y selecciona una estructura para estudiar su anatomía.</p>}
               {current&&<Related current={current} byId={index?.byId||new Map()} choose={choose}/>}
             </div>
             <div className="atlas-property"><label htmlFor={detailSystem+"-opacity"}>Opacidad de {systemName(detailSystem)} <strong>{Math.round((opacityBySystem[detailSystem]??1)*100)}%</strong></label><input id={detailSystem+"-opacity"} type="range" min="10" max="100" value={(opacityBySystem[detailSystem]??1)*100} onChange={event=>setOpacityBySystem(value=>({...value,[detailSystem]:Number(event.target.value)/100}))}/></div>

@@ -1,0 +1,3953 @@
+{
+  "sourceArchive": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+  "sourceVersion": "4.0 OBJ99",
+  "sourceLicenseDeclaration": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "sourceZip": "research/anatomy/nervous-originals.zip",
+  "sourceZipSha256": "5db3c69127251179e50aa6e738ca4b926c39c923ba6b8000eb3c3de2b014ce48",
+  "sourceLock": "research/anatomy/nervous-source-lock.json",
+  "selectionSha256": "1845bc3d4f0fbe6206f14e4760b2a1ac166b3cf356765ed3d147d0b6de64a6b7",
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "additionalRegistration": "none",
+  "files": [
+    {
+      "elementId": "FJ1283",
+      "sourceId": "FMA52677",
+      "side": "left",
+      "representationId": "BP5734",
+      "path": "isa_BP3D_4.0_obj_99/FJ1283.obj",
+      "bytes": 18117,
+      "sha256": "b75bf29e8ccea444f1a0ccd694c9f7fdbc7ad8d0cace68f60be489024e647af9",
+      "crc32": "05f291eb",
+      "compressedBytesUpstream": 6096,
+      "anatomyId": "bp3d:FMA52677",
+      "family": "FMA52675",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 290,
+      "faces": 290,
+      "sourcePositionCount": 169,
+      "vertices": 169,
+      "boundsMetres": [
+        [
+          0.0080001,
+          1.5271400000000002,
+          0.140064
+        ],
+        [
+          0.0157256,
+          1.5286,
+          0.144456
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          8.0001,
+          -144.456,
+          1527.14
+        ],
+        [
+          15.7256,
+          -140.064,
+          1528.6
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1288",
+      "sourceId": "FMA53550",
+      "side": "left",
+      "representationId": "BP5704",
+      "path": "isa_BP3D_4.0_obj_99/FJ1288.obj",
+      "bytes": 10334,
+      "sha256": "c362a3813e882588d31710138ce6e180c2d0dd32e9755a0f53452a82657371e0",
+      "crc32": "d24058ed",
+      "compressedBytesUpstream": 3721,
+      "anatomyId": "bp3d:FMA53550",
+      "family": "FMA53550",
+      "moduleId": "nervous:cranial",
+      "sourceType": "ganglio",
+      "triangles": 180,
+      "faces": 180,
+      "sourcePositionCount": 94,
+      "vertices": 94,
+      "boundsMetres": [
+        [
+          0.0224981,
+          1.5239500000000001,
+          0.13081
+        ],
+        [
+          0.0257193,
+          1.52651,
+          0.134028
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          22.4981,
+          -134.028,
+          1523.95
+        ],
+        [
+          25.7193,
+          -130.81,
+          1526.51
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1290",
+      "sourceId": "FMA52640",
+      "side": "left",
+      "representationId": "BP5717",
+      "path": "isa_BP3D_4.0_obj_99/FJ1290.obj",
+      "bytes": 73828,
+      "sha256": "66c53668aa92b73c55ce5fcfe6476e6665eedf923c8ea02290cdf3456296e0e9",
+      "crc32": "f45f0163",
+      "compressedBytesUpstream": 23007,
+      "anatomyId": "bp3d:FMA52640",
+      "family": "FMA52638",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 1258,
+      "faces": 1258,
+      "sourcePositionCount": 631,
+      "vertices": 631,
+      "boundsMetres": [
+        [
+          0.019191,
+          1.5284600000000002,
+          0.12030500000000001
+        ],
+        [
+          0.0245779,
+          1.54029,
+          0.14194900000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          19.191,
+          -141.949,
+          1528.46
+        ],
+        [
+          24.5779,
+          -120.305,
+          1540.29
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1293",
+      "sourceId": "FMA52577",
+      "side": "left",
+      "representationId": "BP5756",
+      "path": "isa_BP3D_4.0_obj_99/FJ1293.obj",
+      "bytes": 125313,
+      "sha256": "cda5f59da351dffe1815dc8ac9757496b30c24e6bf0ec53bdec8feb700550a84",
+      "crc32": "95810b8b",
+      "compressedBytesUpstream": 38398,
+      "anatomyId": "bp3d:FMA52577",
+      "family": "FMA52573",
+      "moduleId": "nervous:cranial",
+      "sourceType": "rama nerviosa",
+      "triangles": 1654,
+      "faces": 1654,
+      "sourcePositionCount": 1286,
+      "vertices": 1286,
+      "boundsMetres": [
+        [
+          0.01316,
+          1.5058,
+          0.114208
+        ],
+        [
+          0.037741500000000004,
+          1.53101,
+          0.150075
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          13.16,
+          -150.075,
+          1505.8
+        ],
+        [
+          37.7415,
+          -114.208,
+          1531.01
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1296",
+      "sourceId": "FMA52699",
+      "side": "left",
+      "representationId": "BP5728",
+      "path": "isa_BP3D_4.0_obj_99/FJ1296.obj",
+      "bytes": 14975,
+      "sha256": "d209c170330a18a2f1065be1bd0acacc034ea30a46e19a9bf0946fa12eece412",
+      "crc32": "29de0ff0",
+      "compressedBytesUpstream": 5187,
+      "anatomyId": "bp3d:FMA52699",
+      "family": "FMA52693",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 250,
+      "faces": 250,
+      "sourcePositionCount": 138,
+      "vertices": 138,
+      "boundsMetres": [
+        [
+          0.00702135,
+          1.5207000000000002,
+          0.16838399999999998
+        ],
+        [
+          0.0105688,
+          1.53033,
+          0.173541
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          7.02135,
+          -173.541,
+          1520.7
+        ],
+        [
+          10.5688,
+          -168.384,
+          1530.33
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1300",
+      "sourceId": "FMA52630",
+      "side": "left",
+      "representationId": "BP5746",
+      "path": "isa_BP3D_4.0_obj_99/FJ1300.obj",
+      "bytes": 116796,
+      "sha256": "4922693d563eaa50f8b0b0f7547dce8fd265fc40de5414b83020e5b302cecd0a",
+      "crc32": "2cd8f5a9",
+      "compressedBytesUpstream": 35782,
+      "anatomyId": "bp3d:FMA52630",
+      "family": "FMA52628",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 1944,
+      "faces": 1944,
+      "sourcePositionCount": 1014,
+      "vertices": 1014,
+      "boundsMetres": [
+        [
+          0.0194801,
+          1.52696,
+          0.120507
+        ],
+        [
+          0.0428233,
+          1.5348,
+          0.15597
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          19.4801,
+          -155.97,
+          1526.96
+        ],
+        [
+          42.8233,
+          -120.507,
+          1534.8
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1310",
+      "sourceId": "FMA52670",
+      "side": "left",
+      "representationId": "BP5743",
+      "path": "isa_BP3D_4.0_obj_99/FJ1310.obj",
+      "bytes": 53889,
+      "sha256": "c6f00f35feecee6f75646ac7a5461f03ee6ca89e55158c9574fbf5663270df77",
+      "crc32": "0b376dc7",
+      "compressedBytesUpstream": 17565,
+      "anatomyId": "bp3d:FMA52670",
+      "family": "FMA52668",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 834,
+      "faces": 834,
+      "sourcePositionCount": 503,
+      "vertices": 503,
+      "boundsMetres": [
+        [
+          0.0016304000000000002,
+          1.51502,
+          0.110705
+        ],
+        [
+          0.019426,
+          1.53051,
+          0.185433
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          1.6304,
+          -185.433,
+          1515.02
+        ],
+        [
+          19.426,
+          -110.705,
+          1530.51
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1311",
+      "sourceId": "FMA52674",
+      "side": "left",
+      "representationId": "BP5731",
+      "path": "isa_BP3D_4.0_obj_99/FJ1311.obj",
+      "bytes": 16034,
+      "sha256": "9511e0d9b9f66f61538766c053cb26c0a1aab37c15b01e5b6269c00a9047647d",
+      "crc32": "cdeab20f",
+      "compressedBytesUpstream": 5492,
+      "anatomyId": "bp3d:FMA52674",
+      "family": "FMA52672",
+      "moduleId": "nervous:cranial",
+      "sourceType": "rama nerviosa",
+      "triangles": 230,
+      "faces": 230,
+      "sourcePositionCount": 164,
+      "vertices": 164,
+      "boundsMetres": [
+        [
+          0.0163791,
+          1.52492,
+          0.125931
+        ],
+        [
+          0.024685400000000003,
+          1.52908,
+          0.13220500000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          16.3791,
+          -132.205,
+          1524.92
+        ],
+        [
+          24.6854,
+          -125.931,
+          1529.08
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1312",
+      "sourceId": "FMA52623",
+      "side": "left",
+      "representationId": "BP5749",
+      "path": "isa_BP3D_4.0_obj_99/FJ1312.obj",
+      "bytes": 104567,
+      "sha256": "4af03a35f39e75f07c43d63c0561d78f37e98b92381cd4d01a2c3fe53afd561c",
+      "crc32": "a51100ee",
+      "compressedBytesUpstream": 31958,
+      "anatomyId": "bp3d:FMA52623",
+      "family": "FMA52621",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 1776,
+      "faces": 1776,
+      "sourcePositionCount": 890,
+      "vertices": 890,
+      "boundsMetres": [
+        [
+          0.0164315,
+          1.52142,
+          0.0944893
+        ],
+        [
+          0.0210625,
+          1.52999,
+          0.121822
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          16.4315,
+          -121.822,
+          1521.42
+        ],
+        [
+          21.0625,
+          -94.4893,
+          1529.99
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1313",
+      "sourceId": "FMA50878",
+      "side": "left",
+      "representationId": "BP5709",
+      "path": "isa_BP3D_4.0_obj_99/FJ1313.obj",
+      "bytes": 115439,
+      "sha256": "a20cd06d796575d9041a6b6e01724f70fb50f1807e324941f43dcdc3e8c51e40",
+      "crc32": "fb6f4894",
+      "compressedBytesUpstream": 36080,
+      "anatomyId": "bp3d:FMA50878",
+      "family": "FMA50878",
+      "moduleId": "nervous:cns",
+      "sourceType": "nervio",
+      "triangles": 1860,
+      "faces": 1860,
+      "sourcePositionCount": 1027,
+      "vertices": 1027,
+      "boundsMetres": [
+        [
+          2.0299800000000002e-05,
+          1.51828,
+          0.102154
+        ],
+        [
+          0.0300673,
+          1.54223,
+          0.142537
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          0.0202998,
+          -142.537,
+          1518.28
+        ],
+        [
+          30.0673,
+          -102.154,
+          1542.23
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1315",
+      "sourceId": "FMA52716",
+      "side": "left",
+      "representationId": "BP5724",
+      "path": "isa_BP3D_4.0_obj_99/FJ1315.obj",
+      "bytes": 15033,
+      "sha256": "5d9a0810f0345ba52ca1680d132e0e63021af48a691e6abd1a137c898f78134e",
+      "crc32": "d9ec13ce",
+      "compressedBytesUpstream": 5120,
+      "anatomyId": "bp3d:FMA52716",
+      "family": "FMA52714",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 222,
+      "faces": 222,
+      "sourcePositionCount": 151,
+      "vertices": 151,
+      "boundsMetres": [
+        [
+          0.00831545,
+          1.52687,
+          0.132666
+        ],
+        [
+          0.0160763,
+          1.52872,
+          0.13525299999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          8.31545,
+          -135.253,
+          1526.87
+        ],
+        [
+          16.0763,
+          -132.666,
+          1528.72
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1318",
+      "sourceId": "FMA82735",
+      "side": "left",
+      "representationId": "BP5722",
+      "path": "isa_BP3D_4.0_obj_99/FJ1318.obj",
+      "bytes": 20141,
+      "sha256": "41dd32800ddf73a2dabd9dc2556766d2fea99a593793a98879985bc926b89c7b",
+      "crc32": "adbdf2a4",
+      "compressedBytesUpstream": 6790,
+      "anatomyId": "bp3d:FMA82735",
+      "family": "FMA52691",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 294,
+      "faces": 294,
+      "sourcePositionCount": 202,
+      "vertices": 202,
+      "boundsMetres": [
+        [
+          0.015603,
+          1.5213,
+          0.131752
+        ],
+        [
+          0.027534700000000002,
+          1.52766,
+          0.14752500000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          15.603,
+          -147.525,
+          1521.3
+        ],
+        [
+          27.5347,
+          -131.752,
+          1527.66
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1321",
+      "sourceId": "FMA52575",
+      "side": "left",
+      "representationId": "BP5753",
+      "path": "isa_BP3D_4.0_obj_99/FJ1321.obj",
+      "bytes": 59316,
+      "sha256": "2b1e26a6d616873e2f4ab678fb5061e6861ccccddd2d569628962f5c8aaaf6c7",
+      "crc32": "f7084433",
+      "compressedBytesUpstream": 18973,
+      "anatomyId": "bp3d:FMA52575",
+      "family": "FMA52572",
+      "moduleId": "nervous:cranial",
+      "sourceType": "rama nerviosa",
+      "triangles": 810,
+      "faces": 810,
+      "sourcePositionCount": 611,
+      "vertices": 611,
+      "boundsMetres": [
+        [
+          0.0159428,
+          1.52569,
+          0.120291
+        ],
+        [
+          0.0283555,
+          1.53534,
+          0.14638
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          15.9428,
+          -146.38,
+          1525.69
+        ],
+        [
+          28.3555,
+          -120.291,
+          1535.34
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1325",
+      "sourceId": "FMA52657",
+      "side": "left",
+      "representationId": "BP5740",
+      "path": "isa_BP3D_4.0_obj_99/FJ1325.obj",
+      "bytes": 158055,
+      "sha256": "c37ecf086b1049ac3b8acbd0b50ac5eb4c14a58e3a7c56b9d952f463b183853a",
+      "crc32": "4d7b0814",
+      "compressedBytesUpstream": 47235,
+      "anatomyId": "bp3d:FMA52657",
+      "family": "FMA52655",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 2598,
+      "faces": 2598,
+      "sourcePositionCount": 1321,
+      "vertices": 1321,
+      "boundsMetres": [
+        [
+          0.022602900000000002,
+          1.5389300000000001,
+          0.140588
+        ],
+        [
+          0.0297257,
+          1.5605499999999999,
+          0.175819
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          22.6029,
+          -175.819,
+          1538.93
+        ],
+        [
+          29.7257,
+          -140.588,
+          1560.55
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1326",
+      "sourceId": "FMA52644",
+      "side": "left",
+      "representationId": "BP5737",
+      "path": "isa_BP3D_4.0_obj_99/FJ1326.obj",
+      "bytes": 143634,
+      "sha256": "f8a3b51c6408d43a35ccf8a773e4bdd5b5872d562402a9834c34c5dc0b3d9c25",
+      "crc32": "ce1e120a",
+      "compressedBytesUpstream": 43335,
+      "anatomyId": "bp3d:FMA52644",
+      "family": "FMA52642",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 2358,
+      "faces": 2358,
+      "sourcePositionCount": 1222,
+      "vertices": 1222,
+      "boundsMetres": [
+        [
+          0.00130656,
+          1.53106,
+          0.14058600000000002
+        ],
+        [
+          0.0244917,
+          1.55121,
+          0.177977
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          1.30656,
+          -177.977,
+          1531.06
+        ],
+        [
+          24.4917,
+          -140.586,
+          1551.21
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1330",
+      "sourceId": "FMA50882",
+      "side": "left",
+      "representationId": "BP4696",
+      "path": "isa_BP3D_4.0_obj_99/FJ1330.obj",
+      "bytes": 167022,
+      "sha256": "0a849c085582d60aa2baf8a980498617ceb1c8f3c2ae9c8913cc1ee36b8a1d2c",
+      "crc32": "4e6f43e7",
+      "compressedBytesUpstream": 50048,
+      "anatomyId": "bp3d:FMA50882",
+      "family": "FMA50882",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 2720,
+      "faces": 2720,
+      "sourcePositionCount": 1399,
+      "vertices": 1399,
+      "boundsMetres": [
+        [
+          0.010328200000000001,
+          1.5221099999999999,
+          0.07169320000000001
+        ],
+        [
+          0.0194537,
+          1.53393,
+          0.150837
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          10.3282,
+          -150.837,
+          1522.11
+        ],
+        [
+          19.4537,
+          -71.6932,
+          1533.93
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1333",
+      "sourceId": "FMA52676",
+      "side": "right",
+      "representationId": "BP5733",
+      "path": "isa_BP3D_4.0_obj_99/FJ1333.obj",
+      "bytes": 15735,
+      "sha256": "125af43b25653f04d3c1efcb0ae71cc19da9b13dd305ff443881bcc1fbec138f",
+      "crc32": "ccfab620",
+      "compressedBytesUpstream": 5301,
+      "anatomyId": "bp3d:FMA52676",
+      "family": "FMA52675",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 236,
+      "faces": 236,
+      "sourcePositionCount": 154,
+      "vertices": 154,
+      "boundsMetres": [
+        [
+          -0.0170401,
+          1.52711,
+          0.14008
+        ],
+        [
+          -0.00930044,
+          1.52859,
+          0.144435
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -17.0401,
+          -144.435,
+          1527.11
+        ],
+        [
+          -9.30044,
+          -140.08,
+          1528.59
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1339",
+      "sourceId": "FMA53549",
+      "side": "right",
+      "representationId": "BP5703",
+      "path": "isa_BP3D_4.0_obj_99/FJ1339.obj",
+      "bytes": 14148,
+      "sha256": "de1f5bc0af45dc52a70d8e2d647f509b3ff0072ae504ab95483e9c1662195076",
+      "crc32": "6e38908e",
+      "compressedBytesUpstream": 4881,
+      "anatomyId": "bp3d:FMA53549",
+      "family": "FMA53549",
+      "moduleId": "nervous:cranial",
+      "sourceType": "ganglio",
+      "triangles": 246,
+      "faces": 246,
+      "sourcePositionCount": 125,
+      "vertices": 125,
+      "boundsMetres": [
+        [
+          -0.027039100000000003,
+          1.52396,
+          0.130799
+        ],
+        [
+          -0.023795200000000002,
+          1.52653,
+          0.13405799999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -27.0391,
+          -134.058,
+          1523.96
+        ],
+        [
+          -23.7952,
+          -130.799,
+          1526.53
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1341",
+      "sourceId": "FMA52639",
+      "side": "right",
+      "representationId": "BP5716",
+      "path": "isa_BP3D_4.0_obj_99/FJ1341.obj",
+      "bytes": 74457,
+      "sha256": "1d9f4f0ed3196ceb32439608452ef9849f631e1adce9920a6e31bc517bf2f714",
+      "crc32": "4ccf6e03",
+      "compressedBytesUpstream": 23017,
+      "anatomyId": "bp3d:FMA52639",
+      "family": "FMA52638",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 1258,
+      "faces": 1258,
+      "sourcePositionCount": 631,
+      "vertices": 631,
+      "boundsMetres": [
+        [
+          -0.025887300000000002,
+          1.5284600000000002,
+          0.120306
+        ],
+        [
+          -0.020503,
+          1.54029,
+          0.141956
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -25.8873,
+          -141.956,
+          1528.46
+        ],
+        [
+          -20.503,
+          -120.306,
+          1540.29
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1344",
+      "sourceId": "FMA52576",
+      "side": "right",
+      "representationId": "BP5755",
+      "path": "isa_BP3D_4.0_obj_99/FJ1344.obj",
+      "bytes": 117443,
+      "sha256": "6d0ba18dfb57f207fcfe8f7d9532070c2856ef10c8ccff8d46384719f872e4b6",
+      "crc32": "f9b92ee4",
+      "compressedBytesUpstream": 35910,
+      "anatomyId": "bp3d:FMA52576",
+      "family": "FMA52573",
+      "moduleId": "nervous:cranial",
+      "sourceType": "rama nerviosa",
+      "triangles": 1570,
+      "faces": 1570,
+      "sourcePositionCount": 1182,
+      "vertices": 1182,
+      "boundsMetres": [
+        [
+          -0.0390562,
+          1.50579,
+          0.11421100000000001
+        ],
+        [
+          -0.0144296,
+          1.53102,
+          0.15007900000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -39.0562,
+          -150.079,
+          1505.79
+        ],
+        [
+          -14.4296,
+          -114.211,
+          1531.02
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1347",
+      "sourceId": "FMA52698",
+      "side": "right",
+      "representationId": "BP5727",
+      "path": "isa_BP3D_4.0_obj_99/FJ1347.obj",
+      "bytes": 16892,
+      "sha256": "01773f3e0da8b9564817531e2aba0d85f97a9da6d1e20b593b44c14ded8281ac",
+      "crc32": "b1a13fda",
+      "compressedBytesUpstream": 5739,
+      "anatomyId": "bp3d:FMA52698",
+      "family": "FMA52693",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 250,
+      "faces": 250,
+      "sourcePositionCount": 166,
+      "vertices": 166,
+      "boundsMetres": [
+        [
+          -0.011885300000000001,
+          1.52072,
+          0.168379
+        ],
+        [
+          -0.00831282,
+          1.53032,
+          0.17355500000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -11.8853,
+          -173.555,
+          1520.72
+        ],
+        [
+          -8.31282,
+          -168.379,
+          1530.32
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1351",
+      "sourceId": "FMA52629",
+      "side": "right",
+      "representationId": "BP5745",
+      "path": "isa_BP3D_4.0_obj_99/FJ1351.obj",
+      "bytes": 119848,
+      "sha256": "0e563e908e3c1e6ea08e3233e8e90c37b6fd029b165a0e6c41d37f985b538f22",
+      "crc32": "6271eba3",
+      "compressedBytesUpstream": 36635,
+      "anatomyId": "bp3d:FMA52629",
+      "family": "FMA52628",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 1958,
+      "faces": 1958,
+      "sourcePositionCount": 1039,
+      "vertices": 1039,
+      "boundsMetres": [
+        [
+          -0.0441304,
+          1.5269700000000002,
+          0.120507
+        ],
+        [
+          -0.020790299999999998,
+          1.53481,
+          0.155976
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -44.1304,
+          -155.976,
+          1526.97
+        ],
+        [
+          -20.7903,
+          -120.507,
+          1534.81
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1361",
+      "sourceId": "FMA52669",
+      "side": "right",
+      "representationId": "BP5742",
+      "path": "isa_BP3D_4.0_obj_99/FJ1361.obj",
+      "bytes": 53214,
+      "sha256": "f399ec1e5dd080357ba1bdde33393932e400f76567cf9c9c2392430600f99059",
+      "crc32": "f60094bb",
+      "compressedBytesUpstream": 17219,
+      "anatomyId": "bp3d:FMA52669",
+      "family": "FMA52668",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 786,
+      "faces": 786,
+      "sourcePositionCount": 507,
+      "vertices": 507,
+      "boundsMetres": [
+        [
+          -0.0207466,
+          1.51502,
+          0.110701
+        ],
+        [
+          -0.0029294,
+          1.53052,
+          0.185476
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -20.7466,
+          -185.476,
+          1515.02
+        ],
+        [
+          -2.9294,
+          -110.701,
+          1530.52
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1362",
+      "sourceId": "FMA52673",
+      "side": "right",
+      "representationId": "BP5730",
+      "path": "isa_BP3D_4.0_obj_99/FJ1362.obj",
+      "bytes": 17565,
+      "sha256": "e9055e3812268376fcb1d0dc51e212e3c1b5b506947abde5d9d2a1de61516970",
+      "crc32": "c881f153",
+      "compressedBytesUpstream": 5912,
+      "anatomyId": "bp3d:FMA52673",
+      "family": "FMA52672",
+      "moduleId": "nervous:cranial",
+      "sourceType": "rama nerviosa",
+      "triangles": 240,
+      "faces": 240,
+      "sourcePositionCount": 181,
+      "vertices": 181,
+      "boundsMetres": [
+        [
+          -0.026000699999999998,
+          1.5249300000000001,
+          0.12587900000000002
+        ],
+        [
+          -0.017691600000000002,
+          1.52908,
+          0.132236
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -26.0007,
+          -132.236,
+          1524.93
+        ],
+        [
+          -17.6916,
+          -125.879,
+          1529.08
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1363",
+      "sourceId": "FMA52622",
+      "side": "right",
+      "representationId": "BP5748",
+      "path": "isa_BP3D_4.0_obj_99/FJ1363.obj",
+      "bytes": 105301,
+      "sha256": "05f71831dc54303ffc740a4e38f35475f60c72e4e7348b797acfeac4a1d6d29d",
+      "crc32": "56109310",
+      "compressedBytesUpstream": 32049,
+      "anatomyId": "bp3d:FMA52622",
+      "family": "FMA52621",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 1776,
+      "faces": 1776,
+      "sourcePositionCount": 890,
+      "vertices": 890,
+      "boundsMetres": [
+        [
+          -0.022371300000000004,
+          1.52142,
+          0.09448999999999999
+        ],
+        [
+          -0.0177427,
+          1.5299800000000001,
+          0.121824
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -22.3713,
+          -121.824,
+          1521.42
+        ],
+        [
+          -17.7427,
+          -94.49,
+          1529.98
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1364",
+      "sourceId": "FMA50875",
+      "side": "right",
+      "representationId": "BP5708",
+      "path": "isa_BP3D_4.0_obj_99/FJ1364.obj",
+      "bytes": 117132,
+      "sha256": "e6a52be718612218521df5194422c0fe7b05fd2f94976ac8e5c526b1fb743b5c",
+      "crc32": "b5dff138",
+      "compressedBytesUpstream": 36273,
+      "anatomyId": "bp3d:FMA50875",
+      "family": "FMA50875",
+      "moduleId": "nervous:cns",
+      "sourceType": "nervio",
+      "triangles": 1858,
+      "faces": 1858,
+      "sourcePositionCount": 1041,
+      "vertices": 1041,
+      "boundsMetres": [
+        [
+          -0.0313523,
+          1.51829,
+          0.102147
+        ],
+        [
+          -0.00131636,
+          1.54224,
+          0.142503
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.3523,
+          -142.503,
+          1518.29
+        ],
+        [
+          -1.31636,
+          -102.147,
+          1542.24
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1366",
+      "sourceId": "FMA52715",
+      "side": "right",
+      "representationId": "BP5725",
+      "path": "isa_BP3D_4.0_obj_99/FJ1366.obj",
+      "bytes": 13962,
+      "sha256": "f57d8678d7c047eff9a104ece72c3e0391909fef1f895679bb37ffb7a88dbb00",
+      "crc32": "d3e3d392",
+      "compressedBytesUpstream": 4703,
+      "anatomyId": "bp3d:FMA52715",
+      "family": "FMA52714",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 200,
+      "faces": 200,
+      "sourcePositionCount": 142,
+      "vertices": 142,
+      "boundsMetres": [
+        [
+          -0.017372699999999998,
+          1.52687,
+          0.13265100000000002
+        ],
+        [
+          -0.00961228,
+          1.52872,
+          0.13528
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -17.3727,
+          -135.28,
+          1526.87
+        ],
+        [
+          -9.61228,
+          -132.651,
+          1528.72
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1369",
+      "sourceId": "FMA82734",
+      "side": "right",
+      "representationId": "BP5721",
+      "path": "isa_BP3D_4.0_obj_99/FJ1369.obj",
+      "bytes": 21999,
+      "sha256": "a3e9a8f15fcd4b9ed6bb12ca2fa984b971ecb9e090b832effc8e108537871917",
+      "crc32": "b110a0b5",
+      "compressedBytesUpstream": 7324,
+      "anatomyId": "bp3d:FMA82734",
+      "family": "FMA52691",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 332,
+      "faces": 332,
+      "sourcePositionCount": 211,
+      "vertices": 211,
+      "boundsMetres": [
+        [
+          -0.028853100000000003,
+          1.52129,
+          0.131766
+        ],
+        [
+          -0.016875499999999998,
+          1.52767,
+          0.147531
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -28.8531,
+          -147.531,
+          1521.29
+        ],
+        [
+          -16.8755,
+          -131.766,
+          1527.67
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1372",
+      "sourceId": "FMA52574",
+      "side": "right",
+      "representationId": "BP5752",
+      "path": "isa_BP3D_4.0_obj_99/FJ1372.obj",
+      "bytes": 60266,
+      "sha256": "15edc47f1f8ffe36ce70f4cace411501ff26b8d0078979a09032520823089631",
+      "crc32": "afd1498a",
+      "compressedBytesUpstream": 19033,
+      "anatomyId": "bp3d:FMA52574",
+      "family": "FMA52572",
+      "moduleId": "nervous:cranial",
+      "sourceType": "rama nerviosa",
+      "triangles": 848,
+      "faces": 848,
+      "sourcePositionCount": 593,
+      "vertices": 593,
+      "boundsMetres": [
+        [
+          -0.029670500000000002,
+          1.5256800000000001,
+          0.120285
+        ],
+        [
+          -0.0172229,
+          1.53535,
+          0.14638700000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -29.6705,
+          -146.387,
+          1525.68
+        ],
+        [
+          -17.2229,
+          -120.285,
+          1535.35
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1376",
+      "sourceId": "FMA52656",
+      "side": "right",
+      "representationId": "BP5739",
+      "path": "isa_BP3D_4.0_obj_99/FJ1376.obj",
+      "bytes": 159992,
+      "sha256": "18a71e5cefbb6c68e1daf6147fedfa0943ee3044725ea7eccbe5ca62db4c15e4",
+      "crc32": "dd73d8c2",
+      "compressedBytesUpstream": 47449,
+      "anatomyId": "bp3d:FMA52656",
+      "family": "FMA52655",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 2598,
+      "faces": 2598,
+      "sourcePositionCount": 1332,
+      "vertices": 1332,
+      "boundsMetres": [
+        [
+          -0.0310399,
+          1.5389300000000001,
+          0.140588
+        ],
+        [
+          -0.0239019,
+          1.5605499999999999,
+          0.175822
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.0399,
+          -175.822,
+          1538.93
+        ],
+        [
+          -23.9019,
+          -140.588,
+          1560.55
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1377",
+      "sourceId": "FMA52643",
+      "side": "right",
+      "representationId": "BP5736",
+      "path": "isa_BP3D_4.0_obj_99/FJ1377.obj",
+      "bytes": 144957,
+      "sha256": "d11bfb0864f689cc996e2e41c91ce975e3c1dee33c947e2668cce82c03c663d2",
+      "crc32": "aa110305",
+      "compressedBytesUpstream": 43529,
+      "anatomyId": "bp3d:FMA52643",
+      "family": "FMA52642",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 2358,
+      "faces": 2358,
+      "sourcePositionCount": 1225,
+      "vertices": 1225,
+      "boundsMetres": [
+        [
+          -0.0258003,
+          1.53105,
+          0.140574
+        ],
+        [
+          -0.00261766,
+          1.55122,
+          0.177977
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -25.8003,
+          -177.977,
+          1531.05
+        ],
+        [
+          -2.61766,
+          -140.574,
+          1551.22
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1381",
+      "sourceId": "FMA50881",
+      "side": "right",
+      "representationId": "BP4695",
+      "path": "isa_BP3D_4.0_obj_99/FJ1381.obj",
+      "bytes": 169927,
+      "sha256": "6c1ec7f14af8bc9883e9f37363e299cbab82f4ecdeb68b1898670004ddf36632",
+      "crc32": "834c37d1",
+      "compressedBytesUpstream": 50706,
+      "anatomyId": "bp3d:FMA50881",
+      "family": "FMA50881",
+      "moduleId": "nervous:cranial",
+      "sourceType": "nervio",
+      "triangles": 2758,
+      "faces": 2758,
+      "sourcePositionCount": 1405,
+      "vertices": 1405,
+      "boundsMetres": [
+        [
+          -0.020756900000000002,
+          1.5221099999999999,
+          0.0716888
+        ],
+        [
+          -0.0116316,
+          1.53394,
+          0.15083600000000003
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -20.7569,
+          -150.836,
+          1522.11
+        ],
+        [
+          -11.6316,
+          -71.6888,
+          1533.94
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1732",
+      "sourceId": "FMA72670",
+      "side": "left",
+      "representationId": "BP10462",
+      "path": "isa_BP3D_4.0_obj_99/FJ1732.obj",
+      "bytes": 236788,
+      "sha256": "d24f6c5647b751706d3f7c4dd4b62518fb3e9cd281ed7d2a2437fafbbcd0e1b3",
+      "crc32": "32c0a84f",
+      "compressedBytesUpstream": 73853,
+      "anatomyId": "bp3d:FMA72670",
+      "family": "FMA61898",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 3588,
+      "faces": 3588,
+      "sourcePositionCount": 2048,
+      "vertices": 2048,
+      "boundsMetres": [
+        [
+          0.0219721,
+          1.53929,
+          -0.00104246
+        ],
+        [
+          0.0646114,
+          1.6026600000000002,
+          0.044554
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          21.9721,
+          -44.554,
+          1539.29
+        ],
+        [
+          64.6114,
+          1.04246,
+          1602.66
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1733",
+      "sourceId": "FMA72669",
+      "side": "right",
+      "representationId": "BP10465",
+      "path": "isa_BP3D_4.0_obj_99/FJ1733.obj",
+      "bytes": 239530,
+      "sha256": "a8e5d63d28890e42861f2b1c4c7b898dba84b169507315d77e9ebeb2433171e9",
+      "crc32": "b44c8b1e",
+      "compressedBytesUpstream": 74583,
+      "anatomyId": "bp3d:FMA72669",
+      "family": "FMA61898",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 3554,
+      "faces": 3554,
+      "sourcePositionCount": 2084,
+      "vertices": 2084,
+      "boundsMetres": [
+        [
+          -0.0659613,
+          1.53939,
+          -0.0011586
+        ],
+        [
+          -0.0231652,
+          1.60278,
+          0.044750500000000006
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -65.9613,
+          -44.7505,
+          1539.39
+        ],
+        [
+          -23.1652,
+          1.1586,
+          1602.78
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1739",
+      "sourceId": "FMA72718",
+      "side": "left",
+      "representationId": "BP10471",
+      "path": "isa_BP3D_4.0_obj_99/FJ1739.obj",
+      "bytes": 154389,
+      "sha256": "0926a6839371b0179bbf7d0040b3925f338995be63d18fc1b176721db12c82d3",
+      "crc32": "bcba884a",
+      "compressedBytesUpstream": 49511,
+      "anatomyId": "bp3d:FMA72718",
+      "family": "FMA62434",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 2416,
+      "faces": 2416,
+      "sourcePositionCount": 1365,
+      "vertices": 1365,
+      "boundsMetres": [
+        [
+          4.1231200000000006e-05,
+          1.53058,
+          0.0307274
+        ],
+        [
+          0.0283306,
+          1.5972300000000001,
+          0.142072
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          0.0412312,
+          -142.072,
+          1530.58
+        ],
+        [
+          28.3306,
+          -30.7274,
+          1597.23
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1740",
+      "sourceId": "FMA72717",
+      "side": "right",
+      "representationId": "BP10488",
+      "path": "isa_BP3D_4.0_obj_99/FJ1740.obj",
+      "bytes": 151331,
+      "sha256": "9e8c3b086c0cd15b9f85189b37529c6d044c153cbd3f16c678a5b79d02efb656",
+      "crc32": "382168ca",
+      "compressedBytesUpstream": 48362,
+      "anatomyId": "bp3d:FMA72717",
+      "family": "FMA62434",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 2346,
+      "faces": 2346,
+      "sourcePositionCount": 1330,
+      "vertices": 1330,
+      "boundsMetres": [
+        [
+          -0.029615700000000002,
+          1.53061,
+          0.030829000000000002
+        ],
+        [
+          -0.00145084,
+          1.59722,
+          0.142106
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -29.6157,
+          -142.106,
+          1530.61
+        ],
+        [
+          -1.45084,
+          -30.829,
+          1597.22
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1743",
+      "sourceId": "FMA62032",
+      "side": "midline",
+      "representationId": "BP6549",
+      "path": "isa_BP3D_4.0_obj_99/FJ1743.obj",
+      "bytes": 27755,
+      "sha256": "f7c54da9219af0df072a41ebf7d128f2f59535efc5cde6f7356616eddaebf41e",
+      "crc32": "8e1c342d",
+      "compressedBytesUpstream": 9243,
+      "anatomyId": "bp3d:FMA62032",
+      "family": "FMA62032",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 384,
+      "faces": 384,
+      "sourcePositionCount": 283,
+      "vertices": 283,
+      "boundsMetres": [
+        [
+          -0.0044439399999999995,
+          1.54475,
+          0.0669468
+        ],
+        [
+          0.0031286200000000004,
+          1.54889,
+          0.0721112
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -4.44394,
+          -72.1112,
+          1544.75
+        ],
+        [
+          3.12862,
+          -66.9468,
+          1548.89
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1744",
+      "sourceId": "FMA72658",
+      "side": "left",
+      "representationId": "BP10475",
+      "path": "isa_BP3D_4.0_obj_99/FJ1744.obj",
+      "bytes": 218647,
+      "sha256": "3de90fe338da50f60859e591089e5882cf8ce2df2d0e4acbfc5dae7364c184a5",
+      "crc32": "8ca2e6aa",
+      "compressedBytesUpstream": 67798,
+      "anatomyId": "bp3d:FMA72658",
+      "family": "FMA61860",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 3290,
+      "faces": 3290,
+      "sourcePositionCount": 1927,
+      "vertices": 1927,
+      "boundsMetres": [
+        [
+          0.0259424,
+          1.5469000000000002,
+          0.08967850000000001
+        ],
+        [
+          0.0609161,
+          1.60707,
+          0.152928
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          25.9424,
+          -152.928,
+          1546.9
+        ],
+        [
+          60.9161,
+          -89.6785,
+          1607.07
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1745",
+      "sourceId": "FMA72657",
+      "side": "right",
+      "representationId": "BP10442",
+      "path": "isa_BP3D_4.0_obj_99/FJ1745.obj",
+      "bytes": 220234,
+      "sha256": "b3eafbe2d1289be8c24dde82d8a5475f86a13cb6bcc7d5dbc0b4cfcb2d340132",
+      "crc32": "c3432979",
+      "compressedBytesUpstream": 68307,
+      "anatomyId": "bp3d:FMA72657",
+      "family": "FMA61860",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 3292,
+      "faces": 3292,
+      "sourcePositionCount": 1928,
+      "vertices": 1928,
+      "boundsMetres": [
+        [
+          -0.0622117,
+          1.54648,
+          0.0898858
+        ],
+        [
+          -0.0272581,
+          1.60706,
+          0.152971
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -62.2117,
+          -152.971,
+          1546.48
+        ],
+        [
+          -27.2581,
+          -89.8858,
+          1607.06
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1746",
+      "sourceId": "FMA72688",
+      "side": "left",
+      "representationId": "BP10437",
+      "path": "isa_BP3D_4.0_obj_99/FJ1746.obj",
+      "bytes": 177780,
+      "sha256": "aefe572e69d8b7687b29644b0a855ced4e64b255f1cb3ca0e6640cab7292d132",
+      "crc32": "26195051",
+      "compressedBytesUpstream": 56212,
+      "anatomyId": "bp3d:FMA72688",
+      "family": "FMA61907",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 2732,
+      "faces": 2732,
+      "sourcePositionCount": 1573,
+      "vertices": 1573,
+      "boundsMetres": [
+        [
+          0.0169989,
+          1.5135,
+          0.0264603
+        ],
+        [
+          0.0606468,
+          1.54284,
+          0.122205
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          16.9989,
+          -122.205,
+          1513.5
+        ],
+        [
+          60.6468,
+          -26.4603,
+          1542.84
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1747",
+      "sourceId": "FMA72687",
+      "side": "right",
+      "representationId": "BP10483",
+      "path": "isa_BP3D_4.0_obj_99/FJ1747.obj",
+      "bytes": 182921,
+      "sha256": "dd358cac91394ee511250be17f7a0184defecb23a19b921388fb267e23132195",
+      "crc32": "f6920609",
+      "compressedBytesUpstream": 57682,
+      "anatomyId": "bp3d:FMA72687",
+      "family": "FMA61907",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 2768,
+      "faces": 2768,
+      "sourcePositionCount": 1610,
+      "vertices": 1610,
+      "boundsMetres": [
+        [
+          -0.0611894,
+          1.51355,
+          0.0265085
+        ],
+        [
+          -0.0180979,
+          1.5428199999999999,
+          0.12242700000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -61.1894,
+          -122.427,
+          1513.55
+        ],
+        [
+          -18.0979,
+          -26.5085,
+          1542.82
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1748",
+      "sourceId": "FMA72978",
+      "side": "left",
+      "representationId": "BP10486",
+      "path": "isa_BP3D_4.0_obj_99/FJ1748.obj",
+      "bytes": 148027,
+      "sha256": "b7553aaa8a282d5882d9d2809f5fedd7b35ef50710773ac103cfa82f9f184245",
+      "crc32": "9a4a2216",
+      "compressedBytesUpstream": 46240,
+      "anatomyId": "bp3d:FMA72978",
+      "family": "FMA67329",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 2448,
+      "faces": 2448,
+      "sourcePositionCount": 1250,
+      "vertices": 1250,
+      "boundsMetres": [
+        [
+          0.0250155,
+          1.54553,
+          0.0706417
+        ],
+        [
+          0.044279400000000003,
+          1.5800999999999998,
+          0.122271
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          25.0155,
+          -122.271,
+          1545.53
+        ],
+        [
+          44.2794,
+          -70.6417,
+          1580.1
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1749",
+      "sourceId": "FMA72977",
+      "side": "right",
+      "representationId": "BP10476",
+      "path": "isa_BP3D_4.0_obj_99/FJ1749.obj",
+      "bytes": 150490,
+      "sha256": "0c8e4e39ba935c4f5b24168b46c99782057ba73379844173de56c60210b45c72",
+      "crc32": "eab1641e",
+      "compressedBytesUpstream": 46803,
+      "anatomyId": "bp3d:FMA72977",
+      "family": "FMA67329",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 2448,
+      "faces": 2448,
+      "sourcePositionCount": 1261,
+      "vertices": 1261,
+      "boundsMetres": [
+        [
+          -0.0455903,
+          1.54558,
+          0.0706754
+        ],
+        [
+          -0.0263446,
+          1.58006,
+          0.122423
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -45.5903,
+          -122.423,
+          1545.58
+        ],
+        [
+          -26.3446,
+          -70.6754,
+          1580.06
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1750",
+      "sourceId": "FMA72907",
+      "side": "left",
+      "representationId": "BP10456",
+      "path": "isa_BP3D_4.0_obj_99/FJ1750.obj",
+      "bytes": 686435,
+      "sha256": "2c6b332d19defed6c286e58573ee29278e94d1334ef83a2dc671cc063c2c41f1",
+      "crc32": "c0812685",
+      "compressedBytesUpstream": 197175,
+      "anatomyId": "bp3d:FMA72907",
+      "family": "FMA61950",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 10740,
+      "faces": 10740,
+      "sourcePositionCount": 5375,
+      "vertices": 5375,
+      "boundsMetres": [
+        [
+          0.00681658,
+          1.54386,
+          0.064511
+        ],
+        [
+          0.029714200000000003,
+          1.57711,
+          0.11868000000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          6.81658,
+          -118.68,
+          1543.86
+        ],
+        [
+          29.7142,
+          -64.511,
+          1577.11
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1751",
+      "sourceId": "FMA72906",
+      "side": "right",
+      "representationId": "BP10445",
+      "path": "isa_BP3D_4.0_obj_99/FJ1751.obj",
+      "bytes": 693186,
+      "sha256": "2c96a2ee7fb953e36d1b9508a6a5ae91ced3cd8362ff85bcaed1be7ea6b36996",
+      "crc32": "e1645d8c",
+      "compressedBytesUpstream": 198406,
+      "anatomyId": "bp3d:FMA72906",
+      "family": "FMA61950",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 10742,
+      "faces": 10742,
+      "sourcePositionCount": 5376,
+      "vertices": 5376,
+      "boundsMetres": [
+        [
+          -0.0310381,
+          1.54385,
+          0.0645003
+        ],
+        [
+          -0.00813108,
+          1.57711,
+          0.118695
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.0381,
+          -118.695,
+          1543.85
+        ],
+        [
+          -8.13108,
+          -64.5003,
+          1577.11
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1758",
+      "sourceId": "FMA260794",
+      "side": "left",
+      "representationId": "BP10423",
+      "path": "isa_BP3D_4.0_obj_99/FJ1758.obj",
+      "bytes": 1837827,
+      "sha256": "eb5e61b574f6962ad949427b11d97055553d6e1175ac926164f7f5402d43e5bc",
+      "crc32": "65160a48",
+      "compressedBytesUpstream": 560041,
+      "anatomyId": "bp3d:FMA260794",
+      "family": "FMA241998",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 25542,
+      "faces": 25542,
+      "sourcePositionCount": 15286,
+      "vertices": 15286,
+      "boundsMetres": [
+        [
+          0.0029686499999999998,
+          1.52191,
+          -0.000682724
+        ],
+        [
+          0.062458,
+          1.62294,
+          0.162423
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          2.96865,
+          -162.423,
+          1521.91
+        ],
+        [
+          62.458,
+          0.682724,
+          1622.94
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1759",
+      "sourceId": "FMA72714",
+      "side": "left",
+      "representationId": "BP10455",
+      "path": "isa_BP3D_4.0_obj_99/FJ1759.obj",
+      "bytes": 57341,
+      "sha256": "d841b56aabfe6785a3b2892de1af5f2f52d87d13b8928d3d2fdf028b9640994d",
+      "crc32": "b77e5683",
+      "compressedBytesUpstream": 19144,
+      "anatomyId": "bp3d:FMA72714",
+      "family": "FMA62493",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 980,
+      "faces": 980,
+      "sourcePositionCount": 492,
+      "vertices": 492,
+      "boundsMetres": [
+        [
+          0.0166369,
+          1.52925,
+          0.0594461
+        ],
+        [
+          0.0366013,
+          1.55124,
+          0.102339
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          16.6369,
+          -102.339,
+          1529.25
+        ],
+        [
+          36.6013,
+          -59.4461,
+          1551.24
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1760",
+      "sourceId": "FMA62008",
+      "side": "midline",
+      "representationId": "BP6496",
+      "path": "isa_BP3D_4.0_obj_99/FJ1760.obj",
+      "bytes": 132131,
+      "sha256": "aec134edcffcaea082eaebc3a01fe84700893fcc8cba5868b1ade6a721f530bf",
+      "crc32": "6b2307fd",
+      "compressedBytesUpstream": 41056,
+      "anatomyId": "bp3d:FMA62008",
+      "family": "FMA62008",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 2050,
+      "faces": 2050,
+      "sourcePositionCount": 1183,
+      "vertices": 1183,
+      "boundsMetres": [
+        [
+          -0.000654917,
+          1.53223,
+          0.09223970000000001
+        ],
+        [
+          0.00695987,
+          1.5521,
+          0.11017700000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.654917,
+          -110.177,
+          1532.23
+        ],
+        [
+          6.95987,
+          -92.2397,
+          1552.1
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1762",
+      "sourceId": "FMA73435",
+      "side": "left",
+      "representationId": "BP10479",
+      "path": "isa_BP3D_4.0_obj_99/FJ1762.obj",
+      "bytes": 9042,
+      "sha256": "cdaf86887af5df7757baa33c54afcb440cf29fd206fe7595e88aa12015757ea5",
+      "crc32": "fe34abed",
+      "compressedBytesUpstream": 3480,
+      "anatomyId": "bp3d:FMA73435",
+      "family": "FMA62404",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 156,
+      "faces": 156,
+      "sourcePositionCount": 81,
+      "vertices": 81,
+      "boundsMetres": [
+        [
+          -0.00030206300000000004,
+          1.52882,
+          0.06748359999999999
+        ],
+        [
+          0.00734689,
+          1.53644,
+          0.0752808
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.302063,
+          -75.2808,
+          1528.82
+        ],
+        [
+          7.34689,
+          -67.4836,
+          1536.44
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1769",
+      "sourceId": "FMA62004",
+      "side": "midline",
+      "representationId": "BP5693",
+      "path": "isa_BP3D_4.0_obj_99/FJ1769.obj",
+      "bytes": 392219,
+      "sha256": "cc1cd37ef3f58fea9ffe8875efa3a33101ee6945dd13bdb28c973303a9986fbd",
+      "crc32": "dda926e7",
+      "compressedBytesUpstream": 116661,
+      "anatomyId": "bp3d:FMA62004",
+      "family": "FMA62004",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 6036,
+      "faces": 6036,
+      "sourcePositionCount": 3196,
+      "vertices": 3196,
+      "boundsMetres": [
+        [
+          -0.00065468,
+          1.4645000000000001,
+          0.0512396
+        ],
+        [
+          0.012713100000000001,
+          1.50578,
+          0.0844395
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.65468,
+          -84.4395,
+          1464.5
+        ],
+        [
+          12.7131,
+          -51.2396,
+          1505.78
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1770",
+      "sourceId": "FMA61993",
+      "side": "midline",
+      "representationId": "BP5695",
+      "path": "isa_BP3D_4.0_obj_99/FJ1770.obj",
+      "bytes": 468005,
+      "sha256": "6e7eb027702dc4097aa0b2abe46efcffcd1f5e108b1665a649b45420b98229e9",
+      "crc32": "1fa819e3",
+      "compressedBytesUpstream": 138249,
+      "anatomyId": "bp3d:FMA61993",
+      "family": "FMA61993",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 6468,
+      "faces": 6468,
+      "sourcePositionCount": 4157,
+      "vertices": 4157,
+      "boundsMetres": [
+        [
+          -0.0006561129999999999,
+          1.5284900000000001,
+          0.0665809
+        ],
+        [
+          0.0140111,
+          1.54552,
+          0.0959259
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.656113,
+          -95.9259,
+          1528.49
+        ],
+        [
+          14.0111,
+          -66.5809,
+          1545.52
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1772",
+      "sourceId": "FMA50878",
+      "side": "left",
+      "representationId": "BP5709",
+      "path": "isa_BP3D_4.0_obj_99/FJ1772.obj",
+      "bytes": 146521,
+      "sha256": "314b4a735672c1ce6690d29199856569fa3db4864f2d94690e091432e085e057",
+      "crc32": "5fbbd2e1",
+      "compressedBytesUpstream": 44682,
+      "anatomyId": "bp3d:FMA50878",
+      "family": "FMA50878",
+      "moduleId": "nervous:cns",
+      "sourceType": "nervio",
+      "triangles": 2376,
+      "faces": 2376,
+      "sourcePositionCount": 1251,
+      "vertices": 1251,
+      "boundsMetres": [
+        [
+          -2.64154e-06,
+          1.5202,
+          0.10214100000000001
+        ],
+        [
+          0.0319976,
+          1.54231,
+          0.151743
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.00264154,
+          -151.743,
+          1520.2
+        ],
+        [
+          31.9976,
+          -102.141,
+          1542.31
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1775",
+      "sourceId": "FMA67943",
+      "side": "midline",
+      "representationId": "BP6545",
+      "path": "isa_BP3D_4.0_obj_99/FJ1775.obj",
+      "bytes": 697135,
+      "sha256": "d24253c225545078ce9c4420880dc5652e20fb2576a6305a9fadc18f95fba9dd",
+      "crc32": "617f88d7",
+      "compressedBytesUpstream": 204601,
+      "anatomyId": "bp3d:FMA67943",
+      "family": "FMA67943",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 10304,
+      "faces": 10304,
+      "sourcePositionCount": 5764,
+      "vertices": 5764,
+      "boundsMetres": [
+        [
+          -0.000655189,
+          1.50207,
+          0.0625806
+        ],
+        [
+          0.0204466,
+          1.53069,
+          0.09698659999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.655189,
+          -96.9866,
+          1502.07
+        ],
+        [
+          20.4466,
+          -62.5806,
+          1530.69
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1779",
+      "sourceId": "FMA73423",
+      "side": "left",
+      "representationId": "BP10424",
+      "path": "isa_BP3D_4.0_obj_99/FJ1779.obj",
+      "bytes": 10340,
+      "sha256": "ea51306905e78a614e760f45fafae87c988f6e57fc9eeef6aa853b5490f39f14",
+      "crc32": "896151c6",
+      "compressedBytesUpstream": 3903,
+      "anatomyId": "bp3d:FMA73423",
+      "family": "FMA62403",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 180,
+      "faces": 180,
+      "sourcePositionCount": 93,
+      "vertices": 93,
+      "boundsMetres": [
+        [
+          -0.000557623,
+          1.53737,
+          0.0682338
+        ],
+        [
+          0.00720012,
+          1.54337,
+          0.0742727
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.557623,
+          -74.2727,
+          1537.37
+        ],
+        [
+          7.20012,
+          -68.2338,
+          1543.37
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1780",
+      "sourceId": "FMA62327",
+      "side": "midline",
+      "representationId": "BP6548",
+      "path": "isa_BP3D_4.0_obj_99/FJ1780.obj",
+      "bytes": 60641,
+      "sha256": "4780787c4dcd06ea54fb8e486a563968b29e274069de01baa421cde17b19718c",
+      "crc32": "3d27ff7a",
+      "compressedBytesUpstream": 19233,
+      "anatomyId": "bp3d:FMA62327",
+      "family": "FMA62327",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 804,
+      "faces": 804,
+      "sourcePositionCount": 627,
+      "vertices": 627,
+      "boundsMetres": [
+        [
+          -0.000655663,
+          1.5321300000000002,
+          0.0941921
+        ],
+        [
+          0.00793961,
+          1.5431199999999998,
+          0.10368200000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.655663,
+          -103.682,
+          1532.13
+        ],
+        [
+          7.93961,
+          -94.1921,
+          1543.12
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1781",
+      "sourceId": "FMA67944",
+      "side": "midline",
+      "representationId": "BP5696",
+      "path": "isa_BP3D_4.0_obj_99/FJ1781.obj",
+      "bytes": 1579646,
+      "sha256": "47003d37cf123dc10b108bb79a2b12638a56f0f2616d0d1f58b727af88d1ec53",
+      "crc32": "75054fe4",
+      "compressedBytesUpstream": 453806,
+      "anatomyId": "bp3d:FMA67944",
+      "family": "FMA67944",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 23818,
+      "faces": 23818,
+      "sourcePositionCount": 12098,
+      "vertices": 12098,
+      "boundsMetres": [
+        [
+          -0.000648386,
+          1.48726,
+          0.0121743
+        ],
+        [
+          0.0526099,
+          1.54051,
+          0.06844750000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.648386,
+          -68.4475,
+          1487.26
+        ],
+        [
+          52.6099,
+          -12.1743,
+          1540.51
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1783",
+      "sourceId": "FMA72690",
+      "side": "left",
+      "representationId": "BP10449",
+      "path": "isa_BP3D_4.0_obj_99/FJ1783.obj",
+      "bytes": 96372,
+      "sha256": "f0cc5fbc23f9846e881e91cb2221e691694895c7584506d560aca48324d079b5",
+      "crc32": "b9636324",
+      "compressedBytesUpstream": 31479,
+      "anatomyId": "bp3d:FMA72690",
+      "family": "FMA61908",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 1550,
+      "faces": 1550,
+      "sourcePositionCount": 869,
+      "vertices": 869,
+      "boundsMetres": [
+        [
+          0.010537900000000001,
+          1.51575,
+          0.0496757
+        ],
+        [
+          0.0421819,
+          1.54224,
+          0.110613
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          10.5379,
+          -110.613,
+          1515.75
+        ],
+        [
+          42.1819,
+          -49.6757,
+          1542.24
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1784",
+      "sourceId": "FMA72689",
+      "side": "right",
+      "representationId": "BP10450",
+      "path": "isa_BP3D_4.0_obj_99/FJ1784.obj",
+      "bytes": 101913,
+      "sha256": "ecfd67d495a6f5f3bf391f2455f124edf444122d79299fb8fa0b01493e450f29",
+      "crc32": "69cec1b4",
+      "compressedBytesUpstream": 32803,
+      "anatomyId": "bp3d:FMA72689",
+      "family": "FMA61908",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 1626,
+      "faces": 1626,
+      "sourcePositionCount": 909,
+      "vertices": 909,
+      "boundsMetres": [
+        [
+          -0.0434271,
+          1.51561,
+          0.04970020000000001
+        ],
+        [
+          -0.0118315,
+          1.54227,
+          0.110484
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -43.4271,
+          -110.484,
+          1515.61
+        ],
+        [
+          -11.8315,
+          -49.7002,
+          1542.27
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1785",
+      "sourceId": "FMA72706",
+      "side": "left",
+      "representationId": "BP10439",
+      "path": "isa_BP3D_4.0_obj_99/FJ1785.obj",
+      "bytes": 47143,
+      "sha256": "d328f96770816958f290e2461214dd52c38d3e7395d113eed55ba6065ec76c37",
+      "crc32": "3fde9911",
+      "compressedBytesUpstream": 15971,
+      "anatomyId": "bp3d:FMA72706",
+      "family": "FMA61918",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 740,
+      "faces": 740,
+      "sourcePositionCount": 435,
+      "vertices": 435,
+      "boundsMetres": [
+        [
+          0.008932180000000001,
+          1.52164,
+          0.051282400000000006
+        ],
+        [
+          0.029918600000000004,
+          1.54369,
+          0.100708
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          8.93218,
+          -100.708,
+          1521.64
+        ],
+        [
+          29.9186,
+          -51.2824,
+          1543.69
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1786",
+      "sourceId": "FMA72705",
+      "side": "right",
+      "representationId": "BP10447",
+      "path": "isa_BP3D_4.0_obj_99/FJ1786.obj",
+      "bytes": 54449,
+      "sha256": "2453959db95754c9f3fe6dbe435bbcff98e79f6bbd77c12f1d063c30941fa05f",
+      "crc32": "488ba816",
+      "compressedBytesUpstream": 18232,
+      "anatomyId": "bp3d:FMA72705",
+      "family": "FMA61918",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 882,
+      "faces": 882,
+      "sourcePositionCount": 482,
+      "vertices": 482,
+      "boundsMetres": [
+        [
+          -0.0312721,
+          1.52177,
+          0.051266900000000004
+        ],
+        [
+          -0.010180199999999999,
+          1.54369,
+          0.100797
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.2721,
+          -100.797,
+          1521.77
+        ],
+        [
+          -10.1802,
+          -51.2669,
+          1543.69
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1787",
+      "sourceId": "FMA72656",
+      "side": "left",
+      "representationId": "BP10463",
+      "path": "isa_BP3D_4.0_obj_99/FJ1787.obj",
+      "bytes": 226086,
+      "sha256": "de3c1098d95fc81060b72603e72a4a2a55529b0fb82063dbd0dfc4f3955d720c",
+      "crc32": "04fc0a21",
+      "compressedBytesUpstream": 70252,
+      "anatomyId": "bp3d:FMA72656",
+      "family": "FMA61859",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 3416,
+      "faces": 3416,
+      "sourcePositionCount": 1973,
+      "vertices": 1973,
+      "boundsMetres": [
+        [
+          0.0145999,
+          1.5604200000000001,
+          0.0741993
+        ],
+        [
+          0.049143,
+          1.6223900000000002,
+          0.159172
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          14.5999,
+          -159.172,
+          1560.42
+        ],
+        [
+          49.143,
+          -74.1993,
+          1622.39
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1788",
+      "sourceId": "FMA72655",
+      "side": "right",
+      "representationId": "BP10461",
+      "path": "isa_BP3D_4.0_obj_99/FJ1788.obj",
+      "bytes": 224095,
+      "sha256": "216015b568cc446ae3e7c2ad256f47a352479a6e36c0df025cde311e913fde0c",
+      "crc32": "8515610e",
+      "compressedBytesUpstream": 70228,
+      "anatomyId": "bp3d:FMA72655",
+      "family": "FMA61859",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 3326,
+      "faces": 3326,
+      "sourcePositionCount": 1960,
+      "vertices": 1960,
+      "boundsMetres": [
+        [
+          -0.0505134,
+          1.5604300000000002,
+          0.07383830000000001
+        ],
+        [
+          -0.0159333,
+          1.6223,
+          0.15919999999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -50.5134,
+          -159.2,
+          1560.43
+        ],
+        [
+          -15.9333,
+          -73.8383,
+          1622.3
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1789",
+      "sourceId": "FMA72686",
+      "side": "left",
+      "representationId": "BP10446",
+      "path": "isa_BP3D_4.0_obj_99/FJ1789.obj",
+      "bytes": 174631,
+      "sha256": "52396a1feaedfb7f8f1a334dd02acb35f2897362b0f1a37658edc4e69556db6d",
+      "crc32": "b69c4cab",
+      "compressedBytesUpstream": 55407,
+      "anatomyId": "bp3d:FMA72686",
+      "family": "FMA61906",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 2710,
+      "faces": 2710,
+      "sourcePositionCount": 1528,
+      "vertices": 1528,
+      "boundsMetres": [
+        [
+          0.033121000000000005,
+          1.52226,
+          0.0139933
+        ],
+        [
+          0.06889340000000001,
+          1.55585,
+          0.124954
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          33.121,
+          -124.954,
+          1522.26
+        ],
+        [
+          68.8934,
+          -13.9933,
+          1555.85
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1790",
+      "sourceId": "FMA72685",
+      "side": "right",
+      "representationId": "BP10448",
+      "path": "isa_BP3D_4.0_obj_99/FJ1790.obj",
+      "bytes": 179357,
+      "sha256": "f2c8ba988026b991559d5195a702675a0a222e9a03711dcb127a909f18ae0fb4",
+      "crc32": "a12c3888",
+      "compressedBytesUpstream": 56685,
+      "anatomyId": "bp3d:FMA72685",
+      "family": "FMA61906",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 2754,
+      "faces": 2754,
+      "sourcePositionCount": 1563,
+      "vertices": 1563,
+      "boundsMetres": [
+        [
+          -0.0699404,
+          1.52244,
+          0.0142936
+        ],
+        [
+          -0.0343913,
+          1.5557,
+          0.12495200000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -69.9404,
+          -124.952,
+          1522.44
+        ],
+        [
+          -34.3913,
+          -14.2936,
+          1555.7
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1791",
+      "sourceId": "FMA72976",
+      "side": "left",
+      "representationId": "BP10477",
+      "path": "isa_BP3D_4.0_obj_99/FJ1791.obj",
+      "bytes": 293610,
+      "sha256": "d504be1cf6f085be1b885b31ac3b1fb1a1fc475855aeda56baa142a600911fe5",
+      "crc32": "2a22f6f8",
+      "compressedBytesUpstream": 91411,
+      "anatomyId": "bp3d:FMA72976",
+      "family": "FMA67325",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 4390,
+      "faces": 4390,
+      "sourcePositionCount": 2538,
+      "vertices": 2538,
+      "boundsMetres": [
+        [
+          0.00011104700000000001,
+          1.51778,
+          -0.0103293
+        ],
+        [
+          0.043527,
+          1.57153,
+          0.0529323
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          0.111047,
+          -52.9323,
+          1517.78
+        ],
+        [
+          43.527,
+          10.3293,
+          1571.53
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1792",
+      "sourceId": "FMA72975",
+      "side": "right",
+      "representationId": "BP10440",
+      "path": "isa_BP3D_4.0_obj_99/FJ1792.obj",
+      "bytes": 307991,
+      "sha256": "e9e4bb82648576fbe6256992771f0ab0917cfea10d15325c86869283573a64ad",
+      "crc32": "c26134e7",
+      "compressedBytesUpstream": 95245,
+      "anatomyId": "bp3d:FMA72975",
+      "family": "FMA67325",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 4564,
+      "faces": 4564,
+      "sourcePositionCount": 2625,
+      "vertices": 2625,
+      "boundsMetres": [
+        [
+          -0.0448244,
+          1.51774,
+          -0.0102618
+        ],
+        [
+          -0.00155616,
+          1.57156,
+          0.052951500000000006
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -44.8244,
+          -52.9515,
+          1517.74
+        ],
+        [
+          -1.55616,
+          10.2618,
+          1571.56
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1797",
+      "sourceId": "FMA72666",
+      "side": "left",
+      "representationId": "BP10473",
+      "path": "isa_BP3D_4.0_obj_99/FJ1797.obj",
+      "bytes": 236182,
+      "sha256": "e05f6ec80fa902f5334cc5e8c029359674d39c39a90f86476a6d1d190ca1f30a",
+      "crc32": "40ae3adf",
+      "compressedBytesUpstream": 73776,
+      "anatomyId": "bp3d:FMA72666",
+      "family": "FMA61896",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 3604,
+      "faces": 3604,
+      "sourcePositionCount": 2033,
+      "vertices": 2033,
+      "boundsMetres": [
+        [
+          0.000609649,
+          1.5639,
+          0.024271
+        ],
+        [
+          0.0671837,
+          1.62368,
+          0.08791670000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          0.609649,
+          -87.9167,
+          1563.9
+        ],
+        [
+          67.1837,
+          -24.271,
+          1623.68
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1798",
+      "sourceId": "FMA72665",
+      "side": "right",
+      "representationId": "BP10480",
+      "path": "isa_BP3D_4.0_obj_99/FJ1798.obj",
+      "bytes": 238993,
+      "sha256": "ce476b98e79e988bbf2efa1b8593019d0cc64114cf455d00347ed6e95ee5f037",
+      "crc32": "b8cd78ff",
+      "compressedBytesUpstream": 74585,
+      "anatomyId": "bp3d:FMA72665",
+      "family": "FMA61896",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 3604,
+      "faces": 3604,
+      "sourcePositionCount": 2045,
+      "vertices": 2045,
+      "boundsMetres": [
+        [
+          -0.0683975,
+          1.56414,
+          0.024257300000000002
+        ],
+        [
+          -0.0017481,
+          1.62369,
+          0.0877679
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -68.3975,
+          -87.7679,
+          1564.14
+        ],
+        [
+          -1.7481,
+          -24.2573,
+          1623.69
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1800",
+      "sourceId": "FMA72662",
+      "side": "left",
+      "representationId": "BP10466",
+      "path": "isa_BP3D_4.0_obj_99/FJ1800.obj",
+      "bytes": 270175,
+      "sha256": "9f375219acb0aed075860e5afe3562be19bde6061a007d3096d52f96aa59e944",
+      "crc32": "707ae91d",
+      "compressedBytesUpstream": 83731,
+      "anatomyId": "bp3d:FMA72662",
+      "family": "FMA61894",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 4042,
+      "faces": 4042,
+      "sourcePositionCount": 2336,
+      "vertices": 2336,
+      "boundsMetres": [
+        [
+          0.0005947190000000001,
+          1.5607,
+          0.0392726
+        ],
+        [
+          0.0628854,
+          1.6266900000000002,
+          0.104839
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          0.594719,
+          -104.839,
+          1560.7
+        ],
+        [
+          62.8854,
+          -39.2726,
+          1626.69
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1801",
+      "sourceId": "FMA72661",
+      "side": "right",
+      "representationId": "BP10459",
+      "path": "isa_BP3D_4.0_obj_99/FJ1801.obj",
+      "bytes": 274741,
+      "sha256": "89e9017a488f4854ef4daaa5488bbe0bada8aed4cd81352553305beda8caef85",
+      "crc32": "925f8cda",
+      "compressedBytesUpstream": 84532,
+      "anatomyId": "bp3d:FMA72661",
+      "family": "FMA61894",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 4042,
+      "faces": 4042,
+      "sourcePositionCount": 2382,
+      "vertices": 2382,
+      "boundsMetres": [
+        [
+          -0.0641509,
+          1.5605499999999999,
+          0.0393459
+        ],
+        [
+          -0.0016214900000000002,
+          1.62655,
+          0.104658
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -64.1509,
+          -104.658,
+          1560.55
+        ],
+        [
+          -1.62149,
+          -39.3459,
+          1626.55
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1806",
+      "sourceId": "FMA260791",
+      "side": "right",
+      "representationId": "BP10430",
+      "path": "isa_BP3D_4.0_obj_99/FJ1806.obj",
+      "bytes": 1922977,
+      "sha256": "89ef94f2f907f9da109e55c1a6a7a59ef7118555fa0d39e02ef37f1f69c26e98",
+      "crc32": "9388a1ad",
+      "compressedBytesUpstream": 579893,
+      "anatomyId": "bp3d:FMA260791",
+      "family": "FMA241998",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 26512,
+      "faces": 26512,
+      "sourcePositionCount": 15757,
+      "vertices": 15757,
+      "boundsMetres": [
+        [
+          -0.06379370000000001,
+          1.5219200000000002,
+          -0.000628044
+        ],
+        [
+          -0.0044517,
+          1.623,
+          0.162539
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -63.7937,
+          -162.539,
+          1521.92
+        ],
+        [
+          -4.4517,
+          0.628044,
+          1623.0
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1807",
+      "sourceId": "FMA72713",
+      "side": "right",
+      "representationId": "BP10432",
+      "path": "isa_BP3D_4.0_obj_99/FJ1807.obj",
+      "bytes": 60478,
+      "sha256": "76ef76851cf014d1e090f63328963dad9041cf10f20066eb1e92e4619f700c30",
+      "crc32": "7624c65a",
+      "compressedBytesUpstream": 19911,
+      "anatomyId": "bp3d:FMA72713",
+      "family": "FMA62493",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 1020,
+      "faces": 1020,
+      "sourcePositionCount": 515,
+      "vertices": 515,
+      "boundsMetres": [
+        [
+          -0.037906100000000005,
+          1.52927,
+          0.0595233
+        ],
+        [
+          -0.0179088,
+          1.55124,
+          0.102368
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -37.9061,
+          -102.368,
+          1529.27
+        ],
+        [
+          -17.9088,
+          -59.5233,
+          1551.24
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1808",
+      "sourceId": "FMA62008",
+      "side": "midline",
+      "representationId": "BP6496",
+      "path": "isa_BP3D_4.0_obj_99/FJ1808.obj",
+      "bytes": 131989,
+      "sha256": "122de5cfac67f779f911876ea1faca1fb9546327b1a1654d395f571f711772f7",
+      "crc32": "34dbc808",
+      "compressedBytesUpstream": 40900,
+      "anatomyId": "bp3d:FMA62008",
+      "family": "FMA62008",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 2028,
+      "faces": 2028,
+      "sourcePositionCount": 1191,
+      "vertices": 1191,
+      "boundsMetres": [
+        [
+          -0.008267680000000001,
+          1.53223,
+          0.0922362
+        ],
+        [
+          -0.000650617,
+          1.5521,
+          0.11017700000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -8.26768,
+          -110.177,
+          1532.23
+        ],
+        [
+          -0.650617,
+          -92.2362,
+          1552.1
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1810",
+      "sourceId": "FMA73434",
+      "side": "right",
+      "representationId": "BP10427",
+      "path": "isa_BP3D_4.0_obj_99/FJ1810.obj",
+      "bytes": 11681,
+      "sha256": "af734152040c2d046a83a3163b95cd996c7fd361cbe930088944c984fb0241f4",
+      "crc32": "c168c963",
+      "compressedBytesUpstream": 4332,
+      "anatomyId": "bp3d:FMA73434",
+      "family": "FMA62404",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 204,
+      "faces": 204,
+      "sourcePositionCount": 104,
+      "vertices": 104,
+      "boundsMetres": [
+        [
+          -0.00871285,
+          1.5288599999999999,
+          0.067535
+        ],
+        [
+          -0.000922659,
+          1.53653,
+          0.07534170000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -8.71285,
+          -75.3417,
+          1528.86
+        ],
+        [
+          -0.922659,
+          -67.535,
+          1536.53
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1817",
+      "sourceId": "FMA61993",
+      "side": "midline",
+      "representationId": "BP5695",
+      "path": "isa_BP3D_4.0_obj_99/FJ1817.obj",
+      "bytes": 461102,
+      "sha256": "b86a8f1ce035a5ec382122a210f86239c581a5478f2b1b5f377b021542981f2e",
+      "crc32": "3c8de195",
+      "compressedBytesUpstream": 134187,
+      "anatomyId": "bp3d:FMA61993",
+      "family": "FMA61993",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 6440,
+      "faces": 6440,
+      "sourcePositionCount": 4050,
+      "vertices": 4050,
+      "boundsMetres": [
+        [
+          -0.015322200000000001,
+          1.5284900000000001,
+          0.0665858
+        ],
+        [
+          -0.0006381480000000001,
+          1.54553,
+          0.0959517
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -15.3222,
+          -95.9517,
+          1528.49
+        ],
+        [
+          -0.638148,
+          -66.5858,
+          1545.53
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1819",
+      "sourceId": "FMA50875",
+      "side": "right",
+      "representationId": "BP5708",
+      "path": "isa_BP3D_4.0_obj_99/FJ1819.obj",
+      "bytes": 146608,
+      "sha256": "3fde0d489978522bb0c916db61287c42aedfb4c6660b6f8016a148ffccef89f4",
+      "crc32": "c923143b",
+      "compressedBytesUpstream": 44440,
+      "anatomyId": "bp3d:FMA50875",
+      "family": "FMA50875",
+      "moduleId": "nervous:cns",
+      "sourceType": "nervio",
+      "triangles": 2378,
+      "faces": 2378,
+      "sourcePositionCount": 1242,
+      "vertices": 1242,
+      "boundsMetres": [
+        [
+          -0.0333074,
+          1.5202200000000001,
+          0.102175
+        ],
+        [
+          -0.00128971,
+          1.54231,
+          0.15174600000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -33.3074,
+          -151.746,
+          1520.22
+        ],
+        [
+          -1.28971,
+          -102.175,
+          1542.31
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1822",
+      "sourceId": "FMA67943",
+      "side": "midline",
+      "representationId": "BP6545",
+      "path": "isa_BP3D_4.0_obj_99/FJ1822.obj",
+      "bytes": 727798,
+      "sha256": "474dffce10e8506b5f8a7aac5d6ccfc7ef6251490b36b5f04a7fa2676b7fb708",
+      "crc32": "68a35679",
+      "compressedBytesUpstream": 211230,
+      "anatomyId": "bp3d:FMA67943",
+      "family": "FMA67943",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 10346,
+      "faces": 10346,
+      "sourcePositionCount": 6179,
+      "vertices": 6179,
+      "boundsMetres": [
+        [
+          -0.0217505,
+          1.50207,
+          0.0625815
+        ],
+        [
+          -0.000576263,
+          1.53068,
+          0.0969822
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -21.7505,
+          -96.9822,
+          1502.07
+        ],
+        [
+          -0.576263,
+          -62.5815,
+          1530.68
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1826",
+      "sourceId": "FMA73422",
+      "side": "right",
+      "representationId": "BP10470",
+      "path": "isa_BP3D_4.0_obj_99/FJ1826.obj",
+      "bytes": 10171,
+      "sha256": "6698c53727491bdb63e7a474b201a8c6b8b504de7004567d76028ddec94a67c5",
+      "crc32": "88175d5d",
+      "compressedBytesUpstream": 3827,
+      "anatomyId": "bp3d:FMA73422",
+      "family": "FMA62403",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 176,
+      "faces": 176,
+      "sourcePositionCount": 91,
+      "vertices": 91,
+      "boundsMetres": [
+        [
+          -0.00851769,
+          1.53734,
+          0.068259
+        ],
+        [
+          -0.000815126,
+          1.54331,
+          0.0742794
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -8.51769,
+          -74.2794,
+          1537.34
+        ],
+        [
+          -0.815126,
+          -68.259,
+          1543.31
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1828",
+      "sourceId": "FMA62327",
+      "side": "midline",
+      "representationId": "BP6548",
+      "path": "isa_BP3D_4.0_obj_99/FJ1828.obj",
+      "bytes": 65789,
+      "sha256": "f3053705d7e2ef8a499890e13332163870f063f3908f4a148f070cc7b9c90051",
+      "crc32": "c3a0a967",
+      "compressedBytesUpstream": 19974,
+      "anatomyId": "bp3d:FMA62327",
+      "family": "FMA62327",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 802,
+      "faces": 802,
+      "sourcePositionCount": 715,
+      "vertices": 715,
+      "boundsMetres": [
+        [
+          -0.00924961,
+          1.53212,
+          0.0941626
+        ],
+        [
+          -0.0006448819999999999,
+          1.54311,
+          0.10374599999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -9.24961,
+          -103.746,
+          1532.12
+        ],
+        [
+          -0.644882,
+          -94.1626,
+          1543.11
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1830",
+      "sourceId": "FMA67944",
+      "side": "midline",
+      "representationId": "BP5696",
+      "path": "isa_BP3D_4.0_obj_99/FJ1830.obj",
+      "bytes": 1598659,
+      "sha256": "585176d67d072ead00bab6b4d0ca42a151ace76bed1c20c1aeed22b8b4c57ac1",
+      "crc32": "4be9e58b",
+      "compressedBytesUpstream": 454970,
+      "anatomyId": "bp3d:FMA67944",
+      "family": "FMA67944",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 23882,
+      "faces": 23882,
+      "sourcePositionCount": 12226,
+      "vertices": 12226,
+      "boundsMetres": [
+        [
+          -0.0539299,
+          1.4872400000000001,
+          0.0121786
+        ],
+        [
+          -0.000650293,
+          1.5405,
+          0.0684661
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -53.9299,
+          -68.4661,
+          1487.24
+        ],
+        [
+          -0.650293,
+          -12.1786,
+          1540.5
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1831",
+      "sourceId": "FMA62004",
+      "side": "midline",
+      "representationId": "BP5693",
+      "path": "isa_BP3D_4.0_obj_99/FJ1831.obj",
+      "bytes": 401304,
+      "sha256": "7c19ec386aadaafdae3dab8aa99c08d5db47fa063f689e99ee7e9cdf0bdbeda9",
+      "crc32": "4aef6f8a",
+      "compressedBytesUpstream": 118201,
+      "anatomyId": "bp3d:FMA62004",
+      "family": "FMA62004",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 6060,
+      "faces": 6060,
+      "sourcePositionCount": 3281,
+      "vertices": 3281,
+      "boundsMetres": [
+        [
+          -0.0140204,
+          1.4645000000000001,
+          0.0512391
+        ],
+        [
+          -0.000632494,
+          1.50578,
+          0.0844381
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -14.0204,
+          -84.4381,
+          1464.5
+        ],
+        [
+          -0.632494,
+          -51.2391,
+          1505.78
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1833",
+      "sourceId": "FMA72654",
+      "side": "left",
+      "representationId": "BP10453",
+      "path": "isa_BP3D_4.0_obj_99/FJ1833.obj",
+      "bytes": 432276,
+      "sha256": "b1705a60646438f5c1bd8d215c738f90e7aed9c9360a8ab94993a1e6b5649851",
+      "crc32": "742006c7",
+      "compressedBytesUpstream": 132707,
+      "anatomyId": "bp3d:FMA72654",
+      "family": "FMA61857",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 6452,
+      "faces": 6452,
+      "sourcePositionCount": 3625,
+      "vertices": 3625,
+      "boundsMetres": [
+        [
+          0.000190459,
+          1.5521800000000001,
+          0.0536994
+        ],
+        [
+          0.0317068,
+          1.63046,
+          0.169677
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          0.190459,
+          -169.677,
+          1552.18
+        ],
+        [
+          31.7068,
+          -53.6994,
+          1630.46
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1834",
+      "sourceId": "FMA72653",
+      "side": "right",
+      "representationId": "BP10457",
+      "path": "isa_BP3D_4.0_obj_99/FJ1834.obj",
+      "bytes": 437650,
+      "sha256": "505aff0f5fba6160aa273af517d8ef9f9e4d7bd6ee904e2739ccf41f8d7af441",
+      "crc32": "bbef162b",
+      "compressedBytesUpstream": 133183,
+      "anatomyId": "bp3d:FMA72653",
+      "family": "FMA61857",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 6450,
+      "faces": 6450,
+      "sourcePositionCount": 3671,
+      "vertices": 3671,
+      "boundsMetres": [
+        [
+          -0.0331443,
+          1.5520100000000001,
+          0.053709400000000004
+        ],
+        [
+          -0.00155451,
+          1.6304200000000002,
+          0.16966900000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -33.1443,
+          -169.669,
+          1552.01
+        ],
+        [
+          -1.55451,
+          -53.7094,
+          1630.42
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1835",
+      "sourceId": "FMA72672",
+      "side": "left",
+      "representationId": "BP10458",
+      "path": "isa_BP3D_4.0_obj_99/FJ1835.obj",
+      "bytes": 366912,
+      "sha256": "6d1cc1963191120c07eb557c728b4cd00ccf63467b3858a408a6b5ba4564719c",
+      "crc32": "56162d99",
+      "compressedBytesUpstream": 114359,
+      "anatomyId": "bp3d:FMA72672",
+      "family": "FMA61899",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 5364,
+      "faces": 5364,
+      "sourcePositionCount": 3181,
+      "vertices": 3181,
+      "boundsMetres": [
+        [
+          0.00018333,
+          1.54961,
+          -0.00630488
+        ],
+        [
+          0.036074800000000004,
+          1.6171099999999998,
+          0.0502444
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          0.18333,
+          -50.2444,
+          1549.61
+        ],
+        [
+          36.0748,
+          6.30488,
+          1617.11
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1836",
+      "sourceId": "FMA72671",
+      "side": "right",
+      "representationId": "BP10460",
+      "path": "isa_BP3D_4.0_obj_99/FJ1836.obj",
+      "bytes": 383555,
+      "sha256": "e3291cc04dcdc3743d8fe67951d2b1589294062d116873515194e0c6c979c770",
+      "crc32": "da261187",
+      "compressedBytesUpstream": 118042,
+      "anatomyId": "bp3d:FMA72671",
+      "family": "FMA61899",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 5640,
+      "faces": 5640,
+      "sourcePositionCount": 3241,
+      "vertices": 3241,
+      "boundsMetres": [
+        [
+          -0.0375771,
+          1.54961,
+          -0.0064577
+        ],
+        [
+          -0.0014454700000000001,
+          1.6170799999999999,
+          0.050232900000000004
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -37.5771,
+          -50.2329,
+          1549.61
+        ],
+        [
+          -1.44547,
+          6.4577,
+          1617.08
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1841",
+      "sourceId": "FMA72668",
+      "side": "left",
+      "representationId": "BP10438",
+      "path": "isa_BP3D_4.0_obj_99/FJ1841.obj",
+      "bytes": 149885,
+      "sha256": "895a1e9e5eaed7443d9fe9544fefede9db219aaf38d30a4674cde778e1bdfb8e",
+      "crc32": "a77affd5",
+      "compressedBytesUpstream": 47678,
+      "anatomyId": "bp3d:FMA72668",
+      "family": "FMA61897",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 2344,
+      "faces": 2344,
+      "sourcePositionCount": 1323,
+      "vertices": 1323,
+      "boundsMetres": [
+        [
+          0.0231495,
+          1.56124,
+          0.035459899999999996
+        ],
+        [
+          0.0687863,
+          1.60282,
+          0.0731168
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          23.1495,
+          -73.1168,
+          1561.24
+        ],
+        [
+          68.7863,
+          -35.4599,
+          1602.82
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1842",
+      "sourceId": "FMA72667",
+      "side": "right",
+      "representationId": "BP10469",
+      "path": "isa_BP3D_4.0_obj_99/FJ1842.obj",
+      "bytes": 152420,
+      "sha256": "374934ec8c016aec1aae2cad47d80b1d2668354cc890b0227a0b102c9b3b4469",
+      "crc32": "c096df8c",
+      "compressedBytesUpstream": 48316,
+      "anatomyId": "bp3d:FMA72667",
+      "family": "FMA61897",
+      "moduleId": "nervous:cns",
+      "sourceType": "componente encefálico",
+      "triangles": 2314,
+      "faces": 2314,
+      "sourcePositionCount": 1368,
+      "vertices": 1368,
+      "boundsMetres": [
+        [
+          -0.06970520000000001,
+          1.56137,
+          0.0354275
+        ],
+        [
+          -0.0243919,
+          1.6024500000000002,
+          0.07312590000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -69.7052,
+          -73.1259,
+          1561.37
+        ],
+        [
+          -24.3919,
+          -35.4275,
+          1602.45
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    }
+  ]
+}

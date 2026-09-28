@@ -63,17 +63,18 @@ const MUSCLE_COLORS: Record<string,string> = {
   trapezius:'#b47c70',rhomboidmajor:'#9d635d',rhomboidminor:'#a47167',teresmajor:'#ae7d71',
   iliocostalislumborum:'#a77569',iliocostalisthoracis:'#b17e70',longissimusthoracis:'#996b62',spinalisthoracis:'#aa7b6f',
 };
-const materialKey = (system:SystemId,family?:string) => system==='muscular'?system+':'+(family||'muscle'):system;
+const CARDIO_COLORS = {arterial:'#b5635e',venous:'#648fab',heart:'#a96d78'};
+const materialKey = (system:SystemId,family?:string,vascularClass?:string) => system==='cardiovascular'?system+':'+(vascularClass||'heart'):system==='muscular'?system+':'+(family||'muscle'):system;
 function useMaterials(catalog: AnatomyCatalog) {
   const materials = useMemo(() => new Map<string, MaterialVariants>(Array.from(catalog.nodes.filter(node=>node.systemId&&node.meshNames.length).map(node => {
-    const system=node.systemId!, key=materialKey(system,node.family);
-    const color=system==='muscular'?(MUSCLE_COLORS[(node.family||'').replace(/[^a-z]/g,'')]||SYSTEM_COLORS.muscular):SYSTEM_COLORS[system];
+    const system=node.systemId!, key=materialKey(system,node.family,node.vascularClass);
+    const color=system==='cardiovascular'?CARDIO_COLORS[node.vascularClass||'heart']:system==='muscular'?(MUSCLE_COLORS[(node.family||'').replace(/[^a-z]/g,'')]||SYSTEM_COLORS.muscular):SYSTEM_COLORS[system];
     return [key,{system,color}] as const;
   }).reduce((unique,[key,value])=>unique.set(key,value),new Map<string,{system:SystemId;color:string}>()).entries()).map(([key,{system,color}])=>{
     const options = { color, roughness: .78, metalness: .015, side: THREE.DoubleSide };
     return [key, {
       systemId:system,
-      base: new THREE.MeshStandardMaterial({ ...options, ...(system==='nervous'?{emissive:color,emissiveIntensity:.045}:{}) }),
+      base: new THREE.MeshStandardMaterial({ ...options, ...(['nervous','cardiovascular'].includes(system)?{emissive:color,emissiveIntensity:.045}:{}) }),
       selected: new THREE.MeshStandardMaterial({ ...options, color: '#36bcb1', emissive: '#36bcb1', emissiveIntensity: .16 }),
       hover: new THREE.MeshStandardMaterial({ ...options, emissive: color, emissiveIntensity: .22 }),
     }];
@@ -105,7 +106,7 @@ function Models(props: ModelProps) {
     parts.forEach(part => {
       part.mesh.visible = ![...part.ancestors].some(id => hiddenIds.has(id)) && (!isolated || part.ancestors.has(isolated)) && (!contextIds.length || contextIds.some(id=>part.ancestors.has(id)));
       part.mesh.raycast=part.mesh.visible?THREE.Mesh.prototype.raycast:()=>{};
-      const variants = materials.get(materialKey(part.node.systemId!,part.node.family))!;
+      const variants = materials.get(materialKey(part.node.systemId!,part.node.family,part.node.vascularClass))!;
       part.mesh.material = selected && part.ancestors.has(selected) ? variants.selected : part.node.id === hovered ? variants.hover : variants.base;
       part.mesh.renderOrder = (opacityBySystem[part.node.systemId!] ?? 1) < .999 ? 1 : 0;
     });
@@ -290,7 +291,7 @@ function SceneInspection({resources}:{resources:AtlasResource[]}) {
         const material=part.mesh.material as THREE.MeshStandardMaterial;
         const screenCenter = part.mesh.geometry.boundingBox?.getCenter(new THREE.Vector3()).applyMatrix4(part.mesh.matrixWorld).project(camera).toArray();
         const screenSamples:number[][]=[];
-        if(part.node.id.startsWith('zanatomy:')){
+        if(part.node.id.startsWith('zanatomy:')||part.node.systemId==='cardiovascular'){
           const position=part.mesh.geometry.getAttribute('position'),indices=part.mesh.geometry.getIndex();
           if(indices)for(let sample=0;sample<12;sample++){
             const first=Math.floor(sample*(indices.count/3-1)/11)*3,point=new THREE.Vector3();

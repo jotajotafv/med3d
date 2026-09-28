@@ -1,0 +1,18 @@
+BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.
+
+Publisher license declaration: https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html
+License: https://creativecommons.org/licenses/by/4.0/
+Source: BodyParts3D 4.0, OBJ99, DBCLS (2013-06-19 archive).
+
+MED3D modifications: curated cardiovascular subset; common transform
+(x,y,z) -> (x,z,-y)/1000; OBJ to glTF, Float32 positions, Meshopt compression,
+normal quantization, curated names and hierarchy. No additional decimation,
+per-object fitting, mirroring, diameter change or invented vascular connections.
+
+Original OBJ headers retain the historical CC BY-SA 2.1 Japan notice unchanged.
+The current publisher declaration above grants CC BY 4.0. Per-file identities,
+original-byte hashes and modifications are retained in the source manifest,
+catalog and research/anatomy/cardiovascular-originals.zip.
+
+Partial educational coverage; no clinical validation. Existing HRA heart and
+Z-Anatomy nervous assets retain their own source and license records.

@@ -1,0 +1,6901 @@
+{
+  "schemaVersion": 1,
+  "id": "med3d-cardiovascular",
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "nodes": [
+    {
+      "id": "cardiovascular",
+      "name": "Sistema cardiovascular",
+      "anatomicalName": "Sistema cardiovascular",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardiovascular",
+      "children": [
+        "cardio:arterial",
+        "cardio:venous",
+        "cardio:heart"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "cardio:head-neck",
+        "cardio:heart",
+        "cardio:lower-left",
+        "cardio:lower-right",
+        "cardio:trunk",
+        "cardio:upper-left",
+        "cardio:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Systema cardiovasculare",
+      "bounds": [
+        [
+          -0.27951299999999996,
+          -0.0456661,
+          -0.0100683
+        ],
+        [
+          0.279507,
+          1.53772,
+          0.20079400000000003
+        ]
+      ]
+    },
+    {
+      "id": "cardio:arterial",
+      "name": "Sistema arterial",
+      "anatomicalName": "Sistema arterial",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial",
+      "children": [
+        "cardio:arterial:head-neck",
+        "cardio:arterial:trunk",
+        "cardio:arterial:upper-right",
+        "cardio:arterial:upper-left",
+        "cardio:arterial:lower-right",
+        "cardio:arterial:lower-left"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "cardio:head-neck",
+        "cardio:heart",
+        "cardio:lower-left",
+        "cardio:lower-right",
+        "cardio:trunk",
+        "cardio:upper-left",
+        "cardio:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Arteriae",
+      "vascularClass": "arterial",
+      "parentId": "cardiovascular",
+      "bounds": [
+        [
+          -0.27951299999999996,
+          -0.0413402,
+          0.011719799999999999
+        ],
+        [
+          0.279507,
+          1.53772,
+          0.20079400000000003
+        ]
+      ]
+    },
+    {
+      "id": "cardio:venous",
+      "name": "Sistema venoso",
+      "anatomicalName": "Sistema venoso",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous",
+      "children": [
+        "cardio:venous:head-neck",
+        "cardio:venous:trunk",
+        "cardio:venous:upper-right",
+        "cardio:venous:upper-left",
+        "cardio:venous:lower-right",
+        "cardio:venous:lower-left"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "cardio:head-neck",
+        "cardio:heart",
+        "cardio:lower-left",
+        "cardio:lower-right",
+        "cardio:trunk",
+        "cardio:upper-left",
+        "cardio:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Venae",
+      "vascularClass": "venous",
+      "parentId": "cardiovascular",
+      "bounds": [
+        [
+          -0.279041,
+          -0.0456661,
+          -0.0100683
+        ],
+        [
+          0.27903500000000003,
+          1.38174,
+          0.189453
+        ]
+      ]
+    },
+    {
+      "id": "cardio:heart",
+      "name": "Corazón corporal",
+      "anatomicalName": "Corazón corporal",
+      "aliases": [
+        "corazón",
+        "heart",
+        "corazón corporal",
+        "FMA7088"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [
+        "cardio:tricuspid",
+        "cardio:mitral",
+        "cardio:pulmonary-valve",
+        "cardio:aortic-valve",
+        "bp3d:FMA9457",
+        "bp3d:FMA9531",
+        "bp3d:FMA13884",
+        "bp3d:FMA11359",
+        "bp3d:FMA9465",
+        "bp3d:FMA9291",
+        "bp3d:FMA9466"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA7088",
+      "latin": "Cor",
+      "vascularClass": "heart",
+      "cardioType": "corazón",
+      "family": "heart",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardiovascular",
+      "bounds": [
+        [
+          -0.0363037,
+          1.17419,
+          0.07017040000000001
+        ],
+        [
+          0.0791396,
+          1.2795,
+          0.17660499999999998
+        ]
+      ]
+    },
+    {
+      "id": "cardio:arterial:head-neck",
+      "name": "Arterias de cabeza y cuello",
+      "anatomicalName": "Arterias de cabeza y cuello",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:head-neck",
+      "children": [
+        "bp3d:FMA3941",
+        "bp3d:FMA4058",
+        "bp3d:FMA3949",
+        "bp3d:FMA4062",
+        "bp3d:FMA3958",
+        "bp3d:FMA4066",
+        "bp3d:FMA50542"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "cardio:head-neck"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "vascularClass": "arterial",
+      "parentId": "cardio:arterial",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.037465200000000004,
+          1.30739,
+          0.0585749
+        ],
+        [
+          0.037465200000000004,
+          1.53772,
+          0.117548
+        ]
+      ]
+    },
+    {
+      "id": "cardio:arterial:trunk",
+      "name": "Arterias de tórax, abdomen y pelvis",
+      "anatomicalName": "Arterias de tórax, abdomen y pelvis",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [
+        "cardio:aorta",
+        "bp3d:FMA8612",
+        "bp3d:FMA50872",
+        "bp3d:FMA50873",
+        "bp3d:FMA3932",
+        "bp3d:FMA3969",
+        "bp3d:FMA4068",
+        "bp3d:FMA14812",
+        "bp3d:FMA14768",
+        "bp3d:FMA14771",
+        "bp3d:FMA14772",
+        "bp3d:FMA14773",
+        "bp3d:FMA14749",
+        "bp3d:FMA14750",
+        "bp3d:FMA14752",
+        "bp3d:FMA14753",
+        "bp3d:FMA14765",
+        "bp3d:FMA14766",
+        "bp3d:FMA18809",
+        "bp3d:FMA18810",
+        "bp3d:FMA3802",
+        "bp3d:FMA3855",
+        "bp3d:FMA74912",
+        "bp3d:FMA3895"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "cardio:heart",
+        "cardio:trunk"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "vascularClass": "arterial",
+      "parentId": "cardio:arterial",
+      "explosionRegionId": "cardio-trunk",
+      "bounds": [
+        [
+          -0.0609462,
+          0.845338,
+          0.011719799999999999
+        ],
+        [
+          0.100456,
+          1.35223,
+          0.20079400000000003
+        ]
+      ]
+    },
+    {
+      "id": "cardio:arterial:upper-right",
+      "name": "Arterias de miembro superior derecho",
+      "anatomicalName": "Arterias de miembro superior derecho",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-right",
+      "children": [
+        "bp3d:FMA3953",
+        "bp3d:FMA22655",
+        "bp3d:FMA22691",
+        "bp3d:FMA22696",
+        "bp3d:FMA22733",
+        "bp3d:FMA22797"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "vascularClass": "arterial",
+      "parentId": "cardio:arterial",
+      "explosionRegionId": "upper-limb-right",
+      "bounds": [
+        [
+          -0.27951299999999996,
+          0.791182,
+          0.0521152
+        ],
+        [
+          -0.00974729,
+          1.35303,
+          0.13107400000000002
+        ]
+      ]
+    },
+    {
+      "id": "cardio:arterial:upper-left",
+      "name": "Arterias de miembro superior izquierdo",
+      "anatomicalName": "Arterias de miembro superior izquierdo",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-left",
+      "children": [
+        "bp3d:FMA4694",
+        "bp3d:FMA22656",
+        "bp3d:FMA22692",
+        "bp3d:FMA22697",
+        "bp3d:FMA22734",
+        "bp3d:FMA22798"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "vascularClass": "arterial",
+      "parentId": "cardio:arterial",
+      "explosionRegionId": "upper-limb-left",
+      "bounds": [
+        [
+          0.017685700000000002,
+          0.7911860000000001,
+          0.052107799999999996
+        ],
+        [
+          0.279507,
+          1.35646,
+          0.13107300000000002
+        ]
+      ]
+    },
+    {
+      "id": "cardio:arterial:lower-right",
+      "name": "Arterias de miembro inferior derecho",
+      "anatomicalName": "Arterias de miembro inferior derecho",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-right",
+      "children": [
+        "bp3d:FMA18806",
+        "bp3d:FMA70249",
+        "bp3d:FMA77380",
+        "bp3d:FMA43896",
+        "bp3d:FMA43898"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "vascularClass": "arterial",
+      "parentId": "cardio:arterial",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.10555500000000001,
+          -0.0413313,
+          0.050347499999999996
+        ],
+        [
+          -0.0274583,
+          0.91354,
+          0.144498
+        ]
+      ]
+    },
+    {
+      "id": "cardio:arterial:lower-left",
+      "name": "Arterias de miembro inferior izquierdo",
+      "anatomicalName": "Arterias de miembro inferior izquierdo",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-left",
+      "children": [
+        "bp3d:FMA18807",
+        "bp3d:FMA70250",
+        "bp3d:FMA77381",
+        "bp3d:FMA43897",
+        "bp3d:FMA43899"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "vascularClass": "arterial",
+      "parentId": "cardio:arterial",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.0255364,
+          -0.0413402,
+          0.0503494
+        ],
+        [
+          0.105556,
+          0.912336,
+          0.152944
+        ]
+      ]
+    },
+    {
+      "id": "cardio:venous:head-neck",
+      "name": "Venas de cabeza y cuello",
+      "anatomicalName": "Venas de cabeza y cuello",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:head-neck",
+      "children": [
+        "bp3d:FMA4754",
+        "bp3d:FMA4762"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "cardio:head-neck"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "vascularClass": "venous",
+      "parentId": "cardio:venous",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.03114,
+          1.3374100000000002,
+          0.111701
+        ],
+        [
+          0.0309054,
+          1.38174,
+          0.122114
+        ]
+      ]
+    },
+    {
+      "id": "cardio:venous:trunk",
+      "name": "Venas de tórax, abdomen y pelvis",
+      "anatomicalName": "Venas de tórax, abdomen y pelvis",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [
+        "bp3d:FMA4720",
+        "bp3d:FMA10951",
+        "bp3d:FMA4751",
+        "bp3d:FMA4761",
+        "bp3d:FMA4838",
+        "bp3d:FMA4944",
+        "bp3d:FMA5011",
+        "bp3d:FMA14338",
+        "bp3d:FMA14340",
+        "bp3d:FMA14339",
+        "bp3d:FMA50735",
+        "bp3d:FMA14331",
+        "bp3d:FMA14332",
+        "bp3d:FMA15391",
+        "bp3d:FMA14335",
+        "bp3d:FMA14336",
+        "bp3d:FMA21387",
+        "bp3d:FMA21388",
+        "bp3d:FMA18887",
+        "bp3d:FMA18888",
+        "bp3d:FMA49914",
+        "bp3d:FMA49916",
+        "bp3d:FMA49911",
+        "bp3d:FMA49913",
+        "bp3d:FMA4706",
+        "bp3d:FMA4707"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "cardio:heart",
+        "cardio:trunk"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "vascularClass": "venous",
+      "parentId": "cardio:venous",
+      "explosionRegionId": "cardio-trunk",
+      "bounds": [
+        [
+          -0.108279,
+          0.7888200000000001,
+          -0.0100683
+        ],
+        [
+          0.0998501,
+          1.3498599999999998,
+          0.189453
+        ]
+      ]
+    },
+    {
+      "id": "cardio:venous:upper-right",
+      "name": "Venas de miembro superior derecho",
+      "anatomicalName": "Venas de miembro superior derecho",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-right",
+      "children": [
+        "bp3d:FMA4755",
+        "bp3d:FMA13330",
+        "bp3d:FMA22935",
+        "bp3d:FMA13325",
+        "bp3d:FMA22909",
+        "bp3d:FMA22948",
+        "bp3d:FMA22951",
+        "bp3d:FMA22968"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "vascularClass": "venous",
+      "parentId": "cardio:venous",
+      "explosionRegionId": "upper-limb-right",
+      "bounds": [
+        [
+          -0.279041,
+          0.7744650000000001,
+          0.0628285
+        ],
+        [
+          -0.022342300000000002,
+          1.35155,
+          0.13453299999999999
+        ]
+      ]
+    },
+    {
+      "id": "cardio:venous:upper-left",
+      "name": "Venas de miembro superior izquierdo",
+      "anatomicalName": "Venas de miembro superior izquierdo",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-left",
+      "children": [
+        "bp3d:FMA4763",
+        "bp3d:FMA13331",
+        "bp3d:FMA22936",
+        "bp3d:FMA13326",
+        "bp3d:FMA22910",
+        "bp3d:FMA22949",
+        "bp3d:FMA22952",
+        "bp3d:FMA22969"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "vascularClass": "venous",
+      "parentId": "cardio:venous",
+      "explosionRegionId": "upper-limb-left",
+      "bounds": [
+        [
+          0.0193808,
+          0.7744690000000001,
+          0.0628312
+        ],
+        [
+          0.27903500000000003,
+          1.35347,
+          0.134534
+        ]
+      ]
+    },
+    {
+      "id": "cardio:venous:lower-right",
+      "name": "Venas de miembro inferior derecho",
+      "anatomicalName": "Venas de miembro inferior derecho",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-right",
+      "children": [
+        "bp3d:FMA18885",
+        "bp3d:FMA21188",
+        "bp3d:FMA51042",
+        "bp3d:FMA44328",
+        "bp3d:FMA21379",
+        "bp3d:FMA44334",
+        "bp3d:FMA44336",
+        "bp3d:FMA44338"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "vascularClass": "venous",
+      "parentId": "cardio:venous",
+      "explosionRegionId": "lower-limb-right",
+      "bounds": [
+        [
+          -0.112434,
+          -0.0456541,
+          0.011070100000000001
+        ],
+        [
+          -0.0134213,
+          0.905549,
+          0.15473699999999999
+        ]
+      ]
+    },
+    {
+      "id": "cardio:venous:lower-left",
+      "name": "Venas de miembro inferior izquierdo",
+      "anatomicalName": "Venas de miembro inferior izquierdo",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-left",
+      "children": [
+        "bp3d:FMA18886",
+        "bp3d:FMA21189",
+        "bp3d:FMA51043",
+        "bp3d:FMA44329",
+        "bp3d:FMA21380",
+        "bp3d:FMA44335",
+        "bp3d:FMA44337",
+        "bp3d:FMA44339"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "vascularClass": "venous",
+      "parentId": "cardio:venous",
+      "explosionRegionId": "lower-limb-left",
+      "bounds": [
+        [
+          0.00774975,
+          -0.0456661,
+          0.011066000000000001
+        ],
+        [
+          0.11243800000000001,
+          0.913867,
+          0.154814
+        ]
+      ]
+    },
+    {
+      "id": "cardio:aorta",
+      "name": "Aorta · segmentos disponibles",
+      "anatomicalName": "Aorta · segmentos disponibles",
+      "aliases": [
+        "aorta",
+        "aortic arch",
+        "aorta descendente"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [
+        "bp3d:FMA3736",
+        "bp3d:FMA3768",
+        "bp3d:FMA87217",
+        "bp3d:FMA3789"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Aorta",
+      "family": "aorta",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          -0.006830460000000001,
+          0.9486910000000001,
+          0.049844900000000004
+        ],
+        [
+          0.0348378,
+          1.3170899999999999,
+          0.137439
+        ]
+      ]
+    },
+    {
+      "id": "cardio:tricuspid",
+      "name": "Válvula tricúspide",
+      "anatomicalName": "Válvula tricúspide",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [
+        "bp3d:FMA7238",
+        "bp3d:FMA7239",
+        "bp3d:FMA7240"
+      ],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Valva atrioventricularis dextra",
+      "vascularClass": "heart",
+      "cardioType": "válvula",
+      "family": "tricuspid",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:heart",
+      "bounds": [
+        [
+          -0.0210772,
+          1.1886400000000001,
+          0.113573
+        ],
+        [
+          0.0295014,
+          1.23648,
+          0.15631299999999998
+        ]
+      ]
+    },
+    {
+      "id": "cardio:mitral",
+      "name": "Válvula mitral",
+      "anatomicalName": "Válvula mitral",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [
+        "bp3d:FMA7242",
+        "bp3d:FMA7243"
+      ],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Valva atrioventricularis sinistra",
+      "vascularClass": "heart",
+      "cardioType": "válvula",
+      "family": "mitral",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:heart",
+      "bounds": [
+        [
+          0.0117217,
+          1.1996,
+          0.0854446
+        ],
+        [
+          0.0628543,
+          1.2359200000000001,
+          0.141625
+        ]
+      ]
+    },
+    {
+      "id": "cardio:pulmonary-valve",
+      "name": "Válvula pulmonar",
+      "anatomicalName": "Válvula pulmonar",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [
+        "bp3d:FMA7247",
+        "bp3d:FMA7249",
+        "bp3d:FMA7250"
+      ],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Valva trunci pulmonalis",
+      "vascularClass": "heart",
+      "cardioType": "válvula",
+      "family": "pulmonary-valve",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:heart",
+      "bounds": [
+        [
+          0.00876793,
+          1.2449000000000001,
+          0.127603
+        ],
+        [
+          0.0409215,
+          1.2652700000000001,
+          0.159581
+        ]
+      ]
+    },
+    {
+      "id": "cardio:aortic-valve",
+      "name": "Válvula aórtica",
+      "anatomicalName": "Válvula aórtica",
+      "aliases": [],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [
+        "bp3d:FMA7252",
+        "bp3d:FMA7253",
+        "bp3d:FMA7254"
+      ],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Valva aortae",
+      "vascularClass": "heart",
+      "cardioType": "válvula",
+      "family": "aortic-valve",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:heart",
+      "bounds": [
+        [
+          0.00566774,
+          1.2334100000000001,
+          0.104826
+        ],
+        [
+          0.0323882,
+          1.25508,
+          0.132441
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3736",
+      "name": "Aorta ascendente",
+      "anatomicalName": "Aorta ascendente",
+      "aliases": [
+        "bp3d:FMA3736",
+        "ascending aorta",
+        "FMA3736",
+        "ascending-aorta",
+        "FJ3413"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA3736_FJ3413"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA3736",
+      "latin": "Aorta ascendens",
+      "side": "midline",
+      "family": "ascending-aorta",
+      "vascularClass": "arterial",
+      "cardioType": "segmento arterial",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:aorta",
+      "bounds": [
+        [
+          -0.006822180000000001,
+          1.23406,
+          0.106662
+        ],
+        [
+          0.028943000000000003,
+          1.2819,
+          0.137439
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3768",
+      "name": "Arco aórtico",
+      "anatomicalName": "Arco aórtico",
+      "aliases": [
+        "bp3d:FMA3768",
+        "arch of aorta",
+        "FMA3768",
+        "arch-of-aorta",
+        "FJ3411"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA3768_FJ3411"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA3768",
+      "latin": "Arcus aortae",
+      "side": "midline",
+      "family": "arch-of-aorta",
+      "vascularClass": "arterial",
+      "cardioType": "segmento arterial",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:aorta",
+      "bounds": [
+        [
+          -0.006830460000000001,
+          1.2819,
+          0.049844900000000004
+        ],
+        [
+          0.0348378,
+          1.3170899999999999,
+          0.137163
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA87217",
+      "name": "Aorta torácica descendente",
+      "anatomicalName": "Aorta torácica descendente",
+      "aliases": [
+        "bp3d:FMA87217",
+        "descending thoracic aorta",
+        "FMA87217",
+        "descending-thoracic-aorta",
+        "FJ1931"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA87217_FJ1931"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA87217",
+      "latin": "Aorta thoracica descendens",
+      "side": "midline",
+      "family": "descending-thoracic-aorta",
+      "vascularClass": "arterial",
+      "cardioType": "segmento arterial",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:aorta",
+      "bounds": [
+        [
+          0.00159329,
+          1.12886,
+          0.0541174
+        ],
+        [
+          0.0299512,
+          1.2997400000000001,
+          0.0997861
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3789",
+      "name": "Aorta abdominal",
+      "anatomicalName": "Aorta abdominal",
+      "aliases": [
+        "bp3d:FMA3789",
+        "abdominal aorta",
+        "FMA3789",
+        "abdominal-aorta",
+        "FJ1932"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA3789_FJ1932"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA3789",
+      "latin": "Aorta abdominalis",
+      "side": "midline",
+      "family": "abdominal-aorta",
+      "vascularClass": "arterial",
+      "cardioType": "segmento arterial",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:aorta",
+      "bounds": [
+        [
+          -0.000902874,
+          0.9486910000000001,
+          0.08247610000000001
+        ],
+        [
+          0.0200548,
+          1.1359100000000002,
+          0.132776
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA8612",
+      "name": "Tronco pulmonar",
+      "anatomicalName": "Tronco pulmonar",
+      "aliases": [
+        "bp3d:FMA8612",
+        "pulmonary trunk",
+        "FMA8612",
+        "pulmonary-trunk",
+        "FJ2966"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA8612_FJ2966"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA8612",
+      "latin": "Truncus pulmonalis",
+      "side": "midline",
+      "family": "pulmonary-trunk",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          0.0112747,
+          1.2565,
+          0.11651600000000001
+        ],
+        [
+          0.042075,
+          1.29361,
+          0.158864
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA50872",
+      "name": "Arteria pulmonar derecha",
+      "anatomicalName": "Arteria pulmonar derecha",
+      "aliases": [
+        "bp3d:FMA50872",
+        "right pulmonary artery",
+        "FMA50872",
+        "pulmonary-artery",
+        "FJ3019"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA50872_FJ3019"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA50872",
+      "latin": "Arteria pulmonalis",
+      "side": "right",
+      "family": "pulmonary-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          -0.058945500000000005,
+          1.2244000000000002,
+          0.0629648
+        ],
+        [
+          0.036938000000000006,
+          1.29401,
+          0.13119999999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA50873",
+      "name": "Arteria pulmonar izquierda",
+      "anatomicalName": "Arteria pulmonar izquierda",
+      "aliases": [
+        "bp3d:FMA50873",
+        "left pulmonary artery",
+        "FMA50873",
+        "pulmonary-artery",
+        "FJ2924"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA50873_FJ2924"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA50873",
+      "latin": "Arteria pulmonalis",
+      "side": "left",
+      "family": "pulmonary-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          0.0147515,
+          1.22621,
+          0.0580499
+        ],
+        [
+          0.079084,
+          1.29405,
+          0.136595
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3932",
+      "name": "Tronco braquiocefálico",
+      "anatomicalName": "Tronco braquiocefálico",
+      "aliases": [
+        "bp3d:FMA3932",
+        "brachiocephalic artery",
+        "FMA3932",
+        "brachiocephalic-artery",
+        "FJ3417"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA3932_FJ3417"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA3932",
+      "latin": "Truncus brachiocephalicus",
+      "side": "midline",
+      "family": "brachiocephalic-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          -0.019282800000000003,
+          1.30432,
+          0.101973
+        ],
+        [
+          0.0182457,
+          1.34228,
+          0.119657
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3941",
+      "name": "Arteria carótida común derecha",
+      "anatomicalName": "Arteria carótida común derecha",
+      "aliases": [
+        "bp3d:FMA3941",
+        "right common carotid artery",
+        "FMA3941",
+        "common-carotid-artery",
+        "FJ3564"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:head-neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA3941_FJ3564"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA3941",
+      "latin": "Arteria carotis communis",
+      "side": "right",
+      "family": "common-carotid-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "head-neck",
+      "parentId": "cardio:arterial:head-neck",
+      "bounds": [
+        [
+          -0.0212579,
+          1.32942,
+          0.105383
+        ],
+        [
+          -0.008614440000000001,
+          1.37338,
+          0.117548
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4058",
+      "name": "Arteria carótida común izquierda",
+      "anatomicalName": "Arteria carótida común izquierda",
+      "aliases": [
+        "bp3d:FMA4058",
+        "left common carotid artery",
+        "FMA4058",
+        "common-carotid-artery",
+        "FJ3483"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:head-neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA4058_FJ3483"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4058",
+      "latin": "Arteria carotis communis",
+      "side": "left",
+      "family": "common-carotid-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "head-neck",
+      "parentId": "cardio:arterial:head-neck",
+      "bounds": [
+        [
+          0.0108208,
+          1.30739,
+          0.0960063
+        ],
+        [
+          0.022933000000000002,
+          1.37368,
+          0.112224
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3949",
+      "name": "Arteria carótida interna derecha",
+      "anatomicalName": "Arteria carótida interna derecha",
+      "aliases": [
+        "bp3d:FMA3949",
+        "right internal carotid artery",
+        "FMA3949",
+        "internal-carotid-artery",
+        "FJ1682"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:head-neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA3949_FJ1682"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA3949",
+      "latin": "Arteria carotis interna",
+      "side": "right",
+      "family": "internal-carotid-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "head-neck",
+      "parentId": "cardio:arterial:head-neck",
+      "bounds": [
+        [
+          -0.037465200000000004,
+          1.43454,
+          0.0940397
+        ],
+        [
+          -0.00984248,
+          1.53772,
+          0.114556
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4062",
+      "name": "Arteria carótida interna izquierda",
+      "anatomicalName": "Arteria carótida interna izquierda",
+      "aliases": [
+        "bp3d:FMA4062",
+        "left internal carotid artery",
+        "FMA4062",
+        "internal-carotid-artery",
+        "FJ1682M"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:head-neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA4062_FJ1682M"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4062",
+      "latin": "Arteria carotis interna",
+      "side": "left",
+      "family": "internal-carotid-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "head-neck",
+      "parentId": "cardio:arterial:head-neck",
+      "bounds": [
+        [
+          0.00984249,
+          1.43454,
+          0.0940398
+        ],
+        [
+          0.037465200000000004,
+          1.53772,
+          0.114555
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3958",
+      "name": "Arteria vertebral derecha",
+      "anatomicalName": "Arteria vertebral derecha",
+      "aliases": [
+        "bp3d:FMA3958",
+        "right vertebral artery",
+        "FMA3958",
+        "vertebral-artery",
+        "FJ1725"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:head-neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA3958_FJ1725"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA3958",
+      "latin": "Arteria vertebralis",
+      "side": "right",
+      "family": "vertebral-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "head-neck",
+      "parentId": "cardio:arterial:head-neck",
+      "bounds": [
+        [
+          -0.0336651,
+          1.3984100000000002,
+          0.0585749
+        ],
+        [
+          0.000384026,
+          1.50604,
+          0.08687120000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4066",
+      "name": "Arteria vertebral izquierda",
+      "anatomicalName": "Arteria vertebral izquierda",
+      "aliases": [
+        "bp3d:FMA4066",
+        "left vertebral artery",
+        "FMA4066",
+        "vertebral-artery",
+        "FJ1725M"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:head-neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA4066_FJ1725M"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4066",
+      "latin": "Arteria vertebralis",
+      "side": "left",
+      "family": "vertebral-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "head-neck",
+      "parentId": "cardio:arterial:head-neck",
+      "bounds": [
+        [
+          -0.000384026,
+          1.3984100000000002,
+          0.0585749
+        ],
+        [
+          0.0336652,
+          1.50603,
+          0.0868711
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA50542",
+      "name": "Arteria basilar",
+      "anatomicalName": "Arteria basilar",
+      "aliases": [
+        "bp3d:FMA50542",
+        "basilar artery",
+        "FMA50542",
+        "basilar-artery",
+        "FJ1672",
+        "FJ1844"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:head-neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA50542_FJ1672",
+        "bp3d_FMA50542_FJ1844"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA50542",
+      "latin": "Arteria basilaris",
+      "side": "midline",
+      "family": "basilar-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "head-neck",
+      "parentId": "cardio:arterial:head-neck",
+      "bounds": [
+        [
+          -0.0022814800000000002,
+          1.5026300000000001,
+          0.0835506
+        ],
+        [
+          0.00126892,
+          1.53227,
+          0.0981682
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3953",
+      "name": "Arteria subclavia derecha",
+      "anatomicalName": "Arteria subclavia derecha",
+      "aliases": [
+        "bp3d:FMA3953",
+        "right subclavian artery",
+        "FMA3953",
+        "subclavian-artery",
+        "FJ3579"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA3953_FJ3579"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA3953",
+      "latin": "Arteria subclavia",
+      "side": "right",
+      "family": "subclavian-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:arterial:upper-right",
+      "bounds": [
+        [
+          -0.082176,
+          1.33094,
+          0.09435460000000001
+        ],
+        [
+          -0.00974729,
+          1.35303,
+          0.112221
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4694",
+      "name": "Arteria subclavia izquierda",
+      "anatomicalName": "Arteria subclavia izquierda",
+      "aliases": [
+        "bp3d:FMA4694",
+        "left subclavian artery",
+        "FMA4694",
+        "subclavian-artery",
+        "FJ3479"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA4694_FJ3479"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4694",
+      "latin": "Arteria subclavia",
+      "side": "left",
+      "family": "subclavian-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:arterial:upper-left",
+      "bounds": [
+        [
+          0.017685700000000002,
+          1.30731,
+          0.0868478
+        ],
+        [
+          0.0865465,
+          1.35646,
+          0.105634
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22655",
+      "name": "Arteria axilar derecha",
+      "anatomicalName": "Arteria axilar derecha",
+      "aliases": [
+        "bp3d:FMA22655",
+        "right axillary artery",
+        "FMA22655",
+        "axillary-artery",
+        "FJ2268"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22655_FJ2268"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22655",
+      "latin": "Arteria axillaris",
+      "side": "right",
+      "family": "axillary-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:arterial:upper-right",
+      "bounds": [
+        [
+          -0.15144,
+          1.25812,
+          0.08005620000000001
+        ],
+        [
+          -0.07694150000000001,
+          1.33984,
+          0.106425
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22656",
+      "name": "Arteria axilar izquierda",
+      "anatomicalName": "Arteria axilar izquierda",
+      "aliases": [
+        "bp3d:FMA22656",
+        "left axillary artery",
+        "FMA22656",
+        "axillary-artery",
+        "FJ2216"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22656_FJ2216"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22656",
+      "latin": "Arteria axillaris",
+      "side": "left",
+      "family": "axillary-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:arterial:upper-left",
+      "bounds": [
+        [
+          0.07693470000000001,
+          1.2581300000000002,
+          0.08007800000000001
+        ],
+        [
+          0.151457,
+          1.33984,
+          0.10641500000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22691",
+      "name": "Arteria braquial derecha",
+      "anatomicalName": "Arteria braquial derecha",
+      "aliases": [
+        "bp3d:FMA22691",
+        "right brachial artery",
+        "FMA22691",
+        "brachial-artery",
+        "FJ2271"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22691_FJ2271"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22691",
+      "latin": "Arteria brachialis",
+      "side": "right",
+      "family": "brachial-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:arterial:upper-right",
+      "bounds": [
+        [
+          -0.217469,
+          1.02059,
+          0.0723469
+        ],
+        [
+          -0.14303800000000003,
+          1.2743499999999999,
+          0.0889716
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22692",
+      "name": "Arteria braquial izquierda",
+      "anatomicalName": "Arteria braquial izquierda",
+      "aliases": [
+        "bp3d:FMA22692",
+        "left brachial artery",
+        "FMA22692",
+        "brachial-artery",
+        "FJ2219"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22692_FJ2219"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22692",
+      "latin": "Arteria brachialis",
+      "side": "left",
+      "family": "brachial-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:arterial:upper-left",
+      "bounds": [
+        [
+          0.143043,
+          1.0206,
+          0.0723475
+        ],
+        [
+          0.217451,
+          1.2743499999999999,
+          0.0889678
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22696",
+      "name": "Arteria braquial profunda derecha",
+      "anatomicalName": "Arteria braquial profunda derecha",
+      "aliases": [
+        "bp3d:FMA22696",
+        "right deep brachial artery",
+        "FMA22696",
+        "deep-brachial-artery",
+        "FJ2277"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22696_FJ2277"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22696",
+      "latin": "Arteria profunda brachii",
+      "side": "right",
+      "family": "deep-brachial-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:arterial:upper-right",
+      "bounds": [
+        [
+          -0.20604499999999998,
+          1.11498,
+          0.0521152
+        ],
+        [
+          -0.174347,
+          1.1843,
+          0.07666540000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22697",
+      "name": "Arteria braquial profunda izquierda",
+      "anatomicalName": "Arteria braquial profunda izquierda",
+      "aliases": [
+        "bp3d:FMA22697",
+        "left deep brachial artery",
+        "FMA22697",
+        "deep-brachial-artery",
+        "FJ2225"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22697_FJ2225"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22697",
+      "latin": "Arteria profunda brachii",
+      "side": "left",
+      "family": "deep-brachial-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:arterial:upper-left",
+      "bounds": [
+        [
+          0.174354,
+          1.11498,
+          0.052107799999999996
+        ],
+        [
+          0.206037,
+          1.1843,
+          0.0766633
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22733",
+      "name": "Arteria radial derecha",
+      "anatomicalName": "Arteria radial derecha",
+      "aliases": [
+        "bp3d:FMA22733",
+        "right radial artery",
+        "FMA22733",
+        "radial-artery",
+        "FJ2294"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22733_FJ2294"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22733",
+      "latin": "Arteria radialis",
+      "side": "right",
+      "family": "radial-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:arterial:upper-right",
+      "bounds": [
+        [
+          -0.27951299999999996,
+          0.791182,
+          0.0831515
+        ],
+        [
+          -0.213611,
+          1.02445,
+          0.127123
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22734",
+      "name": "Arteria radial izquierda",
+      "anatomicalName": "Arteria radial izquierda",
+      "aliases": [
+        "bp3d:FMA22734",
+        "left radial artery",
+        "FMA22734",
+        "radial-artery",
+        "FJ2242"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22734_FJ2242"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22734",
+      "latin": "Arteria radialis",
+      "side": "left",
+      "family": "radial-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:arterial:upper-left",
+      "bounds": [
+        [
+          0.213611,
+          0.7911860000000001,
+          0.083151
+        ],
+        [
+          0.279507,
+          1.02445,
+          0.127127
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22797",
+      "name": "Arteria cubital derecha",
+      "anatomicalName": "Arteria cubital derecha",
+      "aliases": [
+        "bp3d:FMA22797",
+        "right ulnar artery",
+        "FMA22797",
+        "ulnar-artery",
+        "FJ2310",
+        "ulnar"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22797_FJ2310"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22797",
+      "latin": "Arteria ulnaris",
+      "side": "right",
+      "family": "ulnar-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:arterial:upper-right",
+      "bounds": [
+        [
+          -0.243726,
+          0.794679,
+          0.0769856
+        ],
+        [
+          -0.21104900000000001,
+          1.02445,
+          0.13107400000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22798",
+      "name": "Arteria cubital izquierda",
+      "anatomicalName": "Arteria cubital izquierda",
+      "aliases": [
+        "bp3d:FMA22798",
+        "left ulnar artery",
+        "FMA22798",
+        "ulnar-artery",
+        "FJ2258",
+        "ulnar"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22798_FJ2258"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22798",
+      "latin": "Arteria ulnaris",
+      "side": "left",
+      "family": "ulnar-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:arterial:upper-left",
+      "bounds": [
+        [
+          0.211051,
+          0.794684,
+          0.0769837
+        ],
+        [
+          0.24372,
+          1.02445,
+          0.13107300000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3969",
+      "name": "Arteria torácica interna derecha",
+      "anatomicalName": "Arteria torácica interna derecha",
+      "aliases": [
+        "bp3d:FMA3969",
+        "right internal thoracic artery",
+        "FMA3969",
+        "internal-thoracic-artery",
+        "FJ1937"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA3969_FJ1937"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA3969",
+      "latin": "Arteria thoracica interna",
+      "side": "right",
+      "family": "internal-thoracic-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          -0.0405745,
+          1.1718,
+          0.10052
+        ],
+        [
+          -0.0122226,
+          1.34936,
+          0.20079400000000003
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4068",
+      "name": "Arteria torácica interna izquierda",
+      "anatomicalName": "Arteria torácica interna izquierda",
+      "aliases": [
+        "bp3d:FMA4068",
+        "left internal thoracic artery",
+        "FMA4068",
+        "internal-thoracic-artery",
+        "FJ1972"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA4068_FJ1972"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4068",
+      "latin": "Arteria thoracica interna",
+      "side": "left",
+      "family": "internal-thoracic-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          0.0122182,
+          1.1718,
+          0.100755
+        ],
+        [
+          0.041470599999999996,
+          1.35223,
+          0.20079
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14812",
+      "name": "Tronco celíaco",
+      "anatomicalName": "Tronco celíaco",
+      "aliases": [
+        "bp3d:FMA14812",
+        "celiac trunk",
+        "FMA14812",
+        "celiac-trunk",
+        "FJ3421"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14812_FJ3421"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14812",
+      "latin": "Truncus coeliacus",
+      "side": "midline",
+      "family": "celiac-trunk",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          0.0011040700000000002,
+          1.0776500000000002,
+          0.107594
+        ],
+        [
+          0.012240299999999999,
+          1.0898299999999999,
+          0.13078700000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14768",
+      "name": "Arteria gástrica izquierda",
+      "anatomicalName": "Arteria gástrica izquierda",
+      "aliases": [
+        "bp3d:FMA14768",
+        "left gastric artery",
+        "FMA14768",
+        "left-gastric-artery",
+        "FJ3499"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14768_FJ3499"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14768",
+      "latin": "Arteria gastrica sinistra",
+      "side": "left",
+      "family": "left-gastric-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          0.00493379,
+          1.0809000000000002,
+          0.12280100000000001
+        ],
+        [
+          0.0267316,
+          1.12628,
+          0.16948500000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14771",
+      "name": "Arteria hepática común",
+      "anatomicalName": "Arteria hepática común",
+      "aliases": [
+        "bp3d:FMA14771",
+        "common hepatic artery",
+        "FMA14771",
+        "common-hepatic-artery",
+        "FJ3078"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14771_FJ3078"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14771",
+      "latin": "Arteria hepatica communis",
+      "side": "midline",
+      "family": "common-hepatic-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          -0.0153223,
+          1.07521,
+          0.126891
+        ],
+        [
+          0.0057907,
+          1.08542,
+          0.14266900000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14772",
+      "name": "Arteria hepática propia",
+      "anatomicalName": "Arteria hepática propia",
+      "aliases": [
+        "bp3d:FMA14772",
+        "hepatic artery proper",
+        "FMA14772",
+        "hepatic-artery-proper",
+        "FJ3081"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14772_FJ3081"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14772",
+      "latin": "Arteria hepatica propria",
+      "side": "midline",
+      "family": "hepatic-artery-proper",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          -0.0224174,
+          1.08153,
+          0.138815
+        ],
+        [
+          -0.0114407,
+          1.11174,
+          0.151458
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14773",
+      "name": "Arteria esplénica",
+      "anatomicalName": "Arteria esplénica",
+      "aliases": [
+        "bp3d:FMA14773",
+        "splenic artery",
+        "FMA14773",
+        "splenic-artery",
+        "FJ2562",
+        "FJ3420",
+        "FJ3544",
+        "FJ3640"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14773_FJ2562",
+        "bp3d_FMA14773_FJ3420",
+        "bp3d_FMA14773_FJ3544",
+        "bp3d_FMA14773_FJ3640"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14773",
+      "latin": "Arteria splenica",
+      "side": "midline",
+      "family": "splenic-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          0.0019408300000000002,
+          1.05959,
+          0.08041809999999999
+        ],
+        [
+          0.100456,
+          1.09457,
+          0.13758099999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14749",
+      "name": "Arteria mesentérica superior",
+      "anatomicalName": "Arteria mesentérica superior",
+      "aliases": [
+        "bp3d:FMA14749",
+        "superior mesenteric artery",
+        "FMA14749",
+        "superior-mesenteric-artery",
+        "FJ1928",
+        "FJ2011"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14749_FJ1928",
+        "bp3d_FMA14749_FJ2011"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14749",
+      "latin": "Arteria mesenterica superior",
+      "side": "midline",
+      "family": "superior-mesenteric-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          -0.0609462,
+          0.909456,
+          0.112119
+        ],
+        [
+          0.008399050000000002,
+          1.0546600000000002,
+          0.151364
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14750",
+      "name": "Arteria mesentérica inferior",
+      "anatomicalName": "Arteria mesentérica inferior",
+      "aliases": [
+        "bp3d:FMA14750",
+        "inferior mesenteric artery",
+        "FMA14750",
+        "inferior-mesenteric-artery",
+        "FJ3442"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14750_FJ3442"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14750",
+      "latin": "Arteria mesenterica inferior",
+      "side": "midline",
+      "family": "inferior-mesenteric-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          0.00419297,
+          0.89905,
+          0.113273
+        ],
+        [
+          0.0184559,
+          0.986232,
+          0.136719
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14752",
+      "name": "Arteria renal derecha",
+      "anatomicalName": "Arteria renal derecha",
+      "aliases": [
+        "bp3d:FMA14752",
+        "right renal artery",
+        "FMA14752",
+        "renal-artery",
+        "FJ2038"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14752_FJ2038"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14752",
+      "latin": "Arteria renalis",
+      "side": "right",
+      "family": "renal-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          -0.042344099999999996,
+          1.02518,
+          0.0972584
+        ],
+        [
+          0.0127113,
+          1.04872,
+          0.11956100000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14753",
+      "name": "Arteria renal izquierda",
+      "anatomicalName": "Arteria renal izquierda",
+      "aliases": [
+        "bp3d:FMA14753",
+        "left renal artery",
+        "FMA14753",
+        "renal-artery",
+        "FJ2046"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14753_FJ2046"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14753",
+      "latin": "Arteria renalis",
+      "side": "left",
+      "family": "renal-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          0.0036509000000000003,
+          1.03655,
+          0.096762
+        ],
+        [
+          0.0394612,
+          1.04975,
+          0.12030700000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14765",
+      "name": "Arteria ilíaca común derecha",
+      "anatomicalName": "Arteria ilíaca común derecha",
+      "aliases": [
+        "bp3d:FMA14765",
+        "right common iliac artery",
+        "FMA14765",
+        "common-iliac-artery",
+        "FJ3565"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14765_FJ3565"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14765",
+      "latin": "Arteria iliaca communis",
+      "side": "right",
+      "family": "common-iliac-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          -0.0375029,
+          0.903462,
+          0.105044
+        ],
+        [
+          0.0101767,
+          0.964665,
+          0.13006600000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14766",
+      "name": "Arteria ilíaca común izquierda",
+      "anatomicalName": "Arteria ilíaca común izquierda",
+      "aliases": [
+        "bp3d:FMA14766",
+        "left common iliac artery",
+        "FMA14766",
+        "common-iliac-artery",
+        "FJ3464"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14766_FJ3464"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14766",
+      "latin": "Arteria iliaca communis",
+      "side": "left",
+      "family": "common-iliac-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          0.000908047,
+          0.901733,
+          0.09063500000000001
+        ],
+        [
+          0.0359843,
+          0.964635,
+          0.12972
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA18809",
+      "name": "Arteria ilíaca interna derecha",
+      "anatomicalName": "Arteria ilíaca interna derecha",
+      "aliases": [
+        "bp3d:FMA18809",
+        "right internal iliac artery",
+        "FMA18809",
+        "internal-iliac-artery",
+        "FJ3569"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA18809_FJ3569"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18809",
+      "latin": "Arteria iliaca interna",
+      "side": "right",
+      "family": "internal-iliac-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          -0.036030700000000006,
+          0.850365,
+          0.027452200000000003
+        ],
+        [
+          -0.0272349,
+          0.910766,
+          0.112467
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA18810",
+      "name": "Arteria ilíaca interna izquierda",
+      "anatomicalName": "Arteria ilíaca interna izquierda",
+      "aliases": [
+        "bp3d:FMA18810",
+        "left internal iliac artery",
+        "FMA18810",
+        "internal-iliac-artery",
+        "FJ3468"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA18810_FJ3468"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18810",
+      "latin": "Arteria iliaca interna",
+      "side": "left",
+      "family": "internal-iliac-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          0.0222715,
+          0.845338,
+          0.011719799999999999
+        ],
+        [
+          0.0335388,
+          0.909866,
+          0.101452
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA18806",
+      "name": "Arteria ilíaca externa derecha",
+      "anatomicalName": "Arteria ilíaca externa derecha",
+      "aliases": [
+        "bp3d:FMA18806",
+        "right external iliac artery",
+        "FMA18806",
+        "external-iliac-artery",
+        "FJ3567"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA18806_FJ3567"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18806",
+      "latin": "Arteria iliaca externa",
+      "side": "right",
+      "family": "external-iliac-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "lower-limb-right",
+      "parentId": "cardio:arterial:lower-right",
+      "bounds": [
+        [
+          -0.061287,
+          0.803613,
+          0.07779710000000001
+        ],
+        [
+          -0.0274583,
+          0.91354,
+          0.144498
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA18807",
+      "name": "Arteria ilíaca externa izquierda",
+      "anatomicalName": "Arteria ilíaca externa izquierda",
+      "aliases": [
+        "bp3d:FMA18807",
+        "left external iliac artery",
+        "FMA18807",
+        "external-iliac-artery",
+        "FJ3466"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA18807_FJ3466"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18807",
+      "latin": "Arteria iliaca externa",
+      "side": "left",
+      "family": "external-iliac-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "lower-limb-left",
+      "parentId": "cardio:arterial:lower-left",
+      "bounds": [
+        [
+          0.0255364,
+          0.809832,
+          0.0781363
+        ],
+        [
+          0.0654415,
+          0.912336,
+          0.152944
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA70249",
+      "name": "Arteria femoral derecha",
+      "anatomicalName": "Arteria femoral derecha",
+      "aliases": [
+        "bp3d:FMA70249",
+        "right femoral artery",
+        "FMA70249",
+        "femoral-artery",
+        "FJ2143"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA70249_FJ2143"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA70249",
+      "latin": "Arteria femoralis",
+      "side": "right",
+      "family": "femoral-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "lower-limb-right",
+      "parentId": "cardio:arterial:lower-right",
+      "bounds": [
+        [
+          -0.06616889999999999,
+          0.47042200000000006,
+          0.0854922
+        ],
+        [
+          -0.0377225,
+          0.830251,
+          0.142954
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA70250",
+      "name": "Arteria femoral izquierda",
+      "anatomicalName": "Arteria femoral izquierda",
+      "aliases": [
+        "bp3d:FMA70250",
+        "left femoral artery",
+        "FMA70250",
+        "femoral-artery",
+        "FJ2074"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA70250_FJ2074"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA70250",
+      "latin": "Arteria femoralis",
+      "side": "left",
+      "family": "femoral-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "lower-limb-left",
+      "parentId": "cardio:arterial:lower-left",
+      "bounds": [
+        [
+          0.0378669,
+          0.470426,
+          0.085408
+        ],
+        [
+          0.0659103,
+          0.830408,
+          0.14302099999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA77380",
+      "name": "Arteria poplítea derecha",
+      "anatomicalName": "Arteria poplítea derecha",
+      "aliases": [
+        "bp3d:FMA77380",
+        "right popliteal artery",
+        "FMA77380",
+        "popliteal-artery",
+        "FJ2170"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA77380_FJ2170"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA77380",
+      "latin": "Arteria poplitea",
+      "side": "right",
+      "family": "popliteal-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "lower-limb-right",
+      "parentId": "cardio:arterial:lower-right",
+      "bounds": [
+        [
+          -0.0958418,
+          0.283275,
+          0.0526954
+        ],
+        [
+          -0.0558564,
+          0.48077800000000004,
+          0.0957871
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA77381",
+      "name": "Arteria poplítea izquierda",
+      "anatomicalName": "Arteria poplítea izquierda",
+      "aliases": [
+        "bp3d:FMA77381",
+        "left popliteal artery",
+        "FMA77381",
+        "popliteal-artery",
+        "FJ2086"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA77381_FJ2086"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA77381",
+      "latin": "Arteria poplitea",
+      "side": "left",
+      "family": "popliteal-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "lower-limb-left",
+      "parentId": "cardio:arterial:lower-left",
+      "bounds": [
+        [
+          0.055858,
+          0.283275,
+          0.0526969
+        ],
+        [
+          0.0958421,
+          0.480775,
+          0.0957853
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA43896",
+      "name": "Arteria tibial anterior derecha",
+      "anatomicalName": "Arteria tibial anterior derecha",
+      "aliases": [
+        "bp3d:FMA43896",
+        "right anterior tibial artery",
+        "FMA43896",
+        "anterior-tibial-artery",
+        "FJ2130"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA43896_FJ2130"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA43896",
+      "latin": "Arteria tibialis anterior",
+      "side": "right",
+      "family": "anterior-tibial-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "lower-limb-right",
+      "parentId": "cardio:arterial:lower-right",
+      "bounds": [
+        [
+          -0.10555500000000001,
+          0.00431911,
+          0.07010580000000001
+        ],
+        [
+          -0.0681382,
+          0.321821,
+          0.0981066
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA43897",
+      "name": "Arteria tibial anterior izquierda",
+      "anatomicalName": "Arteria tibial anterior izquierda",
+      "aliases": [
+        "bp3d:FMA43897",
+        "left anterior tibial artery",
+        "FMA43897",
+        "anterior-tibial-artery",
+        "FJ2065"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA43897_FJ2065"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA43897",
+      "latin": "Arteria tibialis anterior",
+      "side": "left",
+      "family": "anterior-tibial-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "lower-limb-left",
+      "parentId": "cardio:arterial:lower-left",
+      "bounds": [
+        [
+          0.0681334,
+          0.004321449999999999,
+          0.0701085
+        ],
+        [
+          0.105556,
+          0.32182,
+          0.0981048
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA43898",
+      "name": "Arteria tibial posterior derecha",
+      "anatomicalName": "Arteria tibial posterior derecha",
+      "aliases": [
+        "bp3d:FMA43898",
+        "right posterior tibial artery",
+        "FMA43898",
+        "posterior-tibial-artery",
+        "FJ2172"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA43898_FJ2172"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA43898",
+      "latin": "Arteria tibialis posterior",
+      "side": "right",
+      "family": "posterior-tibial-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "lower-limb-right",
+      "parentId": "cardio:arterial:lower-right",
+      "bounds": [
+        [
+          -0.0911327,
+          -0.0413313,
+          0.050347499999999996
+        ],
+        [
+          -0.0444784,
+          0.289766,
+          0.0867752
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA43899",
+      "name": "Arteria tibial posterior izquierda",
+      "anatomicalName": "Arteria tibial posterior izquierda",
+      "aliases": [
+        "bp3d:FMA43899",
+        "left posterior tibial artery",
+        "FMA43899",
+        "posterior-tibial-artery",
+        "FJ2087"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA43899_FJ2087"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA43899",
+      "latin": "Arteria tibialis posterior",
+      "side": "left",
+      "family": "posterior-tibial-artery",
+      "vascularClass": "arterial",
+      "cardioType": "arteria",
+      "explosionRegionId": "lower-limb-left",
+      "parentId": "cardio:arterial:lower-left",
+      "bounds": [
+        [
+          0.0444748,
+          -0.0413402,
+          0.0503494
+        ],
+        [
+          0.0911314,
+          0.289765,
+          0.0867695
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4720",
+      "name": "Vena cava superior",
+      "anatomicalName": "Vena cava superior",
+      "aliases": [
+        "bp3d:FMA4720",
+        "superior vena cava",
+        "FMA4720",
+        "superior-vena-cava",
+        "FJ3645"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA4720_FJ3645"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4720",
+      "latin": "Vena cava superior",
+      "side": "midline",
+      "family": "superior-vena-cava",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0266349,
+          1.27481,
+          0.103587
+        ],
+        [
+          -0.00410943,
+          1.30981,
+          0.127276
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA10951",
+      "name": "Vena cava inferior",
+      "anatomicalName": "Vena cava inferior",
+      "aliases": [
+        "bp3d:FMA10951",
+        "inferior vena cava",
+        "FMA10951",
+        "inferior-vena-cava",
+        "FJ3441",
+        "FJ3659"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA10951_FJ3441",
+        "bp3d_FMA10951_FJ3659"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA10951",
+      "latin": "Vena cava inferior",
+      "side": "midline",
+      "family": "inferior-vena-cava",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0268256,
+          0.9508920000000001,
+          0.103552
+        ],
+        [
+          -0.0020585,
+          1.19053,
+          0.12879
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4751",
+      "name": "Vena braquiocefálica derecha",
+      "anatomicalName": "Vena braquiocefálica derecha",
+      "aliases": [
+        "bp3d:FMA4751",
+        "right brachiocephalic vein",
+        "FMA4751",
+        "brachiocephalic-vein",
+        "FJ3583"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA4751_FJ3583"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4751",
+      "latin": "Vena brachiocephalica",
+      "side": "right",
+      "family": "brachiocephalic-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0319655,
+          1.29802,
+          0.109377
+        ],
+        [
+          -0.010296,
+          1.3498599999999998,
+          0.131271
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4761",
+      "name": "Vena braquiocefálica izquierda",
+      "anatomicalName": "Vena braquiocefálica izquierda",
+      "aliases": [
+        "bp3d:FMA4761",
+        "left brachiocephalic vein",
+        "FMA4761",
+        "brachiocephalic-vein",
+        "FJ3482"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA4761_FJ3482"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4761",
+      "latin": "Vena brachiocephalica",
+      "side": "left",
+      "family": "brachiocephalic-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0237897,
+          1.2958800000000001,
+          0.110543
+        ],
+        [
+          0.0280068,
+          1.34799,
+          0.132357
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4754",
+      "name": "Vena yugular interna derecha",
+      "anatomicalName": "Vena yugular interna derecha",
+      "aliases": [
+        "bp3d:FMA4754",
+        "right internal jugular vein",
+        "FMA4754",
+        "internal-jugular-vein",
+        "FJ3585"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:head-neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA4754_FJ3585"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4754",
+      "latin": "Vena jugularis interna",
+      "side": "right",
+      "family": "internal-jugular-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "head-neck",
+      "parentId": "cardio:venous:head-neck",
+      "bounds": [
+        [
+          -0.03114,
+          1.3404800000000001,
+          0.112887
+        ],
+        [
+          -0.0217121,
+          1.38174,
+          0.122075
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4762",
+      "name": "Vena yugular interna izquierda",
+      "anatomicalName": "Vena yugular interna izquierda",
+      "aliases": [
+        "bp3d:FMA4762",
+        "left internal jugular vein",
+        "FMA4762",
+        "internal-jugular-vein",
+        "FJ3485"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:head-neck"
+      ],
+      "meshNames": [
+        "bp3d_FMA4762_FJ3485"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4762",
+      "latin": "Vena jugularis interna",
+      "side": "left",
+      "family": "internal-jugular-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "head-neck",
+      "parentId": "cardio:venous:head-neck",
+      "bounds": [
+        [
+          0.018107500000000002,
+          1.3374100000000002,
+          0.111701
+        ],
+        [
+          0.0309054,
+          1.38043,
+          0.122114
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4755",
+      "name": "Vena subclavia derecha",
+      "anatomicalName": "Vena subclavia derecha",
+      "aliases": [
+        "bp3d:FMA4755",
+        "right subclavian vein",
+        "FMA4755",
+        "subclavian-vein",
+        "FJ3587"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA4755_FJ3587"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4755",
+      "latin": "Vena subclavia",
+      "side": "right",
+      "family": "subclavian-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:venous:upper-right",
+      "bounds": [
+        [
+          -0.0868287,
+          1.32773,
+          0.108497
+        ],
+        [
+          -0.022342300000000002,
+          1.35155,
+          0.12179300000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4763",
+      "name": "Vena subclavia izquierda",
+      "anatomicalName": "Vena subclavia izquierda",
+      "aliases": [
+        "bp3d:FMA4763",
+        "left subclavian vein",
+        "FMA4763",
+        "subclavian-vein",
+        "FJ3486"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA4763_FJ3486"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4763",
+      "latin": "Vena subclavia",
+      "side": "left",
+      "family": "subclavian-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:venous:upper-left",
+      "bounds": [
+        [
+          0.0193808,
+          1.32519,
+          0.105442
+        ],
+        [
+          0.0942578,
+          1.35347,
+          0.12107599999999999
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13330",
+      "name": "Vena axilar derecha",
+      "anatomicalName": "Vena axilar derecha",
+      "aliases": [
+        "bp3d:FMA13330",
+        "right axillary vein",
+        "FMA13330",
+        "axillary-vein",
+        "FJ2269"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA13330_FJ2269"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA13330",
+      "latin": "Vena axillaris",
+      "side": "right",
+      "family": "axillary-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:venous:upper-right",
+      "bounds": [
+        [
+          -0.157167,
+          1.23285,
+          0.0913942
+        ],
+        [
+          -0.0749191,
+          1.3351400000000002,
+          0.115169
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13331",
+      "name": "Vena axilar izquierda",
+      "anatomicalName": "Vena axilar izquierda",
+      "aliases": [
+        "bp3d:FMA13331",
+        "left axillary vein",
+        "FMA13331",
+        "axillary-vein",
+        "FJ2217"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA13331_FJ2217"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA13331",
+      "latin": "Vena axillaris",
+      "side": "left",
+      "family": "axillary-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:venous:upper-left",
+      "bounds": [
+        [
+          0.0749262,
+          1.23284,
+          0.0914033
+        ],
+        [
+          0.157141,
+          1.3351400000000002,
+          0.115166
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22935",
+      "name": "Vena braquial medial derecha",
+      "anatomicalName": "Vena braquial medial derecha",
+      "aliases": [
+        "bp3d:FMA22935",
+        "right medial brachial vein",
+        "FMA22935",
+        "medial-brachial-vein",
+        "FJ2341"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22935_FJ2341"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22935",
+      "latin": "Vena brachialis medialis",
+      "side": "right",
+      "family": "medial-brachial-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:venous:upper-right",
+      "bounds": [
+        [
+          -0.218194,
+          1.0184,
+          0.0827015
+        ],
+        [
+          -0.15002500000000002,
+          1.23498,
+          0.0972433
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22936",
+      "name": "Vena braquial medial izquierda",
+      "anatomicalName": "Vena braquial medial izquierda",
+      "aliases": [
+        "bp3d:FMA22936",
+        "left medial brachial vein",
+        "FMA22936",
+        "medial-brachial-vein",
+        "FJ2313"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22936_FJ2313"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22936",
+      "latin": "Vena brachialis medialis",
+      "side": "left",
+      "family": "medial-brachial-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:venous:upper-left",
+      "bounds": [
+        [
+          0.14999700000000002,
+          1.0184,
+          0.0827088
+        ],
+        [
+          0.218204,
+          1.23498,
+          0.0972282
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13325",
+      "name": "Vena cefálica derecha",
+      "anatomicalName": "Vena cefálica derecha",
+      "aliases": [
+        "bp3d:FMA13325",
+        "right cephalic vein",
+        "FMA13325",
+        "cephalic-vein",
+        "FJ2272"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA13325_FJ2272"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA13325",
+      "latin": "Vena cephalica",
+      "side": "right",
+      "family": "cephalic-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:venous:upper-right",
+      "bounds": [
+        [
+          -0.279041,
+          0.7744650000000001,
+          0.0776554
+        ],
+        [
+          -0.106836,
+          1.3268199999999999,
+          0.131731
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13326",
+      "name": "Vena cefálica izquierda",
+      "anatomicalName": "Vena cefálica izquierda",
+      "aliases": [
+        "bp3d:FMA13326",
+        "left cephalic vein",
+        "FMA13326",
+        "cephalic-vein",
+        "FJ2220"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA13326_FJ2220"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA13326",
+      "latin": "Vena cephalica",
+      "side": "left",
+      "family": "cephalic-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:venous:upper-left",
+      "bounds": [
+        [
+          0.10683100000000001,
+          0.7744690000000001,
+          0.077656
+        ],
+        [
+          0.27903500000000003,
+          1.3268199999999999,
+          0.131729
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22909",
+      "name": "Vena basílica derecha",
+      "anatomicalName": "Vena basílica derecha",
+      "aliases": [
+        "bp3d:FMA22909",
+        "right basilic vein",
+        "FMA22909",
+        "basilic-vein",
+        "FJ2270"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22909_FJ2270"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22909",
+      "latin": "Vena basilica",
+      "side": "right",
+      "family": "basilic-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:venous:upper-right",
+      "bounds": [
+        [
+          -0.23548500000000003,
+          0.7888310000000001,
+          0.0628285
+        ],
+        [
+          -0.151006,
+          1.2372400000000001,
+          0.11480800000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22910",
+      "name": "Vena basílica izquierda",
+      "anatomicalName": "Vena basílica izquierda",
+      "aliases": [
+        "bp3d:FMA22910",
+        "left basilic vein",
+        "FMA22910",
+        "basilic-vein",
+        "FJ2218"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22910_FJ2218"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22910",
+      "latin": "Vena basilica",
+      "side": "left",
+      "family": "basilic-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:venous:upper-left",
+      "bounds": [
+        [
+          0.151004,
+          0.788833,
+          0.0628312
+        ],
+        [
+          0.235482,
+          1.2372400000000001,
+          0.11481100000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22948",
+      "name": "Vena radial derecha",
+      "anatomicalName": "Vena radial derecha",
+      "aliases": [
+        "bp3d:FMA22948",
+        "right radial vein",
+        "FMA22948",
+        "radial-vein",
+        "FJ2296"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22948_FJ2296"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22948",
+      "latin": "Vena radialis",
+      "side": "right",
+      "family": "radial-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:venous:upper-right",
+      "bounds": [
+        [
+          -0.26691000000000004,
+          0.819812,
+          0.08550239999999999
+        ],
+        [
+          -0.2137,
+          1.02585,
+          0.125821
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22949",
+      "name": "Vena radial izquierda",
+      "anatomicalName": "Vena radial izquierda",
+      "aliases": [
+        "bp3d:FMA22949",
+        "left radial vein",
+        "FMA22949",
+        "radial-vein",
+        "FJ2244"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22949_FJ2244"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22949",
+      "latin": "Vena radialis",
+      "side": "left",
+      "family": "radial-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:venous:upper-left",
+      "bounds": [
+        [
+          0.213705,
+          0.819834,
+          0.08550289999999999
+        ],
+        [
+          0.266904,
+          1.02585,
+          0.125818
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22951",
+      "name": "Vena cubital derecha",
+      "anatomicalName": "Vena cubital derecha",
+      "aliases": [
+        "bp3d:FMA22951",
+        "right ulnar vein",
+        "FMA22951",
+        "ulnar-vein",
+        "FJ2312",
+        "ulnar"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22951_FJ2312"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22951",
+      "latin": "Vena ulnaris",
+      "side": "right",
+      "family": "ulnar-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:venous:upper-right",
+      "bounds": [
+        [
+          -0.250161,
+          0.814242,
+          0.0838662
+        ],
+        [
+          -0.210844,
+          1.0233700000000001,
+          0.134225
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22952",
+      "name": "Vena cubital izquierda",
+      "anatomicalName": "Vena cubital izquierda",
+      "aliases": [
+        "bp3d:FMA22952",
+        "left ulnar vein",
+        "FMA22952",
+        "ulnar-vein",
+        "FJ2260",
+        "ulnar"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22952_FJ2260"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22952",
+      "latin": "Vena ulnaris",
+      "side": "left",
+      "family": "ulnar-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:venous:upper-left",
+      "bounds": [
+        [
+          0.210848,
+          0.814241,
+          0.0838603
+        ],
+        [
+          0.250156,
+          1.0233700000000001,
+          0.13422399999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22968",
+      "name": "Vena mediana del antebrazo derecha",
+      "anatomicalName": "Vena mediana del antebrazo derecha",
+      "aliases": [
+        "bp3d:FMA22968",
+        "right median antebrachial vein",
+        "FMA22968",
+        "median-antebrachial-vein",
+        "FJ2286"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22968_FJ2286"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22968",
+      "latin": "Vena mediana antebrachii",
+      "side": "right",
+      "family": "median-antebrachial-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-right",
+      "parentId": "cardio:venous:upper-right",
+      "bounds": [
+        [
+          -0.26244799999999996,
+          0.814717,
+          0.07286530000000001
+        ],
+        [
+          -0.176284,
+          1.01365,
+          0.13453299999999999
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22969",
+      "name": "Vena mediana del antebrazo izquierda",
+      "anatomicalName": "Vena mediana del antebrazo izquierda",
+      "aliases": [
+        "bp3d:FMA22969",
+        "left median antebrachial vein",
+        "FMA22969",
+        "median-antebrachial-vein",
+        "FJ2234"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:upper-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22969_FJ2234"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA22969",
+      "latin": "Vena mediana antebrachii",
+      "side": "left",
+      "family": "median-antebrachial-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "upper-limb-left",
+      "parentId": "cardio:venous:upper-left",
+      "bounds": [
+        [
+          0.176285,
+          0.814721,
+          0.0728614
+        ],
+        [
+          0.262457,
+          1.01365,
+          0.134534
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4838",
+      "name": "Vena ácigos",
+      "anatomicalName": "Vena ácigos",
+      "aliases": [
+        "bp3d:FMA4838",
+        "azygos vein",
+        "FMA4838",
+        "azygos-vein",
+        "FJ3416"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA4838_FJ3416"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4838",
+      "latin": "Vena azygos",
+      "side": "midline",
+      "family": "azygos-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.018150200000000002,
+          1.07375,
+          0.0598457
+        ],
+        [
+          -0.005621640000000001,
+          1.2913,
+          0.113029
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4944",
+      "name": "Vena hemiácigos",
+      "anatomicalName": "Vena hemiácigos",
+      "aliases": [
+        "bp3d:FMA4944",
+        "hemiazygos vein",
+        "FMA4944",
+        "hemiazygos-vein",
+        "FJ3434"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA4944_FJ3434"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4944",
+      "latin": "Vena hemiazygos",
+      "side": "midline",
+      "family": "hemiazygos-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0158024,
+          1.07026,
+          0.0551006
+        ],
+        [
+          0.0240382,
+          1.17425,
+          0.0757901
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA5011",
+      "name": "Vena hemiácigos accesoria",
+      "anatomicalName": "Vena hemiácigos accesoria",
+      "aliases": [
+        "bp3d:FMA5011",
+        "accessory hemiazygos vein",
+        "FMA5011",
+        "accessory-hemiazygos-vein",
+        "FJ1981"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA5011_FJ1981"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA5011",
+      "latin": "Vena hemiazygos accessoria",
+      "side": "midline",
+      "family": "accessory-hemiazygos-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.014900499999999999,
+          1.19908,
+          0.0428769
+        ],
+        [
+          0.031912,
+          1.3277400000000001,
+          0.131814
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14338",
+      "name": "Vena hepática derecha",
+      "anatomicalName": "Vena hepática derecha",
+      "aliases": [
+        "bp3d:FMA14338",
+        "right hepatic vein",
+        "FMA14338",
+        "right-hepatic-vein",
+        "FJ2416"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14338_FJ2416"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14338",
+      "latin": "Vena hepatica dextra",
+      "side": "right",
+      "family": "right-hepatic-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.108279,
+          1.0959400000000001,
+          0.0760527
+        ],
+        [
+          -0.0206941,
+          1.16603,
+          0.157326
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14340",
+      "name": "Vena hepática media",
+      "anatomicalName": "Vena hepática media",
+      "aliases": [
+        "bp3d:FMA14340",
+        "middle hepatic vein",
+        "FMA14340",
+        "middle-hepatic-vein",
+        "FJ2414"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14340_FJ2414"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14340",
+      "latin": "Vena hepatica intermedia",
+      "side": "midline",
+      "family": "middle-hepatic-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0602703,
+          1.1031900000000001,
+          0.118178
+        ],
+        [
+          -0.00519827,
+          1.16485,
+          0.189453
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14339",
+      "name": "Vena hepática izquierda",
+      "anatomicalName": "Vena hepática izquierda",
+      "aliases": [
+        "bp3d:FMA14339",
+        "left hepatic vein",
+        "FMA14339",
+        "left-hepatic-vein",
+        "FJ2415"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14339_FJ2415"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14339",
+      "latin": "Vena hepatica sinistra",
+      "side": "left",
+      "family": "left-hepatic-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0119336,
+          1.1264200000000002,
+          0.11738200000000001
+        ],
+        [
+          0.0519099,
+          1.1643299999999999,
+          0.17179
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA50735",
+      "name": "Vena porta hepática",
+      "anatomicalName": "Vena porta hepática",
+      "aliases": [
+        "bp3d:FMA50735",
+        "hepatic portal vein",
+        "FMA50735",
+        "hepatic-portal-vein",
+        "FJ1853"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA50735_FJ1853"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA50735",
+      "latin": "Vena portae hepatis",
+      "side": "midline",
+      "family": "hepatic-portal-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0214488,
+          1.06232,
+          0.123594
+        ],
+        [
+          -0.00708181,
+          1.1111199999999999,
+          0.144215
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14331",
+      "name": "Vena esplénica",
+      "anatomicalName": "Vena esplénica",
+      "aliases": [
+        "bp3d:FMA14331",
+        "splenic vein",
+        "FMA14331",
+        "splenic-vein",
+        "FJ3641"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14331_FJ3641"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14331",
+      "latin": "Vena splenica",
+      "side": "midline",
+      "family": "splenic-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0120303,
+          1.05126,
+          0.0830722
+        ],
+        [
+          0.0998501,
+          1.09178,
+          0.124083
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14332",
+      "name": "Vena mesentérica superior",
+      "anatomicalName": "Vena mesentérica superior",
+      "aliases": [
+        "bp3d:FMA14332",
+        "superior mesenteric vein",
+        "FMA14332",
+        "superior-mesenteric-vein",
+        "FJ3647"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14332_FJ3647"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14332",
+      "latin": "Vena mesenterica superior",
+      "side": "midline",
+      "family": "superior-mesenteric-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0625509,
+          0.910141,
+          0.109144
+        ],
+        [
+          -0.0050205200000000005,
+          1.06698,
+          0.14963300000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA15391",
+      "name": "Vena mesentérica inferior",
+      "anatomicalName": "Vena mesentérica inferior",
+      "aliases": [
+        "bp3d:FMA15391",
+        "inferior mesenteric vein",
+        "FMA15391",
+        "inferior-mesenteric-vein",
+        "FJ3443"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA15391_FJ3443"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA15391",
+      "latin": "Vena mesenterica inferior",
+      "side": "midline",
+      "family": "inferior-mesenteric-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          0.00539067,
+          0.900429,
+          0.111191
+        ],
+        [
+          0.0270602,
+          1.06955,
+          0.131082
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14335",
+      "name": "Vena renal derecha",
+      "anatomicalName": "Vena renal derecha",
+      "aliases": [
+        "bp3d:FMA14335",
+        "right renal vein",
+        "FMA14335",
+        "renal-vein",
+        "FJ3577",
+        "FJ3578"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14335_FJ3577",
+        "bp3d_FMA14335_FJ3578"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14335",
+      "latin": "Vena renalis",
+      "side": "right",
+      "family": "renal-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0733557,
+          0.980881,
+          0.07865710000000001
+        ],
+        [
+          -0.008988930000000001,
+          1.05826,
+          0.11722300000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14336",
+      "name": "Vena renal izquierda",
+      "anatomicalName": "Vena renal izquierda",
+      "aliases": [
+        "bp3d:FMA14336",
+        "left renal vein",
+        "FMA14336",
+        "renal-vein",
+        "FJ3477",
+        "FJ3478"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA14336_FJ3477",
+        "bp3d_FMA14336_FJ3478"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14336",
+      "latin": "Vena renalis",
+      "side": "left",
+      "family": "renal-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0157686,
+          0.997588,
+          0.06770730000000001
+        ],
+        [
+          0.0810475,
+          1.0746,
+          0.132426
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA21387",
+      "name": "Vena ilíaca común derecha",
+      "anatomicalName": "Vena ilíaca común derecha",
+      "aliases": [
+        "bp3d:FMA21387",
+        "right common iliac vein",
+        "FMA21387",
+        "common-iliac-vein",
+        "FJ3566"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA21387_FJ3566"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA21387",
+      "latin": "Vena iliaca communis",
+      "side": "right",
+      "family": "common-iliac-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0358807,
+          0.900632,
+          0.08833360000000001
+        ],
+        [
+          -0.0035885500000000002,
+          0.964607,
+          0.123448
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA21388",
+      "name": "Vena ilíaca común izquierda",
+      "anatomicalName": "Vena ilíaca común izquierda",
+      "aliases": [
+        "bp3d:FMA21388",
+        "left common iliac vein",
+        "FMA21388",
+        "common-iliac-vein",
+        "FJ3465"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA21388_FJ3465"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA21388",
+      "latin": "Vena iliaca communis",
+      "side": "left",
+      "family": "common-iliac-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.015095700000000002,
+          0.900591,
+          0.0769055
+        ],
+        [
+          0.0262479,
+          0.965174,
+          0.123136
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA18887",
+      "name": "Vena ilíaca interna derecha",
+      "anatomicalName": "Vena ilíaca interna derecha",
+      "aliases": [
+        "bp3d:FMA18887",
+        "right internal iliac vein",
+        "FMA18887",
+        "internal-iliac-vein",
+        "FJ3570",
+        "FJ3571",
+        "FJ3572",
+        "FJ3607",
+        "FJ3608",
+        "FJ3609"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA18887_FJ3570",
+        "bp3d_FMA18887_FJ3571",
+        "bp3d_FMA18887_FJ3572",
+        "bp3d_FMA18887_FJ3607",
+        "bp3d_FMA18887_FJ3608",
+        "bp3d_FMA18887_FJ3609"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18887",
+      "latin": "Vena iliaca interna",
+      "side": "right",
+      "family": "internal-iliac-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0388119,
+          0.7888200000000001,
+          -0.000625933
+        ],
+        [
+          -0.016811,
+          0.914723,
+          0.105154
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA18888",
+      "name": "Vena ilíaca interna izquierda",
+      "anatomicalName": "Vena ilíaca interna izquierda",
+      "aliases": [
+        "bp3d:FMA18888",
+        "left internal iliac vein",
+        "FMA18888",
+        "internal-iliac-vein",
+        "FJ3469",
+        "FJ3470",
+        "FJ3471"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA18888_FJ3469",
+        "bp3d_FMA18888_FJ3470",
+        "bp3d_FMA18888_FJ3471"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18888",
+      "latin": "Vena iliaca interna",
+      "side": "left",
+      "family": "internal-iliac-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          0.0115718,
+          0.7894500000000001,
+          -0.0100683
+        ],
+        [
+          0.025818200000000003,
+          0.9143920000000001,
+          0.0899084
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA18885",
+      "name": "Vena ilíaca externa derecha",
+      "anatomicalName": "Vena ilíaca externa derecha",
+      "aliases": [
+        "bp3d:FMA18885",
+        "right external iliac vein",
+        "FMA18885",
+        "external-iliac-vein",
+        "FJ3568"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA18885_FJ3568"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18885",
+      "latin": "Vena iliaca externa",
+      "side": "right",
+      "family": "external-iliac-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-right",
+      "parentId": "cardio:venous:lower-right",
+      "bounds": [
+        [
+          -0.052122,
+          0.7956300000000001,
+          0.0624437
+        ],
+        [
+          -0.0248083,
+          0.905549,
+          0.151591
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA18886",
+      "name": "Vena ilíaca externa izquierda",
+      "anatomicalName": "Vena ilíaca externa izquierda",
+      "aliases": [
+        "bp3d:FMA18886",
+        "left external iliac vein",
+        "FMA18886",
+        "external-iliac-vein",
+        "FJ3484",
+        "FJ3522",
+        "FJ3523",
+        "FJ3524"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA18886_FJ3484",
+        "bp3d_FMA18886_FJ3522",
+        "bp3d_FMA18886_FJ3523",
+        "bp3d_FMA18886_FJ3524"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18886",
+      "latin": "Vena iliaca externa",
+      "side": "left",
+      "family": "external-iliac-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-left",
+      "parentId": "cardio:venous:lower-left",
+      "bounds": [
+        [
+          0.00774975,
+          0.804442,
+          0.0506183
+        ],
+        [
+          0.0571352,
+          0.913867,
+          0.150513
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA21188",
+      "name": "Vena femoral derecha",
+      "anatomicalName": "Vena femoral derecha",
+      "aliases": [
+        "bp3d:FMA21188",
+        "right femoral vein",
+        "FMA21188",
+        "femoral-vein",
+        "FJ2144"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA21188_FJ2144"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA21188",
+      "latin": "Vena femoralis",
+      "side": "right",
+      "family": "femoral-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-right",
+      "parentId": "cardio:venous:lower-right",
+      "bounds": [
+        [
+          -0.0737795,
+          0.483565,
+          0.08406140000000001
+        ],
+        [
+          -0.031963899999999996,
+          0.806828,
+          0.15473699999999999
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA21189",
+      "name": "Vena femoral izquierda",
+      "anatomicalName": "Vena femoral izquierda",
+      "aliases": [
+        "bp3d:FMA21189",
+        "left femoral vein",
+        "FMA21189",
+        "femoral-vein",
+        "FJ2102"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA21189_FJ2102"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA21189",
+      "latin": "Vena femoralis",
+      "side": "left",
+      "family": "femoral-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-left",
+      "parentId": "cardio:venous:lower-left",
+      "bounds": [
+        [
+          0.0318721,
+          0.48357100000000003,
+          0.08395050000000001
+        ],
+        [
+          0.073948,
+          0.806842,
+          0.154814
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA51042",
+      "name": "Vena femoral profunda derecha",
+      "anatomicalName": "Vena femoral profunda derecha",
+      "aliases": [
+        "bp3d:FMA51042",
+        "right deep femoral vein",
+        "FMA51042",
+        "deep-femoral-vein",
+        "FJ2135"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA51042_FJ2135"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA51042",
+      "latin": "Vena profunda femoris",
+      "side": "right",
+      "family": "deep-femoral-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-right",
+      "parentId": "cardio:venous:lower-right",
+      "bounds": [
+        [
+          -0.07874590000000001,
+          0.508342,
+          0.10504300000000001
+        ],
+        [
+          -0.0328758,
+          0.81849,
+          0.14344300000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA51043",
+      "name": "Vena femoral profunda izquierda",
+      "anatomicalName": "Vena femoral profunda izquierda",
+      "aliases": [
+        "bp3d:FMA51043",
+        "left deep femoral vein",
+        "FMA51043",
+        "deep-femoral-vein",
+        "FJ2099"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA51043_FJ2099"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA51043",
+      "latin": "Vena profunda femoris",
+      "side": "left",
+      "family": "deep-femoral-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-left",
+      "parentId": "cardio:venous:lower-left",
+      "bounds": [
+        [
+          0.0328831,
+          0.5083380000000001,
+          0.105041
+        ],
+        [
+          0.0787628,
+          0.8184990000000001,
+          0.143428
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA44328",
+      "name": "Vena poplítea derecha",
+      "anatomicalName": "Vena poplítea derecha",
+      "aliases": [
+        "bp3d:FMA44328",
+        "right popliteal vein",
+        "FMA44328",
+        "popliteal-vein",
+        "FJ2171"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA44328_FJ2171"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA44328",
+      "latin": "Vena poplitea",
+      "side": "right",
+      "family": "popliteal-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-right",
+      "parentId": "cardio:venous:lower-right",
+      "bounds": [
+        [
+          -0.101768,
+          0.319486,
+          0.055056600000000004
+        ],
+        [
+          -0.0641633,
+          0.496143,
+          0.0942601
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA44329",
+      "name": "Vena poplítea izquierda",
+      "anatomicalName": "Vena poplítea izquierda",
+      "aliases": [
+        "bp3d:FMA44329",
+        "left popliteal vein",
+        "FMA44329",
+        "popliteal-vein",
+        "FJ2117"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA44329_FJ2117"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA44329",
+      "latin": "Vena poplitea",
+      "side": "left",
+      "family": "popliteal-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-left",
+      "parentId": "cardio:venous:lower-left",
+      "bounds": [
+        [
+          0.0641626,
+          0.319486,
+          0.0550572
+        ],
+        [
+          0.101762,
+          0.49614400000000003,
+          0.0942593
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA21379",
+      "name": "Vena safena magna derecha",
+      "anatomicalName": "Vena safena magna derecha",
+      "aliases": [
+        "bp3d:FMA21379",
+        "right great saphenous vein",
+        "FMA21379",
+        "great-saphenous-vein",
+        "FJ2145"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA21379_FJ2145"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA21379",
+      "latin": "Vena saphena magna",
+      "side": "right",
+      "family": "great-saphenous-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-right",
+      "parentId": "cardio:venous:lower-right",
+      "bounds": [
+        [
+          -0.09488830000000001,
+          -0.0263853,
+          0.048086500000000004
+        ],
+        [
+          -0.0134213,
+          0.795849,
+          0.153951
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA21380",
+      "name": "Vena safena magna izquierda",
+      "anatomicalName": "Vena safena magna izquierda",
+      "aliases": [
+        "bp3d:FMA21380",
+        "left great saphenous vein",
+        "FMA21380",
+        "great-saphenous-vein",
+        "FJ2103"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA21380_FJ2103"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA21380",
+      "latin": "Vena saphena magna",
+      "side": "left",
+      "family": "great-saphenous-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-left",
+      "parentId": "cardio:venous:lower-left",
+      "bounds": [
+        [
+          0.0134205,
+          -0.0263853,
+          0.0480824
+        ],
+        [
+          0.0948874,
+          0.795846,
+          0.153947
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA44334",
+      "name": "Vena safena menor derecha",
+      "anatomicalName": "Vena safena menor derecha",
+      "aliases": [
+        "bp3d:FMA44334",
+        "right small saphenous vein",
+        "FMA44334",
+        "small-saphenous-vein",
+        "FJ2176"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA44334_FJ2176"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA44334",
+      "latin": "Vena saphena parva",
+      "side": "right",
+      "family": "small-saphenous-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-right",
+      "parentId": "cardio:venous:lower-right",
+      "bounds": [
+        [
+          -0.112434,
+          -0.0442412,
+          0.011070100000000001
+        ],
+        [
+          -0.062311,
+          0.410169,
+          0.0863938
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA44335",
+      "name": "Vena safena menor izquierda",
+      "anatomicalName": "Vena safena menor izquierda",
+      "aliases": [
+        "bp3d:FMA44335",
+        "left small saphenous vein",
+        "FMA44335",
+        "small-saphenous-vein",
+        "FJ2121"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA44335_FJ2121"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA44335",
+      "latin": "Vena saphena parva",
+      "side": "left",
+      "family": "small-saphenous-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-left",
+      "parentId": "cardio:venous:lower-left",
+      "bounds": [
+        [
+          0.0623118,
+          -0.04424090000000001,
+          0.011066000000000001
+        ],
+        [
+          0.11243800000000001,
+          0.410171,
+          0.08639100000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA44336",
+      "name": "Vena tibial anterior derecha",
+      "anatomicalName": "Vena tibial anterior derecha",
+      "aliases": [
+        "bp3d:FMA44336",
+        "right anterior tibial vein",
+        "FMA44336",
+        "anterior-tibial-vein",
+        "FJ2132",
+        "FJ2193"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA44336_FJ2132",
+        "bp3d_FMA44336_FJ2193"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA44336",
+      "latin": "Vena tibialis anterior",
+      "side": "right",
+      "family": "anterior-tibial-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-right",
+      "parentId": "cardio:venous:lower-right",
+      "bounds": [
+        [
+          -0.10997900000000001,
+          0.0403047,
+          0.0695429
+        ],
+        [
+          -0.0509485,
+          0.405781,
+          0.114217
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA44337",
+      "name": "Vena tibial anterior izquierda",
+      "anatomicalName": "Vena tibial anterior izquierda",
+      "aliases": [
+        "bp3d:FMA44337",
+        "left anterior tibial vein",
+        "FMA44337",
+        "anterior-tibial-vein",
+        "FJ2097",
+        "FJ2183"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA44337_FJ2097",
+        "bp3d_FMA44337_FJ2183"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA44337",
+      "latin": "Vena tibialis anterior",
+      "side": "left",
+      "family": "anterior-tibial-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-left",
+      "parentId": "cardio:venous:lower-left",
+      "bounds": [
+        [
+          0.0509448,
+          0.0403036,
+          0.06954170000000001
+        ],
+        [
+          0.109987,
+          0.405778,
+          0.114196
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA44338",
+      "name": "Vena tibial posterior derecha",
+      "anatomicalName": "Vena tibial posterior derecha",
+      "aliases": [
+        "bp3d:FMA44338",
+        "right posterior tibial vein",
+        "FMA44338",
+        "posterior-tibial-vein",
+        "FJ2173"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA44338_FJ2173"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA44338",
+      "latin": "Vena tibialis posterior",
+      "side": "right",
+      "family": "posterior-tibial-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-right",
+      "parentId": "cardio:venous:lower-right",
+      "bounds": [
+        [
+          -0.102384,
+          -0.0456541,
+          0.049186799999999996
+        ],
+        [
+          -0.0397734,
+          0.283851,
+          0.0879422
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA44339",
+      "name": "Vena tibial posterior izquierda",
+      "anatomicalName": "Vena tibial posterior izquierda",
+      "aliases": [
+        "bp3d:FMA44339",
+        "left posterior tibial vein",
+        "FMA44339",
+        "posterior-tibial-vein",
+        "FJ2118"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:lower-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA44339_FJ2118"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA44339",
+      "latin": "Vena tibialis posterior",
+      "side": "left",
+      "family": "posterior-tibial-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "lower-limb-left",
+      "parentId": "cardio:venous:lower-left",
+      "bounds": [
+        [
+          0.0397763,
+          -0.0456661,
+          0.0491917
+        ],
+        [
+          0.102381,
+          0.28384800000000004,
+          0.08789490000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA49914",
+      "name": "Vena pulmonar superior derecha",
+      "anatomicalName": "Vena pulmonar superior derecha",
+      "aliases": [
+        "bp3d:FMA49914",
+        "right superior pulmonary vein",
+        "FMA49914",
+        "superior-pulmonary-vein",
+        "FJ3020"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA49914_FJ3020"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA49914",
+      "latin": "Vena pulmonalis superior",
+      "side": "right",
+      "family": "superior-pulmonary-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0371408,
+          1.23493,
+          0.0883313
+        ],
+        [
+          -0.014016400000000002,
+          1.26177,
+          0.106536
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA49916",
+      "name": "Vena pulmonar superior izquierda",
+      "anatomicalName": "Vena pulmonar superior izquierda",
+      "aliases": [
+        "bp3d:FMA49916",
+        "left superior pulmonary vein",
+        "FMA49916",
+        "superior-pulmonary-vein",
+        "FJ2925",
+        "FJ2933"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA49916_FJ2925",
+        "bp3d_FMA49916_FJ2933"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA49916",
+      "latin": "Vena pulmonalis superior",
+      "side": "left",
+      "family": "superior-pulmonary-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          0.0336998,
+          1.2188800000000002,
+          0.0815478
+        ],
+        [
+          0.0818161,
+          1.27322,
+          0.110848
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA49911",
+      "name": "Vena pulmonar inferior derecha",
+      "anatomicalName": "Vena pulmonar inferior derecha",
+      "aliases": [
+        "bp3d:FMA49911",
+        "right inferior pulmonary vein",
+        "FMA49911",
+        "inferior-pulmonary-vein",
+        "FJ3040"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA49911_FJ3040"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA49911",
+      "latin": "Vena pulmonalis inferior",
+      "side": "right",
+      "family": "inferior-pulmonary-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.033806800000000005,
+          1.21128,
+          0.07604290000000001
+        ],
+        [
+          -0.006283019999999999,
+          1.22889,
+          0.0890205
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA49913",
+      "name": "Vena pulmonar inferior izquierda",
+      "anatomicalName": "Vena pulmonar inferior izquierda",
+      "aliases": [
+        "bp3d:FMA49913",
+        "left inferior pulmonary vein",
+        "FMA49913",
+        "inferior-pulmonary-vein",
+        "FJ2944",
+        "FJ2950",
+        "FJ2955"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:trunk"
+      ],
+      "meshNames": [
+        "bp3d_FMA49913_FJ2944",
+        "bp3d_FMA49913_FJ2950",
+        "bp3d_FMA49913_FJ2955"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA49913",
+      "latin": "Vena pulmonalis inferior",
+      "side": "left",
+      "family": "inferior-pulmonary-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          0.0328489,
+          1.20154,
+          0.0535181
+        ],
+        [
+          0.0729742,
+          1.23636,
+          0.0913169
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3802",
+      "name": "Tronco de la coronaria derecha",
+      "anatomicalName": "Tronco de la coronaria derecha",
+      "aliases": [
+        "bp3d:FMA3802",
+        "trunk of right coronary artery",
+        "FMA3802",
+        "trunk-of-right-coronary-artery",
+        "FJ2723"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA3802_FJ2723"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA3802",
+      "latin": "Truncus arteriae coronariae dextrae",
+      "side": "right",
+      "family": "trunk-of-right-coronary-artery",
+      "vascularClass": "arterial",
+      "cardioType": "segmento arterial",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          -0.0217476,
+          1.18794,
+          0.09330419999999999
+        ],
+        [
+          0.0207385,
+          1.26107,
+          0.162494
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3855",
+      "name": "Tronco de la coronaria izquierda",
+      "anatomicalName": "Tronco de la coronaria izquierda",
+      "aliases": [
+        "bp3d:FMA3855",
+        "trunk of left coronary artery",
+        "FMA3855",
+        "trunk-of-left-coronary-artery",
+        "FJ2737"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA3855_FJ2737"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA3855",
+      "latin": "Truncus arteriae coronariae sinistrae",
+      "side": "left",
+      "family": "trunk-of-left-coronary-artery",
+      "vascularClass": "arterial",
+      "cardioType": "segmento arterial",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          0.0233893,
+          1.2539500000000001,
+          0.117304
+        ],
+        [
+          0.034405000000000005,
+          1.26082,
+          0.12342499999999999
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA74912",
+      "name": "Tronco de la interventricular anterior",
+      "anatomicalName": "Tronco de la interventricular anterior",
+      "aliases": [
+        "bp3d:FMA74912",
+        "trunk of anterior interventricular branch of left coronary artery",
+        "FMA74912",
+        "trunk-of-anterior-interventricular-branch-of-left-coronary-artery",
+        "FJ2631",
+        "descendente anterior",
+        "LAD",
+        "DA"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA74912_FJ2631"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA74912",
+      "latin": "Ramus interventricularis anterior",
+      "side": "left",
+      "family": "trunk-of-anterior-interventricular-branch-of-left-coronary-artery",
+      "vascularClass": "arterial",
+      "cardioType": "segmento arterial",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          0.0332928,
+          1.17954,
+          0.120073
+        ],
+        [
+          0.0638413,
+          1.25762,
+          0.16800800000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3895",
+      "name": "Rama circunfleja de la coronaria izquierda",
+      "anatomicalName": "Rama circunfleja de la coronaria izquierda",
+      "aliases": [
+        "bp3d:FMA3895",
+        "circumflex branch of left coronary artery",
+        "FMA3895",
+        "circumflex-branch-of-left-coronary-artery",
+        "FJ2649",
+        "FJ2650",
+        "FJ2651",
+        "FJ2652",
+        "FJ2653",
+        "FJ2654"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA3895_FJ2649",
+        "bp3d_FMA3895_FJ2650",
+        "bp3d_FMA3895_FJ2651",
+        "bp3d_FMA3895_FJ2652",
+        "bp3d_FMA3895_FJ2653",
+        "bp3d_FMA3895_FJ2654"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA3895",
+      "latin": "Ramus circumflexus",
+      "side": "left",
+      "family": "circumflex-branch-of-left-coronary-artery",
+      "vascularClass": "arterial",
+      "cardioType": "rama coronaria",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:arterial:trunk",
+      "bounds": [
+        [
+          0.0343553,
+          1.1878199999999999,
+          0.0869805
+        ],
+        [
+          0.07683110000000001,
+          1.25631,
+          0.142845
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4706",
+      "name": "Seno coronario",
+      "anatomicalName": "Seno coronario",
+      "aliases": [
+        "bp3d:FMA4706",
+        "coronary sinus",
+        "FMA4706",
+        "coronary-sinus",
+        "FJ2655"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA4706_FJ2655"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4706",
+      "latin": "Sinus coronarius",
+      "side": "midline",
+      "family": "coronary-sinus",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          -0.0055224,
+          1.1975,
+          0.08110830000000001
+        ],
+        [
+          0.043269300000000004,
+          1.21668,
+          0.115565
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4707",
+      "name": "Vena cardíaca magna",
+      "anatomicalName": "Vena cardíaca magna",
+      "aliases": [
+        "bp3d:FMA4707",
+        "great cardiac vein",
+        "FMA4707",
+        "great-cardiac-vein",
+        "FJ2656"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA4707_FJ2656"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA4707",
+      "latin": "Vena cardiaca magna",
+      "side": "midline",
+      "family": "great-cardiac-vein",
+      "vascularClass": "venous",
+      "cardioType": "vena",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:venous:trunk",
+      "bounds": [
+        [
+          0.0399088,
+          1.21378,
+          0.08192279999999999
+        ],
+        [
+          0.0485622,
+          1.25346,
+          0.126878
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA9457",
+      "name": "Pared de la aurícula derecha",
+      "anatomicalName": "Pared de la aurícula derecha",
+      "aliases": [
+        "bp3d:FMA9457",
+        "wall of right atrium",
+        "FMA9457",
+        "wall-of-right-atrium",
+        "FJ2439"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA9457_FJ2439"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA9457",
+      "latin": "Paries atrii dextri",
+      "side": "right",
+      "family": "wall-of-right-atrium",
+      "vascularClass": "heart",
+      "cardioType": "pared cardíaca",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:heart",
+      "bounds": [
+        [
+          -0.0363037,
+          1.18308,
+          0.096345
+        ],
+        [
+          0.006777910000000001,
+          1.2795,
+          0.162645
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA9531",
+      "name": "Pared de la aurícula izquierda",
+      "anatomicalName": "Pared de la aurícula izquierda",
+      "aliases": [
+        "bp3d:FMA9531",
+        "wall of left atrium",
+        "FMA9531",
+        "wall-of-left-atrium",
+        "FJ2438"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA9531_FJ2438"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA9531",
+      "latin": "Paries atrii sinistri",
+      "side": "left",
+      "family": "wall-of-left-atrium",
+      "vascularClass": "heart",
+      "cardioType": "pared cardíaca",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:heart",
+      "bounds": [
+        [
+          -0.0228801,
+          1.19943,
+          0.07017040000000001
+        ],
+        [
+          0.0632392,
+          1.2724000000000002,
+          0.151151
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA13884",
+      "name": "Pared ventricular disponible",
+      "anatomicalName": "Pared ventricular disponible",
+      "aliases": [
+        "bp3d:FMA13884",
+        "wall of ventricle",
+        "FMA13884",
+        "wall-of-ventricle",
+        "FJ2428"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA13884_FJ2428"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA13884",
+      "latin": "Paries ventriculi",
+      "side": "midline",
+      "family": "wall-of-ventricle",
+      "vascularClass": "heart",
+      "cardioType": "pared cardíaca",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:heart",
+      "bounds": [
+        [
+          -0.0230179,
+          1.17419,
+          0.0831177
+        ],
+        [
+          0.0791396,
+          1.2659200000000002,
+          0.17660499999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA11359",
+      "name": "Cavidad de la aurícula derecha",
+      "anatomicalName": "Cavidad de la aurícula derecha",
+      "aliases": [
+        "bp3d:FMA11359",
+        "cavity of right atrium",
+        "FMA11359",
+        "cavity-of-right-atrium",
+        "FJ2424"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA11359_FJ2424"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA11359",
+      "latin": "Cavitas atrii dextri",
+      "side": "right",
+      "family": "cavity-of-right-atrium",
+      "vascularClass": "heart",
+      "cardioType": "espacio cardíaco",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:heart",
+      "bounds": [
+        [
+          -0.034203000000000004,
+          1.18526,
+          0.09244150000000001
+        ],
+        [
+          0.0031870500000000003,
+          1.27752,
+          0.15356899999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA9465",
+      "name": "Cavidad de la aurícula izquierda",
+      "anatomicalName": "Cavidad de la aurícula izquierda",
+      "aliases": [
+        "bp3d:FMA9465",
+        "cavity of left atrium",
+        "FMA9465",
+        "cavity-of-left-atrium",
+        "FJ2425"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA9465_FJ2425"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA9465",
+      "latin": "Cavitas atrii sinistri",
+      "side": "left",
+      "family": "cavity-of-left-atrium",
+      "vascularClass": "heart",
+      "cardioType": "espacio cardíaco",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:heart",
+      "bounds": [
+        [
+          -0.0203846,
+          1.20645,
+          0.0709905
+        ],
+        [
+          0.048323700000000004,
+          1.26829,
+          0.12676099999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA9291",
+      "name": "Cavidad del ventrículo derecho",
+      "anatomicalName": "Cavidad del ventrículo derecho",
+      "aliases": [
+        "bp3d:FMA9291",
+        "cavity of right ventricle",
+        "FMA9291",
+        "cavity-of-right-ventricle",
+        "FJ2423"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA9291_FJ2423"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA9291",
+      "latin": "Cavitas ventriculi dextri",
+      "side": "right",
+      "family": "cavity-of-right-ventricle",
+      "vascularClass": "heart",
+      "cardioType": "espacio cardíaco",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:heart",
+      "bounds": [
+        [
+          -0.0188458,
+          1.17948,
+          0.11519499999999999
+        ],
+        [
+          0.052663400000000006,
+          1.26003,
+          0.17341800000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA9466",
+      "name": "Cavidad del ventrículo izquierdo",
+      "anatomicalName": "Cavidad del ventrículo izquierdo",
+      "aliases": [
+        "bp3d:FMA9466",
+        "cavity of left ventricle",
+        "FMA9466",
+        "cavity-of-left-ventricle",
+        "FJ2422"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA9466_FJ2422"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA9466",
+      "latin": "Cavitas ventriculi sinistri",
+      "side": "left",
+      "family": "cavity-of-left-ventricle",
+      "vascularClass": "heart",
+      "cardioType": "espacio cardíaco",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:heart",
+      "bounds": [
+        [
+          0.0064674500000000005,
+          1.18407,
+          0.08640160000000001
+        ],
+        [
+          0.07024630000000001,
+          1.25155,
+          0.158522
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7238",
+      "name": "Valva anterior de la tricúspide",
+      "anatomicalName": "Valva anterior de la tricúspide",
+      "aliases": [
+        "bp3d:FMA7238",
+        "anterior leaflet of tricuspid valve",
+        "FMA7238",
+        "anterior-leaflet-of-tricuspid-valve",
+        "FJ2421"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA7238_FJ2421"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7238",
+      "latin": "Cuspis anterior valvae atrioventricularis dextrae",
+      "side": "midline",
+      "family": "anterior-leaflet-of-tricuspid-valve",
+      "vascularClass": "heart",
+      "cardioType": "valva",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:tricuspid",
+      "bounds": [
+        [
+          -0.0210772,
+          1.19811,
+          0.129198
+        ],
+        [
+          0.023204699999999998,
+          1.23621,
+          0.15631299999999998
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7239",
+      "name": "Valva posterior de la tricúspide",
+      "anatomicalName": "Valva posterior de la tricúspide",
+      "aliases": [
+        "bp3d:FMA7239",
+        "posterior leaflet of tricuspid valve",
+        "FMA7239",
+        "posterior-leaflet-of-tricuspid-valve",
+        "FJ2433"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA7239_FJ2433"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7239",
+      "latin": "Cuspis posterior valvae atrioventricularis dextrae",
+      "side": "midline",
+      "family": "posterior-leaflet-of-tricuspid-valve",
+      "vascularClass": "heart",
+      "cardioType": "valva",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:tricuspid",
+      "bounds": [
+        [
+          -0.0189578,
+          1.1886400000000001,
+          0.113717
+        ],
+        [
+          0.016470099999999998,
+          1.2162000000000002,
+          0.145256
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7240",
+      "name": "Valva septal de la tricúspide",
+      "anatomicalName": "Valva septal de la tricúspide",
+      "aliases": [
+        "bp3d:FMA7240",
+        "septal leaflet of tricuspid valve",
+        "FMA7240",
+        "septal-leaflet-of-tricuspid-valve",
+        "FJ2436"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA7240_FJ2436"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7240",
+      "latin": "Cuspis septalis valvae atrioventricularis dextrae",
+      "side": "midline",
+      "family": "septal-leaflet-of-tricuspid-valve",
+      "vascularClass": "heart",
+      "cardioType": "valva",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:tricuspid",
+      "bounds": [
+        [
+          -0.006484,
+          1.21314,
+          0.113573
+        ],
+        [
+          0.0295014,
+          1.23648,
+          0.137745
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7242",
+      "name": "Valva anterior de la mitral",
+      "anatomicalName": "Valva anterior de la mitral",
+      "aliases": [
+        "bp3d:FMA7242",
+        "anterior leaflet of mitral valve",
+        "FMA7242",
+        "anterior-leaflet-of-mitral-valve",
+        "FJ2420"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA7242_FJ2420"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7242",
+      "latin": "Cuspis anterior valvae atrioventricularis sinistrae",
+      "side": "midline",
+      "family": "anterior-leaflet-of-mitral-valve",
+      "vascularClass": "heart",
+      "cardioType": "valva",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:mitral",
+      "bounds": [
+        [
+          0.0117217,
+          1.20446,
+          0.0931022
+        ],
+        [
+          0.0458879,
+          1.2359200000000001,
+          0.141625
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7243",
+      "name": "Valva posterior de la mitral",
+      "anatomicalName": "Valva posterior de la mitral",
+      "aliases": [
+        "bp3d:FMA7243",
+        "posterior leaflet of mitral valve",
+        "FMA7243",
+        "posterior-leaflet-of-mitral-valve",
+        "FJ2432"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA7243_FJ2432"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7243",
+      "latin": "Cuspis posterior valvae atrioventricularis sinistrae",
+      "side": "midline",
+      "family": "posterior-leaflet-of-mitral-valve",
+      "vascularClass": "heart",
+      "cardioType": "valva",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:mitral",
+      "bounds": [
+        [
+          0.013574500000000001,
+          1.1996,
+          0.0854446
+        ],
+        [
+          0.0628543,
+          1.2316500000000001,
+          0.123267
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7247",
+      "name": "Valva anterior izquierda de la pulmonar (fuente)",
+      "anatomicalName": "Valva anterior izquierda de la pulmonar (fuente)",
+      "aliases": [
+        "bp3d:FMA7247",
+        "left anterior cusp of pulmonary valve",
+        "FMA7247",
+        "left-anterior-cusp-of-pulmonary-valve",
+        "FJ2417"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA7247_FJ2417"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7247",
+      "latin": "Valvula semilunaris",
+      "side": "left",
+      "family": "left-anterior-cusp-of-pulmonary-valve",
+      "vascularClass": "heart",
+      "cardioType": "valva",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:pulmonary-valve",
+      "bounds": [
+        [
+          0.0231402,
+          1.2449000000000001,
+          0.13953700000000002
+        ],
+        [
+          0.0409215,
+          1.2614500000000002,
+          0.159581
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7249",
+      "name": "Valva anterior derecha de la pulmonar (fuente)",
+      "anatomicalName": "Valva anterior derecha de la pulmonar (fuente)",
+      "aliases": [
+        "bp3d:FMA7249",
+        "right anterior cusp of pulmonary valve",
+        "FMA7249",
+        "right-anterior-cusp-of-pulmonary-valve",
+        "FJ2434"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA7249_FJ2434"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7249",
+      "latin": "Valvula semilunaris",
+      "side": "right",
+      "family": "right-anterior-cusp-of-pulmonary-valve",
+      "vascularClass": "heart",
+      "cardioType": "valva",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:pulmonary-valve",
+      "bounds": [
+        [
+          0.00876793,
+          1.24807,
+          0.13288
+        ],
+        [
+          0.0275245,
+          1.2652700000000001,
+          0.156869
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7250",
+      "name": "Valva posterior de la pulmonar (fuente)",
+      "anatomicalName": "Valva posterior de la pulmonar (fuente)",
+      "aliases": [
+        "bp3d:FMA7250",
+        "posterior cusp of pulmonary valve",
+        "FMA7250",
+        "posterior-cusp-of-pulmonary-valve",
+        "FJ2427"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA7250_FJ2427"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7250",
+      "latin": "Valvula semilunaris",
+      "side": "midline",
+      "family": "posterior-cusp-of-pulmonary-valve",
+      "vascularClass": "heart",
+      "cardioType": "valva",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:pulmonary-valve",
+      "bounds": [
+        [
+          0.023549399999999998,
+          1.24519,
+          0.127603
+        ],
+        [
+          0.040595900000000004,
+          1.26162,
+          0.142209
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7252",
+      "name": "Valva posterior derecha de la aórtica (fuente)",
+      "anatomicalName": "Valva posterior derecha de la aórtica (fuente)",
+      "aliases": [
+        "bp3d:FMA7252",
+        "right posterior cusp of aortic valve",
+        "FMA7252",
+        "right-posterior-cusp-of-aortic-valve",
+        "FJ2431"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA7252_FJ2431"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7252",
+      "latin": "Valvula semilunaris",
+      "side": "right",
+      "family": "right-posterior-cusp-of-aortic-valve",
+      "vascularClass": "heart",
+      "cardioType": "valva",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:aortic-valve",
+      "bounds": [
+        [
+          0.00566774,
+          1.2334100000000001,
+          0.104826
+        ],
+        [
+          0.0232396,
+          1.25052,
+          0.123847
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7253",
+      "name": "Valva anterior de la aórtica (fuente)",
+      "anatomicalName": "Valva anterior de la aórtica (fuente)",
+      "aliases": [
+        "bp3d:FMA7253",
+        "anterior cusp of aortic valve",
+        "FMA7253",
+        "anterior-cusp-of-aortic-valve",
+        "FJ2435"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA7253_FJ2435"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7253",
+      "latin": "Valvula semilunaris",
+      "side": "midline",
+      "family": "anterior-cusp-of-aortic-valve",
+      "vascularClass": "heart",
+      "cardioType": "valva",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:aortic-valve",
+      "bounds": [
+        [
+          0.00699224,
+          1.2347000000000001,
+          0.11897100000000001
+        ],
+        [
+          0.026656199999999998,
+          1.2527300000000001,
+          0.132441
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7254",
+      "name": "Valva posterior izquierda de la aórtica (fuente)",
+      "anatomicalName": "Valva posterior izquierda de la aórtica (fuente)",
+      "aliases": [
+        "bp3d:FMA7254",
+        "left posterior cusp of aortic valve",
+        "FMA7254",
+        "left-posterior-cusp-of-aortic-valve",
+        "FJ2426"
+      ],
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardio:heart"
+      ],
+      "meshNames": [
+        "bp3d_FMA7254_FJ2426"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7254",
+      "latin": "Valvula semilunaris",
+      "side": "left",
+      "family": "left-posterior-cusp-of-aortic-valve",
+      "vascularClass": "heart",
+      "cardioType": "valva",
+      "explosionRegionId": "cardio-trunk",
+      "parentId": "cardio:aortic-valve",
+      "bounds": [
+        [
+          0.0165969,
+          1.2407000000000001,
+          0.10641
+        ],
+        [
+          0.0323882,
+          1.25508,
+          0.12665600000000002
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "cardio:head-neck",
+      "path": "models/anatomy/cardiovascular/head-neck.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:head-neck",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 68156,
+      "sha256": "a1e0b32846a27f3529b7702cd937adbcfe10b767254cae0ecee1a67abcf1d75e",
+      "meshCount": 10,
+      "triangles": 6210,
+      "bounds": [
+        [
+          -0.037465200000000004,
+          1.30739,
+          0.0585749
+        ],
+        [
+          0.037465200000000004,
+          1.53772,
+          0.122114
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-cardiovascular"
+    },
+    {
+      "id": "cardio:heart",
+      "path": "models/anatomy/cardiovascular/heart.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:heart",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 1047128,
+      "sha256": "ae94449578f102792dc768700c2ecb7dd7e6c0b265b54aa5b3f50b934a485ddd",
+      "meshCount": 29,
+      "triangles": 116702,
+      "bounds": [
+        [
+          -0.0363037,
+          1.17419,
+          0.07017040000000001
+        ],
+        [
+          0.0791396,
+          1.2795,
+          0.17660499999999998
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-cardiovascular"
+    },
+    {
+      "id": "cardio:lower-left",
+      "path": "models/anatomy/cardiovascular/lower-left.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-left",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 1150400,
+      "sha256": "77f271a120b5b14adabe83cc34caf56d13a4da95c0d91189c14d840d11f24124",
+      "meshCount": 17,
+      "triangles": 149124,
+      "bounds": [
+        [
+          0.00774975,
+          -0.0456661,
+          0.011066000000000001
+        ],
+        [
+          0.11243800000000001,
+          0.913867,
+          0.154814
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-cardiovascular"
+    },
+    {
+      "id": "cardio:lower-right",
+      "path": "models/anatomy/cardiovascular/lower-right.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-right",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 1140020,
+      "sha256": "0d79453da490f75ad66af0797b3bb7fdc6707692f22113bf70236df83dc95f4e",
+      "meshCount": 14,
+      "triangles": 148524,
+      "bounds": [
+        [
+          -0.112434,
+          -0.0456541,
+          0.011070100000000001
+        ],
+        [
+          -0.0134213,
+          0.91354,
+          0.15473699999999999
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-cardiovascular"
+    },
+    {
+      "id": "cardio:trunk",
+      "path": "models/anatomy/cardiovascular/trunk.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 927548,
+      "sha256": "2a0f4377199591e6230e16cbe2ea372bcb3f522878db060756308b18dc6f2aeb",
+      "meshCount": 64,
+      "triangles": 93700,
+      "bounds": [
+        [
+          -0.108279,
+          0.7888200000000001,
+          -0.0100683
+        ],
+        [
+          0.100456,
+          1.35223,
+          0.20079400000000003
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-cardiovascular"
+    },
+    {
+      "id": "cardio:upper-left",
+      "path": "models/anatomy/cardiovascular/upper-left.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-left",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 663612,
+      "sha256": "6befecb0a2691b91f34e0b564a5b09be6f26f563770dec122db6447b9fec7828",
+      "meshCount": 14,
+      "triangles": 86072,
+      "bounds": [
+        [
+          0.017685700000000002,
+          0.7744690000000001,
+          0.052107799999999996
+        ],
+        [
+          0.279507,
+          1.35646,
+          0.134534
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-cardiovascular"
+    },
+    {
+      "id": "cardio:upper-right",
+      "path": "models/anatomy/cardiovascular/upper-right.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:upper-right",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 652416,
+      "sha256": "2565dd8d4075b45e7596b688f943d6a1242a5a7cc4b0b3ae59d5930c6ad8f207",
+      "meshCount": 14,
+      "triangles": 84684,
+      "bounds": [
+        [
+          -0.27951299999999996,
+          0.7744650000000001,
+          0.0521152
+        ],
+        [
+          -0.00974729,
+          1.35303,
+          0.13453299999999999
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-cardiovascular"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "bodyparts3d-4.0-cardiovascular",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 · OBJ99 (2013 archive; current license declaration)",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selección cardiovascular macroscópica curada; OBJ originales, FMA/FJ y hashes conservados.",
+        "Transformación común (x,y,z) -> (x,z,-y)/1000. Posiciones Float32, Meshopt, sin decimación adicional, engrosamiento ni ajuste por pieza.",
+        "Grupos editoriales y componentes distinguidos. Las cavidades cardíacas son espacios, no tejido ni corazones adicionales.",
+        "Declaración actual CC BY 4.0 del editor; cabeceras antiguas conservadas. Sin validación clínica."
+      ]
+    }
+  ],
+  "coverage": {
+    "title": "Cobertura cardiovascular macroscópica disponible",
+    "structures": 110,
+    "meshes": 162,
+    "note": "110 unidades cardiovasculares y 30 componentes; corazón corporal y vasos principales de cabeza/cuello, tronco y extremidades.",
+    "limitations": [
+      "Cobertura parcial: sin carótidas externas, yugulares externas, troncos femorales profundos ni arterias fibulares inequívocos en esta selección.",
+      "Corazón por paredes, valvas y cavidades disponibles; pared ventricular sin separación derecha/izquierda y sin septo independiente. Las cavidades representan espacios, no miocardio.",
+      "Red vascular segmentada de origen; no se fabrican tubos para cerrar discontinuidades ni se altera el diámetro.",
+      "La nomenclatura de valvas semilunares se conserva con advertencia de fuente; no se equipara automáticamente a cúspides coronarias.",
+      "El corazón HRA detallado sigue independiente; no se superpone su frame al corporal."
+    ]
+  }
+}

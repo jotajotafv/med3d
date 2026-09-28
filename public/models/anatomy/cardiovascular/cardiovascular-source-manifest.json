@@ -1,0 +1,7490 @@
+{
+  "sourceArchive": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+  "sourceVersion": "4.0 OBJ99",
+  "sourceLicenseDeclaration": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "sourceZip": "research/anatomy/cardiovascular-originals.zip",
+  "sourceZipSha256": "8a4b8ef1e490ef64006c922506425a7d8b5ae38825555cd61bff6e08ae47754d",
+  "sourceLock": "research/anatomy/cardiovascular-source-lock.json",
+  "selectionSha256": "a65f74de77298000e1274db9b4c15a42143488b7c1ae801c2736f6b106250540",
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "additionalRegistration": "none",
+  "files": [
+    {
+      "elementId": "FJ1672",
+      "sourceId": "FMA50542",
+      "side": "midline",
+      "representationId": "BP6340",
+      "nativeConceptId": "FMA50542",
+      "path": "isa_BP3D_4.0_obj_99/FJ1672.obj",
+      "bytes": 15573,
+      "sha256": "f8240a3e61334d6843f3b5c1e28de93be83693d2dd41ba34ec7ebbbec446e7d6",
+      "crc32": "825dde8e",
+      "compressedBytesUpstream": 5643,
+      "anatomyId": "bp3d:FMA50542",
+      "family": "basilar-artery",
+      "moduleId": "cardio:head-neck",
+      "sourceType": "arteria",
+      "triangles": 262,
+      "faces": 262,
+      "sourcePositionCount": 140,
+      "vertices": 140,
+      "boundsMetres": [
+        [
+          -0.00211274,
+          1.50355,
+          0.08434390000000001
+        ],
+        [
+          0.00126892,
+          1.53185,
+          0.0977325
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -2.11274,
+          -97.7325,
+          1503.55
+        ],
+        [
+          1.26892,
+          -84.3439,
+          1531.85
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1682",
+      "sourceId": "FMA3949",
+      "side": "right",
+      "representationId": "BP7618",
+      "nativeConceptId": "FMA3949",
+      "path": "isa_BP3D_4.0_obj_99/FJ1682.obj",
+      "bytes": 75967,
+      "sha256": "7bb929f419a3b37c8cffe1a1bf59c0374b26e2c1027d061956e5d73b31eb295b",
+      "crc32": "c6604b86",
+      "compressedBytesUpstream": 24375,
+      "anatomyId": "bp3d:FMA3949",
+      "family": "internal-carotid-artery",
+      "moduleId": "cardio:head-neck",
+      "sourceType": "arteria",
+      "triangles": 1272,
+      "faces": 1272,
+      "sourcePositionCount": 650,
+      "vertices": 650,
+      "boundsMetres": [
+        [
+          -0.037465200000000004,
+          1.43454,
+          0.0940397
+        ],
+        [
+          -0.00984248,
+          1.53772,
+          0.114556
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -37.4652,
+          -114.556,
+          1434.54
+        ],
+        [
+          -9.84248,
+          -94.0397,
+          1537.72
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1682M",
+      "sourceId": "FMA4062",
+      "side": "left",
+      "representationId": "BP8900",
+      "nativeConceptId": "FMA4062",
+      "path": "isa_BP3D_4.0_obj_99/FJ1682M.obj",
+      "bytes": 75305,
+      "sha256": "117074e676e00306d95277cf2c4155a73c3684674bab401be4aec3acdfa11cce",
+      "crc32": "44badc76",
+      "compressedBytesUpstream": 24302,
+      "anatomyId": "bp3d:FMA4062",
+      "family": "internal-carotid-artery",
+      "moduleId": "cardio:head-neck",
+      "sourceType": "arteria",
+      "triangles": 1272,
+      "faces": 1272,
+      "sourcePositionCount": 650,
+      "vertices": 650,
+      "boundsMetres": [
+        [
+          0.00984249,
+          1.43454,
+          0.0940398
+        ],
+        [
+          0.037465200000000004,
+          1.53772,
+          0.114555
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          9.84249,
+          -114.555,
+          1434.54
+        ],
+        [
+          37.4652,
+          -94.0398,
+          1537.72
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1725",
+      "sourceId": "FMA3958",
+      "side": "right",
+      "representationId": "BP7644",
+      "nativeConceptId": "FMA3958",
+      "path": "isa_BP3D_4.0_obj_99/FJ1725.obj",
+      "bytes": 52434,
+      "sha256": "c7ba10decd013234fafefc0ae366d13c0b5707fff437ce169966cfabc7cc3ca2",
+      "crc32": "40141ebd",
+      "compressedBytesUpstream": 17454,
+      "anatomyId": "bp3d:FMA3958",
+      "family": "vertebral-artery",
+      "moduleId": "cardio:head-neck",
+      "sourceType": "arteria",
+      "triangles": 800,
+      "faces": 800,
+      "sourcePositionCount": 489,
+      "vertices": 489,
+      "boundsMetres": [
+        [
+          -0.0336651,
+          1.3984100000000002,
+          0.0585749
+        ],
+        [
+          0.000384026,
+          1.50604,
+          0.08687120000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -33.6651,
+          -86.8712,
+          1398.41
+        ],
+        [
+          0.384026,
+          -58.5749,
+          1506.04
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1725M",
+      "sourceId": "FMA4066",
+      "side": "left",
+      "representationId": "BP8812",
+      "nativeConceptId": "FMA4066",
+      "path": "isa_BP3D_4.0_obj_99/FJ1725M.obj",
+      "bytes": 52013,
+      "sha256": "10d2734ce5ee1a9eadde241f542a87573682f3a4617f3df896bcd9513a1bb2f0",
+      "crc32": "5510918b",
+      "compressedBytesUpstream": 17478,
+      "anatomyId": "bp3d:FMA4066",
+      "family": "vertebral-artery",
+      "moduleId": "cardio:head-neck",
+      "sourceType": "arteria",
+      "triangles": 800,
+      "faces": 800,
+      "sourcePositionCount": 489,
+      "vertices": 489,
+      "boundsMetres": [
+        [
+          -0.000384026,
+          1.3984100000000002,
+          0.0585749
+        ],
+        [
+          0.0336652,
+          1.50603,
+          0.0868711
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.384026,
+          -86.8711,
+          1398.41
+        ],
+        [
+          33.6652,
+          -58.5749,
+          1506.03
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1844",
+      "sourceId": "FMA50542",
+      "side": "midline",
+      "representationId": "BP6340",
+      "nativeConceptId": "FMA50542",
+      "path": "isa_BP3D_4.0_obj_99/FJ1844.obj",
+      "bytes": 14342,
+      "sha256": "bf688ac836107ec24fbdc49024b7be69300cbe827abfd955b414c0a811ff178f",
+      "crc32": "c56a7c67",
+      "compressedBytesUpstream": 5236,
+      "anatomyId": "bp3d:FMA50542",
+      "family": "basilar-artery",
+      "moduleId": "cardio:head-neck",
+      "sourceType": "arteria",
+      "triangles": 244,
+      "faces": 244,
+      "sourcePositionCount": 128,
+      "vertices": 128,
+      "boundsMetres": [
+        [
+          -0.0022814800000000002,
+          1.5026300000000001,
+          0.0835506
+        ],
+        [
+          0.000948449,
+          1.53227,
+          0.0981682
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -2.28148,
+          -98.1682,
+          1502.63
+        ],
+        [
+          0.948449,
+          -83.5506,
+          1532.27
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1853",
+      "sourceId": "FMA50735",
+      "side": "midline",
+      "representationId": "BP5789",
+      "nativeConceptId": "FMA50735",
+      "path": "isa_BP3D_4.0_obj_99/FJ1853.obj",
+      "bytes": 222419,
+      "sha256": "a9e359ffc1ab1d6f3134e72ca2a8ebaf1dc91df94827f4226a453fb3608e2d9b",
+      "crc32": "c39b1b59",
+      "compressedBytesUpstream": 65452,
+      "anatomyId": "bp3d:FMA50735",
+      "family": "hepatic-portal-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 3582,
+      "faces": 3582,
+      "sourcePositionCount": 1793,
+      "vertices": 1793,
+      "boundsMetres": [
+        [
+          -0.0214488,
+          1.06232,
+          0.123594
+        ],
+        [
+          -0.00708181,
+          1.1111199999999999,
+          0.144215
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -21.4488,
+          -144.215,
+          1062.32
+        ],
+        [
+          -7.08181,
+          -123.594,
+          1111.12
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1928",
+      "sourceId": "FMA14749",
+      "side": "midline",
+      "representationId": "BP6193",
+      "nativeConceptId": "FMA14749",
+      "path": "isa_BP3D_4.0_obj_99/FJ1928.obj",
+      "bytes": 68162,
+      "sha256": "14ce4846d476c185a279247162ee118ac9c056593023f66d24f4a4d470e56a7c",
+      "crc32": "75b0e41e",
+      "compressedBytesUpstream": 22754,
+      "anatomyId": "bp3d:FMA14749",
+      "family": "superior-mesenteric-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 1088,
+      "faces": 1088,
+      "sourcePositionCount": 615,
+      "vertices": 615,
+      "boundsMetres": [
+        [
+          -0.0609462,
+          0.909456,
+          0.112119
+        ],
+        [
+          0.00839904,
+          1.0546600000000002,
+          0.151364
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -60.9462,
+          -151.364,
+          909.456
+        ],
+        [
+          8.39904,
+          -112.119,
+          1054.66
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1931",
+      "sourceId": "FMA87217",
+      "side": "midline",
+      "representationId": "BP6004",
+      "nativeConceptId": "FMA87217",
+      "path": "isa_BP3D_4.0_obj_99/FJ1931.obj",
+      "bytes": 142151,
+      "sha256": "b213c8178b48f9afae695254f7bcfb3e08d5781878a76724c353e7e6ea6269be",
+      "crc32": "9d9b3e09",
+      "compressedBytesUpstream": 45233,
+      "anatomyId": "bp3d:FMA87217",
+      "family": "descending-thoracic-aorta",
+      "moduleId": "cardio:trunk",
+      "sourceType": "segmento arterial",
+      "triangles": 2290,
+      "faces": 2290,
+      "sourcePositionCount": 1229,
+      "vertices": 1229,
+      "boundsMetres": [
+        [
+          0.00159329,
+          1.12886,
+          0.0541174
+        ],
+        [
+          0.0299512,
+          1.2997400000000001,
+          0.0997861
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          1.59329,
+          -99.7861,
+          1128.86
+        ],
+        [
+          29.9512,
+          -54.1174,
+          1299.74
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1932",
+      "sourceId": "FMA3789",
+      "side": "midline",
+      "representationId": "BP6008",
+      "nativeConceptId": "FMA3789",
+      "path": "isa_BP3D_4.0_obj_99/FJ1932.obj",
+      "bytes": 141418,
+      "sha256": "c74d3742308c1f05ce9e85c4508d348e3debf57d4aab5bfbc42041d682d39e02",
+      "crc32": "065f30e1",
+      "compressedBytesUpstream": 45160,
+      "anatomyId": "bp3d:FMA3789",
+      "family": "abdominal-aorta",
+      "moduleId": "cardio:trunk",
+      "sourceType": "segmento arterial",
+      "triangles": 2270,
+      "faces": 2270,
+      "sourcePositionCount": 1226,
+      "vertices": 1226,
+      "boundsMetres": [
+        [
+          -0.000902874,
+          0.9486910000000001,
+          0.08247610000000001
+        ],
+        [
+          0.0200548,
+          1.1359100000000002,
+          0.132776
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -0.902874,
+          -132.776,
+          948.691
+        ],
+        [
+          20.0548,
+          -82.4761,
+          1135.91
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1937",
+      "sourceId": "FMA3969",
+      "side": "right",
+      "representationId": "BP6338",
+      "nativeConceptId": "FMA3969",
+      "path": "isa_BP3D_4.0_obj_99/FJ1937.obj",
+      "bytes": 219940,
+      "sha256": "d8d3716593ee2f1e9001ff77b3e4619e2364062371bb1b5c4c928c0dd0fdd17e",
+      "crc32": "6c9e0959",
+      "compressedBytesUpstream": 65696,
+      "anatomyId": "bp3d:FMA3969",
+      "family": "internal-thoracic-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 3546,
+      "faces": 3546,
+      "sourcePositionCount": 1775,
+      "vertices": 1775,
+      "boundsMetres": [
+        [
+          -0.0405745,
+          1.1718,
+          0.10052
+        ],
+        [
+          -0.0122226,
+          1.34936,
+          0.20079400000000003
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -40.5745,
+          -200.794,
+          1171.8
+        ],
+        [
+          -12.2226,
+          -100.52,
+          1349.36
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1972",
+      "sourceId": "FMA4068",
+      "side": "left",
+      "representationId": "BP6339",
+      "nativeConceptId": "FMA4068",
+      "path": "isa_BP3D_4.0_obj_99/FJ1972.obj",
+      "bytes": 224549,
+      "sha256": "95cd8361a6efb53ebc3ecb64fcd52f92968f3b915def80142c01fefbaa35bceb",
+      "crc32": "677e5912",
+      "compressedBytesUpstream": 67115,
+      "anatomyId": "bp3d:FMA4068",
+      "family": "internal-thoracic-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 3642,
+      "faces": 3642,
+      "sourcePositionCount": 1823,
+      "vertices": 1823,
+      "boundsMetres": [
+        [
+          0.0122182,
+          1.1718,
+          0.100755
+        ],
+        [
+          0.041470599999999996,
+          1.35223,
+          0.20079
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          12.2182,
+          -200.79,
+          1171.8
+        ],
+        [
+          41.4706,
+          -100.755,
+          1352.23
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ1981",
+      "sourceId": "FMA5011",
+      "side": "midline",
+      "representationId": "BP5903",
+      "nativeConceptId": "FMA5011",
+      "path": "isa_BP3D_4.0_obj_99/FJ1981.obj",
+      "bytes": 283188,
+      "sha256": "9c95ce0bf60539b0590fceeaee70b9bfe814f4204767f4f6a5ba2a5cf3ea1846",
+      "crc32": "e31870e7",
+      "compressedBytesUpstream": 85366,
+      "anatomyId": "bp3d:FMA5011",
+      "family": "accessory-hemiazygos-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 4532,
+      "faces": 4532,
+      "sourcePositionCount": 2268,
+      "vertices": 2268,
+      "boundsMetres": [
+        [
+          -0.014900499999999999,
+          1.19908,
+          0.0428769
+        ],
+        [
+          0.031912,
+          1.3277400000000001,
+          0.131814
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -14.9005,
+          -131.814,
+          1199.08
+        ],
+        [
+          31.912,
+          -42.8769,
+          1327.74
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2011",
+      "sourceId": "FMA14749",
+      "side": "midline",
+      "representationId": "BP6193",
+      "nativeConceptId": "FMA14749",
+      "path": "isa_BP3D_4.0_obj_99/FJ2011.obj",
+      "bytes": 60341,
+      "sha256": "db6caec612b1564155c869d452904b1e9e834f2f556a9a0b3e2564ce9757e65a",
+      "crc32": "94de6a61",
+      "compressedBytesUpstream": 20297,
+      "anatomyId": "bp3d:FMA14749",
+      "family": "superior-mesenteric-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 958,
+      "faces": 958,
+      "sourcePositionCount": 548,
+      "vertices": 548,
+      "boundsMetres": [
+        [
+          -0.0609462,
+          0.909456,
+          0.112119
+        ],
+        [
+          0.008399050000000002,
+          1.0546600000000002,
+          0.151364
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -60.9462,
+          -151.364,
+          909.456
+        ],
+        [
+          8.39905,
+          -112.119,
+          1054.66
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2038",
+      "sourceId": "FMA14752",
+      "side": "right",
+      "representationId": "BP7655",
+      "nativeConceptId": "FMA14752",
+      "path": "isa_BP3D_4.0_obj_99/FJ2038.obj",
+      "bytes": 13008,
+      "sha256": "2bf3da140369524e15335694773718b4e83b254234bc3e8376a4708565276045",
+      "crc32": "25cc25c2",
+      "compressedBytesUpstream": 4772,
+      "anatomyId": "bp3d:FMA14752",
+      "family": "renal-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 206,
+      "faces": 206,
+      "sourcePositionCount": 124,
+      "vertices": 124,
+      "boundsMetres": [
+        [
+          -0.042344099999999996,
+          1.02518,
+          0.0972584
+        ],
+        [
+          0.0127113,
+          1.04872,
+          0.11956100000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -42.3441,
+          -119.561,
+          1025.18
+        ],
+        [
+          12.7113,
+          -97.2584,
+          1048.72
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2046",
+      "sourceId": "FMA14753",
+      "side": "left",
+      "representationId": "BP7672",
+      "nativeConceptId": "FMA14753",
+      "path": "isa_BP3D_4.0_obj_99/FJ2046.obj",
+      "bytes": 17690,
+      "sha256": "b1a9ce8a37cd9c89fbf4c90a68a554184bf2919dbad391c552c0f4c8dd788845",
+      "crc32": "4a8b5189",
+      "compressedBytesUpstream": 6244,
+      "anatomyId": "bp3d:FMA14753",
+      "family": "renal-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 288,
+      "faces": 288,
+      "sourcePositionCount": 166,
+      "vertices": 166,
+      "boundsMetres": [
+        [
+          0.0036509000000000003,
+          1.03655,
+          0.096762
+        ],
+        [
+          0.0394612,
+          1.04975,
+          0.12030700000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          3.6509,
+          -120.307,
+          1036.55
+        ],
+        [
+          39.4612,
+          -96.762,
+          1049.75
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2065",
+      "sourceId": "FMA43897",
+      "side": "left",
+      "representationId": "BP6073",
+      "nativeConceptId": "FMA43897",
+      "path": "isa_BP3D_4.0_obj_99/FJ2065.obj",
+      "bytes": 1122418,
+      "sha256": "c6388ae15cdf1b00cbbbb6007784022a7c03d1e349b780193488f1f804150c1e",
+      "crc32": "3e8ce921",
+      "compressedBytesUpstream": 324182,
+      "anatomyId": "bp3d:FMA43897",
+      "family": "anterior-tibial-artery",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "arteria",
+      "triangles": 17412,
+      "faces": 17412,
+      "sourcePositionCount": 8708,
+      "vertices": 8708,
+      "boundsMetres": [
+        [
+          0.0681334,
+          0.004321449999999999,
+          0.0701085
+        ],
+        [
+          0.105556,
+          0.32182,
+          0.0981048
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          68.1334,
+          -98.1048,
+          4.32145
+        ],
+        [
+          105.556,
+          -70.1085,
+          321.82
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2074",
+      "sourceId": "FMA70250",
+      "side": "left",
+      "representationId": "BP6082",
+      "nativeConceptId": "FMA70250",
+      "path": "isa_BP3D_4.0_obj_99/FJ2074.obj",
+      "bytes": 43290,
+      "sha256": "df045596a410cfcc3c15f9aff1d02c5c7bcba234c9ebe6346ec1053d605de4d0",
+      "crc32": "172b7e12",
+      "compressedBytesUpstream": 15146,
+      "anatomyId": "bp3d:FMA70250",
+      "family": "femoral-artery",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "arteria",
+      "triangles": 740,
+      "faces": 740,
+      "sourcePositionCount": 373,
+      "vertices": 373,
+      "boundsMetres": [
+        [
+          0.0378669,
+          0.470426,
+          0.085408
+        ],
+        [
+          0.0659103,
+          0.830408,
+          0.14302099999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          37.8669,
+          -143.021,
+          470.426
+        ],
+        [
+          65.9103,
+          -85.408,
+          830.408
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2086",
+      "sourceId": "FMA77381",
+      "side": "left",
+      "representationId": "BP6079",
+      "nativeConceptId": "FMA77381",
+      "path": "isa_BP3D_4.0_obj_99/FJ2086.obj",
+      "bytes": 1076712,
+      "sha256": "20dac622c09e02e45fa95b6f3c2eba7e932fdc3eef507ac19d0d78ed71ef241c",
+      "crc32": "e38ae824",
+      "compressedBytesUpstream": 309703,
+      "anatomyId": "bp3d:FMA77381",
+      "family": "popliteal-artery",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "arteria",
+      "triangles": 16732,
+      "faces": 16732,
+      "sourcePositionCount": 8368,
+      "vertices": 8368,
+      "boundsMetres": [
+        [
+          0.055858,
+          0.283275,
+          0.0526969
+        ],
+        [
+          0.0958421,
+          0.480775,
+          0.0957853
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          55.858,
+          -95.7853,
+          283.275
+        ],
+        [
+          95.8421,
+          -52.6969,
+          480.775
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2087",
+      "sourceId": "FMA43899",
+      "side": "left",
+      "representationId": "BP6076",
+      "nativeConceptId": "FMA43899",
+      "path": "isa_BP3D_4.0_obj_99/FJ2087.obj",
+      "bytes": 853649,
+      "sha256": "88e45ecb2bbe5b278d052c240649bf1f576ea3808272e60a4990fc5d8066bbb5",
+      "crc32": "13d19031",
+      "compressedBytesUpstream": 249019,
+      "anatomyId": "bp3d:FMA43899",
+      "family": "posterior-tibial-artery",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "arteria",
+      "triangles": 13218,
+      "faces": 13218,
+      "sourcePositionCount": 6658,
+      "vertices": 6658,
+      "boundsMetres": [
+        [
+          0.0444748,
+          -0.0413402,
+          0.0503494
+        ],
+        [
+          0.0911314,
+          0.289765,
+          0.0867695
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          44.4748,
+          -86.7695,
+          -41.3402
+        ],
+        [
+          91.1314,
+          -50.3494,
+          289.765
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2097",
+      "sourceId": "FMA44337",
+      "side": "left",
+      "representationId": "BP5850",
+      "nativeConceptId": "FMA44337",
+      "path": "isa_BP3D_4.0_obj_99/FJ2097.obj",
+      "bytes": 173397,
+      "sha256": "baad24d3cc1c5bbc493e95793efa217b3c6d6a6ac87006b15f0bb21a26a0cc1e",
+      "crc32": "dd045975",
+      "compressedBytesUpstream": 53342,
+      "anatomyId": "bp3d:FMA44337",
+      "family": "anterior-tibial-vein",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "vena",
+      "triangles": 2840,
+      "faces": 2840,
+      "sourcePositionCount": 1435,
+      "vertices": 1435,
+      "boundsMetres": [
+        [
+          0.0509448,
+          0.291358,
+          0.0725722
+        ],
+        [
+          0.109987,
+          0.405778,
+          0.114196
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          50.9448,
+          -114.196,
+          291.358
+        ],
+        [
+          109.987,
+          -72.5722,
+          405.778
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2099",
+      "sourceId": "FMA51043",
+      "side": "left",
+      "representationId": "BP5874",
+      "nativeConceptId": "FMA51043",
+      "path": "isa_BP3D_4.0_obj_99/FJ2099.obj",
+      "bytes": 400420,
+      "sha256": "7ce931eee500efd0c796c2b29ee29000ad55c9b4c31784bec72dd23b5defa3f3",
+      "crc32": "8c4729e8",
+      "compressedBytesUpstream": 118079,
+      "anatomyId": "bp3d:FMA51043",
+      "family": "deep-femoral-vein",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "vena",
+      "triangles": 6338,
+      "faces": 6338,
+      "sourcePositionCount": 3171,
+      "vertices": 3171,
+      "boundsMetres": [
+        [
+          0.0328831,
+          0.5083380000000001,
+          0.105041
+        ],
+        [
+          0.0787628,
+          0.8184990000000001,
+          0.143428
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          32.8831,
+          -143.428,
+          508.338
+        ],
+        [
+          78.7628,
+          -105.041,
+          818.499
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2102",
+      "sourceId": "FMA21189",
+      "side": "left",
+      "representationId": "BP5880",
+      "nativeConceptId": "FMA21189",
+      "path": "isa_BP3D_4.0_obj_99/FJ2102.obj",
+      "bytes": 38449,
+      "sha256": "07776c248a8f8ddd3007f652c7bcafc60af3ab23edd678cc2da37615359c4abc",
+      "crc32": "fbfc09b7",
+      "compressedBytesUpstream": 13427,
+      "anatomyId": "bp3d:FMA21189",
+      "family": "femoral-vein",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "vena",
+      "triangles": 658,
+      "faces": 658,
+      "sourcePositionCount": 332,
+      "vertices": 332,
+      "boundsMetres": [
+        [
+          0.0318721,
+          0.48357100000000003,
+          0.08395050000000001
+        ],
+        [
+          0.073948,
+          0.806842,
+          0.154814
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          31.8721,
+          -154.814,
+          483.571
+        ],
+        [
+          73.948,
+          -83.9505,
+          806.842
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2103",
+      "sourceId": "FMA21380",
+      "side": "left",
+      "representationId": "BP5871",
+      "nativeConceptId": "FMA21380",
+      "path": "isa_BP3D_4.0_obj_99/FJ2103.obj",
+      "bytes": 2017238,
+      "sha256": "5aef9c656f07538f2a7c9dee150b00d93e98e567f083dec2c5e924b0ad9c377b",
+      "crc32": "48b38c23",
+      "compressedBytesUpstream": 563052,
+      "anatomyId": "bp3d:FMA21380",
+      "family": "great-saphenous-vein",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "vena",
+      "triangles": 30040,
+      "faces": 30040,
+      "sourcePositionCount": 15199,
+      "vertices": 15199,
+      "boundsMetres": [
+        [
+          0.0134205,
+          -0.0263853,
+          0.0480824
+        ],
+        [
+          0.0948874,
+          0.795846,
+          0.153947
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          13.4205,
+          -153.947,
+          -26.3853
+        ],
+        [
+          94.8874,
+          -48.0824,
+          795.846
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2117",
+      "sourceId": "FMA44329",
+      "side": "left",
+      "representationId": "BP5862",
+      "nativeConceptId": "FMA44329",
+      "path": "isa_BP3D_4.0_obj_99/FJ2117.obj",
+      "bytes": 1076260,
+      "sha256": "92082063ece4916d1b8c3a17b6d135c36edf3ab75dd5b7e9604e71a6d58fa2ee",
+      "crc32": "92d8df8a",
+      "compressedBytesUpstream": 309430,
+      "anatomyId": "bp3d:FMA44329",
+      "family": "popliteal-vein",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "vena",
+      "triangles": 16592,
+      "faces": 16592,
+      "sourcePositionCount": 8433,
+      "vertices": 8433,
+      "boundsMetres": [
+        [
+          0.0641626,
+          0.319486,
+          0.0550572
+        ],
+        [
+          0.101762,
+          0.49614400000000003,
+          0.0942593
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          64.1626,
+          -94.2593,
+          319.486
+        ],
+        [
+          101.762,
+          -55.0572,
+          496.144
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2118",
+      "sourceId": "FMA44339",
+      "side": "left",
+      "representationId": "BP5847",
+      "nativeConceptId": "FMA44339",
+      "path": "isa_BP3D_4.0_obj_99/FJ2118.obj",
+      "bytes": 894222,
+      "sha256": "06d0d03da663cc3c83f8efd7dd1cc99ea0cfb912f6ee01c3ed89d51212605db8",
+      "crc32": "e61d899d",
+      "compressedBytesUpstream": 261568,
+      "anatomyId": "bp3d:FMA44339",
+      "family": "posterior-tibial-vein",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "vena",
+      "triangles": 13826,
+      "faces": 13826,
+      "sourcePositionCount": 6982,
+      "vertices": 6982,
+      "boundsMetres": [
+        [
+          0.0397763,
+          -0.0456661,
+          0.0491917
+        ],
+        [
+          0.102381,
+          0.28384800000000004,
+          0.08789490000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          39.7763,
+          -87.8949,
+          -45.6661
+        ],
+        [
+          102.381,
+          -49.1917,
+          283.848
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2121",
+      "sourceId": "FMA44335",
+      "side": "left",
+      "representationId": "BP5853",
+      "nativeConceptId": "FMA44335",
+      "path": "isa_BP3D_4.0_obj_99/FJ2121.obj",
+      "bytes": 1053735,
+      "sha256": "e95be7db2162c51e3024e4fb8549221f29f1e24ad86aca9f3b6999bfd4cae9ec",
+      "crc32": "933a5169",
+      "compressedBytesUpstream": 303256,
+      "anatomyId": "bp3d:FMA44335",
+      "family": "small-saphenous-vein",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "vena",
+      "triangles": 16336,
+      "faces": 16336,
+      "sourcePositionCount": 8170,
+      "vertices": 8170,
+      "boundsMetres": [
+        [
+          0.0623118,
+          -0.04424090000000001,
+          0.011066000000000001
+        ],
+        [
+          0.11243800000000001,
+          0.410171,
+          0.08639100000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          62.3118,
+          -86.391,
+          -44.2409
+        ],
+        [
+          112.438,
+          -11.066,
+          410.171
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2130",
+      "sourceId": "FMA43896",
+      "side": "right",
+      "representationId": "BP6072",
+      "nativeConceptId": "FMA43896",
+      "path": "isa_BP3D_4.0_obj_99/FJ2130.obj",
+      "bytes": 1126110,
+      "sha256": "56de59319a67eb9a3fbc9815d9dc66f371b3f116b211c2b03abfbb84ae21568c",
+      "crc32": "7c46749a",
+      "compressedBytesUpstream": 322873,
+      "anatomyId": "bp3d:FMA43896",
+      "family": "anterior-tibial-artery",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "arteria",
+      "triangles": 17334,
+      "faces": 17334,
+      "sourcePositionCount": 8669,
+      "vertices": 8669,
+      "boundsMetres": [
+        [
+          -0.10555500000000001,
+          0.00431911,
+          0.07010580000000001
+        ],
+        [
+          -0.0681382,
+          0.321821,
+          0.0981066
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -105.555,
+          -98.1066,
+          4.31911
+        ],
+        [
+          -68.1382,
+          -70.1058,
+          321.821
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2132",
+      "sourceId": "FMA44336",
+      "side": "right",
+      "representationId": "BP5849",
+      "nativeConceptId": "FMA44336",
+      "path": "isa_BP3D_4.0_obj_99/FJ2132.obj",
+      "bytes": 174330,
+      "sha256": "882bc85f20f37456f27048340d2b431b26e9f1fa4e877b935adf984958384cae",
+      "crc32": "2a2e8a2b",
+      "compressedBytesUpstream": 53387,
+      "anatomyId": "bp3d:FMA44336",
+      "family": "anterior-tibial-vein",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "vena",
+      "triangles": 2840,
+      "faces": 2840,
+      "sourcePositionCount": 1427,
+      "vertices": 1427,
+      "boundsMetres": [
+        [
+          -0.10997900000000001,
+          0.29135500000000003,
+          0.0725775
+        ],
+        [
+          -0.0509485,
+          0.405781,
+          0.114217
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -109.979,
+          -114.217,
+          291.355
+        ],
+        [
+          -50.9485,
+          -72.5775,
+          405.781
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2135",
+      "sourceId": "FMA51042",
+      "side": "right",
+      "representationId": "BP5873",
+      "nativeConceptId": "FMA51042",
+      "path": "isa_BP3D_4.0_obj_99/FJ2135.obj",
+      "bytes": 404052,
+      "sha256": "4e74f0301c15232ce6cb744bd0439d779a9a77eef51b3cf26bab15a632ad2a95",
+      "crc32": "e671a1d2",
+      "compressedBytesUpstream": 118439,
+      "anatomyId": "bp3d:FMA51042",
+      "family": "deep-femoral-vein",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "vena",
+      "triangles": 6346,
+      "faces": 6346,
+      "sourcePositionCount": 3175,
+      "vertices": 3175,
+      "boundsMetres": [
+        [
+          -0.07874590000000001,
+          0.508342,
+          0.10504300000000001
+        ],
+        [
+          -0.0328758,
+          0.81849,
+          0.14344300000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -78.7459,
+          -143.443,
+          508.342
+        ],
+        [
+          -32.8758,
+          -105.043,
+          818.49
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2143",
+      "sourceId": "FMA70249",
+      "side": "right",
+      "representationId": "BP6081",
+      "nativeConceptId": "FMA70249",
+      "path": "isa_BP3D_4.0_obj_99/FJ2143.obj",
+      "bytes": 44505,
+      "sha256": "d9decbcc37ddafa41a0c01e316cff52a9259ed5292ddf2e199cf09414e872bae",
+      "crc32": "c13bf7f2",
+      "compressedBytesUpstream": 15353,
+      "anatomyId": "bp3d:FMA70249",
+      "family": "femoral-artery",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "arteria",
+      "triangles": 752,
+      "faces": 752,
+      "sourcePositionCount": 380,
+      "vertices": 380,
+      "boundsMetres": [
+        [
+          -0.06616889999999999,
+          0.47042200000000006,
+          0.0854922
+        ],
+        [
+          -0.0377225,
+          0.830251,
+          0.142954
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -66.1689,
+          -142.954,
+          470.422
+        ],
+        [
+          -37.7225,
+          -85.4922,
+          830.251
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2144",
+      "sourceId": "FMA21188",
+      "side": "right",
+      "representationId": "BP5879",
+      "nativeConceptId": "FMA21188",
+      "path": "isa_BP3D_4.0_obj_99/FJ2144.obj",
+      "bytes": 39050,
+      "sha256": "16f9661f23ad65a5856cf50be867e5ef282ea73fae50b853d44d9ab22676b1ab",
+      "crc32": "62385550",
+      "compressedBytesUpstream": 13571,
+      "anatomyId": "bp3d:FMA21188",
+      "family": "femoral-vein",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "vena",
+      "triangles": 658,
+      "faces": 658,
+      "sourcePositionCount": 336,
+      "vertices": 336,
+      "boundsMetres": [
+        [
+          -0.0737795,
+          0.483565,
+          0.08406140000000001
+        ],
+        [
+          -0.031963899999999996,
+          0.806828,
+          0.15473699999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -73.7795,
+          -154.737,
+          483.565
+        ],
+        [
+          -31.9639,
+          -84.0614,
+          806.828
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2145",
+      "sourceId": "FMA21379",
+      "side": "right",
+      "representationId": "BP5870",
+      "nativeConceptId": "FMA21379",
+      "path": "isa_BP3D_4.0_obj_99/FJ2145.obj",
+      "bytes": 2029380,
+      "sha256": "dee8dea4b9f286f40abec150d46f04bc1a1bb2f1a78c91c2431c4d225c33f925",
+      "crc32": "02ee575f",
+      "compressedBytesUpstream": 563005,
+      "anatomyId": "bp3d:FMA21379",
+      "family": "great-saphenous-vein",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "vena",
+      "triangles": 30036,
+      "faces": 30036,
+      "sourcePositionCount": 15163,
+      "vertices": 15163,
+      "boundsMetres": [
+        [
+          -0.09488830000000001,
+          -0.0263853,
+          0.048086500000000004
+        ],
+        [
+          -0.0134213,
+          0.795849,
+          0.153951
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -94.8883,
+          -153.951,
+          -26.3853
+        ],
+        [
+          -13.4213,
+          -48.0865,
+          795.849
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2170",
+      "sourceId": "FMA77380",
+      "side": "right",
+      "representationId": "BP6078",
+      "nativeConceptId": "FMA77380",
+      "path": "isa_BP3D_4.0_obj_99/FJ2170.obj",
+      "bytes": 1088013,
+      "sha256": "4bc14302e06ca2162a6df730a7d9f8549b5e6e9b919ce34e35bbdbeec1b088b0",
+      "crc32": "a31c59c9",
+      "compressedBytesUpstream": 312257,
+      "anatomyId": "bp3d:FMA77380",
+      "family": "popliteal-artery",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "arteria",
+      "triangles": 16778,
+      "faces": 16778,
+      "sourcePositionCount": 8391,
+      "vertices": 8391,
+      "boundsMetres": [
+        [
+          -0.0958418,
+          0.283275,
+          0.0526954
+        ],
+        [
+          -0.0558564,
+          0.48077800000000004,
+          0.0957871
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -95.8418,
+          -95.7871,
+          283.275
+        ],
+        [
+          -55.8564,
+          -52.6954,
+          480.778
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2171",
+      "sourceId": "FMA44328",
+      "side": "right",
+      "representationId": "BP5861",
+      "nativeConceptId": "FMA44328",
+      "path": "isa_BP3D_4.0_obj_99/FJ2171.obj",
+      "bytes": 1090014,
+      "sha256": "b54fb1bed98c0159e1c8501d3211d43080a085fb498d5c992015afc49e1e3dbc",
+      "crc32": "a3dbc77d",
+      "compressedBytesUpstream": 310974,
+      "anatomyId": "bp3d:FMA44328",
+      "family": "popliteal-vein",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "vena",
+      "triangles": 16660,
+      "faces": 16660,
+      "sourcePositionCount": 8505,
+      "vertices": 8505,
+      "boundsMetres": [
+        [
+          -0.101768,
+          0.319486,
+          0.055056600000000004
+        ],
+        [
+          -0.0641633,
+          0.496143,
+          0.0942601
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -101.768,
+          -94.2601,
+          319.486
+        ],
+        [
+          -64.1633,
+          -55.0566,
+          496.143
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2172",
+      "sourceId": "FMA43898",
+      "side": "right",
+      "representationId": "BP6075",
+      "nativeConceptId": "FMA43898",
+      "path": "isa_BP3D_4.0_obj_99/FJ2172.obj",
+      "bytes": 853131,
+      "sha256": "4e82371d5860733555c3b4c096134586128646ad31fb58cdcb6ee97df0849f08",
+      "crc32": "9f04ef2b",
+      "compressedBytesUpstream": 247395,
+      "anatomyId": "bp3d:FMA43898",
+      "family": "posterior-tibial-artery",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "arteria",
+      "triangles": 13130,
+      "faces": 13130,
+      "sourcePositionCount": 6601,
+      "vertices": 6601,
+      "boundsMetres": [
+        [
+          -0.0911327,
+          -0.0413313,
+          0.050347499999999996
+        ],
+        [
+          -0.0444784,
+          0.289766,
+          0.0867752
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -91.1327,
+          -86.7752,
+          -41.3313
+        ],
+        [
+          -44.4784,
+          -50.3475,
+          289.766
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2173",
+      "sourceId": "FMA44338",
+      "side": "right",
+      "representationId": "BP5846",
+      "nativeConceptId": "FMA44338",
+      "path": "isa_BP3D_4.0_obj_99/FJ2173.obj",
+      "bytes": 899308,
+      "sha256": "e2b3c5e3b353033d69a81457f4d55e9da6261399713600b5e200ae2e236c8b34",
+      "crc32": "eb95a9ab",
+      "compressedBytesUpstream": 261803,
+      "anatomyId": "bp3d:FMA44338",
+      "family": "posterior-tibial-vein",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "vena",
+      "triangles": 13782,
+      "faces": 13782,
+      "sourcePositionCount": 6983,
+      "vertices": 6983,
+      "boundsMetres": [
+        [
+          -0.102384,
+          -0.0456541,
+          0.049186799999999996
+        ],
+        [
+          -0.0397734,
+          0.283851,
+          0.0879422
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -102.384,
+          -87.9422,
+          -45.6541
+        ],
+        [
+          -39.7734,
+          -49.1868,
+          283.851
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2176",
+      "sourceId": "FMA44334",
+      "side": "right",
+      "representationId": "BP5852",
+      "nativeConceptId": "FMA44334",
+      "path": "isa_BP3D_4.0_obj_99/FJ2176.obj",
+      "bytes": 1061394,
+      "sha256": "400f2fe7647680e4e4e5ae842686644d9d84e71af30c2bb2e59bc0d81b5f6bb8",
+      "crc32": "2c429ec7",
+      "compressedBytesUpstream": 304066,
+      "anatomyId": "bp3d:FMA44334",
+      "family": "small-saphenous-vein",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "vena",
+      "triangles": 16332,
+      "faces": 16332,
+      "sourcePositionCount": 8171,
+      "vertices": 8171,
+      "boundsMetres": [
+        [
+          -0.112434,
+          -0.0442412,
+          0.011070100000000001
+        ],
+        [
+          -0.062311,
+          0.410169,
+          0.0863938
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -112.434,
+          -86.3938,
+          -44.2412
+        ],
+        [
+          -62.311,
+          -11.0701,
+          410.169
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2183",
+      "sourceId": "FMA44337",
+      "side": "left",
+      "representationId": "BP5850",
+      "nativeConceptId": "FMA44337",
+      "path": "isa_BP3D_4.0_obj_99/FJ2183.obj",
+      "bytes": 821539,
+      "sha256": "64fae2f22228c4da162d61c70e2fe4d59fdcf13e35218df093b58d8eff6dff08",
+      "crc32": "75c45946",
+      "compressedBytesUpstream": 238696,
+      "anatomyId": "bp3d:FMA44337",
+      "family": "anterior-tibial-vein",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "vena",
+      "triangles": 12794,
+      "faces": 12794,
+      "sourcePositionCount": 6399,
+      "vertices": 6399,
+      "boundsMetres": [
+        [
+          0.0816605,
+          0.0403036,
+          0.06954170000000001
+        ],
+        [
+          0.108817,
+          0.324041,
+          0.0926557
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          81.6605,
+          -92.6557,
+          40.3036
+        ],
+        [
+          108.817,
+          -69.5417,
+          324.041
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2193",
+      "sourceId": "FMA44336",
+      "side": "right",
+      "representationId": "BP5849",
+      "nativeConceptId": "FMA44336",
+      "path": "isa_BP3D_4.0_obj_99/FJ2193.obj",
+      "bytes": 825536,
+      "sha256": "f21e0ec17c0a9366b40494fa34c893386301fba3099df0eb9f3a9476fbaeb770",
+      "crc32": "c9436dfc",
+      "compressedBytesUpstream": 236901,
+      "anatomyId": "bp3d:FMA44336",
+      "family": "anterior-tibial-vein",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "vena",
+      "triangles": 12756,
+      "faces": 12756,
+      "sourcePositionCount": 6383,
+      "vertices": 6383,
+      "boundsMetres": [
+        [
+          -0.108815,
+          0.0403047,
+          0.0695429
+        ],
+        [
+          -0.08166280000000001,
+          0.324041,
+          0.0926579
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -108.815,
+          -92.6579,
+          40.3047
+        ],
+        [
+          -81.6628,
+          -69.5429,
+          324.041
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2216",
+      "sourceId": "FMA22656",
+      "side": "left",
+      "representationId": "BP6024",
+      "nativeConceptId": "FMA22656",
+      "path": "isa_BP3D_4.0_obj_99/FJ2216.obj",
+      "bytes": 105883,
+      "sha256": "fe9295ce260df56c46f29e56e410937c9fa2f3e104411fb7e91b5f9681509ccb",
+      "crc32": "5302583b",
+      "compressedBytesUpstream": 33728,
+      "anatomyId": "bp3d:FMA22656",
+      "family": "axillary-artery",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "arteria",
+      "triangles": 1800,
+      "faces": 1800,
+      "sourcePositionCount": 902,
+      "vertices": 902,
+      "boundsMetres": [
+        [
+          0.07693470000000001,
+          1.2581300000000002,
+          0.08007800000000001
+        ],
+        [
+          0.151457,
+          1.33984,
+          0.10641500000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          76.9347,
+          -106.415,
+          1258.13
+        ],
+        [
+          151.457,
+          -80.078,
+          1339.84
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2217",
+      "sourceId": "FMA13331",
+      "side": "left",
+      "representationId": "BP5957",
+      "nativeConceptId": "FMA13331",
+      "path": "isa_BP3D_4.0_obj_99/FJ2217.obj",
+      "bytes": 126836,
+      "sha256": "7b448d1f2a071e88d1a2ebe54e7e5d417719663a5b01d1226f492b71ebdc19cd",
+      "crc32": "b5d556c0",
+      "compressedBytesUpstream": 39429,
+      "anatomyId": "bp3d:FMA13331",
+      "family": "axillary-vein",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "vena",
+      "triangles": 2110,
+      "faces": 2110,
+      "sourcePositionCount": 1089,
+      "vertices": 1089,
+      "boundsMetres": [
+        [
+          0.0749262,
+          1.23284,
+          0.0914033
+        ],
+        [
+          0.157141,
+          1.3351400000000002,
+          0.115166
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          74.9262,
+          -115.166,
+          1232.84
+        ],
+        [
+          157.141,
+          -91.4033,
+          1335.14
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2218",
+      "sourceId": "FMA22910",
+      "side": "left",
+      "representationId": "BP5951",
+      "nativeConceptId": "FMA22910",
+      "path": "isa_BP3D_4.0_obj_99/FJ2218.obj",
+      "bytes": 1181748,
+      "sha256": "09bb227be0f517e81168edb3fa4eb7cdcdf2157355ca86be7366277b3859f9ca",
+      "crc32": "b16bde57",
+      "compressedBytesUpstream": 329963,
+      "anatomyId": "bp3d:FMA22910",
+      "family": "basilic-vein",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "vena",
+      "triangles": 18338,
+      "faces": 18338,
+      "sourcePositionCount": 9177,
+      "vertices": 9177,
+      "boundsMetres": [
+        [
+          0.151004,
+          0.788833,
+          0.0628312
+        ],
+        [
+          0.235482,
+          1.2372400000000001,
+          0.11481100000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          151.004,
+          -114.811,
+          788.833
+        ],
+        [
+          235.482,
+          -62.8312,
+          1237.24
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2219",
+      "sourceId": "FMA22692",
+      "side": "left",
+      "representationId": "BP6021",
+      "nativeConceptId": "FMA22692",
+      "path": "isa_BP3D_4.0_obj_99/FJ2219.obj",
+      "bytes": 213367,
+      "sha256": "e3c8e2be45d0f25f4e2efa9a046bc13b66c4e43e724a2c2b0424d230719cc6db",
+      "crc32": "f2edba4a",
+      "compressedBytesUpstream": 64221,
+      "anatomyId": "bp3d:FMA22692",
+      "family": "brachial-artery",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "arteria",
+      "triangles": 3470,
+      "faces": 3470,
+      "sourcePositionCount": 1737,
+      "vertices": 1737,
+      "boundsMetres": [
+        [
+          0.143043,
+          1.0206,
+          0.0723475
+        ],
+        [
+          0.217451,
+          1.2743499999999999,
+          0.0889678
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          143.043,
+          -88.9678,
+          1020.6
+        ],
+        [
+          217.451,
+          -72.3475,
+          1274.35
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2220",
+      "sourceId": "FMA13326",
+      "side": "left",
+      "representationId": "BP5944",
+      "nativeConceptId": "FMA13326",
+      "path": "isa_BP3D_4.0_obj_99/FJ2220.obj",
+      "bytes": 1497928,
+      "sha256": "1a3062828e09478913a2d9df9ef4e092c7b7bf8a5f4bd68b1603eb79e79273e2",
+      "crc32": "2cd2f102",
+      "compressedBytesUpstream": 408918,
+      "anatomyId": "bp3d:FMA13326",
+      "family": "cephalic-vein",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "vena",
+      "triangles": 22874,
+      "faces": 22874,
+      "sourcePositionCount": 11505,
+      "vertices": 11505,
+      "boundsMetres": [
+        [
+          0.10683100000000001,
+          0.7744690000000001,
+          0.077656
+        ],
+        [
+          0.27903500000000003,
+          1.3268199999999999,
+          0.131729
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          106.831,
+          -131.729,
+          774.469
+        ],
+        [
+          279.035,
+          -77.656,
+          1326.82
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2225",
+      "sourceId": "FMA22697",
+      "side": "left",
+      "representationId": "BP6285",
+      "nativeConceptId": "FMA22697",
+      "path": "isa_BP3D_4.0_obj_99/FJ2225.obj",
+      "bytes": 150584,
+      "sha256": "c24f0def19fb45bf84251678b8d63c09fa7d5f51fa71fdd5515adddb8ff7db6c",
+      "crc32": "38fb9ab8",
+      "compressedBytesUpstream": 45869,
+      "anatomyId": "bp3d:FMA22697",
+      "family": "deep-brachial-artery",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "arteria",
+      "triangles": 2506,
+      "faces": 2506,
+      "sourcePositionCount": 1255,
+      "vertices": 1255,
+      "boundsMetres": [
+        [
+          0.174354,
+          1.11498,
+          0.052107799999999996
+        ],
+        [
+          0.206037,
+          1.1843,
+          0.0766633
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          174.354,
+          -76.6633,
+          1114.98
+        ],
+        [
+          206.037,
+          -52.1078,
+          1184.3
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2234",
+      "sourceId": "FMA22969",
+      "side": "left",
+      "representationId": "BP5935",
+      "nativeConceptId": "FMA22969",
+      "path": "isa_BP3D_4.0_obj_99/FJ2234.obj",
+      "bytes": 334909,
+      "sha256": "572c2360da079d2a3eab28eb92e0a99ca268fe6550ff03d24a772391304f37fa",
+      "crc32": "b56f021b",
+      "compressedBytesUpstream": 96935,
+      "anatomyId": "bp3d:FMA22969",
+      "family": "median-antebrachial-vein",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "vena",
+      "triangles": 5314,
+      "faces": 5314,
+      "sourcePositionCount": 2685,
+      "vertices": 2685,
+      "boundsMetres": [
+        [
+          0.176285,
+          0.814721,
+          0.0728614
+        ],
+        [
+          0.262457,
+          1.01365,
+          0.134534
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          176.285,
+          -134.534,
+          814.721
+        ],
+        [
+          262.457,
+          -72.8614,
+          1013.65
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2242",
+      "sourceId": "FMA22734",
+      "side": "left",
+      "representationId": "BP6336",
+      "nativeConceptId": "FMA22734",
+      "path": "isa_BP3D_4.0_obj_99/FJ2242.obj",
+      "bytes": 492936,
+      "sha256": "d97e01814668d5a32f18a5cc07a3e6e77bf1a734008f21d8f7dc62fedd0175a6",
+      "crc32": "f8eba41a",
+      "compressedBytesUpstream": 140983,
+      "anatomyId": "bp3d:FMA22734",
+      "family": "radial-artery",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "arteria",
+      "triangles": 7764,
+      "faces": 7764,
+      "sourcePositionCount": 3884,
+      "vertices": 3884,
+      "boundsMetres": [
+        [
+          0.213611,
+          0.7911860000000001,
+          0.083151
+        ],
+        [
+          0.279507,
+          1.02445,
+          0.127127
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          213.611,
+          -127.127,
+          791.186
+        ],
+        [
+          279.507,
+          -83.151,
+          1024.45
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2244",
+      "sourceId": "FMA22949",
+      "side": "left",
+      "representationId": "BP5928",
+      "nativeConceptId": "FMA22949",
+      "path": "isa_BP3D_4.0_obj_99/FJ2244.obj",
+      "bytes": 311622,
+      "sha256": "f4800a750dbf674e06941ab7339723d874e9051da89561c9d0b33c82bed1a179",
+      "crc32": "1f716064",
+      "compressedBytesUpstream": 90719,
+      "anatomyId": "bp3d:FMA22949",
+      "family": "radial-vein",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "vena",
+      "triangles": 4932,
+      "faces": 4932,
+      "sourcePositionCount": 2515,
+      "vertices": 2515,
+      "boundsMetres": [
+        [
+          0.213705,
+          0.819834,
+          0.08550289999999999
+        ],
+        [
+          0.266904,
+          1.02585,
+          0.125818
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          213.705,
+          -125.818,
+          819.834
+        ],
+        [
+          266.904,
+          -85.5029,
+          1025.85
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2258",
+      "sourceId": "FMA22798",
+      "side": "left",
+      "representationId": "BP6316",
+      "nativeConceptId": "FMA22798",
+      "path": "isa_BP3D_4.0_obj_99/FJ2258.obj",
+      "bytes": 451108,
+      "sha256": "4ddf684432c015ef59cd0bc8cb72b8890632ebde5f2d92e3c1002209ac482b8a",
+      "crc32": "c35d8699",
+      "compressedBytesUpstream": 129293,
+      "anatomyId": "bp3d:FMA22798",
+      "family": "ulnar-artery",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "arteria",
+      "triangles": 7114,
+      "faces": 7114,
+      "sourcePositionCount": 3562,
+      "vertices": 3562,
+      "boundsMetres": [
+        [
+          0.211051,
+          0.794684,
+          0.0769837
+        ],
+        [
+          0.24372,
+          1.02445,
+          0.13107300000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          211.051,
+          -131.073,
+          794.684
+        ],
+        [
+          243.72,
+          -76.9837,
+          1024.45
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2260",
+      "sourceId": "FMA22952",
+      "side": "left",
+      "representationId": "BP5921",
+      "nativeConceptId": "FMA22952",
+      "path": "isa_BP3D_4.0_obj_99/FJ2260.obj",
+      "bytes": 372900,
+      "sha256": "e58b787a03ebd643c3a9651c697f027fa16c415e9e01d190b572c477df7c926f",
+      "crc32": "5bf13d81",
+      "compressedBytesUpstream": 107602,
+      "anatomyId": "bp3d:FMA22952",
+      "family": "ulnar-vein",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "vena",
+      "triangles": 5918,
+      "faces": 5918,
+      "sourcePositionCount": 2962,
+      "vertices": 2962,
+      "boundsMetres": [
+        [
+          0.210848,
+          0.814241,
+          0.0838603
+        ],
+        [
+          0.250156,
+          1.0233700000000001,
+          0.13422399999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          210.848,
+          -134.224,
+          814.241
+        ],
+        [
+          250.156,
+          -83.8603,
+          1023.37
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2268",
+      "sourceId": "FMA22655",
+      "side": "right",
+      "representationId": "BP6023",
+      "nativeConceptId": "FMA22655",
+      "path": "isa_BP3D_4.0_obj_99/FJ2268.obj",
+      "bytes": 108257,
+      "sha256": "192c0b2607e669dc89a6eadd2c11f2fff904f010e4dca81822209865df7e5752",
+      "crc32": "faec5b62",
+      "compressedBytesUpstream": 34219,
+      "anatomyId": "bp3d:FMA22655",
+      "family": "axillary-artery",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "arteria",
+      "triangles": 1826,
+      "faces": 1826,
+      "sourcePositionCount": 915,
+      "vertices": 915,
+      "boundsMetres": [
+        [
+          -0.15144,
+          1.25812,
+          0.08005620000000001
+        ],
+        [
+          -0.07694150000000001,
+          1.33984,
+          0.106425
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -151.44,
+          -106.425,
+          1258.12
+        ],
+        [
+          -76.9415,
+          -80.0562,
+          1339.84
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2269",
+      "sourceId": "FMA13330",
+      "side": "right",
+      "representationId": "BP5956",
+      "nativeConceptId": "FMA13330",
+      "path": "isa_BP3D_4.0_obj_99/FJ2269.obj",
+      "bytes": 130875,
+      "sha256": "24438422321aa6665de6394aa39e79fdeabdf2bc56427a3419da4dc630546464",
+      "crc32": "168088ed",
+      "compressedBytesUpstream": 40234,
+      "anatomyId": "bp3d:FMA13330",
+      "family": "axillary-vein",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "vena",
+      "triangles": 2146,
+      "faces": 2146,
+      "sourcePositionCount": 1112,
+      "vertices": 1112,
+      "boundsMetres": [
+        [
+          -0.157167,
+          1.23285,
+          0.0913942
+        ],
+        [
+          -0.0749191,
+          1.3351400000000002,
+          0.115169
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -157.167,
+          -115.169,
+          1232.85
+        ],
+        [
+          -74.9191,
+          -91.3942,
+          1335.14
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2270",
+      "sourceId": "FMA22909",
+      "side": "right",
+      "representationId": "BP5950",
+      "nativeConceptId": "FMA22909",
+      "path": "isa_BP3D_4.0_obj_99/FJ2270.obj",
+      "bytes": 1177969,
+      "sha256": "9340492869064c52e522a426c4c2bdb73f0ccfc8392dee56f01a8186f6187ba5",
+      "crc32": "de2fe5bb",
+      "compressedBytesUpstream": 329099,
+      "anatomyId": "bp3d:FMA22909",
+      "family": "basilic-vein",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "vena",
+      "triangles": 18150,
+      "faces": 18150,
+      "sourcePositionCount": 9080,
+      "vertices": 9080,
+      "boundsMetres": [
+        [
+          -0.23548500000000003,
+          0.7888310000000001,
+          0.0628285
+        ],
+        [
+          -0.151006,
+          1.2372400000000001,
+          0.11480800000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -235.485,
+          -114.808,
+          788.831
+        ],
+        [
+          -151.006,
+          -62.8285,
+          1237.24
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2271",
+      "sourceId": "FMA22691",
+      "side": "right",
+      "representationId": "BP6020",
+      "nativeConceptId": "FMA22691",
+      "path": "isa_BP3D_4.0_obj_99/FJ2271.obj",
+      "bytes": 191590,
+      "sha256": "ce5b122fcc19c637684c1de1661697b03d487f3b013e8b4313fb095f81118813",
+      "crc32": "9b5ab84e",
+      "compressedBytesUpstream": 58527,
+      "anatomyId": "bp3d:FMA22691",
+      "family": "brachial-artery",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "arteria",
+      "triangles": 3112,
+      "faces": 3112,
+      "sourcePositionCount": 1558,
+      "vertices": 1558,
+      "boundsMetres": [
+        [
+          -0.217469,
+          1.02059,
+          0.0723469
+        ],
+        [
+          -0.14303800000000003,
+          1.2743499999999999,
+          0.0889716
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -217.469,
+          -88.9716,
+          1020.59
+        ],
+        [
+          -143.038,
+          -72.3469,
+          1274.35
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2272",
+      "sourceId": "FMA13325",
+      "side": "right",
+      "representationId": "BP5943",
+      "nativeConceptId": "FMA13325",
+      "path": "isa_BP3D_4.0_obj_99/FJ2272.obj",
+      "bytes": 1491867,
+      "sha256": "b57bd07b9e940b76500243e88b2d0f32fac59fff6ddea84419b254c82a6256f8",
+      "crc32": "8997bd66",
+      "compressedBytesUpstream": 408514,
+      "anatomyId": "bp3d:FMA13325",
+      "family": "cephalic-vein",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "vena",
+      "triangles": 22622,
+      "faces": 22622,
+      "sourcePositionCount": 11381,
+      "vertices": 11381,
+      "boundsMetres": [
+        [
+          -0.279041,
+          0.7744650000000001,
+          0.0776554
+        ],
+        [
+          -0.106836,
+          1.3268199999999999,
+          0.131731
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -279.041,
+          -131.731,
+          774.465
+        ],
+        [
+          -106.836,
+          -77.6554,
+          1326.82
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2277",
+      "sourceId": "FMA22696",
+      "side": "right",
+      "representationId": "BP6284",
+      "nativeConceptId": "FMA22696",
+      "path": "isa_BP3D_4.0_obj_99/FJ2277.obj",
+      "bytes": 141227,
+      "sha256": "dd048b36f91cc5b0f16bc5a7bae5bca66aaaf0e3a95c1e2b5e55c397062c1647",
+      "crc32": "eed84926",
+      "compressedBytesUpstream": 42995,
+      "anatomyId": "bp3d:FMA22696",
+      "family": "deep-brachial-artery",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "arteria",
+      "triangles": 2346,
+      "faces": 2346,
+      "sourcePositionCount": 1175,
+      "vertices": 1175,
+      "boundsMetres": [
+        [
+          -0.20604499999999998,
+          1.11498,
+          0.0521152
+        ],
+        [
+          -0.174347,
+          1.1843,
+          0.07666540000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -206.045,
+          -76.6654,
+          1114.98
+        ],
+        [
+          -174.347,
+          -52.1152,
+          1184.3
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2286",
+      "sourceId": "FMA22968",
+      "side": "right",
+      "representationId": "BP5934",
+      "nativeConceptId": "FMA22968",
+      "path": "isa_BP3D_4.0_obj_99/FJ2286.obj",
+      "bytes": 342103,
+      "sha256": "d7f83f57d6c7d22577bf5b5fa8c9f93dab356539dc36c509cff80395ceca75a5",
+      "crc32": "0a3ce1ed",
+      "compressedBytesUpstream": 98433,
+      "anatomyId": "bp3d:FMA22968",
+      "family": "median-antebrachial-vein",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "vena",
+      "triangles": 5386,
+      "faces": 5386,
+      "sourcePositionCount": 2716,
+      "vertices": 2716,
+      "boundsMetres": [
+        [
+          -0.26244799999999996,
+          0.814717,
+          0.07286530000000001
+        ],
+        [
+          -0.176284,
+          1.01365,
+          0.13453299999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -262.448,
+          -134.533,
+          814.717
+        ],
+        [
+          -176.284,
+          -72.8653,
+          1013.65
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2294",
+      "sourceId": "FMA22733",
+      "side": "right",
+      "representationId": "BP6335",
+      "nativeConceptId": "FMA22733",
+      "path": "isa_BP3D_4.0_obj_99/FJ2294.obj",
+      "bytes": 477853,
+      "sha256": "cca326b54b9f4e6ed4c4a8ccf258959a3a3c54aff996b894eacca20af05217d2",
+      "crc32": "532f5e8e",
+      "compressedBytesUpstream": 137949,
+      "anatomyId": "bp3d:FMA22733",
+      "family": "radial-artery",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "arteria",
+      "triangles": 7472,
+      "faces": 7472,
+      "sourcePositionCount": 3738,
+      "vertices": 3738,
+      "boundsMetres": [
+        [
+          -0.27951299999999996,
+          0.791182,
+          0.0831515
+        ],
+        [
+          -0.213611,
+          1.02445,
+          0.127123
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -279.513,
+          -127.123,
+          791.182
+        ],
+        [
+          -213.611,
+          -83.1515,
+          1024.45
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2296",
+      "sourceId": "FMA22948",
+      "side": "right",
+      "representationId": "BP5927",
+      "nativeConceptId": "FMA22948",
+      "path": "isa_BP3D_4.0_obj_99/FJ2296.obj",
+      "bytes": 338667,
+      "sha256": "056273377aef9446e304ea3fd8d5587017b48ddc356b9a981af52da8cd199530",
+      "crc32": "4a981282",
+      "compressedBytesUpstream": 97579,
+      "anatomyId": "bp3d:FMA22948",
+      "family": "radial-vein",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "vena",
+      "triangles": 5282,
+      "faces": 5282,
+      "sourcePositionCount": 2713,
+      "vertices": 2713,
+      "boundsMetres": [
+        [
+          -0.26691000000000004,
+          0.819812,
+          0.08550239999999999
+        ],
+        [
+          -0.2137,
+          1.02585,
+          0.125821
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -266.91,
+          -125.821,
+          819.812
+        ],
+        [
+          -213.7,
+          -85.5024,
+          1025.85
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2310",
+      "sourceId": "FMA22797",
+      "side": "right",
+      "representationId": "BP6315",
+      "nativeConceptId": "FMA22797",
+      "path": "isa_BP3D_4.0_obj_99/FJ2310.obj",
+      "bytes": 438703,
+      "sha256": "6bef22a74e2e6ae2d3033c4982fdb75abbadc9b255e76770211d61b3dd4796c1",
+      "crc32": "c7f1f2c7",
+      "compressedBytesUpstream": 125712,
+      "anatomyId": "bp3d:FMA22797",
+      "family": "ulnar-artery",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "arteria",
+      "triangles": 6876,
+      "faces": 6876,
+      "sourcePositionCount": 3440,
+      "vertices": 3440,
+      "boundsMetres": [
+        [
+          -0.243726,
+          0.794679,
+          0.0769856
+        ],
+        [
+          -0.21104900000000001,
+          1.02445,
+          0.13107400000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -243.726,
+          -131.074,
+          794.679
+        ],
+        [
+          -211.049,
+          -76.9856,
+          1024.45
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2312",
+      "sourceId": "FMA22951",
+      "side": "right",
+      "representationId": "BP5920",
+      "nativeConceptId": "FMA22951",
+      "path": "isa_BP3D_4.0_obj_99/FJ2312.obj",
+      "bytes": 386180,
+      "sha256": "025b487bc69d73be64f065f36d60a86fac60ed1717fcc158e9eaab8c8cd8787b",
+      "crc32": "b2d12541",
+      "compressedBytesUpstream": 110588,
+      "anatomyId": "bp3d:FMA22951",
+      "family": "ulnar-vein",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "vena",
+      "triangles": 6076,
+      "faces": 6076,
+      "sourcePositionCount": 3043,
+      "vertices": 3043,
+      "boundsMetres": [
+        [
+          -0.250161,
+          0.814242,
+          0.0838662
+        ],
+        [
+          -0.210844,
+          1.0233700000000001,
+          0.134225
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -250.161,
+          -134.225,
+          814.242
+        ],
+        [
+          -210.844,
+          -83.8662,
+          1023.37
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2313",
+      "sourceId": "FMA22936",
+      "side": "left",
+      "representationId": "BP5948",
+      "nativeConceptId": "FMA22936",
+      "path": "isa_BP3D_4.0_obj_99/FJ2313.obj",
+      "bytes": 175042,
+      "sha256": "3707bf67b5959e140fea0eca643bc31db00e97620e63afbe48ed10357af44ec8",
+      "crc32": "11265e69",
+      "compressedBytesUpstream": 53891,
+      "anatomyId": "bp3d:FMA22936",
+      "family": "medial-brachial-vein",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "vena",
+      "triangles": 2852,
+      "faces": 2852,
+      "sourcePositionCount": 1454,
+      "vertices": 1454,
+      "boundsMetres": [
+        [
+          0.14999700000000002,
+          1.0184,
+          0.0827088
+        ],
+        [
+          0.218204,
+          1.23498,
+          0.0972282
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          149.997,
+          -97.2282,
+          1018.4
+        ],
+        [
+          218.204,
+          -82.7088,
+          1234.98
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2341",
+      "sourceId": "FMA22935",
+      "side": "right",
+      "representationId": "BP5947",
+      "nativeConceptId": "FMA22935",
+      "path": "isa_BP3D_4.0_obj_99/FJ2341.obj",
+      "bytes": 159332,
+      "sha256": "0468a157795c7346d964d1884627464d5cfe9c4c8bcc84661aefdb2bc2d18259",
+      "crc32": "da863d05",
+      "compressedBytesUpstream": 49196,
+      "anatomyId": "bp3d:FMA22935",
+      "family": "medial-brachial-vein",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "vena",
+      "triangles": 2570,
+      "faces": 2570,
+      "sourcePositionCount": 1337,
+      "vertices": 1337,
+      "boundsMetres": [
+        [
+          -0.218194,
+          1.0184,
+          0.0827015
+        ],
+        [
+          -0.15002500000000002,
+          1.23498,
+          0.0972433
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -218.194,
+          -97.2433,
+          1018.4
+        ],
+        [
+          -150.025,
+          -82.7015,
+          1234.98
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2414",
+      "sourceId": "FMA14340",
+      "side": "midline",
+      "representationId": "BP5819",
+      "nativeConceptId": "FMA14340",
+      "path": "isa_BP3D_4.0_obj_99/FJ2414.obj",
+      "bytes": 139613,
+      "sha256": "bd57b4b26daef763025a4e2ae75102c687926a604db3b19fa44993033dc0f32f",
+      "crc32": "ef2f89c8",
+      "compressedBytesUpstream": 43500,
+      "anatomyId": "bp3d:FMA14340",
+      "family": "middle-hepatic-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 2260,
+      "faces": 2260,
+      "sourcePositionCount": 1191,
+      "vertices": 1191,
+      "boundsMetres": [
+        [
+          -0.0602703,
+          1.1031900000000001,
+          0.118178
+        ],
+        [
+          -0.00519827,
+          1.16485,
+          0.189453
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -60.2703,
+          -189.453,
+          1103.19
+        ],
+        [
+          -5.19827,
+          -118.178,
+          1164.85
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2415",
+      "sourceId": "FMA14339",
+      "side": "left",
+      "representationId": "BP5820",
+      "nativeConceptId": "FMA14339",
+      "path": "isa_BP3D_4.0_obj_99/FJ2415.obj",
+      "bytes": 87845,
+      "sha256": "dced2210d0b4b725e40c2e63791023fdcf7ee8aadd2f6718fd442c0e7654107f",
+      "crc32": "f8b87b16",
+      "compressedBytesUpstream": 28469,
+      "anatomyId": "bp3d:FMA14339",
+      "family": "left-hepatic-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 1386,
+      "faces": 1386,
+      "sourcePositionCount": 803,
+      "vertices": 803,
+      "boundsMetres": [
+        [
+          -0.0119336,
+          1.1264200000000002,
+          0.11738200000000001
+        ],
+        [
+          0.0519099,
+          1.1643299999999999,
+          0.17179
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -11.9336,
+          -171.79,
+          1126.42
+        ],
+        [
+          51.9099,
+          -117.382,
+          1164.33
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2416",
+      "sourceId": "FMA14338",
+      "side": "right",
+      "representationId": "BP5818",
+      "nativeConceptId": "FMA14338",
+      "path": "isa_BP3D_4.0_obj_99/FJ2416.obj",
+      "bytes": 264801,
+      "sha256": "2d3c37d1811a909e5cfd016f9d5c700b433d5f55e4bcb5fb64494dbfcb839181",
+      "crc32": "7d6b22b2",
+      "compressedBytesUpstream": 81284,
+      "anatomyId": "bp3d:FMA14338",
+      "family": "right-hepatic-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 3538,
+      "faces": 3538,
+      "sourcePositionCount": 2510,
+      "vertices": 2510,
+      "boundsMetres": [
+        [
+          -0.108279,
+          1.0959400000000001,
+          0.0760527
+        ],
+        [
+          -0.0206941,
+          1.16603,
+          0.157326
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -108.279,
+          -157.326,
+          1095.94
+        ],
+        [
+          -20.6941,
+          -76.0527,
+          1166.03
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2417",
+      "sourceId": "FMA7247",
+      "side": "left",
+      "representationId": "BP9071",
+      "nativeConceptId": "FMA7247",
+      "path": "isa_BP3D_4.0_obj_99/FJ2417.obj",
+      "bytes": 78664,
+      "sha256": "12d2dccc78efa7d21f6f4af53ae08603be473613ec4e04b0beb9c0239b96da56",
+      "crc32": "b1e26418",
+      "compressedBytesUpstream": 25519,
+      "anatomyId": "bp3d:FMA7247",
+      "family": "left-anterior-cusp-of-pulmonary-valve",
+      "moduleId": "cardio:heart",
+      "sourceType": "valva",
+      "triangles": 1272,
+      "faces": 1272,
+      "sourcePositionCount": 708,
+      "vertices": 708,
+      "boundsMetres": [
+        [
+          0.0231402,
+          1.2449000000000001,
+          0.13953700000000002
+        ],
+        [
+          0.0409215,
+          1.2614500000000002,
+          0.159581
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          23.1402,
+          -159.581,
+          1244.9
+        ],
+        [
+          40.9215,
+          -139.537,
+          1261.45
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2420",
+      "sourceId": "FMA7242",
+      "side": "midline",
+      "representationId": "BP8614",
+      "nativeConceptId": "FMA7242",
+      "path": "isa_BP3D_4.0_obj_99/FJ2420.obj",
+      "bytes": 495300,
+      "sha256": "f0294cbbd35096d1df5e8bdc92f17dbed5ebf981e62024a07e7ca18e31eb1a94",
+      "crc32": "5fd35e2e",
+      "compressedBytesUpstream": 145496,
+      "anatomyId": "bp3d:FMA7242",
+      "family": "anterior-leaflet-of-mitral-valve",
+      "moduleId": "cardio:heart",
+      "sourceType": "valva",
+      "triangles": 7558,
+      "faces": 7558,
+      "sourcePositionCount": 4052,
+      "vertices": 4052,
+      "boundsMetres": [
+        [
+          0.0117217,
+          1.20446,
+          0.0931022
+        ],
+        [
+          0.0458879,
+          1.2359200000000001,
+          0.141625
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          11.7217,
+          -141.625,
+          1204.46
+        ],
+        [
+          45.8879,
+          -93.1022,
+          1235.92
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2421",
+      "sourceId": "FMA7238",
+      "side": "midline",
+      "representationId": "BP8711",
+      "nativeConceptId": "FMA7238",
+      "path": "isa_BP3D_4.0_obj_99/FJ2421.obj",
+      "bytes": 532771,
+      "sha256": "7303c55e6d9c2e294759f7f7e01d23fc120eba74bce9ade0a01cc4bdb2bd4200",
+      "crc32": "b9887672",
+      "compressedBytesUpstream": 155455,
+      "anatomyId": "bp3d:FMA7238",
+      "family": "anterior-leaflet-of-tricuspid-valve",
+      "moduleId": "cardio:heart",
+      "sourceType": "valva",
+      "triangles": 8160,
+      "faces": 8160,
+      "sourcePositionCount": 4282,
+      "vertices": 4282,
+      "boundsMetres": [
+        [
+          -0.0210772,
+          1.19811,
+          0.129198
+        ],
+        [
+          0.023204699999999998,
+          1.23621,
+          0.15631299999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -21.0772,
+          -156.313,
+          1198.11
+        ],
+        [
+          23.2047,
+          -129.198,
+          1236.21
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2422",
+      "sourceId": "FMA9466",
+      "side": "left",
+      "representationId": "BP8928",
+      "nativeConceptId": "FMA9466",
+      "path": "isa_BP3D_4.0_obj_99/FJ2422.obj",
+      "bytes": 102171,
+      "sha256": "8844c5fc464d23fdc785d1d254d666a4d3b70b14b73ec90ca0c77ba4aff3dd37",
+      "crc32": "7223cafe",
+      "compressedBytesUpstream": 33236,
+      "anatomyId": "bp3d:FMA9466",
+      "family": "cavity-of-left-ventricle",
+      "moduleId": "cardio:heart",
+      "sourceType": "espacio cardíaco",
+      "triangles": 1722,
+      "faces": 1722,
+      "sourcePositionCount": 879,
+      "vertices": 879,
+      "boundsMetres": [
+        [
+          0.0064674500000000005,
+          1.18407,
+          0.08640160000000001
+        ],
+        [
+          0.07024630000000001,
+          1.25155,
+          0.158522
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          6.46745,
+          -158.522,
+          1184.07
+        ],
+        [
+          70.2463,
+          -86.4016,
+          1251.55
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2423",
+      "sourceId": "FMA9291",
+      "side": "right",
+      "representationId": "BP9227",
+      "nativeConceptId": "FMA9291",
+      "path": "isa_BP3D_4.0_obj_99/FJ2423.obj",
+      "bytes": 113621,
+      "sha256": "f0d7cbf9e10c0fcefe96741700605e7080d4a627fe214b4c8d5647d970e085f7",
+      "crc32": "d550284c",
+      "compressedBytesUpstream": 36587,
+      "anatomyId": "bp3d:FMA9291",
+      "family": "cavity-of-right-ventricle",
+      "moduleId": "cardio:heart",
+      "sourceType": "espacio cardíaco",
+      "triangles": 1918,
+      "faces": 1918,
+      "sourcePositionCount": 973,
+      "vertices": 973,
+      "boundsMetres": [
+        [
+          -0.0188458,
+          1.17948,
+          0.11519499999999999
+        ],
+        [
+          0.052663400000000006,
+          1.26003,
+          0.17341800000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -18.8458,
+          -173.418,
+          1179.48
+        ],
+        [
+          52.6634,
+          -115.195,
+          1260.03
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2424",
+      "sourceId": "FMA11359",
+      "side": "right",
+      "representationId": "BP8677",
+      "nativeConceptId": "FMA11359",
+      "path": "isa_BP3D_4.0_obj_99/FJ2424.obj",
+      "bytes": 139097,
+      "sha256": "53739664c1d4a5bb635ca48c216b54deb16bb947d76a4ad75635adf69c8fa11c",
+      "crc32": "97395eb9",
+      "compressedBytesUpstream": 43957,
+      "anatomyId": "bp3d:FMA11359",
+      "family": "cavity-of-right-atrium",
+      "moduleId": "cardio:heart",
+      "sourceType": "espacio cardíaco",
+      "triangles": 2244,
+      "faces": 2244,
+      "sourcePositionCount": 1193,
+      "vertices": 1193,
+      "boundsMetres": [
+        [
+          -0.034203000000000004,
+          1.18526,
+          0.09244150000000001
+        ],
+        [
+          0.0031870500000000003,
+          1.27752,
+          0.15356899999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -34.203,
+          -153.569,
+          1185.26
+        ],
+        [
+          3.18705,
+          -92.4415,
+          1277.52
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2425",
+      "sourceId": "FMA9465",
+      "side": "left",
+      "representationId": "BP8719",
+      "nativeConceptId": "FMA9465",
+      "path": "isa_BP3D_4.0_obj_99/FJ2425.obj",
+      "bytes": 65824,
+      "sha256": "d93197cc47f47d6d084de017917c88de039a4ab632b421893cede03264f43384",
+      "crc32": "c9f80a6a",
+      "compressedBytesUpstream": 22125,
+      "anatomyId": "bp3d:FMA9465",
+      "family": "cavity-of-left-atrium",
+      "moduleId": "cardio:heart",
+      "sourceType": "espacio cardíaco",
+      "triangles": 1064,
+      "faces": 1064,
+      "sourcePositionCount": 587,
+      "vertices": 587,
+      "boundsMetres": [
+        [
+          -0.0203846,
+          1.20645,
+          0.0709905
+        ],
+        [
+          0.048323700000000004,
+          1.26829,
+          0.12676099999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -20.3846,
+          -126.761,
+          1206.45
+        ],
+        [
+          48.3237,
+          -70.9905,
+          1268.29
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2426",
+      "sourceId": "FMA7254",
+      "side": "left",
+      "representationId": "BP8827",
+      "nativeConceptId": "FMA7254",
+      "path": "isa_BP3D_4.0_obj_99/FJ2426.obj",
+      "bytes": 57407,
+      "sha256": "86fa5ef6decf47a91d33f826e1b5579bbecd94795c206b2d797f52c36c3e1020",
+      "crc32": "c2407a98",
+      "compressedBytesUpstream": 18841,
+      "anatomyId": "bp3d:FMA7254",
+      "family": "left-posterior-cusp-of-aortic-valve",
+      "moduleId": "cardio:heart",
+      "sourceType": "valva",
+      "triangles": 914,
+      "faces": 914,
+      "sourcePositionCount": 526,
+      "vertices": 526,
+      "boundsMetres": [
+        [
+          0.0165969,
+          1.2407000000000001,
+          0.10641
+        ],
+        [
+          0.0323882,
+          1.25508,
+          0.12665600000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          16.5969,
+          -126.656,
+          1240.7
+        ],
+        [
+          32.3882,
+          -106.41,
+          1255.08
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2427",
+      "sourceId": "FMA7250",
+      "side": "midline",
+      "representationId": "BP8601",
+      "nativeConceptId": "FMA7250",
+      "path": "isa_BP3D_4.0_obj_99/FJ2427.obj",
+      "bytes": 62530,
+      "sha256": "eb867fa648f3da04036d925e6a740d4e3a922b893d74a20dec40d8d763a18414",
+      "crc32": "de4a5e6f",
+      "compressedBytesUpstream": 20538,
+      "anatomyId": "bp3d:FMA7250",
+      "family": "posterior-cusp-of-pulmonary-valve",
+      "moduleId": "cardio:heart",
+      "sourceType": "valva",
+      "triangles": 996,
+      "faces": 996,
+      "sourcePositionCount": 573,
+      "vertices": 573,
+      "boundsMetres": [
+        [
+          0.023549399999999998,
+          1.24519,
+          0.127603
+        ],
+        [
+          0.040595900000000004,
+          1.26162,
+          0.142209
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          23.5494,
+          -142.209,
+          1245.19
+        ],
+        [
+          40.5959,
+          -127.603,
+          1261.62
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2428",
+      "sourceId": "FMA13884",
+      "side": "midline",
+      "representationId": "BP7815",
+      "nativeConceptId": "FMA13884",
+      "path": "isa_BP3D_4.0_obj_99/FJ2428.obj",
+      "bytes": 2660930,
+      "sha256": "ac3c7d6714bed8cf549c97b013546541cf67e189dad2107092a59758aa3ccc45",
+      "crc32": "3d7578b9",
+      "compressedBytesUpstream": 745778,
+      "anatomyId": "bp3d:FMA13884",
+      "family": "wall-of-ventricle",
+      "moduleId": "cardio:heart",
+      "sourceType": "pared cardíaca",
+      "triangles": 37442,
+      "faces": 37442,
+      "sourcePositionCount": 21053,
+      "vertices": 21053,
+      "boundsMetres": [
+        [
+          -0.0230179,
+          1.17419,
+          0.0831177
+        ],
+        [
+          0.0791396,
+          1.2659200000000002,
+          0.17660499999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -23.0179,
+          -176.605,
+          1174.19
+        ],
+        [
+          79.1396,
+          -83.1177,
+          1265.92
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2431",
+      "sourceId": "FMA7252",
+      "side": "right",
+      "representationId": "BP7905",
+      "nativeConceptId": "FMA7252",
+      "path": "isa_BP3D_4.0_obj_99/FJ2431.obj",
+      "bytes": 21434,
+      "sha256": "40ae6e23decbb5fe2ea3800d44d517302f219078266abd8dcbc7d86ebc246799",
+      "crc32": "dbae416e",
+      "compressedBytesUpstream": 7486,
+      "anatomyId": "bp3d:FMA7252",
+      "family": "right-posterior-cusp-of-aortic-valve",
+      "moduleId": "cardio:heart",
+      "sourceType": "valva",
+      "triangles": 316,
+      "faces": 316,
+      "sourcePositionCount": 215,
+      "vertices": 215,
+      "boundsMetres": [
+        [
+          0.00566774,
+          1.2334100000000001,
+          0.104826
+        ],
+        [
+          0.0232396,
+          1.25052,
+          0.123847
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          5.66774,
+          -123.847,
+          1233.41
+        ],
+        [
+          23.2396,
+          -104.826,
+          1250.52
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2432",
+      "sourceId": "FMA7243",
+      "side": "midline",
+      "representationId": "BP8834",
+      "nativeConceptId": "FMA7243",
+      "path": "isa_BP3D_4.0_obj_99/FJ2432.obj",
+      "bytes": 274620,
+      "sha256": "0b296151ecceff395da5c435bcf65cf6dfca390e72eb0be71d778fee84bc216b",
+      "crc32": "70f92d21",
+      "compressedBytesUpstream": 83341,
+      "anatomyId": "bp3d:FMA7243",
+      "family": "posterior-leaflet-of-mitral-valve",
+      "moduleId": "cardio:heart",
+      "sourceType": "valva",
+      "triangles": 3820,
+      "faces": 3820,
+      "sourcePositionCount": 2560,
+      "vertices": 2560,
+      "boundsMetres": [
+        [
+          0.013574500000000001,
+          1.1996,
+          0.0854446
+        ],
+        [
+          0.0628543,
+          1.2316500000000001,
+          0.123267
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          13.5745,
+          -123.267,
+          1199.6
+        ],
+        [
+          62.8543,
+          -85.4446,
+          1231.65
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2433",
+      "sourceId": "FMA7239",
+      "side": "midline",
+      "representationId": "BP8544",
+      "nativeConceptId": "FMA7239",
+      "path": "isa_BP3D_4.0_obj_99/FJ2433.obj",
+      "bytes": 325359,
+      "sha256": "6519afbf9aa2eb3c0dc25d8e332a0208fd2ad68956c1dfe1ef6b010f04984d55",
+      "crc32": "4341a4df",
+      "compressedBytesUpstream": 97364,
+      "anatomyId": "bp3d:FMA7239",
+      "family": "posterior-leaflet-of-tricuspid-valve",
+      "moduleId": "cardio:heart",
+      "sourceType": "valva",
+      "triangles": 4926,
+      "faces": 4926,
+      "sourcePositionCount": 2729,
+      "vertices": 2729,
+      "boundsMetres": [
+        [
+          -0.0189578,
+          1.1886400000000001,
+          0.113717
+        ],
+        [
+          0.016470099999999998,
+          1.2162000000000002,
+          0.145256
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -18.9578,
+          -145.256,
+          1188.64
+        ],
+        [
+          16.4701,
+          -113.717,
+          1216.2
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2434",
+      "sourceId": "FMA7249",
+      "side": "right",
+      "representationId": "BP9033",
+      "nativeConceptId": "FMA7249",
+      "path": "isa_BP3D_4.0_obj_99/FJ2434.obj",
+      "bytes": 85105,
+      "sha256": "ed432a90e8fbfe9742d524044c0bd20c165f2a9a820ee585f00635cc47c5b5c0",
+      "crc32": "1d5a1acd",
+      "compressedBytesUpstream": 27522,
+      "anatomyId": "bp3d:FMA7249",
+      "family": "right-anterior-cusp-of-pulmonary-valve",
+      "moduleId": "cardio:heart",
+      "sourceType": "valva",
+      "triangles": 1370,
+      "faces": 1370,
+      "sourcePositionCount": 769,
+      "vertices": 769,
+      "boundsMetres": [
+        [
+          0.00876793,
+          1.24807,
+          0.13288
+        ],
+        [
+          0.0275245,
+          1.2652700000000001,
+          0.156869
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          8.76793,
+          -156.869,
+          1248.07
+        ],
+        [
+          27.5245,
+          -132.88,
+          1265.27
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2435",
+      "sourceId": "FMA7253",
+      "side": "midline",
+      "representationId": "BP8415",
+      "nativeConceptId": "FMA7253",
+      "path": "isa_BP3D_4.0_obj_99/FJ2435.obj",
+      "bytes": 56513,
+      "sha256": "b498ef286aa1ba0bfeaf2114298f43078007beab66fc81f422ff6017c309bd7a",
+      "crc32": "ded9b6cb",
+      "compressedBytesUpstream": 18631,
+      "anatomyId": "bp3d:FMA7253",
+      "family": "anterior-cusp-of-aortic-valve",
+      "moduleId": "cardio:heart",
+      "sourceType": "valva",
+      "triangles": 920,
+      "faces": 920,
+      "sourcePositionCount": 508,
+      "vertices": 508,
+      "boundsMetres": [
+        [
+          0.00699224,
+          1.2347000000000001,
+          0.11897100000000001
+        ],
+        [
+          0.026656199999999998,
+          1.2527300000000001,
+          0.132441
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          6.99224,
+          -132.441,
+          1234.7
+        ],
+        [
+          26.6562,
+          -118.971,
+          1252.73
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2436",
+      "sourceId": "FMA7240",
+      "side": "midline",
+      "representationId": "BP8648",
+      "nativeConceptId": "FMA7240",
+      "path": "isa_BP3D_4.0_obj_99/FJ2436.obj",
+      "bytes": 302591,
+      "sha256": "f0572079c56ea2a00eff869b07c4910defd624c5bda3fddd2403e4f1831f6be1",
+      "crc32": "c7ef573a",
+      "compressedBytesUpstream": 90484,
+      "anatomyId": "bp3d:FMA7240",
+      "family": "septal-leaflet-of-tricuspid-valve",
+      "moduleId": "cardio:heart",
+      "sourceType": "valva",
+      "triangles": 4526,
+      "faces": 4526,
+      "sourcePositionCount": 2591,
+      "vertices": 2591,
+      "boundsMetres": [
+        [
+          -0.006484,
+          1.21314,
+          0.113573
+        ],
+        [
+          0.0295014,
+          1.23648,
+          0.137745
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -6.484,
+          -137.745,
+          1213.14
+        ],
+        [
+          29.5014,
+          -113.573,
+          1236.48
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2438",
+      "sourceId": "FMA9531",
+      "side": "left",
+      "representationId": "BP9267",
+      "nativeConceptId": "FMA9531",
+      "path": "isa_BP3D_4.0_obj_99/FJ2438.obj",
+      "bytes": 510077,
+      "sha256": "ad28c5925374c6648bafb77ac9a89163316c101559cb730906208c96266ae078",
+      "crc32": "cde71f71",
+      "compressedBytesUpstream": 154065,
+      "anatomyId": "bp3d:FMA9531",
+      "family": "wall-of-left-atrium",
+      "moduleId": "cardio:heart",
+      "sourceType": "pared cardíaca",
+      "triangles": 7544,
+      "faces": 7544,
+      "sourcePositionCount": 4284,
+      "vertices": 4284,
+      "boundsMetres": [
+        [
+          -0.0228801,
+          1.19943,
+          0.07017040000000001
+        ],
+        [
+          0.0632392,
+          1.2724000000000002,
+          0.151151
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -22.8801,
+          -151.151,
+          1199.43
+        ],
+        [
+          63.2392,
+          -70.1704,
+          1272.4
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2439",
+      "sourceId": "FMA9457",
+      "side": "right",
+      "representationId": "BP8712",
+      "nativeConceptId": "FMA9457",
+      "path": "isa_BP3D_4.0_obj_99/FJ2439.obj",
+      "bytes": 1211683,
+      "sha256": "6e87510c607541b53b124f8224b6be74cb9b7351e29102246053b30a7260d8dd",
+      "crc32": "4b451ed8",
+      "compressedBytesUpstream": 354849,
+      "anatomyId": "bp3d:FMA9457",
+      "family": "wall-of-right-atrium",
+      "moduleId": "cardio:heart",
+      "sourceType": "pared cardíaca",
+      "triangles": 17784,
+      "faces": 17784,
+      "sourcePositionCount": 9887,
+      "vertices": 9887,
+      "boundsMetres": [
+        [
+          -0.0363037,
+          1.18308,
+          0.096345
+        ],
+        [
+          0.006777910000000001,
+          1.2795,
+          0.162645
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -36.3037,
+          -162.645,
+          1183.08
+        ],
+        [
+          6.77791,
+          -96.345,
+          1279.5
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2562",
+      "sourceId": "FMA14773",
+      "side": "midline",
+      "representationId": "BP8474",
+      "nativeConceptId": "FMA14773",
+      "path": "isa_BP3D_4.0_obj_99/FJ2562.obj",
+      "bytes": 121859,
+      "sha256": "f0ea297213c33d68e9da6158016cf963dfa3922520f7b533aabda2254e8a64fd",
+      "crc32": "7da1cc7e",
+      "compressedBytesUpstream": 38123,
+      "anatomyId": "bp3d:FMA14773",
+      "family": "splenic-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 1674,
+      "faces": 1674,
+      "sourcePositionCount": 1228,
+      "vertices": 1228,
+      "boundsMetres": [
+        [
+          0.0019408300000000002,
+          1.06883,
+          0.0890293
+        ],
+        [
+          0.100456,
+          1.09457,
+          0.13758099999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          1.94083,
+          -137.581,
+          1068.83
+        ],
+        [
+          100.456,
+          -89.0293,
+          1094.57
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2631",
+      "sourceId": "FMA74912",
+      "side": "left",
+      "representationId": "BP8970",
+      "nativeConceptId": "FMA74912",
+      "path": "isa_BP3D_4.0_obj_99/FJ2631.obj",
+      "bytes": 187038,
+      "sha256": "ca7d8c0c82982ef1c838cd2224650c810adc3e52aaf6b345f0cdb77d7b068c5e",
+      "crc32": "5f64286c",
+      "compressedBytesUpstream": 56233,
+      "anatomyId": "bp3d:FMA74912",
+      "family": "trunk-of-anterior-interventricular-branch-of-left-coronary-artery",
+      "moduleId": "cardio:heart",
+      "sourceType": "segmento arterial",
+      "triangles": 3032,
+      "faces": 3032,
+      "sourcePositionCount": 1549,
+      "vertices": 1549,
+      "boundsMetres": [
+        [
+          0.0332928,
+          1.17954,
+          0.120073
+        ],
+        [
+          0.0638413,
+          1.25762,
+          0.16800800000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          33.2928,
+          -168.008,
+          1179.54
+        ],
+        [
+          63.8413,
+          -120.073,
+          1257.62
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2649",
+      "sourceId": "FMA3895",
+      "side": "left",
+      "representationId": "BP8397",
+      "nativeConceptId": "FMA3895",
+      "path": "isa_BP3D_4.0_obj_99/FJ2649.obj",
+      "bytes": 81031,
+      "sha256": "d4833bb0b60ee79f526150ad7ba9124e326aba8cd48000711bf3a6b0997b0ce0",
+      "crc32": "a46434ff",
+      "compressedBytesUpstream": 25921,
+      "anatomyId": "bp3d:FMA3895",
+      "family": "circumflex-branch-of-left-coronary-artery",
+      "moduleId": "cardio:heart",
+      "sourceType": "rama coronaria",
+      "triangles": 1380,
+      "faces": 1380,
+      "sourcePositionCount": 692,
+      "vertices": 692,
+      "boundsMetres": [
+        [
+          0.0343553,
+          1.2223800000000002,
+          0.0869805
+        ],
+        [
+          0.0505177,
+          1.25631,
+          0.121957
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          34.3553,
+          -121.957,
+          1222.38
+        ],
+        [
+          50.5177,
+          -86.9805,
+          1256.31
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2650",
+      "sourceId": "FMA3895",
+      "side": "left",
+      "representationId": "BP8397",
+      "nativeConceptId": "FMA3895",
+      "path": "isa_BP3D_4.0_obj_99/FJ2650.obj",
+      "bytes": 29816,
+      "sha256": "dd2c38fdc784311c955fb8b0420d70dfbdf16f0ce6e236a086dc5f350faae04c",
+      "crc32": "64901deb",
+      "compressedBytesUpstream": 9864,
+      "anatomyId": "bp3d:FMA3895",
+      "family": "circumflex-branch-of-left-coronary-artery",
+      "moduleId": "cardio:heart",
+      "sourceType": "rama coronaria",
+      "triangles": 396,
+      "faces": 396,
+      "sourcePositionCount": 316,
+      "vertices": 316,
+      "boundsMetres": [
+        [
+          0.055286499999999995,
+          1.19968,
+          0.0894264
+        ],
+        [
+          0.0598176,
+          1.21654,
+          0.09576340000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          55.2865,
+          -95.7634,
+          1199.68
+        ],
+        [
+          59.8176,
+          -89.4264,
+          1216.54
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2651",
+      "sourceId": "FMA3895",
+      "side": "left",
+      "representationId": "BP8397",
+      "nativeConceptId": "FMA3895",
+      "path": "isa_BP3D_4.0_obj_99/FJ2651.obj",
+      "bytes": 37854,
+      "sha256": "864567c4b15c3add5a8184edb142766538936e2ef17af4efa25acca67f4344d8",
+      "crc32": "07a29afd",
+      "compressedBytesUpstream": 12410,
+      "anatomyId": "bp3d:FMA3895",
+      "family": "circumflex-branch-of-left-coronary-artery",
+      "moduleId": "cardio:heart",
+      "sourceType": "rama coronaria",
+      "triangles": 510,
+      "faces": 510,
+      "sourcePositionCount": 395,
+      "vertices": 395,
+      "boundsMetres": [
+        [
+          0.058756,
+          1.2110699999999999,
+          0.09225620000000001
+        ],
+        [
+          0.0756332,
+          1.21822,
+          0.115551
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          58.756,
+          -115.551,
+          1211.07
+        ],
+        [
+          75.6332,
+          -92.2562,
+          1218.22
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2652",
+      "sourceId": "FMA3895",
+      "side": "left",
+      "representationId": "BP8397",
+      "nativeConceptId": "FMA3895",
+      "path": "isa_BP3D_4.0_obj_99/FJ2652.obj",
+      "bytes": 22767,
+      "sha256": "fd5ee304558da1d1ffebb01ca7f59b374087667e71d473fe5401f355a2ff161f",
+      "crc32": "d964dd85",
+      "compressedBytesUpstream": 7603,
+      "anatomyId": "bp3d:FMA3895",
+      "family": "circumflex-branch-of-left-coronary-artery",
+      "moduleId": "cardio:heart",
+      "sourceType": "rama coronaria",
+      "triangles": 308,
+      "faces": 308,
+      "sourcePositionCount": 240,
+      "vertices": 240,
+      "boundsMetres": [
+        [
+          0.0641856,
+          1.1946500000000002,
+          0.0973195
+        ],
+        [
+          0.0682426,
+          1.2096099999999999,
+          0.10727800000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          64.1856,
+          -107.278,
+          1194.65
+        ],
+        [
+          68.2426,
+          -97.3195,
+          1209.61
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2653",
+      "sourceId": "FMA3895",
+      "side": "left",
+      "representationId": "BP8397",
+      "nativeConceptId": "FMA3895",
+      "path": "isa_BP3D_4.0_obj_99/FJ2653.obj",
+      "bytes": 20958,
+      "sha256": "74fc42fbc783857619dccb5a753b06cbfce9abc6403f14e38f55bbb9fafdad80",
+      "crc32": "129eb36c",
+      "compressedBytesUpstream": 6831,
+      "anatomyId": "bp3d:FMA3895",
+      "family": "circumflex-branch-of-left-coronary-artery",
+      "moduleId": "cardio:heart",
+      "sourceType": "rama coronaria",
+      "triangles": 252,
+      "faces": 252,
+      "sourcePositionCount": 232,
+      "vertices": 232,
+      "boundsMetres": [
+        [
+          0.0737457,
+          1.1883299999999999,
+          0.119449
+        ],
+        [
+          0.07683110000000001,
+          1.1986800000000002,
+          0.128307
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          73.7457,
+          -128.307,
+          1188.33
+        ],
+        [
+          76.8311,
+          -119.449,
+          1198.68
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2654",
+      "sourceId": "FMA3895",
+      "side": "left",
+      "representationId": "BP8397",
+      "nativeConceptId": "FMA3895",
+      "path": "isa_BP3D_4.0_obj_99/FJ2654.obj",
+      "bytes": 13776,
+      "sha256": "4e8467b12ca3374d25807d5de058cfb8d147ad2decd99f6debe57847a83099a1",
+      "crc32": "1d569154",
+      "compressedBytesUpstream": 4573,
+      "anatomyId": "bp3d:FMA3895",
+      "family": "circumflex-branch-of-left-coronary-artery",
+      "moduleId": "cardio:heart",
+      "sourceType": "rama coronaria",
+      "triangles": 172,
+      "faces": 172,
+      "sourcePositionCount": 150,
+      "vertices": 150,
+      "boundsMetres": [
+        [
+          0.0741667,
+          1.1878199999999999,
+          0.131297
+        ],
+        [
+          0.0764916,
+          1.19221,
+          0.142845
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          74.1667,
+          -142.845,
+          1187.82
+        ],
+        [
+          76.4916,
+          -131.297,
+          1192.21
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2655",
+      "sourceId": "FMA4706",
+      "side": "midline",
+      "representationId": "BP9086",
+      "nativeConceptId": "FMA4706",
+      "path": "isa_BP3D_4.0_obj_99/FJ2655.obj",
+      "bytes": 37441,
+      "sha256": "6095f578e12b9a85dcf978692793f775494086ab09b7eb44e6a069049640bd82",
+      "crc32": "c9b48855",
+      "compressedBytesUpstream": 12790,
+      "anatomyId": "bp3d:FMA4706",
+      "family": "coronary-sinus",
+      "moduleId": "cardio:heart",
+      "sourceType": "vena",
+      "triangles": 624,
+      "faces": 624,
+      "sourcePositionCount": 331,
+      "vertices": 331,
+      "boundsMetres": [
+        [
+          -0.0055224,
+          1.1975,
+          0.08110830000000001
+        ],
+        [
+          0.043269300000000004,
+          1.21668,
+          0.115565
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -5.5224,
+          -115.565,
+          1197.5
+        ],
+        [
+          43.2693,
+          -81.1083,
+          1216.68
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2656",
+      "sourceId": "FMA4707",
+      "side": "midline",
+      "representationId": "BP8933",
+      "nativeConceptId": "FMA4707",
+      "path": "isa_BP3D_4.0_obj_99/FJ2656.obj",
+      "bytes": 49555,
+      "sha256": "cb9c6b4e10e43c92c8ea4e2e1a66215d98cf58d72fcc60aeadc8a0f87f6724fc",
+      "crc32": "c002f214",
+      "compressedBytesUpstream": 16488,
+      "anatomyId": "bp3d:FMA4707",
+      "family": "great-cardiac-vein",
+      "moduleId": "cardio:heart",
+      "sourceType": "vena",
+      "triangles": 826,
+      "faces": 826,
+      "sourcePositionCount": 434,
+      "vertices": 434,
+      "boundsMetres": [
+        [
+          0.0399088,
+          1.21378,
+          0.08192279999999999
+        ],
+        [
+          0.0485622,
+          1.25346,
+          0.126878
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          39.9088,
+          -126.878,
+          1213.78
+        ],
+        [
+          48.5622,
+          -81.9228,
+          1253.46
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2723",
+      "sourceId": "FMA3802",
+      "side": "right",
+      "representationId": "BP8221",
+      "nativeConceptId": "FMA3802",
+      "path": "isa_BP3D_4.0_obj_99/FJ2723.obj",
+      "bytes": 281611,
+      "sha256": "cd008769cb9d565a75bf6b91b5ad3bd482932e37c4747837f6c9446cd23b73a2",
+      "crc32": "89763d37",
+      "compressedBytesUpstream": 82753,
+      "anatomyId": "bp3d:FMA3802",
+      "family": "trunk-of-right-coronary-artery",
+      "moduleId": "cardio:heart",
+      "sourceType": "segmento arterial",
+      "triangles": 4502,
+      "faces": 4502,
+      "sourcePositionCount": 2255,
+      "vertices": 2255,
+      "boundsMetres": [
+        [
+          -0.0217476,
+          1.18794,
+          0.09330419999999999
+        ],
+        [
+          0.0207385,
+          1.26107,
+          0.162494
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -21.7476,
+          -162.494,
+          1187.94
+        ],
+        [
+          20.7385,
+          -93.3042,
+          1261.07
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2737",
+      "sourceId": "FMA3855",
+      "side": "left",
+      "representationId": "BP8961",
+      "nativeConceptId": "FMA3855",
+      "path": "isa_BP3D_4.0_obj_99/FJ2737.obj",
+      "bytes": 12641,
+      "sha256": "22aa075132e33f9a3d3be135515362b03ab84f12a0d641edde35e260fb2cd65b",
+      "crc32": "a85fc151",
+      "compressedBytesUpstream": 4523,
+      "anatomyId": "bp3d:FMA3855",
+      "family": "trunk-of-left-coronary-artery",
+      "moduleId": "cardio:heart",
+      "sourceType": "segmento arterial",
+      "triangles": 204,
+      "faces": 204,
+      "sourcePositionCount": 121,
+      "vertices": 121,
+      "boundsMetres": [
+        [
+          0.0233893,
+          1.2539500000000001,
+          0.117304
+        ],
+        [
+          0.034405000000000005,
+          1.26082,
+          0.12342499999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          23.3893,
+          -123.425,
+          1253.95
+        ],
+        [
+          34.405,
+          -117.304,
+          1260.82
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2924",
+      "sourceId": "FMA50873",
+      "side": "left",
+      "representationId": "BP8463",
+      "nativeConceptId": "FMA50873",
+      "path": "isa_BP3D_4.0_obj_99/FJ2924.obj",
+      "bytes": 342258,
+      "sha256": "0cb5312cf816387fdad0d3809a5b5cae1445806ce85546adea39240bc72d2580",
+      "crc32": "8c8b94eb",
+      "compressedBytesUpstream": 100681,
+      "anatomyId": "bp3d:FMA50873",
+      "family": "pulmonary-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 5450,
+      "faces": 5450,
+      "sourcePositionCount": 2727,
+      "vertices": 2727,
+      "boundsMetres": [
+        [
+          0.0147515,
+          1.22621,
+          0.0580499
+        ],
+        [
+          0.079084,
+          1.29405,
+          0.136595
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          14.7515,
+          -136.595,
+          1226.21
+        ],
+        [
+          79.084,
+          -58.0499,
+          1294.05
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2925",
+      "sourceId": "FMA49916",
+      "side": "left",
+      "representationId": "BP8556",
+      "nativeConceptId": "FMA49916",
+      "path": "isa_BP3D_4.0_obj_99/FJ2925.obj",
+      "bytes": 23979,
+      "sha256": "e87124704e4ca94bfe3206a571e464fe8ccc41afe0f36ee5ccf46cf00aaf4918",
+      "crc32": "2a9f1573",
+      "compressedBytesUpstream": 8436,
+      "anatomyId": "bp3d:FMA49916",
+      "family": "superior-pulmonary-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 414,
+      "faces": 414,
+      "sourcePositionCount": 209,
+      "vertices": 209,
+      "boundsMetres": [
+        [
+          0.0347494,
+          1.2514500000000002,
+          0.08212380000000001
+        ],
+        [
+          0.0551678,
+          1.27322,
+          0.099608
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          34.7494,
+          -99.608,
+          1251.45
+        ],
+        [
+          55.1678,
+          -82.1238,
+          1273.22
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2933",
+      "sourceId": "FMA49916",
+      "side": "left",
+      "representationId": "BP8556",
+      "nativeConceptId": "FMA49916",
+      "path": "isa_BP3D_4.0_obj_99/FJ2933.obj",
+      "bytes": 27459,
+      "sha256": "64e0d2deec1d847be95f41a25c616935c9b400f233a2c07a8c453a3441f80a35",
+      "crc32": "2d87a8a1",
+      "compressedBytesUpstream": 9544,
+      "anatomyId": "bp3d:FMA49916",
+      "family": "superior-pulmonary-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 472,
+      "faces": 472,
+      "sourcePositionCount": 239,
+      "vertices": 239,
+      "boundsMetres": [
+        [
+          0.0336998,
+          1.2188800000000002,
+          0.0815478
+        ],
+        [
+          0.0818161,
+          1.25809,
+          0.110848
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          33.6998,
+          -110.848,
+          1218.88
+        ],
+        [
+          81.8161,
+          -81.5478,
+          1258.09
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2944",
+      "sourceId": "FMA49913",
+      "side": "left",
+      "representationId": "BP8334",
+      "nativeConceptId": "FMA49913",
+      "path": "isa_BP3D_4.0_obj_99/FJ2944.obj",
+      "bytes": 17821,
+      "sha256": "a531b898f54ae008b1ad0c0f0993158e1a15cfbebee79098033ea8c2d2f84372",
+      "crc32": "69cc7292",
+      "compressedBytesUpstream": 6381,
+      "anatomyId": "bp3d:FMA49913",
+      "family": "inferior-pulmonary-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 310,
+      "faces": 310,
+      "sourcePositionCount": 157,
+      "vertices": 157,
+      "boundsMetres": [
+        [
+          0.0426331,
+          1.20154,
+          0.0535181
+        ],
+        [
+          0.0560191,
+          1.22951,
+          0.0780178
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          42.6331,
+          -78.0178,
+          1201.54
+        ],
+        [
+          56.0191,
+          -53.5181,
+          1229.51
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2950",
+      "sourceId": "FMA49913",
+      "side": "left",
+      "representationId": "BP8334",
+      "nativeConceptId": "FMA49913",
+      "path": "isa_BP3D_4.0_obj_99/FJ2950.obj",
+      "bytes": 18779,
+      "sha256": "f32bbffccdb0528ed085041ad4243b5b4817a26aa82a73669f9132d6c54f17de",
+      "crc32": "38fe8972",
+      "compressedBytesUpstream": 6698,
+      "anatomyId": "bp3d:FMA49913",
+      "family": "inferior-pulmonary-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 326,
+      "faces": 326,
+      "sourcePositionCount": 165,
+      "vertices": 165,
+      "boundsMetres": [
+        [
+          0.037638399999999995,
+          1.2104000000000001,
+          0.071841
+        ],
+        [
+          0.06536360000000001,
+          1.22982,
+          0.0834903
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          37.6384,
+          -83.4903,
+          1210.4
+        ],
+        [
+          65.3636,
+          -71.841,
+          1229.82
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2955",
+      "sourceId": "FMA49913",
+      "side": "left",
+      "representationId": "BP8334",
+      "nativeConceptId": "FMA49913",
+      "path": "isa_BP3D_4.0_obj_99/FJ2955.obj",
+      "bytes": 32317,
+      "sha256": "bfbb5067eb2da9857069139f12d019bb0f599babc89730aeb4accb1a77916991",
+      "crc32": "6e3764c8",
+      "compressedBytesUpstream": 11186,
+      "anatomyId": "bp3d:FMA49913",
+      "family": "inferior-pulmonary-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 556,
+      "faces": 556,
+      "sourcePositionCount": 280,
+      "vertices": 280,
+      "boundsMetres": [
+        [
+          0.0328489,
+          1.2141199999999999,
+          0.0709183
+        ],
+        [
+          0.0729742,
+          1.23636,
+          0.0913169
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          32.8489,
+          -91.3169,
+          1214.12
+        ],
+        [
+          72.9742,
+          -70.9183,
+          1236.36
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ2966",
+      "sourceId": "FMA8612",
+      "side": "midline",
+      "representationId": "BP8690",
+      "nativeConceptId": "FMA8612",
+      "path": "isa_BP3D_4.0_obj_99/FJ2966.obj",
+      "bytes": 89640,
+      "sha256": "7d4fbfbeebdb541b4053e62e6ba9e55bdbc8d1354de8192f94d7c6008812ab3f",
+      "crc32": "a07dc2ea",
+      "compressedBytesUpstream": 28281,
+      "anatomyId": "bp3d:FMA8612",
+      "family": "pulmonary-trunk",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 1302,
+      "faces": 1302,
+      "sourcePositionCount": 871,
+      "vertices": 871,
+      "boundsMetres": [
+        [
+          0.0112747,
+          1.2565,
+          0.11651600000000001
+        ],
+        [
+          0.042075,
+          1.29361,
+          0.158864
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          11.2747,
+          -158.864,
+          1256.5
+        ],
+        [
+          42.075,
+          -116.516,
+          1293.61
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3019",
+      "sourceId": "FMA50872",
+      "side": "right",
+      "representationId": "BP8968",
+      "nativeConceptId": "FMA50872",
+      "path": "isa_BP3D_4.0_obj_99/FJ3019.obj",
+      "bytes": 39748,
+      "sha256": "c773fc2d3d3f79544699c16f38f56619730a6d5a1a2c8bb4d8f0dc2ab6889d97",
+      "crc32": "4e766a70",
+      "compressedBytesUpstream": 13667,
+      "anatomyId": "bp3d:FMA50872",
+      "family": "pulmonary-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 678,
+      "faces": 678,
+      "sourcePositionCount": 341,
+      "vertices": 341,
+      "boundsMetres": [
+        [
+          -0.058945500000000005,
+          1.2244000000000002,
+          0.0629648
+        ],
+        [
+          0.036938000000000006,
+          1.29401,
+          0.13119999999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -58.9455,
+          -131.2,
+          1224.4
+        ],
+        [
+          36.938,
+          -62.9648,
+          1294.01
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3020",
+      "sourceId": "FMA49914",
+      "side": "right",
+      "representationId": "BP8580",
+      "nativeConceptId": "FMA49914",
+      "path": "isa_BP3D_4.0_obj_99/FJ3020.obj",
+      "bytes": 19237,
+      "sha256": "074ba67bb3db8f93d6ac7d4e9d2bd1ddcca6e54a2bcb765ec146a9fd30bb3aa8",
+      "crc32": "cbeb46da",
+      "compressedBytesUpstream": 6847,
+      "anatomyId": "bp3d:FMA49914",
+      "family": "superior-pulmonary-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 324,
+      "faces": 324,
+      "sourcePositionCount": 171,
+      "vertices": 171,
+      "boundsMetres": [
+        [
+          -0.0371408,
+          1.23493,
+          0.0883313
+        ],
+        [
+          -0.014016400000000002,
+          1.26177,
+          0.106536
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -37.1408,
+          -106.536,
+          1234.93
+        ],
+        [
+          -14.0164,
+          -88.3313,
+          1261.77
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3040",
+      "sourceId": "FMA49911",
+      "side": "right",
+      "representationId": "BP8784",
+      "nativeConceptId": "FMA49911",
+      "path": "isa_BP3D_4.0_obj_99/FJ3040.obj",
+      "bytes": 12047,
+      "sha256": "2e15b98f227f16c3dcacab1a93a26d42e07cd2c2d72ba34b1ef438396f598a12",
+      "crc32": "3bcd35cd",
+      "compressedBytesUpstream": 4474,
+      "anatomyId": "bp3d:FMA49911",
+      "family": "inferior-pulmonary-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 196,
+      "faces": 196,
+      "sourcePositionCount": 113,
+      "vertices": 113,
+      "boundsMetres": [
+        [
+          -0.033806800000000005,
+          1.21128,
+          0.07604290000000001
+        ],
+        [
+          -0.006283019999999999,
+          1.22889,
+          0.0890205
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -33.8068,
+          -89.0205,
+          1211.28
+        ],
+        [
+          -6.28302,
+          -76.0429,
+          1228.89
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3078",
+      "sourceId": "FMA14771",
+      "side": "midline",
+      "representationId": "BP8522",
+      "nativeConceptId": "FMA14771",
+      "path": "isa_BP3D_4.0_obj_99/FJ3078.obj",
+      "bytes": 20651,
+      "sha256": "f8285f60775b0feb990af2f35591196b2a43253c87df2c8b02b7ec7f492d1409",
+      "crc32": "6df664b9",
+      "compressedBytesUpstream": 7156,
+      "anatomyId": "bp3d:FMA14771",
+      "family": "common-hepatic-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 348,
+      "faces": 348,
+      "sourcePositionCount": 184,
+      "vertices": 184,
+      "boundsMetres": [
+        [
+          -0.0153223,
+          1.07521,
+          0.126891
+        ],
+        [
+          0.0057907,
+          1.08542,
+          0.14266900000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -15.3223,
+          -142.669,
+          1075.21
+        ],
+        [
+          5.7907,
+          -126.891,
+          1085.42
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3081",
+      "sourceId": "FMA14772",
+      "side": "midline",
+      "representationId": "BP8485",
+      "nativeConceptId": "FMA14772",
+      "path": "isa_BP3D_4.0_obj_99/FJ3081.obj",
+      "bytes": 20836,
+      "sha256": "bd4cff9e5fc6feb0d0f742a91d8a67e1fa4cda96e455e5a21a638b064d195da6",
+      "crc32": "407f5887",
+      "compressedBytesUpstream": 7159,
+      "anatomyId": "bp3d:FMA14772",
+      "family": "hepatic-artery-proper",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 358,
+      "faces": 358,
+      "sourcePositionCount": 181,
+      "vertices": 181,
+      "boundsMetres": [
+        [
+          -0.0224174,
+          1.08153,
+          0.138815
+        ],
+        [
+          -0.0114407,
+          1.11174,
+          0.151458
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -22.4174,
+          -151.458,
+          1081.53
+        ],
+        [
+          -11.4407,
+          -138.815,
+          1111.74
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3411",
+      "sourceId": "FMA3768",
+      "side": "midline",
+      "representationId": "BP10322",
+      "nativeConceptId": "FMA3768",
+      "path": "isa_BP3D_4.0_obj_99/FJ3411.obj",
+      "bytes": 41743,
+      "sha256": "9eeb5e5a627e8145f03961c661c9c66d8fdc55ed1234d04b84212b87a21d902c",
+      "crc32": "91bd0aad",
+      "compressedBytesUpstream": 14319,
+      "anatomyId": "bp3d:FMA3768",
+      "family": "arch-of-aorta",
+      "moduleId": "cardio:trunk",
+      "sourceType": "segmento arterial",
+      "triangles": 670,
+      "faces": 670,
+      "sourcePositionCount": 381,
+      "vertices": 381,
+      "boundsMetres": [
+        [
+          -0.006830460000000001,
+          1.2819,
+          0.049844900000000004
+        ],
+        [
+          0.0348378,
+          1.3170899999999999,
+          0.137163
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -6.83046,
+          -137.163,
+          1281.9
+        ],
+        [
+          34.8378,
+          -49.8449,
+          1317.09
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3413",
+      "sourceId": "FMA3736",
+      "side": "midline",
+      "representationId": "BP10329",
+      "nativeConceptId": "FMA3736",
+      "path": "isa_BP3D_4.0_obj_99/FJ3413.obj",
+      "bytes": 24686,
+      "sha256": "764f23e432a9308e0780c586f9d1638db1fbcc52a5019ae61817b4b1de323870",
+      "crc32": "d3a4e96b",
+      "compressedBytesUpstream": 8640,
+      "anatomyId": "bp3d:FMA3736",
+      "family": "ascending-aorta",
+      "moduleId": "cardio:trunk",
+      "sourceType": "segmento arterial",
+      "triangles": 396,
+      "faces": 396,
+      "sourcePositionCount": 229,
+      "vertices": 229,
+      "boundsMetres": [
+        [
+          -0.006822180000000001,
+          1.23406,
+          0.106662
+        ],
+        [
+          0.028943000000000003,
+          1.2819,
+          0.137439
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -6.82218,
+          -137.439,
+          1234.06
+        ],
+        [
+          28.943,
+          -106.662,
+          1281.9
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3416",
+      "sourceId": "FMA4838",
+      "side": "midline",
+      "representationId": "BP10369",
+      "nativeConceptId": "FMA4838",
+      "path": "isa_BP3D_4.0_obj_99/FJ3416.obj",
+      "bytes": 1185809,
+      "sha256": "88b374af13155c62ea5bcaad554a699d1d95e23948eeb810b62edb7467789dde",
+      "crc32": "202b2fcf",
+      "compressedBytesUpstream": 342397,
+      "anatomyId": "bp3d:FMA4838",
+      "family": "azygos-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 18260,
+      "faces": 18260,
+      "sourcePositionCount": 9132,
+      "vertices": 9132,
+      "boundsMetres": [
+        [
+          -0.018150200000000002,
+          1.07375,
+          0.0598457
+        ],
+        [
+          -0.005621640000000001,
+          1.2913,
+          0.113029
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -18.1502,
+          -113.029,
+          1073.75
+        ],
+        [
+          -5.62164,
+          -59.8457,
+          1291.3
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3417",
+      "sourceId": "FMA3932",
+      "side": "midline",
+      "representationId": "BP10355",
+      "nativeConceptId": "FMA3932",
+      "path": "isa_BP3D_4.0_obj_99/FJ3417.obj",
+      "bytes": 16719,
+      "sha256": "285df2b5ecb7881756e36645ca21e2cd825863f420c813a673eb6514c93f9156",
+      "crc32": "b654eecc",
+      "compressedBytesUpstream": 5981,
+      "anatomyId": "bp3d:FMA3932",
+      "family": "brachiocephalic-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 262,
+      "faces": 262,
+      "sourcePositionCount": 160,
+      "vertices": 160,
+      "boundsMetres": [
+        [
+          -0.019282800000000003,
+          1.30432,
+          0.101973
+        ],
+        [
+          0.0182457,
+          1.34228,
+          0.119657
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -19.2828,
+          -119.657,
+          1304.32
+        ],
+        [
+          18.2457,
+          -101.973,
+          1342.28
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3420",
+      "sourceId": "FMA14773",
+      "side": "midline",
+      "representationId": "BP8474",
+      "nativeConceptId": "FMA14773",
+      "path": "isa_BP3D_4.0_obj_99/FJ3420.obj",
+      "bytes": 48036,
+      "sha256": "3d20dc80614ce5394ee45caf1d2fcec225912f06eac4ff01734f987513172ad5",
+      "crc32": "6e0906a5",
+      "compressedBytesUpstream": 14147,
+      "anatomyId": "bp3d:FMA14773",
+      "family": "splenic-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 440,
+      "faces": 440,
+      "sourcePositionCount": 599,
+      "vertices": 599,
+      "boundsMetres": [
+        [
+          0.0440579,
+          1.0668900000000001,
+          0.10326300000000001
+        ],
+        [
+          0.0508364,
+          1.0758699999999999,
+          0.108564
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          44.0579,
+          -108.564,
+          1066.89
+        ],
+        [
+          50.8364,
+          -103.263,
+          1075.87
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3421",
+      "sourceId": "FMA14812",
+      "side": "midline",
+      "representationId": "BP10622",
+      "nativeConceptId": "FMA14812",
+      "path": "isa_BP3D_4.0_obj_99/FJ3421.obj",
+      "bytes": 14327,
+      "sha256": "7c0030c4502c344512b92428a3bb856d45cab28783f1a2019d2caeba09043d10",
+      "crc32": "cfb41f6c",
+      "compressedBytesUpstream": 5202,
+      "anatomyId": "bp3d:FMA14812",
+      "family": "celiac-trunk",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 238,
+      "faces": 238,
+      "sourcePositionCount": 133,
+      "vertices": 133,
+      "boundsMetres": [
+        [
+          0.0011040700000000002,
+          1.0776500000000002,
+          0.107594
+        ],
+        [
+          0.012240299999999999,
+          1.0898299999999999,
+          0.13078700000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          1.10407,
+          -130.787,
+          1077.65
+        ],
+        [
+          12.2403,
+          -107.594,
+          1089.83
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3434",
+      "sourceId": "FMA4944",
+      "side": "midline",
+      "representationId": "BP10360",
+      "nativeConceptId": "FMA4944",
+      "path": "isa_BP3D_4.0_obj_99/FJ3434.obj",
+      "bytes": 265803,
+      "sha256": "dcc2d6adb32cb84ffd91fd9104a3ba13986d6e9801231733086cbd8ab5ca2b26",
+      "crc32": "b9c28871",
+      "compressedBytesUpstream": 79175,
+      "anatomyId": "bp3d:FMA4944",
+      "family": "hemiazygos-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 4266,
+      "faces": 4266,
+      "sourcePositionCount": 2135,
+      "vertices": 2135,
+      "boundsMetres": [
+        [
+          -0.0158024,
+          1.07026,
+          0.0551006
+        ],
+        [
+          0.0240382,
+          1.17425,
+          0.0757901
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -15.8024,
+          -75.7901,
+          1070.26
+        ],
+        [
+          24.0382,
+          -55.1006,
+          1174.25
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3441",
+      "sourceId": "FMA10951",
+      "side": "midline",
+      "representationId": "BP10311",
+      "nativeConceptId": "FMA10951",
+      "path": "isa_BP3D_4.0_obj_99/FJ3441.obj",
+      "bytes": 89003,
+      "sha256": "7b03ef0464b622d0a839c3c55aedcec2a713b4399112e7ce6efa1ac51861b606",
+      "crc32": "57ab5d10",
+      "compressedBytesUpstream": 28142,
+      "anatomyId": "bp3d:FMA10951",
+      "family": "inferior-vena-cava",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 1410,
+      "faces": 1410,
+      "sourcePositionCount": 793,
+      "vertices": 793,
+      "boundsMetres": [
+        [
+          -0.0268256,
+          1.09494,
+          0.103552
+        ],
+        [
+          -0.00396953,
+          1.19053,
+          0.126538
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -26.8256,
+          -126.538,
+          1094.94
+        ],
+        [
+          -3.96953,
+          -103.552,
+          1190.53
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3442",
+      "sourceId": "FMA14750",
+      "side": "midline",
+      "representationId": "BP10321",
+      "nativeConceptId": "FMA14750",
+      "path": "isa_BP3D_4.0_obj_99/FJ3442.obj",
+      "bytes": 33140,
+      "sha256": "865cc814e7412113703bfe503424a92e745e6cbf6e788465f06c6be8f1079c6c",
+      "crc32": "561e2a84",
+      "compressedBytesUpstream": 11371,
+      "anatomyId": "bp3d:FMA14750",
+      "family": "inferior-mesenteric-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 546,
+      "faces": 546,
+      "sourcePositionCount": 299,
+      "vertices": 299,
+      "boundsMetres": [
+        [
+          0.00419297,
+          0.89905,
+          0.113273
+        ],
+        [
+          0.0184559,
+          0.986232,
+          0.136719
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          4.19297,
+          -136.719,
+          899.05
+        ],
+        [
+          18.4559,
+          -113.273,
+          986.232
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3443",
+      "sourceId": "FMA15391",
+      "side": "midline",
+      "representationId": "BP10621",
+      "nativeConceptId": "FMA15391",
+      "path": "isa_BP3D_4.0_obj_99/FJ3443.obj",
+      "bytes": 66163,
+      "sha256": "59393e5b8a5cd62e7f2be2f8e36a7b0a41b103dd23a5eeae501e61f495c4df95",
+      "crc32": "b2a03e90",
+      "compressedBytesUpstream": 21888,
+      "anatomyId": "bp3d:FMA15391",
+      "family": "inferior-mesenteric-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 1108,
+      "faces": 1108,
+      "sourcePositionCount": 574,
+      "vertices": 574,
+      "boundsMetres": [
+        [
+          0.00539067,
+          0.900429,
+          0.111191
+        ],
+        [
+          0.0270602,
+          1.06955,
+          0.131082
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          5.39067,
+          -131.082,
+          900.429
+        ],
+        [
+          27.0602,
+          -111.191,
+          1069.55
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3464",
+      "sourceId": "FMA14766",
+      "side": "left",
+      "representationId": "BP10347",
+      "nativeConceptId": "FMA14766",
+      "path": "isa_BP3D_4.0_obj_99/FJ3464.obj",
+      "bytes": 14276,
+      "sha256": "5472501bf8876913b860739b298afa69f5f63e74a6f4dc05540b50dde54b323e",
+      "crc32": "d19268a4",
+      "compressedBytesUpstream": 5345,
+      "anatomyId": "bp3d:FMA14766",
+      "family": "common-iliac-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 248,
+      "faces": 248,
+      "sourcePositionCount": 128,
+      "vertices": 128,
+      "boundsMetres": [
+        [
+          0.000908047,
+          0.901733,
+          0.09063500000000001
+        ],
+        [
+          0.0359843,
+          0.964635,
+          0.12972
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          0.908047,
+          -129.72,
+          901.733
+        ],
+        [
+          35.9843,
+          -90.635,
+          964.635
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3465",
+      "sourceId": "FMA21388",
+      "side": "left",
+      "representationId": "BP10352",
+      "nativeConceptId": "FMA21388",
+      "path": "isa_BP3D_4.0_obj_99/FJ3465.obj",
+      "bytes": 26603,
+      "sha256": "4c2e57a9170cfa997bbe48f3b2a5a49e334e03a1067b4e8decc152fb1bb8d913",
+      "crc32": "c372dfe1",
+      "compressedBytesUpstream": 9267,
+      "anatomyId": "bp3d:FMA21388",
+      "family": "common-iliac-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 430,
+      "faces": 430,
+      "sourcePositionCount": 244,
+      "vertices": 244,
+      "boundsMetres": [
+        [
+          -0.015095700000000002,
+          0.900591,
+          0.0769055
+        ],
+        [
+          0.0262479,
+          0.965174,
+          0.123136
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -15.0957,
+          -123.136,
+          900.591
+        ],
+        [
+          26.2479,
+          -76.9055,
+          965.174
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3466",
+      "sourceId": "FMA18807",
+      "side": "left",
+      "representationId": "BP10599",
+      "nativeConceptId": "FMA18807",
+      "path": "isa_BP3D_4.0_obj_99/FJ3466.obj",
+      "bytes": 27002,
+      "sha256": "bba53b19cab2fb7e5c8f9461a21a2250d59e152585e58a9275207d5f51dc491b",
+      "crc32": "498cf012",
+      "compressedBytesUpstream": 9714,
+      "anatomyId": "bp3d:FMA18807",
+      "family": "external-iliac-artery",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "arteria",
+      "triangles": 462,
+      "faces": 462,
+      "sourcePositionCount": 236,
+      "vertices": 236,
+      "boundsMetres": [
+        [
+          0.0255364,
+          0.809832,
+          0.0781363
+        ],
+        [
+          0.0654415,
+          0.912336,
+          0.152944
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          25.5364,
+          -152.944,
+          809.832
+        ],
+        [
+          65.4415,
+          -78.1363,
+          912.336
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3468",
+      "sourceId": "FMA18810",
+      "side": "left",
+      "representationId": "BP10328",
+      "nativeConceptId": "FMA18810",
+      "path": "isa_BP3D_4.0_obj_99/FJ3468.obj",
+      "bytes": 18889,
+      "sha256": "2effa517c9d8b549b5a6b9e0ffe0326a99b03cb3d7ca58f4b1d338ce80f1d5e0",
+      "crc32": "4842639b",
+      "compressedBytesUpstream": 6811,
+      "anatomyId": "bp3d:FMA18810",
+      "family": "internal-iliac-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 270,
+      "faces": 270,
+      "sourcePositionCount": 194,
+      "vertices": 194,
+      "boundsMetres": [
+        [
+          0.0222715,
+          0.845338,
+          0.011719799999999999
+        ],
+        [
+          0.0335388,
+          0.909866,
+          0.101452
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          22.2715,
+          -101.452,
+          845.338
+        ],
+        [
+          33.5388,
+          -11.7198,
+          909.866
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3469",
+      "sourceId": "FMA18888",
+      "side": "left",
+      "representationId": "BP10309",
+      "nativeConceptId": "FMA18888",
+      "path": "isa_BP3D_4.0_obj_99/FJ3469.obj",
+      "bytes": 13554,
+      "sha256": "6a853f1cc673163d4e339f608f405c8c7ad74a3a6c8364fa71421976cb42b681",
+      "crc32": "fe0d176a",
+      "compressedBytesUpstream": 5088,
+      "anatomyId": "bp3d:FMA18888",
+      "family": "internal-iliac-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 208,
+      "faces": 208,
+      "sourcePositionCount": 134,
+      "vertices": 134,
+      "boundsMetres": [
+        [
+          0.0126147,
+          0.8559220000000001,
+          0.029835300000000002
+        ],
+        [
+          0.0240742,
+          0.9143920000000001,
+          0.0899084
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          12.6147,
+          -89.9084,
+          855.922
+        ],
+        [
+          24.0742,
+          -29.8353,
+          914.392
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3470",
+      "sourceId": "FMA18888",
+      "side": "left",
+      "representationId": "BP10309",
+      "nativeConceptId": "FMA18888",
+      "path": "isa_BP3D_4.0_obj_99/FJ3470.obj",
+      "bytes": 11931,
+      "sha256": "84de7eea903bfea9b940078ecb921fafdcd8db65dd52f8e954d2973a8a7e59e1",
+      "crc32": "e221d5f7",
+      "compressedBytesUpstream": 4460,
+      "anatomyId": "bp3d:FMA18888",
+      "family": "internal-iliac-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 176,
+      "faces": 176,
+      "sourcePositionCount": 121,
+      "vertices": 121,
+      "boundsMetres": [
+        [
+          0.0174683,
+          0.825207,
+          -0.00278517
+        ],
+        [
+          0.0226827,
+          0.877225,
+          0.0470572
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          17.4683,
+          -47.0572,
+          825.207
+        ],
+        [
+          22.6827,
+          2.78517,
+          877.225
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3471",
+      "sourceId": "FMA18888",
+      "side": "left",
+      "representationId": "BP10309",
+      "nativeConceptId": "FMA18888",
+      "path": "isa_BP3D_4.0_obj_99/FJ3471.obj",
+      "bytes": 13414,
+      "sha256": "90354aa14b7a84cd015bd32a9cfba5bd0ab9800bdf220fffcfb2960d752f2bcf",
+      "crc32": "58d4e391",
+      "compressedBytesUpstream": 4967,
+      "anatomyId": "bp3d:FMA18888",
+      "family": "internal-iliac-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 180,
+      "faces": 180,
+      "sourcePositionCount": 144,
+      "vertices": 144,
+      "boundsMetres": [
+        [
+          0.0115718,
+          0.7894500000000001,
+          -0.0100683
+        ],
+        [
+          0.025818200000000003,
+          0.857476,
+          0.032952800000000004
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          11.5718,
+          -32.9528,
+          789.45
+        ],
+        [
+          25.8182,
+          10.0683,
+          857.476
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3477",
+      "sourceId": "FMA14336",
+      "side": "left",
+      "representationId": "BP10330",
+      "nativeConceptId": "FMA14336",
+      "path": "isa_BP3D_4.0_obj_99/FJ3477.obj",
+      "bytes": 38504,
+      "sha256": "3299a1375f6f86c5d523d7f3abd1bce371f13d0b4b586e53bf95600b6ed17adf",
+      "crc32": "0c620587",
+      "compressedBytesUpstream": 12936,
+      "anatomyId": "bp3d:FMA14336",
+      "family": "renal-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 652,
+      "faces": 652,
+      "sourcePositionCount": 334,
+      "vertices": 334,
+      "boundsMetres": [
+        [
+          -0.0157686,
+          1.02329,
+          0.08958060000000001
+        ],
+        [
+          0.0316965,
+          1.03975,
+          0.132426
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -15.7686,
+          -132.426,
+          1023.29
+        ],
+        [
+          31.6965,
+          -89.5806,
+          1039.75
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3478",
+      "sourceId": "FMA14336",
+      "side": "left",
+      "representationId": "BP10330",
+      "nativeConceptId": "FMA14336",
+      "path": "isa_BP3D_4.0_obj_99/FJ3478.obj",
+      "bytes": 356390,
+      "sha256": "06a4b0b274aac5458aeb7ff33881f05afcd2a15e776ddfb9af59e61a06b4b2a1",
+      "crc32": "5b51103f",
+      "compressedBytesUpstream": 111859,
+      "anatomyId": "bp3d:FMA14336",
+      "family": "renal-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 4260,
+      "faces": 4260,
+      "sourcePositionCount": 3657,
+      "vertices": 3657,
+      "boundsMetres": [
+        [
+          0.0245644,
+          0.997588,
+          0.06770730000000001
+        ],
+        [
+          0.0810475,
+          1.0746,
+          0.0973973
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          24.5644,
+          -97.3973,
+          997.588
+        ],
+        [
+          81.0475,
+          -67.7073,
+          1074.6
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3479",
+      "sourceId": "FMA4694",
+      "side": "left",
+      "representationId": "BP10308",
+      "nativeConceptId": "FMA4694",
+      "path": "isa_BP3D_4.0_obj_99/FJ3479.obj",
+      "bytes": 39960,
+      "sha256": "f6af4efb94e1ce94519c94684b1d0a0736272e5a0ed2677a63627e0ebfc228b1",
+      "crc32": "3534c9dc",
+      "compressedBytesUpstream": 13587,
+      "anatomyId": "bp3d:FMA4694",
+      "family": "subclavian-artery",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "arteria",
+      "triangles": 646,
+      "faces": 646,
+      "sourcePositionCount": 362,
+      "vertices": 362,
+      "boundsMetres": [
+        [
+          0.017685700000000002,
+          1.30731,
+          0.0868478
+        ],
+        [
+          0.0865465,
+          1.35646,
+          0.105634
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          17.6857,
+          -105.634,
+          1307.31
+        ],
+        [
+          86.5465,
+          -86.8478,
+          1356.46
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3482",
+      "sourceId": "FMA4761",
+      "side": "left",
+      "representationId": "BP10267",
+      "nativeConceptId": "FMA4761",
+      "path": "isa_BP3D_4.0_obj_99/FJ3482.obj",
+      "bytes": 43991,
+      "sha256": "435c32387de475a28722653dfa7a830c136dd7921dac768c4b6858877fafb176",
+      "crc32": "d29e3161",
+      "compressedBytesUpstream": 14759,
+      "anatomyId": "bp3d:FMA4761",
+      "family": "brachiocephalic-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 748,
+      "faces": 748,
+      "sourcePositionCount": 377,
+      "vertices": 377,
+      "boundsMetres": [
+        [
+          -0.0237897,
+          1.2958800000000001,
+          0.110543
+        ],
+        [
+          0.0280068,
+          1.34799,
+          0.132357
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -23.7897,
+          -132.357,
+          1295.88
+        ],
+        [
+          28.0068,
+          -110.543,
+          1347.99
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3483",
+      "sourceId": "FMA4058",
+      "side": "left",
+      "representationId": "BP10326",
+      "nativeConceptId": "FMA4058",
+      "path": "isa_BP3D_4.0_obj_99/FJ3483.obj",
+      "bytes": 12124,
+      "sha256": "19f38e57365867279705090994fff228177163c1920ad0f8f9b15f830a42bc1d",
+      "crc32": "9b129f74",
+      "compressedBytesUpstream": 4424,
+      "anatomyId": "bp3d:FMA4058",
+      "family": "common-carotid-artery",
+      "moduleId": "cardio:head-neck",
+      "sourceType": "arteria",
+      "triangles": 170,
+      "faces": 170,
+      "sourcePositionCount": 126,
+      "vertices": 126,
+      "boundsMetres": [
+        [
+          0.0108208,
+          1.30739,
+          0.0960063
+        ],
+        [
+          0.022933000000000002,
+          1.37368,
+          0.112224
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          10.8208,
+          -112.224,
+          1307.39
+        ],
+        [
+          22.933,
+          -96.0063,
+          1373.68
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3484",
+      "sourceId": "FMA18886",
+      "side": "left",
+      "representationId": "BP10318",
+      "nativeConceptId": "FMA18886",
+      "path": "isa_BP3D_4.0_obj_99/FJ3484.obj",
+      "bytes": 41524,
+      "sha256": "bf0ca81768bb8f1d42837f43ccd41bc0f006da1a9703517b298edeb9af525c00",
+      "crc32": "6e7dbfea",
+      "compressedBytesUpstream": 14448,
+      "anatomyId": "bp3d:FMA18886",
+      "family": "external-iliac-vein",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "vena",
+      "triangles": 670,
+      "faces": 670,
+      "sourcePositionCount": 376,
+      "vertices": 376,
+      "boundsMetres": [
+        [
+          0.013691700000000001,
+          0.804442,
+          0.06831090000000001
+        ],
+        [
+          0.0571352,
+          0.9052100000000001,
+          0.150513
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          13.6917,
+          -150.513,
+          804.442
+        ],
+        [
+          57.1352,
+          -68.3109,
+          905.21
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3485",
+      "sourceId": "FMA4762",
+      "side": "left",
+      "representationId": "BP10367",
+      "nativeConceptId": "FMA4762",
+      "path": "isa_BP3D_4.0_obj_99/FJ3485.obj",
+      "bytes": 17029,
+      "sha256": "ec17bca2370898fd34c6e518d9ad62998819544058d41a34838580f7e554f0bd",
+      "crc32": "a75ef690",
+      "compressedBytesUpstream": 5998,
+      "anatomyId": "bp3d:FMA4762",
+      "family": "internal-jugular-vein",
+      "moduleId": "cardio:head-neck",
+      "sourceType": "vena",
+      "triangles": 280,
+      "faces": 280,
+      "sourcePositionCount": 158,
+      "vertices": 158,
+      "boundsMetres": [
+        [
+          0.018107500000000002,
+          1.3374100000000002,
+          0.111701
+        ],
+        [
+          0.0309054,
+          1.38043,
+          0.122114
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          18.1075,
+          -122.114,
+          1337.41
+        ],
+        [
+          30.9054,
+          -111.701,
+          1380.43
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3486",
+      "sourceId": "FMA4763",
+      "side": "left",
+      "representationId": "BP10345",
+      "nativeConceptId": "FMA4763",
+      "path": "isa_BP3D_4.0_obj_99/FJ3486.obj",
+      "bytes": 28122,
+      "sha256": "22b351bd5e1e76488e150f433bfc59a44c3a27a567f5eb5c9a6be5b2b21be5c6",
+      "crc32": "bf4967fb",
+      "compressedBytesUpstream": 9466,
+      "anatomyId": "bp3d:FMA4763",
+      "family": "subclavian-vein",
+      "moduleId": "cardio:upper-left",
+      "sourceType": "vena",
+      "triangles": 434,
+      "faces": 434,
+      "sourcePositionCount": 271,
+      "vertices": 271,
+      "boundsMetres": [
+        [
+          0.0193808,
+          1.32519,
+          0.105442
+        ],
+        [
+          0.0942578,
+          1.35347,
+          0.12107599999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          19.3808,
+          -121.076,
+          1325.19
+        ],
+        [
+          94.2578,
+          -105.442,
+          1353.47
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3499",
+      "sourceId": "FMA14768",
+      "side": "left",
+      "representationId": "BP10363",
+      "nativeConceptId": "FMA14768",
+      "path": "isa_BP3D_4.0_obj_99/FJ3499.obj",
+      "bytes": 66044,
+      "sha256": "983a0580d4324a210eeb5671c4caf115c29ce13c0761e718102db8092a849ccf",
+      "crc32": "118f598c",
+      "compressedBytesUpstream": 21626,
+      "anatomyId": "bp3d:FMA14768",
+      "family": "left-gastric-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 1100,
+      "faces": 1100,
+      "sourcePositionCount": 578,
+      "vertices": 578,
+      "boundsMetres": [
+        [
+          0.00493379,
+          1.0809000000000002,
+          0.12280100000000001
+        ],
+        [
+          0.0267316,
+          1.12628,
+          0.16948500000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          4.93379,
+          -169.485,
+          1080.9
+        ],
+        [
+          26.7316,
+          -122.801,
+          1126.28
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3522",
+      "sourceId": "FMA18886",
+      "side": "left",
+      "representationId": "BP10318",
+      "nativeConceptId": "FMA18886",
+      "path": "isa_BP3D_4.0_obj_99/FJ3522.obj",
+      "bytes": 10423,
+      "sha256": "2d1d33f168089521c707408b80f229d6b8f8302fde1f31ddad22e63238c4da7a",
+      "crc32": "f48ea46f",
+      "compressedBytesUpstream": 4024,
+      "anatomyId": "bp3d:FMA18886",
+      "family": "external-iliac-vein",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "vena",
+      "triangles": 168,
+      "faces": 168,
+      "sourcePositionCount": 100,
+      "vertices": 100,
+      "boundsMetres": [
+        [
+          0.00774975,
+          0.887468,
+          0.0678084
+        ],
+        [
+          0.0182082,
+          0.913867,
+          0.0941424
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          7.74975,
+          -94.1424,
+          887.468
+        ],
+        [
+          18.2082,
+          -67.8084,
+          913.867
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3523",
+      "sourceId": "FMA18886",
+      "side": "left",
+      "representationId": "BP10318",
+      "nativeConceptId": "FMA18886",
+      "path": "isa_BP3D_4.0_obj_99/FJ3523.obj",
+      "bytes": 10889,
+      "sha256": "a26bb4b9261de25955ac8a6669391cb588a1546267db5c8c9865d10c426bc402",
+      "crc32": "e4196c4b",
+      "compressedBytesUpstream": 4133,
+      "anatomyId": "bp3d:FMA18886",
+      "family": "external-iliac-vein",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "vena",
+      "triangles": 186,
+      "faces": 186,
+      "sourcePositionCount": 100,
+      "vertices": 100,
+      "boundsMetres": [
+        [
+          0.0107394,
+          0.867165,
+          0.0593379
+        ],
+        [
+          0.0181999,
+          0.891707,
+          0.0742863
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          10.7394,
+          -74.2863,
+          867.165
+        ],
+        [
+          18.1999,
+          -59.3379,
+          891.707
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3524",
+      "sourceId": "FMA18886",
+      "side": "left",
+      "representationId": "BP10318",
+      "nativeConceptId": "FMA18886",
+      "path": "isa_BP3D_4.0_obj_99/FJ3524.obj",
+      "bytes": 8418,
+      "sha256": "006c8cb0cc53fb2b5f388979adccff45430ba16dfd9d06ffa67a36f5bd946f27",
+      "crc32": "cdd125f1",
+      "compressedBytesUpstream": 3215,
+      "anatomyId": "bp3d:FMA18886",
+      "family": "external-iliac-vein",
+      "moduleId": "cardio:lower-left",
+      "sourceType": "vena",
+      "triangles": 112,
+      "faces": 112,
+      "sourcePositionCount": 88,
+      "vertices": 88,
+      "boundsMetres": [
+        [
+          0.011540900000000002,
+          0.875073,
+          0.0506183
+        ],
+        [
+          0.020169899999999998,
+          0.890711,
+          0.07265519999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          11.5409,
+          -72.6552,
+          875.073
+        ],
+        [
+          20.1699,
+          -50.6183,
+          890.711
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3544",
+      "sourceId": "FMA14773",
+      "side": "midline",
+      "representationId": "BP8474",
+      "nativeConceptId": "FMA14773",
+      "path": "isa_BP3D_4.0_obj_99/FJ3544.obj",
+      "bytes": 219981,
+      "sha256": "d22809e5be114a70c1e380d370c42c91439ed849f1f6fe03f595955cdd6898b3",
+      "crc32": "2f0f6779",
+      "compressedBytesUpstream": 66533,
+      "anatomyId": "bp3d:FMA14773",
+      "family": "splenic-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 2588,
+      "faces": 2588,
+      "sourcePositionCount": 2325,
+      "vertices": 2325,
+      "boundsMetres": [
+        [
+          0.0195034,
+          1.05959,
+          0.10206699999999999
+        ],
+        [
+          0.06854500000000001,
+          1.07822,
+          0.121839
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          19.5034,
+          -121.839,
+          1059.59
+        ],
+        [
+          68.545,
+          -102.067,
+          1078.22
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3564",
+      "sourceId": "FMA3941",
+      "side": "right",
+      "representationId": "BP10288",
+      "nativeConceptId": "FMA3941",
+      "path": "isa_BP3D_4.0_obj_99/FJ3564.obj",
+      "bytes": 52438,
+      "sha256": "423585ec439b07b0f64878f904afca52d4866e1e0dc54c2ace31953d9b6156cf",
+      "crc32": "04e6b2b4",
+      "compressedBytesUpstream": 17167,
+      "anatomyId": "bp3d:FMA3941",
+      "family": "common-carotid-artery",
+      "moduleId": "cardio:head-neck",
+      "sourceType": "arteria",
+      "triangles": 884,
+      "faces": 884,
+      "sourcePositionCount": 448,
+      "vertices": 448,
+      "boundsMetres": [
+        [
+          -0.0212579,
+          1.32942,
+          0.105383
+        ],
+        [
+          -0.008614440000000001,
+          1.37338,
+          0.117548
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -21.2579,
+          -117.548,
+          1329.42
+        ],
+        [
+          -8.61444,
+          -105.383,
+          1373.38
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3565",
+      "sourceId": "FMA14765",
+      "side": "right",
+      "representationId": "BP10297",
+      "nativeConceptId": "FMA14765",
+      "path": "isa_BP3D_4.0_obj_99/FJ3565.obj",
+      "bytes": 12912,
+      "sha256": "11eb1378295c92af09a47d9e25e2c4ee9e1430a6689ddfc7deebf2e44d145cc7",
+      "crc32": "b522fbc0",
+      "compressedBytesUpstream": 4870,
+      "anatomyId": "bp3d:FMA14765",
+      "family": "common-iliac-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 220,
+      "faces": 220,
+      "sourcePositionCount": 117,
+      "vertices": 117,
+      "boundsMetres": [
+        [
+          -0.0375029,
+          0.903462,
+          0.105044
+        ],
+        [
+          0.0101767,
+          0.964665,
+          0.13006600000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -37.5029,
+          -130.066,
+          903.462
+        ],
+        [
+          10.1767,
+          -105.044,
+          964.665
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3566",
+      "sourceId": "FMA21387",
+      "side": "right",
+      "representationId": "BP10313",
+      "nativeConceptId": "FMA21387",
+      "path": "isa_BP3D_4.0_obj_99/FJ3566.obj",
+      "bytes": 22018,
+      "sha256": "b34098865ad19c8fe0bc28e46ac76e2af6d52f0065d684637fd1886813c62a76",
+      "crc32": "8e8e6dee",
+      "compressedBytesUpstream": 7739,
+      "anatomyId": "bp3d:FMA21387",
+      "family": "common-iliac-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 358,
+      "faces": 358,
+      "sourcePositionCount": 199,
+      "vertices": 199,
+      "boundsMetres": [
+        [
+          -0.0358807,
+          0.900632,
+          0.08833360000000001
+        ],
+        [
+          -0.0035885500000000002,
+          0.964607,
+          0.123448
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -35.8807,
+          -123.448,
+          900.632
+        ],
+        [
+          -3.58855,
+          -88.3336,
+          964.607
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3567",
+      "sourceId": "FMA18806",
+      "side": "right",
+      "representationId": "BP10614",
+      "nativeConceptId": "FMA18806",
+      "path": "isa_BP3D_4.0_obj_99/FJ3567.obj",
+      "bytes": 24033,
+      "sha256": "6be9a8fa7f67d5ce6638daf7deacd7d4953c258e920b2ba21575be47edde8fe6",
+      "crc32": "02859848",
+      "compressedBytesUpstream": 8562,
+      "anatomyId": "bp3d:FMA18806",
+      "family": "external-iliac-artery",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "arteria",
+      "triangles": 396,
+      "faces": 396,
+      "sourcePositionCount": 214,
+      "vertices": 214,
+      "boundsMetres": [
+        [
+          -0.061287,
+          0.803613,
+          0.07779710000000001
+        ],
+        [
+          -0.0274583,
+          0.91354,
+          0.144498
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -61.287,
+          -144.498,
+          803.613
+        ],
+        [
+          -27.4583,
+          -77.7971,
+          913.54
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3568",
+      "sourceId": "FMA18885",
+      "side": "right",
+      "representationId": "BP10294",
+      "nativeConceptId": "FMA18885",
+      "path": "isa_BP3D_4.0_obj_99/FJ3568.obj",
+      "bytes": 44540,
+      "sha256": "503cc199a945ab1c061deacdc32165ac413f7c2d362375f17d576a3b2f235023",
+      "crc32": "58b0bb28",
+      "compressedBytesUpstream": 15363,
+      "anatomyId": "bp3d:FMA18885",
+      "family": "external-iliac-vein",
+      "moduleId": "cardio:lower-right",
+      "sourceType": "vena",
+      "triangles": 724,
+      "faces": 724,
+      "sourcePositionCount": 396,
+      "vertices": 396,
+      "boundsMetres": [
+        [
+          -0.052122,
+          0.7956300000000001,
+          0.0624437
+        ],
+        [
+          -0.0248083,
+          0.905549,
+          0.151591
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -52.122,
+          -151.591,
+          795.63
+        ],
+        [
+          -24.8083,
+          -62.4437,
+          905.549
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3569",
+      "sourceId": "FMA18809",
+      "side": "right",
+      "representationId": "BP10316",
+      "nativeConceptId": "FMA18809",
+      "path": "isa_BP3D_4.0_obj_99/FJ3569.obj",
+      "bytes": 19769,
+      "sha256": "bc5922d28b6f5d9f67722396283ea7ef10cd3baa8ed0a8271faa8c11ca96d52a",
+      "crc32": "a9ab8b8a",
+      "compressedBytesUpstream": 6984,
+      "anatomyId": "bp3d:FMA18809",
+      "family": "internal-iliac-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 276,
+      "faces": 276,
+      "sourcePositionCount": 201,
+      "vertices": 201,
+      "boundsMetres": [
+        [
+          -0.036030700000000006,
+          0.850365,
+          0.027452200000000003
+        ],
+        [
+          -0.0272349,
+          0.910766,
+          0.112467
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -36.0307,
+          -112.467,
+          850.365
+        ],
+        [
+          -27.2349,
+          -27.4522,
+          910.766
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3570",
+      "sourceId": "FMA18887",
+      "side": "right",
+      "representationId": "BP10327",
+      "nativeConceptId": "FMA18887",
+      "path": "isa_BP3D_4.0_obj_99/FJ3570.obj",
+      "bytes": 15388,
+      "sha256": "83a53beb46b092f78bf80cf73cdfc10b91e0b32f7183fc79fde7ab0716069d73",
+      "crc32": "9cedb8f0",
+      "compressedBytesUpstream": 5534,
+      "anatomyId": "bp3d:FMA18887",
+      "family": "internal-iliac-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 216,
+      "faces": 216,
+      "sourcePositionCount": 157,
+      "vertices": 157,
+      "boundsMetres": [
+        [
+          -0.0317356,
+          0.8537100000000001,
+          0.0365898
+        ],
+        [
+          -0.023467099999999998,
+          0.9118780000000001,
+          0.09932210000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.7356,
+          -99.3221,
+          853.71
+        ],
+        [
+          -23.4671,
+          -36.5898,
+          911.878
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3571",
+      "sourceId": "FMA18887",
+      "side": "right",
+      "representationId": "BP10327",
+      "nativeConceptId": "FMA18887",
+      "path": "isa_BP3D_4.0_obj_99/FJ3571.obj",
+      "bytes": 13552,
+      "sha256": "9fed45819fc91bdda871afc018a0e8924fa9a7bee6cb131626509f75344aa018",
+      "crc32": "1dcafb29",
+      "compressedBytesUpstream": 4981,
+      "anatomyId": "bp3d:FMA18887",
+      "family": "internal-iliac-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 202,
+      "faces": 202,
+      "sourcePositionCount": 134,
+      "vertices": 134,
+      "boundsMetres": [
+        [
+          -0.029906400000000003,
+          0.8163320000000001,
+          0.005617560000000001
+        ],
+        [
+          -0.0243037,
+          0.873912,
+          0.0507736
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -29.9064,
+          -50.7736,
+          816.332
+        ],
+        [
+          -24.3037,
+          -5.61756,
+          873.912
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3572",
+      "sourceId": "FMA18887",
+      "side": "right",
+      "representationId": "BP10327",
+      "nativeConceptId": "FMA18887",
+      "path": "isa_BP3D_4.0_obj_99/FJ3572.obj",
+      "bytes": 14218,
+      "sha256": "8a9105869190200b0798c89805b8565ab079a40ac859c1996a4bf3a752d75e6f",
+      "crc32": "a370766c",
+      "compressedBytesUpstream": 5224,
+      "anatomyId": "bp3d:FMA18887",
+      "family": "internal-iliac-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 192,
+      "faces": 192,
+      "sourcePositionCount": 149,
+      "vertices": 149,
+      "boundsMetres": [
+        [
+          -0.0388119,
+          0.7888200000000001,
+          -0.000625933
+        ],
+        [
+          -0.016811,
+          0.855087,
+          0.0402576
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -38.8119,
+          -40.2576,
+          788.82
+        ],
+        [
+          -16.811,
+          0.625933,
+          855.087
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3577",
+      "sourceId": "FMA14335",
+      "side": "right",
+      "representationId": "BP10256",
+      "nativeConceptId": "FMA14335",
+      "path": "isa_BP3D_4.0_obj_99/FJ3577.obj",
+      "bytes": 19476,
+      "sha256": "36125db169fc547f88860a3f8ea873742437d8be55b6f5f1a7f877219b759449",
+      "crc32": "ccdd1ef8",
+      "compressedBytesUpstream": 6830,
+      "anatomyId": "bp3d:FMA14335",
+      "family": "renal-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 332,
+      "faces": 332,
+      "sourcePositionCount": 172,
+      "vertices": 172,
+      "boundsMetres": [
+        [
+          -0.0313539,
+          1.02109,
+          0.0922295
+        ],
+        [
+          -0.008988930000000001,
+          1.0332000000000001,
+          0.11722300000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.3539,
+          -117.223,
+          1021.09
+        ],
+        [
+          -8.98893,
+          -92.2295,
+          1033.2
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3578",
+      "sourceId": "FMA14335",
+      "side": "right",
+      "representationId": "BP10256",
+      "nativeConceptId": "FMA14335",
+      "path": "isa_BP3D_4.0_obj_99/FJ3578.obj",
+      "bytes": 388327,
+      "sha256": "ccb15ddc46ef6b11ef62fa8dd6923b6fdeedb9b3371ab80513ff11a0fc120734",
+      "crc32": "7bdb16e0",
+      "compressedBytesUpstream": 122016,
+      "anatomyId": "bp3d:FMA14335",
+      "family": "renal-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 4682,
+      "faces": 4682,
+      "sourcePositionCount": 3865,
+      "vertices": 3865,
+      "boundsMetres": [
+        [
+          -0.0733557,
+          0.980881,
+          0.07865710000000001
+        ],
+        [
+          -0.0237453,
+          1.05826,
+          0.101468
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -73.3557,
+          -101.468,
+          980.881
+        ],
+        [
+          -23.7453,
+          -78.6571,
+          1058.26
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3579",
+      "sourceId": "FMA3953",
+      "side": "right",
+      "representationId": "BP10281",
+      "nativeConceptId": "FMA3953",
+      "path": "isa_BP3D_4.0_obj_99/FJ3579.obj",
+      "bytes": 27662,
+      "sha256": "1fb9231343dce90a8d62061c63e0102eb72d117f131eda7876abfeb0060b6ad3",
+      "crc32": "7e3c0b60",
+      "compressedBytesUpstream": 9447,
+      "anatomyId": "bp3d:FMA3953",
+      "family": "subclavian-artery",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "arteria",
+      "triangles": 452,
+      "faces": 452,
+      "sourcePositionCount": 247,
+      "vertices": 247,
+      "boundsMetres": [
+        [
+          -0.082176,
+          1.33094,
+          0.09435460000000001
+        ],
+        [
+          -0.00974729,
+          1.35303,
+          0.112221
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -82.176,
+          -112.221,
+          1330.94
+        ],
+        [
+          -9.74729,
+          -94.3546,
+          1353.03
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3583",
+      "sourceId": "FMA4751",
+      "side": "right",
+      "representationId": "BP10354",
+      "nativeConceptId": "FMA4751",
+      "path": "isa_BP3D_4.0_obj_99/FJ3583.obj",
+      "bytes": 32020,
+      "sha256": "53cca77d47a5c4bb02e2c86cd38180752d37bf257a6e7ec48bc2335c6e95211a",
+      "crc32": "37155b8d",
+      "compressedBytesUpstream": 10786,
+      "anatomyId": "bp3d:FMA4751",
+      "family": "brachiocephalic-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 546,
+      "faces": 546,
+      "sourcePositionCount": 275,
+      "vertices": 275,
+      "boundsMetres": [
+        [
+          -0.0319655,
+          1.29802,
+          0.109377
+        ],
+        [
+          -0.010296,
+          1.3498599999999998,
+          0.131271
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.9655,
+          -131.271,
+          1298.02
+        ],
+        [
+          -10.296,
+          -109.377,
+          1349.86
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3585",
+      "sourceId": "FMA4754",
+      "side": "right",
+      "representationId": "BP10334",
+      "nativeConceptId": "FMA4754",
+      "path": "isa_BP3D_4.0_obj_99/FJ3585.obj",
+      "bytes": 15258,
+      "sha256": "528ab41e57d31335c0deb9bb804c4e83b9bc22cf912d8de247a88ad9893325f1",
+      "crc32": "87128636",
+      "compressedBytesUpstream": 5268,
+      "anatomyId": "bp3d:FMA4754",
+      "family": "internal-jugular-vein",
+      "moduleId": "cardio:head-neck",
+      "sourceType": "vena",
+      "triangles": 226,
+      "faces": 226,
+      "sourcePositionCount": 153,
+      "vertices": 153,
+      "boundsMetres": [
+        [
+          -0.03114,
+          1.3404800000000001,
+          0.112887
+        ],
+        [
+          -0.0217121,
+          1.38174,
+          0.122075
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.14,
+          -122.075,
+          1340.48
+        ],
+        [
+          -21.7121,
+          -112.887,
+          1381.74
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3587",
+      "sourceId": "FMA4755",
+      "side": "right",
+      "representationId": "BP10356",
+      "nativeConceptId": "FMA4755",
+      "path": "isa_BP3D_4.0_obj_99/FJ3587.obj",
+      "bytes": 22980,
+      "sha256": "3ed476e466dbc681e284005f910b546a97ac24999236cae1ec7487149da7bb53",
+      "crc32": "cc7bc949",
+      "compressedBytesUpstream": 7827,
+      "anatomyId": "bp3d:FMA4755",
+      "family": "subclavian-vein",
+      "moduleId": "cardio:upper-right",
+      "sourceType": "vena",
+      "triangles": 368,
+      "faces": 368,
+      "sourcePositionCount": 209,
+      "vertices": 209,
+      "boundsMetres": [
+        [
+          -0.0868287,
+          1.32773,
+          0.108497
+        ],
+        [
+          -0.022342300000000002,
+          1.35155,
+          0.12179300000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -86.8287,
+          -121.793,
+          1327.73
+        ],
+        [
+          -22.3423,
+          -108.497,
+          1351.55
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3607",
+      "sourceId": "FMA18887",
+      "side": "right",
+      "representationId": "BP10327",
+      "nativeConceptId": "FMA18887",
+      "path": "isa_BP3D_4.0_obj_99/FJ3607.obj",
+      "bytes": 7497,
+      "sha256": "cd1c2558c44fff12efdad2da945fb314469f48c4e252aa10b79b94f7ec02f3ce",
+      "crc32": "2220a8e8",
+      "compressedBytesUpstream": 2887,
+      "anatomyId": "bp3d:FMA18887",
+      "family": "internal-iliac-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 94,
+      "faces": 94,
+      "sourcePositionCount": 79,
+      "vertices": 79,
+      "boundsMetres": [
+        [
+          -0.0286408,
+          0.88783,
+          0.08187430000000001
+        ],
+        [
+          -0.0189735,
+          0.914723,
+          0.105154
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -28.6408,
+          -105.154,
+          887.83
+        ],
+        [
+          -18.9735,
+          -81.8743,
+          914.723
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3608",
+      "sourceId": "FMA18887",
+      "side": "right",
+      "representationId": "BP10327",
+      "nativeConceptId": "FMA18887",
+      "path": "isa_BP3D_4.0_obj_99/FJ3608.obj",
+      "bytes": 12082,
+      "sha256": "9166b488722a107f0ea509bc5c9f94ff26b4cab54d6a5dcc9141dc1bd29efe79",
+      "crc32": "f042018c",
+      "compressedBytesUpstream": 4478,
+      "anatomyId": "bp3d:FMA18887",
+      "family": "internal-iliac-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 202,
+      "faces": 202,
+      "sourcePositionCount": 111,
+      "vertices": 111,
+      "boundsMetres": [
+        [
+          -0.0270046,
+          0.868862,
+          0.07424710000000001
+        ],
+        [
+          -0.0204652,
+          0.8925259999999999,
+          0.08847390000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -27.0046,
+          -88.4739,
+          868.862
+        ],
+        [
+          -20.4652,
+          -74.2471,
+          892.526
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3609",
+      "sourceId": "FMA18887",
+      "side": "right",
+      "representationId": "BP10327",
+      "nativeConceptId": "FMA18887",
+      "path": "isa_BP3D_4.0_obj_99/FJ3609.obj",
+      "bytes": 6519,
+      "sha256": "5cb3da4efafb5e511f9d0e658e095f9198545d325c7cc7d0960669b5124a2295",
+      "crc32": "ff362170",
+      "compressedBytesUpstream": 2493,
+      "anatomyId": "bp3d:FMA18887",
+      "family": "internal-iliac-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 74,
+      "faces": 74,
+      "sourcePositionCount": 70,
+      "vertices": 70,
+      "boundsMetres": [
+        [
+          -0.0303462,
+          0.8757530000000001,
+          0.06447190000000001
+        ],
+        [
+          -0.0216225,
+          0.8917010000000001,
+          0.0866422
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -30.3462,
+          -86.6422,
+          875.753
+        ],
+        [
+          -21.6225,
+          -64.4719,
+          891.701
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3640",
+      "sourceId": "FMA14773",
+      "side": "midline",
+      "representationId": "BP8474",
+      "nativeConceptId": "FMA14773",
+      "path": "isa_BP3D_4.0_obj_99/FJ3640.obj",
+      "bytes": 126639,
+      "sha256": "27b149be4ab4edd36c86799827a10ea40e5b29b596eacc2b830da44f143ed063",
+      "crc32": "da20475e",
+      "compressedBytesUpstream": 39683,
+      "anatomyId": "bp3d:FMA14773",
+      "family": "splenic-artery",
+      "moduleId": "cardio:trunk",
+      "sourceType": "arteria",
+      "triangles": 1742,
+      "faces": 1742,
+      "sourcePositionCount": 1273,
+      "vertices": 1273,
+      "boundsMetres": [
+        [
+          0.00466273,
+          1.0703099999999999,
+          0.08041809999999999
+        ],
+        [
+          0.09903740000000001,
+          1.0940999999999999,
+          0.133578
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          4.66273,
+          -133.578,
+          1070.31
+        ],
+        [
+          99.0374,
+          -80.4181,
+          1094.1
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3641",
+      "sourceId": "FMA14331",
+      "side": "midline",
+      "representationId": "BP10265",
+      "nativeConceptId": "FMA14331",
+      "path": "isa_BP3D_4.0_obj_99/FJ3641.obj",
+      "bytes": 87375,
+      "sha256": "4dabe1ffb6e36e9f7714ba5f8da7ed48b11d304963372f982446467e584d2e9f",
+      "crc32": "556f8e57",
+      "compressedBytesUpstream": 28224,
+      "anatomyId": "bp3d:FMA14331",
+      "family": "splenic-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 1144,
+      "faces": 1144,
+      "sourcePositionCount": 922,
+      "vertices": 922,
+      "boundsMetres": [
+        [
+          -0.0120303,
+          1.05126,
+          0.0830722
+        ],
+        [
+          0.0998501,
+          1.09178,
+          0.124083
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -12.0303,
+          -124.083,
+          1051.26
+        ],
+        [
+          99.8501,
+          -83.0722,
+          1091.78
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3645",
+      "sourceId": "FMA4720",
+      "side": "midline",
+      "representationId": "BP10292",
+      "nativeConceptId": "FMA4720",
+      "path": "isa_BP3D_4.0_obj_99/FJ3645.obj",
+      "bytes": 36208,
+      "sha256": "5cc007c2ea51255df641225630e83ddbf3e5c4545dffe4814b098c9199ceb26c",
+      "crc32": "0576bad8",
+      "compressedBytesUpstream": 12061,
+      "anatomyId": "bp3d:FMA4720",
+      "family": "superior-vena-cava",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 598,
+      "faces": 598,
+      "sourcePositionCount": 318,
+      "vertices": 318,
+      "boundsMetres": [
+        [
+          -0.0266349,
+          1.27481,
+          0.103587
+        ],
+        [
+          -0.00410943,
+          1.30981,
+          0.127276
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -26.6349,
+          -127.276,
+          1274.81
+        ],
+        [
+          -4.10943,
+          -103.587,
+          1309.81
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3647",
+      "sourceId": "FMA14332",
+      "side": "midline",
+      "representationId": "BP10291",
+      "nativeConceptId": "FMA14332",
+      "path": "isa_BP3D_4.0_obj_99/FJ3647.obj",
+      "bytes": 49595,
+      "sha256": "55ea29d132bf0e79a7af6657a975c9ed5bd64e516f91c4794d96e2db2675e2e8",
+      "crc32": "b66cd6c6",
+      "compressedBytesUpstream": 16643,
+      "anatomyId": "bp3d:FMA14332",
+      "family": "superior-mesenteric-vein",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 702,
+      "faces": 702,
+      "sourcePositionCount": 489,
+      "vertices": 489,
+      "boundsMetres": [
+        [
+          -0.0625509,
+          0.910141,
+          0.109144
+        ],
+        [
+          -0.0050205200000000005,
+          1.06698,
+          0.14963300000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -62.5509,
+          -149.633,
+          910.141
+        ],
+        [
+          -5.02052,
+          -109.144,
+          1066.98
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    },
+    {
+      "elementId": "FJ3659",
+      "sourceId": "FMA10951",
+      "side": "midline",
+      "representationId": "BP10311",
+      "nativeConceptId": "FMA10951",
+      "path": "isa_BP3D_4.0_obj_99/FJ3659.obj",
+      "bytes": 107453,
+      "sha256": "2241af6de027922eb74cb58d882433a5d0ffb7ecce41a1925f05e13dd78d666c",
+      "crc32": "4e694e99",
+      "compressedBytesUpstream": 34054,
+      "anatomyId": "bp3d:FMA10951",
+      "family": "inferior-vena-cava",
+      "moduleId": "cardio:trunk",
+      "sourceType": "vena",
+      "triangles": 1670,
+      "faces": 1670,
+      "sourcePositionCount": 968,
+      "vertices": 968,
+      "boundsMetres": [
+        [
+          -0.023796,
+          0.9508920000000001,
+          0.105582
+        ],
+        [
+          -0.0020585,
+          1.09503,
+          0.12879
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -23.796,
+          -128.79,
+          950.892
+        ],
+        [
+          -2.0585,
+          -105.582,
+          1095.03
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0",
+      "headerLegacyLicense": "CC BY-SA 2.1 Japan"
+    }
+  ]
+}

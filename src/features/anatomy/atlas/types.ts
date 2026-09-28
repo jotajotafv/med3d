@@ -22,6 +22,9 @@ export interface AnatomyNode {
   family?: string;
   /** Curated nervous entity type; independent of mesh subdivision. */
   neuralType?: string;
+  /** Cardiovascular identity and presentation class; independent of oxygenation. */
+  cardioType?: string;
+  vascularClass?: 'heart' | 'arterial' | 'venous';
   side?: 'left' | 'right' | 'midline';
   relatedIds: string[];
   bounds?: Bounds;

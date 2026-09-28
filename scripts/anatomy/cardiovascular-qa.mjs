@@ -14,6 +14,8 @@ const nervous=JSON.parse(await readFile(path.join(project,process.env.QA_SERVE_D
 const cardio=JSON.parse(await readFile(path.join(project,process.env.QA_SERVE_DIR||'dist','models/anatomy/cardiovascular/catalog.json'),'utf8'));
 const nodes=[...h.catalog.nodes,...muscular.nodes,...nervous.nodes,...cardio.nodes],assets=[...h.catalog.assets,...muscular.assets,...nervous.assets,...cardio.assets],byId=new Map(nodes.map(node=>[node.id,node]));
 const newAssets=cardio.assets;
+// The neutral root is composed by the UI, so it is absent from source catalogs.
+byId.set('body',{id:'body',name:'Cuerpo humano',children:['skeletal','muscular','nervous','cardiovascular'],assetIds:assets.map(asset=>asset.id)});
 const boneMeshes=h.expectedMeshes,muscleMeshes=muscular.coverage.meshes,totalMeshes=boneMeshes+muscleMeshes+nervous.coverage.meshes+cardio.coverage.meshes;
 let activeTotalMeshes=totalMeshes;
 const sum=(list,key)=>list.reduce((total,item)=>total+item[key],0);
@@ -101,6 +103,7 @@ async function regional(){
 }
 async function review(){await goto('cardiovascular');await choose(byId.get('cardiovascular'));await h.view('anterior');await action('Deseleccionar');await shot('preview-overview');await choose(byId.get('cardio:heart'));await action('Aislar');await h.view('anterior');await shot('preview-heart');await goto('skeletal,cardiovascular');await choose(family('femoral-artery','right'));await page.getByRole('button',{name:'Mostrar contexto',exact:true}).click();await h.view('anterior');await shot('preview-femoral-context');}
 async function captures(){
+ if(!process.argv.includes('--captures-tail')){
  await goto('cardiovascular');
  for(const [view,name] of [['anterior','01-cardio-anterior'],['posterior','02-cardio-posterior'],['left','03-cardio-lateral']]){await choose(byId.get('cardiovascular'));await h.view(view);await action('Deseleccionar');await shot(name);}
  for(const [id,name,view] of [
@@ -119,6 +122,7 @@ async function captures(){
  await choose(family('brachial-artery','right'));await page.getByRole('button',{name:'Mostrar contexto',exact:true}).click();await h.view('anterior');await shot('26-contexto-braquial');
  await goto('cardiovascular');await choose(family('great-saphenous-vein','left'));await action('Aislar');await h.view('anterior');await shot('27-vena-aislada');
  await choose(family('trunk-of-right-coronary-artery'));await page.getByRole('button',{name:'Mostrar contexto',exact:true}).click();await h.view('anterior');await shot('28-contexto-coronario');
+ }
  await goto();await choose(byId.get('body'));await explode('systems',100);await action('Enfocar');await action('Deseleccionar');await shot('29-exploded-sistemas');
  await goto('cardiovascular');await choose(byId.get('cardiovascular'));await explode('regions',70);await action('Enfocar');await action('Deseleccionar');await shot('30-exploded-regiones');await explode('regions',0);
  await choose(family('femoral-artery','right'));await structures();await page.getByRole('textbox',{name:'Buscar estructura anatómica'}).fill('femoral');await shot('31-busqueda-global');await clearSearch();await page.getByRole('button',{name:'Árbol anatómico',exact:true}).click();await shot('32-arbol-global');

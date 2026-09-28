@@ -82,7 +82,7 @@ async function functional(){
  await page.setViewportSize({width:1440,height:900});
  for(const organ of ['heart','lungs','brain']){await page.goto(h.origin+'/med3d/anatomia/?organ='+organ);await page.locator('canvas').waitFor({timeout:120000});await page.waitForFunction(()=>!document.querySelector('.model-loading'),null,{timeout:120000});assert.ok((await page.locator('body').innerText()).length>100);}
  const routeList=['','acerca','arquitectura','procedimientos','primeros-auxilios','procedimientos/presion-arterial','procedimientos/signos-vitales','procedimientos/vendaje','procedimientos/inmovilizacion','primeros-auxilios/rcp','primeros-auxilios/atragantamiento','primeros-auxilios/hemorragias','primeros-auxilios/quemaduras','primeros-auxilios/fracturas','primeros-auxilios/desmayos','primeros-auxilios/convulsiones','primeros-auxilios/botiquin'];
- for(const route of routeList){await page.goto(h.origin+'/med3d/'+route);assert.ok(await page.locator('h1').count(),'Route '+route);}
+ for(const route of routeList){await page.goto(h.origin+'/med3d/'+route);await page.locator('h1').waitFor({state:'visible',timeout:30000});assert.ok(await page.locator('h1').count(),'Route '+route);}
  check('Laptop/tablet/mobile, three independent organ routes and all general static routes');
 }
 const measured=async fn=>{const start=performance.now();await fn();return performance.now()-start;};

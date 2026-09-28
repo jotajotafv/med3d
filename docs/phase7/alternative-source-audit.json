@@ -1,0 +1,31 @@
+{
+  "source": "DBCLS official API, inspected as alternative only",
+  "conceptManifest": "https://lifesciencedb.jp/bp3d/get-info.cgi?version=4.3&cmd=concept-objfiles-list",
+  "download": "https://lifesciencedb.jp/bp3d/download.cgi",
+  "rawDownloadBytes": 2314796,
+  "rawDownloadSha256": "7dcb30b7c70ca06332e3c5589a4bcca3d3887e34a32f4ab0d82493d35d38955d",
+  "integrated43Meshes": 0,
+  "decision": "4.0 retained. Official 4.3 table and downloaded FJ2823 still disagree; hepatic source pieces grouped without clinical segment labels.",
+  "licenceIfReused": "CC BY-SA 2.1 Japan; not used in distributed GLBs",
+  "noAdditionalBodySource": true,
+  "nativeGeometryComparisons": [
+    {
+      "id": "FJ2818",
+      "geometryTextIdentical": true,
+      "sha40": "c1523e137e1466a66e9263161f6155e1bbcf263f74c4cafebec1a5993fd8fde0",
+      "sha43": "2e6eb4656aa3a3e1e1bfde1e259da6afd5b2797b5767d1bcf5616e538853d967"
+    },
+    {
+      "id": "FJ2823",
+      "geometryTextIdentical": true,
+      "sha40": "9c8659ff030e9e48504c0faccad1af0f45b865220e013fdaafb1ccd2c7168e79",
+      "sha43": "0766bcc9d81de542c375481d670304269b69f9fde5b9f5af13b4a65051bf3108"
+    },
+    {
+      "id": "FJ2824",
+      "geometryTextIdentical": true,
+      "sha40": "f91e3c89b4db356fa5e8b03dbbb38b2dbebe358788ba1eb01d2c6ecc2ac94c2d",
+      "sha43": "66a2c62871e57a187e156b3616fc8218ab0fc4205b1f9ed3ea51d6d6068921e5"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "codeCommit": "fb85dc66728ff67785b72c740fc102187f1c10cc",
+  "initialCodeCommit": "079a7155f3d69be4b2b7ff5b7aca7ca35d6bf7f1",
+  "regionalPassedBeforePresentationCorrection": true,
+  "runs": [
+    {
+      "mode": "integration",
+      "exitCode": 0,
+      "seconds": 318.14370970000164
+    },
+    {
+      "mode": "historical",
+      "exitCode": 0,
+      "seconds": 280.86383780000324
+    },
+    {
+      "mode": "performance",
+      "exitCode": 0,
+      "seconds": 63.70161789999838
+    },
+    {
+      "mode": "captures",
+      "exitCode": 1,
+      "seconds": 247.17440050000005
+    }
+  ]
+}

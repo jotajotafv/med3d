@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "codeCommit": "bd0394ef1a2f94377c10eb384e02997cb890aaf6",
+  "previousTestedCommit": "fb85dc66728ff67785b72c740fc102187f1c10cc",
+  "checks": [
+    {
+      "command": "node scripts/test-atlas-digestive.mjs",
+      "exitCode": 0,
+      "seconds": 0.46899999999732245
+    },
+    {
+      "command": "npm.cmd run build",
+      "exitCode": 0,
+      "seconds": 8.406000000002678
+    }
+  ],
+  "changedSincePreviousTests": [
+    "public/models/anatomy/digestive/catalog.json",
+    "scripts/anatomy/build-digestive.py",
+    "scripts/anatomy/digestive-qa.mjs",
+    "scripts/test-atlas-digestive.mjs"
+  ],
+  "geometryUnchanged": true,
+  "explanation": "Only stomach region label and capture selection sequencing changed; the existing local correction checkpoint was amended before documentation. All GLB and historical assets remain byte-identical."
+}

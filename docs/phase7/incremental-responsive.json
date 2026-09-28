@@ -1,0 +1,36 @@
+{
+  "codeCommit": "de933729f4fac05896c8d5d5a5a151f46ce1f515",
+  "workingTreeDirty": true,
+  "implementationDirty": true,
+  "date": "2026-09-28T12:01:44.619Z",
+  "mode": "responsive",
+  "source": "Local production build over unthrottled loopback HTTP; no-store responses",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "deviceScaleFactor": 1,
+    "physicalGpuTested": false
+  },
+  "checks": [
+    {
+      "name": "Responsive viewport",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "name": "Responsive viewport",
+      "width": 820,
+      "height": 1180
+    },
+    {
+      "name": "Responsive viewport",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "captures": [],
+  "measurements": {},
+  "errors": [],
+  "badRequests": [],
+  "success": true
+}

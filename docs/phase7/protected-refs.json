@@ -1,0 +1,115 @@
+{
+  "base": "de933729f4fac05896c8d5d5a5a151f46ce1f515",
+  "codeCommit": "bd0394ef1a2f94377c10eb384e02997cb890aaf6",
+  "refs": {
+    "main": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6",
+    "phase11-first-aid": "a391093cd28b975673fd0fc1e6b87fa1aeafed29",
+    "phase3b-torso": "1d58140bec7cdf946f3400d461a218756799bbc5",
+    "phase3c-limbs": "5ba794438287a16b6482c6a63d3d2b6ca8ee6542",
+    "phase3de-muscular-final": "0841ad7942755905886d86e799c2e510473d6649",
+    "phase3f-muscle-gaps": "3373a06bed350c7af13f26dd1c461448c0650885",
+    "phase4-nervous-expansion": "8d817bc09966e7e9e7f88a7e5e6aa82b78d252bd",
+    "phase4-nervous-system": "9d7c9389476f160af746fd40f6e0a2fa2793c56f",
+    "phase5-cardiovascular": "d7f76fab25677b30952f057dfe900ee719dbac63",
+    "phase6-respiratory": "de933729f4fac05896c8d5d5a5a151f46ce1f515",
+    "origin": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6",
+    "origin/main": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6",
+    "origin/phase2-anatomy": "97c289d68c243f26c6cc23830a1b8f16035ec3ff",
+    "origin/phase2.1-skeletal-polish": "417041eb1ea55f838d7e49cfd4f14df6858f0d9c",
+    "origin/phase3a-muscular-pilot": "8c2a9cdd67a482459de106dfc87843502c1c0643"
+  },
+  "allProtectedRefsUnchanged": true,
+  "historicalAssets": [
+    {
+      "path": "public/models/anatomy/skeletal",
+      "gitObject": "9657cae46593e027d27f8c2ed483b1d37c45d5de",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/anatomy/muscular",
+      "gitObject": "efb13edee86f2bed8eb8d23ab3cfe3907ac4f925",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/anatomy/nervous",
+      "gitObject": "a37bb8141e8ea9b045d061b64235f36bfcbc0a0d",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/anatomy/cardiovascular",
+      "gitObject": "ecc545cd03bd8ea5306ddbc694017e0ac4c8715b",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/anatomy/respiratory",
+      "gitObject": "bc82c2900c9cc0fe8370913c64b6995add8d2797",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/heart.glb",
+      "gitObject": "d684eb1025958ce0c6d7e336688b72e3f21c4962",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/lungs.glb",
+      "gitObject": "7ee4407bc2aae35d791a8cddd54e5e190887f821",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/brain.glb",
+      "gitObject": "8442efd87630a7fe5e2697cad6a3af3c5c134d33",
+      "unchanged": true
+    }
+  ],
+  "changedFiles": [
+    "public/models/anatomy/digestive/LICENSE.txt",
+    "public/models/anatomy/digestive/catalog.json",
+    "public/models/anatomy/digestive/digestive-registration.json",
+    "public/models/anatomy/digestive/digestive-source-manifest.json",
+    "public/models/anatomy/digestive/digestive-validation.json",
+    "public/models/anatomy/digestive/large-intestine.glb",
+    "public/models/anatomy/digestive/small-intestine.glb",
+    "public/models/anatomy/digestive/stomach-accessory.glb",
+    "public/models/anatomy/digestive/upper.glb",
+    "research/anatomy/digestive-audit-metadata.zip",
+    "research/anatomy/digestive-originals.zip",
+    "research/anatomy/digestive-selection.json",
+    "research/anatomy/digestive-source-lock.json",
+    "scripts/anatomy/audit-digestive.py",
+    "scripts/anatomy/build-digestive.py",
+    "scripts/anatomy/digestive-qa.mjs",
+    "scripts/anatomy/optimize-digestive.mjs",
+    "scripts/anatomy/validate-digestive-gltf.mjs",
+    "scripts/anatomy/verify-digestive-registration.py",
+    "scripts/test-atlas-digestive.mjs",
+    "src/features/anatomy/atlas/AnatomyInformation.tsx",
+    "src/features/anatomy/atlas/AtlasScene.tsx",
+    "src/features/anatomy/atlas/DigestiveInformation.tsx",
+    "src/features/anatomy/atlas/SkeletalAtlas.tsx",
+    "src/features/anatomy/atlas/body-catalog.ts",
+    "src/features/anatomy/atlas/digestive-education.ts",
+    "src/features/anatomy/atlas/explosion.ts",
+    "src/features/anatomy/atlas/types.ts"
+  ],
+  "noPushPerformed": true,
+  "noMergePerformed": true,
+  "noDeployPerformed": true,
+  "noPhase8": true,
+  "initialCodeCommit": "079a7155f3d69be4b2b7ff5b7aca7ca35d6bf7f1",
+  "postValidationFiles": [
+    "public/models/anatomy/digestive/catalog.json",
+    "scripts/anatomy/build-digestive.py",
+    "scripts/anatomy/digestive-qa.mjs",
+    "scripts/test-atlas-digestive.mjs",
+    "src/features/anatomy/atlas/AtlasScene.tsx"
+  ],
+  "publicTreeUnchangedByCorrection": false,
+  "researchTreeUnchangedByCorrection": true,
+  "preVisualReviewCommit": "fb85dc66728ff67785b72c740fc102187f1c10cc",
+  "publicCorrectionScope": [
+    "public/models/anatomy/digestive/catalog.json: stomach regionId only"
+  ],
+  "allGLBUnchangedByCorrection": true,
+  "rendererUnchangedSincePerformance": true,
+  "catalogOnlyRegionLabelChangedSincePerformance": true
+}

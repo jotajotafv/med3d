@@ -1,0 +1,37 @@
+{
+  "codeCommit": "de933729f4fac05896c8d5d5a5a151f46ce1f515",
+  "workingTreeDirty": true,
+  "implementationDirty": true,
+  "date": "2026-09-28T11:50:11.189Z",
+  "mode": "regional",
+  "source": "Local production build over unthrottled loopback HTTP; no-store responses",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "deviceScaleFactor": 1,
+    "physicalGpuTested": false
+  },
+  "checks": [
+    {
+      "name": "Esophagus, stomach, liver, gallbladder, pancreas, duodenum, intestine, colon, rectum and oral structures: cards, focus, six views, isolation, hide/restore"
+    },
+    {
+      "name": "Real hover, raycast and cyan selection on esophagus, stomach and gallbladder"
+    },
+    {
+      "name": "Digestive palette and 100/75/50/25 opacity: DoubleSide, depthTest and depthWrite=false below 100"
+    },
+    {
+      "name": "Liver context loads existing portal/hepatic vessels with gallbladder and bile ducts; no duplicated vasculature"
+    },
+    {
+      "name": "Whole-system isolation, coherent intestinal explosion, exact zero, independent unload/reload, four modules and failed-module recovery"
+    }
+  ],
+  "captures": [],
+  "measurements": {},
+  "errors": [],
+  "badRequests": [],
+  "success": false,
+  "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.atlas-search-result[data-node-id=\"digestive\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-node-id=\"digestive\" class=\"atlas-search-result is-selected\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\n    at choose (C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\digestive-qa.mjs:37:243)\n    at async Object.regional (C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\digestive-qa.mjs:105:127)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/digestive-qa.mjs:143:38\n    at async withinQaDeadline (C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\browser-qa.mjs:16:12)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/digestive-qa.mjs:143:5"
+}

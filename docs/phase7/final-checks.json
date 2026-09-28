@@ -1,0 +1,55 @@
+{
+  "codeCommit": "079a7155f3d69be4b2b7ff5b7aca7ca35d6bf7f1",
+  "date": "2026-09-28T12:04:17.958Z",
+  "checks": [
+    {
+      "name": "typecheck",
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "milliseconds": 20816.6386
+    },
+    {
+      "name": "verify-anatomy",
+      "command": "npm run verify:anatomy",
+      "exitCode": 0,
+      "milliseconds": 16290.383899999997
+    },
+    {
+      "name": "build",
+      "command": "npm run build",
+      "exitCode": 0,
+      "milliseconds": 28619.3445
+    },
+    {
+      "name": "nervous",
+      "command": "node scripts/test-atlas-nervous.mjs",
+      "exitCode": 0,
+      "milliseconds": 1350.8993000000046
+    },
+    {
+      "name": "nervous-expansion",
+      "command": "node scripts/test-atlas-nervous-expansion.mjs",
+      "exitCode": 0,
+      "milliseconds": 1209.0748999999923
+    },
+    {
+      "name": "cardiovascular",
+      "command": "node scripts/test-atlas-cardiovascular.mjs",
+      "exitCode": 0,
+      "milliseconds": 1453.9257999999973
+    },
+    {
+      "name": "respiratory",
+      "command": "node scripts/test-atlas-respiratory.mjs",
+      "exitCode": 0,
+      "milliseconds": 1279.7110000000102
+    },
+    {
+      "name": "digestive",
+      "command": "node scripts/test-atlas-digestive.mjs",
+      "exitCode": 0,
+      "milliseconds": 1213.4661999999953
+    }
+  ],
+  "success": true
+}

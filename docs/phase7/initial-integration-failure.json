@@ -1,0 +1,21 @@
+{
+  "codeCommit": "079a7155f3d69be4b2b7ff5b7aca7ca35d6bf7f1",
+  "workingTreeDirty": true,
+  "implementationDirty": false,
+  "date": "2026-09-28T12:10:49.285Z",
+  "mode": "integration",
+  "source": "Local production build over unthrottled loopback HTTP; no-store responses",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "deviceScaleFactor": 1,
+    "physicalGpuTested": false
+  },
+  "checks": [],
+  "captures": [],
+  "measurements": {},
+  "errors": [],
+  "badRequests": [],
+  "success": false,
+  "error": "page.waitForFunction: Timeout 120000ms exceeded.\n    at explode (C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\digestive-qa.mjs:47:206)\n    at async Object.integration (C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\digestive-qa.mjs:119:83)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/digestive-qa.mjs:151:38\n    at async withinQaDeadline (C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\browser-qa.mjs:16:12)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/digestive-qa.mjs:151:5"
+}

@@ -1,0 +1,1569 @@
+{
+  "url": "/models/lungs.glb",
+  "sourceUrl": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/main/VH_Male/v1.4/3d-vh-m-lung.glb",
+  "bytes": 1992744,
+  "sha256": "5e7959b7842d46c2ad7d47770d8bfbd5aa0a06c1a7476cf5b779e9c0462e5a29",
+  "min": [
+    -0.124975659,
+    0.385611981,
+    -0.09223983
+  ],
+  "max": [
+    0.134442955,
+    0.6147493,
+    0.09747372
+  ],
+  "nodes": [
+    {
+      "id": "VH_M_respiratory_system",
+      "index": 0,
+      "children": [
+        "VH_M_lungs",
+        "VH_M_tracheobronchial_tree"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_lungs",
+      "index": 1,
+      "children": [
+        "VH_M_lungs_L",
+        "VH_M_lungs_R"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_lungs_L",
+      "index": 2,
+      "children": [
+        "VH_M_hilum_L",
+        "VH_M_lungs_L_upper_lobe",
+        "VH_M_lungs_L_lower_lobe"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_hilum_L",
+      "index": 3,
+      "children": [],
+      "mesh": true,
+      "label": "left lung hilus",
+      "ontologyId": "UBERON:0004887",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0004887"
+    },
+    {
+      "id": "VH_M_lungs_L_upper_lobe",
+      "index": 4,
+      "children": [
+        "VH_M_hilum_upper_L",
+        "VH_M_left_lingula_superior_bronchopulmonary_segment",
+        "VH_M_left_posterior_bronchopulmonary_segment",
+        "VH_M_left_anterior_bronchopulmonary_segment",
+        "VH_M_left_apical_bronchopulmonary_segment",
+        "VH_M_left_lingula_inferior_bronchopulmonary_segment"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_hilum_upper_L",
+      "index": 5,
+      "children": [],
+      "mesh": true,
+      "label": "left lung hilus",
+      "ontologyId": "UBERON:0004887",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0004887"
+    },
+    {
+      "id": "VH_M_left_lingula_superior_bronchopulmonary_segment",
+      "index": 6,
+      "children": [],
+      "mesh": true,
+      "label": "Superior lingular bronchopulmonary segment",
+      "ontologyId": "FMA:7374",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7374"
+    },
+    {
+      "id": "VH_M_left_posterior_bronchopulmonary_segment",
+      "index": 7,
+      "children": [],
+      "mesh": true,
+      "label": "Left posterior bronchopulmonary segment",
+      "ontologyId": "FMA:7386",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7386"
+    },
+    {
+      "id": "VH_M_left_anterior_bronchopulmonary_segment",
+      "index": 8,
+      "children": [],
+      "mesh": true,
+      "label": "Left Anterior Bronchopulmonary Segment",
+      "ontologyId": "FMA:7373",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7373"
+    },
+    {
+      "id": "VH_M_left_apical_bronchopulmonary_segment",
+      "index": 9,
+      "children": [],
+      "mesh": true,
+      "label": "Left apical bronchopulmonary segment",
+      "ontologyId": "FMA:7385",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7385"
+    },
+    {
+      "id": "VH_M_left_lingula_inferior_bronchopulmonary_segment",
+      "index": 10,
+      "children": [],
+      "mesh": true,
+      "label": "Inferior lingular bronchopulmonary segment",
+      "ontologyId": "FMA:7375",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7375"
+    },
+    {
+      "id": "VH_M_lungs_L_lower_lobe",
+      "index": 11,
+      "children": [
+        "VH_M_hilum_lower_L",
+        "VH_M_left_anterior_basal_bronchopulmonary_segment",
+        "VH_M_left_lateral_basal_bronchopulmonary_segment",
+        "VH_M_left_medial_basal_bronchopulmonary_segment",
+        "VH_M_left_posetrior_basal_bronchopulmonary_segment",
+        "VH_M_left_superior_bronchopulmonary_segment"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_hilum_lower_L",
+      "index": 12,
+      "children": [],
+      "mesh": true,
+      "label": "left lung hilus",
+      "ontologyId": "UBERON:0004887",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0004887"
+    },
+    {
+      "id": "VH_M_left_anterior_basal_bronchopulmonary_segment",
+      "index": 13,
+      "children": [],
+      "mesh": true,
+      "label": "left anterior basal bronchopulmonary segment",
+      "ontologyId": "FMA:7378",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7378"
+    },
+    {
+      "id": "VH_M_left_lateral_basal_bronchopulmonary_segment",
+      "index": 14,
+      "children": [],
+      "mesh": true,
+      "label": "left Lateral Basal Bronchopulmonary Segment",
+      "ontologyId": "FMA:7379",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7379"
+    },
+    {
+      "id": "VH_M_left_medial_basal_bronchopulmonary_segment",
+      "index": 15,
+      "children": [],
+      "mesh": true,
+      "label": "Left Medial Basal Bronchopulmonary Segment",
+      "ontologyId": "FMA:7377",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7377"
+    },
+    {
+      "id": "VH_M_left_posetrior_basal_bronchopulmonary_segment",
+      "index": 16,
+      "children": [],
+      "mesh": true,
+      "label": "Left posterior basal segmental bronchus",
+      "ontologyId": "FMA:7508",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7508"
+    },
+    {
+      "id": "VH_M_left_superior_bronchopulmonary_segment",
+      "index": 17,
+      "children": [],
+      "mesh": true,
+      "label": "Left superior bronchopulmonary segment",
+      "ontologyId": "FMA:7376",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7376"
+    },
+    {
+      "id": "VH_M_lungs_R",
+      "index": 18,
+      "children": [
+        "VH_M_hilum_R",
+        "VH_M_lungs_R_middle_lobe",
+        "VH_M_lungs_R_lower_lobe",
+        "VH_M_lungs_R_upper_lobe"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_hilum_R",
+      "index": 19,
+      "children": [],
+      "mesh": true,
+      "label": "right lung hilus",
+      "ontologyId": "UBERON:0004888",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0004888"
+    },
+    {
+      "id": "VH_M_lungs_R_middle_lobe",
+      "index": 20,
+      "children": [
+        "VH_M_right_lateral_bronchopulmonary_segment",
+        "VH_M_right_medial_bronchopulmonary_segment",
+        "VH_M_hilum_middle_R"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_right_lateral_bronchopulmonary_segment",
+      "index": 21,
+      "children": [],
+      "mesh": true,
+      "label": "Right Lateral Bronchopulmonary Segment",
+      "ontologyId": "FMA:7361",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7361"
+    },
+    {
+      "id": "VH_M_right_medial_bronchopulmonary_segment",
+      "index": 22,
+      "children": [],
+      "mesh": true,
+      "label": "Right Medial Bronchopulmonary Segment",
+      "ontologyId": "FMA:7360",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7360"
+    },
+    {
+      "id": "VH_M_hilum_middle_R",
+      "index": 23,
+      "children": [],
+      "mesh": true,
+      "label": "right lung hilus",
+      "ontologyId": "UBERON:0004888",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0004888"
+    },
+    {
+      "id": "VH_M_lungs_R_lower_lobe",
+      "index": 24,
+      "children": [
+        "VH_M_hilum_lower_R",
+        "VH_M_right_anterior_basal_bronchopulmonary_segment",
+        "VH_M_right_lateral_basal_bronchopulmonary_segment",
+        "VH_M_right_medial_basal_bronchopulmonary_segment",
+        "VH_M_right_posterior_basal_bronchopulmonary_segment",
+        "VH_M_right_superior_bronchopulmonary_segment"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_hilum_lower_R",
+      "index": 25,
+      "children": [],
+      "mesh": true,
+      "label": "right lung hilus",
+      "ontologyId": "UBERON:0004888",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0004888"
+    },
+    {
+      "id": "VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "index": 26,
+      "children": [],
+      "mesh": true,
+      "label": "Right anterior basal bronchopulmonary segment",
+      "ontologyId": "FMA:7364",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7364"
+    },
+    {
+      "id": "VH_M_right_lateral_basal_bronchopulmonary_segment",
+      "index": 27,
+      "children": [],
+      "mesh": true,
+      "label": "Right Lateral Basal Bronchopulmonary Segment",
+      "ontologyId": "FMA:7363",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7363"
+    },
+    {
+      "id": "VH_M_right_medial_basal_bronchopulmonary_segment",
+      "index": 28,
+      "children": [],
+      "mesh": true,
+      "label": "Right Medial Basal Bronchopulmonary Segment",
+      "ontologyId": "FMA:7365",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7365"
+    },
+    {
+      "id": "VH_M_right_posterior_basal_bronchopulmonary_segment",
+      "index": 29,
+      "children": [],
+      "mesh": true,
+      "label": "Right Posterior Basal Bronchopulmonary Segment",
+      "ontologyId": "FMA:7362",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7362"
+    },
+    {
+      "id": "VH_M_right_superior_bronchopulmonary_segment",
+      "index": 30,
+      "children": [],
+      "mesh": true,
+      "label": "Right Superior Bronchopulmonary Segment",
+      "ontologyId": "FMA:7366",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7366"
+    },
+    {
+      "id": "VH_M_lungs_R_upper_lobe",
+      "index": 31,
+      "children": [
+        "VH_M_right_apical_bronchopulmonary_segment",
+        "VH_M_right_posterior_bronchopulmonary_segment",
+        "VH_M_right_anterior_bronchopulmonary_segment",
+        "VH_M_hilum_upper_R"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_right_apical_bronchopulmonary_segment",
+      "index": 32,
+      "children": [],
+      "mesh": true,
+      "label": "Right Apical Bronchopulmonary Segment",
+      "ontologyId": "FMA:7338",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7338"
+    },
+    {
+      "id": "VH_M_right_posterior_bronchopulmonary_segment",
+      "index": 33,
+      "children": [],
+      "mesh": true,
+      "label": "Right Posterior Bronchopulmonary Segment",
+      "ontologyId": "FMA:7339",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7339"
+    },
+    {
+      "id": "VH_M_right_anterior_bronchopulmonary_segment",
+      "index": 34,
+      "children": [],
+      "mesh": true,
+      "label": "Right Anterior Bronchopulmonary Segment",
+      "ontologyId": "FMA:7359",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7359"
+    },
+    {
+      "id": "VH_M_hilum_upper_R",
+      "index": 35,
+      "children": [],
+      "mesh": true,
+      "label": "right lung hilus",
+      "ontologyId": "UBERON:0004888",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0004888"
+    },
+    {
+      "id": "VH_M_tracheobronchial_tree",
+      "index": 36,
+      "children": [
+        "VH_M_bronchi"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_bronchi",
+      "index": 37,
+      "children": [
+        "VH_M_bronchi_L",
+        "VH_M_bronchi_R"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_bronchi_L",
+      "index": 38,
+      "children": [
+        "VH_M_left_bronchial_cartilage",
+        "VH_M_lobar_bronchus_L",
+        "VH_M_tertiary_bronchi_L"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_left_bronchial_cartilage",
+      "index": 39,
+      "children": [
+        "VH_M_cartilage_of_the_lobar_bronchus_L",
+        "VH_M_cartilage_of_the_tertiary_bronchus_L"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_cartilage_of_the_lobar_bronchus_L",
+      "index": 40,
+      "children": [],
+      "mesh": true,
+      "label": "Cartilage of lobar bronchus",
+      "ontologyId": "FMA:62659",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma62659"
+    },
+    {
+      "id": "VH_M_cartilage_of_the_tertiary_bronchus_L",
+      "index": 41,
+      "children": [],
+      "mesh": true,
+      "label": "Cartilage of segmental bronchus",
+      "ontologyId": "FMA:62662",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma62662"
+    },
+    {
+      "id": "VH_M_lobar_bronchus_L",
+      "index": 42,
+      "children": [
+        "VH_M_left_superior_lobar_bronchus",
+        "VH_M_left_inferior_lobar_bronchus"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_left_superior_lobar_bronchus",
+      "index": 43,
+      "children": [],
+      "mesh": true,
+      "label": "lobar bronchus of left lung upper lobe",
+      "ontologyId": "UBERON:0012065",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0012065"
+    },
+    {
+      "id": "VH_M_left_inferior_lobar_bronchus",
+      "index": 44,
+      "children": [],
+      "mesh": true,
+      "label": "lobar bronchus of left lung lower lobe",
+      "ontologyId": "UBERON:0012066",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0012066"
+    },
+    {
+      "id": "VH_M_tertiary_bronchi_L",
+      "index": 45,
+      "children": [
+        "VH_M_left_superior_bronchus",
+        "VH_M_left_posterior_basal_bronchus",
+        "VH_M_left_medial_basal_bronchus",
+        "VH_M_left_apical_bronchus",
+        "VH_M_left_anterior_bronchus",
+        "VH_M_left_lingular_bronchus",
+        "VH_M_left_lingula_superior_bronchus",
+        "VH_M_left_lingula_inferior_bronchus",
+        "VH_M_left_lateral_basal_bronchus",
+        "VH_M_left_anterior_basal_bronchus"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_left_superior_bronchus",
+      "index": 46,
+      "children": [],
+      "mesh": true,
+      "label": "Left superior segmental bronchus",
+      "ontologyId": "FMA:7504",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7504"
+    },
+    {
+      "id": "VH_M_left_posterior_basal_bronchus",
+      "index": 47,
+      "children": [],
+      "mesh": true,
+      "label": "Left posterior basal segmental bronchus",
+      "ontologyId": "FMA:7508",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7508"
+    },
+    {
+      "id": "VH_M_left_medial_basal_bronchus",
+      "index": 48,
+      "children": [],
+      "mesh": true,
+      "label": "Left medial basal segmental bronchus",
+      "ontologyId": "FMA:7505",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7505"
+    },
+    {
+      "id": "VH_M_left_apical_bronchus",
+      "index": 49,
+      "children": [],
+      "mesh": true,
+      "label": "Left apical segmental bronchus",
+      "ontologyId": "FMA:7426",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7426"
+    },
+    {
+      "id": "VH_M_left_anterior_bronchus",
+      "index": 50,
+      "children": [],
+      "mesh": true,
+      "label": "Left anterior segmental bronchus",
+      "ontologyId": "FMA:7428",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7428"
+    },
+    {
+      "id": "VH_M_left_lingular_bronchus",
+      "index": 51,
+      "children": [],
+      "mesh": true,
+      "label": "-",
+      "ontologyId": "-",
+      "ontologyUrl": "-"
+    },
+    {
+      "id": "VH_M_left_lingula_superior_bronchus",
+      "index": 52,
+      "children": [],
+      "mesh": true,
+      "label": "Superior lingular bronchus",
+      "ontologyId": "FMA:7430",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7430"
+    },
+    {
+      "id": "VH_M_left_lingula_inferior_bronchus",
+      "index": 53,
+      "children": [],
+      "mesh": true,
+      "label": "Inferior lingular bronchus",
+      "ontologyId": "FMA:7431",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7431"
+    },
+    {
+      "id": "VH_M_left_lateral_basal_bronchus",
+      "index": 54,
+      "children": [],
+      "mesh": true,
+      "label": "Left lateral basal segmental bronchus",
+      "ontologyId": "FMA:7507",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7507"
+    },
+    {
+      "id": "VH_M_left_anterior_basal_bronchus",
+      "index": 55,
+      "children": [],
+      "mesh": true,
+      "label": "Left anterior basal segmental bronchus",
+      "ontologyId": "FMA:7506",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7506"
+    },
+    {
+      "id": "VH_M_bronchi_R",
+      "index": 56,
+      "children": [
+        "VH_M_right_bronchial_cartilage",
+        "VH_M_lobar_bronchi_R",
+        "VH_M_tertiary_bronchi_R"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_right_bronchial_cartilage",
+      "index": 57,
+      "children": [
+        "VH_M_cartilage_of_the_lobar_bronchus_R",
+        "VH_M_cartilage_of_the_tertiary_bronchus_R"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_cartilage_of_the_lobar_bronchus_R",
+      "index": 58,
+      "children": [],
+      "mesh": true,
+      "label": "Cartilage of lobar bronchus",
+      "ontologyId": "FMA:62659",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma62659"
+    },
+    {
+      "id": "VH_M_cartilage_of_the_tertiary_bronchus_R",
+      "index": 59,
+      "children": [],
+      "mesh": true,
+      "label": "Cartilage of segmental bronchus",
+      "ontologyId": "FMA:62662",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma62662"
+    },
+    {
+      "id": "VH_M_lobar_bronchi_R",
+      "index": 60,
+      "children": [
+        "VH_M_right_intermediate_bronchus",
+        "VH_M_right_middle_lobar_bronchus",
+        "VH_M_right_superior_lobar_bronchus"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_right_intermediate_bronchus",
+      "index": 61,
+      "children": [],
+      "mesh": true,
+      "label": "Interlobar bronchus",
+      "ontologyId": "FMA:7415",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7415"
+    },
+    {
+      "id": "VH_M_right_middle_lobar_bronchus",
+      "index": 62,
+      "children": [],
+      "mesh": true,
+      "label": "Middle lobar bronchus",
+      "ontologyId": "FMA:7401",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7401"
+    },
+    {
+      "id": "VH_M_right_superior_lobar_bronchus",
+      "index": 63,
+      "children": [],
+      "mesh": true,
+      "label": "Right superior lobar bronchus",
+      "ontologyId": "FMA:7397",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7397"
+    },
+    {
+      "id": "VH_M_tertiary_bronchi_R",
+      "index": 64,
+      "children": [
+        "VH_M_right_anterior_bronchus",
+        "VH_M_right_lateral_basal_bronchus",
+        "VH_M_right_lateral_bronchus",
+        "VH_M_right_lower_lobar_bronchus",
+        "VH_M_right_medial_basal_bronchus",
+        "VH_M_right_medial_bronchus",
+        "VH_M_right_posterior_basal",
+        "VH_M_right_posterior_bronchus",
+        "VH_M_right_superior_bronchus",
+        "VH_M_right_apical_bronchus",
+        "VH_M_right_anterior_basal_bronchus",
+        "VH_M_bronchus"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_right_anterior_bronchus",
+      "index": 65,
+      "children": [],
+      "mesh": true,
+      "label": "Right anterior segmental bronchus",
+      "ontologyId": "FMA:7400",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7400"
+    },
+    {
+      "id": "VH_M_right_lateral_basal_bronchus",
+      "index": 66,
+      "children": [],
+      "mesh": true,
+      "label": "Right lateral basal segmental bronchus",
+      "ontologyId": "FMA:7419",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7419"
+    },
+    {
+      "id": "VH_M_right_lateral_bronchus",
+      "index": 67,
+      "children": [],
+      "mesh": true,
+      "label": "Lateral segmental bronchus",
+      "ontologyId": "FMA:7402",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7402"
+    },
+    {
+      "id": "VH_M_right_lower_lobar_bronchus",
+      "index": 68,
+      "children": [],
+      "mesh": true,
+      "label": "Right inferior lobar bronchus",
+      "ontologyId": "FMA:7404",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7404"
+    },
+    {
+      "id": "VH_M_right_medial_basal_bronchus",
+      "index": 69,
+      "children": [],
+      "mesh": true,
+      "label": "Right medial basal segmental bronchus",
+      "ontologyId": "FMA:7417",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7417"
+    },
+    {
+      "id": "VH_M_right_medial_bronchus",
+      "index": 70,
+      "children": [],
+      "mesh": true,
+      "label": "Medial segmental bronchus",
+      "ontologyId": "FMA:7403",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7403"
+    },
+    {
+      "id": "VH_M_right_posterior_basal",
+      "index": 71,
+      "children": [],
+      "mesh": true,
+      "label": "Right posterior basal segmental bronchus",
+      "ontologyId": "FMA:7420",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7420"
+    },
+    {
+      "id": "VH_M_right_posterior_bronchus",
+      "index": 72,
+      "children": [],
+      "mesh": true,
+      "label": "Right posterior segmental bronchus",
+      "ontologyId": "FMA:7399",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7399"
+    },
+    {
+      "id": "VH_M_right_superior_bronchus",
+      "index": 73,
+      "children": [],
+      "mesh": true,
+      "label": "Right superior segmental bronchus",
+      "ontologyId": "FMA:7416",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7416"
+    },
+    {
+      "id": "VH_M_right_apical_bronchus",
+      "index": 74,
+      "children": [],
+      "mesh": true,
+      "label": "Right superior segmental bronchus",
+      "ontologyId": "FMA:7416",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7416"
+    },
+    {
+      "id": "VH_M_right_anterior_basal_bronchus",
+      "index": 75,
+      "children": [],
+      "mesh": true,
+      "label": "Right posterior segmental bronchus",
+      "ontologyId": "FMA:7399",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7399"
+    },
+    {
+      "id": "VH_M_bronchus",
+      "index": 76,
+      "children": [],
+      "mesh": true,
+      "label": "bronchus",
+      "ontologyId": "UBERON:0002185",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0002185"
+    }
+  ],
+  "meshes": 58,
+  "sourceBytes": 10941068,
+  "sourceSha256": "97fcec4753c60d5a968b9d92cdc68fe66a44ab19d85dec843cda3a66d3ab43ab",
+  "triangles": 224765,
+  "sha256Verified": true,
+  "nativeTransforms": [
+    {
+      "name": "VH_M_hilum_L",
+      "translation": [
+        0.04844054952263832,
+        0.5088646858930588,
+        -0.014047556556761265
+      ],
+      "scale": [
+        0.03767134249210358,
+        0.03767134249210358,
+        0.03767134249210358
+      ]
+    },
+    {
+      "name": "VH_M_hilum_upper_L",
+      "translation": [
+        0.04972467198967934,
+        0.5130226314067841,
+        -0.005278153344988823
+      ],
+      "scale": [
+        0.033513396978378296,
+        0.033513396978378296,
+        0.033513396978378296
+      ]
+    },
+    {
+      "name": "VH_M_left_lingula_superior_bronchopulmonary_segment",
+      "translation": [
+        0.06959501234814525,
+        0.4797790050506592,
+        0.023073002696037292
+      ],
+      "scale": [
+        0.07440071552991867,
+        0.07440071552991867,
+        0.07440071552991867
+      ]
+    },
+    {
+      "name": "VH_M_left_posterior_bronchopulmonary_segment",
+      "translation": [
+        0.05748300370760262,
+        0.5604870021343231,
+        -0.03866095282137394
+      ],
+      "scale": [
+        0.05305705848149955,
+        0.05305705848149955,
+        0.05305705848149955
+      ]
+    },
+    {
+      "name": "VH_M_left_anterior_bronchopulmonary_segment",
+      "translation": [
+        0.0658037569373846,
+        0.5356252044439316,
+        0.015202183276414871
+      ],
+      "scale": [
+        0.06652989611029625,
+        0.06652989611029625,
+        0.06652989611029625
+      ]
+    },
+    {
+      "name": "VH_M_left_apical_bronchopulmonary_segment",
+      "translation": [
+        0.05400481936521828,
+        0.5805507898330688,
+        -0.00782008096575737
+      ],
+      "scale": [
+        0.049578874139115214,
+        0.049578874139115214,
+        0.049578874139115214
+      ]
+    },
+    {
+      "name": "VH_M_left_lingula_inferior_bronchopulmonary_segment",
+      "translation": [
+        0.08565086126327515,
+        0.4520382285118103,
+        0.03911014646291733
+      ],
+      "scale": [
+        0.05766051262617111,
+        0.05766051262617111,
+        0.05766051262617111
+      ]
+    },
+    {
+      "name": "VH_M_hilum_lower_L",
+      "translation": [
+        0.047584168612957,
+        0.5054973512887955,
+        -0.029360728338360786
+      ],
+      "scale": [
+        0.03430400788784027,
+        0.03430400788784027,
+        0.03430400788784027
+      ]
+    },
+    {
+      "name": "VH_M_left_anterior_basal_bronchopulmonary_segment",
+      "translation": [
+        0.08353055827319622,
+        0.46966055035591125,
+        -0.006932264193892479
+      ],
+      "scale": [
+        0.05432121641933918,
+        0.05432121641933918,
+        0.05432121641933918
+      ]
+    },
+    {
+      "name": "VH_M_left_lateral_basal_bronchopulmonary_segment",
+      "translation": [
+        0.09381230920553207,
+        0.45369355380535126,
+        -0.0441134856082499
+      ],
+      "scale": [
+        0.04537074267864227,
+        0.04537074267864227,
+        0.04537074267864227
+      ]
+    },
+    {
+      "name": "VH_M_left_medial_basal_bronchopulmonary_segment",
+      "translation": [
+        0.07970981579273939,
+        0.4756114184856415,
+        -0.001822715625166893
+      ],
+      "scale": [
+        0.05089130997657776,
+        0.05089130997657776,
+        0.05089130997657776
+      ]
+    },
+    {
+      "name": "VH_M_left_posetrior_basal_bronchopulmonary_segment",
+      "translation": [
+        0.06620717654004693,
+        0.4387774020433426,
+        -0.049159608548507094
+      ],
+      "scale": [
+        0.050652997102588415,
+        0.050652997102588415,
+        0.050652997102588415
+      ]
+    },
+    {
+      "name": "VH_M_left_superior_bronchopulmonary_segment",
+      "translation": [
+        0.05579391261562705,
+        0.5110665559768677,
+        -0.05326834972947836
+      ],
+      "scale": [
+        0.054939329624176025,
+        0.054939329624176025,
+        0.054939329624176025
+      ]
+    },
+    {
+      "name": "VH_M_hilum_R",
+      "translation": [
+        -0.03885310282930732,
+        0.5040322691202164,
+        -0.014093756675720215
+      ],
+      "scale": [
+        0.0433802455663681,
+        0.0433802455663681,
+        0.0433802455663681
+      ]
+    },
+    {
+      "name": "VH_M_right_lateral_bronchopulmonary_segment",
+      "translation": [
+        -0.08035008236765862,
+        0.47222064435482025,
+        0.018130763433873653
+      ],
+      "scale": [
+        0.04630538169294596,
+        0.04630538169294596,
+        0.04630538169294596
+      ]
+    },
+    {
+      "name": "VH_M_right_medial_bronchopulmonary_segment",
+      "translation": [
+        -0.059125107480213046,
+        0.4592134356498718,
+        0.053397624753415585
+      ],
+      "scale": [
+        0.05334402923472226,
+        0.05334402923472226,
+        0.05334402923472226
+      ]
+    },
+    {
+      "name": "VH_M_hilum_middle_R",
+      "translation": [
+        -0.04999081417918205,
+        0.4957442730665207,
+        0.0009231660515069962
+      ],
+      "scale": [
+        0.01778540574014187,
+        0.01778540574014187,
+        0.01778540574014187
+      ]
+    },
+    {
+      "name": "VH_M_hilum_lower_R",
+      "translation": [
+        -0.03885310282930732,
+        0.498782142996788,
+        -0.025437073316425085
+      ],
+      "scale": [
+        0.03813011944293976,
+        0.03813011944293976,
+        0.03813011944293976
+      ]
+    },
+    {
+      "name": "VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "translation": [
+        -0.08066222071647644,
+        0.4651481658220291,
+        -0.00035507790744304657
+      ],
+      "scale": [
+        0.049429191276431084,
+        0.049429191276431084,
+        0.049429191276431084
+      ]
+    },
+    {
+      "name": "VH_M_right_lateral_basal_bronchopulmonary_segment",
+      "translation": [
+        -0.07404479943215847,
+        0.4484437555074692,
+        -0.04446890065446496
+      ],
+      "scale": [
+        0.05047914572060108,
+        0.05047914572060108,
+        0.05047914572060108
+      ]
+    },
+    {
+      "name": "VH_M_right_medial_basal_bronchopulmonary_segment",
+      "translation": [
+        -0.03570963843958452,
+        0.4469972550868988,
+        0.0028531597927212715
+      ],
+      "scale": [
+        0.037997663021087646,
+        0.037997663021087646,
+        0.037997663021087646
+      ]
+    },
+    {
+      "name": "VH_M_right_posterior_basal_bronchopulmonary_segment",
+      "translation": [
+        -0.05673363461392,
+        0.4391018748283386,
+        -0.04581390723615186
+      ],
+      "scale": [
+        0.05532900587422773,
+        0.05532900587422773,
+        0.05532900587422773
+      ]
+    },
+    {
+      "name": "VH_M_right_superior_bronchopulmonary_segment",
+      "translation": [
+        -0.058975426480174065,
+        0.497484415769577,
+        -0.05356887727975845
+      ],
+      "scale": [
+        0.05203089118003845,
+        0.05203089118003845,
+        0.05203089118003845
+      ]
+    },
+    {
+      "name": "VH_M_right_apical_bronchopulmonary_segment",
+      "translation": [
+        -0.03887188760563731,
+        0.5764757692813873,
+        -0.006275721825659275
+      ],
+      "scale": [
+        0.03662446141242981,
+        0.03662446141242981,
+        0.03662446141242981
+      ]
+    },
+    {
+      "name": "VH_M_right_posterior_bronchopulmonary_segment",
+      "translation": [
+        -0.06409292621538043,
+        0.555935263633728,
+        -0.03414882626384497
+      ],
+      "scale": [
+        0.05291573004797101,
+        0.05291573004797101,
+        0.05291573004797101
+      ]
+    },
+    {
+      "name": "VH_M_right_anterior_bronchopulmonary_segment",
+      "translation": [
+        -0.060824054991826415,
+        0.5421959608793259,
+        0.03298482624813914
+      ],
+      "scale": [
+        0.056184601271525025,
+        0.056184601271525025,
+        0.056184601271525025
+      ]
+    },
+    {
+      "name": "VH_M_hilum_upper_R",
+      "translation": [
+        -0.04171691741794348,
+        0.5255463421344757,
+        -0.004739174619317055
+      ],
+      "scale": [
+        0.02264087088406086,
+        0.02264087088406086,
+        0.02264087088406086
+      ]
+    },
+    {
+      "name": "VH_M_cartilage_of_the_lobar_bronchus_L",
+      "translation": [
+        0.05044129304587841,
+        0.5022525638341904,
+        -0.020916639361530542
+      ],
+      "scale": [
+        0.02224273979663849,
+        0.02224273979663849,
+        0.02224273979663849
+      ]
+    },
+    {
+      "name": "VH_M_cartilage_of_the_tertiary_bronchus_L",
+      "translation": [
+        0.07418254017829895,
+        0.5069373100996017,
+        -0.01211288571357727
+      ],
+      "scale": [
+        0.08469130098819733,
+        0.08469130098819733,
+        0.08469130098819733
+      ]
+    },
+    {
+      "name": "VH_M_left_superior_lobar_bronchus",
+      "translation": [
+        0.046992963179945946,
+        0.5153155028820038,
+        -0.0075885713449679315
+      ],
+      "scale": [
+        0.011849349364638329,
+        0.011849349364638329,
+        0.011849349364638329
+      ]
+    },
+    {
+      "name": "VH_M_left_inferior_lobar_bronchus",
+      "translation": [
+        0.04976179450750351,
+        0.4970032870769501,
+        -0.029003122821450233
+      ],
+      "scale": [
+        0.015936583280563354,
+        0.015936583280563354,
+        0.015936583280563354
+      ]
+    },
+    {
+      "name": "VH_M_left_superior_bronchus",
+      "translation": [
+        0.05385677516460419,
+        0.5123327076435089,
+        -0.04193893913179636
+      ],
+      "scale": [
+        0.01963194366544485,
+        0.01963194366544485,
+        0.01963194366544485
+      ]
+    },
+    {
+      "name": "VH_M_left_posterior_basal_bronchus",
+      "translation": [
+        0.05856051482260227,
+        0.45351751148700714,
+        -0.048431430011987686
+      ],
+      "scale": [
+        0.035761758685112,
+        0.035761758685112,
+        0.035761758685112
+      ]
+    },
+    {
+      "name": "VH_M_left_medial_basal_bronchus",
+      "translation": [
+        0.0755885262042284,
+        0.4687885493040085,
+        -0.003691702149808407
+      ],
+      "scale": [
+        0.04072723351418972,
+        0.04072723351418972,
+        0.04072723351418972
+      ]
+    },
+    {
+      "name": "VH_M_left_apical_bronchus",
+      "translation": [
+        0.06054597347974777,
+        0.5585828423500061,
+        -0.01786700628872495
+      ],
+      "scale": [
+        0.03643357753753662,
+        0.03643357753753662,
+        0.03643357753753662
+      ]
+    },
+    {
+      "name": "VH_M_left_anterior_bronchus",
+      "translation": [
+        0.07119401264935732,
+        0.5353779494762421,
+        0.02132917381823063
+      ],
+      "scale": [
+        0.040039810352027416,
+        0.040039810352027416,
+        0.040039810352027416
+      ]
+    },
+    {
+      "name": "VH_M_left_lingular_bronchus",
+      "translation": [
+        0.06439010240137577,
+        0.49918481707572937,
+        0.003509488422423601
+      ],
+      "scale": [
+        0.011010736227035522,
+        0.011010736227035522,
+        0.011010736227035522
+      ]
+    },
+    {
+      "name": "VH_M_left_lingula_superior_bronchus",
+      "translation": [
+        0.07670574262738228,
+        0.48835164308547974,
+        0.02965044928714633
+      ],
+      "scale": [
+        0.019685782957822084,
+        0.019685782957822084,
+        0.019685782957822084
+      ]
+    },
+    {
+      "name": "VH_M_left_lingula_inferior_bronchus",
+      "translation": [
+        0.08458664640784264,
+        0.4734427034854889,
+        0.021732121938839555
+      ],
+      "scale": [
+        0.01626354455947876,
+        0.01626354455947876,
+        0.01626354455947876
+      ]
+    },
+    {
+      "name": "VH_M_left_lateral_basal_bronchus",
+      "translation": [
+        0.08605687879025936,
+        0.4623492658138275,
+        -0.04352401476353407
+      ],
+      "scale": [
+        0.029203185811638832,
+        0.029203185811638832,
+        0.029203185811638832
+      ]
+    },
+    {
+      "name": "VH_M_left_anterior_basal_bronchus",
+      "translation": [
+        0.08679609000682831,
+        0.47238995134830475,
+        -0.026493217097595334
+      ],
+      "scale": [
+        0.031136274337768555,
+        0.031136274337768555,
+        0.031136274337768555
+      ]
+    },
+    {
+      "name": "VH_M_cartilage_of_the_lobar_bronchus_R",
+      "translation": [
+        -0.034940753132104874,
+        0.5164760500192642,
+        -0.006150186527520418
+      ],
+      "scale": [
+        0.026742085814476013,
+        0.026742085814476013,
+        0.026742085814476013
+      ]
+    },
+    {
+      "name": "VH_M_cartilage_of_the_tertiary_bronchus_R",
+      "translation": [
+        -0.05921551352366805,
+        0.5046745985746384,
+        -0.014019966125488281
+      ],
+      "scale": [
+        0.08164657652378082,
+        0.08164657652378082,
+        0.08164657652378082
+      ]
+    },
+    {
+      "name": "VH_M_right_intermediate_bronchus",
+      "translation": [
+        -0.027467407751828432,
+        0.5140993297100067,
+        -0.01279128366149962
+      ],
+      "scale": [
+        0.017710059881210327,
+        0.017710059881210327,
+        0.017710059881210327
+      ]
+    },
+    {
+      "name": "VH_M_right_middle_lobar_bronchus",
+      "translation": [
+        -0.04376271925866604,
+        0.49464961886405945,
+        -0.0011755581945180893
+      ],
+      "scale": [
+        0.013468222692608833,
+        0.013468222692608833,
+        0.013468222692608833
+      ]
+    },
+    {
+      "name": "VH_M_right_superior_lobar_bronchus",
+      "translation": [
+        -0.03458141349256039,
+        0.5325568914413452,
+        -0.010043795104138553
+      ],
+      "scale": [
+        0.011065786704421043,
+        0.011065786704421043,
+        0.011065786704421043
+      ]
+    },
+    {
+      "name": "VH_M_right_anterior_bronchus",
+      "translation": [
+        -0.06892323307693005,
+        0.531275749206543,
+        0.0277191202621907
+      ],
+      "scale": [
+        0.03828379698097706,
+        0.03828379698097706,
+        0.03828379698097706
+      ]
+    },
+    {
+      "name": "VH_M_right_lateral_basal_bronchus",
+      "translation": [
+        -0.07908758334815502,
+        0.46332158148288727,
+        -0.05145477503538132
+      ],
+      "scale": [
+        0.030918406322598457,
+        0.030918406322598457,
+        0.030918406322598457
+      ]
+    },
+    {
+      "name": "VH_M_right_lateral_bronchus",
+      "translation": [
+        -0.06965633854269981,
+        0.49055415391921997,
+        0.014200956211425364
+      ],
+      "scale": [
+        0.014342475682497025,
+        0.014342475682497025,
+        0.014342475682497025
+      ]
+    },
+    {
+      "name": "VH_M_right_lower_lobar_bronchus",
+      "translation": [
+        -0.041303111240267754,
+        0.49357442557811737,
+        -0.01865901704877615
+      ],
+      "scale": [
+        0.01199671532958746,
+        0.01199671532958746,
+        0.01199671532958746
+      ]
+    },
+    {
+      "name": "VH_M_right_medial_basal_bronchus",
+      "translation": [
+        -0.0346967251971364,
+        0.4554329514503479,
+        -0.021809072699397802
+      ],
+      "scale": [
+        0.030236393213272095,
+        0.030236393213272095,
+        0.030236393213272095
+      ]
+    },
+    {
+      "name": "VH_M_right_medial_bronchus",
+      "translation": [
+        -0.05505208112299442,
+        0.48121997714042664,
+        0.027258847141638398
+      ],
+      "scale": [
+        0.020946997916325927,
+        0.020946997916325927,
+        0.020946997916325927
+      ]
+    },
+    {
+      "name": "VH_M_right_posterior_basal",
+      "translation": [
+        -0.041200525127351284,
+        0.45571862161159515,
+        -0.04665166325867176
+      ],
+      "scale": [
+        0.0338311642408371,
+        0.0338311642408371,
+        0.0338311642408371
+      ]
+    },
+    {
+      "name": "VH_M_right_posterior_bronchus",
+      "translation": [
+        -0.0608413927257061,
+        0.543263703584671,
+        -0.025995016563683748
+      ],
+      "scale": [
+        0.018804188817739487,
+        0.018804188817739487,
+        0.018804188817739487
+      ]
+    },
+    {
+      "name": "VH_M_right_superior_bronchus",
+      "translation": [
+        -0.04833599366247654,
+        0.5215896815061569,
+        -0.047625659964978695
+      ],
+      "scale": [
+        0.028531519696116447,
+        0.028531519696116447,
+        0.028531519696116447
+      ]
+    },
+    {
+      "name": "VH_M_right_apical_bronchus",
+      "translation": [
+        -0.05081919115036726,
+        0.566465824842453,
+        -0.004352892749011517
+      ],
+      "scale": [
+        0.028772314079105854,
+        0.028772314079105854,
+        0.028772314079105854
+      ]
+    },
+    {
+      "name": "VH_M_right_anterior_basal_bronchus",
+      "translation": [
+        -0.07291105948388577,
+        0.4757658392190933,
+        -0.013598697958514094
+      ],
+      "scale": [
+        0.028844909742474556,
+        0.028844909742474556,
+        0.028844909742474556
+      ]
+    },
+    {
+      "name": "VH_M_bronchus",
+      "translation": [
+        -0.029729992151260376,
+        0.4798261672258377,
+        -0.04030187800526619
+      ],
+      "scale": [
+        0.014010842889547348,
+        0.014010842889547348,
+        0.014010842889547348
+      ]
+    }
+  ],
+  "frame": "HRA VH Male native lung coordinates, no BP3D registration",
+  "viewerTransform": "object.matrixWorld baked; whole-resource presentation scale 3.45/max(bounds extent); translation=-center*scale"
+}

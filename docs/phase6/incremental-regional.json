@@ -1,0 +1,42 @@
+{
+  "codeCommit": "d7f76fab25677b30952f057dfe900ee719dbac63",
+  "workingTreeDirty": true,
+  "implementationDirty": true,
+  "date": "2026-09-28T07:15:21.890Z",
+  "mode": "regional",
+  "source": "Local production build over unthrottled loopback HTTP; no-store responses",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "deviceScaleFactor": 1,
+    "physicalGpuTested": false
+  },
+  "checks": [
+    {
+      "name": "Larynx, epiglottis, trachea, main bronchi, both lungs, lobes and segmental tree: cards, focus, six orientations, isolation and hide/restore"
+    },
+    {
+      "name": "Real hover/raycast/cyan selection on trachea, parenchyma and main bronchus"
+    },
+    {
+      "name": "Respiratory materials; 100/75/50/25 percent use DoubleSide, depthTest and depthWrite=false below 100"
+    },
+    {
+      "name": "Lung context loads curated thorax, ipsilateral main bronchus/pulmonary vessels and mediastinal heart"
+    },
+    {
+      "name": "Five independent opacity layers; all three explosion modes restore exact zero; respiratory system unload/reload"
+    },
+    {
+      "name": "All three modules unload/reload without retained buffers; failed airway module recovers"
+    },
+    {
+      "name": "Source/Latin search, virtualized expanded ARIA tree and keyboard, laptop/tablet/mobile without overflow"
+    }
+  ],
+  "captures": [],
+  "measurements": {},
+  "errors": [],
+  "badRequests": [],
+  "success": true
+}

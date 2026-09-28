@@ -1,0 +1,29 @@
+
+> med3d@1.0.0 verify:anatomy
+> node scripts/test-atlas-catalog.mjs && node scripts/test-atlas-renderer.mjs && node scripts/test-atlas-multisystem.mjs && node scripts/test-atlas-torso.mjs && node scripts/test-atlas-limbs.mjs && node scripts/test-atlas-head-neck.mjs && node scripts/test-atlas-muscle-gaps.mjs
+
+{"realNodes":249,"meshes":205,"boneCards":20,"detailedStructures":33,"syntheticMetadataNodes":10000,"indexMs":12,"searchMs":5,"flattenMs":1}
+Atlas catalog: source identities, hierarchy, multilingual search, reveal, ownership, individual bone cards and scale passed.
+Atlas camera: six anatomical views, oblique/aspect-aware framing, tiny-bone focus, near clipping and stable view transitions passed.
+Atlas renderer: bounded concurrency, cancellation, retained ownership, retry, memory accounting and hierarchical explosion passed.
+Real GLB renderer parsing: {"meshes":205,"triangles":512450,"geometryBytes":7609772,"localTransportAndDecodeMs":50}
+Multisystem source catalogs, neutral body, hierarchy, frame rejection, owner rejection, shared regional and deterministic system explosion passed.
+Nine actual GLBs, unilateral/bilateral loading, partial failure/retry, retained other system, regional reload and rapid switching passed: {"meshes":231,"triangles":552054,"geometryBytes":8542536}
+Torso audit/bindings, pilot binaries, preserved frame, 26 sourced cards, scoped context, exact restoration, all 12 real GLBs and every regional failure/reload/cancellation passed: {"meshes":265,"triangles":1075930,"geometryBytes":18359392}
+Limbs audit/bindings, pilot binaries, preserved frame, 48 sourced cards, scoped context, exact restoration, all 20 real GLBs and every regional failure/reload/cancellation passed: {"meshes":319,"triangles":1255886,"geometryBytes":21910788}
+PASS Final hierarchy, unique mesh owners, nonempty branches and 313 body structures
+PASS All 175 previous IDs and 45 educational families preserved; only muscular root grows
+PASS Regional audit, exact FMA/FJ/side, approved-only source and lossless triangle report
+PASS Twenty sourced cards, multilingual identifiers and explicit ipsilateral/midline context
+PASS Head and cervical bone/muscle regional block and exact zero restoration
+PASS Every new node fits six orientations at three viewport proportions without entering its bounds
+PASS Actual new Meshopt GLB load, single disposal, bounded reload, explicit retry and late cancellation
+{"success":true,"checks":7,"newMeshes":20,"newTriangles":101700,"geometryBytes":1866240,"bodyStructures":313,"bodyMeshes":339}
+PASS 355 body structures, 387 unique mesh owners, 25 modules, no empty/duplicate nodes
+PASS 202 old nodes and 55 old educational families preserved; only five ancestors aggregate new children
+PASS Only 48 approved originals, exact side/header identities, Float32 Meshopt and oriented triangle validation
+PASS 42 whole cards and 12 scoped component cards; Spanish/Latin/FMA/FJ; explicit ipsilateral context
+PASS Hand/foot share their limb region; heads separate only in Structures; exact zero restoration
+PASS All new nodes fit six orientations at three viewport proportions
+PASS Four real modules decode, dispose once, unload/reload without growth and recover after 503
+{"success":true,"checks":7,"newMuscles":42,"newMeshes":48,"newTriangles":40724,"geometryBytes":1128724,"bodyStructures":355,"bodyMeshes":387}

@@ -1,0 +1,61 @@
+{
+  "base": "d7f76fab25677b30952f057dfe900ee719dbac63",
+  "codeCommit": "d45999063b9c290c233f94f9f9a94c601288d32b",
+  "branch": "phase6-respiratory",
+  "protectedRefs": {
+    "main": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6",
+    "origin/main": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6",
+    "phase11-first-aid": "a391093cd28b975673fd0fc1e6b87fa1aeafed29",
+    "phase4-nervous-system": "9d7c9389476f160af746fd40f6e0a2fa2793c56f",
+    "phase4-nervous-expansion": "8d817bc09966e7e9e7f88a7e5e6aa82b78d252bd",
+    "phase5-cardiovascular": "d7f76fab25677b30952f057dfe900ee719dbac63"
+  },
+  "unchangedGitBlobs": {
+    "public/models/heart.glb": "d684eb1025958ce0c6d7e336688b72e3f21c4962",
+    "public/models/lungs.glb": "7ee4407bc2aae35d791a8cddd54e5e190887f821",
+    "public/models/brain.glb": "8442efd87630a7fe5e2697cad6a3af3c5c134d33",
+    "public/models/anatomy/skeletal/catalog.json": "6724f96c1106971e9dc8100036a0991ddbeff8eb",
+    "public/models/anatomy/muscular/catalog.json": "94c4d389e4d48f7fd9c9c4acd843004c3ba80814",
+    "public/models/anatomy/nervous/catalog.json": "31b7b3d728f9989f41ec7de1df6899ed27bf967c",
+    "public/models/anatomy/cardiovascular/catalog.json": "fa5994c0888faf26dc85174dca293b8e41748f75"
+  },
+  "changedImplementationPaths": [
+    "public/models/anatomy/respiratory/LICENSE.txt",
+    "public/models/anatomy/respiratory/airway.glb",
+    "public/models/anatomy/respiratory/catalog.json",
+    "public/models/anatomy/respiratory/larynx.glb",
+    "public/models/anatomy/respiratory/lungs.glb",
+    "public/models/anatomy/respiratory/respiratory-registration.json",
+    "public/models/anatomy/respiratory/respiratory-source-manifest.json",
+    "public/models/anatomy/respiratory/respiratory-validation.json",
+    "research/anatomy/respiratory-metadata.zip",
+    "research/anatomy/respiratory-originals.zip",
+    "research/anatomy/respiratory-selection.json",
+    "research/anatomy/respiratory-source-lock.json",
+    "scripts/anatomy/audit-respiratory.py",
+    "scripts/anatomy/build-respiratory.py",
+    "scripts/anatomy/optimize-respiratory.mjs",
+    "scripts/anatomy/respiratory-qa.mjs",
+    "scripts/anatomy/validate-respiratory-gltf.mjs",
+    "scripts/anatomy/verify-respiratory-registration.py",
+    "scripts/test-atlas-respiratory.mjs",
+    "src/features/anatomy/atlas/AnatomyInformation.tsx",
+    "src/features/anatomy/atlas/AtlasScene.tsx",
+    "src/features/anatomy/atlas/RespiratoryInformation.tsx",
+    "src/features/anatomy/atlas/SkeletalAtlas.tsx",
+    "src/features/anatomy/atlas/body-catalog.ts",
+    "src/features/anatomy/atlas/explosion.ts",
+    "src/features/anatomy/atlas/respiratory-education.ts",
+    "src/features/anatomy/atlas/types.ts"
+  ],
+  "mergeCommitsInPhase": 0,
+  "pushPerformedByThisSession": false,
+  "initialImplementationCommit": "8ef37e8baedad8e638dbee7f0af271e690888da2",
+  "correctionPaths": [
+    "scripts/anatomy/respiratory-qa.mjs",
+    "scripts/test-atlas-respiratory.mjs",
+    "src/features/anatomy/atlas/explosion.ts"
+  ],
+  "publicTreeUnchangedByCorrection": "7a8119f9b1978a30b845467cd7aaae188f3bcc24",
+  "researchTreeUnchangedByCorrection": "f987a0652a4ae13436ab913270c1c65c8b88d0bd"
+}

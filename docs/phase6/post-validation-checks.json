@@ -1,0 +1,25 @@
+{
+  "codeCommit": "d45999063b9c290c233f94f9f9a94c601288d32b",
+  "date": "2026-09-28T07:31:13.353Z",
+  "checks": [
+    {
+      "name": "typecheck",
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "milliseconds": 4856.196400000001
+    },
+    {
+      "name": "respiratory",
+      "command": "node scripts/test-atlas-respiratory.mjs",
+      "exitCode": 0,
+      "milliseconds": 605.1000000000004
+    },
+    {
+      "name": "build",
+      "command": "npm run build",
+      "exitCode": 0,
+      "milliseconds": 7825.888
+    }
+  ],
+  "success": true
+}

@@ -76,7 +76,11 @@ export function createExplosionOffsets(catalog: AnatomyCatalog, activeSystems: R
     // Coincident centres stay together rather than receiving invented directions.
     // Preserve the available orbital branching as one block in Structures.
     const respiratoryLobe = node.respiratoryClass === 'parenchyma' && parentBox ? offset(centre(parentBox), centre(regionBox || parentBox), .45, .025) : ZERO;
-    const localOffset = node.systemId === 'respiratory' ? respiratoryLobe : node.systemId === 'cardiovascular' || node.systemId === 'nervous' && (node.assetIds.includes('nervous:cranial') || node.family?.startsWith('z:')) ? ZERO : ownBounds && (parentBox || regionBox)
+    // Separate each main bronchus with its entire ipsilateral branch tree;
+    // never scatter small branches. Trachea stays at the common airway offset.
+    const respiratoryBronchus: Vec3 = node.systemId === 'respiratory' && ['main-bronchus', 'bronchial-tree'].includes(node.respiratoryClass || '') && (node.side === 'left' || node.side === 'right')
+      ? [node.side === 'left' ? .025 : -.025, 0, 0] : ZERO;
+    const localOffset = node.systemId === 'respiratory' ? add(respiratoryLobe, respiratoryBronchus) : node.systemId === 'cardiovascular' || node.systemId === 'nervous' && (node.assetIds.includes('nervous:cranial') || node.family?.startsWith('z:')) ? ZERO : ownBounds && (parentBox || regionBox)
       ? offset(centre(ownBounds), centre((parentBox || regionBox)!), 1.35, Math.min(height * .115, extent((parentBox || regionBox)!) * .7))
       : ZERO;
     result.set(node.id, { systems: [...systemOffset], regions: [...regionOffset], structures: add(regionOffset, localOffset) });

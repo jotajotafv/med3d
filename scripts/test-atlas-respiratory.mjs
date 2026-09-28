@@ -44,9 +44,11 @@ try{
  const offsets=createExplosionOffsets(catalog,new Set(systems));
  for(const n of resp.nodes)for(const level of ['systems','regions','structures'])assert.deepEqual(explosionTarget(offsets.get(n.id),level,0),[0,0,0]);
  assert.equal(new Set(systems.map(id=>JSON.stringify(offsets.get(id).systems))).size,5);
- const airway=resp.nodes.filter(n=>n.meshNames.length&&n.explosionRegionId==='resp-airway');assert.equal(new Set(airway.map(n=>JSON.stringify(offsets.get(n.id).structures))).size,1);
+ const airway=resp.nodes.filter(n=>n.meshNames.length&&n.explosionRegionId==='resp-airway');assert.equal(new Set(airway.map(n=>JSON.stringify(offsets.get(n.id).regions))).size,1);
+ assert.equal(new Set(airway.map(n=>JSON.stringify(offsets.get(n.id).structures))).size,3,'Trachea and two main bronchial blocks');
+ for(const side of ['right','left'])assert.equal(new Set(airway.filter(n=>n.side===side).map(n=>JSON.stringify(offsets.get(n.id).structures))).size,1,'All branches follow their main bronchus');
  for(const lobe of resp.nodes.filter(n=>n.respiratoryClass==='lobe'))assert.equal(new Set(lobe.children.map(id=>JSON.stringify(offsets.get(id).structures))).size,1);
- pass('Five system slots, coherent long airway and lobar blocks, exact zero in three explosion modes');
+ pass('Five system slots, coherent regional airway, two main bronchial/lobar blocks in Structures, exact zero in three explosion modes');
  const validation=await json('public/models/anatomy/respiratory/respiratory-validation.json');assert.equal(validation.totalMeshes,128);assert.equal(validation.totalTriangles,212484);assert.equal(validation.positionBits,32);assert.equal(validation.positionQuantization,false);assert.equal(validation.additionalDecimation,false);assert.ok(validation.maxPositionErrorMetres<1e-7);
  const lock=await json('research/anatomy/respiratory-source-lock.json'),manifest=await json('public/models/anatomy/respiratory/respiratory-source-manifest.json');
  assert.equal(createHash('sha256').update(await readFile('research/anatomy/respiratory-selection.json')).digest('hex'),lock.selectionSha256);assert.equal(manifest.selectionSha256,lock.selectionSha256);

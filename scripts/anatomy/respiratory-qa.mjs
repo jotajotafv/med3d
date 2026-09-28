@@ -6,7 +6,7 @@ import {readFile, writeFile} from 'node:fs/promises';
 import path from 'node:path';
 import {createHarness, project, setSlider, withinQaDeadline} from './browser-qa.mjs';
 
-const mode=process.argv.find(arg=>['--regional','--review','--captures','--performance'].includes(arg))?.slice(2)||'regional';
+const mode=process.argv.find(arg=>['--regional','--review','--captures','--performance','--explosion'].includes(arg))?.slice(2)||'regional';
 const h=await createHarness({output:process.env.QA_OUTPUT_DIR||path.join(project,'.cache','phase6','browser',mode),viewport:{width:1440,height:900},reducedMotion:mode==='captures'?'reduce':'no-preference'});
 const {page,output}=h;
 const muscular=JSON.parse(await readFile(path.join(project,process.env.QA_SERVE_DIR||'dist','models/anatomy/muscular/catalog.json'),'utf8'));
@@ -103,6 +103,17 @@ async function review(){
  await goto('skeletal,cardiovascular,respiratory');await opacity(25,'skeletal');await opacity(35);await chooseId('respiratory');await h.view('anterior');await action('Deseleccionar');await shot('preview-registration');
  await goto('respiratory');await chooseId('resp:larynx');await action('Aislar');await h.view('left');await action('Deseleccionar');await shot('preview-larynx');
 }
+async function explosion(){
+ await goto('respiratory');await chooseId('respiratory');const rest=await atRest();
+ const delta=p=>p.position.map((x,i)=>Number((x-p.restPosition[i]).toFixed(8)));
+ for(const level of ['regions','structures']){
+  await explode(level,100);const airway=(await parts()).filter(p=>byId.get(p.id).explosionRegionId==='resp-airway');
+  assert.equal(new Set(airway.map(p=>JSON.stringify(delta(p)))).size,level==='regions'?1:3);
+  for(const side of ['right','left'])assert.equal(new Set(airway.filter(p=>byId.get(p.id).side===side).map(p=>JSON.stringify(delta(p)))).size,1,'Ipsilateral branches remain one block');
+  await explode(level,0);assert.deepEqual(await atRest(),rest);
+ }
+ check('Actual WebGL: region airway remains whole; Structures separates trachea and two ipsilateral main bronchial blocks; exact zero restored');
+}
 async function captures(){
  await goto('respiratory');
  for(const [view,name] of [['anterior','01-respiratorio-anterior'],['posterior','02-respiratorio-posterior'],['left','03-respiratorio-lateral']]){await chooseId('respiratory');await h.view(view);await action('Deseleccionar');await shot(name);}
@@ -123,7 +134,8 @@ async function captures(){
  await goto('respiratory');await chooseId('respiratory');await explode('regions',85);await action('Enfocar');await action('Deseleccionar');await shot('23-exploded-regiones');await explode('regions',0);
  await chooseId('resp:lung:right');await structures();await page.getByRole('textbox',{name:'Buscar estructura anatómica'}).fill('pulmon');await shot('24-busqueda-global');await clearSearch();await page.getByRole('button',{name:'Árbol anatómico',exact:true}).click();await shot('25-arbol-global');
  for(const [size,name] of [[{width:1366,height:768},'26-laptop'],[{width:820,height:1180},'27-tablet'],[{width:390,height:844},'28-movil']]){await page.setViewportSize(size);await chooseId('respiratory');await h.view('anterior');await action('Deseleccionar');await closePanels();assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await shot(name);}
+ await page.setViewportSize({width:1440,height:900});await goto('respiratory');await opacity(25);await chooseId('respiratory');await explode('structures',100);await action('Enfocar');await h.view('anterior');await action('Deseleccionar');await shot('29-exploded-estructuras','Main bronchial blocks and real lobar pieces; 25 percent respiratory opacity.');
 }
-try{await withinQaDeadline(async()=>{await ({regional,review,captures,performance:performanceQa}[mode])();assert.deepEqual(h.errors,[]);assert.deepEqual(h.badRequests,[]);report.success=true;},1200000,'Respiratory '+mode);}
+try{await withinQaDeadline(async()=>{await ({regional,review,captures,performance:performanceQa,explosion}[mode])();assert.deepEqual(h.errors,[]);assert.deepEqual(h.badRequests,[]);report.success=true;},1200000,'Respiratory '+mode);}
 catch(error){report.success=false;report.error=error.stack;await page.screenshot({path:path.join(output,'failure.png'),timeout:15000}).catch(()=>{});throw error;}
 finally{await writeFile(path.join(output,'respiratory-'+mode+'.json'),JSON.stringify(report,null,2)+'\n');await h.close();}

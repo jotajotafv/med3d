@@ -118,7 +118,9 @@ function Models(props: ModelProps) {
   }, [parts, offsets, explodeLevel, exploded, invalidate]);
   useFrame((_, delta) => {
     let moving = false;
-    const alpha = reducedMotion ? 1 : 1 - Math.exp(-11 * Math.min(delta, .05));
+    // Use elapsed time: a slow software-rendered frame must not stretch the
+    // transition by pretending that only 50 ms passed. The exponential cannot overshoot.
+    const alpha = reducedMotion ? 1 : 1 - Math.exp(-11 * Math.max(0, delta));
     parts.forEach(part => {
       if (part.offset.equals(part.targetOffset)) return;
       part.offset.lerp(part.targetOffset, alpha);
@@ -216,7 +218,7 @@ function CameraRig({ catalog, parts, cameraRequest, resources, exploded, explode
   useFrame((_, delta) => {
     const goal = destination.current, orbit = controls.current;
     if (!goal || !orbit) return;
-    const alpha = reducedMotion ? 1 : 1 - Math.exp(-10 * Math.min(delta, .05));
+    const alpha = reducedMotion ? 1 : 1 - Math.exp(-10 * Math.max(0, delta));
     const distance = THREE.MathUtils.lerp(camera.position.distanceTo(orbit.target), goal.distance, alpha);
     const orientation = camera.quaternion.clone().slerp(goal.orientation, alpha);
     orbit.target.lerp(goal.target, alpha);

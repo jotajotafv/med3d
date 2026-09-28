@@ -35,6 +35,7 @@ try{
  assert.ok([...elements].every(fid=>!historicElements.has(fid)));
  for(const [q,id] of [['esofago','dig:FMA7131'],['Gaster','dig:FMA7148'],['yeyuno','dig:FMA7207'],['ileon','dig:FMA7208'],['higado','dig:FMA7197'],['vesicula','dig:FMA7202'],['pancreas','dig:FMA7198']])assert.ok(index.find(q).some(n=>n.id===id));
  pass('Spanish, Latin, aliases, FMA/FJ/IDs; unique owners, no historical geometry duplicates, sourced cards');
+ const stomach=index.byId.get('dig:FMA7148');assert.equal(stomach.parentId,'digestive');assert.equal(stomach.digestiveClass,'tract');assert.equal(stomach.regionId,stomach.id,'A shared module must not classify the stomach as an accessory organ');
  const liver=index.byId.get('dig:FMA7197');assert.equal(liver.meshNames.length,8);assert.equal(liver.children.length,0,'Uncertain liver segmentation is not exposed');
  assert.equal(index.byId.get('dig:FMA7198').meshNames.length,1);assert.ok(!elements.has('FJ2629')&&!elements.has('FJ2630')&&!elements.has('FJ2409'));
  assert.equal(index.byId.get('dig:FMA11338').digestiveType,'unión anatómica');assert.ok(!dig.nodes.some(n=>n.sourceId==='FMA14541'||n.sourceId==='FMA14548'));

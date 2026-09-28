@@ -194,6 +194,7 @@ node('dig:biliary','Vías biliares disponibles','division','dig:ducts',latin='Du
 for u in selection['units']:
  module=u['moduleId'].split(':')[1]
  region={'upper':'dig:upper','stomach-accessory':'dig:accessory','small-intestine':'dig:small','large-intestine':'dig:large'}[module]
+ if u['category']=='stomach':region=u['id']  # Shared GLB is not anatomical membership in accessory organs.
  exp={'upper':'dig-upper','stomach-accessory':'dig-accessory','small-intestine':'dig-small','large-intestine':'dig-large'}[module]
  klass='liver' if u['category']=='liver' else 'biliary' if u['category'] in ['biliary','gallbladder'] else 'gland' if u['category'] in ['pancreas','salivary','pancreatic-duct'] else 'tract'
  aliases=[u['id'],u['english'],u['sourceId'],*u['elements']]

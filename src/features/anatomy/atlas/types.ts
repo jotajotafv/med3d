@@ -25,6 +25,9 @@ export interface AnatomyNode {
   /** Cardiovascular identity and presentation class; independent of oxygenation. */
   cardioType?: string;
   vascularClass?: 'heart' | 'arterial' | 'venous';
+  /** Respiratory tissue and identity, independent of mesh count. */
+  respiratoryType?: string;
+  respiratoryClass?: 'cartilage' | 'trachea' | 'main-bronchus' | 'bronchial-tree' | 'lung' | 'lobe' | 'parenchyma';
   side?: 'left' | 'right' | 'midline';
   relatedIds: string[];
   bounds?: Bounds;

@@ -1,0 +1,4979 @@
+{
+  "schemaVersion": 1,
+  "source": "DBCLS BodyParts3D 4.0 OBJ99 + 4.3 parénquima pulmonar oficial",
+  "hierarchy": "Padres anatómicos/editoriales curados; IS-A sólo identifica conceptos. No se convierte IS-A en PART-OF.",
+  "units": [
+    {
+      "id": "resp:FMA9615",
+      "sourceId": "FMA9615",
+      "name": "Cartílago cricoides",
+      "latin": "Cartilago cricoidea",
+      "english": "cricoid cartilage",
+      "category": "cartilage",
+      "region": "head-neck",
+      "side": "midline",
+      "parent": "resp:larynx",
+      "kind": "component",
+      "entityType": "cartílago",
+      "elements": [
+        "FJ2769"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:larynx",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de fuente; geometría original sin modificación anatómica."
+    },
+    {
+      "id": "resp:FMA55099",
+      "sourceId": "FMA55099",
+      "name": "Cartílago tiroides",
+      "latin": "Cartilago thyroidea",
+      "english": "thyroid cartilage",
+      "category": "cartilage",
+      "region": "head-neck",
+      "side": "midline",
+      "parent": "resp:larynx",
+      "kind": "component",
+      "entityType": "cartílago",
+      "elements": [
+        "FJ2808"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:larynx",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de fuente; geometría original sin modificación anatómica."
+    },
+    {
+      "id": "resp:FMA55130",
+      "sourceId": "FMA55130",
+      "name": "Epiglotis",
+      "latin": "Epiglottis",
+      "english": "epiglottis",
+      "category": "cartilage",
+      "region": "head-neck",
+      "side": "midline",
+      "parent": "resp:larynx",
+      "kind": "component",
+      "entityType": "cartílago",
+      "elements": [
+        "FJ2770"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:larynx",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de fuente; geometría original sin modificación anatómica."
+    },
+    {
+      "id": "resp:FMA55113",
+      "sourceId": "FMA55113",
+      "name": "Cartílago aritenoides derecho",
+      "latin": "Cartilago arytenoidea dextra",
+      "english": "right arytenoid cartilage",
+      "category": "cartilage",
+      "region": "head-neck",
+      "side": "right",
+      "parent": "resp:larynx",
+      "kind": "component",
+      "entityType": "cartílago",
+      "elements": [
+        "FJ2792"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:larynx",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de fuente; geometría original sin modificación anatómica."
+    },
+    {
+      "id": "resp:FMA55114",
+      "sourceId": "FMA55114",
+      "name": "Cartílago aritenoides izquierdo",
+      "latin": "Cartilago arytenoidea sinistra",
+      "english": "left arytenoid cartilage",
+      "category": "cartilage",
+      "region": "head-neck",
+      "side": "left",
+      "parent": "resp:larynx",
+      "kind": "component",
+      "entityType": "cartílago",
+      "elements": [
+        "FJ2775"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:larynx",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de fuente; geometría original sin modificación anatómica."
+    },
+    {
+      "id": "resp:FMA55115",
+      "sourceId": "FMA55115",
+      "name": "Cartílago corniculado derecho",
+      "latin": "Cartilago corniculata dextra",
+      "english": "right corniculate cartilage",
+      "category": "cartilage",
+      "region": "head-neck",
+      "side": "right",
+      "parent": "resp:larynx",
+      "kind": "component",
+      "entityType": "cartílago",
+      "elements": [
+        "FJ2793"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:larynx",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de fuente; geometría original sin modificación anatómica."
+    },
+    {
+      "id": "resp:FMA55116",
+      "sourceId": "FMA55116",
+      "name": "Cartílago corniculado izquierdo",
+      "latin": "Cartilago corniculata sinistra",
+      "english": "left corniculate cartilage",
+      "category": "cartilage",
+      "region": "head-neck",
+      "side": "left",
+      "parent": "resp:larynx",
+      "kind": "component",
+      "entityType": "cartílago",
+      "elements": [
+        "FJ2776"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:larynx",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de fuente; geometría original sin modificación anatómica."
+    },
+    {
+      "id": "resp:FMA55117",
+      "sourceId": "FMA55117",
+      "name": "Cartílago cuneiforme derecho",
+      "latin": "Cartilago cuneiformis dextra",
+      "english": "right cuneiform cartilage",
+      "category": "cartilage",
+      "region": "head-neck",
+      "side": "right",
+      "parent": "resp:larynx",
+      "kind": "component",
+      "entityType": "cartílago",
+      "elements": [
+        "FJ2795"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:larynx",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de fuente; geometría original sin modificación anatómica."
+    },
+    {
+      "id": "resp:FMA55118",
+      "sourceId": "FMA55118",
+      "name": "Cartílago cuneiforme izquierdo",
+      "latin": "Cartilago cuneiformis sinistra",
+      "english": "left cuneiform cartilage",
+      "category": "cartilage",
+      "region": "head-neck",
+      "side": "left",
+      "parent": "resp:larynx",
+      "kind": "component",
+      "entityType": "cartílago",
+      "elements": [
+        "FJ2773"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:larynx",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de fuente; geometría original sin modificación anatómica."
+    },
+    {
+      "id": "resp:FMA7394",
+      "sourceId": "FMA7394",
+      "name": "Tráquea",
+      "latin": "Trachea",
+      "english": "trachea",
+      "category": "trachea",
+      "region": "thorax",
+      "side": "midline",
+      "parent": "resp:lower",
+      "kind": "structure",
+      "entityType": "vía aérea",
+      "elements": [
+        "FJ2541"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de fuente; geometría original sin modificación anatómica."
+    },
+    {
+      "id": "resp:FMA68418",
+      "sourceId": "FMA68418",
+      "name": "Bronquio principal derecho · porción disponible",
+      "latin": "Bronchus principalis dexter",
+      "english": "right main bronchus proper",
+      "category": "main-bronchus",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:bronchi",
+      "kind": "structure",
+      "entityType": "bronquio principal",
+      "elements": [
+        "FJ2539"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "La fuente nativa dice right main bronchus proper; FMA7395 se conserva sólo como alias del bronquio principal derecho."
+    },
+    {
+      "id": "resp:FMA7396",
+      "sourceId": "FMA7396",
+      "name": "Bronquio principal izquierdo",
+      "latin": "Bronchus principalis sinister",
+      "english": "left main bronchus",
+      "category": "main-bronchus",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:bronchi",
+      "kind": "structure",
+      "entityType": "bronquio principal",
+      "elements": [
+        "FJ2450"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de fuente; geometría original sin modificación anatómica."
+    },
+    {
+      "id": "resp:FMA68211",
+      "sourceId": "FMA68211",
+      "name": "Árbol bronquial apical derecho",
+      "latin": "Arbor bronchialis apicalis dexter",
+      "english": "right apical segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:bronchi:right-upper",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2454",
+        "FJ2520",
+        "FJ2521",
+        "FJ2522",
+        "FJ2523",
+        "FJ2524",
+        "FJ2525",
+        "FJ2526"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68212",
+      "sourceId": "FMA68212",
+      "name": "Árbol bronquial anterior derecho",
+      "latin": "Arbor bronchialis anterior dexter",
+      "english": "right anterior segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:bronchi:right-upper",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2453",
+        "FJ2509",
+        "FJ2510",
+        "FJ2511",
+        "FJ2512",
+        "FJ2513",
+        "FJ2514"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68213",
+      "sourceId": "FMA68213",
+      "name": "Árbol bronquial posterior derecho",
+      "latin": "Arbor bronchialis posterior dexter",
+      "english": "right posterior segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:bronchi:right-upper",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2458",
+        "FJ2515",
+        "FJ2516",
+        "FJ2517",
+        "FJ2518",
+        "FJ2519"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68214",
+      "sourceId": "FMA68214",
+      "name": "Árbol bronquial medial derecho",
+      "latin": "Arbor bronchialis medialis dexter",
+      "english": "medial segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:bronchi:right-middle",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2451",
+        "FJ2506",
+        "FJ2507",
+        "FJ2508"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68215",
+      "sourceId": "FMA68215",
+      "name": "Árbol bronquial lateral derecho",
+      "latin": "Arbor bronchialis lateralis dexter",
+      "english": "lateral segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:bronchi:right-middle",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2449",
+        "FJ2503",
+        "FJ2504",
+        "FJ2505"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68216",
+      "sourceId": "FMA68216",
+      "name": "Árbol bronquial superior derecho",
+      "latin": "Arbor bronchialis superior dexter",
+      "english": "right superior segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:bronchi:right-lower",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2459",
+        "FJ2495",
+        "FJ2496",
+        "FJ2497",
+        "FJ2498",
+        "FJ2499",
+        "FJ2500",
+        "FJ2501",
+        "FJ2502"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68218",
+      "sourceId": "FMA68218",
+      "name": "Árbol bronquial basal medial derecho",
+      "latin": "Arbor bronchialis basalis medialis dexter",
+      "english": "right medial basal segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:bronchi:right-lower",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2456",
+        "FJ2488"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68321",
+      "sourceId": "FMA68321",
+      "name": "Árbol bronquial basal anterior derecho",
+      "latin": "Arbor bronchialis basalis anterior dexter",
+      "english": "right anterior basal segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:bronchi:right-lower",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2452",
+        "FJ2493",
+        "FJ2494"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68220",
+      "sourceId": "FMA68220",
+      "name": "Árbol bronquial basal lateral derecho",
+      "latin": "Arbor bronchialis basalis lateralis dexter",
+      "english": "right lateral basal segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:bronchi:right-lower",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2455",
+        "FJ2490",
+        "FJ2491",
+        "FJ2492"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68221",
+      "sourceId": "FMA68221",
+      "name": "Árbol bronquial basal posterior derecho",
+      "latin": "Arbor bronchialis basalis posterior dexter",
+      "english": "right posterior basal segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:bronchi:right-lower",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2457",
+        "FJ2470",
+        "FJ2481",
+        "FJ2486",
+        "FJ2487",
+        "FJ2489"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68222",
+      "sourceId": "FMA68222",
+      "name": "Árbol bronquial anterior izquierdo",
+      "latin": "Arbor bronchialis anterior sinister",
+      "english": "left anterior segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:bronchi:left-upper",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2443",
+        "FJ2467",
+        "FJ2468",
+        "FJ2469",
+        "FJ2471",
+        "FJ2472",
+        "FJ2473",
+        "FJ2474"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68223",
+      "sourceId": "FMA68223",
+      "name": "Árbol bronquial apical izquierdo",
+      "latin": "Arbor bronchialis apicalis sinister",
+      "english": "left apical segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:bronchi:left-upper",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2444",
+        "FJ2460",
+        "FJ2461",
+        "FJ2462",
+        "FJ2463",
+        "FJ2464"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68225",
+      "sourceId": "FMA68225",
+      "name": "Árbol bronquial posterior izquierdo",
+      "latin": "Arbor bronchialis posterior sinister",
+      "english": "left posterior segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:bronchi:left-upper",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2447",
+        "FJ2465",
+        "FJ2466"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68226",
+      "sourceId": "FMA68226",
+      "name": "Árbol bronquial lingular superior",
+      "latin": "Arbor bronchialis lingularis superior",
+      "english": "superior lingular bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:bronchi:left-upper",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2476",
+        "FJ2477",
+        "FJ2478",
+        "FJ2540"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68227",
+      "sourceId": "FMA68227",
+      "name": "Árbol bronquial lingular inferior",
+      "latin": "Arbor bronchialis lingularis inferior",
+      "english": "inferior lingular bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:bronchi:left-upper",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2441",
+        "FJ2475"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68228",
+      "sourceId": "FMA68228",
+      "name": "Árbol bronquial superior izquierdo",
+      "latin": "Arbor bronchialis superior sinister",
+      "english": "left superior segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:bronchi:left-lower",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2448",
+        "FJ2479",
+        "FJ2480",
+        "FJ2482",
+        "FJ2483",
+        "FJ2484",
+        "FJ2485"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68230",
+      "sourceId": "FMA68230",
+      "name": "Árbol bronquial basal medial izquierdo",
+      "latin": "Arbor bronchialis basalis medialis sinister",
+      "english": "left medial basal segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:bronchi:left-lower",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2442",
+        "FJ2537"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68231",
+      "sourceId": "FMA68231",
+      "name": "Árbol bronquial basal anterior izquierdo",
+      "latin": "Arbor bronchialis basalis anterior sinister",
+      "english": "left anterior basal segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:bronchi:left-lower",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2535",
+        "FJ2536",
+        "FJ2538"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68232",
+      "sourceId": "FMA68232",
+      "name": "Árbol bronquial basal lateral izquierdo",
+      "latin": "Arbor bronchialis basalis lateralis sinister",
+      "english": "left lateral basal segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:bronchi:left-lower",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2445",
+        "FJ2532",
+        "FJ2533",
+        "FJ2534"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA68233",
+      "sourceId": "FMA68233",
+      "name": "Árbol bronquial basal posterior izquierdo",
+      "latin": "Arbor bronchialis basalis posterior sinister",
+      "english": "left posterior basal segmental bronchial tree",
+      "category": "bronchial-tree",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:bronchi:left-lower",
+      "kind": "component",
+      "entityType": "árbol bronquial segmentario",
+      "elements": [
+        "FJ2446",
+        "FJ2527",
+        "FJ2528",
+        "FJ2529",
+        "FJ2530",
+        "FJ2531"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "respiratory:airway",
+      "decision": "APROBADO",
+      "reason": "Árbol segmentario compuesto por ramas fuente; cada FJ es componente geométrico, no un bronquio adicional. Agrupación lobar editorial explícita."
+    },
+    {
+      "id": "resp:FMA27368",
+      "sourceId": "FMA27368",
+      "name": "Parénquima del segmento apicoposterior izquierdo",
+      "latin": "Parenchyma segmenti bronchopulmonalis apicoposterioris sinistri",
+      "english": "Parénquima del segmento apicoposterior izquierdo",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:lobe:left-upper",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6595",
+        "FJ6597"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27374",
+      "sourceId": "FMA27374",
+      "name": "Parénquima del segmento anterior izquierdo",
+      "latin": "Parenchyma segmenti bronchopulmonalis anterioris sinistri",
+      "english": "Parénquima del segmento anterior izquierdo",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:lobe:left-upper",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6598"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27375",
+      "sourceId": "FMA27375",
+      "name": "Parénquima del segmento lingular superior",
+      "latin": "Parenchyma segmenti bronchopulmonalis lingularis superioris",
+      "english": "Parénquima del segmento lingular superior",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:lobe:left-upper",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6599"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27376",
+      "sourceId": "FMA27376",
+      "name": "Parénquima del segmento lingular inferior",
+      "latin": "Parenchyma segmenti bronchopulmonalis lingularis inferioris",
+      "english": "Parénquima del segmento lingular inferior",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:lobe:left-upper",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6600"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27386",
+      "sourceId": "FMA27386",
+      "name": "Parénquima del segmento superior izquierdo",
+      "latin": "Parenchyma segmenti bronchopulmonalis superioris sinistri",
+      "english": "Parénquima del segmento superior izquierdo",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:lobe:left-lower",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6601"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27392",
+      "sourceId": "FMA27392",
+      "name": "Parénquima del segmento basal anterior izquierdo",
+      "latin": "Parenchyma segmenti bronchopulmonalis basalis anterioris sinistri",
+      "english": "Parénquima del segmento basal anterior izquierdo",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:lobe:left-lower",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6602"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27390",
+      "sourceId": "FMA27390",
+      "name": "Parénquima del segmento basal lateral izquierdo",
+      "latin": "Parenchyma segmenti bronchopulmonalis basalis lateralis sinistri",
+      "english": "Parénquima del segmento basal lateral izquierdo",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:lobe:left-lower",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6603"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27394",
+      "sourceId": "FMA27394",
+      "name": "Parénquima del segmento basal posterior izquierdo",
+      "latin": "Parenchyma segmenti bronchopulmonalis basalis posterioris sinistri",
+      "english": "Parénquima del segmento basal posterior izquierdo",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "left",
+      "parent": "resp:lobe:left-lower",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6596"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27369",
+      "sourceId": "FMA27369",
+      "name": "Parénquima del segmento apical derecho",
+      "latin": "Parenchyma segmenti bronchopulmonalis apicalis dextri",
+      "english": "Parénquima del segmento apical derecho",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:lobe:right-upper",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6604"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27371",
+      "sourceId": "FMA27371",
+      "name": "Parénquima del segmento posterior derecho",
+      "latin": "Parenchyma segmenti bronchopulmonalis posterioris dextri",
+      "english": "Parénquima del segmento posterior derecho",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:lobe:right-upper",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6606"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27373",
+      "sourceId": "FMA27373",
+      "name": "Parénquima del segmento anterior derecho",
+      "latin": "Parenchyma segmenti bronchopulmonalis anterioris dextri",
+      "english": "Parénquima del segmento anterior derecho",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:lobe:right-upper",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6607"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27452",
+      "sourceId": "FMA27452",
+      "name": "Parénquima del segmento lateral derecho",
+      "latin": "Parenchyma segmenti bronchopulmonalis lateralis dextri",
+      "english": "Parénquima del segmento lateral derecho",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:lobe:right-middle",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6608"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27448",
+      "sourceId": "FMA27448",
+      "name": "Parénquima del segmento medial derecho",
+      "latin": "Parenchyma segmenti bronchopulmonalis medialis dextri",
+      "english": "Parénquima del segmento medial derecho",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:lobe:right-middle",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6609"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27385",
+      "sourceId": "FMA27385",
+      "name": "Parénquima del segmento superior derecho",
+      "latin": "Parenchyma segmenti bronchopulmonalis superioris dextri",
+      "english": "Parénquima del segmento superior derecho",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:lobe:right-lower",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6610"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27391",
+      "sourceId": "FMA27391",
+      "name": "Parénquima del segmento basal anterior derecho",
+      "latin": "Parenchyma segmenti bronchopulmonalis basalis anterioris dextri",
+      "english": "Parénquima del segmento basal anterior derecho",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:lobe:right-lower",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6611"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27389",
+      "sourceId": "FMA27389",
+      "name": "Parénquima del segmento basal lateral derecho",
+      "latin": "Parenchyma segmenti bronchopulmonalis basalis lateralis dextri",
+      "english": "Parénquima del segmento basal lateral derecho",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:lobe:right-lower",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6612"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    },
+    {
+      "id": "resp:FMA27393",
+      "sourceId": "FMA27393",
+      "name": "Parénquima del segmento basal posterior derecho",
+      "latin": "Parenchyma segmenti bronchopulmonalis basalis posterioris dextri",
+      "english": "Parénquima del segmento basal posterior derecho",
+      "category": "parenchyma",
+      "region": "thorax",
+      "side": "right",
+      "parent": "resp:lobe:right-lower",
+      "kind": "component",
+      "entityType": "parénquima segmentario",
+      "elements": [
+        "FJ6605"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "respiratory:lungs",
+      "decision": "APROBADO",
+      "reason": "Parénquima identificado en manifiesto oficial 4.3; agrupación pulmonar/lobar curada sin cortar ni duplicar geometría. FJ6602 y FJ6611 rotulados 7.8 en el archivo fuente conservan su FMA anterior basal, sin inventar una subdivisión medial."
+    }
+  ],
+  "pending": [
+    {
+      "name": "Cavidad nasal",
+      "latin": "Cavitas nasi",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Sin espacio/mucosa nasal inequívocos en los paquetes auditados; huesos y cartílagos nasales no equivalen a cavidad."
+    },
+    {
+      "name": "Nasofaringe",
+      "latin": "Pars nasalis pharyngis",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Sin geometría independiente identificada."
+    },
+    {
+      "name": "Orofaringe",
+      "latin": "Pars oralis pharyngis",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Sin geometría independiente identificada."
+    },
+    {
+      "name": "Laringofaringe",
+      "latin": "Pars laryngea pharyngis",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "El grupo FMA55053 de 4.0 sólo remite a epiglotis; no representa la región completa."
+    },
+    {
+      "name": "Faringe completa",
+      "latin": "Pharynx",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "No se equiparan músculos faríngeos aislados ni epiglotis con un órgano faríngeo completo."
+    },
+    {
+      "name": "Laringe completa",
+      "latin": "Larynx",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Se integran sus nueve cartílagos disponibles; mucosa, músculos y pliegues vocales no se afirman completos."
+    },
+    {
+      "name": "Carina independiente",
+      "latin": "Carina tracheae",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "La bifurcación se observa en continuidad de tráquea y principales; no existe una malla carinal aislada aprobada."
+    },
+    {
+      "name": "Bronquios lobares aislados",
+      "latin": "Bronchi lobares",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Se agrupan árboles segmentarios según lóbulo; no se fabrica un tronco lobar independiente."
+    },
+    {
+      "name": "Pleura visceral",
+      "latin": "Pleura visceralis",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Sin lámina pleural independiente inequívoca."
+    },
+    {
+      "name": "Pleura parietal",
+      "latin": "Pleura parietalis",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Sin lámina pleural independiente inequívoca."
+    },
+    {
+      "name": "Hilio y raíz como tejido independiente",
+      "latin": "Hilum et radix pulmonis",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Región de continuidad explicada en fichas/contexto; no se fabrica una malla adicional."
+    },
+    {
+      "name": "Bronquiolos y alvéolos",
+      "latin": "Bronchioli et alveoli pulmonis",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Fuera de cobertura macroscópica; sin geometría alveolar aprobada."
+    },
+    {
+      "name": "Diafragma",
+      "latin": "Diaphragma",
+      "sourceId": "FMA13295",
+      "elements": [
+        "FJ3131"
+      ],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "FMA13295/FJ3131 fiable y aún no integrado; se mantiene como relación educativa muscular. Se prioriza el cierre respiratorio y la conservación del catálogo muscular, sin duplicarlo en Respiratorio."
+    },
+    {
+      "name": "Vasos pulmonares",
+      "latin": "Vasa pulmonalia",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "Ya pertenecen a Cardiovascular; reutilizar sus IDs mediante contexto."
+    },
+    {
+      "name": "Corazón",
+      "latin": "Cor",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "Ya integrado; sólo contexto mediastínico."
+    },
+    {
+      "name": "Pulmones HRA en atlas corporal",
+      "latin": "Pulmones",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "Explorador detallado conservado independiente; su marco no se fuerza sobre BP3D."
+    },
+    {
+      "name": "Cricoides alternativo FJ2440",
+      "latin": "Cartilago cricoidea",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "Misma identidad FMA9615 que FJ2769; elegir la revisión laríngea 120625 y evitar dos representaciones de un cartílago."
+    },
+    {
+      "name": "Tráquea 4.3 FJ6588",
+      "latin": "Trachea",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "Control espacial de la revisión pulmonar 20140325; no se integra otra tráquea encima de FJ2541."
+    },
+    {
+      "name": "Músculos laríngeos/faríngeos",
+      "latin": "Musculi laryngis et pharyngis",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3/HRA según candidato",
+      "category": "auditoría de cobertura",
+      "region": "cabeza/cuello/tórax",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "Sin ampliación muscular general en esta fase."
+    }
+  ],
+  "approved": [
+    {
+      "elementId": "FJ2769",
+      "sourceId": "FMA9615",
+      "unitId": "resp:FMA9615",
+      "side": "midline",
+      "entityType": "cartílago",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2769.obj",
+        "bytes": 105507,
+        "compressedBytes": 33857,
+        "crc32": "c36abe5b",
+        "offset": 106232918,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA9615",
+        "FMA55107",
+        "FMA55108",
+        "FMA55665",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ]
+    },
+    {
+      "elementId": "FJ2808",
+      "sourceId": "FMA55099",
+      "unitId": "resp:FMA55099",
+      "side": "midline",
+      "entityType": "cartílago",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2808.obj",
+        "bytes": 161651,
+        "compressedBytes": 50063,
+        "crc32": "fbd27bcc",
+        "offset": 109183963,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55099",
+        "FMA55107",
+        "FMA55108",
+        "FMA55665",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ]
+    },
+    {
+      "elementId": "FJ2770",
+      "sourceId": "FMA55130",
+      "unitId": "resp:FMA55130",
+      "side": "midline",
+      "entityType": "cartílago",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2770.obj",
+        "bytes": 294822,
+        "compressedBytes": 89665,
+        "crc32": "52ef0694",
+        "offset": 106266835,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA49443",
+        "FMA54877",
+        "FMA55053",
+        "FMA55130",
+        "FMA61775",
+        "FMA62955",
+        "FMA64989",
+        "FMA67135",
+        "FMA67165"
+      ]
+    },
+    {
+      "elementId": "FJ2792",
+      "sourceId": "FMA55113",
+      "unitId": "resp:FMA55113",
+      "side": "right",
+      "entityType": "cartílago",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2792.obj",
+        "bytes": 32331,
+        "compressedBytes": 10885,
+        "crc32": "51f6325c",
+        "offset": 107964954,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55107",
+        "FMA55108",
+        "FMA55109",
+        "FMA55113",
+        "FMA55665",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ]
+    },
+    {
+      "elementId": "FJ2775",
+      "sourceId": "FMA55114",
+      "unitId": "resp:FMA55114",
+      "side": "left",
+      "entityType": "cartílago",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2775.obj",
+        "bytes": 32035,
+        "compressedBytes": 10905,
+        "crc32": "b705083e",
+        "offset": 106566990,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55107",
+        "FMA55108",
+        "FMA55109",
+        "FMA55114",
+        "FMA55665",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ]
+    },
+    {
+      "elementId": "FJ2793",
+      "sourceId": "FMA55115",
+      "unitId": "resp:FMA55115",
+      "side": "right",
+      "entityType": "cartílago",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2793.obj",
+        "bytes": 11181,
+        "compressedBytes": 3962,
+        "crc32": "25064aca",
+        "offset": 107975899,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55107",
+        "FMA55108",
+        "FMA55110",
+        "FMA55115",
+        "FMA55665",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ]
+    },
+    {
+      "elementId": "FJ2776",
+      "sourceId": "FMA55116",
+      "unitId": "resp:FMA55116",
+      "side": "left",
+      "entityType": "cartílago",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2776.obj",
+        "bytes": 10329,
+        "compressedBytes": 3695,
+        "crc32": "afb9c9fb",
+        "offset": 106577955,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55107",
+        "FMA55108",
+        "FMA55110",
+        "FMA55116",
+        "FMA55665",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ]
+    },
+    {
+      "elementId": "FJ2795",
+      "sourceId": "FMA55117",
+      "unitId": "resp:FMA55117",
+      "side": "right",
+      "entityType": "cartílago",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2795.obj",
+        "bytes": 9855,
+        "compressedBytes": 3575,
+        "crc32": "c7ef9180",
+        "offset": 108090808,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55107",
+        "FMA55108",
+        "FMA55111",
+        "FMA55117",
+        "FMA55665",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ]
+    },
+    {
+      "elementId": "FJ2773",
+      "sourceId": "FMA55118",
+      "unitId": "resp:FMA55118",
+      "side": "left",
+      "entityType": "cartílago",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2773.obj",
+        "bytes": 10043,
+        "compressedBytes": 3664,
+        "crc32": "86fe276b",
+        "offset": 106430368,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55107",
+        "FMA55108",
+        "FMA55111",
+        "FMA55118",
+        "FMA55665",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ]
+    },
+    {
+      "elementId": "FJ2541",
+      "sourceId": "FMA7394",
+      "unitId": "resp:FMA7394",
+      "side": "midline",
+      "entityType": "vía aérea",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2541.obj",
+        "bytes": 320943,
+        "compressedBytes": 97405,
+        "crc32": "00e8c597",
+        "offset": 96437017,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA7394",
+        "FMA12224",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2539",
+      "sourceId": "FMA68418",
+      "unitId": "resp:FMA68418",
+      "side": "right",
+      "entityType": "bronquio principal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2539.obj",
+        "bytes": 300354,
+        "compressedBytes": 90363,
+        "crc32": "068c7bb4",
+        "offset": 96338268,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA7409",
+        "FMA12224",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68418",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2450",
+      "sourceId": "FMA7396",
+      "unitId": "resp:FMA7396",
+      "side": "left",
+      "entityType": "bronquio principal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2450.obj",
+        "bytes": 271606,
+        "compressedBytes": 81803,
+        "crc32": "656d1e69",
+        "offset": 95246599,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA7396",
+        "FMA7405",
+        "FMA7409",
+        "FMA12224",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2454",
+      "sourceId": "FMA68211",
+      "unitId": "resp:FMA68211",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2454.obj",
+        "bytes": 24467,
+        "compressedBytes": 8617,
+        "crc32": "89fbc67a",
+        "offset": 95359751,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68211",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2520",
+      "sourceId": "FMA68211",
+      "unitId": "resp:FMA68211",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2520.obj",
+        "bytes": 113130,
+        "compressedBytes": 35609,
+        "crc32": "029f65b4",
+        "offset": 96197025,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68211",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2521",
+      "sourceId": "FMA68211",
+      "unitId": "resp:FMA68211",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2521.obj",
+        "bytes": 38743,
+        "compressedBytes": 12677,
+        "crc32": "b8be7843",
+        "offset": 96232694,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68211",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2522",
+      "sourceId": "FMA68211",
+      "unitId": "resp:FMA68211",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2522.obj",
+        "bytes": 57657,
+        "compressedBytes": 18420,
+        "crc32": "3c2103d1",
+        "offset": 96245431,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68211",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2523",
+      "sourceId": "FMA68211",
+      "unitId": "resp:FMA68211",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2523.obj",
+        "bytes": 14322,
+        "compressedBytes": 4968,
+        "crc32": "27c49474",
+        "offset": 96263911,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68211",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2524",
+      "sourceId": "FMA68211",
+      "unitId": "resp:FMA68211",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2524.obj",
+        "bytes": 19993,
+        "compressedBytes": 6787,
+        "crc32": "bba6e206",
+        "offset": 96268939,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68211",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2525",
+      "sourceId": "FMA68211",
+      "unitId": "resp:FMA68211",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2525.obj",
+        "bytes": 12488,
+        "compressedBytes": 4406,
+        "crc32": "c502dbc8",
+        "offset": 96275786,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68211",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2526",
+      "sourceId": "FMA68211",
+      "unitId": "resp:FMA68211",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2526.obj",
+        "bytes": 12187,
+        "compressedBytes": 4296,
+        "crc32": "a6810726",
+        "offset": 96280252,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68211",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2453",
+      "sourceId": "FMA68212",
+      "unitId": "resp:FMA68212",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2453.obj",
+        "bytes": 24910,
+        "compressedBytes": 8724,
+        "crc32": "1bd2fba6",
+        "offset": 95350967,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68212",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2509",
+      "sourceId": "FMA68212",
+      "unitId": "resp:FMA68212",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2509.obj",
+        "bytes": 150020,
+        "compressedBytes": 45438,
+        "crc32": "bc78ad7c",
+        "offset": 96010017,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68212",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2510",
+      "sourceId": "FMA68212",
+      "unitId": "resp:FMA68212",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2510.obj",
+        "bytes": 53839,
+        "compressedBytes": 17364,
+        "crc32": "36a5021f",
+        "offset": 96055515,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68212",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2511",
+      "sourceId": "FMA68212",
+      "unitId": "resp:FMA68212",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2511.obj",
+        "bytes": 19854,
+        "compressedBytes": 6706,
+        "crc32": "520bf942",
+        "offset": 96072939,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68212",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2512",
+      "sourceId": "FMA68212",
+      "unitId": "resp:FMA68212",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2512.obj",
+        "bytes": 23220,
+        "compressedBytes": 7657,
+        "crc32": "fedb9c1d",
+        "offset": 96079705,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68212",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2513",
+      "sourceId": "FMA68212",
+      "unitId": "resp:FMA68212",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2513.obj",
+        "bytes": 49223,
+        "compressedBytes": 15919,
+        "crc32": "3af6b259",
+        "offset": 96087422,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68212",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2514",
+      "sourceId": "FMA68212",
+      "unitId": "resp:FMA68212",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2514.obj",
+        "bytes": 41453,
+        "compressedBytes": 13413,
+        "crc32": "a6be3a99",
+        "offset": 96103401,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68212",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2458",
+      "sourceId": "FMA68213",
+      "unitId": "resp:FMA68213",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2458.obj",
+        "bytes": 31978,
+        "compressedBytes": 11006,
+        "crc32": "f036555a",
+        "offset": 95400809,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68213",
+        "FMA68236",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2515",
+      "sourceId": "FMA68213",
+      "unitId": "resp:FMA68213",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2515.obj",
+        "bytes": 142644,
+        "compressedBytes": 43671,
+        "crc32": "0f6f9c52",
+        "offset": 96116874,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68213",
+        "FMA68236",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2516",
+      "sourceId": "FMA68213",
+      "unitId": "resp:FMA68213",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2516.obj",
+        "bytes": 58281,
+        "compressedBytes": 18706,
+        "crc32": "4c1f95a0",
+        "offset": 96160605,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68213",
+        "FMA68236",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2517",
+      "sourceId": "FMA68213",
+      "unitId": "resp:FMA68213",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2517.obj",
+        "bytes": 20366,
+        "compressedBytes": 6951,
+        "crc32": "4a18512a",
+        "offset": 96179371,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68213",
+        "FMA68236",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2518",
+      "sourceId": "FMA68213",
+      "unitId": "resp:FMA68213",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2518.obj",
+        "bytes": 14594,
+        "compressedBytes": 5099,
+        "crc32": "a31d4cd5",
+        "offset": 96186382,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68213",
+        "FMA68236",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2519",
+      "sourceId": "FMA68213",
+      "unitId": "resp:FMA68213",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2519.obj",
+        "bytes": 15771,
+        "compressedBytes": 5424,
+        "crc32": "87d73516",
+        "offset": 96191541,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68213",
+        "FMA68236",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2451",
+      "sourceId": "FMA68214",
+      "unitId": "resp:FMA68214",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2451.obj",
+        "bytes": 32323,
+        "compressedBytes": 10997,
+        "crc32": "27359e65",
+        "offset": 95328462,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68214",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2506",
+      "sourceId": "FMA68214",
+      "unitId": "resp:FMA68214",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2506.obj",
+        "bytes": 158003,
+        "compressedBytes": 48132,
+        "crc32": "c8895c12",
+        "offset": 95913620,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68214",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2507",
+      "sourceId": "FMA68214",
+      "unitId": "resp:FMA68214",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2507.obj",
+        "bytes": 97328,
+        "compressedBytes": 30270,
+        "crc32": "2f5190fd",
+        "offset": 95961812,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68214",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2508",
+      "sourceId": "FMA68214",
+      "unitId": "resp:FMA68214",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2508.obj",
+        "bytes": 56008,
+        "compressedBytes": 17815,
+        "crc32": "c7d3c93a",
+        "offset": 95992142,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68214",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2449",
+      "sourceId": "FMA68215",
+      "unitId": "resp:FMA68215",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2449.obj",
+        "bytes": 53488,
+        "compressedBytes": 17750,
+        "crc32": "b5afe5ed",
+        "offset": 95228789,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68215",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2503",
+      "sourceId": "FMA68215",
+      "unitId": "resp:FMA68215",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2503.obj",
+        "bytes": 50477,
+        "compressedBytes": 16131,
+        "crc32": "c184222a",
+        "offset": 95838497,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68215",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2504",
+      "sourceId": "FMA68215",
+      "unitId": "resp:FMA68215",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2504.obj",
+        "bytes": 160496,
+        "compressedBytes": 48108,
+        "crc32": "29c1ae8d",
+        "offset": 95854688,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68215",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2505",
+      "sourceId": "FMA68215",
+      "unitId": "resp:FMA68215",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2505.obj",
+        "bytes": 33245,
+        "compressedBytes": 10704,
+        "crc32": "c673c889",
+        "offset": 95902856,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68215",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2459",
+      "sourceId": "FMA68216",
+      "unitId": "resp:FMA68216",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2459.obj",
+        "bytes": 33798,
+        "compressedBytes": 11571,
+        "crc32": "7310e23f",
+        "offset": 95411875,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68216",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2495",
+      "sourceId": "FMA68216",
+      "unitId": "resp:FMA68216",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2495.obj",
+        "bytes": 56785,
+        "compressedBytes": 18296,
+        "crc32": "972917f7",
+        "offset": 95689428,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68216",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2496",
+      "sourceId": "FMA68216",
+      "unitId": "resp:FMA68216",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2496.obj",
+        "bytes": 174526,
+        "compressedBytes": 54229,
+        "crc32": "977aa6af",
+        "offset": 95707784,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68216",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2497",
+      "sourceId": "FMA68216",
+      "unitId": "resp:FMA68216",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2497.obj",
+        "bytes": 21048,
+        "compressedBytes": 7030,
+        "crc32": "881173aa",
+        "offset": 95762073,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68216",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2498",
+      "sourceId": "FMA68216",
+      "unitId": "resp:FMA68216",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2498.obj",
+        "bytes": 42016,
+        "compressedBytes": 13840,
+        "crc32": "730bea14",
+        "offset": 95769163,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68216",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2499",
+      "sourceId": "FMA68216",
+      "unitId": "resp:FMA68216",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2499.obj",
+        "bytes": 91671,
+        "compressedBytes": 29300,
+        "crc32": "31603437",
+        "offset": 95783063,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68216",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2500",
+      "sourceId": "FMA68216",
+      "unitId": "resp:FMA68216",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2500.obj",
+        "bytes": 17851,
+        "compressedBytes": 6140,
+        "crc32": "0e6ca9be",
+        "offset": 95812423,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68216",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2501",
+      "sourceId": "FMA68216",
+      "unitId": "resp:FMA68216",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2501.obj",
+        "bytes": 35375,
+        "compressedBytes": 11700,
+        "crc32": "408e4a1a",
+        "offset": 95818623,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68216",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2502",
+      "sourceId": "FMA68216",
+      "unitId": "resp:FMA68216",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2502.obj",
+        "bytes": 23997,
+        "compressedBytes": 8054,
+        "crc32": "0ecfc0d7",
+        "offset": 95830383,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68216",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2456",
+      "sourceId": "FMA68218",
+      "unitId": "resp:FMA68218",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2456.obj",
+        "bytes": 11587,
+        "compressedBytes": 4244,
+        "crc32": "5a63d983",
+        "offset": 95382527,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68218",
+        "FMA68238",
+        "FMA68320",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2488",
+      "sourceId": "FMA68218",
+      "unitId": "resp:FMA68218",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2488.obj",
+        "bytes": 49535,
+        "compressedBytes": 16115,
+        "crc32": "705394be",
+        "offset": 95574733,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68218",
+        "FMA68238",
+        "FMA68320",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2452",
+      "sourceId": "FMA68321",
+      "unitId": "resp:FMA68321",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2452.obj",
+        "bytes": 33253,
+        "compressedBytes": 11388,
+        "crc32": "2c41912c",
+        "offset": 95339519,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68219",
+        "FMA68238",
+        "FMA68321",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2493",
+      "sourceId": "FMA68321",
+      "unitId": "resp:FMA68321",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2493.obj",
+        "bytes": 93222,
+        "compressedBytes": 29574,
+        "crc32": "84ccb91f",
+        "offset": 95652641,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68219",
+        "FMA68238",
+        "FMA68321",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2494",
+      "sourceId": "FMA68321",
+      "unitId": "resp:FMA68321",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2494.obj",
+        "bytes": 21163,
+        "compressedBytes": 7093,
+        "crc32": "6c76ad36",
+        "offset": 95682275,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68219",
+        "FMA68238",
+        "FMA68321",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2455",
+      "sourceId": "FMA68220",
+      "unitId": "resp:FMA68220",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2455.obj",
+        "bytes": 41444,
+        "compressedBytes": 14039,
+        "crc32": "e617e705",
+        "offset": 95368428,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68220",
+        "FMA68238",
+        "FMA68322",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2490",
+      "sourceId": "FMA68220",
+      "unitId": "resp:FMA68220",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2490.obj",
+        "bytes": 37021,
+        "compressedBytes": 12299,
+        "crc32": "dfb00d3f",
+        "offset": 95604258,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68220",
+        "FMA68238",
+        "FMA68322",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2491",
+      "sourceId": "FMA68220",
+      "unitId": "resp:FMA68220",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2491.obj",
+        "bytes": 92646,
+        "compressedBytes": 29245,
+        "crc32": "61167354",
+        "offset": 95616617,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68220",
+        "FMA68238",
+        "FMA68322",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2492",
+      "sourceId": "FMA68220",
+      "unitId": "resp:FMA68220",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2492.obj",
+        "bytes": 19869,
+        "compressedBytes": 6659,
+        "crc32": "af0e232a",
+        "offset": 95645922,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68220",
+        "FMA68238",
+        "FMA68322",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2457",
+      "sourceId": "FMA68221",
+      "unitId": "resp:FMA68221",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2457.obj",
+        "bytes": 41052,
+        "compressedBytes": 13918,
+        "crc32": "c6b0a01a",
+        "offset": 95386831,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68221",
+        "FMA68229",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2470",
+      "sourceId": "FMA68221",
+      "unitId": "resp:FMA68221",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2470.obj",
+        "bytes": 53665,
+        "compressedBytes": 17595,
+        "crc32": "5f6f8168",
+        "offset": 95464713,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68221",
+        "FMA68229",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2481",
+      "sourceId": "FMA68221",
+      "unitId": "resp:FMA68221",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2481.obj",
+        "bytes": 26001,
+        "compressedBytes": 8476,
+        "crc32": "280811a3",
+        "offset": 95518952,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68221",
+        "FMA68229",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2486",
+      "sourceId": "FMA68221",
+      "unitId": "resp:FMA68221",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2486.obj",
+        "bytes": 16874,
+        "compressedBytes": 5850,
+        "crc32": "3fe8ffd3",
+        "offset": 95539453,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68221",
+        "FMA68229",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2487",
+      "sourceId": "FMA68221",
+      "unitId": "resp:FMA68221",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2487.obj",
+        "bytes": 92179,
+        "compressedBytes": 29310,
+        "crc32": "7491b2be",
+        "offset": 95545363,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68221",
+        "FMA68229",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2489",
+      "sourceId": "FMA68221",
+      "unitId": "resp:FMA68221",
+      "side": "right",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2489.obj",
+        "bytes": 40296,
+        "compressedBytes": 13290,
+        "crc32": "12864b6a",
+        "offset": 95590908,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68221",
+        "FMA68229",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2443",
+      "sourceId": "FMA68222",
+      "unitId": "resp:FMA68222",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2443.obj",
+        "bytes": 28509,
+        "compressedBytes": 9820,
+        "crc32": "ed9cf832",
+        "offset": 95161287,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68222",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2467",
+      "sourceId": "FMA68222",
+      "unitId": "resp:FMA68222",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2467.obj",
+        "bytes": 27153,
+        "compressedBytes": 9330,
+        "crc32": "b3243bb4",
+        "offset": 95447140,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68222",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2468",
+      "sourceId": "FMA68222",
+      "unitId": "resp:FMA68222",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2468.obj",
+        "bytes": 15200,
+        "compressedBytes": 5272,
+        "crc32": "6e731dc2",
+        "offset": 95456530,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68222",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2469",
+      "sourceId": "FMA68222",
+      "unitId": "resp:FMA68222",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2469.obj",
+        "bytes": 7820,
+        "compressedBytes": 2791,
+        "crc32": "a7e87e96",
+        "offset": 95461862,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68222",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2471",
+      "sourceId": "FMA68222",
+      "unitId": "resp:FMA68222",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2471.obj",
+        "bytes": 7979,
+        "compressedBytes": 2953,
+        "crc32": "a495342b",
+        "offset": 95482368,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68222",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2472",
+      "sourceId": "FMA68222",
+      "unitId": "resp:FMA68222",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2472.obj",
+        "bytes": 9292,
+        "compressedBytes": 3327,
+        "crc32": "e7151451",
+        "offset": 95485381,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68222",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2473",
+      "sourceId": "FMA68222",
+      "unitId": "resp:FMA68222",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2473.obj",
+        "bytes": 10229,
+        "compressedBytes": 3597,
+        "crc32": "853e03a9",
+        "offset": 95488768,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68222",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2474",
+      "sourceId": "FMA68222",
+      "unitId": "resp:FMA68222",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2474.obj",
+        "bytes": 10854,
+        "compressedBytes": 3848,
+        "crc32": "dc2690b4",
+        "offset": 95492425,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68222",
+        "FMA68235",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2444",
+      "sourceId": "FMA68223",
+      "unitId": "resp:FMA68223",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2444.obj",
+        "bytes": 35966,
+        "compressedBytes": 12394,
+        "crc32": "890daa78",
+        "offset": 95171167,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68223",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2460",
+      "sourceId": "FMA68223",
+      "unitId": "resp:FMA68223",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2460.obj",
+        "bytes": 14635,
+        "compressedBytes": 5296,
+        "crc32": "a26b13b7",
+        "offset": 95423506,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68223",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2461",
+      "sourceId": "FMA68223",
+      "unitId": "resp:FMA68223",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2461.obj",
+        "bytes": 9641,
+        "compressedBytes": 3603,
+        "crc32": "e9a564bc",
+        "offset": 95428862,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68223",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2462",
+      "sourceId": "FMA68223",
+      "unitId": "resp:FMA68223",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2462.obj",
+        "bytes": 9883,
+        "compressedBytes": 3590,
+        "crc32": "b0c89799",
+        "offset": 95432525,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68223",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2463",
+      "sourceId": "FMA68223",
+      "unitId": "resp:FMA68223",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2463.obj",
+        "bytes": 8982,
+        "compressedBytes": 3298,
+        "crc32": "2c5f1556",
+        "offset": 95436175,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68223",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2464",
+      "sourceId": "FMA68223",
+      "unitId": "resp:FMA68223",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2464.obj",
+        "bytes": 6247,
+        "compressedBytes": 2345,
+        "crc32": "80aa93ee",
+        "offset": 95439533,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68223",
+        "FMA68234",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2447",
+      "sourceId": "FMA68225",
+      "unitId": "resp:FMA68225",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2447.obj",
+        "bytes": 18282,
+        "compressedBytes": 6521,
+        "crc32": "648b28d4",
+        "offset": 95212253,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68225",
+        "FMA68236",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2465",
+      "sourceId": "FMA68225",
+      "unitId": "resp:FMA68225",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2465.obj",
+        "bytes": 7550,
+        "compressedBytes": 2792,
+        "crc32": "3e440b73",
+        "offset": 95441938,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68225",
+        "FMA68236",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2466",
+      "sourceId": "FMA68225",
+      "unitId": "resp:FMA68225",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2466.obj",
+        "bytes": 6104,
+        "compressedBytes": 2290,
+        "crc32": "a810c8cf",
+        "offset": 95444790,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68225",
+        "FMA68236",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2476",
+      "sourceId": "FMA68226",
+      "unitId": "resp:FMA68226",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2476.obj",
+        "bytes": 10226,
+        "compressedBytes": 3749,
+        "crc32": "cf4b891a",
+        "offset": 95501358,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68226",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2477",
+      "sourceId": "FMA68226",
+      "unitId": "resp:FMA68226",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2477.obj",
+        "bytes": 7579,
+        "compressedBytes": 2646,
+        "crc32": "4ef9dbb2",
+        "offset": 95505167,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68226",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2478",
+      "sourceId": "FMA68226",
+      "unitId": "resp:FMA68226",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2478.obj",
+        "bytes": 7824,
+        "compressedBytes": 2824,
+        "crc32": "6a500039",
+        "offset": 95507873,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68226",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2540",
+      "sourceId": "FMA68226",
+      "unitId": "resp:FMA68226",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2540.obj",
+        "bytes": 23856,
+        "compressedBytes": 8266,
+        "crc32": "4eb08cf3",
+        "offset": 96428691,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68226",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2441",
+      "sourceId": "FMA68227",
+      "unitId": "resp:FMA68227",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2441.obj",
+        "bytes": 70213,
+        "compressedBytes": 23425,
+        "crc32": "acde74db",
+        "offset": 95122462,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68227",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2475",
+      "sourceId": "FMA68227",
+      "unitId": "resp:FMA68227",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2475.obj",
+        "bytes": 13699,
+        "compressedBytes": 4965,
+        "crc32": "bd8d3c56",
+        "offset": 95496333,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68227",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2448",
+      "sourceId": "FMA68228",
+      "unitId": "resp:FMA68228",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2448.obj",
+        "bytes": 28607,
+        "compressedBytes": 9895,
+        "crc32": "83f307fc",
+        "offset": 95218834,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68228",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2479",
+      "sourceId": "FMA68228",
+      "unitId": "resp:FMA68228",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2479.obj",
+        "bytes": 13556,
+        "compressedBytes": 4928,
+        "crc32": "ed4017e3",
+        "offset": 95510757,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68228",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2480",
+      "sourceId": "FMA68228",
+      "unitId": "resp:FMA68228",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2480.obj",
+        "bytes": 8652,
+        "compressedBytes": 3147,
+        "crc32": "12471415",
+        "offset": 95515745,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68228",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2482",
+      "sourceId": "FMA68228",
+      "unitId": "resp:FMA68228",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2482.obj",
+        "bytes": 8138,
+        "compressedBytes": 3024,
+        "crc32": "ac32d5e0",
+        "offset": 95527488,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68228",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2483",
+      "sourceId": "FMA68228",
+      "unitId": "resp:FMA68228",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2483.obj",
+        "bytes": 7645,
+        "compressedBytes": 2837,
+        "crc32": "9efcbe30",
+        "offset": 95530572,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68228",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2484",
+      "sourceId": "FMA68228",
+      "unitId": "resp:FMA68228",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2484.obj",
+        "bytes": 9355,
+        "compressedBytes": 3507,
+        "crc32": "ed121c9b",
+        "offset": 95533469,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68228",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2485",
+      "sourceId": "FMA68228",
+      "unitId": "resp:FMA68228",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2485.obj",
+        "bytes": 6455,
+        "compressedBytes": 2357,
+        "crc32": "5aa009be",
+        "offset": 95537036,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68228",
+        "FMA68237",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2442",
+      "sourceId": "FMA68230",
+      "unitId": "resp:FMA68230",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2442.obj",
+        "bytes": 45223,
+        "compressedBytes": 15280,
+        "crc32": "afc486b8",
+        "offset": 95145947,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68230",
+        "FMA68238",
+        "FMA68320",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2537",
+      "sourceId": "FMA68230",
+      "unitId": "resp:FMA68230",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2537.obj",
+        "bytes": 7242,
+        "compressedBytes": 2649,
+        "crc32": "6c3f3737",
+        "offset": 96331775,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68230",
+        "FMA68238",
+        "FMA68320",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2535",
+      "sourceId": "FMA68231",
+      "unitId": "resp:FMA68231",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2535.obj",
+        "bytes": 19239,
+        "compressedBytes": 6789,
+        "crc32": "4c7dfa93",
+        "offset": 96318115,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68219",
+        "FMA68231",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2536",
+      "sourceId": "FMA68231",
+      "unitId": "resp:FMA68231",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2536.obj",
+        "bytes": 19364,
+        "compressedBytes": 6751,
+        "crc32": "6d2ae1ce",
+        "offset": 96324964,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68219",
+        "FMA68231",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2538",
+      "sourceId": "FMA68231",
+      "unitId": "resp:FMA68231",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2538.obj",
+        "bytes": 10397,
+        "compressedBytes": 3724,
+        "crc32": "b0c4f418",
+        "offset": 96334484,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68219",
+        "FMA68231",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2445",
+      "sourceId": "FMA68232",
+      "unitId": "resp:FMA68232",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2445.obj",
+        "bytes": 38917,
+        "compressedBytes": 13257,
+        "crc32": "334883c8",
+        "offset": 95183621,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68232",
+        "FMA68238",
+        "FMA68322",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2532",
+      "sourceId": "FMA68232",
+      "unitId": "resp:FMA68232",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2532.obj",
+        "bytes": 17525,
+        "compressedBytes": 6284,
+        "crc32": "3603d595",
+        "offset": 96304914,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68232",
+        "FMA68238",
+        "FMA68322",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2533",
+      "sourceId": "FMA68232",
+      "unitId": "resp:FMA68232",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2533.obj",
+        "bytes": 12149,
+        "compressedBytes": 4359,
+        "crc32": "3d07348e",
+        "offset": 96311258,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68232",
+        "FMA68238",
+        "FMA68322",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2534",
+      "sourceId": "FMA68232",
+      "unitId": "resp:FMA68232",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2534.obj",
+        "bytes": 6326,
+        "compressedBytes": 2378,
+        "crc32": "fd734405",
+        "offset": 96315677,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68232",
+        "FMA68238",
+        "FMA68322",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2446",
+      "sourceId": "FMA68233",
+      "unitId": "resp:FMA68233",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2446.obj",
+        "bytes": 44818,
+        "compressedBytes": 15255,
+        "crc32": "0e25cc83",
+        "offset": 95196938,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68229",
+        "FMA68233",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2527",
+      "sourceId": "FMA68233",
+      "unitId": "resp:FMA68233",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2527.obj",
+        "bytes": 13889,
+        "compressedBytes": 5124,
+        "crc32": "683ddb66",
+        "offset": 96284608,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68229",
+        "FMA68233",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2528",
+      "sourceId": "FMA68233",
+      "unitId": "resp:FMA68233",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2528.obj",
+        "bytes": 16762,
+        "compressedBytes": 6027,
+        "crc32": "15d582ea",
+        "offset": 96289792,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68229",
+        "FMA68233",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2529",
+      "sourceId": "FMA68233",
+      "unitId": "resp:FMA68233",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2529.obj",
+        "bytes": 9543,
+        "compressedBytes": 3414,
+        "crc32": "90720f17",
+        "offset": 96295879,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68229",
+        "FMA68233",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2530",
+      "sourceId": "FMA68233",
+      "unitId": "resp:FMA68233",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2530.obj",
+        "bytes": 8174,
+        "compressedBytes": 3086,
+        "crc32": "5869b38b",
+        "offset": 96299353,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68229",
+        "FMA68233",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ2531",
+      "sourceId": "FMA68233",
+      "unitId": "resp:FMA68233",
+      "side": "left",
+      "entityType": "árbol bronquial segmentario",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2531.obj",
+        "bytes": 6576,
+        "compressedBytes": 2355,
+        "crc32": "ffd49434",
+        "offset": 96302499,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA12224",
+        "FMA31739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA68208",
+        "FMA68229",
+        "FMA68233",
+        "FMA68238",
+        "FMA82472",
+        "FMA86140"
+      ]
+    },
+    {
+      "elementId": "FJ6595",
+      "sourceId": "FMA27368",
+      "unitId": "resp:FMA27368",
+      "side": "left",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27368"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27368",
+        "representationId": "BP29727",
+        "english": "Parenchyma of apicoposterior bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6595_BP29727_FMA27368_Parenchyma of apicoposterior bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6597",
+      "sourceId": "FMA27368",
+      "unitId": "resp:FMA27368",
+      "side": "left",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27368"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27368",
+        "representationId": "BP29727",
+        "english": "Parenchyma of apicoposterior bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6597_BP29727_FMA27368_Parenchyma of apicoposterior bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6598",
+      "sourceId": "FMA27374",
+      "unitId": "resp:FMA27374",
+      "side": "left",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27374"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27374",
+        "representationId": "BP29733",
+        "english": "Parenchyma of left anterior bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6598_BP29733_FMA27374_Parenchyma of left anterior bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6599",
+      "sourceId": "FMA27375",
+      "unitId": "resp:FMA27375",
+      "side": "left",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27375"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27375",
+        "representationId": "BP29752",
+        "english": "Parenchyma of superior lingular bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6599_BP29752_FMA27375_Parenchyma of superior lingular bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6600",
+      "sourceId": "FMA27376",
+      "unitId": "resp:FMA27376",
+      "side": "left",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27376"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27376",
+        "representationId": "BP29730",
+        "english": "Parenchyma of inferior lingular bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6600_BP29730_FMA27376_Parenchyma of inferior lingular bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6601",
+      "sourceId": "FMA27386",
+      "unitId": "resp:FMA27386",
+      "side": "left",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27386"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27386",
+        "representationId": "BP29750",
+        "english": "Parenchyma of left superior bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6601_BP29750_FMA27386_Parenchyma of left superior bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6602",
+      "sourceId": "FMA27392",
+      "unitId": "resp:FMA27392",
+      "side": "left",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27392"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27392",
+        "representationId": "BP29736",
+        "english": "Parenchyma of left anterior basal bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6602_BP29736_FMA27392_Parenchyma of left anterior basal bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6603",
+      "sourceId": "FMA27390",
+      "unitId": "resp:FMA27390",
+      "side": "left",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27390"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27390",
+        "representationId": "BP29740",
+        "english": "Parenchyma of left lateral basal bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6603_BP29740_FMA27390_Parenchyma of left lateral basal bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6596",
+      "sourceId": "FMA27394",
+      "unitId": "resp:FMA27394",
+      "side": "left",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27394"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27394",
+        "representationId": "BP29748",
+        "english": "Parenchyma of left posterior basal bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6596_BP29748_FMA27394_Parenchyma of left posterior basal bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6604",
+      "sourceId": "FMA27369",
+      "unitId": "resp:FMA27369",
+      "side": "right",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27369"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27369",
+        "representationId": "BP29747",
+        "english": "Parenchyma of right apical bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6604_BP29747_FMA27369_Parenchyma of right apical bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6606",
+      "sourceId": "FMA27371",
+      "unitId": "resp:FMA27371",
+      "side": "right",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27371"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27371",
+        "representationId": "BP29759",
+        "english": "Parenchyma of right posterior bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6606_BP29759_FMA27371_Parenchyma of right posterior bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6607",
+      "sourceId": "FMA27373",
+      "unitId": "resp:FMA27373",
+      "side": "right",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27373"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27373",
+        "representationId": "BP29754",
+        "english": "Parenchyma of right anterior bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6607_BP29754_FMA27373_Parenchyma of right anterior bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6608",
+      "sourceId": "FMA27452",
+      "unitId": "resp:FMA27452",
+      "side": "right",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27452"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27452",
+        "representationId": "BP29731",
+        "english": "Parenchyma of lateral bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6608_BP29731_FMA27452_Parenchyma of lateral bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6609",
+      "sourceId": "FMA27448",
+      "unitId": "resp:FMA27448",
+      "side": "right",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27448"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27448",
+        "representationId": "BP29735",
+        "english": "Parenchyma of medial bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6609_BP29735_FMA27448_Parenchyma of medial bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6610",
+      "sourceId": "FMA27385",
+      "unitId": "resp:FMA27385",
+      "side": "right",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27385"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27385",
+        "representationId": "BP29745",
+        "english": "Parenchyma of right superior bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6610_BP29745_FMA27385_Parenchyma of right superior bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6611",
+      "sourceId": "FMA27391",
+      "unitId": "resp:FMA27391",
+      "side": "right",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27391"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27391",
+        "representationId": "BP29753",
+        "english": "Parenchyma of right anterior basal bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6611_BP29753_FMA27391_Parenchyma of right anterior basal bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6612",
+      "sourceId": "FMA27389",
+      "unitId": "resp:FMA27389",
+      "side": "right",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27389"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27389",
+        "representationId": "BP29741",
+        "english": "Parenchyma of right lateral basal bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6612_BP29741_FMA27389_Parenchyma of right lateral basal bronchopulmonary segment.obj"
+      }
+    },
+    {
+      "elementId": "FJ6605",
+      "sourceId": "FMA27393",
+      "unitId": "resp:FMA27393",
+      "side": "right",
+      "entityType": "parénquima segmentario",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA27393"
+      ],
+      "officialMetadata": {
+        "sourceId": "FMA27393",
+        "representationId": "BP29757",
+        "english": "Parenchyma of right posterior basal bronchopulmonary segment",
+        "version": "4.3",
+        "downloadMember": "med3d_respiratory_audit/FJ6605_BP29757_FMA27393_Parenchyma of right posterior basal bronchopulmonary segment.obj"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "id": "respiratory:larynx",
+      "filename": "larynx.glb"
+    },
+    {
+      "id": "respiratory:airway",
+      "filename": "airway.glb"
+    },
+    {
+      "id": "respiratory:lungs",
+      "filename": "lungs.glb"
+    }
+  ],
+  "counts": {
+    "approvedUnits": 49,
+    "approvedMeshes": 128,
+    "discarded": 6,
+    "deferred": 13
+  }
+}

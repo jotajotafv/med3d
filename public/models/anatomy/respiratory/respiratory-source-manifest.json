@@ -1,0 +1,5929 @@
+{
+  "sourceArchive": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+  "sourceVersion": "4.0 OBJ99 + 4.3 lung parenchyma",
+  "sourceLicenseDeclarations": [
+    "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+    "https://lifesciencedb.jp/bp3d/info_en/license/index.html"
+  ],
+  "sourceZip": "research/anatomy/respiratory-originals.zip",
+  "sourceZipSha256": "bd49ee1deffc725e895a741fbd89e6a880b472c3d5ff7be950faee10d369c693",
+  "sourceLock": "research/anatomy/respiratory-source-lock.json",
+  "selectionSha256": "de5bed5f171931f7b6bb7afd256d15319a11f1e85149ba0ae654bd02a70e0880",
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "additionalRegistration": "none; native cross-version placement independently checked",
+  "files": [
+    {
+      "elementId": "FJ2441",
+      "sourceId": "FMA68227",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP9109",
+      "nativeConceptId": "FMA68227",
+      "path": "isa_BP3D_4.0_obj_99/FJ2441.obj",
+      "bytes": 70213,
+      "sha256": "33123bb230f138819c9dc2ae54edece0bc1721d2866ef89811d078ca2271e796",
+      "crc32": "acde74db",
+      "compressedBytesUpstream": 23425,
+      "anatomyId": "resp:FMA68227",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 1134,
+      "faces": 1134,
+      "sourcePositionCount": 631,
+      "vertices": 631,
+      "boundsMetres": [
+        [
+          0.0523373,
+          1.17073,
+          0.0737573
+        ],
+        [
+          0.09062220000000001,
+          1.26704,
+          0.177871
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          52.3373,
+          -177.871,
+          1170.73
+        ],
+        [
+          90.6222,
+          -73.7573,
+          1267.04
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2442",
+      "sourceId": "FMA68230",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8759",
+      "nativeConceptId": "FMA68230",
+      "path": "isa_BP3D_4.0_obj_99/FJ2442.obj",
+      "bytes": 45223,
+      "sha256": "1e9bf00b2bf8f77c29a1157c5bba72485fb0ab8010fe44dff95107ef0fd36bcd",
+      "crc32": "afc486b8",
+      "compressedBytesUpstream": 15280,
+      "anatomyId": "resp:FMA68230",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 730,
+      "faces": 730,
+      "sourcePositionCount": 409,
+      "vertices": 409,
+      "boundsMetres": [
+        [
+          0.0626008,
+          1.14587,
+          0.063472
+        ],
+        [
+          0.121243,
+          1.23113,
+          0.13053
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          62.6008,
+          -130.53,
+          1145.87
+        ],
+        [
+          121.243,
+          -63.472,
+          1231.13
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2443",
+      "sourceId": "FMA68222",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP7924",
+      "nativeConceptId": "FMA68222",
+      "path": "isa_BP3D_4.0_obj_99/FJ2443.obj",
+      "bytes": 28509,
+      "sha256": "5762558ddb8849e4b153195d82ee5a5691f84d4f2df0e7c745eff8c8489409ea",
+      "crc32": "ed9cf832",
+      "compressedBytesUpstream": 9820,
+      "anatomyId": "resp:FMA68222",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 440,
+      "faces": 440,
+      "sourcePositionCount": 270,
+      "vertices": 270,
+      "boundsMetres": [
+        [
+          0.031516,
+          1.27065,
+          0.0844788
+        ],
+        [
+          0.0702768,
+          1.29465,
+          0.13262100000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          31.516,
+          -132.621,
+          1270.65
+        ],
+        [
+          70.2768,
+          -84.4788,
+          1294.65
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2444",
+      "sourceId": "FMA68223",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8229",
+      "nativeConceptId": "FMA68223",
+      "path": "isa_BP3D_4.0_obj_99/FJ2444.obj",
+      "bytes": 35966,
+      "sha256": "856d6224036529a4a65e87c8f22ac7d33da8b68e0902d2c14ba3fa4701f91714",
+      "crc32": "890daa78",
+      "compressedBytesUpstream": 12394,
+      "anatomyId": "resp:FMA68223",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 572,
+      "faces": 572,
+      "sourcePositionCount": 332,
+      "vertices": 332,
+      "boundsMetres": [
+        [
+          0.0261942,
+          1.27182,
+          0.0820356
+        ],
+        [
+          0.0690193,
+          1.3531400000000002,
+          0.0979901
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          26.1942,
+          -97.9901,
+          1271.82
+        ],
+        [
+          69.0193,
+          -82.0356,
+          1353.14
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2445",
+      "sourceId": "FMA68232",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP9045",
+      "nativeConceptId": "FMA68232",
+      "path": "isa_BP3D_4.0_obj_99/FJ2445.obj",
+      "bytes": 38917,
+      "sha256": "6e6c5a231e65b7bef20a7e53d8502c2f6ac6130274ddd5ec1bf14ac7505d46ea",
+      "crc32": "334883c8",
+      "compressedBytesUpstream": 13257,
+      "anatomyId": "resp:FMA68232",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 626,
+      "faces": 626,
+      "sourcePositionCount": 354,
+      "vertices": 354,
+      "boundsMetres": [
+        [
+          0.0667749,
+          1.13411,
+          0.0587962
+        ],
+        [
+          0.121353,
+          1.2192100000000001,
+          0.0927563
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          66.7749,
+          -92.7563,
+          1134.11
+        ],
+        [
+          121.353,
+          -58.7962,
+          1219.21
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2446",
+      "sourceId": "FMA68233",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8584",
+      "nativeConceptId": "FMA68233",
+      "path": "isa_BP3D_4.0_obj_99/FJ2446.obj",
+      "bytes": 44818,
+      "sha256": "7512a2599ad515e6da4bee78fcf6c733bfde4051e751dc7b244b22dabd62c0cb",
+      "crc32": "0e25cc83",
+      "compressedBytesUpstream": 15255,
+      "anatomyId": "resp:FMA68233",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 722,
+      "faces": 722,
+      "sourcePositionCount": 405,
+      "vertices": 405,
+      "boundsMetres": [
+        [
+          0.0612774,
+          1.12968,
+          0.030206
+        ],
+        [
+          0.0786843,
+          1.2313399999999999,
+          0.0710844
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          61.2774,
+          -71.0844,
+          1129.68
+        ],
+        [
+          78.6843,
+          -30.206,
+          1231.34
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2447",
+      "sourceId": "FMA68225",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8694",
+      "nativeConceptId": "FMA68225",
+      "path": "isa_BP3D_4.0_obj_99/FJ2447.obj",
+      "bytes": 18282,
+      "sha256": "69755241502c6303c50d6c81407817ce8d4157082023366bc40a2424b6d9d539",
+      "crc32": "648b28d4",
+      "compressedBytesUpstream": 6521,
+      "anatomyId": "resp:FMA68225",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 284,
+      "faces": 284,
+      "sourcePositionCount": 175,
+      "vertices": 175,
+      "boundsMetres": [
+        [
+          0.062134,
+          1.2869300000000001,
+          0.054348799999999996
+        ],
+        [
+          0.0787526,
+          1.32205,
+          0.0922738
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          62.134,
+          -92.2738,
+          1286.93
+        ],
+        [
+          78.7526,
+          -54.3488,
+          1322.05
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2448",
+      "sourceId": "FMA68228",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8416",
+      "nativeConceptId": "FMA68228",
+      "path": "isa_BP3D_4.0_obj_99/FJ2448.obj",
+      "bytes": 28607,
+      "sha256": "607a717c900545ef341f9277ecbe480df4c5cffaadad78c5c4faf4453f6e7ead",
+      "crc32": "83f307fc",
+      "compressedBytesUpstream": 9895,
+      "anatomyId": "resp:FMA68228",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 444,
+      "faces": 444,
+      "sourcePositionCount": 270,
+      "vertices": 270,
+      "boundsMetres": [
+        [
+          0.0359723,
+          1.24257,
+          0.0345878
+        ],
+        [
+          0.0564458,
+          1.29414,
+          0.0713321
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          35.9723,
+          -71.3321,
+          1242.57
+        ],
+        [
+          56.4458,
+          -34.5878,
+          1294.14
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2449",
+      "sourceId": "FMA68215",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7978",
+      "nativeConceptId": "FMA68215",
+      "path": "isa_BP3D_4.0_obj_99/FJ2449.obj",
+      "bytes": 53488,
+      "sha256": "59f02bde361bda6a689041f06e62c85db982f03284ec890945afedd6a0430623",
+      "crc32": "b5afe5ed",
+      "compressedBytesUpstream": 17750,
+      "anatomyId": "resp:FMA68215",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 858,
+      "faces": 858,
+      "sourcePositionCount": 477,
+      "vertices": 477,
+      "boundsMetres": [
+        [
+          -0.111962,
+          1.18971,
+          0.0770711
+        ],
+        [
+          -0.0258977,
+          1.25357,
+          0.132721
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -111.962,
+          -132.721,
+          1189.71
+        ],
+        [
+          -25.8977,
+          -77.0711,
+          1253.57
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2450",
+      "sourceId": "FMA7396",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8386",
+      "nativeConceptId": "FMA7396",
+      "path": "isa_BP3D_4.0_obj_99/FJ2450.obj",
+      "bytes": 271606,
+      "sha256": "7c4ac571448fb3d0c3c1095874bf17a60853bf12457d842a11dd2c62c0994946",
+      "crc32": "656d1e69",
+      "compressedBytesUpstream": 81803,
+      "anatomyId": "resp:FMA7396",
+      "family": "main-bronchus",
+      "moduleId": "respiratory:airway",
+      "sourceType": "bronquio principal",
+      "triangles": 4136,
+      "faces": 4136,
+      "sourcePositionCount": 2304,
+      "vertices": 2304,
+      "boundsMetres": [
+        [
+          0.00042119600000000004,
+          1.22082,
+          0.0610014
+        ],
+        [
+          0.07234739999999999,
+          1.29671,
+          0.0933835
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          0.421196,
+          -93.3835,
+          1220.82
+        ],
+        [
+          72.3474,
+          -61.0014,
+          1296.71
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2451",
+      "sourceId": "FMA68214",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8364",
+      "nativeConceptId": "FMA68214",
+      "path": "isa_BP3D_4.0_obj_99/FJ2451.obj",
+      "bytes": 32323,
+      "sha256": "5b475f6a03ad628448180cd512a815f3c876cc04cd31df3de2956f8a75297dc0",
+      "crc32": "27359e65",
+      "compressedBytesUpstream": 10997,
+      "anatomyId": "resp:FMA68214",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 514,
+      "faces": 514,
+      "sourcePositionCount": 297,
+      "vertices": 297,
+      "boundsMetres": [
+        [
+          -0.054879199999999996,
+          1.18026,
+          0.0970311
+        ],
+        [
+          -0.034569499999999996,
+          1.2355,
+          0.157252
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -54.8792,
+          -157.252,
+          1180.26
+        ],
+        [
+          -34.5695,
+          -97.0311,
+          1235.5
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2452",
+      "sourceId": "FMA68321",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8250",
+      "nativeConceptId": "FMA68321",
+      "path": "isa_BP3D_4.0_obj_99/FJ2452.obj",
+      "bytes": 33253,
+      "sha256": "28b277d4addaef997ad321f22f812cde53bdc51667207d681688e150f6d2e216",
+      "crc32": "2c41912c",
+      "compressedBytesUpstream": 11388,
+      "anatomyId": "resp:FMA68321",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 528,
+      "faces": 528,
+      "sourcePositionCount": 303,
+      "vertices": 303,
+      "boundsMetres": [
+        [
+          -0.105754,
+          1.1999900000000001,
+          0.0541487
+        ],
+        [
+          -0.0350881,
+          1.23757,
+          0.0811298
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -105.754,
+          -81.1298,
+          1199.99
+        ],
+        [
+          -35.0881,
+          -54.1487,
+          1237.57
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2453",
+      "sourceId": "FMA68212",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7982",
+      "nativeConceptId": "FMA68212",
+      "path": "isa_BP3D_4.0_obj_99/FJ2453.obj",
+      "bytes": 24910,
+      "sha256": "f33580f6a5cf34cae999fe9e7fb0c3b823f86fc79468bed83b796933af6d0aaf",
+      "crc32": "1bd2fba6",
+      "compressedBytesUpstream": 8724,
+      "anatomyId": "resp:FMA68212",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 390,
+      "faces": 390,
+      "sourcePositionCount": 232,
+      "vertices": 232,
+      "boundsMetres": [
+        [
+          -0.0914663,
+          1.27434,
+          0.0815367
+        ],
+        [
+          -0.0291163,
+          1.2959800000000001,
+          0.100605
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -91.4663,
+          -100.605,
+          1274.34
+        ],
+        [
+          -29.1163,
+          -81.5367,
+          1295.98
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2454",
+      "sourceId": "FMA68211",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8086",
+      "nativeConceptId": "FMA68211",
+      "path": "isa_BP3D_4.0_obj_99/FJ2454.obj",
+      "bytes": 24467,
+      "sha256": "0d1fe6020737f73d91fe7fab1b7f781816804805b582af796e1cee0bd69f7cfd",
+      "crc32": "89fbc67a",
+      "compressedBytesUpstream": 8617,
+      "anatomyId": "resp:FMA68211",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 388,
+      "faces": 388,
+      "sourcePositionCount": 226,
+      "vertices": 226,
+      "boundsMetres": [
+        [
+          -0.0476551,
+          1.2808800000000002,
+          0.0772724
+        ],
+        [
+          -0.027136900000000002,
+          1.3383699999999998,
+          0.102562
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -47.6551,
+          -102.562,
+          1280.88
+        ],
+        [
+          -27.1369,
+          -77.2724,
+          1338.37
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2455",
+      "sourceId": "FMA68220",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8090",
+      "nativeConceptId": "FMA68220",
+      "path": "isa_BP3D_4.0_obj_99/FJ2455.obj",
+      "bytes": 41444,
+      "sha256": "a7b73a3360384fd2e9eef7850baf8d93cc9c60a77e0be14d33e8a18670ccb384",
+      "crc32": "e617e705",
+      "compressedBytesUpstream": 14039,
+      "anatomyId": "resp:FMA68220",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 650,
+      "faces": 650,
+      "sourcePositionCount": 379,
+      "vertices": 379,
+      "boundsMetres": [
+        [
+          -0.113667,
+          1.1446800000000001,
+          0.0616403
+        ],
+        [
+          -0.038364199999999994,
+          1.2297,
+          0.0773136
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -113.667,
+          -77.3136,
+          1144.68
+        ],
+        [
+          -38.3642,
+          -61.6403,
+          1229.7
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2456",
+      "sourceId": "FMA68218",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7932",
+      "nativeConceptId": "FMA68218",
+      "path": "isa_BP3D_4.0_obj_99/FJ2456.obj",
+      "bytes": 11587,
+      "sha256": "9618558be1a7924aec93e7a2431c222fbe723112d3d7b01b80ae002f628ea679",
+      "crc32": "5a63d983",
+      "compressedBytesUpstream": 4244,
+      "anatomyId": "resp:FMA68218",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 170,
+      "faces": 170,
+      "sourcePositionCount": 115,
+      "vertices": 115,
+      "boundsMetres": [
+        [
+          -0.038078,
+          1.2124400000000002,
+          0.07281069999999999
+        ],
+        [
+          -0.00874452,
+          1.24567,
+          0.09782080000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -38.078,
+          -97.8208,
+          1212.44
+        ],
+        [
+          -8.74452,
+          -72.8107,
+          1245.67
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2457",
+      "sourceId": "FMA68221",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7919",
+      "nativeConceptId": "FMA68221",
+      "path": "isa_BP3D_4.0_obj_99/FJ2457.obj",
+      "bytes": 41052,
+      "sha256": "e8cf29571a15240de5213324d5e8b581040e8b34df2dda533c69509614e0b485",
+      "crc32": "c6b0a01a",
+      "compressedBytesUpstream": 13918,
+      "anatomyId": "resp:FMA68221",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 654,
+      "faces": 654,
+      "sourcePositionCount": 373,
+      "vertices": 373,
+      "boundsMetres": [
+        [
+          -0.0573567,
+          1.1374600000000001,
+          0.0406226
+        ],
+        [
+          -0.0370189,
+          1.2293900000000002,
+          0.07498529999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -57.3567,
+          -74.9853,
+          1137.46
+        ],
+        [
+          -37.0189,
+          -40.6226,
+          1229.39
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2458",
+      "sourceId": "FMA68213",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8644",
+      "nativeConceptId": "FMA68213",
+      "path": "isa_BP3D_4.0_obj_99/FJ2458.obj",
+      "bytes": 31978,
+      "sha256": "a3ce34712a330f1f68a69844dd4ab3b6c5323b5b181ee12a26bcde37752c39da",
+      "crc32": "f036555a",
+      "compressedBytesUpstream": 11006,
+      "anatomyId": "resp:FMA68213",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 510,
+      "faces": 510,
+      "sourcePositionCount": 291,
+      "vertices": 291,
+      "boundsMetres": [
+        [
+          -0.0720022,
+          1.2750000000000001,
+          0.045291200000000004
+        ],
+        [
+          -0.028763000000000004,
+          1.32349,
+          0.08716750000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -72.0022,
+          -87.1675,
+          1275.0
+        ],
+        [
+          -28.763,
+          -45.2912,
+          1323.49
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2459",
+      "sourceId": "FMA68216",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7994",
+      "nativeConceptId": "FMA68216",
+      "path": "isa_BP3D_4.0_obj_99/FJ2459.obj",
+      "bytes": 33798,
+      "sha256": "e7a6e272ac39100057ce028da1e92ad9435f6c25a132f00eff7747f3b70e0895",
+      "crc32": "7310e23f",
+      "compressedBytesUpstream": 11571,
+      "anatomyId": "resp:FMA68216",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 516,
+      "faces": 516,
+      "sourcePositionCount": 318,
+      "vertices": 318,
+      "boundsMetres": [
+        [
+          -0.08776479999999999,
+          1.23838,
+          0.0241718
+        ],
+        [
+          -0.0212625,
+          1.26003,
+          0.0814858
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -87.7648,
+          -81.4858,
+          1238.38
+        ],
+        [
+          -21.2625,
+          -24.1718,
+          1260.03
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2460",
+      "sourceId": "FMA68223",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8229",
+      "nativeConceptId": "FMA68223",
+      "path": "isa_BP3D_4.0_obj_99/FJ2460.obj",
+      "bytes": 14635,
+      "sha256": "d25137e40619d56cb76954ce0ccaf25f6d4465ae60765376f5d8848f6a6c8722",
+      "crc32": "a26b13b7",
+      "compressedBytesUpstream": 5296,
+      "anatomyId": "resp:FMA68223",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 214,
+      "faces": 214,
+      "sourcePositionCount": 147,
+      "vertices": 147,
+      "boundsMetres": [
+        [
+          0.0469955,
+          1.30526,
+          0.0669192
+        ],
+        [
+          0.06537659999999999,
+          1.3432300000000001,
+          0.0938022
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          46.9955,
+          -93.8022,
+          1305.26
+        ],
+        [
+          65.3766,
+          -66.9192,
+          1343.23
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2461",
+      "sourceId": "FMA68223",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8229",
+      "nativeConceptId": "FMA68223",
+      "path": "isa_BP3D_4.0_obj_99/FJ2461.obj",
+      "bytes": 9641,
+      "sha256": "4d0b21c48c199c6abd066ecf4b8065d3518bd66f8e041276e55cb09634691daf",
+      "crc32": "e9a564bc",
+      "compressedBytesUpstream": 3603,
+      "anatomyId": "resp:FMA68223",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 136,
+      "faces": 136,
+      "sourcePositionCount": 99,
+      "vertices": 99,
+      "boundsMetres": [
+        [
+          0.0231878,
+          1.32602,
+          0.0798216
+        ],
+        [
+          0.052573,
+          1.34444,
+          0.0942481
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          23.1878,
+          -94.2481,
+          1326.02
+        ],
+        [
+          52.573,
+          -79.8216,
+          1344.44
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2462",
+      "sourceId": "FMA68223",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8229",
+      "nativeConceptId": "FMA68223",
+      "path": "isa_BP3D_4.0_obj_99/FJ2462.obj",
+      "bytes": 9883,
+      "sha256": "1e1d71a49a966d61b8c1283e443ee4830e42b9d81e2aba211521532375c87f54",
+      "crc32": "b0c89799",
+      "compressedBytesUpstream": 3590,
+      "anatomyId": "resp:FMA68223",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 126,
+      "faces": 126,
+      "sourcePositionCount": 106,
+      "vertices": 106,
+      "boundsMetres": [
+        [
+          0.0578501,
+          1.32383,
+          0.07422110000000001
+        ],
+        [
+          0.0648315,
+          1.33613,
+          0.0862335
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          57.8501,
+          -86.2335,
+          1323.83
+        ],
+        [
+          64.8315,
+          -74.2211,
+          1336.13
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2463",
+      "sourceId": "FMA68223",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8229",
+      "nativeConceptId": "FMA68223",
+      "path": "isa_BP3D_4.0_obj_99/FJ2463.obj",
+      "bytes": 8982,
+      "sha256": "59855819cb634d688980d726341777457851f8aea561bcec9ef8d5eb29b824dd",
+      "crc32": "2c5f1556",
+      "compressedBytesUpstream": 3298,
+      "anatomyId": "resp:FMA68223",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 114,
+      "faces": 114,
+      "sourcePositionCount": 97,
+      "vertices": 97,
+      "boundsMetres": [
+        [
+          0.036603000000000004,
+          1.34268,
+          0.082886
+        ],
+        [
+          0.0401253,
+          1.35059,
+          0.09403260000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          36.603,
+          -94.0326,
+          1342.68
+        ],
+        [
+          40.1253,
+          -82.886,
+          1350.59
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2464",
+      "sourceId": "FMA68223",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8229",
+      "nativeConceptId": "FMA68223",
+      "path": "isa_BP3D_4.0_obj_99/FJ2464.obj",
+      "bytes": 6247,
+      "sha256": "71d0f3ab8572a8f6ce16e2174ae225bd372f11e85551b248a3307e519df9389c",
+      "crc32": "80aa93ee",
+      "compressedBytesUpstream": 2345,
+      "anatomyId": "resp:FMA68223",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 64,
+      "faces": 64,
+      "sourcePositionCount": 70,
+      "vertices": 70,
+      "boundsMetres": [
+        [
+          0.0511216,
+          1.33751,
+          0.06635970000000001
+        ],
+        [
+          0.0545731,
+          1.34154,
+          0.0743475
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          51.1216,
+          -74.3475,
+          1337.51
+        ],
+        [
+          54.5731,
+          -66.3597,
+          1341.54
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2465",
+      "sourceId": "FMA68225",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8694",
+      "nativeConceptId": "FMA68225",
+      "path": "isa_BP3D_4.0_obj_99/FJ2465.obj",
+      "bytes": 7550,
+      "sha256": "3291920d5a3d74747787ab887f2ee6488947c818d699144b8b31fbc29dc67ce0",
+      "crc32": "3e440b73",
+      "compressedBytesUpstream": 2792,
+      "anatomyId": "resp:FMA68225",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 92,
+      "faces": 92,
+      "sourcePositionCount": 81,
+      "vertices": 81,
+      "boundsMetres": [
+        [
+          0.07038219999999999,
+          1.29031,
+          0.0633542
+        ],
+        [
+          0.0840565,
+          1.3019,
+          0.0823916
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          70.3822,
+          -82.3916,
+          1290.31
+        ],
+        [
+          84.0565,
+          -63.3542,
+          1301.9
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2466",
+      "sourceId": "FMA68225",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8694",
+      "nativeConceptId": "FMA68225",
+      "path": "isa_BP3D_4.0_obj_99/FJ2466.obj",
+      "bytes": 6104,
+      "sha256": "0185a370daf6fd3fbfd735750fe381c0add29c872cda555d89db3eb618c97a0c",
+      "crc32": "a810c8cf",
+      "compressedBytesUpstream": 2290,
+      "anatomyId": "resp:FMA68225",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 64,
+      "faces": 64,
+      "sourcePositionCount": 68,
+      "vertices": 68,
+      "boundsMetres": [
+        [
+          0.07446680000000001,
+          1.3054700000000001,
+          0.0560032
+        ],
+        [
+          0.0833233,
+          1.3107,
+          0.0725454
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          74.4668,
+          -72.5454,
+          1305.47
+        ],
+        [
+          83.3233,
+          -56.0032,
+          1310.7
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2467",
+      "sourceId": "FMA68222",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP7924",
+      "nativeConceptId": "FMA68222",
+      "path": "isa_BP3D_4.0_obj_99/FJ2467.obj",
+      "bytes": 27153,
+      "sha256": "88b367329ff1f1fd1845547aba1e3d978c628b125b1a935ee353e001dc7feb95",
+      "crc32": "b3243bb4",
+      "compressedBytesUpstream": 9330,
+      "anatomyId": "resp:FMA68222",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 418,
+      "faces": 418,
+      "sourcePositionCount": 258,
+      "vertices": 258,
+      "boundsMetres": [
+        [
+          0.0557257,
+          1.2459200000000001,
+          0.0908905
+        ],
+        [
+          0.069427,
+          1.27896,
+          0.16037
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          55.7257,
+          -160.37,
+          1245.92
+        ],
+        [
+          69.427,
+          -90.8905,
+          1278.96
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2468",
+      "sourceId": "FMA68222",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP7924",
+      "nativeConceptId": "FMA68222",
+      "path": "isa_BP3D_4.0_obj_99/FJ2468.obj",
+      "bytes": 15200,
+      "sha256": "d177dc0bf89f719b76543428dc453a731a4594a70c992a2cef77fe5e7f8005b2",
+      "crc32": "6e731dc2",
+      "compressedBytesUpstream": 5272,
+      "anatomyId": "resp:FMA68222",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 208,
+      "faces": 208,
+      "sourcePositionCount": 161,
+      "vertices": 161,
+      "boundsMetres": [
+        [
+          0.0627172,
+          1.27308,
+          0.0908886
+        ],
+        [
+          0.0877291,
+          1.28686,
+          0.12062300000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          62.7172,
+          -120.623,
+          1273.08
+        ],
+        [
+          87.7291,
+          -90.8886,
+          1286.86
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2469",
+      "sourceId": "FMA68222",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP7924",
+      "nativeConceptId": "FMA68222",
+      "path": "isa_BP3D_4.0_obj_99/FJ2469.obj",
+      "bytes": 7820,
+      "sha256": "b060a3b1f9b8ba09ca26cb08c6eb30711bfc19c7eff41d836fe4a51de6c9ec54",
+      "crc32": "a7e87e96",
+      "compressedBytesUpstream": 2791,
+      "anatomyId": "resp:FMA68222",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 84,
+      "faces": 84,
+      "sourcePositionCount": 89,
+      "vertices": 89,
+      "boundsMetres": [
+        [
+          0.0765907,
+          1.26205,
+          0.110821
+        ],
+        [
+          0.0922604,
+          1.2789400000000002,
+          0.12480800000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          76.5907,
+          -124.808,
+          1262.05
+        ],
+        [
+          92.2604,
+          -110.821,
+          1278.94
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2470",
+      "sourceId": "FMA68221",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7919",
+      "nativeConceptId": "FMA68221",
+      "path": "isa_BP3D_4.0_obj_99/FJ2470.obj",
+      "bytes": 53665,
+      "sha256": "972a7ff1592d3af358d6f7017cc45d9ef0bc9594a36566b89247e014a6a79635",
+      "crc32": "5f6f8168",
+      "compressedBytesUpstream": 17595,
+      "anatomyId": "resp:FMA68221",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 846,
+      "faces": 846,
+      "sourcePositionCount": 484,
+      "vertices": 484,
+      "boundsMetres": [
+        [
+          -0.050078899999999996,
+          1.17102,
+          0.0411106
+        ],
+        [
+          -0.0341872,
+          1.19659,
+          0.0612271
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -50.0789,
+          -61.2271,
+          1171.02
+        ],
+        [
+          -34.1872,
+          -41.1106,
+          1196.59
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2471",
+      "sourceId": "FMA68222",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP7924",
+      "nativeConceptId": "FMA68222",
+      "path": "isa_BP3D_4.0_obj_99/FJ2471.obj",
+      "bytes": 7979,
+      "sha256": "67d58b429e4f1fd56a4d77535424cb2a92a6b39296b60b55fd6bef27e25273bd",
+      "crc32": "a495342b",
+      "compressedBytesUpstream": 2953,
+      "anatomyId": "resp:FMA68222",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 108,
+      "faces": 108,
+      "sourcePositionCount": 82,
+      "vertices": 82,
+      "boundsMetres": [
+        [
+          0.0801588,
+          1.27913,
+          0.116573
+        ],
+        [
+          0.0853453,
+          1.28259,
+          0.127303
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          80.1588,
+          -127.303,
+          1279.13
+        ],
+        [
+          85.3453,
+          -116.573,
+          1282.59
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2472",
+      "sourceId": "FMA68222",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP7924",
+      "nativeConceptId": "FMA68222",
+      "path": "isa_BP3D_4.0_obj_99/FJ2472.obj",
+      "bytes": 9292,
+      "sha256": "228829195b9f660b3bb0647fd7120f29da7798f39ac5e12660e1276b2fe990df",
+      "crc32": "e7151451",
+      "compressedBytesUpstream": 3327,
+      "anatomyId": "resp:FMA68222",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 116,
+      "faces": 116,
+      "sourcePositionCount": 101,
+      "vertices": 101,
+      "boundsMetres": [
+        [
+          0.0494116,
+          1.2838900000000002,
+          0.119853
+        ],
+        [
+          0.055332099999999995,
+          1.29193,
+          0.131355
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          49.4116,
+          -131.355,
+          1283.89
+        ],
+        [
+          55.3321,
+          -119.853,
+          1291.93
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2473",
+      "sourceId": "FMA68222",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP7924",
+      "nativeConceptId": "FMA68222",
+      "path": "isa_BP3D_4.0_obj_99/FJ2473.obj",
+      "bytes": 10229,
+      "sha256": "7deb3136fa167bf70077da2931261e60b21889b352a0d6f5da9af016d25f0fb3",
+      "crc32": "853e03a9",
+      "compressedBytesUpstream": 3597,
+      "anatomyId": "resp:FMA68222",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 116,
+      "faces": 116,
+      "sourcePositionCount": 116,
+      "vertices": 116,
+      "boundsMetres": [
+        [
+          0.0428514,
+          1.26489,
+          0.128486
+        ],
+        [
+          0.0611323,
+          1.27925,
+          0.144103
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          42.8514,
+          -144.103,
+          1264.89
+        ],
+        [
+          61.1323,
+          -128.486,
+          1279.25
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2474",
+      "sourceId": "FMA68222",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP7924",
+      "nativeConceptId": "FMA68222",
+      "path": "isa_BP3D_4.0_obj_99/FJ2474.obj",
+      "bytes": 10854,
+      "sha256": "4b84683d1a1cb4a2fd38f82bba550bb8b07a05d7bab9754299033556b9f85c29",
+      "crc32": "dc2690b4",
+      "compressedBytesUpstream": 3848,
+      "anatomyId": "resp:FMA68222",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 136,
+      "faces": 136,
+      "sourcePositionCount": 119,
+      "vertices": 119,
+      "boundsMetres": [
+        [
+          0.0586281,
+          1.2786,
+          0.109764
+        ],
+        [
+          0.07145090000000001,
+          1.2874700000000001,
+          0.134781
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          58.6281,
+          -134.781,
+          1278.6
+        ],
+        [
+          71.4509,
+          -109.764,
+          1287.47
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2475",
+      "sourceId": "FMA68227",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP9109",
+      "nativeConceptId": "FMA68227",
+      "path": "isa_BP3D_4.0_obj_99/FJ2475.obj",
+      "bytes": 13699,
+      "sha256": "157e0253e53bb5e7110835297ecba635ceeb3d1b554c00fd114a2f97972d2d6e",
+      "crc32": "bd8d3c56",
+      "compressedBytesUpstream": 4965,
+      "anatomyId": "resp:FMA68227",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 214,
+      "faces": 214,
+      "sourcePositionCount": 133,
+      "vertices": 133,
+      "boundsMetres": [
+        [
+          0.0814221,
+          1.18998,
+          0.118927
+        ],
+        [
+          0.10439400000000001,
+          1.2128299999999999,
+          0.15347
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          81.4221,
+          -153.47,
+          1189.98
+        ],
+        [
+          104.394,
+          -118.927,
+          1212.83
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2476",
+      "sourceId": "FMA68226",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8806",
+      "nativeConceptId": "FMA68226",
+      "path": "isa_BP3D_4.0_obj_99/FJ2476.obj",
+      "bytes": 10226,
+      "sha256": "093444732d0ded4df52b20ae1f5b59eee696fd19b26216ac064a9eb8fe06b9d1",
+      "crc32": "cf4b891a",
+      "compressedBytesUpstream": 3749,
+      "anatomyId": "resp:FMA68226",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 136,
+      "faces": 136,
+      "sourcePositionCount": 108,
+      "vertices": 108,
+      "boundsMetres": [
+        [
+          0.0859633,
+          1.24433,
+          0.07992260000000001
+        ],
+        [
+          0.108945,
+          1.25703,
+          0.0993353
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          85.9633,
+          -99.3353,
+          1244.33
+        ],
+        [
+          108.945,
+          -79.9226,
+          1257.03
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2477",
+      "sourceId": "FMA68226",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8806",
+      "nativeConceptId": "FMA68226",
+      "path": "isa_BP3D_4.0_obj_99/FJ2477.obj",
+      "bytes": 7579,
+      "sha256": "9798fe281f7c3275fcfae1a9437c3a6842dc9463bfd4db7b4773e73081d676c5",
+      "crc32": "4ef9dbb2",
+      "compressedBytesUpstream": 2646,
+      "anatomyId": "resp:FMA68226",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 74,
+      "faces": 74,
+      "sourcePositionCount": 89,
+      "vertices": 89,
+      "boundsMetres": [
+        [
+          0.103303,
+          1.22712,
+          0.109811
+        ],
+        [
+          0.11336600000000001,
+          1.23277,
+          0.1171
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          103.303,
+          -117.1,
+          1227.12
+        ],
+        [
+          113.366,
+          -109.811,
+          1232.77
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2478",
+      "sourceId": "FMA68226",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8806",
+      "nativeConceptId": "FMA68226",
+      "path": "isa_BP3D_4.0_obj_99/FJ2478.obj",
+      "bytes": 7824,
+      "sha256": "3d4ead8d959f7a39607ae6e5c808b103ba8911985f0bfa967316331d199d8311",
+      "crc32": "6a500039",
+      "compressedBytesUpstream": 2824,
+      "anatomyId": "resp:FMA68226",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 88,
+      "faces": 88,
+      "sourcePositionCount": 87,
+      "vertices": 87,
+      "boundsMetres": [
+        [
+          0.102152,
+          1.24532,
+          0.0807618
+        ],
+        [
+          0.111562,
+          1.2522,
+          0.088316
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          102.152,
+          -88.316,
+          1245.32
+        ],
+        [
+          111.562,
+          -80.7618,
+          1252.2
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2479",
+      "sourceId": "FMA68228",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8416",
+      "nativeConceptId": "FMA68228",
+      "path": "isa_BP3D_4.0_obj_99/FJ2479.obj",
+      "bytes": 13556,
+      "sha256": "3830cf13d55ef96f8e9fd91a52c48831849814b4a3bb02a74d72772531757dfc",
+      "crc32": "ed4017e3",
+      "compressedBytesUpstream": 4928,
+      "anatomyId": "resp:FMA68228",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 208,
+      "faces": 208,
+      "sourcePositionCount": 133,
+      "vertices": 133,
+      "boundsMetres": [
+        [
+          0.0520146,
+          1.2472400000000001,
+          0.033660800000000005
+        ],
+        [
+          0.0809107,
+          1.26512,
+          0.0577476
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          52.0146,
+          -57.7476,
+          1247.24
+        ],
+        [
+          80.9107,
+          -33.6608,
+          1265.12
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2480",
+      "sourceId": "FMA68228",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8416",
+      "nativeConceptId": "FMA68228",
+      "path": "isa_BP3D_4.0_obj_99/FJ2480.obj",
+      "bytes": 8652,
+      "sha256": "5335cf43cc352a0c00f849c7c41580b2d9f19eefc82533cd7d0db2517c849098",
+      "crc32": "12471415",
+      "compressedBytesUpstream": 3147,
+      "anatomyId": "resp:FMA68228",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 108,
+      "faces": 108,
+      "sourcePositionCount": 94,
+      "vertices": 94,
+      "boundsMetres": [
+        [
+          0.050426000000000006,
+          1.26752,
+          0.037219
+        ],
+        [
+          0.071429,
+          1.2831,
+          0.04162830000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          50.426,
+          -41.6283,
+          1267.52
+        ],
+        [
+          71.429,
+          -37.219,
+          1283.1
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2481",
+      "sourceId": "FMA68221",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7919",
+      "nativeConceptId": "FMA68221",
+      "path": "isa_BP3D_4.0_obj_99/FJ2481.obj",
+      "bytes": 26001,
+      "sha256": "d586ab09096adf98389c3234dc598eeb125fffac3a42b8413a09ec46cac7a477",
+      "crc32": "280811a3",
+      "compressedBytesUpstream": 8476,
+      "anatomyId": "resp:FMA68221",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 344,
+      "faces": 344,
+      "sourcePositionCount": 273,
+      "vertices": 273,
+      "boundsMetres": [
+        [
+          -0.0511637,
+          1.13571,
+          0.0338716
+        ],
+        [
+          -0.043775100000000004,
+          1.14558,
+          0.0452308
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -51.1637,
+          -45.2308,
+          1135.71
+        ],
+        [
+          -43.7751,
+          -33.8716,
+          1145.58
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2482",
+      "sourceId": "FMA68228",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8416",
+      "nativeConceptId": "FMA68228",
+      "path": "isa_BP3D_4.0_obj_99/FJ2482.obj",
+      "bytes": 8138,
+      "sha256": "6c5fa660f85db4a20327f1007e9ec448b86cf846a6ed92a95281eb5f1e4aba26",
+      "crc32": "ac32d5e0",
+      "compressedBytesUpstream": 3024,
+      "anatomyId": "resp:FMA68228",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 104,
+      "faces": 104,
+      "sourcePositionCount": 87,
+      "vertices": 87,
+      "boundsMetres": [
+        [
+          0.06899620000000001,
+          1.24093,
+          0.0362637
+        ],
+        [
+          0.0909075,
+          1.25474,
+          0.0494554
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          68.9962,
+          -49.4554,
+          1240.93
+        ],
+        [
+          90.9075,
+          -36.2637,
+          1254.74
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2483",
+      "sourceId": "FMA68228",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8416",
+      "nativeConceptId": "FMA68228",
+      "path": "isa_BP3D_4.0_obj_99/FJ2483.obj",
+      "bytes": 7645,
+      "sha256": "7df5738548239bdc4a24c483879ff27ea6b4327ffb1e42d4cd0034615f84a8e3",
+      "crc32": "9efcbe30",
+      "compressedBytesUpstream": 2837,
+      "anatomyId": "resp:FMA68228",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 92,
+      "faces": 92,
+      "sourcePositionCount": 83,
+      "vertices": 83,
+      "boundsMetres": [
+        [
+          0.051000000000000004,
+          1.22957,
+          0.049806600000000006
+        ],
+        [
+          0.06567310000000001,
+          1.24325,
+          0.0540426
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          51.0,
+          -54.0426,
+          1229.57
+        ],
+        [
+          65.6731,
+          -49.8066,
+          1243.25
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2484",
+      "sourceId": "FMA68228",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8416",
+      "nativeConceptId": "FMA68228",
+      "path": "isa_BP3D_4.0_obj_99/FJ2484.obj",
+      "bytes": 9355,
+      "sha256": "ba62da27a57b0d9d52886102053c36287d18a4ffd3d73fa52282503c78369ed1",
+      "crc32": "ed121c9b",
+      "compressedBytesUpstream": 3507,
+      "anatomyId": "resp:FMA68228",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 128,
+      "faces": 128,
+      "sourcePositionCount": 97,
+      "vertices": 97,
+      "boundsMetres": [
+        [
+          0.0482408,
+          1.22759,
+          0.0455821
+        ],
+        [
+          0.0552609,
+          1.2508800000000002,
+          0.059318300000000004
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          48.2408,
+          -59.3183,
+          1227.59
+        ],
+        [
+          55.2609,
+          -45.5821,
+          1250.88
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2485",
+      "sourceId": "FMA68228",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8416",
+      "nativeConceptId": "FMA68228",
+      "path": "isa_BP3D_4.0_obj_99/FJ2485.obj",
+      "bytes": 6455,
+      "sha256": "312ff368cf3cccc5aab93a6b86dd6da01e13081230e185e8b08cb08a603d9466",
+      "crc32": "5aa009be",
+      "compressedBytesUpstream": 2357,
+      "anatomyId": "resp:FMA68228",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 60,
+      "faces": 60,
+      "sourcePositionCount": 75,
+      "vertices": 75,
+      "boundsMetres": [
+        [
+          0.047736600000000004,
+          1.27836,
+          0.0354604
+        ],
+        [
+          0.055052000000000004,
+          1.2912000000000001,
+          0.0385209
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          47.7366,
+          -38.5209,
+          1278.36
+        ],
+        [
+          55.052,
+          -35.4604,
+          1291.2
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2486",
+      "sourceId": "FMA68221",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7919",
+      "nativeConceptId": "FMA68221",
+      "path": "isa_BP3D_4.0_obj_99/FJ2486.obj",
+      "bytes": 16874,
+      "sha256": "040fa459564e5d96aae851e57a17d574c1e75690eb5fc6d8de652dec5ff0c67b",
+      "crc32": "3fe8ffd3",
+      "compressedBytesUpstream": 5850,
+      "anatomyId": "resp:FMA68221",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 248,
+      "faces": 248,
+      "sourcePositionCount": 167,
+      "vertices": 167,
+      "boundsMetres": [
+        [
+          -0.0435387,
+          1.16931,
+          0.037181399999999996
+        ],
+        [
+          -0.0414173,
+          1.18024,
+          0.050664
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -43.5387,
+          -50.664,
+          1169.31
+        ],
+        [
+          -41.4173,
+          -37.1814,
+          1180.24
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2487",
+      "sourceId": "FMA68221",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7919",
+      "nativeConceptId": "FMA68221",
+      "path": "isa_BP3D_4.0_obj_99/FJ2487.obj",
+      "bytes": 92179,
+      "sha256": "add56320754ae7c0bfc21d3ff390cc68826c8e579c8eeeb20962e3ddd8948a71",
+      "crc32": "7491b2be",
+      "compressedBytesUpstream": 29310,
+      "anatomyId": "resp:FMA68221",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 1448,
+      "faces": 1448,
+      "sourcePositionCount": 830,
+      "vertices": 830,
+      "boundsMetres": [
+        [
+          -0.08329049999999999,
+          1.15074,
+          0.024457
+        ],
+        [
+          -0.0523029,
+          1.1746500000000002,
+          0.0545187
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -83.2905,
+          -54.5187,
+          1150.74
+        ],
+        [
+          -52.3029,
+          -24.457,
+          1174.65
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2488",
+      "sourceId": "FMA68218",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7932",
+      "nativeConceptId": "FMA68218",
+      "path": "isa_BP3D_4.0_obj_99/FJ2488.obj",
+      "bytes": 49535,
+      "sha256": "7bf1a524bd107caf965ed7a8487701b536f36cad71974a161e2c19f402fbfd97",
+      "crc32": "705394be",
+      "compressedBytesUpstream": 16115,
+      "anatomyId": "resp:FMA68218",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 732,
+      "faces": 732,
+      "sourcePositionCount": 477,
+      "vertices": 477,
+      "boundsMetres": [
+        [
+          -0.0240682,
+          1.1981700000000002,
+          0.0864079
+        ],
+        [
+          -0.0109956,
+          1.2281600000000001,
+          0.0989125
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -24.0682,
+          -98.9125,
+          1198.17
+        ],
+        [
+          -10.9956,
+          -86.4079,
+          1228.16
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2489",
+      "sourceId": "FMA68221",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7919",
+      "nativeConceptId": "FMA68221",
+      "path": "isa_BP3D_4.0_obj_99/FJ2489.obj",
+      "bytes": 40296,
+      "sha256": "8a2869fee37d0aa7d3f3b476f825bd5695efae9bda96f39e145e7e07ef35fac3",
+      "crc32": "12864b6a",
+      "compressedBytesUpstream": 13290,
+      "anatomyId": "resp:FMA68221",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 618,
+      "faces": 618,
+      "sourcePositionCount": 374,
+      "vertices": 374,
+      "boundsMetres": [
+        [
+          -0.072363,
+          1.1451,
+          0.027169000000000002
+        ],
+        [
+          -0.059937800000000006,
+          1.16305,
+          0.0442966
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -72.363,
+          -44.2966,
+          1145.1
+        ],
+        [
+          -59.9378,
+          -27.169,
+          1163.05
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2490",
+      "sourceId": "FMA68220",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8090",
+      "nativeConceptId": "FMA68220",
+      "path": "isa_BP3D_4.0_obj_99/FJ2490.obj",
+      "bytes": 37021,
+      "sha256": "acbdd4c2657ede0393dc77449cab92cdd1fc97514c4e8cd63b23748d2b50d460",
+      "crc32": "dfb00d3f",
+      "compressedBytesUpstream": 12299,
+      "anatomyId": "resp:FMA68220",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 566,
+      "faces": 566,
+      "sourcePositionCount": 348,
+      "vertices": 348,
+      "boundsMetres": [
+        [
+          -0.10207,
+          1.14187,
+          0.0615119
+        ],
+        [
+          -0.0958706,
+          1.15979,
+          0.072595
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -102.07,
+          -72.595,
+          1141.87
+        ],
+        [
+          -95.8706,
+          -61.5119,
+          1159.79
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2491",
+      "sourceId": "FMA68220",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8090",
+      "nativeConceptId": "FMA68220",
+      "path": "isa_BP3D_4.0_obj_99/FJ2491.obj",
+      "bytes": 92646,
+      "sha256": "e2f93d3cfedd5e452d45f3a7c5b0b3c3144b359f262e5b1e8cb16a7cbcff5e52",
+      "crc32": "61167354",
+      "compressedBytesUpstream": 29245,
+      "anatomyId": "resp:FMA68220",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 1440,
+      "faces": 1440,
+      "sourcePositionCount": 839,
+      "vertices": 839,
+      "boundsMetres": [
+        [
+          -0.10237900000000001,
+          1.1833900000000002,
+          0.059724200000000005
+        ],
+        [
+          -0.0658334,
+          1.19322,
+          0.0679031
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -102.379,
+          -67.9031,
+          1183.39
+        ],
+        [
+          -65.8334,
+          -59.7242,
+          1193.22
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2492",
+      "sourceId": "FMA68220",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8090",
+      "nativeConceptId": "FMA68220",
+      "path": "isa_BP3D_4.0_obj_99/FJ2492.obj",
+      "bytes": 19869,
+      "sha256": "0bd70830d691447cda85821a608d467606a8a0283cd2e26a9b7589e5d98495c2",
+      "crc32": "af0e232a",
+      "compressedBytesUpstream": 6659,
+      "anatomyId": "resp:FMA68220",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 272,
+      "faces": 272,
+      "sourcePositionCount": 206,
+      "vertices": 206,
+      "boundsMetres": [
+        [
+          -0.0982257,
+          1.17946,
+          0.06336220000000001
+        ],
+        [
+          -0.0874266,
+          1.18658,
+          0.0716008
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -98.2257,
+          -71.6008,
+          1179.46
+        ],
+        [
+          -87.4266,
+          -63.3622,
+          1186.58
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2493",
+      "sourceId": "FMA68321",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8250",
+      "nativeConceptId": "FMA68321",
+      "path": "isa_BP3D_4.0_obj_99/FJ2493.obj",
+      "bytes": 93222,
+      "sha256": "4147ba8fbd0d5ceb70986415529640f4e2b9d24eabba8cdb5d04ccc9dde28479",
+      "crc32": "84ccb91f",
+      "compressedBytesUpstream": 29574,
+      "anatomyId": "resp:FMA68321",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 1428,
+      "faces": 1428,
+      "sourcePositionCount": 860,
+      "vertices": 860,
+      "boundsMetres": [
+        [
+          -0.11654,
+          1.1871600000000002,
+          0.0710884
+        ],
+        [
+          -0.07887350000000001,
+          1.2064000000000001,
+          0.08905710000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -116.54,
+          -89.0571,
+          1187.16
+        ],
+        [
+          -78.8735,
+          -71.0884,
+          1206.4
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2494",
+      "sourceId": "FMA68321",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8250",
+      "nativeConceptId": "FMA68321",
+      "path": "isa_BP3D_4.0_obj_99/FJ2494.obj",
+      "bytes": 21163,
+      "sha256": "d9aa0ffe1e84e107c301afe37b7e9215f18f91263dab4457ec6fca6f08153dd6",
+      "crc32": "6c76ad36",
+      "compressedBytesUpstream": 7093,
+      "anatomyId": "resp:FMA68321",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 304,
+      "faces": 304,
+      "sourcePositionCount": 211,
+      "vertices": 211,
+      "boundsMetres": [
+        [
+          -0.110116,
+          1.18045,
+          0.08226649999999999
+        ],
+        [
+          -0.104916,
+          1.19235,
+          0.0949009
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -110.116,
+          -94.9009,
+          1180.45
+        ],
+        [
+          -104.916,
+          -82.2665,
+          1192.35
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2495",
+      "sourceId": "FMA68216",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7994",
+      "nativeConceptId": "FMA68216",
+      "path": "isa_BP3D_4.0_obj_99/FJ2495.obj",
+      "bytes": 56785,
+      "sha256": "f8c8b9b64fdafce2385f78ce5819763a9da937524875f2f5a36e3d0af29ed64f",
+      "crc32": "972917f7",
+      "compressedBytesUpstream": 18296,
+      "anatomyId": "resp:FMA68216",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 866,
+      "faces": 866,
+      "sourcePositionCount": 527,
+      "vertices": 527,
+      "boundsMetres": [
+        [
+          -0.0456431,
+          1.2618399999999999,
+          0.0395697
+        ],
+        [
+          -0.0308756,
+          1.28177,
+          0.0454711
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -45.6431,
+          -45.4711,
+          1261.84
+        ],
+        [
+          -30.8756,
+          -39.5697,
+          1281.77
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2496",
+      "sourceId": "FMA68216",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7994",
+      "nativeConceptId": "FMA68216",
+      "path": "isa_BP3D_4.0_obj_99/FJ2496.obj",
+      "bytes": 174526,
+      "sha256": "fa0fb2f796560c290ca9658b65261bff5f6399012fe6114bebe9432a1dea027d",
+      "crc32": "977aa6af",
+      "compressedBytesUpstream": 54229,
+      "anatomyId": "resp:FMA68216",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 2752,
+      "faces": 2752,
+      "sourcePositionCount": 1482,
+      "vertices": 1482,
+      "boundsMetres": [
+        [
+          -0.0614088,
+          1.24796,
+          0.0328064
+        ],
+        [
+          -0.0385486,
+          1.2931700000000002,
+          0.062679
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -61.4088,
+          -62.679,
+          1247.96
+        ],
+        [
+          -38.5486,
+          -32.8064,
+          1293.17
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2497",
+      "sourceId": "FMA68216",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7994",
+      "nativeConceptId": "FMA68216",
+      "path": "isa_BP3D_4.0_obj_99/FJ2497.obj",
+      "bytes": 21048,
+      "sha256": "6000e5977e208a2dfcea7e890968cfdbd6920a34f0c3fda8125430fc9071510a",
+      "crc32": "881173aa",
+      "compressedBytesUpstream": 7030,
+      "anatomyId": "resp:FMA68216",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 294,
+      "faces": 294,
+      "sourcePositionCount": 214,
+      "vertices": 214,
+      "boundsMetres": [
+        [
+          -0.063433,
+          1.28061,
+          0.0340081
+        ],
+        [
+          -0.0529278,
+          1.28434,
+          0.0385823
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -63.433,
+          -38.5823,
+          1280.61
+        ],
+        [
+          -52.9278,
+          -34.0081,
+          1284.34
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2498",
+      "sourceId": "FMA68216",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7994",
+      "nativeConceptId": "FMA68216",
+      "path": "isa_BP3D_4.0_obj_99/FJ2498.obj",
+      "bytes": 42016,
+      "sha256": "00f9ebe6fe2cda88e5ec768211c6b109b105d2aaffbd1f424b5e19a4b81f39d4",
+      "crc32": "730bea14",
+      "compressedBytesUpstream": 13840,
+      "anatomyId": "resp:FMA68216",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 660,
+      "faces": 660,
+      "sourcePositionCount": 385,
+      "vertices": 385,
+      "boundsMetres": [
+        [
+          -0.07925660000000001,
+          1.24438,
+          0.0361816
+        ],
+        [
+          -0.06582550000000001,
+          1.26174,
+          0.0443101
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -79.2566,
+          -44.3101,
+          1244.38
+        ],
+        [
+          -65.8255,
+          -36.1816,
+          1261.74
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2499",
+      "sourceId": "FMA68216",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7994",
+      "nativeConceptId": "FMA68216",
+      "path": "isa_BP3D_4.0_obj_99/FJ2499.obj",
+      "bytes": 91671,
+      "sha256": "1c875ae0d690de3a1fbea0e6a3cfb42d46d8f0fa575d8ec258c707cae4a7d460",
+      "crc32": "31603437",
+      "compressedBytesUpstream": 29300,
+      "anatomyId": "resp:FMA68216",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 1456,
+      "faces": 1456,
+      "sourcePositionCount": 822,
+      "vertices": 822,
+      "boundsMetres": [
+        [
+          -0.0455781,
+          1.22154,
+          0.0336656
+        ],
+        [
+          -0.0331221,
+          1.2603,
+          0.0479002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -45.5781,
+          -47.9002,
+          1221.54
+        ],
+        [
+          -33.1221,
+          -33.6656,
+          1260.3
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2500",
+      "sourceId": "FMA68216",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7994",
+      "nativeConceptId": "FMA68216",
+      "path": "isa_BP3D_4.0_obj_99/FJ2500.obj",
+      "bytes": 17851,
+      "sha256": "17b4ad40ebf82d81350771f8adae1c87efd6d89fa49b3c998c53e401f3f80a3d",
+      "crc32": "0e6ca9be",
+      "compressedBytesUpstream": 6140,
+      "anatomyId": "resp:FMA68216",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 266,
+      "faces": 266,
+      "sourcePositionCount": 174,
+      "vertices": 174,
+      "boundsMetres": [
+        [
+          -0.0842691,
+          1.25122,
+          0.0371329
+        ],
+        [
+          -0.0741819,
+          1.25504,
+          0.041118800000000004
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -84.2691,
+          -41.1188,
+          1251.22
+        ],
+        [
+          -74.1819,
+          -37.1329,
+          1255.04
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2501",
+      "sourceId": "FMA68216",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7994",
+      "nativeConceptId": "FMA68216",
+      "path": "isa_BP3D_4.0_obj_99/FJ2501.obj",
+      "bytes": 35375,
+      "sha256": "84f6d4b6fa39304482a677fde96c5729e7bc1877ffaa82ed1a9d1ebec8269c59",
+      "crc32": "408e4a1a",
+      "compressedBytesUpstream": 11700,
+      "anatomyId": "resp:FMA68216",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 554,
+      "faces": 554,
+      "sourcePositionCount": 325,
+      "vertices": 325,
+      "boundsMetres": [
+        [
+          -0.058235999999999996,
+          1.2294,
+          0.028295999999999998
+        ],
+        [
+          -0.039997,
+          1.2416500000000001,
+          0.0370298
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -58.236,
+          -37.0298,
+          1229.4
+        ],
+        [
+          -39.997,
+          -28.296,
+          1241.65
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2502",
+      "sourceId": "FMA68216",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7994",
+      "nativeConceptId": "FMA68216",
+      "path": "isa_BP3D_4.0_obj_99/FJ2502.obj",
+      "bytes": 23997,
+      "sha256": "73c04388dca57d4ab313d00e49976590695e764ae53d858c5dfc039d32d343ca",
+      "crc32": "0ecfc0d7",
+      "compressedBytesUpstream": 8054,
+      "anatomyId": "resp:FMA68216",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 352,
+      "faces": 352,
+      "sourcePositionCount": 233,
+      "vertices": 233,
+      "boundsMetres": [
+        [
+          -0.0434871,
+          1.24398,
+          0.0317686
+        ],
+        [
+          -0.030760600000000003,
+          1.2496099999999999,
+          0.0397351
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -43.4871,
+          -39.7351,
+          1243.98
+        ],
+        [
+          -30.7606,
+          -31.7686,
+          1249.61
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2503",
+      "sourceId": "FMA68215",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7978",
+      "nativeConceptId": "FMA68215",
+      "path": "isa_BP3D_4.0_obj_99/FJ2503.obj",
+      "bytes": 50477,
+      "sha256": "1649d2ff3fcfa429f8e4c93e7de7468018e185ae68e17bde6d18cf33a4ed52b4",
+      "crc32": "c184222a",
+      "compressedBytesUpstream": 16131,
+      "anatomyId": "resp:FMA68215",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 734,
+      "faces": 734,
+      "sourcePositionCount": 488,
+      "vertices": 488,
+      "boundsMetres": [
+        [
+          -0.0952712,
+          1.18908,
+          0.12507
+        ],
+        [
+          -0.0861457,
+          1.20374,
+          0.144783
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -95.2712,
+          -144.783,
+          1189.08
+        ],
+        [
+          -86.1457,
+          -125.07,
+          1203.74
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2504",
+      "sourceId": "FMA68215",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7978",
+      "nativeConceptId": "FMA68215",
+      "path": "isa_BP3D_4.0_obj_99/FJ2504.obj",
+      "bytes": 160496,
+      "sha256": "0b5660ca67c3ab38fa7ed9e2b8e633bbd858b7c67a95e025ca306a761bbd6f00",
+      "crc32": "29c1ae8d",
+      "compressedBytesUpstream": 48108,
+      "anatomyId": "resp:FMA68215",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 2456,
+      "faces": 2456,
+      "sourcePositionCount": 1419,
+      "vertices": 1419,
+      "boundsMetres": [
+        [
+          -0.113986,
+          1.21481,
+          0.100426
+        ],
+        [
+          -0.05935,
+          1.2314800000000001,
+          0.115201
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -113.986,
+          -115.201,
+          1214.81
+        ],
+        [
+          -59.35,
+          -100.426,
+          1231.48
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2505",
+      "sourceId": "FMA68215",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7978",
+      "nativeConceptId": "FMA68215",
+      "path": "isa_BP3D_4.0_obj_99/FJ2505.obj",
+      "bytes": 33245,
+      "sha256": "4ab14542922a1b8cf4afe2bc9c9f50da15757c1fd1db6ad59423530f31af8e3a",
+      "crc32": "c673c889",
+      "compressedBytesUpstream": 10704,
+      "anatomyId": "resp:FMA68215",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 472,
+      "faces": 472,
+      "sourcePositionCount": 331,
+      "vertices": 331,
+      "boundsMetres": [
+        [
+          -0.10659600000000001,
+          1.22633,
+          0.0960838
+        ],
+        [
+          -0.0951555,
+          1.23576,
+          0.106129
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -106.596,
+          -106.129,
+          1226.33
+        ],
+        [
+          -95.1555,
+          -96.0838,
+          1235.76
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2506",
+      "sourceId": "FMA68214",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8364",
+      "nativeConceptId": "FMA68214",
+      "path": "isa_BP3D_4.0_obj_99/FJ2506.obj",
+      "bytes": 158003,
+      "sha256": "0292a9a81d98de56ccfdf6fb55b5563da138830e475137a5070a7cd5186b364a",
+      "crc32": "c8895c12",
+      "compressedBytesUpstream": 48132,
+      "anatomyId": "resp:FMA68214",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 2482,
+      "faces": 2482,
+      "sourcePositionCount": 1364,
+      "vertices": 1364,
+      "boundsMetres": [
+        [
+          -0.0786789,
+          1.20365,
+          0.121644
+        ],
+        [
+          -0.0482657,
+          1.21839,
+          0.16550800000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -78.6789,
+          -165.508,
+          1203.65
+        ],
+        [
+          -48.2657,
+          -121.644,
+          1218.39
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2507",
+      "sourceId": "FMA68214",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8364",
+      "nativeConceptId": "FMA68214",
+      "path": "isa_BP3D_4.0_obj_99/FJ2507.obj",
+      "bytes": 97328,
+      "sha256": "0e580d73a8733ec4f3d76ca1fed549a4a201451ffafdd284947e232164f8b18f",
+      "crc32": "2f5190fd",
+      "compressedBytesUpstream": 30270,
+      "anatomyId": "resp:FMA68214",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 1516,
+      "faces": 1516,
+      "sourcePositionCount": 881,
+      "vertices": 881,
+      "boundsMetres": [
+        [
+          -0.0543328,
+          1.20382,
+          0.13204400000000002
+        ],
+        [
+          -0.039237299999999996,
+          1.21936,
+          0.16683099999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -54.3328,
+          -166.831,
+          1203.82
+        ],
+        [
+          -39.2373,
+          -132.044,
+          1219.36
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2508",
+      "sourceId": "FMA68214",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8364",
+      "nativeConceptId": "FMA68214",
+      "path": "isa_BP3D_4.0_obj_99/FJ2508.obj",
+      "bytes": 56008,
+      "sha256": "aa6f083c7aecc3c18e365efbe7a3eed94d39ec6053ee1a718649259a4ba3b749",
+      "crc32": "c7d3c93a",
+      "compressedBytesUpstream": 17815,
+      "anatomyId": "resp:FMA68214",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 834,
+      "faces": 834,
+      "sourcePositionCount": 529,
+      "vertices": 529,
+      "boundsMetres": [
+        [
+          -0.0634136,
+          1.19658,
+          0.150734
+        ],
+        [
+          -0.053076,
+          1.20788,
+          0.17381
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -63.4136,
+          -173.81,
+          1196.58
+        ],
+        [
+          -53.076,
+          -150.734,
+          1207.88
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2509",
+      "sourceId": "FMA68212",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7982",
+      "nativeConceptId": "FMA68212",
+      "path": "isa_BP3D_4.0_obj_99/FJ2509.obj",
+      "bytes": 150020,
+      "sha256": "bacf2f794a97e196c01eab6ca2eb3eddb01640ca22c85c377b765619dceda160",
+      "crc32": "bc78ad7c",
+      "compressedBytesUpstream": 45438,
+      "anatomyId": "resp:FMA68212",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 2350,
+      "faces": 2350,
+      "sourcePositionCount": 1307,
+      "vertices": 1307,
+      "boundsMetres": [
+        [
+          -0.0509715,
+          1.25817,
+          0.0960334
+        ],
+        [
+          -0.0292809,
+          1.2809700000000002,
+          0.148257
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -50.9715,
+          -148.257,
+          1258.17
+        ],
+        [
+          -29.2809,
+          -96.0334,
+          1280.97
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2510",
+      "sourceId": "FMA68212",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7982",
+      "nativeConceptId": "FMA68212",
+      "path": "isa_BP3D_4.0_obj_99/FJ2510.obj",
+      "bytes": 53839,
+      "sha256": "afcd6f7bd439449fe51749c3e5f7fd57e519d8f4bd342b70e177a53b7f7efc57",
+      "crc32": "36a5021f",
+      "compressedBytesUpstream": 17364,
+      "anatomyId": "resp:FMA68212",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 836,
+      "faces": 836,
+      "sourcePositionCount": 494,
+      "vertices": 494,
+      "boundsMetres": [
+        [
+          -0.0910078,
+          1.27234,
+          0.094991
+        ],
+        [
+          -0.0666964,
+          1.28414,
+          0.101621
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -91.0078,
+          -101.621,
+          1272.34
+        ],
+        [
+          -66.6964,
+          -94.991,
+          1284.14
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2511",
+      "sourceId": "FMA68212",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7982",
+      "nativeConceptId": "FMA68212",
+      "path": "isa_BP3D_4.0_obj_99/FJ2511.obj",
+      "bytes": 19854,
+      "sha256": "a2ece43ce172230ba8d1d78e23ef304f22440eab25ef8f9f3cda8607cedecc73",
+      "crc32": "520bf942",
+      "compressedBytesUpstream": 6706,
+      "anatomyId": "resp:FMA68212",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 286,
+      "faces": 286,
+      "sourcePositionCount": 198,
+      "vertices": 198,
+      "boundsMetres": [
+        [
+          -0.08220820000000001,
+          1.2711400000000002,
+          0.0984369
+        ],
+        [
+          -0.0759374,
+          1.2806199999999999,
+          0.10612600000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -82.2082,
+          -106.126,
+          1271.14
+        ],
+        [
+          -75.9374,
+          -98.4369,
+          1280.62
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2512",
+      "sourceId": "FMA68212",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7982",
+      "nativeConceptId": "FMA68212",
+      "path": "isa_BP3D_4.0_obj_99/FJ2512.obj",
+      "bytes": 23220,
+      "sha256": "1bf44a6129d63171e64680f583ff1962bfe7356878068b862d9004f56207a11e",
+      "crc32": "fedb9c1d",
+      "compressedBytesUpstream": 7657,
+      "anatomyId": "resp:FMA68212",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 340,
+      "faces": 340,
+      "sourcePositionCount": 227,
+      "vertices": 227,
+      "boundsMetres": [
+        [
+          -0.035241100000000004,
+          1.2644300000000002,
+          0.13837000000000002
+        ],
+        [
+          -0.020284700000000003,
+          1.26796,
+          0.140852
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -35.2411,
+          -140.852,
+          1264.43
+        ],
+        [
+          -20.2847,
+          -138.37,
+          1267.96
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2513",
+      "sourceId": "FMA68212",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7982",
+      "nativeConceptId": "FMA68212",
+      "path": "isa_BP3D_4.0_obj_99/FJ2513.obj",
+      "bytes": 49223,
+      "sha256": "9edf192a51a7c8a278d0555a7363d4b15b024a7ee529b57387da7036130339c0",
+      "crc32": "3af6b259",
+      "compressedBytesUpstream": 15919,
+      "anatomyId": "resp:FMA68212",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 770,
+      "faces": 770,
+      "sourcePositionCount": 449,
+      "vertices": 449,
+      "boundsMetres": [
+        [
+          -0.056164700000000005,
+          1.26155,
+          0.12575
+        ],
+        [
+          -0.0390314,
+          1.27437,
+          0.14515799999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -56.1647,
+          -145.158,
+          1261.55
+        ],
+        [
+          -39.0314,
+          -125.75,
+          1274.37
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2514",
+      "sourceId": "FMA68212",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP7982",
+      "nativeConceptId": "FMA68212",
+      "path": "isa_BP3D_4.0_obj_99/FJ2514.obj",
+      "bytes": 41453,
+      "sha256": "d8390e9d6f0cedb8662fdc4ff3c1d49da17126c10b95556134afdbe99a36f806",
+      "crc32": "a6be3a99",
+      "compressedBytesUpstream": 13413,
+      "anatomyId": "resp:FMA68212",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 636,
+      "faces": 636,
+      "sourcePositionCount": 385,
+      "vertices": 385,
+      "boundsMetres": [
+        [
+          -0.049367,
+          1.27175,
+          0.12286100000000001
+        ],
+        [
+          -0.040670200000000004,
+          1.28608,
+          0.140813
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -49.367,
+          -140.813,
+          1271.75
+        ],
+        [
+          -40.6702,
+          -122.861,
+          1286.08
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2515",
+      "sourceId": "FMA68213",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8644",
+      "nativeConceptId": "FMA68213",
+      "path": "isa_BP3D_4.0_obj_99/FJ2515.obj",
+      "bytes": 142644,
+      "sha256": "dba632e0eb00bef2c89c7717899e53f8ed8ac99a7b5c8e420c2a7ab2cbaf363d",
+      "crc32": "0f6f9c52",
+      "compressedBytesUpstream": 43671,
+      "anatomyId": "resp:FMA68213",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 2204,
+      "faces": 2204,
+      "sourcePositionCount": 1269,
+      "vertices": 1269,
+      "boundsMetres": [
+        [
+          -0.0876946,
+          1.27919,
+          0.0441346
+        ],
+        [
+          -0.0434652,
+          1.2893299999999999,
+          0.075755
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -87.6946,
+          -75.755,
+          1279.19
+        ],
+        [
+          -43.4652,
+          -44.1346,
+          1289.33
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2516",
+      "sourceId": "FMA68213",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8644",
+      "nativeConceptId": "FMA68213",
+      "path": "isa_BP3D_4.0_obj_99/FJ2516.obj",
+      "bytes": 58281,
+      "sha256": "3ff9c0e013483992cf79883aaf18744f98830fcba9efe3ca8be45897a92d3368",
+      "crc32": "4c1f95a0",
+      "compressedBytesUpstream": 18706,
+      "anatomyId": "resp:FMA68213",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 882,
+      "faces": 882,
+      "sourcePositionCount": 544,
+      "vertices": 544,
+      "boundsMetres": [
+        [
+          -0.09961539999999999,
+          1.2814100000000002,
+          0.0519987
+        ],
+        [
+          -0.0766406,
+          1.28629,
+          0.0704938
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -99.6154,
+          -70.4938,
+          1281.41
+        ],
+        [
+          -76.6406,
+          -51.9987,
+          1286.29
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2517",
+      "sourceId": "FMA68213",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8644",
+      "nativeConceptId": "FMA68213",
+      "path": "isa_BP3D_4.0_obj_99/FJ2517.obj",
+      "bytes": 20366,
+      "sha256": "f3a209efb481ddc20c6552aabb36aeea2cf768ef0f64b79a52608ca80fedb6ba",
+      "crc32": "4a18512a",
+      "compressedBytesUpstream": 6951,
+      "anatomyId": "resp:FMA68213",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 302,
+      "faces": 302,
+      "sourcePositionCount": 199,
+      "vertices": 199,
+      "boundsMetres": [
+        [
+          -0.07905540000000001,
+          1.31059,
+          0.0466518
+        ],
+        [
+          -0.06776990000000001,
+          1.31878,
+          0.0496457
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -79.0554,
+          -49.6457,
+          1310.59
+        ],
+        [
+          -67.7699,
+          -46.6518,
+          1318.78
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2518",
+      "sourceId": "FMA68213",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8644",
+      "nativeConceptId": "FMA68213",
+      "path": "isa_BP3D_4.0_obj_99/FJ2518.obj",
+      "bytes": 14594,
+      "sha256": "e540808877aaa91b5be29864e9113f4b1253e3e6a5a6756d758c647fac4487fe",
+      "crc32": "a31d4cd5",
+      "compressedBytesUpstream": 5099,
+      "anatomyId": "resp:FMA68213",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 210,
+      "faces": 210,
+      "sourcePositionCount": 147,
+      "vertices": 147,
+      "boundsMetres": [
+        [
+          -0.0689122,
+          1.30232,
+          0.0396431
+        ],
+        [
+          -0.063889,
+          1.30908,
+          0.048423600000000004
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -68.9122,
+          -48.4236,
+          1302.32
+        ],
+        [
+          -63.889,
+          -39.6431,
+          1309.08
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2519",
+      "sourceId": "FMA68213",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8644",
+      "nativeConceptId": "FMA68213",
+      "path": "isa_BP3D_4.0_obj_99/FJ2519.obj",
+      "bytes": 15771,
+      "sha256": "a2deb26fbdf267090068b4dec220501edf6979a06ac9aabe98a271f5357243de",
+      "crc32": "87d73516",
+      "compressedBytesUpstream": 5424,
+      "anatomyId": "resp:FMA68213",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 228,
+      "faces": 228,
+      "sourcePositionCount": 158,
+      "vertices": 158,
+      "boundsMetres": [
+        [
+          -0.08100320000000001,
+          1.28323,
+          0.0414426
+        ],
+        [
+          -0.0769031,
+          1.2859200000000002,
+          0.0534183
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -81.0032,
+          -53.4183,
+          1283.23
+        ],
+        [
+          -76.9031,
+          -41.4426,
+          1285.92
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2520",
+      "sourceId": "FMA68211",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8086",
+      "nativeConceptId": "FMA68211",
+      "path": "isa_BP3D_4.0_obj_99/FJ2520.obj",
+      "bytes": 113130,
+      "sha256": "f1f7b8cdfc733be149b2d4bf307089ef4d0596a4d84fca71078bb5e5cdd608eb",
+      "crc32": "029f65b4",
+      "compressedBytesUpstream": 35609,
+      "anatomyId": "resp:FMA68211",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 1794,
+      "faces": 1794,
+      "sourcePositionCount": 1011,
+      "vertices": 1011,
+      "boundsMetres": [
+        [
+          -0.0388512,
+          1.29993,
+          0.0603698
+        ],
+        [
+          -0.025208200000000004,
+          1.33895,
+          0.0846956
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -38.8512,
+          -84.6956,
+          1299.93
+        ],
+        [
+          -25.2082,
+          -60.3698,
+          1338.95
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2521",
+      "sourceId": "FMA68211",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8086",
+      "nativeConceptId": "FMA68211",
+      "path": "isa_BP3D_4.0_obj_99/FJ2521.obj",
+      "bytes": 38743,
+      "sha256": "3166914d1ec86f13a5f587ef91be96d5f1d817997f2713df2722908b42ad43d8",
+      "crc32": "b8be7843",
+      "compressedBytesUpstream": 12677,
+      "anatomyId": "resp:FMA68211",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 600,
+      "faces": 600,
+      "sourcePositionCount": 358,
+      "vertices": 358,
+      "boundsMetres": [
+        [
+          -0.04087,
+          1.32217,
+          0.0731703
+        ],
+        [
+          -0.0329113,
+          1.3462,
+          0.07996349999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -40.87,
+          -79.9635,
+          1322.17
+        ],
+        [
+          -32.9113,
+          -73.1703,
+          1346.2
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2522",
+      "sourceId": "FMA68211",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8086",
+      "nativeConceptId": "FMA68211",
+      "path": "isa_BP3D_4.0_obj_99/FJ2522.obj",
+      "bytes": 57657,
+      "sha256": "9ad756f8db92cd610b012421d35b0d520c0112f45285132830c491adb84d3c6e",
+      "crc32": "3c2103d1",
+      "compressedBytesUpstream": 18420,
+      "anatomyId": "resp:FMA68211",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 882,
+      "faces": 882,
+      "sourcePositionCount": 533,
+      "vertices": 533,
+      "boundsMetres": [
+        [
+          -0.0427477,
+          1.3161500000000002,
+          0.0884076
+        ],
+        [
+          -0.038175100000000003,
+          1.3234100000000002,
+          0.117639
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -42.7477,
+          -117.639,
+          1316.15
+        ],
+        [
+          -38.1751,
+          -88.4076,
+          1323.41
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2523",
+      "sourceId": "FMA68211",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8086",
+      "nativeConceptId": "FMA68211",
+      "path": "isa_BP3D_4.0_obj_99/FJ2523.obj",
+      "bytes": 14322,
+      "sha256": "92f1efb0d1a32f3deb6aae7204f2b36aba8292cfb85a8e86f17b68cdb63e5fe2",
+      "crc32": "27c49474",
+      "compressedBytesUpstream": 4968,
+      "anatomyId": "resp:FMA68211",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 208,
+      "faces": 208,
+      "sourcePositionCount": 144,
+      "vertices": 144,
+      "boundsMetres": [
+        [
+          -0.0476674,
+          1.32044,
+          0.105597
+        ],
+        [
+          -0.039492,
+          1.32829,
+          0.10971
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -47.6674,
+          -109.71,
+          1320.44
+        ],
+        [
+          -39.492,
+          -105.597,
+          1328.29
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2524",
+      "sourceId": "FMA68211",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8086",
+      "nativeConceptId": "FMA68211",
+      "path": "isa_BP3D_4.0_obj_99/FJ2524.obj",
+      "bytes": 19993,
+      "sha256": "304897c7aa101334d497be865fc9d5930022de58075e096894d078efab7d604f",
+      "crc32": "bba6e206",
+      "compressedBytesUpstream": 6787,
+      "anatomyId": "resp:FMA68211",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 286,
+      "faces": 286,
+      "sourcePositionCount": 200,
+      "vertices": 200,
+      "boundsMetres": [
+        [
+          -0.0457791,
+          1.33173,
+          0.0872695
+        ],
+        [
+          -0.0414669,
+          1.3423900000000002,
+          0.097043
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -45.7791,
+          -97.043,
+          1331.73
+        ],
+        [
+          -41.4669,
+          -87.2695,
+          1342.39
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2525",
+      "sourceId": "FMA68211",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8086",
+      "nativeConceptId": "FMA68211",
+      "path": "isa_BP3D_4.0_obj_99/FJ2525.obj",
+      "bytes": 12488,
+      "sha256": "621a6146014903a0fa47e07c7c78341e9d0c43ccbb9d02346c0466bfc38ca0fb",
+      "crc32": "c502dbc8",
+      "compressedBytesUpstream": 4406,
+      "anatomyId": "resp:FMA68211",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 176,
+      "faces": 176,
+      "sourcePositionCount": 127,
+      "vertices": 127,
+      "boundsMetres": [
+        [
+          -0.0330152,
+          1.33498,
+          0.0671312
+        ],
+        [
+          -0.0296596,
+          1.34375,
+          0.0718421
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -33.0152,
+          -71.8421,
+          1334.98
+        ],
+        [
+          -29.6596,
+          -67.1312,
+          1343.75
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2526",
+      "sourceId": "FMA68211",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8086",
+      "nativeConceptId": "FMA68211",
+      "path": "isa_BP3D_4.0_obj_99/FJ2526.obj",
+      "bytes": 12187,
+      "sha256": "52f8d7514d3be35b979a1fd5a57802f8b438b127523cb5048577e95f75f6bd76",
+      "crc32": "a6810726",
+      "compressedBytesUpstream": 4296,
+      "anatomyId": "resp:FMA68211",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 170,
+      "faces": 170,
+      "sourcePositionCount": 125,
+      "vertices": 125,
+      "boundsMetres": [
+        [
+          -0.0367857,
+          1.33876,
+          0.07584250000000001
+        ],
+        [
+          -0.032088900000000004,
+          1.34785,
+          0.0819613
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -36.7857,
+          -81.9613,
+          1338.76
+        ],
+        [
+          -32.0889,
+          -75.8425,
+          1347.85
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2527",
+      "sourceId": "FMA68233",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8584",
+      "nativeConceptId": "FMA68233",
+      "path": "isa_BP3D_4.0_obj_99/FJ2527.obj",
+      "bytes": 13889,
+      "sha256": "efdb7fda9b2d4b8db290546c8b9f4280c66c1f97e63fcb2d3f2e23554da58480",
+      "crc32": "683ddb66",
+      "compressedBytesUpstream": 5124,
+      "anatomyId": "resp:FMA68233",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 210,
+      "faces": 210,
+      "sourcePositionCount": 138,
+      "vertices": 138,
+      "boundsMetres": [
+        [
+          0.0365772,
+          1.14629,
+          0.035373800000000004
+        ],
+        [
+          0.0784471,
+          1.18384,
+          0.052667200000000004
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          36.5772,
+          -52.6672,
+          1146.29
+        ],
+        [
+          78.4471,
+          -35.3738,
+          1183.84
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2528",
+      "sourceId": "FMA68233",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8584",
+      "nativeConceptId": "FMA68233",
+      "path": "isa_BP3D_4.0_obj_99/FJ2528.obj",
+      "bytes": 16762,
+      "sha256": "6abc4b824662648fa6e6736ab03d7e8efc56c2372b336de43eb7f731876b2b50",
+      "crc32": "15d582ea",
+      "compressedBytesUpstream": 6027,
+      "anatomyId": "resp:FMA68233",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 256,
+      "faces": 256,
+      "sourcePositionCount": 164,
+      "vertices": 164,
+      "boundsMetres": [
+        [
+          0.0640595,
+          1.18583,
+          0.0203139
+        ],
+        [
+          0.07537529999999999,
+          1.2122600000000001,
+          0.0633898
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          64.0595,
+          -63.3898,
+          1185.83
+        ],
+        [
+          75.3753,
+          -20.3139,
+          1212.26
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2529",
+      "sourceId": "FMA68233",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8584",
+      "nativeConceptId": "FMA68233",
+      "path": "isa_BP3D_4.0_obj_99/FJ2529.obj",
+      "bytes": 9543,
+      "sha256": "de05cf2dc656d4feb2dbd7193e5e01627ac0a03c4799acd04854d0cfaa636906",
+      "crc32": "90720f17",
+      "compressedBytesUpstream": 3414,
+      "anatomyId": "resp:FMA68233",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 106,
+      "faces": 106,
+      "sourcePositionCount": 109,
+      "vertices": 109,
+      "boundsMetres": [
+        [
+          0.070028,
+          1.13548,
+          0.0288156
+        ],
+        [
+          0.0834517,
+          1.15169,
+          0.0402476
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          70.028,
+          -40.2476,
+          1135.48
+        ],
+        [
+          83.4517,
+          -28.8156,
+          1151.69
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2530",
+      "sourceId": "FMA68233",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8584",
+      "nativeConceptId": "FMA68233",
+      "path": "isa_BP3D_4.0_obj_99/FJ2530.obj",
+      "bytes": 8174,
+      "sha256": "b5c8c78cca56b1a7aa1476e00fef9b4e197ee147dd48afd36898145bf1a95941",
+      "crc32": "5869b38b",
+      "compressedBytesUpstream": 3086,
+      "anatomyId": "resp:FMA68233",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 108,
+      "faces": 108,
+      "sourcePositionCount": 86,
+      "vertices": 86,
+      "boundsMetres": [
+        [
+          0.057914099999999996,
+          1.1594900000000001,
+          0.029083400000000002
+        ],
+        [
+          0.0680928,
+          1.19133,
+          0.0428948
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          57.9141,
+          -42.8948,
+          1159.49
+        ],
+        [
+          68.0928,
+          -29.0834,
+          1191.33
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2531",
+      "sourceId": "FMA68233",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8584",
+      "nativeConceptId": "FMA68233",
+      "path": "isa_BP3D_4.0_obj_99/FJ2531.obj",
+      "bytes": 6576,
+      "sha256": "2bc3e9ce08886f320971cf60d3dd939a4451adac0b8db9d09a2631a483243927",
+      "crc32": "ffd49434",
+      "compressedBytesUpstream": 2355,
+      "anatomyId": "resp:FMA68233",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 58,
+      "faces": 58,
+      "sourcePositionCount": 78,
+      "vertices": 78,
+      "boundsMetres": [
+        [
+          0.047670699999999996,
+          1.1439000000000001,
+          0.032018000000000005
+        ],
+        [
+          0.0522586,
+          1.1557600000000001,
+          0.0403867
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          47.6707,
+          -40.3867,
+          1143.9
+        ],
+        [
+          52.2586,
+          -32.018,
+          1155.76
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2532",
+      "sourceId": "FMA68232",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP9045",
+      "nativeConceptId": "FMA68232",
+      "path": "isa_BP3D_4.0_obj_99/FJ2532.obj",
+      "bytes": 17525,
+      "sha256": "953d6cc1918eff9461aee31efc25e76887172e12ec53a1f0d111d0cc8befd7d4",
+      "crc32": "3603d595",
+      "compressedBytesUpstream": 6284,
+      "anatomyId": "resp:FMA68232",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 278,
+      "faces": 278,
+      "sourcePositionCount": 166,
+      "vertices": 166,
+      "boundsMetres": [
+        [
+          0.0890665,
+          1.12809,
+          0.0502637
+        ],
+        [
+          0.10704000000000001,
+          1.18576,
+          0.0660168
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          89.0665,
+          -66.0168,
+          1128.09
+        ],
+        [
+          107.04,
+          -50.2637,
+          1185.76
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2533",
+      "sourceId": "FMA68232",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP9045",
+      "nativeConceptId": "FMA68232",
+      "path": "isa_BP3D_4.0_obj_99/FJ2533.obj",
+      "bytes": 12149,
+      "sha256": "c43490eff32f90b562175cd0b4c8587578e848c4cdb6c56be09ad544532bd8d5",
+      "crc32": "3d07348e",
+      "compressedBytesUpstream": 4359,
+      "anatomyId": "resp:FMA68232",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 154,
+      "faces": 154,
+      "sourcePositionCount": 133,
+      "vertices": 133,
+      "boundsMetres": [
+        [
+          0.106474,
+          1.12485,
+          0.0646351
+        ],
+        [
+          0.11558700000000001,
+          1.1588900000000002,
+          0.0774133
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          106.474,
+          -77.4133,
+          1124.85
+        ],
+        [
+          115.587,
+          -64.6351,
+          1158.89
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2534",
+      "sourceId": "FMA68232",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP9045",
+      "nativeConceptId": "FMA68232",
+      "path": "isa_BP3D_4.0_obj_99/FJ2534.obj",
+      "bytes": 6326,
+      "sha256": "1fe46580953452be24eaa6d3299ffea73f08db8702521d3a94830bd33cba1755",
+      "crc32": "fd734405",
+      "compressedBytesUpstream": 2378,
+      "anatomyId": "resp:FMA68232",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 68,
+      "faces": 68,
+      "sourcePositionCount": 70,
+      "vertices": 70,
+      "boundsMetres": [
+        [
+          0.0993383,
+          1.14134,
+          0.041169
+        ],
+        [
+          0.10432,
+          1.15677,
+          0.0592374
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          99.3383,
+          -59.2374,
+          1141.34
+        ],
+        [
+          104.32,
+          -41.169,
+          1156.77
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2535",
+      "sourceId": "FMA68231",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8011",
+      "nativeConceptId": "FMA68231",
+      "path": "isa_BP3D_4.0_obj_99/FJ2535.obj",
+      "bytes": 19239,
+      "sha256": "c29863dca3c4bf7f3efd6ad45b441617cf60d22cdb95063d933a90589d0e0db3",
+      "crc32": "4c7dfa93",
+      "compressedBytesUpstream": 6789,
+      "anatomyId": "resp:FMA68231",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 296,
+      "faces": 296,
+      "sourcePositionCount": 186,
+      "vertices": 186,
+      "boundsMetres": [
+        [
+          0.0751797,
+          1.1967700000000001,
+          0.0755809
+        ],
+        [
+          0.118576,
+          1.21523,
+          0.10483100000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          75.1797,
+          -104.831,
+          1196.77
+        ],
+        [
+          118.576,
+          -75.5809,
+          1215.23
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2536",
+      "sourceId": "FMA68231",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8011",
+      "nativeConceptId": "FMA68231",
+      "path": "isa_BP3D_4.0_obj_99/FJ2536.obj",
+      "bytes": 19364,
+      "sha256": "70ae3a7660605d3cb646c3a0ff37eb70da749989b5b49a3aaebdad9469e8738a",
+      "crc32": "6d2ae1ce",
+      "compressedBytesUpstream": 6751,
+      "anatomyId": "resp:FMA68231",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 298,
+      "faces": 298,
+      "sourcePositionCount": 187,
+      "vertices": 187,
+      "boundsMetres": [
+        [
+          0.09449590000000001,
+          1.16208,
+          0.09031109999999999
+        ],
+        [
+          0.111326,
+          1.20255,
+          0.14172700000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          94.4959,
+          -141.727,
+          1162.08
+        ],
+        [
+          111.326,
+          -90.3111,
+          1202.55
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2537",
+      "sourceId": "FMA68230",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8759",
+      "nativeConceptId": "FMA68230",
+      "path": "isa_BP3D_4.0_obj_99/FJ2537.obj",
+      "bytes": 7242,
+      "sha256": "9f279addba9096afd26134520ddda161fa0bf40e5819f56fbe69c6ef21d00ca6",
+      "crc32": "6c3f3737",
+      "compressedBytesUpstream": 2649,
+      "anatomyId": "resp:FMA68230",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 92,
+      "faces": 92,
+      "sourcePositionCount": 76,
+      "vertices": 76,
+      "boundsMetres": [
+        [
+          0.10719100000000001,
+          1.15956,
+          0.10079500000000001
+        ],
+        [
+          0.122877,
+          1.17105,
+          0.118612
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          107.191,
+          -118.612,
+          1159.56
+        ],
+        [
+          122.877,
+          -100.795,
+          1171.05
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2538",
+      "sourceId": "FMA68231",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8011",
+      "nativeConceptId": "FMA68231",
+      "path": "isa_BP3D_4.0_obj_99/FJ2538.obj",
+      "bytes": 10397,
+      "sha256": "177ba9e7fbdd87d32a628d67aba4bc1e6d79789e0c9df6e13b87c3971411d951",
+      "crc32": "b0c4f418",
+      "compressedBytesUpstream": 3724,
+      "anatomyId": "resp:FMA68231",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 138,
+      "faces": 138,
+      "sourcePositionCount": 110,
+      "vertices": 110,
+      "boundsMetres": [
+        [
+          0.102782,
+          1.13499,
+          0.0966493
+        ],
+        [
+          0.120672,
+          1.17615,
+          0.102623
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          102.782,
+          -102.623,
+          1134.99
+        ],
+        [
+          120.672,
+          -96.6493,
+          1176.15
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2539",
+      "sourceId": "FMA68418",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8732",
+      "nativeConceptId": "FMA68418",
+      "path": "isa_BP3D_4.0_obj_99/FJ2539.obj",
+      "bytes": 300354,
+      "sha256": "76b37e620e01b344b3f7019c8332b006d1a9f1b0af440ab8f7636e9d6fafa333",
+      "crc32": "068c7bb4",
+      "compressedBytesUpstream": 90363,
+      "anatomyId": "resp:FMA68418",
+      "family": "main-bronchus",
+      "moduleId": "respiratory:airway",
+      "sourceType": "bronquio principal",
+      "triangles": 4468,
+      "faces": 4468,
+      "sourcePositionCount": 2564,
+      "vertices": 2564,
+      "boundsMetres": [
+        [
+          -0.0504191,
+          1.20403,
+          0.0613287
+        ],
+        [
+          -0.000377242,
+          1.298,
+          0.0984928
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -50.4191,
+          -98.4928,
+          1204.03
+        ],
+        [
+          -0.377242,
+          -61.3287,
+          1298.0
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2540",
+      "sourceId": "FMA68226",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8806",
+      "nativeConceptId": "FMA68226",
+      "path": "isa_BP3D_4.0_obj_99/FJ2540.obj",
+      "bytes": 23856,
+      "sha256": "ca60a905794f9e55584b9e1f02e2c5f8c8d11b62a3874f809ff36aedffddbb5f",
+      "crc32": "4eb08cf3",
+      "compressedBytesUpstream": 8266,
+      "anatomyId": "resp:FMA68226",
+      "family": "bronchial-tree",
+      "moduleId": "respiratory:airway",
+      "sourceType": "árbol bronquial segmentario",
+      "triangles": 366,
+      "faces": 366,
+      "sourcePositionCount": 230,
+      "vertices": 230,
+      "boundsMetres": [
+        [
+          0.0732577,
+          1.22188,
+          0.0882066
+        ],
+        [
+          0.108281,
+          1.2554,
+          0.131062
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          73.2577,
+          -131.062,
+          1221.88
+        ],
+        [
+          108.281,
+          -88.2066,
+          1255.4
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2541",
+      "sourceId": "FMA7394",
+      "side": "midline",
+      "sourceVersion": "4.0",
+      "representationId": "BP7849",
+      "nativeConceptId": "FMA7394",
+      "path": "isa_BP3D_4.0_obj_99/FJ2541.obj",
+      "bytes": 320943,
+      "sha256": "eb8c075b6601f2d543532f4a2eb4a39b03430af858da225ba7887e52182272ed",
+      "crc32": "00e8c597",
+      "compressedBytesUpstream": 97405,
+      "anatomyId": "resp:FMA7394",
+      "family": "trachea",
+      "moduleId": "respiratory:airway",
+      "sourceType": "vía aérea",
+      "triangles": 4996,
+      "faces": 4996,
+      "sourcePositionCount": 2607,
+      "vertices": 2607,
+      "boundsMetres": [
+        [
+          -0.013124100000000001,
+          1.2850899999999998,
+          0.077366
+        ],
+        [
+          0.012814500000000001,
+          1.39544,
+          0.110131
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -13.1241,
+          -110.131,
+          1285.09
+        ],
+        [
+          12.8145,
+          -77.366,
+          1395.44
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2769",
+      "sourceId": "FMA9615",
+      "side": "midline",
+      "sourceVersion": "4.0",
+      "representationId": "BP9117",
+      "nativeConceptId": "FMA9615",
+      "path": "isa_BP3D_4.0_obj_99/FJ2769.obj",
+      "bytes": 105507,
+      "sha256": "5f75fb4d2969fd1de51898787bb8810c441d5d2bd6eb0c5482b7cacd3c9bc3be",
+      "crc32": "c36abe5b",
+      "compressedBytesUpstream": 33857,
+      "anatomyId": "resp:FMA9615",
+      "family": "cartilage",
+      "moduleId": "respiratory:larynx",
+      "sourceType": "cartílago",
+      "triangles": 1702,
+      "faces": 1702,
+      "sourcePositionCount": 937,
+      "vertices": 937,
+      "boundsMetres": [
+        [
+          -0.0121665,
+          1.3872,
+          0.0926165
+        ],
+        [
+          0.0108605,
+          1.40472,
+          0.111469
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -12.1665,
+          -111.469,
+          1387.2
+        ],
+        [
+          10.8605,
+          -92.6165,
+          1404.72
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2770",
+      "sourceId": "FMA55130",
+      "side": "midline",
+      "sourceVersion": "4.0",
+      "representationId": "BP9263",
+      "nativeConceptId": "FMA55130",
+      "path": "isa_BP3D_4.0_obj_99/FJ2770.obj",
+      "bytes": 294822,
+      "sha256": "05ae56007f7aa017fb458bdef643ea97e51ed3bd275b13da30086fa02b606054",
+      "crc32": "52ef0694",
+      "compressedBytesUpstream": 89665,
+      "anatomyId": "resp:FMA55130",
+      "family": "cartilage",
+      "moduleId": "respiratory:larynx",
+      "sourceType": "cartílago",
+      "triangles": 3602,
+      "faces": 3602,
+      "sourcePositionCount": 2992,
+      "vertices": 2992,
+      "boundsMetres": [
+        [
+          -0.00859202,
+          1.40873,
+          0.108189
+        ],
+        [
+          0.00723443,
+          1.4382300000000001,
+          0.1159
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -8.59202,
+          -115.9,
+          1408.73
+        ],
+        [
+          7.23443,
+          -108.189,
+          1438.23
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2773",
+      "sourceId": "FMA55118",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8764",
+      "nativeConceptId": "FMA55118",
+      "path": "isa_BP3D_4.0_obj_99/FJ2773.obj",
+      "bytes": 10043,
+      "sha256": "33f5b140ab7a37e450e130ed8f9bf579ef9f11856dcd3587b5f634bd6a83d0e0",
+      "crc32": "86fe276b",
+      "compressedBytesUpstream": 3664,
+      "anatomyId": "resp:FMA55118",
+      "family": "cartilage",
+      "moduleId": "respiratory:larynx",
+      "sourceType": "cartílago",
+      "triangles": 174,
+      "faces": 174,
+      "sourcePositionCount": 91,
+      "vertices": 91,
+      "boundsMetres": [
+        [
+          0.00331969,
+          1.41407,
+          0.100193
+        ],
+        [
+          0.00506498,
+          1.41733,
+          0.10287
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          3.31969,
+          -102.87,
+          1414.07
+        ],
+        [
+          5.06498,
+          -100.193,
+          1417.33
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2775",
+      "sourceId": "FMA55114",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8314",
+      "nativeConceptId": "FMA55114",
+      "path": "isa_BP3D_4.0_obj_99/FJ2775.obj",
+      "bytes": 32035,
+      "sha256": "1e2c0bf8eab8a3a1814b5d56ba721031f3bd87473ea739e540781117bbfb32c9",
+      "crc32": "b705083e",
+      "compressedBytesUpstream": 10905,
+      "anatomyId": "resp:FMA55114",
+      "family": "cartilage",
+      "moduleId": "respiratory:larynx",
+      "sourceType": "cartílago",
+      "triangles": 536,
+      "faces": 536,
+      "sourcePositionCount": 284,
+      "vertices": 284,
+      "boundsMetres": [
+        [
+          0.0011824300000000002,
+          1.4034900000000001,
+          0.0953758
+        ],
+        [
+          0.0067221500000000005,
+          1.4116300000000002,
+          0.102681
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          1.18243,
+          -102.681,
+          1403.49
+        ],
+        [
+          6.72215,
+          -95.3758,
+          1411.63
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2776",
+      "sourceId": "FMA55116",
+      "side": "left",
+      "sourceVersion": "4.0",
+      "representationId": "BP8097",
+      "nativeConceptId": "FMA55116",
+      "path": "isa_BP3D_4.0_obj_99/FJ2776.obj",
+      "bytes": 10329,
+      "sha256": "282ec50dc80214ead94da19cab975e6be2a6cba093c9765b3260c98af2300ca3",
+      "crc32": "afb9c9fb",
+      "compressedBytesUpstream": 3695,
+      "anatomyId": "resp:FMA55116",
+      "family": "cartilage",
+      "moduleId": "respiratory:larynx",
+      "sourceType": "cartílago",
+      "triangles": 136,
+      "faces": 136,
+      "sourcePositionCount": 110,
+      "vertices": 110,
+      "boundsMetres": [
+        [
+          0.00164898,
+          1.41105,
+          0.095101
+        ],
+        [
+          0.00312757,
+          1.41255,
+          0.0967167
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          1.64898,
+          -96.7167,
+          1411.05
+        ],
+        [
+          3.12757,
+          -95.101,
+          1412.55
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2792",
+      "sourceId": "FMA55113",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP9249",
+      "nativeConceptId": "FMA55113",
+      "path": "isa_BP3D_4.0_obj_99/FJ2792.obj",
+      "bytes": 32331,
+      "sha256": "6766f404ea88ffb33f5430ee4704a416aab95813da19a84998f67fbdcc556eaa",
+      "crc32": "51f6325c",
+      "compressedBytesUpstream": 10885,
+      "anatomyId": "resp:FMA55113",
+      "family": "cartilage",
+      "moduleId": "respiratory:larynx",
+      "sourceType": "cartílago",
+      "triangles": 540,
+      "faces": 540,
+      "sourcePositionCount": 282,
+      "vertices": 282,
+      "boundsMetres": [
+        [
+          -0.0080179,
+          1.40348,
+          0.09539360000000001
+        ],
+        [
+          -0.00251497,
+          1.41161,
+          0.10267100000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -8.0179,
+          -102.671,
+          1403.48
+        ],
+        [
+          -2.51497,
+          -95.3936,
+          1411.61
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2793",
+      "sourceId": "FMA55115",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP8670",
+      "nativeConceptId": "FMA55115",
+      "path": "isa_BP3D_4.0_obj_99/FJ2793.obj",
+      "bytes": 11181,
+      "sha256": "055590405743b1adb114f2b9480122827e7dac69d964fa43409bd57bfb6ada4d",
+      "crc32": "25064aca",
+      "compressedBytesUpstream": 3962,
+      "anatomyId": "resp:FMA55115",
+      "family": "cartilage",
+      "moduleId": "respiratory:larynx",
+      "sourceType": "cartílago",
+      "triangles": 172,
+      "faces": 172,
+      "sourcePositionCount": 108,
+      "vertices": 108,
+      "boundsMetres": [
+        [
+          -0.004468499999999999,
+          1.41104,
+          0.0951035
+        ],
+        [
+          -0.00295405,
+          1.4125999999999999,
+          0.0966833
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -4.4685,
+          -96.6833,
+          1411.04
+        ],
+        [
+          -2.95405,
+          -95.1035,
+          1412.6
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2795",
+      "sourceId": "FMA55117",
+      "side": "right",
+      "sourceVersion": "4.0",
+      "representationId": "BP9068",
+      "nativeConceptId": "FMA55117",
+      "path": "isa_BP3D_4.0_obj_99/FJ2795.obj",
+      "bytes": 9855,
+      "sha256": "9745a416c9f85f106aabdedb8645811c8cfbf85025364310e06a04072d766f0b",
+      "crc32": "c7ef9180",
+      "compressedBytesUpstream": 3575,
+      "anatomyId": "resp:FMA55117",
+      "family": "cartilage",
+      "moduleId": "respiratory:larynx",
+      "sourceType": "cartílago",
+      "triangles": 170,
+      "faces": 170,
+      "sourcePositionCount": 88,
+      "vertices": 88,
+      "boundsMetres": [
+        [
+          -0.0063773400000000004,
+          1.41365,
+          0.100199
+        ],
+        [
+          -0.00446088,
+          1.41714,
+          0.102389
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -6.37734,
+          -102.389,
+          1413.65
+        ],
+        [
+          -4.46088,
+          -100.199,
+          1417.14
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2808",
+      "sourceId": "FMA55099",
+      "side": "midline",
+      "sourceVersion": "4.0",
+      "representationId": "BP7901",
+      "nativeConceptId": "FMA55099",
+      "path": "isa_BP3D_4.0_obj_99/FJ2808.obj",
+      "bytes": 161651,
+      "sha256": "48cd41bcd4044c7013ba10c971e212766afc970408f51875f9ef8e8c407c0687",
+      "crc32": "fbd27bcc",
+      "compressedBytesUpstream": 50063,
+      "anatomyId": "resp:FMA55099",
+      "family": "cartilage",
+      "moduleId": "respiratory:larynx",
+      "sourceType": "cartílago",
+      "triangles": 2610,
+      "faces": 2610,
+      "sourcePositionCount": 1360,
+      "vertices": 1360,
+      "boundsMetres": [
+        [
+          -0.0199803,
+          1.39141,
+          0.0915061
+        ],
+        [
+          0.0186825,
+          1.43093,
+          0.122446
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -19.9803,
+          -122.446,
+          1391.41
+        ],
+        [
+          18.6825,
+          -91.5061,
+          1430.93
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ6595",
+      "sourceId": "FMA27368",
+      "side": "left",
+      "sourceVersion": "4.3",
+      "representationId": "BP29727",
+      "nativeConceptId": "FMA27368",
+      "path": "bp3d4.3/FJ6595.obj",
+      "bytes": 356573,
+      "sha256": "7ea4893b69f3939ab0759329314e82e08b8843cdd5284f495e72c152ba99c501",
+      "crc32": "39dc7a1a",
+      "compressedBytesUpstream": 107224,
+      "anatomyId": "resp:FMA27368",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 5166,
+      "faces": 5166,
+      "sourcePositionCount": 3145,
+      "vertices": 3145,
+      "boundsMetres": [
+        [
+          0.015313100000000001,
+          1.2827600000000001,
+          0.05754890000000001
+        ],
+        [
+          0.0851388,
+          1.35827,
+          0.14472200000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          15.3131,
+          -144.722,
+          1282.76
+        ],
+        [
+          85.1388,
+          -57.5489,
+          1358.27
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6596",
+      "sourceId": "FMA27394",
+      "side": "left",
+      "sourceVersion": "4.3",
+      "representationId": "BP29748",
+      "nativeConceptId": "FMA27394",
+      "path": "bp3d4.3/FJ6596.obj",
+      "bytes": 607043,
+      "sha256": "9118fad4b7ec3961f631e9c823bb2e26c3d0d4f22b7e4b84ca7a527ce3097bb2",
+      "crc32": "b1b3c16e",
+      "compressedBytesUpstream": 183337,
+      "anatomyId": "resp:FMA27394",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 8202,
+      "faces": 8202,
+      "sourcePositionCount": 5523,
+      "vertices": 5523,
+      "boundsMetres": [
+        [
+          0.0188025,
+          1.11948,
+          0.0157895
+        ],
+        [
+          0.0879288,
+          1.23468,
+          0.110945
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          18.8025,
+          -110.945,
+          1119.48
+        ],
+        [
+          87.9288,
+          -15.7895,
+          1234.68
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6597",
+      "sourceId": "FMA27368",
+      "side": "left",
+      "sourceVersion": "4.3",
+      "representationId": "BP29727",
+      "nativeConceptId": "FMA27368",
+      "path": "bp3d4.3/FJ6597.obj",
+      "bytes": 403728,
+      "sha256": "cdb94282a4b2eff1f5382f3807413e277323b242878f77e81de8defba87aa6e0",
+      "crc32": "8da463d3",
+      "compressedBytesUpstream": 124449,
+      "anatomyId": "resp:FMA27368",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 5126,
+      "faces": 5126,
+      "sourcePositionCount": 3923,
+      "vertices": 3923,
+      "boundsMetres": [
+        [
+          0.0171895,
+          1.26974,
+          0.0349713
+        ],
+        [
+          0.09907470000000002,
+          1.3403900000000002,
+          0.117948
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          17.1895,
+          -117.948,
+          1269.74
+        ],
+        [
+          99.0747,
+          -34.9713,
+          1340.39
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6598",
+      "sourceId": "FMA27374",
+      "side": "left",
+      "sourceVersion": "4.3",
+      "representationId": "BP29733",
+      "nativeConceptId": "FMA27374",
+      "path": "bp3d4.3/FJ6598.obj",
+      "bytes": 650344,
+      "sha256": "bd5397777af624b53aec390f917b1943e993ca05523ccd052c3e2c0406a75523",
+      "crc32": "7f4334e0",
+      "compressedBytesUpstream": 194985,
+      "anatomyId": "resp:FMA27374",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 8200,
+      "faces": 8200,
+      "sourcePositionCount": 6309,
+      "vertices": 6309,
+      "boundsMetres": [
+        [
+          0.0052927700000000005,
+          1.2373,
+          0.039311500000000006
+        ],
+        [
+          0.10864,
+          1.29838,
+          0.18220599999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          5.29277,
+          -182.206,
+          1237.3
+        ],
+        [
+          108.64,
+          -39.3115,
+          1298.38
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6599",
+      "sourceId": "FMA27375",
+      "side": "left",
+      "sourceVersion": "4.3",
+      "representationId": "BP29752",
+      "nativeConceptId": "FMA27375",
+      "path": "bp3d4.3/FJ6599.obj",
+      "bytes": 591004,
+      "sha256": "29ed36210a5c1c838f75392b1613a1be7cabf6a652f67cdc0885237ca8375a3a",
+      "crc32": "842923bb",
+      "compressedBytesUpstream": 175302,
+      "anatomyId": "resp:FMA27375",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 7566,
+      "faces": 7566,
+      "sourcePositionCount": 5632,
+      "vertices": 5632,
+      "boundsMetres": [
+        [
+          0.029117,
+          1.20029,
+          0.050467700000000004
+        ],
+        [
+          0.121654,
+          1.25925,
+          0.19175299999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          29.117,
+          -191.753,
+          1200.29
+        ],
+        [
+          121.654,
+          -50.4677,
+          1259.25
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6600",
+      "sourceId": "FMA27376",
+      "side": "left",
+      "sourceVersion": "4.3",
+      "representationId": "BP29730",
+      "nativeConceptId": "FMA27376",
+      "path": "bp3d4.3/FJ6600.obj",
+      "bytes": 476848,
+      "sha256": "75e86567fbaa11cc44a2b8762805634483ed65b2cce989f86cab4d6c5aa91daf",
+      "crc32": "b16bdc9b",
+      "compressedBytesUpstream": 141495,
+      "anatomyId": "resp:FMA27376",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 5824,
+      "faces": 5824,
+      "sourcePositionCount": 4812,
+      "vertices": 4812,
+      "boundsMetres": [
+        [
+          0.0341147,
+          1.15449,
+          0.09406
+        ],
+        [
+          0.122976,
+          1.2293,
+          0.19567500000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          34.1147,
+          -195.675,
+          1154.49
+        ],
+        [
+          122.976,
+          -94.06,
+          1229.3
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6601",
+      "sourceId": "FMA27386",
+      "side": "left",
+      "sourceVersion": "4.3",
+      "representationId": "BP29750",
+      "nativeConceptId": "FMA27386",
+      "path": "bp3d4.3/FJ6601.obj",
+      "bytes": 498779,
+      "sha256": "c8b7c7829ce551fe05164dd3ec36219683ae835c4d2d5d208d80d5d7056cce4c",
+      "crc32": "dd70714c",
+      "compressedBytesUpstream": 151622,
+      "anatomyId": "resp:FMA27386",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 6168,
+      "faces": 6168,
+      "sourcePositionCount": 4909,
+      "vertices": 4909,
+      "boundsMetres": [
+        [
+          0.0244028,
+          1.2221400000000002,
+          0.0180547
+        ],
+        [
+          0.113892,
+          1.31582,
+          0.0903776
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          24.4028,
+          -90.3776,
+          1222.14
+        ],
+        [
+          113.892,
+          -18.0547,
+          1315.82
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6602",
+      "sourceId": "FMA27392",
+      "side": "left",
+      "sourceVersion": "4.3",
+      "representationId": "BP29736",
+      "nativeConceptId": "FMA27392",
+      "path": "bp3d4.3/FJ6602.obj",
+      "bytes": 862700,
+      "sha256": "1e566045c052a67b15451bc8b19418c2002e0edd5a13d9888e508ce3e76306ef",
+      "crc32": "df91635a",
+      "compressedBytesUpstream": 249297,
+      "anatomyId": "resp:FMA27392",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 11148,
+      "faces": 11148,
+      "sourcePositionCount": 8092,
+      "vertices": 8092,
+      "boundsMetres": [
+        [
+          0.0353875,
+          1.11706,
+          0.0388575
+        ],
+        [
+          0.127442,
+          1.2386700000000002,
+          0.19035400000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          35.3875,
+          -190.354,
+          1117.06
+        ],
+        [
+          127.442,
+          -38.8575,
+          1238.67
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6603",
+      "sourceId": "FMA27390",
+      "side": "left",
+      "sourceVersion": "4.3",
+      "representationId": "BP29740",
+      "nativeConceptId": "FMA27390",
+      "path": "bp3d4.3/FJ6603.obj",
+      "bytes": 567473,
+      "sha256": "31cb5ac0e564a3fc261454cc6bbf92f9209af0a4c8dc6a8ffd5f66aee7cdadf6",
+      "crc32": "b5cfb566",
+      "compressedBytesUpstream": 167724,
+      "anatomyId": "resp:FMA27390",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 7690,
+      "faces": 7690,
+      "sourcePositionCount": 5157,
+      "vertices": 5157,
+      "boundsMetres": [
+        [
+          0.0665086,
+          1.11652,
+          0.017800999999999997
+        ],
+        [
+          0.125675,
+          1.2311500000000002,
+          0.127421
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          66.5086,
+          -127.421,
+          1116.52
+        ],
+        [
+          125.675,
+          -17.801,
+          1231.15
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6604",
+      "sourceId": "FMA27369",
+      "side": "right",
+      "sourceVersion": "4.3",
+      "representationId": "BP29747",
+      "nativeConceptId": "FMA27369",
+      "path": "bp3d4.3/FJ6604.obj",
+      "bytes": 569291,
+      "sha256": "1c7ce21579d68bfe40b634afe28fc1879119563b49f810a3f8be3487743c24ac",
+      "crc32": "4cb74b94",
+      "compressedBytesUpstream": 174345,
+      "anatomyId": "resp:FMA27369",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 7396,
+      "faces": 7396,
+      "sourcePositionCount": 5325,
+      "vertices": 5325,
+      "boundsMetres": [
+        [
+          -0.09147830000000001,
+          1.2626600000000001,
+          0.051651600000000006
+        ],
+        [
+          -0.009151300000000001,
+          1.3596700000000002,
+          0.150594
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -91.4783,
+          -150.594,
+          1262.66
+        ],
+        [
+          -9.1513,
+          -51.6516,
+          1359.67
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6605",
+      "sourceId": "FMA27393",
+      "side": "right",
+      "sourceVersion": "4.3",
+      "representationId": "BP29757",
+      "nativeConceptId": "FMA27393",
+      "path": "bp3d4.3/FJ6605.obj",
+      "bytes": 468247,
+      "sha256": "34e470e53185584a1426de78f5acc10010d15613ef4bd1b6f621f0c3b847b14d",
+      "crc32": "d459d3db",
+      "compressedBytesUpstream": 142590,
+      "anatomyId": "resp:FMA27393",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 6322,
+      "faces": 6322,
+      "sourcePositionCount": 4247,
+      "vertices": 4247,
+      "boundsMetres": [
+        [
+          -0.08985259999999999,
+          1.1189200000000001,
+          0.0166941
+        ],
+        [
+          -0.0136876,
+          1.22824,
+          0.08898489999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -89.8526,
+          -88.9849,
+          1118.92
+        ],
+        [
+          -13.6876,
+          -16.6941,
+          1228.24
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6606",
+      "sourceId": "FMA27371",
+      "side": "right",
+      "sourceVersion": "4.3",
+      "representationId": "BP29759",
+      "nativeConceptId": "FMA27371",
+      "path": "bp3d4.3/FJ6606.obj",
+      "bytes": 648179,
+      "sha256": "93aed0947f6b07097b8ffa5919add13a43ac2ee28057fd71d1c33608dfe947db",
+      "crc32": "36772bae",
+      "compressedBytesUpstream": 198963,
+      "anatomyId": "resp:FMA27371",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 7300,
+      "faces": 7300,
+      "sourcePositionCount": 6672,
+      "vertices": 6672,
+      "boundsMetres": [
+        [
+          -0.111149,
+          1.24089,
+          0.034024500000000006
+        ],
+        [
+          -0.015447200000000001,
+          1.33549,
+          0.096304
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -111.149,
+          -96.304,
+          1240.89
+        ],
+        [
+          -15.4472,
+          -34.0245,
+          1335.49
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6607",
+      "sourceId": "FMA27373",
+      "side": "right",
+      "sourceVersion": "4.3",
+      "representationId": "BP29754",
+      "nativeConceptId": "FMA27373",
+      "path": "bp3d4.3/FJ6607.obj",
+      "bytes": 759853,
+      "sha256": "6974afbef91d64cd79f72ce4610817d410070d1c3dbefbf45e4534618de0eb9e",
+      "crc32": "c5426a5c",
+      "compressedBytesUpstream": 226266,
+      "anatomyId": "resp:FMA27373",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 9526,
+      "faces": 9526,
+      "sourcePositionCount": 7244,
+      "vertices": 7244,
+      "boundsMetres": [
+        [
+          -0.114065,
+          1.2276500000000001,
+          0.0706327
+        ],
+        [
+          -0.00574137,
+          1.30963,
+          0.183321
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -114.065,
+          -183.321,
+          1227.65
+        ],
+        [
+          -5.74137,
+          -70.6327,
+          1309.63
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6608",
+      "sourceId": "FMA27452",
+      "side": "right",
+      "sourceVersion": "4.3",
+      "representationId": "BP29731",
+      "nativeConceptId": "FMA27452",
+      "path": "bp3d4.3/FJ6608.obj",
+      "bytes": 658350,
+      "sha256": "27532577854c67efca554e397a377f78028788f26b0f9a918ef2df5bc5279622",
+      "crc32": "4889117d",
+      "compressedBytesUpstream": 195827,
+      "anatomyId": "resp:FMA27452",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 7734,
+      "faces": 7734,
+      "sourcePositionCount": 6601,
+      "vertices": 6601,
+      "boundsMetres": [
+        [
+          -0.125189,
+          1.1596199999999999,
+          0.0447714
+        ],
+        [
+          -0.024343,
+          1.2523,
+          0.164775
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -125.189,
+          -164.775,
+          1159.62
+        ],
+        [
+          -24.343,
+          -44.7714,
+          1252.3
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6609",
+      "sourceId": "FMA27448",
+      "side": "right",
+      "sourceVersion": "4.3",
+      "representationId": "BP29735",
+      "nativeConceptId": "FMA27448",
+      "path": "bp3d4.3/FJ6609.obj",
+      "bytes": 572844,
+      "sha256": "03b2794808796e8370c11263c7a9a599779b7bac72e58387414c3c60d7a3a7c3",
+      "crc32": "9ec78112",
+      "compressedBytesUpstream": 171386,
+      "anatomyId": "resp:FMA27448",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 7784,
+      "faces": 7784,
+      "sourcePositionCount": 5144,
+      "vertices": 5144,
+      "boundsMetres": [
+        [
+          -0.10404200000000001,
+          1.15685,
+          0.08182590000000001
+        ],
+        [
+          -0.005594,
+          1.24171,
+          0.19647900000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -104.042,
+          -196.479,
+          1156.85
+        ],
+        [
+          -5.594,
+          -81.8259,
+          1241.71
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6610",
+      "sourceId": "FMA27385",
+      "side": "right",
+      "sourceVersion": "4.3",
+      "representationId": "BP29745",
+      "nativeConceptId": "FMA27385",
+      "path": "bp3d4.3/FJ6610.obj",
+      "bytes": 558865,
+      "sha256": "15d635ce8fd7c4ead1c9fe7d4c38ec33ce3187857c52fd83eea4b1d735a4b3c8",
+      "crc32": "5a06ee3f",
+      "compressedBytesUpstream": 166709,
+      "anatomyId": "resp:FMA27385",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 6602,
+      "faces": 6602,
+      "sourcePositionCount": 5590,
+      "vertices": 5590,
+      "boundsMetres": [
+        [
+          -0.111416,
+          1.21125,
+          0.017981
+        ],
+        [
+          -0.015044499999999999,
+          1.3041500000000001,
+          0.0875831
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -111.416,
+          -87.5831,
+          1211.25
+        ],
+        [
+          -15.0445,
+          -17.981,
+          1304.15
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6611",
+      "sourceId": "FMA27391",
+      "side": "right",
+      "sourceVersion": "4.3",
+      "representationId": "BP29753",
+      "nativeConceptId": "FMA27391",
+      "path": "bp3d4.3/FJ6611.obj",
+      "bytes": 700326,
+      "sha256": "f07524ff4d25a2473e6137f1153255be9e1f0b5793467a65aa08f8325a6c4547",
+      "crc32": "e8eac814",
+      "compressedBytesUpstream": 206531,
+      "anatomyId": "resp:FMA27391",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 9116,
+      "faces": 9116,
+      "sourcePositionCount": 6494,
+      "vertices": 6494,
+      "boundsMetres": [
+        [
+          -0.127716,
+          1.1273900000000001,
+          0.0327918
+        ],
+        [
+          -0.0219449,
+          1.23498,
+          0.182398
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -127.716,
+          -182.398,
+          1127.39
+        ],
+        [
+          -21.9449,
+          -32.7918,
+          1234.98
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    },
+    {
+      "elementId": "FJ6612",
+      "sourceId": "FMA27389",
+      "side": "right",
+      "sourceVersion": "4.3",
+      "representationId": "BP29741",
+      "nativeConceptId": "FMA27389",
+      "path": "bp3d4.3/FJ6612.obj",
+      "bytes": 727304,
+      "sha256": "c92b62bcd36076479b00ae78cb094289cd68f54202f48389450f36db12500256",
+      "crc32": "e07c368e",
+      "compressedBytesUpstream": 216751,
+      "anatomyId": "resp:FMA27389",
+      "family": "parenchyma",
+      "moduleId": "respiratory:lungs",
+      "sourceType": "parénquima segmentario",
+      "triangles": 9506,
+      "faces": 9506,
+      "sourcePositionCount": 6674,
+      "vertices": 6674,
+      "boundsMetres": [
+        [
+          -0.125056,
+          1.11888,
+          0.016805399999999998
+        ],
+        [
+          -0.019204699999999998,
+          1.23057,
+          0.12323200000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -125.056,
+          -123.232,
+          1118.88
+        ],
+        [
+          -19.2047,
+          -16.8054,
+          1230.57
+        ]
+      ],
+      "headerCompatibilityVersion": "4.3"
+    }
+  ]
+}

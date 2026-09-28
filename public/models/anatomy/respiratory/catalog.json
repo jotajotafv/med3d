@@ -1,0 +1,3110 @@
+{
+  "schemaVersion": 1,
+  "id": "med3d-respiratory",
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "nodes": [
+    {
+      "id": "respiratory",
+      "name": "Sistema respiratorio",
+      "anatomicalName": "Sistema respiratorio",
+      "aliases": [
+        "respiratorio",
+        "respiratory"
+      ],
+      "systemId": "respiratory",
+      "regionId": "respiratory",
+      "children": [
+        "resp:upper",
+        "resp:lower",
+        "resp:lungs"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "respiratory:airway",
+        "respiratory:larynx",
+        "respiratory:lungs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Systema respiratorium",
+      "bounds": [
+        [
+          -0.127716,
+          1.11652,
+          0.0157895
+        ],
+        [
+          0.127442,
+          1.4382300000000001,
+          0.19647900000000001
+        ]
+      ]
+    },
+    {
+      "id": "resp:upper",
+      "name": "Vía aérea cervical disponible",
+      "anatomicalName": "Vía aérea cervical disponible",
+      "aliases": [
+        "vías superiores",
+        "upper airway",
+        "laringe"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:upper",
+      "children": [
+        "resp:larynx"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "respiratory:larynx"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Larynx",
+      "respiratoryType": "región",
+      "parentId": "respiratory",
+      "bounds": [
+        [
+          -0.0199803,
+          1.3872,
+          0.0915061
+        ],
+        [
+          0.0186825,
+          1.4382300000000001,
+          0.122446
+        ]
+      ]
+    },
+    {
+      "id": "resp:larynx",
+      "name": "Laringe · cartílagos disponibles",
+      "anatomicalName": "Laringe · cartílagos disponibles",
+      "aliases": [
+        "laringe",
+        "larynx",
+        "FMA55097"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:upper",
+      "children": [
+        "resp:FMA9615",
+        "resp:FMA55099",
+        "resp:FMA55130",
+        "resp:FMA55113",
+        "resp:FMA55114",
+        "resp:FMA55115",
+        "resp:FMA55116",
+        "resp:FMA55117",
+        "resp:FMA55118"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "respiratory:larynx"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA55097",
+      "latin": "Larynx",
+      "respiratoryType": "órgano con cobertura parcial",
+      "respiratoryClass": "cartilage",
+      "explosionRegionId": "resp-larynx",
+      "family": "larynx",
+      "parentId": "resp:upper",
+      "bounds": [
+        [
+          -0.0199803,
+          1.3872,
+          0.0915061
+        ],
+        [
+          0.0186825,
+          1.4382300000000001,
+          0.122446
+        ]
+      ]
+    },
+    {
+      "id": "resp:lower",
+      "name": "Vías respiratorias inferiores",
+      "anatomicalName": "Vías respiratorias inferiores",
+      "aliases": [],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [
+        "resp:bronchi",
+        "resp:FMA7394"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Trachea et bronchi",
+      "respiratoryType": "región",
+      "parentId": "respiratory",
+      "bounds": [
+        [
+          -0.11654,
+          1.12485,
+          0.0203139
+        ],
+        [
+          0.122877,
+          1.39544,
+          0.177871
+        ]
+      ]
+    },
+    {
+      "id": "resp:bronchi",
+      "name": "Árbol bronquial disponible",
+      "anatomicalName": "Árbol bronquial disponible",
+      "aliases": [
+        "bronquios",
+        "bronchi",
+        "bronchial tree"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:bronchi",
+      "children": [
+        "resp:bronchi:right-upper",
+        "resp:bronchi:right-middle",
+        "resp:bronchi:right-lower",
+        "resp:bronchi:left-upper",
+        "resp:bronchi:left-lower",
+        "resp:FMA68418",
+        "resp:FMA7396"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Arbor bronchialis",
+      "respiratoryType": "grupo editorial",
+      "respiratoryClass": "bronchial-tree",
+      "family": "bronchi",
+      "parentId": "resp:lower",
+      "bounds": [
+        [
+          -0.11654,
+          1.12485,
+          0.0203139
+        ],
+        [
+          0.122877,
+          1.3531400000000002,
+          0.177871
+        ]
+      ]
+    },
+    {
+      "id": "resp:lungs",
+      "name": "Pulmones",
+      "anatomicalName": "Pulmones",
+      "aliases": [],
+      "systemId": "respiratory",
+      "regionId": "resp:lungs",
+      "children": [
+        "resp:lung:right",
+        "resp:lung:left"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Pulmones",
+      "respiratoryType": "grupo de órganos",
+      "respiratoryClass": "lung",
+      "family": "lungs",
+      "parentId": "respiratory",
+      "bounds": [
+        [
+          -0.127716,
+          1.11652,
+          0.0157895
+        ],
+        [
+          0.127442,
+          1.3596700000000002,
+          0.19647900000000001
+        ]
+      ]
+    },
+    {
+      "id": "resp:lung:right",
+      "name": "Pulmón derecho",
+      "anatomicalName": "Pulmón derecho",
+      "aliases": [
+        "right lung",
+        "FMA7309"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:right",
+      "children": [
+        "resp:lobe:right-upper",
+        "resp:lobe:right-middle",
+        "resp:lobe:right-lower"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA7309",
+      "latin": "Pulmo dexter",
+      "side": "right",
+      "respiratoryType": "pulmón",
+      "respiratoryClass": "lung",
+      "family": "lung",
+      "explosionRegionId": "resp-lung-right",
+      "parentId": "resp:lungs",
+      "bounds": [
+        [
+          -0.127716,
+          1.11888,
+          0.0166941
+        ],
+        [
+          -0.005594,
+          1.3596700000000002,
+          0.19647900000000001
+        ]
+      ]
+    },
+    {
+      "id": "resp:lung:left",
+      "name": "Pulmón izquierdo",
+      "anatomicalName": "Pulmón izquierdo",
+      "aliases": [
+        "left lung",
+        "FMA7310"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:left",
+      "children": [
+        "resp:lobe:left-upper",
+        "resp:lobe:left-lower"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA7310",
+      "latin": "Pulmo sinister",
+      "side": "left",
+      "respiratoryType": "pulmón",
+      "respiratoryClass": "lung",
+      "family": "lung",
+      "explosionRegionId": "resp-lung-left",
+      "parentId": "resp:lungs",
+      "bounds": [
+        [
+          0.0052927700000000005,
+          1.11652,
+          0.0157895
+        ],
+        [
+          0.127442,
+          1.35827,
+          0.19567500000000002
+        ]
+      ]
+    },
+    {
+      "id": "resp:lobe:right-upper",
+      "name": "Lóbulo pulmonar superior derecho",
+      "anatomicalName": "Lóbulo pulmonar superior derecho",
+      "aliases": [
+        "FMA7333",
+        "right upper lobe",
+        "lóbulo superior derecho"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:right",
+      "children": [
+        "resp:FMA27369",
+        "resp:FMA27371",
+        "resp:FMA27373"
+      ],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA7333",
+      "latin": "Lobus superior pulmonis dextri",
+      "side": "right",
+      "respiratoryType": "lóbulo pulmonar",
+      "respiratoryClass": "lobe",
+      "family": "lobe",
+      "explosionRegionId": "resp-lung-right",
+      "parentId": "resp:lung:right",
+      "bounds": [
+        [
+          -0.114065,
+          1.2276500000000001,
+          0.034024500000000006
+        ],
+        [
+          -0.00574137,
+          1.3596700000000002,
+          0.183321
+        ]
+      ]
+    },
+    {
+      "id": "resp:bronchi:right-upper",
+      "name": "Árboles del lóbulo superior derecho",
+      "anatomicalName": "Árboles del lóbulo superior derecho",
+      "aliases": [
+        "bronquio lobar superior derecho",
+        "lobar bronchus right upper"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:bronchi:right-upper",
+      "children": [
+        "resp:FMA68211",
+        "resp:FMA68212",
+        "resp:FMA68213"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Arbor bronchialis lobi superior pulmonis dextri",
+      "side": "right",
+      "respiratoryType": "grupo lobar editorial",
+      "family": "bronchi",
+      "respiratoryClass": "bronchial-tree",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi",
+      "bounds": [
+        [
+          -0.09961539999999999,
+          1.25817,
+          0.0396431
+        ],
+        [
+          -0.020284700000000003,
+          1.34785,
+          0.148257
+        ]
+      ]
+    },
+    {
+      "id": "resp:lobe:right-middle",
+      "name": "Lóbulo pulmonar medio derecho",
+      "anatomicalName": "Lóbulo pulmonar medio derecho",
+      "aliases": [
+        "FMA7383",
+        "right middle lobe",
+        "lóbulo medio derecho"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:right",
+      "children": [
+        "resp:FMA27452",
+        "resp:FMA27448"
+      ],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA7383",
+      "latin": "Lobus medius pulmonis dextri",
+      "side": "right",
+      "respiratoryType": "lóbulo pulmonar",
+      "respiratoryClass": "lobe",
+      "family": "lobe",
+      "explosionRegionId": "resp-lung-right",
+      "parentId": "resp:lung:right",
+      "bounds": [
+        [
+          -0.125189,
+          1.15685,
+          0.0447714
+        ],
+        [
+          -0.005594,
+          1.2523,
+          0.19647900000000001
+        ]
+      ]
+    },
+    {
+      "id": "resp:bronchi:right-middle",
+      "name": "Árboles del lóbulo medio derecho",
+      "anatomicalName": "Árboles del lóbulo medio derecho",
+      "aliases": [
+        "bronquio lobar medio derecho",
+        "lobar bronchus right middle"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:bronchi:right-middle",
+      "children": [
+        "resp:FMA68214",
+        "resp:FMA68215"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Arbor bronchialis lobi medius pulmonis dextri",
+      "side": "right",
+      "respiratoryType": "grupo lobar editorial",
+      "family": "bronchi",
+      "respiratoryClass": "bronchial-tree",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi",
+      "bounds": [
+        [
+          -0.113986,
+          1.18026,
+          0.0770711
+        ],
+        [
+          -0.0258977,
+          1.25357,
+          0.17381
+        ]
+      ]
+    },
+    {
+      "id": "resp:lobe:right-lower",
+      "name": "Lóbulo pulmonar inferior derecho",
+      "anatomicalName": "Lóbulo pulmonar inferior derecho",
+      "aliases": [
+        "FMA7337",
+        "right lower lobe",
+        "lóbulo inferior derecho"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:right",
+      "children": [
+        "resp:FMA27385",
+        "resp:FMA27391",
+        "resp:FMA27389",
+        "resp:FMA27393"
+      ],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA7337",
+      "latin": "Lobus inferior pulmonis dextri",
+      "side": "right",
+      "respiratoryType": "lóbulo pulmonar",
+      "respiratoryClass": "lobe",
+      "family": "lobe",
+      "explosionRegionId": "resp-lung-right",
+      "parentId": "resp:lung:right",
+      "bounds": [
+        [
+          -0.127716,
+          1.11888,
+          0.0166941
+        ],
+        [
+          -0.0136876,
+          1.3041500000000001,
+          0.182398
+        ]
+      ]
+    },
+    {
+      "id": "resp:bronchi:right-lower",
+      "name": "Árboles del lóbulo inferior derecho",
+      "anatomicalName": "Árboles del lóbulo inferior derecho",
+      "aliases": [
+        "bronquio lobar inferior derecho",
+        "lobar bronchus right lower"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:bronchi:right-lower",
+      "children": [
+        "resp:FMA68216",
+        "resp:FMA68218",
+        "resp:FMA68321",
+        "resp:FMA68220",
+        "resp:FMA68221"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Arbor bronchialis lobi inferior pulmonis dextri",
+      "side": "right",
+      "respiratoryType": "grupo lobar editorial",
+      "family": "bronchi",
+      "respiratoryClass": "bronchial-tree",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi",
+      "bounds": [
+        [
+          -0.11654,
+          1.13571,
+          0.0241718
+        ],
+        [
+          -0.00874452,
+          1.2931700000000002,
+          0.0989125
+        ]
+      ]
+    },
+    {
+      "id": "resp:lobe:left-upper",
+      "name": "Lóbulo pulmonar superior izquierdo",
+      "anatomicalName": "Lóbulo pulmonar superior izquierdo",
+      "aliases": [
+        "FMA7370",
+        "left upper lobe",
+        "lóbulo superior izquierdo"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:left",
+      "children": [
+        "resp:FMA27368",
+        "resp:FMA27374",
+        "resp:FMA27375",
+        "resp:FMA27376"
+      ],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA7370",
+      "latin": "Lobus superior pulmonis sinistri",
+      "side": "left",
+      "respiratoryType": "lóbulo pulmonar",
+      "respiratoryClass": "lobe",
+      "family": "lobe",
+      "explosionRegionId": "resp-lung-left",
+      "parentId": "resp:lung:left",
+      "bounds": [
+        [
+          0.0052927700000000005,
+          1.15449,
+          0.0349713
+        ],
+        [
+          0.122976,
+          1.35827,
+          0.19567500000000002
+        ]
+      ]
+    },
+    {
+      "id": "resp:bronchi:left-upper",
+      "name": "Árboles del lóbulo superior izquierdo",
+      "anatomicalName": "Árboles del lóbulo superior izquierdo",
+      "aliases": [
+        "bronquio lobar superior izquierdo",
+        "lobar bronchus left upper"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:bronchi:left-upper",
+      "children": [
+        "resp:FMA68222",
+        "resp:FMA68223",
+        "resp:FMA68225",
+        "resp:FMA68226",
+        "resp:FMA68227"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Arbor bronchialis lobi superior pulmonis sinistri",
+      "side": "left",
+      "respiratoryType": "grupo lobar editorial",
+      "family": "bronchi",
+      "respiratoryClass": "bronchial-tree",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi",
+      "bounds": [
+        [
+          0.0231878,
+          1.17073,
+          0.054348799999999996
+        ],
+        [
+          0.11336600000000001,
+          1.3531400000000002,
+          0.177871
+        ]
+      ]
+    },
+    {
+      "id": "resp:lobe:left-lower",
+      "name": "Lóbulo pulmonar inferior izquierdo",
+      "anatomicalName": "Lóbulo pulmonar inferior izquierdo",
+      "aliases": [
+        "FMA7371",
+        "left lower lobe",
+        "lóbulo inferior izquierdo"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:left",
+      "children": [
+        "resp:FMA27386",
+        "resp:FMA27392",
+        "resp:FMA27390",
+        "resp:FMA27394"
+      ],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA7371",
+      "latin": "Lobus inferior pulmonis sinistri",
+      "side": "left",
+      "respiratoryType": "lóbulo pulmonar",
+      "respiratoryClass": "lobe",
+      "family": "lobe",
+      "explosionRegionId": "resp-lung-left",
+      "parentId": "resp:lung:left",
+      "bounds": [
+        [
+          0.0188025,
+          1.11652,
+          0.0157895
+        ],
+        [
+          0.127442,
+          1.31582,
+          0.19035400000000002
+        ]
+      ]
+    },
+    {
+      "id": "resp:bronchi:left-lower",
+      "name": "Árboles del lóbulo inferior izquierdo",
+      "anatomicalName": "Árboles del lóbulo inferior izquierdo",
+      "aliases": [
+        "bronquio lobar inferior izquierdo",
+        "lobar bronchus left lower"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:bronchi:left-lower",
+      "children": [
+        "resp:FMA68228",
+        "resp:FMA68230",
+        "resp:FMA68231",
+        "resp:FMA68232",
+        "resp:FMA68233"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Arbor bronchialis lobi inferior pulmonis sinistri",
+      "side": "left",
+      "respiratoryType": "grupo lobar editorial",
+      "family": "bronchi",
+      "respiratoryClass": "bronchial-tree",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi",
+      "bounds": [
+        [
+          0.0359723,
+          1.12485,
+          0.0203139
+        ],
+        [
+          0.122877,
+          1.29414,
+          0.14172700000000002
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA9615",
+      "name": "Cartílago cricoides",
+      "anatomicalName": "Cartílago cricoides",
+      "aliases": [
+        "resp:FMA9615",
+        "cricoid cartilage",
+        "FMA9615",
+        "FJ2769"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:larynx"
+      ],
+      "meshNames": [
+        "bp3d_FMA9615_FJ2769"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA9615",
+      "latin": "Cartilago cricoidea",
+      "side": "midline",
+      "family": "cartilage",
+      "respiratoryClass": "cartilage",
+      "respiratoryType": "cartílago",
+      "explosionRegionId": "resp-larynx",
+      "parentId": "resp:larynx",
+      "bounds": [
+        [
+          -0.0121665,
+          1.3872,
+          0.0926165
+        ],
+        [
+          0.0108605,
+          1.40472,
+          0.111469
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55099",
+      "name": "Cartílago tiroides",
+      "anatomicalName": "Cartílago tiroides",
+      "aliases": [
+        "resp:FMA55099",
+        "thyroid cartilage",
+        "FMA55099",
+        "FJ2808"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:larynx"
+      ],
+      "meshNames": [
+        "bp3d_FMA55099_FJ2808"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55099",
+      "latin": "Cartilago thyroidea",
+      "side": "midline",
+      "family": "cartilage",
+      "respiratoryClass": "cartilage",
+      "respiratoryType": "cartílago",
+      "explosionRegionId": "resp-larynx",
+      "parentId": "resp:larynx",
+      "bounds": [
+        [
+          -0.0199803,
+          1.39141,
+          0.0915061
+        ],
+        [
+          0.0186825,
+          1.43093,
+          0.122446
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55130",
+      "name": "Epiglotis",
+      "anatomicalName": "Epiglotis",
+      "aliases": [
+        "resp:FMA55130",
+        "epiglottis",
+        "FMA55130",
+        "FJ2770"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:larynx"
+      ],
+      "meshNames": [
+        "bp3d_FMA55130_FJ2770"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55130",
+      "latin": "Epiglottis",
+      "side": "midline",
+      "family": "cartilage",
+      "respiratoryClass": "cartilage",
+      "respiratoryType": "cartílago",
+      "explosionRegionId": "resp-larynx",
+      "parentId": "resp:larynx",
+      "bounds": [
+        [
+          -0.00859202,
+          1.40873,
+          0.108189
+        ],
+        [
+          0.00723443,
+          1.4382300000000001,
+          0.1159
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55113",
+      "name": "Cartílago aritenoides derecho",
+      "anatomicalName": "Cartílago aritenoides derecho",
+      "aliases": [
+        "resp:FMA55113",
+        "right arytenoid cartilage",
+        "FMA55113",
+        "FJ2792"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:larynx"
+      ],
+      "meshNames": [
+        "bp3d_FMA55113_FJ2792"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55113",
+      "latin": "Cartilago arytenoidea dextra",
+      "side": "right",
+      "family": "cartilage",
+      "respiratoryClass": "cartilage",
+      "respiratoryType": "cartílago",
+      "explosionRegionId": "resp-larynx",
+      "parentId": "resp:larynx",
+      "bounds": [
+        [
+          -0.0080179,
+          1.40348,
+          0.09539360000000001
+        ],
+        [
+          -0.00251497,
+          1.41161,
+          0.10267100000000001
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55114",
+      "name": "Cartílago aritenoides izquierdo",
+      "anatomicalName": "Cartílago aritenoides izquierdo",
+      "aliases": [
+        "resp:FMA55114",
+        "left arytenoid cartilage",
+        "FMA55114",
+        "FJ2775"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:larynx"
+      ],
+      "meshNames": [
+        "bp3d_FMA55114_FJ2775"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55114",
+      "latin": "Cartilago arytenoidea sinistra",
+      "side": "left",
+      "family": "cartilage",
+      "respiratoryClass": "cartilage",
+      "respiratoryType": "cartílago",
+      "explosionRegionId": "resp-larynx",
+      "parentId": "resp:larynx",
+      "bounds": [
+        [
+          0.0011824300000000002,
+          1.4034900000000001,
+          0.0953758
+        ],
+        [
+          0.0067221500000000005,
+          1.4116300000000002,
+          0.102681
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55115",
+      "name": "Cartílago corniculado derecho",
+      "anatomicalName": "Cartílago corniculado derecho",
+      "aliases": [
+        "resp:FMA55115",
+        "right corniculate cartilage",
+        "FMA55115",
+        "FJ2793"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:larynx"
+      ],
+      "meshNames": [
+        "bp3d_FMA55115_FJ2793"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55115",
+      "latin": "Cartilago corniculata dextra",
+      "side": "right",
+      "family": "cartilage",
+      "respiratoryClass": "cartilage",
+      "respiratoryType": "cartílago",
+      "explosionRegionId": "resp-larynx",
+      "parentId": "resp:larynx",
+      "bounds": [
+        [
+          -0.004468499999999999,
+          1.41104,
+          0.0951035
+        ],
+        [
+          -0.00295405,
+          1.4125999999999999,
+          0.0966833
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55116",
+      "name": "Cartílago corniculado izquierdo",
+      "anatomicalName": "Cartílago corniculado izquierdo",
+      "aliases": [
+        "resp:FMA55116",
+        "left corniculate cartilage",
+        "FMA55116",
+        "FJ2776"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:larynx"
+      ],
+      "meshNames": [
+        "bp3d_FMA55116_FJ2776"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55116",
+      "latin": "Cartilago corniculata sinistra",
+      "side": "left",
+      "family": "cartilage",
+      "respiratoryClass": "cartilage",
+      "respiratoryType": "cartílago",
+      "explosionRegionId": "resp-larynx",
+      "parentId": "resp:larynx",
+      "bounds": [
+        [
+          0.00164898,
+          1.41105,
+          0.095101
+        ],
+        [
+          0.00312757,
+          1.41255,
+          0.0967167
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55117",
+      "name": "Cartílago cuneiforme derecho",
+      "anatomicalName": "Cartílago cuneiforme derecho",
+      "aliases": [
+        "resp:FMA55117",
+        "right cuneiform cartilage",
+        "FMA55117",
+        "FJ2795"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:larynx"
+      ],
+      "meshNames": [
+        "bp3d_FMA55117_FJ2795"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55117",
+      "latin": "Cartilago cuneiformis dextra",
+      "side": "right",
+      "family": "cartilage",
+      "respiratoryClass": "cartilage",
+      "respiratoryType": "cartílago",
+      "explosionRegionId": "resp-larynx",
+      "parentId": "resp:larynx",
+      "bounds": [
+        [
+          -0.0063773400000000004,
+          1.41365,
+          0.100199
+        ],
+        [
+          -0.00446088,
+          1.41714,
+          0.102389
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55118",
+      "name": "Cartílago cuneiforme izquierdo",
+      "anatomicalName": "Cartílago cuneiforme izquierdo",
+      "aliases": [
+        "resp:FMA55118",
+        "left cuneiform cartilage",
+        "FMA55118",
+        "FJ2773"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:larynx"
+      ],
+      "meshNames": [
+        "bp3d_FMA55118_FJ2773"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55118",
+      "latin": "Cartilago cuneiformis sinistra",
+      "side": "left",
+      "family": "cartilage",
+      "respiratoryClass": "cartilage",
+      "respiratoryType": "cartílago",
+      "explosionRegionId": "resp-larynx",
+      "parentId": "resp:larynx",
+      "bounds": [
+        [
+          0.00331969,
+          1.41407,
+          0.100193
+        ],
+        [
+          0.00506498,
+          1.41733,
+          0.10287
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA7394",
+      "name": "Tráquea",
+      "anatomicalName": "Tráquea",
+      "aliases": [
+        "resp:FMA7394",
+        "trachea",
+        "FMA7394",
+        "FJ2541",
+        "tráquea",
+        "windpipe",
+        "carina",
+        "bifurcación traqueal"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA7394_FJ2541"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7394",
+      "latin": "Trachea",
+      "side": "midline",
+      "family": "trachea",
+      "respiratoryClass": "trachea",
+      "respiratoryType": "vía aérea",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:lower",
+      "bounds": [
+        [
+          -0.013124100000000001,
+          1.2850899999999998,
+          0.077366
+        ],
+        [
+          0.012814500000000001,
+          1.39544,
+          0.110131
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68418",
+      "name": "Bronquio principal derecho · porción disponible",
+      "anatomicalName": "Bronquio principal derecho · porción disponible",
+      "aliases": [
+        "resp:FMA68418",
+        "right main bronchus proper",
+        "FMA68418",
+        "FJ2539",
+        "FMA7395",
+        "bronquio principal derecho",
+        "right main bronchus"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68418_FJ2539"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68418",
+      "latin": "Bronchus principalis dexter",
+      "side": "right",
+      "family": "main-bronchus",
+      "respiratoryClass": "main-bronchus",
+      "respiratoryType": "bronquio principal",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi",
+      "bounds": [
+        [
+          -0.0504191,
+          1.20403,
+          0.0613287
+        ],
+        [
+          -0.000377242,
+          1.298,
+          0.0984928
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA7396",
+      "name": "Bronquio principal izquierdo",
+      "anatomicalName": "Bronquio principal izquierdo",
+      "aliases": [
+        "resp:FMA7396",
+        "left main bronchus",
+        "FMA7396",
+        "FJ2450",
+        "left main bronchus"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA7396_FJ2450"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7396",
+      "latin": "Bronchus principalis sinister",
+      "side": "left",
+      "family": "main-bronchus",
+      "respiratoryClass": "main-bronchus",
+      "respiratoryType": "bronquio principal",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi",
+      "bounds": [
+        [
+          0.00042119600000000004,
+          1.22082,
+          0.0610014
+        ],
+        [
+          0.07234739999999999,
+          1.29671,
+          0.0933835
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68211",
+      "name": "Árbol bronquial apical derecho",
+      "anatomicalName": "Árbol bronquial apical derecho",
+      "aliases": [
+        "resp:FMA68211",
+        "right apical segmental bronchial tree",
+        "FMA68211",
+        "FJ2454",
+        "FJ2520",
+        "FJ2521",
+        "FJ2522",
+        "FJ2523",
+        "FJ2524",
+        "FJ2525",
+        "FJ2526"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68211_FJ2454",
+        "bp3d_FMA68211_FJ2520",
+        "bp3d_FMA68211_FJ2521",
+        "bp3d_FMA68211_FJ2522",
+        "bp3d_FMA68211_FJ2523",
+        "bp3d_FMA68211_FJ2524",
+        "bp3d_FMA68211_FJ2525",
+        "bp3d_FMA68211_FJ2526"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68211",
+      "latin": "Arbor bronchialis apicalis dexter",
+      "side": "right",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:right-upper",
+      "bounds": [
+        [
+          -0.0476674,
+          1.2808800000000002,
+          0.0603698
+        ],
+        [
+          -0.025208200000000004,
+          1.34785,
+          0.117639
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68212",
+      "name": "Árbol bronquial anterior derecho",
+      "anatomicalName": "Árbol bronquial anterior derecho",
+      "aliases": [
+        "resp:FMA68212",
+        "right anterior segmental bronchial tree",
+        "FMA68212",
+        "FJ2453",
+        "FJ2509",
+        "FJ2510",
+        "FJ2511",
+        "FJ2512",
+        "FJ2513",
+        "FJ2514"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68212_FJ2453",
+        "bp3d_FMA68212_FJ2509",
+        "bp3d_FMA68212_FJ2510",
+        "bp3d_FMA68212_FJ2511",
+        "bp3d_FMA68212_FJ2512",
+        "bp3d_FMA68212_FJ2513",
+        "bp3d_FMA68212_FJ2514"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68212",
+      "latin": "Arbor bronchialis anterior dexter",
+      "side": "right",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:right-upper",
+      "bounds": [
+        [
+          -0.0914663,
+          1.25817,
+          0.0815367
+        ],
+        [
+          -0.020284700000000003,
+          1.2959800000000001,
+          0.148257
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68213",
+      "name": "Árbol bronquial posterior derecho",
+      "anatomicalName": "Árbol bronquial posterior derecho",
+      "aliases": [
+        "resp:FMA68213",
+        "right posterior segmental bronchial tree",
+        "FMA68213",
+        "FJ2458",
+        "FJ2515",
+        "FJ2516",
+        "FJ2517",
+        "FJ2518",
+        "FJ2519"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68213_FJ2458",
+        "bp3d_FMA68213_FJ2515",
+        "bp3d_FMA68213_FJ2516",
+        "bp3d_FMA68213_FJ2517",
+        "bp3d_FMA68213_FJ2518",
+        "bp3d_FMA68213_FJ2519"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68213",
+      "latin": "Arbor bronchialis posterior dexter",
+      "side": "right",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:right-upper",
+      "bounds": [
+        [
+          -0.09961539999999999,
+          1.2750000000000001,
+          0.0396431
+        ],
+        [
+          -0.028763000000000004,
+          1.32349,
+          0.08716750000000001
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68214",
+      "name": "Árbol bronquial medial derecho",
+      "anatomicalName": "Árbol bronquial medial derecho",
+      "aliases": [
+        "resp:FMA68214",
+        "medial segmental bronchial tree",
+        "FMA68214",
+        "FJ2451",
+        "FJ2506",
+        "FJ2507",
+        "FJ2508"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68214_FJ2451",
+        "bp3d_FMA68214_FJ2506",
+        "bp3d_FMA68214_FJ2507",
+        "bp3d_FMA68214_FJ2508"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68214",
+      "latin": "Arbor bronchialis medialis dexter",
+      "side": "right",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:right-middle",
+      "bounds": [
+        [
+          -0.0786789,
+          1.18026,
+          0.0970311
+        ],
+        [
+          -0.034569499999999996,
+          1.2355,
+          0.17381
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68215",
+      "name": "Árbol bronquial lateral derecho",
+      "anatomicalName": "Árbol bronquial lateral derecho",
+      "aliases": [
+        "resp:FMA68215",
+        "lateral segmental bronchial tree",
+        "FMA68215",
+        "FJ2449",
+        "FJ2503",
+        "FJ2504",
+        "FJ2505"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68215_FJ2449",
+        "bp3d_FMA68215_FJ2503",
+        "bp3d_FMA68215_FJ2504",
+        "bp3d_FMA68215_FJ2505"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68215",
+      "latin": "Arbor bronchialis lateralis dexter",
+      "side": "right",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:right-middle",
+      "bounds": [
+        [
+          -0.113986,
+          1.18908,
+          0.0770711
+        ],
+        [
+          -0.0258977,
+          1.25357,
+          0.144783
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68216",
+      "name": "Árbol bronquial superior derecho",
+      "anatomicalName": "Árbol bronquial superior derecho",
+      "aliases": [
+        "resp:FMA68216",
+        "right superior segmental bronchial tree",
+        "FMA68216",
+        "FJ2459",
+        "FJ2495",
+        "FJ2496",
+        "FJ2497",
+        "FJ2498",
+        "FJ2499",
+        "FJ2500",
+        "FJ2501",
+        "FJ2502"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68216_FJ2459",
+        "bp3d_FMA68216_FJ2495",
+        "bp3d_FMA68216_FJ2496",
+        "bp3d_FMA68216_FJ2497",
+        "bp3d_FMA68216_FJ2498",
+        "bp3d_FMA68216_FJ2499",
+        "bp3d_FMA68216_FJ2500",
+        "bp3d_FMA68216_FJ2501",
+        "bp3d_FMA68216_FJ2502"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68216",
+      "latin": "Arbor bronchialis superior dexter",
+      "side": "right",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:right-lower",
+      "bounds": [
+        [
+          -0.08776479999999999,
+          1.22154,
+          0.0241718
+        ],
+        [
+          -0.0212625,
+          1.2931700000000002,
+          0.0814858
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68218",
+      "name": "Árbol bronquial basal medial derecho",
+      "anatomicalName": "Árbol bronquial basal medial derecho",
+      "aliases": [
+        "resp:FMA68218",
+        "right medial basal segmental bronchial tree",
+        "FMA68218",
+        "FJ2456",
+        "FJ2488"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68218_FJ2456",
+        "bp3d_FMA68218_FJ2488"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68218",
+      "latin": "Arbor bronchialis basalis medialis dexter",
+      "side": "right",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:right-lower",
+      "bounds": [
+        [
+          -0.038078,
+          1.1981700000000002,
+          0.07281069999999999
+        ],
+        [
+          -0.00874452,
+          1.24567,
+          0.0989125
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68321",
+      "name": "Árbol bronquial basal anterior derecho",
+      "anatomicalName": "Árbol bronquial basal anterior derecho",
+      "aliases": [
+        "resp:FMA68321",
+        "right anterior basal segmental bronchial tree",
+        "FMA68321",
+        "FJ2452",
+        "FJ2493",
+        "FJ2494"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68321_FJ2452",
+        "bp3d_FMA68321_FJ2493",
+        "bp3d_FMA68321_FJ2494"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68321",
+      "latin": "Arbor bronchialis basalis anterior dexter",
+      "side": "right",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:right-lower",
+      "bounds": [
+        [
+          -0.11654,
+          1.18045,
+          0.0541487
+        ],
+        [
+          -0.0350881,
+          1.23757,
+          0.0949009
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68220",
+      "name": "Árbol bronquial basal lateral derecho",
+      "anatomicalName": "Árbol bronquial basal lateral derecho",
+      "aliases": [
+        "resp:FMA68220",
+        "right lateral basal segmental bronchial tree",
+        "FMA68220",
+        "FJ2455",
+        "FJ2490",
+        "FJ2491",
+        "FJ2492"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68220_FJ2455",
+        "bp3d_FMA68220_FJ2490",
+        "bp3d_FMA68220_FJ2491",
+        "bp3d_FMA68220_FJ2492"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68220",
+      "latin": "Arbor bronchialis basalis lateralis dexter",
+      "side": "right",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:right-lower",
+      "bounds": [
+        [
+          -0.113667,
+          1.14187,
+          0.059724200000000005
+        ],
+        [
+          -0.038364199999999994,
+          1.2297,
+          0.0773136
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68221",
+      "name": "Árbol bronquial basal posterior derecho",
+      "anatomicalName": "Árbol bronquial basal posterior derecho",
+      "aliases": [
+        "resp:FMA68221",
+        "right posterior basal segmental bronchial tree",
+        "FMA68221",
+        "FJ2457",
+        "FJ2470",
+        "FJ2481",
+        "FJ2486",
+        "FJ2487",
+        "FJ2489"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68221_FJ2457",
+        "bp3d_FMA68221_FJ2470",
+        "bp3d_FMA68221_FJ2481",
+        "bp3d_FMA68221_FJ2486",
+        "bp3d_FMA68221_FJ2487",
+        "bp3d_FMA68221_FJ2489"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68221",
+      "latin": "Arbor bronchialis basalis posterior dexter",
+      "side": "right",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:right-lower",
+      "bounds": [
+        [
+          -0.08329049999999999,
+          1.13571,
+          0.024457
+        ],
+        [
+          -0.0341872,
+          1.2293900000000002,
+          0.07498529999999999
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68222",
+      "name": "Árbol bronquial anterior izquierdo",
+      "anatomicalName": "Árbol bronquial anterior izquierdo",
+      "aliases": [
+        "resp:FMA68222",
+        "left anterior segmental bronchial tree",
+        "FMA68222",
+        "FJ2443",
+        "FJ2467",
+        "FJ2468",
+        "FJ2469",
+        "FJ2471",
+        "FJ2472",
+        "FJ2473",
+        "FJ2474"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68222_FJ2443",
+        "bp3d_FMA68222_FJ2467",
+        "bp3d_FMA68222_FJ2468",
+        "bp3d_FMA68222_FJ2469",
+        "bp3d_FMA68222_FJ2471",
+        "bp3d_FMA68222_FJ2472",
+        "bp3d_FMA68222_FJ2473",
+        "bp3d_FMA68222_FJ2474"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68222",
+      "latin": "Arbor bronchialis anterior sinister",
+      "side": "left",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:left-upper",
+      "bounds": [
+        [
+          0.031516,
+          1.2459200000000001,
+          0.0844788
+        ],
+        [
+          0.0922604,
+          1.29465,
+          0.16037
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68223",
+      "name": "Árbol bronquial apical izquierdo",
+      "anatomicalName": "Árbol bronquial apical izquierdo",
+      "aliases": [
+        "resp:FMA68223",
+        "left apical segmental bronchial tree",
+        "FMA68223",
+        "FJ2444",
+        "FJ2460",
+        "FJ2461",
+        "FJ2462",
+        "FJ2463",
+        "FJ2464"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68223_FJ2444",
+        "bp3d_FMA68223_FJ2460",
+        "bp3d_FMA68223_FJ2461",
+        "bp3d_FMA68223_FJ2462",
+        "bp3d_FMA68223_FJ2463",
+        "bp3d_FMA68223_FJ2464"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68223",
+      "latin": "Arbor bronchialis apicalis sinister",
+      "side": "left",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:left-upper",
+      "bounds": [
+        [
+          0.0231878,
+          1.27182,
+          0.06635970000000001
+        ],
+        [
+          0.0690193,
+          1.3531400000000002,
+          0.0979901
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68225",
+      "name": "Árbol bronquial posterior izquierdo",
+      "anatomicalName": "Árbol bronquial posterior izquierdo",
+      "aliases": [
+        "resp:FMA68225",
+        "left posterior segmental bronchial tree",
+        "FMA68225",
+        "FJ2447",
+        "FJ2465",
+        "FJ2466"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68225_FJ2447",
+        "bp3d_FMA68225_FJ2465",
+        "bp3d_FMA68225_FJ2466"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68225",
+      "latin": "Arbor bronchialis posterior sinister",
+      "side": "left",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:left-upper",
+      "bounds": [
+        [
+          0.062134,
+          1.2869300000000001,
+          0.054348799999999996
+        ],
+        [
+          0.0840565,
+          1.32205,
+          0.0922738
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68226",
+      "name": "Árbol bronquial lingular superior",
+      "anatomicalName": "Árbol bronquial lingular superior",
+      "aliases": [
+        "resp:FMA68226",
+        "superior lingular bronchial tree",
+        "FMA68226",
+        "FJ2476",
+        "FJ2477",
+        "FJ2478",
+        "FJ2540"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68226_FJ2476",
+        "bp3d_FMA68226_FJ2477",
+        "bp3d_FMA68226_FJ2478",
+        "bp3d_FMA68226_FJ2540"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68226",
+      "latin": "Arbor bronchialis lingularis superior",
+      "side": "left",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:left-upper",
+      "bounds": [
+        [
+          0.0732577,
+          1.22188,
+          0.07992260000000001
+        ],
+        [
+          0.11336600000000001,
+          1.25703,
+          0.131062
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68227",
+      "name": "Árbol bronquial lingular inferior",
+      "anatomicalName": "Árbol bronquial lingular inferior",
+      "aliases": [
+        "resp:FMA68227",
+        "inferior lingular bronchial tree",
+        "FMA68227",
+        "FJ2441",
+        "FJ2475"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68227_FJ2441",
+        "bp3d_FMA68227_FJ2475"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68227",
+      "latin": "Arbor bronchialis lingularis inferior",
+      "side": "left",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:left-upper",
+      "bounds": [
+        [
+          0.0523373,
+          1.17073,
+          0.0737573
+        ],
+        [
+          0.10439400000000001,
+          1.26704,
+          0.177871
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68228",
+      "name": "Árbol bronquial superior izquierdo",
+      "anatomicalName": "Árbol bronquial superior izquierdo",
+      "aliases": [
+        "resp:FMA68228",
+        "left superior segmental bronchial tree",
+        "FMA68228",
+        "FJ2448",
+        "FJ2479",
+        "FJ2480",
+        "FJ2482",
+        "FJ2483",
+        "FJ2484",
+        "FJ2485"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68228_FJ2448",
+        "bp3d_FMA68228_FJ2479",
+        "bp3d_FMA68228_FJ2480",
+        "bp3d_FMA68228_FJ2482",
+        "bp3d_FMA68228_FJ2483",
+        "bp3d_FMA68228_FJ2484",
+        "bp3d_FMA68228_FJ2485"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68228",
+      "latin": "Arbor bronchialis superior sinister",
+      "side": "left",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:left-lower",
+      "bounds": [
+        [
+          0.0359723,
+          1.22759,
+          0.033660800000000005
+        ],
+        [
+          0.0909075,
+          1.29414,
+          0.0713321
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68230",
+      "name": "Árbol bronquial basal medial izquierdo",
+      "anatomicalName": "Árbol bronquial basal medial izquierdo",
+      "aliases": [
+        "resp:FMA68230",
+        "left medial basal segmental bronchial tree",
+        "FMA68230",
+        "FJ2442",
+        "FJ2537"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68230_FJ2442",
+        "bp3d_FMA68230_FJ2537"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68230",
+      "latin": "Arbor bronchialis basalis medialis sinister",
+      "side": "left",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:left-lower",
+      "bounds": [
+        [
+          0.0626008,
+          1.14587,
+          0.063472
+        ],
+        [
+          0.122877,
+          1.23113,
+          0.13053
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68231",
+      "name": "Árbol bronquial basal anterior izquierdo",
+      "anatomicalName": "Árbol bronquial basal anterior izquierdo",
+      "aliases": [
+        "resp:FMA68231",
+        "left anterior basal segmental bronchial tree",
+        "FMA68231",
+        "FJ2535",
+        "FJ2536",
+        "FJ2538"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68231_FJ2535",
+        "bp3d_FMA68231_FJ2536",
+        "bp3d_FMA68231_FJ2538"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68231",
+      "latin": "Arbor bronchialis basalis anterior sinister",
+      "side": "left",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:left-lower",
+      "bounds": [
+        [
+          0.0751797,
+          1.13499,
+          0.0755809
+        ],
+        [
+          0.120672,
+          1.21523,
+          0.14172700000000002
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68232",
+      "name": "Árbol bronquial basal lateral izquierdo",
+      "anatomicalName": "Árbol bronquial basal lateral izquierdo",
+      "aliases": [
+        "resp:FMA68232",
+        "left lateral basal segmental bronchial tree",
+        "FMA68232",
+        "FJ2445",
+        "FJ2532",
+        "FJ2533",
+        "FJ2534"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68232_FJ2445",
+        "bp3d_FMA68232_FJ2532",
+        "bp3d_FMA68232_FJ2533",
+        "bp3d_FMA68232_FJ2534"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68232",
+      "latin": "Arbor bronchialis basalis lateralis sinister",
+      "side": "left",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:left-lower",
+      "bounds": [
+        [
+          0.0667749,
+          1.12485,
+          0.041169
+        ],
+        [
+          0.121353,
+          1.2192100000000001,
+          0.0927563
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA68233",
+      "name": "Árbol bronquial basal posterior izquierdo",
+      "anatomicalName": "Árbol bronquial basal posterior izquierdo",
+      "aliases": [
+        "resp:FMA68233",
+        "left posterior basal segmental bronchial tree",
+        "FMA68233",
+        "FJ2446",
+        "FJ2527",
+        "FJ2528",
+        "FJ2529",
+        "FJ2530",
+        "FJ2531"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:airway"
+      ],
+      "meshNames": [
+        "bp3d_FMA68233_FJ2446",
+        "bp3d_FMA68233_FJ2527",
+        "bp3d_FMA68233_FJ2528",
+        "bp3d_FMA68233_FJ2529",
+        "bp3d_FMA68233_FJ2530",
+        "bp3d_FMA68233_FJ2531"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA68233",
+      "latin": "Arbor bronchialis basalis posterior sinister",
+      "side": "left",
+      "family": "bronchial-tree",
+      "respiratoryClass": "bronchial-tree",
+      "respiratoryType": "árbol bronquial segmentario",
+      "explosionRegionId": "resp-airway",
+      "parentId": "resp:bronchi:left-lower",
+      "bounds": [
+        [
+          0.0365772,
+          1.12968,
+          0.0203139
+        ],
+        [
+          0.0834517,
+          1.2313399999999999,
+          0.0710844
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27368",
+      "name": "Parénquima del segmento apicoposterior izquierdo",
+      "anatomicalName": "Parénquima del segmento apicoposterior izquierdo",
+      "aliases": [
+        "resp:FMA27368",
+        "Parénquima del segmento apicoposterior izquierdo",
+        "FMA27368",
+        "FJ6595",
+        "FJ6597"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27368_FJ6595",
+        "bp3d_FMA27368_FJ6597"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27368",
+      "latin": "Parenchyma segmenti bronchopulmonalis apicoposterioris sinistri",
+      "side": "left",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-left",
+      "parentId": "resp:lobe:left-upper",
+      "bounds": [
+        [
+          0.015313100000000001,
+          1.26974,
+          0.0349713
+        ],
+        [
+          0.09907470000000002,
+          1.35827,
+          0.14472200000000002
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27374",
+      "name": "Parénquima del segmento anterior izquierdo",
+      "anatomicalName": "Parénquima del segmento anterior izquierdo",
+      "aliases": [
+        "resp:FMA27374",
+        "Parénquima del segmento anterior izquierdo",
+        "FMA27374",
+        "FJ6598"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27374_FJ6598"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27374",
+      "latin": "Parenchyma segmenti bronchopulmonalis anterioris sinistri",
+      "side": "left",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-left",
+      "parentId": "resp:lobe:left-upper",
+      "bounds": [
+        [
+          0.0052927700000000005,
+          1.2373,
+          0.039311500000000006
+        ],
+        [
+          0.10864,
+          1.29838,
+          0.18220599999999998
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27375",
+      "name": "Parénquima del segmento lingular superior",
+      "anatomicalName": "Parénquima del segmento lingular superior",
+      "aliases": [
+        "resp:FMA27375",
+        "Parénquima del segmento lingular superior",
+        "FMA27375",
+        "FJ6599"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27375_FJ6599"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27375",
+      "latin": "Parenchyma segmenti bronchopulmonalis lingularis superioris",
+      "side": "left",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-left",
+      "parentId": "resp:lobe:left-upper",
+      "bounds": [
+        [
+          0.029117,
+          1.20029,
+          0.050467700000000004
+        ],
+        [
+          0.121654,
+          1.25925,
+          0.19175299999999998
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27376",
+      "name": "Parénquima del segmento lingular inferior",
+      "anatomicalName": "Parénquima del segmento lingular inferior",
+      "aliases": [
+        "resp:FMA27376",
+        "Parénquima del segmento lingular inferior",
+        "FMA27376",
+        "FJ6600"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27376_FJ6600"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27376",
+      "latin": "Parenchyma segmenti bronchopulmonalis lingularis inferioris",
+      "side": "left",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-left",
+      "parentId": "resp:lobe:left-upper",
+      "bounds": [
+        [
+          0.0341147,
+          1.15449,
+          0.09406
+        ],
+        [
+          0.122976,
+          1.2293,
+          0.19567500000000002
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27386",
+      "name": "Parénquima del segmento superior izquierdo",
+      "anatomicalName": "Parénquima del segmento superior izquierdo",
+      "aliases": [
+        "resp:FMA27386",
+        "Parénquima del segmento superior izquierdo",
+        "FMA27386",
+        "FJ6601"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27386_FJ6601"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27386",
+      "latin": "Parenchyma segmenti bronchopulmonalis superioris sinistri",
+      "side": "left",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-left",
+      "parentId": "resp:lobe:left-lower",
+      "bounds": [
+        [
+          0.0244028,
+          1.2221400000000002,
+          0.0180547
+        ],
+        [
+          0.113892,
+          1.31582,
+          0.0903776
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27392",
+      "name": "Parénquima del segmento basal anterior izquierdo",
+      "anatomicalName": "Parénquima del segmento basal anterior izquierdo",
+      "aliases": [
+        "resp:FMA27392",
+        "Parénquima del segmento basal anterior izquierdo",
+        "FMA27392",
+        "FJ6602"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27392_FJ6602"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27392",
+      "latin": "Parenchyma segmenti bronchopulmonalis basalis anterioris sinistri",
+      "side": "left",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-left",
+      "parentId": "resp:lobe:left-lower",
+      "bounds": [
+        [
+          0.0353875,
+          1.11706,
+          0.0388575
+        ],
+        [
+          0.127442,
+          1.2386700000000002,
+          0.19035400000000002
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27390",
+      "name": "Parénquima del segmento basal lateral izquierdo",
+      "anatomicalName": "Parénquima del segmento basal lateral izquierdo",
+      "aliases": [
+        "resp:FMA27390",
+        "Parénquima del segmento basal lateral izquierdo",
+        "FMA27390",
+        "FJ6603"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27390_FJ6603"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27390",
+      "latin": "Parenchyma segmenti bronchopulmonalis basalis lateralis sinistri",
+      "side": "left",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-left",
+      "parentId": "resp:lobe:left-lower",
+      "bounds": [
+        [
+          0.0665086,
+          1.11652,
+          0.017800999999999997
+        ],
+        [
+          0.125675,
+          1.2311500000000002,
+          0.127421
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27394",
+      "name": "Parénquima del segmento basal posterior izquierdo",
+      "anatomicalName": "Parénquima del segmento basal posterior izquierdo",
+      "aliases": [
+        "resp:FMA27394",
+        "Parénquima del segmento basal posterior izquierdo",
+        "FMA27394",
+        "FJ6596"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:left",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27394_FJ6596"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27394",
+      "latin": "Parenchyma segmenti bronchopulmonalis basalis posterioris sinistri",
+      "side": "left",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-left",
+      "parentId": "resp:lobe:left-lower",
+      "bounds": [
+        [
+          0.0188025,
+          1.11948,
+          0.0157895
+        ],
+        [
+          0.0879288,
+          1.23468,
+          0.110945
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27369",
+      "name": "Parénquima del segmento apical derecho",
+      "anatomicalName": "Parénquima del segmento apical derecho",
+      "aliases": [
+        "resp:FMA27369",
+        "Parénquima del segmento apical derecho",
+        "FMA27369",
+        "FJ6604"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27369_FJ6604"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27369",
+      "latin": "Parenchyma segmenti bronchopulmonalis apicalis dextri",
+      "side": "right",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-right",
+      "parentId": "resp:lobe:right-upper",
+      "bounds": [
+        [
+          -0.09147830000000001,
+          1.2626600000000001,
+          0.051651600000000006
+        ],
+        [
+          -0.009151300000000001,
+          1.3596700000000002,
+          0.150594
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27371",
+      "name": "Parénquima del segmento posterior derecho",
+      "anatomicalName": "Parénquima del segmento posterior derecho",
+      "aliases": [
+        "resp:FMA27371",
+        "Parénquima del segmento posterior derecho",
+        "FMA27371",
+        "FJ6606"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27371_FJ6606"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27371",
+      "latin": "Parenchyma segmenti bronchopulmonalis posterioris dextri",
+      "side": "right",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-right",
+      "parentId": "resp:lobe:right-upper",
+      "bounds": [
+        [
+          -0.111149,
+          1.24089,
+          0.034024500000000006
+        ],
+        [
+          -0.015447200000000001,
+          1.33549,
+          0.096304
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27373",
+      "name": "Parénquima del segmento anterior derecho",
+      "anatomicalName": "Parénquima del segmento anterior derecho",
+      "aliases": [
+        "resp:FMA27373",
+        "Parénquima del segmento anterior derecho",
+        "FMA27373",
+        "FJ6607"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27373_FJ6607"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27373",
+      "latin": "Parenchyma segmenti bronchopulmonalis anterioris dextri",
+      "side": "right",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-right",
+      "parentId": "resp:lobe:right-upper",
+      "bounds": [
+        [
+          -0.114065,
+          1.2276500000000001,
+          0.0706327
+        ],
+        [
+          -0.00574137,
+          1.30963,
+          0.183321
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27452",
+      "name": "Parénquima del segmento lateral derecho",
+      "anatomicalName": "Parénquima del segmento lateral derecho",
+      "aliases": [
+        "resp:FMA27452",
+        "Parénquima del segmento lateral derecho",
+        "FMA27452",
+        "FJ6608"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27452_FJ6608"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27452",
+      "latin": "Parenchyma segmenti bronchopulmonalis lateralis dextri",
+      "side": "right",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-right",
+      "parentId": "resp:lobe:right-middle",
+      "bounds": [
+        [
+          -0.125189,
+          1.1596199999999999,
+          0.0447714
+        ],
+        [
+          -0.024343,
+          1.2523,
+          0.164775
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27448",
+      "name": "Parénquima del segmento medial derecho",
+      "anatomicalName": "Parénquima del segmento medial derecho",
+      "aliases": [
+        "resp:FMA27448",
+        "Parénquima del segmento medial derecho",
+        "FMA27448",
+        "FJ6609"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27448_FJ6609"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27448",
+      "latin": "Parenchyma segmenti bronchopulmonalis medialis dextri",
+      "side": "right",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-right",
+      "parentId": "resp:lobe:right-middle",
+      "bounds": [
+        [
+          -0.10404200000000001,
+          1.15685,
+          0.08182590000000001
+        ],
+        [
+          -0.005594,
+          1.24171,
+          0.19647900000000001
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27385",
+      "name": "Parénquima del segmento superior derecho",
+      "anatomicalName": "Parénquima del segmento superior derecho",
+      "aliases": [
+        "resp:FMA27385",
+        "Parénquima del segmento superior derecho",
+        "FMA27385",
+        "FJ6610"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27385_FJ6610"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27385",
+      "latin": "Parenchyma segmenti bronchopulmonalis superioris dextri",
+      "side": "right",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-right",
+      "parentId": "resp:lobe:right-lower",
+      "bounds": [
+        [
+          -0.111416,
+          1.21125,
+          0.017981
+        ],
+        [
+          -0.015044499999999999,
+          1.3041500000000001,
+          0.0875831
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27391",
+      "name": "Parénquima del segmento basal anterior derecho",
+      "anatomicalName": "Parénquima del segmento basal anterior derecho",
+      "aliases": [
+        "resp:FMA27391",
+        "Parénquima del segmento basal anterior derecho",
+        "FMA27391",
+        "FJ6611"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27391_FJ6611"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27391",
+      "latin": "Parenchyma segmenti bronchopulmonalis basalis anterioris dextri",
+      "side": "right",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-right",
+      "parentId": "resp:lobe:right-lower",
+      "bounds": [
+        [
+          -0.127716,
+          1.1273900000000001,
+          0.0327918
+        ],
+        [
+          -0.0219449,
+          1.23498,
+          0.182398
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27389",
+      "name": "Parénquima del segmento basal lateral derecho",
+      "anatomicalName": "Parénquima del segmento basal lateral derecho",
+      "aliases": [
+        "resp:FMA27389",
+        "Parénquima del segmento basal lateral derecho",
+        "FMA27389",
+        "FJ6612"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27389_FJ6612"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27389",
+      "latin": "Parenchyma segmenti bronchopulmonalis basalis lateralis dextri",
+      "side": "right",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-right",
+      "parentId": "resp:lobe:right-lower",
+      "bounds": [
+        [
+          -0.125056,
+          1.11888,
+          0.016805399999999998
+        ],
+        [
+          -0.019204699999999998,
+          1.23057,
+          0.12323200000000001
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA27393",
+      "name": "Parénquima del segmento basal posterior derecho",
+      "anatomicalName": "Parénquima del segmento basal posterior derecho",
+      "aliases": [
+        "resp:FMA27393",
+        "Parénquima del segmento basal posterior derecho",
+        "FMA27393",
+        "FJ6605"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:lung:right",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:lungs"
+      ],
+      "meshNames": [
+        "bp3d_FMA27393_FJ6605"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA27393",
+      "latin": "Parenchyma segmenti bronchopulmonalis basalis posterioris dextri",
+      "side": "right",
+      "family": "parenchyma",
+      "respiratoryClass": "parenchyma",
+      "respiratoryType": "parénquima segmentario",
+      "explosionRegionId": "resp-lung-right",
+      "parentId": "resp:lobe:right-lower",
+      "bounds": [
+        [
+          -0.08985259999999999,
+          1.1189200000000001,
+          0.0166941
+        ],
+        [
+          -0.0136876,
+          1.22824,
+          0.08898489999999999
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "respiratory:larynx",
+      "path": "models/anatomy/respiratory/larynx.glb",
+      "systemId": "respiratory",
+      "regionId": "resp:larynx",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 107936,
+      "sha256": "e21096d61dacf35876679f7c113bd661a08dd1477999e298b0e081cb5bcca88e",
+      "meshCount": 9,
+      "triangles": 9642,
+      "bounds": [
+        [
+          -0.0199803,
+          1.3872,
+          0.0915061
+        ],
+        [
+          0.0186825,
+          1.4382300000000001,
+          0.122446
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-respiratory"
+    },
+    {
+      "id": "respiratory:airway",
+      "path": "models/anatomy/respiratory/airway.glb",
+      "systemId": "respiratory",
+      "regionId": "resp:lower",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 733700,
+      "sha256": "028685f7a5d7ebe905325067662f2d0234147574a502d26a74b596cee8430191",
+      "meshCount": 101,
+      "triangles": 66466,
+      "bounds": [
+        [
+          -0.11654,
+          1.12485,
+          0.0203139
+        ],
+        [
+          0.122877,
+          1.39544,
+          0.177871
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-respiratory"
+    },
+    {
+      "id": "respiratory:lungs",
+      "path": "models/anatomy/respiratory/lungs.glb",
+      "systemId": "respiratory",
+      "regionId": "resp:lungs",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 1488376,
+      "sha256": "8587aac2e22bc25a349e9785223dc684692a7d49a2ac32d6a24fc071b52edaf7",
+      "meshCount": 18,
+      "triangles": 136376,
+      "bounds": [
+        [
+          -0.127716,
+          1.11652,
+          0.0157895
+        ],
+        [
+          0.127442,
+          1.3596700000000002,
+          0.19647900000000001
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.3-respiratory"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "bodyparts3d-4.0-respiratory",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 · OBJ99 (2013 archive; current license declaration)",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selección respiratoria curada; OBJ originales, FMA/FJ y hashes conservados.",
+        "Transformación común (x,y,z) -> (x,z,-y)/1000. Float32 y Meshopt sin decimación adicional, deformación ni ajuste por pieza.",
+        "Cartílagos disponibles y árboles segmentarios; sin afirmar laringe ni vías superiores completas."
+      ]
+    },
+    {
+      "id": "bodyparts3d-4.3-respiratory",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY-SA 2.1 Japan",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/",
+      "version": "4.3 / conjunto oficial de objetos 4.3",
+      "originalUrl": "https://lifesciencedb.jp/bp3d/",
+      "attribution": "BodyParts3D, © Database Center for Life Science (DBCLS), licensed under CC BY-SA 2.1 Japan.",
+      "modifications": [
+        "Selección de 18 mallas de parénquima; agrupación de sus identidades en dos pulmones y cinco lóbulos, sin cortar, fusionar ni duplicar mallas.",
+        "Coordenadas nativas conservadas; misma transformación corporal. Verificación de compatibilidad entre revisiones documentada.",
+        "Conversión OBJ a GLB y compresión Meshopt con posiciones Float32; GLB derivado distribuido bajo CC BY-SA 2.1 Japan."
+      ]
+    }
+  ],
+  "coverage": {
+    "title": "Cobertura respiratoria macroscópica disponible",
+    "structures": 6,
+    "meshes": 128,
+    "note": "6 unidades de nivel estructural y 51 componentes: laringe cartilaginosa disponible, tráquea, bronquios y dos pulmones agrupados en cinco lóbulos.",
+    "limitations": [
+      "Cavidad nasal, faringe, mucosa/pliegues laríngeos y pleuras independientes pendientes.",
+      "Carina sin malla individual; los grupos lobares bronquiales agrupan árboles segmentarios, no nuevos troncos fabricados.",
+      "Parénquima por segmentos fuente: variantes de nomenclatura basal 7.8 conservadas; sin alvéolos ni fisiología simulada.",
+      "Diafragma explicado como relación muscular, sin geometría nueva ni duplicación respiratoria. Vasos pulmonares y corazón se muestran mediante contexto cardiovascular.",
+      "Explorador HRA pulmonar detallado conservado independiente. Sin validación clínica."
+    ]
+  }
+}

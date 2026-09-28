@@ -1,0 +1,60 @@
+{
+  "method": "Native coordinates; all tracheal vertices to triangles of alternate official revision. No optimization/fitting; no clinical validation.",
+  "units": "millimetres",
+  "control40": {
+    "fileId": "FJ2541",
+    "sha256": "eb8c075b6601f2d543532f4a2eb4a39b03430af858da225ba7887e52182272ed",
+    "vertices": 2607,
+    "triangles": 4996
+  },
+  "control43": {
+    "fileId": "FJ6588",
+    "sha256": "3ed27981de5865fa69f4d4f5e328ecebdd13e67d5337aeadc4c577d4628b5c3e",
+    "vertices": 2599,
+    "triangles": 4996
+  },
+  "distances40To43": {
+    "median": 0.007133767142889929,
+    "p95": 0.1143328538137446,
+    "maximum": 0.2804233250877773
+  },
+  "distances43To40": {
+    "median": 0.007048359234728688,
+    "p95": 0.11982722126198872,
+    "maximum": 0.5627835166321487
+  },
+  "maximumBoundsDelta": 0.15449999999999875,
+  "additionalTransform": "identity",
+  "transformToBody": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "frame": "bodyparts3d-4.0-male",
+  "allLungSidesCorrect": true,
+  "limitations": [
+    "A common tracheal control supports frame compatibility but cannot certify all organ surfaces.",
+    "Full lung/airway/thoracic placement additionally reviewed visually; no per-piece adjustments."
+  ]
+}

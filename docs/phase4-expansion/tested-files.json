@@ -1,0 +1,165 @@
+[
+  {
+    "path": "public/models/anatomy/nervous/catalog.json",
+    "bytes": 154067,
+    "sha256": "6d92f5c9389ef9ae78738a5ef838033b40fcaed5ae224e55dd6078dd2654f0ed",
+    "gitBlob": "31b7b3d728f9989f41ec7de1df6899ed27bf967c"
+  },
+  {
+    "path": "public/models/anatomy/nervous/lower-left.glb",
+    "bytes": 202496,
+    "sha256": "6467594cad340ca676bee864c94b7ef3637b634787b4337cfa09251a2bcfec47",
+    "gitBlob": "34502f1c1a167e0a15543b762ca31e2b550d065e"
+  },
+  {
+    "path": "public/models/anatomy/nervous/lower-right.glb",
+    "bytes": 202584,
+    "sha256": "95562e42051af18a088e62cd4b81c033ca94cf5bfb159c5ba05ef16218ea5525",
+    "gitBlob": "0c32674616bc753492408a2c8b10176f9de071ef"
+  },
+  {
+    "path": "public/models/anatomy/nervous/nervous-expansion-manifest.json",
+    "bytes": 83383,
+    "sha256": "03fa925985ca3b60943a4f6d28c290f31473773f6318cc5ed58cbff56c18ed6d",
+    "gitBlob": "358bbf9c4b413898ff83e4839eb20ace3052b532"
+  },
+  {
+    "path": "public/models/anatomy/nervous/nervous-expansion-validation.json",
+    "bytes": 12300,
+    "sha256": "784db6880b8c6a5f9ede5b6d6b690fef606cb360f0f8966e9af6afa3c994909b",
+    "gitBlob": "0994b502bc5887653c234b765d2bcce0c0054b33"
+  },
+  {
+    "path": "public/models/anatomy/nervous/upper-left.glb",
+    "bytes": 238688,
+    "sha256": "aebebfae619eaf0ea668d0d35d90a8e0de791afcecff1aebc8ad488d0b611c37",
+    "gitBlob": "ea487fcae4eb4ce6d65d375206bf84505546f3f2"
+  },
+  {
+    "path": "public/models/anatomy/nervous/upper-right.glb",
+    "bytes": 238684,
+    "sha256": "8c38efd3a6f40ff30410a01c890dccd8ab24d0576d9fc88f303a67dfe00bc03d",
+    "gitBlob": "551d042e8647493d60969400188081bcc6d0b8b0"
+  },
+  {
+    "path": "research/anatomy/nervous-expansion-base-catalog.json",
+    "bytes": 91792,
+    "sha256": "69380af9a9d28bfc416fb1e07fcf9b3064989585331458e33845b272917a2320",
+    "gitBlob": "cc687946d2656a1e7b13bc6ee7af9502a209fc09"
+  },
+  {
+    "path": "research/anatomy/nervous-expansion-originals.zip",
+    "bytes": 8776987,
+    "sha256": "fc00ea153e8b798acad40dafa4ce28246653cb60f9bc0a134adcc03e52fd7f73",
+    "gitBlob": "bd96a7d9b7f63284d5a43aa7449e17aa90dbf0c3"
+  },
+  {
+    "path": "research/anatomy/nervous-expansion-registration.json",
+    "bytes": 161449,
+    "sha256": "f93b6144aa004835bbe2f694874002215629d7e897ccc7670c94e1bfd22497fd",
+    "gitBlob": "ec4627f1008dd09c61f33ac045c1b56b449fb0d3"
+  },
+  {
+    "path": "research/anatomy/nervous-expansion-selection.json",
+    "bytes": 240481,
+    "sha256": "c00c36ba93e626f456296bc47b7b278893e01f5afe05d79b8868963e3ee211b6",
+    "gitBlob": "f3ee65fff8b2ed38dca80945ca6eabbea8b77a21"
+  },
+  {
+    "path": "research/anatomy/nervous-expansion-source-lock.json",
+    "bytes": 5591,
+    "sha256": "8e4518104bc445ae0ba56bc79860bf8ec45325b7e338e217a9df1b3ae87a5ba4",
+    "gitBlob": "ed845e3bf503cb38007a3c4119e32d91b2854cf4"
+  },
+  {
+    "path": "scripts/anatomy/build-nervous-expansion.mjs",
+    "bytes": 15996,
+    "sha256": "c4eb3b5146f1aedf082888e55e69c9c2b1b0f216aa178f7b845dabf3ba4d9ca4",
+    "gitBlob": "875fcd69f266184270d7e0d803de0d11de33a100"
+  },
+  {
+    "path": "scripts/anatomy/expansion-reference.mjs",
+    "bytes": 1994,
+    "sha256": "d775f14ed3a3747a3071ac177f1e2d1b777c4b0636c109277cb5bf3c8a6c74df",
+    "gitBlob": "4a66d978aad2d211abc0f642caa37035d3001673"
+  },
+  {
+    "path": "scripts/anatomy/nervous-expansion-qa.mjs",
+    "bytes": 18437,
+    "sha256": "27af2cdd8828f94a5982e01f6b77ee7ec0203360cc7c8ce6c7f79c03ec5c71de",
+    "gitBlob": "77b0612d1d536d1720a7735383ec76ba20dea476",
+    "postValidationChange": "Removed redundant blank lines at EOF only; node --check passed."
+  },
+  {
+    "path": "scripts/anatomy/nervous-qa.mjs",
+    "bytes": 20252,
+    "sha256": "ba5e98b14c101e5a8eb05328c047136d358a18b7433c133f71da151a48623ced",
+    "gitBlob": "d5a214020373d8119cb69fd4c888c9dee3287d6c"
+  },
+  {
+    "path": "scripts/anatomy/register-nervous-expansion.py",
+    "bytes": 2965,
+    "sha256": "260bc50cca70524f64d34aedb26024b0eda39f588d9970bbb0a0afccd550f6c2",
+    "gitBlob": "2f5135c07d512b24b59aa6de5c1b67196c405761"
+  },
+  {
+    "path": "scripts/anatomy/verify-nervous-expansion-native.py",
+    "bytes": 2261,
+    "sha256": "5b3c7b456bbee2da0f1dd6e61be4f31fe567accf53a6236be443141f0e5f9327",
+    "gitBlob": "4c29ca5bfa41211d24f4a342f149bef1be7c1d25"
+  },
+  {
+    "path": "scripts/test-atlas-nervous-expansion.mjs",
+    "bytes": 5943,
+    "sha256": "2d81711582c87849390706825ad9152fb22f5995d472a6c6973b6e954d248997",
+    "gitBlob": "0926e8ec11e6a94449a4d666637e5b3fbc0f4f7a"
+  },
+  {
+    "path": "scripts/test-atlas-nervous.mjs",
+    "bytes": 6524,
+    "sha256": "0a0c2c0aa2d7a0f0454a033a5bc91d710f57246d2f8815ee0108c763df5e0bd2",
+    "gitBlob": "63aff7cadaa518f7170653bc2e1b1a8b0cc7cc09"
+  },
+  {
+    "path": "src/features/anatomy/atlas/AtlasScene.tsx",
+    "bytes": 27673,
+    "sha256": "fc2346f3122c66f4beb57513c844af69cb3d98c1fc89046e234b98c786cf96ef",
+    "gitBlob": "83b9f956ebba8ef923cd21d08e35049a2546669c"
+  },
+  {
+    "path": "src/features/anatomy/atlas/NerveInformation.tsx",
+    "bytes": 2009,
+    "sha256": "ec90e4d598aeca9ad2d51ad77e7cc325ad60c471d252c828db818496c5685182",
+    "gitBlob": "a8c366ef0e8e8aaccf833f0da7a3184d000de759"
+  },
+  {
+    "path": "src/features/anatomy/atlas/SkeletalAtlas.tsx",
+    "bytes": 27290,
+    "sha256": "2a19f8dde32b3ac74b50b08a0a89fe1cc2c58bb661fbe1c10f02da9e5843e63f",
+    "gitBlob": "e7b6adb8b587f55ca6f6e1369932a0bb9f0798b7"
+  },
+  {
+    "path": "src/features/anatomy/atlas/catalog-index.ts",
+    "bytes": 5045,
+    "sha256": "5594771df1700cbd6f51c3b7fc6fbceddd2555306f97500b198e15202a9a2a5f",
+    "gitBlob": "c5276fb793971807a0896a73bc1dd544b9d1dd81"
+  },
+  {
+    "path": "src/features/anatomy/atlas/explosion.ts",
+    "bytes": 5517,
+    "sha256": "fccce47d9b7d0557a77ee972dce3d520c7dc12f345a246fb18aa684d78f3f4a0",
+    "gitBlob": "4721a3914eab6b2534c5b65efe2c6e3352263c9d"
+  },
+  {
+    "path": "src/features/anatomy/atlas/nerve-education.ts",
+    "bytes": 8575,
+    "sha256": "b6e8ba57df888b9f26f81776069e7d2d60415f0926dc9c120686fa5914c720bd",
+    "gitBlob": "1aa94836ade714f1f02862ac7c5fe534c30e5259"
+  },
+  {
+    "path": "src/features/anatomy/atlas/nerve-expansion-education.ts",
+    "bytes": 11030,
+    "sha256": "a5f7423e1f8ebc843a03ee36dfa5875b1647768b977e440cfe93cce1497c40dd",
+    "gitBlob": "bd64d17b870ec5c4ea46cb270e6639a8a0f4fd2d"
+  }
+]

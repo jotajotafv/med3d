@@ -1,0 +1,9 @@
+{
+  "base": "9d7c9389476f160af746fd40f6e0a2fa2793c56f",
+  "codeCommit": "e8eb75f2eebc68f4a06c88324d8bebf945ab4aa6",
+  "verifiedFiles": 27,
+  "allCommittedBlobsMatch": true,
+  "allWorkingFileSha256Match": true,
+  "testedFiles": "tested-files.json",
+  "note": "Regional and final regression ran before the implementation commit; their dirty base SHA is not the tested tree identifier. This manifest binds those implementation files to the final commit. The only post-test edit removed trailing blank lines from the QA script; node --check then passed. Performance and final captures ran on the clean implementation commit."
+}

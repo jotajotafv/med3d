@@ -1,0 +1,50 @@
+{
+  "codeCommit": "a8e4581327532414aed9da12b6deaf3ce69525de",
+  "date": "2026-09-28T06:37:41.641Z",
+  "reason": "Legacy immediate h1 count raced lazy route rendering at procedimientos/vendaje. Original failure report retained; only affected and not-yet-run route checks repeated with bounded visibility wait.",
+  "routes": [
+    {
+      "route": "procedimientos/vendaje",
+      "title": "Material para vendajes"
+    },
+    {
+      "route": "procedimientos/inmovilizacion",
+      "title": "Material de inmovilización"
+    },
+    {
+      "route": "primeros-auxilios/rcp",
+      "title": "Reanimación cardiopulmonar"
+    },
+    {
+      "route": "primeros-auxilios/atragantamiento",
+      "title": "Atragantamiento"
+    },
+    {
+      "route": "primeros-auxilios/hemorragias",
+      "title": "Hemorragias"
+    },
+    {
+      "route": "primeros-auxilios/quemaduras",
+      "title": "Quemaduras"
+    },
+    {
+      "route": "primeros-auxilios/fracturas",
+      "title": "Fracturas"
+    },
+    {
+      "route": "primeros-auxilios/desmayos",
+      "title": "Desmayos"
+    },
+    {
+      "route": "primeros-auxilios/convulsiones",
+      "title": "Convulsiones"
+    },
+    {
+      "route": "primeros-auxilios/botiquin",
+      "title": "Botiquín de primeros auxilios"
+    }
+  ],
+  "errors": [],
+  "badRequests": [],
+  "success": true
+}

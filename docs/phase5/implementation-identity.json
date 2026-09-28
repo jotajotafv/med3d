@@ -1,0 +1,163 @@
+{
+  "codeCommit": "a2fbbb43182480c06be92a4c7d74e3a71ed51829",
+  "base": "8d817bc09966e7e9e7f88a7e5e6aa82b78d252bd",
+  "changedImplementationFiles": [
+    {
+      "path": "public/models/anatomy/cardiovascular/LICENSE.txt",
+      "sha256": "716c98996f951d0f66d94e07fed0c86f2a0cf84a8ab5dddac196fb0899c5b275",
+      "gitBlob": "b1b450c5ac426f5cd11bc59afc5a774d5aac1d1a"
+    },
+    {
+      "path": "public/models/anatomy/cardiovascular/cardiovascular-source-manifest.json",
+      "sha256": "2cd1a56d17dc91ac34e3fe3cff71513412df8ccc6ebe00f8d4ac093c0fa52bcb",
+      "gitBlob": "772b8f28171ca26cd125f5c2dab54f58d70937fe"
+    },
+    {
+      "path": "public/models/anatomy/cardiovascular/cardiovascular-validation.json",
+      "sha256": "3ecb2d5fcbe297777a9581c94c15b9c380512adbce6629f5f400729987bc0a93",
+      "gitBlob": "bdef7e575f22179d4c110d85a6e847dfb7a886f3"
+    },
+    {
+      "path": "public/models/anatomy/cardiovascular/catalog.json",
+      "sha256": "8d8442047843d8cf1d345ff6cfc64c642a8f52995491f1d7024642a8ee17f64b",
+      "gitBlob": "fa5994c0888faf26dc85174dca293b8e41748f75"
+    },
+    {
+      "path": "public/models/anatomy/cardiovascular/head-neck.glb",
+      "sha256": "a1e0b32846a27f3529b7702cd937adbcfe10b767254cae0ecee1a67abcf1d75e",
+      "gitBlob": "b7ab802c8a819791d46cdc291063092c7a5907c0"
+    },
+    {
+      "path": "public/models/anatomy/cardiovascular/heart.glb",
+      "sha256": "ae94449578f102792dc768700c2ecb7dd7e6c0b265b54aa5b3f50b934a485ddd",
+      "gitBlob": "67c6ab83651beb651744536cad4816561a4287c2"
+    },
+    {
+      "path": "public/models/anatomy/cardiovascular/lower-left.glb",
+      "sha256": "77f271a120b5b14adabe83cc34caf56d13a4da95c0d91189c14d840d11f24124",
+      "gitBlob": "d0b3bab43bb12863b8376ab97dbd26f44d77e8ac"
+    },
+    {
+      "path": "public/models/anatomy/cardiovascular/lower-right.glb",
+      "sha256": "0d79453da490f75ad66af0797b3bb7fdc6707692f22113bf70236df83dc95f4e",
+      "gitBlob": "a76403e44c3b8b92b42f909c79b8b7c63e81b5a9"
+    },
+    {
+      "path": "public/models/anatomy/cardiovascular/trunk.glb",
+      "sha256": "2a0f4377199591e6230e16cbe2ea372bcb3f522878db060756308b18dc6f2aeb",
+      "gitBlob": "cb9531724e9da8e9e9ffc301dee2279e87277241"
+    },
+    {
+      "path": "public/models/anatomy/cardiovascular/upper-left.glb",
+      "sha256": "6befecb0a2691b91f34e0b564a5b09be6f26f563770dec122db6447b9fec7828",
+      "gitBlob": "2f190eb7dcbee84fd9c8b5f32550bf6dce99ab2f"
+    },
+    {
+      "path": "public/models/anatomy/cardiovascular/upper-right.glb",
+      "sha256": "2565dd8d4075b45e7596b688f943d6a1242a5a7cc4b0b3ae59d5930c6ad8f207",
+      "gitBlob": "2474f7fa6f9bb6d620e79cdf7364f48f5b514438"
+    },
+    {
+      "path": "research/anatomy/cardiovascular-originals.zip",
+      "sha256": "8a4b8ef1e490ef64006c922506425a7d8b5ae38825555cd61bff6e08ae47754d",
+      "gitBlob": "b21d8272991b49d8b506e34114094990ba3693e0"
+    },
+    {
+      "path": "research/anatomy/cardiovascular-selection.json",
+      "sha256": "a65f74de77298000e1274db9b4c15a42143488b7c1ae801c2736f6b106250540",
+      "gitBlob": "c2ce203c501c92aca64d2bacb9e5d4344f289e09"
+    },
+    {
+      "path": "research/anatomy/cardiovascular-source-lock.json",
+      "sha256": "1b5f78a0937e087d5ae4ae7ad6b405514bcf55bf7e893105edc9a8189bc78617",
+      "gitBlob": "17c85caf0ab5eb9db3c20ac8df92b1b8ae7a74b2"
+    },
+    {
+      "path": "scripts/anatomy/audit-cardiovascular.py",
+      "sha256": "552541ce0cb48b2bf2e30b8b2895c72f3ad0853f6a56b773e93b99597d87f2ee",
+      "gitBlob": "10640961cb30f3ae0f9c8d650d5c9dc74c39fa04"
+    },
+    {
+      "path": "scripts/anatomy/build-cardiovascular.py",
+      "sha256": "01378cc4945eb31b5bdf6f94f8d4729f0f1d789edb5602c6e3c5222fa225acd1",
+      "gitBlob": "2b5eaef080fa3e60656b2eb1cf0f047913c9736d"
+    },
+    {
+      "path": "scripts/anatomy/cardiovascular-qa.mjs",
+      "sha256": "d0b818846f6796d2c0b7852d509b101fda4ae8c67cf4459f390fef540c1daa88",
+      "gitBlob": "a88ffc3c7ef695a9bd8361b342dd80ae1a07bc44"
+    },
+    {
+      "path": "scripts/anatomy/nervous-qa.mjs",
+      "sha256": "8b879d6f388d68e5f7bde5169eee62602fc0e9e25b0c47f08aeaabc8c7958862",
+      "gitBlob": "ab06f19aded86b86a3963a9a53c9bb936f0f1073"
+    },
+    {
+      "path": "scripts/anatomy/optimize-cardiovascular.mjs",
+      "sha256": "e8db13fc6e359651da04d00b0bb64872c887d5ce011094e88f45d3b76115edca",
+      "gitBlob": "01a6f5c611e37b31c7e28216c2efff2446f7c9e8"
+    },
+    {
+      "path": "scripts/anatomy/validate-cardiovascular-gltf.mjs",
+      "sha256": "5e402076f39908252a2d038b9f116e838f55d0b083b8a6a52c12a66dcb876a83",
+      "gitBlob": "d1e86b3349f65baceadf5bae84e7048ee568349b"
+    },
+    {
+      "path": "scripts/test-atlas-cardiovascular.mjs",
+      "sha256": "0e3a34dd9c6d5f18d2e40c9d3731f4b3868f2811e480a36d51108241061bff83",
+      "gitBlob": "54459a324cddab7df4b227b456387e34bae1011d"
+    },
+    {
+      "path": "src/features/anatomy/atlas/AnatomyInformation.tsx",
+      "sha256": "10d531791a643347ff0e345fdf3cbb25a1d02b0dcf995a2545076fc827ca0ea5",
+      "gitBlob": "cd73b3a7605566a4d6c27221e9fca55b6cf0f5c9"
+    },
+    {
+      "path": "src/features/anatomy/atlas/AtlasScene.tsx",
+      "sha256": "d678bcedf52ef6a4c8da1149ecb003837fe1c673bba24590cf46cfdb7e63e2f9",
+      "gitBlob": "6cc5654879e54b41df1936cf60db1961e38adba9"
+    },
+    {
+      "path": "src/features/anatomy/atlas/CardiovascularInformation.tsx",
+      "sha256": "7219ccdb2ba0bfcc15209bf87cfd87add2222addaa95dba3e0c0bf2d8b02fad6",
+      "gitBlob": "5f2a588a9963adce74182bc942cfcc03138e5e74"
+    },
+    {
+      "path": "src/features/anatomy/atlas/SkeletalAtlas.tsx",
+      "sha256": "a9305da057a65548cca4a0752782a88ca2b02ef66e85590588c2917427d3d809",
+      "gitBlob": "dafa336ace68ce17a308da0653ac460d3b4ce06a"
+    },
+    {
+      "path": "src/features/anatomy/atlas/atlas.css",
+      "sha256": "fa40f8d2f660fddb2e700f52da2e8288ef12517a1e713743b0e7f39836cb26d3",
+      "gitBlob": "dec635e845b53a8d7add34f6181e81527aba0f64"
+    },
+    {
+      "path": "src/features/anatomy/atlas/body-catalog.ts",
+      "sha256": "c224449731dcd40a5190f5d095a9cfe6535b2bb9ea8a84e3eab5e3a973a9739f",
+      "gitBlob": "8d46d80025e02f46a24111b9eaff2502a9f3d5bf"
+    },
+    {
+      "path": "src/features/anatomy/atlas/cardiovascular-education.ts",
+      "sha256": "353374f3b69bdc5c688ad11708f66aad290949211388ae5437d3379bc995dec6",
+      "gitBlob": "213bec99041d49a330ab61873c3847ba06deaa6a"
+    },
+    {
+      "path": "src/features/anatomy/atlas/explosion.ts",
+      "sha256": "041550909eca4430dac1f07ee9de5874dd34bb78e33960f2f1488a09bf61647c",
+      "gitBlob": "d0778dab7bdd295f5809e74e9e53b386c3614a57"
+    },
+    {
+      "path": "src/features/anatomy/atlas/types.ts",
+      "sha256": "9915daffe21ea3b598f5e2c9b81d8b8b19b177c570e2fa4db977dfcbfde45eda",
+      "gitBlob": "88dc2a814d6a2f34a961ea203a2fea0a444f235f"
+    }
+  ],
+  "protectedRefs": {
+    "main": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6",
+    "origin/main": "84b4c9ababb9b1360a09ec03c77c96d0b7c748e6",
+    "phase11-first-aid": "a391093cd28b975673fd0fc1e6b87fa1aeafed29",
+    "phase4-nervous-system": "9d7c9389476f160af746fd40f6e0a2fa2793c56f",
+    "phase4-nervous-expansion": "8d817bc09966e7e9e7f88a7e5e6aa82b78d252bd"
+  }
+}

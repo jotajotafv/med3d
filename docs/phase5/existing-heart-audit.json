@@ -1,0 +1,396 @@
+{
+  "url": "/models/heart.glb",
+  "sourceUrl": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/main/VH_Male/v1.2/VH_M_Heart.glb",
+  "bytes": 715820,
+  "sha256": "4637d0779ee7c278cf81a326c933528421372bf0aa709188c20308a6ad81b3a1",
+  "min": [
+    -0.04344825,
+    0.423371166,
+    -0.0150267193
+  ],
+  "max": [
+    0.0809029341,
+    0.5288064,
+    0.09018852
+  ],
+  "nodes": [
+    {
+      "id": "VH_M_heart",
+      "index": 0,
+      "children": [
+        "VH_M_heart_valve",
+        "VH_M_papillary_muscle_of_heart",
+        "VH_M_cardiac_chamber"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_heart_valve",
+      "index": 1,
+      "children": [
+        "VH_M_mitral_valve",
+        "VH_M_tricuspid_valve",
+        "VH_M_aortic_valve",
+        "VH_M_pulmonary_valve"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_mitral_valve",
+      "index": 2,
+      "children": [],
+      "mesh": true,
+      "label": "mitral valve",
+      "ontologyId": "UBERON:0002135",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0002135"
+    },
+    {
+      "id": "VH_M_tricuspid_valve",
+      "index": 3,
+      "children": [],
+      "mesh": true,
+      "label": "tricuspid valve",
+      "ontologyId": "UBERON:0002134",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0002134"
+    },
+    {
+      "id": "VH_M_aortic_valve",
+      "index": 4,
+      "children": [],
+      "mesh": true,
+      "label": "aortic valve",
+      "ontologyId": "UBERON:0002137",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0002137"
+    },
+    {
+      "id": "VH_M_pulmonary_valve",
+      "index": 5,
+      "children": [],
+      "mesh": true,
+      "label": "pulmonary valve",
+      "ontologyId": "UBERON:0002146",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0002146"
+    },
+    {
+      "id": "VH_M_papillary_muscle_of_heart",
+      "index": 6,
+      "children": [
+        "VH_M_papillary_muscle_of_heart_anterior",
+        "VH_M_papillary_muscle_of_heart_anterolateral",
+        "VH_M_papillary_muscle_of_heart_medial",
+        "VH_M_papillary_muscle_of_heart_posterior",
+        "VH_M_papillary_muscle_of_heart_posteromedial"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_papillary_muscle_of_heart_anterior",
+      "index": 7,
+      "children": [],
+      "mesh": true,
+      "label": "Anterior papillary muscle of left ventricle",
+      "ontologyId": "FMA:7264",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7264"
+    },
+    {
+      "id": "VH_M_papillary_muscle_of_heart_anterolateral",
+      "index": 8,
+      "children": [],
+      "mesh": true,
+      "label": "Anterolateral head of lateral papillary muscle of left ventricle",
+      "ontologyId": "FMA:7265",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma72655"
+    },
+    {
+      "id": "VH_M_papillary_muscle_of_heart_medial",
+      "index": 9,
+      "children": [],
+      "mesh": true,
+      "label": "Septal papillary muscle of right ventricle",
+      "ontologyId": "FMA:7262",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7262"
+    },
+    {
+      "id": "VH_M_papillary_muscle_of_heart_posterior",
+      "index": 10,
+      "children": [],
+      "mesh": true,
+      "label": "Posterior papillary muscle of right ventricle",
+      "ontologyId": "FMA:7261",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma72611"
+    },
+    {
+      "id": "VH_M_papillary_muscle_of_heart_posteromedial",
+      "index": 11,
+      "children": [],
+      "mesh": true,
+      "label": "Posteromedial head of posterior papillary muscle of left ventricle",
+      "ontologyId": "FMA:7267",
+      "ontologyUrl": "http://purl.org/sig/ont/fma/fma7267"
+    },
+    {
+      "id": "VH_M_cardiac_chamber",
+      "index": 12,
+      "children": [
+        "VH_M_left_cardiac_atrium",
+        "VH_M_right_cardiac_atrium",
+        "VH_M_heart_right_ventricle",
+        "VH_M_interventricular_septum",
+        "VH_M_heart_left_ventricle"
+      ],
+      "mesh": false,
+      "label": "",
+      "ontologyId": "",
+      "ontologyUrl": ""
+    },
+    {
+      "id": "VH_M_left_cardiac_atrium",
+      "index": 13,
+      "children": [],
+      "mesh": true,
+      "label": "left cardiac atrium",
+      "ontologyId": "UBERON:0002079",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0002079"
+    },
+    {
+      "id": "VH_M_right_cardiac_atrium",
+      "index": 14,
+      "children": [],
+      "mesh": true,
+      "label": "right cardiac atrium",
+      "ontologyId": "UBERON:0002078",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0002078"
+    },
+    {
+      "id": "VH_M_heart_right_ventricle",
+      "index": 15,
+      "children": [],
+      "mesh": true,
+      "label": "heart right ventricle",
+      "ontologyId": "UBERON:0002080",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0002080"
+    },
+    {
+      "id": "VH_M_interventricular_septum",
+      "index": 16,
+      "children": [],
+      "mesh": true,
+      "label": "interventricular septum",
+      "ontologyId": "UBERON:0002094",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0002094"
+    },
+    {
+      "id": "VH_M_heart_left_ventricle",
+      "index": 17,
+      "children": [],
+      "mesh": true,
+      "label": "heart left ventricle",
+      "ontologyId": "UBERON:0002084",
+      "ontologyUrl": "http://purl.obolibrary.org/obo/UBERON_0002084"
+    }
+  ],
+  "meshes": 14,
+  "sourceBytes": 4071500,
+  "sourceSha256": "b1237e7e765178e9357fd2ea7ccf19d55d0bf9ca55e187886635febe28244c70",
+  "triangles": 164119,
+  "transforms": [
+    {
+      "name": "VH_M_mitral_valve",
+      "translation": [
+        0.022672777296975255,
+        0.4770716577768326,
+        0.011689016129821539
+      ],
+      "scale": [
+        0.02054266631603241,
+        0.02054266631603241,
+        0.02054266631603241
+      ]
+    },
+    {
+      "name": "VH_M_tricuspid_valve",
+      "translation": [
+        -0.005493632983416319,
+        0.4599423408508301,
+        0.04568749759346247
+      ],
+      "scale": [
+        0.0230962336063385,
+        0.0230962336063385,
+        0.0230962336063385
+      ]
+    },
+    {
+      "name": "VH_M_aortic_valve",
+      "translation": [
+        0.006816074019297957,
+        0.49922141432762146,
+        0.028638347052037716
+      ],
+      "scale": [
+        0.012705236673355103,
+        0.012705236673355103,
+        0.012705236673355103
+      ]
+    },
+    {
+      "name": "VH_M_pulmonary_valve",
+      "translation": [
+        0.01722372812218964,
+        0.5084957033395767,
+        0.042280497029423714
+      ],
+      "scale": [
+        0.012858566595241427,
+        0.012858566595241427,
+        0.012858566595241427
+      ]
+    },
+    {
+      "name": "VH_M_papillary_muscle_of_heart_anterior",
+      "translation": [
+        0.018955936189740896,
+        0.4530119001865387,
+        0.07713988795876503
+      ],
+      "scale": [
+        0.011625869665294886,
+        0.011625869665294886,
+        0.011625869665294886
+      ]
+    },
+    {
+      "name": "VH_M_papillary_muscle_of_heart_anterolateral",
+      "translation": [
+        0.04547319374978542,
+        0.4693296402692795,
+        0.041925037279725075
+      ],
+      "scale": [
+        0.018478767946362495,
+        0.018478767946362495,
+        0.018478767946362495
+      ]
+    },
+    {
+      "name": "VH_M_papillary_muscle_of_heart_medial",
+      "translation": [
+        0.024404941126704216,
+        0.443977028131485,
+        0.05455966480076313
+      ],
+      "scale": [
+        0.0042476896196603775,
+        0.0042476896196603775,
+        0.0042476896196603775
+      ]
+    },
+    {
+      "name": "VH_M_papillary_muscle_of_heart_posterior",
+      "translation": [
+        0.012576236855238676,
+        0.4341416507959366,
+        0.058742325752973557
+      ],
+      "scale": [
+        0.004199203569442034,
+        0.004199203569442034,
+        0.004199203569442034
+      ]
+    },
+    {
+      "name": "VH_M_papillary_muscle_of_heart_posteromedial",
+      "translation": [
+        0.04545247182250023,
+        0.4582611322402954,
+        0.041916947811841965
+      ],
+      "scale": [
+        0.016832448542118073,
+        0.016832448542118073,
+        0.016832448542118073
+      ]
+    },
+    {
+      "name": "VH_M_left_cardiac_atrium",
+      "translation": [
+        0.004368528723716736,
+        0.49263429641723633,
+        0.008459103759378195
+      ],
+      "scale": [
+        0.03648093715310097,
+        0.03648093715310097,
+        0.03648093715310097
+      ]
+    },
+    {
+      "name": "VH_M_right_cardiac_atrium",
+      "translation": [
+        -0.017376608680933714,
+        0.48090697824954987,
+        0.03437812195625156
+      ],
+      "scale": [
+        0.047899410128593445,
+        0.047899410128593445,
+        0.047899410128593445
+      ]
+    },
+    {
+      "name": "VH_M_heart_right_ventricle",
+      "translation": [
+        0.01766073238104582,
+        0.47220833599567413,
+        0.05751666333526373
+      ],
+      "scale": [
+        0.048837170004844666,
+        0.048837170004844666,
+        0.048837170004844666
+      ]
+    },
+    {
+      "name": "VH_M_interventricular_septum",
+      "translation": [
+        0.032577320002019405,
+        0.4632549285888672,
+        0.05013491678982973
+      ],
+      "scale": [
+        0.0362413227558136,
+        0.0362413227558136,
+        0.0362413227558136
+      ]
+    },
+    {
+      "name": "VH_M_heart_left_ventricle",
+      "translation": [
+        0.042720824712887406,
+        0.46430058777332306,
+        0.041465983260422945
+      ],
+      "scale": [
+        0.04630250437185168,
+        0.04630250437185168,
+        0.04630250437185168
+      ]
+    }
+  ],
+  "sha256Verified": true,
+  "frame": "HRA VH Male v1.2 native organ coordinates, not registered to BP3D",
+  "viewerTransform": "Bake object.matrixWorld into mesh geometry; group scale 3.45/max(bounds size); translation=-center*scale. Presentation only.",
+  "limitations": [
+    "Source URL uses main rather than a pinned commit; original and final bytes are pinned by recorded SHA-256.",
+    "Historical labels/ontology IDs retained; e.g. anterolateral papillary label FMA:7265 differs from ontology URL fma72655. No automatic correction or claimed clinical validation."
+  ]
+}

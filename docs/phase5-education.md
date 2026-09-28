@@ -1,0 +1,13 @@
+# Fase 5: fichas y contexto
+
+`CardiovascularInformation` y `cardiovascular-education.ts` añaden fichas propias de esta capa. No cambian las fichas históricas. Cada una de las 134 unidades fuente aprobadas resuelve una ficha de familia; las 92 familias fuente incluyen paredes, cavidades y valvas. Se añaden además fichas editoriales para corazón, aorta y agrupaciones valvulares.
+
+Las arterias presentan origen, recorrido, territorio irrigado y ramas principales. Las venas presentan desembocadura, recorrido, territorio drenado y tributarias. El nombre, latín, tipo, región, sistema y jerarquía se muestran en la inspección. Los trayectos describen relaciones anatómicas generales, no una simulación de flujo ni conexiones inferidas de las mallas.
+
+Las fichas cardíacas explican localización, cámaras, flujo, válvulas e irrigación. Las cuatro cavidades se identifican como **espacios**, no como miocardio. La pared ventricular BP3D no se divide artificialmente en derecha e izquierda. No hay septo BP3D independiente. Las once valvas se agrupan en cuatro válvulas; la nomenclatura semilunar histórica se conserva con advertencia de fuente, sin equiparar automáticamente sus nombres a cúspides coronarias. El enlace al corazón HRA permite estudiar su detalle independiente.
+
+Fuentes de anatomía general: [OpenStax, vías circulatorias](https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways), [OpenStax, corazón y circulación coronaria](https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy), [NIH/NHLBI, anatomía cardíaca](https://www.nhlbi.nih.gov/health/heart/anatomy). Las fichas incluyen además referencias regionales NCBI/NLM y la procedencia geométrica DBCLS. Algunas páginas NCBI presentaron CAPTCHA al abrirse; se contrastaron resultados indexados y se mantiene OpenStax como referencia general accesible. No se declara revisión íntegra de esas páginas bloqueadas.
+
+El texto es una síntesis educativa: las ramas mencionadas pueden no estar modeladas y se advierte explícitamente. Las variaciones de dominancia coronaria, confluencias venosas y drenaje safeno se expresan como variables cuando corresponde. Rojo y azul codifican **arteria y vena**, no oxigenación: esta regla incluye vasos pulmonares.
+
+El contexto usa mappings explícitos, comprobados contra IDs óseos existentes y lado correspondiente: braquial–húmero; radial/cubital–radio/cúbito; femoral–coxal/fémur; poplítea–fémur/tibia; vasos tibiales–tibia/fíbula; safenas–referencias óseas regionales. Coronarias y venas cardíacas muestran corazón; piezas cardíacas muestran caja torácica. No se infieren asociaciones por distancia, no se inventan inserciones y sólo aparece el botón cuando existe una asociación curada.

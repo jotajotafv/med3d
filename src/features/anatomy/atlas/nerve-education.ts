@@ -1,7 +1,9 @@
 import type {AnatomyNode} from './types';
+import {expansionNerveDetail,expansionContextIds} from './nerve-expansion-education';
 export interface NerveDetail {
   description: string; function: string; course: string; territory: string;
   modality: string; relations: string; sources: {title:string;url:string}[];
+  origin?:string; region?:string; motorTerritory?:string; sensoryTerritory?:string; representation?:string;
 }
 const CNS = {title:'OpenStax · Sistema nervioso central',url:'https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system'};
 const ASSOCIATION = {title:'Purves et al. · Cortezas de asociación',url:'https://www.ncbi.nlm.nih.gov/books/NBK10952/'};
@@ -62,6 +64,7 @@ const orbital: Record<string,[string,string,string]> = {
 };
 export function resolveNerveDetail(node:AnatomyNode):NerveDetail|null {
  if(node.systemId!=='nervous'||!node.family)return null;
+ if(node.family.startsWith('z:'))return expansionNerveDetail(node);
  const c=central[node.family],o=orbital[node.family];
  if(c)return {description:c[0],function:c[1],course:'Organización regional encefálica; no se representan tractos ni conexiones sinápticas.',territory:'Sistema nervioso central',modality:'Tejido central: la clasificación motor/sensitivo/mixto de un nervio periférico no se aplica.',relations:'Las relaciones del árbol expresan organización anatómica. El contexto óseo muestra referencias craneales, sin afirmar conexiones funcionales por proximidad.',sources:[CNS,ASSOCIATION,SOURCE]};
  if(o)return {description:node.neuralType==='ganglio'?'Ganglio autónomo orbitario identificado por la fuente.':'Estructura de la región orbitaria identificada por la fuente; el trayecto geométrico puede ser parcial.',function:o[0].startsWith('Motor')?'Conducción eferente hacia los efectores indicados.':o[0].startsWith('Ganglio')?'Relevo parasimpático ocular.':'Conducción de las modalidades indicadas.',course:o[2],territory:o[1],modality:o[0],relations:'Referencias óseas curadas de la órbita. No se deduce inervación a partir de la distancia al modelo. Las vías y territorios descritos pueden no estar modelados.',sources:[ORBIT,MOTOR,SOURCE]};
@@ -70,6 +73,8 @@ export function resolveNerveDetail(node:AnatomyNode):NerveDetail|null {
 // Explicit curated IDs: frontal, occipital, sphenoid. No nearest-neighbour inference.
 export function getNerveContextIds(node:AnatomyNode,byId:Map<string,AnatomyNode>):string[] {
  if(node.systemId!=='nervous')return [];
+ if(node.family?.startsWith('z:'))return expansionContextIds(node,byId);
+ if(node.regionId.startsWith('nervous:upper')||node.regionId.startsWith('nervous:lower'))return [];
  const ids=node.assetIds.includes('nervous:cranial')||node.family==='FMA50875'||node.family==='FMA50878'
   ?['bp3d:FMA52736','bp3d:FMA52734']:['bp3d:FMA52735','bp3d:FMA52736'];
  return ids.filter(id=>byId.get(id)?.systemId==='skeletal');

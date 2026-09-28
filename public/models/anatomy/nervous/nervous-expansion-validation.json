@@ -1,0 +1,342 @@
+{
+  "sourceZipSha256": "fc00ea153e8b798acad40dafa4ce28246653cb60f9bc0a134adcc03e52fd7f73",
+  "positionBits": 32,
+  "positionQuantization": false,
+  "additionalDecimation": false,
+  "modules": [
+    {
+      "id": "nervous:lower-left",
+      "bytes": 202496,
+      "sha256": "6467594cad340ca676bee864c94b7ef3637b634787b4337cfa09251a2bcfec47",
+      "meshes": 8,
+      "triangles": 25056,
+      "decodedAccessorBytes": 379080,
+      "elements": [
+        {
+          "id": "zanatomy:femoral-nerve-l",
+          "sourceObject": "Femoral nerve.l",
+          "triangles": 4032,
+          "maxPositionErrorMetres": 5.934268260144339e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:tibial-nerve-l",
+          "sourceObject": "Tibial nerve.l",
+          "triangles": 2592,
+          "maxPositionErrorMetres": 1.5154338246228093e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:common-fibular-nerve-l",
+          "sourceObject": "Common fibular nerve.l",
+          "triangles": 2016,
+          "maxPositionErrorMetres": 1.5252275270590076e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:superficial-fibular-nerve-l",
+          "sourceObject": "Superficial fibular nerve.l",
+          "triangles": 3168,
+          "maxPositionErrorMetres": 1.5570482159023783e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:deep-fibular-nerve-l",
+          "sourceObject": "Deep fibular nerve.l",
+          "triangles": 4320,
+          "maxPositionErrorMetres": 1.5672900280413816e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:lateral-femoral-cutaneous-nerve-l",
+          "sourceObject": "Lateral femoral cutaneous nerve.l",
+          "triangles": 4608,
+          "maxPositionErrorMetres": 5.884753808974309e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:posterior-femoral-cutaneous-nerve-l",
+          "sourceObject": "Posterior femoral cutaneous nerve.l",
+          "triangles": 2592,
+          "maxPositionErrorMetres": 2.985812559816437e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:iliohypogastric-nerve-l",
+          "sourceObject": "Iliohypogastric nerve.l",
+          "triangles": 1728,
+          "maxPositionErrorMetres": 5.960168177067574e-8,
+          "triangleMultisetAndWindingPreserved": true
+        }
+      ],
+      "gltfValidation": {
+        "rawErrors": 0,
+        "rawWarnings": 0,
+        "decodedErrors": 0,
+        "decodedWarnings": 0
+      }
+    },
+    {
+      "id": "nervous:lower-right",
+      "bytes": 202584,
+      "sha256": "95562e42051af18a088e62cd4b81c033ca94cf5bfb159c5ba05ef16218ea5525",
+      "meshes": 8,
+      "triangles": 25056,
+      "decodedAccessorBytes": 379080,
+      "elements": [
+        {
+          "id": "zanatomy:femoral-nerve-r",
+          "sourceObject": "Femoral nerve.r",
+          "triangles": 4032,
+          "maxPositionErrorMetres": 5.954333975626809e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:tibial-nerve-r",
+          "sourceObject": "Tibial nerve.r",
+          "triangles": 2592,
+          "maxPositionErrorMetres": 1.5287944102483105e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:common-fibular-nerve-r",
+          "sourceObject": "Common fibular nerve.r",
+          "triangles": 2016,
+          "maxPositionErrorMetres": 1.5217644764696448e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:superficial-fibular-nerve-r",
+          "sourceObject": "Superficial fibular nerve.r",
+          "triangles": 3168,
+          "maxPositionErrorMetres": 1.5337558355035623e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:deep-fibular-nerve-r",
+          "sourceObject": "Deep fibular nerve.r",
+          "triangles": 4320,
+          "maxPositionErrorMetres": 1.5375555225669954e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:lateral-femoral-cutaneous-nerve-r",
+          "sourceObject": "Lateral femoral cutaneous nerve.r",
+          "triangles": 4608,
+          "maxPositionErrorMetres": 5.7973116175412724e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:posterior-femoral-cutaneous-nerve-r",
+          "sourceObject": "Posterior femoral cutaneous nerve.r",
+          "triangles": 2592,
+          "maxPositionErrorMetres": 2.982951024619238e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:iliohypogastric-nerve-r",
+          "sourceObject": "Iliohypogastric nerve.r",
+          "triangles": 1728,
+          "maxPositionErrorMetres": 5.962671179878445e-8,
+          "triangleMultisetAndWindingPreserved": true
+        }
+      ],
+      "gltfValidation": {
+        "rawErrors": 0,
+        "rawWarnings": 0,
+        "decodedErrors": 0,
+        "decodedWarnings": 0
+      }
+    },
+    {
+      "id": "nervous:upper-left",
+      "bytes": 238688,
+      "sha256": "aebebfae619eaf0ea668d0d35d90a8e0de791afcecff1aebc8ad488d0b611c37",
+      "meshes": 11,
+      "triangles": 30240,
+      "decodedAccessorBytes": 443448,
+      "elements": [
+        {
+          "id": "zanatomy:axillary-nerve-l",
+          "sourceObject": "Axillary nerve.l",
+          "triangles": 1152,
+          "maxPositionErrorMetres": 5.971373741867249e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:musculocutaneous-nerve-l",
+          "sourceObject": "Musculocutaneous nerve.l",
+          "triangles": 1440,
+          "maxPositionErrorMetres": 5.992349840346667e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:median-nerve-l",
+          "sourceObject": "Median nerve.l",
+          "triangles": 5184,
+          "maxPositionErrorMetres": 5.989882228168706e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:ulnar-nerve-l",
+          "sourceObject": "Ulnar nerve.l",
+          "triangles": 3168,
+          "maxPositionErrorMetres": 6.010658296664614e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:dorsal-scapular-nerve-l",
+          "sourceObject": "Dorsal scapular nerve.l",
+          "triangles": 2592,
+          "maxPositionErrorMetres": 5.957360377272051e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:superior-trunk-of-brachial-plexus-l",
+          "sourceObject": "Superior trunk of brachial plexus.l",
+          "triangles": 288,
+          "maxPositionErrorMetres": 5.920139371077142e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:middle-trunk-of-brachial-plexus-l",
+          "sourceObject": "Middle trunk of brachial plexus.l",
+          "triangles": 288,
+          "maxPositionErrorMetres": 5.8572449971523766e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:inferior-trunk-of-brachial-plexus-l",
+          "sourceObject": "Inferior trunk of brachial plexus.l",
+          "triangles": 576,
+          "maxPositionErrorMetres": 5.9267573833650096e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:posterior-cord-of-brachial-plexus-l",
+          "sourceObject": "Posterior cord of brachial plexus.l",
+          "triangles": 576,
+          "maxPositionErrorMetres": 5.965941889214759e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:deep-branch-of-ulnar-nerve-l",
+          "sourceObject": "Deep branch of ulnar nerve.l",
+          "triangles": 1440,
+          "maxPositionErrorMetres": 3.2967138749863165e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:dorsal-digital-branches-of-radial-nerve-l",
+          "sourceObject": "Dorsal digital branches of radial nerve.l",
+          "triangles": 13536,
+          "maxPositionErrorMetres": 3.355342262971844e-8,
+          "triangleMultisetAndWindingPreserved": true
+        }
+      ],
+      "gltfValidation": {
+        "rawErrors": 0,
+        "rawWarnings": 0,
+        "decodedErrors": 0,
+        "decodedWarnings": 0
+      }
+    },
+    {
+      "id": "nervous:upper-right",
+      "bytes": 238684,
+      "sha256": "8c38efd3a6f40ff30410a01c890dccd8ab24d0576d9fc88f303a67dfe00bc03d",
+      "meshes": 11,
+      "triangles": 30240,
+      "decodedAccessorBytes": 443448,
+      "elements": [
+        {
+          "id": "zanatomy:axillary-nerve-r",
+          "sourceObject": "Axillary nerve.r",
+          "triangles": 1152,
+          "maxPositionErrorMetres": 5.961461604546229e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:musculocutaneous-nerve-r",
+          "sourceObject": "Musculocutaneous nerve.r",
+          "triangles": 1440,
+          "maxPositionErrorMetres": 5.994308907065159e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:median-nerve-r",
+          "sourceObject": "Median nerve.r",
+          "triangles": 5184,
+          "maxPositionErrorMetres": 6.003294348755325e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:ulnar-nerve-r",
+          "sourceObject": "Ulnar nerve.r",
+          "triangles": 3168,
+          "maxPositionErrorMetres": 5.981700354965421e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:dorsal-scapular-nerve-r",
+          "sourceObject": "Dorsal scapular nerve.r",
+          "triangles": 2592,
+          "maxPositionErrorMetres": 5.9408199733389725e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:superior-trunk-of-brachial-plexus-r",
+          "sourceObject": "Superior trunk of brachial plexus.r",
+          "triangles": 288,
+          "maxPositionErrorMetres": 5.842144335598345e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:middle-trunk-of-brachial-plexus-r",
+          "sourceObject": "Middle trunk of brachial plexus.r",
+          "triangles": 288,
+          "maxPositionErrorMetres": 5.959539782327469e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:inferior-trunk-of-brachial-plexus-r",
+          "sourceObject": "Inferior trunk of brachial plexus.r",
+          "triangles": 576,
+          "maxPositionErrorMetres": 5.965585561715757e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:posterior-cord-of-brachial-plexus-r",
+          "sourceObject": "Posterior cord of brachial plexus.r",
+          "triangles": 576,
+          "maxPositionErrorMetres": 5.9383256568688595e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:deep-branch-of-ulnar-nerve-r",
+          "sourceObject": "Deep branch of ulnar nerve.r",
+          "triangles": 1440,
+          "maxPositionErrorMetres": 3.308151904840688e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:dorsal-digital-branches-of-radial-nerve-r",
+          "sourceObject": "Dorsal digital branches of radial nerve.r",
+          "triangles": 13536,
+          "maxPositionErrorMetres": 3.358797814184121e-8,
+          "triangleMultisetAndWindingPreserved": true
+        }
+      ],
+      "gltfValidation": {
+        "rawErrors": 0,
+        "rawWarnings": 0,
+        "decodedErrors": 0,
+        "decodedWarnings": 0
+      }
+    }
+  ],
+  "totalMeshes": 38,
+  "totalTriangles": 110592,
+  "totalBytes": 882452,
+  "maxPositionErrorMetres": 6.010658296664614e-8
+}

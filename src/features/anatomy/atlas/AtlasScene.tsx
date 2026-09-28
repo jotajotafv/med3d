@@ -289,7 +289,16 @@ function SceneInspection({resources}:{resources:AtlasResource[]}) {
       parts:resources.flatMap(resource=>resource.parts.map(part=>{
         const material=part.mesh.material as THREE.MeshStandardMaterial;
         const screenCenter = part.mesh.geometry.boundingBox?.getCenter(new THREE.Vector3()).applyMatrix4(part.mesh.matrixWorld).project(camera).toArray();
-        return {id:part.node.id,meshName:part.mesh.name,screenCenter,emissiveIntensity:material.emissiveIntensity,depthTest:material.depthTest,side:material.side,systemId:part.node.systemId,assetId:resource.asset.id,visible:part.mesh.visible,
+        const screenSamples:number[][]=[];
+        if(part.node.id.startsWith('zanatomy:')){
+          const position=part.mesh.geometry.getAttribute('position'),indices=part.mesh.geometry.getIndex();
+          if(indices)for(let sample=0;sample<12;sample++){
+            const first=Math.floor(sample*(indices.count/3-1)/11)*3,point=new THREE.Vector3();
+            for(let corner=0;corner<3;corner++)point.add(new THREE.Vector3().fromBufferAttribute(position,indices.getX(first+corner)));
+            screenSamples.push(point.multiplyScalar(1/3).applyMatrix4(part.mesh.matrixWorld).project(camera).toArray());
+          }
+        }
+        return {id:part.node.id,meshName:part.mesh.name,screenCenter,screenSamples,emissiveIntensity:material.emissiveIntensity,depthTest:material.depthTest,side:material.side,systemId:part.node.systemId,assetId:resource.asset.id,visible:part.mesh.visible,
           position:part.mesh.position.toArray(),restPosition:part.basePosition.toArray(),targetPosition:part.basePosition.clone().add(part.targetOffset).toArray(),
           opacity:material.opacity,transparent:material.transparent,depthWrite:material.depthWrite,color:material.color.getHexString()};
       })).sort((a,b)=>a.id.localeCompare(b.id)),

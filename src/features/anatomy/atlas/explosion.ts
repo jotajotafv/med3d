@@ -75,7 +75,7 @@ export function createExplosionOffsets(catalog: AnatomyCatalog, activeSystems: R
     // A component is separated around its immediate parent's anatomical centroid.
     // Coincident centres stay together rather than receiving invented directions.
     // Preserve the available orbital branching as one block in Structures.
-    const localOffset = node.systemId === 'nervous' && node.assetIds.includes('nervous:cranial') ? ZERO : ownBounds && (parentBox || regionBox)
+    const localOffset = node.systemId === 'nervous' && (node.assetIds.includes('nervous:cranial') || node.family?.startsWith('z:')) ? ZERO : ownBounds && (parentBox || regionBox)
       ? offset(centre(ownBounds), centre((parentBox || regionBox)!), 1.35, Math.min(height * .115, extent((parentBox || regionBox)!) * .7))
       : ZERO;
     result.set(node.id, { systems: [...systemOffset], regions: [...regionOffset], structures: add(regionOffset, localOffset) });

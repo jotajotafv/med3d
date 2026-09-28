@@ -9,7 +9,7 @@ const temporary=await mkdtemp(path.resolve('.nervous-tests-'));
 const json=async p=>JSON.parse(await readFile(p,'utf8'));
 const checks=[];const check=name=>{checks.push(name);console.log('PASS',name);};
 try {
- const files=['catalog-index','body-catalog','explosion','nerve-education'];
+ const files=['catalog-index','body-catalog','explosion','nerve-education','nerve-expansion-education'];
  for(const file of files){
   const source=await readFile('src/features/anatomy/atlas/'+file+'.ts','utf8');
   let output=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText;
@@ -19,7 +19,9 @@ try {
  const load=name=>import(pathToFileURL(path.join(temporary,name+'.mjs')));
  const {composeBodyCatalog}=await load('body-catalog'),{createCatalogIndex,flattenTree}=await load('catalog-index');
  const {resolveNerveDetail,getNerveContextIds}=await load('nerve-education'),{createExplosionOffsets,explosionTarget}=await load('explosion');
- const skeletal=await json('public/models/anatomy/skeletal/catalog.json'),muscular=await json('public/models/anatomy/muscular/catalog.json'),nervous=await json('public/models/anatomy/nervous/catalog.json');
+ // Preserve every original Phase 4 contract against its frozen catalog.
+ // The expanded composition and immutable legacy cohort are checked separately.
+ const skeletal=await json('public/models/anatomy/skeletal/catalog.json'),muscular=await json('public/models/anatomy/muscular/catalog.json'),nervous=await json('research/anatomy/nervous-expansion-base-catalog.json');
  const before=JSON.stringify([skeletal,muscular,nervous]),catalog=composeBodyCatalog(skeletal,muscular,nervous),index=createCatalogIndex(catalog);
  assert.equal(JSON.stringify([skeletal,muscular,nervous]),before);assert.deepEqual(index.byId.get('body').children,['skeletal','muscular','nervous']);
  assert.equal(catalog.coverage.structures,385);assert.equal(catalog.coverage.meshes,474);assert.equal(catalog.assets.length,27);

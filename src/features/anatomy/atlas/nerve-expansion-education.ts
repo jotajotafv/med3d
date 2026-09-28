@@ -1,0 +1,54 @@
+import type {AnatomyNode} from './types';
+import type {NerveDetail} from './nerve-education';
+
+const PLEXUS={title:'StatPearls · Plexo braquial',url:'https://www.ncbi.nlm.nih.gov/books/NBK500016/'};
+const ARM={title:'StatPearls · Nervios del brazo',url:'https://www.ncbi.nlm.nih.gov/books/NBK547735/'};
+const UPPER={title:'StatPearls · Nervios del miembro superior',url:'https://www.ncbi.nlm.nih.gov/books/NBK526056/'};
+const RADIAL={title:'StatPearls · Nervio radial',url:'https://www.ncbi.nlm.nih.gov/books/NBK534840/'};
+const THIGH={title:'StatPearls · Nervios del muslo',url:'https://www.ncbi.nlm.nih.gov/books/NBK482225/'};
+const LUMBAR={title:'StatPearls · Columna y plexo lumbar',url:'https://www.ncbi.nlm.nih.gov/books/NBK557616/'};
+const LEG={title:'StatPearls · Compartimento anterior de la pierna',url:'https://www.ncbi.nlm.nih.gov/books/NBK539725/'};
+const POSTERIOR={title:'StatPearls · Compartimento posterior de la pierna',url:'https://www.ncbi.nlm.nih.gov/books/NBK537340/'};
+const SOURCE={title:'Z-Anatomy · fuente geométrica y atribución',url:'https://github.com/Z-Anatomy/Models-of-human-anatomy/tree/38649f4193adbe58e426ccac5670b8c4dde474ec'};
+type Entry={origin:string;course:string;motor:string;sensory:string;modality:string;source:typeof ARM};
+// Editorial anatomy summaries. These territories do not claim that every branch is modeled.
+const entries:Record<string,Entry>={
+ 'axillary-nerve':{origin:'Fascículo posterior del plexo braquial; principalmente C5–C6.',course:'Desde la axila rodea el cuello quirúrgico del húmero.',motor:'Deltoides y redondo menor: abducción y rotación del hombro.',sensory:'Piel lateral superior del brazo.',modality:'Mixto',source:ARM},
+ 'musculocutaneous-nerve':{origin:'Fascículo lateral del plexo braquial; C5–C7.',course:'Atraviesa el coracobraquial y desciende por el brazo anterior; continúa como cutáneo lateral del antebrazo.',motor:'Bíceps braquial, braquial y coracobraquial: flexión del codo y participación en supinación.',sensory:'Cara lateral del antebrazo, mediante su continuación cutánea.',modality:'Mixto',source:ARM},
+ 'median-nerve':{origin:'Fascículos lateral y medial del plexo braquial.',course:'Brazo medial, fosa cubital, antebrazo anterior y túnel carpiano.',motor:'La mayoría de flexores/pronadores del antebrazo y parte de la musculatura tenar; entre ellos el flexor radial del carpo.',sensory:'Palma lateral y dedos laterales, con límites territoriales variables.',modality:'Mixto',source:UPPER},
+ 'ulnar-nerve':{origin:'Fascículo medial del plexo braquial; principalmente C8–T1.',course:'Brazo medial, detrás del epicóndilo medial y borde cubital del antebrazo hacia la mano.',motor:'Flexor cubital del carpo, parte medial del flexor profundo de los dedos y gran parte de los músculos intrínsecos de la mano.',sensory:'Borde medial de la mano y dedos mediales.',modality:'Mixto',source:UPPER},
+ 'dorsal-scapular-nerve':{origin:'Ramo anterior de C5, habitualmente.',course:'Desde el cuello hacia el borde medial escapular.',motor:'Romboides y participación en la inervación del elevador de la escápula.',sensory:'Sin territorio cutáneo principal.',modality:'Predominantemente motor',source:PLEXUS},
+ 'femoral-nerve':{origin:'Plexo lumbar; L2–L4.',course:'Emerge lateral al psoas y pasa bajo el ligamento inguinal hacia el muslo anterior.',motor:'Cuádriceps y sartorio, entre otros: extensión de rodilla y contribución a flexión de cadera.',sensory:'Muslo anterior y, por el safeno, pierna medial. El safeno no está integrado.',modality:'Mixto',source:THIGH},
+ 'tibial-nerve':{origin:'División del nervio ciático; L4–S3.',course:'Fosa poplítea, pierna posterior y región posterior al maléolo medial.',motor:'Compartimento posterior de la pierna, incluido el sóleo; ramas plantares hacia músculos del pie.',sensory:'Regiones del talón y planta mediante sus ramas.',modality:'Mixto',source:POSTERIOR},
+ 'common-fibular-nerve':{origin:'División del nervio ciático; principalmente L4–S2.',course:'Borde lateral de la fosa poplítea y cuello de la fíbula; se divide en superficial y profundo.',motor:'A través de sus ramas: músculos de los compartimentos anterior y lateral de la pierna.',sensory:'Territorios de pierna lateral y dorso del pie mediante sus ramas.',modality:'Mixto',source:LEG},
+ 'superficial-fibular-nerve':{origin:'Nervio fibular común.',course:'Compartimento lateral de la pierna; se hace superficial hacia el dorso del pie.',motor:'Fibulares largo y corto: eversión del pie.',sensory:'Gran parte del dorso del pie; no el primer espacio interdigital.',modality:'Mixto',source:LEG},
+ 'deep-fibular-nerve':{origin:'Nervio fibular común.',course:'Compartimento anterior de la pierna hacia el dorso del pie.',motor:'Dorsiflexores y extensores de los dedos, incluido el tibial anterior.',sensory:'Primer espacio interdigital dorsal.',modality:'Mixto',source:LEG},
+ 'lateral-femoral-cutaneous-nerve':{origin:'Plexo lumbar; L2–L3.',course:'Cruza la región ilíaca hacia las proximidades de la espina ilíaca anterosuperior y el muslo.',motor:'No inerva músculos.',sensory:'Cara anterolateral del muslo.',modality:'Sensitivo',source:LUMBAR},
+ 'posterior-femoral-cutaneous-nerve':{origin:'Plexo sacro; S1–S3.',course:'Región glútea inferior y cara posterior del muslo.',motor:'No inerva músculos.',sensory:'Piel del muslo posterior y territorios glúteos inferiores mediante sus ramas.',modality:'Sensitivo',source:THIGH},
+ 'iliohypogastric-nerve':{origin:'Plexo lumbar; principalmente L1, con contribución de T12.',course:'Pared abdominal posterior y planos de la pared abdominal lateral.',motor:'Participa en la inervación del oblicuo interno y transverso del abdomen.',sensory:'Regiones suprapúbica y glútea lateral.',modality:'Mixto',source:LUMBAR},
+};
+export function expansionNerveDetail(node:AnatomyNode):NerveDetail|null {
+ if(!node.family?.startsWith('z:'))return null;
+ const family=node.family.slice(2),region=node.regionId.includes('upper')?'Miembro superior':'Pelvis y miembro inferior';
+ const representation='Representación tubular educativa de Z-Anatomy; no indica diámetro físico exacto. Se conserva la bilateralidad simétrica del atlas fuente. El registro con BP3D es aproximado y no clínico.';
+ if(family==='brachial-plexus'||family.endsWith('-plexus'))return {description:family==='brachial-plexus'?'Cobertura geométrica parcial: troncos y fascículo posterior. Faltan raíces, divisiones y otros fascículos.':'Se muestran ramas identificadas del plexo; no una reconstrucción completa de la red proximal.',origin:family==='brachial-plexus'?'Ramos anteriores cervicales y T1.':family==='lumbar-plexus'?'Ramos anteriores lumbares.':'Ramos anteriores lumbosacros.',function:'Distribuye fibras hacia territorios periféricos.',course:'La ficha y el árbol distinguen componentes del plexo y nervios de sus ramas.',territory:region,region,modality:'Red de fibras motoras y sensitivas',relations:'Las ramas disponibles no demuestran continuidad de toda la red. Médula, raíces espinales y ciático permanecen pendientes.',representation,sources:[family==='brachial-plexus'?PLEXUS:LUMBAR,SOURCE]};
+ if(family==='radial-nerve')return {description:'Sólo ramas digitales dorsales disponibles; el tronco radial no está integrado.',origin:'Rama superficial del nervio radial.',function:'Conduce sensibilidad cutánea.',course:'Ramas dorsales hacia los dedos en el territorio radial de la mano.',territory:'Dorso lateral de la mano y porciones proximales dorsales de los dedos.',region,modality:'Sensitivo',motorTerritory:'Estas ramas cutáneas no inervan músculos.',sensoryTerritory:'Territorios digitales dorsales radiales; no las pulpas de los dedos.',relations:'La distribución sensitiva general no se deduce del grosor ni de la extensión de la malla.',representation,sources:[RADIAL,SOURCE]};
+ const e=entries[family];if(!e)return null;
+ const deepUlnar=node.sourceId?.startsWith('Deep branch of ulnar');
+ return {description:deepUlnar?'Rama profunda del nervio cubital en la mano.':'Trayecto disponible de un nervio periférico; sus territorios y ramas pueden superar la geometría representada.',origin:deepUlnar?'Nervio cubital en la mano.':e.origin,function:deepUlnar?'Control motor de gran parte de la musculatura intrínseca de la mano.':e.modality==='Sensitivo'?'Conducción sensitiva desde el territorio indicado.':e.motor,course:deepUlnar?'Cruza los planos profundos de la palma.':e.course,territory:region,region,modality:deepUlnar?'Predominantemente motor':e.modality,motorTerritory:deepUlnar?'Interóseos, aductor del pulgar y otros músculos intrínsecos.':e.motor,sensoryTerritory:deepUlnar?'Sin territorio cutáneo principal.':e.sensory,relations:'El contexto reúne referencias óseas y, cuando se indican, músculos diana curados. No se infiere inervación por distancia ni se modelan inserciones nerviosas.',representation,sources:[e.source,SOURCE]};
+}
+// Explicit, reviewed IDs. The arrays are ordered right/left; no geometry queries.
+const bonePairs={humerus:['bp3d:FMA23130','bp3d:FMA23131'],radius:['bp3d:FMA23464','bp3d:FMA23465'],ulna:['bp3d:FMA23467','bp3d:FMA23468'],scapula:['bp3d:FMA13395','bp3d:FMA13396'],clavicle:['bp3d:FMA13322','bp3d:FMA13323'],hip:['bp3d:FMA16586','bp3d:FMA16587'],femur:['bp3d:FMA24474','bp3d:FMA24475'],tibia:['bp3d:FMA24477','bp3d:FMA24478'],fibula:['bp3d:FMA24480','bp3d:FMA24481']};
+export function expansionContextIds(node:AnatomyNode,byId:Map<string,AnatomyNode>):string[] {
+ const family=node.family?.replace(/^z:/,''),side=node.side==='left'?1:0,word=side?'left':'right';
+ const bones:Partial<Record<string,(keyof typeof bonePairs)[]>>={
+  'axillary-nerve':['humerus','scapula'],'musculocutaneous-nerve':['humerus'],'median-nerve':['humerus','radius','ulna'],'ulnar-nerve':['ulna','humerus'],'dorsal-scapular-nerve':['scapula'],'brachial-plexus':['clavicle','scapula'],'femoral-nerve':['hip','femur'],'lumbar-plexus':['hip'],'sacral-plexus':['hip','femur'],'tibial-nerve':['tibia','fibula'],'common-fibular-nerve':['fibula','tibia'],'superficial-fibular-nerve':['fibula'],'deep-fibular-nerve':['tibia','fibula'],'lateral-femoral-cutaneous-nerve':['hip','femur'],'posterior-femoral-cutaneous-nerve':['hip','femur'],'iliohypogastric-nerve':['hip'],
+ };
+ const muscles:Partial<Record<string,string[]>>={
+  'axillary-nerve':['med3d:muscle:deltoid:'+word],'musculocutaneous-nerve':['med3d:muscle:bicepsbrachii:'+word],
+  'median-nerve':[side?'bp3d:FMA38461':'bp3d:FMA38460'],'dorsal-scapular-nerve':[side?'bp3d:FMA13382':'bp3d:FMA13381',side?'bp3d:FMA13384':'bp3d:FMA13383'],
+  'femoral-nerve':['muscular:group:quadriceps:'+word],'tibial-nerve':[side?'bp3d:FMA22559':'bp3d:FMA22558'],
+  'superficial-fibular-nerve':[side?'bp3d:FMA22553':'bp3d:FMA22552',side?'bp3d:FMA22555':'bp3d:FMA22554'],'deep-fibular-nerve':[side?'bp3d:FMA22545':'bp3d:FMA22544'],
+ };
+ return [...(bones[family||'']||[]).map(b=>bonePairs[b][side]),...(muscles[family||'']||[])].filter(id=>byId.has(id));
+}

@@ -49,7 +49,7 @@ async function entry(){
  assert.ok(!await assetInput(newAssets[1]).isChecked());check('Regional nervous entry can activate a different system and restores its remembered subset');
 }
 async function functional(){
- await goto();assert.equal((await h.metrics()).meshCount,474);assert.equal((await h.metrics()).loadedAssets,27);
+ await goto();assert.equal((await h.metrics()).meshCount,totalMeshes);assert.equal((await h.metrics()).loadedAssets,assets.length);
  for(const node of [cerebellum,optic,trochlear,nerve('bp3d:FMA52574'),nerve('bp3d:FMA52622'),nerve('bp3d:FMA53549'),nerve('bp3d:FMA72661')]){
   for(const query of [node.name,node.latin,node.sourceId,...node.aliases.filter(x=>x.startsWith('FJ'))]){await structures();await page.getByRole('textbox',{name:'Buscar estructura anatómica'}).fill(query);await page.locator('.atlas-search-result[data-node-id="'+node.id+'"]').waitFor();}
   await choose(node);const card=page.getByRole('region',{name:'Información nerviosa de '+node.name,exact:true});for(const heading of ['Descripción','Función','Recorrido general','Modalidad funcional','Territorio','Relaciones anatómicas'])assert.ok(await card.getByRole('heading',{name:heading,exact:true}).count());
@@ -60,12 +60,12 @@ async function functional(){
  await choose(optic);await page.getByRole('button',{name:'Mostrar contexto',exact:true}).click();await wait(800);const visible=(await parts()).filter(p=>p.visible);assert.deepEqual(new Set(visible.map(p=>p.id)),new Set([optic.id,'bp3d:FMA52736','bp3d:FMA52734']));
  await reset();for(const value of [100,50,25])await opacity(value);await opacity(100);await opacity(25,'muscular');await opacity(25,'skeletal');assert.ok((await parts()).filter(p=>p.systemId==='nervous').every(p=>p.opacity===1));
  check('Six views, curated context, DoubleSide/depthTest and three independent opacity layers');
- await reset();const initial=await h.metrics();for(const asset of newAssets){await layers();await assetInput(asset).uncheck();await h.waitMeshes(474-asset.meshCount);await assetInput(asset).check();await h.waitMeshes(474);assert.equal((await h.metrics()).geometryBytes,initial.geometryBytes);}
- for(const sys of ['nervous','muscular','skeletal']){await layers();await systemInput(sys).uncheck();await h.waitMeshes(474-sum(assets.filter(a=>a.systemId===sys),'meshCount'));await systemInput(sys).check();await h.waitMeshes(474);}
+ await reset();const initial=await h.metrics();for(const asset of newAssets){await layers();await assetInput(asset).uncheck();await h.waitMeshes(totalMeshes-asset.meshCount);await assetInput(asset).check();await h.waitMeshes(totalMeshes);assert.equal((await h.metrics()).geometryBytes,initial.geometryBytes);}
+ for(const sys of ['nervous','muscular','skeletal']){await layers();await systemInput(sys).uncheck();await h.waitMeshes(totalMeshes-sum(assets.filter(a=>a.systemId===sys),'meshCount'));await systemInput(sys).check();await h.waitMeshes(totalMeshes);}
  const rest=await atRest();for(const level of ['systems','regions','structures']){await explode(level,100);await explode(level,0);assert.deepEqual(await atRest(),rest);}
  check('All systems/modules unload independently and all explosion modes restore exact zero');
  const failed=newAssets[1],pattern='**/'+failed.path;let allowed=false;await page.route(pattern,route=>allowed?route.continue():route.abort('failed'));
- await page.goto(h.origin+'/med3d/anatomia/?qa=1&systems=nervous',{waitUntil:'domcontentloaded'});await page.getByRole('button',{name:'Reintentar regiones pendientes'}).waitFor({timeout:120000});await h.waitMeshes(87-failed.meshCount);allowed=true;await page.getByRole('button',{name:'Reintentar regiones pendientes'}).click();await h.waitMeshes(87);await page.unroute(pattern);
+ await page.goto(h.origin+'/med3d/anatomia/?qa=1&systems=nervous',{waitUntil:'domcontentloaded'});await page.getByRole('button',{name:'Reintentar regiones pendientes'}).waitFor({timeout:120000});await h.waitMeshes(nervous.coverage.meshes-failed.meshCount);allowed=true;await page.getByRole('button',{name:'Reintentar regiones pendientes'}).click();await h.waitMeshes(nervous.coverage.meshes);await page.unroute(pattern);
  check('Failed cranial module preserves CNS and recovers by explicit retry');
  await choose(cerebellum);await action('Aislar');await h.view('posterior');await action('Deseleccionar');await closePanels();
  const canvas=page.locator('.atlas-canvas canvas'),box=await canvas.boundingBox();let hit=false;

@@ -1,0 +1,5671 @@
+{
+  "method": "49 homologous bone bounds-centres initialize a labeled surface ICP. 500 area-weighted samples per bone; target 12000 samples, seeds 123/456. Global uniform scale then regional rigid fits; upper 10 bones, lower 12 bones with pelvic references weighted 4x. No nerve-wise fit. Frozen after checks.",
+  "globalFit": {
+    "matrix": [
+      [
+        0.9969137072304705,
+        -0.0002846744827669812,
+        -0.000409306267425016,
+        0.0001472502395692481
+      ],
+      [
+        0.0004058030944497216,
+        -0.012161314263739386,
+        0.9968395688346293,
+        -0.06541310074486872
+      ],
+      [
+        -0.00028964638825139686,
+        -0.9968396107855066,
+        -0.012161196863481057,
+        0.11286315519687992
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniformScale": 0.996913831900823,
+    "iterations": 37,
+    "landmarks": [
+      {
+        "source": "Atlas (C1)",
+        "target": "bp3d:FMA12519",
+        "sourcePoint": [
+          4.133209586143494e-06,
+          0.021419519558548927,
+          1.5429322123527527
+        ],
+        "targetPoint": [
+          -0.0005669500000000001,
+          1.4718200000000001,
+          0.06412
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 8.646106923318705,
+        "surfaceRmsMm": 4.9894570700398155,
+        "surfaceMaxMm": 9.180945344269276
+      },
+      {
+        "source": "Axis (C2)",
+        "target": "bp3d:FMA12520",
+        "sourcePoint": [
+          1.5628524124622345e-05,
+          0.026012921705842018,
+          1.529980182647705
+        ],
+        "targetPoint": [
+          -0.0006937000000000002,
+          1.45576,
+          0.06160500000000001
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 7.653999027212582,
+        "surfaceRmsMm": 4.433028010926336,
+        "surfaceMaxMm": 10.063310153782368
+      },
+      {
+        "source": "Clavicle.r",
+        "target": "bp3d:FMA13322",
+        "sourcePoint": [
+          -0.08277258230373263,
+          0.0008759424090385437,
+          1.4071637392044067
+        ],
+        "targetPoint": [
+          -0.07746932499999999,
+          1.33203,
+          0.10068025000000001
+        ],
+        "region": "skeletal:region:arm-right",
+        "centerErrorMm": 9.525585266617203,
+        "surfaceRmsMm": 5.2865245521795385,
+        "surfaceMaxMm": 13.122960925102234
+      },
+      {
+        "source": "Clavicle.l",
+        "target": "bp3d:FMA13323",
+        "sourcePoint": [
+          0.08277256740257144,
+          0.0008759424090385437,
+          1.4071637392044067
+        ],
+        "targetPoint": [
+          0.07616036500000001,
+          1.331855,
+          0.10073275000000001
+        ],
+        "region": "skeletal:region:arm-left",
+        "centerErrorMm": 9.982136081017845,
+        "surfaceRmsMm": 5.37361464366584,
+        "surfaceMaxMm": 13.016963377594948
+      },
+      {
+        "source": "Scapula.r",
+        "target": "bp3d:FMA13395",
+        "sourcePoint": [
+          -0.11709326133131981,
+          0.05577133223414421,
+          1.336057186126709
+        ],
+        "targetPoint": [
+          -0.1117589,
+          1.26691,
+          0.048886625
+        ],
+        "region": "skeletal:region:arm-right",
+        "centerErrorMm": 9.58439831492982,
+        "surfaceRmsMm": 6.952054189010614,
+        "surfaceMaxMm": 14.277148991823196
+      },
+      {
+        "source": "Scapula.l",
+        "target": "bp3d:FMA13396",
+        "sourcePoint": [
+          0.117093276232481,
+          0.05577133223414421,
+          1.336057186126709
+        ],
+        "targetPoint": [
+          0.11176269999999999,
+          1.266905,
+          0.048884300000000006
+        ],
+        "region": "skeletal:region:arm-left",
+        "centerErrorMm": 9.184716067566326,
+        "surfaceRmsMm": 6.728034408666842,
+        "surfaceMaxMm": 14.179122634232044
+      },
+      {
+        "source": "Sacrum",
+        "target": "bp3d:FMA16202",
+        "sourcePoint": [
+          -3.909505903720856e-05,
+          0.049301523715257645,
+          0.923294186592102
+        ],
+        "targetPoint": [
+          -0.000694150000000001,
+          0.8550185,
+          0.037071325
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 15.437133293994984,
+        "surfaceRmsMm": 12.315261916139816,
+        "surfaceMaxMm": 24.505607783794403
+      },
+      {
+        "source": "Hip bone.r",
+        "target": "bp3d:FMA16586",
+        "sourcePoint": [
+          -0.06891577318310738,
+          0.01535746455192566,
+          0.9046399891376495
+        ],
+        "targetPoint": [
+          -0.07383115000000001,
+          0.8550110000000001,
+          0.07006889000000001
+        ],
+        "region": "skeletal:region:leg-right",
+        "centerErrorMm": 25.534526879178202,
+        "surfaceRmsMm": 11.6289245553526,
+        "surfaceMaxMm": 28.653033077716827
+      },
+      {
+        "source": "Hip bone.l",
+        "target": "bp3d:FMA16587",
+        "sourcePoint": [
+          0.06891577318310738,
+          0.01535746455192566,
+          0.9046399891376495
+        ],
+        "targetPoint": [
+          0.073752155,
+          0.8550205,
+          0.07020496999999999
+        ],
+        "region": "skeletal:region:leg-left",
+        "centerErrorMm": 25.461914588796997,
+        "surfaceRmsMm": 11.635796735169087,
+        "surfaceMaxMm": 28.261087834835052
+      },
+      {
+        "source": "Humerus.r",
+        "target": "bp3d:FMA23130",
+        "sourcePoint": [
+          -0.19671966135501862,
+          0.02744267787784338,
+          1.2458133697509766
+        ],
+        "targetPoint": [
+          -0.1904655,
+          1.18287,
+          0.07562905
+        ],
+        "region": "skeletal:region:arm-right",
+        "centerErrorMm": 10.484844064094474,
+        "surfaceRmsMm": 5.716379487478356,
+        "surfaceMaxMm": 14.186074957251549
+      },
+      {
+        "source": "Humerus.l",
+        "target": "bp3d:FMA23131",
+        "sourcePoint": [
+          0.196719691157341,
+          0.02744267787784338,
+          1.2458133697509766
+        ],
+        "targetPoint": [
+          0.1904165,
+          1.182865,
+          0.07564245
+        ],
+        "region": "skeletal:region:arm-left",
+        "centerErrorMm": 10.060265917817851,
+        "surfaceRmsMm": 5.508965618111075,
+        "surfaceMaxMm": 13.707317411899567
+      },
+      {
+        "source": "Radius.r",
+        "target": "bp3d:FMA23464",
+        "sourcePoint": [
+          -0.25777193903923035,
+          0.007605229504406452,
+          0.9748274981975555
+        ],
+        "targetPoint": [
+          -0.24968400000000002,
+          0.9204425,
+          0.0940053
+        ],
+        "region": "skeletal:region:arm-right",
+        "centerErrorMm": 16.182214177104434,
+        "surfaceRmsMm": 6.003396454867567,
+        "surfaceMaxMm": 18.269866704940796
+      },
+      {
+        "source": "Radius.l",
+        "target": "bp3d:FMA23465",
+        "sourcePoint": [
+          0.25777193903923035,
+          0.007605229504406452,
+          0.9748274981975555
+        ],
+        "targetPoint": [
+          0.24948949999999998,
+          0.9205865,
+          0.09436065
+        ],
+        "region": "skeletal:region:arm-left",
+        "centerErrorMm": 16.004212434774082,
+        "surfaceRmsMm": 5.831809522383433,
+        "surfaceMaxMm": 18.18392053246498
+      },
+      {
+        "source": "Ulna.r",
+        "target": "bp3d:FMA23467",
+        "sourcePoint": [
+          -0.22943370044231415,
+          0.01876828633248806,
+          0.9833000004291534
+        ],
+        "targetPoint": [
+          -0.22203,
+          0.9288115000000001,
+          0.0841466
+        ],
+        "region": "skeletal:region:arm-right",
+        "centerErrorMm": 16.061254061705313,
+        "surfaceRmsMm": 6.3970283548159905,
+        "surfaceMaxMm": 18.565289676189423
+      },
+      {
+        "source": "Ulna.l",
+        "target": "bp3d:FMA23468",
+        "sourcePoint": [
+          0.22943373024463654,
+          0.01876828633248806,
+          0.9833000004291534
+        ],
+        "targetPoint": [
+          0.222006,
+          0.928743,
+          0.08391565000000001
+        ],
+        "region": "skeletal:region:arm-left",
+        "centerErrorMm": 15.610517559390217,
+        "surfaceRmsMm": 6.208440992999432,
+        "surfaceMaxMm": 18.048685044050217
+      },
+      {
+        "source": "Femur.r",
+        "target": "bp3d:FMA24474",
+        "sourcePoint": [
+          -0.09023460187017918,
+          0.020297355949878693,
+          0.6570856720209122
+        ],
+        "targetPoint": [
+          -0.09101414999999999,
+          0.601201,
+          0.0808611
+        ],
+        "region": "skeletal:region:leg-right",
+        "centerErrorMm": 12.516970443180536,
+        "surfaceRmsMm": 7.861560417512247,
+        "surfaceMaxMm": 27.984578162431717
+      },
+      {
+        "source": "Femur.l",
+        "target": "bp3d:FMA24475",
+        "sourcePoint": [
+          0.09023460187017918,
+          0.020297355949878693,
+          0.6570856720209122
+        ],
+        "targetPoint": [
+          0.0911016,
+          0.6011475000000001,
+          0.0808791
+        ],
+        "region": "skeletal:region:leg-left",
+        "centerErrorMm": 12.405725171857815,
+        "surfaceRmsMm": 7.814940940827853,
+        "surfaceMaxMm": 27.904082089662552
+      },
+      {
+        "source": "Tibia.r",
+        "target": "bp3d:FMA24477",
+        "sourcePoint": [
+          -0.07656561583280563,
+          0.0289481021463871,
+          0.2541998475790024
+        ],
+        "targetPoint": [
+          -0.0722845,
+          0.18394142000000002,
+          0.08345395
+        ],
+        "region": "skeletal:region:leg-right",
+        "centerErrorMm": 5.983244648947331,
+        "surfaceRmsMm": 4.86872393403173,
+        "surfaceMaxMm": 14.850561507046223
+      },
+      {
+        "source": "Tibia.l",
+        "target": "bp3d:FMA24478",
+        "sourcePoint": [
+          0.07656561583280563,
+          0.0289481021463871,
+          0.2541998475790024
+        ],
+        "targetPoint": [
+          0.07224459999999999,
+          0.183883335,
+          0.08324855
+        ],
+        "region": "skeletal:region:leg-left",
+        "centerErrorMm": 6.066436170969806,
+        "surfaceRmsMm": 4.879992888121877,
+        "surfaceMaxMm": 14.875020831823349
+      },
+      {
+        "source": "Fibula.r",
+        "target": "bp3d:FMA24480",
+        "sourcePoint": [
+          -0.10673540458083153,
+          0.043223464861512184,
+          0.2364572212100029
+        ],
+        "targetPoint": [
+          -0.10225475,
+          0.16693504999999997,
+          0.0633281
+        ],
+        "region": "skeletal:region:leg-right",
+        "centerErrorMm": 6.1402244730629825,
+        "surfaceRmsMm": 3.9832304445008675,
+        "surfaceMaxMm": 9.620478376746178
+      },
+      {
+        "source": "Fibula.l",
+        "target": "bp3d:FMA24481",
+        "sourcePoint": [
+          0.10673541948199272,
+          0.043223464861512184,
+          0.2364572212100029
+        ],
+        "targetPoint": [
+          0.1023185,
+          0.16697019999999999,
+          0.06332650000000001
+        ],
+        "region": "skeletal:region:leg-left",
+        "centerErrorMm": 6.137246786782061,
+        "surfaceRmsMm": 3.983201458738328,
+        "surfaceMaxMm": 9.405280463397503
+      },
+      {
+        "source": "Talus.r",
+        "target": "bp3d:FMA24482",
+        "sourcePoint": [
+          -0.07470057532191277,
+          0.036572846584022045,
+          0.06766913272440434
+        ],
+        "targetPoint": [
+          -0.06987045,
+          -0.014022584999999999,
+          0.07716150000000001
+        ],
+        "region": "skeletal:region:leg-right",
+        "centerErrorMm": 16.29802611630164,
+        "surfaceRmsMm": 9.276148986518145,
+        "surfaceMaxMm": 16.848694533109665
+      },
+      {
+        "source": "Talus.l",
+        "target": "bp3d:FMA24483",
+        "sourcePoint": [
+          0.07470057532191277,
+          0.036572846584022045,
+          0.06766913272440434
+        ],
+        "targetPoint": [
+          0.0699069,
+          -0.014103744999999997,
+          0.07724550000000001
+        ],
+        "region": "skeletal:region:leg-left",
+        "centerErrorMm": 16.496823435105664,
+        "surfaceRmsMm": 9.324366046727375,
+        "surfaceMaxMm": 16.665713861584663
+      },
+      {
+        "source": "Calcaneus.r",
+        "target": "bp3d:FMA24497",
+        "sourcePoint": [
+          -0.0784677192568779,
+          0.05371231772005558,
+          0.03698149276897311
+        ],
+        "targetPoint": [
+          -0.0728284,
+          -0.0438227,
+          0.0590768
+        ],
+        "region": "skeletal:region:leg-right",
+        "centerErrorMm": 15.516409125884254,
+        "surfaceRmsMm": 9.838224241466676,
+        "surfaceMaxMm": 19.290324300527573
+      },
+      {
+        "source": "Calcaneus.l",
+        "target": "bp3d:FMA24498",
+        "sourcePoint": [
+          0.0784677192568779,
+          0.05371231772005558,
+          0.03698149276897311
+        ],
+        "targetPoint": [
+          0.072889,
+          -0.0437442,
+          0.059174300000000006
+        ],
+        "region": "skeletal:region:leg-left",
+        "centerErrorMm": 15.564611602573736,
+        "surfaceRmsMm": 9.886027853160149,
+        "surfaceMaxMm": 19.232412800192833
+      },
+      {
+        "source": "Frontal bone",
+        "target": "bp3d:FMA52734",
+        "sourcePoint": [
+          -1.4901161193847656e-08,
+          -0.05256257392466068,
+          1.6459020376205444
+        ],
+        "targetPoint": [
+          -0.0006551999999999981,
+          1.575415,
+          0.142012
+        ],
+        "region": "skeletal:region:skull",
+        "centerErrorMm": 3.2748443157638256,
+        "surfaceRmsMm": 1.7665350320099782,
+        "surfaceMaxMm": 3.905755467712879
+      },
+      {
+        "source": "Occipital bone",
+        "target": "bp3d:FMA52735",
+        "sourcePoint": [
+          -1.862645149230957e-08,
+          0.04545146785676479,
+          1.6029645204544067
+        ],
+        "targetPoint": [
+          -0.0006279499999999986,
+          1.5311400000000002,
+          0.041479
+        ],
+        "region": "skeletal:region:skull",
+        "centerErrorMm": 6.630763252948042,
+        "surfaceRmsMm": 4.317080488997069,
+        "surfaceMaxMm": 8.160584606230259
+      },
+      {
+        "source": "Vertebra T1",
+        "target": "bp3d:FMA9165",
+        "sourcePoint": [
+          0.0,
+          0.047353023663163185,
+          1.4379931092262268
+        ],
+        "targetPoint": [
+          -0.0007334000000000021,
+          1.36206,
+          0.0519793
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 6.612620002441998,
+        "surfaceRmsMm": 3.9439577484719726,
+        "surfaceMaxMm": 7.775245700031519
+      },
+      {
+        "source": "Vertebra T2",
+        "target": "bp3d:FMA9187",
+        "sourcePoint": [
+          3.725290298461914e-09,
+          0.05276584718376398,
+          1.420063078403473
+        ],
+        "targetPoint": [
+          -0.0006718499999999981,
+          1.343475,
+          0.04739815
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 7.482504403961848,
+        "surfaceRmsMm": 4.403839725547989,
+        "surfaceMaxMm": 8.440643548965454
+      },
+      {
+        "source": "Vertebra T3",
+        "target": "bp3d:FMA9209",
+        "sourcePoint": [
+          -3.725290298461914e-09,
+          0.06147979013621807,
+          1.398801863193512
+        ],
+        "targetPoint": [
+          -0.0005625999999999964,
+          1.3220399999999999,
+          0.039048205
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 7.635131629358473,
+        "surfaceRmsMm": 4.410609103802684,
+        "surfaceMaxMm": 10.67036110907793
+      },
+      {
+        "source": "Vertebra T4",
+        "target": "bp3d:FMA9248",
+        "sourcePoint": [
+          0.0,
+          0.06525581330060959,
+          1.375222384929657
+        ],
+        "targetPoint": [
+          -0.0005898499999999994,
+          1.2995750000000001,
+          0.034901398
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 6.364724040942984,
+        "surfaceRmsMm": 3.9571419076957164,
+        "surfaceMaxMm": 7.951661013066769
+      },
+      {
+        "source": "Vertebra T5",
+        "target": "bp3d:FMA9922",
+        "sourcePoint": [
+          5.21540641784668e-08,
+          0.06606699712574482,
+          1.3472536206245422
+        ],
+        "targetPoint": [
+          -0.0006309000000000002,
+          1.26852,
+          0.03299522505
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 8.59622523432701,
+        "surfaceRmsMm": 3.6145823550799183,
+        "surfaceMaxMm": 7.3389653116464615
+      },
+      {
+        "source": "Vertebra T6",
+        "target": "bp3d:FMA9945",
+        "sourcePoint": [
+          0.0,
+          0.06675404123961926,
+          1.3142403364181519
+        ],
+        "targetPoint": [
+          -0.0006943999999999978,
+          1.23923,
+          0.033206664999999996
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 5.4560158749197,
+        "surfaceRmsMm": 3.249828566399469,
+        "surfaceMaxMm": 6.5381331369280815
+      },
+      {
+        "source": "Vertebra T7",
+        "target": "bp3d:FMA9968",
+        "sourcePoint": [
+          0.0,
+          0.06495077349245548,
+          1.286040723323822
+        ],
+        "targetPoint": [
+          -0.00045285000000000117,
+          1.21055,
+          0.0338253465
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 5.394586517100423,
+        "surfaceRmsMm": 2.7812610978512686,
+        "surfaceMaxMm": 5.546046886593103
+      },
+      {
+        "source": "Vertebra T8",
+        "target": "bp3d:FMA9991",
+        "sourcePoint": [
+          0.0,
+          0.06341774947941303,
+          1.2558302879333496
+        ],
+        "targetPoint": [
+          -0.0007533499999999964,
+          1.1834,
+          0.036479698000000005
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 3.123588530604203,
+        "surfaceRmsMm": 2.5009763800027427,
+        "surfaceMaxMm": 5.156027618795633
+      },
+      {
+        "source": "Vertebra T9",
+        "target": "bp3d:FMA10014",
+        "sourcePoint": [
+          3.725290298461914e-09,
+          0.05859734117984772,
+          1.2284806966781616
+        ],
+        "targetPoint": [
+          -0.0006983999999999983,
+          1.155735,
+          0.04190448000000001
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 3.65071679744627,
+        "surfaceRmsMm": 1.7700719844695598,
+        "surfaceMaxMm": 5.956769920885563
+      },
+      {
+        "source": "Vertebra T10",
+        "target": "bp3d:FMA10037",
+        "sourcePoint": [
+          5.932524800300598e-05,
+          0.053173523396253586,
+          1.1975087523460388
+        ],
+        "targetPoint": [
+          -0.000705800000000003,
+          1.12845,
+          0.04594015
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 1.0952708986300856,
+        "surfaceRmsMm": 1.272492672536687,
+        "surfaceMaxMm": 4.082968924194574
+      },
+      {
+        "source": "Vertebra T11",
+        "target": "bp3d:FMA10059",
+        "sourcePoint": [
+          0.0,
+          0.04507779888808727,
+          1.1693155169487
+        ],
+        "targetPoint": [
+          -0.00060085,
+          1.102495,
+          0.05277065
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 2.998068212375666,
+        "surfaceRmsMm": 1.836463668556643,
+        "surfaceMaxMm": 3.6944919265806675
+      },
+      {
+        "source": "Vertebra T12",
+        "target": "bp3d:FMA10081",
+        "sourcePoint": [
+          -3.725290298461914e-09,
+          0.0367314126342535,
+          1.1390766501426697
+        ],
+        "targetPoint": [
+          -0.0006657999999999976,
+          1.075775,
+          0.06197295
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 6.181749667416519,
+        "surfaceRmsMm": 3.3625921461594075,
+        "surfaceMaxMm": 6.7527987994253635
+      },
+      {
+        "source": "Vertebra C3",
+        "target": "bp3d:FMA12521",
+        "sourcePoint": [
+          -1.862645149230957e-09,
+          0.02688974681223044,
+          1.506380319595337
+        ],
+        "targetPoint": [
+          -0.0006517500000000013,
+          1.43137,
+          0.06297315
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 6.563423104356168,
+        "surfaceRmsMm": 3.714631897614682,
+        "surfaceMaxMm": 8.115657605230808
+      },
+      {
+        "source": "Vertebra C4",
+        "target": "bp3d:FMA12522",
+        "sourcePoint": [
+          7.541477680206299e-05,
+          0.026470066979527473,
+          1.4930745959281921
+        ],
+        "targetPoint": [
+          -0.0006879499999999997,
+          1.41837,
+          0.06490085
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 5.462566745446152,
+        "surfaceRmsMm": 3.153222877221011,
+        "surfaceMaxMm": 6.646628025919199
+      },
+      {
+        "source": "Vertebra C5",
+        "target": "bp3d:FMA12523",
+        "sourcePoint": [
+          -3.725290298461914e-09,
+          0.029776539653539658,
+          1.4801446199417114
+        ],
+        "targetPoint": [
+          -0.0006822999999999985,
+          1.40588,
+          0.06342755
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 4.200753146602841,
+        "surfaceRmsMm": 1.9327289593855828,
+        "surfaceMaxMm": 4.556030035018921
+      },
+      {
+        "source": "Vertebra C6",
+        "target": "bp3d:FMA12524",
+        "sourcePoint": [
+          0.0,
+          0.0349563704803586,
+          1.4660261869430542
+        ],
+        "targetPoint": [
+          -0.0006587499999999996,
+          1.393165,
+          0.0604252
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 2.409362460643952,
+        "surfaceRmsMm": 1.7786951376678082,
+        "surfaceMaxMm": 4.6309055760502815
+      },
+      {
+        "source": "Vertebra C7",
+        "target": "bp3d:FMA12525",
+        "sourcePoint": [
+          -3.725290298461914e-09,
+          0.042073361575603485,
+          1.4520207047462463
+        ],
+        "targetPoint": [
+          -0.0006488500000000029,
+          1.378275,
+          0.05564915
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 4.020963458273354,
+        "surfaceRmsMm": 2.7237962211912454,
+        "surfaceMaxMm": 5.566582549363375
+      },
+      {
+        "source": "Vertebra L1",
+        "target": "bp3d:FMA13072",
+        "sourcePoint": [
+          0.0,
+          0.029237419366836548,
+          1.1039149165153503
+        ],
+        "targetPoint": [
+          -0.0006592000000000021,
+          1.04359,
+          0.0693512
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 8.988803307426553,
+        "surfaceRmsMm": 4.6517971850498,
+        "surfaceMaxMm": 9.558413177728653
+      },
+      {
+        "source": "Vertebra L2",
+        "target": "bp3d:FMA13073",
+        "sourcePoint": [
+          0.0,
+          0.024103568866848946,
+          1.0749188661575317
+        ],
+        "targetPoint": [
+          -0.0006450500000000012,
+          1.016038,
+          0.0745344
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 10.301987059787319,
+        "surfaceRmsMm": 5.811469219836833,
+        "surfaceMaxMm": 12.146488763391972
+      },
+      {
+        "source": "Vertebra L3",
+        "target": "bp3d:FMA13074",
+        "sourcePoint": [
+          1.0311603546142578e-05,
+          0.023168311454355717,
+          1.0433669090270996
+        ],
+        "targetPoint": [
+          -0.0006809499999999996,
+          0.9887115,
+          0.0724335
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 15.076359294428505,
+        "surfaceRmsMm": 7.744220405790385,
+        "surfaceMaxMm": 19.070493057370186
+      },
+      {
+        "source": "Vertebra L4",
+        "target": "bp3d:FMA13075",
+        "sourcePoint": [
+          7.450580596923828e-09,
+          0.02405341900885105,
+          1.0150479972362518
+        ],
+        "targetPoint": [
+          -0.0006753500000000016,
+          0.961033,
+          0.0682806
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 17.040314750939363,
+        "surfaceRmsMm": 10.762186113797851,
+        "surfaceMaxMm": 23.818036541342735
+      },
+      {
+        "source": "Vertebra L5",
+        "target": "bp3d:FMA13076",
+        "sourcePoint": [
+          -7.450580596923828e-09,
+          0.02912519872188568,
+          0.9828057289123535
+        ],
+        "targetPoint": [
+          -0.0007135500000000003,
+          0.929714,
+          0.05866075
+        ],
+        "region": "skeletal:region:spine",
+        "centerErrorMm": 20.590213270584528,
+        "surfaceRmsMm": 10.335808913852343,
+        "surfaceMaxMm": 22.011974826455116
+      }
+    ],
+    "surfaceRmsMm": 6.266869478481743,
+    "surfaceMaxMm": 28.653033077716827,
+    "landmarkCount": 49,
+    "landmarkMeanMm": 9.952879563447155,
+    "landmarkRmsMm": 11.470676546585466,
+    "landmarkMaxMm": 25.534526879178202
+  },
+  "regions": {
+    "upper": {
+      "matrix": [
+        [
+          0.9969137031945697,
+          -2.617414443541307e-05,
+          -0.0005058981979597512,
+          0.00047810291212279217
+        ],
+        [
+          0.0005057978828061973,
+          -0.003688869841232366,
+          0.996906878621558,
+          -0.06487882591675609
+        ],
+        [
+          -2.8045931694592692e-05,
+          -0.9969070065905803,
+          -0.003688856085171414,
+          0.10812609325818337
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uniformScale": 0.996913831900823,
+      "iterations": 34,
+      "landmarks": [
+        {
+          "source": "Clavicle.r",
+          "target": "bp3d:FMA13322",
+          "sourcePoint": [
+            -0.08277258230373263,
+            0.0008759424090385437,
+            1.4071637392044067
+          ],
+          "targetPoint": [
+            -0.07746932499999999,
+            1.33203,
+            0.10068025000000001
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 8.007424653955038,
+          "surfaceRmsMm": 5.571444762533947,
+          "surfaceMaxMm": 13.563256710767746
+        },
+        {
+          "source": "Clavicle.l",
+          "target": "bp3d:FMA13323",
+          "sourcePoint": [
+            0.08277256740257144,
+            0.0008759424090385437,
+            1.4071637392044067
+          ],
+          "targetPoint": [
+            0.07616036500000001,
+            1.331855,
+            0.10073275000000001
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 8.755394319819636,
+          "surfaceRmsMm": 5.752637911735883,
+          "surfaceMaxMm": 13.437727466225624
+        },
+        {
+          "source": "Scapula.r",
+          "target": "bp3d:FMA13395",
+          "sourcePoint": [
+            -0.11709326133131981,
+            0.05577133223414421,
+            1.336057186126709
+          ],
+          "targetPoint": [
+            -0.1117589,
+            1.26691,
+            0.048886625
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 5.330945974903287,
+          "surfaceRmsMm": 3.354235555969471,
+          "surfaceMaxMm": 8.329726755619049
+        },
+        {
+          "source": "Scapula.l",
+          "target": "bp3d:FMA13396",
+          "sourcePoint": [
+            0.117093276232481,
+            0.05577133223414421,
+            1.336057186126709
+          ],
+          "targetPoint": [
+            0.11176269999999999,
+            1.266905,
+            0.048884300000000006
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 4.940986507773303,
+          "surfaceRmsMm": 3.2234588706543224,
+          "surfaceMaxMm": 8.16573016345501
+        },
+        {
+          "source": "Humerus.r",
+          "target": "bp3d:FMA23130",
+          "sourcePoint": [
+            -0.19671966135501862,
+            0.02744267787784338,
+            1.2458133697509766
+          ],
+          "targetPoint": [
+            -0.1904655,
+            1.18287,
+            0.07562905
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 8.35560565912589,
+          "surfaceRmsMm": 4.220734520561786,
+          "surfaceMaxMm": 12.156108394265175
+        },
+        {
+          "source": "Humerus.l",
+          "target": "bp3d:FMA23131",
+          "sourcePoint": [
+            0.196719691157341,
+            0.02744267787784338,
+            1.2458133697509766
+          ],
+          "targetPoint": [
+            0.1904165,
+            1.182865,
+            0.07564245
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 8.029685686780446,
+          "surfaceRmsMm": 4.047476629840787,
+          "surfaceMaxMm": 11.94471213966608
+        },
+        {
+          "source": "Radius.r",
+          "target": "bp3d:FMA23464",
+          "sourcePoint": [
+            -0.25777193903923035,
+            0.007605229504406452,
+            0.9748274981975555
+          ],
+          "targetPoint": [
+            -0.24968400000000002,
+            0.9204425,
+            0.0940053
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 15.776790678345865,
+          "surfaceRmsMm": 5.452018893416576,
+          "surfaceMaxMm": 18.158193677663803
+        },
+        {
+          "source": "Radius.l",
+          "target": "bp3d:FMA23465",
+          "sourcePoint": [
+            0.25777193903923035,
+            0.007605229504406452,
+            0.9748274981975555
+          ],
+          "targetPoint": [
+            0.24948949999999998,
+            0.9205865,
+            0.09436065
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 15.687805921549318,
+          "surfaceRmsMm": 5.414119801220591,
+          "surfaceMaxMm": 18.23141798377037
+        },
+        {
+          "source": "Ulna.r",
+          "target": "bp3d:FMA23467",
+          "sourcePoint": [
+            -0.22943370044231415,
+            0.01876828633248806,
+            0.9833000004291534
+          ],
+          "targetPoint": [
+            -0.22203,
+            0.9288115000000001,
+            0.0841466
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 15.272168350762044,
+          "surfaceRmsMm": 5.555990329381576,
+          "surfaceMaxMm": 18.616706132888794
+        },
+        {
+          "source": "Ulna.l",
+          "target": "bp3d:FMA23468",
+          "sourcePoint": [
+            0.22943373024463654,
+            0.01876828633248806,
+            0.9833000004291534
+          ],
+          "targetPoint": [
+            0.222006,
+            0.928743,
+            0.08391565000000001
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 15.02330532530484,
+          "surfaceRmsMm": 5.511021173845073,
+          "surfaceMaxMm": 18.350377678871155
+        }
+      ],
+      "surfaceRmsMm": 4.901527068764362,
+      "surfaceMaxMm": 18.616706132888794,
+      "landmarkCount": 10,
+      "landmarkMeanMm": 10.518011307831966,
+      "landmarkRmsMm": 11.321896121555016,
+      "landmarkMaxMm": 15.776790678345865
+    },
+    "lower": {
+      "matrix": [
+        [
+          0.996913814735685,
+          -0.00018491231561443993,
+          -5.6358594762350394e-06,
+          9.838699451262696e-05
+        ],
+        [
+          -1.4224851263220303e-06,
+          -0.03803138474561156,
+          0.9961881358495949,
+          -0.06185918957215558
+        ],
+        [
+          -0.00018499271313756832,
+          -0.9961881186889106,
+          -0.03803138435462578,
+          0.11939571475093332
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uniformScale": 0.9969138319008235,
+      "iterations": 47,
+      "landmarks": [
+        {
+          "source": "Hip bone.r",
+          "target": "bp3d:FMA16586",
+          "sourcePoint": [
+            -0.06891577318310738,
+            0.01535746455192566,
+            0.9046399891376495
+          ],
+          "targetPoint": [
+            -0.07383115000000001,
+            0.8550110000000001,
+            0.07006889000000001
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 17.083190142190375,
+          "surfaceRmsMm": 7.384950521436739,
+          "surfaceMaxMm": 20.705442875623703
+        },
+        {
+          "source": "Hip bone.l",
+          "target": "bp3d:FMA16587",
+          "sourcePoint": [
+            0.06891577318310738,
+            0.01535746455192566,
+            0.9046399891376495
+          ],
+          "targetPoint": [
+            0.073752155,
+            0.8550205,
+            0.07020496999999999
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 17.019096311816213,
+          "surfaceRmsMm": 7.333558975317327,
+          "surfaceMaxMm": 20.489905029535294
+        },
+        {
+          "source": "Femur.r",
+          "target": "bp3d:FMA24474",
+          "sourcePoint": [
+            -0.09023460187017918,
+            0.020297355949878693,
+            0.6570856720209122
+          ],
+          "targetPoint": [
+            -0.09101414999999999,
+            0.601201,
+            0.0808611
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 11.455930134907021,
+          "surfaceRmsMm": 5.245005197027924,
+          "surfaceMaxMm": 17.396124079823494
+        },
+        {
+          "source": "Femur.l",
+          "target": "bp3d:FMA24475",
+          "sourcePoint": [
+            0.09023460187017918,
+            0.020297355949878693,
+            0.6570856720209122
+          ],
+          "targetPoint": [
+            0.0911016,
+            0.6011475000000001,
+            0.0808791
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 11.433939349294022,
+          "surfaceRmsMm": 5.248344733378031,
+          "surfaceMaxMm": 17.41338148713112
+        },
+        {
+          "source": "Tibia.r",
+          "target": "bp3d:FMA24477",
+          "sourcePoint": [
+            -0.07656561583280563,
+            0.0289481021463871,
+            0.2541998475790024
+          ],
+          "targetPoint": [
+            -0.0722845,
+            0.18394142000000002,
+            0.08345395
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 7.886007969731143,
+          "surfaceRmsMm": 5.311764244897941,
+          "surfaceMaxMm": 15.26979636400938
+        },
+        {
+          "source": "Tibia.l",
+          "target": "bp3d:FMA24478",
+          "sourcePoint": [
+            0.07656561583280563,
+            0.0289481021463871,
+            0.2541998475790024
+          ],
+          "targetPoint": [
+            0.07224459999999999,
+            0.183883335,
+            0.08324855
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 7.99169751611342,
+          "surfaceRmsMm": 5.316846539919203,
+          "surfaceMaxMm": 15.215977095067501
+        },
+        {
+          "source": "Fibula.r",
+          "target": "bp3d:FMA24480",
+          "sourcePoint": [
+            -0.10673540458083153,
+            0.043223464861512184,
+            0.2364572212100029
+          ],
+          "targetPoint": [
+            -0.10225475,
+            0.16693504999999997,
+            0.0633281
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 7.680031764962719,
+          "surfaceRmsMm": 4.554389814124801,
+          "surfaceMaxMm": 14.056894928216934
+        },
+        {
+          "source": "Fibula.l",
+          "target": "bp3d:FMA24481",
+          "sourcePoint": [
+            0.10673541948199272,
+            0.043223464861512184,
+            0.2364572212100029
+          ],
+          "targetPoint": [
+            0.1023185,
+            0.16697019999999999,
+            0.06332650000000001
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 7.698003534932186,
+          "surfaceRmsMm": 4.589876943715057,
+          "surfaceMaxMm": 13.866630382835865
+        },
+        {
+          "source": "Talus.r",
+          "target": "bp3d:FMA24482",
+          "sourcePoint": [
+            -0.07470057532191277,
+            0.036572846584022045,
+            0.06766913272440434
+          ],
+          "targetPoint": [
+            -0.06987045,
+            -0.014022584999999999,
+            0.07716150000000001
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 19.01260476890644,
+          "surfaceRmsMm": 10.778280103417138,
+          "surfaceMaxMm": 20.031264051795006
+        },
+        {
+          "source": "Talus.l",
+          "target": "bp3d:FMA24483",
+          "sourcePoint": [
+            0.07470057532191277,
+            0.036572846584022045,
+            0.06766913272440434
+          ],
+          "targetPoint": [
+            0.0699069,
+            -0.014103744999999997,
+            0.07724550000000001
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 19.106450539502585,
+          "surfaceRmsMm": 10.811999406069859,
+          "surfaceMaxMm": 20.107915624976158
+        },
+        {
+          "source": "Calcaneus.r",
+          "target": "bp3d:FMA24497",
+          "sourcePoint": [
+            -0.0784677192568779,
+            0.05371231772005558,
+            0.03698149276897311
+          ],
+          "targetPoint": [
+            -0.0728284,
+            -0.0438227,
+            0.0590768
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 18.398333498073338,
+          "surfaceRmsMm": 10.444636604395003,
+          "surfaceMaxMm": 19.984807819128036
+        },
+        {
+          "source": "Calcaneus.l",
+          "target": "bp3d:FMA24498",
+          "sourcePoint": [
+            0.0784677192568779,
+            0.05371231772005558,
+            0.03698149276897311
+          ],
+          "targetPoint": [
+            0.072889,
+            -0.0437442,
+            0.059174300000000006
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 18.323601399865467,
+          "surfaceRmsMm": 10.423030564189377,
+          "surfaceMaxMm": 19.87197808921337
+        }
+      ],
+      "surfaceRmsMm": 7.705342140089657,
+      "surfaceMaxMm": 20.705442875623703,
+      "landmarkCount": 12,
+      "landmarkMeanMm": 13.590740577524578,
+      "landmarkRmsMm": 14.400652364595832,
+      "landmarkMaxMm": 19.106450539502585
+    }
+  },
+  "rejectedSpinalFits": {
+    "zGlobal": {
+      "matrix": [
+        [
+          0.9969137072304705,
+          -0.0002846744827669812,
+          -0.000409306267425016,
+          0.0001472502395692481
+        ],
+        [
+          0.0004058030944497216,
+          -0.012161314263739386,
+          0.9968395688346293,
+          -0.06541310074486872
+        ],
+        [
+          -0.00028964638825139686,
+          -0.9968396107855066,
+          -0.012161196863481057,
+          0.11286315519687992
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uniformScale": 0.996913831900823,
+      "iterations": 37,
+      "landmarks": [
+        {
+          "source": "Atlas (C1)",
+          "target": "bp3d:FMA12519",
+          "sourcePoint": [
+            4.133209586143494e-06,
+            0.021419519558548927,
+            1.5429322123527527
+          ],
+          "targetPoint": [
+            -0.0005669500000000001,
+            1.4718200000000001,
+            0.06412
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 8.646106923318705,
+          "surfaceRmsMm": 4.9894570700398155,
+          "surfaceMaxMm": 9.180945344269276
+        },
+        {
+          "source": "Axis (C2)",
+          "target": "bp3d:FMA12520",
+          "sourcePoint": [
+            1.5628524124622345e-05,
+            0.026012921705842018,
+            1.529980182647705
+          ],
+          "targetPoint": [
+            -0.0006937000000000002,
+            1.45576,
+            0.06160500000000001
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 7.653999027212582,
+          "surfaceRmsMm": 4.433028010926336,
+          "surfaceMaxMm": 10.063310153782368
+        },
+        {
+          "source": "Clavicle.r",
+          "target": "bp3d:FMA13322",
+          "sourcePoint": [
+            -0.08277258230373263,
+            0.0008759424090385437,
+            1.4071637392044067
+          ],
+          "targetPoint": [
+            -0.07746932499999999,
+            1.33203,
+            0.10068025000000001
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 9.525585266617203,
+          "surfaceRmsMm": 5.2865245521795385,
+          "surfaceMaxMm": 13.122960925102234
+        },
+        {
+          "source": "Clavicle.l",
+          "target": "bp3d:FMA13323",
+          "sourcePoint": [
+            0.08277256740257144,
+            0.0008759424090385437,
+            1.4071637392044067
+          ],
+          "targetPoint": [
+            0.07616036500000001,
+            1.331855,
+            0.10073275000000001
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 9.982136081017845,
+          "surfaceRmsMm": 5.37361464366584,
+          "surfaceMaxMm": 13.016963377594948
+        },
+        {
+          "source": "Scapula.r",
+          "target": "bp3d:FMA13395",
+          "sourcePoint": [
+            -0.11709326133131981,
+            0.05577133223414421,
+            1.336057186126709
+          ],
+          "targetPoint": [
+            -0.1117589,
+            1.26691,
+            0.048886625
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 9.58439831492982,
+          "surfaceRmsMm": 6.952054189010614,
+          "surfaceMaxMm": 14.277148991823196
+        },
+        {
+          "source": "Scapula.l",
+          "target": "bp3d:FMA13396",
+          "sourcePoint": [
+            0.117093276232481,
+            0.05577133223414421,
+            1.336057186126709
+          ],
+          "targetPoint": [
+            0.11176269999999999,
+            1.266905,
+            0.048884300000000006
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 9.184716067566326,
+          "surfaceRmsMm": 6.728034408666842,
+          "surfaceMaxMm": 14.179122634232044
+        },
+        {
+          "source": "Sacrum",
+          "target": "bp3d:FMA16202",
+          "sourcePoint": [
+            -3.909505903720856e-05,
+            0.049301523715257645,
+            0.923294186592102
+          ],
+          "targetPoint": [
+            -0.000694150000000001,
+            0.8550185,
+            0.037071325
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 15.437133293994984,
+          "surfaceRmsMm": 12.315261916139816,
+          "surfaceMaxMm": 24.505607783794403
+        },
+        {
+          "source": "Hip bone.r",
+          "target": "bp3d:FMA16586",
+          "sourcePoint": [
+            -0.06891577318310738,
+            0.01535746455192566,
+            0.9046399891376495
+          ],
+          "targetPoint": [
+            -0.07383115000000001,
+            0.8550110000000001,
+            0.07006889000000001
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 25.534526879178202,
+          "surfaceRmsMm": 11.6289245553526,
+          "surfaceMaxMm": 28.653033077716827
+        },
+        {
+          "source": "Hip bone.l",
+          "target": "bp3d:FMA16587",
+          "sourcePoint": [
+            0.06891577318310738,
+            0.01535746455192566,
+            0.9046399891376495
+          ],
+          "targetPoint": [
+            0.073752155,
+            0.8550205,
+            0.07020496999999999
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 25.461914588796997,
+          "surfaceRmsMm": 11.635796735169087,
+          "surfaceMaxMm": 28.261087834835052
+        },
+        {
+          "source": "Humerus.r",
+          "target": "bp3d:FMA23130",
+          "sourcePoint": [
+            -0.19671966135501862,
+            0.02744267787784338,
+            1.2458133697509766
+          ],
+          "targetPoint": [
+            -0.1904655,
+            1.18287,
+            0.07562905
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 10.484844064094474,
+          "surfaceRmsMm": 5.716379487478356,
+          "surfaceMaxMm": 14.186074957251549
+        },
+        {
+          "source": "Humerus.l",
+          "target": "bp3d:FMA23131",
+          "sourcePoint": [
+            0.196719691157341,
+            0.02744267787784338,
+            1.2458133697509766
+          ],
+          "targetPoint": [
+            0.1904165,
+            1.182865,
+            0.07564245
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 10.060265917817851,
+          "surfaceRmsMm": 5.508965618111075,
+          "surfaceMaxMm": 13.707317411899567
+        },
+        {
+          "source": "Radius.r",
+          "target": "bp3d:FMA23464",
+          "sourcePoint": [
+            -0.25777193903923035,
+            0.007605229504406452,
+            0.9748274981975555
+          ],
+          "targetPoint": [
+            -0.24968400000000002,
+            0.9204425,
+            0.0940053
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 16.182214177104434,
+          "surfaceRmsMm": 6.003396454867567,
+          "surfaceMaxMm": 18.269866704940796
+        },
+        {
+          "source": "Radius.l",
+          "target": "bp3d:FMA23465",
+          "sourcePoint": [
+            0.25777193903923035,
+            0.007605229504406452,
+            0.9748274981975555
+          ],
+          "targetPoint": [
+            0.24948949999999998,
+            0.9205865,
+            0.09436065
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 16.004212434774082,
+          "surfaceRmsMm": 5.831809522383433,
+          "surfaceMaxMm": 18.18392053246498
+        },
+        {
+          "source": "Ulna.r",
+          "target": "bp3d:FMA23467",
+          "sourcePoint": [
+            -0.22943370044231415,
+            0.01876828633248806,
+            0.9833000004291534
+          ],
+          "targetPoint": [
+            -0.22203,
+            0.9288115000000001,
+            0.0841466
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 16.061254061705313,
+          "surfaceRmsMm": 6.3970283548159905,
+          "surfaceMaxMm": 18.565289676189423
+        },
+        {
+          "source": "Ulna.l",
+          "target": "bp3d:FMA23468",
+          "sourcePoint": [
+            0.22943373024463654,
+            0.01876828633248806,
+            0.9833000004291534
+          ],
+          "targetPoint": [
+            0.222006,
+            0.928743,
+            0.08391565000000001
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 15.610517559390217,
+          "surfaceRmsMm": 6.208440992999432,
+          "surfaceMaxMm": 18.048685044050217
+        },
+        {
+          "source": "Femur.r",
+          "target": "bp3d:FMA24474",
+          "sourcePoint": [
+            -0.09023460187017918,
+            0.020297355949878693,
+            0.6570856720209122
+          ],
+          "targetPoint": [
+            -0.09101414999999999,
+            0.601201,
+            0.0808611
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 12.516970443180536,
+          "surfaceRmsMm": 7.861560417512247,
+          "surfaceMaxMm": 27.984578162431717
+        },
+        {
+          "source": "Femur.l",
+          "target": "bp3d:FMA24475",
+          "sourcePoint": [
+            0.09023460187017918,
+            0.020297355949878693,
+            0.6570856720209122
+          ],
+          "targetPoint": [
+            0.0911016,
+            0.6011475000000001,
+            0.0808791
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 12.405725171857815,
+          "surfaceRmsMm": 7.814940940827853,
+          "surfaceMaxMm": 27.904082089662552
+        },
+        {
+          "source": "Tibia.r",
+          "target": "bp3d:FMA24477",
+          "sourcePoint": [
+            -0.07656561583280563,
+            0.0289481021463871,
+            0.2541998475790024
+          ],
+          "targetPoint": [
+            -0.0722845,
+            0.18394142000000002,
+            0.08345395
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 5.983244648947331,
+          "surfaceRmsMm": 4.86872393403173,
+          "surfaceMaxMm": 14.850561507046223
+        },
+        {
+          "source": "Tibia.l",
+          "target": "bp3d:FMA24478",
+          "sourcePoint": [
+            0.07656561583280563,
+            0.0289481021463871,
+            0.2541998475790024
+          ],
+          "targetPoint": [
+            0.07224459999999999,
+            0.183883335,
+            0.08324855
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 6.066436170969806,
+          "surfaceRmsMm": 4.879992888121877,
+          "surfaceMaxMm": 14.875020831823349
+        },
+        {
+          "source": "Fibula.r",
+          "target": "bp3d:FMA24480",
+          "sourcePoint": [
+            -0.10673540458083153,
+            0.043223464861512184,
+            0.2364572212100029
+          ],
+          "targetPoint": [
+            -0.10225475,
+            0.16693504999999997,
+            0.0633281
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 6.1402244730629825,
+          "surfaceRmsMm": 3.9832304445008675,
+          "surfaceMaxMm": 9.620478376746178
+        },
+        {
+          "source": "Fibula.l",
+          "target": "bp3d:FMA24481",
+          "sourcePoint": [
+            0.10673541948199272,
+            0.043223464861512184,
+            0.2364572212100029
+          ],
+          "targetPoint": [
+            0.1023185,
+            0.16697019999999999,
+            0.06332650000000001
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 6.137246786782061,
+          "surfaceRmsMm": 3.983201458738328,
+          "surfaceMaxMm": 9.405280463397503
+        },
+        {
+          "source": "Talus.r",
+          "target": "bp3d:FMA24482",
+          "sourcePoint": [
+            -0.07470057532191277,
+            0.036572846584022045,
+            0.06766913272440434
+          ],
+          "targetPoint": [
+            -0.06987045,
+            -0.014022584999999999,
+            0.07716150000000001
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 16.29802611630164,
+          "surfaceRmsMm": 9.276148986518145,
+          "surfaceMaxMm": 16.848694533109665
+        },
+        {
+          "source": "Talus.l",
+          "target": "bp3d:FMA24483",
+          "sourcePoint": [
+            0.07470057532191277,
+            0.036572846584022045,
+            0.06766913272440434
+          ],
+          "targetPoint": [
+            0.0699069,
+            -0.014103744999999997,
+            0.07724550000000001
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 16.496823435105664,
+          "surfaceRmsMm": 9.324366046727375,
+          "surfaceMaxMm": 16.665713861584663
+        },
+        {
+          "source": "Calcaneus.r",
+          "target": "bp3d:FMA24497",
+          "sourcePoint": [
+            -0.0784677192568779,
+            0.05371231772005558,
+            0.03698149276897311
+          ],
+          "targetPoint": [
+            -0.0728284,
+            -0.0438227,
+            0.0590768
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 15.516409125884254,
+          "surfaceRmsMm": 9.838224241466676,
+          "surfaceMaxMm": 19.290324300527573
+        },
+        {
+          "source": "Calcaneus.l",
+          "target": "bp3d:FMA24498",
+          "sourcePoint": [
+            0.0784677192568779,
+            0.05371231772005558,
+            0.03698149276897311
+          ],
+          "targetPoint": [
+            0.072889,
+            -0.0437442,
+            0.059174300000000006
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 15.564611602573736,
+          "surfaceRmsMm": 9.886027853160149,
+          "surfaceMaxMm": 19.232412800192833
+        },
+        {
+          "source": "Frontal bone",
+          "target": "bp3d:FMA52734",
+          "sourcePoint": [
+            -1.4901161193847656e-08,
+            -0.05256257392466068,
+            1.6459020376205444
+          ],
+          "targetPoint": [
+            -0.0006551999999999981,
+            1.575415,
+            0.142012
+          ],
+          "region": "skeletal:region:skull",
+          "centerErrorMm": 3.2748443157638256,
+          "surfaceRmsMm": 1.7665350320099782,
+          "surfaceMaxMm": 3.905755467712879
+        },
+        {
+          "source": "Occipital bone",
+          "target": "bp3d:FMA52735",
+          "sourcePoint": [
+            -1.862645149230957e-08,
+            0.04545146785676479,
+            1.6029645204544067
+          ],
+          "targetPoint": [
+            -0.0006279499999999986,
+            1.5311400000000002,
+            0.041479
+          ],
+          "region": "skeletal:region:skull",
+          "centerErrorMm": 6.630763252948042,
+          "surfaceRmsMm": 4.317080488997069,
+          "surfaceMaxMm": 8.160584606230259
+        },
+        {
+          "source": "Vertebra T1",
+          "target": "bp3d:FMA9165",
+          "sourcePoint": [
+            0.0,
+            0.047353023663163185,
+            1.4379931092262268
+          ],
+          "targetPoint": [
+            -0.0007334000000000021,
+            1.36206,
+            0.0519793
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 6.612620002441998,
+          "surfaceRmsMm": 3.9439577484719726,
+          "surfaceMaxMm": 7.775245700031519
+        },
+        {
+          "source": "Vertebra T2",
+          "target": "bp3d:FMA9187",
+          "sourcePoint": [
+            3.725290298461914e-09,
+            0.05276584718376398,
+            1.420063078403473
+          ],
+          "targetPoint": [
+            -0.0006718499999999981,
+            1.343475,
+            0.04739815
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 7.482504403961848,
+          "surfaceRmsMm": 4.403839725547989,
+          "surfaceMaxMm": 8.440643548965454
+        },
+        {
+          "source": "Vertebra T3",
+          "target": "bp3d:FMA9209",
+          "sourcePoint": [
+            -3.725290298461914e-09,
+            0.06147979013621807,
+            1.398801863193512
+          ],
+          "targetPoint": [
+            -0.0005625999999999964,
+            1.3220399999999999,
+            0.039048205
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 7.635131629358473,
+          "surfaceRmsMm": 4.410609103802684,
+          "surfaceMaxMm": 10.67036110907793
+        },
+        {
+          "source": "Vertebra T4",
+          "target": "bp3d:FMA9248",
+          "sourcePoint": [
+            0.0,
+            0.06525581330060959,
+            1.375222384929657
+          ],
+          "targetPoint": [
+            -0.0005898499999999994,
+            1.2995750000000001,
+            0.034901398
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 6.364724040942984,
+          "surfaceRmsMm": 3.9571419076957164,
+          "surfaceMaxMm": 7.951661013066769
+        },
+        {
+          "source": "Vertebra T5",
+          "target": "bp3d:FMA9922",
+          "sourcePoint": [
+            5.21540641784668e-08,
+            0.06606699712574482,
+            1.3472536206245422
+          ],
+          "targetPoint": [
+            -0.0006309000000000002,
+            1.26852,
+            0.03299522505
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 8.59622523432701,
+          "surfaceRmsMm": 3.6145823550799183,
+          "surfaceMaxMm": 7.3389653116464615
+        },
+        {
+          "source": "Vertebra T6",
+          "target": "bp3d:FMA9945",
+          "sourcePoint": [
+            0.0,
+            0.06675404123961926,
+            1.3142403364181519
+          ],
+          "targetPoint": [
+            -0.0006943999999999978,
+            1.23923,
+            0.033206664999999996
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 5.4560158749197,
+          "surfaceRmsMm": 3.249828566399469,
+          "surfaceMaxMm": 6.5381331369280815
+        },
+        {
+          "source": "Vertebra T7",
+          "target": "bp3d:FMA9968",
+          "sourcePoint": [
+            0.0,
+            0.06495077349245548,
+            1.286040723323822
+          ],
+          "targetPoint": [
+            -0.00045285000000000117,
+            1.21055,
+            0.0338253465
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 5.394586517100423,
+          "surfaceRmsMm": 2.7812610978512686,
+          "surfaceMaxMm": 5.546046886593103
+        },
+        {
+          "source": "Vertebra T8",
+          "target": "bp3d:FMA9991",
+          "sourcePoint": [
+            0.0,
+            0.06341774947941303,
+            1.2558302879333496
+          ],
+          "targetPoint": [
+            -0.0007533499999999964,
+            1.1834,
+            0.036479698000000005
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 3.123588530604203,
+          "surfaceRmsMm": 2.5009763800027427,
+          "surfaceMaxMm": 5.156027618795633
+        },
+        {
+          "source": "Vertebra T9",
+          "target": "bp3d:FMA10014",
+          "sourcePoint": [
+            3.725290298461914e-09,
+            0.05859734117984772,
+            1.2284806966781616
+          ],
+          "targetPoint": [
+            -0.0006983999999999983,
+            1.155735,
+            0.04190448000000001
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 3.65071679744627,
+          "surfaceRmsMm": 1.7700719844695598,
+          "surfaceMaxMm": 5.956769920885563
+        },
+        {
+          "source": "Vertebra T10",
+          "target": "bp3d:FMA10037",
+          "sourcePoint": [
+            5.932524800300598e-05,
+            0.053173523396253586,
+            1.1975087523460388
+          ],
+          "targetPoint": [
+            -0.000705800000000003,
+            1.12845,
+            0.04594015
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 1.0952708986300856,
+          "surfaceRmsMm": 1.272492672536687,
+          "surfaceMaxMm": 4.082968924194574
+        },
+        {
+          "source": "Vertebra T11",
+          "target": "bp3d:FMA10059",
+          "sourcePoint": [
+            0.0,
+            0.04507779888808727,
+            1.1693155169487
+          ],
+          "targetPoint": [
+            -0.00060085,
+            1.102495,
+            0.05277065
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 2.998068212375666,
+          "surfaceRmsMm": 1.836463668556643,
+          "surfaceMaxMm": 3.6944919265806675
+        },
+        {
+          "source": "Vertebra T12",
+          "target": "bp3d:FMA10081",
+          "sourcePoint": [
+            -3.725290298461914e-09,
+            0.0367314126342535,
+            1.1390766501426697
+          ],
+          "targetPoint": [
+            -0.0006657999999999976,
+            1.075775,
+            0.06197295
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 6.181749667416519,
+          "surfaceRmsMm": 3.3625921461594075,
+          "surfaceMaxMm": 6.7527987994253635
+        },
+        {
+          "source": "Vertebra C3",
+          "target": "bp3d:FMA12521",
+          "sourcePoint": [
+            -1.862645149230957e-09,
+            0.02688974681223044,
+            1.506380319595337
+          ],
+          "targetPoint": [
+            -0.0006517500000000013,
+            1.43137,
+            0.06297315
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 6.563423104356168,
+          "surfaceRmsMm": 3.714631897614682,
+          "surfaceMaxMm": 8.115657605230808
+        },
+        {
+          "source": "Vertebra C4",
+          "target": "bp3d:FMA12522",
+          "sourcePoint": [
+            7.541477680206299e-05,
+            0.026470066979527473,
+            1.4930745959281921
+          ],
+          "targetPoint": [
+            -0.0006879499999999997,
+            1.41837,
+            0.06490085
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 5.462566745446152,
+          "surfaceRmsMm": 3.153222877221011,
+          "surfaceMaxMm": 6.646628025919199
+        },
+        {
+          "source": "Vertebra C5",
+          "target": "bp3d:FMA12523",
+          "sourcePoint": [
+            -3.725290298461914e-09,
+            0.029776539653539658,
+            1.4801446199417114
+          ],
+          "targetPoint": [
+            -0.0006822999999999985,
+            1.40588,
+            0.06342755
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 4.200753146602841,
+          "surfaceRmsMm": 1.9327289593855828,
+          "surfaceMaxMm": 4.556030035018921
+        },
+        {
+          "source": "Vertebra C6",
+          "target": "bp3d:FMA12524",
+          "sourcePoint": [
+            0.0,
+            0.0349563704803586,
+            1.4660261869430542
+          ],
+          "targetPoint": [
+            -0.0006587499999999996,
+            1.393165,
+            0.0604252
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 2.409362460643952,
+          "surfaceRmsMm": 1.7786951376678082,
+          "surfaceMaxMm": 4.6309055760502815
+        },
+        {
+          "source": "Vertebra C7",
+          "target": "bp3d:FMA12525",
+          "sourcePoint": [
+            -3.725290298461914e-09,
+            0.042073361575603485,
+            1.4520207047462463
+          ],
+          "targetPoint": [
+            -0.0006488500000000029,
+            1.378275,
+            0.05564915
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 4.020963458273354,
+          "surfaceRmsMm": 2.7237962211912454,
+          "surfaceMaxMm": 5.566582549363375
+        },
+        {
+          "source": "Vertebra L1",
+          "target": "bp3d:FMA13072",
+          "sourcePoint": [
+            0.0,
+            0.029237419366836548,
+            1.1039149165153503
+          ],
+          "targetPoint": [
+            -0.0006592000000000021,
+            1.04359,
+            0.0693512
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 8.988803307426553,
+          "surfaceRmsMm": 4.6517971850498,
+          "surfaceMaxMm": 9.558413177728653
+        },
+        {
+          "source": "Vertebra L2",
+          "target": "bp3d:FMA13073",
+          "sourcePoint": [
+            0.0,
+            0.024103568866848946,
+            1.0749188661575317
+          ],
+          "targetPoint": [
+            -0.0006450500000000012,
+            1.016038,
+            0.0745344
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.301987059787319,
+          "surfaceRmsMm": 5.811469219836833,
+          "surfaceMaxMm": 12.146488763391972
+        },
+        {
+          "source": "Vertebra L3",
+          "target": "bp3d:FMA13074",
+          "sourcePoint": [
+            1.0311603546142578e-05,
+            0.023168311454355717,
+            1.0433669090270996
+          ],
+          "targetPoint": [
+            -0.0006809499999999996,
+            0.9887115,
+            0.0724335
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 15.076359294428505,
+          "surfaceRmsMm": 7.744220405790385,
+          "surfaceMaxMm": 19.070493057370186
+        },
+        {
+          "source": "Vertebra L4",
+          "target": "bp3d:FMA13075",
+          "sourcePoint": [
+            7.450580596923828e-09,
+            0.02405341900885105,
+            1.0150479972362518
+          ],
+          "targetPoint": [
+            -0.0006753500000000016,
+            0.961033,
+            0.0682806
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 17.040314750939363,
+          "surfaceRmsMm": 10.762186113797851,
+          "surfaceMaxMm": 23.818036541342735
+        },
+        {
+          "source": "Vertebra L5",
+          "target": "bp3d:FMA13076",
+          "sourcePoint": [
+            -7.450580596923828e-09,
+            0.02912519872188568,
+            0.9828057289123535
+          ],
+          "targetPoint": [
+            -0.0007135500000000003,
+            0.929714,
+            0.05866075
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 20.590213270584528,
+          "surfaceRmsMm": 10.335808913852343,
+          "surfaceMaxMm": 22.011974826455116
+        }
+      ],
+      "surfaceRmsMm": 6.266869478481743,
+      "surfaceMaxMm": 28.653033077716827
+    },
+    "zRigid": {
+      "matrix": [
+        [
+          0.9999999256276876,
+          0.00013874766198691824,
+          -0.00035985233886164363,
+          -0.00011418463311365355
+        ],
+        [
+          0.00036305708061898487,
+          -0.023834384135225477,
+          0.9997158547919757,
+          -0.07046643381785556
+        ],
+        [
+          0.0001301313786272358,
+          -0.9997159110877353,
+          -0.023834432735928276,
+          0.12875757638254354
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uniformScale": 1.0,
+      "iterations": 27,
+      "landmarks": [
+        {
+          "source": "Atlas (C1)",
+          "target": "bp3d:FMA12519",
+          "sourcePoint": [
+            4.133209586143494e-06,
+            0.021419519558548927,
+            1.5429322123527527
+          ],
+          "targetPoint": [
+            -0.0005669500000000001,
+            1.4718200000000001,
+            0.06412
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 6.457053844430689,
+          "surfaceRmsMm": 3.760966345190999,
+          "surfaceMaxMm": 7.258385885506868
+        },
+        {
+          "source": "Axis (C2)",
+          "target": "bp3d:FMA12520",
+          "sourcePoint": [
+            1.5628524124622345e-05,
+            0.026012921705842018,
+            1.529980182647705
+          ],
+          "targetPoint": [
+            -0.0006937000000000002,
+            1.45576,
+            0.06160500000000001
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 5.403447394771426,
+          "surfaceRmsMm": 3.4715336748826577,
+          "surfaceMaxMm": 7.8573646023869514
+        },
+        {
+          "source": "Vertebra T1",
+          "target": "bp3d:FMA9165",
+          "sourcePoint": [
+            0.0,
+            0.047353023663163185,
+            1.4379931092262268
+          ],
+          "targetPoint": [
+            -0.0007334000000000021,
+            1.36206,
+            0.0519793
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 6.231367505854462,
+          "surfaceRmsMm": 3.6886351914590527,
+          "surfaceMaxMm": 7.328461855649948
+        },
+        {
+          "source": "Vertebra T2",
+          "target": "bp3d:FMA9187",
+          "sourcePoint": [
+            3.725290298461914e-09,
+            0.05276584718376398,
+            1.420063078403473
+          ],
+          "targetPoint": [
+            -0.0006718499999999981,
+            1.343475,
+            0.04739815
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 6.879957308668013,
+          "surfaceRmsMm": 4.031444546529464,
+          "surfaceMaxMm": 7.927750237286091
+        },
+        {
+          "source": "Vertebra T3",
+          "target": "bp3d:FMA9209",
+          "sourcePoint": [
+            -3.725290298461914e-09,
+            0.06147979013621807,
+            1.398801863193512
+          ],
+          "targetPoint": [
+            -0.0005625999999999964,
+            1.3220399999999999,
+            0.039048205
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 6.751665720644457,
+          "surfaceRmsMm": 3.964693112051633,
+          "surfaceMaxMm": 10.19996963441372
+        },
+        {
+          "source": "Vertebra T4",
+          "target": "bp3d:FMA9248",
+          "sourcePoint": [
+            0.0,
+            0.06525581330060959,
+            1.375222384929657
+          ],
+          "targetPoint": [
+            -0.0005898499999999994,
+            1.2995750000000001,
+            0.034901398
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 5.268731495859343,
+          "surfaceRmsMm": 3.390981430475957,
+          "surfaceMaxMm": 6.995022296905518
+        },
+        {
+          "source": "Vertebra T5",
+          "target": "bp3d:FMA9922",
+          "sourcePoint": [
+            5.21540641784668e-08,
+            0.06606699712574482,
+            1.3472536206245422
+          ],
+          "targetPoint": [
+            -0.0006309000000000002,
+            1.26852,
+            0.03299522505
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 6.749756319896027,
+          "surfaceRmsMm": 2.9357121680531177,
+          "surfaceMaxMm": 6.270484533160925
+        },
+        {
+          "source": "Vertebra T6",
+          "target": "bp3d:FMA9945",
+          "sourcePoint": [
+            0.0,
+            0.06675404123961926,
+            1.3142403364181519
+          ],
+          "targetPoint": [
+            -0.0006943999999999978,
+            1.23923,
+            0.033206664999999996
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 3.5998311515530457,
+          "surfaceRmsMm": 2.492402800011754,
+          "surfaceMaxMm": 5.180565174669027
+        },
+        {
+          "source": "Vertebra T7",
+          "target": "bp3d:FMA9968",
+          "sourcePoint": [
+            0.0,
+            0.06495077349245548,
+            1.286040723323822
+          ],
+          "targetPoint": [
+            -0.00045285000000000117,
+            1.21055,
+            0.0338253465
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 3.1805111382744915,
+          "surfaceRmsMm": 1.9453116966459023,
+          "surfaceMaxMm": 3.953447565436363
+        },
+        {
+          "source": "Vertebra T8",
+          "target": "bp3d:FMA9991",
+          "sourcePoint": [
+            0.0,
+            0.06341774947941303,
+            1.2558302879333496
+          ],
+          "targetPoint": [
+            -0.0007533499999999964,
+            1.1834,
+            0.036479698000000005
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 1.0761831556514865,
+          "surfaceRmsMm": 1.561869200476855,
+          "surfaceMaxMm": 3.6117848940193653
+        },
+        {
+          "source": "Vertebra T9",
+          "target": "bp3d:FMA10014",
+          "sourcePoint": [
+            3.725290298461914e-09,
+            0.05859734117984772,
+            1.2284806966781616
+          ],
+          "targetPoint": [
+            -0.0006983999999999983,
+            1.155735,
+            0.04190448000000001
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 1.150135298449836,
+          "surfaceRmsMm": 1.3524453110067052,
+          "surfaceMaxMm": 3.8902543019503355
+        },
+        {
+          "source": "Vertebra T10",
+          "target": "bp3d:FMA10037",
+          "sourcePoint": [
+            5.932524800300598e-05,
+            0.053173523396253586,
+            1.1975087523460388
+          ],
+          "targetPoint": [
+            -0.000705800000000003,
+            1.12845,
+            0.04594015
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 3.2235855834665563,
+          "surfaceRmsMm": 1.8766970068746294,
+          "surfaceMaxMm": 4.137070849537849
+        },
+        {
+          "source": "Vertebra T11",
+          "target": "bp3d:FMA10059",
+          "sourcePoint": [
+            0.0,
+            0.04507779888808727,
+            1.1693155169487
+          ],
+          "targetPoint": [
+            -0.00060085,
+            1.102495,
+            0.05277065
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 5.903234354726989,
+          "surfaceRmsMm": 3.0074417143564123,
+          "surfaceMaxMm": 6.323646754026413
+        },
+        {
+          "source": "Vertebra T12",
+          "target": "bp3d:FMA10081",
+          "sourcePoint": [
+            -3.725290298461914e-09,
+            0.0367314126342535,
+            1.1390766501426697
+          ],
+          "targetPoint": [
+            -0.0006657999999999976,
+            1.075775,
+            0.06197295
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 8.858352685893342,
+          "surfaceRmsMm": 4.785932474693535,
+          "surfaceMaxMm": 9.631604887545109
+        },
+        {
+          "source": "Vertebra C3",
+          "target": "bp3d:FMA12521",
+          "sourcePoint": [
+            -1.862645149230957e-09,
+            0.02688974681223044,
+            1.506380319595337
+          ],
+          "targetPoint": [
+            -0.0006517500000000013,
+            1.43137,
+            0.06297315
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 4.589869349129411,
+          "surfaceRmsMm": 3.0158275545747832,
+          "surfaceMaxMm": 6.876762956380844
+        },
+        {
+          "source": "Vertebra C4",
+          "target": "bp3d:FMA12522",
+          "sourcePoint": [
+            7.541477680206299e-05,
+            0.026470066979527473,
+            1.4930745959281921
+          ],
+          "targetPoint": [
+            -0.0006879499999999997,
+            1.41837,
+            0.06490085
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 3.66231336247698,
+          "surfaceRmsMm": 2.337944187347117,
+          "surfaceMaxMm": 4.831124097108841
+        },
+        {
+          "source": "Vertebra C5",
+          "target": "bp3d:FMA12523",
+          "sourcePoint": [
+            -3.725290298461914e-09,
+            0.029776539653539658,
+            1.4801446199417114
+          ],
+          "targetPoint": [
+            -0.0006822999999999985,
+            1.40588,
+            0.06342755
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 2.683221602635082,
+          "surfaceRmsMm": 1.4067737120544201,
+          "surfaceMaxMm": 3.8574766367673874
+        },
+        {
+          "source": "Vertebra C6",
+          "target": "bp3d:FMA12524",
+          "sourcePoint": [
+            0.0,
+            0.0349563704803586,
+            1.4660261869430542
+          ],
+          "targetPoint": [
+            -0.0006587499999999996,
+            1.393165,
+            0.0604252
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 1.9319913919979494,
+          "surfaceRmsMm": 1.5966567429490974,
+          "surfaceMaxMm": 4.882702603936195
+        },
+        {
+          "source": "Vertebra C7",
+          "target": "bp3d:FMA12525",
+          "sourcePoint": [
+            -3.725290298461914e-09,
+            0.042073361575603485,
+            1.4520207047462463
+          ],
+          "targetPoint": [
+            -0.0006488500000000029,
+            1.378275,
+            0.05564915
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 4.019410345984872,
+          "surfaceRmsMm": 2.6107307223482863,
+          "surfaceMaxMm": 5.212531890720129
+        },
+        {
+          "source": "Vertebra L1",
+          "target": "bp3d:FMA13072",
+          "sourcePoint": [
+            0.0,
+            0.029237419366836548,
+            1.1039149165153503
+          ],
+          "targetPoint": [
+            -0.0006592000000000021,
+            1.04359,
+            0.0693512
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 11.804139905498284,
+          "surfaceRmsMm": 6.0433162799190665,
+          "surfaceMaxMm": 12.878427281975746
+        },
+        {
+          "source": "Vertebra L2",
+          "target": "bp3d:FMA13073",
+          "sourcePoint": [
+            0.0,
+            0.024103568866848946,
+            1.0749188661575317
+          ],
+          "targetPoint": [
+            -0.0006450500000000012,
+            1.016038,
+            0.0745344
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 13.255854588504645,
+          "surfaceRmsMm": 7.359881974512836,
+          "surfaceMaxMm": 16.059814020991325
+        }
+      ],
+      "surfaceRmsMm": 3.506610181221289,
+      "surfaceMaxMm": 16.059814020991325
+    },
+    "zCanal": {
+      "matrix": [
+        [
+          0.9782845767919512,
+          0.0011087378279199685,
+          0.0001621800983238658,
+          -0.0009303113504024688
+        ],
+        [
+          -0.00013267926264449862,
+          -0.02597941518084377,
+          0.977940193045584,
+          -0.04197930706843911
+        ],
+        [
+          0.0011126536606770082,
+          -0.9779395735311309,
+          -0.025979247767037028,
+          0.13194447849338944
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uniformScale": 0.9782852185282973,
+      "iterations": 37,
+      "landmarks": [
+        {
+          "source": "Atlas (C1)",
+          "target": "bp3d:FMA12519",
+          "sourcePoint": [
+            4.133209586143494e-06,
+            0.021419519558548927,
+            1.5429322123527527
+          ],
+          "targetPoint": [
+            -0.0005669500000000001,
+            1.4718200000000001,
+            0.06412
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 8.646106923318705,
+          "surfaceRmsMm": 4.9894570700398155,
+          "surfaceMaxMm": 9.180945344269276
+        },
+        {
+          "source": "Axis (C2)",
+          "target": "bp3d:FMA12520",
+          "sourcePoint": [
+            1.5628524124622345e-05,
+            0.026012921705842018,
+            1.529980182647705
+          ],
+          "targetPoint": [
+            -0.0006937000000000002,
+            1.45576,
+            0.06160500000000001
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 7.653999027212582,
+          "surfaceRmsMm": 4.433028010926336,
+          "surfaceMaxMm": 10.063310153782368
+        },
+        {
+          "source": "Clavicle.r",
+          "target": "bp3d:FMA13322",
+          "sourcePoint": [
+            -0.08277258230373263,
+            0.0008759424090385437,
+            1.4071637392044067
+          ],
+          "targetPoint": [
+            -0.07746932499999999,
+            1.33203,
+            0.10068025000000001
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 9.525585266617203,
+          "surfaceRmsMm": 5.2865245521795385,
+          "surfaceMaxMm": 13.122960925102234
+        },
+        {
+          "source": "Clavicle.l",
+          "target": "bp3d:FMA13323",
+          "sourcePoint": [
+            0.08277256740257144,
+            0.0008759424090385437,
+            1.4071637392044067
+          ],
+          "targetPoint": [
+            0.07616036500000001,
+            1.331855,
+            0.10073275000000001
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 9.982136081017845,
+          "surfaceRmsMm": 5.37361464366584,
+          "surfaceMaxMm": 13.016963377594948
+        },
+        {
+          "source": "Scapula.r",
+          "target": "bp3d:FMA13395",
+          "sourcePoint": [
+            -0.11709326133131981,
+            0.05577133223414421,
+            1.336057186126709
+          ],
+          "targetPoint": [
+            -0.1117589,
+            1.26691,
+            0.048886625
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 9.58439831492982,
+          "surfaceRmsMm": 6.952054189010614,
+          "surfaceMaxMm": 14.277148991823196
+        },
+        {
+          "source": "Scapula.l",
+          "target": "bp3d:FMA13396",
+          "sourcePoint": [
+            0.117093276232481,
+            0.05577133223414421,
+            1.336057186126709
+          ],
+          "targetPoint": [
+            0.11176269999999999,
+            1.266905,
+            0.048884300000000006
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 9.184716067566326,
+          "surfaceRmsMm": 6.728034408666842,
+          "surfaceMaxMm": 14.179122634232044
+        },
+        {
+          "source": "Sacrum",
+          "target": "bp3d:FMA16202",
+          "sourcePoint": [
+            -3.909505903720856e-05,
+            0.049301523715257645,
+            0.923294186592102
+          ],
+          "targetPoint": [
+            -0.000694150000000001,
+            0.8550185,
+            0.037071325
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 15.437133293994984,
+          "surfaceRmsMm": 12.315261916139816,
+          "surfaceMaxMm": 24.505607783794403
+        },
+        {
+          "source": "Hip bone.r",
+          "target": "bp3d:FMA16586",
+          "sourcePoint": [
+            -0.06891577318310738,
+            0.01535746455192566,
+            0.9046399891376495
+          ],
+          "targetPoint": [
+            -0.07383115000000001,
+            0.8550110000000001,
+            0.07006889000000001
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 25.534526879178202,
+          "surfaceRmsMm": 11.6289245553526,
+          "surfaceMaxMm": 28.653033077716827
+        },
+        {
+          "source": "Hip bone.l",
+          "target": "bp3d:FMA16587",
+          "sourcePoint": [
+            0.06891577318310738,
+            0.01535746455192566,
+            0.9046399891376495
+          ],
+          "targetPoint": [
+            0.073752155,
+            0.8550205,
+            0.07020496999999999
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 25.461914588796997,
+          "surfaceRmsMm": 11.635796735169087,
+          "surfaceMaxMm": 28.261087834835052
+        },
+        {
+          "source": "Humerus.r",
+          "target": "bp3d:FMA23130",
+          "sourcePoint": [
+            -0.19671966135501862,
+            0.02744267787784338,
+            1.2458133697509766
+          ],
+          "targetPoint": [
+            -0.1904655,
+            1.18287,
+            0.07562905
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 10.484844064094474,
+          "surfaceRmsMm": 5.716379487478356,
+          "surfaceMaxMm": 14.186074957251549
+        },
+        {
+          "source": "Humerus.l",
+          "target": "bp3d:FMA23131",
+          "sourcePoint": [
+            0.196719691157341,
+            0.02744267787784338,
+            1.2458133697509766
+          ],
+          "targetPoint": [
+            0.1904165,
+            1.182865,
+            0.07564245
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 10.060265917817851,
+          "surfaceRmsMm": 5.508965618111075,
+          "surfaceMaxMm": 13.707317411899567
+        },
+        {
+          "source": "Radius.r",
+          "target": "bp3d:FMA23464",
+          "sourcePoint": [
+            -0.25777193903923035,
+            0.007605229504406452,
+            0.9748274981975555
+          ],
+          "targetPoint": [
+            -0.24968400000000002,
+            0.9204425,
+            0.0940053
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 16.182214177104434,
+          "surfaceRmsMm": 6.003396454867567,
+          "surfaceMaxMm": 18.269866704940796
+        },
+        {
+          "source": "Radius.l",
+          "target": "bp3d:FMA23465",
+          "sourcePoint": [
+            0.25777193903923035,
+            0.007605229504406452,
+            0.9748274981975555
+          ],
+          "targetPoint": [
+            0.24948949999999998,
+            0.9205865,
+            0.09436065
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 16.004212434774082,
+          "surfaceRmsMm": 5.831809522383433,
+          "surfaceMaxMm": 18.18392053246498
+        },
+        {
+          "source": "Ulna.r",
+          "target": "bp3d:FMA23467",
+          "sourcePoint": [
+            -0.22943370044231415,
+            0.01876828633248806,
+            0.9833000004291534
+          ],
+          "targetPoint": [
+            -0.22203,
+            0.9288115000000001,
+            0.0841466
+          ],
+          "region": "skeletal:region:arm-right",
+          "centerErrorMm": 16.061254061705313,
+          "surfaceRmsMm": 6.3970283548159905,
+          "surfaceMaxMm": 18.565289676189423
+        },
+        {
+          "source": "Ulna.l",
+          "target": "bp3d:FMA23468",
+          "sourcePoint": [
+            0.22943373024463654,
+            0.01876828633248806,
+            0.9833000004291534
+          ],
+          "targetPoint": [
+            0.222006,
+            0.928743,
+            0.08391565000000001
+          ],
+          "region": "skeletal:region:arm-left",
+          "centerErrorMm": 15.610517559390217,
+          "surfaceRmsMm": 6.208440992999432,
+          "surfaceMaxMm": 18.048685044050217
+        },
+        {
+          "source": "Femur.r",
+          "target": "bp3d:FMA24474",
+          "sourcePoint": [
+            -0.09023460187017918,
+            0.020297355949878693,
+            0.6570856720209122
+          ],
+          "targetPoint": [
+            -0.09101414999999999,
+            0.601201,
+            0.0808611
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 12.516970443180536,
+          "surfaceRmsMm": 7.861560417512247,
+          "surfaceMaxMm": 27.984578162431717
+        },
+        {
+          "source": "Femur.l",
+          "target": "bp3d:FMA24475",
+          "sourcePoint": [
+            0.09023460187017918,
+            0.020297355949878693,
+            0.6570856720209122
+          ],
+          "targetPoint": [
+            0.0911016,
+            0.6011475000000001,
+            0.0808791
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 12.405725171857815,
+          "surfaceRmsMm": 7.814940940827853,
+          "surfaceMaxMm": 27.904082089662552
+        },
+        {
+          "source": "Tibia.r",
+          "target": "bp3d:FMA24477",
+          "sourcePoint": [
+            -0.07656561583280563,
+            0.0289481021463871,
+            0.2541998475790024
+          ],
+          "targetPoint": [
+            -0.0722845,
+            0.18394142000000002,
+            0.08345395
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 5.983244648947331,
+          "surfaceRmsMm": 4.86872393403173,
+          "surfaceMaxMm": 14.850561507046223
+        },
+        {
+          "source": "Tibia.l",
+          "target": "bp3d:FMA24478",
+          "sourcePoint": [
+            0.07656561583280563,
+            0.0289481021463871,
+            0.2541998475790024
+          ],
+          "targetPoint": [
+            0.07224459999999999,
+            0.183883335,
+            0.08324855
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 6.066436170969806,
+          "surfaceRmsMm": 4.879992888121877,
+          "surfaceMaxMm": 14.875020831823349
+        },
+        {
+          "source": "Fibula.r",
+          "target": "bp3d:FMA24480",
+          "sourcePoint": [
+            -0.10673540458083153,
+            0.043223464861512184,
+            0.2364572212100029
+          ],
+          "targetPoint": [
+            -0.10225475,
+            0.16693504999999997,
+            0.0633281
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 6.1402244730629825,
+          "surfaceRmsMm": 3.9832304445008675,
+          "surfaceMaxMm": 9.620478376746178
+        },
+        {
+          "source": "Fibula.l",
+          "target": "bp3d:FMA24481",
+          "sourcePoint": [
+            0.10673541948199272,
+            0.043223464861512184,
+            0.2364572212100029
+          ],
+          "targetPoint": [
+            0.1023185,
+            0.16697019999999999,
+            0.06332650000000001
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 6.137246786782061,
+          "surfaceRmsMm": 3.983201458738328,
+          "surfaceMaxMm": 9.405280463397503
+        },
+        {
+          "source": "Talus.r",
+          "target": "bp3d:FMA24482",
+          "sourcePoint": [
+            -0.07470057532191277,
+            0.036572846584022045,
+            0.06766913272440434
+          ],
+          "targetPoint": [
+            -0.06987045,
+            -0.014022584999999999,
+            0.07716150000000001
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 16.29802611630164,
+          "surfaceRmsMm": 9.276148986518145,
+          "surfaceMaxMm": 16.848694533109665
+        },
+        {
+          "source": "Talus.l",
+          "target": "bp3d:FMA24483",
+          "sourcePoint": [
+            0.07470057532191277,
+            0.036572846584022045,
+            0.06766913272440434
+          ],
+          "targetPoint": [
+            0.0699069,
+            -0.014103744999999997,
+            0.07724550000000001
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 16.496823435105664,
+          "surfaceRmsMm": 9.324366046727375,
+          "surfaceMaxMm": 16.665713861584663
+        },
+        {
+          "source": "Calcaneus.r",
+          "target": "bp3d:FMA24497",
+          "sourcePoint": [
+            -0.0784677192568779,
+            0.05371231772005558,
+            0.03698149276897311
+          ],
+          "targetPoint": [
+            -0.0728284,
+            -0.0438227,
+            0.0590768
+          ],
+          "region": "skeletal:region:leg-right",
+          "centerErrorMm": 15.516409125884254,
+          "surfaceRmsMm": 9.838224241466676,
+          "surfaceMaxMm": 19.290324300527573
+        },
+        {
+          "source": "Calcaneus.l",
+          "target": "bp3d:FMA24498",
+          "sourcePoint": [
+            0.0784677192568779,
+            0.05371231772005558,
+            0.03698149276897311
+          ],
+          "targetPoint": [
+            0.072889,
+            -0.0437442,
+            0.059174300000000006
+          ],
+          "region": "skeletal:region:leg-left",
+          "centerErrorMm": 15.564611602573736,
+          "surfaceRmsMm": 9.886027853160149,
+          "surfaceMaxMm": 19.232412800192833
+        },
+        {
+          "source": "Frontal bone",
+          "target": "bp3d:FMA52734",
+          "sourcePoint": [
+            -1.4901161193847656e-08,
+            -0.05256257392466068,
+            1.6459020376205444
+          ],
+          "targetPoint": [
+            -0.0006551999999999981,
+            1.575415,
+            0.142012
+          ],
+          "region": "skeletal:region:skull",
+          "centerErrorMm": 3.2748443157638256,
+          "surfaceRmsMm": 1.7665350320099782,
+          "surfaceMaxMm": 3.905755467712879
+        },
+        {
+          "source": "Occipital bone",
+          "target": "bp3d:FMA52735",
+          "sourcePoint": [
+            -1.862645149230957e-08,
+            0.04545146785676479,
+            1.6029645204544067
+          ],
+          "targetPoint": [
+            -0.0006279499999999986,
+            1.5311400000000002,
+            0.041479
+          ],
+          "region": "skeletal:region:skull",
+          "centerErrorMm": 6.630763252948042,
+          "surfaceRmsMm": 4.317080488997069,
+          "surfaceMaxMm": 8.160584606230259
+        },
+        {
+          "source": "Vertebra T1",
+          "target": "bp3d:FMA9165",
+          "sourcePoint": [
+            0.0,
+            0.047353023663163185,
+            1.4379931092262268
+          ],
+          "targetPoint": [
+            -0.0007334000000000021,
+            1.36206,
+            0.0519793
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 6.612620002441998,
+          "surfaceRmsMm": 3.9439577484719726,
+          "surfaceMaxMm": 7.775245700031519
+        },
+        {
+          "source": "Vertebra T2",
+          "target": "bp3d:FMA9187",
+          "sourcePoint": [
+            3.725290298461914e-09,
+            0.05276584718376398,
+            1.420063078403473
+          ],
+          "targetPoint": [
+            -0.0006718499999999981,
+            1.343475,
+            0.04739815
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 7.482504403961848,
+          "surfaceRmsMm": 4.403839725547989,
+          "surfaceMaxMm": 8.440643548965454
+        },
+        {
+          "source": "Vertebra T3",
+          "target": "bp3d:FMA9209",
+          "sourcePoint": [
+            -3.725290298461914e-09,
+            0.06147979013621807,
+            1.398801863193512
+          ],
+          "targetPoint": [
+            -0.0005625999999999964,
+            1.3220399999999999,
+            0.039048205
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 7.635131629358473,
+          "surfaceRmsMm": 4.410609103802684,
+          "surfaceMaxMm": 10.67036110907793
+        },
+        {
+          "source": "Vertebra T4",
+          "target": "bp3d:FMA9248",
+          "sourcePoint": [
+            0.0,
+            0.06525581330060959,
+            1.375222384929657
+          ],
+          "targetPoint": [
+            -0.0005898499999999994,
+            1.2995750000000001,
+            0.034901398
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 6.364724040942984,
+          "surfaceRmsMm": 3.9571419076957164,
+          "surfaceMaxMm": 7.951661013066769
+        },
+        {
+          "source": "Vertebra T5",
+          "target": "bp3d:FMA9922",
+          "sourcePoint": [
+            5.21540641784668e-08,
+            0.06606699712574482,
+            1.3472536206245422
+          ],
+          "targetPoint": [
+            -0.0006309000000000002,
+            1.26852,
+            0.03299522505
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 8.59622523432701,
+          "surfaceRmsMm": 3.6145823550799183,
+          "surfaceMaxMm": 7.3389653116464615
+        },
+        {
+          "source": "Vertebra T6",
+          "target": "bp3d:FMA9945",
+          "sourcePoint": [
+            0.0,
+            0.06675404123961926,
+            1.3142403364181519
+          ],
+          "targetPoint": [
+            -0.0006943999999999978,
+            1.23923,
+            0.033206664999999996
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 5.4560158749197,
+          "surfaceRmsMm": 3.249828566399469,
+          "surfaceMaxMm": 6.5381331369280815
+        },
+        {
+          "source": "Vertebra T7",
+          "target": "bp3d:FMA9968",
+          "sourcePoint": [
+            0.0,
+            0.06495077349245548,
+            1.286040723323822
+          ],
+          "targetPoint": [
+            -0.00045285000000000117,
+            1.21055,
+            0.0338253465
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 5.394586517100423,
+          "surfaceRmsMm": 2.7812610978512686,
+          "surfaceMaxMm": 5.546046886593103
+        },
+        {
+          "source": "Vertebra T8",
+          "target": "bp3d:FMA9991",
+          "sourcePoint": [
+            0.0,
+            0.06341774947941303,
+            1.2558302879333496
+          ],
+          "targetPoint": [
+            -0.0007533499999999964,
+            1.1834,
+            0.036479698000000005
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 3.123588530604203,
+          "surfaceRmsMm": 2.5009763800027427,
+          "surfaceMaxMm": 5.156027618795633
+        },
+        {
+          "source": "Vertebra T9",
+          "target": "bp3d:FMA10014",
+          "sourcePoint": [
+            3.725290298461914e-09,
+            0.05859734117984772,
+            1.2284806966781616
+          ],
+          "targetPoint": [
+            -0.0006983999999999983,
+            1.155735,
+            0.04190448000000001
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 3.65071679744627,
+          "surfaceRmsMm": 1.7700719844695598,
+          "surfaceMaxMm": 5.956769920885563
+        },
+        {
+          "source": "Vertebra T10",
+          "target": "bp3d:FMA10037",
+          "sourcePoint": [
+            5.932524800300598e-05,
+            0.053173523396253586,
+            1.1975087523460388
+          ],
+          "targetPoint": [
+            -0.000705800000000003,
+            1.12845,
+            0.04594015
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 1.0952708986300856,
+          "surfaceRmsMm": 1.272492672536687,
+          "surfaceMaxMm": 4.082968924194574
+        },
+        {
+          "source": "Vertebra T11",
+          "target": "bp3d:FMA10059",
+          "sourcePoint": [
+            0.0,
+            0.04507779888808727,
+            1.1693155169487
+          ],
+          "targetPoint": [
+            -0.00060085,
+            1.102495,
+            0.05277065
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 2.998068212375666,
+          "surfaceRmsMm": 1.836463668556643,
+          "surfaceMaxMm": 3.6944919265806675
+        },
+        {
+          "source": "Vertebra T12",
+          "target": "bp3d:FMA10081",
+          "sourcePoint": [
+            -3.725290298461914e-09,
+            0.0367314126342535,
+            1.1390766501426697
+          ],
+          "targetPoint": [
+            -0.0006657999999999976,
+            1.075775,
+            0.06197295
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 6.181749667416519,
+          "surfaceRmsMm": 3.3625921461594075,
+          "surfaceMaxMm": 6.7527987994253635
+        },
+        {
+          "source": "Vertebra C3",
+          "target": "bp3d:FMA12521",
+          "sourcePoint": [
+            -1.862645149230957e-09,
+            0.02688974681223044,
+            1.506380319595337
+          ],
+          "targetPoint": [
+            -0.0006517500000000013,
+            1.43137,
+            0.06297315
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 6.563423104356168,
+          "surfaceRmsMm": 3.714631897614682,
+          "surfaceMaxMm": 8.115657605230808
+        },
+        {
+          "source": "Vertebra C4",
+          "target": "bp3d:FMA12522",
+          "sourcePoint": [
+            7.541477680206299e-05,
+            0.026470066979527473,
+            1.4930745959281921
+          ],
+          "targetPoint": [
+            -0.0006879499999999997,
+            1.41837,
+            0.06490085
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 5.462566745446152,
+          "surfaceRmsMm": 3.153222877221011,
+          "surfaceMaxMm": 6.646628025919199
+        },
+        {
+          "source": "Vertebra C5",
+          "target": "bp3d:FMA12523",
+          "sourcePoint": [
+            -3.725290298461914e-09,
+            0.029776539653539658,
+            1.4801446199417114
+          ],
+          "targetPoint": [
+            -0.0006822999999999985,
+            1.40588,
+            0.06342755
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 4.200753146602841,
+          "surfaceRmsMm": 1.9327289593855828,
+          "surfaceMaxMm": 4.556030035018921
+        },
+        {
+          "source": "Vertebra C6",
+          "target": "bp3d:FMA12524",
+          "sourcePoint": [
+            0.0,
+            0.0349563704803586,
+            1.4660261869430542
+          ],
+          "targetPoint": [
+            -0.0006587499999999996,
+            1.393165,
+            0.0604252
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 2.409362460643952,
+          "surfaceRmsMm": 1.7786951376678082,
+          "surfaceMaxMm": 4.6309055760502815
+        },
+        {
+          "source": "Vertebra C7",
+          "target": "bp3d:FMA12525",
+          "sourcePoint": [
+            -3.725290298461914e-09,
+            0.042073361575603485,
+            1.4520207047462463
+          ],
+          "targetPoint": [
+            -0.0006488500000000029,
+            1.378275,
+            0.05564915
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 4.020963458273354,
+          "surfaceRmsMm": 2.7237962211912454,
+          "surfaceMaxMm": 5.566582549363375
+        },
+        {
+          "source": "Vertebra L1",
+          "target": "bp3d:FMA13072",
+          "sourcePoint": [
+            0.0,
+            0.029237419366836548,
+            1.1039149165153503
+          ],
+          "targetPoint": [
+            -0.0006592000000000021,
+            1.04359,
+            0.0693512
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 8.988803307426553,
+          "surfaceRmsMm": 4.6517971850498,
+          "surfaceMaxMm": 9.558413177728653
+        },
+        {
+          "source": "Vertebra L2",
+          "target": "bp3d:FMA13073",
+          "sourcePoint": [
+            0.0,
+            0.024103568866848946,
+            1.0749188661575317
+          ],
+          "targetPoint": [
+            -0.0006450500000000012,
+            1.016038,
+            0.0745344
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.301987059787319,
+          "surfaceRmsMm": 5.811469219836833,
+          "surfaceMaxMm": 12.146488763391972
+        },
+        {
+          "source": "Vertebra L3",
+          "target": "bp3d:FMA13074",
+          "sourcePoint": [
+            1.0311603546142578e-05,
+            0.023168311454355717,
+            1.0433669090270996
+          ],
+          "targetPoint": [
+            -0.0006809499999999996,
+            0.9887115,
+            0.0724335
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 15.076359294428505,
+          "surfaceRmsMm": 7.744220405790385,
+          "surfaceMaxMm": 19.070493057370186
+        },
+        {
+          "source": "Vertebra L4",
+          "target": "bp3d:FMA13075",
+          "sourcePoint": [
+            7.450580596923828e-09,
+            0.02405341900885105,
+            1.0150479972362518
+          ],
+          "targetPoint": [
+            -0.0006753500000000016,
+            0.961033,
+            0.0682806
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 17.040314750939363,
+          "surfaceRmsMm": 10.762186113797851,
+          "surfaceMaxMm": 23.818036541342735
+        },
+        {
+          "source": "Vertebra L5",
+          "target": "bp3d:FMA13076",
+          "sourcePoint": [
+            -7.450580596923828e-09,
+            0.02912519872188568,
+            0.9828057289123535
+          ],
+          "targetPoint": [
+            -0.0007135500000000003,
+            0.929714,
+            0.05866075
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 20.590213270584528,
+          "surfaceRmsMm": 10.335808913852343,
+          "surfaceMaxMm": 22.011974826455116
+        }
+      ],
+      "surfaceRmsMm": 6.266869478481743,
+      "surfaceMaxMm": 28.653033077716827,
+      "canalLandmarks": [
+        {
+          "bone": "Atlas (C1)",
+          "fraction": 0.35,
+          "sourcePoint": [
+            4.132570839789074e-06,
+            1.5399850625451335,
+            -0.020051559433341026
+          ],
+          "targetPoint": [
+            -0.0005669500678777695,
+            1.468937190250449,
+            0.06582733429968357
+          ],
+          "errorMm": 8.46655449915578
+        },
+        {
+          "bone": "Atlas (C1)",
+          "fraction": 0.5,
+          "sourcePoint": [
+            4.132570839789074e-06,
+            1.5429322203078817,
+            -0.020585129037499428
+          ],
+          "targetPoint": [
+            -0.0005669500678777695,
+            1.471820056438446,
+            0.06529424153268337
+          ],
+          "errorMm": 8.425941108975605
+        },
+        {
+          "bone": "Axis (C2)",
+          "fraction": 0.35,
+          "sourcePoint": [
+            1.5628588256128007e-05,
+            1.5235437095874542,
+            -0.025631221942603588
+          ],
+          "targetPoint": [
+            -0.0006937002763152122,
+            1.448983081499724,
+            0.0615469366312027
+          ],
+          "errorMm": 5.995689043599844
+        },
+        {
+          "bone": "Vertebra T1",
+          "fraction": 0.35,
+          "sourcePoint": [
+            -2.2218198808543477e-10,
+            1.433377126241256,
+            -0.04118364304304123
+          ],
+          "targetPoint": [
+            -0.0007333997637033463,
+            1.357607908409473,
+            0.05745020695030689
+          ],
+          "errorMm": 3.2140754995198804
+        },
+        {
+          "bone": "Vertebra T1",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -2.2218198808543477e-10,
+            1.4379930844372455,
+            -0.0385435139760375
+          ],
+          "targetPoint": [
+            -0.0007333997637033463,
+            1.3620599508285522,
+            0.06076551973819733
+          ],
+          "errorMm": 4.063867513357779
+        },
+        {
+          "bone": "Vertebra T1",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -2.2218198808543477e-10,
+            1.442609042633235,
+            -0.03657412063330412
+          ],
+          "targetPoint": [
+            -0.0007333997637033463,
+            1.3665119932476315,
+            0.06234215758740902
+          ],
+          "errorMm": 3.8836156771416723
+        },
+        {
+          "bone": "Vertebra T2",
+          "fraction": 0.35,
+          "sourcePoint": [
+            3.519096992976589e-09,
+            1.4148102542346914,
+            -0.04821650683879852
+          ],
+          "targetPoint": [
+            -0.0006718486547470093,
+            1.3384095886687475,
+            0.05162261053919792
+          ],
+          "errorMm": 4.086520666301101
+        },
+        {
+          "bone": "Vertebra T2",
+          "fraction": 0.5,
+          "sourcePoint": [
+            3.519096992976589e-09,
+            1.4200630769614675,
+            -0.04473026841878891
+          ],
+          "targetPoint": [
+            -0.0006718486547470093,
+            1.3434749841690063,
+            0.054712509736418724
+          ],
+          "errorMm": 4.010205501163414
+        },
+        {
+          "bone": "Vertebra T3",
+          "fraction": 0.35,
+          "sourcePoint": [
+            -3.935409831345993e-09,
+            1.3926115996179829,
+            -0.05800183676183224
+          ],
+          "targetPoint": [
+            -0.000562598928809166,
+            1.3160971331143747,
+            0.04232921078801155
+          ],
+          "errorMm": 4.016070699393722
+        },
+        {
+          "bone": "Vertebra T3",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -3.935409831345993e-09,
+            1.398801857087609,
+            -0.05423952266573906
+          ],
+          "targetPoint": [
+            -0.000562598928809166,
+            1.3220400214195251,
+            0.04584693908691406
+          ],
+          "errorMm": 4.138873939040103
+        },
+        {
+          "bone": "Vertebra T3",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -3.935409831345993e-09,
+            1.404992114557235,
+            -0.05218644253909588
+          ],
+          "targetPoint": [
+            -0.000562598928809166,
+            1.3279829097246756,
+            0.047950077801942825
+          ],
+          "errorMm": 4.442100746791609
+        },
+        {
+          "bone": "Vertebra T4",
+          "fraction": 0.35,
+          "sourcePoint": [
+            -2.1011770795498208e-10,
+            1.3687609481298613,
+            -0.06619016453623772
+          ],
+          "targetPoint": [
+            -0.0005898512899875641,
+            1.2930244867196292,
+            0.03449231572449207
+          ],
+          "errorMm": 3.3835287225490642
+        },
+        {
+          "bone": "Vertebra T4",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -2.1011770795498208e-10,
+            1.3752223733058675,
+            -0.06289495900273323
+          ],
+          "targetPoint": [
+            -0.0005898512899875641,
+            1.2995749711990356,
+            0.03763745725154877
+          ],
+          "errorMm": 3.3842860693307513
+        },
+        {
+          "bone": "Vertebra T4",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -2.1011770795498208e-10,
+            1.3816837984818737,
+            -0.06022501923143864
+          ],
+          "targetPoint": [
+            -0.0005898512899875641,
+            1.306125455678442,
+            0.04003468621522188
+          ],
+          "errorMm": 3.2653257820679595
+        },
+        {
+          "bone": "Vertebra T5",
+          "fraction": 0.5,
+          "sourcePoint": [
+            5.194394692847881e-08,
+            1.3472536235857078,
+            -0.0679231621325016
+          ],
+          "targetPoint": [
+            -0.0006308984011411667,
+            1.2685200572013855,
+            0.031177427619695663
+          ],
+          "errorMm": 5.310467765316315
+        },
+        {
+          "bone": "Vertebra T5",
+          "fraction": 0.65,
+          "sourcePoint": [
+            5.194394692847881e-08,
+            1.3552561166732073,
+            -0.06656902469694614
+          ],
+          "targetPoint": [
+            -0.0006308984011411667,
+            1.2771449710175173,
+            0.03345801215618849
+          ],
+          "errorMm": 4.860380028454531
+        },
+        {
+          "bone": "Vertebra T6",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -2.1011601486486953e-10,
+            1.314240310255109,
+            -0.07206128537654877
+          ],
+          "targetPoint": [
+            -0.0006943996995687485,
+            1.2392300367355347,
+            0.027791129425168037
+          ],
+          "errorMm": 2.2162425018563967
+        },
+        {
+          "bone": "Vertebra T6",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -2.1011601486486953e-10,
+            1.3235527991239384,
+            -0.07020647078752518
+          ],
+          "targetPoint": [
+            -0.0006943996995687485,
+            1.24818506411553,
+            0.030120248906314373
+          ],
+          "errorMm": 2.6629263850865232
+        },
+        {
+          "bone": "Vertebra T7",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -2.1011497403078394e-10,
+            1.295314458571375,
+            -0.07164105772972107
+          ],
+          "targetPoint": [
+            -0.00045285001397132874,
+            1.2199248405863579,
+            0.028420348651707172
+          ],
+          "errorMm": 2.9865730916477875
+        },
+        {
+          "bone": "Vertebra T8",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -2.1011299644602133e-10,
+            1.255830272249287,
+            -0.06839604303240776
+          ],
+          "targetPoint": [
+            -0.0007533486932516098,
+            1.1833999752998352,
+            0.03149450849741697
+          ],
+          "errorMm": 1.3532398931863003
+        },
+        {
+          "bone": "Vertebra T8",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -2.1011299644602133e-10,
+            1.26486542370204,
+            -0.06905307993292809
+          ],
+          "targetPoint": [
+            -0.0007533486932516098,
+            1.1922951417263357,
+            0.030496105551719666
+          ],
+          "errorMm": 1.3895916010157163
+        },
+        {
+          "bone": "Vertebra T9",
+          "fraction": 0.5,
+          "sourcePoint": [
+            3.515177489366028e-09,
+            1.22848068727775,
+            -0.06415615975856781
+          ],
+          "targetPoint": [
+            -0.0006984006613492966,
+            1.1557349562644958,
+            0.03582073748111725
+          ],
+          "errorMm": 2.4808726219672343
+        },
+        {
+          "bone": "Vertebra T9",
+          "fraction": 0.65,
+          "sourcePoint": [
+            3.515177489366028e-09,
+            1.2369765889423756,
+            -0.06557342782616615
+          ],
+          "targetPoint": [
+            -0.0006984006613492966,
+            1.164466573764463,
+            0.034856460988521576
+          ],
+          "errorMm": 1.7474847905747808
+        },
+        {
+          "bone": "Vertebra T10",
+          "fraction": 0.5,
+          "sourcePoint": [
+            5.9325044962872664e-05,
+            1.197508763567328,
+            -0.05814579501748085
+          ],
+          "targetPoint": [
+            -0.0007057990878820419,
+            1.1284499764442444,
+            0.04170171171426773
+          ],
+          "errorMm": 2.4243736754653633
+        },
+        {
+          "bone": "Vertebra T11",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -2.1011165030060397e-10,
+            1.1693154886493617,
+            -0.05020368471741676
+          ],
+          "targetPoint": [
+            -0.0006008492782711983,
+            1.1024949550628662,
+            0.049478188157081604
+          ],
+          "errorMm": 3.7494535252228376
+        },
+        {
+          "bone": "Vertebra T12",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -3.935401875904132e-09,
+            1.1390766227605158,
+            -0.04103589989244938
+          ],
+          "targetPoint": [
+            -0.0006657997146248817,
+            1.0757750272750854,
+            0.05711584538221359
+          ],
+          "errorMm": 7.057011832597891
+        },
+        {
+          "bone": "Vertebra C3",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -2.0108970981425056e-09,
+            1.5063802859047408,
+            -0.02363218180835247
+          ],
+          "targetPoint": [
+            -0.0006517497822642326,
+            1.4313700199127197,
+            0.0654890350997448
+          ],
+          "errorMm": 4.28784565112608
+        },
+        {
+          "bone": "Vertebra C3",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -2.0108970981425056e-09,
+            1.5103779639078667,
+            -0.023536644876003265
+          ],
+          "targetPoint": [
+            -0.0006517497822642326,
+            1.4356809269144761,
+            0.06457395479083061
+          ],
+          "errorMm": 5.256359070199256
+        },
+        {
+          "bone": "Vertebra C4",
+          "fraction": 0.5,
+          "sourcePoint": [
+            7.541486374089759e-05,
+            1.4930745974762267,
+            -0.024976075626909733
+          ],
+          "targetPoint": [
+            -0.0006879502907395363,
+            1.418370008468628,
+            0.06554280780255795
+          ],
+          "errorMm": 3.3033678058522886
+        },
+        {
+          "bone": "Vertebra C5",
+          "fraction": 0.35,
+          "sourcePoint": [
+            -3.867913191124561e-09,
+            1.4767697684505827,
+            -0.02578551322221756
+          ],
+          "targetPoint": [
+            -0.0006822999566793442,
+            1.4022469046974593,
+            0.06774339452385902
+          ],
+          "errorMm": 0.9373676794862219
+        },
+        {
+          "bone": "Vertebra C5",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -3.867913191124561e-09,
+            1.48014458825025,
+            -0.023546935059130192
+          ],
+          "targetPoint": [
+            -0.0006822999566793442,
+            1.4058799743652344,
+            0.0693149771541357
+          ],
+          "errorMm": 1.509047627620774
+        },
+        {
+          "bone": "Vertebra C5",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -3.867913191124561e-09,
+            1.4835194080499174,
+            -0.022348396945744753
+          ],
+          "targetPoint": [
+            -0.0006822999566793442,
+            1.4095130440330095,
+            0.07032892853021622
+          ],
+          "errorMm": 1.7677595652890223
+        },
+        {
+          "bone": "Vertebra C6",
+          "fraction": 0.35,
+          "sourcePoint": [
+            -1.4267032694137427e-10,
+            1.4623361527418055,
+            -0.02908348571509123
+          ],
+          "targetPoint": [
+            -0.0006587496027350443,
+            1.3896923575015605,
+            0.06690754741430283
+          ],
+          "errorMm": 2.7329875106550623
+        },
+        {
+          "bone": "Vertebra C6",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -1.4267032694137427e-10,
+            1.466026169193996,
+            -0.025915276259183884
+          ],
+          "targetPoint": [
+            -0.0006587496027350443,
+            1.3931649923324585,
+            0.06946745328605175
+          ],
+          "errorMm": 2.334906684416586
+        },
+        {
+          "bone": "Vertebra C6",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -1.4267032694137427e-10,
+            1.4697161856461864,
+            -0.024722106754779816
+          ],
+          "targetPoint": [
+            -0.0006587496027350443,
+            1.3966376271633565,
+            0.07071682810783386
+          ],
+          "errorMm": 2.2670614908246014
+        },
+        {
+          "bone": "Vertebra C7",
+          "fraction": 0.35,
+          "sourcePoint": [
+            -3.867911956001446e-09,
+            1.4479687460855857,
+            -0.037745820358395576
+          ],
+          "targetPoint": [
+            -0.0006488487124443054,
+            1.374205332287762,
+            0.06166892126202583
+          ],
+          "errorMm": 4.404384519245093
+        },
+        {
+          "bone": "Vertebra C7",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -3.867911956001446e-09,
+            1.4520207020792868,
+            -0.03217988833785057
+          ],
+          "targetPoint": [
+            -0.0006488487124443054,
+            1.3782749772071838,
+            0.06563112512230873
+          ],
+          "errorMm": 3.082358620561247
+        },
+        {
+          "bone": "Vertebra C7",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -3.867911956001446e-09,
+            1.4560726580729881,
+            -0.030061588622629642
+          ],
+          "targetPoint": [
+            -0.0006488487124443054,
+            1.3823446221266056,
+            0.06748289056122303
+          ],
+          "errorMm": 2.99530844765167
+        },
+        {
+          "bone": "Vertebra L1",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -1.6010429787494118e-10,
+            1.1039149230346084,
+            -0.030544573441147804
+          ],
+          "targetPoint": [
+            -0.0006591994315385818,
+            1.043590009212494,
+            0.06822777725756168
+          ],
+          "errorMm": 8.54067037463874
+        }
+      ],
+      "canalMeanMm": 3.754735852008888,
+      "canalRmsMm": 4.198381471497161,
+      "canalMaxMm": 8.54067037463874
+    },
+    "hraGlobal": {
+      "matrix": [
+        [
+          0.941720166644805,
+          0.035191010922427095,
+          -0.11003481784900963,
+          -0.02066947992886812
+        ],
+        [
+          -0.027342154928068654,
+          0.9459076852596805,
+          0.06851275928531037,
+          0.7640472976680002
+        ],
+        [
+          0.11224292829704915,
+          -0.06483197028669596,
+          0.9398836530817911,
+          0.1290788549021106
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uniformScale": 0.9487797113420612,
+      "iterations": 44,
+      "landmarks": [
+        {
+          "source": "Atlas (C1)",
+          "target": "bp3d:FMA12519",
+          "sourcePoint": [
+            -0.001985093578696251,
+            0.7496004104614258,
+            -0.005459222011268139
+          ],
+          "targetPoint": [
+            -0.0005669500000000001,
+            1.4718200000000001,
+            0.06412
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 12.130731932889402,
+          "surfaceRmsMm": 6.724894008761041,
+          "surfaceMaxMm": 15.056252479553223
+        },
+        {
+          "source": "Axis (C2)",
+          "target": "bp3d:FMA12520",
+          "sourcePoint": [
+            -0.0022275736555457115,
+            0.7372134625911713,
+            -0.008276687003672123
+          ],
+          "targetPoint": [
+            -0.0006937000000000002,
+            1.45576,
+            0.06160500000000001
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 13.592368474844381,
+          "surfaceRmsMm": 6.365982239249774,
+          "surfaceMaxMm": 14.676880091428757
+        },
+        {
+          "source": "Vertebra C3",
+          "target": "bp3d:FMA12521",
+          "sourcePoint": [
+            -0.0022743800655007362,
+            0.7116835117340088,
+            -0.007782754488289356
+          ],
+          "targetPoint": [
+            -0.0006517500000000013,
+            1.43137,
+            0.06297315
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 14.026391036004394,
+          "surfaceRmsMm": 4.930358575361987,
+          "surfaceMaxMm": 11.567492038011551
+        },
+        {
+          "source": "Vertebra C4",
+          "target": "bp3d:FMA12522",
+          "sourcePoint": [
+            -0.0013020802289247513,
+            0.6948260068893433,
+            -0.009733238257467747
+          ],
+          "targetPoint": [
+            -0.0006879499999999997,
+            1.41837,
+            0.06490085
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.98238909757966,
+          "surfaceRmsMm": 4.624805079409968,
+          "surfaceMaxMm": 10.221008211374283
+        },
+        {
+          "source": "Vertebra C5",
+          "target": "bp3d:FMA12523",
+          "sourcePoint": [
+            0.00039934180676937103,
+            0.6766280233860016,
+            -0.01482817530632019
+          ],
+          "targetPoint": [
+            -0.0006822999999999985,
+            1.40588,
+            0.06342755
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.21352698221065,
+          "surfaceRmsMm": 3.5561156837619445,
+          "surfaceMaxMm": 8.29528458416462
+        },
+        {
+          "source": "Vertebra C6",
+          "target": "bp3d:FMA12524",
+          "sourcePoint": [
+            -0.0007133390754461288,
+            0.6603527665138245,
+            -0.020811423426494002
+          ],
+          "targetPoint": [
+            -0.0006587499999999996,
+            1.393165,
+            0.0604252
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 9.83091078437376,
+          "surfaceRmsMm": 3.6252365438639806,
+          "surfaceMaxMm": 9.3791289255023
+        },
+        {
+          "source": "Vertebra C7",
+          "target": "bp3d:FMA12525",
+          "sourcePoint": [
+            -0.0035981088876724243,
+            0.6424388587474823,
+            -0.029805589001625776
+          ],
+          "targetPoint": [
+            -0.0006488500000000029,
+            1.378275,
+            0.05564915
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 9.455883272701055,
+          "surfaceRmsMm": 4.533811734434443,
+          "surfaceMaxMm": 13.197862543165684
+        },
+        {
+          "source": "Vertebra T1",
+          "target": "bp3d:FMA9165",
+          "sourcePoint": [
+            -0.00738835334777832,
+            0.6240639388561249,
+            -0.040060338797047734
+          ],
+          "targetPoint": [
+            -0.0007334000000000021,
+            1.36206,
+            0.0519793
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.425710717890997,
+          "surfaceRmsMm": 5.087446316116005,
+          "surfaceMaxMm": 10.489599779248238
+        },
+        {
+          "source": "Vertebra T2",
+          "target": "bp3d:FMA9187",
+          "sourcePoint": [
+            -0.009808100759983063,
+            0.6067337393760681,
+            -0.04975253343582153
+          ],
+          "targetPoint": [
+            -0.0006718499999999981,
+            1.343475,
+            0.04739815
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.542067127906602,
+          "surfaceRmsMm": 5.147835647586644,
+          "surfaceMaxMm": 11.451462283730507
+        },
+        {
+          "source": "Vertebra T3",
+          "target": "bp3d:FMA9209",
+          "sourcePoint": [
+            -0.011521206237375736,
+            0.586327463388443,
+            -0.05853455979377031
+          ],
+          "targetPoint": [
+            -0.0005625999999999964,
+            1.3220399999999999,
+            0.039048205
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 9.141133683258207,
+          "surfaceRmsMm": 5.284165238742643,
+          "surfaceMaxMm": 11.33168488740921
+        },
+        {
+          "source": "Vertebra T4",
+          "target": "bp3d:FMA9248",
+          "sourcePoint": [
+            -0.012017783708870411,
+            0.5633091032505035,
+            -0.06624955404549837
+          ],
+          "targetPoint": [
+            -0.0005898499999999994,
+            1.2995750000000001,
+            0.034901398
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.072897001326654,
+          "surfaceRmsMm": 5.197504137619621,
+          "surfaceMaxMm": 10.774720460176468
+        },
+        {
+          "source": "Vertebra T5",
+          "target": "bp3d:FMA9922",
+          "sourcePoint": [
+            -0.012372015975415707,
+            0.5397420525550842,
+            -0.07241305522620678
+          ],
+          "targetPoint": [
+            -0.0006309000000000002,
+            1.26852,
+            0.03299522505
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 9.710826789454876,
+          "surfaceRmsMm": 4.812359949109066,
+          "surfaceMaxMm": 11.36532612144947
+        },
+        {
+          "source": "Vertebra T6",
+          "target": "bp3d:FMA9945",
+          "sourcePoint": [
+            -0.012176189571619034,
+            0.5092415064573288,
+            -0.07647617161273956
+          ],
+          "targetPoint": [
+            -0.0006943999999999978,
+            1.23923,
+            0.033206664999999996
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 11.68618826314119,
+          "surfaceRmsMm": 4.683145343524697,
+          "surfaceMaxMm": 13.77766951918602
+        },
+        {
+          "source": "Vertebra T7",
+          "target": "bp3d:FMA9968",
+          "sourcePoint": [
+            -0.01101294532418251,
+            0.48197653889656067,
+            -0.07829303666949272
+          ],
+          "targetPoint": [
+            -0.00045285000000000117,
+            1.21055,
+            0.0338253465
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 12.686361235248325,
+          "surfaceRmsMm": 5.402314813564789,
+          "surfaceMaxMm": 12.613225728273392
+        },
+        {
+          "source": "Vertebra T8",
+          "target": "bp3d:FMA9991",
+          "sourcePoint": [
+            -0.008328142575919628,
+            0.4530744254589081,
+            -0.0758146233856678
+          ],
+          "targetPoint": [
+            -0.0007533499999999964,
+            1.1834,
+            0.036479698000000005
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.51150482686823,
+          "surfaceRmsMm": 5.571123089875079,
+          "surfaceMaxMm": 14.55023791640997
+        },
+        {
+          "source": "Vertebra T9",
+          "target": "bp3d:FMA10014",
+          "sourcePoint": [
+            -0.00596613809466362,
+            0.42842188477516174,
+            -0.07275602594017982
+          ],
+          "targetPoint": [
+            -0.0006983999999999983,
+            1.155735,
+            0.04190448000000001
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 13.259794604983817,
+          "surfaceRmsMm": 6.1275921814521865,
+          "surfaceMaxMm": 15.548103488981724
+        },
+        {
+          "source": "Vertebra T10",
+          "target": "bp3d:FMA10037",
+          "sourcePoint": [
+            -0.0034857168793678284,
+            0.4039662629365921,
+            -0.06856141984462738
+          ],
+          "targetPoint": [
+            -0.000705800000000003,
+            1.12845,
+            0.04594015
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 15.369187028111025,
+          "surfaceRmsMm": 7.660896447918129,
+          "surfaceMaxMm": 18.31696182489395
+        },
+        {
+          "source": "Vertebra T11",
+          "target": "bp3d:FMA10059",
+          "sourcePoint": [
+            -0.0017157169058918953,
+            0.3794717639684677,
+            -0.06365864910185337
+          ],
+          "targetPoint": [
+            -0.00060085,
+            1.102495,
+            0.05277065
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 18.243827580428647,
+          "surfaceRmsMm": 8.583908247688806,
+          "surfaceMaxMm": 18.995018675923347
+        },
+        {
+          "source": "Vertebra T12",
+          "target": "bp3d:FMA10081",
+          "sourcePoint": [
+            -0.00013601314276456833,
+            0.3464099019765854,
+            -0.05764737445861101
+          ],
+          "targetPoint": [
+            -0.0006657999999999976,
+            1.075775,
+            0.06197295
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 15.417729992159046,
+          "surfaceRmsMm": 8.342401117533951,
+          "surfaceMaxMm": 16.815729439258575
+        },
+        {
+          "source": "Vertebra L1",
+          "target": "bp3d:FMA13072",
+          "sourcePoint": [
+            0.0033409688621759415,
+            0.30830009281635284,
+            -0.05078119598329067
+          ],
+          "targetPoint": [
+            -0.0006592000000000021,
+            1.04359,
+            0.0693512
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 11.4267609538088,
+          "surfaceRmsMm": 7.967088395367772,
+          "surfaceMaxMm": 15.500115230679512
+        },
+        {
+          "source": "Vertebra L2",
+          "target": "bp3d:FMA13073",
+          "sourcePoint": [
+            0.00491117499768734,
+            0.273683525621891,
+            -0.04675014968961477
+          ],
+          "targetPoint": [
+            -0.0006450500000000012,
+            1.016038,
+            0.0745344
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 7.5097463782920215,
+          "surfaceRmsMm": 5.261887007883563,
+          "surfaceMaxMm": 13.731913641095161
+        },
+        {
+          "source": "Vertebra L3",
+          "target": "bp3d:FMA13074",
+          "sourcePoint": [
+            0.008849458768963814,
+            0.23825673758983612,
+            -0.041178197134286165
+          ],
+          "targetPoint": [
+            -0.0006809499999999996,
+            0.9887115,
+            0.0724335
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 4.39625493005748,
+          "surfaceRmsMm": 5.52126273318597,
+          "surfaceMaxMm": 16.185186803340912
+        },
+        {
+          "source": "Vertebra L4",
+          "target": "bp3d:FMA13075",
+          "sourcePoint": [
+            0.01091897115111351,
+            0.20035062730312347,
+            -0.03172636870294809
+          ],
+          "targetPoint": [
+            -0.0006753500000000016,
+            0.961033,
+            0.0682806
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 21.65238979200293,
+          "surfaceRmsMm": 11.568067788829254,
+          "surfaceMaxMm": 27.98941731452942
+        },
+        {
+          "source": "Vertebra L5",
+          "target": "bp3d:FMA13076",
+          "sourcePoint": [
+            0.010532455518841743,
+            0.16981131583452225,
+            -0.02979695424437523
+          ],
+          "targetPoint": [
+            -0.0007135500000000003,
+            0.929714,
+            0.05866075
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 33.41772614653682,
+          "surfaceRmsMm": 17.824298917612886,
+          "surfaceMaxMm": 36.27919778227806
+        }
+      ],
+      "surfaceRmsMm": 7.080227046691719,
+      "surfaceMaxMm": 36.27919778227806
+    },
+    "hraCanal": {
+      "matrix": [
+        [
+          0.9363358521572903,
+          0.050353769619924875,
+          -0.27782257412705613,
+          -0.03648393189560278
+        ],
+        [
+          -0.017525422079031513,
+          0.9708118127496544,
+          0.1168888217552119,
+          0.752741743822971
+        ],
+        [
+          0.28180444352506556,
+          -0.10693285255445785,
+          0.9303748349448918,
+          0.1567357291623238
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uniformScale": 0.9779804255938049,
+      "iterations": 44,
+      "landmarks": [
+        {
+          "source": "Atlas (C1)",
+          "target": "bp3d:FMA12519",
+          "sourcePoint": [
+            -0.001985093578696251,
+            0.7496004104614258,
+            -0.005459222011268139
+          ],
+          "targetPoint": [
+            -0.0005669500000000001,
+            1.4718200000000001,
+            0.06412
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 12.130731932889402,
+          "surfaceRmsMm": 6.724894008761041,
+          "surfaceMaxMm": 15.056252479553223
+        },
+        {
+          "source": "Axis (C2)",
+          "target": "bp3d:FMA12520",
+          "sourcePoint": [
+            -0.0022275736555457115,
+            0.7372134625911713,
+            -0.008276687003672123
+          ],
+          "targetPoint": [
+            -0.0006937000000000002,
+            1.45576,
+            0.06160500000000001
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 13.592368474844381,
+          "surfaceRmsMm": 6.365982239249774,
+          "surfaceMaxMm": 14.676880091428757
+        },
+        {
+          "source": "Vertebra C3",
+          "target": "bp3d:FMA12521",
+          "sourcePoint": [
+            -0.0022743800655007362,
+            0.7116835117340088,
+            -0.007782754488289356
+          ],
+          "targetPoint": [
+            -0.0006517500000000013,
+            1.43137,
+            0.06297315
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 14.026391036004394,
+          "surfaceRmsMm": 4.930358575361987,
+          "surfaceMaxMm": 11.567492038011551
+        },
+        {
+          "source": "Vertebra C4",
+          "target": "bp3d:FMA12522",
+          "sourcePoint": [
+            -0.0013020802289247513,
+            0.6948260068893433,
+            -0.009733238257467747
+          ],
+          "targetPoint": [
+            -0.0006879499999999997,
+            1.41837,
+            0.06490085
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.98238909757966,
+          "surfaceRmsMm": 4.624805079409968,
+          "surfaceMaxMm": 10.221008211374283
+        },
+        {
+          "source": "Vertebra C5",
+          "target": "bp3d:FMA12523",
+          "sourcePoint": [
+            0.00039934180676937103,
+            0.6766280233860016,
+            -0.01482817530632019
+          ],
+          "targetPoint": [
+            -0.0006822999999999985,
+            1.40588,
+            0.06342755
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.21352698221065,
+          "surfaceRmsMm": 3.5561156837619445,
+          "surfaceMaxMm": 8.29528458416462
+        },
+        {
+          "source": "Vertebra C6",
+          "target": "bp3d:FMA12524",
+          "sourcePoint": [
+            -0.0007133390754461288,
+            0.6603527665138245,
+            -0.020811423426494002
+          ],
+          "targetPoint": [
+            -0.0006587499999999996,
+            1.393165,
+            0.0604252
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 9.83091078437376,
+          "surfaceRmsMm": 3.6252365438639806,
+          "surfaceMaxMm": 9.3791289255023
+        },
+        {
+          "source": "Vertebra C7",
+          "target": "bp3d:FMA12525",
+          "sourcePoint": [
+            -0.0035981088876724243,
+            0.6424388587474823,
+            -0.029805589001625776
+          ],
+          "targetPoint": [
+            -0.0006488500000000029,
+            1.378275,
+            0.05564915
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 9.455883272701055,
+          "surfaceRmsMm": 4.533811734434443,
+          "surfaceMaxMm": 13.197862543165684
+        },
+        {
+          "source": "Vertebra T1",
+          "target": "bp3d:FMA9165",
+          "sourcePoint": [
+            -0.00738835334777832,
+            0.6240639388561249,
+            -0.040060338797047734
+          ],
+          "targetPoint": [
+            -0.0007334000000000021,
+            1.36206,
+            0.0519793
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.425710717890997,
+          "surfaceRmsMm": 5.087446316116005,
+          "surfaceMaxMm": 10.489599779248238
+        },
+        {
+          "source": "Vertebra T2",
+          "target": "bp3d:FMA9187",
+          "sourcePoint": [
+            -0.009808100759983063,
+            0.6067337393760681,
+            -0.04975253343582153
+          ],
+          "targetPoint": [
+            -0.0006718499999999981,
+            1.343475,
+            0.04739815
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.542067127906602,
+          "surfaceRmsMm": 5.147835647586644,
+          "surfaceMaxMm": 11.451462283730507
+        },
+        {
+          "source": "Vertebra T3",
+          "target": "bp3d:FMA9209",
+          "sourcePoint": [
+            -0.011521206237375736,
+            0.586327463388443,
+            -0.05853455979377031
+          ],
+          "targetPoint": [
+            -0.0005625999999999964,
+            1.3220399999999999,
+            0.039048205
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 9.141133683258207,
+          "surfaceRmsMm": 5.284165238742643,
+          "surfaceMaxMm": 11.33168488740921
+        },
+        {
+          "source": "Vertebra T4",
+          "target": "bp3d:FMA9248",
+          "sourcePoint": [
+            -0.012017783708870411,
+            0.5633091032505035,
+            -0.06624955404549837
+          ],
+          "targetPoint": [
+            -0.0005898499999999994,
+            1.2995750000000001,
+            0.034901398
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.072897001326654,
+          "surfaceRmsMm": 5.197504137619621,
+          "surfaceMaxMm": 10.774720460176468
+        },
+        {
+          "source": "Vertebra T5",
+          "target": "bp3d:FMA9922",
+          "sourcePoint": [
+            -0.012372015975415707,
+            0.5397420525550842,
+            -0.07241305522620678
+          ],
+          "targetPoint": [
+            -0.0006309000000000002,
+            1.26852,
+            0.03299522505
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 9.710826789454876,
+          "surfaceRmsMm": 4.812359949109066,
+          "surfaceMaxMm": 11.36532612144947
+        },
+        {
+          "source": "Vertebra T6",
+          "target": "bp3d:FMA9945",
+          "sourcePoint": [
+            -0.012176189571619034,
+            0.5092415064573288,
+            -0.07647617161273956
+          ],
+          "targetPoint": [
+            -0.0006943999999999978,
+            1.23923,
+            0.033206664999999996
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 11.68618826314119,
+          "surfaceRmsMm": 4.683145343524697,
+          "surfaceMaxMm": 13.77766951918602
+        },
+        {
+          "source": "Vertebra T7",
+          "target": "bp3d:FMA9968",
+          "sourcePoint": [
+            -0.01101294532418251,
+            0.48197653889656067,
+            -0.07829303666949272
+          ],
+          "targetPoint": [
+            -0.00045285000000000117,
+            1.21055,
+            0.0338253465
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 12.686361235248325,
+          "surfaceRmsMm": 5.402314813564789,
+          "surfaceMaxMm": 12.613225728273392
+        },
+        {
+          "source": "Vertebra T8",
+          "target": "bp3d:FMA9991",
+          "sourcePoint": [
+            -0.008328142575919628,
+            0.4530744254589081,
+            -0.0758146233856678
+          ],
+          "targetPoint": [
+            -0.0007533499999999964,
+            1.1834,
+            0.036479698000000005
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 10.51150482686823,
+          "surfaceRmsMm": 5.571123089875079,
+          "surfaceMaxMm": 14.55023791640997
+        },
+        {
+          "source": "Vertebra T9",
+          "target": "bp3d:FMA10014",
+          "sourcePoint": [
+            -0.00596613809466362,
+            0.42842188477516174,
+            -0.07275602594017982
+          ],
+          "targetPoint": [
+            -0.0006983999999999983,
+            1.155735,
+            0.04190448000000001
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 13.259794604983817,
+          "surfaceRmsMm": 6.1275921814521865,
+          "surfaceMaxMm": 15.548103488981724
+        },
+        {
+          "source": "Vertebra T10",
+          "target": "bp3d:FMA10037",
+          "sourcePoint": [
+            -0.0034857168793678284,
+            0.4039662629365921,
+            -0.06856141984462738
+          ],
+          "targetPoint": [
+            -0.000705800000000003,
+            1.12845,
+            0.04594015
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 15.369187028111025,
+          "surfaceRmsMm": 7.660896447918129,
+          "surfaceMaxMm": 18.31696182489395
+        },
+        {
+          "source": "Vertebra T11",
+          "target": "bp3d:FMA10059",
+          "sourcePoint": [
+            -0.0017157169058918953,
+            0.3794717639684677,
+            -0.06365864910185337
+          ],
+          "targetPoint": [
+            -0.00060085,
+            1.102495,
+            0.05277065
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 18.243827580428647,
+          "surfaceRmsMm": 8.583908247688806,
+          "surfaceMaxMm": 18.995018675923347
+        },
+        {
+          "source": "Vertebra T12",
+          "target": "bp3d:FMA10081",
+          "sourcePoint": [
+            -0.00013601314276456833,
+            0.3464099019765854,
+            -0.05764737445861101
+          ],
+          "targetPoint": [
+            -0.0006657999999999976,
+            1.075775,
+            0.06197295
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 15.417729992159046,
+          "surfaceRmsMm": 8.342401117533951,
+          "surfaceMaxMm": 16.815729439258575
+        },
+        {
+          "source": "Vertebra L1",
+          "target": "bp3d:FMA13072",
+          "sourcePoint": [
+            0.0033409688621759415,
+            0.30830009281635284,
+            -0.05078119598329067
+          ],
+          "targetPoint": [
+            -0.0006592000000000021,
+            1.04359,
+            0.0693512
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 11.4267609538088,
+          "surfaceRmsMm": 7.967088395367772,
+          "surfaceMaxMm": 15.500115230679512
+        },
+        {
+          "source": "Vertebra L2",
+          "target": "bp3d:FMA13073",
+          "sourcePoint": [
+            0.00491117499768734,
+            0.273683525621891,
+            -0.04675014968961477
+          ],
+          "targetPoint": [
+            -0.0006450500000000012,
+            1.016038,
+            0.0745344
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 7.5097463782920215,
+          "surfaceRmsMm": 5.261887007883563,
+          "surfaceMaxMm": 13.731913641095161
+        },
+        {
+          "source": "Vertebra L3",
+          "target": "bp3d:FMA13074",
+          "sourcePoint": [
+            0.008849458768963814,
+            0.23825673758983612,
+            -0.041178197134286165
+          ],
+          "targetPoint": [
+            -0.0006809499999999996,
+            0.9887115,
+            0.0724335
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 4.39625493005748,
+          "surfaceRmsMm": 5.52126273318597,
+          "surfaceMaxMm": 16.185186803340912
+        },
+        {
+          "source": "Vertebra L4",
+          "target": "bp3d:FMA13075",
+          "sourcePoint": [
+            0.01091897115111351,
+            0.20035062730312347,
+            -0.03172636870294809
+          ],
+          "targetPoint": [
+            -0.0006753500000000016,
+            0.961033,
+            0.0682806
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 21.65238979200293,
+          "surfaceRmsMm": 11.568067788829254,
+          "surfaceMaxMm": 27.98941731452942
+        },
+        {
+          "source": "Vertebra L5",
+          "target": "bp3d:FMA13076",
+          "sourcePoint": [
+            0.010532455518841743,
+            0.16981131583452225,
+            -0.02979695424437523
+          ],
+          "targetPoint": [
+            -0.0007135500000000003,
+            0.929714,
+            0.05866075
+          ],
+          "region": "skeletal:region:spine",
+          "centerErrorMm": 33.41772614653682,
+          "surfaceRmsMm": 17.824298917612886,
+          "surfaceMaxMm": 36.27919778227806
+        }
+      ],
+      "surfaceRmsMm": 7.080227046691719,
+      "surfaceMaxMm": 36.27919778227806,
+      "canalLandmarks": [
+        {
+          "bone": "Atlas (C1)",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.001985093578696251,
+            0.7496004104614258,
+            -0.003163190558552742
+          ],
+          "targetPoint": [
+            -0.0005669500678777695,
+            1.471820056438446,
+            0.06529424153268337
+          ],
+          "errorMm": 11.414897757867486
+        },
+        {
+          "bone": "Axis (C2)",
+          "fraction": 0.35,
+          "sourcePoint": [
+            -0.0022275736555457115,
+            0.7303572803735733,
+            -0.009640277363359928
+          ],
+          "targetPoint": [
+            -0.0006937002763152122,
+            1.448983081499724,
+            0.0615469366312027
+          ],
+          "errorMm": 13.991630243104012
+        },
+        {
+          "bone": "Vertebra C3",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.0022743800655007362,
+            0.7116835117340088,
+            -0.010601732414215803
+          ],
+          "targetPoint": [
+            -0.0006517497822642326,
+            1.4313700199127197,
+            0.0654890350997448
+          ],
+          "errorMm": 12.043059459299327
+        },
+        {
+          "bone": "Vertebra C4",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.0013020802289247513,
+            0.6948260068893433,
+            -0.01121155358850956
+          ],
+          "targetPoint": [
+            -0.0006879502907395363,
+            1.418370008468628,
+            0.06554280780255795
+          ],
+          "errorMm": 9.82551923118137
+        },
+        {
+          "bone": "Vertebra C5",
+          "fraction": 0.35,
+          "sourcePoint": [
+            0.00039934180676937103,
+            0.6728690773248672,
+            -0.015138884074985981
+          ],
+          "targetPoint": [
+            -0.0006822999566793442,
+            1.4022469046974593,
+            0.06774339452385902
+          ],
+          "errorMm": 4.503429041669383
+        },
+        {
+          "bone": "Vertebra C5",
+          "fraction": 0.5,
+          "sourcePoint": [
+            0.00039934180676937103,
+            0.6766280233860016,
+            -0.013804253656417131
+          ],
+          "targetPoint": [
+            -0.0006822999566793442,
+            1.4058799743652344,
+            0.0693149771541357
+          ],
+          "errorMm": 4.011637181799362
+        },
+        {
+          "bone": "Vertebra C5",
+          "fraction": 0.65,
+          "sourcePoint": [
+            0.00039934180676937103,
+            0.680386969447136,
+            -0.0117859011515975
+          ],
+          "targetPoint": [
+            -0.0006822999566793442,
+            1.4095130440330095,
+            0.07032892853021622
+          ],
+          "errorMm": 4.230144129130052
+        },
+        {
+          "bone": "Vertebra C6",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -0.0007133390754461288,
+            0.6646539568901062,
+            -0.016127688344568014
+          ],
+          "targetPoint": [
+            -0.0006587496027350443,
+            1.3966376271633565,
+            0.07071682810783386
+          ],
+          "errorMm": 1.5654519062275454
+        },
+        {
+          "bone": "Vertebra C7",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.0035981088876724243,
+            0.6424388587474823,
+            -0.02419638354331255
+          ],
+          "targetPoint": [
+            -0.0006488487124443054,
+            1.3782749772071838,
+            0.06563112512230873
+          ],
+          "errorMm": 4.746885035982994
+        },
+        {
+          "bone": "Vertebra C7",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -0.0035981088876724243,
+            0.647088423371315,
+            -0.021252702921628952
+          ],
+          "targetPoint": [
+            -0.0006488487124443054,
+            1.3823446221266056,
+            0.06748289056122303
+          ],
+          "errorMm": 3.9572148579261293
+        },
+        {
+          "bone": "Vertebra T1",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.00738835334777832,
+            0.6240639388561249,
+            -0.03272732626646757
+          ],
+          "targetPoint": [
+            -0.0007333997637033463,
+            1.3620599508285522,
+            0.06076551973819733
+          ],
+          "errorMm": 8.17457583565489
+        },
+        {
+          "bone": "Vertebra T1",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -0.00738835334777832,
+            0.6290636032819747,
+            -0.029260966926813126
+          ],
+          "targetPoint": [
+            -0.0007333997637033463,
+            1.3665119932476315,
+            0.06234215758740902
+          ],
+          "errorMm": 7.306376237825443
+        },
+        {
+          "bone": "Vertebra T2",
+          "fraction": 0.35,
+          "sourcePoint": [
+            -0.009808100759983063,
+            0.6006554245948792,
+            -0.04699665866792202
+          ],
+          "targetPoint": [
+            -0.0006718486547470093,
+            1.3384095886687475,
+            0.05162261053919792
+          ],
+          "errorMm": 9.806112955347924
+        },
+        {
+          "bone": "Vertebra T2",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.009808100759983063,
+            0.6067337393760681,
+            -0.042604681104421616
+          ],
+          "targetPoint": [
+            -0.0006718486547470093,
+            1.3434749841690063,
+            0.054712509736418724
+          ],
+          "errorMm": 8.770905455490857
+        },
+        {
+          "bone": "Vertebra T3",
+          "fraction": 0.35,
+          "sourcePoint": [
+            -0.011521206237375736,
+            0.5800238877534867,
+            -0.0572601854801178
+          ],
+          "targetPoint": [
+            -0.000562598928809166,
+            1.3160971331143747,
+            0.04232921078801155
+          ],
+          "errorMm": 8.078096345677377
+        },
+        {
+          "bone": "Vertebra T3",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.011521206237375736,
+            0.586327463388443,
+            -0.053085438907146454
+          ],
+          "targetPoint": [
+            -0.000562598928809166,
+            1.3220400214195251,
+            0.04584693908691406
+          ],
+          "errorMm": 7.921991110327254
+        },
+        {
+          "bone": "Vertebra T3",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -0.011521206237375736,
+            0.5926310390233993,
+            -0.04944748431444168
+          ],
+          "targetPoint": [
+            -0.000562598928809166,
+            1.3279829097246756,
+            0.047950077801942825
+          ],
+          "errorMm": 7.390515341027913
+        },
+        {
+          "bone": "Vertebra T4",
+          "fraction": 0.35,
+          "sourcePoint": [
+            -0.012017783708870411,
+            0.5566359370946884,
+            -0.06595661863684654
+          ],
+          "targetPoint": [
+            -0.0005898512899875641,
+            1.2930244867196292,
+            0.03449231572449207
+          ],
+          "errorMm": 7.707678759407845
+        },
+        {
+          "bone": "Vertebra T4",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.012017783708870411,
+            0.5633091032505035,
+            -0.06260123290121555
+          ],
+          "targetPoint": [
+            -0.0005898512899875641,
+            1.2995749711990356,
+            0.03763745725154877
+          ],
+          "errorMm": 7.721085545766908
+        },
+        {
+          "bone": "Vertebra T4",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -0.012017783708870411,
+            0.5699822694063187,
+            -0.060597511008381844
+          ],
+          "targetPoint": [
+            -0.0005898512899875641,
+            1.306125455678442,
+            0.04003468621522188
+          ],
+          "errorMm": 8.152521883751021
+        },
+        {
+          "bone": "Vertebra T5",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.012372015975415707,
+            0.5397420525550842,
+            -0.07012785412371159
+          ],
+          "targetPoint": [
+            -0.0006308984011411667,
+            1.2685200572013855,
+            0.031177427619695663
+          ],
+          "errorMm": 1.2026707430450305
+        },
+        {
+          "bone": "Vertebra T6",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.012176189571619034,
+            0.5092415064573288,
+            -0.07845795527100563
+          ],
+          "targetPoint": [
+            -0.0006943996995687485,
+            1.2392300367355347,
+            0.027791129425168037
+          ],
+          "errorMm": 2.2256465316533585
+        },
+        {
+          "bone": "Vertebra T6",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -0.012176189571619034,
+            0.516683067381382,
+            -0.07607170566916466
+          ],
+          "targetPoint": [
+            -0.0006943996995687485,
+            1.24818506411553,
+            0.030120248906314373
+          ],
+          "errorMm": 3.797994126053134
+        },
+        {
+          "bone": "Vertebra T7",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.01101294532418251,
+            0.48197653889656067,
+            -0.08122223988175392
+          ],
+          "targetPoint": [
+            -0.00045285001397132874,
+            1.2105499505996704,
+            0.02822932694107294
+          ],
+          "errorMm": 1.9447949278895642
+        },
+        {
+          "bone": "Vertebra T7",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -0.01101294532418251,
+            0.49085111916065216,
+            -0.07948211580514908
+          ],
+          "targetPoint": [
+            -0.00045285001397132874,
+            1.2199248405863579,
+            0.028420348651707172
+          ],
+          "errorMm": 1.3287611079873645
+        },
+        {
+          "bone": "Vertebra T8",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.008328142575919628,
+            0.4530744254589081,
+            -0.08144848421216011
+          ],
+          "targetPoint": [
+            -0.0007533486932516098,
+            1.1833999752998352,
+            0.03149450849741697
+          ],
+          "errorMm": 2.3386928542017187
+        },
+        {
+          "bone": "Vertebra T8",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -0.008328142575919628,
+            0.46229897141456605,
+            -0.0804978497326374
+          ],
+          "targetPoint": [
+            -0.0007533486932516098,
+            1.1922951417263357,
+            0.030496105551719666
+          ],
+          "errorMm": 2.15849539346288
+        },
+        {
+          "bone": "Vertebra T9",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.00596613809466362,
+            0.42842188477516174,
+            -0.07773618027567863
+          ],
+          "targetPoint": [
+            -0.0006984006613492966,
+            1.1557349562644958,
+            0.03582073748111725
+          ],
+          "errorMm": 4.469307696067285
+        },
+        {
+          "bone": "Vertebra T9",
+          "fraction": 0.65,
+          "sourcePoint": [
+            -0.00596613809466362,
+            0.4370219945907593,
+            -0.07865256443619728
+          ],
+          "targetPoint": [
+            -0.0006984006613492966,
+            1.164466573764463,
+            0.034856460988521576
+          ],
+          "errorMm": 4.263642905765315
+        },
+        {
+          "bone": "Vertebra T10",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.0034857168793678284,
+            0.4039662629365921,
+            -0.07421809434890747
+          ],
+          "targetPoint": [
+            -0.0007057990878820419,
+            1.1284499764442444,
+            0.04170171171426773
+          ],
+          "errorMm": 8.282631697084982
+        },
+        {
+          "bone": "Vertebra T11",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.0017157169058918953,
+            0.3794717639684677,
+            -0.06963355466723442
+          ],
+          "targetPoint": [
+            -0.0006008492782711983,
+            1.1024949550628662,
+            0.049478188157081604
+          ],
+          "errorMm": 10.670833266783726
+        },
+        {
+          "bone": "Vertebra T12",
+          "fraction": 0.5,
+          "sourcePoint": [
+            -0.00013601314276456833,
+            0.3464099019765854,
+            -0.06210559047758579
+          ],
+          "targetPoint": [
+            -0.0006657997146248817,
+            1.0757750272750854,
+            0.05711584538221359
+          ],
+          "errorMm": 7.7648658522838
+        },
+        {
+          "bone": "Vertebra L1",
+          "fraction": 0.5,
+          "sourcePoint": [
+            0.0033409688621759415,
+            0.30830009281635284,
+            -0.05375804379582405
+          ],
+          "targetPoint": [
+            -0.0006591994315385818,
+            1.043590009212494,
+            0.06822777725756168
+          ],
+          "errorMm": 7.161119772390867
+        }
+      ],
+      "canalMeanMm": 6.3311874299737605,
+      "canalRmsMm": 7.16190850585949,
+      "canalMaxMm": 13.991630243104012
+    }
+  },
+  "notes": [
+    "Point-to-sampled-surface metrics are approximate and unidirectional; not clinical error estimates.",
+    "The same global scale 0.996913831900823 is used in both integrated regions. Residual region transforms relative to the global fit are rigid.",
+    "No spinal geometry is integrated; different spine curvature produces canal overlaps.",
+    "Lower registration prioritises pelvis (2000 rather than 500 source samples per coxal); foot paths failing the overlap check are excluded."
+  ]
+}

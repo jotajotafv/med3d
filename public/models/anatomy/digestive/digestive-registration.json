@@ -1,0 +1,42 @@
+{
+  "frame": "bodyparts3d-4.0-male",
+  "sourceVersion": "4.0 OBJ99 for every integrated original",
+  "sourceMeshes": 96,
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "additionalRegistration": "none",
+  "nativeCoordinatesPreserved": true,
+  "allNativeIdentitiesVerified": true,
+  "withinExistingFrameBounds": true,
+  "pairedSalivaryLateralityVerified": true,
+  "method": "Same native source release and the previously established body transform, verified per original header/hash. No source fitting, translation or per-piece scale.",
+  "limitations": [
+    "Source segmentation can have seams, gaps and overlaps; the geometry is not retouched to close them.",
+    "The common frame is not clinical accuracy or a proof of every anatomical boundary.",
+    "4.3 was investigated but not integrated: its downloaded liver identities retained the VII/VIII ambiguity."
+  ]
+}

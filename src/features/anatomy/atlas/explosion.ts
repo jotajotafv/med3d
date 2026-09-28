@@ -80,7 +80,9 @@ export function createExplosionOffsets(catalog: AnatomyCatalog, activeSystems: R
     // never scatter small branches. Trachea stays at the common airway offset.
     const respiratoryBronchus: Vec3 = node.systemId === 'respiratory' && ['main-bronchus', 'bronchial-tree'].includes(node.respiratoryClass || '') && (node.side === 'left' || node.side === 'right')
       ? [node.side === 'left' ? .025 : -.025, 0, 0] : ZERO;
-    const localOffset = node.systemId === 'respiratory' ? add(respiratoryLobe, respiratoryBronchus) : node.systemId === 'cardiovascular' || node.systemId === 'nervous' && (node.assetIds.includes('nervous:cranial') || node.family?.startsWith('z:')) ? ZERO : ownBounds && (parentBox || regionBox)
+    const digestiveAnchor = node.systemId === 'digestive' && ['jejunum','ileum'].includes(node.family || '') ? (node.kind === 'component' ? parentBox : ownBounds) : node.family === 'biliary' || node.family === 'pancreatic-duct' ? nodeBounds(nodes.get('dig:ducts')!) : ownBounds;
+    const digestiveLocal = digestiveAnchor && regionBox ? offset(centre(digestiveAnchor), centre(regionBox), .5, .045) : ZERO;
+    const localOffset = node.systemId === 'digestive' ? digestiveLocal : node.systemId === 'respiratory' ? add(respiratoryLobe, respiratoryBronchus) : node.systemId === 'cardiovascular' || node.systemId === 'nervous' && (node.assetIds.includes('nervous:cranial') || node.family?.startsWith('z:')) ? ZERO : ownBounds && (parentBox || regionBox)
       ? offset(centre(ownBounds), centre((parentBox || regionBox)!), 1.35, Math.min(height * .115, extent((parentBox || regionBox)!) * .7))
       : ZERO;
     result.set(node.id, { systems: [...systemOffset], regions: [...regionOffset], structures: add(regionOffset, localOffset) });

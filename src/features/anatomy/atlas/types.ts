@@ -28,6 +28,9 @@ export interface AnatomyNode {
   /** Respiratory tissue and identity, independent of mesh count. */
   respiratoryType?: string;
   respiratoryClass?: 'cartilage' | 'trachea' | 'main-bronchus' | 'bronchial-tree' | 'lung' | 'lobe' | 'parenchyma';
+  /** Digestive identity; never an organ count derived from geometric pieces. */
+  digestiveType?: string;
+  digestiveClass?: 'tract' | 'liver' | 'biliary' | 'gland';
   side?: 'left' | 'right' | 'midline';
   relatedIds: string[];
   bounds?: Bounds;

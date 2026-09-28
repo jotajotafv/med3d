@@ -1,0 +1,4456 @@
+{
+  "sourceArchive": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+  "sourceVersion": "4.0 OBJ99",
+  "sourceLicenseDeclarations": [
+    "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html"
+  ],
+  "sourceZip": "research/anatomy/digestive-originals.zip",
+  "sourceZipSha256": "db524203d0414b7d7f9031e49dc98d53ebb5e0451fcfd1982cd2ffe6c15d3398",
+  "sourceLock": "research/anatomy/digestive-source-lock.json",
+  "selectionSha256": "a3567e4b9fb349205df7f298ee78b0c1a2cb1e27d755b76b5f5d578efa7ec0e6",
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "additionalRegistration": "none; all integrated originals belong to BodyParts3D 4.0 in the established body frame",
+  "files": [
+    {
+      "elementId": "FJ1883",
+      "sourceId": "FMA71889",
+      "side": "midline",
+      "representationId": "BP5653",
+      "nativeConceptId": "FMA71889",
+      "path": "isa_BP3D_4.0_obj_99/FJ1883.obj",
+      "bytes": 29370,
+      "sha256": "3f2550995fc2df1d1cd49e4a421d50f66b88dca0dbbdb7938174d4625bd95c7e",
+      "crc32": "42a435f3",
+      "compressedBytesUpstream": 9898,
+      "anatomyId": "dig:FMA71889",
+      "ownerSourceId": "FMA71889",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "componente de conducto",
+      "triangles": 428,
+      "faces": 428,
+      "sourcePositionCount": 283,
+      "vertices": 283,
+      "boundsMetres": [
+        [
+          -0.0176389,
+          1.10798,
+          0.11692100000000001
+        ],
+        [
+          0.00143618,
+          1.13336,
+          0.154816
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -17.6389,
+          -154.816,
+          1107.98
+        ],
+        [
+          1.43618,
+          -116.921,
+          1133.36
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ1895",
+      "sourceId": "FMA7198",
+      "side": "midline",
+      "representationId": "BP4631",
+      "nativeConceptId": "FMA7198",
+      "path": "isa_BP3D_4.0_obj_99/FJ1895.obj",
+      "bytes": 307895,
+      "sha256": "ed9111890b410aebacb86ae06ce2f7e3010bac8a2db3f9b292b53359bbf18026",
+      "crc32": "619822cf",
+      "compressedBytesUpstream": 90958,
+      "anatomyId": "dig:FMA7198",
+      "ownerSourceId": "FMA7198",
+      "family": "pancreas",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "órgano",
+      "triangles": 4890,
+      "faces": 4890,
+      "sourcePositionCount": 2462,
+      "vertices": 2462,
+      "boundsMetres": [
+        [
+          -0.047904800000000004,
+          1.0043600000000001,
+          0.09541200000000001
+        ],
+        [
+          0.07267440000000001,
+          1.0780999999999998,
+          0.14637899999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -47.9048,
+          -146.379,
+          1004.36
+        ],
+        [
+          72.6744,
+          -95.412,
+          1078.1
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ1896",
+      "sourceId": "FMA10419",
+      "side": "midline",
+      "representationId": "BP5645",
+      "nativeConceptId": "FMA10419",
+      "path": "isa_BP3D_4.0_obj_99/FJ1896.obj",
+      "bytes": 344665,
+      "sha256": "aaf43697017cb6a8df51f1c95b4a10917fa165178fbd4e32dce946332d2cbc03",
+      "crc32": "a26b4d5b",
+      "compressedBytesUpstream": 105352,
+      "anatomyId": "dig:FMA10419",
+      "ownerSourceId": "FMA10419",
+      "family": "pancreatic-duct",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "conducto",
+      "triangles": 3368,
+      "faces": 3368,
+      "sourcePositionCount": 3941,
+      "vertices": 3941,
+      "boundsMetres": [
+        [
+          -0.0495436,
+          1.02138,
+          0.101955
+        ],
+        [
+          0.0614969,
+          1.06671,
+          0.138103
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -49.5436,
+          -138.103,
+          1021.38
+        ],
+        [
+          61.4969,
+          -101.955,
+          1066.71
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2563",
+      "sourceId": "FMA7131",
+      "side": "midline",
+      "representationId": "BP9222",
+      "nativeConceptId": "FMA7131",
+      "path": "isa_BP3D_4.0_obj_99/FJ2563.obj",
+      "bytes": 35886,
+      "sha256": "d81ae7fe6b1dbf7bccbbb7cb1fa37e1681c05d2475a49e137f9d72b5297f6858",
+      "crc32": "48ab75bb",
+      "compressedBytesUpstream": 12529,
+      "anatomyId": "dig:FMA7131",
+      "ownerSourceId": "FMA7131",
+      "family": "esophagus",
+      "moduleId": "digestive:upper",
+      "sourceType": "órgano",
+      "triangles": 578,
+      "faces": 578,
+      "sourcePositionCount": 323,
+      "vertices": 323,
+      "boundsMetres": [
+        [
+          -0.00881063,
+          1.11599,
+          0.0663873
+        ],
+        [
+          0.0236032,
+          1.3903900000000002,
+          0.124264
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -8.81063,
+          -124.264,
+          1115.99
+        ],
+        [
+          23.6032,
+          -66.3873,
+          1390.39
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2564",
+      "sourceId": "FMA7148",
+      "side": "midline",
+      "representationId": "BP7926",
+      "nativeConceptId": "FMA7148",
+      "path": "isa_BP3D_4.0_obj_99/FJ2564.obj",
+      "bytes": 106974,
+      "sha256": "b11689fa42e28706ddeecb6ccbf1e70769d8b91ad4158e51d77613870c049f6d",
+      "crc32": "1ec5a4d6",
+      "compressedBytesUpstream": 34975,
+      "anatomyId": "dig:FMA7148",
+      "ownerSourceId": "FMA7148",
+      "family": "stomach",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "órgano",
+      "triangles": 1810,
+      "faces": 1810,
+      "sourcePositionCount": 914,
+      "vertices": 914,
+      "boundsMetres": [
+        [
+          -0.0289516,
+          1.0398800000000001,
+          0.08147990000000001
+        ],
+        [
+          0.105524,
+          1.1568900000000002,
+          0.19437000000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -28.9516,
+          -194.37,
+          1039.88
+        ],
+        [
+          105.524,
+          -81.4799,
+          1156.89
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2565",
+      "sourceId": "FMA14542",
+      "side": "midline",
+      "representationId": "BP8994",
+      "nativeConceptId": "FMA14542",
+      "path": "isa_BP3D_4.0_obj_99/FJ2565.obj",
+      "bytes": 27107,
+      "sha256": "26717e62b43eab2d48c6133aa4f9ea7a6f6a65ade4c5af81741b942a47fc56de",
+      "crc32": "60b14ba9",
+      "compressedBytesUpstream": 9490,
+      "anatomyId": "dig:FMA14542",
+      "ownerSourceId": "FMA14542",
+      "family": "appendix",
+      "moduleId": "digestive:large-intestine",
+      "sourceType": "órgano",
+      "triangles": 442,
+      "faces": 442,
+      "sourcePositionCount": 244,
+      "vertices": 244,
+      "boundsMetres": [
+        [
+          -0.08842359999999999,
+          0.865587,
+          0.0817847
+        ],
+        [
+          -0.0188631,
+          0.883656,
+          0.12079000000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -88.4236,
+          -120.79,
+          865.587
+        ],
+        [
+          -18.8631,
+          -81.7847,
+          883.656
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2566",
+      "sourceId": "FMA14545",
+      "side": "midline",
+      "representationId": "BP9195",
+      "nativeConceptId": "FMA14545",
+      "path": "isa_BP3D_4.0_obj_99/FJ2566.obj",
+      "bytes": 214378,
+      "sha256": "d2aed7015dd89b459e729b369aee74225897040f657f32532451d6e86364c662",
+      "crc32": "a7bec485",
+      "compressedBytesUpstream": 67164,
+      "anatomyId": "dig:FMA14545",
+      "ownerSourceId": "FMA14545",
+      "family": "colon",
+      "moduleId": "digestive:large-intestine",
+      "sourceType": "segmento intestinal",
+      "triangles": 3310,
+      "faces": 3310,
+      "sourcePositionCount": 1812,
+      "vertices": 1812,
+      "boundsMetres": [
+        [
+          -0.126783,
+          0.868352,
+          0.0907304
+        ],
+        [
+          -0.0638983,
+          1.0540100000000001,
+          0.14557
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -126.783,
+          -145.57,
+          868.352
+        ],
+        [
+          -63.8983,
+          -90.7304,
+          1054.01
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2567",
+      "sourceId": "FMA14547",
+      "side": "midline",
+      "representationId": "BP8743",
+      "nativeConceptId": "FMA14547",
+      "path": "isa_BP3D_4.0_obj_99/FJ2567.obj",
+      "bytes": 365589,
+      "sha256": "37f234799588e453631023d3614f35cbe0c6fd1ef7c368fbc777791ebad00196",
+      "crc32": "b2863054",
+      "compressedBytesUpstream": 112777,
+      "anatomyId": "dig:FMA14547",
+      "ownerSourceId": "FMA14547",
+      "family": "colon",
+      "moduleId": "digestive:large-intestine",
+      "sourceType": "segmento intestinal",
+      "triangles": 5588,
+      "faces": 5588,
+      "sourcePositionCount": 3039,
+      "vertices": 3039,
+      "boundsMetres": [
+        [
+          -0.0179165,
+          0.8223210000000001,
+          0.0502812
+        ],
+        [
+          0.117482,
+          1.06131,
+          0.14182499999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -17.9165,
+          -141.825,
+          822.321
+        ],
+        [
+          117.482,
+          -50.2812,
+          1061.31
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2571",
+      "sourceId": "FMA14544",
+      "side": "midline",
+      "representationId": "BP9212",
+      "nativeConceptId": "FMA14544",
+      "path": "isa_BP3D_4.0_obj_99/FJ2571.obj",
+      "bytes": 129712,
+      "sha256": "aaedd56539179e2091b3217d11fd42c298ed01a971463725f6c32372289c6819",
+      "crc32": "8464479a",
+      "compressedBytesUpstream": 42693,
+      "anatomyId": "dig:FMA14544",
+      "ownerSourceId": "FMA14544",
+      "family": "rectum",
+      "moduleId": "digestive:large-intestine",
+      "sourceType": "segmento intestinal",
+      "triangles": 2118,
+      "faces": 2118,
+      "sourcePositionCount": 1121,
+      "vertices": 1121,
+      "boundsMetres": [
+        [
+          -0.0262148,
+          0.757327,
+          0.011280799999999999
+        ],
+        [
+          0.035431700000000003,
+          0.873917,
+          0.0735788
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -26.2148,
+          -73.5788,
+          757.327
+        ],
+        [
+          35.4317,
+          -11.2808,
+          873.917
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2572",
+      "sourceId": "FMA14546",
+      "side": "midline",
+      "representationId": "BP8403",
+      "nativeConceptId": "FMA14546",
+      "path": "isa_BP3D_4.0_obj_99/FJ2572.obj",
+      "bytes": 225548,
+      "sha256": "54042e8841ce0437a5f3c07cbbc466c1bdcc14721bedaf16629be24214456f97",
+      "crc32": "476ff2ed",
+      "compressedBytesUpstream": 70502,
+      "anatomyId": "dig:FMA14546",
+      "ownerSourceId": "FMA14546",
+      "family": "colon",
+      "moduleId": "digestive:large-intestine",
+      "sourceType": "segmento intestinal",
+      "triangles": 3472,
+      "faces": 3472,
+      "sourcePositionCount": 1923,
+      "vertices": 1923,
+      "boundsMetres": [
+        [
+          -0.08875060000000001,
+          0.993442,
+          0.10683400000000001
+        ],
+        [
+          0.0966096,
+          1.06473,
+          0.19693100000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -88.7506,
+          -196.931,
+          993.442
+        ],
+        [
+          96.6096,
+          -106.834,
+          1064.73
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2573",
+      "sourceId": "FMA7206",
+      "side": "midline",
+      "representationId": "BP8646",
+      "nativeConceptId": "FMA7206",
+      "path": "isa_BP3D_4.0_obj_99/FJ2573.obj",
+      "bytes": 112674,
+      "sha256": "7b076d8f2367cf837121ebaf340f38bed6d8683bfafc0fb809b5f597204ce706",
+      "crc32": "25b41ff2",
+      "compressedBytesUpstream": 36536,
+      "anatomyId": "dig:FMA7206",
+      "ownerSourceId": "FMA7206",
+      "family": "duodenum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "segmento intestinal",
+      "triangles": 1860,
+      "faces": 1860,
+      "sourcePositionCount": 977,
+      "vertices": 977,
+      "boundsMetres": [
+        [
+          -0.06562430000000001,
+          0.9856090000000001,
+          0.103893
+        ],
+        [
+          0.032329500000000004,
+          1.07711,
+          0.156924
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -65.6243,
+          -156.924,
+          985.609
+        ],
+        [
+          32.3295,
+          -103.893,
+          1077.11
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2574",
+      "sourceId": "FMA14964",
+      "side": "midline",
+      "representationId": "BP8147",
+      "nativeConceptId": "FMA14964",
+      "path": "isa_BP3D_4.0_obj_99/FJ2574.obj",
+      "bytes": 22513,
+      "sha256": "16ab3700aeac0a201b6848884e657c0c5f0dc4cc7a365814e856756356fc2d9e",
+      "crc32": "fd7080e1",
+      "compressedBytesUpstream": 7990,
+      "anatomyId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 380,
+      "faces": 380,
+      "sourcePositionCount": 197,
+      "vertices": 197,
+      "boundsMetres": [
+        [
+          -0.0774416,
+          0.913058,
+          0.12285599999999999
+        ],
+        [
+          -0.030491499999999998,
+          0.952636,
+          0.173629
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -77.4416,
+          -173.629,
+          913.058
+        ],
+        [
+          -30.4915,
+          -122.856,
+          952.636
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2575",
+      "sourceId": "FMA14964",
+      "side": "midline",
+      "representationId": "BP8147",
+      "nativeConceptId": "FMA14964",
+      "path": "isa_BP3D_4.0_obj_99/FJ2575.obj",
+      "bytes": 16098,
+      "sha256": "0f3d2c2e478de930782ac8409822cc7bc77bcad24b0dc68f2c2d5f2b5058a821",
+      "crc32": "7f03bdd4",
+      "compressedBytesUpstream": 5969,
+      "anatomyId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 276,
+      "faces": 276,
+      "sourcePositionCount": 144,
+      "vertices": 144,
+      "boundsMetres": [
+        [
+          0.0604381,
+          0.854588,
+          0.13415000000000002
+        ],
+        [
+          0.101842,
+          0.913043,
+          0.156296
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          60.4381,
+          -156.296,
+          854.588
+        ],
+        [
+          101.842,
+          -134.15,
+          913.043
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2576",
+      "sourceId": "FMA14965",
+      "side": "midline",
+      "representationId": "BP7819",
+      "nativeConceptId": "FMA14965",
+      "path": "isa_BP3D_4.0_obj_99/FJ2576.obj",
+      "bytes": 10155,
+      "sha256": "ab8d6f11196edc0778a158c50f16338160f173e37bb2c63b57248f4b2c8d387e",
+      "crc32": "b263b29e",
+      "compressedBytesUpstream": 3902,
+      "anatomyId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 172,
+      "faces": 172,
+      "sourcePositionCount": 94,
+      "vertices": 94,
+      "boundsMetres": [
+        [
+          0.050635,
+          0.85317,
+          0.13568100000000002
+        ],
+        [
+          0.0820279,
+          0.8768060000000001,
+          0.160654
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          50.635,
+          -160.654,
+          853.17
+        ],
+        [
+          82.0279,
+          -135.681,
+          876.806
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2577",
+      "sourceId": "FMA14965",
+      "side": "midline",
+      "representationId": "BP7819",
+      "nativeConceptId": "FMA14965",
+      "path": "isa_BP3D_4.0_obj_99/FJ2577.obj",
+      "bytes": 19010,
+      "sha256": "19af9210c60c5dedac76d50f43103f6bfb1411f0ca34f50c251c2837f48edb3a",
+      "crc32": "00d8b397",
+      "compressedBytesUpstream": 6925,
+      "anatomyId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 314,
+      "faces": 314,
+      "sourcePositionCount": 174,
+      "vertices": 174,
+      "boundsMetres": [
+        [
+          0.020461200000000002,
+          0.85584,
+          0.137072
+        ],
+        [
+          0.077349,
+          0.886841,
+          0.171481
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          20.4612,
+          -171.481,
+          855.84
+        ],
+        [
+          77.349,
+          -137.072,
+          886.841
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2578",
+      "sourceId": "FMA14965",
+      "side": "midline",
+      "representationId": "BP7819",
+      "nativeConceptId": "FMA14965",
+      "path": "isa_BP3D_4.0_obj_99/FJ2578.obj",
+      "bytes": 17636,
+      "sha256": "d23af268ff49dbe3e78c351e8a2c20347a890c7604553d6583f85e695c4458da",
+      "crc32": "ba8ac4d4",
+      "compressedBytesUpstream": 6436,
+      "anatomyId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 292,
+      "faces": 292,
+      "sourcePositionCount": 161,
+      "vertices": 161,
+      "boundsMetres": [
+        [
+          -0.00718398,
+          0.8627290000000001,
+          0.151141
+        ],
+        [
+          0.043026800000000004,
+          0.897631,
+          0.174753
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -7.18398,
+          -174.753,
+          862.729
+        ],
+        [
+          43.0268,
+          -151.141,
+          897.631
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2579",
+      "sourceId": "FMA14965",
+      "side": "midline",
+      "representationId": "BP7819",
+      "nativeConceptId": "FMA14965",
+      "path": "isa_BP3D_4.0_obj_99/FJ2579.obj",
+      "bytes": 16651,
+      "sha256": "79670b6b97e83339ef31f2dd0fc9196623bca329e364c36cb23505cf8d4ce23f",
+      "crc32": "83d6ad2f",
+      "compressedBytesUpstream": 6105,
+      "anatomyId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 280,
+      "faces": 280,
+      "sourcePositionCount": 150,
+      "vertices": 150,
+      "boundsMetres": [
+        [
+          -0.0313361,
+          0.869975,
+          0.146007
+        ],
+        [
+          0.0131801,
+          0.903371,
+          0.173768
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.3361,
+          -173.768,
+          869.975
+        ],
+        [
+          13.1801,
+          -146.007,
+          903.371
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2580",
+      "sourceId": "FMA14965",
+      "side": "midline",
+      "representationId": "BP7819",
+      "nativeConceptId": "FMA14965",
+      "path": "isa_BP3D_4.0_obj_99/FJ2580.obj",
+      "bytes": 20138,
+      "sha256": "093e09b1272803fea1ccfefdca36cd9a85ae7b0dc12d6053650159691184ca16",
+      "crc32": "a4d86911",
+      "compressedBytesUpstream": 7293,
+      "anatomyId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 344,
+      "faces": 344,
+      "sourcePositionCount": 176,
+      "vertices": 176,
+      "boundsMetres": [
+        [
+          -0.061027700000000004,
+          0.859973,
+          0.13655099999999998
+        ],
+        [
+          -0.0109365,
+          0.906352,
+          0.17163399999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -61.0277,
+          -171.634,
+          859.973
+        ],
+        [
+          -10.9365,
+          -136.551,
+          906.352
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2581",
+      "sourceId": "FMA14965",
+      "side": "midline",
+      "representationId": "BP7819",
+      "nativeConceptId": "FMA14965",
+      "path": "isa_BP3D_4.0_obj_99/FJ2581.obj",
+      "bytes": 12419,
+      "sha256": "199d17856fcda30fbb79721399301be8c8e7f6525638a281fc15d98d39cc99b1",
+      "crc32": "aa11ff83",
+      "compressedBytesUpstream": 4607,
+      "anatomyId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 198,
+      "faces": 198,
+      "sourcePositionCount": 118,
+      "vertices": 118,
+      "boundsMetres": [
+        [
+          -0.0590948,
+          0.8571799999999999,
+          0.135555
+        ],
+        [
+          -0.0188617,
+          0.882276,
+          0.16037600000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -59.0948,
+          -160.376,
+          857.18
+        ],
+        [
+          -18.8617,
+          -135.555,
+          882.276
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2582",
+      "sourceId": "FMA14965",
+      "side": "midline",
+      "representationId": "BP7819",
+      "nativeConceptId": "FMA14965",
+      "path": "isa_BP3D_4.0_obj_99/FJ2582.obj",
+      "bytes": 12520,
+      "sha256": "4b7542ce787e9a26b8d66e383e732dc151501591edaf773b2aff3810b5c8661d",
+      "crc32": "0600bd32",
+      "compressedBytesUpstream": 4713,
+      "anatomyId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 212,
+      "faces": 212,
+      "sourcePositionCount": 114,
+      "vertices": 114,
+      "boundsMetres": [
+        [
+          -0.041777299999999996,
+          0.841353,
+          0.13762000000000002
+        ],
+        [
+          -0.0142796,
+          0.880484,
+          0.16002000000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -41.7773,
+          -160.02,
+          841.353
+        ],
+        [
+          -14.2796,
+          -137.62,
+          880.484
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2583",
+      "sourceId": "FMA14965",
+      "side": "midline",
+      "representationId": "BP7819",
+      "nativeConceptId": "FMA14965",
+      "path": "isa_BP3D_4.0_obj_99/FJ2583.obj",
+      "bytes": 11377,
+      "sha256": "ef929b2a4808e105095fbcb54f7a0efd9642c4bb2d4b3b008000d879f00b4dac",
+      "crc32": "d4dc6bec",
+      "compressedBytesUpstream": 4333,
+      "anatomyId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 198,
+      "faces": 198,
+      "sourcePositionCount": 102,
+      "vertices": 102,
+      "boundsMetres": [
+        [
+          -0.0346797,
+          0.83864,
+          0.13691
+        ],
+        [
+          0.0007640230000000001,
+          0.872544,
+          0.15979400000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -34.6797,
+          -159.794,
+          838.64
+        ],
+        [
+          0.764023,
+          -136.91,
+          872.544
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2584",
+      "sourceId": "FMA14965",
+      "side": "midline",
+      "representationId": "BP7819",
+      "nativeConceptId": "FMA14965",
+      "path": "isa_BP3D_4.0_obj_99/FJ2584.obj",
+      "bytes": 13109,
+      "sha256": "ae0c9db0a3aab546d23cb594520c9ec6df06018c1a405866ed96e8ddfd91344e",
+      "crc32": "25614b04",
+      "compressedBytesUpstream": 4921,
+      "anatomyId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 228,
+      "faces": 228,
+      "sourcePositionCount": 116,
+      "vertices": 116,
+      "boundsMetres": [
+        [
+          -0.0205685,
+          0.8371470000000001,
+          0.136709
+        ],
+        [
+          0.00372247,
+          0.872293,
+          0.16015100000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -20.5685,
+          -160.151,
+          837.147
+        ],
+        [
+          3.72247,
+          -136.709,
+          872.293
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2585",
+      "sourceId": "FMA14964",
+      "side": "midline",
+      "representationId": "BP8147",
+      "nativeConceptId": "FMA14964",
+      "path": "isa_BP3D_4.0_obj_99/FJ2585.obj",
+      "bytes": 17446,
+      "sha256": "656837ad68f3fa13c92a185a0e7451bef5334313ec0e690b6498b8e657177d8d",
+      "crc32": "c7221ba6",
+      "compressedBytesUpstream": 6332,
+      "anatomyId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 288,
+      "faces": 288,
+      "sourcePositionCount": 158,
+      "vertices": 158,
+      "boundsMetres": [
+        [
+          -0.0742897,
+          0.9120170000000001,
+          0.123762
+        ],
+        [
+          -0.037387000000000004,
+          0.939867,
+          0.16112
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -74.2897,
+          -161.12,
+          912.017
+        ],
+        [
+          -37.387,
+          -123.762,
+          939.867
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2586",
+      "sourceId": "FMA14965",
+      "side": "midline",
+      "representationId": "BP7819",
+      "nativeConceptId": "FMA14965",
+      "path": "isa_BP3D_4.0_obj_99/FJ2586.obj",
+      "bytes": 15734,
+      "sha256": "f319923348088e0426bec6f23d8d0a680d509b39e9f464e447ff01537550945e",
+      "crc32": "479534cc",
+      "compressedBytesUpstream": 5799,
+      "anatomyId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 264,
+      "faces": 264,
+      "sourcePositionCount": 143,
+      "vertices": 143,
+      "boundsMetres": [
+        [
+          -0.0201925,
+          0.837264,
+          0.133025
+        ],
+        [
+          0.022143,
+          0.8807630000000001,
+          0.15925299999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -20.1925,
+          -159.253,
+          837.264
+        ],
+        [
+          22.143,
+          -133.025,
+          880.763
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2587",
+      "sourceId": "FMA14966",
+      "side": "midline",
+      "representationId": "BP8262",
+      "nativeConceptId": "FMA14966",
+      "path": "isa_BP3D_4.0_obj_99/FJ2587.obj",
+      "bytes": 13065,
+      "sha256": "58c11233ec1c440955708129c27fcf6645200842f49f6108381e73499d10cd8a",
+      "crc32": "eda87f0a",
+      "compressedBytesUpstream": 4935,
+      "anatomyId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 228,
+      "faces": 228,
+      "sourcePositionCount": 117,
+      "vertices": 117,
+      "boundsMetres": [
+        [
+          0.0013629100000000002,
+          0.8371240000000001,
+          0.136612
+        ],
+        [
+          0.0280182,
+          0.88182,
+          0.158502
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          1.36291,
+          -158.502,
+          837.124
+        ],
+        [
+          28.0182,
+          -136.612,
+          881.82
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2588",
+      "sourceId": "FMA14966",
+      "side": "midline",
+      "representationId": "BP8262",
+      "nativeConceptId": "FMA14966",
+      "path": "isa_BP3D_4.0_obj_99/FJ2588.obj",
+      "bytes": 15688,
+      "sha256": "5caf97246c79045ac5c4193bb0c6f49fcb0eb9c8313c89a5355b84269e538a73",
+      "crc32": "2f7f8a13",
+      "compressedBytesUpstream": 5790,
+      "anatomyId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 266,
+      "faces": 266,
+      "sourcePositionCount": 142,
+      "vertices": 142,
+      "boundsMetres": [
+        [
+          0.00524915,
+          0.8358540000000001,
+          0.13809800000000003
+        ],
+        [
+          0.056694400000000006,
+          0.863658,
+          0.162835
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          5.24915,
+          -162.835,
+          835.854
+        ],
+        [
+          56.6944,
+          -138.098,
+          863.658
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2589",
+      "sourceId": "FMA14966",
+      "side": "midline",
+      "representationId": "BP8262",
+      "nativeConceptId": "FMA14966",
+      "path": "isa_BP3D_4.0_obj_99/FJ2589.obj",
+      "bytes": 18966,
+      "sha256": "c3c8d2aba92877028a005e4664aa1940e20675864c486ee4ed2fd58b9bd75b7f",
+      "crc32": "c208cb59",
+      "compressedBytesUpstream": 6946,
+      "anatomyId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 326,
+      "faces": 326,
+      "sourcePositionCount": 168,
+      "vertices": 168,
+      "boundsMetres": [
+        [
+          -0.00136401,
+          0.8142050000000001,
+          0.121049
+        ],
+        [
+          0.0565438,
+          0.851919,
+          0.157021
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -1.36401,
+          -157.021,
+          814.205
+        ],
+        [
+          56.5438,
+          -121.049,
+          851.919
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2590",
+      "sourceId": "FMA14966",
+      "side": "midline",
+      "representationId": "BP8262",
+      "nativeConceptId": "FMA14966",
+      "path": "isa_BP3D_4.0_obj_99/FJ2590.obj",
+      "bytes": 10651,
+      "sha256": "9a95ff519a9c6fbcde3bd4d8e5c1fb176b09ac3655958435ec746972807ca395",
+      "crc32": "5d0c163d",
+      "compressedBytesUpstream": 4119,
+      "anatomyId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 184,
+      "faces": 184,
+      "sourcePositionCount": 97,
+      "vertices": 97,
+      "boundsMetres": [
+        [
+          -0.00946979,
+          0.80529,
+          0.120563
+        ],
+        [
+          0.0175977,
+          0.842525,
+          0.143786
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -9.46979,
+          -143.786,
+          805.29
+        ],
+        [
+          17.5977,
+          -120.563,
+          842.525
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2591",
+      "sourceId": "FMA14966",
+      "side": "midline",
+      "representationId": "BP8262",
+      "nativeConceptId": "FMA14966",
+      "path": "isa_BP3D_4.0_obj_99/FJ2591.obj",
+      "bytes": 13161,
+      "sha256": "602a553e5c8a719a35899756192a3dc0d38aa8331088366f932ce87522442dc3",
+      "crc32": "85f14858",
+      "compressedBytesUpstream": 4990,
+      "anatomyId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 226,
+      "faces": 226,
+      "sourcePositionCount": 118,
+      "vertices": 118,
+      "boundsMetres": [
+        [
+          -0.0192956,
+          0.8055460000000001,
+          0.12177
+        ],
+        [
+          0.0102693,
+          0.8485130000000001,
+          0.144024
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -19.2956,
+          -144.024,
+          805.546
+        ],
+        [
+          10.2693,
+          -121.77,
+          848.513
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2592",
+      "sourceId": "FMA14966",
+      "side": "midline",
+      "representationId": "BP8262",
+      "nativeConceptId": "FMA14966",
+      "path": "isa_BP3D_4.0_obj_99/FJ2592.obj",
+      "bytes": 14150,
+      "sha256": "c79336e332292d4309c28a50e5627d5cd230793d726e9a16ee332c05dcd9b47a",
+      "crc32": "bc65135a",
+      "compressedBytesUpstream": 5223,
+      "anatomyId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 236,
+      "faces": 236,
+      "sourcePositionCount": 129,
+      "vertices": 129,
+      "boundsMetres": [
+        [
+          -0.0440483,
+          0.809768,
+          0.12326000000000001
+        ],
+        [
+          -0.00178639,
+          0.848901,
+          0.144631
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -44.0483,
+          -144.631,
+          809.768
+        ],
+        [
+          -1.78639,
+          -123.26,
+          848.901
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2593",
+      "sourceId": "FMA14966",
+      "side": "midline",
+      "representationId": "BP8262",
+      "nativeConceptId": "FMA14966",
+      "path": "isa_BP3D_4.0_obj_99/FJ2593.obj",
+      "bytes": 15166,
+      "sha256": "c15d373a7df5eff3d96956cb86a5483e9d851722c0227ca65705b84aaa0d0e78",
+      "crc32": "bdb17473",
+      "compressedBytesUpstream": 5566,
+      "anatomyId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 262,
+      "faces": 262,
+      "sourcePositionCount": 134,
+      "vertices": 134,
+      "boundsMetres": [
+        [
+          -0.0464926,
+          0.813455,
+          0.12281399999999999
+        ],
+        [
+          -0.0222766,
+          0.847174,
+          0.14419700000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -46.4926,
+          -144.197,
+          813.455
+        ],
+        [
+          -22.2766,
+          -122.814,
+          847.174
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2594",
+      "sourceId": "FMA14966",
+      "side": "midline",
+      "representationId": "BP8262",
+      "nativeConceptId": "FMA14966",
+      "path": "isa_BP3D_4.0_obj_99/FJ2594.obj",
+      "bytes": 12692,
+      "sha256": "aea6e45c051e63828e5858f310438b82c1f37127f0f9c476264d680d0cb686ea",
+      "crc32": "d6f6d99e",
+      "compressedBytesUpstream": 4727,
+      "anatomyId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 220,
+      "faces": 220,
+      "sourcePositionCount": 113,
+      "vertices": 113,
+      "boundsMetres": [
+        [
+          -0.051704700000000006,
+          0.8299700000000001,
+          0.122282
+        ],
+        [
+          -0.0229032,
+          0.859911,
+          0.142496
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -51.7047,
+          -142.496,
+          829.97
+        ],
+        [
+          -22.9032,
+          -122.282,
+          859.911
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2595",
+      "sourceId": "FMA14966",
+      "side": "midline",
+      "representationId": "BP8262",
+      "nativeConceptId": "FMA14966",
+      "path": "isa_BP3D_4.0_obj_99/FJ2595.obj",
+      "bytes": 15372,
+      "sha256": "12621062d9985278a6670f9ef530f702bdeaae0ed900fd9ef891619838eb924b",
+      "crc32": "5ec2235e",
+      "compressedBytesUpstream": 5619,
+      "anatomyId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 258,
+      "faces": 258,
+      "sourcePositionCount": 139,
+      "vertices": 139,
+      "boundsMetres": [
+        [
+          -0.0606548,
+          0.827345,
+          0.122225
+        ],
+        [
+          -0.027168900000000003,
+          0.859227,
+          0.14361600000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -60.6548,
+          -143.616,
+          827.345
+        ],
+        [
+          -27.1689,
+          -122.225,
+          859.227
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2596",
+      "sourceId": "FMA14964",
+      "side": "midline",
+      "representationId": "BP8147",
+      "nativeConceptId": "FMA14964",
+      "path": "isa_BP3D_4.0_obj_99/FJ2596.obj",
+      "bytes": 14164,
+      "sha256": "ddc92a29d13d62a0af8054b2ce1b29c8f5d5ad37d94749b9d16b37caa8e7cec6",
+      "crc32": "fb38097c",
+      "compressedBytesUpstream": 5210,
+      "anatomyId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 226,
+      "faces": 226,
+      "sourcePositionCount": 135,
+      "vertices": 135,
+      "boundsMetres": [
+        [
+          -0.0570853,
+          0.895959,
+          0.13830699999999999
+        ],
+        [
+          -0.029371500000000002,
+          0.930954,
+          0.168072
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -57.0853,
+          -168.072,
+          895.959
+        ],
+        [
+          -29.3715,
+          -138.307,
+          930.954
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2597",
+      "sourceId": "FMA14966",
+      "side": "midline",
+      "representationId": "BP8262",
+      "nativeConceptId": "FMA14966",
+      "path": "isa_BP3D_4.0_obj_99/FJ2597.obj",
+      "bytes": 11751,
+      "sha256": "0e58590c8efb5b315ee6e86b2db2f5c3b472b137b4dcbed5cc64af05b0efb85e",
+      "crc32": "39f430bf",
+      "compressedBytesUpstream": 4465,
+      "anatomyId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 202,
+      "faces": 202,
+      "sourcePositionCount": 106,
+      "vertices": 106,
+      "boundsMetres": [
+        [
+          -0.079087,
+          0.827724,
+          0.11997000000000001
+        ],
+        [
+          -0.040376800000000004,
+          0.857792,
+          0.143706
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -79.087,
+          -143.706,
+          827.724
+        ],
+        [
+          -40.3768,
+          -119.97,
+          857.792
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2598",
+      "sourceId": "FMA14966",
+      "side": "midline",
+      "representationId": "BP8262",
+      "nativeConceptId": "FMA14966",
+      "path": "isa_BP3D_4.0_obj_99/FJ2598.obj",
+      "bytes": 14437,
+      "sha256": "5577d053a9c4439136bc89c76a2b921e3744e238a663876b4d8986ccfd0952e9",
+      "crc32": "b7eef7f1",
+      "compressedBytesUpstream": 5315,
+      "anatomyId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 246,
+      "faces": 246,
+      "sourcePositionCount": 129,
+      "vertices": 129,
+      "boundsMetres": [
+        [
+          -0.0799084,
+          0.8437340000000001,
+          0.120002
+        ],
+        [
+          -0.0574771,
+          0.885464,
+          0.143074
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -79.9084,
+          -143.074,
+          843.734
+        ],
+        [
+          -57.4771,
+          -120.002,
+          885.464
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2599",
+      "sourceId": "FMA11338",
+      "side": "midline",
+      "representationId": "BP8823",
+      "nativeConceptId": "FMA11338",
+      "path": "isa_BP3D_4.0_obj_99/FJ2599.obj",
+      "bytes": 17331,
+      "sha256": "7b759605d311999dcd8c3ff13f224f9a208f4856ddaf21057d8e31952ee8dff1",
+      "crc32": "31242250",
+      "compressedBytesUpstream": 6321,
+      "anatomyId": "dig:FMA11338",
+      "ownerSourceId": "FMA11338",
+      "family": "ileocecal",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "unión anatómica",
+      "triangles": 288,
+      "faces": 288,
+      "sourcePositionCount": 156,
+      "vertices": 156,
+      "boundsMetres": [
+        [
+          -0.0798441,
+          0.870103,
+          0.107182
+        ],
+        [
+          -0.0513778,
+          0.923257,
+          0.141283
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -79.8441,
+          -141.283,
+          870.103
+        ],
+        [
+          -51.3778,
+          -107.182,
+          923.257
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2600",
+      "sourceId": "FMA14964",
+      "side": "midline",
+      "representationId": "BP8147",
+      "nativeConceptId": "FMA14964",
+      "path": "isa_BP3D_4.0_obj_99/FJ2600.obj",
+      "bytes": 15129,
+      "sha256": "4b254fba367e214ea0ee50092ea889cb33d1ed16188c7cd42303ddc0b0e74d71",
+      "crc32": "1471b8a9",
+      "compressedBytesUpstream": 5546,
+      "anatomyId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 256,
+      "faces": 256,
+      "sourcePositionCount": 136,
+      "vertices": 136,
+      "boundsMetres": [
+        [
+          -0.0503058,
+          0.8960940000000001,
+          0.148788
+        ],
+        [
+          -0.006380060000000001,
+          0.931034,
+          0.17747
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -50.3058,
+          -177.47,
+          896.094
+        ],
+        [
+          -6.38006,
+          -148.788,
+          931.034
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2601",
+      "sourceId": "FMA14964",
+      "side": "midline",
+      "representationId": "BP8147",
+      "nativeConceptId": "FMA14964",
+      "path": "isa_BP3D_4.0_obj_99/FJ2601.obj",
+      "bytes": 13045,
+      "sha256": "89a9deb9fbb973777151294539d6671ba3a60881ef039f961e48383c96afbb55",
+      "crc32": "5765605b",
+      "compressedBytesUpstream": 4874,
+      "anatomyId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 208,
+      "faces": 208,
+      "sourcePositionCount": 125,
+      "vertices": 125,
+      "boundsMetres": [
+        [
+          -0.022464500000000002,
+          0.895038,
+          0.156092
+        ],
+        [
+          0.016873100000000002,
+          0.9245680000000001,
+          0.178461
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -22.4645,
+          -178.461,
+          895.038
+        ],
+        [
+          16.8731,
+          -156.092,
+          924.568
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2602",
+      "sourceId": "FMA14964",
+      "side": "midline",
+      "representationId": "BP8147",
+      "nativeConceptId": "FMA14964",
+      "path": "isa_BP3D_4.0_obj_99/FJ2602.obj",
+      "bytes": 15569,
+      "sha256": "2c581b53ba3dfe752047a1b5ebe09aa09a9ee346318a32b9a49f4827887aee7c",
+      "crc32": "cf07c5cc",
+      "compressedBytesUpstream": 5782,
+      "anatomyId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 270,
+      "faces": 270,
+      "sourcePositionCount": 139,
+      "vertices": 139,
+      "boundsMetres": [
+        [
+          -0.00260773,
+          0.8943099999999999,
+          0.155282
+        ],
+        [
+          0.0357981,
+          0.920453,
+          0.17976499999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -2.60773,
+          -179.765,
+          894.31
+        ],
+        [
+          35.7981,
+          -155.282,
+          920.453
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2603",
+      "sourceId": "FMA14964",
+      "side": "midline",
+      "representationId": "BP8147",
+      "nativeConceptId": "FMA14964",
+      "path": "isa_BP3D_4.0_obj_99/FJ2603.obj",
+      "bytes": 17212,
+      "sha256": "e96ab7178c36f7f866011302b350826286e7f5ad0a1eaf1c8dee99ca432a1f84",
+      "crc32": "d573717c",
+      "compressedBytesUpstream": 6294,
+      "anatomyId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 294,
+      "faces": 294,
+      "sourcePositionCount": 154,
+      "vertices": 154,
+      "boundsMetres": [
+        [
+          0.015032700000000001,
+          0.89385,
+          0.14874600000000002
+        ],
+        [
+          0.060519300000000005,
+          0.917935,
+          0.17694300000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          15.0327,
+          -176.943,
+          893.85
+        ],
+        [
+          60.5193,
+          -148.746,
+          917.935
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2604",
+      "sourceId": "FMA14964",
+      "side": "midline",
+      "representationId": "BP8147",
+      "nativeConceptId": "FMA14964",
+      "path": "isa_BP3D_4.0_obj_99/FJ2604.obj",
+      "bytes": 12057,
+      "sha256": "92ab01ea520fc8d7e4b9b600561fb2b87326fe0862e8eada2a6006f180480f31",
+      "crc32": "752c85c6",
+      "compressedBytesUpstream": 4543,
+      "anatomyId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 198,
+      "faces": 198,
+      "sourcePositionCount": 114,
+      "vertices": 114,
+      "boundsMetres": [
+        [
+          0.038037100000000004,
+          0.886167,
+          0.148147
+        ],
+        [
+          0.06695430000000001,
+          0.9176409999999999,
+          0.17064
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          38.0371,
+          -170.64,
+          886.167
+        ],
+        [
+          66.9543,
+          -148.147,
+          917.641
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2605",
+      "sourceId": "FMA14964",
+      "side": "midline",
+      "representationId": "BP8147",
+      "nativeConceptId": "FMA14964",
+      "path": "isa_BP3D_4.0_obj_99/FJ2605.obj",
+      "bytes": 19703,
+      "sha256": "1179d3d42044f2fe0ba905e4309903d2b183917e7e3bddae4d4eb39bccda695d",
+      "crc32": "a2d2e807",
+      "compressedBytesUpstream": 7122,
+      "anatomyId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "family": "ileum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 332,
+      "faces": 332,
+      "sourcePositionCount": 177,
+      "vertices": 177,
+      "boundsMetres": [
+        [
+          0.038686700000000004,
+          0.884683,
+          0.132556
+        ],
+        [
+          0.101303,
+          0.91376,
+          0.16886099999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          38.6867,
+          -168.861,
+          884.683
+        ],
+        [
+          101.303,
+          -132.556,
+          913.76
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2606",
+      "sourceId": "FMA16981",
+      "side": "midline",
+      "representationId": "BP8075",
+      "nativeConceptId": "FMA16981",
+      "path": "isa_BP3D_4.0_obj_99/FJ2606.obj",
+      "bytes": 21174,
+      "sha256": "ce76c8dcbc3bb0f680a2ef28d8189f83e5c592e9d47221748a5a76d64c75d3db",
+      "crc32": "4232487f",
+      "compressedBytesUpstream": 7459,
+      "anatomyId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 320,
+      "faces": 320,
+      "sourcePositionCount": 207,
+      "vertices": 207,
+      "boundsMetres": [
+        [
+          0.0175921,
+          0.992836,
+          0.124421
+        ],
+        [
+          0.0953454,
+          1.02365,
+          0.146877
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          17.5921,
+          -146.877,
+          992.836
+        ],
+        [
+          95.3454,
+          -124.421,
+          1023.65
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2607",
+      "sourceId": "FMA16982",
+      "side": "midline",
+      "representationId": "BP7928",
+      "nativeConceptId": "FMA16982",
+      "path": "isa_BP3D_4.0_obj_99/FJ2607.obj",
+      "bytes": 14008,
+      "sha256": "4b8ade8c084400f54235de2b7a07c1c00a55188e039d155cccfb4e0949de0317",
+      "crc32": "cf062a15",
+      "compressedBytesUpstream": 5241,
+      "anatomyId": "dig:FMA16982",
+      "ownerSourceId": "FMA16982",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 240,
+      "faces": 240,
+      "sourcePositionCount": 127,
+      "vertices": 127,
+      "boundsMetres": [
+        [
+          0.059320000000000005,
+          0.9377960000000001,
+          0.129585
+        ],
+        [
+          0.10644100000000001,
+          0.967545,
+          0.163716
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          59.32,
+          -163.716,
+          937.796
+        ],
+        [
+          106.441,
+          -129.585,
+          967.545
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2608",
+      "sourceId": "FMA16982",
+      "side": "midline",
+      "representationId": "BP7928",
+      "nativeConceptId": "FMA16982",
+      "path": "isa_BP3D_4.0_obj_99/FJ2608.obj",
+      "bytes": 15007,
+      "sha256": "513dc588198af60a4a485f377d0d41cbc4605af0d9f6de9f53feb731a68a8bac",
+      "crc32": "3fa140a3",
+      "compressedBytesUpstream": 5553,
+      "anatomyId": "dig:FMA16982",
+      "ownerSourceId": "FMA16982",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 262,
+      "faces": 262,
+      "sourcePositionCount": 133,
+      "vertices": 133,
+      "boundsMetres": [
+        [
+          0.0735061,
+          0.917485,
+          0.12909600000000002
+        ],
+        [
+          0.106621,
+          0.968261,
+          0.15401800000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          73.5061,
+          -154.018,
+          917.485
+        ],
+        [
+          106.621,
+          -129.096,
+          968.261
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2609",
+      "sourceId": "FMA16982",
+      "side": "midline",
+      "representationId": "BP7928",
+      "nativeConceptId": "FMA16982",
+      "path": "isa_BP3D_4.0_obj_99/FJ2609.obj",
+      "bytes": 10881,
+      "sha256": "f3ce3b6373f85a9f3363cd7b4455ec7e1e46bc5ea651054aa6830ff36f499f2f",
+      "crc32": "faca7794",
+      "compressedBytesUpstream": 4182,
+      "anatomyId": "dig:FMA16982",
+      "ownerSourceId": "FMA16982",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 192,
+      "faces": 192,
+      "sourcePositionCount": 98,
+      "vertices": 98,
+      "boundsMetres": [
+        [
+          0.0553677,
+          0.909207,
+          0.131792
+        ],
+        [
+          0.09194820000000001,
+          0.936219,
+          0.16944
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          55.3677,
+          -169.44,
+          909.207
+        ],
+        [
+          91.9482,
+          -131.792,
+          936.219
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2610",
+      "sourceId": "FMA16982",
+      "side": "midline",
+      "representationId": "BP7928",
+      "nativeConceptId": "FMA16982",
+      "path": "isa_BP3D_4.0_obj_99/FJ2610.obj",
+      "bytes": 17388,
+      "sha256": "cf50c596ed1456bf5347e8cc934917df432e2cbd6cbbaa24c071b3de515fd2e0",
+      "crc32": "b8101781",
+      "compressedBytesUpstream": 6374,
+      "anatomyId": "dig:FMA16982",
+      "ownerSourceId": "FMA16982",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 296,
+      "faces": 296,
+      "sourcePositionCount": 156,
+      "vertices": 156,
+      "boundsMetres": [
+        [
+          0.018909099999999998,
+          0.909649,
+          0.14447800000000002
+        ],
+        [
+          0.0755743,
+          0.944045,
+          0.179273
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          18.9091,
+          -179.273,
+          909.649
+        ],
+        [
+          75.5743,
+          -144.478,
+          944.045
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2611",
+      "sourceId": "FMA16983",
+      "side": "midline",
+      "representationId": "BP8240",
+      "nativeConceptId": "FMA16983",
+      "path": "isa_BP3D_4.0_obj_99/FJ2611.obj",
+      "bytes": 13407,
+      "sha256": "85c5a24cad7ce9cd0ece69684f03fcade57278a203ee57c286e67e2d8437b911",
+      "crc32": "21ed64cb",
+      "compressedBytesUpstream": 5025,
+      "anatomyId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 226,
+      "faces": 226,
+      "sourcePositionCount": 123,
+      "vertices": 123,
+      "boundsMetres": [
+        [
+          -0.0018145400000000001,
+          0.914,
+          0.158802
+        ],
+        [
+          0.0460163,
+          0.9445220000000001,
+          0.183234
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -1.81454,
+          -183.234,
+          914.0
+        ],
+        [
+          46.0163,
+          -158.802,
+          944.522
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2612",
+      "sourceId": "FMA16983",
+      "side": "midline",
+      "representationId": "BP8240",
+      "nativeConceptId": "FMA16983",
+      "path": "isa_BP3D_4.0_obj_99/FJ2612.obj",
+      "bytes": 14765,
+      "sha256": "abd6543bf57c2ccb77cd8826f2b53d0a1aa3aa73dd25a90e22ce00d2c9438588",
+      "crc32": "89910959",
+      "compressedBytesUpstream": 5488,
+      "anatomyId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 248,
+      "faces": 248,
+      "sourcePositionCount": 134,
+      "vertices": 134,
+      "boundsMetres": [
+        [
+          -0.0311919,
+          0.925884,
+          0.158546
+        ],
+        [
+          0.021785799999999998,
+          0.954527,
+          0.183244
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.1919,
+          -183.244,
+          925.884
+        ],
+        [
+          21.7858,
+          -158.546,
+          954.527
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2613",
+      "sourceId": "FMA16983",
+      "side": "midline",
+      "representationId": "BP8240",
+      "nativeConceptId": "FMA16983",
+      "path": "isa_BP3D_4.0_obj_99/FJ2613.obj",
+      "bytes": 10129,
+      "sha256": "bc7cd56da2b75199443192ad7aedce2b6d5792b600e9cf0fea8d371299010826",
+      "crc32": "5e438df0",
+      "compressedBytesUpstream": 3950,
+      "anatomyId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 176,
+      "faces": 176,
+      "sourcePositionCount": 91,
+      "vertices": 91,
+      "boundsMetres": [
+        [
+          -0.00760087,
+          0.916205,
+          0.160386
+        ],
+        [
+          0.0212449,
+          0.952099,
+          0.18326599999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -7.60087,
+          -183.266,
+          916.205
+        ],
+        [
+          21.2449,
+          -160.386,
+          952.099
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2614",
+      "sourceId": "FMA16983",
+      "side": "midline",
+      "representationId": "BP8240",
+      "nativeConceptId": "FMA16983",
+      "path": "isa_BP3D_4.0_obj_99/FJ2614.obj",
+      "bytes": 13427,
+      "sha256": "72fc1c4d2cda7f96a973183de24ec71131837bf487062e6f5f8abc2968ac357e",
+      "crc32": "3aa0e6ca",
+      "compressedBytesUpstream": 5065,
+      "anatomyId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 232,
+      "faces": 232,
+      "sourcePositionCount": 120,
+      "vertices": 120,
+      "boundsMetres": [
+        [
+          -0.0319863,
+          0.93155,
+          0.157803
+        ],
+        [
+          0.009459009999999999,
+          0.96352,
+          0.182963
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.9863,
+          -182.963,
+          931.55
+        ],
+        [
+          9.45901,
+          -157.803,
+          963.52
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2615",
+      "sourceId": "FMA16983",
+      "side": "midline",
+      "representationId": "BP8240",
+      "nativeConceptId": "FMA16983",
+      "path": "isa_BP3D_4.0_obj_99/FJ2615.obj",
+      "bytes": 16018,
+      "sha256": "d4e86afd7bd6ccec12e8aaee65778fc8e19e2ac121e09d3bb1e008e213ec2474",
+      "crc32": "266cdd87",
+      "compressedBytesUpstream": 5926,
+      "anatomyId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 264,
+      "faces": 264,
+      "sourcePositionCount": 147,
+      "vertices": 147,
+      "boundsMetres": [
+        [
+          -0.0144039,
+          0.946292,
+          0.156857
+        ],
+        [
+          0.0122225,
+          0.984217,
+          0.182422
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -14.4039,
+          -182.422,
+          946.292
+        ],
+        [
+          12.2225,
+          -156.857,
+          984.217
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2616",
+      "sourceId": "FMA16983",
+      "side": "midline",
+      "representationId": "BP8240",
+      "nativeConceptId": "FMA16983",
+      "path": "isa_BP3D_4.0_obj_99/FJ2616.obj",
+      "bytes": 26543,
+      "sha256": "e1c395c49145967ae4a39c834742f0b8bbb35dc10892be5280b0d9830e8102fb",
+      "crc32": "8ca89c1a",
+      "compressedBytesUpstream": 9410,
+      "anatomyId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 444,
+      "faces": 444,
+      "sourcePositionCount": 233,
+      "vertices": 233,
+      "boundsMetres": [
+        [
+          -0.050339100000000005,
+          0.963955,
+          0.151733
+        ],
+        [
+          0.0119044,
+          1.01676,
+          0.17888
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -50.3391,
+          -178.88,
+          963.955
+        ],
+        [
+          11.9044,
+          -151.733,
+          1016.76
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2617",
+      "sourceId": "FMA16981",
+      "side": "midline",
+      "representationId": "BP8075",
+      "nativeConceptId": "FMA16981",
+      "path": "isa_BP3D_4.0_obj_99/FJ2617.obj",
+      "bytes": 14286,
+      "sha256": "4d66c78e9cc7480ef9478b2f748ccc39bb1bb1eaaf71cef57f86fe91d26cf61c",
+      "crc32": "a2690111",
+      "compressedBytesUpstream": 5271,
+      "anatomyId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 234,
+      "faces": 234,
+      "sourcePositionCount": 135,
+      "vertices": 135,
+      "boundsMetres": [
+        [
+          0.0535445,
+          0.988836,
+          0.134059
+        ],
+        [
+          0.0951999,
+          1.01755,
+          0.165355
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          53.5445,
+          -165.355,
+          988.836
+        ],
+        [
+          95.1999,
+          -134.059,
+          1017.55
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2618",
+      "sourceId": "FMA16983",
+      "side": "midline",
+      "representationId": "BP8240",
+      "nativeConceptId": "FMA16983",
+      "path": "isa_BP3D_4.0_obj_99/FJ2618.obj",
+      "bytes": 13019,
+      "sha256": "5b801924e87bd3d10eb2b7105890a0510c5a16599691326ad837e5406ed1e66b",
+      "crc32": "61870184",
+      "compressedBytesUpstream": 4891,
+      "anatomyId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 222,
+      "faces": 222,
+      "sourcePositionCount": 117,
+      "vertices": 117,
+      "boundsMetres": [
+        [
+          -0.049876,
+          0.960939,
+          0.153845
+        ],
+        [
+          -0.0096054,
+          1.0007000000000001,
+          0.17829
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -49.876,
+          -178.29,
+          960.939
+        ],
+        [
+          -9.6054,
+          -153.845,
+          1000.7
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2619",
+      "sourceId": "FMA16983",
+      "side": "midline",
+      "representationId": "BP8240",
+      "nativeConceptId": "FMA16983",
+      "path": "isa_BP3D_4.0_obj_99/FJ2619.obj",
+      "bytes": 15666,
+      "sha256": "f7528c1c3848fdb1eb6a7825921a1cd88c0f9562e23b10fe185e2bfa29935af1",
+      "crc32": "68d976e9",
+      "compressedBytesUpstream": 5770,
+      "anatomyId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 260,
+      "faces": 260,
+      "sourcePositionCount": 142,
+      "vertices": 142,
+      "boundsMetres": [
+        [
+          -0.0702478,
+          0.95891,
+          0.150386
+        ],
+        [
+          -0.0125299,
+          0.987726,
+          0.178632
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -70.2478,
+          -178.632,
+          958.91
+        ],
+        [
+          -12.5299,
+          -150.386,
+          987.726
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2620",
+      "sourceId": "FMA16983",
+      "side": "midline",
+      "representationId": "BP8240",
+      "nativeConceptId": "FMA16983",
+      "path": "isa_BP3D_4.0_obj_99/FJ2620.obj",
+      "bytes": 17065,
+      "sha256": "cdcff6f317156211ac22142bb810d92fbcb5b6126cfc766214a52b53cee74c7d",
+      "crc32": "3ad43057",
+      "compressedBytesUpstream": 6165,
+      "anatomyId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 284,
+      "faces": 284,
+      "sourcePositionCount": 154,
+      "vertices": 154,
+      "boundsMetres": [
+        [
+          -0.0804586,
+          0.971031,
+          0.12762099999999998
+        ],
+        [
+          -0.0470328,
+          1.01238,
+          0.170556
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -80.4586,
+          -170.556,
+          971.031
+        ],
+        [
+          -47.0328,
+          -127.621,
+          1012.38
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2621",
+      "sourceId": "FMA16983",
+      "side": "midline",
+      "representationId": "BP8240",
+      "nativeConceptId": "FMA16983",
+      "path": "isa_BP3D_4.0_obj_99/FJ2621.obj",
+      "bytes": 30868,
+      "sha256": "65e6e5bf1801d72384bf327c325f797bd352af572fff30304f0ae27ee6e7eb76",
+      "crc32": "ee1d0b69",
+      "compressedBytesUpstream": 10755,
+      "anatomyId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 500,
+      "faces": 500,
+      "sourcePositionCount": 278,
+      "vertices": 278,
+      "boundsMetres": [
+        [
+          -0.0870539,
+          0.9320499999999999,
+          0.11749
+        ],
+        [
+          -0.0298587,
+          1.01177,
+          0.175072
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -87.0539,
+          -175.072,
+          932.05
+        ],
+        [
+          -29.8587,
+          -117.49,
+          1011.77
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2622",
+      "sourceId": "FMA16981",
+      "side": "midline",
+      "representationId": "BP8075",
+      "nativeConceptId": "FMA16981",
+      "path": "isa_BP3D_4.0_obj_99/FJ2622.obj",
+      "bytes": 10194,
+      "sha256": "cc557657fa88c5f95e8d0bd20802e58a3ba4e4251ffb9eb24a082de80447c215",
+      "crc32": "e38262b7",
+      "compressedBytesUpstream": 3935,
+      "anatomyId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 160,
+      "faces": 160,
+      "sourcePositionCount": 99,
+      "vertices": 99,
+      "boundsMetres": [
+        [
+          0.0577207,
+          0.982665,
+          0.134109
+        ],
+        [
+          0.09570640000000001,
+          1.00319,
+          0.16539099999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          57.7207,
+          -165.391,
+          982.665
+        ],
+        [
+          95.7064,
+          -134.109,
+          1003.19
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2623",
+      "sourceId": "FMA16981",
+      "side": "midline",
+      "representationId": "BP8075",
+      "nativeConceptId": "FMA16981",
+      "path": "isa_BP3D_4.0_obj_99/FJ2623.obj",
+      "bytes": 22957,
+      "sha256": "fe5e4ed69d2fb0ccae5131fd561ced20865eddf636b2006b3c2e74a962dad3e4",
+      "crc32": "ace6677d",
+      "compressedBytesUpstream": 8283,
+      "anatomyId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 386,
+      "faces": 386,
+      "sourcePositionCount": 206,
+      "vertices": 206,
+      "boundsMetres": [
+        [
+          0.0199912,
+          0.9643590000000001,
+          0.133805
+        ],
+        [
+          0.0998323,
+          1.00336,
+          0.17946600000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          19.9912,
+          -179.466,
+          964.359
+        ],
+        [
+          99.8323,
+          -133.805,
+          1003.36
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2624",
+      "sourceId": "FMA16981",
+      "side": "midline",
+      "representationId": "BP8075",
+      "nativeConceptId": "FMA16981",
+      "path": "isa_BP3D_4.0_obj_99/FJ2624.obj",
+      "bytes": 10187,
+      "sha256": "9effee9dd5939a095686d19da6843e955a931a8a824cadeb0ad62a3df42a0278",
+      "crc32": "9617f859",
+      "compressedBytesUpstream": 3954,
+      "anatomyId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 172,
+      "faces": 172,
+      "sourcePositionCount": 94,
+      "vertices": 94,
+      "boundsMetres": [
+        [
+          0.0183224,
+          0.964621,
+          0.155332
+        ],
+        [
+          0.040639299999999996,
+          0.993545,
+          0.181947
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          18.3224,
+          -181.947,
+          964.621
+        ],
+        [
+          40.6393,
+          -155.332,
+          993.545
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2625",
+      "sourceId": "FMA16981",
+      "side": "midline",
+      "representationId": "BP8075",
+      "nativeConceptId": "FMA16981",
+      "path": "isa_BP3D_4.0_obj_99/FJ2625.obj",
+      "bytes": 8813,
+      "sha256": "ccf2ebb17962096e76775a1623d1f92b1aeb10d7a1b416addfc36966829d4871",
+      "crc32": "cc1dc594",
+      "compressedBytesUpstream": 3452,
+      "anatomyId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 152,
+      "faces": 152,
+      "sourcePositionCount": 79,
+      "vertices": 79,
+      "boundsMetres": [
+        [
+          0.015623699999999999,
+          0.965951,
+          0.155499
+        ],
+        [
+          0.0426768,
+          0.99756,
+          0.18299600000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          15.6237,
+          -182.996,
+          965.951
+        ],
+        [
+          42.6768,
+          -155.499,
+          997.56
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2626",
+      "sourceId": "FMA16981",
+      "side": "midline",
+      "representationId": "BP8075",
+      "nativeConceptId": "FMA16981",
+      "path": "isa_BP3D_4.0_obj_99/FJ2626.obj",
+      "bytes": 20247,
+      "sha256": "e94d9c72fd2ae2156d7eb75cad13b9c8f9ce90bdc11c2b1a7fe6d6f0d34698ba",
+      "crc32": "381ba5ea",
+      "compressedBytesUpstream": 7331,
+      "anatomyId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 330,
+      "faces": 330,
+      "sourcePositionCount": 188,
+      "vertices": 188,
+      "boundsMetres": [
+        [
+          0.00866902,
+          0.943297,
+          0.147922
+        ],
+        [
+          0.0508658,
+          0.981837,
+          0.183429
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          8.66902,
+          -183.429,
+          943.297
+        ],
+        [
+          50.8658,
+          -147.922,
+          981.837
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2627",
+      "sourceId": "FMA16981",
+      "side": "midline",
+      "representationId": "BP8075",
+      "nativeConceptId": "FMA16981",
+      "path": "isa_BP3D_4.0_obj_99/FJ2627.obj",
+      "bytes": 10880,
+      "sha256": "026030df12b0633b8065f625c6a3aa74dc708f148d8418241a5e222f94b1f521",
+      "crc32": "486e3bd0",
+      "compressedBytesUpstream": 4190,
+      "anatomyId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 190,
+      "faces": 190,
+      "sourcePositionCount": 99,
+      "vertices": 99,
+      "boundsMetres": [
+        [
+          0.030418399999999998,
+          0.9468460000000001,
+          0.148343
+        ],
+        [
+          0.06649880000000001,
+          0.97738,
+          0.175851
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          30.4184,
+          -175.851,
+          946.846
+        ],
+        [
+          66.4988,
+          -148.343,
+          977.38
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2628",
+      "sourceId": "FMA16982",
+      "side": "midline",
+      "representationId": "BP7928",
+      "nativeConceptId": "FMA16982",
+      "path": "isa_BP3D_4.0_obj_99/FJ2628.obj",
+      "bytes": 13914,
+      "sha256": "09917e2cc32ec1c345a677bb851a1ce000f9c445bfbec9e783d8a10c95b86c06",
+      "crc32": "5eda9483",
+      "compressedBytesUpstream": 5219,
+      "anatomyId": "dig:FMA16982",
+      "ownerSourceId": "FMA16982",
+      "family": "jejunum",
+      "moduleId": "digestive:small-intestine",
+      "sourceType": "porción intestinal",
+      "triangles": 236,
+      "faces": 236,
+      "sourcePositionCount": 128,
+      "vertices": 128,
+      "boundsMetres": [
+        [
+          0.042569499999999996,
+          0.938543,
+          0.140242
+        ],
+        [
+          0.079392,
+          0.9772010000000001,
+          0.171152
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          42.5695,
+          -171.152,
+          938.543
+        ],
+        [
+          79.392,
+          -140.242,
+          977.201
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2761",
+      "sourceId": "FMA54640",
+      "side": "midline",
+      "representationId": "BP9090",
+      "nativeConceptId": "FMA54640",
+      "path": "isa_BP3D_4.0_obj_99/FJ2761.obj",
+      "bytes": 31466,
+      "sha256": "fec6c080dca3bcb0fe51af2f7897cab95f17ffe05ad5f8ff12e48c81bca86d5f",
+      "crc32": "0ca239d6",
+      "compressedBytesUpstream": 10864,
+      "anatomyId": "dig:FMA54640",
+      "ownerSourceId": "FMA54640",
+      "family": "tongue",
+      "moduleId": "digestive:upper",
+      "sourceType": "estructura oral muscular",
+      "triangles": 524,
+      "faces": 524,
+      "sourcePositionCount": 276,
+      "vertices": 276,
+      "boundsMetres": [
+        [
+          -0.0199706,
+          1.43096,
+          0.110473
+        ],
+        [
+          0.0188003,
+          1.46732,
+          0.169904
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -19.9706,
+          -169.904,
+          1430.96
+        ],
+        [
+          18.8003,
+          -110.473,
+          1467.32
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2765",
+      "sourceId": "FMA59805",
+      "side": "left",
+      "representationId": "BP8714",
+      "nativeConceptId": "FMA59805",
+      "path": "isa_BP3D_4.0_obj_99/FJ2765.obj",
+      "bytes": 14692,
+      "sha256": "371b46154a6ff5e08d1cda980778ea434b394620830579088af6456f7fdf9884",
+      "crc32": "ad21ee09",
+      "compressedBytesUpstream": 5241,
+      "anatomyId": "dig:FMA59805",
+      "ownerSourceId": "FMA59805",
+      "family": "salivary",
+      "moduleId": "digestive:upper",
+      "sourceType": "glándula",
+      "triangles": 230,
+      "faces": 230,
+      "sourcePositionCount": 143,
+      "vertices": 143,
+      "boundsMetres": [
+        [
+          0.00730223,
+          1.44085,
+          0.14096899999999998
+        ],
+        [
+          0.019881,
+          1.45398,
+          0.163572
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          7.30223,
+          -163.572,
+          1440.85
+        ],
+        [
+          19.881,
+          -140.969,
+          1453.98
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2766",
+      "sourceId": "FMA59803",
+      "side": "left",
+      "representationId": "BP9232",
+      "nativeConceptId": "FMA59803",
+      "path": "isa_BP3D_4.0_obj_99/FJ2766.obj",
+      "bytes": 13403,
+      "sha256": "dfb4a6b9789fa55feb8e18cea09a638ec09041cc6b9e9df1e8f5a40ad1ab61be",
+      "crc32": "0a406df2",
+      "compressedBytesUpstream": 4896,
+      "anatomyId": "dig:FMA59803",
+      "ownerSourceId": "FMA59803",
+      "family": "salivary",
+      "moduleId": "digestive:upper",
+      "sourceType": "glándula",
+      "triangles": 228,
+      "faces": 228,
+      "sourcePositionCount": 123,
+      "vertices": 123,
+      "boundsMetres": [
+        [
+          0.0143972,
+          1.4384400000000002,
+          0.118591
+        ],
+        [
+          0.0302661,
+          1.4607999999999999,
+          0.141519
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          14.3972,
+          -141.519,
+          1438.44
+        ],
+        [
+          30.2661,
+          -118.591,
+          1460.8
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2767",
+      "sourceId": "FMA59804",
+      "side": "right",
+      "representationId": "BP8380",
+      "nativeConceptId": "FMA59804",
+      "path": "isa_BP3D_4.0_obj_99/FJ2767.obj",
+      "bytes": 15235,
+      "sha256": "b9165fee0bcb7f88aee932317cbbed3486d4e2c7a3850c1cd109e54c142295b3",
+      "crc32": "f282cdaa",
+      "compressedBytesUpstream": 5350,
+      "anatomyId": "dig:FMA59804",
+      "ownerSourceId": "FMA59804",
+      "family": "salivary",
+      "moduleId": "digestive:upper",
+      "sourceType": "glándula",
+      "triangles": 244,
+      "faces": 244,
+      "sourcePositionCount": 143,
+      "vertices": 143,
+      "boundsMetres": [
+        [
+          -0.021194900000000003,
+          1.44082,
+          0.140946
+        ],
+        [
+          -0.008598900000000001,
+          1.45404,
+          0.16361799999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -21.1949,
+          -163.618,
+          1440.82
+        ],
+        [
+          -8.5989,
+          -140.946,
+          1454.04
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2768",
+      "sourceId": "FMA59802",
+      "side": "right",
+      "representationId": "BP9147",
+      "nativeConceptId": "FMA59802",
+      "path": "isa_BP3D_4.0_obj_99/FJ2768.obj",
+      "bytes": 13489,
+      "sha256": "763960d4774199706b8ca344aab369a33a969a105f2c3063b8784c77e3a12d50",
+      "crc32": "f0773978",
+      "compressedBytesUpstream": 4867,
+      "anatomyId": "dig:FMA59802",
+      "ownerSourceId": "FMA59802",
+      "family": "salivary",
+      "moduleId": "digestive:upper",
+      "sourceType": "glándula",
+      "triangles": 228,
+      "faces": 228,
+      "sourcePositionCount": 122,
+      "vertices": 122,
+      "boundsMetres": [
+        [
+          -0.0315539,
+          1.4384400000000002,
+          0.118612
+        ],
+        [
+          -0.0156831,
+          1.4608299999999999,
+          0.14135
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.5539,
+          -141.35,
+          1438.44
+        ],
+        [
+          -15.6831,
+          -118.612,
+          1460.83
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2816",
+      "sourceId": "FMA13365",
+      "side": "midline",
+      "representationId": "BP8727",
+      "nativeConceptId": "FMA13365",
+      "path": "isa_BP3D_4.0_obj_99/FJ2816.obj",
+      "bytes": 317277,
+      "sha256": "384a517622b5ae1106a811ee557deb1a1349d5cc94c230c283a1bab9d34f0a79",
+      "crc32": "e3453414",
+      "compressedBytesUpstream": 92858,
+      "anatomyId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "family": "liver",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "órgano",
+      "triangles": 5020,
+      "faces": 5020,
+      "sourcePositionCount": 2526,
+      "vertices": 2526,
+      "boundsMetres": [
+        [
+          -0.033826999999999996,
+          1.09374,
+          0.10452800000000001
+        ],
+        [
+          0.0112576,
+          1.16855,
+          0.140356
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -33.827,
+          -140.356,
+          1093.74
+        ],
+        [
+          11.2576,
+          -104.528,
+          1168.55
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2817",
+      "sourceId": "FMA7202",
+      "side": "midline",
+      "representationId": "BP9029",
+      "nativeConceptId": "FMA7202",
+      "path": "isa_BP3D_4.0_obj_99/FJ2817.obj",
+      "bytes": 144859,
+      "sha256": "6ac50f710bc24344ce81bf63bcf2bb1250b2c765bd3d3feb6a893840c1434918",
+      "crc32": "fd704ae0",
+      "compressedBytesUpstream": 45022,
+      "anatomyId": "dig:FMA7202",
+      "ownerSourceId": "FMA7202",
+      "family": "gallbladder",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "órgano",
+      "triangles": 2396,
+      "faces": 2396,
+      "sourcePositionCount": 1202,
+      "vertices": 1202,
+      "boundsMetres": [
+        [
+          -0.0632817,
+          1.05107,
+          0.13015100000000002
+        ],
+        [
+          -0.0268404,
+          1.09148,
+          0.17856
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -63.2817,
+          -178.56,
+          1051.07
+        ],
+        [
+          -26.8404,
+          -130.151,
+          1091.48
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2818",
+      "sourceId": "FMA15739",
+      "side": "midline",
+      "representationId": "BP8890",
+      "nativeConceptId": "FMA15739",
+      "path": "isa_BP3D_4.0_obj_99/FJ2818.obj",
+      "bytes": 936395,
+      "sha256": "c1523e137e1466a66e9263161f6155e1bbcf263f74c4cafebec1a5993fd8fde0",
+      "crc32": "580a4f2b",
+      "compressedBytesUpstream": 266907,
+      "anatomyId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "family": "liver",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "órgano",
+      "triangles": 14326,
+      "faces": 14326,
+      "sourcePositionCount": 7482,
+      "vertices": 7482,
+      "boundsMetres": [
+        [
+          0.00252503,
+          1.1196199999999998,
+          0.0915573
+        ],
+        [
+          0.0943668,
+          1.17309,
+          0.200039
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          2.52503,
+          -200.039,
+          1119.62
+        ],
+        [
+          94.3668,
+          -91.5573,
+          1173.09
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2819",
+      "sourceId": "FMA15741",
+      "side": "midline",
+      "representationId": "BP8982",
+      "nativeConceptId": "FMA15741",
+      "path": "isa_BP3D_4.0_obj_99/FJ2819.obj",
+      "bytes": 677762,
+      "sha256": "d14abcca7dbd82529eedd830d9ed9c80edd4261b22c32d681b9cb14feffdfa46",
+      "crc32": "55897082",
+      "compressedBytesUpstream": 194602,
+      "anatomyId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "family": "liver",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "órgano",
+      "triangles": 10326,
+      "faces": 10326,
+      "sourcePositionCount": 5487,
+      "vertices": 5487,
+      "boundsMetres": [
+        [
+          -0.00159219,
+          1.08657,
+          0.119538
+        ],
+        [
+          0.0734476,
+          1.15318,
+          0.202413
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -1.59219,
+          -202.413,
+          1086.57
+        ],
+        [
+          73.4476,
+          -119.538,
+          1153.18
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2820",
+      "sourceId": "FMA15742",
+      "side": "midline",
+      "representationId": "BP8871",
+      "nativeConceptId": "FMA15742",
+      "path": "isa_BP3D_4.0_obj_99/FJ2820.obj",
+      "bytes": 1296045,
+      "sha256": "bac2d30a479b0a7765f4a7fe4e25bd44fa7c01cd6a0b24bf4323d270bad75b35",
+      "crc32": "97e3d33c",
+      "compressedBytesUpstream": 368458,
+      "anatomyId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "family": "liver",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "órgano",
+      "triangles": 17942,
+      "faces": 17942,
+      "sourcePositionCount": 11418,
+      "vertices": 11418,
+      "boundsMetres": [
+        [
+          -0.0463087,
+          1.06081,
+          0.12075400000000001
+        ],
+        [
+          0.0114549,
+          1.1793699999999998,
+          0.200539
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -46.3087,
+          -200.539,
+          1060.81
+        ],
+        [
+          11.4549,
+          -120.754,
+          1179.37
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2821",
+      "sourceId": "FMA15743",
+      "side": "midline",
+      "representationId": "BP8976",
+      "nativeConceptId": "FMA15743",
+      "path": "isa_BP3D_4.0_obj_99/FJ2821.obj",
+      "bytes": 793787,
+      "sha256": "dcd7f4d1a09b3034cfe4b51a2efe766201ff09bcea53d8c2315219034b0aa3de",
+      "crc32": "a4f59ec3",
+      "compressedBytesUpstream": 225949,
+      "anatomyId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "family": "liver",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "órgano",
+      "triangles": 11442,
+      "faces": 11442,
+      "sourcePositionCount": 6605,
+      "vertices": 6605,
+      "boundsMetres": [
+        [
+          -0.104585,
+          1.0464200000000001,
+          0.107889
+        ],
+        [
+          -0.0263054,
+          1.11609,
+          0.19869
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -104.585,
+          -198.69,
+          1046.42
+        ],
+        [
+          -26.3054,
+          -107.889,
+          1116.09
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2822",
+      "sourceId": "FMA15744",
+      "side": "midline",
+      "representationId": "BP9210",
+      "nativeConceptId": "FMA15744",
+      "path": "isa_BP3D_4.0_obj_99/FJ2822.obj",
+      "bytes": 1282103,
+      "sha256": "14b4e694857cea1de3897262a83d9aab0a8a05c39eef12e775a2adc58def97a8",
+      "crc32": "6ba44433",
+      "compressedBytesUpstream": 354411,
+      "anatomyId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "family": "liver",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "órgano",
+      "triangles": 19450,
+      "faces": 19450,
+      "sourcePositionCount": 9988,
+      "vertices": 9988,
+      "boundsMetres": [
+        [
+          -0.11457500000000001,
+          1.02796,
+          0.0445192
+        ],
+        [
+          -0.0214193,
+          1.1104800000000001,
+          0.164947
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -114.575,
+          -164.947,
+          1027.96
+        ],
+        [
+          -21.4193,
+          -44.5192,
+          1110.48
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2823",
+      "sourceId": "FMA15746",
+      "side": "midline",
+      "representationId": "BP8866",
+      "nativeConceptId": "FMA15746",
+      "path": "isa_BP3D_4.0_obj_99/FJ2823.obj",
+      "bytes": 1284700,
+      "sha256": "9c8659ff030e9e48504c0faccad1af0f45b865220e013fdaafb1ccd2c7168e79",
+      "crc32": "d2dc39d8",
+      "compressedBytesUpstream": 361420,
+      "anatomyId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "family": "liver",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "órgano",
+      "triangles": 19156,
+      "faces": 19156,
+      "sourcePositionCount": 10230,
+      "vertices": 10230,
+      "boundsMetres": [
+        [
+          -0.115064,
+          1.0901500000000002,
+          0.0433287
+        ],
+        [
+          -0.020192,
+          1.1748399999999999,
+          0.151812
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -115.064,
+          -151.812,
+          1090.15
+        ],
+        [
+          -20.192,
+          -43.3287,
+          1174.84
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ2824",
+      "sourceId": "FMA15746",
+      "side": "midline",
+      "representationId": "BP8866",
+      "nativeConceptId": "FMA15746",
+      "path": "isa_BP3D_4.0_obj_99/FJ2824.obj",
+      "bytes": 1456320,
+      "sha256": "f91e3c89b4db356fa5e8b03dbbb38b2dbebe358788ba1eb01d2c6ecc2ac94c2d",
+      "crc32": "dcd098e9",
+      "compressedBytesUpstream": 407511,
+      "anatomyId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "family": "liver",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "órgano",
+      "triangles": 21592,
+      "faces": 21592,
+      "sourcePositionCount": 11459,
+      "vertices": 11459,
+      "boundsMetres": [
+        [
+          -0.109329,
+          1.1081800000000002,
+          0.0708945
+        ],
+        [
+          -0.0175186,
+          1.18314,
+          0.19873
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -109.329,
+          -198.73,
+          1108.18
+        ],
+        [
+          -17.5186,
+          -70.8945,
+          1183.14
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3071",
+      "sourceId": "FMA71867",
+      "side": "right",
+      "representationId": "BP8932",
+      "nativeConceptId": "FMA71867",
+      "path": "isa_BP3D_4.0_obj_99/FJ3071.obj",
+      "bytes": 43607,
+      "sha256": "c2c9e8156274a487a51c0613a2e91dcffe764e1b673a62d7a56266811ccc6321",
+      "crc32": "ded562ef",
+      "compressedBytesUpstream": 14289,
+      "anatomyId": "dig:FMA71867",
+      "ownerSourceId": "FMA71867",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "componente de conducto",
+      "triangles": 686,
+      "faces": 686,
+      "sourcePositionCount": 395,
+      "vertices": 395,
+      "boundsMetres": [
+        [
+          -0.0795971,
+          1.1039100000000002,
+          0.130798
+        ],
+        [
+          -0.0274422,
+          1.15131,
+          0.15101
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -79.5971,
+          -151.01,
+          1103.91
+        ],
+        [
+          -27.4422,
+          -130.798,
+          1151.31
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3072",
+      "sourceId": "FMA71868",
+      "side": "right",
+      "representationId": "BP9262",
+      "nativeConceptId": "FMA71868",
+      "path": "isa_BP3D_4.0_obj_99/FJ3072.obj",
+      "bytes": 126892,
+      "sha256": "f9a417445e9a3cea161f7952f8dcfea4e2cfca24f397a0a35696087a20d079b4",
+      "crc32": "b4d2476b",
+      "compressedBytesUpstream": 39107,
+      "anatomyId": "dig:FMA71868",
+      "ownerSourceId": "FMA71868",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "componente de conducto",
+      "triangles": 1708,
+      "faces": 1708,
+      "sourcePositionCount": 1265,
+      "vertices": 1265,
+      "boundsMetres": [
+        [
+          -0.0834342,
+          1.08241,
+          0.13126400000000002
+        ],
+        [
+          -0.0438486,
+          1.15235,
+          0.174632
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -83.4342,
+          -174.632,
+          1082.41
+        ],
+        [
+          -43.8486,
+          -131.264,
+          1152.35
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3079",
+      "sourceId": "FMA14668",
+      "side": "midline",
+      "representationId": "BP9079",
+      "nativeConceptId": "FMA14668",
+      "path": "isa_BP3D_4.0_obj_99/FJ3079.obj",
+      "bytes": 80800,
+      "sha256": "31a8cf303123987ddd1a3092b9a7c5ceb092fc10afce61193f40e1fe43af845f",
+      "crc32": "56cd784a",
+      "compressedBytesUpstream": 26133,
+      "anatomyId": "dig:FMA14668",
+      "ownerSourceId": "FMA14668",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "conducto",
+      "triangles": 1364,
+      "faces": 1364,
+      "sourcePositionCount": 684,
+      "vertices": 684,
+      "boundsMetres": [
+        [
+          -0.043682000000000006,
+          1.0195800000000002,
+          0.10703700000000001
+        ],
+        [
+          -0.017863,
+          1.10387,
+          0.14450800000000003
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -43.682,
+          -144.508,
+          1019.58
+        ],
+        [
+          -17.863,
+          -107.037,
+          1103.87
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3080",
+      "sourceId": "FMA14539",
+      "side": "midline",
+      "representationId": "BP9078",
+      "nativeConceptId": "FMA14539",
+      "path": "isa_BP3D_4.0_obj_99/FJ3080.obj",
+      "bytes": 17016,
+      "sha256": "8f7a2604f762392129842c1a7251be006b00bfe9211698d48d0e6dd2bd512d28",
+      "crc32": "bcfc03c9",
+      "compressedBytesUpstream": 5876,
+      "anatomyId": "dig:FMA14539",
+      "ownerSourceId": "FMA14539",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "conducto",
+      "triangles": 278,
+      "faces": 278,
+      "sourcePositionCount": 156,
+      "vertices": 156,
+      "boundsMetres": [
+        [
+          -0.0296802,
+          1.0791600000000001,
+          0.128441
+        ],
+        [
+          -0.020898,
+          1.09135,
+          0.137786
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -29.6802,
+          -137.786,
+          1079.16
+        ],
+        [
+          -20.898,
+          -128.441,
+          1091.35
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3088",
+      "sourceId": "FMA71887",
+      "side": "left",
+      "representationId": "BP8734",
+      "nativeConceptId": "FMA71887",
+      "path": "isa_BP3D_4.0_obj_99/FJ3088.obj",
+      "bytes": 38988,
+      "sha256": "efd9fc5309a68bd0b8b7c7fd016e2b871adcfe8d7df8d1a1b127017b700a3b50",
+      "crc32": "2115dba5",
+      "compressedBytesUpstream": 13074,
+      "anatomyId": "dig:FMA71887",
+      "ownerSourceId": "FMA71887",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "componente de conducto",
+      "triangles": 608,
+      "faces": 608,
+      "sourcePositionCount": 368,
+      "vertices": 368,
+      "boundsMetres": [
+        [
+          0.0037548900000000003,
+          1.1261700000000001,
+          0.12956
+        ],
+        [
+          0.0576872,
+          1.16248,
+          0.156805
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          3.75489,
+          -156.805,
+          1126.17
+        ],
+        [
+          57.6872,
+          -129.56,
+          1162.48
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3089",
+      "sourceId": "FMA71888",
+      "side": "left",
+      "representationId": "BP8845",
+      "nativeConceptId": "FMA71888",
+      "path": "isa_BP3D_4.0_obj_99/FJ3089.obj",
+      "bytes": 45141,
+      "sha256": "7f78fc38fd1aab29e44c3287ae58c7636a9c2c50aae69e32ca1098e0befa2b91",
+      "crc32": "2c081ae6",
+      "compressedBytesUpstream": 14794,
+      "anatomyId": "dig:FMA71888",
+      "ownerSourceId": "FMA71888",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "componente de conducto",
+      "triangles": 664,
+      "faces": 664,
+      "sourcePositionCount": 443,
+      "vertices": 443,
+      "boundsMetres": [
+        [
+          0.00746213,
+          1.1237000000000001,
+          0.154378
+        ],
+        [
+          0.052149900000000006,
+          1.1360999999999999,
+          0.190888
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          7.46213,
+          -190.888,
+          1123.7
+        ],
+        [
+          52.1499,
+          -154.378,
+          1136.1
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3090",
+      "sourceId": "FMA71887",
+      "side": "left",
+      "representationId": "BP8734",
+      "nativeConceptId": "FMA71887",
+      "path": "isa_BP3D_4.0_obj_99/FJ3090.obj",
+      "bytes": 52971,
+      "sha256": "664f4c51268e477bda417b4cb35adf48a716973399005d574692ad79ec9c1ef1",
+      "crc32": "78e4e4fe",
+      "compressedBytesUpstream": 17430,
+      "anatomyId": "dig:FMA71887",
+      "ownerSourceId": "FMA71887",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "componente de conducto",
+      "triangles": 808,
+      "faces": 808,
+      "sourcePositionCount": 503,
+      "vertices": 503,
+      "boundsMetres": [
+        [
+          0.025293,
+          1.1087500000000001,
+          0.150277
+        ],
+        [
+          0.0564169,
+          1.15618,
+          0.198243
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          25.293,
+          -198.243,
+          1108.75
+        ],
+        [
+          56.4169,
+          -150.277,
+          1156.18
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3094",
+      "sourceId": "FMA76903",
+      "side": "left",
+      "representationId": "BP8609",
+      "nativeConceptId": "FMA76903",
+      "path": "isa_BP3D_4.0_obj_99/FJ3094.obj",
+      "bytes": 29243,
+      "sha256": "7217414c0682f8c1cb0989ea0e1c71f2192a1d6ee9c81202437f003dc59b1733",
+      "crc32": "8842d3ab",
+      "compressedBytesUpstream": 9852,
+      "anatomyId": "dig:FMA76903",
+      "ownerSourceId": "FMA76903",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "componente de conducto",
+      "triangles": 428,
+      "faces": 428,
+      "sourcePositionCount": 281,
+      "vertices": 281,
+      "boundsMetres": [
+        [
+          -0.0176389,
+          1.10798,
+          0.11692000000000001
+        ],
+        [
+          0.00143618,
+          1.13336,
+          0.154816
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -17.6389,
+          -154.816,
+          1107.98
+        ],
+        [
+          1.43618,
+          -116.92,
+          1133.36
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3096",
+      "sourceId": "FMA14670",
+      "side": "left",
+      "representationId": "BP8715",
+      "nativeConceptId": "FMA14670",
+      "path": "isa_BP3D_4.0_obj_99/FJ3096.obj",
+      "bytes": 49991,
+      "sha256": "11a5891a14162d16c8f919d5a8da6d1e7ca243f7c0d8697f6f10aceed587e97a",
+      "crc32": "db287698",
+      "compressedBytesUpstream": 16337,
+      "anatomyId": "dig:FMA14670",
+      "ownerSourceId": "FMA14670",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "conducto",
+      "triangles": 848,
+      "faces": 848,
+      "sourcePositionCount": 428,
+      "vertices": 428,
+      "boundsMetres": [
+        [
+          -0.0257726,
+          1.0992899999999999,
+          0.140041
+        ],
+        [
+          0.00739447,
+          1.1300000000000001,
+          0.157429
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -25.7726,
+          -157.429,
+          1099.29
+        ],
+        [
+          7.39447,
+          -140.041,
+          1130.0
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3103",
+      "sourceId": "FMA71886",
+      "side": "left",
+      "representationId": "BP7806",
+      "nativeConceptId": "FMA71886",
+      "path": "isa_BP3D_4.0_obj_99/FJ3103.obj",
+      "bytes": 45773,
+      "sha256": "61bd543e1626e4856094b4aec94af8457094a2b9bf20186fd96bd88bce05001a",
+      "crc32": "21714750",
+      "compressedBytesUpstream": 15260,
+      "anatomyId": "dig:FMA71886",
+      "ownerSourceId": "FMA71886",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "componente de conducto",
+      "triangles": 698,
+      "faces": 698,
+      "sourcePositionCount": 432,
+      "vertices": 432,
+      "boundsMetres": [
+        [
+          -0.0224128,
+          1.10086,
+          0.154331
+        ],
+        [
+          0.0078449,
+          1.13383,
+          0.19583
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -22.4128,
+          -195.83,
+          1100.86
+        ],
+        [
+          7.8449,
+          -154.331,
+          1133.83
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3104",
+      "sourceId": "FMA71885",
+      "side": "left",
+      "representationId": "BP8213",
+      "nativeConceptId": "FMA71885",
+      "path": "isa_BP3D_4.0_obj_99/FJ3104.obj",
+      "bytes": 37050,
+      "sha256": "7da92c0c19f9e66a23155524581cc26b280e0c9f78cb0b7e8cfe1b41b2848e30",
+      "crc32": "5c542b72",
+      "compressedBytesUpstream": 12146,
+      "anatomyId": "dig:FMA71885",
+      "ownerSourceId": "FMA71885",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "componente de conducto",
+      "triangles": 570,
+      "faces": 570,
+      "sourcePositionCount": 344,
+      "vertices": 344,
+      "boundsMetres": [
+        [
+          -0.0318292,
+          1.1304100000000001,
+          0.151869
+        ],
+        [
+          -0.0006962450000000001,
+          1.1480899999999998,
+          0.168754
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.8292,
+          -168.754,
+          1130.41
+        ],
+        [
+          -0.696245,
+          -151.869,
+          1148.09
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3105",
+      "sourceId": "FMA71885",
+      "side": "left",
+      "representationId": "BP8213",
+      "nativeConceptId": "FMA71885",
+      "path": "isa_BP3D_4.0_obj_99/FJ3105.obj",
+      "bytes": 36411,
+      "sha256": "3580eed66acd48da39fc321d2fe491daed3edc6be6bfb6da8338de234d27eb26",
+      "crc32": "02991f35",
+      "compressedBytesUpstream": 11729,
+      "anatomyId": "dig:FMA71885",
+      "ownerSourceId": "FMA71885",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "componente de conducto",
+      "triangles": 494,
+      "faces": 494,
+      "sourcePositionCount": 371,
+      "vertices": 371,
+      "boundsMetres": [
+        [
+          -0.0247019,
+          1.1336300000000001,
+          0.164774
+        ],
+        [
+          -0.017245899999999998,
+          1.1486800000000001,
+          0.179194
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -24.7019,
+          -179.194,
+          1133.63
+        ],
+        [
+          -17.2459,
+          -164.774,
+          1148.68
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3108",
+      "sourceId": "FMA71870",
+      "side": "right",
+      "representationId": "BP9072",
+      "nativeConceptId": "FMA71870",
+      "path": "isa_BP3D_4.0_obj_99/FJ3108.obj",
+      "bytes": 55397,
+      "sha256": "cd9efbda9ba24249ad662d6f6c48e5d6bd0ae8121076d49648ed368d437544cb",
+      "crc32": "ef09f10d",
+      "compressedBytesUpstream": 18112,
+      "anatomyId": "dig:FMA71870",
+      "ownerSourceId": "FMA71870",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "componente de conducto",
+      "triangles": 870,
+      "faces": 870,
+      "sourcePositionCount": 503,
+      "vertices": 503,
+      "boundsMetres": [
+        [
+          -0.08235540000000001,
+          1.06871,
+          0.111487
+        ],
+        [
+          -0.027701899999999998,
+          1.11229,
+          0.14687200000000003
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -82.3554,
+          -146.872,
+          1068.71
+        ],
+        [
+          -27.7019,
+          -111.487,
+          1112.29
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3109",
+      "sourceId": "FMA71869",
+      "side": "right",
+      "representationId": "BP8658",
+      "nativeConceptId": "FMA71869",
+      "path": "isa_BP3D_4.0_obj_99/FJ3109.obj",
+      "bytes": 42484,
+      "sha256": "57e08b2162780c4cdc25221810eb0abfe5f2971d891d25768823673e53aaff14",
+      "crc32": "a2f76ae6",
+      "compressedBytesUpstream": 13982,
+      "anatomyId": "dig:FMA71869",
+      "ownerSourceId": "FMA71869",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "componente de conducto",
+      "triangles": 628,
+      "faces": 628,
+      "sourcePositionCount": 404,
+      "vertices": 404,
+      "boundsMetres": [
+        [
+          -0.0632162,
+          1.1070200000000001,
+          0.055416
+        ],
+        [
+          -0.0550851,
+          1.13534,
+          0.11848900000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -63.2162,
+          -118.489,
+          1107.02
+        ],
+        [
+          -55.0851,
+          -55.416,
+          1135.34
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3110",
+      "sourceId": "FMA71869",
+      "side": "right",
+      "representationId": "BP8658",
+      "nativeConceptId": "FMA71869",
+      "path": "isa_BP3D_4.0_obj_99/FJ3110.obj",
+      "bytes": 88647,
+      "sha256": "0cacd86a71659ba81507207d5dbc17d34b38678c3feede81eeef1284827dca06",
+      "crc32": "cc1d1c2d",
+      "compressedBytesUpstream": 28171,
+      "anatomyId": "dig:FMA71869",
+      "ownerSourceId": "FMA71869",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "componente de conducto",
+      "triangles": 1196,
+      "faces": 1196,
+      "sourcePositionCount": 896,
+      "vertices": 896,
+      "boundsMetres": [
+        [
+          -0.0918446,
+          1.09277,
+          0.0671616
+        ],
+        [
+          -0.045185499999999997,
+          1.1389500000000001,
+          0.125805
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -91.8446,
+          -125.805,
+          1092.77
+        ],
+        [
+          -45.1855,
+          -67.1616,
+          1138.95
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    },
+    {
+      "elementId": "FJ3123",
+      "sourceId": "FMA14669",
+      "side": "right",
+      "representationId": "BP9268",
+      "nativeConceptId": "FMA14669",
+      "path": "isa_BP3D_4.0_obj_99/FJ3123.obj",
+      "bytes": 12973,
+      "sha256": "5a14237d388e8c716a56c54e51dcccc3f89d187f1cf0d4eb4e0e04c1a7aac405",
+      "crc32": "d985ef96",
+      "compressedBytesUpstream": 4584,
+      "anatomyId": "dig:FMA14669",
+      "ownerSourceId": "FMA14669",
+      "family": "biliary",
+      "moduleId": "digestive:stomach-accessory",
+      "sourceType": "conducto",
+      "triangles": 226,
+      "faces": 226,
+      "sourcePositionCount": 115,
+      "vertices": 115,
+      "boundsMetres": [
+        [
+          -0.0312841,
+          1.0993499999999998,
+          0.140011
+        ],
+        [
+          -0.0217666,
+          1.10751,
+          0.14747100000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -31.2841,
+          -147.471,
+          1099.35
+        ],
+        [
+          -21.7666,
+          -140.011,
+          1107.51
+        ]
+      ],
+      "headerCompatibilityVersion": "4.0"
+    }
+  ]
+}

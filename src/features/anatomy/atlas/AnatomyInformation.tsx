@@ -2,11 +2,13 @@ import type {AnatomyNode} from './types';
 import BoneInformation from './BoneInformation';
 import NerveInformation from './NerveInformation';
 import MuscleInformation from './MuscleInformation';
+import DigestiveInformation from './DigestiveInformation';
 import RespiratoryInformation from './RespiratoryInformation';
 import CardiovascularInformation from './CardiovascularInformation';
 
 /** System-neutral routing; a body root must not inherit a bone information card. */
 export default function AnatomyInformation({node}: {node: AnatomyNode}) {
+  if (node.systemId === 'digestive') return <DigestiveInformation node={node}/>;
   if (node.systemId === 'respiratory') return <RespiratoryInformation node={node}/>;
   if (node.systemId === 'cardiovascular') return <CardiovascularInformation node={node}/>;
   if (node.systemId === 'nervous') return <NerveInformation node={node}/>;

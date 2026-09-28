@@ -1,0 +1,4066 @@
+{
+  "schemaVersion": 1,
+  "source": "DBCLS BodyParts3D 4.0 OBJ99",
+  "hierarchy": "Padres curados; PART-OF explícito para hígado y porciones intestinales. IS-A no se convierte en PART-OF.",
+  "units": [
+    {
+      "id": "dig:FMA7131",
+      "sourceId": "FMA7131",
+      "name": "Esófago",
+      "latin": "Oesophagus",
+      "english": "esophagus",
+      "category": "esophagus",
+      "region": "cabeza, cuello y tórax",
+      "side": "midline",
+      "parent": "dig:upper",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ2563"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:upper",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA54640",
+      "sourceId": "FMA54640",
+      "name": "Lengua · estructura oral",
+      "latin": "Lingua",
+      "english": "tongue",
+      "category": "tongue",
+      "region": "cabeza, cuello y tórax",
+      "side": "midline",
+      "parent": "dig:oral",
+      "kind": "structure",
+      "entityType": "estructura oral muscular",
+      "elements": [
+        "FJ2761"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:upper",
+      "decision": "APROBADO",
+      "reason": "FJ2761 no existe en Muscular ni otro catálogo histórico. Una sola representación oral, sin crear músculos nuevos ni duplicar geometría; no equivale a una cavidad oral completa."
+    },
+    {
+      "id": "dig:FMA59802",
+      "sourceId": "FMA59802",
+      "name": "Glándula submandibular derecha",
+      "latin": "Glandula submandibularis dextra",
+      "english": "right submandibular gland",
+      "category": "salivary",
+      "region": "cabeza, cuello y tórax",
+      "side": "right",
+      "parent": "dig:salivary",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ2768"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:upper",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA59803",
+      "sourceId": "FMA59803",
+      "name": "Glándula submandibular izquierda",
+      "latin": "Glandula submandibularis sinistra",
+      "english": "left submandibular gland",
+      "category": "salivary",
+      "region": "cabeza, cuello y tórax",
+      "side": "left",
+      "parent": "dig:salivary",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ2766"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:upper",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA59804",
+      "sourceId": "FMA59804",
+      "name": "Glándula sublingual derecha",
+      "latin": "Glandula sublingualis dextra",
+      "english": "right sublingual gland",
+      "category": "salivary",
+      "region": "cabeza, cuello y tórax",
+      "side": "right",
+      "parent": "dig:salivary",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ2767"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:upper",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA59805",
+      "sourceId": "FMA59805",
+      "name": "Glándula sublingual izquierda",
+      "latin": "Glandula sublingualis sinistra",
+      "english": "left sublingual gland",
+      "category": "salivary",
+      "region": "cabeza, cuello y tórax",
+      "side": "left",
+      "parent": "dig:salivary",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ2765"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:upper",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA7148",
+      "sourceId": "FMA7148",
+      "name": "Estómago",
+      "latin": "Gaster",
+      "english": "stomach",
+      "category": "stomach",
+      "region": "abdomen superior",
+      "side": "midline",
+      "parent": "digestive",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ2564"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA7206",
+      "sourceId": "FMA7206",
+      "name": "Duodeno",
+      "latin": "Duodenum",
+      "english": "duodenum",
+      "category": "duodenum",
+      "region": "abdomen",
+      "side": "midline",
+      "parent": "dig:small",
+      "kind": "structure",
+      "entityType": "segmento intestinal",
+      "elements": [
+        "FJ2573"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:small-intestine",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA16981",
+      "sourceId": "FMA16981",
+      "name": "Porción proximal del yeyuno",
+      "latin": "Pars proximalis jejuni",
+      "english": "proximal part of jejunum",
+      "category": "jejunum",
+      "region": "abdomen",
+      "side": "midline",
+      "parent": "dig:FMA7207",
+      "kind": "component",
+      "entityType": "porción intestinal",
+      "elements": [
+        "FJ2606",
+        "FJ2617",
+        "FJ2622",
+        "FJ2623",
+        "FJ2624",
+        "FJ2625",
+        "FJ2626",
+        "FJ2627"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:small-intestine",
+      "decision": "APROBADO",
+      "reason": "Varias piezas originales bajo una porción fuente; cada asa no se convierte en órgano. PART-OF confirma pertenencia al yeyuno o íleon."
+    },
+    {
+      "id": "dig:FMA16982",
+      "sourceId": "FMA16982",
+      "name": "Porción media del yeyuno",
+      "latin": "Pars media jejuni",
+      "english": "middle part of jejunum",
+      "category": "jejunum",
+      "region": "abdomen",
+      "side": "midline",
+      "parent": "dig:FMA7207",
+      "kind": "component",
+      "entityType": "porción intestinal",
+      "elements": [
+        "FJ2607",
+        "FJ2608",
+        "FJ2609",
+        "FJ2610",
+        "FJ2628"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:small-intestine",
+      "decision": "APROBADO",
+      "reason": "Varias piezas originales bajo una porción fuente; cada asa no se convierte en órgano. PART-OF confirma pertenencia al yeyuno o íleon."
+    },
+    {
+      "id": "dig:FMA16983",
+      "sourceId": "FMA16983",
+      "name": "Porción distal del yeyuno",
+      "latin": "Pars distalis jejuni",
+      "english": "distal part of jejunum",
+      "category": "jejunum",
+      "region": "abdomen",
+      "side": "midline",
+      "parent": "dig:FMA7207",
+      "kind": "component",
+      "entityType": "porción intestinal",
+      "elements": [
+        "FJ2611",
+        "FJ2612",
+        "FJ2613",
+        "FJ2614",
+        "FJ2615",
+        "FJ2616",
+        "FJ2618",
+        "FJ2619",
+        "FJ2620",
+        "FJ2621"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:small-intestine",
+      "decision": "APROBADO",
+      "reason": "Varias piezas originales bajo una porción fuente; cada asa no se convierte en órgano. PART-OF confirma pertenencia al yeyuno o íleon."
+    },
+    {
+      "id": "dig:FMA14964",
+      "sourceId": "FMA14964",
+      "name": "Porción proximal del íleon",
+      "latin": "Pars proximalis ilei",
+      "english": "proximal part of ileum",
+      "category": "ileum",
+      "region": "abdomen",
+      "side": "midline",
+      "parent": "dig:FMA7208",
+      "kind": "component",
+      "entityType": "porción intestinal",
+      "elements": [
+        "FJ2574",
+        "FJ2575",
+        "FJ2585",
+        "FJ2596",
+        "FJ2600",
+        "FJ2601",
+        "FJ2602",
+        "FJ2603",
+        "FJ2604",
+        "FJ2605"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:small-intestine",
+      "decision": "APROBADO",
+      "reason": "Varias piezas originales bajo una porción fuente; cada asa no se convierte en órgano. PART-OF confirma pertenencia al yeyuno o íleon."
+    },
+    {
+      "id": "dig:FMA14965",
+      "sourceId": "FMA14965",
+      "name": "Porción media del íleon",
+      "latin": "Pars media ilei",
+      "english": "middle part of ileum",
+      "category": "ileum",
+      "region": "abdomen",
+      "side": "midline",
+      "parent": "dig:FMA7208",
+      "kind": "component",
+      "entityType": "porción intestinal",
+      "elements": [
+        "FJ2576",
+        "FJ2577",
+        "FJ2578",
+        "FJ2579",
+        "FJ2580",
+        "FJ2581",
+        "FJ2582",
+        "FJ2583",
+        "FJ2584",
+        "FJ2586"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:small-intestine",
+      "decision": "APROBADO",
+      "reason": "Varias piezas originales bajo una porción fuente; cada asa no se convierte en órgano. PART-OF confirma pertenencia al yeyuno o íleon."
+    },
+    {
+      "id": "dig:FMA14966",
+      "sourceId": "FMA14966",
+      "name": "Porción distal del íleon",
+      "latin": "Pars distalis ilei",
+      "english": "distal part of ileum",
+      "category": "ileum",
+      "region": "abdomen",
+      "side": "midline",
+      "parent": "dig:FMA7208",
+      "kind": "component",
+      "entityType": "porción intestinal",
+      "elements": [
+        "FJ2587",
+        "FJ2588",
+        "FJ2589",
+        "FJ2590",
+        "FJ2591",
+        "FJ2592",
+        "FJ2593",
+        "FJ2594",
+        "FJ2595",
+        "FJ2597",
+        "FJ2598"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:small-intestine",
+      "decision": "APROBADO",
+      "reason": "Varias piezas originales bajo una porción fuente; cada asa no se convierte en órgano. PART-OF confirma pertenencia al yeyuno o íleon."
+    },
+    {
+      "id": "dig:FMA11338",
+      "sourceId": "FMA11338",
+      "name": "Unión ileocecal",
+      "latin": "Junctio ileocaecalis",
+      "english": "ileocecal junction",
+      "category": "ileocecal",
+      "region": "abdomen",
+      "side": "midline",
+      "parent": "dig:small",
+      "kind": "component",
+      "entityType": "unión anatómica",
+      "elements": [
+        "FJ2599"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:small-intestine",
+      "decision": "APROBADO",
+      "reason": "Cabecera OBJ 4.0 FMA11338: Ileocecal junction. La tabla PART-OF lo incluye tanto en ciego como en íleon; no se presenta como ciego completo. La lista 4.3 lo reclasifica como íleon distal, sin sustituir la identidad nativa utilizada."
+    },
+    {
+      "id": "dig:FMA14542",
+      "sourceId": "FMA14542",
+      "name": "Apéndice vermiforme",
+      "latin": "Appendix vermiformis",
+      "english": "appendix",
+      "category": "appendix",
+      "region": "abdomen y pelvis",
+      "side": "midline",
+      "parent": "dig:large",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ2565"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:large-intestine",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA14545",
+      "sourceId": "FMA14545",
+      "name": "Colon ascendente",
+      "latin": "Colon ascendens",
+      "english": "ascending colon",
+      "category": "colon",
+      "region": "abdomen y pelvis",
+      "side": "midline",
+      "parent": "dig:colon",
+      "kind": "structure",
+      "entityType": "segmento intestinal",
+      "elements": [
+        "FJ2566"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:large-intestine",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA14546",
+      "sourceId": "FMA14546",
+      "name": "Colon transverso",
+      "latin": "Colon transversum",
+      "english": "transverse colon",
+      "category": "colon",
+      "region": "abdomen y pelvis",
+      "side": "midline",
+      "parent": "dig:colon",
+      "kind": "structure",
+      "entityType": "segmento intestinal",
+      "elements": [
+        "FJ2572"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:large-intestine",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA14547",
+      "sourceId": "FMA14547",
+      "name": "Colon descendente",
+      "latin": "Colon descendens",
+      "english": "descending colon",
+      "category": "colon",
+      "region": "abdomen y pelvis",
+      "side": "midline",
+      "parent": "dig:colon",
+      "kind": "structure",
+      "entityType": "segmento intestinal",
+      "elements": [
+        "FJ2567"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:large-intestine",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA14544",
+      "sourceId": "FMA14544",
+      "name": "Recto",
+      "latin": "Rectum",
+      "english": "rectum",
+      "category": "rectum",
+      "region": "abdomen y pelvis",
+      "side": "midline",
+      "parent": "dig:large",
+      "kind": "structure",
+      "entityType": "segmento intestinal",
+      "elements": [
+        "FJ2571"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:large-intestine",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA7197",
+      "sourceId": "FMA7197",
+      "name": "Hígado",
+      "latin": "Hepar",
+      "english": "Hígado",
+      "category": "liver",
+      "region": "abdomen superior",
+      "side": "midline",
+      "parent": "dig:accessory",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ2816",
+        "FJ2818",
+        "FJ2819",
+        "FJ2820",
+        "FJ2821",
+        "FJ2822",
+        "FJ2823",
+        "FJ2824"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Ocho piezas de parénquima agrupadas como hígado por PART-OF. No se exponen segmentos hepáticos: FJ2823/FJ2824 comparten FMA15746 en los OBJ, pero la tabla 4.3 llama VII a FJ2823; la descarga 4.3 conserva la contradicción. Se preservan identidades nativas por archivo, sin inventar segmentación ni incluir FJ2409 superpuesto."
+    },
+    {
+      "id": "dig:FMA7202",
+      "sourceId": "FMA7202",
+      "name": "Vesícula biliar",
+      "latin": "Vesica biliaris",
+      "english": "gallbladder",
+      "category": "gallbladder",
+      "region": "abdomen superior",
+      "side": "midline",
+      "parent": "dig:accessory",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ2817"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA7198",
+      "sourceId": "FMA7198",
+      "name": "Páncreas",
+      "latin": "Pancreas",
+      "english": "pancreas",
+      "category": "pancreas",
+      "region": "abdomen superior",
+      "side": "midline",
+      "parent": "dig:accessory",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ1895"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Única envolvente pancreática. FJ2629 representa el mismo parénquima con bounds casi idénticos y se descarta para evitar superposición; sin subdivisiones artificiales."
+    },
+    {
+      "id": "dig:FMA10419",
+      "sourceId": "FMA10419",
+      "name": "Conducto pancreático disponible",
+      "latin": "Ductus pancreaticus",
+      "english": "pancreatic duct",
+      "category": "pancreatic-duct",
+      "region": "abdomen superior",
+      "side": "midline",
+      "parent": "dig:ducts",
+      "kind": "structure",
+      "entityType": "conducto",
+      "elements": [
+        "FJ1896"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Conducto de la misma revisión que FJ1895; FJ2630 es una representación alternativa del árbol, no se superpone."
+    },
+    {
+      "id": "dig:FMA14539",
+      "sourceId": "FMA14539",
+      "name": "Conducto cístico",
+      "latin": "Ductus cysticus",
+      "english": "cystic duct",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "midline",
+      "parent": "dig:biliary",
+      "kind": "structure",
+      "entityType": "conducto",
+      "elements": [
+        "FJ3080"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA14668",
+      "sourceId": "FMA14668",
+      "name": "Conducto hepático común",
+      "latin": "Ductus hepaticus communis",
+      "english": "common hepatic duct",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "midline",
+      "parent": "dig:biliary",
+      "kind": "structure",
+      "entityType": "conducto",
+      "elements": [
+        "FJ3079"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA14669",
+      "sourceId": "FMA14669",
+      "name": "Conducto hepático derecho",
+      "latin": "Ductus hepaticus dexter",
+      "english": "right hepatic duct",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "right",
+      "parent": "dig:biliary",
+      "kind": "structure",
+      "entityType": "conducto",
+      "elements": [
+        "FJ3123"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA14670",
+      "sourceId": "FMA14670",
+      "name": "Conducto hepático izquierdo",
+      "latin": "Ductus hepaticus sinister",
+      "english": "left hepatic duct",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "left",
+      "parent": "dig:biliary",
+      "kind": "structure",
+      "entityType": "conducto",
+      "elements": [
+        "FJ3096"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA71867",
+      "sourceId": "FMA71867",
+      "name": "Tributaria anterosuperior biliar derecha",
+      "latin": "Ramus anterosuperior dexter",
+      "english": "anterior superior tributary of right hepatic biliary tree",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "right",
+      "parent": "dig:biliary",
+      "kind": "component",
+      "entityType": "componente de conducto",
+      "elements": [
+        "FJ3071"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA71868",
+      "sourceId": "FMA71868",
+      "name": "Tributaria anteroinferior biliar derecha",
+      "latin": "Ramus anteroinferior dexter",
+      "english": "anterior inferior tributary of right hepatic biliary tree",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "right",
+      "parent": "dig:biliary",
+      "kind": "component",
+      "entityType": "componente de conducto",
+      "elements": [
+        "FJ3072"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA71869",
+      "sourceId": "FMA71869",
+      "name": "Tributaria posterosuperior biliar derecha",
+      "latin": "Ramus posterosuperior dexter",
+      "english": "posterior superior tributary of right hepatic biliary tree",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "right",
+      "parent": "dig:biliary",
+      "kind": "component",
+      "entityType": "componente de conducto",
+      "elements": [
+        "FJ3109",
+        "FJ3110"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA71870",
+      "sourceId": "FMA71870",
+      "name": "Tributaria posteroinferior biliar derecha",
+      "latin": "Ramus posteroinferior dexter",
+      "english": "posterior inferior tributary of right hepatic biliary tree",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "right",
+      "parent": "dig:biliary",
+      "kind": "component",
+      "entityType": "componente de conducto",
+      "elements": [
+        "FJ3108"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA71885",
+      "sourceId": "FMA71885",
+      "name": "Tributaria medial superior biliar izquierda",
+      "latin": "Ramus medialis superior sinister",
+      "english": "medial superior tributary of left hepatic biliary tree",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "left",
+      "parent": "dig:biliary",
+      "kind": "component",
+      "entityType": "componente de conducto",
+      "elements": [
+        "FJ3104",
+        "FJ3105"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA71886",
+      "sourceId": "FMA71886",
+      "name": "Tributaria medial inferior biliar izquierda",
+      "latin": "Ramus medialis inferior sinister",
+      "english": "medial inferior tributary of left hepatic biliary tree",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "left",
+      "parent": "dig:biliary",
+      "kind": "component",
+      "entityType": "componente de conducto",
+      "elements": [
+        "FJ3103"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA71887",
+      "sourceId": "FMA71887",
+      "name": "Tributaria lateral superior biliar izquierda",
+      "latin": "Ramus lateralis superior sinister",
+      "english": "lateral superior tributary of left hepatic biliary tree",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "left",
+      "parent": "dig:biliary",
+      "kind": "component",
+      "entityType": "componente de conducto",
+      "elements": [
+        "FJ3088",
+        "FJ3090"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA71888",
+      "sourceId": "FMA71888",
+      "name": "Tributaria lateral inferior biliar izquierda",
+      "latin": "Ramus lateralis inferior sinister",
+      "english": "lateral inferior tributary of left hepatic biliary tree",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "left",
+      "parent": "dig:biliary",
+      "kind": "component",
+      "entityType": "componente de conducto",
+      "elements": [
+        "FJ3089"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA71889",
+      "sourceId": "FMA71889",
+      "name": "Tributaria biliar del lóbulo caudado",
+      "latin": "Ramus lobi caudati",
+      "english": "caudate lobe tributary of left hepatic biliary tree",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "midline",
+      "parent": "dig:biliary",
+      "kind": "component",
+      "entityType": "componente de conducto",
+      "elements": [
+        "FJ1883"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    },
+    {
+      "id": "dig:FMA76903",
+      "sourceId": "FMA76903",
+      "name": "Conducto izquierdo del lóbulo caudado",
+      "latin": "Ductus sinister lobi caudati",
+      "english": "left duct of caudate lobe of liver",
+      "category": "biliary",
+      "region": "abdomen superior",
+      "side": "left",
+      "parent": "dig:biliary",
+      "kind": "component",
+      "entityType": "componente de conducto",
+      "elements": [
+        "FJ3094"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "digestive:stomach-accessory",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita de la fuente; posición y geometría originales conservadas."
+    }
+  ],
+  "pending": [
+    {
+      "name": "Cavidad oral completa",
+      "latin": "Cavitas oris",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "La cobertura oral aprobada es lengua y cuatro glándulas; no se equipara a una cavidad/mucosa completa."
+    },
+    {
+      "name": "Faringe",
+      "latin": "Pharynx",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "4.0/4.3 no proporcionan un órgano faríngeo completo inequívoco; músculos o epiglotis no equivalen a su pared. No se fabrica conexión oral-esófago."
+    },
+    {
+      "name": "Parótidas",
+      "latin": "Glandulae parotideae",
+      "sourceId": "",
+      "elements": [
+        "FJ4645",
+        "FJ4648"
+      ],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "FJ4645/FJ4648 aparecen sin FMA/representación válida y fuera del manifiesto activo 4.3; no se integran por nombre de archivo."
+    },
+    {
+      "name": "Ciego completo",
+      "latin": "Caecum",
+      "sourceId": "",
+      "elements": [
+        "FJ2599"
+      ],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "La tabla PART-OF apunta sólo a FJ2599, cuya cabecera identifica unión ileocecal. No equivale a ciego separado."
+    },
+    {
+      "name": "Colon sigmoide separado",
+      "latin": "Colon sigmoideum",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "No hay identidad/malla independiente aprobada en 4.0/4.3; no se corta el colon descendente ni el recto."
+    },
+    {
+      "name": "Canal anal separado",
+      "latin": "Canalis analis",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Sin geometría independiente fiable seleccionada; no extender el recto artificialmente."
+    },
+    {
+      "name": "Regiones gástricas separadas",
+      "latin": "Partes gastris",
+      "sourceId": "",
+      "elements": [
+        "FJ2564"
+      ],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Cardias, fundus, cuerpo, antro y píloro son referencias educativas, no mallas independientes de FJ2564."
+    },
+    {
+      "name": "Regiones pancreáticas separadas",
+      "latin": "Partes pancreatis",
+      "sourceId": "",
+      "elements": [
+        "FJ1895"
+      ],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Cabeza, cuello, cuerpo y cola sin cortes fuente inequívocos; no subdividir la envolvente."
+    },
+    {
+      "name": "Colédoco separado",
+      "latin": "Ductus choledochus",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "No reinterpretar el conducto hepático común ni construir continuidad biliar ausente."
+    },
+    {
+      "name": "Hilio hepático separado",
+      "latin": "Porta hepatis",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Referencia regional sin geometría independiente; contexto vascular explícito."
+    },
+    {
+      "name": "Segmentación hepática I–VIII expuesta",
+      "latin": "Segmenta hepatis",
+      "sourceId": "",
+      "elements": [
+        "FJ2823",
+        "FJ2824"
+      ],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Contradicción FMA/etiqueta de FJ2823 entre tabla y descarga oficial también en 4.3; conservar hígado agregado y trazabilidad nativa."
+    },
+    {
+      "name": "Glándulas menores y microanatomía",
+      "latin": "Glandulae salivariae minores",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Fuera del objetivo macroscópico; no se persiguen subdivisiones microscópicas."
+    },
+    {
+      "name": "Parénquima pancreático alternativo",
+      "latin": "Parenchyma pancreatis",
+      "sourceId": "",
+      "elements": [
+        "FJ2629"
+      ],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "FJ2629 solapa la envolvente FJ1895; sólo se incorpora esta última."
+    },
+    {
+      "name": "Árbol pancreático alternativo",
+      "latin": "Arbor ductalis pancreatis",
+      "sourceId": "",
+      "elements": [
+        "FJ2630"
+      ],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "FJ2630 solapa el conducto aprobado FJ1896; evitar dos representaciones."
+    },
+    {
+      "name": "Pieza hepática antigua FJ2409",
+      "latin": "Parenchyma hepatis",
+      "sourceId": "",
+      "elements": [
+        "FJ2409"
+      ],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "Revisión antigua cuyo territorio coincide con FJ2822; además cambia VII/VI entre metadatos. No duplicar."
+    },
+    {
+      "name": "Hígado 4.3 como sustituto",
+      "latin": "Hepar",
+      "sourceId": "",
+      "elements": [
+        "FJ2816",
+        "FJ2818",
+        "FJ2819",
+        "FJ2820",
+        "FJ2821",
+        "FJ2822",
+        "FJ2823",
+        "FJ2824"
+      ],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "Descarga oficial no resuelve la contradicción VII/VIII; posiciones hepáticas de control iguales. 4.0 conserva cobertura equivalente sin mezclar licencias."
+    },
+    {
+      "name": "Bazo",
+      "latin": "Lien",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "Pertenece a linfático/inmunitario; no iniciar su integración ni duplicarlo en Digestivo."
+    },
+    {
+      "name": "Vasos digestivos",
+      "latin": "Vasa digestoria",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "Reutilizar Cardiovascular mediante relaciones, sin duplicar vasos."
+    },
+    {
+      "name": "Nervios autonómicos",
+      "latin": "Nervi autonomici",
+      "sourceId": "",
+      "elements": [],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "No añadir ni duplicar nervios; contexto únicamente cuando existan IDs curados."
+    },
+    {
+      "name": "Músculos faríngeos y tenias aisladas",
+      "latin": "Musculi pharyngis et taeniae coli",
+      "sourceId": "",
+      "elements": [
+        "FJ2568",
+        "FJ2569",
+        "FJ2570"
+      ],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "DESCARTADO",
+      "reason": "No ampliar Muscular ni fragmentar la pared intestinal en esta fase."
+    },
+    {
+      "name": "Mesenterios",
+      "latin": "Mesenteria",
+      "sourceId": "",
+      "elements": [
+        "FJ3396",
+        "FJ3397",
+        "FJ3398"
+      ],
+      "sourceVersion": "4.0/4.3 según candidato",
+      "category": "auditoría de cobertura",
+      "region": "digestiva",
+      "side": "no aplicable",
+      "parent": "",
+      "entityType": "candidato no integrado",
+      "decision": "APLAZADO",
+      "reason": "Identidades disponibles, pero no necesarias para la continuidad visceral prioritaria; se documentan sin añadir láminas oclusivas."
+    }
+  ],
+  "approved": [
+    {
+      "elementId": "FJ2563",
+      "sourceId": "FMA7131",
+      "unitId": "dig:FMA7131",
+      "ownerSourceId": "FMA7131",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2563.obj",
+        "bytes": 35886,
+        "compressedBytes": 12529,
+        "crc32": "48ab75bb",
+        "offset": 97392734,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55671",
+        "FMA55672",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498",
+        "FMA7131"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2761",
+      "sourceId": "FMA54640",
+      "unitId": "dig:FMA54640",
+      "ownerSourceId": "FMA54640",
+      "side": "midline",
+      "entityType": "estructura oral muscular",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2761.obj",
+        "bytes": 31466,
+        "compressedBytes": 10864,
+        "crc32": "0ca239d6",
+        "offset": 105933164,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA49443",
+        "FMA54640",
+        "FMA61775",
+        "FMA62955",
+        "FMA64989",
+        "FMA67135",
+        "FMA67165"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2768",
+      "sourceId": "FMA59802",
+      "unitId": "dig:FMA59802",
+      "ownerSourceId": "FMA59802",
+      "side": "right",
+      "entityType": "glándula",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2768.obj",
+        "bytes": 13489,
+        "compressedBytes": 4867,
+        "crc32": "f0773978",
+        "offset": 106227991,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55093",
+        "FMA55661",
+        "FMA55662",
+        "FMA55670",
+        "FMA59788",
+        "FMA59802",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498",
+        "FMA9597"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2766",
+      "sourceId": "FMA59803",
+      "unitId": "dig:FMA59803",
+      "ownerSourceId": "FMA59803",
+      "side": "left",
+      "entityType": "glándula",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2766.obj",
+        "bytes": 13403,
+        "compressedBytes": 4896,
+        "crc32": "0a406df2",
+        "offset": 106217625,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55093",
+        "FMA55661",
+        "FMA55662",
+        "FMA55670",
+        "FMA59788",
+        "FMA59803",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498",
+        "FMA9597"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2767",
+      "sourceId": "FMA59804",
+      "unitId": "dig:FMA59804",
+      "ownerSourceId": "FMA59804",
+      "side": "right",
+      "entityType": "glándula",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2767.obj",
+        "bytes": 15235,
+        "compressedBytes": 5350,
+        "crc32": "f282cdaa",
+        "offset": 106222581,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55661",
+        "FMA55662",
+        "FMA55670",
+        "FMA59788",
+        "FMA59791",
+        "FMA59804",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498",
+        "FMA9597"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2765",
+      "sourceId": "FMA59805",
+      "unitId": "dig:FMA59805",
+      "ownerSourceId": "FMA59805",
+      "side": "left",
+      "entityType": "glándula",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2765.obj",
+        "bytes": 14692,
+        "compressedBytes": 5241,
+        "crc32": "ad21ee09",
+        "offset": 106212324,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55661",
+        "FMA55662",
+        "FMA55670",
+        "FMA59788",
+        "FMA59791",
+        "FMA59805",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498",
+        "FMA9597"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2564",
+      "sourceId": "FMA7148",
+      "unitId": "dig:FMA7148",
+      "ownerSourceId": "FMA7148",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2564.obj",
+        "bytes": 106974,
+        "compressedBytes": 34975,
+        "crc32": "1ec5a4d6",
+        "offset": 97405323,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55671",
+        "FMA55672",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498",
+        "FMA7148"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2573",
+      "sourceId": "FMA7206",
+      "unitId": "dig:FMA7206",
+      "ownerSourceId": "FMA7206",
+      "side": "midline",
+      "entityType": "segmento intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2573.obj",
+        "bytes": 112674,
+        "compressedBytes": 36536,
+        "crc32": "25b41ff2",
+        "offset": 98998344,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA7206",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2606",
+      "sourceId": "FMA16981",
+      "unitId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2606.obj",
+        "bytes": 21174,
+        "compressedBytes": 7459,
+        "crc32": "4232487f",
+        "offset": 99215572,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16981",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2617",
+      "sourceId": "FMA16981",
+      "unitId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2617.obj",
+        "bytes": 14286,
+        "compressedBytes": 5271,
+        "crc32": "a2690111",
+        "offset": 99279905,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16981",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2622",
+      "sourceId": "FMA16981",
+      "unitId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2622.obj",
+        "bytes": 10194,
+        "compressedBytes": 3935,
+        "crc32": "e38262b7",
+        "offset": 99313057,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16981",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2623",
+      "sourceId": "FMA16981",
+      "unitId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2623.obj",
+        "bytes": 22957,
+        "compressedBytes": 8283,
+        "crc32": "ace6677d",
+        "offset": 99317052,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16981",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2624",
+      "sourceId": "FMA16981",
+      "unitId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2624.obj",
+        "bytes": 10187,
+        "compressedBytes": 3954,
+        "crc32": "9617f859",
+        "offset": 99325395,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16981",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2625",
+      "sourceId": "FMA16981",
+      "unitId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2625.obj",
+        "bytes": 8813,
+        "compressedBytes": 3452,
+        "crc32": "cc1dc594",
+        "offset": 99329409,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16981",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2626",
+      "sourceId": "FMA16981",
+      "unitId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2626.obj",
+        "bytes": 20247,
+        "compressedBytes": 7331,
+        "crc32": "381ba5ea",
+        "offset": 99332921,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16981",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2627",
+      "sourceId": "FMA16981",
+      "unitId": "dig:FMA16981",
+      "ownerSourceId": "FMA16981",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2627.obj",
+        "bytes": 10880,
+        "compressedBytes": 4190,
+        "crc32": "486e3bd0",
+        "offset": 99340312,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16981",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2607",
+      "sourceId": "FMA16982",
+      "unitId": "dig:FMA16982",
+      "ownerSourceId": "FMA16982",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2607.obj",
+        "bytes": 14008,
+        "compressedBytes": 5241,
+        "crc32": "cf062a15",
+        "offset": 99223091,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16982",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2608",
+      "sourceId": "FMA16982",
+      "unitId": "dig:FMA16982",
+      "ownerSourceId": "FMA16982",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2608.obj",
+        "bytes": 15007,
+        "compressedBytes": 5553,
+        "crc32": "3fa140a3",
+        "offset": 99228392,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16982",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2609",
+      "sourceId": "FMA16982",
+      "unitId": "dig:FMA16982",
+      "ownerSourceId": "FMA16982",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2609.obj",
+        "bytes": 10881,
+        "compressedBytes": 4182,
+        "crc32": "faca7794",
+        "offset": 99234005,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16982",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2610",
+      "sourceId": "FMA16982",
+      "unitId": "dig:FMA16982",
+      "ownerSourceId": "FMA16982",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2610.obj",
+        "bytes": 17388,
+        "compressedBytes": 6374,
+        "crc32": "b8101781",
+        "offset": 99238247,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16982",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2628",
+      "sourceId": "FMA16982",
+      "unitId": "dig:FMA16982",
+      "ownerSourceId": "FMA16982",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2628.obj",
+        "bytes": 13914,
+        "compressedBytes": 5219,
+        "crc32": "5eda9483",
+        "offset": 99344562,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16982",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2611",
+      "sourceId": "FMA16983",
+      "unitId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2611.obj",
+        "bytes": 13407,
+        "compressedBytes": 5025,
+        "crc32": "21ed64cb",
+        "offset": 99244681,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16983",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2612",
+      "sourceId": "FMA16983",
+      "unitId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2612.obj",
+        "bytes": 14765,
+        "compressedBytes": 5488,
+        "crc32": "89910959",
+        "offset": 99249766,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16983",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2613",
+      "sourceId": "FMA16983",
+      "unitId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2613.obj",
+        "bytes": 10129,
+        "compressedBytes": 3950,
+        "crc32": "5e438df0",
+        "offset": 99255314,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16983",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2614",
+      "sourceId": "FMA16983",
+      "unitId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2614.obj",
+        "bytes": 13427,
+        "compressedBytes": 5065,
+        "crc32": "3aa0e6ca",
+        "offset": 99259324,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16983",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2615",
+      "sourceId": "FMA16983",
+      "unitId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2615.obj",
+        "bytes": 16018,
+        "compressedBytes": 5926,
+        "crc32": "266cdd87",
+        "offset": 99264449,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16983",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2616",
+      "sourceId": "FMA16983",
+      "unitId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2616.obj",
+        "bytes": 26543,
+        "compressedBytes": 9410,
+        "crc32": "8ca89c1a",
+        "offset": 99270435,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16983",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2618",
+      "sourceId": "FMA16983",
+      "unitId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2618.obj",
+        "bytes": 13019,
+        "compressedBytes": 4891,
+        "crc32": "61870184",
+        "offset": 99285236,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16983",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2619",
+      "sourceId": "FMA16983",
+      "unitId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2619.obj",
+        "bytes": 15666,
+        "compressedBytes": 5770,
+        "crc32": "68d976e9",
+        "offset": 99290187,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16983",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2620",
+      "sourceId": "FMA16983",
+      "unitId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2620.obj",
+        "bytes": 17065,
+        "compressedBytes": 6165,
+        "crc32": "3ad43057",
+        "offset": 99296017,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16983",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2621",
+      "sourceId": "FMA16983",
+      "unitId": "dig:FMA16983",
+      "ownerSourceId": "FMA16983",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2621.obj",
+        "bytes": 30868,
+        "compressedBytes": 10755,
+        "crc32": "ee1d0b69",
+        "offset": 99302242,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA16980",
+        "FMA16983",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2574",
+      "sourceId": "FMA14964",
+      "unitId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2574.obj",
+        "bytes": 22513,
+        "compressedBytes": 7990,
+        "crc32": "fd7080e1",
+        "offset": 99034940,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14964",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2575",
+      "sourceId": "FMA14964",
+      "unitId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2575.obj",
+        "bytes": 16098,
+        "compressedBytes": 5969,
+        "crc32": "7f03bdd4",
+        "offset": 99042990,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14964",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2585",
+      "sourceId": "FMA14964",
+      "unitId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2585.obj",
+        "bytes": 17446,
+        "compressedBytes": 6332,
+        "crc32": "c7221ba6",
+        "offset": 99098794,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14964",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2596",
+      "sourceId": "FMA14964",
+      "unitId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2596.obj",
+        "bytes": 14164,
+        "compressedBytes": 5210,
+        "crc32": "fb38097c",
+        "offset": 99159500,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14964",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2600",
+      "sourceId": "FMA14964",
+      "unitId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2600.obj",
+        "bytes": 15129,
+        "compressedBytes": 5546,
+        "crc32": "1471b8a9",
+        "offset": 99181051,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14964",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2601",
+      "sourceId": "FMA14964",
+      "unitId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2601.obj",
+        "bytes": 13045,
+        "compressedBytes": 4874,
+        "crc32": "5765605b",
+        "offset": 99186657,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14964",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2602",
+      "sourceId": "FMA14964",
+      "unitId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2602.obj",
+        "bytes": 15569,
+        "compressedBytes": 5782,
+        "crc32": "cf07c5cc",
+        "offset": 99191591,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14964",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2603",
+      "sourceId": "FMA14964",
+      "unitId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2603.obj",
+        "bytes": 17212,
+        "compressedBytes": 6294,
+        "crc32": "d573717c",
+        "offset": 99197433,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14964",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2604",
+      "sourceId": "FMA14964",
+      "unitId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2604.obj",
+        "bytes": 12057,
+        "compressedBytes": 4543,
+        "crc32": "752c85c6",
+        "offset": 99203787,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14964",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2605",
+      "sourceId": "FMA14964",
+      "unitId": "dig:FMA14964",
+      "ownerSourceId": "FMA14964",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2605.obj",
+        "bytes": 19703,
+        "compressedBytes": 7122,
+        "crc32": "a2d2e807",
+        "offset": 99208390,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14964",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2576",
+      "sourceId": "FMA14965",
+      "unitId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2576.obj",
+        "bytes": 10155,
+        "compressedBytes": 3902,
+        "crc32": "b263b29e",
+        "offset": 99049019,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14965",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2577",
+      "sourceId": "FMA14965",
+      "unitId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2577.obj",
+        "bytes": 19010,
+        "compressedBytes": 6925,
+        "crc32": "00d8b397",
+        "offset": 99052981,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14965",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2578",
+      "sourceId": "FMA14965",
+      "unitId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2578.obj",
+        "bytes": 17636,
+        "compressedBytes": 6436,
+        "crc32": "ba8ac4d4",
+        "offset": 99059966,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14965",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2579",
+      "sourceId": "FMA14965",
+      "unitId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2579.obj",
+        "bytes": 16651,
+        "compressedBytes": 6105,
+        "crc32": "83d6ad2f",
+        "offset": 99066462,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14965",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2580",
+      "sourceId": "FMA14965",
+      "unitId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2580.obj",
+        "bytes": 20138,
+        "compressedBytes": 7293,
+        "crc32": "a4d86911",
+        "offset": 99072627,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14965",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2581",
+      "sourceId": "FMA14965",
+      "unitId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2581.obj",
+        "bytes": 12419,
+        "compressedBytes": 4607,
+        "crc32": "aa11ff83",
+        "offset": 99079980,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14965",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2582",
+      "sourceId": "FMA14965",
+      "unitId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2582.obj",
+        "bytes": 12520,
+        "compressedBytes": 4713,
+        "crc32": "0600bd32",
+        "offset": 99084647,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14965",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2583",
+      "sourceId": "FMA14965",
+      "unitId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2583.obj",
+        "bytes": 11377,
+        "compressedBytes": 4333,
+        "crc32": "d4dc6bec",
+        "offset": 99089420,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14965",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2584",
+      "sourceId": "FMA14965",
+      "unitId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2584.obj",
+        "bytes": 13109,
+        "compressedBytes": 4921,
+        "crc32": "25614b04",
+        "offset": 99093813,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14965",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2586",
+      "sourceId": "FMA14965",
+      "unitId": "dig:FMA14965",
+      "ownerSourceId": "FMA14965",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2586.obj",
+        "bytes": 15734,
+        "compressedBytes": 5799,
+        "crc32": "479534cc",
+        "offset": 99105186,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14965",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2587",
+      "sourceId": "FMA14966",
+      "unitId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2587.obj",
+        "bytes": 13065,
+        "compressedBytes": 4935,
+        "crc32": "eda87f0a",
+        "offset": 99111045,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14966",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2588",
+      "sourceId": "FMA14966",
+      "unitId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2588.obj",
+        "bytes": 15688,
+        "compressedBytes": 5790,
+        "crc32": "2f7f8a13",
+        "offset": 99116040,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14966",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2589",
+      "sourceId": "FMA14966",
+      "unitId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2589.obj",
+        "bytes": 18966,
+        "compressedBytes": 6946,
+        "crc32": "c208cb59",
+        "offset": 99121890,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14966",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2590",
+      "sourceId": "FMA14966",
+      "unitId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2590.obj",
+        "bytes": 10651,
+        "compressedBytes": 4119,
+        "crc32": "5d0c163d",
+        "offset": 99128896,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14966",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2591",
+      "sourceId": "FMA14966",
+      "unitId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2591.obj",
+        "bytes": 13161,
+        "compressedBytes": 4990,
+        "crc32": "85f14858",
+        "offset": 99133075,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14966",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2592",
+      "sourceId": "FMA14966",
+      "unitId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2592.obj",
+        "bytes": 14150,
+        "compressedBytes": 5223,
+        "crc32": "bc65135a",
+        "offset": 99138125,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14966",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2593",
+      "sourceId": "FMA14966",
+      "unitId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2593.obj",
+        "bytes": 15166,
+        "compressedBytes": 5566,
+        "crc32": "bdb17473",
+        "offset": 99143408,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14966",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2594",
+      "sourceId": "FMA14966",
+      "unitId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2594.obj",
+        "bytes": 12692,
+        "compressedBytes": 4727,
+        "crc32": "d6f6d99e",
+        "offset": 99149034,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14966",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2595",
+      "sourceId": "FMA14966",
+      "unitId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2595.obj",
+        "bytes": 15372,
+        "compressedBytes": 5619,
+        "crc32": "5ec2235e",
+        "offset": 99153821,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14966",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2597",
+      "sourceId": "FMA14966",
+      "unitId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2597.obj",
+        "bytes": 11751,
+        "compressedBytes": 4465,
+        "crc32": "39f430bf",
+        "offset": 99164770,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14966",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2598",
+      "sourceId": "FMA14966",
+      "unitId": "dig:FMA14966",
+      "ownerSourceId": "FMA14966",
+      "side": "midline",
+      "entityType": "porción intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2598.obj",
+        "bytes": 14437,
+        "compressedBytes": 5315,
+        "crc32": "b7eef7f1",
+        "offset": 99169295,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14092",
+        "FMA14963",
+        "FMA14966",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2599",
+      "sourceId": "FMA11338",
+      "unitId": "dig:FMA11338",
+      "ownerSourceId": "FMA11338",
+      "side": "midline",
+      "entityType": "unión anatómica",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2599.obj",
+        "bytes": 17331,
+        "compressedBytes": 6321,
+        "crc32": "31242250",
+        "offset": 99174670,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA11337",
+        "FMA11338",
+        "FMA49443",
+        "FMA5898",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2565",
+      "sourceId": "FMA14542",
+      "unitId": "dig:FMA14542",
+      "ownerSourceId": "FMA14542",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2565.obj",
+        "bytes": 27107,
+        "compressedBytes": 9490,
+        "crc32": "60b14ba9",
+        "offset": 97440358,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14542",
+        "FMA55671",
+        "FMA55672",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2566",
+      "sourceId": "FMA14545",
+      "unitId": "dig:FMA14545",
+      "ownerSourceId": "FMA14545",
+      "side": "midline",
+      "entityType": "segmento intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2566.obj",
+        "bytes": 214378,
+        "compressedBytes": 67164,
+        "crc32": "a7bec485",
+        "offset": 97449908,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14540",
+        "FMA14545",
+        "FMA222905",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2572",
+      "sourceId": "FMA14546",
+      "unitId": "dig:FMA14546",
+      "ownerSourceId": "FMA14546",
+      "side": "midline",
+      "entityType": "segmento intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2572.obj",
+        "bytes": 225548,
+        "compressedBytes": 70502,
+        "crc32": "476ff2ed",
+        "offset": 98927782,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14540",
+        "FMA14546",
+        "FMA222905",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2567",
+      "sourceId": "FMA14547",
+      "unitId": "dig:FMA14547",
+      "ownerSourceId": "FMA14547",
+      "side": "midline",
+      "entityType": "segmento intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2567.obj",
+        "bytes": 365589,
+        "compressedBytes": 112777,
+        "crc32": "b2863054",
+        "offset": 97517132,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14540",
+        "FMA14547",
+        "FMA222905",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2571",
+      "sourceId": "FMA14544",
+      "unitId": "dig:FMA14544",
+      "ownerSourceId": "FMA14544",
+      "side": "midline",
+      "entityType": "segmento intestinal",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2571.obj",
+        "bytes": 129712,
+        "compressedBytes": 42693,
+        "crc32": "8464479a",
+        "offset": 98885029,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14540",
+        "FMA14544",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ2816",
+      "sourceId": "FMA13365",
+      "unitId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2816.obj",
+        "bytes": 317277,
+        "compressedBytes": 92858,
+        "crc32": "e3453414",
+        "offset": 114453519,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA13365",
+        "FMA14065",
+        "FMA14495",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA82472",
+        "FMA82478",
+        "FMA82494"
+      ],
+      "identityBasis": "Cabecera original + pertenencia PART-OF hepática"
+    },
+    {
+      "elementId": "FJ2818",
+      "sourceId": "FMA15739",
+      "unitId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2818.obj",
+        "bytes": 936395,
+        "compressedBytes": 266907,
+        "crc32": "580a4f2b",
+        "offset": 114591519,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA15737",
+        "FMA15739",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + pertenencia PART-OF hepática"
+    },
+    {
+      "elementId": "FJ2819",
+      "sourceId": "FMA15741",
+      "unitId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2819.obj",
+        "bytes": 677762,
+        "compressedBytes": 194602,
+        "crc32": "55897082",
+        "offset": 114858486,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA15737",
+        "FMA15741",
+        "FMA15757",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + pertenencia PART-OF hepática"
+    },
+    {
+      "elementId": "FJ2820",
+      "sourceId": "FMA15742",
+      "unitId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2820.obj",
+        "bytes": 1296045,
+        "compressedBytes": 368458,
+        "crc32": "97e3d33c",
+        "offset": 115053148,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA15737",
+        "FMA15742",
+        "FMA15757",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + pertenencia PART-OF hepática"
+    },
+    {
+      "elementId": "FJ2821",
+      "sourceId": "FMA15743",
+      "unitId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2821.obj",
+        "bytes": 793787,
+        "compressedBytes": 225949,
+        "crc32": "a4f59ec3",
+        "offset": 115421666,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA15737",
+        "FMA15743",
+        "FMA15755",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + pertenencia PART-OF hepática"
+    },
+    {
+      "elementId": "FJ2822",
+      "sourceId": "FMA15744",
+      "unitId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2822.obj",
+        "bytes": 1282103,
+        "compressedBytes": 354411,
+        "crc32": "6ba44433",
+        "offset": 115647675,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA15737",
+        "FMA15744",
+        "FMA15756",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + pertenencia PART-OF hepática"
+    },
+    {
+      "elementId": "FJ2823",
+      "sourceId": "FMA15746",
+      "unitId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2823.obj",
+        "bytes": 1284700,
+        "compressedBytes": 361420,
+        "crc32": "d2dc39d8",
+        "offset": 116002146,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA15737",
+        "FMA15746",
+        "FMA15755",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + pertenencia PART-OF hepática"
+    },
+    {
+      "elementId": "FJ2824",
+      "sourceId": "FMA15746",
+      "unitId": "dig:FMA7197",
+      "ownerSourceId": "FMA7197",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2824.obj",
+        "bytes": 1456320,
+        "compressedBytes": 407511,
+        "crc32": "dcd098e9",
+        "offset": 116363626,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA15737",
+        "FMA15746",
+        "FMA15755",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + pertenencia PART-OF hepática"
+    },
+    {
+      "elementId": "FJ2817",
+      "sourceId": "FMA7202",
+      "unitId": "dig:FMA7202",
+      "ownerSourceId": "FMA7202",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2817.obj",
+        "bytes": 144859,
+        "compressedBytes": 45022,
+        "crc32": "fd704ae0",
+        "offset": 114546437,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55671",
+        "FMA55672",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498",
+        "FMA7202"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ1895",
+      "sourceId": "FMA7198",
+      "unitId": "dig:FMA7198",
+      "ownerSourceId": "FMA7198",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1895.obj",
+        "bytes": 307895,
+        "compressedBytes": 90958,
+        "crc32": "619822cf",
+        "offset": 70355729,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA55661",
+        "FMA55662",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498",
+        "FMA7198"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ1896",
+      "sourceId": "FMA10419",
+      "unitId": "dig:FMA10419",
+      "ownerSourceId": "FMA10419",
+      "side": "midline",
+      "entityType": "conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1896.obj",
+        "bytes": 344665,
+        "compressedBytes": 105352,
+        "crc32": "a26b4d5b",
+        "offset": 70446747,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA10419",
+        "FMA30320",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3080",
+      "sourceId": "FMA14539",
+      "unitId": "dig:FMA14539",
+      "ownerSourceId": "FMA14539",
+      "side": "midline",
+      "entityType": "conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3080.obj",
+        "bytes": 17016,
+        "compressedBytes": 5876,
+        "crc32": "bcfc03c9",
+        "offset": 118540655,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14539",
+        "FMA14678",
+        "FMA30320",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140",
+        "FMA9706"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3079",
+      "sourceId": "FMA14668",
+      "unitId": "dig:FMA14668",
+      "ownerSourceId": "FMA14668",
+      "side": "midline",
+      "entityType": "conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3079.obj",
+        "bytes": 80800,
+        "compressedBytes": 26133,
+        "crc32": "56cd784a",
+        "offset": 118514462,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14668",
+        "FMA14678",
+        "FMA30320",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140",
+        "FMA9706"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3123",
+      "sourceId": "FMA14669",
+      "unitId": "dig:FMA14669",
+      "ownerSourceId": "FMA14669",
+      "side": "right",
+      "entityType": "conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3123.obj",
+        "bytes": 12973,
+        "compressedBytes": 4584,
+        "crc32": "d985ef96",
+        "offset": 119449679,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14669",
+        "FMA14678",
+        "FMA30320",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140",
+        "FMA9706"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3096",
+      "sourceId": "FMA14670",
+      "unitId": "dig:FMA14670",
+      "ownerSourceId": "FMA14670",
+      "side": "left",
+      "entityType": "conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3096.obj",
+        "bytes": 49991,
+        "compressedBytes": 16337,
+        "crc32": "db287698",
+        "offset": 118880216,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA14670",
+        "FMA14678",
+        "FMA30320",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140",
+        "FMA9706"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3071",
+      "sourceId": "FMA71867",
+      "unitId": "dig:FMA71867",
+      "ownerSourceId": "FMA71867",
+      "side": "right",
+      "entityType": "componente de conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3071.obj",
+        "bytes": 43607,
+        "compressedBytes": 14289,
+        "crc32": "ded562ef",
+        "offset": 118316742,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA71856",
+        "FMA71859",
+        "FMA71865",
+        "FMA71867",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3072",
+      "sourceId": "FMA71868",
+      "unitId": "dig:FMA71868",
+      "ownerSourceId": "FMA71868",
+      "side": "right",
+      "entityType": "componente de conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3072.obj",
+        "bytes": 126892,
+        "compressedBytes": 39107,
+        "crc32": "b4d2476b",
+        "offset": 118331091,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA71856",
+        "FMA71859",
+        "FMA71865",
+        "FMA71868",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3109",
+      "sourceId": "FMA71869",
+      "unitId": "dig:FMA71869",
+      "ownerSourceId": "FMA71869",
+      "side": "right",
+      "entityType": "componente de conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3109.obj",
+        "bytes": 42484,
+        "compressedBytes": 13982,
+        "crc32": "a2f76ae6",
+        "offset": 119061835,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA71856",
+        "FMA71859",
+        "FMA71865",
+        "FMA71869",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3110",
+      "sourceId": "FMA71869",
+      "unitId": "dig:FMA71869",
+      "ownerSourceId": "FMA71869",
+      "side": "right",
+      "entityType": "componente de conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3110.obj",
+        "bytes": 88647,
+        "compressedBytes": 28171,
+        "crc32": "cc1d1c2d",
+        "offset": 119075877,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA71856",
+        "FMA71859",
+        "FMA71865",
+        "FMA71869",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3108",
+      "sourceId": "FMA71870",
+      "unitId": "dig:FMA71870",
+      "ownerSourceId": "FMA71870",
+      "side": "right",
+      "entityType": "componente de conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3108.obj",
+        "bytes": 55397,
+        "compressedBytes": 18112,
+        "crc32": "ef09f10d",
+        "offset": 119043663,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA71856",
+        "FMA71859",
+        "FMA71865",
+        "FMA71870",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3104",
+      "sourceId": "FMA71885",
+      "unitId": "dig:FMA71885",
+      "ownerSourceId": "FMA71885",
+      "side": "left",
+      "entityType": "componente de conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3104.obj",
+        "bytes": 37050,
+        "compressedBytes": 12146,
+        "crc32": "5c542b72",
+        "offset": 118988646,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA71856",
+        "FMA71860",
+        "FMA71866",
+        "FMA71885",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3105",
+      "sourceId": "FMA71885",
+      "unitId": "dig:FMA71885",
+      "ownerSourceId": "FMA71885",
+      "side": "left",
+      "entityType": "componente de conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3105.obj",
+        "bytes": 36411,
+        "compressedBytes": 11729,
+        "crc32": "02991f35",
+        "offset": 119000852,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA71856",
+        "FMA71860",
+        "FMA71866",
+        "FMA71885",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3103",
+      "sourceId": "FMA71886",
+      "unitId": "dig:FMA71886",
+      "ownerSourceId": "FMA71886",
+      "side": "left",
+      "entityType": "componente de conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3103.obj",
+        "bytes": 45773,
+        "compressedBytes": 15260,
+        "crc32": "21714750",
+        "offset": 118973326,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA71856",
+        "FMA71860",
+        "FMA71866",
+        "FMA71886",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3088",
+      "sourceId": "FMA71887",
+      "unitId": "dig:FMA71887",
+      "ownerSourceId": "FMA71887",
+      "side": "left",
+      "entityType": "componente de conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3088.obj",
+        "bytes": 38988,
+        "compressedBytes": 13074,
+        "crc32": "2115dba5",
+        "offset": 118758701,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA71856",
+        "FMA71860",
+        "FMA71866",
+        "FMA71887",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3090",
+      "sourceId": "FMA71887",
+      "unitId": "dig:FMA71887",
+      "ownerSourceId": "FMA71887",
+      "side": "left",
+      "entityType": "componente de conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3090.obj",
+        "bytes": 52971,
+        "compressedBytes": 17430,
+        "crc32": "78e4e4fe",
+        "offset": 118786689,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA71856",
+        "FMA71860",
+        "FMA71866",
+        "FMA71887",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3089",
+      "sourceId": "FMA71888",
+      "unitId": "dig:FMA71888",
+      "ownerSourceId": "FMA71888",
+      "side": "left",
+      "entityType": "componente de conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3089.obj",
+        "bytes": 45141,
+        "compressedBytes": 14794,
+        "crc32": "2c081ae6",
+        "offset": 118771835,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA71856",
+        "FMA71860",
+        "FMA71866",
+        "FMA71888",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ1883",
+      "sourceId": "FMA71889",
+      "unitId": "dig:FMA71889",
+      "ownerSourceId": "FMA71889",
+      "side": "midline",
+      "entityType": "componente de conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1883.obj",
+        "bytes": 29370,
+        "compressedBytes": 9898,
+        "crc32": "42a435f3",
+        "offset": 70317999,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA71856",
+        "FMA71860",
+        "FMA71866",
+        "FMA71889",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    },
+    {
+      "elementId": "FJ3094",
+      "sourceId": "FMA76903",
+      "unitId": "dig:FMA76903",
+      "ownerSourceId": "FMA76903",
+      "side": "left",
+      "entityType": "componente de conducto",
+      "sourceVersion": "4.0",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3094.obj",
+        "bytes": 29243,
+        "compressedBytes": 9852,
+        "crc32": "8842d3ab",
+        "offset": 118845157,
+        "method": 8
+      },
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA71856",
+        "FMA76903",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Cabecera original + selección FMA/FJ curada"
+    }
+  ],
+  "modules": [
+    {
+      "id": "digestive:upper",
+      "filename": "upper.glb"
+    },
+    {
+      "id": "digestive:stomach-accessory",
+      "filename": "stomach-accessory.glb"
+    },
+    {
+      "id": "digestive:small-intestine",
+      "filename": "small-intestine.glb"
+    },
+    {
+      "id": "digestive:large-intestine",
+      "filename": "large-intestine.glb"
+    }
+  ],
+  "counts": {
+    "approvedUnits": 38,
+    "approvedMeshes": 96,
+    "discarded": 8,
+    "deferred": 13
+  }
+}

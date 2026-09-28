@@ -1,0 +1,2350 @@
+{
+  "schemaVersion": 1,
+  "id": "med3d-digestive",
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "nodes": [
+    {
+      "id": "digestive",
+      "name": "Sistema digestivo",
+      "anatomicalName": "Sistema digestivo",
+      "aliases": [
+        "digestivo",
+        "digestive",
+        "gastrointestinal",
+        "alimentary system"
+      ],
+      "systemId": "digestive",
+      "regionId": "digestive",
+      "children": [
+        "dig:upper",
+        "dig:small",
+        "dig:large",
+        "dig:accessory",
+        "dig:FMA7148"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "digestive:large-intestine",
+        "digestive:small-intestine",
+        "digestive:stomach-accessory",
+        "digestive:upper"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Systema digestorium",
+      "digestiveType": "sistema",
+      "bounds": [
+        [
+          -0.126783,
+          0.757327,
+          0.011280799999999999
+        ],
+        [
+          0.117482,
+          1.46732,
+          0.202413
+        ]
+      ]
+    },
+    {
+      "id": "dig:upper",
+      "name": "Tracto digestivo superior disponible",
+      "anatomicalName": "Tracto digestivo superior disponible",
+      "aliases": [],
+      "systemId": "digestive",
+      "regionId": "dig:upper",
+      "children": [
+        "dig:oral",
+        "dig:FMA7131"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "digestive:upper"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Tractus digestorius superior",
+      "digestiveType": "región",
+      "family": "upper",
+      "parentId": "digestive",
+      "bounds": [
+        [
+          -0.0315539,
+          1.11599,
+          0.0663873
+        ],
+        [
+          0.0302661,
+          1.46732,
+          0.169904
+        ]
+      ]
+    },
+    {
+      "id": "dig:oral",
+      "name": "Región oral disponible",
+      "anatomicalName": "Región oral disponible",
+      "aliases": [
+        "boca",
+        "mouth",
+        "oral"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:oral",
+      "children": [
+        "dig:salivary",
+        "dig:FMA54640"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "digestive:upper"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Regio oralis",
+      "digestiveType": "región",
+      "family": "oral",
+      "parentId": "dig:upper",
+      "bounds": [
+        [
+          -0.0315539,
+          1.43096,
+          0.110473
+        ],
+        [
+          0.0302661,
+          1.46732,
+          0.169904
+        ]
+      ]
+    },
+    {
+      "id": "dig:salivary",
+      "name": "Glándulas salivales disponibles",
+      "anatomicalName": "Glándulas salivales disponibles",
+      "aliases": [],
+      "systemId": "digestive",
+      "regionId": "dig:salivary",
+      "children": [
+        "dig:FMA59802",
+        "dig:FMA59803",
+        "dig:FMA59804",
+        "dig:FMA59805"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "digestive:upper"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Glandulae salivariae",
+      "digestiveType": "grupo de glándulas",
+      "family": "salivary",
+      "parentId": "dig:oral",
+      "bounds": [
+        [
+          -0.0315539,
+          1.4384400000000002,
+          0.118591
+        ],
+        [
+          0.0302661,
+          1.4608299999999999,
+          0.16361799999999999
+        ]
+      ]
+    },
+    {
+      "id": "dig:small",
+      "name": "Intestino delgado",
+      "anatomicalName": "Intestino delgado",
+      "aliases": [
+        "FMA7200",
+        "small intestine"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:small",
+      "children": [
+        "dig:FMA7207",
+        "dig:FMA7208",
+        "dig:FMA7206",
+        "dig:FMA11338"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "digestive:small-intestine"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA7200",
+      "latin": "Intestinum tenue",
+      "digestiveType": "grupo de segmentos",
+      "family": "small",
+      "parentId": "digestive",
+      "bounds": [
+        [
+          -0.0870539,
+          0.80529,
+          0.103893
+        ],
+        [
+          0.106621,
+          1.07711,
+          0.183429
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA7207",
+      "name": "Yeyuno",
+      "anatomicalName": "Yeyuno",
+      "aliases": [
+        "FMA7207",
+        "Yeyuno",
+        "Jejunum"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:small",
+      "children": [
+        "dig:FMA16981",
+        "dig:FMA16982",
+        "dig:FMA16983"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:small-intestine"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA7207",
+      "latin": "Jejunum",
+      "digestiveType": "segmento intestinal",
+      "digestiveClass": "tract",
+      "family": "jejunum",
+      "explosionRegionId": "dig-small",
+      "parentId": "dig:small",
+      "bounds": [
+        [
+          -0.0870539,
+          0.909207,
+          0.11749
+        ],
+        [
+          0.106621,
+          1.02365,
+          0.183429
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA7208",
+      "name": "Íleon",
+      "anatomicalName": "Íleon",
+      "aliases": [
+        "FMA7208",
+        "Íleon",
+        "Ileum"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:small",
+      "children": [
+        "dig:FMA14964",
+        "dig:FMA14965",
+        "dig:FMA14966"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:small-intestine"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA7208",
+      "latin": "Ileum",
+      "digestiveType": "segmento intestinal",
+      "digestiveClass": "tract",
+      "family": "ileum",
+      "explosionRegionId": "dig-small",
+      "parentId": "dig:small",
+      "bounds": [
+        [
+          -0.0799084,
+          0.80529,
+          0.11997000000000001
+        ],
+        [
+          0.101842,
+          0.952636,
+          0.17976499999999998
+        ]
+      ]
+    },
+    {
+      "id": "dig:large",
+      "name": "Intestino grueso disponible",
+      "anatomicalName": "Intestino grueso disponible",
+      "aliases": [
+        "FMA7201",
+        "intestino grueso",
+        "large intestine"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:large",
+      "children": [
+        "dig:colon",
+        "dig:FMA14542",
+        "dig:FMA14544"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "digestive:large-intestine"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA7201",
+      "latin": "Intestinum crassum",
+      "digestiveType": "grupo de segmentos",
+      "family": "large",
+      "parentId": "digestive",
+      "bounds": [
+        [
+          -0.126783,
+          0.757327,
+          0.011280799999999999
+        ],
+        [
+          0.117482,
+          1.06473,
+          0.19693100000000002
+        ]
+      ]
+    },
+    {
+      "id": "dig:colon",
+      "name": "Colon disponible",
+      "anatomicalName": "Colon disponible",
+      "aliases": [
+        "colon"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:colon",
+      "children": [
+        "dig:FMA14545",
+        "dig:FMA14546",
+        "dig:FMA14547"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "digestive:large-intestine"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Colon",
+      "digestiveType": "grupo de segmentos",
+      "family": "colon",
+      "parentId": "dig:large",
+      "bounds": [
+        [
+          -0.126783,
+          0.8223210000000001,
+          0.0502812
+        ],
+        [
+          0.117482,
+          1.06473,
+          0.19693100000000002
+        ]
+      ]
+    },
+    {
+      "id": "dig:accessory",
+      "name": "Órganos accesorios abdominales",
+      "anatomicalName": "Órganos accesorios abdominales",
+      "aliases": [],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [
+        "dig:ducts",
+        "dig:FMA7197",
+        "dig:FMA7202",
+        "dig:FMA7198"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Organa digestoria accessoria",
+      "digestiveType": "grupo editorial",
+      "family": "accessory",
+      "parentId": "digestive",
+      "bounds": [
+        [
+          -0.115064,
+          1.0043600000000001,
+          0.0433287
+        ],
+        [
+          0.0943668,
+          1.18314,
+          0.202413
+        ]
+      ]
+    },
+    {
+      "id": "dig:ducts",
+      "name": "Vías secretoras disponibles",
+      "anatomicalName": "Vías secretoras disponibles",
+      "aliases": [],
+      "systemId": "digestive",
+      "regionId": "dig:ducts",
+      "children": [
+        "dig:biliary",
+        "dig:FMA10419"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Ductus digestorii",
+      "digestiveType": "grupo editorial",
+      "family": "ducts",
+      "parentId": "dig:accessory",
+      "bounds": [
+        [
+          -0.0918446,
+          1.0195800000000002,
+          0.055416
+        ],
+        [
+          0.0614969,
+          1.16248,
+          0.198243
+        ]
+      ]
+    },
+    {
+      "id": "dig:biliary",
+      "name": "Vías biliares disponibles",
+      "anatomicalName": "Vías biliares disponibles",
+      "aliases": [
+        "biliary tree",
+        "árbol biliar",
+        "bile ducts"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:biliary",
+      "children": [
+        "dig:FMA14539",
+        "dig:FMA14668",
+        "dig:FMA14669",
+        "dig:FMA14670",
+        "dig:FMA71867",
+        "dig:FMA71868",
+        "dig:FMA71869",
+        "dig:FMA71870",
+        "dig:FMA71885",
+        "dig:FMA71886",
+        "dig:FMA71887",
+        "dig:FMA71888",
+        "dig:FMA71889",
+        "dig:FMA76903"
+      ],
+      "kind": "division",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Ductus biliferi",
+      "digestiveType": "grupo de conductos",
+      "family": "biliary",
+      "parentId": "dig:ducts",
+      "bounds": [
+        [
+          -0.0918446,
+          1.0195800000000002,
+          0.055416
+        ],
+        [
+          0.0576872,
+          1.16248,
+          0.198243
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA7131",
+      "name": "Esófago",
+      "anatomicalName": "Esófago",
+      "aliases": [
+        "dig:FMA7131",
+        "esophagus",
+        "FMA7131",
+        "FJ2563"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:upper",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:upper"
+      ],
+      "meshNames": [
+        "bp3d_FMA7131_FJ2563"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7131",
+      "latin": "Oesophagus",
+      "side": "midline",
+      "family": "esophagus",
+      "digestiveClass": "tract",
+      "digestiveType": "órgano",
+      "explosionRegionId": "dig-upper",
+      "parentId": "dig:upper",
+      "bounds": [
+        [
+          -0.00881063,
+          1.11599,
+          0.0663873
+        ],
+        [
+          0.0236032,
+          1.3903900000000002,
+          0.124264
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA54640",
+      "name": "Lengua · estructura oral",
+      "anatomicalName": "Lengua · estructura oral",
+      "aliases": [
+        "dig:FMA54640",
+        "tongue",
+        "FMA54640",
+        "FJ2761"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:upper",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:upper"
+      ],
+      "meshNames": [
+        "bp3d_FMA54640_FJ2761"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA54640",
+      "latin": "Lingua",
+      "side": "midline",
+      "family": "tongue",
+      "digestiveClass": "tract",
+      "digestiveType": "estructura oral muscular",
+      "explosionRegionId": "dig-upper",
+      "parentId": "dig:oral",
+      "bounds": [
+        [
+          -0.0199706,
+          1.43096,
+          0.110473
+        ],
+        [
+          0.0188003,
+          1.46732,
+          0.169904
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA59802",
+      "name": "Glándula submandibular derecha",
+      "anatomicalName": "Glándula submandibular derecha",
+      "aliases": [
+        "dig:FMA59802",
+        "right submandibular gland",
+        "FMA59802",
+        "FJ2768"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:upper",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:upper"
+      ],
+      "meshNames": [
+        "bp3d_FMA59802_FJ2768"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA59802",
+      "latin": "Glandula submandibularis dextra",
+      "side": "right",
+      "family": "salivary",
+      "digestiveClass": "gland",
+      "digestiveType": "glándula",
+      "explosionRegionId": "dig-upper",
+      "parentId": "dig:salivary",
+      "bounds": [
+        [
+          -0.0315539,
+          1.4384400000000002,
+          0.118612
+        ],
+        [
+          -0.0156831,
+          1.4608299999999999,
+          0.14135
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA59803",
+      "name": "Glándula submandibular izquierda",
+      "anatomicalName": "Glándula submandibular izquierda",
+      "aliases": [
+        "dig:FMA59803",
+        "left submandibular gland",
+        "FMA59803",
+        "FJ2766"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:upper",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:upper"
+      ],
+      "meshNames": [
+        "bp3d_FMA59803_FJ2766"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA59803",
+      "latin": "Glandula submandibularis sinistra",
+      "side": "left",
+      "family": "salivary",
+      "digestiveClass": "gland",
+      "digestiveType": "glándula",
+      "explosionRegionId": "dig-upper",
+      "parentId": "dig:salivary",
+      "bounds": [
+        [
+          0.0143972,
+          1.4384400000000002,
+          0.118591
+        ],
+        [
+          0.0302661,
+          1.4607999999999999,
+          0.141519
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA59804",
+      "name": "Glándula sublingual derecha",
+      "anatomicalName": "Glándula sublingual derecha",
+      "aliases": [
+        "dig:FMA59804",
+        "right sublingual gland",
+        "FMA59804",
+        "FJ2767"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:upper",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:upper"
+      ],
+      "meshNames": [
+        "bp3d_FMA59804_FJ2767"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA59804",
+      "latin": "Glandula sublingualis dextra",
+      "side": "right",
+      "family": "salivary",
+      "digestiveClass": "gland",
+      "digestiveType": "glándula",
+      "explosionRegionId": "dig-upper",
+      "parentId": "dig:salivary",
+      "bounds": [
+        [
+          -0.021194900000000003,
+          1.44082,
+          0.140946
+        ],
+        [
+          -0.008598900000000001,
+          1.45404,
+          0.16361799999999999
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA59805",
+      "name": "Glándula sublingual izquierda",
+      "anatomicalName": "Glándula sublingual izquierda",
+      "aliases": [
+        "dig:FMA59805",
+        "left sublingual gland",
+        "FMA59805",
+        "FJ2765"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:upper",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:upper"
+      ],
+      "meshNames": [
+        "bp3d_FMA59805_FJ2765"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA59805",
+      "latin": "Glandula sublingualis sinistra",
+      "side": "left",
+      "family": "salivary",
+      "digestiveClass": "gland",
+      "digestiveType": "glándula",
+      "explosionRegionId": "dig-upper",
+      "parentId": "dig:salivary",
+      "bounds": [
+        [
+          0.00730223,
+          1.44085,
+          0.14096899999999998
+        ],
+        [
+          0.019881,
+          1.45398,
+          0.163572
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA7148",
+      "name": "Estómago",
+      "anatomicalName": "Estómago",
+      "aliases": [
+        "dig:FMA7148",
+        "stomach",
+        "FMA7148",
+        "FJ2564",
+        "estomago",
+        "ventriculus"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA7148_FJ2564"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7148",
+      "latin": "Gaster",
+      "side": "midline",
+      "family": "stomach",
+      "digestiveClass": "tract",
+      "digestiveType": "órgano",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "digestive",
+      "bounds": [
+        [
+          -0.0289516,
+          1.0398800000000001,
+          0.08147990000000001
+        ],
+        [
+          0.105524,
+          1.1568900000000002,
+          0.19437000000000001
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA7206",
+      "name": "Duodeno",
+      "anatomicalName": "Duodeno",
+      "aliases": [
+        "dig:FMA7206",
+        "duodenum",
+        "FMA7206",
+        "FJ2573"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:small",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:small-intestine"
+      ],
+      "meshNames": [
+        "bp3d_FMA7206_FJ2573"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7206",
+      "latin": "Duodenum",
+      "side": "midline",
+      "family": "duodenum",
+      "digestiveClass": "tract",
+      "digestiveType": "segmento intestinal",
+      "explosionRegionId": "dig-small",
+      "parentId": "dig:small",
+      "bounds": [
+        [
+          -0.06562430000000001,
+          0.9856090000000001,
+          0.103893
+        ],
+        [
+          0.032329500000000004,
+          1.07711,
+          0.156924
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA16981",
+      "name": "Porción proximal del yeyuno",
+      "anatomicalName": "Porción proximal del yeyuno",
+      "aliases": [
+        "dig:FMA16981",
+        "proximal part of jejunum",
+        "FMA16981",
+        "FJ2606",
+        "FJ2617",
+        "FJ2622",
+        "FJ2623",
+        "FJ2624",
+        "FJ2625",
+        "FJ2626",
+        "FJ2627"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:small",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:small-intestine"
+      ],
+      "meshNames": [
+        "bp3d_FMA16981_FJ2606",
+        "bp3d_FMA16981_FJ2617",
+        "bp3d_FMA16981_FJ2622",
+        "bp3d_FMA16981_FJ2623",
+        "bp3d_FMA16981_FJ2624",
+        "bp3d_FMA16981_FJ2625",
+        "bp3d_FMA16981_FJ2626",
+        "bp3d_FMA16981_FJ2627"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA16981",
+      "latin": "Pars proximalis jejuni",
+      "side": "midline",
+      "family": "jejunum",
+      "digestiveClass": "tract",
+      "digestiveType": "porción intestinal",
+      "explosionRegionId": "dig-small",
+      "parentId": "dig:FMA7207",
+      "bounds": [
+        [
+          0.00866902,
+          0.943297,
+          0.124421
+        ],
+        [
+          0.0998323,
+          1.02365,
+          0.183429
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA16982",
+      "name": "Porción media del yeyuno",
+      "anatomicalName": "Porción media del yeyuno",
+      "aliases": [
+        "dig:FMA16982",
+        "middle part of jejunum",
+        "FMA16982",
+        "FJ2607",
+        "FJ2608",
+        "FJ2609",
+        "FJ2610",
+        "FJ2628"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:small",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:small-intestine"
+      ],
+      "meshNames": [
+        "bp3d_FMA16982_FJ2607",
+        "bp3d_FMA16982_FJ2608",
+        "bp3d_FMA16982_FJ2609",
+        "bp3d_FMA16982_FJ2610",
+        "bp3d_FMA16982_FJ2628"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA16982",
+      "latin": "Pars media jejuni",
+      "side": "midline",
+      "family": "jejunum",
+      "digestiveClass": "tract",
+      "digestiveType": "porción intestinal",
+      "explosionRegionId": "dig-small",
+      "parentId": "dig:FMA7207",
+      "bounds": [
+        [
+          0.018909099999999998,
+          0.909207,
+          0.12909600000000002
+        ],
+        [
+          0.106621,
+          0.9772010000000001,
+          0.179273
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA16983",
+      "name": "Porción distal del yeyuno",
+      "anatomicalName": "Porción distal del yeyuno",
+      "aliases": [
+        "dig:FMA16983",
+        "distal part of jejunum",
+        "FMA16983",
+        "FJ2611",
+        "FJ2612",
+        "FJ2613",
+        "FJ2614",
+        "FJ2615",
+        "FJ2616",
+        "FJ2618",
+        "FJ2619",
+        "FJ2620",
+        "FJ2621"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:small",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:small-intestine"
+      ],
+      "meshNames": [
+        "bp3d_FMA16983_FJ2611",
+        "bp3d_FMA16983_FJ2612",
+        "bp3d_FMA16983_FJ2613",
+        "bp3d_FMA16983_FJ2614",
+        "bp3d_FMA16983_FJ2615",
+        "bp3d_FMA16983_FJ2616",
+        "bp3d_FMA16983_FJ2618",
+        "bp3d_FMA16983_FJ2619",
+        "bp3d_FMA16983_FJ2620",
+        "bp3d_FMA16983_FJ2621"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA16983",
+      "latin": "Pars distalis jejuni",
+      "side": "midline",
+      "family": "jejunum",
+      "digestiveClass": "tract",
+      "digestiveType": "porción intestinal",
+      "explosionRegionId": "dig-small",
+      "parentId": "dig:FMA7207",
+      "bounds": [
+        [
+          -0.0870539,
+          0.914,
+          0.11749
+        ],
+        [
+          0.0460163,
+          1.01676,
+          0.18326599999999998
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA14964",
+      "name": "Porción proximal del íleon",
+      "anatomicalName": "Porción proximal del íleon",
+      "aliases": [
+        "dig:FMA14964",
+        "proximal part of ileum",
+        "FMA14964",
+        "FJ2574",
+        "FJ2575",
+        "FJ2585",
+        "FJ2596",
+        "FJ2600",
+        "FJ2601",
+        "FJ2602",
+        "FJ2603",
+        "FJ2604",
+        "FJ2605"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:small",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:small-intestine"
+      ],
+      "meshNames": [
+        "bp3d_FMA14964_FJ2574",
+        "bp3d_FMA14964_FJ2575",
+        "bp3d_FMA14964_FJ2585",
+        "bp3d_FMA14964_FJ2596",
+        "bp3d_FMA14964_FJ2600",
+        "bp3d_FMA14964_FJ2601",
+        "bp3d_FMA14964_FJ2602",
+        "bp3d_FMA14964_FJ2603",
+        "bp3d_FMA14964_FJ2604",
+        "bp3d_FMA14964_FJ2605"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14964",
+      "latin": "Pars proximalis ilei",
+      "side": "midline",
+      "family": "ileum",
+      "digestiveClass": "tract",
+      "digestiveType": "porción intestinal",
+      "explosionRegionId": "dig-small",
+      "parentId": "dig:FMA7208",
+      "bounds": [
+        [
+          -0.0774416,
+          0.854588,
+          0.12285599999999999
+        ],
+        [
+          0.101842,
+          0.952636,
+          0.17976499999999998
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA14965",
+      "name": "Porción media del íleon",
+      "anatomicalName": "Porción media del íleon",
+      "aliases": [
+        "dig:FMA14965",
+        "middle part of ileum",
+        "FMA14965",
+        "FJ2576",
+        "FJ2577",
+        "FJ2578",
+        "FJ2579",
+        "FJ2580",
+        "FJ2581",
+        "FJ2582",
+        "FJ2583",
+        "FJ2584",
+        "FJ2586"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:small",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:small-intestine"
+      ],
+      "meshNames": [
+        "bp3d_FMA14965_FJ2576",
+        "bp3d_FMA14965_FJ2577",
+        "bp3d_FMA14965_FJ2578",
+        "bp3d_FMA14965_FJ2579",
+        "bp3d_FMA14965_FJ2580",
+        "bp3d_FMA14965_FJ2581",
+        "bp3d_FMA14965_FJ2582",
+        "bp3d_FMA14965_FJ2583",
+        "bp3d_FMA14965_FJ2584",
+        "bp3d_FMA14965_FJ2586"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14965",
+      "latin": "Pars media ilei",
+      "side": "midline",
+      "family": "ileum",
+      "digestiveClass": "tract",
+      "digestiveType": "porción intestinal",
+      "explosionRegionId": "dig-small",
+      "parentId": "dig:FMA7208",
+      "bounds": [
+        [
+          -0.061027700000000004,
+          0.8371470000000001,
+          0.133025
+        ],
+        [
+          0.0820279,
+          0.906352,
+          0.174753
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA14966",
+      "name": "Porción distal del íleon",
+      "anatomicalName": "Porción distal del íleon",
+      "aliases": [
+        "dig:FMA14966",
+        "distal part of ileum",
+        "FMA14966",
+        "FJ2587",
+        "FJ2588",
+        "FJ2589",
+        "FJ2590",
+        "FJ2591",
+        "FJ2592",
+        "FJ2593",
+        "FJ2594",
+        "FJ2595",
+        "FJ2597",
+        "FJ2598"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:small",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:small-intestine"
+      ],
+      "meshNames": [
+        "bp3d_FMA14966_FJ2587",
+        "bp3d_FMA14966_FJ2588",
+        "bp3d_FMA14966_FJ2589",
+        "bp3d_FMA14966_FJ2590",
+        "bp3d_FMA14966_FJ2591",
+        "bp3d_FMA14966_FJ2592",
+        "bp3d_FMA14966_FJ2593",
+        "bp3d_FMA14966_FJ2594",
+        "bp3d_FMA14966_FJ2595",
+        "bp3d_FMA14966_FJ2597",
+        "bp3d_FMA14966_FJ2598"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14966",
+      "latin": "Pars distalis ilei",
+      "side": "midline",
+      "family": "ileum",
+      "digestiveClass": "tract",
+      "digestiveType": "porción intestinal",
+      "explosionRegionId": "dig-small",
+      "parentId": "dig:FMA7208",
+      "bounds": [
+        [
+          -0.0799084,
+          0.80529,
+          0.11997000000000001
+        ],
+        [
+          0.056694400000000006,
+          0.885464,
+          0.162835
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA11338",
+      "name": "Unión ileocecal",
+      "anatomicalName": "Unión ileocecal",
+      "aliases": [
+        "dig:FMA11338",
+        "ileocecal junction",
+        "FMA11338",
+        "FJ2599"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:small",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:small-intestine"
+      ],
+      "meshNames": [
+        "bp3d_FMA11338_FJ2599"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA11338",
+      "latin": "Junctio ileocaecalis",
+      "side": "midline",
+      "family": "ileocecal",
+      "digestiveClass": "tract",
+      "digestiveType": "unión anatómica",
+      "explosionRegionId": "dig-small",
+      "parentId": "dig:small",
+      "bounds": [
+        [
+          -0.0798441,
+          0.870103,
+          0.107182
+        ],
+        [
+          -0.0513778,
+          0.923257,
+          0.141283
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA14542",
+      "name": "Apéndice vermiforme",
+      "anatomicalName": "Apéndice vermiforme",
+      "aliases": [
+        "dig:FMA14542",
+        "appendix",
+        "FMA14542",
+        "FJ2565"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:large",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:large-intestine"
+      ],
+      "meshNames": [
+        "bp3d_FMA14542_FJ2565"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14542",
+      "latin": "Appendix vermiformis",
+      "side": "midline",
+      "family": "appendix",
+      "digestiveClass": "tract",
+      "digestiveType": "órgano",
+      "explosionRegionId": "dig-large",
+      "parentId": "dig:large",
+      "bounds": [
+        [
+          -0.08842359999999999,
+          0.865587,
+          0.0817847
+        ],
+        [
+          -0.0188631,
+          0.883656,
+          0.12079000000000001
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA14545",
+      "name": "Colon ascendente",
+      "anatomicalName": "Colon ascendente",
+      "aliases": [
+        "dig:FMA14545",
+        "ascending colon",
+        "FMA14545",
+        "FJ2566"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:large",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:large-intestine"
+      ],
+      "meshNames": [
+        "bp3d_FMA14545_FJ2566"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14545",
+      "latin": "Colon ascendens",
+      "side": "midline",
+      "family": "colon",
+      "digestiveClass": "tract",
+      "digestiveType": "segmento intestinal",
+      "explosionRegionId": "dig-large",
+      "parentId": "dig:colon",
+      "bounds": [
+        [
+          -0.126783,
+          0.868352,
+          0.0907304
+        ],
+        [
+          -0.0638983,
+          1.0540100000000001,
+          0.14557
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA14546",
+      "name": "Colon transverso",
+      "anatomicalName": "Colon transverso",
+      "aliases": [
+        "dig:FMA14546",
+        "transverse colon",
+        "FMA14546",
+        "FJ2572"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:large",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:large-intestine"
+      ],
+      "meshNames": [
+        "bp3d_FMA14546_FJ2572"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14546",
+      "latin": "Colon transversum",
+      "side": "midline",
+      "family": "colon",
+      "digestiveClass": "tract",
+      "digestiveType": "segmento intestinal",
+      "explosionRegionId": "dig-large",
+      "parentId": "dig:colon",
+      "bounds": [
+        [
+          -0.08875060000000001,
+          0.993442,
+          0.10683400000000001
+        ],
+        [
+          0.0966096,
+          1.06473,
+          0.19693100000000002
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA14547",
+      "name": "Colon descendente",
+      "anatomicalName": "Colon descendente",
+      "aliases": [
+        "dig:FMA14547",
+        "descending colon",
+        "FMA14547",
+        "FJ2567"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:large",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:large-intestine"
+      ],
+      "meshNames": [
+        "bp3d_FMA14547_FJ2567"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14547",
+      "latin": "Colon descendens",
+      "side": "midline",
+      "family": "colon",
+      "digestiveClass": "tract",
+      "digestiveType": "segmento intestinal",
+      "explosionRegionId": "dig-large",
+      "parentId": "dig:colon",
+      "bounds": [
+        [
+          -0.0179165,
+          0.8223210000000001,
+          0.0502812
+        ],
+        [
+          0.117482,
+          1.06131,
+          0.14182499999999998
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA14544",
+      "name": "Recto",
+      "anatomicalName": "Recto",
+      "aliases": [
+        "dig:FMA14544",
+        "rectum",
+        "FMA14544",
+        "FJ2571"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:large",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:large-intestine"
+      ],
+      "meshNames": [
+        "bp3d_FMA14544_FJ2571"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14544",
+      "latin": "Rectum",
+      "side": "midline",
+      "family": "rectum",
+      "digestiveClass": "tract",
+      "digestiveType": "segmento intestinal",
+      "explosionRegionId": "dig-large",
+      "parentId": "dig:large",
+      "bounds": [
+        [
+          -0.0262148,
+          0.757327,
+          0.011280799999999999
+        ],
+        [
+          0.035431700000000003,
+          0.873917,
+          0.0735788
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA7197",
+      "name": "Hígado",
+      "anatomicalName": "Hígado",
+      "aliases": [
+        "dig:FMA7197",
+        "Hígado",
+        "FMA7197",
+        "FJ2816",
+        "FJ2818",
+        "FJ2819",
+        "FJ2820",
+        "FJ2821",
+        "FJ2822",
+        "FJ2823",
+        "FJ2824",
+        "liver",
+        "higado",
+        "FMA13365",
+        "FMA15739",
+        "FMA15741",
+        "FMA15742",
+        "FMA15743",
+        "FMA15744",
+        "FMA15746"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA13365_FJ2816",
+        "bp3d_FMA15739_FJ2818",
+        "bp3d_FMA15741_FJ2819",
+        "bp3d_FMA15742_FJ2820",
+        "bp3d_FMA15743_FJ2821",
+        "bp3d_FMA15744_FJ2822",
+        "bp3d_FMA15746_FJ2823",
+        "bp3d_FMA15746_FJ2824"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7197",
+      "latin": "Hepar",
+      "side": "midline",
+      "family": "liver",
+      "digestiveClass": "liver",
+      "digestiveType": "órgano",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:accessory",
+      "bounds": [
+        [
+          -0.115064,
+          1.02796,
+          0.0433287
+        ],
+        [
+          0.0943668,
+          1.18314,
+          0.202413
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA7202",
+      "name": "Vesícula biliar",
+      "anatomicalName": "Vesícula biliar",
+      "aliases": [
+        "dig:FMA7202",
+        "gallbladder",
+        "FMA7202",
+        "FJ2817",
+        "vesicula",
+        "gall bladder",
+        "vesica fellea"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA7202_FJ2817"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7202",
+      "latin": "Vesica biliaris",
+      "side": "midline",
+      "family": "gallbladder",
+      "digestiveClass": "biliary",
+      "digestiveType": "órgano",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:accessory",
+      "bounds": [
+        [
+          -0.0632817,
+          1.05107,
+          0.13015100000000002
+        ],
+        [
+          -0.0268404,
+          1.09148,
+          0.17856
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA7198",
+      "name": "Páncreas",
+      "anatomicalName": "Páncreas",
+      "aliases": [
+        "dig:FMA7198",
+        "pancreas",
+        "FMA7198",
+        "FJ1895"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA7198_FJ1895"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7198",
+      "latin": "Pancreas",
+      "side": "midline",
+      "family": "pancreas",
+      "digestiveClass": "gland",
+      "digestiveType": "órgano",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:accessory",
+      "bounds": [
+        [
+          -0.047904800000000004,
+          1.0043600000000001,
+          0.09541200000000001
+        ],
+        [
+          0.07267440000000001,
+          1.0780999999999998,
+          0.14637899999999998
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA10419",
+      "name": "Conducto pancreático disponible",
+      "anatomicalName": "Conducto pancreático disponible",
+      "aliases": [
+        "dig:FMA10419",
+        "pancreatic duct",
+        "FMA10419",
+        "FJ1896"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA10419_FJ1896"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA10419",
+      "latin": "Ductus pancreaticus",
+      "side": "midline",
+      "family": "pancreatic-duct",
+      "digestiveClass": "gland",
+      "digestiveType": "conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:ducts",
+      "bounds": [
+        [
+          -0.0495436,
+          1.02138,
+          0.101955
+        ],
+        [
+          0.0614969,
+          1.06671,
+          0.138103
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA14539",
+      "name": "Conducto cístico",
+      "anatomicalName": "Conducto cístico",
+      "aliases": [
+        "dig:FMA14539",
+        "cystic duct",
+        "FMA14539",
+        "FJ3080"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA14539_FJ3080"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14539",
+      "latin": "Ductus cysticus",
+      "side": "midline",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          -0.0296802,
+          1.0791600000000001,
+          0.128441
+        ],
+        [
+          -0.020898,
+          1.09135,
+          0.137786
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA14668",
+      "name": "Conducto hepático común",
+      "anatomicalName": "Conducto hepático común",
+      "aliases": [
+        "dig:FMA14668",
+        "common hepatic duct",
+        "FMA14668",
+        "FJ3079"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA14668_FJ3079"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14668",
+      "latin": "Ductus hepaticus communis",
+      "side": "midline",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          -0.043682000000000006,
+          1.0195800000000002,
+          0.10703700000000001
+        ],
+        [
+          -0.017863,
+          1.10387,
+          0.14450800000000003
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA14669",
+      "name": "Conducto hepático derecho",
+      "anatomicalName": "Conducto hepático derecho",
+      "aliases": [
+        "dig:FMA14669",
+        "right hepatic duct",
+        "FMA14669",
+        "FJ3123"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA14669_FJ3123"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14669",
+      "latin": "Ductus hepaticus dexter",
+      "side": "right",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          -0.0312841,
+          1.0993499999999998,
+          0.140011
+        ],
+        [
+          -0.0217666,
+          1.10751,
+          0.14747100000000002
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA14670",
+      "name": "Conducto hepático izquierdo",
+      "anatomicalName": "Conducto hepático izquierdo",
+      "aliases": [
+        "dig:FMA14670",
+        "left hepatic duct",
+        "FMA14670",
+        "FJ3096"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA14670_FJ3096"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA14670",
+      "latin": "Ductus hepaticus sinister",
+      "side": "left",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          -0.0257726,
+          1.0992899999999999,
+          0.140041
+        ],
+        [
+          0.00739447,
+          1.1300000000000001,
+          0.157429
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA71867",
+      "name": "Tributaria anterosuperior biliar derecha",
+      "anatomicalName": "Tributaria anterosuperior biliar derecha",
+      "aliases": [
+        "dig:FMA71867",
+        "anterior superior tributary of right hepatic biliary tree",
+        "FMA71867",
+        "FJ3071"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA71867_FJ3071"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA71867",
+      "latin": "Ramus anterosuperior dexter",
+      "side": "right",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "componente de conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          -0.0795971,
+          1.1039100000000002,
+          0.130798
+        ],
+        [
+          -0.0274422,
+          1.15131,
+          0.15101
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA71868",
+      "name": "Tributaria anteroinferior biliar derecha",
+      "anatomicalName": "Tributaria anteroinferior biliar derecha",
+      "aliases": [
+        "dig:FMA71868",
+        "anterior inferior tributary of right hepatic biliary tree",
+        "FMA71868",
+        "FJ3072"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA71868_FJ3072"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA71868",
+      "latin": "Ramus anteroinferior dexter",
+      "side": "right",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "componente de conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          -0.0834342,
+          1.08241,
+          0.13126400000000002
+        ],
+        [
+          -0.0438486,
+          1.15235,
+          0.174632
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA71869",
+      "name": "Tributaria posterosuperior biliar derecha",
+      "anatomicalName": "Tributaria posterosuperior biliar derecha",
+      "aliases": [
+        "dig:FMA71869",
+        "posterior superior tributary of right hepatic biliary tree",
+        "FMA71869",
+        "FJ3109",
+        "FJ3110"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA71869_FJ3109",
+        "bp3d_FMA71869_FJ3110"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA71869",
+      "latin": "Ramus posterosuperior dexter",
+      "side": "right",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "componente de conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          -0.0918446,
+          1.09277,
+          0.055416
+        ],
+        [
+          -0.045185499999999997,
+          1.1389500000000001,
+          0.125805
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA71870",
+      "name": "Tributaria posteroinferior biliar derecha",
+      "anatomicalName": "Tributaria posteroinferior biliar derecha",
+      "aliases": [
+        "dig:FMA71870",
+        "posterior inferior tributary of right hepatic biliary tree",
+        "FMA71870",
+        "FJ3108"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA71870_FJ3108"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA71870",
+      "latin": "Ramus posteroinferior dexter",
+      "side": "right",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "componente de conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          -0.08235540000000001,
+          1.06871,
+          0.111487
+        ],
+        [
+          -0.027701899999999998,
+          1.11229,
+          0.14687200000000003
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA71885",
+      "name": "Tributaria medial superior biliar izquierda",
+      "anatomicalName": "Tributaria medial superior biliar izquierda",
+      "aliases": [
+        "dig:FMA71885",
+        "medial superior tributary of left hepatic biliary tree",
+        "FMA71885",
+        "FJ3104",
+        "FJ3105"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA71885_FJ3104",
+        "bp3d_FMA71885_FJ3105"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA71885",
+      "latin": "Ramus medialis superior sinister",
+      "side": "left",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "componente de conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          -0.0318292,
+          1.1304100000000001,
+          0.151869
+        ],
+        [
+          -0.0006962450000000001,
+          1.1486800000000001,
+          0.179194
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA71886",
+      "name": "Tributaria medial inferior biliar izquierda",
+      "anatomicalName": "Tributaria medial inferior biliar izquierda",
+      "aliases": [
+        "dig:FMA71886",
+        "medial inferior tributary of left hepatic biliary tree",
+        "FMA71886",
+        "FJ3103"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA71886_FJ3103"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA71886",
+      "latin": "Ramus medialis inferior sinister",
+      "side": "left",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "componente de conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          -0.0224128,
+          1.10086,
+          0.154331
+        ],
+        [
+          0.0078449,
+          1.13383,
+          0.19583
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA71887",
+      "name": "Tributaria lateral superior biliar izquierda",
+      "anatomicalName": "Tributaria lateral superior biliar izquierda",
+      "aliases": [
+        "dig:FMA71887",
+        "lateral superior tributary of left hepatic biliary tree",
+        "FMA71887",
+        "FJ3088",
+        "FJ3090"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA71887_FJ3088",
+        "bp3d_FMA71887_FJ3090"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA71887",
+      "latin": "Ramus lateralis superior sinister",
+      "side": "left",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "componente de conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          0.0037548900000000003,
+          1.1087500000000001,
+          0.12956
+        ],
+        [
+          0.0576872,
+          1.16248,
+          0.198243
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA71888",
+      "name": "Tributaria lateral inferior biliar izquierda",
+      "anatomicalName": "Tributaria lateral inferior biliar izquierda",
+      "aliases": [
+        "dig:FMA71888",
+        "lateral inferior tributary of left hepatic biliary tree",
+        "FMA71888",
+        "FJ3089"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA71888_FJ3089"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA71888",
+      "latin": "Ramus lateralis inferior sinister",
+      "side": "left",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "componente de conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          0.00746213,
+          1.1237000000000001,
+          0.154378
+        ],
+        [
+          0.052149900000000006,
+          1.1360999999999999,
+          0.190888
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA71889",
+      "name": "Tributaria biliar del lóbulo caudado",
+      "anatomicalName": "Tributaria biliar del lóbulo caudado",
+      "aliases": [
+        "dig:FMA71889",
+        "caudate lobe tributary of left hepatic biliary tree",
+        "FMA71889",
+        "FJ1883"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA71889_FJ1883"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA71889",
+      "latin": "Ramus lobi caudati",
+      "side": "midline",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "componente de conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          -0.0176389,
+          1.10798,
+          0.11692100000000001
+        ],
+        [
+          0.00143618,
+          1.13336,
+          0.154816
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA76903",
+      "name": "Conducto izquierdo del lóbulo caudado",
+      "anatomicalName": "Conducto izquierdo del lóbulo caudado",
+      "aliases": [
+        "dig:FMA76903",
+        "left duct of caudate lobe of liver",
+        "FMA76903",
+        "FJ3094"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:stomach-accessory"
+      ],
+      "meshNames": [
+        "bp3d_FMA76903_FJ3094"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA76903",
+      "latin": "Ductus sinister lobi caudati",
+      "side": "left",
+      "family": "biliary",
+      "digestiveClass": "biliary",
+      "digestiveType": "componente de conducto",
+      "explosionRegionId": "dig-accessory",
+      "parentId": "dig:biliary",
+      "bounds": [
+        [
+          -0.0176389,
+          1.10798,
+          0.11692000000000001
+        ],
+        [
+          0.00143618,
+          1.13336,
+          0.154816
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "digestive:upper",
+      "path": "models/anatomy/digestive/upper.glb",
+      "systemId": "digestive",
+      "regionId": "dig:upper",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 26860,
+      "sha256": "decd0605b0b7892b64e21f37991e5f11d92a8112a4f2c6e72e44354f2ed6d9e9",
+      "meshCount": 6,
+      "triangles": 2032,
+      "bounds": [
+        [
+          -0.0315539,
+          1.11599,
+          0.0663873
+        ],
+        [
+          0.0302661,
+          1.46732,
+          0.169904
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-digestive"
+    },
+    {
+      "id": "digestive:stomach-accessory",
+      "path": "models/anatomy/digestive/stomach-accessory.glb",
+      "systemId": "digestive",
+      "regionId": "dig:accessory",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 1261644,
+      "sha256": "1ffb7b60c78f61c5cdbb51bb87301f8900107a27c69abb86b6e40cc4d3045c5b",
+      "meshCount": 29,
+      "triangles": 144220,
+      "bounds": [
+        [
+          -0.115064,
+          1.0043600000000001,
+          0.0433287
+        ],
+        [
+          0.105524,
+          1.18314,
+          0.202413
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-digestive"
+    },
+    {
+      "id": "digestive:small-intestine",
+      "path": "models/anatomy/digestive/small-intestine.glb",
+      "systemId": "digestive",
+      "regionId": "dig:small",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 212852,
+      "sha256": "e27bcba591179f84d43b68d702b3b783e9c8c89bfa4d958148607a86d945a055",
+      "meshCount": 56,
+      "triangles": 16058,
+      "bounds": [
+        [
+          -0.0870539,
+          0.80529,
+          0.103893
+        ],
+        [
+          0.106621,
+          1.07711,
+          0.183429
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-digestive"
+    },
+    {
+      "id": "digestive:large-intestine",
+      "path": "models/anatomy/digestive/large-intestine.glb",
+      "systemId": "digestive",
+      "regionId": "dig:large",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 139840,
+      "sha256": "e4543eccffef09b22955c5ed4d234888734f20465006532cc6b89f68aa6f37bd",
+      "meshCount": 5,
+      "triangles": 14930,
+      "bounds": [
+        [
+          -0.126783,
+          0.757327,
+          0.011280799999999999
+        ],
+        [
+          0.117482,
+          1.06473,
+          0.19693100000000002
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-digestive"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "bodyparts3d-4.0-digestive",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 · OBJ99 (2013 archive; current license declaration)",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selección digestiva curada. Originales OBJ, FMA/FJ, lateralidad y hashes preservados.",
+        "Transformación común (x,y,z) -> (x,z,-y)/1000. Float32 y Meshopt sin decimación adicional ni deformación.",
+        "Hígado agregado con ocho piezas sin afirmar segmentación I–VIII. Las porciones intestinales agrupan sus piezas fuente; no nuevos órganos por cada asa."
+      ]
+    }
+  ],
+  "coverage": {
+    "title": "Cobertura digestiva macroscópica disponible",
+    "structures": 23,
+    "meshes": 96,
+    "note": "23 unidades anatómicas de nivel estructural, 17 componentes y cuatro módulos: región oral disponible, esófago, estómago, intestinos y órganos accesorios.",
+    "limitations": [
+      "Cavidad oral y faringe completas pendientes; no se fabrica conexión hasta el esófago.",
+      "Unión ileocecal identificada, sin ciego completo separado. Colon sigmoide y canal anal sin segmentación independiente fiable.",
+      "Parótidas, colédoco separado, hilio y microanatomía no integrados.",
+      "Hígado agregado sin exponer la segmentación hepática inconsistente de la fuente. Páncreas y estómago sin cortes artificiales.",
+      "Discontinuidades y superficies originales conservadas; las fichas distinguen continuidad anatómica y cobertura geométrica. Sin validación clínica."
+    ]
+  }
+}

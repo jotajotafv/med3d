@@ -1,0 +1,60 @@
+{
+  "codeCommit": "b6a21cafacaa993342b81a287a59ce95b8b21d4d",
+  "workingTreeDirty": false,
+  "implementationDirty": false,
+  "date": "2026-09-30T19:31:03.151Z",
+  "mode": "performance",
+  "source": "Local production build over unthrottled loopback HTTP; no-store responses",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "deviceScaleFactor": 1,
+    "physicalGpuTested": false,
+    "limitations": [
+      "One fresh Chrome process per configuration; local unthrottled no-store HTTP.",
+      "Software SwiftShader only, no physical GPU/mobile claims.",
+      "Timings include automation; geometry buffers are arrays, not VRAM."
+    ]
+  },
+  "checks": [],
+  "captures": [],
+  "measurements": {
+    "E": {
+      "configuration": "E",
+      "systems": [
+        "skeletal",
+        "muscular",
+        "nervous",
+        "cardiovascular",
+        "respiratory",
+        "digestive",
+        "urinary",
+        "endocrine",
+        "lymphatic",
+        "reproductive",
+        "integumentary"
+      ],
+      "modules": 51,
+      "glbBytes": 29094124,
+      "meshes": 931,
+      "triangles": 3145402,
+      "buffers": 56481988,
+      "firstGeometryMs": 413.5,
+      "fullSystemMs": 1756.4000000059605,
+      "searchMs": 24.44090000000051,
+      "selectMs": 662.1585000000005,
+      "isolateMs": 28.40389999999934,
+      "hideMs": 222.90689999999995,
+      "showMs": 324.03629999999976,
+      "opacitySystem": "integumentary",
+      "opacity25Ms": 567.701500000001,
+      "explodeSystemsMs": 26.969999999999345,
+      "unloadMs": 2378.7648999999983,
+      "reloadMs": 1479.0866000000024,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    }
+  },
+  "errors": [],
+  "badRequests": [],
+  "success": true
+}

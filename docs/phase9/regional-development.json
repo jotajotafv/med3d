@@ -1,0 +1,71 @@
+{
+  "codeCommit": "5839a7423cd1b0dfab4f79837661147f71b6aab8",
+  "workingTreeDirty": true,
+  "implementationDirty": true,
+  "date": "2026-09-30T19:15:58.423Z",
+  "mode": "regional",
+  "source": "Local production build over unthrottled loopback HTTP; no-store responses",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "deviceScaleFactor": 1,
+    "physicalGpuTested": false
+  },
+  "checks": [
+    {
+      "name": "Native skin: six views, card, organ/system isolation, hide/restore, five opacities, real picking and coherent explosion"
+    },
+    {
+      "name": "Skin layer and module unload/reload release and restore bounded buffers"
+    },
+    {
+      "name": "Transparent skin passes real clicks to kidney at 75/50/25/10; skin remains selectable by search and alone"
+    },
+    {
+      "name": "Explicit superficial muscle/bone context and stated 25% skin opacity"
+    },
+    {
+      "name": "Failed skin download recovers on retry"
+    },
+    {
+      "name": "Eleven-layer panel and skin toggling",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "name": "Eleven-layer panel and skin toggling",
+      "width": 1050,
+      "height": 844
+    },
+    {
+      "name": "Eleven-layer panel and skin toggling",
+      "width": 900,
+      "height": 1100
+    },
+    {
+      "name": "Eleven-layer panel and skin toggling",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "captures": [],
+  "measurements": {
+    "raycast-integ:FMA7163": [
+      {
+        "x": 702,
+        "y": 495.59375,
+        "selected": "integ:FMA7163"
+      }
+    ],
+    "raycast-uri:FMA7204": [
+      {
+        "x": 702,
+        "y": 495.5937499999998,
+        "selected": "uri:FMA7204"
+      }
+    ]
+  },
+  "errors": [],
+  "badRequests": [],
+  "success": true
+}

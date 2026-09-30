@@ -1,0 +1,78 @@
+{
+  "sourceZip": "research/anatomy/integumentary-originals.zip",
+  "sourceZipSha256": "b23458588ae7faf2942fddfa0a49de7fabd3c538bf12e01182a983688f46d6ab",
+  "selectionSha256": "39416375b68a0e2737c20a4a6f817d34ccc25fef74f931851d05c3bfa14fd919",
+  "sourceLock": "research/anatomy/integumentary-source-lock.json",
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "additionalRegistration": "none; native BP3D 4.0 frame",
+  "files": [
+    {
+      "path": "FJ2810.obj",
+      "elementId": "FJ2810",
+      "sourceId": "FMA7163",
+      "representationId": "BP9115",
+      "sourceVersion": "4.0",
+      "bytes": 14465502,
+      "sha256": "682f402206f15592acdeaae8ffb6b34c3e5c3267fa4685e63d2e4920ef2a80e0",
+      "anatomyId": "integ:FMA7163",
+      "ownerSourceId": "FMA7163",
+      "side": "midline",
+      "family": "skin",
+      "moduleId": "integumentary:skin",
+      "sourceType": "superficie corporal externa",
+      "triangles": 203382,
+      "faces": 203382,
+      "sourcePositionCount": 102467,
+      "vertices": 102467,
+      "boundsMetres": [
+        [
+          -0.33411900000000005,
+          -0.07811119999999999,
+          -0.0452476
+        ],
+        [
+          0.332825,
+          1.64136,
+          0.246783
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -334.119,
+          -246.783,
+          -78.1112
+        ],
+        [
+          332.825,
+          45.2476,
+          1641.36
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "med3d-integumentary",
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "nodes": [
+    {
+      "id": "integumentary",
+      "name": "Sistema tegumentario",
+      "anatomicalName": "Sistema tegumentario",
+      "latin": "Integumentum commune",
+      "aliases": [
+        "sistema tegumentario",
+        "piel",
+        "skin",
+        "integument",
+        "integumentary system"
+      ],
+      "systemId": "integumentary",
+      "regionId": "integumentary",
+      "children": [
+        "integ:FMA7163"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "integumentary:skin"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "bounds": [
+        [
+          -0.33411900000000005,
+          -0.07811119999999999,
+          -0.0452476
+        ],
+        [
+          0.332825,
+          1.64136,
+          0.246783
+        ]
+      ]
+    },
+    {
+      "id": "integ:FMA7163",
+      "name": "Piel · superficie corporal",
+      "anatomicalName": "Piel · superficie corporal",
+      "latin": "Cutis",
+      "sourceId": "FMA7163",
+      "aliases": [
+        "piel",
+        "skin",
+        "integument",
+        "superficie corporal",
+        "envoltura corporal",
+        "FMA7163",
+        "FJ2810",
+        "BP9115"
+      ],
+      "systemId": "integumentary",
+      "regionId": "integumentary",
+      "parentId": "integumentary",
+      "children": [],
+      "kind": "structure",
+      "family": "skin",
+      "integumentaryType": "superficie corporal externa",
+      "assetIds": [
+        "integumentary:skin"
+      ],
+      "meshNames": [
+        "bp3d_FMA7163_FJ2810"
+      ],
+      "relatedIds": [],
+      "side": "midline",
+      "bounds": [
+        [
+          -0.33411900000000005,
+          -0.07811119999999999,
+          -0.0452476
+        ],
+        [
+          0.332825,
+          1.64136,
+          0.246783
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "integumentary:skin",
+      "path": "models/anatomy/integumentary/skin.glb",
+      "systemId": "integumentary",
+      "regionId": "integumentary",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 1631504,
+      "sha256": "4e5b104ea12608250387f9a25c45d6d1b3ad0f2b02f9cf5bc05a9f4c3722035c",
+      "meshCount": 1,
+      "triangles": 203382,
+      "bounds": [
+        [
+          -0.33411900000000005,
+          -0.07811119999999999,
+          -0.0452476
+        ],
+        [
+          0.332825,
+          1.64136,
+          0.246783
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-integumentary"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "bodyparts3d-4.0-integumentary",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Pieza única FMA7163/FJ2810; todos los triángulos originales conservados.",
+        "Transformación (x,y,z) → (x,z,-y)/1000, sin ajuste, recorte, deformación ni decimación adicional.",
+        "Posiciones Float32; compresión Meshopt y cuantización sólo de normales.",
+        "Material neutro sin textura ni identificación de etnia. No se representan capas histológicas."
+      ]
+    }
+  ],
+  "coverage": {
+    "title": "Superficie corporal tegumentaria disponible",
+    "structures": 1,
+    "meshes": 1,
+    "note": "Piel: una superficie corporal nativa, una unidad y una malla. Sin particiones regionales inventadas.",
+    "limitations": [
+      "Superficie externa del cuerpo masculino de referencia, no representación universal de cuerpos o fenotipos.",
+      "No representa grosor clínico ni capas histológicas separadas de epidermis, dermis o hipodermis.",
+      "Subcutáneo y uñas pendientes; pelo no integrado. No hay regiones cutáneas independientes para aislar.",
+      "Se conservan costuras, orificios y posibles penetraciones del modelo fuente. No constituye validación clínica.",
+      "La pieza fuente contiene dos superficies principales y pequeños fragmentos geométricos; no se etiquetan como capas histológicas ni regiones anatómicas."
+    ]
+  }
+}

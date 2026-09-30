@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "5839a7423cd1b0dfab4f79837661147f71b6aab8",
+  "phase": 9,
+  "source": "DBCLS BodyParts3D 4.0 OBJ99",
+  "sourceArchive": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+  "frame": "bodyparts3d-4.0-male",
+  "transform": "(x,y,z) -> (x,z,-y)/1000",
+  "geometryExtractedDuringAudit": false,
+  "approved": [
+    {
+      "id": "integ:FMA7163",
+      "name": "Piel · superficie corporal",
+      "latin": "Cutis",
+      "english": "skin",
+      "sourceId": "FMA7163",
+      "elementId": "FJ2810",
+      "sourceVersion": "4.0",
+      "representationId": "BP9115",
+      "systemId": "integumentary",
+      "entityType": "superficie corporal externa",
+      "side": "midline",
+      "region": "cuerpo completo",
+      "parent": "integumentary",
+      "moduleId": "integumentary:skin",
+      "file": "FJ2810.obj",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita y una única pieza nativa del mismo marco corporal. Aprobación de extracción; integración condicionada a verificar cabecera, conservación y envoltura.",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2810.obj",
+        "bytes": 14465502,
+        "compressedBytes": 4130830,
+        "crc32": "c7d79905",
+        "offset": 109388523,
+        "method": 8
+      }
+    }
+  ],
+  "other": [
+    {
+      "name": "hair",
+      "latin": null,
+      "sourceId": "FMA53667",
+      "elementIds": [
+        "FJ2813",
+        "FJ2815"
+      ],
+      "source": "BodyParts3D 4.0",
+      "type": "concepto fuente; no se equipara una clasificación a capa histológica",
+      "region": "según concepto fuente",
+      "side": "sin asignación nueva",
+      "parent": null,
+      "file": [
+        "FJ2813.obj",
+        "FJ2815.obj"
+      ],
+      "decision": "DESCARTADO",
+      "reason": "Agregado que reutiliza piel/pelo: no duplicar mallas."
+    },
+    {
+      "name": "hair of head",
+      "latin": null,
+      "sourceId": "FMA54241",
+      "elementIds": [
+        "FJ2813"
+      ],
+      "source": "BodyParts3D 4.0",
+      "type": "concepto fuente; no se equipara una clasificación a capa histológica",
+      "region": "según concepto fuente",
+      "side": "sin asignación nueva",
+      "parent": null,
+      "file": [
+        "FJ2813.obj"
+      ],
+      "decision": "DESCARTADO",
+      "reason": "Pelo nominal disponible, fuera de la prioridad de envoltura; no se añade cobertura cosmética ni se infiere histología."
+    },
+    {
+      "name": "hair of trunk",
+      "latin": null,
+      "sourceId": "FMA54250",
+      "elementIds": [
+        "FJ2815"
+      ],
+      "source": "BodyParts3D 4.0",
+      "type": "concepto fuente; no se equipara una clasificación a capa histológica",
+      "region": "según concepto fuente",
+      "side": "sin asignación nueva",
+      "parent": null,
+      "file": [
+        "FJ2815.obj"
+      ],
+      "decision": "DESCARTADO",
+      "reason": "Agregado que reutiliza piel/pelo: no duplicar mallas."
+    },
+    {
+      "name": "pubic hair",
+      "latin": null,
+      "sourceId": "FMA54319",
+      "elementIds": [
+        "FJ2815"
+      ],
+      "source": "BodyParts3D 4.0",
+      "type": "concepto fuente; no se equipara una clasificación a capa histológica",
+      "region": "según concepto fuente",
+      "side": "sin asignación nueva",
+      "parent": null,
+      "file": [
+        "FJ2815.obj"
+      ],
+      "decision": "DESCARTADO",
+      "reason": "Pelo nominal disponible, fuera de la prioridad de envoltura; no se añade cobertura cosmética ni se infiere histología."
+    },
+    {
+      "name": "subdivision of epidermis",
+      "latin": null,
+      "sourceId": "FMA70593",
+      "elementIds": [
+        "FJ2813",
+        "FJ2815"
+      ],
+      "source": "BodyParts3D 4.0",
+      "type": "concepto fuente; no se equipara una clasificación a capa histológica",
+      "region": "según concepto fuente",
+      "side": "sin asignación nueva",
+      "parent": null,
+      "file": [
+        "FJ2813.obj",
+        "FJ2815.obj"
+      ],
+      "decision": "DESCARTADO",
+      "reason": "Agregado que reutiliza piel/pelo: no duplicar mallas."
+    },
+    {
+      "name": "set of facial hairs",
+      "latin": null,
+      "sourceId": "FMA70741",
+      "elementIds": [
+        "FJ2812"
+      ],
+      "source": "BodyParts3D 4.0",
+      "type": "concepto fuente; no se equipara una clasificación a capa histológica",
+      "region": "según concepto fuente",
+      "side": "sin asignación nueva",
+      "parent": null,
+      "file": [
+        "FJ2812.obj"
+      ],
+      "decision": "DESCARTADO",
+      "reason": "Pelo nominal disponible, fuera de la prioridad de envoltura; no se añade cobertura cosmética ni se infiere histología."
+    },
+    {
+      "name": "set of hairs",
+      "latin": null,
+      "sourceId": "FMA70752",
+      "elementIds": [
+        "FJ2812"
+      ],
+      "source": "BodyParts3D 4.0",
+      "type": "concepto fuente; no se equipara una clasificación a capa histológica",
+      "region": "según concepto fuente",
+      "side": "sin asignación nueva",
+      "parent": null,
+      "file": [
+        "FJ2812.obj"
+      ],
+      "decision": "DESCARTADO",
+      "reason": "Pelo nominal disponible, fuera de la prioridad de envoltura; no se añade cobertura cosmética ni se infiere histología."
+    },
+    {
+      "name": "skin appendage",
+      "latin": null,
+      "sourceId": "FMA71012",
+      "elementIds": [
+        "FJ2813",
+        "FJ2815"
+      ],
+      "source": "BodyParts3D 4.0",
+      "type": "concepto fuente; no se equipara una clasificación a capa histológica",
+      "region": "según concepto fuente",
+      "side": "sin asignación nueva",
+      "parent": null,
+      "file": [
+        "FJ2813.obj",
+        "FJ2815.obj"
+      ],
+      "decision": "DESCARTADO",
+      "reason": "Agregado que reutiliza piel/pelo: no duplicar mallas."
+    },
+    {
+      "name": "pubic hair",
+      "latin": null,
+      "sourceId": "FMA54319",
+      "elementIds": [
+        "FJ2815"
+      ],
+      "source": "BodyParts3D 4.0",
+      "type": "concepto fuente; no se equipara una clasificación a capa histológica",
+      "region": "según concepto fuente",
+      "side": "sin asignación nueva",
+      "parent": null,
+      "file": [
+        "FJ2815.obj"
+      ],
+      "decision": "DESCARTADO",
+      "reason": "Pelo nominal disponible, fuera de la prioridad de envoltura; no se añade cobertura cosmética ni se infiere histología."
+    },
+    {
+      "name": "integumentary system",
+      "latin": null,
+      "sourceId": "FMA72979",
+      "elementIds": [
+        "FJ2810"
+      ],
+      "source": "BodyParts3D 4.0",
+      "type": "concepto fuente; no se equipara una clasificación a capa histológica",
+      "region": "según concepto fuente",
+      "side": "sin asignación nueva",
+      "parent": null,
+      "file": [
+        "FJ2810.obj"
+      ],
+      "decision": "DESCARTADO",
+      "reason": "Agregado que reutiliza piel/pelo: no duplicar mallas."
+    },
+    {
+      "name": "integument",
+      "latin": null,
+      "sourceId": "FMA74657",
+      "elementIds": [
+        "FJ2810"
+      ],
+      "source": "BodyParts3D 4.0",
+      "type": "concepto fuente; no se equipara una clasificación a capa histológica",
+      "region": "según concepto fuente",
+      "side": "sin asignación nueva",
+      "parent": null,
+      "file": [
+        "FJ2810.obj"
+      ],
+      "decision": "DESCARTADO",
+      "reason": "Agregado que reutiliza piel/pelo: no duplicar mallas."
+    }
+  ],
+  "pending": [
+    {
+      "name": "Tejido subcutáneo",
+      "latin": "Tela subcutanea",
+      "sourceId": null,
+      "elementIds": [],
+      "source": "BodyParts3D 4.0/4.3: metadatos disponibles",
+      "type": "tejido",
+      "region": "cuerpo",
+      "side": "no aplica",
+      "parent": "integumentary",
+      "file": null,
+      "decision": "APLAZADO",
+      "reason": "No se identifica una capa subcutánea corporal independiente y fiable. No se infla la piel."
+    },
+    {
+      "name": "Epidermis y dermis separadas",
+      "latin": null,
+      "sourceId": null,
+      "elementIds": [],
+      "source": "BodyParts3D 4.0/4.3: metadatos disponibles",
+      "type": "capas histológicas",
+      "region": "cuerpo",
+      "side": "no aplica",
+      "parent": "integumentary",
+      "file": null,
+      "decision": "APLAZADO",
+      "reason": "El agregado subdivision of epidermis sólo indexa anexos; no equivale a dos capas geométricas de piel."
+    },
+    {
+      "name": "Uñas",
+      "latin": "Ungues",
+      "sourceId": null,
+      "elementIds": [],
+      "source": "BodyParts3D 4.0/4.3: metadatos disponibles",
+      "type": "anexos",
+      "region": "cuerpo",
+      "side": "no aplica",
+      "parent": "integumentary",
+      "file": null,
+      "decision": "APLAZADO",
+      "reason": "Sin identidad nominal de uña en las tablas de nombres examinadas; no se fabrica geometría."
+    },
+    {
+      "name": "Regiones cutáneas separadas",
+      "latin": null,
+      "sourceId": null,
+      "elementIds": [],
+      "source": "BodyParts3D 4.0/4.3: metadatos disponibles",
+      "type": "regiones",
+      "region": "cuerpo",
+      "side": "no aplica",
+      "parent": "integumentary",
+      "file": null,
+      "decision": "APLAZADO",
+      "reason": "FMA7163 corresponde a FJ2810, una única pieza. Se conserva; no se recorta para fabricar identidades regionales."
+    }
+  ],
+  "discovery": {
+    "pattern": "skin|integument|epidermis|dermis|subcutaneous|adipose|nail|hair|superficial fascia",
+    "rows40": [
+      {
+        "table": "isa",
+        "concept id": "FMA7163",
+        "representation id": "BP9115",
+        "en": "skin",
+        "elementIds": [
+          "FJ2810"
+        ]
+      },
+      {
+        "table": "isa",
+        "concept id": "FMA53667",
+        "representation id": "BP8352",
+        "en": "hair",
+        "elementIds": [
+          "FJ2813",
+          "FJ2815"
+        ]
+      },
+      {
+        "table": "isa",
+        "concept id": "FMA54241",
+        "representation id": "BP8565",
+        "en": "hair of head",
+        "elementIds": [
+          "FJ2813"
+        ]
+      },
+      {
+        "table": "isa",
+        "concept id": "FMA54250",
+        "representation id": "BP8351",
+        "en": "hair of trunk",
+        "elementIds": [
+          "FJ2815"
+        ]
+      },
+      {
+        "table": "isa",
+        "concept id": "FMA54319",
+        "representation id": "BP8350",
+        "en": "pubic hair",
+        "elementIds": [
+          "FJ2815"
+        ]
+      },
+      {
+        "table": "isa",
+        "concept id": "FMA70593",
+        "representation id": "BP8354",
+        "en": "subdivision of epidermis",
+        "elementIds": [
+          "FJ2813",
+          "FJ2815"
+        ]
+      },
+      {
+        "table": "isa",
+        "concept id": "FMA70741",
+        "representation id": "BP8955",
+        "en": "set of facial hairs",
+        "elementIds": [
+          "FJ2812"
+        ]
+      },
+      {
+        "table": "isa",
+        "concept id": "FMA70752",
+        "representation id": "BP8956",
+        "en": "set of hairs",
+        "elementIds": [
+          "FJ2812"
+        ]
+      },
+      {
+        "table": "isa",
+        "concept id": "FMA71012",
+        "representation id": "BP8353",
+        "en": "skin appendage",
+        "elementIds": [
+          "FJ2813",
+          "FJ2815"
+        ]
+      },
+      {
+        "table": "partof",
+        "concept id": "FMA7163",
+        "representation id": "BP10155",
+        "en": "skin",
+        "elementIds": [
+          "FJ2810"
+        ]
+      },
+      {
+        "table": "partof",
+        "concept id": "FMA54319",
+        "representation id": "BP9718",
+        "en": "pubic hair",
+        "elementIds": [
+          "FJ2815"
+        ]
+      },
+      {
+        "table": "partof",
+        "concept id": "FMA72979",
+        "representation id": "BP10157",
+        "en": "integumentary system",
+        "elementIds": [
+          "FJ2810"
+        ]
+      },
+      {
+        "table": "partof",
+        "concept id": "FMA74657",
+        "representation id": "BP10156",
+        "en": "integument",
+        "elementIds": [
+          "FJ2810"
+        ]
+      }
+    ],
+    "mappingRows43": [
+      "FMA53667\tis_a\tFJ2813+FJ2815",
+      "FMA54241\tis_a\tFJ2813",
+      "FMA54250\tis_a\tFJ2815",
+      "FMA54319\tis_a\tFJ2815",
+      "FMA70593\tis_a\tFJ2813+FJ2815",
+      "FMA70741\tis_a\tFJ2812",
+      "FMA70752\tis_a\tFJ2812",
+      "FMA71012\tis_a\tFJ2813+FJ2815",
+      "FMA7163\tis_a\tFJ2810",
+      "FMA54319\tpart_of\tFJ2815",
+      "FMA7163\tpart_of\tFJ2810",
+      "FMA72979\tpart_of\tFJ2810",
+      "FMA74657\tpart_of\tFJ2810"
+    ],
+    "scope43": "Identity mapping only: FMA2Obj43 has no anatomical names. No unverified claim of complete 4.3 absence."
+  },
+  "alternatives": [
+    {
+      "source": "Existing HRA VH_M_Skin.glb",
+      "decision": "DESCARTADO",
+      "reason": "Visible Human frame differs from BP3D; existing presentation asset is not registered to this atlas. Native BP3D skin has priority."
+    },
+    {
+      "source": "Z-Anatomy",
+      "decision": "APLAZADO",
+      "reason": "Existing Phase 4 registration is regional/per-nerve, not a body-envelope validation. Not extracted while native skin is available."
+    }
+  ],
+  "counts": {
+    "approved": 1,
+    "discardedMetadataRows": 11,
+    "pending": 4
+  }
+}

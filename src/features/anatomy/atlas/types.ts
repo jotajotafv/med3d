@@ -32,6 +32,8 @@ export interface AnatomyNode {
   digestiveType?: string;
   /** Macroscopic organ or component identity for the four internal systems. */
   internalType?: string;
+  /** Surface identity; does not assert histological layers. */
+  integumentaryType?: string;
   digestiveClass?: 'tract' | 'liver' | 'biliary' | 'gland';
   side?: 'left' | 'right' | 'midline';
   relatedIds: string[];

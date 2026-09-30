@@ -63,7 +63,9 @@ export function createExplosionOffsets(catalog: AnatomyCatalog, activeSystems: R
   }
   const result = new Map<string, ExplosionOffsets>();
   catalog.nodes.forEach(node => {
-    if (node.kind === 'body') {
+    // The native skin is one continuous envelope: keep it as the spatial
+    // reference in all modes instead of inventing regional cuts or scattering it.
+    if (node.kind === 'body' || node.systemId === 'integumentary') {
       result.set(node.id, { systems: [...ZERO], regions: [...ZERO], structures: [...ZERO] });
       return;
     }

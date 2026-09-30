@@ -6,6 +6,7 @@ import SceneBoundary from '../SceneBoundary';
 import { AtlasAssetManager, type AssetSnapshot, type AtlasPart, type AtlasResource } from './asset-manager';
 import { createExplosionOffsets, explosionTarget } from './explosion';
 import { ANATOMICAL_VIEWS, fitCameraBounds } from './camera-framing';
+import { skinAllowsRaycast } from './integumentary-picking';
 import type { AnatomyCatalog, AtlasAnatomicalView, AtlasSceneProps, Bounds, SystemId } from './types';
 
 type Controls = ComponentRef<typeof OrbitControls>;
@@ -93,6 +94,8 @@ function Models(props: ModelProps) {
   const offsets = useMemo(() => createExplosionOffsets(catalog, activeSystems), [catalog, activeSystems]);
   useEffect(() => {
     const hiddenIds = new Set(hidden);
+    const isVisible = (part: AtlasPart) => ![...part.ancestors].some(id => hiddenIds.has(id)) && (!isolated || part.ancestors.has(isolated)) && (!contextIds.length || contextIds.some(id=>part.ancestors.has(id)));
+    const hasVisibleInterior = parts.some(part => part.node.systemId !== 'integumentary' && isVisible(part));
     materials.forEach((variants) => {
       const system=variants.systemId;
       const supplied = opacityBySystem[system] ?? 1;
@@ -104,8 +107,9 @@ function Models(props: ModelProps) {
       });
     });
     parts.forEach(part => {
-      part.mesh.visible = ![...part.ancestors].some(id => hiddenIds.has(id)) && (!isolated || part.ancestors.has(isolated)) && (!contextIds.length || contextIds.some(id=>part.ancestors.has(id)));
-      part.mesh.raycast=part.mesh.visible?THREE.Mesh.prototype.raycast:()=>{};
+      part.mesh.visible = isVisible(part);
+      const pickable = part.mesh.visible && (part.node.systemId !== 'integumentary' || skinAllowsRaycast(opacityBySystem.integumentary ?? 1, hasVisibleInterior));
+      part.mesh.raycast=pickable?THREE.Mesh.prototype.raycast:()=>{};
       const variants = materials.get(materialKey(part.node.systemId!,part.node.family,part.node.vascularClass,part.node.respiratoryClass,part.node.digestiveClass))!;
       part.mesh.material = selected && part.ancestors.has(selected) ? variants.selected : part.node.id === hovered ? variants.hover : variants.base;
       part.mesh.renderOrder = (opacityBySystem[part.node.systemId!] ?? 1) < .999 ? 1 : 0;
@@ -293,7 +297,7 @@ function SceneInspection({resources}:{resources:AtlasResource[]}) {
         const material=part.mesh.material as THREE.MeshStandardMaterial;
         const screenCenter = part.mesh.geometry.boundingBox?.getCenter(new THREE.Vector3()).applyMatrix4(part.mesh.matrixWorld).project(camera).toArray();
         const screenSamples:number[][]=[];
-        if(part.node.id.startsWith('zanatomy:')||['cardiovascular','respiratory','digestive','urinary','endocrine','lymphatic','reproductive'].includes(part.node.systemId!)){
+        if(part.node.id.startsWith('zanatomy:')||['integumentary','muscular','skeletal','cardiovascular','respiratory','digestive','urinary','endocrine','lymphatic','reproductive'].includes(part.node.systemId!)){
           const position=part.mesh.geometry.getAttribute('position'),indices=part.mesh.geometry.getIndex();
           if(indices)for(let sample=0;sample<12;sample++){
             const first=Math.floor(sample*(indices.count/3-1)/11)*3,point=new THREE.Vector3();
@@ -301,7 +305,7 @@ function SceneInspection({resources}:{resources:AtlasResource[]}) {
             screenSamples.push(point.multiplyScalar(1/3).applyMatrix4(part.mesh.matrixWorld).project(camera).toArray());
           }
         }
-        return {id:part.node.id,meshName:part.mesh.name,screenCenter,screenSamples,emissiveIntensity:material.emissiveIntensity,depthTest:material.depthTest,side:material.side,systemId:part.node.systemId,assetId:resource.asset.id,visible:part.mesh.visible,
+        return {id:part.node.id,meshName:part.mesh.name,screenCenter,screenSamples,raycastEnabled:part.mesh.raycast===THREE.Mesh.prototype.raycast,emissiveIntensity:material.emissiveIntensity,depthTest:material.depthTest,side:material.side,systemId:part.node.systemId,assetId:resource.asset.id,visible:part.mesh.visible,
           position:part.mesh.position.toArray(),restPosition:part.basePosition.toArray(),targetPosition:part.basePosition.clone().add(part.targetOffset).toArray(),
           opacity:material.opacity,transparent:material.transparent,depthWrite:material.depthWrite,color:material.color.getHexString()};
       })).sort((a,b)=>a.id.localeCompare(b.id)),

@@ -1,0 +1,77 @@
+{
+  "pipeline": "@gltf-transform 4.5.0; meshoptimizer 1.2.0",
+  "positionBits": 32,
+  "positionQuantization": false,
+  "normalBits": 12,
+  "additionalDecimation": false,
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "numericalToleranceMetres": 0.00005,
+  "numericalToleranceScope": "Maximum Euclidean source-to-decoded position error; not anatomical/clinical accuracy.",
+  "method": "Original OBJ double coordinates transformed once; decoded GLB world positions nearest-matched within 0.05 mm; every oriented source triangle and duplicate occurrence matched, and every used source position retained.",
+  "sourceZipSha256": "b23458588ae7faf2942fddfa0a49de7fabd3c538bf12e01182a983688f46d6ab",
+  "modules": [
+    {
+      "id": "integumentary:skin",
+      "bytes": 1631504,
+      "sha256": "4e5b104ea12608250387f9a25c45d6d1b3ad0f2b02f9cf5bc05a9f4c3722035c",
+      "meshes": 1,
+      "triangles": 203382,
+      "vertices": 102467,
+      "materials": 1,
+      "decodedAccessorBytes": 4284990,
+      "compression": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ],
+      "maxPositionErrorMetres": 6.085485393543343e-8,
+      "maxBoundsErrorMetres": 4.447937018703385e-8,
+      "elements": [
+        {
+          "elementId": "FJ2810",
+          "sourceId": "FMA7163",
+          "anatomyId": "integ:FMA7163",
+          "side": "midline",
+          "triangles": 203382,
+          "vertices": 102467,
+          "uniqueUsedSourcePositions": 101691,
+          "maxPositionErrorMetres": 6.085485393543343e-8,
+          "rmsPositionErrorMetres": 2.3359957899241466e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 4.447937018703385e-8
+        }
+      ]
+    }
+  ],
+  "totalBytes": 1631504,
+  "totalTriangles": 203382,
+  "totalMeshes": 1,
+  "totalVertices": 102467,
+  "totalDecodedAccessorBytes": 4284990,
+  "maxPositionErrorMetres": 6.085485393543343e-8,
+  "maxBoundsErrorMetres": 4.447937018703385e-8
+}

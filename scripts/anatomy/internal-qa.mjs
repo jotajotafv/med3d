@@ -132,23 +132,27 @@ async function review(){
  for(const [systems,id,name] of [['urinary,endocrine','uri:abdomen','preview-renal'],['endocrine,respiratory','endo:thyroid','preview-cervical'],['urinary,reproductive','reproductive','preview-pelvic']]){await goto(systems);await chooseId(id);await h.view('anterior');await action('Deseleccionar');await shot(name);}
 }
 async function captures(){
+ async function freshShot(name){
+  await h.waitMeshes(32);assert.ok((await parts()).every(p=>fresh.includes(p.systemId)),'New-system evidence must not silently load historical modules');
+  await shot(name);
+ }
  async function organ(system,id,name,view='anterior'){await goto(system);await chooseId(id);await action('Aislar');await h.view(view);await action('Deseleccionar');await shot(name);}
  await goto('urinary');await chooseId('urinary');await h.view('anterior');await action('Deseleccionar');await shot('01-urinario-anterior');await chooseId('urinary');await h.view('posterior');await action('Deseleccionar');await shot('02-urinario-posterior');
  await organ('urinary','uri:abdomen','03-rinones');await organ('urinary','uri:FMA15571','04-ureter','left');await organ('urinary','uri:FMA15900','05-vejiga');await organ('urinary','uri:FMA19667','06-uretra','left');
  await organ('endocrine','endocrine','07-endocrino-global');await organ('endocrine','endo:thyroid','08-tiroides');await organ('endocrine','endo:neck','09-paratiroides-posteriores','posterior');await organ('endocrine','endo:FMA13889','10-hipofisis','left');await organ('endocrine','endo:abdomen','11-suprarrenales');
  await organ('lymphatic','lymphatic','12-linfatico-disponible');await organ('lymphatic','lym:FMA7196','13-bazo');await organ('lymphatic','lym:FMA9607','14-timo');
  await organ('reproductive','reproductive','15-reproductor-masculino');await organ('reproductive','rep:FMA7211','16-testiculo');await organ('reproductive','rep:FMA9600','17-prostata');await organ('reproductive','rep:penis','18-pene-componentes');
- await goto(fresh.join(','));await chooseId('body');await h.view('anterior');await action('Deseleccionar');await shot('19-cuatro-sistemas');
+ await goto(fresh.join(','));await h.view('anterior');await freshShot('19-cuatro-sistemas');
  await goto();await chooseId('body');await h.view('anterior');await action('Deseleccionar');await shot('20-diez-sistemas');
  await goto('urinary');await chooseId('uri:FMA7204');await h.view('anterior');await shot('21-rinon-seleccionado');await action('Aislar');await shot('22-rinon-aislado');
  await chooseId('uri:FMA7204');await page.getByRole('button',{name:'Mostrar contexto',exact:true}).click();await wait(2000);await opacity(50,'urinary');await h.view('anterior');await shot('23-contexto-renal');
  await goto('endocrine');await chooseId('endo:thyroid');await page.getByRole('button',{name:'Mostrar contexto',exact:true}).click();await wait(1500);await opacity(50,'endocrine');await h.view('anterior');await shot('24-contexto-cervical');
- await goto(fresh.join(','));await chooseId('body');await explode('regions',100);await action('Enfocar');await action('Deseleccionar');await shot('25-exploded-regiones');await explode('regions',0);
- await chooseId('body');await explode('structures',100);await action('Enfocar');await action('Deseleccionar');await shot('26-exploded-estructuras');await explode('structures',0);
+ await goto(fresh.join(','));await explode('regions',100);await h.view('anterior');await freshShot('25-exploded-regiones');await explode('regions',0);
+ await explode('structures',100);await h.view('anterior');await freshShot('26-exploded-estructuras');await explode('structures',0);
  await chooseId('uri:FMA7204');await structures();await page.getByRole('textbox',{name:'Buscar estructura anatómica'}).fill('renal');await shot('27-busqueda-global');await clearSearch();await page.getByRole('button',{name:'Árbol anatómico',exact:true}).click();await page.getByRole('button',{name:'Contraer todo el árbol'}).click();await page.getByRole('button',{name:'Expandir Cuerpo humano',exact:true}).click();await shot('28-arbol-global');
  for(const [size,name] of [[{width:1366,height:768},'29-laptop-capas'],[{width:1050,height:844},'30-intermedio-capas'],[{width:900,height:1100},'31-tablet-capas'],[{width:390,height:844},'32-movil-capas']]){await page.setViewportSize(size);await layers();await systemInput('reproductive').scrollIntoViewIfNeeded();assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await shot(name);await closePanels();}
- await page.setViewportSize({width:1440,height:900});await goto(fresh.join(','));for(const s of fresh)await opacity(50,s);await chooseId('body');await h.view('anterior');await action('Deseleccionar');await shot('33-transparencia-50');for(const s of fresh)await opacity(25,s);await shot('34-transparencia-25');for(const s of fresh)await opacity(100,s);
- await chooseId('body');await explode('systems',100);await action('Enfocar');await action('Deseleccionar');await shot('35-exploded-sistemas');await explode('systems',0);
+ await page.setViewportSize({width:1440,height:900});await goto(fresh.join(','));for(const s of fresh)await opacity(50,s);await h.view('anterior');await freshShot('33-transparencia-50');for(const s of fresh)await opacity(25,s);await freshShot('34-transparencia-25');for(const s of fresh)await opacity(100,s);
+ await explode('systems',100);await h.view('anterior');await freshShot('35-exploded-sistemas');await explode('systems',0);
 }
 try{await withinQaDeadline(async()=>{await ({regional,interaction,review,captures,performance:performanceQa,integration,responsive}[mode])();assert.deepEqual(h.errors,[]);assert.deepEqual(h.badRequests,[]);report.success=true;},1200000,'Internal systems '+mode);}
 catch(error){report.success=false;report.error=error.stack;await page.screenshot({path:path.join(output,'failure.png'),timeout:15000}).catch(()=>{});throw error;}

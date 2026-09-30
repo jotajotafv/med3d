@@ -1,0 +1,85 @@
+{
+  "codeCommit": "bd4756ff6c0a84427e2c0326c4e89815e690a5f1",
+  "workingTreeDirty": true,
+  "implementationDirty": true,
+  "date": "2026-09-30T20:19:49.109Z",
+  "mode": "regional",
+  "source": "Local production build over unthrottled loopback HTTP; no-store responses",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "deviceScaleFactor": 1,
+    "physicalGpuTested": false
+  },
+  "checks": [
+    {
+      "name": "Skin six views, five opacities, real picking, hide/restore, layer/module release and bounded reload"
+    },
+    {
+      "name": "Opaque skin priority, automatic internal reveal, real transparent raycast, isolated fallback and explicit surface presets"
+    },
+    {
+      "name": "Partial eye hierarchy, unilateral isolation, hide/restore, actual iris picking and explicit optic/bone context"
+    },
+    {
+      "name": "Ocular module recovers after failure; eye components move coherently and return exactly to zero"
+    },
+    {
+      "name": "Eleven-layer panel and skin toggling",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "name": "Eleven-layer panel and skin toggling",
+      "width": 1050,
+      "height": 844
+    },
+    {
+      "name": "Eleven-layer panel and skin toggling",
+      "width": 900,
+      "height": 1100
+    },
+    {
+      "name": "Eleven-layer panel and skin toggling",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "Eleven-layer panel and skin toggling",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "captures": [],
+  "measurements": {
+    "raycast-integ:FMA7163": [
+      {
+        "x": 702,
+        "y": 495.59375,
+        "selected": "integ:FMA7163"
+      }
+    ],
+    "raycast-uri:FMA7204": [
+      {
+        "x": 702,
+        "y": 495.5937499999998,
+        "selected": "uri:FMA7204"
+      }
+    ],
+    "raycast-ocular:FMA58236": [
+      {
+        "x": 702,
+        "y": 495.59375,
+        "selected": ""
+      },
+      {
+        "x": 516.9057889470615,
+        "y": 555.0913561895569,
+        "selected": "ocular:FMA58236"
+      }
+    ]
+  },
+  "errors": [],
+  "badRequests": [],
+  "success": true
+}

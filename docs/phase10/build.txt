@@ -1,0 +1,67 @@
+
+> med3d@1.0.0 build
+> vite build && node scripts/static-routes.mjs
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 5339 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                   1.19 kB │ gzip:   0.61 kB
+dist/assets/geist-mono-symbols2-wght-normal-CO5SzqOn.woff2        5.81 kB
+dist/assets/geist-mono-cyrillic-ext-wght-normal-X_5orZeX.woff2    6.18 kB
+dist/assets/geist-cyrillic-ext-wght-normal-DjL33-gN.woff2         7.42 kB
+dist/assets/geist-mono-vietnamese-wght-normal-DadHysG0.woff2      7.70 kB
+dist/assets/geist-vietnamese-wght-normal-6IgcOCM7.woff2           8.00 kB
+dist/assets/geist-mono-cyrillic-wght-normal-DiZS0aHC.woff2       12.94 kB
+dist/assets/geist-mono-latin-ext-wght-normal-Bwz-egvJ.woff2      14.70 kB
+dist/assets/geist-cyrillic-wght-normal-BEAKL7Jp.woff2            15.08 kB
+dist/assets/geist-latin-ext-wght-normal-DC-KSUi6.woff2           16.51 kB
+dist/assets/geist-mono-latin-wght-normal-XN7g48iV.woff2          23.13 kB
+dist/assets/geist-latin-wght-normal-BgDaEnEv.woff2               29.40 kB
+dist/assets/index-BXAy1yUC.css                                    8.57 kB │ gzip:   2.38 kB
+dist/assets/index-B9SmE3Pw.css                                   10.99 kB │ gzip:   2.62 kB
+dist/assets/about-u_aBuI98.css                                   13.73 kB │ gzip:   3.08 kB
+dist/assets/SkeletalAtlas-BpZ7547O.css                           16.04 kB │ gzip:   3.73 kB
+dist/assets/anatomy-CdgjjqS4.css                                 19.67 kB │ gzip:   4.83 kB
+dist/assets/LearningCatalog-TxtNiQwt.css                         20.74 kB │ gzip:   4.24 kB
+dist/assets/index-BBqWEO-B.js                                     0.42 kB │ gzip:   0.28 kB
+dist/assets/index-C_5CMPHZ.js                                     0.42 kB │ gzip:   0.28 kB
+dist/assets/_slug-nBrwmy4c.js                                     0.60 kB │ gzip:   0.37 kB
+dist/assets/_slug-J7OBKcGR.js                                     0.60 kB │ gzip:   0.37 kB
+dist/assets/anatomia-dxUPJLO4.js                                  1.22 kB │ gzip:   0.67 kB
+dist/assets/CaretRight.es-BplVMMO2.js                             1.37 kB │ gzip:   0.54 kB
+dist/assets/ArrowRight.es-QUR7zSTx.js                             1.52 kB │ gzip:   0.60 kB
+dist/assets/Check.es-0TRXpH5b.js                                  1.53 kB │ gzip:   0.56 kB
+dist/assets/MagnifyingGlass.es-B0uDt6oP.js                        1.62 kB │ gzip:   0.65 kB
+dist/assets/Info.es-DfCLeLBf.js                                   2.19 kB │ gzip:   0.78 kB
+dist/assets/BookOpen.es-DeiFI3mj.js                               2.56 kB │ gzip:   0.85 kB
+dist/assets/Cube.es-Dx3-Pw4u.js                                   2.68 kB │ gzip:   0.90 kB
+dist/assets/Stack.es-D6rOX8qV.js                                  2.98 kB │ gzip:   0.87 kB
+dist/assets/Gauge.es-6YH4sKt7.js                                  3.39 kB │ gzip:   1.29 kB
+dist/assets/Bone.es-C5ogw_va.js                                   3.66 kB │ gzip:   1.21 kB
+dist/assets/Heartbeat.es-D3tp7CrP.js                              4.60 kB │ gzip:   1.72 kB
+dist/assets/Brain.es-UzQhSdr9.js                                  5.43 kB │ gzip:   1.65 kB
+dist/assets/AnatomyScene-Cu0FLYst.js                             11.97 kB │ gzip:   5.18 kB
+dist/assets/index-Ch3vFcRD.js                                    14.63 kB │ gzip:   4.57 kB
+dist/assets/LearningScene-C3WfUMy0.js                            17.44 kB │ gzip:   5.84 kB
+dist/assets/acerca-Czx4sFh6.js                                   18.90 kB │ gzip:   5.93 kB
+dist/assets/arquitectura-C9gkNqwo.js                             19.15 kB │ gzip:   6.16 kB
+dist/assets/LegacyOrganAtlas-DLewMBLZ.js                         20.08 kB │ gzip:   6.57 kB
+dist/assets/SlidersHorizontal.es-CsRx-LsZ.js                     21.10 kB │ gzip:   4.97 kB
+dist/assets/LessonPage-CZe6voUc.js                               25.35 kB │ gzip:   7.37 kB
+dist/assets/AtlasScene-D3uCLpYN.js                               28.27 kB │ gzip:  11.13 kB
+dist/assets/LearningCatalog-Dj78SrCa.js                          43.44 kB │ gzip:  13.62 kB
+dist/assets/SceneBoundary-CF4IIHyI.js                            79.18 kB │ gzip:  24.15 kB
+dist/assets/data-CpeNXF_P.js                                     88.53 kB │ gzip:  13.67 kB
+dist/assets/SkeletalAtlas-h7mk6XIz.js                           199.97 kB │ gzip:  57.67 kB
+dist/assets/index-D5Z4GM08.js                                   321.52 kB │ gzip: 101.64 kB
+dist/assets/OrbitControls-EC3rzy5m.js                           920.01 kB │ gzip: 246.96 kB
+✓ built in 5.71s
+Static routes generated: 18
+
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

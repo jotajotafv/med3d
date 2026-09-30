@@ -1,0 +1,53 @@
+{
+  "scope": "CPU-only replay of 2000 hover changes over the 931-mesh Phase 9 catalog; exact old effect extracted from Git vs actual new highlight controller. Does not measure GPU, event latency, VRAM or FPS.",
+  "baselineCommit": "bd4756ff6c0a84427e2c0326c4e89815e690a5f1",
+  "parts": 931,
+  "iterations": 2000,
+  "rounds": 7,
+  "medianBeforeMs": 413.6311000000003,
+  "medianAfterMs": 1.9214999999999236,
+  "samples": [
+    {
+      "beforeMs": 414.9697,
+      "afterMs": 2.5347999999999047,
+      "materialUpdatesBefore": 1862000,
+      "materialUpdatesAfter": 7990
+    },
+    {
+      "beforeMs": 417.2736,
+      "afterMs": 2.1059999999999945,
+      "materialUpdatesBefore": 1862000,
+      "materialUpdatesAfter": 7990
+    },
+    {
+      "beforeMs": 417.1709000000001,
+      "afterMs": 1.820799999999963,
+      "materialUpdatesBefore": 1862000,
+      "materialUpdatesAfter": 7990
+    },
+    {
+      "beforeMs": 413.6311000000003,
+      "afterMs": 1.9823999999998705,
+      "materialUpdatesBefore": 1862000,
+      "materialUpdatesAfter": 7990
+    },
+    {
+      "beforeMs": 409.27559999999994,
+      "afterMs": 1.9214999999999236,
+      "materialUpdatesBefore": 1862000,
+      "materialUpdatesAfter": 7990
+    },
+    {
+      "beforeMs": 401.6812,
+      "afterMs": 1.8072000000001935,
+      "materialUpdatesBefore": 1862000,
+      "materialUpdatesAfter": 7990
+    },
+    {
+      "beforeMs": 410.8879000000002,
+      "afterMs": 1.8504000000002634,
+      "materialUpdatesBefore": 1862000,
+      "materialUpdatesAfter": 7990
+    }
+  ]
+}

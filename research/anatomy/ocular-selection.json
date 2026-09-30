@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "bd4756ff6c0a84427e2c0326c4e89815e690a5f1",
+  "source": "DBCLS BodyParts3D 4.0 OBJ99",
+  "sourceArchive": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+  "frame": "bodyparts3d-4.0-male",
+  "transform": "(x,y,z) -> (x,z,-y)/1000",
+  "geometryExtractedDuringAudit": false,
+  "parents": [
+    {
+      "id": "ocular:FMA12514",
+      "sourceId": "FMA12514",
+      "name": "Ojo derecho · cobertura parcial",
+      "latin": "Bulbus oculi dexter",
+      "side": "right",
+      "sourceName": "right eyeball",
+      "sourceRepresentation": "BP7094",
+      "sourceElements": [
+        "FJ1336",
+        "FJ1337",
+        "FJ1340",
+        "FJ1348",
+        "FJ1356",
+        "FJ1368",
+        "FJ1371",
+        "FJ1382"
+      ],
+      "decision": "APROBADO",
+      "reason": "Agrupación de globo ocular con componentes nominales; no se afirma un ojo completo."
+    },
+    {
+      "id": "ocular:FMA12515",
+      "sourceId": "FMA12515",
+      "name": "Ojo izquierdo · cobertura parcial",
+      "latin": "Bulbus oculi sinister",
+      "side": "left",
+      "sourceName": "left eyeball",
+      "sourceRepresentation": "BP7110",
+      "sourceElements": [
+        "FJ1282",
+        "FJ1285",
+        "FJ1286",
+        "FJ1289",
+        "FJ1297",
+        "FJ1305",
+        "FJ1317",
+        "FJ1320",
+        "FJ1331"
+      ],
+      "decision": "APROBADO",
+      "reason": "Agrupación de globo ocular con componentes nominales; no se afirma un ojo completo."
+    }
+  ],
+  "approved": [
+    {
+      "id": "ocular:FMA58239",
+      "name": "Córnea derecha",
+      "latin": "Cornea",
+      "sourceId": "FMA58239",
+      "elementId": "FJ1340",
+      "representationId": "BP6522",
+      "sourceVersion": "4.0",
+      "sourceName": "right cornea",
+      "side": "right",
+      "family": "cornea",
+      "parentId": "ocular:FMA12514",
+      "region": "órbita derecho",
+      "systemId": "nervous",
+      "moduleId": "nervous:ocular",
+      "entityType": "componente del globo ocular",
+      "decision": "APROBADO",
+      "reason": "Identidad nominal bilateral y pertenencia PART-OF al globo ocular verificadas; registro nativo sujeto a conservación geométrica.",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1340.obj",
+        "bytes": 337119,
+        "compressedBytes": 94885,
+        "crc32": "a45529af",
+        "offset": 6112202,
+        "method": 8
+      }
+    },
+    {
+      "id": "ocular:FMA58271",
+      "name": "Esclerótica derecha",
+      "latin": "Sclera",
+      "sourceId": "FMA58271",
+      "elementId": "FJ1368",
+      "representationId": "BP6519",
+      "sourceVersion": "4.0",
+      "sourceName": "right sclera",
+      "side": "right",
+      "family": "sclera",
+      "parentId": "ocular:FMA12514",
+      "region": "órbita derecho",
+      "systemId": "nervous",
+      "moduleId": "nervous:ocular",
+      "entityType": "componente del globo ocular",
+      "decision": "APROBADO",
+      "reason": "Identidad nominal bilateral y pertenencia PART-OF al globo ocular verificadas; registro nativo sujeto a conservación geométrica.",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1368.obj",
+        "bytes": 2746869,
+        "compressedBytes": 739100,
+        "crc32": "e42ad372",
+        "offset": 7360068,
+        "method": 8
+      }
+    },
+    {
+      "id": "ocular:FMA58236",
+      "name": "Iris derecho",
+      "latin": "Iris",
+      "sourceId": "FMA58236",
+      "elementId": "FJ1348",
+      "representationId": "BP5519",
+      "sourceVersion": "4.0",
+      "sourceName": "right iris",
+      "side": "right",
+      "family": "iris",
+      "parentId": "ocular:FMA12514",
+      "region": "órbita derecho",
+      "systemId": "nervous",
+      "moduleId": "nervous:ocular",
+      "entityType": "componente del globo ocular",
+      "decision": "APROBADO",
+      "reason": "Identidad nominal bilateral y pertenencia PART-OF al globo ocular verificadas; registro nativo sujeto a conservación geométrica.",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1348.obj",
+        "bytes": 208148,
+        "compressedBytes": 60561,
+        "crc32": "2d67358c",
+        "offset": 6455307,
+        "method": 8
+      }
+    },
+    {
+      "id": "ocular:FMA58240",
+      "name": "Córnea izquierda",
+      "latin": "Cornea",
+      "sourceId": "FMA58240",
+      "elementId": "FJ1289",
+      "representationId": "BP6523",
+      "sourceVersion": "4.0",
+      "sourceName": "left cornea",
+      "side": "left",
+      "family": "cornea",
+      "parentId": "ocular:FMA12515",
+      "region": "órbita izquierdo",
+      "systemId": "nervous",
+      "moduleId": "nervous:ocular",
+      "entityType": "componente del globo ocular",
+      "decision": "APROBADO",
+      "reason": "Identidad nominal bilateral y pertenencia PART-OF al globo ocular verificadas; registro nativo sujeto a conservación geométrica.",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1289.obj",
+        "bytes": 318620,
+        "compressedBytes": 91282,
+        "crc32": "c86f4862",
+        "offset": 2078506,
+        "method": 8
+      }
+    },
+    {
+      "id": "ocular:FMA58272",
+      "name": "Esclerótica izquierda",
+      "latin": "Sclera",
+      "sourceId": "FMA58272",
+      "elementId": "FJ1317",
+      "representationId": "BP6520",
+      "sourceVersion": "4.0",
+      "sourceName": "left sclera",
+      "side": "left",
+      "family": "sclera",
+      "parentId": "ocular:FMA12515",
+      "region": "órbita izquierdo",
+      "systemId": "nervous",
+      "moduleId": "nervous:ocular",
+      "entityType": "componente del globo ocular",
+      "decision": "APROBADO",
+      "reason": "Identidad nominal bilateral y pertenencia PART-OF al globo ocular verificadas; registro nativo sujeto a conservación geométrica.",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1317.obj",
+        "bytes": 2712740,
+        "compressedBytes": 732079,
+        "crc32": "b22c2861",
+        "offset": 3319176,
+        "method": 8
+      }
+    },
+    {
+      "id": "ocular:FMA58237",
+      "name": "Iris izquierdo",
+      "latin": "Iris",
+      "sourceId": "FMA58237",
+      "elementId": "FJ1297",
+      "representationId": "BP5520",
+      "sourceVersion": "4.0",
+      "sourceName": "left iris",
+      "side": "left",
+      "family": "iris",
+      "parentId": "ocular:FMA12515",
+      "region": "órbita izquierdo",
+      "systemId": "nervous",
+      "moduleId": "nervous:ocular",
+      "entityType": "componente del globo ocular",
+      "decision": "APROBADO",
+      "reason": "Identidad nominal bilateral y pertenencia PART-OF al globo ocular verificadas; registro nativo sujeto a conservación geométrica.",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1297.obj",
+        "bytes": 206456,
+        "compressedBytes": 60327,
+        "crc32": "2776494b",
+        "offset": 2417763,
+        "method": 8
+      }
+    }
+  ],
+  "pending": [
+    {
+      "name": "Retina y componentes internos del globo",
+      "decision": "APLAZADO",
+      "reason": "No son necesarios para resolver la identificación superficial; ampliación ocular completa fuera del alcance."
+    },
+    {
+      "name": "Musculatura extraocular y otros anexos",
+      "decision": "APLAZADO",
+      "reason": "No se duplica la región con una expansión orbital completa."
+    },
+    {
+      "name": "Modelo ocular HRA independiente",
+      "decision": "APLAZADO",
+      "reason": "No hay un explorador ocular registrado en el proyecto; los modelos existentes son corazón, pulmones, encéfalo y piel de presentación."
+    }
+  ],
+  "counts": {
+    "anatomicalUnits": 2,
+    "approvedSourceComponents": 6,
+    "pendingGroups": 3
+  },
+  "scope": "Ocular coverage grouped editorially with sensory pathways in nervous system; no twelfth system. No inference from IS-A to PART-OF."
+}

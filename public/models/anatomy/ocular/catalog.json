@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 1,
+  "id": "med3d-ocular-extension",
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "nodes": [
+    {
+      "id": "nervous:ocular",
+      "name": "Ojos · cobertura disponible",
+      "anatomicalName": "Ojos · cobertura disponible",
+      "latin": "Bulbi oculi",
+      "aliases": [
+        "ojo",
+        "ocular",
+        "órbita",
+        "visión",
+        "órganos de los sentidos"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "explosionRegionId": "head-neck",
+      "children": [
+        "ocular:FMA12514",
+        "ocular:FMA12515"
+      ],
+      "kind": "region",
+      "ocularClass": "eyeball",
+      "neuralType": "región ocular",
+      "assetIds": [
+        "nervous:ocular"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "bounds": [
+        [
+          -0.0436181,
+          1.50496,
+          0.138829
+        ],
+        [
+          0.042310400000000005,
+          1.53119,
+          0.166051
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58239",
+      "name": "Córnea derecha",
+      "anatomicalName": "Córnea derecha",
+      "latin": "Cornea",
+      "sourceId": "FMA58239",
+      "aliases": [
+        "right cornea",
+        "FMA58239",
+        "FJ1340",
+        "ojo",
+        "globo ocular",
+        "órbita"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "explosionRegionId": "head-neck",
+      "parentId": "ocular:FMA12514",
+      "children": [],
+      "kind": "component",
+      "family": "cornea",
+      "ocularClass": "cornea",
+      "neuralType": "componente ocular",
+      "assetIds": [
+        "nervous:ocular"
+      ],
+      "meshNames": [
+        "bp3d_FMA58239_FJ1340"
+      ],
+      "relatedIds": [],
+      "side": "right",
+      "bounds": [
+        [
+          -0.0381509,
+          1.5107300000000001,
+          0.161155
+        ],
+        [
+          0.030854299999999998,
+          1.5248,
+          0.166051
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58271",
+      "name": "Esclerótica derecha",
+      "anatomicalName": "Esclerótica derecha",
+      "latin": "Sclera",
+      "sourceId": "FMA58271",
+      "aliases": [
+        "right sclera",
+        "FMA58271",
+        "FJ1368",
+        "ojo",
+        "globo ocular",
+        "órbita"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "explosionRegionId": "head-neck",
+      "parentId": "ocular:FMA12514",
+      "children": [],
+      "kind": "component",
+      "family": "sclera",
+      "ocularClass": "sclera",
+      "neuralType": "componente ocular",
+      "assetIds": [
+        "nervous:ocular"
+      ],
+      "meshNames": [
+        "bp3d_FMA58271_FJ1368"
+      ],
+      "relatedIds": [],
+      "side": "right",
+      "bounds": [
+        [
+          -0.0436181,
+          1.50496,
+          0.138829
+        ],
+        [
+          0.0312616,
+          1.53119,
+          0.163464
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58236",
+      "name": "Iris derecho",
+      "anatomicalName": "Iris derecho",
+      "latin": "Iris",
+      "sourceId": "FMA58236",
+      "aliases": [
+        "right iris",
+        "FMA58236",
+        "FJ1348",
+        "ojo",
+        "globo ocular",
+        "órbita"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "explosionRegionId": "head-neck",
+      "parentId": "ocular:FMA12514",
+      "children": [],
+      "kind": "component",
+      "family": "iris",
+      "ocularClass": "iris",
+      "neuralType": "componente ocular",
+      "assetIds": [
+        "nervous:ocular"
+      ],
+      "meshNames": [
+        "bp3d_FMA58236_FJ1348"
+      ],
+      "relatedIds": [],
+      "side": "right",
+      "bounds": [
+        [
+          -0.0375038,
+          1.5113,
+          0.159621
+        ],
+        [
+          -0.0246491,
+          1.5241600000000002,
+          0.162697
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58240",
+      "name": "Córnea izquierda",
+      "anatomicalName": "Córnea izquierda",
+      "latin": "Cornea",
+      "sourceId": "FMA58240",
+      "aliases": [
+        "left cornea",
+        "FMA58240",
+        "FJ1289",
+        "ojo",
+        "globo ocular",
+        "órbita"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "explosionRegionId": "head-neck",
+      "parentId": "ocular:FMA12515",
+      "children": [],
+      "kind": "component",
+      "family": "cornea",
+      "ocularClass": "cornea",
+      "neuralType": "componente ocular",
+      "assetIds": [
+        "nervous:ocular"
+      ],
+      "meshNames": [
+        "bp3d_FMA58240_FJ1289"
+      ],
+      "relatedIds": [],
+      "side": "left",
+      "bounds": [
+        [
+          0.0227521,
+          1.5107300000000001,
+          0.16118000000000002
+        ],
+        [
+          0.0368423,
+          1.5248,
+          0.166049
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58272",
+      "name": "Esclerótica izquierda",
+      "anatomicalName": "Esclerótica izquierda",
+      "latin": "Sclera",
+      "sourceId": "FMA58272",
+      "aliases": [
+        "left sclera",
+        "FMA58272",
+        "FJ1317",
+        "ojo",
+        "globo ocular",
+        "órbita"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "explosionRegionId": "head-neck",
+      "parentId": "ocular:FMA12515",
+      "children": [],
+      "kind": "component",
+      "family": "sclera",
+      "ocularClass": "sclera",
+      "neuralType": "componente ocular",
+      "assetIds": [
+        "nervous:ocular"
+      ],
+      "meshNames": [
+        "bp3d_FMA58272_FJ1317"
+      ],
+      "relatedIds": [],
+      "side": "left",
+      "bounds": [
+        [
+          0.015989200000000002,
+          1.50496,
+          0.138829
+        ],
+        [
+          0.042310400000000005,
+          1.53119,
+          0.16345500000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58237",
+      "name": "Iris izquierdo",
+      "anatomicalName": "Iris izquierdo",
+      "latin": "Iris",
+      "sourceId": "FMA58237",
+      "aliases": [
+        "left iris",
+        "FMA58237",
+        "FJ1297",
+        "ojo",
+        "globo ocular",
+        "órbita"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "explosionRegionId": "head-neck",
+      "parentId": "ocular:FMA12515",
+      "children": [],
+      "kind": "component",
+      "family": "iris",
+      "ocularClass": "iris",
+      "neuralType": "componente ocular",
+      "assetIds": [
+        "nervous:ocular"
+      ],
+      "meshNames": [
+        "bp3d_FMA58237_FJ1297"
+      ],
+      "relatedIds": [],
+      "side": "left",
+      "bounds": [
+        [
+          0.0233381,
+          1.51131,
+          0.159621
+        ],
+        [
+          0.0361918,
+          1.5241600000000002,
+          0.16269999999999998
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA12514",
+      "name": "Ojo derecho · cobertura parcial",
+      "anatomicalName": "Ojo derecho · cobertura parcial",
+      "latin": "Bulbus oculi dexter",
+      "sourceId": "FMA12514",
+      "aliases": [
+        "right eyeball",
+        "globo ocular derecho",
+        "eye",
+        "eyeball",
+        "órbita",
+        "FMA12514"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "explosionRegionId": "head-neck",
+      "parentId": "nervous:ocular",
+      "children": [
+        "ocular:FMA58239",
+        "ocular:FMA58271",
+        "ocular:FMA58236"
+      ],
+      "kind": "structure",
+      "family": "eyeball",
+      "ocularClass": "eyeball",
+      "neuralType": "órgano sensorial · cobertura parcial",
+      "assetIds": [
+        "nervous:ocular"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "bp3d:FMA50875"
+      ],
+      "side": "right",
+      "bounds": [
+        [
+          -0.0436181,
+          1.50496,
+          0.138829
+        ],
+        [
+          0.0312616,
+          1.53119,
+          0.166051
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA12515",
+      "name": "Ojo izquierdo · cobertura parcial",
+      "anatomicalName": "Ojo izquierdo · cobertura parcial",
+      "latin": "Bulbus oculi sinister",
+      "sourceId": "FMA12515",
+      "aliases": [
+        "left eyeball",
+        "globo ocular izquierdo",
+        "eye",
+        "eyeball",
+        "órbita",
+        "FMA12515"
+      ],
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "explosionRegionId": "head-neck",
+      "parentId": "nervous:ocular",
+      "children": [
+        "ocular:FMA58240",
+        "ocular:FMA58272",
+        "ocular:FMA58237"
+      ],
+      "kind": "structure",
+      "family": "eyeball",
+      "ocularClass": "eyeball",
+      "neuralType": "órgano sensorial · cobertura parcial",
+      "assetIds": [
+        "nervous:ocular"
+      ],
+      "meshNames": [],
+      "relatedIds": [
+        "bp3d:FMA50878"
+      ],
+      "side": "left",
+      "bounds": [
+        [
+          0.015989200000000002,
+          1.50496,
+          0.138829
+        ],
+        [
+          0.042310400000000005,
+          1.53119,
+          0.166049
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "nervous:ocular",
+      "path": "models/anatomy/ocular/ocular.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 701656,
+      "sha256": "dc09ce5988834e0751136ef0f04f1fdca08dedfa4fef13a866277ba2d95072b4",
+      "meshCount": 6,
+      "triangles": 94770,
+      "bounds": [
+        [
+          -0.0436181,
+          1.50496,
+          0.138829
+        ],
+        [
+          0.042310400000000005,
+          1.53119,
+          0.166051
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-ocular"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "bodyparts3d-4.0-ocular",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Seis componentes bilaterales de dos globos oculares parciales: córnea, esclerótica e iris.",
+        "Transformación (x,y,z) → (x,z,-y)/1000, sin registro adicional, desplazamiento, deformación ni decimación.",
+        "Posiciones Float32, Meshopt y cuantización sólo de normales.",
+        "Materiales esquemáticos; no simulación óptica ni color de iris representativo del individuo."
+      ]
+    }
+  ],
+  "coverage": {
+    "title": "Cobertura ocular parcial disponible",
+    "structures": 2,
+    "meshes": 6,
+    "note": "Dos globos oculares parciales: córnea, esclerótica e iris. Agrupados editorialmente con las vías sensoriales, sin un sistema adicional.",
+    "limitations": [
+      "No se representa el globo ocular completo ni sus capas internas, cristalino o humores.",
+      "La córnea usa transparencia esquemática para mostrar el iris; no constituye simulación óptica.",
+      "No se añaden músculos extraoculares ni se corrigen las aperturas de la piel."
+    ]
+  }
+}

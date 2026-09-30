@@ -1,0 +1,293 @@
+{
+  "sourceZip": "research/anatomy/ocular-originals.zip",
+  "sourceZipSha256": "a0e20a79bddeab8e681ca459e6fa63c02df7df20556abb71dc4aff20750c8a1e",
+  "selectionSha256": "7eb7ad1a95eb89410426c6d7de7a772bb6138fb3f5245b929d1338e12cb46fcc",
+  "sourceLock": "research/anatomy/ocular-source-lock.json",
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "additionalRegistration": "none; native BP3D 4.0 frame",
+  "files": [
+    {
+      "path": "FJ1340.obj",
+      "elementId": "FJ1340",
+      "sourceId": "FMA58239",
+      "representationId": "BP6522",
+      "sourceVersion": "4.0",
+      "bytes": 337119,
+      "sha256": "0ff28bd7911c88b79275f19d2738487b573b2fcc7cd165154e21aed6a22c70eb",
+      "anatomyId": "ocular:FMA58239",
+      "ownerSourceId": "FMA58239",
+      "side": "right",
+      "family": "cornea",
+      "moduleId": "nervous:ocular",
+      "sourceType": "componente ocular",
+      "triangles": 4606,
+      "faces": 4606,
+      "sourcePositionCount": 3091,
+      "vertices": 3091,
+      "boundsMetres": [
+        [
+          -0.0381509,
+          1.5107300000000001,
+          0.161155
+        ],
+        [
+          0.030854299999999998,
+          1.5248,
+          0.166051
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -38.1509,
+          -166.051,
+          1510.73
+        ],
+        [
+          30.8543,
+          -161.155,
+          1524.8
+        ]
+      ]
+    },
+    {
+      "path": "FJ1368.obj",
+      "elementId": "FJ1368",
+      "sourceId": "FMA58271",
+      "representationId": "BP6519",
+      "sourceVersion": "4.0",
+      "bytes": 2746869,
+      "sha256": "e1c1bbc9da8924173a3abd341bca49cda8e8444ef5256637a40aad91adab1d65",
+      "anatomyId": "ocular:FMA58271",
+      "ownerSourceId": "FMA58271",
+      "side": "right",
+      "family": "sclera",
+      "moduleId": "nervous:ocular",
+      "sourceType": "componente ocular",
+      "triangles": 39524,
+      "faces": 39524,
+      "sourcePositionCount": 20582,
+      "vertices": 20582,
+      "boundsMetres": [
+        [
+          -0.0436181,
+          1.50496,
+          0.138829
+        ],
+        [
+          0.0312616,
+          1.53119,
+          0.163464
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -43.6181,
+          -163.464,
+          1504.96
+        ],
+        [
+          31.2616,
+          -138.829,
+          1531.19
+        ]
+      ]
+    },
+    {
+      "path": "FJ1348.obj",
+      "elementId": "FJ1348",
+      "sourceId": "FMA58236",
+      "representationId": "BP5519",
+      "sourceVersion": "4.0",
+      "bytes": 208148,
+      "sha256": "a2dd64cf35f6582aa498e7e1874e31722e318a8c09f44e3a1ccfa63e6769280c",
+      "anatomyId": "ocular:FMA58236",
+      "ownerSourceId": "FMA58236",
+      "side": "right",
+      "family": "iris",
+      "moduleId": "nervous:ocular",
+      "sourceType": "componente ocular",
+      "triangles": 3248,
+      "faces": 3248,
+      "sourcePositionCount": 1734,
+      "vertices": 1734,
+      "boundsMetres": [
+        [
+          -0.0375038,
+          1.5113,
+          0.159621
+        ],
+        [
+          -0.0246491,
+          1.5241600000000002,
+          0.162697
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -37.5038,
+          -162.697,
+          1511.3
+        ],
+        [
+          -24.6491,
+          -159.621,
+          1524.16
+        ]
+      ]
+    },
+    {
+      "path": "FJ1289.obj",
+      "elementId": "FJ1289",
+      "sourceId": "FMA58240",
+      "representationId": "BP6523",
+      "sourceVersion": "4.0",
+      "bytes": 318620,
+      "sha256": "90f935efed26a091bae9b209349b65bee7fe12ef6974d68bfab5a8d5838ed203",
+      "anatomyId": "ocular:FMA58240",
+      "ownerSourceId": "FMA58240",
+      "side": "left",
+      "family": "cornea",
+      "moduleId": "nervous:ocular",
+      "sourceType": "componente ocular",
+      "triangles": 4602,
+      "faces": 4602,
+      "sourcePositionCount": 2824,
+      "vertices": 2824,
+      "boundsMetres": [
+        [
+          0.0227521,
+          1.5107300000000001,
+          0.16118000000000002
+        ],
+        [
+          0.0368423,
+          1.5248,
+          0.166049
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          22.7521,
+          -166.049,
+          1510.73
+        ],
+        [
+          36.8423,
+          -161.18,
+          1524.8
+        ]
+      ]
+    },
+    {
+      "path": "FJ1317.obj",
+      "elementId": "FJ1317",
+      "sourceId": "FMA58272",
+      "representationId": "BP6520",
+      "sourceVersion": "4.0",
+      "bytes": 2712740,
+      "sha256": "27adb811c163db6123f525145c1aa05950a6c6e42a8d6c0290b3035f2b8a64e9",
+      "anatomyId": "ocular:FMA58272",
+      "ownerSourceId": "FMA58272",
+      "side": "left",
+      "family": "sclera",
+      "moduleId": "nervous:ocular",
+      "sourceType": "componente ocular",
+      "triangles": 39504,
+      "faces": 39504,
+      "sourcePositionCount": 20372,
+      "vertices": 20372,
+      "boundsMetres": [
+        [
+          0.015989200000000002,
+          1.50496,
+          0.138829
+        ],
+        [
+          0.042310400000000005,
+          1.53119,
+          0.16345500000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          15.9892,
+          -163.455,
+          1504.96
+        ],
+        [
+          42.3104,
+          -138.829,
+          1531.19
+        ]
+      ]
+    },
+    {
+      "path": "FJ1297.obj",
+      "elementId": "FJ1297",
+      "sourceId": "FMA58237",
+      "representationId": "BP5520",
+      "sourceVersion": "4.0",
+      "bytes": 206456,
+      "sha256": "65ba07bbbe87b39d5d9cb95fd91c8819f04635bb8f03f281d72f78a0d45dcb2e",
+      "anatomyId": "ocular:FMA58237",
+      "ownerSourceId": "FMA58237",
+      "side": "left",
+      "family": "iris",
+      "moduleId": "nervous:ocular",
+      "sourceType": "componente ocular",
+      "triangles": 3286,
+      "faces": 3286,
+      "sourcePositionCount": 1716,
+      "vertices": 1716,
+      "boundsMetres": [
+        [
+          0.0233381,
+          1.51131,
+          0.159621
+        ],
+        [
+          0.0361918,
+          1.5241600000000002,
+          0.16269999999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          23.3381,
+          -162.7,
+          1511.31
+        ],
+        [
+          36.1918,
+          -159.621,
+          1524.16
+        ]
+      ]
+    }
+  ]
+}

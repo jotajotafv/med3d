@@ -55,7 +55,7 @@ export const SYSTEMS: Array<{id: SystemId; name: string; branches: string}> = [
   {id:'skeletal',name:'Sistema óseo',branches:'Esqueleto axial · esqueleto apendicular'},
   {id:'integumentary',name:'Sistema tegumentario',branches:'Piel · superficie corporal disponible'},
   {id:'muscular',name:'Sistema muscular',branches:'Cuello · tronco · miembros superiores e inferiores'},
-  {id:'nervous',name:'Sistema nervioso',branches:'Central · orbitarios · extremidades'},
+  {id:'nervous',name:'Sistema nervioso',branches:'Central · nervios · ojos disponibles'},
   {id:'cardiovascular',name:'Sistema cardiovascular',branches:'Corazón · arterias · venas'},
   {id:'respiratory',name:'Sistema respiratorio',branches:'Vías respiratorias · pulmones'},
   {id:'digestive',name:'Sistema digestivo',branches:'Tubo digestivo · órganos accesorios'},

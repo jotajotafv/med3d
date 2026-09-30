@@ -1,0 +1,142 @@
+{
+  "pipeline": "@gltf-transform 4.5.0; meshoptimizer 1.2.0",
+  "positionBits": 32,
+  "positionQuantization": false,
+  "normalBits": 12,
+  "additionalDecimation": false,
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "numericalToleranceMetres": 0.00005,
+  "numericalToleranceScope": "Maximum Euclidean source-to-decoded position error; not anatomical/clinical accuracy.",
+  "method": "Original OBJ double coordinates transformed once; decoded GLB world positions nearest-matched within 0.05 mm; every oriented source triangle and duplicate occurrence matched, and every used source position retained.",
+  "sourceZipSha256": "a0e20a79bddeab8e681ca459e6fa63c02df7df20556abb71dc4aff20750c8a1e",
+  "modules": [
+    {
+      "id": "nervous:ocular",
+      "bytes": 701656,
+      "sha256": "dc09ce5988834e0751136ef0f04f1fdca08dedfa4fef13a866277ba2d95072b4",
+      "meshes": 6,
+      "triangles": 94770,
+      "vertices": 50319,
+      "materials": 1,
+      "decodedAccessorBytes": 1474362,
+      "compression": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ],
+      "maxPositionErrorMetres": 6.000460810908898e-8,
+      "maxBoundsErrorMetres": 5.908966071999089e-8,
+      "elements": [
+        {
+          "elementId": "FJ1340",
+          "sourceId": "FMA58239",
+          "anatomyId": "ocular:FMA58239",
+          "side": "right",
+          "triangles": 4606,
+          "vertices": 3091,
+          "uniqueUsedSourcePositions": 2337,
+          "maxPositionErrorMetres": 5.998694433983028e-8,
+          "rmsPositionErrorMetres": 3.384442067598389e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.702972405430273e-8
+        },
+        {
+          "elementId": "FJ1368",
+          "sourceId": "FMA58271",
+          "anatomyId": "ocular:FMA58271",
+          "side": "right",
+          "triangles": 39524,
+          "vertices": 20582,
+          "uniqueUsedSourcePositions": 19784,
+          "maxPositionErrorMetres": 5.999601805633484e-8,
+          "rmsPositionErrorMetres": 3.452068915778392e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.908966071999089e-8
+        },
+        {
+          "elementId": "FJ1348",
+          "sourceId": "FMA58236",
+          "anatomyId": "ocular:FMA58236",
+          "side": "right",
+          "triangles": 3248,
+          "vertices": 1734,
+          "uniqueUsedSourcePositions": 1624,
+          "maxPositionErrorMetres": 5.979893644744064e-8,
+          "rmsPositionErrorMetres": 3.414202101778872e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 3.223419198228328e-8
+        },
+        {
+          "elementId": "FJ1289",
+          "sourceId": "FMA58240",
+          "anatomyId": "ocular:FMA58240",
+          "side": "left",
+          "triangles": 4602,
+          "vertices": 2824,
+          "uniqueUsedSourcePositions": 2301,
+          "maxPositionErrorMetres": 5.99983318342944e-8,
+          "rmsPositionErrorMetres": 3.474720538851505e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.702972405430273e-8
+        },
+        {
+          "elementId": "FJ1317",
+          "sourceId": "FMA58272",
+          "anatomyId": "ocular:FMA58272",
+          "side": "left",
+          "triangles": 39504,
+          "vertices": 20372,
+          "uniqueUsedSourcePositions": 19754,
+          "maxPositionErrorMetres": 6.000460810908898e-8,
+          "rmsPositionErrorMetres": 3.474403081333872e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.908966071999089e-8
+        },
+        {
+          "elementId": "FJ1297",
+          "sourceId": "FMA58237",
+          "anatomyId": "ocular:FMA58237",
+          "side": "left",
+          "triangles": 3286,
+          "vertices": 1716,
+          "uniqueUsedSourcePositions": 1643,
+          "maxPositionErrorMetres": 5.991327270619917e-8,
+          "rmsPositionErrorMetres": 3.4245541356828574e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 2.7503967103825744e-8
+        }
+      ]
+    }
+  ],
+  "totalBytes": 701656,
+  "totalTriangles": 94770,
+  "totalMeshes": 6,
+  "totalVertices": 50319,
+  "totalDecodedAccessorBytes": 1474362,
+  "maxPositionErrorMetres": 6.000460810908898e-8,
+  "maxBoundsErrorMetres": 5.908966071999089e-8
+}

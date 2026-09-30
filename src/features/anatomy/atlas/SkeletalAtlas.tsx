@@ -14,12 +14,14 @@ import {getDigestiveContextIds} from './digestive-education';
 import {getRespiratoryContextIds} from './respiratory-education';
 import {getCardiovascularContextIds} from './cardiovascular-education';
 import {getMuscleContextIds} from './muscle-education';
+import {withOcularCoverage} from './ocular-catalog';
+import {ocularContextIds} from './ocular-education';
 import {composeBodyCatalog} from './body-catalog';
 import '../anatomy.css';
 import './atlas.css';
 
 const Scene = lazy(() => import('./AtlasScene'));
-const CATALOG_PATHS = ['models/anatomy/skeletal/catalog.json','models/anatomy/muscular/catalog.json','models/anatomy/nervous/catalog.json','models/anatomy/cardiovascular/catalog.json','models/anatomy/respiratory/catalog.json','models/anatomy/digestive/catalog.json','models/anatomy/urinary/catalog.json','models/anatomy/endocrine/catalog.json','models/anatomy/lymphatic/catalog.json','models/anatomy/reproductive/catalog.json','models/anatomy/integumentary/catalog.json'];
+const CATALOG_PATHS = ['models/anatomy/skeletal/catalog.json','models/anatomy/muscular/catalog.json','models/anatomy/nervous/catalog.json','models/anatomy/cardiovascular/catalog.json','models/anatomy/respiratory/catalog.json','models/anatomy/digestive/catalog.json','models/anatomy/urinary/catalog.json','models/anatomy/endocrine/catalog.json','models/anatomy/lymphatic/catalog.json','models/anatomy/reproductive/catalog.json','models/anatomy/integumentary/catalog.json','models/anatomy/ocular/catalog.json'];
 const initialOpacity: Partial<Record<SystemId, number>> = {skeletal: 1, muscular: 1, nervous: 1, cardiovascular: 1, respiratory: 1, digestive: 1, urinary: 1, endocrine: 1, lymphatic: 1, reproductive: 1, integumentary: 1};
 const kindName = (node: AnatomyNode) => node.integumentaryType?node.integumentaryType:node.internalType?node.internalType:node.systemId==='digestive'&&node.digestiveType?node.digestiveType: node.systemId==='respiratory'&&node.respiratoryType?node.respiratoryType: node.systemId==='cardiovascular'&&node.cardioType?node.cardioType: node.systemId==='nervous'&&node.neuralType?node.neuralType: node.kind==='structure'&&node.systemId==='muscular'?'Músculo':node.kind==='structure'&&node.systemId==='skeletal'?'Hueso':({body:'Cuerpo',system:'Sistema',division:'Grupo anatómico',region:'Región',structure:'Estructura',component:'Componente'} as const)[node.kind];
 const systemName = (id?:SystemId) => SYSTEMS.find(system=>system.id===id)?.name||'Cuerpo humano';
@@ -55,7 +57,8 @@ export default function SkeletalAtlas() {
       if(!response.ok)throw new Error('No se pudo descargar el catálogo anatómico.');
       return await response.json() as AnatomyCatalog;
     })).then(([skeletal,muscular,nervous,cardiovascular,respiratory,digestive,...internal]) => {
-      const value=composeBodyCatalog(skeletal,muscular,nervous,cardiovascular,respiratory,digestive,...internal);
+      const ocular=internal.pop()!;
+      const value=composeBodyCatalog(skeletal,muscular,withOcularCoverage(nervous,ocular),cardiovascular,respiratory,digestive,...internal);
       createCatalogIndex(value);
       if (abort.signal.aborted) return;
       setCatalog(value); setAssetIds(initialAssets(value));
@@ -86,10 +89,12 @@ export default function SkeletalAtlas() {
   const source = catalog?.provenance.find(item=>item.id===catalog.assets.find(asset=>current?.assetIds.includes(asset.id))?.provenanceId)||catalog?.provenance[0];
   const request = (kind:AtlasCameraRequest['kind'],id?:string|null)=>setCameraRequest(value=>({kind,id,version:value.version+1}));
   const detailSystem=current?.systemId||'skeletal';
-  const relatedContext = current&&index?(current.systemId==='integumentary'?getIntegumentaryContextIds(current,index.byId):current.systemId&&INTERNAL_SYSTEMS.includes(current.systemId)?getInternalContextIds(current,index.byId):current.systemId==='digestive'?getDigestiveContextIds(current,index.byId):current.systemId==='respiratory'?getRespiratoryContextIds(current,index.byId):current.systemId==='cardiovascular'?getCardiovascularContextIds(current,index.byId):current.systemId==='nervous'?getNerveContextIds(current,index.byId):getMuscleContextIds(current,index.byId)):[];
+  const relatedContext = current&&index?(current.ocularClass?ocularContextIds(current,index.byId):current.systemId==='integumentary'?getIntegumentaryContextIds(current,index.byId):current.systemId&&INTERNAL_SYSTEMS.includes(current.systemId)?getInternalContextIds(current,index.byId):current.systemId==='digestive'?getDigestiveContextIds(current,index.byId):current.systemId==='respiratory'?getRespiratoryContextIds(current,index.byId):current.systemId==='cardiovascular'?getCardiovascularContextIds(current,index.byId):current.systemId==='nervous'?getNerveContextIds(current,index.byId):getMuscleContextIds(current,index.byId)):[];
   function choose(id:string) {
     if(!index)return;
     setSelected(id);setHidden(value=>index.reveal(value,id));setIsolated(null);setContextIds([]);
+    // Reveal a searched internal target through the envelope, with visible feedback.
+    if(index.byId.get(id)?.systemId&&index.byId.get(id)?.systemId!=='integumentary'&&assetIds.includes('integumentary:skin')&&!isHidden('integ:FMA7163'))setOpacityBySystem(value=>(value.integumentary??1)>.25?{...value,integumentary:.25}:value);
     setAssetIds(value=>[...new Set([...value,...index.assetIdsFor(id)])]);
     setExpanded(value=>new Set([...value,...(index.ancestors.get(id)||[])]));
     request('focus',id);setPanel(null);
@@ -108,10 +113,17 @@ export default function SkeletalAtlas() {
   function showContext() {
     if(!current||!index||!relatedContext.length)return;
     const targets=[current.id,...relatedContext];
-    if(current.systemId==='integumentary')setOpacityBySystem(value=>({...value,integumentary:.25}));
+    if(current.systemId==='integumentary'||current.ocularClass)setOpacityBySystem(value=>({...value,integumentary:.25}));
     setContextIds(targets);setIsolated(null);setHidden([]);
     setAssetIds(value=>[...new Set([...value,...targets.flatMap(id=>index.assetIdsFor(id))])]);
     request('focus',current.id);
+  }
+  function surfaceView(interior:boolean) {
+    setQuery('');setContextIds([]);setHidden(value=>index?.reveal(value,'integ:FMA7163')||value);
+    setAssetIds(value=>[...new Set([...value,'integumentary:skin'])]);
+    setOpacityBySystem(value=>({...value,integumentary:interior?.25:1}));
+    setIsolated(interior?null:'integ:FMA7163');setSelected(interior?null:'integ:FMA7163');
+    request('reset');setPanel(null);
   }
   function reset() {
     setSelected(null);setHidden([]);setIsolated(null);setContextIds([]);setOpacityBySystem({...initialOpacity});setExploded(0);setExplodeLevel('regions');setQuery('');rememberedAssets.current={};
@@ -158,7 +170,7 @@ export default function SkeletalAtlas() {
               return <section className="atlas-layer-system" data-system-id={system.id} key={system.id}>
                 <label className="atlas-layer-toggle"><input type="checkbox" checked={active} aria-label={system.name} onChange={()=>toggleSystem(system.id)}/><Bone size={19}/><span>{system.name}<small>{system.branches}</small></span></label>
                 <label className="atlas-layer-opacity">Opacidad del sistema <strong>{Math.round((opacityBySystem[system.id]??1)*100)}%</strong><input type="range" min="10" max="100" value={(opacityBySystem[system.id]??1)*100} onChange={event=>setOpacityBySystem(value=>({...value,[system.id]:Number(event.target.value)/100}))} aria-label={'Opacidad de '+system.name}/></label>
-                {system.id==='integumentary'&&<p className="atlas-context-note">Transparente, la piel permite seleccionar el interior visible. Usa el árbol o la búsqueda para seleccionar la piel.</p>}
+                {system.id==='integumentary'&&<><p className="atlas-context-note">Opaca, el clic prioriza la piel. Transparente, permite seleccionar el interior. Buscar una estructura interna baja la piel al 25 %. Las superficies pueden intersectarse: Aislar piel muestra sólo la envoltura.</p><div className="atlas-selection-actions atlas-surface-actions"><button onClick={()=>surfaceView(false)}>Aislar piel</button><button onClick={()=>surfaceView(true)}>Explorar interior</button></div></>}
                 {system.id==='cardiovascular'&&<fieldset className="atlas-cardio-sublayers"><legend>Mostrar en Cardiovascular</legend>{[['cardio:arterial','Arterias'],['cardio:venous','Venas'],['cardio:heart','Corazón']].map(([id,label])=><label key={id}><input type="checkbox" aria-label={'Mostrar '+label.toLowerCase()} checked={active&&!isHidden(id)} disabled={!active} onChange={()=>hide(id)}/>{label}</label>)}<small>Rojo: arterias · azul: venas. El color indica tipo de vaso, no oxigenación.</small></fieldset>}
                 <div className="atlas-region-layers">{assets.map(asset=><label key={asset.id} data-asset-id={asset.id}><input type="checkbox" checked={assetIds.includes(asset.id)} onChange={()=>toggleAsset(asset.id)}/><span>{asset.id==='integumentary:skin'?'Piel · superficie corporal':asset.id==='endocrine:glands'?'Glándulas craneales y suprarrenales':asset.id==='endocrine:thyroid43'?'Tiroides y paratiroides':asset.systemId==='digestive'?({'digestive:upper':'Región oral y esófago','digestive:stomach-accessory':'Estómago y órganos accesorios','digestive:small-intestine':'Intestino delgado','digestive:large-intestine':'Intestino grueso'} as Record<string,string>)[asset.id]:asset.systemId==='cardiovascular'?({'cardio:heart':'Corazón y coronarias','cardio:trunk':'Tórax, abdomen y pelvis','cardio:head-neck':'Cabeza y cuello','cardio:upper-right':'Miembro superior derecho','cardio:upper-left':'Miembro superior izquierdo','cardio:lower-right':'Miembro inferior derecho','cardio:lower-left':'Miembro inferior izquierdo'} as Record<string,string>)[asset.id]:regionName(asset.regionId)}</span></label>)}</div>
               </section>;
@@ -177,6 +189,7 @@ export default function SkeletalAtlas() {
           <div className="atlas-mobile-actions"><button onClick={()=>setPanel('structures')}><List size={17}/> Estructuras</button><button onClick={()=>setPanel('details')}><SlidersHorizontal size={17}/> Inspección</button></div>
           <div className="atlas-load-summary" role="status" aria-live="polite">{publicStatus}</div>
           <div className="atlas-explode-bar"><div><Stack size={17}/><span>Despiece</span><strong>{exploded}%</strong></div><input type="range" min="0" max="100" value={exploded} onChange={event=>setExploded(Number(event.target.value))} aria-label="Separación de piezas"/><select aria-label="Nivel de despiece" value={explodeLevel} onChange={event=>setExplodeLevel(event.target.value as ExplodeLevel)}><option value="regions">Regiones</option><option value="structures">Estructuras</option>{activeSystemCount>=2&&<option value="systems">Sistemas</option>}</select></div>
+          {current?.systemId&&current.systemId!=='integumentary'&&assetIds.includes('integumentary:skin')&&!isHidden('integ:FMA7163')&&!isolated&&(!contextIds.length||contextIds.some(id=>index?.inside('integ:FMA7163',id)))&&<div className="atlas-skin-notice" role="status">Piel al {Math.round((opacityBySystem.integumentary??1)*100)} % · selección interior</div>}
           <div className="atlas-interaction-hint"><span>Arrastra para girar · Rueda o pellizco para acercar</span></div>
         </section>
         <aside className={'atlas-detail '+(panel==='details'?'is-open':'')}>
@@ -184,9 +197,9 @@ export default function SkeletalAtlas() {
           <div className="atlas-detail-content"><div className="atlas-detail-icon"><Bone size={26}/></div><span className="anatomy-eyebrow">{nodeKind.toUpperCase()}</span><h2>{current?.name||'Cuerpo humano'}</h2><p className="atlas-latin">{current?.latin||terms?.latin||(!current?'Corpus humanum':'')}</p>
             {current&&<><nav className="atlas-hierarchy-path" aria-label="Ubicación anatómica">{path.map(id=><button key={id} onClick={()=>choose(id)}>{index?.byId.get(id)?.name}<CaretRight size={10}/></button>)}</nav></>}
             {current?<div className="atlas-selection-actions"><button onClick={()=>request('focus',current.id)}><Scan size={17}/> Enfocar</button><button className={isolated===current.id?'is-active':''} onClick={isolate}><ArrowsOut size={17}/>{isolated===current.id?'Ver conjunto':'Aislar'}</button><button onClick={()=>hide(current.id)}>{isHidden(current.id)?<Eye size={17}/>:<EyeSlash size={17}/>} {isHidden(current.id)?'Mostrar':'Ocultar'}</button><button onClick={()=>setSelected(null)}><X size={17}/> Deseleccionar</button></div>:<div className="atlas-select-hint"><Scan size={19}/><p>Selecciona una estructura en el modelo o búscala por su nombre.</p></div>}
-            {relatedContext.length>0&&<div className="atlas-context-actions"><button className="atlas-show-context" onClick={showContext}><Eye size={16}/> Mostrar contexto</button><p>{current?.systemId==='integumentary'?'Piel y referencias superficiales; la piel pasa al 25 % de opacidad':current?.systemId&&INTERNAL_SYSTEMS.includes(current.systemId)?'Órgano y referencias anatómicas curadas':current?.systemId==='digestive'?'Estructura digestiva y referencias anatómicas curadas':current?.systemId==='respiratory'?'Estructura respiratoria y referencias anatómicas curadas':current?.systemId==='cardiovascular'?'Estructura cardiovascular y referencias anatómicas curadas':current?.systemId==='nervous'?'Estructura nerviosa y referencias anatómicas curadas':current?.kind==='division'?'Grupo muscular y huesos relacionados':'Músculo y huesos relacionados'} según sus referencias anatómicas. Esta acción limita las piezas visibles.</p></div>}
+            {relatedContext.length>0&&<div className="atlas-context-actions"><button className="atlas-show-context" onClick={showContext}><Eye size={16}/> Mostrar contexto</button><p>{current?.ocularClass?'Ojo y referencias orbitarias curadas':current?.systemId==='integumentary'?'Piel y referencias superficiales; la piel pasa al 25 % de opacidad':current?.systemId&&INTERNAL_SYSTEMS.includes(current.systemId)?'Órgano y referencias anatómicas curadas':current?.systemId==='digestive'?'Estructura digestiva y referencias anatómicas curadas':current?.systemId==='respiratory'?'Estructura respiratoria y referencias anatómicas curadas':current?.systemId==='cardiovascular'?'Estructura cardiovascular y referencias anatómicas curadas':current?.systemId==='nervous'?'Estructura nerviosa y referencias anatómicas curadas':current?.kind==='division'?'Grupo muscular y huesos relacionados':'Músculo y huesos relacionados'} según sus referencias anatómicas. Esta acción limita las piezas visibles.</p></div>}
             {contextIds.length>0&&<p className="atlas-context-note" role="status">Contexto activo: {contextIds.map(regionName).join(' · ')}.</p>}
-            {current?.systemId==='nervous'&&!isolated&&!contextIds.length&&<p className="atlas-context-note">Cobertura parcial: encéfalo, órbitas y nervios de extremidades. Médula, raíces espinales y ciático pendientes. Usa Aislar o reduce la opacidad de las otras capas para ver estructuras profundas.</p>}
+            {current?.systemId==='nervous'&&!current.ocularClass&&!isolated&&!contextIds.length&&<p className="atlas-context-note">Cobertura parcial: encéfalo, órbitas y nervios de extremidades. Médula, raíces espinales y ciático pendientes. Usa Aislar o reduce la opacidad de las otras capas para ver estructuras profundas.</p>}
             {current?.systemId==='muscular'&&!isolated&&!contextIds.length&&<p className="atlas-context-note">Los músculos profundos pueden quedar cubiertos. Usa Aislar para estudiarlos; cambiar la vista conserva el contexto.</p>}
             <div className="atlas-education"><dl><div><dt>SISTEMA</dt><dd>{systemName(current?.systemId)}</dd></div><div><dt>REGIÓN</dt><dd>{current?regionName(current.regionId):'Cuerpo humano'}</dd></div></dl>
               {current?<AnatomyInformation node={current}/>:<p>Explora los once sistemas corporales disponibles: óseo, muscular, nervioso, cardiovascular, respiratorio, digestivo, urinario, endocrino, linfático e inmunitario, reproductor masculino y tegumentario. La piel está desactivada inicialmente para conservar la exploración interna. La cobertura es parcial: consulta las fichas para conocer las estructuras representadas y sus limitaciones. El corazón, los pulmones y el encéfalo conservan sus exploradores detallados independientes. Activa las regiones en Capas y selecciona una estructura para estudiar su anatomía.</p>}

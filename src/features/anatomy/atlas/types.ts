@@ -34,6 +34,8 @@ export interface AnatomyNode {
   internalType?: string;
   /** Surface identity; does not assert histological layers. */
   integumentaryType?: string;
+  /** Partial sensory-organ coverage; no additional body system. */
+  ocularClass?: 'eyeball' | 'cornea' | 'sclera' | 'iris';
   digestiveClass?: 'tract' | 'liver' | 'biliary' | 'gland';
   side?: 'left' | 'right' | 'midline';
   relatedIds: string[];

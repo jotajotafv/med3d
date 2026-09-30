@@ -6,7 +6,8 @@ import SceneBoundary from '../SceneBoundary';
 import { AtlasAssetManager, type AssetSnapshot, type AtlasPart, type AtlasResource } from './asset-manager';
 import { createExplosionOffsets, explosionTarget } from './explosion';
 import { ANATOMICAL_VIEWS, fitCameraBounds } from './camera-framing';
-import { skinAllowsRaycast } from './integumentary-picking';
+import { createHighlightController } from './highlight-controller';
+import { skinAllowsRaycast, interiorAllowsRaycast } from './integumentary-picking';
 import type { AnatomyCatalog, AtlasAnatomicalView, AtlasSceneProps, Bounds, SystemId } from './types';
 
 type Controls = ComponentRef<typeof OrbitControls>;
@@ -65,11 +66,11 @@ const MUSCLE_COLORS: Record<string,string> = {
   iliocostalislumborum:'#a77569',iliocostalisthoracis:'#b17e70',longissimusthoracis:'#996b62',spinalisthoracis:'#aa7b6f',
 };
 const CARDIO_COLORS = {arterial:'#b5635e',venous:'#648fab',heart:'#a96d78'};
-const materialKey = (system:SystemId,family?:string,vascularClass?:string,respiratoryClass?:string,digestiveClass?:string) => system==='digestive'?system+':'+(digestiveClass||'tract'):system==='respiratory'?system+':'+(respiratoryClass||'airway'):system==='cardiovascular'?system+':'+(vascularClass||'heart'):system==='muscular'?system+':'+(family||'muscle'):system;
+const materialKey = (system:SystemId,family?:string,vascularClass?:string,respiratoryClass?:string,digestiveClass?:string) => system==='nervous'&&['cornea','sclera','iris'].includes(family||'')?system+':'+family:system==='digestive'?system+':'+(digestiveClass||'tract'):system==='respiratory'?system+':'+(respiratoryClass||'airway'):system==='cardiovascular'?system+':'+(vascularClass||'heart'):system==='muscular'?system+':'+(family||'muscle'):system;
 function useMaterials(catalog: AnatomyCatalog) {
   const materials = useMemo(() => new Map<string, MaterialVariants>(Array.from(catalog.nodes.filter(node=>node.systemId&&node.meshNames.length).map(node => {
     const system=node.systemId!, key=materialKey(system,node.family,node.vascularClass,node.respiratoryClass,node.digestiveClass);
-    const color=system==='digestive'?({tract:'#b47d72',liver:'#875952',biliary:'#819274',gland:'#bfaa82'}[node.digestiveClass||'tract']):system==='respiratory'?(node.respiratoryClass==='parenchyma'?'#bd9fa6':node.respiratoryClass==='cartilage'?'#a9b9b7':'#729dab'):system==='cardiovascular'?CARDIO_COLORS[node.vascularClass||'heart']:system==='muscular'?(MUSCLE_COLORS[(node.family||'').replace(/[^a-z]/g,'')]||SYSTEM_COLORS.muscular):SYSTEM_COLORS[system];
+    const color=system==='nervous'&&['cornea','sclera','iris'].includes(node.family||'')?({cornea:'#b2ced0',sclera:'#dbd7c9',iris:'#6b8183'}[node.family as 'cornea'|'sclera'|'iris']):system==='digestive'?({tract:'#b47d72',liver:'#875952',biliary:'#819274',gland:'#bfaa82'}[node.digestiveClass||'tract']):system==='respiratory'?(node.respiratoryClass==='parenchyma'?'#bd9fa6':node.respiratoryClass==='cartilage'?'#a9b9b7':'#729dab'):system==='cardiovascular'?CARDIO_COLORS[node.vascularClass||'heart']:system==='muscular'?(MUSCLE_COLORS[(node.family||'').replace(/[^a-z]/g,'')]||SYSTEM_COLORS.muscular):SYSTEM_COLORS[system];
     return [key,{system,color}] as const;
   }).reduce((unique,[key,value])=>unique.set(key,value),new Map<string,{system:SystemId;color:string}>()).entries()).map(([key,{system,color}])=>{
     const options = { color, roughness: .78, metalness: .015, side: THREE.DoubleSide };
@@ -90,32 +91,41 @@ function Models(props: ModelProps) {
   const [hovered, setHovered] = useState<string | null>(null);
   const reducedMotion = useReducedMotionPreference();
   const materials = useMaterials(catalog), transform = useMemo(() => frameTransform(catalog), [catalog]);
-  const activeSystems = useMemo(() => new Set(parts.filter(part=>![...part.ancestors].some(id=>hidden.includes(id))&&(!isolated||part.ancestors.has(isolated))&&(!contextIds.length||contextIds.some(id=>part.ancestors.has(id)))).map(part=>part.node.systemId!)), [parts,hidden.join('|'),isolated,contextIds.join('|')]);
-  const offsets = useMemo(() => createExplosionOffsets(catalog, activeSystems), [catalog, activeSystems]);
-  useEffect(() => {
-    const hiddenIds = new Set(hidden);
-    const isVisible = (part: AtlasPart) => ![...part.ancestors].some(id => hiddenIds.has(id)) && (!isolated || part.ancestors.has(isolated)) && (!contextIds.length || contextIds.some(id=>part.ancestors.has(id)));
-    const hasVisibleInterior = parts.some(part => part.node.systemId !== 'integumentary' && isVisible(part));
-    materials.forEach((variants) => {
-      const system=variants.systemId;
-      const supplied = opacityBySystem[system] ?? 1;
-      const opacity = Number.isFinite(supplied) ? Math.max(.1, Math.min(1, supplied)) : 1;
-      [variants.base,variants.selected,variants.hover].forEach(material => {
-        const transparent = opacity < .999, changed = material.transparent !== transparent;
-        material.opacity = opacity; material.transparent = transparent; material.depthWrite = !transparent;
-        if (changed) material.needsUpdate = true;
+  const visibleParts=useMemo(()=>{
+    const hiddenIds=new Set(hidden);
+    return new Set(parts.filter(part=>![...part.ancestors].some(id=>hiddenIds.has(id))&&(!isolated||part.ancestors.has(isolated))&&(!contextIds.length||contextIds.some(id=>part.ancestors.has(id)))));
+  },[parts,hidden.join('|'),isolated,contextIds.join('|')]);
+  const activeSystems=useMemo(()=>new Set([...visibleParts].map(part=>part.node.systemId!)),[visibleParts]);
+  const offsets=useMemo(()=>createExplosionOffsets(catalog,activeSystems),[catalog,activeSystems]);
+  const variantsByPart=useMemo(()=>new Map(parts.map(part=>[part,materials.get(materialKey(part.node.systemId!,part.node.family,part.node.vascularClass,part.node.respiratoryClass,part.node.digestiveClass))!])),[parts,materials]);
+  const highlight=useMemo(()=>createHighlightController(parts,(part,variant)=>{part.mesh.material=variantsByPart.get(part)![variant];}),[parts,variantsByPart]);
+  useEffect(()=>{
+    // Opacity does not depend on hover/selection. Preserve native geometry and depth testing.
+    materials.forEach((variants,key)=>{
+      const supplied=opacityBySystem[variants.systemId]??1;
+      const systemOpacity=Number.isFinite(supplied)?Math.max(.1,Math.min(1,supplied)):1;
+      [variants.base,variants.selected,variants.hover].forEach((material,index)=>{
+        const opacity=systemOpacity*(key==='nervous:cornea'?[.22,.55,.38][index]:1);
+        const transparent=opacity<.999,changed=material.transparent!==transparent;
+        material.opacity=opacity;material.transparent=transparent;material.depthWrite=!transparent;
+        if(changed)material.needsUpdate=true;
       });
     });
-    parts.forEach(part => {
-      part.mesh.visible = isVisible(part);
-      const pickable = part.mesh.visible && (part.node.systemId !== 'integumentary' || skinAllowsRaycast(opacityBySystem.integumentary ?? 1, hasVisibleInterior));
-      part.mesh.raycast=pickable?THREE.Mesh.prototype.raycast:()=>{};
-      const variants = materials.get(materialKey(part.node.systemId!,part.node.family,part.node.vascularClass,part.node.respiratoryClass,part.node.digestiveClass))!;
-      part.mesh.material = selected && part.ancestors.has(selected) ? variants.selected : part.node.id === hovered ? variants.hover : variants.base;
-      part.mesh.renderOrder = (opacityBySystem[part.node.systemId!] ?? 1) < .999 ? 1 : 0;
-    });
     invalidate();
-  }, [parts, selected, isolated, hidden.join('|'), contextIds.join('|'), opacityBySystem, hovered, materials, invalidate]);
+  },[materials,opacityBySystem,invalidate]);
+  useEffect(()=>{
+    const hasVisibleInterior=[...visibleParts].some(part=>part.node.systemId!=='integumentary');
+    const hasVisibleSkin=[...visibleParts].some(part=>part.node.systemId==='integumentary');
+    const supplied=opacityBySystem.integumentary??1;
+    parts.forEach(part=>{
+      const skin=part.node.systemId==='integumentary';part.mesh.visible=visibleParts.has(part);
+      const pickable=part.mesh.visible&&(skin?skinAllowsRaycast(supplied,hasVisibleInterior):interiorAllowsRaycast(supplied,hasVisibleSkin));
+      part.mesh.raycast=pickable?THREE.Mesh.prototype.raycast:()=>{};
+      part.mesh.renderOrder=part.node.ocularClass==='cornea'||(opacityBySystem[part.node.systemId!]??1)<.999?1:0;
+    });
+    setHovered(null);gl.domElement.style.cursor='grab';invalidate();
+  },[parts,visibleParts,opacityBySystem,gl,invalidate]);
+  useEffect(()=>{if(highlight(selected,hovered))invalidate();},[highlight,selected,hovered,invalidate]);
   useEffect(() => {
     parts.forEach(part => { part.targetOffset.set(...explosionTarget(offsets.get(part.node.id), explodeLevel, exploded)); });
     invalidate();
@@ -297,7 +307,7 @@ function SceneInspection({resources}:{resources:AtlasResource[]}) {
         const material=part.mesh.material as THREE.MeshStandardMaterial;
         const screenCenter = part.mesh.geometry.boundingBox?.getCenter(new THREE.Vector3()).applyMatrix4(part.mesh.matrixWorld).project(camera).toArray();
         const screenSamples:number[][]=[];
-        if(part.node.id.startsWith('zanatomy:')||['integumentary','muscular','skeletal','cardiovascular','respiratory','digestive','urinary','endocrine','lymphatic','reproductive'].includes(part.node.systemId!)){
+        if(part.node.ocularClass||part.node.id.startsWith('zanatomy:')||['integumentary','muscular','skeletal','cardiovascular','respiratory','digestive','urinary','endocrine','lymphatic','reproductive'].includes(part.node.systemId!)){
           const position=part.mesh.geometry.getAttribute('position'),indices=part.mesh.geometry.getIndex();
           if(indices)for(let sample=0;sample<12;sample++){
             const first=Math.floor(sample*(indices.count/3-1)/11)*3,point=new THREE.Vector3();

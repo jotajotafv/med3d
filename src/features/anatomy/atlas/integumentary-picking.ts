@@ -1,8 +1,13 @@
 /** Transparent skin is a visual envelope when an interior is visible.
  * It remains selectable from the tree/search and by raycast when shown alone.
- * Opaque skin receives the normal nearest-surface click.
+ * Opaque skin is prioritized over source intersections in the internal models.
  */
 export function skinAllowsRaycast(opacity: number, hasVisibleInterior: boolean): boolean {
   const value = Number.isFinite(opacity) ? Math.max(.1, Math.min(1, opacity)) : 1;
   return value >= .999 || !hasVisibleInterior;
+}
+
+export function interiorAllowsRaycast(opacity: number, hasVisibleSkin: boolean): boolean {
+  const value = Number.isFinite(opacity) ? Math.max(.1, Math.min(1, opacity)) : 1;
+  return !hasVisibleSkin || value < .999;
 }

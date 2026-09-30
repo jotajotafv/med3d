@@ -1,0 +1,34 @@
+{
+  "codeCommit": "beeed24e810dc69f23a4e71451241c4bf95139a7",
+  "workingTreeDirty": true,
+  "implementationDirty": true,
+  "date": "2026-09-28T19:22:11.623Z",
+  "mode": "regional",
+  "source": "Local production build over unthrottled loopback HTTP; no-store responses",
+  "environment": {
+    "browser": "Headless Chromium",
+    "renderer": "ANGLE SwiftShader software WebGL",
+    "deviceScaleFactor": 1,
+    "physicalGpuTested": false
+  },
+  "checks": [
+    {
+      "name": "urinary: individual/component/group/system isolation, six views, cards, hide/restore, opacity 100/50/25, explosion and unload/reload"
+    },
+    {
+      "name": "endocrine: individual/component/group/system isolation, six views, cards, hide/restore, opacity 100/50/25, explosion and unload/reload"
+    },
+    {
+      "name": "lymphatic: individual/component/group/system isolation, six views, cards, hide/restore, opacity 100/50/25, explosion and unload/reload"
+    },
+    {
+      "name": "reproductive: individual/component/group/system isolation, six views, cards, hide/restore, opacity 100/50/25, explosion and unload/reload"
+    }
+  ],
+  "captures": [],
+  "measurements": {},
+  "errors": [],
+  "badRequests": [],
+  "success": false,
+  "error": "page.waitForFunction: Timeout 120000ms exceeded.\n    at Object.regional (C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\internal-qa.mjs:68:50)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/internal-qa.mjs:140:38\n    at async withinQaDeadline (C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\browser-qa.mjs:16:12)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/internal-qa.mjs:140:5"
+}

@@ -1,0 +1,29 @@
+{
+  "codeCommit": "312300bb8c047f28bfd442d073af54880953c77a",
+  "date": "2026-09-30T14:47:05.756Z",
+  "reason": "Measure ten systems in a fresh browser, without preceding WebGL contexts",
+  "renderer": "ANGLE SwiftShader software WebGL",
+  "comparisons": [
+    {
+      "name": "ten-final",
+      "wallMs": 3586.8248000000003,
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 50,
+        "meshCount": 930,
+        "triangleCount": 2942020,
+        "geometryBytes": 51992064,
+        "drawCalls": 930,
+        "renderGeometries": 934,
+        "renderTextures": 4,
+        "loadMs": 379,
+        "firstGeometryMs": 319.8999999985099,
+        "fullSystemMs": 1911.3999999985099
+      }
+    }
+  ],
+  "errors": [],
+  "badRequests": [],
+  "success": true
+}

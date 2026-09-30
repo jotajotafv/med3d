@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 1,
+  "id": "med3d-lymphatic",
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "nodes": [
+    {
+      "id": "lymphatic",
+      "name": "Sistema linfático / inmunitario",
+      "anatomicalName": "Sistema linfático / inmunitario",
+      "aliases": [
+        "lymphatic",
+        "Systema lymphoideum",
+        "Sistema linfático / inmunitario"
+      ],
+      "systemId": "lymphatic",
+      "regionId": "lymphatic",
+      "children": [
+        "lym:abdomen",
+        "lym:thorax"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Systema lymphoideum",
+      "internalType": "sistema",
+      "bounds": [
+        [
+          -0.024754500000000002,
+          1.05161,
+          0.046196100000000004
+        ],
+        [
+          0.113868,
+          1.32975,
+          0.159289
+        ]
+      ]
+    },
+    {
+      "id": "lym:abdomen",
+      "name": "Abdomen",
+      "anatomicalName": "Abdomen",
+      "aliases": [],
+      "systemId": "lymphatic",
+      "regionId": "lym:abdomen",
+      "children": [
+        "lym:FMA7196"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Abdomen",
+      "internalType": "región",
+      "parentId": "lymphatic",
+      "bounds": [
+        [
+          0.0556341,
+          1.05161,
+          0.046196100000000004
+        ],
+        [
+          0.113868,
+          1.12184,
+          0.141262
+        ]
+      ]
+    },
+    {
+      "id": "lym:thorax",
+      "name": "Tórax",
+      "anatomicalName": "Tórax",
+      "aliases": [],
+      "systemId": "lymphatic",
+      "regionId": "lym:thorax",
+      "children": [
+        "lym:FMA9607"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Thorax",
+      "internalType": "región",
+      "parentId": "lymphatic",
+      "bounds": [
+        [
+          -0.024754500000000002,
+          1.25755,
+          0.119742
+        ],
+        [
+          0.0218142,
+          1.32975,
+          0.159289
+        ]
+      ]
+    },
+    {
+      "id": "lym:FMA9607",
+      "name": "Timo",
+      "anatomicalName": "Timo",
+      "aliases": [
+        "timo",
+        "thymus",
+        "FMA9607"
+      ],
+      "systemId": "lymphatic",
+      "regionId": "lym:thorax",
+      "children": [
+        "lym:FMA71194",
+        "lym:FMA71195"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA9607",
+      "latin": "Thymus",
+      "family": "thymus",
+      "internalType": "órgano linfoide",
+      "explosionRegionId": "thorax",
+      "side": "midline",
+      "parentId": "lym:thorax",
+      "bounds": [
+        [
+          -0.024754500000000002,
+          1.25755,
+          0.119742
+        ],
+        [
+          0.0218142,
+          1.32975,
+          0.159289
+        ]
+      ]
+    },
+    {
+      "id": "lym:FMA7196",
+      "name": "Bazo",
+      "anatomicalName": "Bazo",
+      "aliases": [
+        "spleen",
+        "FMA7196",
+        "FJ2561"
+      ],
+      "systemId": "lymphatic",
+      "regionId": "lym:abdomen",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [
+        "bp3d_FMA7196_FJ2561"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7196",
+      "latin": "Splen",
+      "side": "left",
+      "family": "spleen",
+      "internalType": "órgano",
+      "explosionRegionId": "abdomen",
+      "parentId": "lym:abdomen",
+      "bounds": [
+        [
+          0.0556341,
+          1.05161,
+          0.046196100000000004
+        ],
+        [
+          0.113868,
+          1.12184,
+          0.141262
+        ]
+      ]
+    },
+    {
+      "id": "lym:FMA71194",
+      "name": "Lóbulo derecho del timo",
+      "anatomicalName": "Lóbulo derecho del timo",
+      "aliases": [
+        "right lobe of thymus",
+        "FMA71194",
+        "FJ3151"
+      ],
+      "systemId": "lymphatic",
+      "regionId": "lym:thorax",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [
+        "bp3d_FMA71194_FJ3151"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA71194",
+      "latin": "Lobus dexter thymi",
+      "side": "right",
+      "family": "thymus",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "thorax",
+      "parentId": "lym:FMA9607",
+      "bounds": [
+        [
+          -0.024754500000000002,
+          1.26116,
+          0.12213
+        ],
+        [
+          0.00241891,
+          1.32975,
+          0.144267
+        ]
+      ]
+    },
+    {
+      "id": "lym:FMA71195",
+      "name": "Lóbulo izquierdo del timo",
+      "anatomicalName": "Lóbulo izquierdo del timo",
+      "aliases": [
+        "left lobe of thymus",
+        "FMA71195",
+        "FJ3150"
+      ],
+      "systemId": "lymphatic",
+      "regionId": "lym:thorax",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [
+        "bp3d_FMA71195_FJ3150"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA71195",
+      "latin": "Lobus sinister thymi",
+      "side": "left",
+      "family": "thymus",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "thorax",
+      "parentId": "lym:FMA9607",
+      "bounds": [
+        [
+          -0.00350991,
+          1.25755,
+          0.119742
+        ],
+        [
+          0.0218142,
+          1.31668,
+          0.159289
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "lymphatic:central",
+      "path": "models/anatomy/lymphatic/central.glb",
+      "systemId": "lymphatic",
+      "regionId": "lymphatic",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 35160,
+      "sha256": "c20c719b1ed5382dfbbc5c2c3093918273dc27e2e2b6a20f1b34002d88945f35",
+      "meshCount": 3,
+      "triangles": 3410,
+      "bounds": [
+        [
+          -0.024754500000000002,
+          1.05161,
+          0.046196100000000004
+        ],
+        [
+          0.113868,
+          1.32975,
+          0.159289
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-lymphatic"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "bodyparts3d-4.0-lymphatic",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selección macroscópica curada; originales e identidades preservados.",
+        "Transformación común (x,y,z) → (x,z,-y)/1000. Sin ajuste, deformación, reflejo ni decimación adicional.",
+        "Posiciones Float32; Meshopt y cuantización exclusiva de normales."
+      ]
+    }
+  ],
+  "coverage": {
+    "title": "Sistema linfático / inmunitario · cobertura disponible",
+    "structures": 2,
+    "meshes": 3,
+    "note": "Sistema linfático / inmunitario: 2 unidades anatómicas, 2 componentes y 3 mallas fuente.",
+    "limitations": [
+      "Cobertura limitada a bazo y dos lóbulos del timo. No hay ganglios, amígdalas ni vasos o conductos linfáticos integrados.",
+      "El tamaño y la forma tímicos son los del cuerpo fuente; no representan todas las edades.",
+      "Geometría educativa del cuerpo fuente; no constituye validación clínica."
+    ]
+  }
+}

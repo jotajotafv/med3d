@@ -1,0 +1,2085 @@
+{
+  "schemaVersion": 1,
+  "id": "internal-validation-only",
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "nodes": [
+    {
+      "id": "urinary",
+      "name": "Sistema urinario",
+      "anatomicalName": "Sistema urinario",
+      "aliases": [
+        "urinary",
+        "Systema urinarium",
+        "Sistema urinario"
+      ],
+      "systemId": "urinary",
+      "regionId": "urinary",
+      "children": [
+        "uri:abdomen",
+        "uri:abdomen-pelvis",
+        "uri:pelvis"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Systema urinarium",
+      "internalType": "sistema",
+      "bounds": [
+        [
+          -0.0875754,
+          0.708569,
+          0.0565253
+        ],
+        [
+          0.09038299999999999,
+          1.09044,
+          0.184174
+        ]
+      ]
+    },
+    {
+      "id": "uri:abdomen",
+      "name": "Abdomen",
+      "anatomicalName": "Abdomen",
+      "aliases": [],
+      "systemId": "urinary",
+      "regionId": "uri:abdomen",
+      "children": [
+        "uri:FMA7204",
+        "uri:FMA7205"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Abdomen",
+      "internalType": "región",
+      "parentId": "urinary",
+      "bounds": [
+        [
+          -0.0875754,
+          0.966812,
+          0.0595914
+        ],
+        [
+          0.09038299999999999,
+          1.09044,
+          0.11185500000000001
+        ]
+      ]
+    },
+    {
+      "id": "uri:abdomen-pelvis",
+      "name": "Abdomen y pelvis",
+      "anatomicalName": "Abdomen y pelvis",
+      "aliases": [],
+      "systemId": "urinary",
+      "regionId": "uri:abdomen-pelvis",
+      "children": [
+        "uri:FMA15571",
+        "uri:FMA15572"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Abdomen et pelvis",
+      "internalType": "región",
+      "parentId": "urinary",
+      "bounds": [
+        [
+          -0.0727935,
+          0.811203,
+          0.0603459
+        ],
+        [
+          0.07937659999999999,
+          1.07257,
+          0.11975100000000001
+        ]
+      ]
+    },
+    {
+      "id": "uri:pelvis",
+      "name": "Pelvis y región perineal",
+      "anatomicalName": "Pelvis y región perineal",
+      "aliases": [],
+      "systemId": "urinary",
+      "regionId": "uri:pelvis",
+      "children": [
+        "uri:FMA15900",
+        "uri:FMA19667"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Pelvis et perineum",
+      "internalType": "región",
+      "parentId": "urinary",
+      "bounds": [
+        [
+          -0.0341466,
+          0.708569,
+          0.0565253
+        ],
+        [
+          0.0326238,
+          0.8299890000000001,
+          0.184174
+        ]
+      ]
+    },
+    {
+      "id": "uri:FMA7204",
+      "name": "Riñón derecho",
+      "anatomicalName": "Riñón derecho",
+      "aliases": [
+        "right kidney",
+        "FMA7204",
+        "FJ3147"
+      ],
+      "systemId": "urinary",
+      "regionId": "uri:abdomen",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [
+        "bp3d_FMA7204_FJ3147"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7204",
+      "latin": "Ren dexter",
+      "side": "right",
+      "family": "kidney",
+      "internalType": "órgano",
+      "explosionRegionId": "abdomen-pelvis",
+      "parentId": "uri:abdomen",
+      "bounds": [
+        [
+          -0.0875754,
+          0.966812,
+          0.06470010000000001
+        ],
+        [
+          -0.030427600000000003,
+          1.07124,
+          0.11185500000000001
+        ]
+      ]
+    },
+    {
+      "id": "uri:FMA7205",
+      "name": "Riñón izquierdo",
+      "anatomicalName": "Riñón izquierdo",
+      "aliases": [
+        "left kidney",
+        "FMA7205",
+        "FJ3145"
+      ],
+      "systemId": "urinary",
+      "regionId": "uri:abdomen",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [
+        "bp3d_FMA7205_FJ3145"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7205",
+      "latin": "Ren sinister",
+      "side": "left",
+      "family": "kidney",
+      "internalType": "órgano",
+      "explosionRegionId": "abdomen-pelvis",
+      "parentId": "uri:abdomen",
+      "bounds": [
+        [
+          0.0328399,
+          0.9844940000000001,
+          0.0595914
+        ],
+        [
+          0.09038299999999999,
+          1.09044,
+          0.10018500000000001
+        ]
+      ]
+    },
+    {
+      "id": "uri:FMA15571",
+      "name": "Uréter derecho",
+      "anatomicalName": "Uréter derecho",
+      "aliases": [
+        "right ureter",
+        "FMA15571",
+        "FJ3146"
+      ],
+      "systemId": "urinary",
+      "regionId": "uri:abdomen-pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [
+        "bp3d_FMA15571_FJ3146"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA15571",
+      "latin": "Ureter dexter",
+      "side": "right",
+      "family": "ureter",
+      "internalType": "conducto",
+      "explosionRegionId": "abdomen-pelvis",
+      "parentId": "uri:abdomen-pelvis",
+      "bounds": [
+        [
+          -0.0727935,
+          0.811203,
+          0.0603459
+        ],
+        [
+          -0.009399290000000001,
+          1.057,
+          0.11896899999999999
+        ]
+      ]
+    },
+    {
+      "id": "uri:FMA15572",
+      "name": "Uréter izquierdo",
+      "anatomicalName": "Uréter izquierdo",
+      "aliases": [
+        "left ureter",
+        "FMA15572",
+        "FJ3144"
+      ],
+      "systemId": "urinary",
+      "regionId": "uri:abdomen-pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [
+        "bp3d_FMA15572_FJ3144"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA15572",
+      "latin": "Ureter sinister",
+      "side": "left",
+      "family": "ureter",
+      "internalType": "conducto",
+      "explosionRegionId": "abdomen-pelvis",
+      "parentId": "uri:abdomen-pelvis",
+      "bounds": [
+        [
+          0.0232688,
+          0.818039,
+          0.061611
+        ],
+        [
+          0.07937659999999999,
+          1.07257,
+          0.11975100000000001
+        ]
+      ]
+    },
+    {
+      "id": "uri:FMA15900",
+      "name": "Vejiga urinaria",
+      "anatomicalName": "Vejiga urinaria",
+      "aliases": [
+        "urinary bladder",
+        "FMA15900",
+        "FJ3149"
+      ],
+      "systemId": "urinary",
+      "regionId": "uri:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [
+        "bp3d_FMA15900_FJ3149"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA15900",
+      "latin": "Vesica urinaria",
+      "side": "midline",
+      "family": "bladder",
+      "internalType": "órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "uri:pelvis",
+      "bounds": [
+        [
+          -0.0341466,
+          0.789732,
+          0.0565253
+        ],
+        [
+          0.0326238,
+          0.8299890000000001,
+          0.12824000000000002
+        ]
+      ]
+    },
+    {
+      "id": "uri:FMA19667",
+      "name": "Uretra masculina disponible",
+      "anatomicalName": "Uretra masculina disponible",
+      "aliases": [
+        "urethra",
+        "FMA19667",
+        "FJ3148"
+      ],
+      "systemId": "urinary",
+      "regionId": "uri:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [
+        "bp3d_FMA19667_FJ3148"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19667",
+      "latin": "Urethra masculina",
+      "side": "midline",
+      "family": "urethra",
+      "internalType": "conducto",
+      "explosionRegionId": "pelvis",
+      "parentId": "uri:pelvis",
+      "bounds": [
+        [
+          -0.00160824,
+          0.708569,
+          0.0799527
+        ],
+        [
+          0.000313633,
+          0.792512,
+          0.184174
+        ]
+      ]
+    },
+    {
+      "id": "endocrine",
+      "name": "Sistema endocrino",
+      "anatomicalName": "Sistema endocrino",
+      "aliases": [
+        "endocrine",
+        "Systema endocrinum",
+        "Sistema endocrino"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endocrine",
+      "children": [
+        "endo:abdomen",
+        "endo:head",
+        "endo:neck"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "endocrine:glands",
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Systema endocrinum",
+      "internalType": "sistema",
+      "bounds": [
+        [
+          -0.0625344,
+          1.04552,
+          0.0591672
+        ],
+        [
+          0.0754916,
+          1.5478900000000002,
+          0.112557
+        ]
+      ]
+    },
+    {
+      "id": "endo:abdomen",
+      "name": "Abdomen",
+      "anatomicalName": "Abdomen",
+      "aliases": [],
+      "systemId": "endocrine",
+      "regionId": "endo:abdomen",
+      "children": [
+        "endo:FMA15629",
+        "endo:FMA15630"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "endocrine:glands"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Abdomen",
+      "internalType": "región",
+      "parentId": "endocrine",
+      "bounds": [
+        [
+          -0.0625344,
+          1.04552,
+          0.063135
+        ],
+        [
+          0.0754916,
+          1.10822,
+          0.102342
+        ]
+      ]
+    },
+    {
+      "id": "endo:head",
+      "name": "Cabeza",
+      "anatomicalName": "Cabeza",
+      "aliases": [],
+      "systemId": "endocrine",
+      "regionId": "endo:head",
+      "children": [
+        "endo:FMA13889",
+        "endo:FMA62033"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "endocrine:glands"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Caput",
+      "internalType": "región",
+      "parentId": "endocrine",
+      "bounds": [
+        [
+          -0.0067911000000000004,
+          1.52257,
+          0.0591672
+        ],
+        [
+          0.00551969,
+          1.5478900000000002,
+          0.11056300000000001
+        ]
+      ]
+    },
+    {
+      "id": "endo:neck",
+      "name": "Cuello",
+      "anatomicalName": "Cuello",
+      "aliases": [],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [
+        "endo:thyroid",
+        "endo:FMA55563",
+        "endo:FMA55561",
+        "endo:FMA55562",
+        "endo:FMA55560"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Collum",
+      "internalType": "región",
+      "parentId": "endocrine",
+      "bounds": [
+        [
+          -0.021273800000000002,
+          1.37028,
+          0.0914661
+        ],
+        [
+          0.0199241,
+          1.42022,
+          0.112557
+        ]
+      ]
+    },
+    {
+      "id": "endo:thyroid",
+      "name": "Glándula tiroides",
+      "anatomicalName": "Glándula tiroides",
+      "aliases": [
+        "tiroides",
+        "thyroid gland"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [
+        "endo:FMA49178",
+        "endo:FMA13369",
+        "endo:FMA13368"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Glandula thyroidea",
+      "family": "thyroid",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "side": "midline",
+      "parentId": "endo:neck",
+      "bounds": [
+        [
+          -0.021273800000000002,
+          1.37028,
+          0.0914661
+        ],
+        [
+          0.0199241,
+          1.42022,
+          0.112557
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA15629",
+      "name": "Glándula suprarrenal derecha",
+      "anatomicalName": "Glándula suprarrenal derecha",
+      "aliases": [
+        "right adrenal gland",
+        "FMA15629",
+        "FJ3130"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:abdomen",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:glands"
+      ],
+      "meshNames": [
+        "bp3d_FMA15629_FJ3130"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA15629",
+      "latin": "Glandula suprarenalis dextra",
+      "side": "right",
+      "family": "adrenal",
+      "internalType": "glándula",
+      "explosionRegionId": "abdomen",
+      "parentId": "endo:abdomen",
+      "bounds": [
+        [
+          -0.0625344,
+          1.04552,
+          0.0751055
+        ],
+        [
+          -0.0306302,
+          1.0877999999999999,
+          0.102342
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA15630",
+      "name": "Glándula suprarrenal izquierda",
+      "anatomicalName": "Glándula suprarrenal izquierda",
+      "aliases": [
+        "left adrenal gland",
+        "FMA15630",
+        "FJ3129"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:abdomen",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:glands"
+      ],
+      "meshNames": [
+        "bp3d_FMA15630_FJ3129"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA15630",
+      "latin": "Glandula suprarenalis sinistra",
+      "side": "left",
+      "family": "adrenal",
+      "internalType": "glándula",
+      "explosionRegionId": "abdomen",
+      "parentId": "endo:abdomen",
+      "bounds": [
+        [
+          0.027315000000000002,
+          1.06334,
+          0.063135
+        ],
+        [
+          0.0754916,
+          1.10822,
+          0.0832855
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA13889",
+      "name": "Hipófisis",
+      "anatomicalName": "Hipófisis",
+      "aliases": [
+        "pituitary gland",
+        "FMA13889",
+        "FJ1796"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:head",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:glands"
+      ],
+      "meshNames": [
+        "bp3d_FMA13889_FJ1796"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA13889",
+      "latin": "Hypophysis",
+      "side": "midline",
+      "family": "pituitary",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:head",
+      "bounds": [
+        [
+          -0.0067911000000000004,
+          1.52257,
+          0.101105
+        ],
+        [
+          0.00551969,
+          1.53554,
+          0.11056300000000001
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA62033",
+      "name": "Glándula pineal",
+      "anatomicalName": "Glándula pineal",
+      "aliases": [
+        "pineal body",
+        "FMA62033",
+        "FJ1795"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:head",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:glands"
+      ],
+      "meshNames": [
+        "bp3d_FMA62033_FJ1795"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA62033",
+      "latin": "Glandula pinealis",
+      "side": "midline",
+      "family": "pineal",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:head",
+      "bounds": [
+        [
+          -0.00365071,
+          1.54018,
+          0.0591672
+        ],
+        [
+          0.00261481,
+          1.5478900000000002,
+          0.0705915
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA49178",
+      "name": "Istmo de la glándula tiroides",
+      "anatomicalName": "Istmo de la glándula tiroides",
+      "aliases": [
+        "Isthmus of thyroid gland",
+        "FMA49178",
+        "FJ3670"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA49178_FJ3670"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA49178",
+      "latin": "Isthmus glandulae thyroideae",
+      "side": "midline",
+      "family": "thyroid",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:thyroid",
+      "bounds": [
+        [
+          -0.0050544000000000006,
+          1.37055,
+          0.10300400000000001
+        ],
+        [
+          0.00383879,
+          1.38858,
+          0.112557
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA13369",
+      "name": "Lóbulo izquierdo de la tiroides",
+      "anatomicalName": "Lóbulo izquierdo de la tiroides",
+      "aliases": [
+        "Left lobe of thyroid gland",
+        "FMA13369",
+        "FJ3671"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA13369_FJ3671"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA13369",
+      "latin": "Lobus sinister glandulae thyroideae",
+      "side": "left",
+      "family": "thyroid",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:thyroid",
+      "bounds": [
+        [
+          0.0031918700000000003,
+          1.3707500000000001,
+          0.0914661
+        ],
+        [
+          0.0199241,
+          1.42022,
+          0.110716
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA13368",
+      "name": "Lóbulo derecho de la tiroides",
+      "anatomicalName": "Lóbulo derecho de la tiroides",
+      "aliases": [
+        "Right lobe of thyroid gland",
+        "FMA13368",
+        "FJ3672"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA13368_FJ3672"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA13368",
+      "latin": "Lobus dexter glandulae thyroideae",
+      "side": "right",
+      "family": "thyroid",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:thyroid",
+      "bounds": [
+        [
+          -0.021273800000000002,
+          1.37028,
+          0.0914839
+        ],
+        [
+          -0.00439002,
+          1.41976,
+          0.111553
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA55563",
+      "name": "Paratiroides inferior izquierda",
+      "anatomicalName": "Paratiroides inferior izquierda",
+      "aliases": [
+        "Left inferior parathyroid gland",
+        "FMA55563",
+        "FJ3673"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA55563_FJ3673"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55563",
+      "latin": "Glandula parathyroidea inferior sinistra",
+      "side": "left",
+      "family": "parathyroid",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:neck",
+      "bounds": [
+        [
+          0.0113072,
+          1.3871099999999998,
+          0.0917878
+        ],
+        [
+          0.0161371,
+          1.39406,
+          0.09653610000000001
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA55561",
+      "name": "Paratiroides superior izquierda",
+      "anatomicalName": "Paratiroides superior izquierda",
+      "aliases": [
+        "Left superior parathyroid gland",
+        "FMA55561",
+        "FJ3674"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA55561_FJ3674"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55561",
+      "latin": "Glandula parathyroidea superior sinistra",
+      "side": "left",
+      "family": "parathyroid",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:neck",
+      "bounds": [
+        [
+          0.0135716,
+          1.4047100000000001,
+          0.0922971
+        ],
+        [
+          0.0185631,
+          1.4114900000000001,
+          0.09765900000000001
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA55562",
+      "name": "Paratiroides inferior derecha",
+      "anatomicalName": "Paratiroides inferior derecha",
+      "aliases": [
+        "Right inferior parathyroid gland",
+        "FMA55562",
+        "FJ3675"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA55562_FJ3675"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55562",
+      "latin": "Glandula parathyroidea inferior dextra",
+      "side": "right",
+      "family": "parathyroid",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:neck",
+      "bounds": [
+        [
+          -0.0176085,
+          1.3861400000000001,
+          0.0915362
+        ],
+        [
+          -0.0126178,
+          1.39278,
+          0.0957432
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA55560",
+      "name": "Paratiroides superior derecha",
+      "anatomicalName": "Paratiroides superior derecha",
+      "aliases": [
+        "Right superior parathyroid gland",
+        "FMA55560",
+        "FJ3676"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA55560_FJ3676"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55560",
+      "latin": "Glandula parathyroidea superior dextra",
+      "side": "right",
+      "family": "parathyroid",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:neck",
+      "bounds": [
+        [
+          -0.0196652,
+          1.40568,
+          0.09169450000000001
+        ],
+        [
+          -0.0144224,
+          1.41252,
+          0.0978269
+        ]
+      ]
+    },
+    {
+      "id": "lymphatic",
+      "name": "Sistema linfático / inmunitario",
+      "anatomicalName": "Sistema linfático / inmunitario",
+      "aliases": [
+        "lymphatic",
+        "Systema lymphoideum",
+        "Sistema linfático / inmunitario"
+      ],
+      "systemId": "lymphatic",
+      "regionId": "lymphatic",
+      "children": [
+        "lym:abdomen",
+        "lym:thorax"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Systema lymphoideum",
+      "internalType": "sistema",
+      "bounds": [
+        [
+          -0.024754500000000002,
+          1.05161,
+          0.046196100000000004
+        ],
+        [
+          0.113868,
+          1.32975,
+          0.159289
+        ]
+      ]
+    },
+    {
+      "id": "lym:abdomen",
+      "name": "Abdomen",
+      "anatomicalName": "Abdomen",
+      "aliases": [],
+      "systemId": "lymphatic",
+      "regionId": "lym:abdomen",
+      "children": [
+        "lym:FMA7196"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Abdomen",
+      "internalType": "región",
+      "parentId": "lymphatic",
+      "bounds": [
+        [
+          0.0556341,
+          1.05161,
+          0.046196100000000004
+        ],
+        [
+          0.113868,
+          1.12184,
+          0.141262
+        ]
+      ]
+    },
+    {
+      "id": "lym:thorax",
+      "name": "Tórax",
+      "anatomicalName": "Tórax",
+      "aliases": [],
+      "systemId": "lymphatic",
+      "regionId": "lym:thorax",
+      "children": [
+        "lym:FMA9607"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Thorax",
+      "internalType": "región",
+      "parentId": "lymphatic",
+      "bounds": [
+        [
+          -0.024754500000000002,
+          1.25755,
+          0.119742
+        ],
+        [
+          0.0218142,
+          1.32975,
+          0.159289
+        ]
+      ]
+    },
+    {
+      "id": "lym:FMA9607",
+      "name": "Timo",
+      "anatomicalName": "Timo",
+      "aliases": [
+        "timo",
+        "thymus",
+        "FMA9607"
+      ],
+      "systemId": "lymphatic",
+      "regionId": "lym:thorax",
+      "children": [
+        "lym:FMA71194",
+        "lym:FMA71195"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "sourceId": "FMA9607",
+      "latin": "Thymus",
+      "family": "thymus",
+      "internalType": "órgano linfoide",
+      "explosionRegionId": "thorax",
+      "side": "midline",
+      "parentId": "lym:thorax",
+      "bounds": [
+        [
+          -0.024754500000000002,
+          1.25755,
+          0.119742
+        ],
+        [
+          0.0218142,
+          1.32975,
+          0.159289
+        ]
+      ]
+    },
+    {
+      "id": "lym:FMA7196",
+      "name": "Bazo",
+      "anatomicalName": "Bazo",
+      "aliases": [
+        "spleen",
+        "FMA7196",
+        "FJ2561"
+      ],
+      "systemId": "lymphatic",
+      "regionId": "lym:abdomen",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [
+        "bp3d_FMA7196_FJ2561"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7196",
+      "latin": "Splen",
+      "side": "left",
+      "family": "spleen",
+      "internalType": "órgano",
+      "explosionRegionId": "abdomen",
+      "parentId": "lym:abdomen",
+      "bounds": [
+        [
+          0.0556341,
+          1.05161,
+          0.046196100000000004
+        ],
+        [
+          0.113868,
+          1.12184,
+          0.141262
+        ]
+      ]
+    },
+    {
+      "id": "lym:FMA71194",
+      "name": "Lóbulo derecho del timo",
+      "anatomicalName": "Lóbulo derecho del timo",
+      "aliases": [
+        "right lobe of thymus",
+        "FMA71194",
+        "FJ3151"
+      ],
+      "systemId": "lymphatic",
+      "regionId": "lym:thorax",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [
+        "bp3d_FMA71194_FJ3151"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA71194",
+      "latin": "Lobus dexter thymi",
+      "side": "right",
+      "family": "thymus",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "thorax",
+      "parentId": "lym:FMA9607",
+      "bounds": [
+        [
+          -0.024754500000000002,
+          1.26116,
+          0.12213
+        ],
+        [
+          0.00241891,
+          1.32975,
+          0.144267
+        ]
+      ]
+    },
+    {
+      "id": "lym:FMA71195",
+      "name": "Lóbulo izquierdo del timo",
+      "anatomicalName": "Lóbulo izquierdo del timo",
+      "aliases": [
+        "left lobe of thymus",
+        "FMA71195",
+        "FJ3150"
+      ],
+      "systemId": "lymphatic",
+      "regionId": "lym:thorax",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "lymphatic:central"
+      ],
+      "meshNames": [
+        "bp3d_FMA71195_FJ3150"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA71195",
+      "latin": "Lobus sinister thymi",
+      "side": "left",
+      "family": "thymus",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "thorax",
+      "parentId": "lym:FMA9607",
+      "bounds": [
+        [
+          -0.00350991,
+          1.25755,
+          0.119742
+        ],
+        [
+          0.0218142,
+          1.31668,
+          0.159289
+        ]
+      ]
+    },
+    {
+      "id": "reproductive",
+      "name": "Sistema reproductor masculino",
+      "anatomicalName": "Sistema reproductor masculino",
+      "aliases": [
+        "reproductive",
+        "Systema genitale masculinum",
+        "Sistema reproductor masculino"
+      ],
+      "systemId": "reproductive",
+      "regionId": "reproductive",
+      "children": [
+        "rep:pelvis"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Systema genitale masculinum",
+      "internalType": "sistema",
+      "bounds": [
+        [
+          -0.0840843,
+          0.6897530000000001,
+          0.0525625
+        ],
+        [
+          0.10262500000000001,
+          0.86094,
+          0.20086099999999998
+        ]
+      ]
+    },
+    {
+      "id": "rep:pelvis",
+      "name": "Pelvis y región perineal",
+      "anatomicalName": "Pelvis y región perineal",
+      "aliases": [],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [
+        "rep:penis",
+        "rep:FMA7211",
+        "rep:FMA7212",
+        "rep:FMA18256",
+        "rep:FMA18257",
+        "rep:FMA19235",
+        "rep:FMA19236",
+        "rep:FMA19387",
+        "rep:FMA19388",
+        "rep:FMA9600"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Pelvis et perineum",
+      "internalType": "región",
+      "parentId": "reproductive",
+      "bounds": [
+        [
+          -0.0840843,
+          0.6897530000000001,
+          0.0525625
+        ],
+        [
+          0.10262500000000001,
+          0.86094,
+          0.20086099999999998
+        ]
+      ]
+    },
+    {
+      "id": "rep:penis",
+      "name": "Pene · componentes disponibles",
+      "anatomicalName": "Pene · componentes disponibles",
+      "aliases": [
+        "pene",
+        "penis",
+        "componentes del pene"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [
+        "rep:FMA18247",
+        "rep:FMA19617",
+        "rep:FMA19618"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Penis",
+      "family": "penis",
+      "internalType": "órgano de cobertura parcial",
+      "explosionRegionId": "pelvis",
+      "side": "midline",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          -0.032107500000000004,
+          0.707639,
+          0.06450320000000001
+        ],
+        [
+          0.0311028,
+          0.788676,
+          0.20086099999999998
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA7211",
+      "name": "Testículo derecho",
+      "anatomicalName": "Testículo derecho",
+      "aliases": [
+        "right testis",
+        "FMA7211",
+        "FJ3142"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA7211_FJ3142"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7211",
+      "latin": "Testis dexter",
+      "side": "right",
+      "family": "testis",
+      "internalType": "órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          -0.030846000000000002,
+          0.69056,
+          0.14119
+        ],
+        [
+          -0.0104597,
+          0.7189880000000001,
+          0.163355
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA7212",
+      "name": "Testículo izquierdo",
+      "anatomicalName": "Testículo izquierdo",
+      "aliases": [
+        "left testis",
+        "FMA7212",
+        "FJ3138"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA7212_FJ3138"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7212",
+      "latin": "Testis sinister",
+      "side": "left",
+      "family": "testis",
+      "internalType": "órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          0.0074975400000000005,
+          0.6897530000000001,
+          0.14135499999999998
+        ],
+        [
+          0.0275581,
+          0.718683,
+          0.16351400000000002
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA18256",
+      "name": "Epidídimo derecho",
+      "anatomicalName": "Epidídimo derecho",
+      "aliases": [
+        "right epididymis",
+        "FMA18256",
+        "FJ3141"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA18256_FJ3141"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18256",
+      "latin": "Epididymis dextra",
+      "side": "right",
+      "family": "epididymis",
+      "internalType": "órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          -0.026083400000000003,
+          0.700684,
+          0.140176
+        ],
+        [
+          -0.0167162,
+          0.724878,
+          0.159387
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA18257",
+      "name": "Epidídimo izquierdo",
+      "anatomicalName": "Epidídimo izquierdo",
+      "aliases": [
+        "left epididymis",
+        "FMA18257",
+        "FJ3136"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA18257_FJ3136"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18257",
+      "latin": "Epididymis sinistra",
+      "side": "left",
+      "family": "epididymis",
+      "internalType": "órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          0.0129962,
+          0.699268,
+          0.13933
+        ],
+        [
+          0.0238831,
+          0.724972,
+          0.15958000000000003
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA19235",
+      "name": "Conducto deferente derecho",
+      "anatomicalName": "Conducto deferente derecho",
+      "aliases": [
+        "right deferent duct",
+        "FMA19235",
+        "FJ3140"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA19235_FJ3140"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19235",
+      "latin": "Ductus deferens dexter",
+      "side": "right",
+      "family": "deferent",
+      "internalType": "conducto",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          -0.0840843,
+          0.69459,
+          0.0529636
+        ],
+        [
+          -0.0038980700000000004,
+          0.86094,
+          0.154479
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA19236",
+      "name": "Conducto deferente izquierdo",
+      "anatomicalName": "Conducto deferente izquierdo",
+      "aliases": [
+        "left deferent duct",
+        "FMA19236",
+        "FJ3135"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA19236_FJ3135"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19236",
+      "latin": "Ductus deferens sinister",
+      "side": "left",
+      "family": "deferent",
+      "internalType": "conducto",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          0.00255171,
+          0.6945990000000001,
+          0.0525625
+        ],
+        [
+          0.10262500000000001,
+          0.8578110000000001,
+          0.154805
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA19387",
+      "name": "Vesícula seminal derecha",
+      "anatomicalName": "Vesícula seminal derecha",
+      "aliases": [
+        "right seminal vesicle",
+        "FMA19387",
+        "FJ3143"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA19387_FJ3143"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19387",
+      "latin": "Glandula vesiculosa dextra",
+      "side": "right",
+      "family": "seminal",
+      "internalType": "glándula",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          -0.0353238,
+          0.7888809999999999,
+          0.054870600000000005
+        ],
+        [
+          -0.0036314600000000004,
+          0.818284,
+          0.0750521
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA19388",
+      "name": "Vesícula seminal izquierda",
+      "anatomicalName": "Vesícula seminal izquierda",
+      "aliases": [
+        "left seminal vesicle",
+        "FMA19388",
+        "FJ3137"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA19388_FJ3137"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19388",
+      "latin": "Glandula vesiculosa sinistra",
+      "side": "left",
+      "family": "seminal",
+      "internalType": "glándula",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          0.00235848,
+          0.788843,
+          0.0552228
+        ],
+        [
+          0.034014,
+          0.8183170000000001,
+          0.07495829999999999
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA9600",
+      "name": "Próstata",
+      "anatomicalName": "Próstata",
+      "aliases": [
+        "prostate",
+        "FMA9600",
+        "FJ3139"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA9600_FJ3139"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA9600",
+      "latin": "Prostata",
+      "side": "midline",
+      "family": "prostate",
+      "internalType": "glándula",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          -0.0178262,
+          0.772083,
+          0.0645049
+        ],
+        [
+          0.016457799999999998,
+          0.792439,
+          0.09646080000000001
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA18247",
+      "name": "Glande del pene",
+      "anatomicalName": "Glande del pene",
+      "aliases": [
+        "glans penis",
+        "FMA18247",
+        "FJ3134"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA18247_FJ3134"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18247",
+      "latin": "Glans penis",
+      "side": "midline",
+      "family": "glans",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:penis",
+      "bounds": [
+        [
+          -0.0155145,
+          0.707639,
+          0.176125
+        ],
+        [
+          0.0141674,
+          0.738116,
+          0.20086099999999998
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA19617",
+      "name": "Cuerpo esponjoso del pene",
+      "anatomicalName": "Cuerpo esponjoso del pene",
+      "aliases": [
+        "corpus spongiosum of penis",
+        "FMA19617",
+        "FJ3133"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA19617_FJ3133"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19617",
+      "latin": "Corpus spongiosum penis",
+      "side": "midline",
+      "family": "spongiosum",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:penis",
+      "bounds": [
+        [
+          -0.0112803,
+          0.708947,
+          0.0750153
+        ],
+        [
+          0.009973979999999999,
+          0.780231,
+          0.187136
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA19618",
+      "name": "Cuerpo cavernoso del pene · representación fuente",
+      "anatomicalName": "Cuerpo cavernoso del pene · representación fuente",
+      "aliases": [
+        "corpus cavernosum of penis",
+        "FMA19618",
+        "FJ3132"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA19618_FJ3132"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19618",
+      "latin": "Corpus cavernosum penis",
+      "side": "midline",
+      "family": "cavernosum",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:penis",
+      "bounds": [
+        [
+          -0.032107500000000004,
+          0.708396,
+          0.06450320000000001
+        ],
+        [
+          0.0311028,
+          0.788676,
+          0.19561699999999999
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "urinary:organs",
+      "path": "models/anatomy/urinary/organs.glb",
+      "systemId": "urinary",
+      "regionId": "urinary",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 94872,
+      "sha256": "2b979002421ee0944b5f2ac38808f6069c2a8254c8ad441ac5240108db9568ce",
+      "meshCount": 6,
+      "triangles": 9944,
+      "bounds": [
+        [
+          -0.0875754,
+          0.708569,
+          0.0565253
+        ],
+        [
+          0.09038299999999999,
+          1.09044,
+          0.184174
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-urinary"
+    },
+    {
+      "id": "endocrine:glands",
+      "path": "models/anatomy/endocrine/glands.glb",
+      "systemId": "endocrine",
+      "regionId": "endocrine",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 69408,
+      "sha256": "20562f7af6ffa3b227e3eeb7505d3e14f9acf459878fe1d465f82725844c6023",
+      "meshCount": 4,
+      "triangles": 8034,
+      "bounds": [
+        [
+          -0.0625344,
+          1.04552,
+          0.0591672
+        ],
+        [
+          0.0754916,
+          1.5478900000000002,
+          0.11056300000000001
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-endocrine"
+    },
+    {
+      "id": "endocrine:thyroid43",
+      "path": "models/anatomy/endocrine/thyroid43.glb",
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 398320,
+      "sha256": "0039073eb7daeb40a541253997f11ea732663de69a875475efce853e7a803ed7",
+      "meshCount": 7,
+      "triangles": 12132,
+      "bounds": [
+        [
+          -0.021273800000000002,
+          1.37028,
+          0.0914661
+        ],
+        [
+          0.0199241,
+          1.42022,
+          0.112557
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.3-endocrine"
+    },
+    {
+      "id": "lymphatic:central",
+      "path": "models/anatomy/lymphatic/central.glb",
+      "systemId": "lymphatic",
+      "regionId": "lymphatic",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 35160,
+      "sha256": "c20c719b1ed5382dfbbc5c2c3093918273dc27e2e2b6a20f1b34002d88945f35",
+      "meshCount": 3,
+      "triangles": 3410,
+      "bounds": [
+        [
+          -0.024754500000000002,
+          1.05161,
+          0.046196100000000004
+        ],
+        [
+          0.113868,
+          1.32975,
+          0.159289
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-lymphatic"
+    },
+    {
+      "id": "reproductive:male",
+      "path": "models/anatomy/reproductive/male.glb",
+      "systemId": "reproductive",
+      "regionId": "reproductive",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 93996,
+      "sha256": "7528921142734fc887db51d130fa2be7bb7f05a7e6bc6bf8c19c737dc4379019",
+      "meshCount": 12,
+      "triangles": 7184,
+      "bounds": [
+        [
+          -0.0840843,
+          0.6897530000000001,
+          0.0525625
+        ],
+        [
+          0.10262500000000001,
+          0.86094,
+          0.20086099999999998
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-reproductive"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "bodyparts3d-4.0-urinary",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selección macroscópica curada; originales e identidades preservados.",
+        "Transformación común (x,y,z) → (x,z,-y)/1000. Sin ajuste, deformación, reflejo ni decimación adicional.",
+        "Posiciones Float32; Meshopt y cuantización exclusiva de normales."
+      ]
+    },
+    {
+      "id": "bodyparts3d-4.0-endocrine",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selección macroscópica curada; originales e identidades preservados.",
+        "Transformación común (x,y,z) → (x,z,-y)/1000. Sin ajuste, deformación, reflejo ni decimación adicional.",
+        "Posiciones Float32; Meshopt y cuantización exclusiva de normales."
+      ]
+    },
+    {
+      "id": "bodyparts3d-4.3-endocrine",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY-SA 2.1 Japan",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/",
+      "version": "4.3 OBJ",
+      "originalUrl": "https://lifesciencedb.jp/bp3d/",
+      "attribution": "BodyParts3D, © The Database Center for Life Science, CC BY-SA 2.1 Japan",
+      "modifications": [
+        "Selección macroscópica curada; originales e identidades preservados.",
+        "Transformación común (x,y,z) → (x,z,-y)/1000. Sin ajuste, deformación, reflejo ni decimación adicional.",
+        "Posiciones Float32; Meshopt y cuantización exclusiva de normales.",
+        "Dos controles cervicales tienen los mismos vértices, normales y caras que 4.0; no se aplica registro adicional."
+      ]
+    },
+    {
+      "id": "bodyparts3d-4.0-lymphatic",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selección macroscópica curada; originales e identidades preservados.",
+        "Transformación común (x,y,z) → (x,z,-y)/1000. Sin ajuste, deformación, reflejo ni decimación adicional.",
+        "Posiciones Float32; Meshopt y cuantización exclusiva de normales."
+      ]
+    },
+    {
+      "id": "bodyparts3d-4.0-reproductive",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selección macroscópica curada; originales e identidades preservados.",
+        "Transformación común (x,y,z) → (x,z,-y)/1000. Sin ajuste, deformación, reflejo ni decimación adicional.",
+        "Posiciones Float32; Meshopt y cuantización exclusiva de normales."
+      ]
+    }
+  ],
+  "coverage": {
+    "title": "Índice técnico de validación; la interfaz usa cuatro catálogos separados",
+    "structures": 27,
+    "meshes": 32,
+    "note": "",
+    "limitations": []
+  }
+}

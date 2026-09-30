@@ -25,7 +25,7 @@ export function createCatalogIndex(catalog: AnatomyCatalog) {
     }
     ancestors.set(node.id, path.reverse());
   }
-  const search = catalog.nodes.map(node => ({node, text: normalizeSearch([node.name, node.anatomicalName, node.latin, node.sourceId, ...node.aliases].filter(Boolean).join(' '))}));
+  const search = catalog.nodes.map(node => ({node, text: normalizeSearch([node.id, node.name, node.anatomicalName, node.latin, node.sourceId, ...node.aliases].filter(Boolean).join(' '))}));
   const inside = (id: string, parent: string) => ancestors.get(id)?.includes(parent) || false;
   return {byId, ancestors, inside,
     find(query: string) {
@@ -61,6 +61,6 @@ export const SYSTEMS: Array<{id: SystemId; name: string; branches: string}> = [
   {id:'digestive',name:'Sistema digestivo',branches:'Tubo digestivo · órganos accesorios'},
   {id:'urinary',name:'Sistema urinario',branches:'Riñones · uréteres · vejiga · uretra'},
   {id:'endocrine',name:'Sistema endocrino',branches:'Glándulas · componentes endocrinos'},
-  {id:'lymphatic',name:'Sistema linfático',branches:'Vasos · ganglios · órganos linfáticos'},
-  {id:'reproductive',name:'Sistema reproductor',branches:'Órganos masculinos · órganos femeninos'},
+  {id:'lymphatic',name:'Sistema linfático / inmunitario',branches:'Bazo · timo disponibles'},
+  {id:'reproductive',name:'Sistema reproductor',branches:'Cobertura masculina disponible'},
 ];

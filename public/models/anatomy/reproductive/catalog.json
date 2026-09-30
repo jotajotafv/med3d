@@ -1,0 +1,676 @@
+{
+  "schemaVersion": 1,
+  "id": "med3d-reproductive",
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "nodes": [
+    {
+      "id": "reproductive",
+      "name": "Sistema reproductor masculino",
+      "anatomicalName": "Sistema reproductor masculino",
+      "aliases": [
+        "reproductive",
+        "Systema genitale masculinum",
+        "Sistema reproductor masculino"
+      ],
+      "systemId": "reproductive",
+      "regionId": "reproductive",
+      "children": [
+        "rep:pelvis"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Systema genitale masculinum",
+      "internalType": "sistema",
+      "bounds": [
+        [
+          -0.0840843,
+          0.6897530000000001,
+          0.0525625
+        ],
+        [
+          0.10262500000000001,
+          0.86094,
+          0.20086099999999998
+        ]
+      ]
+    },
+    {
+      "id": "rep:pelvis",
+      "name": "Pelvis y región perineal",
+      "anatomicalName": "Pelvis y región perineal",
+      "aliases": [],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [
+        "rep:penis",
+        "rep:FMA7211",
+        "rep:FMA7212",
+        "rep:FMA18256",
+        "rep:FMA18257",
+        "rep:FMA19235",
+        "rep:FMA19236",
+        "rep:FMA19387",
+        "rep:FMA19388",
+        "rep:FMA9600"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Pelvis et perineum",
+      "internalType": "región",
+      "parentId": "reproductive",
+      "bounds": [
+        [
+          -0.0840843,
+          0.6897530000000001,
+          0.0525625
+        ],
+        [
+          0.10262500000000001,
+          0.86094,
+          0.20086099999999998
+        ]
+      ]
+    },
+    {
+      "id": "rep:penis",
+      "name": "Pene · componentes disponibles",
+      "anatomicalName": "Pene · componentes disponibles",
+      "aliases": [
+        "pene",
+        "penis",
+        "componentes del pene"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [
+        "rep:FMA18247",
+        "rep:FMA19617",
+        "rep:FMA19618"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Penis",
+      "family": "penis",
+      "internalType": "órgano de cobertura parcial",
+      "explosionRegionId": "pelvis",
+      "side": "midline",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          -0.032107500000000004,
+          0.707639,
+          0.06450320000000001
+        ],
+        [
+          0.0311028,
+          0.788676,
+          0.20086099999999998
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA7211",
+      "name": "Testículo derecho",
+      "anatomicalName": "Testículo derecho",
+      "aliases": [
+        "right testis",
+        "FMA7211",
+        "FJ3142"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA7211_FJ3142"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7211",
+      "latin": "Testis dexter",
+      "side": "right",
+      "family": "testis",
+      "internalType": "órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          -0.030846000000000002,
+          0.69056,
+          0.14119
+        ],
+        [
+          -0.0104597,
+          0.7189880000000001,
+          0.163355
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA7212",
+      "name": "Testículo izquierdo",
+      "anatomicalName": "Testículo izquierdo",
+      "aliases": [
+        "left testis",
+        "FMA7212",
+        "FJ3138"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA7212_FJ3138"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7212",
+      "latin": "Testis sinister",
+      "side": "left",
+      "family": "testis",
+      "internalType": "órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          0.0074975400000000005,
+          0.6897530000000001,
+          0.14135499999999998
+        ],
+        [
+          0.0275581,
+          0.718683,
+          0.16351400000000002
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA18256",
+      "name": "Epidídimo derecho",
+      "anatomicalName": "Epidídimo derecho",
+      "aliases": [
+        "right epididymis",
+        "FMA18256",
+        "FJ3141"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA18256_FJ3141"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18256",
+      "latin": "Epididymis dextra",
+      "side": "right",
+      "family": "epididymis",
+      "internalType": "órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          -0.026083400000000003,
+          0.700684,
+          0.140176
+        ],
+        [
+          -0.0167162,
+          0.724878,
+          0.159387
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA18257",
+      "name": "Epidídimo izquierdo",
+      "anatomicalName": "Epidídimo izquierdo",
+      "aliases": [
+        "left epididymis",
+        "FMA18257",
+        "FJ3136"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA18257_FJ3136"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18257",
+      "latin": "Epididymis sinistra",
+      "side": "left",
+      "family": "epididymis",
+      "internalType": "órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          0.0129962,
+          0.699268,
+          0.13933
+        ],
+        [
+          0.0238831,
+          0.724972,
+          0.15958000000000003
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA19235",
+      "name": "Conducto deferente derecho",
+      "anatomicalName": "Conducto deferente derecho",
+      "aliases": [
+        "right deferent duct",
+        "FMA19235",
+        "FJ3140"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA19235_FJ3140"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19235",
+      "latin": "Ductus deferens dexter",
+      "side": "right",
+      "family": "deferent",
+      "internalType": "conducto",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          -0.0840843,
+          0.69459,
+          0.0529636
+        ],
+        [
+          -0.0038980700000000004,
+          0.86094,
+          0.154479
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA19236",
+      "name": "Conducto deferente izquierdo",
+      "anatomicalName": "Conducto deferente izquierdo",
+      "aliases": [
+        "left deferent duct",
+        "FMA19236",
+        "FJ3135"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA19236_FJ3135"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19236",
+      "latin": "Ductus deferens sinister",
+      "side": "left",
+      "family": "deferent",
+      "internalType": "conducto",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          0.00255171,
+          0.6945990000000001,
+          0.0525625
+        ],
+        [
+          0.10262500000000001,
+          0.8578110000000001,
+          0.154805
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA19387",
+      "name": "Vesícula seminal derecha",
+      "anatomicalName": "Vesícula seminal derecha",
+      "aliases": [
+        "right seminal vesicle",
+        "FMA19387",
+        "FJ3143"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA19387_FJ3143"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19387",
+      "latin": "Glandula vesiculosa dextra",
+      "side": "right",
+      "family": "seminal",
+      "internalType": "glándula",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          -0.0353238,
+          0.7888809999999999,
+          0.054870600000000005
+        ],
+        [
+          -0.0036314600000000004,
+          0.818284,
+          0.0750521
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA19388",
+      "name": "Vesícula seminal izquierda",
+      "anatomicalName": "Vesícula seminal izquierda",
+      "aliases": [
+        "left seminal vesicle",
+        "FMA19388",
+        "FJ3137"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA19388_FJ3137"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19388",
+      "latin": "Glandula vesiculosa sinistra",
+      "side": "left",
+      "family": "seminal",
+      "internalType": "glándula",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          0.00235848,
+          0.788843,
+          0.0552228
+        ],
+        [
+          0.034014,
+          0.8183170000000001,
+          0.07495829999999999
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA9600",
+      "name": "Próstata",
+      "anatomicalName": "Próstata",
+      "aliases": [
+        "prostate",
+        "FMA9600",
+        "FJ3139"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA9600_FJ3139"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA9600",
+      "latin": "Prostata",
+      "side": "midline",
+      "family": "prostate",
+      "internalType": "glándula",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:pelvis",
+      "bounds": [
+        [
+          -0.0178262,
+          0.772083,
+          0.0645049
+        ],
+        [
+          0.016457799999999998,
+          0.792439,
+          0.09646080000000001
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA18247",
+      "name": "Glande del pene",
+      "anatomicalName": "Glande del pene",
+      "aliases": [
+        "glans penis",
+        "FMA18247",
+        "FJ3134"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA18247_FJ3134"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA18247",
+      "latin": "Glans penis",
+      "side": "midline",
+      "family": "glans",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:penis",
+      "bounds": [
+        [
+          -0.0155145,
+          0.707639,
+          0.176125
+        ],
+        [
+          0.0141674,
+          0.738116,
+          0.20086099999999998
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA19617",
+      "name": "Cuerpo esponjoso del pene",
+      "anatomicalName": "Cuerpo esponjoso del pene",
+      "aliases": [
+        "corpus spongiosum of penis",
+        "FMA19617",
+        "FJ3133"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA19617_FJ3133"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19617",
+      "latin": "Corpus spongiosum penis",
+      "side": "midline",
+      "family": "spongiosum",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:penis",
+      "bounds": [
+        [
+          -0.0112803,
+          0.708947,
+          0.0750153
+        ],
+        [
+          0.009973979999999999,
+          0.780231,
+          0.187136
+        ]
+      ]
+    },
+    {
+      "id": "rep:FMA19618",
+      "name": "Cuerpo cavernoso del pene · representación fuente",
+      "anatomicalName": "Cuerpo cavernoso del pene · representación fuente",
+      "aliases": [
+        "corpus cavernosum of penis",
+        "FMA19618",
+        "FJ3132"
+      ],
+      "systemId": "reproductive",
+      "regionId": "rep:pelvis",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "reproductive:male"
+      ],
+      "meshNames": [
+        "bp3d_FMA19618_FJ3132"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19618",
+      "latin": "Corpus cavernosum penis",
+      "side": "midline",
+      "family": "cavernosum",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "rep:penis",
+      "bounds": [
+        [
+          -0.032107500000000004,
+          0.708396,
+          0.06450320000000001
+        ],
+        [
+          0.0311028,
+          0.788676,
+          0.19561699999999999
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "reproductive:male",
+      "path": "models/anatomy/reproductive/male.glb",
+      "systemId": "reproductive",
+      "regionId": "reproductive",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 93996,
+      "sha256": "7528921142734fc887db51d130fa2be7bb7f05a7e6bc6bf8c19c737dc4379019",
+      "meshCount": 12,
+      "triangles": 7184,
+      "bounds": [
+        [
+          -0.0840843,
+          0.6897530000000001,
+          0.0525625
+        ],
+        [
+          0.10262500000000001,
+          0.86094,
+          0.20086099999999998
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-reproductive"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "bodyparts3d-4.0-reproductive",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selección macroscópica curada; originales e identidades preservados.",
+        "Transformación común (x,y,z) → (x,z,-y)/1000. Sin ajuste, deformación, reflejo ni decimación adicional.",
+        "Posiciones Float32; Meshopt y cuantización exclusiva de normales."
+      ]
+    }
+  ],
+  "coverage": {
+    "title": "Sistema reproductor masculino · cobertura disponible",
+    "structures": 10,
+    "meshes": 12,
+    "note": "Sistema reproductor masculino: 10 unidades anatómicas, 3 componentes y 12 mallas fuente.",
+    "limitations": [
+      "Cobertura masculina parcial; sin conductos eyaculadores, glándulas bulbouretrales ni escroto separado.",
+      "Pene representado por componentes fuente, sin envolvente completa ni lateralidad inventada para el cuerpo cavernoso. Uretra única bajo Urinario.",
+      "Reproductor femenino pendiente de un atlas femenino con marco documentado propio. No se mezcla con el cuerpo masculino.",
+      "Geometría educativa del cuerpo fuente; no constituye validación clínica."
+    ]
+  }
+}

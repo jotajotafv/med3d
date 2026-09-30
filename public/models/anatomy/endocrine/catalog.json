@@ -1,0 +1,738 @@
+{
+  "schemaVersion": 1,
+  "id": "med3d-endocrine",
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "nodes": [
+    {
+      "id": "endocrine",
+      "name": "Sistema endocrino",
+      "anatomicalName": "Sistema endocrino",
+      "aliases": [
+        "endocrine",
+        "Systema endocrinum",
+        "Sistema endocrino"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endocrine",
+      "children": [
+        "endo:abdomen",
+        "endo:head",
+        "endo:neck"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "endocrine:glands",
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Systema endocrinum",
+      "internalType": "sistema",
+      "bounds": [
+        [
+          -0.0625344,
+          1.04552,
+          0.0591672
+        ],
+        [
+          0.0754916,
+          1.5478900000000002,
+          0.112557
+        ]
+      ]
+    },
+    {
+      "id": "endo:abdomen",
+      "name": "Abdomen",
+      "anatomicalName": "Abdomen",
+      "aliases": [],
+      "systemId": "endocrine",
+      "regionId": "endo:abdomen",
+      "children": [
+        "endo:FMA15629",
+        "endo:FMA15630"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "endocrine:glands"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Abdomen",
+      "internalType": "región",
+      "parentId": "endocrine",
+      "bounds": [
+        [
+          -0.0625344,
+          1.04552,
+          0.063135
+        ],
+        [
+          0.0754916,
+          1.10822,
+          0.102342
+        ]
+      ]
+    },
+    {
+      "id": "endo:head",
+      "name": "Cabeza",
+      "anatomicalName": "Cabeza",
+      "aliases": [],
+      "systemId": "endocrine",
+      "regionId": "endo:head",
+      "children": [
+        "endo:FMA13889",
+        "endo:FMA62033"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "endocrine:glands"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Caput",
+      "internalType": "región",
+      "parentId": "endocrine",
+      "bounds": [
+        [
+          -0.0067911000000000004,
+          1.52257,
+          0.0591672
+        ],
+        [
+          0.00551969,
+          1.5478900000000002,
+          0.11056300000000001
+        ]
+      ]
+    },
+    {
+      "id": "endo:neck",
+      "name": "Cuello",
+      "anatomicalName": "Cuello",
+      "aliases": [],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [
+        "endo:thyroid",
+        "endo:FMA55563",
+        "endo:FMA55561",
+        "endo:FMA55562",
+        "endo:FMA55560"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Collum",
+      "internalType": "región",
+      "parentId": "endocrine",
+      "bounds": [
+        [
+          -0.021273800000000002,
+          1.37028,
+          0.0914661
+        ],
+        [
+          0.0199241,
+          1.42022,
+          0.112557
+        ]
+      ]
+    },
+    {
+      "id": "endo:thyroid",
+      "name": "Glándula tiroides",
+      "anatomicalName": "Glándula tiroides",
+      "aliases": [
+        "tiroides",
+        "thyroid gland"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [
+        "endo:FMA49178",
+        "endo:FMA13369",
+        "endo:FMA13368"
+      ],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Glandula thyroidea",
+      "family": "thyroid",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "side": "midline",
+      "parentId": "endo:neck",
+      "bounds": [
+        [
+          -0.021273800000000002,
+          1.37028,
+          0.0914661
+        ],
+        [
+          0.0199241,
+          1.42022,
+          0.112557
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA15629",
+      "name": "Glándula suprarrenal derecha",
+      "anatomicalName": "Glándula suprarrenal derecha",
+      "aliases": [
+        "right adrenal gland",
+        "FMA15629",
+        "FJ3130"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:abdomen",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:glands"
+      ],
+      "meshNames": [
+        "bp3d_FMA15629_FJ3130"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA15629",
+      "latin": "Glandula suprarenalis dextra",
+      "side": "right",
+      "family": "adrenal",
+      "internalType": "glándula",
+      "explosionRegionId": "abdomen",
+      "parentId": "endo:abdomen",
+      "bounds": [
+        [
+          -0.0625344,
+          1.04552,
+          0.0751055
+        ],
+        [
+          -0.0306302,
+          1.0877999999999999,
+          0.102342
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA15630",
+      "name": "Glándula suprarrenal izquierda",
+      "anatomicalName": "Glándula suprarrenal izquierda",
+      "aliases": [
+        "left adrenal gland",
+        "FMA15630",
+        "FJ3129"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:abdomen",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:glands"
+      ],
+      "meshNames": [
+        "bp3d_FMA15630_FJ3129"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA15630",
+      "latin": "Glandula suprarenalis sinistra",
+      "side": "left",
+      "family": "adrenal",
+      "internalType": "glándula",
+      "explosionRegionId": "abdomen",
+      "parentId": "endo:abdomen",
+      "bounds": [
+        [
+          0.027315000000000002,
+          1.06334,
+          0.063135
+        ],
+        [
+          0.0754916,
+          1.10822,
+          0.0832855
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA13889",
+      "name": "Hipófisis",
+      "anatomicalName": "Hipófisis",
+      "aliases": [
+        "pituitary gland",
+        "FMA13889",
+        "FJ1796"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:head",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:glands"
+      ],
+      "meshNames": [
+        "bp3d_FMA13889_FJ1796"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA13889",
+      "latin": "Hypophysis",
+      "side": "midline",
+      "family": "pituitary",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:head",
+      "bounds": [
+        [
+          -0.0067911000000000004,
+          1.52257,
+          0.101105
+        ],
+        [
+          0.00551969,
+          1.53554,
+          0.11056300000000001
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA62033",
+      "name": "Glándula pineal",
+      "anatomicalName": "Glándula pineal",
+      "aliases": [
+        "pineal body",
+        "FMA62033",
+        "FJ1795"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:head",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:glands"
+      ],
+      "meshNames": [
+        "bp3d_FMA62033_FJ1795"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA62033",
+      "latin": "Glandula pinealis",
+      "side": "midline",
+      "family": "pineal",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:head",
+      "bounds": [
+        [
+          -0.00365071,
+          1.54018,
+          0.0591672
+        ],
+        [
+          0.00261481,
+          1.5478900000000002,
+          0.0705915
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA49178",
+      "name": "Istmo de la glándula tiroides",
+      "anatomicalName": "Istmo de la glándula tiroides",
+      "aliases": [
+        "Isthmus of thyroid gland",
+        "FMA49178",
+        "FJ3670"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA49178_FJ3670"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA49178",
+      "latin": "Isthmus glandulae thyroideae",
+      "side": "midline",
+      "family": "thyroid",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:thyroid",
+      "bounds": [
+        [
+          -0.0050544000000000006,
+          1.37055,
+          0.10300400000000001
+        ],
+        [
+          0.00383879,
+          1.38858,
+          0.112557
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA13369",
+      "name": "Lóbulo izquierdo de la tiroides",
+      "anatomicalName": "Lóbulo izquierdo de la tiroides",
+      "aliases": [
+        "Left lobe of thyroid gland",
+        "FMA13369",
+        "FJ3671"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA13369_FJ3671"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA13369",
+      "latin": "Lobus sinister glandulae thyroideae",
+      "side": "left",
+      "family": "thyroid",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:thyroid",
+      "bounds": [
+        [
+          0.0031918700000000003,
+          1.3707500000000001,
+          0.0914661
+        ],
+        [
+          0.0199241,
+          1.42022,
+          0.110716
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA13368",
+      "name": "Lóbulo derecho de la tiroides",
+      "anatomicalName": "Lóbulo derecho de la tiroides",
+      "aliases": [
+        "Right lobe of thyroid gland",
+        "FMA13368",
+        "FJ3672"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA13368_FJ3672"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA13368",
+      "latin": "Lobus dexter glandulae thyroideae",
+      "side": "right",
+      "family": "thyroid",
+      "internalType": "componente de órgano",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:thyroid",
+      "bounds": [
+        [
+          -0.021273800000000002,
+          1.37028,
+          0.0914839
+        ],
+        [
+          -0.00439002,
+          1.41976,
+          0.111553
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA55563",
+      "name": "Paratiroides inferior izquierda",
+      "anatomicalName": "Paratiroides inferior izquierda",
+      "aliases": [
+        "Left inferior parathyroid gland",
+        "FMA55563",
+        "FJ3673"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA55563_FJ3673"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55563",
+      "latin": "Glandula parathyroidea inferior sinistra",
+      "side": "left",
+      "family": "parathyroid",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:neck",
+      "bounds": [
+        [
+          0.0113072,
+          1.3871099999999998,
+          0.0917878
+        ],
+        [
+          0.0161371,
+          1.39406,
+          0.09653610000000001
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA55561",
+      "name": "Paratiroides superior izquierda",
+      "anatomicalName": "Paratiroides superior izquierda",
+      "aliases": [
+        "Left superior parathyroid gland",
+        "FMA55561",
+        "FJ3674"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA55561_FJ3674"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55561",
+      "latin": "Glandula parathyroidea superior sinistra",
+      "side": "left",
+      "family": "parathyroid",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:neck",
+      "bounds": [
+        [
+          0.0135716,
+          1.4047100000000001,
+          0.0922971
+        ],
+        [
+          0.0185631,
+          1.4114900000000001,
+          0.09765900000000001
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA55562",
+      "name": "Paratiroides inferior derecha",
+      "anatomicalName": "Paratiroides inferior derecha",
+      "aliases": [
+        "Right inferior parathyroid gland",
+        "FMA55562",
+        "FJ3675"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA55562_FJ3675"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55562",
+      "latin": "Glandula parathyroidea inferior dextra",
+      "side": "right",
+      "family": "parathyroid",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:neck",
+      "bounds": [
+        [
+          -0.0176085,
+          1.3861400000000001,
+          0.0915362
+        ],
+        [
+          -0.0126178,
+          1.39278,
+          0.0957432
+        ]
+      ]
+    },
+    {
+      "id": "endo:FMA55560",
+      "name": "Paratiroides superior derecha",
+      "anatomicalName": "Paratiroides superior derecha",
+      "aliases": [
+        "Right superior parathyroid gland",
+        "FMA55560",
+        "FJ3676"
+      ],
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "endocrine:thyroid43"
+      ],
+      "meshNames": [
+        "bp3d_FMA55560_FJ3676"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA55560",
+      "latin": "Glandula parathyroidea superior dextra",
+      "side": "right",
+      "family": "parathyroid",
+      "internalType": "glándula",
+      "explosionRegionId": "head-neck",
+      "parentId": "endo:neck",
+      "bounds": [
+        [
+          -0.0196652,
+          1.40568,
+          0.09169450000000001
+        ],
+        [
+          -0.0144224,
+          1.41252,
+          0.0978269
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "endocrine:glands",
+      "path": "models/anatomy/endocrine/glands.glb",
+      "systemId": "endocrine",
+      "regionId": "endocrine",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 69408,
+      "sha256": "20562f7af6ffa3b227e3eeb7505d3e14f9acf459878fe1d465f82725844c6023",
+      "meshCount": 4,
+      "triangles": 8034,
+      "bounds": [
+        [
+          -0.0625344,
+          1.04552,
+          0.0591672
+        ],
+        [
+          0.0754916,
+          1.5478900000000002,
+          0.11056300000000001
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-endocrine"
+    },
+    {
+      "id": "endocrine:thyroid43",
+      "path": "models/anatomy/endocrine/thyroid43.glb",
+      "systemId": "endocrine",
+      "regionId": "endo:neck",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 398320,
+      "sha256": "0039073eb7daeb40a541253997f11ea732663de69a875475efce853e7a803ed7",
+      "meshCount": 7,
+      "triangles": 12132,
+      "bounds": [
+        [
+          -0.021273800000000002,
+          1.37028,
+          0.0914661
+        ],
+        [
+          0.0199241,
+          1.42022,
+          0.112557
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.3-endocrine"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "bodyparts3d-4.0-endocrine",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selección macroscópica curada; originales e identidades preservados.",
+        "Transformación común (x,y,z) → (x,z,-y)/1000. Sin ajuste, deformación, reflejo ni decimación adicional.",
+        "Posiciones Float32; Meshopt y cuantización exclusiva de normales."
+      ]
+    },
+    {
+      "id": "bodyparts3d-4.3-endocrine",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY-SA 2.1 Japan",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/",
+      "version": "4.3 OBJ",
+      "originalUrl": "https://lifesciencedb.jp/bp3d/",
+      "attribution": "BodyParts3D, © The Database Center for Life Science, CC BY-SA 2.1 Japan",
+      "modifications": [
+        "Selección macroscópica curada; originales e identidades preservados.",
+        "Transformación común (x,y,z) → (x,z,-y)/1000. Sin ajuste, deformación, reflejo ni decimación adicional.",
+        "Posiciones Float32; Meshopt y cuantización exclusiva de normales.",
+        "Dos controles cervicales tienen los mismos vértices, normales y caras que 4.0; no se aplica registro adicional."
+      ]
+    }
+  ],
+  "coverage": {
+    "title": "Sistema endocrino · cobertura disponible",
+    "structures": 9,
+    "meshes": 11,
+    "note": "Sistema endocrino: 9 unidades anatómicas, 3 componentes y 11 mallas fuente.",
+    "limitations": [
+      "Tiroides y paratiroides proceden de 4.3, con controles cervicales idénticos al marco 4.0.",
+      "Hipófisis, pineal y suprarrenales sin microanatomía. Islotes pancreáticos no modelados. Páncreas y testículos conservan sus propietarios originales.",
+      "Geometría educativa del cuerpo fuente; no constituye validación clínica."
+    ]
+  }
+}

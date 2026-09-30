@@ -7,8 +7,8 @@ export const BODY_ROOT_ID = 'body';
  * The skeletal whole-body frame remains the fixed viewer reference even when
  * only a single muscular module is enabled. This is not a registration solver.
  */
-export function composeBodyCatalog(skeletal: AnatomyCatalog, muscular?: AnatomyCatalog, nervous?: AnatomyCatalog, cardiovascular?: AnatomyCatalog, respiratory?: AnatomyCatalog, digestive?: AnatomyCatalog): AnatomyCatalog {
-  const catalogs = [skeletal, ...(muscular ? [muscular] : []), ...(nervous ? [nervous] : []), ...(cardiovascular ? [cardiovascular] : []), ...(respiratory ? [respiratory] : []), ...(digestive ? [digestive] : [])];
+export function composeBodyCatalog(skeletal: AnatomyCatalog, muscular?: AnatomyCatalog, nervous?: AnatomyCatalog, cardiovascular?: AnatomyCatalog, respiratory?: AnatomyCatalog, digestive?: AnatomyCatalog, ...internal: AnatomyCatalog[]): AnatomyCatalog {
+  const catalogs = [skeletal, ...(muscular ? [muscular] : []), ...(nervous ? [nervous] : []), ...(cardiovascular ? [cardiovascular] : []), ...(respiratory ? [respiratory] : []), ...(digestive ? [digestive] : []), ...internal];
   const reference = skeletal.frame;
   if (reference.units !== 'metres' || reference.up !== 'Y') throw new Error('El cuerpo requiere el marco común en metros con eje superior Y.');
   const provenance = new Map<string, AssetProvenance>();
@@ -63,7 +63,7 @@ export function composeBodyCatalog(skeletal: AnatomyCatalog, muscular?: AnatomyC
     schemaVersion: 1, id: 'med3d-body', frame: structuredClone(reference),
     nodes: [root, ...nodes], assets, provenance: [...provenance.values()],
     coverage: {
-      title: digestive ? 'Cobertura corporal integrada de seis sistemas disponible' : respiratory ? 'Cobertura ósea, muscular, nerviosa, cardiovascular y respiratoria disponible' : cardiovascular ? 'Cobertura ósea, muscular, nerviosa y cardiovascular disponible' : nervous ? 'Cobertura ósea, muscular y nerviosa disponible' : muscular ? 'Sistema óseo y cobertura muscular integrada disponible' : skeletal.coverage.title,
+      title: internal.length ? `Cobertura corporal integrada de ${catalogs.length} sistemas disponible` : digestive ? 'Cobertura corporal integrada de seis sistemas disponible' : respiratory ? 'Cobertura ósea, muscular, nerviosa, cardiovascular y respiratoria disponible' : cardiovascular ? 'Cobertura ósea, muscular, nerviosa y cardiovascular disponible' : nervous ? 'Cobertura ósea, muscular y nerviosa disponible' : muscular ? 'Sistema óseo y cobertura muscular integrada disponible' : skeletal.coverage.title,
       structures: catalogs.reduce((sum, catalog) => sum + catalog.coverage.structures, 0),
       meshes: catalogs.reduce((sum, catalog) => sum + catalog.coverage.meshes, 0),
       note: catalogs.map(catalog => catalog.coverage.note).join(' '),

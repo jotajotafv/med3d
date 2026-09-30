@@ -293,7 +293,7 @@ function SceneInspection({resources}:{resources:AtlasResource[]}) {
         const material=part.mesh.material as THREE.MeshStandardMaterial;
         const screenCenter = part.mesh.geometry.boundingBox?.getCenter(new THREE.Vector3()).applyMatrix4(part.mesh.matrixWorld).project(camera).toArray();
         const screenSamples:number[][]=[];
-        if(part.node.id.startsWith('zanatomy:')||['cardiovascular','respiratory','digestive'].includes(part.node.systemId!)){
+        if(part.node.id.startsWith('zanatomy:')||['cardiovascular','respiratory','digestive','urinary','endocrine','lymphatic','reproductive'].includes(part.node.systemId!)){
           const position=part.mesh.geometry.getAttribute('position'),indices=part.mesh.geometry.getIndex();
           if(indices)for(let sample=0;sample<12;sample++){
             const first=Math.floor(sample*(indices.count/3-1)/11)*3,point=new THREE.Vector3();

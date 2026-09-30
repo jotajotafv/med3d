@@ -1,0 +1,1874 @@
+{
+  "schemaVersion": 1,
+  "source": "DBCLS BodyParts3D 4.0 OBJ99 + selección 4.3 cervical",
+  "frame": "bodyparts3d-4.0-male",
+  "hierarchy": "Padres curados; PART-OF de lóbulos y componentes, sin convertir IS-A en PART-OF.",
+  "units": [
+    {
+      "id": "uri:FMA7204",
+      "sourceId": "FMA7204",
+      "name": "Riñón derecho",
+      "latin": "Ren dexter",
+      "english": "right kidney",
+      "systemId": "urinary",
+      "category": "kidney",
+      "region": "abdomen",
+      "side": "right",
+      "parent": "uri:abdomen",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ3147"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "urinary:organs",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "uri:FMA7205",
+      "sourceId": "FMA7205",
+      "name": "Riñón izquierdo",
+      "latin": "Ren sinister",
+      "english": "left kidney",
+      "systemId": "urinary",
+      "category": "kidney",
+      "region": "abdomen",
+      "side": "left",
+      "parent": "uri:abdomen",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ3145"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "urinary:organs",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "uri:FMA15571",
+      "sourceId": "FMA15571",
+      "name": "Uréter derecho",
+      "latin": "Ureter dexter",
+      "english": "right ureter",
+      "systemId": "urinary",
+      "category": "ureter",
+      "region": "abdomen-pelvis",
+      "side": "right",
+      "parent": "uri:abdomen-pelvis",
+      "kind": "structure",
+      "entityType": "conducto",
+      "elements": [
+        "FJ3146"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "urinary:organs",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "uri:FMA15572",
+      "sourceId": "FMA15572",
+      "name": "Uréter izquierdo",
+      "latin": "Ureter sinister",
+      "english": "left ureter",
+      "systemId": "urinary",
+      "category": "ureter",
+      "region": "abdomen-pelvis",
+      "side": "left",
+      "parent": "uri:abdomen-pelvis",
+      "kind": "structure",
+      "entityType": "conducto",
+      "elements": [
+        "FJ3144"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "urinary:organs",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "uri:FMA15900",
+      "sourceId": "FMA15900",
+      "name": "Vejiga urinaria",
+      "latin": "Vesica urinaria",
+      "english": "urinary bladder",
+      "systemId": "urinary",
+      "category": "bladder",
+      "region": "pelvis",
+      "side": "midline",
+      "parent": "uri:pelvis",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ3149"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "urinary:organs",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "uri:FMA19667",
+      "sourceId": "FMA19667",
+      "name": "Uretra masculina disponible",
+      "latin": "Urethra masculina",
+      "english": "urethra",
+      "systemId": "urinary",
+      "category": "urethra",
+      "region": "pelvis",
+      "side": "midline",
+      "parent": "uri:pelvis",
+      "kind": "structure",
+      "entityType": "conducto",
+      "elements": [
+        "FJ3148"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "urinary:organs",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "endo:FMA15629",
+      "sourceId": "FMA15629",
+      "name": "Glándula suprarrenal derecha",
+      "latin": "Glandula suprarenalis dextra",
+      "english": "right adrenal gland",
+      "systemId": "endocrine",
+      "category": "adrenal",
+      "region": "abdomen",
+      "side": "right",
+      "parent": "endo:abdomen",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ3130"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "endocrine:glands",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "endo:FMA15630",
+      "sourceId": "FMA15630",
+      "name": "Glándula suprarrenal izquierda",
+      "latin": "Glandula suprarenalis sinistra",
+      "english": "left adrenal gland",
+      "systemId": "endocrine",
+      "category": "adrenal",
+      "region": "abdomen",
+      "side": "left",
+      "parent": "endo:abdomen",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ3129"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "endocrine:glands",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "endo:FMA13889",
+      "sourceId": "FMA13889",
+      "name": "Hipófisis",
+      "latin": "Hypophysis",
+      "english": "pituitary gland",
+      "systemId": "endocrine",
+      "category": "pituitary",
+      "region": "head",
+      "side": "midline",
+      "parent": "endo:head",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ1796"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "endocrine:glands",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "endo:FMA62033",
+      "sourceId": "FMA62033",
+      "name": "Glándula pineal",
+      "latin": "Glandula pinealis",
+      "english": "pineal body",
+      "systemId": "endocrine",
+      "category": "pineal",
+      "region": "head",
+      "side": "midline",
+      "parent": "endo:head",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ1795"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "endocrine:glands",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "endo:FMA49178",
+      "sourceId": "FMA49178",
+      "name": "Istmo de la glándula tiroides",
+      "latin": "Isthmus glandulae thyroideae",
+      "english": "Isthmus of thyroid gland",
+      "systemId": "endocrine",
+      "category": "thyroid",
+      "region": "neck",
+      "side": "midline",
+      "parent": "endo:thyroid",
+      "kind": "component",
+      "entityType": "componente de órgano",
+      "elements": [
+        "FJ3670"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "endocrine:thyroid43",
+      "decision": "APROBADO",
+      "reason": "Ausente en 4.0; identidad activa 4.3 inequívoca. Aprobado para extracción selectiva y comprobación del marco antes de integrar."
+    },
+    {
+      "id": "endo:FMA13369",
+      "sourceId": "FMA13369",
+      "name": "Lóbulo izquierdo de la tiroides",
+      "latin": "Lobus sinister glandulae thyroideae",
+      "english": "Left lobe of thyroid gland",
+      "systemId": "endocrine",
+      "category": "thyroid",
+      "region": "neck",
+      "side": "left",
+      "parent": "endo:thyroid",
+      "kind": "component",
+      "entityType": "componente de órgano",
+      "elements": [
+        "FJ3671"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "endocrine:thyroid43",
+      "decision": "APROBADO",
+      "reason": "Ausente en 4.0; identidad activa 4.3 inequívoca. Aprobado para extracción selectiva y comprobación del marco antes de integrar."
+    },
+    {
+      "id": "endo:FMA13368",
+      "sourceId": "FMA13368",
+      "name": "Lóbulo derecho de la tiroides",
+      "latin": "Lobus dexter glandulae thyroideae",
+      "english": "Right lobe of thyroid gland",
+      "systemId": "endocrine",
+      "category": "thyroid",
+      "region": "neck",
+      "side": "right",
+      "parent": "endo:thyroid",
+      "kind": "component",
+      "entityType": "componente de órgano",
+      "elements": [
+        "FJ3672"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "endocrine:thyroid43",
+      "decision": "APROBADO",
+      "reason": "Ausente en 4.0; identidad activa 4.3 inequívoca. Aprobado para extracción selectiva y comprobación del marco antes de integrar."
+    },
+    {
+      "id": "endo:FMA55563",
+      "sourceId": "FMA55563",
+      "name": "Paratiroides inferior izquierda",
+      "latin": "Glandula parathyroidea inferior sinistra",
+      "english": "Left inferior parathyroid gland",
+      "systemId": "endocrine",
+      "category": "parathyroid",
+      "region": "neck",
+      "side": "left",
+      "parent": "endo:neck",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ3673"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "endocrine:thyroid43",
+      "decision": "APROBADO",
+      "reason": "Ausente en 4.0; identidad activa 4.3 inequívoca. Aprobado para extracción selectiva y comprobación del marco antes de integrar."
+    },
+    {
+      "id": "endo:FMA55561",
+      "sourceId": "FMA55561",
+      "name": "Paratiroides superior izquierda",
+      "latin": "Glandula parathyroidea superior sinistra",
+      "english": "Left superior parathyroid gland",
+      "systemId": "endocrine",
+      "category": "parathyroid",
+      "region": "neck",
+      "side": "left",
+      "parent": "endo:neck",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ3674"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "endocrine:thyroid43",
+      "decision": "APROBADO",
+      "reason": "Ausente en 4.0; identidad activa 4.3 inequívoca. Aprobado para extracción selectiva y comprobación del marco antes de integrar."
+    },
+    {
+      "id": "endo:FMA55562",
+      "sourceId": "FMA55562",
+      "name": "Paratiroides inferior derecha",
+      "latin": "Glandula parathyroidea inferior dextra",
+      "english": "Right inferior parathyroid gland",
+      "systemId": "endocrine",
+      "category": "parathyroid",
+      "region": "neck",
+      "side": "right",
+      "parent": "endo:neck",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ3675"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "endocrine:thyroid43",
+      "decision": "APROBADO",
+      "reason": "Ausente en 4.0; identidad activa 4.3 inequívoca. Aprobado para extracción selectiva y comprobación del marco antes de integrar."
+    },
+    {
+      "id": "endo:FMA55560",
+      "sourceId": "FMA55560",
+      "name": "Paratiroides superior derecha",
+      "latin": "Glandula parathyroidea superior dextra",
+      "english": "Right superior parathyroid gland",
+      "systemId": "endocrine",
+      "category": "parathyroid",
+      "region": "neck",
+      "side": "right",
+      "parent": "endo:neck",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ3676"
+      ],
+      "sourceVersion": "4.3",
+      "moduleId": "endocrine:thyroid43",
+      "decision": "APROBADO",
+      "reason": "Ausente en 4.0; identidad activa 4.3 inequívoca. Aprobado para extracción selectiva y comprobación del marco antes de integrar."
+    },
+    {
+      "id": "lym:FMA7196",
+      "sourceId": "FMA7196",
+      "name": "Bazo",
+      "latin": "Splen",
+      "english": "spleen",
+      "systemId": "lymphatic",
+      "category": "spleen",
+      "region": "abdomen",
+      "side": "left",
+      "parent": "lym:abdomen",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ2561"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "lymphatic:central",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "lym:FMA71194",
+      "sourceId": "FMA71194",
+      "name": "Lóbulo derecho del timo",
+      "latin": "Lobus dexter thymi",
+      "english": "right lobe of thymus",
+      "systemId": "lymphatic",
+      "category": "thymus",
+      "region": "thorax",
+      "side": "right",
+      "parent": "lym:FMA9607",
+      "kind": "component",
+      "entityType": "componente de órgano",
+      "elements": [
+        "FJ3151"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "lymphatic:central",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "lym:FMA71195",
+      "sourceId": "FMA71195",
+      "name": "Lóbulo izquierdo del timo",
+      "latin": "Lobus sinister thymi",
+      "english": "left lobe of thymus",
+      "systemId": "lymphatic",
+      "category": "thymus",
+      "region": "thorax",
+      "side": "left",
+      "parent": "lym:FMA9607",
+      "kind": "component",
+      "entityType": "componente de órgano",
+      "elements": [
+        "FJ3150"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "lymphatic:central",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "rep:FMA7211",
+      "sourceId": "FMA7211",
+      "name": "Testículo derecho",
+      "latin": "Testis dexter",
+      "english": "right testis",
+      "systemId": "reproductive",
+      "category": "testis",
+      "region": "pelvis",
+      "side": "right",
+      "parent": "rep:pelvis",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ3142"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "reproductive:male",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "rep:FMA7212",
+      "sourceId": "FMA7212",
+      "name": "Testículo izquierdo",
+      "latin": "Testis sinister",
+      "english": "left testis",
+      "systemId": "reproductive",
+      "category": "testis",
+      "region": "pelvis",
+      "side": "left",
+      "parent": "rep:pelvis",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ3138"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "reproductive:male",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "rep:FMA18256",
+      "sourceId": "FMA18256",
+      "name": "Epidídimo derecho",
+      "latin": "Epididymis dextra",
+      "english": "right epididymis",
+      "systemId": "reproductive",
+      "category": "epididymis",
+      "region": "pelvis",
+      "side": "right",
+      "parent": "rep:pelvis",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ3141"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "reproductive:male",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "rep:FMA18257",
+      "sourceId": "FMA18257",
+      "name": "Epidídimo izquierdo",
+      "latin": "Epididymis sinistra",
+      "english": "left epididymis",
+      "systemId": "reproductive",
+      "category": "epididymis",
+      "region": "pelvis",
+      "side": "left",
+      "parent": "rep:pelvis",
+      "kind": "structure",
+      "entityType": "órgano",
+      "elements": [
+        "FJ3136"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "reproductive:male",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "rep:FMA19235",
+      "sourceId": "FMA19235",
+      "name": "Conducto deferente derecho",
+      "latin": "Ductus deferens dexter",
+      "english": "right deferent duct",
+      "systemId": "reproductive",
+      "category": "deferent",
+      "region": "pelvis",
+      "side": "right",
+      "parent": "rep:pelvis",
+      "kind": "structure",
+      "entityType": "conducto",
+      "elements": [
+        "FJ3140"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "reproductive:male",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "rep:FMA19236",
+      "sourceId": "FMA19236",
+      "name": "Conducto deferente izquierdo",
+      "latin": "Ductus deferens sinister",
+      "english": "left deferent duct",
+      "systemId": "reproductive",
+      "category": "deferent",
+      "region": "pelvis",
+      "side": "left",
+      "parent": "rep:pelvis",
+      "kind": "structure",
+      "entityType": "conducto",
+      "elements": [
+        "FJ3135"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "reproductive:male",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "rep:FMA19387",
+      "sourceId": "FMA19387",
+      "name": "Vesícula seminal derecha",
+      "latin": "Glandula vesiculosa dextra",
+      "english": "right seminal vesicle",
+      "systemId": "reproductive",
+      "category": "seminal",
+      "region": "pelvis",
+      "side": "right",
+      "parent": "rep:pelvis",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ3143"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "reproductive:male",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "rep:FMA19388",
+      "sourceId": "FMA19388",
+      "name": "Vesícula seminal izquierda",
+      "latin": "Glandula vesiculosa sinistra",
+      "english": "left seminal vesicle",
+      "systemId": "reproductive",
+      "category": "seminal",
+      "region": "pelvis",
+      "side": "left",
+      "parent": "rep:pelvis",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ3137"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "reproductive:male",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "rep:FMA9600",
+      "sourceId": "FMA9600",
+      "name": "Próstata",
+      "latin": "Prostata",
+      "english": "prostate",
+      "systemId": "reproductive",
+      "category": "prostate",
+      "region": "pelvis",
+      "side": "midline",
+      "parent": "rep:pelvis",
+      "kind": "structure",
+      "entityType": "glándula",
+      "elements": [
+        "FJ3139"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "reproductive:male",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "rep:FMA18247",
+      "sourceId": "FMA18247",
+      "name": "Glande del pene",
+      "latin": "Glans penis",
+      "english": "glans penis",
+      "systemId": "reproductive",
+      "category": "glans",
+      "region": "pelvis",
+      "side": "midline",
+      "parent": "rep:penis",
+      "kind": "component",
+      "entityType": "componente de órgano",
+      "elements": [
+        "FJ3134"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "reproductive:male",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "rep:FMA19617",
+      "sourceId": "FMA19617",
+      "name": "Cuerpo esponjoso del pene",
+      "latin": "Corpus spongiosum penis",
+      "english": "corpus spongiosum of penis",
+      "systemId": "reproductive",
+      "category": "spongiosum",
+      "region": "pelvis",
+      "side": "midline",
+      "parent": "rep:penis",
+      "kind": "component",
+      "entityType": "componente de órgano",
+      "elements": [
+        "FJ3133"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "reproductive:male",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste."
+    },
+    {
+      "id": "rep:FMA19618",
+      "sourceId": "FMA19618",
+      "name": "Cuerpo cavernoso del pene · representación fuente",
+      "latin": "Corpus cavernosum penis",
+      "english": "corpus cavernosum of penis",
+      "systemId": "reproductive",
+      "category": "cavernosum",
+      "region": "pelvis",
+      "side": "midline",
+      "parent": "rep:penis",
+      "kind": "component",
+      "entityType": "componente de órgano",
+      "elements": [
+        "FJ3132"
+      ],
+      "sourceVersion": "4.0",
+      "moduleId": "reproductive:male",
+      "decision": "APROBADO",
+      "reason": "Identidad explícita, original conservado; transformación corporal común sin ajuste. Una única representación fuente sin lateralidad asignada ni división artificial en dos cuerpos."
+    }
+  ],
+  "approved": [
+    {
+      "elementId": "FJ3147",
+      "sourceId": "FMA7204",
+      "unitId": "uri:FMA7204",
+      "ownerSourceId": "FMA7204",
+      "side": "right",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA7203",
+        "FMA7204",
+        "FMA55661",
+        "FMA55663",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3147.obj",
+        "bytes": 139395,
+        "compressedBytes": 44827,
+        "crc32": "953f058e"
+      }
+    },
+    {
+      "elementId": "FJ3145",
+      "sourceId": "FMA7205",
+      "unitId": "uri:FMA7205",
+      "ownerSourceId": "FMA7205",
+      "side": "left",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA7203",
+        "FMA7205",
+        "FMA55661",
+        "FMA55663",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3145.obj",
+        "bytes": 182275,
+        "compressedBytes": 57793,
+        "crc32": "7b59f6d2"
+      }
+    },
+    {
+      "elementId": "FJ3146",
+      "sourceId": "FMA15571",
+      "unitId": "uri:FMA15571",
+      "ownerSourceId": "FMA15571",
+      "side": "right",
+      "entityType": "conducto",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA9704",
+        "FMA15571",
+        "FMA55671",
+        "FMA55672",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3146.obj",
+        "bytes": 125116,
+        "compressedBytes": 40073,
+        "crc32": "d320484c"
+      }
+    },
+    {
+      "elementId": "FJ3144",
+      "sourceId": "FMA15572",
+      "unitId": "uri:FMA15572",
+      "ownerSourceId": "FMA15572",
+      "side": "left",
+      "entityType": "conducto",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA9704",
+        "FMA15572",
+        "FMA55671",
+        "FMA55672",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3144.obj",
+        "bytes": 127599,
+        "compressedBytes": 41151,
+        "crc32": "0c976164"
+      }
+    },
+    {
+      "elementId": "FJ3149",
+      "sourceId": "FMA15900",
+      "unitId": "uri:FMA15900",
+      "ownerSourceId": "FMA15900",
+      "side": "midline",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA15900",
+        "FMA55671",
+        "FMA55672",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3149.obj",
+        "bytes": 13697,
+        "compressedBytes": 5197,
+        "crc32": "31b88a4b"
+      }
+    },
+    {
+      "elementId": "FJ3148",
+      "sourceId": "FMA19667",
+      "unitId": "uri:FMA19667",
+      "ownerSourceId": "FMA19667",
+      "side": "midline",
+      "entityType": "conducto",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA19667",
+        "FMA55671",
+        "FMA55672",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3148.obj",
+        "bytes": 34364,
+        "compressedBytes": 11366,
+        "crc32": "4e6a3541"
+      }
+    },
+    {
+      "elementId": "FJ3130",
+      "sourceId": "FMA15629",
+      "unitId": "endo:FMA15629",
+      "ownerSourceId": "FMA15629",
+      "side": "right",
+      "entityType": "glándula",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA9604",
+        "FMA15629",
+        "FMA55661",
+        "FMA55663",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3130.obj",
+        "bytes": 137872,
+        "compressedBytes": 43204,
+        "crc32": "aa193c08"
+      }
+    },
+    {
+      "elementId": "FJ3129",
+      "sourceId": "FMA15630",
+      "unitId": "endo:FMA15630",
+      "ownerSourceId": "FMA15630",
+      "side": "left",
+      "entityType": "glándula",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA9604",
+        "FMA15630",
+        "FMA55661",
+        "FMA55663",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3129.obj",
+        "bytes": 247431,
+        "compressedBytes": 75078,
+        "crc32": "c6b29acf"
+      }
+    },
+    {
+      "elementId": "FJ1796",
+      "sourceId": "FMA13889",
+      "unitId": "endo:FMA13889",
+      "ownerSourceId": "FMA13889",
+      "side": "midline",
+      "entityType": "glándula",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA13889",
+        "FMA55661",
+        "FMA55662",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1796.obj",
+        "bytes": 70119,
+        "compressedBytes": 22629,
+        "crc32": "2dbf52da"
+      }
+    },
+    {
+      "elementId": "FJ1795",
+      "sourceId": "FMA62033",
+      "unitId": "endo:FMA62033",
+      "ownerSourceId": "FMA62033",
+      "side": "midline",
+      "entityType": "glándula",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA61775",
+        "FMA62033",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA82472",
+        "FMA84081",
+        "FMA86103"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1795.obj",
+        "bytes": 34031,
+        "compressedBytes": 11572,
+        "crc32": "c26660a0"
+      }
+    },
+    {
+      "elementId": "FJ3670",
+      "sourceId": "FMA49178",
+      "unitId": "endo:FMA49178",
+      "ownerSourceId": "FMA49178",
+      "side": "midline",
+      "entityType": "componente de órgano",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA49178"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "representationId": "BP21406",
+      "filename": "throid_ithmus.obj"
+    },
+    {
+      "elementId": "FJ3671",
+      "sourceId": "FMA13369",
+      "unitId": "endo:FMA13369",
+      "ownerSourceId": "FMA13369",
+      "side": "left",
+      "entityType": "componente de órgano",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA13369"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "representationId": "BP21433",
+      "filename": "thyroid_left_lobe.obj"
+    },
+    {
+      "elementId": "FJ3672",
+      "sourceId": "FMA13368",
+      "unitId": "endo:FMA13368",
+      "ownerSourceId": "FMA13368",
+      "side": "right",
+      "entityType": "componente de órgano",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA13368"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "representationId": "BP19819",
+      "filename": "thyroid_right_lobe.obj"
+    },
+    {
+      "elementId": "FJ3673",
+      "sourceId": "FMA55563",
+      "unitId": "endo:FMA55563",
+      "ownerSourceId": "FMA55563",
+      "side": "left",
+      "entityType": "glándula",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA55563"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "representationId": "BP21405",
+      "filename": "FJ3673_130820_thyroid gland_l. inf. parathyroid gland.obj"
+    },
+    {
+      "elementId": "FJ3674",
+      "sourceId": "FMA55561",
+      "unitId": "endo:FMA55561",
+      "ownerSourceId": "FMA55561",
+      "side": "left",
+      "entityType": "glándula",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA55561"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "representationId": "BP23783",
+      "filename": "FJ3674_130820_thyroid gland_l. sup. parathyroid gland.obj"
+    },
+    {
+      "elementId": "FJ3675",
+      "sourceId": "FMA55562",
+      "unitId": "endo:FMA55562",
+      "ownerSourceId": "FMA55562",
+      "side": "right",
+      "entityType": "glándula",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA55562"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "representationId": "BP23812",
+      "filename": "FJ3675_130820_thyroid gland_r. inf. parathyroid gland.obj"
+    },
+    {
+      "elementId": "FJ3676",
+      "sourceId": "FMA55560",
+      "unitId": "endo:FMA55560",
+      "ownerSourceId": "FMA55560",
+      "side": "right",
+      "entityType": "glándula",
+      "sourceVersion": "4.3",
+      "sourceConceptCandidates": [
+        "FMA55560"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "representationId": "BP23811",
+      "filename": "FJ3676_130820_thyroid gland_r. sup. parathyroid gland.obj"
+    },
+    {
+      "elementId": "FJ2561",
+      "sourceId": "FMA7196",
+      "unitId": "lym:FMA7196",
+      "ownerSourceId": "FMA7196",
+      "side": "left",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA7196",
+        "FMA55661",
+        "FMA55663",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2561.obj",
+        "bytes": 79430,
+        "compressedBytes": 26810,
+        "crc32": "cd3a532f"
+      }
+    },
+    {
+      "elementId": "FJ3151",
+      "sourceId": "FMA71194",
+      "unitId": "lym:FMA71194",
+      "ownerSourceId": "FMA71194",
+      "side": "right",
+      "entityType": "componente de órgano",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA14065",
+        "FMA45728",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA71193",
+        "FMA71194",
+        "FMA82472",
+        "FMA82478"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3151.obj",
+        "bytes": 65796,
+        "compressedBytes": 21784,
+        "crc32": "ab989fee"
+      }
+    },
+    {
+      "elementId": "FJ3150",
+      "sourceId": "FMA71195",
+      "unitId": "lym:FMA71195",
+      "ownerSourceId": "FMA71195",
+      "side": "left",
+      "entityType": "componente de órgano",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA14065",
+        "FMA45728",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA71193",
+        "FMA71195",
+        "FMA82472",
+        "FMA82478"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3150.obj",
+        "bytes": 66351,
+        "compressedBytes": 21990,
+        "crc32": "68d05b0e"
+      }
+    },
+    {
+      "elementId": "FJ3142",
+      "sourceId": "FMA7211",
+      "unitId": "rep:FMA7211",
+      "ownerSourceId": "FMA7211",
+      "side": "right",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA7210",
+        "FMA7211",
+        "FMA55661",
+        "FMA55662",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3142.obj",
+        "bytes": 12153,
+        "compressedBytes": 4558,
+        "crc32": "f0cbd794"
+      }
+    },
+    {
+      "elementId": "FJ3138",
+      "sourceId": "FMA7212",
+      "unitId": "rep:FMA7212",
+      "ownerSourceId": "FMA7212",
+      "side": "left",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA7210",
+        "FMA7212",
+        "FMA55661",
+        "FMA55662",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3138.obj",
+        "bytes": 11909,
+        "compressedBytes": 4514,
+        "crc32": "3f7b85df"
+      }
+    },
+    {
+      "elementId": "FJ3141",
+      "sourceId": "FMA18256",
+      "unitId": "rep:FMA18256",
+      "ownerSourceId": "FMA18256",
+      "side": "right",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA18255",
+        "FMA18256",
+        "FMA30320",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3141.obj",
+        "bytes": 9322,
+        "compressedBytes": 2908,
+        "crc32": "9535df93"
+      }
+    },
+    {
+      "elementId": "FJ3136",
+      "sourceId": "FMA18257",
+      "unitId": "rep:FMA18257",
+      "ownerSourceId": "FMA18257",
+      "side": "left",
+      "entityType": "órgano",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA18255",
+        "FMA18257",
+        "FMA30320",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3136.obj",
+        "bytes": 17391,
+        "compressedBytes": 5923,
+        "crc32": "5b0f1366"
+      }
+    },
+    {
+      "elementId": "FJ3140",
+      "sourceId": "FMA19235",
+      "unitId": "rep:FMA19235",
+      "ownerSourceId": "FMA19235",
+      "side": "right",
+      "entityType": "conducto",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA19234",
+        "FMA19235",
+        "FMA30320",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3140.obj",
+        "bytes": 74666,
+        "compressedBytes": 23945,
+        "crc32": "708ed94e"
+      }
+    },
+    {
+      "elementId": "FJ3135",
+      "sourceId": "FMA19236",
+      "unitId": "rep:FMA19236",
+      "ownerSourceId": "FMA19236",
+      "side": "left",
+      "entityType": "conducto",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA19234",
+        "FMA19236",
+        "FMA30320",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472",
+        "FMA86140"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3135.obj",
+        "bytes": 83086,
+        "compressedBytes": 27234,
+        "crc32": "2916fe30"
+      }
+    },
+    {
+      "elementId": "FJ3143",
+      "sourceId": "FMA19387",
+      "unitId": "rep:FMA19387",
+      "ownerSourceId": "FMA19387",
+      "side": "right",
+      "entityType": "glándula",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA7146",
+        "FMA14065",
+        "FMA19386",
+        "FMA19387",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA82472"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3143.obj",
+        "bytes": 24339,
+        "compressedBytes": 8551,
+        "crc32": "745f20f0"
+      }
+    },
+    {
+      "elementId": "FJ3137",
+      "sourceId": "FMA19388",
+      "unitId": "rep:FMA19388",
+      "ownerSourceId": "FMA19388",
+      "side": "left",
+      "entityType": "glándula",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA7146",
+        "FMA14065",
+        "FMA19386",
+        "FMA19388",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA82472"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3137.obj",
+        "bytes": 24912,
+        "compressedBytes": 8768,
+        "crc32": "19d2bfe0"
+      }
+    },
+    {
+      "elementId": "FJ3139",
+      "sourceId": "FMA9600",
+      "unitId": "rep:FMA9600",
+      "ownerSourceId": "FMA9600",
+      "side": "midline",
+      "entityType": "glándula",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA9600",
+        "FMA55661",
+        "FMA55662",
+        "FMA55670",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3139.obj",
+        "bytes": 25762,
+        "compressedBytes": 9176,
+        "crc32": "d258dc80"
+      }
+    },
+    {
+      "elementId": "FJ3134",
+      "sourceId": "FMA18247",
+      "unitId": "rep:FMA18247",
+      "ownerSourceId": "FMA18247",
+      "side": "midline",
+      "entityType": "componente de órgano",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA18247",
+        "FMA20221",
+        "FMA20247",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3134.obj",
+        "bytes": 96112,
+        "compressedBytes": 31030,
+        "crc32": "3258e385"
+      }
+    },
+    {
+      "elementId": "FJ3133",
+      "sourceId": "FMA19617",
+      "unitId": "rep:FMA19617",
+      "ownerSourceId": "FMA19617",
+      "side": "midline",
+      "entityType": "componente de órgano",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA19617",
+        "FMA20194",
+        "FMA55671",
+        "FMA55673",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67498"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3133.obj",
+        "bytes": 34164,
+        "compressedBytes": 12087,
+        "crc32": "a4536147"
+      }
+    },
+    {
+      "elementId": "FJ3132",
+      "sourceId": "FMA19618",
+      "unitId": "rep:FMA19618",
+      "ownerSourceId": "FMA19618",
+      "side": "midline",
+      "entityType": "componente de órgano",
+      "sourceVersion": "4.0",
+      "sourceConceptCandidates": [
+        "FMA19618",
+        "FMA20221",
+        "FMA55268",
+        "FMA61775",
+        "FMA62955",
+        "FMA67135",
+        "FMA67165",
+        "FMA67619",
+        "FMA82472"
+      ],
+      "identityBasis": "Tabla oficial FMA/FJ activa y cabecera OBJ verificada en extracción",
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3132.obj",
+        "bytes": 86313,
+        "compressedBytes": 28440,
+        "crc32": "8161dc96"
+      }
+    }
+  ],
+  "pending": [
+    {
+      "name": "Corteza y médula renal",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "urinary",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin geometría separada identificada en los metadatos activos 4.0/4.3; no fabricar microanatomía."
+    },
+    {
+      "name": "Pelvis renal",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "urinary",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin geometría separada identificada en los metadatos activos 4.0/4.3; no fabricar microanatomía."
+    },
+    {
+      "name": "Cálices renales",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "urinary",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin geometría separada identificada en los metadatos activos 4.0/4.3; no fabricar microanatomía."
+    },
+    {
+      "name": "Islotes pancreáticos",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "endocrine",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin representación macroscópica útil; el páncreas permanece exclusivamente en Digestivo."
+    },
+    {
+      "name": "Amígdalas",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "lymphatic",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin mallas activas identificadas en BodyParts3D 4.0/4.3. No construir una red ni extrapolar el registro regional de otra fuente."
+    },
+    {
+      "name": "Ganglios cervicales",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "lymphatic",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin mallas activas identificadas en BodyParts3D 4.0/4.3. No construir una red ni extrapolar el registro regional de otra fuente."
+    },
+    {
+      "name": "Ganglios axilares",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "lymphatic",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin mallas activas identificadas en BodyParts3D 4.0/4.3. No construir una red ni extrapolar el registro regional de otra fuente."
+    },
+    {
+      "name": "Ganglios mediastínicos",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "lymphatic",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin mallas activas identificadas en BodyParts3D 4.0/4.3. No construir una red ni extrapolar el registro regional de otra fuente."
+    },
+    {
+      "name": "Ganglios abdominales",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "lymphatic",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin mallas activas identificadas en BodyParts3D 4.0/4.3. No construir una red ni extrapolar el registro regional de otra fuente."
+    },
+    {
+      "name": "Ganglios pélvicos",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "lymphatic",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin mallas activas identificadas en BodyParts3D 4.0/4.3. No construir una red ni extrapolar el registro regional de otra fuente."
+    },
+    {
+      "name": "Ganglios inguinales",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "lymphatic",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin mallas activas identificadas en BodyParts3D 4.0/4.3. No construir una red ni extrapolar el registro regional de otra fuente."
+    },
+    {
+      "name": "Conducto torácico",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "lymphatic",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin mallas activas identificadas en BodyParts3D 4.0/4.3. No construir una red ni extrapolar el registro regional de otra fuente."
+    },
+    {
+      "name": "Cisterna del quilo",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "lymphatic",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin mallas activas identificadas en BodyParts3D 4.0/4.3. No construir una red ni extrapolar el registro regional de otra fuente."
+    },
+    {
+      "name": "Conducto linfático derecho",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "lymphatic",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin mallas activas identificadas en BodyParts3D 4.0/4.3. No construir una red ni extrapolar el registro regional de otra fuente."
+    },
+    {
+      "name": "Vasos linfáticos principales",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "lymphatic",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin mallas activas identificadas en BodyParts3D 4.0/4.3. No construir una red ni extrapolar el registro regional de otra fuente."
+    },
+    {
+      "name": "Conductos eyaculadores",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "reproductive",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin representación inequívoca separada en los metadatos consultados."
+    },
+    {
+      "name": "Glándulas bulbouretrales",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "reproductive",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin representación inequívoca separada en los metadatos consultados."
+    },
+    {
+      "name": "Escroto",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "reproductive",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Sin representación inequívoca separada en los metadatos consultados."
+    },
+    {
+      "name": "Ovarios",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "reproductive",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Ausentes del cuerpo masculino BP3D. Reservado para futuro atlas femenino con marco documentado propio; no mezclar cuerpos."
+    },
+    {
+      "name": "Trompas uterinas",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "reproductive",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Ausentes del cuerpo masculino BP3D. Reservado para futuro atlas femenino con marco documentado propio; no mezclar cuerpos."
+    },
+    {
+      "name": "Útero",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "reproductive",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Ausentes del cuerpo masculino BP3D. Reservado para futuro atlas femenino con marco documentado propio; no mezclar cuerpos."
+    },
+    {
+      "name": "Cérvix",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "reproductive",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Ausentes del cuerpo masculino BP3D. Reservado para futuro atlas femenino con marco documentado propio; no mezclar cuerpos."
+    },
+    {
+      "name": "Vagina",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "reproductive",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Ausentes del cuerpo masculino BP3D. Reservado para futuro atlas femenino con marco documentado propio; no mezclar cuerpos."
+    },
+    {
+      "name": "Genitales externos femeninos",
+      "latin": null,
+      "sourceId": null,
+      "elementId": null,
+      "source": "BP3D 4.0/4.3; auditoría de disponibilidad",
+      "systemId": "reproductive",
+      "entityType": "candidato sin geometría aprobada",
+      "side": null,
+      "parent": null,
+      "filename": null,
+      "decision": "APLAZADO",
+      "reason": "Ausentes del cuerpo masculino BP3D. Reservado para futuro atlas femenino con marco documentado propio; no mezclar cuerpos."
+    }
+  ],
+  "discarded": [
+    {
+      "name": "Hipófisis alternativa 4.3",
+      "sourceId": "FMA13889",
+      "elementId": "FJ3848",
+      "source": "BP3D 4.3",
+      "systemId": "endocrine",
+      "decision": "DESCARTADO",
+      "reason": "Identidad ya cubierta por FJ1796 de 4.0; no duplicar."
+    },
+    {
+      "name": "Páncreas endocrino duplicado",
+      "sourceId": "FMA7198",
+      "source": "BP3D",
+      "systemId": "endocrine",
+      "decision": "DESCARTADO",
+      "reason": "Mantener propietario Digestivo y relación textual explícita; no copiar su GLB."
+    },
+    {
+      "name": "Testículos duplicados en Endocrino",
+      "sourceId": "FMA7211/FMA7212",
+      "source": "BP3D",
+      "systemId": "endocrine",
+      "decision": "DESCARTADO",
+      "reason": "Único propietario Reproductor; función endocrina en ficha y contexto."
+    }
+  ],
+  "modules": [
+    {
+      "id": "urinary:organs",
+      "systemId": "urinary",
+      "filename": "organs.glb",
+      "sourceVersion": "4.0"
+    },
+    {
+      "id": "endocrine:glands",
+      "systemId": "endocrine",
+      "filename": "glands.glb",
+      "sourceVersion": "4.0"
+    },
+    {
+      "id": "endocrine:thyroid43",
+      "systemId": "endocrine",
+      "filename": "thyroid43.glb",
+      "sourceVersion": "4.3"
+    },
+    {
+      "id": "lymphatic:central",
+      "systemId": "lymphatic",
+      "filename": "central.glb",
+      "sourceVersion": "4.0"
+    },
+    {
+      "id": "reproductive:male",
+      "systemId": "reproductive",
+      "filename": "male.glb",
+      "sourceVersion": "4.0"
+    }
+  ],
+  "counts": {
+    "approvedMeshes": 32,
+    "pending": 24,
+    "discarded": 3
+  }
+}

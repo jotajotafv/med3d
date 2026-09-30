@@ -1,0 +1,552 @@
+{
+  "pipeline": "@gltf-transform 4.5.0; meshoptimizer 1.2.0",
+  "positionBits": 32,
+  "positionQuantization": false,
+  "normalBits": 12,
+  "additionalDecimation": false,
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "numericalToleranceMetres": 0.00005,
+  "numericalToleranceScope": "Maximum Euclidean source-to-decoded position error; not anatomical/clinical accuracy.",
+  "method": "Original OBJ double coordinates transformed once; decoded GLB world positions nearest-matched within 0.05 mm; every oriented source triangle and duplicate occurrence matched, and every used source position retained.",
+  "sourceZipSha256": "c71b7e73ed54bb08fe0a1334d396b431081727582c424556d542a8c09cafee8d",
+  "modules": [
+    {
+      "id": "urinary:organs",
+      "bytes": 94872,
+      "sha256": "2b979002421ee0944b5f2ac38808f6069c2a8254c8ad441ac5240108db9568ce",
+      "meshes": 6,
+      "triangles": 9944,
+      "vertices": 5402,
+      "materials": 1,
+      "decodedAccessorBytes": 156900,
+      "compression": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ],
+      "maxPositionErrorMetres": 5.968331844781729e-8,
+      "maxBoundsErrorMetres": 5.1727294891890097e-8,
+      "elements": [
+        {
+          "elementId": "FJ3147",
+          "sourceId": "FMA7204",
+          "anatomyId": "uri:FMA7204",
+          "side": "right",
+          "triangles": 2310,
+          "vertices": 1163,
+          "uniqueUsedSourcePositions": 1157,
+          "maxPositionErrorMetres": 5.961341602949961e-8,
+          "rmsPositionErrorMetres": 3.116218424480665e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.1727294891890097e-8
+        },
+        {
+          "elementId": "FJ3145",
+          "sourceId": "FMA7205",
+          "anatomyId": "uri:FMA7205",
+          "side": "left",
+          "triangles": 2982,
+          "vertices": 1497,
+          "uniqueUsedSourcePositions": 1493,
+          "maxPositionErrorMetres": 5.968331844781729e-8,
+          "rmsPositionErrorMetres": 3.2672696223718666e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 3.4866332931926536e-8
+        },
+        {
+          "elementId": "FJ3146",
+          "sourceId": "FMA15571",
+          "anatomyId": "uri:FMA15571",
+          "side": "right",
+          "triangles": 1924,
+          "vertices": 1132,
+          "uniqueUsedSourcePositions": 964,
+          "maxPositionErrorMetres": 5.943498778077613e-8,
+          "rmsPositionErrorMetres": 2.656513021186375e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 4.100799566586488e-8
+        },
+        {
+          "elementId": "FJ3144",
+          "sourceId": "FMA15572",
+          "anatomyId": "uri:FMA15572",
+          "side": "left",
+          "triangles": 2062,
+          "vertices": 1125,
+          "uniqueUsedSourcePositions": 1033,
+          "maxPositionErrorMetres": 5.9595926127451766e-8,
+          "rmsPositionErrorMetres": 2.9774218836161384e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 3.3683776878845606e-8
+        },
+        {
+          "elementId": "FJ3149",
+          "sourceId": "FMA15900",
+          "anatomyId": "uri:FMA15900",
+          "side": "midline",
+          "triangles": 226,
+          "vertices": 127,
+          "uniqueUsedSourcePositions": 115,
+          "maxPositionErrorMetres": 2.9781944451210147e-8,
+          "rmsPositionErrorMetres": 1.8068850480654368e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 2.0629882802047916e-8
+        },
+        {
+          "elementId": "FJ3148",
+          "sourceId": "FMA19667",
+          "anatomyId": "uri:FMA19667",
+          "side": "midline",
+          "triangles": 440,
+          "vertices": 358,
+          "uniqueUsedSourcePositions": 222,
+          "maxPositionErrorMetres": 3.017859949228873e-8,
+          "rmsPositionErrorMetres": 1.8195336825026445e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 9.769439701656779e-9
+        }
+      ]
+    },
+    {
+      "id": "endocrine:glands",
+      "bytes": 69408,
+      "sha256": "20562f7af6ffa3b227e3eeb7505d3e14f9acf459878fe1d465f82725844c6023",
+      "meshes": 4,
+      "triangles": 8034,
+      "vertices": 4050,
+      "materials": 1,
+      "decodedAccessorBytes": 121104,
+      "compression": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ],
+      "maxPositionErrorMetres": 5.959140980776629e-8,
+      "maxBoundsErrorMetres": 5.210876485861604e-8,
+      "elements": [
+        {
+          "elementId": "FJ3130",
+          "sourceId": "FMA15629",
+          "anatomyId": "endo:FMA15629",
+          "side": "right",
+          "triangles": 2294,
+          "vertices": 1149,
+          "uniqueUsedSourcePositions": 1149,
+          "maxPositionErrorMetres": 5.959140980776629e-8,
+          "rmsPositionErrorMetres": 3.4096035665222637e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.1994323735371495e-8
+        },
+        {
+          "elementId": "FJ3129",
+          "sourceId": "FMA15630",
+          "anatomyId": "endo:FMA15630",
+          "side": "left",
+          "triangles": 3996,
+          "vertices": 2000,
+          "uniqueUsedSourcePositions": 2000,
+          "maxPositionErrorMetres": 5.950335093969563e-8,
+          "rmsPositionErrorMetres": 3.401128628351211e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.134582514720876e-8
+        },
+        {
+          "elementId": "FJ1796",
+          "sourceId": "FMA13889",
+          "anatomyId": "endo:FMA13889",
+          "side": "midline",
+          "triangles": 1164,
+          "vertices": 609,
+          "uniqueUsedSourcePositions": 584,
+          "maxPositionErrorMetres": 5.924149425703594e-8,
+          "rmsPositionErrorMetres": 3.4910759544992e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 1.5296935940156686e-8
+        },
+        {
+          "elementId": "FJ1795",
+          "sourceId": "FMA62033",
+          "anatomyId": "endo:FMA62033",
+          "side": "midline",
+          "triangles": 580,
+          "vertices": 292,
+          "uniqueUsedSourcePositions": 292,
+          "maxPositionErrorMetres": 5.836487484585734e-8,
+          "rmsPositionErrorMetres": 3.46730088285442e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.210876485861604e-8
+        }
+      ]
+    },
+    {
+      "id": "endocrine:thyroid43",
+      "bytes": 398320,
+      "sha256": "0039073eb7daeb40a541253997f11ea732663de69a875475efce853e7a803ed7",
+      "meshes": 7,
+      "triangles": 12132,
+      "vertices": 34949,
+      "materials": 1,
+      "decodedAccessorBytes": 701874,
+      "compression": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ],
+      "maxPositionErrorMetres": 5.965211525413395e-8,
+      "maxBoundsErrorMetres": 5.882263187650949e-8,
+      "elements": [
+        {
+          "elementId": "FJ3670",
+          "sourceId": "FMA49178",
+          "anatomyId": "endo:FMA49178",
+          "side": "midline",
+          "triangles": 1746,
+          "vertices": 5238,
+          "uniqueUsedSourcePositions": 968,
+          "maxPositionErrorMetres": 5.951530847440805e-8,
+          "rmsPositionErrorMetres": 3.4122965966251266e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 3.643035895173341e-8
+        },
+        {
+          "elementId": "FJ3671",
+          "sourceId": "FMA13369",
+          "anatomyId": "endo:FMA13369",
+          "side": "left",
+          "triangles": 4741,
+          "vertices": 14223,
+          "uniqueUsedSourcePositions": 2440,
+          "maxPositionErrorMetres": 5.960087084643678e-8,
+          "rmsPositionErrorMetres": 3.417074967392131e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 4.959106458812812e-8
+        },
+        {
+          "elementId": "FJ3672",
+          "sourceId": "FMA13368",
+          "anatomyId": "endo:FMA13368",
+          "side": "right",
+          "triangles": 5061,
+          "vertices": 15183,
+          "uniqueUsedSourcePositions": 2614,
+          "maxPositionErrorMetres": 5.965211525413395e-8,
+          "rmsPositionErrorMetres": 3.4811852297623866e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 2.7389526424670407e-8
+        },
+        {
+          "elementId": "FJ3673",
+          "sourceId": "FMA55563",
+          "anatomyId": "endo:FMA55563",
+          "side": "left",
+          "triangles": 160,
+          "vertices": 82,
+          "uniqueUsedSourcePositions": 82,
+          "maxPositionErrorMetres": 5.955520776559281e-8,
+          "rmsPositionErrorMetres": 3.6884867767808423e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 1.5678405684838026e-8
+        },
+        {
+          "elementId": "FJ3674",
+          "sourceId": "FMA55561",
+          "anatomyId": "endo:FMA55561",
+          "side": "left",
+          "triangles": 142,
+          "vertices": 75,
+          "uniqueUsedSourcePositions": 73,
+          "maxPositionErrorMetres": 5.905196816672311e-8,
+          "rmsPositionErrorMetres": 3.7482733841645616e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.439758288261487e-8
+        },
+        {
+          "elementId": "FJ3675",
+          "sourceId": "FMA55562",
+          "anatomyId": "endo:FMA55562",
+          "side": "right",
+          "triangles": 146,
+          "vertices": 75,
+          "uniqueUsedSourcePositions": 75,
+          "maxPositionErrorMetres": 5.8149722583456224e-8,
+          "rmsPositionErrorMetres": 3.564469106745784e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.3672790434333706e-8
+        },
+        {
+          "elementId": "FJ3676",
+          "sourceId": "FMA55560",
+          "anatomyId": "endo:FMA55560",
+          "side": "right",
+          "triangles": 136,
+          "vertices": 73,
+          "uniqueUsedSourcePositions": 70,
+          "maxPositionErrorMetres": 5.882505257760287e-8,
+          "rmsPositionErrorMetres": 3.5501707158882276e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.882263187650949e-8
+        }
+      ]
+    },
+    {
+      "id": "lymphatic:central",
+      "bytes": 35160,
+      "sha256": "c20c719b1ed5382dfbbc5c2c3093918273dc27e2e2b6a20f1b34002d88945f35",
+      "meshes": 3,
+      "triangles": 3410,
+      "vertices": 1894,
+      "materials": 1,
+      "decodedAccessorBytes": 54552,
+      "compression": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ],
+      "maxPositionErrorMetres": 5.983537501341232e-8,
+      "maxBoundsErrorMetres": 5.817413328834675e-8,
+      "elements": [
+        {
+          "elementId": "FJ2561",
+          "sourceId": "FMA7196",
+          "anatomyId": "lym:FMA7196",
+          "side": "left",
+          "triangles": 1330,
+          "vertices": 689,
+          "uniqueUsedSourcePositions": 667,
+          "maxPositionErrorMetres": 5.955952912421304e-8,
+          "rmsPositionErrorMetres": 3.547021634349245e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 7.019042902456363e-9
+        },
+        {
+          "elementId": "FJ3151",
+          "sourceId": "FMA71194",
+          "anatomyId": "lym:FMA71194",
+          "side": "right",
+          "triangles": 1030,
+          "vertices": 599,
+          "uniqueUsedSourcePositions": 517,
+          "maxPositionErrorMetres": 5.959128744915023e-8,
+          "rmsPositionErrorMetres": 3.3888548673037426e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.817413328834675e-8
+        },
+        {
+          "elementId": "FJ3150",
+          "sourceId": "FMA71195",
+          "anatomyId": "lym:FMA71195",
+          "side": "left",
+          "triangles": 1050,
+          "vertices": 606,
+          "uniqueUsedSourcePositions": 529,
+          "maxPositionErrorMetres": 5.983537501341232e-8,
+          "rmsPositionErrorMetres": 3.4229978842722055e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 4.5471191478796413e-8
+        }
+      ]
+    },
+    {
+      "id": "reproductive:male",
+      "bytes": 93996,
+      "sha256": "7528921142734fc887db51d130fa2be7bb7f05a7e6bc6bf8c19c737dc4379019",
+      "meshes": 12,
+      "triangles": 7184,
+      "vertices": 4934,
+      "materials": 1,
+      "decodedAccessorBytes": 131916,
+      "compression": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ],
+      "maxPositionErrorMetres": 3.034585700316079e-8,
+      "maxBoundsErrorMetres": 2.750396732587035e-8,
+      "elements": [
+        {
+          "elementId": "FJ3142",
+          "sourceId": "FMA7211",
+          "anatomyId": "rep:FMA7211",
+          "side": "right",
+          "triangles": 212,
+          "vertices": 108,
+          "uniqueUsedSourcePositions": 108,
+          "maxPositionErrorMetres": 3.034585700316079e-8,
+          "rmsPositionErrorMetres": 1.7240328691882908e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 1.6746520947741317e-8
+        },
+        {
+          "elementId": "FJ3138",
+          "sourceId": "FMA7212",
+          "anatomyId": "rep:FMA7212",
+          "side": "left",
+          "triangles": 210,
+          "vertices": 107,
+          "uniqueUsedSourcePositions": 107,
+          "maxPositionErrorMetres": 2.9380212097184805e-8,
+          "rmsPositionErrorMetres": 1.6502727567466396e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 7.0142745778323246e-9
+        },
+        {
+          "elementId": "FJ3141",
+          "sourceId": "FMA18256",
+          "anatomyId": "rep:FMA18256",
+          "side": "right",
+          "triangles": 76,
+          "vertices": 115,
+          "uniqueUsedSourcePositions": 38,
+          "maxPositionErrorMetres": 2.7853049014486874e-8,
+          "rmsPositionErrorMetres": 1.4018011514226708e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 1.3134002663228728e-8
+        },
+        {
+          "elementId": "FJ3136",
+          "sourceId": "FMA18257",
+          "anatomyId": "rep:FMA18257",
+          "side": "left",
+          "triangles": 238,
+          "vertices": 184,
+          "uniqueUsedSourcePositions": 121,
+          "maxPositionErrorMetres": 2.9138989122135355e-8,
+          "rmsPositionErrorMetres": 1.8093288685654534e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 1.656341552802587e-8
+        },
+        {
+          "elementId": "FJ3140",
+          "sourceId": "FMA19235",
+          "anatomyId": "rep:FMA19235",
+          "side": "right",
+          "triangles": 944,
+          "vertices": 787,
+          "uniqueUsedSourcePositions": 472,
+          "maxPositionErrorMetres": 3.0130714515328534e-8,
+          "rmsPositionErrorMetres": 1.835547203097238e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 2.750396732587035e-8
+        },
+        {
+          "elementId": "FJ3135",
+          "sourceId": "FMA19236",
+          "anatomyId": "rep:FMA19236",
+          "side": "left",
+          "triangles": 1110,
+          "vertices": 863,
+          "uniqueUsedSourcePositions": 555,
+          "maxPositionErrorMetres": 3.015167671029514e-8,
+          "rmsPositionErrorMetres": 1.7594823235150878e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 2.720260627864235e-8
+        },
+        {
+          "elementId": "FJ3143",
+          "sourceId": "FMA19387",
+          "anatomyId": "rep:FMA19387",
+          "side": "right",
+          "triangles": 360,
+          "vertices": 235,
+          "uniqueUsedSourcePositions": 182,
+          "maxPositionErrorMetres": 2.9733637499216056e-8,
+          "rmsPositionErrorMetres": 1.7691332006788813e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 2.4875640880495098e-8
+        },
+        {
+          "elementId": "FJ3137",
+          "sourceId": "FMA19388",
+          "anatomyId": "rep:FMA19388",
+          "side": "left",
+          "triangles": 370,
+          "vertices": 244,
+          "uniqueUsedSourcePositions": 187,
+          "maxPositionErrorMetres": 2.9623941570068862e-8,
+          "rmsPositionErrorMetres": 1.778288680353639e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 2.3906707724563603e-8
+        },
+        {
+          "elementId": "FJ3139",
+          "sourceId": "FMA9600",
+          "anatomyId": "rep:FMA9600",
+          "side": "midline",
+          "triangles": 442,
+          "vertices": 223,
+          "uniqueUsedSourcePositions": 223,
+          "maxPositionErrorMetres": 2.986055925084023e-8,
+          "rmsPositionErrorMetres": 1.769499531247992e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 1.6082763676372736e-8
+        },
+        {
+          "elementId": "FJ3134",
+          "sourceId": "FMA18247",
+          "anatomyId": "rep:FMA18247",
+          "side": "midline",
+          "triangles": 1374,
+          "vertices": 942,
+          "uniqueUsedSourcePositions": 693,
+          "maxPositionErrorMetres": 3.0244881460235546e-8,
+          "rmsPositionErrorMetres": 1.7895889871458517e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 2.592468262285763e-8
+        },
+        {
+          "elementId": "FJ3133",
+          "sourceId": "FMA19617",
+          "anatomyId": "rep:FMA19617",
+          "side": "midline",
+          "triangles": 576,
+          "vertices": 296,
+          "uniqueUsedSourcePositions": 290,
+          "maxPositionErrorMetres": 2.9926378401793236e-8,
+          "rmsPositionErrorMetres": 1.7148148699546108e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.565643307336998e-9
+        },
+        {
+          "elementId": "FJ3132",
+          "sourceId": "FMA19618",
+          "anatomyId": "rep:FMA19618",
+          "side": "midline",
+          "triangles": 1272,
+          "vertices": 830,
+          "uniqueUsedSourcePositions": 648,
+          "maxPositionErrorMetres": 3.019349042151914e-8,
+          "rmsPositionErrorMetres": 1.7220399178453212e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 2.3483276323510438e-8
+        }
+      ]
+    }
+  ],
+  "totalBytes": 691756,
+  "totalTriangles": 40704,
+  "totalMeshes": 32,
+  "totalVertices": 51229,
+  "totalDecodedAccessorBytes": 1166346,
+  "maxPositionErrorMetres": 5.983537501341232e-8,
+  "maxBoundsErrorMetres": 5.882263187650949e-8
+}

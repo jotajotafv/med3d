@@ -1,0 +1,1427 @@
+{
+  "sourceZip": "research/anatomy/internal-originals.zip",
+  "sourceZipSha256": "c71b7e73ed54bb08fe0a1334d396b431081727582c424556d542a8c09cafee8d",
+  "selectionSha256": "022c884c635d0f5ee980feb4c8392b435a4b1e1edf24de062e555ce3289cca6e",
+  "sourceLock": "research/anatomy/internal-source-lock.json",
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "additionalRegistration": "none; 4.0 native frame and 4.3 cervical controls with identical geometry records",
+  "frameControls": [
+    {
+      "elementId": "FJ2808",
+      "geometryRecordsIdentical": true,
+      "source40Sha256": "48cd41bcd4044c7013ba10c971e212766afc970408f51875f9ef8e8c407c0687",
+      "source43Sha256": "7ee325a7e90428925aa6885abb683d9e06df2fe13f8f35f398a2ae6de1ec2a21",
+      "recordCount": 5330
+    },
+    {
+      "elementId": "FJ2541",
+      "geometryRecordsIdentical": true,
+      "source40Sha256": "eb8c075b6601f2d543532f4a2eb4a39b03430af858da225ba7887e52182272ed",
+      "source43Sha256": "a070da7f54750cdeb3d169f13f0f2f0c0c420c253aba9c3ce42fecc36cb4c799",
+      "recordCount": 10210
+    }
+  ],
+  "files": [
+    {
+      "elementId": "FJ1795",
+      "sourceId": "FMA62033",
+      "representationId": "BP5525",
+      "sourceVersion": "4.0",
+      "path": "FJ1795.obj",
+      "bytes": 34031,
+      "sha256": "b424373c89b88a2916e4ec4ef9aef0b273606df7713f107ba8dcf7e5303f1768",
+      "side": "midline",
+      "anatomyId": "endo:FMA62033",
+      "ownerSourceId": "FMA62033",
+      "family": "pineal",
+      "moduleId": "endocrine:glands",
+      "sourceType": "glándula",
+      "triangles": 580,
+      "faces": 580,
+      "sourcePositionCount": 292,
+      "vertices": 292,
+      "boundsMetres": [
+        [
+          -0.00365071,
+          1.54018,
+          0.0591672
+        ],
+        [
+          0.00261481,
+          1.5478900000000002,
+          0.0705915
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -3.65071,
+          -70.5915,
+          1540.18
+        ],
+        [
+          2.61481,
+          -59.1672,
+          1547.89
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ1796",
+      "sourceId": "FMA13889",
+      "representationId": "BP4630",
+      "sourceVersion": "4.0",
+      "path": "FJ1796.obj",
+      "bytes": 70119,
+      "sha256": "e79b1a41d81d066e798dcda7f73f7ffd58741adfbd709d47baacccb2fabfcce0",
+      "side": "midline",
+      "anatomyId": "endo:FMA13889",
+      "ownerSourceId": "FMA13889",
+      "family": "pituitary",
+      "moduleId": "endocrine:glands",
+      "sourceType": "glándula",
+      "triangles": 1164,
+      "faces": 1164,
+      "sourcePositionCount": 609,
+      "vertices": 609,
+      "boundsMetres": [
+        [
+          -0.0067911000000000004,
+          1.52257,
+          0.101105
+        ],
+        [
+          0.00551969,
+          1.53554,
+          0.11056300000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -6.7911,
+          -110.563,
+          1522.57
+        ],
+        [
+          5.51969,
+          -101.105,
+          1535.54
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ2561",
+      "sourceId": "FMA7196",
+      "representationId": "BP8804",
+      "sourceVersion": "4.0",
+      "path": "FJ2561.obj",
+      "bytes": 79430,
+      "sha256": "8dadb164d15392b61e0b08286625c9ea9f959a0f13d8f166b32d84abad4689bf",
+      "side": "left",
+      "anatomyId": "lym:FMA7196",
+      "ownerSourceId": "FMA7196",
+      "family": "spleen",
+      "moduleId": "lymphatic:central",
+      "sourceType": "órgano",
+      "triangles": 1330,
+      "faces": 1330,
+      "sourcePositionCount": 689,
+      "vertices": 689,
+      "boundsMetres": [
+        [
+          0.0556341,
+          1.05161,
+          0.046196100000000004
+        ],
+        [
+          0.113868,
+          1.12184,
+          0.141262
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          55.6341,
+          -141.262,
+          1051.61
+        ],
+        [
+          113.868,
+          -46.1961,
+          1121.84
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3129",
+      "sourceId": "FMA15630",
+      "representationId": "BP9014",
+      "sourceVersion": "4.0",
+      "path": "FJ3129.obj",
+      "bytes": 247431,
+      "sha256": "bff9553c5d66c854bb54577136eb734dfd004075323013456f1e995ac8f8e545",
+      "side": "left",
+      "anatomyId": "endo:FMA15630",
+      "ownerSourceId": "FMA15630",
+      "family": "adrenal",
+      "moduleId": "endocrine:glands",
+      "sourceType": "glándula",
+      "triangles": 3996,
+      "faces": 3996,
+      "sourcePositionCount": 2000,
+      "vertices": 2000,
+      "boundsMetres": [
+        [
+          0.027315000000000002,
+          1.06334,
+          0.063135
+        ],
+        [
+          0.0754916,
+          1.10822,
+          0.0832855
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          27.315,
+          -83.2855,
+          1063.34
+        ],
+        [
+          75.4916,
+          -63.135,
+          1108.22
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3130",
+      "sourceId": "FMA15629",
+      "representationId": "BP9132",
+      "sourceVersion": "4.0",
+      "path": "FJ3130.obj",
+      "bytes": 137872,
+      "sha256": "c4d17a1accdd2e684d919582c36c1d51c7b6d382e221525c87e04c2575ccc3c6",
+      "side": "right",
+      "anatomyId": "endo:FMA15629",
+      "ownerSourceId": "FMA15629",
+      "family": "adrenal",
+      "moduleId": "endocrine:glands",
+      "sourceType": "glándula",
+      "triangles": 2294,
+      "faces": 2294,
+      "sourcePositionCount": 1149,
+      "vertices": 1149,
+      "boundsMetres": [
+        [
+          -0.0625344,
+          1.04552,
+          0.0751055
+        ],
+        [
+          -0.0306302,
+          1.0877999999999999,
+          0.102342
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -62.5344,
+          -102.342,
+          1045.52
+        ],
+        [
+          -30.6302,
+          -75.1055,
+          1087.8
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3132",
+      "sourceId": "FMA19618",
+      "representationId": "BP9224",
+      "sourceVersion": "4.0",
+      "path": "FJ3132.obj",
+      "bytes": 86313,
+      "sha256": "81a9ef903f013d7f5eed82bdb6740709cfc19c04b7f5ad41595ac6e46327557f",
+      "side": "midline",
+      "anatomyId": "rep:FMA19618",
+      "ownerSourceId": "FMA19618",
+      "family": "cavernosum",
+      "moduleId": "reproductive:male",
+      "sourceType": "componente de órgano",
+      "triangles": 1272,
+      "faces": 1272,
+      "sourcePositionCount": 830,
+      "vertices": 830,
+      "boundsMetres": [
+        [
+          -0.032107500000000004,
+          0.708396,
+          0.06450320000000001
+        ],
+        [
+          0.0311028,
+          0.788676,
+          0.19561699999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -32.1075,
+          -195.617,
+          708.396
+        ],
+        [
+          31.1028,
+          -64.5032,
+          788.676
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3133",
+      "sourceId": "FMA19617",
+      "representationId": "BP8470",
+      "sourceVersion": "4.0",
+      "path": "FJ3133.obj",
+      "bytes": 34164,
+      "sha256": "e90e440d57d2e6b0b85c622650c46bafe34c0886a6eed898062b914b5df1f14e",
+      "side": "midline",
+      "anatomyId": "rep:FMA19617",
+      "ownerSourceId": "FMA19617",
+      "family": "spongiosum",
+      "moduleId": "reproductive:male",
+      "sourceType": "componente de órgano",
+      "triangles": 576,
+      "faces": 576,
+      "sourcePositionCount": 296,
+      "vertices": 296,
+      "boundsMetres": [
+        [
+          -0.0112803,
+          0.708947,
+          0.0750153
+        ],
+        [
+          0.009973979999999999,
+          0.780231,
+          0.187136
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -11.2803,
+          -187.136,
+          708.947
+        ],
+        [
+          9.97398,
+          -75.0153,
+          780.231
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3134",
+      "sourceId": "FMA18247",
+      "representationId": "BP8793",
+      "sourceVersion": "4.0",
+      "path": "FJ3134.obj",
+      "bytes": 96112,
+      "sha256": "30e1b727121b6f105f9156af132171f9a79bdd3588567148572479ad6c2a1efe",
+      "side": "midline",
+      "anatomyId": "rep:FMA18247",
+      "ownerSourceId": "FMA18247",
+      "family": "glans",
+      "moduleId": "reproductive:male",
+      "sourceType": "componente de órgano",
+      "triangles": 1374,
+      "faces": 1374,
+      "sourcePositionCount": 942,
+      "vertices": 942,
+      "boundsMetres": [
+        [
+          -0.0155145,
+          0.707639,
+          0.176125
+        ],
+        [
+          0.0141674,
+          0.738116,
+          0.20086099999999998
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -15.5145,
+          -200.861,
+          707.639
+        ],
+        [
+          14.1674,
+          -176.125,
+          738.116
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3135",
+      "sourceId": "FMA19236",
+      "representationId": "BP8796",
+      "sourceVersion": "4.0",
+      "path": "FJ3135.obj",
+      "bytes": 83086,
+      "sha256": "75091a49ea2b9d0074eab9564d9d484094c82006a2e10bcb7d4f5f1c4e2b5648",
+      "side": "left",
+      "anatomyId": "rep:FMA19236",
+      "ownerSourceId": "FMA19236",
+      "family": "deferent",
+      "moduleId": "reproductive:male",
+      "sourceType": "conducto",
+      "triangles": 1110,
+      "faces": 1110,
+      "sourcePositionCount": 863,
+      "vertices": 863,
+      "boundsMetres": [
+        [
+          0.00255171,
+          0.6945990000000001,
+          0.0525625
+        ],
+        [
+          0.10262500000000001,
+          0.8578110000000001,
+          0.154805
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          2.55171,
+          -154.805,
+          694.599
+        ],
+        [
+          102.625,
+          -52.5625,
+          857.811
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3136",
+      "sourceId": "FMA18257",
+      "representationId": "BP8772",
+      "sourceVersion": "4.0",
+      "path": "FJ3136.obj",
+      "bytes": 17391,
+      "sha256": "b593e1536bdf93f9c9115207e979d94df238d088e08509b2e2751d8d4ebcd52a",
+      "side": "left",
+      "anatomyId": "rep:FMA18257",
+      "ownerSourceId": "FMA18257",
+      "family": "epididymis",
+      "moduleId": "reproductive:male",
+      "sourceType": "órgano",
+      "triangles": 238,
+      "faces": 238,
+      "sourcePositionCount": 184,
+      "vertices": 184,
+      "boundsMetres": [
+        [
+          0.0129962,
+          0.699268,
+          0.13933
+        ],
+        [
+          0.0238831,
+          0.724972,
+          0.15958000000000003
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          12.9962,
+          -159.58,
+          699.268
+        ],
+        [
+          23.8831,
+          -139.33,
+          724.972
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3137",
+      "sourceId": "FMA19388",
+      "representationId": "BP9064",
+      "sourceVersion": "4.0",
+      "path": "FJ3137.obj",
+      "bytes": 24912,
+      "sha256": "e14aff1615aec623f98d769cb60894fb0e859ae0a0e0967a7b5757909afc50eb",
+      "side": "left",
+      "anatomyId": "rep:FMA19388",
+      "ownerSourceId": "FMA19388",
+      "family": "seminal",
+      "moduleId": "reproductive:male",
+      "sourceType": "glándula",
+      "triangles": 370,
+      "faces": 370,
+      "sourcePositionCount": 244,
+      "vertices": 244,
+      "boundsMetres": [
+        [
+          0.00235848,
+          0.788843,
+          0.0552228
+        ],
+        [
+          0.034014,
+          0.8183170000000001,
+          0.07495829999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          2.35848,
+          -74.9583,
+          788.843
+        ],
+        [
+          34.014,
+          -55.2228,
+          818.317
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3138",
+      "sourceId": "FMA7212",
+      "representationId": "BP8578",
+      "sourceVersion": "4.0",
+      "path": "FJ3138.obj",
+      "bytes": 11909,
+      "sha256": "bb9e548f7059fb21370b8c9612ce10fe70aa9b96945c1faea33d7cc9ed113639",
+      "side": "left",
+      "anatomyId": "rep:FMA7212",
+      "ownerSourceId": "FMA7212",
+      "family": "testis",
+      "moduleId": "reproductive:male",
+      "sourceType": "órgano",
+      "triangles": 210,
+      "faces": 210,
+      "sourcePositionCount": 107,
+      "vertices": 107,
+      "boundsMetres": [
+        [
+          0.0074975400000000005,
+          0.6897530000000001,
+          0.14135499999999998
+        ],
+        [
+          0.0275581,
+          0.718683,
+          0.16351400000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          7.49754,
+          -163.514,
+          689.753
+        ],
+        [
+          27.5581,
+          -141.355,
+          718.683
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3139",
+      "sourceId": "FMA9600",
+      "representationId": "BP8469",
+      "sourceVersion": "4.0",
+      "path": "FJ3139.obj",
+      "bytes": 25762,
+      "sha256": "3e610f288874927fdc17ef73c6f8f30d42230a651341e867c93bff54694c3233",
+      "side": "midline",
+      "anatomyId": "rep:FMA9600",
+      "ownerSourceId": "FMA9600",
+      "family": "prostate",
+      "moduleId": "reproductive:male",
+      "sourceType": "glándula",
+      "triangles": 442,
+      "faces": 442,
+      "sourcePositionCount": 223,
+      "vertices": 223,
+      "boundsMetres": [
+        [
+          -0.0178262,
+          0.772083,
+          0.0645049
+        ],
+        [
+          0.016457799999999998,
+          0.792439,
+          0.09646080000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -17.8262,
+          -96.4608,
+          772.083
+        ],
+        [
+          16.4578,
+          -64.5049,
+          792.439
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3140",
+      "sourceId": "FMA19235",
+      "representationId": "BP9116",
+      "sourceVersion": "4.0",
+      "path": "FJ3140.obj",
+      "bytes": 74666,
+      "sha256": "f5fa6eca33541ceffdd87a910e4fb2e804f3bcd4418ee06555dcbb0b60aa581d",
+      "side": "right",
+      "anatomyId": "rep:FMA19235",
+      "ownerSourceId": "FMA19235",
+      "family": "deferent",
+      "moduleId": "reproductive:male",
+      "sourceType": "conducto",
+      "triangles": 944,
+      "faces": 944,
+      "sourcePositionCount": 787,
+      "vertices": 787,
+      "boundsMetres": [
+        [
+          -0.0840843,
+          0.69459,
+          0.0529636
+        ],
+        [
+          -0.0038980700000000004,
+          0.86094,
+          0.154479
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -84.0843,
+          -154.479,
+          694.59
+        ],
+        [
+          -3.89807,
+          -52.9636,
+          860.94
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3141",
+      "sourceId": "FMA18256",
+      "representationId": "BP8141",
+      "sourceVersion": "4.0",
+      "path": "FJ3141.obj",
+      "bytes": 9322,
+      "sha256": "23469ccd7ac340ef3f4184fb850c7658420e9f7f294d91331f10cb3187824bf5",
+      "side": "right",
+      "anatomyId": "rep:FMA18256",
+      "ownerSourceId": "FMA18256",
+      "family": "epididymis",
+      "moduleId": "reproductive:male",
+      "sourceType": "órgano",
+      "triangles": 76,
+      "faces": 76,
+      "sourcePositionCount": 115,
+      "vertices": 115,
+      "boundsMetres": [
+        [
+          -0.026083400000000003,
+          0.700684,
+          0.140176
+        ],
+        [
+          -0.0167162,
+          0.724878,
+          0.159387
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -26.0834,
+          -159.387,
+          700.684
+        ],
+        [
+          -16.7162,
+          -140.176,
+          724.878
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3142",
+      "sourceId": "FMA7211",
+      "representationId": "BP9204",
+      "sourceVersion": "4.0",
+      "path": "FJ3142.obj",
+      "bytes": 12153,
+      "sha256": "1dc84c4d16139902662f08c97bc2581cb698cf8411855bcca5474e154f4ad86e",
+      "side": "right",
+      "anatomyId": "rep:FMA7211",
+      "ownerSourceId": "FMA7211",
+      "family": "testis",
+      "moduleId": "reproductive:male",
+      "sourceType": "órgano",
+      "triangles": 212,
+      "faces": 212,
+      "sourcePositionCount": 108,
+      "vertices": 108,
+      "boundsMetres": [
+        [
+          -0.030846000000000002,
+          0.69056,
+          0.14119
+        ],
+        [
+          -0.0104597,
+          0.7189880000000001,
+          0.163355
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -30.846,
+          -163.355,
+          690.56
+        ],
+        [
+          -10.4597,
+          -141.19,
+          718.988
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3143",
+      "sourceId": "FMA19387",
+      "representationId": "BP8530",
+      "sourceVersion": "4.0",
+      "path": "FJ3143.obj",
+      "bytes": 24339,
+      "sha256": "183e4a11e0a75a76dcdaf33f46afb7f5f30430c5e0b1ff19237be1ebef7e72ba",
+      "side": "right",
+      "anatomyId": "rep:FMA19387",
+      "ownerSourceId": "FMA19387",
+      "family": "seminal",
+      "moduleId": "reproductive:male",
+      "sourceType": "glándula",
+      "triangles": 360,
+      "faces": 360,
+      "sourcePositionCount": 235,
+      "vertices": 235,
+      "boundsMetres": [
+        [
+          -0.0353238,
+          0.7888809999999999,
+          0.054870600000000005
+        ],
+        [
+          -0.0036314600000000004,
+          0.818284,
+          0.0750521
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -35.3238,
+          -75.0521,
+          788.881
+        ],
+        [
+          -3.63146,
+          -54.8706,
+          818.284
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3144",
+      "sourceId": "FMA15572",
+      "representationId": "BP8750",
+      "sourceVersion": "4.0",
+      "path": "FJ3144.obj",
+      "bytes": 127599,
+      "sha256": "4a9bf3ad57ef2ea82c3f3cfb4f07efe3eb6feffe9d44cb8f0d178691f6489b04",
+      "side": "left",
+      "anatomyId": "uri:FMA15572",
+      "ownerSourceId": "FMA15572",
+      "family": "ureter",
+      "moduleId": "urinary:organs",
+      "sourceType": "conducto",
+      "triangles": 2062,
+      "faces": 2062,
+      "sourcePositionCount": 1125,
+      "vertices": 1125,
+      "boundsMetres": [
+        [
+          0.0232688,
+          0.818039,
+          0.061611
+        ],
+        [
+          0.07937659999999999,
+          1.07257,
+          0.11975100000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          23.2688,
+          -119.751,
+          818.039
+        ],
+        [
+          79.3766,
+          -61.611,
+          1072.57
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3145",
+      "sourceId": "FMA7205",
+      "representationId": "BP9289",
+      "sourceVersion": "4.0",
+      "path": "FJ3145.obj",
+      "bytes": 182275,
+      "sha256": "7d60d27da6d4d5d3e9fd78dde04a8401cb55d998a31f05cc9c8968955d83add9",
+      "side": "left",
+      "anatomyId": "uri:FMA7205",
+      "ownerSourceId": "FMA7205",
+      "family": "kidney",
+      "moduleId": "urinary:organs",
+      "sourceType": "órgano",
+      "triangles": 2982,
+      "faces": 2982,
+      "sourcePositionCount": 1497,
+      "vertices": 1497,
+      "boundsMetres": [
+        [
+          0.0328399,
+          0.9844940000000001,
+          0.0595914
+        ],
+        [
+          0.09038299999999999,
+          1.09044,
+          0.10018500000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          32.8399,
+          -100.185,
+          984.494
+        ],
+        [
+          90.383,
+          -59.5914,
+          1090.44
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3146",
+      "sourceId": "FMA15571",
+      "representationId": "BP8912",
+      "sourceVersion": "4.0",
+      "path": "FJ3146.obj",
+      "bytes": 125116,
+      "sha256": "8946b5166a0565e2a293d1ff2d2414674134749e6177c82e68ce8743796cee7f",
+      "side": "right",
+      "anatomyId": "uri:FMA15571",
+      "ownerSourceId": "FMA15571",
+      "family": "ureter",
+      "moduleId": "urinary:organs",
+      "sourceType": "conducto",
+      "triangles": 1924,
+      "faces": 1924,
+      "sourcePositionCount": 1132,
+      "vertices": 1132,
+      "boundsMetres": [
+        [
+          -0.0727935,
+          0.811203,
+          0.0603459
+        ],
+        [
+          -0.009399290000000001,
+          1.057,
+          0.11896899999999999
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -72.7935,
+          -118.969,
+          811.203
+        ],
+        [
+          -9.39929,
+          -60.3459,
+          1057.0
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3147",
+      "sourceId": "FMA7204",
+      "representationId": "BP8907",
+      "sourceVersion": "4.0",
+      "path": "FJ3147.obj",
+      "bytes": 139395,
+      "sha256": "0b75658b1af56974cc70f7f805784b40630debdfa76e196c51ee91422af99e8f",
+      "side": "right",
+      "anatomyId": "uri:FMA7204",
+      "ownerSourceId": "FMA7204",
+      "family": "kidney",
+      "moduleId": "urinary:organs",
+      "sourceType": "órgano",
+      "triangles": 2310,
+      "faces": 2310,
+      "sourcePositionCount": 1163,
+      "vertices": 1163,
+      "boundsMetres": [
+        [
+          -0.0875754,
+          0.966812,
+          0.06470010000000001
+        ],
+        [
+          -0.030427600000000003,
+          1.07124,
+          0.11185500000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -87.5754,
+          -111.855,
+          966.812
+        ],
+        [
+          -30.4276,
+          -64.7001,
+          1071.24
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3148",
+      "sourceId": "FMA19667",
+      "representationId": "BP9098",
+      "sourceVersion": "4.0",
+      "path": "FJ3148.obj",
+      "bytes": 34364,
+      "sha256": "987ce1b01511f6ea323ba5a7a7438ba3df72d0cdc853985e08ca2965feb63c93",
+      "side": "midline",
+      "anatomyId": "uri:FMA19667",
+      "ownerSourceId": "FMA19667",
+      "family": "urethra",
+      "moduleId": "urinary:organs",
+      "sourceType": "conducto",
+      "triangles": 440,
+      "faces": 440,
+      "sourcePositionCount": 358,
+      "vertices": 358,
+      "boundsMetres": [
+        [
+          -0.00160824,
+          0.708569,
+          0.0799527
+        ],
+        [
+          0.000313633,
+          0.792512,
+          0.184174
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -1.60824,
+          -184.174,
+          708.569
+        ],
+        [
+          0.313633,
+          -79.9527,
+          792.512
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3149",
+      "sourceId": "FMA15900",
+      "representationId": "BP8497",
+      "sourceVersion": "4.0",
+      "path": "FJ3149.obj",
+      "bytes": 13697,
+      "sha256": "d0940ffe991c3421964e44beb37ea258b47df797f099a1734169ae14d09426ed",
+      "side": "midline",
+      "anatomyId": "uri:FMA15900",
+      "ownerSourceId": "FMA15900",
+      "family": "bladder",
+      "moduleId": "urinary:organs",
+      "sourceType": "órgano",
+      "triangles": 226,
+      "faces": 226,
+      "sourcePositionCount": 127,
+      "vertices": 127,
+      "boundsMetres": [
+        [
+          -0.0341466,
+          0.789732,
+          0.0565253
+        ],
+        [
+          0.0326238,
+          0.8299890000000001,
+          0.12824000000000002
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -34.1466,
+          -128.24,
+          789.732
+        ],
+        [
+          32.6238,
+          -56.5253,
+          829.989
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3150",
+      "sourceId": "FMA71195",
+      "representationId": "BP8666",
+      "sourceVersion": "4.0",
+      "path": "FJ3150.obj",
+      "bytes": 66351,
+      "sha256": "8e46aee81d56797bcc111608c5268f7edd72f5030e663049f67cecee1c7a9db9",
+      "side": "left",
+      "anatomyId": "lym:FMA71195",
+      "ownerSourceId": "FMA71195",
+      "family": "thymus",
+      "moduleId": "lymphatic:central",
+      "sourceType": "componente de órgano",
+      "triangles": 1050,
+      "faces": 1050,
+      "sourcePositionCount": 606,
+      "vertices": 606,
+      "boundsMetres": [
+        [
+          -0.00350991,
+          1.25755,
+          0.119742
+        ],
+        [
+          0.0218142,
+          1.31668,
+          0.159289
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -3.50991,
+          -159.289,
+          1257.55
+        ],
+        [
+          21.8142,
+          -119.742,
+          1316.68
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3151",
+      "sourceId": "FMA71194",
+      "representationId": "BP9220",
+      "sourceVersion": "4.0",
+      "path": "FJ3151.obj",
+      "bytes": 65796,
+      "sha256": "995a2ca43438414c6835da1169ff78761e9e67517ebf2ed6254d870960784287",
+      "side": "right",
+      "anatomyId": "lym:FMA71194",
+      "ownerSourceId": "FMA71194",
+      "family": "thymus",
+      "moduleId": "lymphatic:central",
+      "sourceType": "componente de órgano",
+      "triangles": 1030,
+      "faces": 1030,
+      "sourcePositionCount": 599,
+      "vertices": 599,
+      "boundsMetres": [
+        [
+          -0.024754500000000002,
+          1.26116,
+          0.12213
+        ],
+        [
+          0.00241891,
+          1.32975,
+          0.144267
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -24.7545,
+          -144.267,
+          1261.16
+        ],
+        [
+          2.41891,
+          -122.13,
+          1329.75
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3670",
+      "sourceId": "FMA49178",
+      "representationId": "BP21406",
+      "sourceVersion": "4.3",
+      "path": "FJ3670.obj",
+      "bytes": 493303,
+      "sha256": "798a3b54f78eb3cc20f118b914202855e003b252a7e479f022fe1c2d6b9b14c0",
+      "side": "midline",
+      "anatomyId": "endo:FMA49178",
+      "ownerSourceId": "FMA49178",
+      "family": "thyroid",
+      "moduleId": "endocrine:thyroid43",
+      "sourceType": "componente de órgano",
+      "triangles": 1746,
+      "faces": 1746,
+      "sourcePositionCount": 5238,
+      "vertices": 5238,
+      "boundsMetres": [
+        [
+          -0.0050544000000000006,
+          1.37055,
+          0.10300400000000001
+        ],
+        [
+          0.00383879,
+          1.38858,
+          0.112557
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -5.0544,
+          -112.557,
+          1370.55
+        ],
+        [
+          3.83879,
+          -103.004,
+          1388.58
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3671",
+      "sourceId": "FMA13369",
+      "representationId": "BP21433",
+      "sourceVersion": "4.3",
+      "path": "FJ3671.obj",
+      "bytes": 1338937,
+      "sha256": "2a137c718b0f7f6150978730c78f9003db6dce5324e31ba5cb368d6ce7f57c58",
+      "side": "left",
+      "anatomyId": "endo:FMA13369",
+      "ownerSourceId": "FMA13369",
+      "family": "thyroid",
+      "moduleId": "endocrine:thyroid43",
+      "sourceType": "componente de órgano",
+      "triangles": 4741,
+      "faces": 4741,
+      "sourcePositionCount": 14223,
+      "vertices": 14223,
+      "boundsMetres": [
+        [
+          0.0031918700000000003,
+          1.3707500000000001,
+          0.0914661
+        ],
+        [
+          0.0199241,
+          1.42022,
+          0.110716
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          3.19187,
+          -110.716,
+          1370.75
+        ],
+        [
+          19.9241,
+          -91.4661,
+          1420.22
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3672",
+      "sourceId": "FMA13368",
+      "representationId": "BP19828",
+      "sourceVersion": "4.3",
+      "path": "FJ3672.obj",
+      "bytes": 1453612,
+      "sha256": "579d28267ec22b2536878fe2c78947f812d60e3ce3b9e5621f1faab7ce6f63f2",
+      "side": "right",
+      "anatomyId": "endo:FMA13368",
+      "ownerSourceId": "FMA13368",
+      "family": "thyroid",
+      "moduleId": "endocrine:thyroid43",
+      "sourceType": "componente de órgano",
+      "triangles": 5061,
+      "faces": 5061,
+      "sourcePositionCount": 15183,
+      "vertices": 15183,
+      "boundsMetres": [
+        [
+          -0.021273800000000002,
+          1.37028,
+          0.0914839
+        ],
+        [
+          -0.00439002,
+          1.41976,
+          0.111553
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -21.2738,
+          -111.553,
+          1370.28
+        ],
+        [
+          -4.39002,
+          -91.4839,
+          1419.76
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3673",
+      "sourceId": "FMA55563",
+      "representationId": "BP21598",
+      "sourceVersion": "4.3",
+      "path": "FJ3673.obj",
+      "bytes": 8821,
+      "sha256": "28856a004c1398a05a667947cc0df0f01f2d02319b9fe0ad53fe4ffa7b49417a",
+      "side": "left",
+      "anatomyId": "endo:FMA55563",
+      "ownerSourceId": "FMA55563",
+      "family": "parathyroid",
+      "moduleId": "endocrine:thyroid43",
+      "sourceType": "glándula",
+      "triangles": 160,
+      "faces": 160,
+      "sourcePositionCount": 82,
+      "vertices": 82,
+      "boundsMetres": [
+        [
+          0.0113072,
+          1.3871099999999998,
+          0.0917878
+        ],
+        [
+          0.0161371,
+          1.39406,
+          0.09653610000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          11.3072,
+          -96.5361,
+          1387.11
+        ],
+        [
+          16.1371,
+          -91.7878,
+          1394.06
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3674",
+      "sourceId": "FMA55561",
+      "representationId": "BP23783",
+      "sourceVersion": "4.3",
+      "path": "FJ3674.obj",
+      "bytes": 7984,
+      "sha256": "8c0fa01bc501ccca78d11bf3c4572160d96d1f284c171c64deb2992a1ea445fd",
+      "side": "left",
+      "anatomyId": "endo:FMA55561",
+      "ownerSourceId": "FMA55561",
+      "family": "parathyroid",
+      "moduleId": "endocrine:thyroid43",
+      "sourceType": "glándula",
+      "triangles": 142,
+      "faces": 142,
+      "sourcePositionCount": 75,
+      "vertices": 75,
+      "boundsMetres": [
+        [
+          0.0135716,
+          1.4047100000000001,
+          0.0922971
+        ],
+        [
+          0.0185631,
+          1.4114900000000001,
+          0.09765900000000001
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          13.5716,
+          -97.659,
+          1404.71
+        ],
+        [
+          18.5631,
+          -92.2971,
+          1411.49
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3675",
+      "sourceId": "FMA55562",
+      "representationId": "BP23812",
+      "sourceVersion": "4.3",
+      "path": "FJ3675.obj",
+      "bytes": 8182,
+      "sha256": "f8c9b50c20f355868e1b522ddb38cf8f25779afd40fc7505012361964ea1bc00",
+      "side": "right",
+      "anatomyId": "endo:FMA55562",
+      "ownerSourceId": "FMA55562",
+      "family": "parathyroid",
+      "moduleId": "endocrine:thyroid43",
+      "sourceType": "glándula",
+      "triangles": 146,
+      "faces": 146,
+      "sourcePositionCount": 75,
+      "vertices": 75,
+      "boundsMetres": [
+        [
+          -0.0176085,
+          1.3861400000000001,
+          0.0915362
+        ],
+        [
+          -0.0126178,
+          1.39278,
+          0.0957432
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -17.6085,
+          -95.7432,
+          1386.14
+        ],
+        [
+          -12.6178,
+          -91.5362,
+          1392.78
+        ]
+      ]
+    },
+    {
+      "elementId": "FJ3676",
+      "sourceId": "FMA55560",
+      "representationId": "BP23811",
+      "sourceVersion": "4.3",
+      "path": "FJ3676.obj",
+      "bytes": 7796,
+      "sha256": "aa3bd725d5702aeaab656f42c0d3c423b609628c00680a4be113c01e3d9c8d1a",
+      "side": "right",
+      "anatomyId": "endo:FMA55560",
+      "ownerSourceId": "FMA55560",
+      "family": "parathyroid",
+      "moduleId": "endocrine:thyroid43",
+      "sourceType": "glándula",
+      "triangles": 136,
+      "faces": 136,
+      "sourcePositionCount": 73,
+      "vertices": 73,
+      "boundsMetres": [
+        [
+          -0.0196652,
+          1.40568,
+          0.09169450000000001
+        ],
+        [
+          -0.0144224,
+          1.41252,
+          0.0978269
+        ]
+      ],
+      "sourceBoundsMillimetres": [
+        [
+          -19.6652,
+          -97.8269,
+          1405.68
+        ],
+        [
+          -14.4224,
+          -91.6945,
+          1412.52
+        ]
+      ]
+    }
+  ]
+}

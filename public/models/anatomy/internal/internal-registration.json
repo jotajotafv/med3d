@@ -1,0 +1,58 @@
+{
+  "frame": "bodyparts3d-4.0-male",
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "originals": 32,
+  "bp40": 25,
+  "bp43": 7,
+  "allHeadersAndHashesVerified": true,
+  "withinBodyFrame": true,
+  "lateralCentroidsVerified": true,
+  "cervicalControls": [
+    {
+      "elementId": "FJ2808",
+      "geometryRecordsIdentical": true,
+      "source40Sha256": "48cd41bcd4044c7013ba10c971e212766afc970408f51875f9ef8e8c407c0687",
+      "source43Sha256": "7ee325a7e90428925aa6885abb683d9e06df2fe13f8f35f398a2ae6de1ec2a21",
+      "recordCount": 5330
+    },
+    {
+      "elementId": "FJ2541",
+      "geometryRecordsIdentical": true,
+      "source40Sha256": "eb8c075b6601f2d543532f4a2eb4a39b03430af858da225ba7887e52182272ed",
+      "source43Sha256": "a070da7f54750cdeb3d169f13f0f2f0c0c420c253aba9c3ce42fecc36cb4c799",
+      "recordCount": 10210
+    }
+  ],
+  "additionalRegistration": "none",
+  "method": "Native 4.0 coordinates; seven 4.3 cervical additions with two exactly identical nearby geometric controls (positions, normals and faces). No fitting, scaling per organ or manual translation.",
+  "limitations": [
+    "Compatibility checks establish use of the same native coordinate frame, not clinical validation.",
+    "No registration from this cervical check is extrapolated to HRA or Z-Anatomy.",
+    "Source seams, overlaps, open boundaries and anatomical variability are retained."
+  ]
+}

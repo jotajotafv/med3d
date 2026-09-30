@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "id": "med3d-urinary",
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "nodes": [
+    {
+      "id": "urinary",
+      "name": "Sistema urinario",
+      "anatomicalName": "Sistema urinario",
+      "aliases": [
+        "urinary",
+        "Systema urinarium",
+        "Sistema urinario"
+      ],
+      "systemId": "urinary",
+      "regionId": "urinary",
+      "children": [
+        "uri:abdomen",
+        "uri:abdomen-pelvis",
+        "uri:pelvis"
+      ],
+      "kind": "system",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Systema urinarium",
+      "internalType": "sistema",
+      "bounds": [
+        [
+          -0.0875754,
+          0.708569,
+          0.0565253
+        ],
+        [
+          0.09038299999999999,
+          1.09044,
+          0.184174
+        ]
+      ]
+    },
+    {
+      "id": "uri:abdomen",
+      "name": "Abdomen",
+      "anatomicalName": "Abdomen",
+      "aliases": [],
+      "systemId": "urinary",
+      "regionId": "uri:abdomen",
+      "children": [
+        "uri:FMA7204",
+        "uri:FMA7205"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Abdomen",
+      "internalType": "región",
+      "parentId": "urinary",
+      "bounds": [
+        [
+          -0.0875754,
+          0.966812,
+          0.0595914
+        ],
+        [
+          0.09038299999999999,
+          1.09044,
+          0.11185500000000001
+        ]
+      ]
+    },
+    {
+      "id": "uri:abdomen-pelvis",
+      "name": "Abdomen y pelvis",
+      "anatomicalName": "Abdomen y pelvis",
+      "aliases": [],
+      "systemId": "urinary",
+      "regionId": "uri:abdomen-pelvis",
+      "children": [
+        "uri:FMA15571",
+        "uri:FMA15572"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Abdomen et pelvis",
+      "internalType": "región",
+      "parentId": "urinary",
+      "bounds": [
+        [
+          -0.0727935,
+          0.811203,
+          0.0603459
+        ],
+        [
+          0.07937659999999999,
+          1.07257,
+          0.11975100000000001
+        ]
+      ]
+    },
+    {
+      "id": "uri:pelvis",
+      "name": "Pelvis y región perineal",
+      "anatomicalName": "Pelvis y región perineal",
+      "aliases": [],
+      "systemId": "urinary",
+      "regionId": "uri:pelvis",
+      "children": [
+        "uri:FMA15900",
+        "uri:FMA19667"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "latin": "Pelvis et perineum",
+      "internalType": "región",
+      "parentId": "urinary",
+      "bounds": [
+        [
+          -0.0341466,
+          0.708569,
+          0.0565253
+        ],
+        [
+          0.0326238,
+          0.8299890000000001,
+          0.184174
+        ]
+      ]
+    },
+    {
+      "id": "uri:FMA7204",
+      "name": "Riñón derecho",
+      "anatomicalName": "Riñón derecho",
+      "aliases": [
+        "right kidney",
+        "FMA7204",
+        "FJ3147"
+      ],
+      "systemId": "urinary",
+      "regionId": "uri:abdomen",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [
+        "bp3d_FMA7204_FJ3147"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7204",
+      "latin": "Ren dexter",
+      "side": "right",
+      "family": "kidney",
+      "internalType": "órgano",
+      "explosionRegionId": "abdomen-pelvis",
+      "parentId": "uri:abdomen",
+      "bounds": [
+        [
+          -0.0875754,
+          0.966812,
+          0.06470010000000001
+        ],
+        [
+          -0.030427600000000003,
+          1.07124,
+          0.11185500000000001
+        ]
+      ]
+    },
+    {
+      "id": "uri:FMA7205",
+      "name": "Riñón izquierdo",
+      "anatomicalName": "Riñón izquierdo",
+      "aliases": [
+        "left kidney",
+        "FMA7205",
+        "FJ3145"
+      ],
+      "systemId": "urinary",
+      "regionId": "uri:abdomen",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [
+        "bp3d_FMA7205_FJ3145"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA7205",
+      "latin": "Ren sinister",
+      "side": "left",
+      "family": "kidney",
+      "internalType": "órgano",
+      "explosionRegionId": "abdomen-pelvis",
+      "parentId": "uri:abdomen",
+      "bounds": [
+        [
+          0.0328399,
+          0.9844940000000001,
+          0.0595914
+        ],
+        [
+          0.09038299999999999,
+          1.09044,
+          0.10018500000000001
+        ]
+      ]
+    },
+    {
+      "id": "uri:FMA15571",
+      "name": "Uréter derecho",
+      "anatomicalName": "Uréter derecho",
+      "aliases": [
+        "right ureter",
+        "FMA15571",
+        "FJ3146"
+      ],
+      "systemId": "urinary",
+      "regionId": "uri:abdomen-pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [
+        "bp3d_FMA15571_FJ3146"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA15571",
+      "latin": "Ureter dexter",
+      "side": "right",
+      "family": "ureter",
+      "internalType": "conducto",
+      "explosionRegionId": "abdomen-pelvis",
+      "parentId": "uri:abdomen-pelvis",
+      "bounds": [
+        [
+          -0.0727935,
+          0.811203,
+          0.0603459
+        ],
+        [
+          -0.009399290000000001,
+          1.057,
+          0.11896899999999999
+        ]
+      ]
+    },
+    {
+      "id": "uri:FMA15572",
+      "name": "Uréter izquierdo",
+      "anatomicalName": "Uréter izquierdo",
+      "aliases": [
+        "left ureter",
+        "FMA15572",
+        "FJ3144"
+      ],
+      "systemId": "urinary",
+      "regionId": "uri:abdomen-pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [
+        "bp3d_FMA15572_FJ3144"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA15572",
+      "latin": "Ureter sinister",
+      "side": "left",
+      "family": "ureter",
+      "internalType": "conducto",
+      "explosionRegionId": "abdomen-pelvis",
+      "parentId": "uri:abdomen-pelvis",
+      "bounds": [
+        [
+          0.0232688,
+          0.818039,
+          0.061611
+        ],
+        [
+          0.07937659999999999,
+          1.07257,
+          0.11975100000000001
+        ]
+      ]
+    },
+    {
+      "id": "uri:FMA15900",
+      "name": "Vejiga urinaria",
+      "anatomicalName": "Vejiga urinaria",
+      "aliases": [
+        "urinary bladder",
+        "FMA15900",
+        "FJ3149"
+      ],
+      "systemId": "urinary",
+      "regionId": "uri:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [
+        "bp3d_FMA15900_FJ3149"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA15900",
+      "latin": "Vesica urinaria",
+      "side": "midline",
+      "family": "bladder",
+      "internalType": "órgano",
+      "explosionRegionId": "pelvis",
+      "parentId": "uri:pelvis",
+      "bounds": [
+        [
+          -0.0341466,
+          0.789732,
+          0.0565253
+        ],
+        [
+          0.0326238,
+          0.8299890000000001,
+          0.12824000000000002
+        ]
+      ]
+    },
+    {
+      "id": "uri:FMA19667",
+      "name": "Uretra masculina disponible",
+      "anatomicalName": "Uretra masculina disponible",
+      "aliases": [
+        "urethra",
+        "FMA19667",
+        "FJ3148"
+      ],
+      "systemId": "urinary",
+      "regionId": "uri:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "urinary:organs"
+      ],
+      "meshNames": [
+        "bp3d_FMA19667_FJ3148"
+      ],
+      "relatedIds": [],
+      "sourceId": "FMA19667",
+      "latin": "Urethra masculina",
+      "side": "midline",
+      "family": "urethra",
+      "internalType": "conducto",
+      "explosionRegionId": "pelvis",
+      "parentId": "uri:pelvis",
+      "bounds": [
+        [
+          -0.00160824,
+          0.708569,
+          0.0799527
+        ],
+        [
+          0.000313633,
+          0.792512,
+          0.184174
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "urinary:organs",
+      "path": "models/anatomy/urinary/organs.glb",
+      "systemId": "urinary",
+      "regionId": "urinary",
+      "frameId": "bodyparts3d-4.0-male",
+      "bytes": 94872,
+      "sha256": "2b979002421ee0944b5f2ac38808f6069c2a8254c8ad441ac5240108db9568ce",
+      "meshCount": 6,
+      "triangles": 9944,
+      "bounds": [
+        [
+          -0.0875754,
+          0.708569,
+          0.0565253
+        ],
+        [
+          0.09038299999999999,
+          1.09044,
+          0.184174
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-urinary"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "bodyparts3d-4.0-urinary",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Selección macroscópica curada; originales e identidades preservados.",
+        "Transformación común (x,y,z) → (x,z,-y)/1000. Sin ajuste, deformación, reflejo ni decimación adicional.",
+        "Posiciones Float32; Meshopt y cuantización exclusiva de normales."
+      ]
+    }
+  ],
+  "coverage": {
+    "title": "Sistema urinario · cobertura disponible",
+    "structures": 6,
+    "meshes": 6,
+    "note": "Sistema urinario: 6 unidades anatómicas, 0 componentes y 6 mallas fuente.",
+    "limitations": [
+      "Riñones completos como superficies externas; corteza, médula, pelvis renal y cálices sin piezas separadas.",
+      "Uretra de la fuente masculina; no se fabrican conexiones ni se duplican órganos bajo Reproductor.",
+      "Geometría educativa del cuerpo fuente; no constituye validación clínica."
+    ]
+  }
+}

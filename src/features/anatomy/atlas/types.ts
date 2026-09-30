@@ -30,6 +30,8 @@ export interface AnatomyNode {
   respiratoryClass?: 'cartilage' | 'trachea' | 'main-bronchus' | 'bronchial-tree' | 'lung' | 'lobe' | 'parenchyma';
   /** Digestive identity; never an organ count derived from geometric pieces. */
   digestiveType?: string;
+  /** Macroscopic organ or component identity for the four internal systems. */
+  internalType?: string;
   digestiveClass?: 'tract' | 'liver' | 'biliary' | 'gland';
   side?: 'left' | 'right' | 'midline';
   relatedIds: string[];

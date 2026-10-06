@@ -1,6 +1,6 @@
 import SiteLink from "../../components/SiteLink";
 import {ArrowRight,ArrowUpRight,Cube,Stack,Heartbeat,FirstAid,BookOpen,Check} from "@phosphor-icons/react";
-import {AnatomyHero} from "../anatomy/AnatomyHero";
+import HomeHero from "./HomeHero";
 import "./home.css";
 const systems=[
 {id:"heart",name:"Corazón",latin:"Cor",system:"Cardiovascular",description:"Cavidades, válvulas y conexiones. Examina el corazón pieza a pieza.",num:"01"},
@@ -10,13 +10,7 @@ const systems=[
 const emergencies=[["atragantamiento","Atragantamiento","Reconocer una obstrucción"],["hemorragias","Hemorragias","Controlar el sangrado"],["quemaduras","Quemaduras","Enfriar y proteger"],["fracturas","Fracturas","Evitar más daño"],["desmayos","Desmayos","Vigilar la recuperación"],["convulsiones","Convulsiones","Proteger y acompañar"],["botiquin","Botiquín","Preparar lo esencial"]];
 export default function HomePage(){
 return <main className="home-page">
-<section className="home-hero" aria-labelledby="hero-title">
-<div className="hero-copy"><p className="home-eyebrow"><span className="tiny-rule"/>UNA NUEVA PERSPECTIVA DE LA MEDICINA</p>
-<h1 id="hero-title">Explora el cuerpo.<br/><span>Comprende<br className="hero-break"/> la medicina.</span></h1>
-<p className="hero-description">Anatomía interactiva, procedimientos y primeros auxilios. El conocimiento médico, en otra dimensión.</p>
-<div className="hero-actions"><SiteLink href="/anatomia" className="hero-explore">Explorar anatomía <ArrowUpRight size={19}/></SiteLink><SiteLink href="#plataforma" className="hero-discover">Descubrir la plataforma <ArrowRight size={16}/></SiteLink></div></div>
-<div className="hero-scene"><AnatomyHero/></div>
-</section>
+<HomeHero/>
 <section className="pathways" id="plataforma" aria-labelledby="pathways-title">
 <div className="pathways-intro"><h2 id="pathways-title">Tres formas de comprender.</h2><p>Una experiencia distinta para cada forma de aprender.</p></div>
 <div className="pathway-list">

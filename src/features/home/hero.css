@@ -37,10 +37,6 @@ body:has(.home-page){background:#050505}
 .home-motion-toggle{border:0;background:transparent;color:#a8a8a8;display:inline-flex;align-items:center;gap:9px;padding:12px 0 12px 12px;font-size:10px;min-height:44px}
 .home-motion-toggle:hover,.home-scroll-link:hover{color:#fff}
 .home-scene-status{font-size:10px;color:#aaa;max-width:245px;text-align:right}
-.home-page .organ-entry,.home-page .firstaid-feature{background:#101112}
-.home-page .organ-entry:hover{background:#191b1c}
-.home-page .pathways{border-top:1px solid #252525}
-body:has(.home-page) .site-footer{--muted:#aaa;--border:#282828;--accent:#b6c8ca}
 @media(max-width:1150px){
  .home-page{--hero-gutter:36px}
  .site-header--home .site-header-inner{gap:36px;padding-inline:36px}

@@ -2,7 +2,7 @@ import SiteLink from "./SiteLink";
 import {useEffect,useRef,useState} from "react";
 import {Link,useRouterState} from "@tanstack/react-router";
 import {List,X,ArrowUpRight} from "@phosphor-icons/react";
-const links=[["/","Inicio"],["/anatomia","Anatomía 3D"],["/procedimientos","Procedimientos"],["/primeros-auxilios","Primeros auxilios"],["/acerca","Acerca del proyecto"]] as const;
+const links=[["/","Inicio"],["/anatomia","Anatomía 3D"],["/acerca","Acerca del proyecto"]] as const;
 export default function SiteHeader(){
  const [open,setOpen]=useState(false);const toggle=useRef<HTMLButtonElement>(null);
  const path=useRouterState({select:s=>s.location.pathname.replace(new RegExp('^'+import.meta.env.BASE_URL.replace(/\/$/,'')), '') || '/'});

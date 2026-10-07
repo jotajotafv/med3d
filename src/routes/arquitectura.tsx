@@ -1,3 +1,5 @@
-import {createFileRoute} from "@tanstack/react-router";
-import ArchitecturePage from "../features/about/ArchitecturePage";
-export const Route=createFileRoute("/arquitectura")({head:()=>({meta:[{title:"Arquitectura y evolución | MED3D"}]}),component:ArchitecturePage});
+import {createFileRoute, redirect} from '@tanstack/react-router';
+
+export const Route = createFileRoute('/arquitectura')({
+  beforeLoad: () => {throw redirect({to: '/acerca', hash: 'metodologia', replace: true});},
+});

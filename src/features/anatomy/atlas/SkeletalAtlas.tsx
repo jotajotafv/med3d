@@ -19,6 +19,7 @@ import {ocularContextIds} from './ocular-education';
 import {composeBodyCatalog} from './body-catalog';
 import '../anatomy.css';
 import './atlas.css';
+import './anatomy-ui.css';
 
 const Scene = lazy(() => import('./AtlasScene'));
 const CATALOG_PATHS = ['models/anatomy/skeletal/catalog.json','models/anatomy/muscular/catalog.json','models/anatomy/nervous/catalog.json','models/anatomy/cardiovascular/catalog.json','models/anatomy/respiratory/catalog.json','models/anatomy/digestive/catalog.json','models/anatomy/urinary/catalog.json','models/anatomy/endocrine/catalog.json','models/anatomy/lymphatic/catalog.json','models/anatomy/reproductive/catalog.json','models/anatomy/integumentary/catalog.json','models/anatomy/ocular/catalog.json'];

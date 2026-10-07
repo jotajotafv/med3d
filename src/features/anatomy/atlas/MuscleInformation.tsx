@@ -1,3 +1,4 @@
+import {publicText} from './public-information';
 import {ArrowSquareOut} from '@phosphor-icons/react';
 import SiteLink from '../../../components/SiteLink';
 import type {AnatomyNode} from './types';
@@ -18,14 +19,14 @@ export default function MuscleInformation({node}: {node: AnatomyNode}) {
       : detail.attachmentScope === 'origin-and-insertion'
       ? 'El origen y la inserción corresponden a esta porción; la inervación se resume para el músculo.'
       : 'La inserción y la inervación descritas corresponden al músculo; el origen corresponde a esta porción o cabeza.'}</p>}
-    <h3>Descripción</h3><p>{detail.description}</p>
+    <h3>Descripción</h3><p>{detail.scope === 'component' ? `${detail.name}. Forma parte de ${detail.muscleName.toLowerCase()}.` : publicText(detail.description)}</p>
     <h3>Función</h3><p>{detail.function}</p>
     <h3>Acción</h3><p>{detail.action}</p>
     <h3>Origen</h3><ul>{detail.origins.map(item => <li key={item.label}>{item.label}</li>)}</ul>
     <h3>Inserción</h3><ul>{detail.insertions.map(item => <li key={item.label}>{item.label}</li>)}</ul>
     <h3>Inervación</h3><p>{detail.innervation}</p>
-    <h3>Relaciones anatómicas</h3><p>{detail.relations}</p>
-    <p>«Mostrar contexto» presenta los huesos disponibles de origen e inserción documentados, incluidos los de la línea media cuando corresponden. Cartílagos, fascias y ligamentos permanecen como referencias textuales. Las zonas exactas de fijación no están señaladas en el modelo.</p>
+    <h3>Relaciones anatómicas</h3><p>{publicText(detail.relations)}</p>
+    <p>«Mostrar contexto» reúne los huesos relacionados con el origen y la inserción. Las zonas exactas de fijación no están señaladas en el modelo.</p>
     <div className="atlas-education-sources"><span>Fuentes de la ficha</span>{detail.sources.map(source =>
       <SiteLink key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.title}<ArrowSquareOut size={13}/></SiteLink>,
     )}</div>

@@ -82,7 +82,7 @@ body:has(.about-page) .site-footer-bottom { color: var(--muted); }
 .about-technology { border-top: 1px solid var(--about-line); margin-top: 48px; padding-top: 30px; display: grid; grid-template-columns: 1fr 2fr; gap: 32px; align-items: center; }
 .about-technology .about-eyebrow { font-size: 9px; margin-bottom: 10px; }
 .about-technology h3 { font-size: 22px; font-weight: 450; letter-spacing: -.03em; }
-.about-technology ul { list-style: none; display: flex; flex-wrap: wrap; gap: 18px 25px; padding: 0; margin: 0; }
+.about-technology>p { max-width: 470px; font-size: 13px; }
 .about-technology li { color: #c5cdd2; font-size: 13px; }
 .about-limits { display: grid; grid-template-columns: 1fr 1fr; gap: 0 56px; margin: 0; }
 .about-limits>div { padding: 22px 0; border-top: 1px solid var(--about-line); }

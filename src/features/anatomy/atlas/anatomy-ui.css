@@ -133,6 +133,9 @@ body:has(.atlas-phase2) .site-footer-bottom { color: var(--muted); }
 .atlas-phase2 :is(.atlas-property label, .atlas-property strong, .atlas-source p, .atlas-source details, .atlas-coverage, .atlas-technical, .atlas-context-actions p) { color: var(--ui-muted); }
 .atlas-phase2 :is(.atlas-source>span, .atlas-source p.atlas-source-note, .atlas-property small, .atlas-technical dt) { color: var(--ui-dim); }
 .atlas-phase2 :is(.atlas-source strong, .atlas-coverage>summary, .atlas-technical>summary, .atlas-technical dd) { color: #cfd7dc; }
+.atlas-phase2 .atlas-coverage { margin-top: 26px; padding-top: 22px; }
+.atlas-phase2 .atlas-coverage h3 { margin: 0 0 14px; font-size: 11px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: #cfd7dc; }
+.atlas-phase2 .atlas-coverage p { margin: 0 0 14px; line-height: 1.8; }
 .atlas-phase2 .atlas-context-note { color: var(--ui-muted); background: #ffffff04; border-color: #86bec86b; }
 .atlas-phase2 .atlas-bottom-note { color: var(--ui-dim); font-size: 10px; }
 .atlas-phase2 .atlas-reference-footer { color: var(--ui-dim); padding-block: 8px 6px; }

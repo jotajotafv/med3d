@@ -31,7 +31,7 @@ export default function AtlasOverview() {
       <div><dt>Sistemas corporales</dt><dd>{overview?.systems.length ?? '—'}</dd></div>
       <div><dt>Estructuras anatómicas</dt><dd>{overview?.structures.toLocaleString('es') ?? '—'}</dd></div>
     </dl>
-    <p className="about-coverage-note">Cobertura parcial de un cuerpo masculino de referencia. El recuento distingue estructuras, componentes y grupos anatómicos; incluye los ojos parciales dentro del sistema nervioso.</p>
+    <p className="about-coverage-note">Representación educativa parcial del cuerpo humano, basada en fuentes anatómicas abiertas y documentadas.</p>
     {!overview && <p className="about-data-status" role="status">{failed ? <>No se pudo consultar la cobertura. <button onClick={() => setAttempt(value => value + 1)}>Reintentar</button></> : 'Consultando la cobertura del atlas…'}</p>}
     {overview && <ul className="about-systems" aria-label="Sistemas disponibles">{overview.systems.map((system, index) => <li key={system.id}><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>{system.name.replace(/^Sistema /, '')}</li>)}</ul>}
   </div>;

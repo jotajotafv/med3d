@@ -1,0 +1,171 @@
+/* Organ explorer presentation only; the shared atlas and Three.js scene are unchanged. */
+body:has(.organ-explorer) {
+  --bg: #050607;
+  --panel: #0b0d0f;
+  --border: #ffffff14;
+  --text: #f0f2f3;
+  --muted: #a1a8ae;
+  background: var(--bg);
+}
+body:has(.organ-explorer) .site-header { background: #050607f5; border-color: var(--border); }
+body:has(.organ-explorer) .site-header-inner { max-width: 1800px; padding-inline: 32px; gap: 52px; }
+body:has(.organ-explorer) .site-wordmark { font-size: 28px; letter-spacing: -1.3px; }
+body:has(.organ-explorer) .brand-rule { display: none; }
+body:has(.organ-explorer) .main-nav { gap: 32px; }
+body:has(.organ-explorer) .main-nav>a { font-size: 13px; }
+body:has(.organ-explorer) .main-nav>a[aria-current=page]::after { height: 1px; bottom: 13px; }
+body:has(.organ-explorer) .nav-atlas { color: #d4dadd; border-color: #ffffff30; font-size: 12px; }
+
+.organ-explorer {
+  --organ-line: #ffffff14;
+  --organ-line-strong: #ffffff24;
+  --organ-muted: #a1a8ae;
+  --organ-dim: #879096;
+  --organ-tree-width: 220px;
+  --organ-info-width: 292px;
+  padding: 24px 24px 18px;
+  color: #f0f2f3;
+}
+.organ-explorer .atlas-heading { margin-bottom: 16px; align-items: center; }
+.organ-explorer .anatomy-eyebrow { color: var(--organ-dim); font-size: 9px; font-weight: 500; letter-spacing: .19em; }
+.organ-explorer .atlas-heading h1 { display: flex; align-items: baseline; gap: 20px; margin-top: 6px; font-size: 32px; font-weight: 450; letter-spacing: -.04em; line-height: 1.15; }
+.organ-heading-title h1>span { font-size: 13px; font-weight: 400; font-style: italic; letter-spacing: 0; color: var(--organ-muted); }
+.organ-explorer .atlas-edition { gap: 8px; color: var(--organ-muted); font-size: 11px; letter-spacing: 0; }
+.organ-explorer .atlas-edition:hover { color: #edf3f5; }
+.organ-navigation { display: flex; gap: 30px; border-bottom: 1px solid var(--organ-line); margin-bottom: 16px; }
+.organ-navigation button { position: relative; border: 0; border-bottom: 1px solid transparent; background: none; padding: 11px 0 13px; color: var(--organ-muted); font-size: 11px; letter-spacing: .11em; text-transform: uppercase; margin-bottom: -1px; }
+.organ-navigation button:not(:last-child)::after { content: ''; position: absolute; right: -16px; top: 15px; width: 1px; height: 10px; background: var(--organ-line); }
+.organ-navigation button:hover { color: #f0f2f3; }
+.organ-navigation button.is-active { color: #f0f2f3; border-bottom-color: #86bec8; }
+.organ-explorer .atlas-workspace { position: relative; grid-template-columns: var(--organ-tree-width) minmax(0, 1fr) var(--organ-info-width); height: calc(100svh - 255px); min-height: 510px; max-height: none; border: 1px solid var(--organ-line); border-radius: 5px; background: var(--bg); }
+.organ-explorer .atlas-workspace.is-details-collapsed { grid-template-columns: var(--organ-tree-width) minmax(0, 1fr); }
+.organ-explorer .atlas-workspace.is-details-collapsed .atlas-detail { display: none; }
+.organ-explorer :is(.atlas-sidebar, .atlas-detail) { background: #090b0d; border-color: var(--organ-line); }
+.organ-explorer .atlas-detail { position: static; display: flex; width: auto; border-radius: 0; box-shadow: none; }
+.organ-explorer .atlas-panel-heading { height: 46px; padding-inline: 16px; color: var(--organ-dim); border-color: var(--organ-line); font-size: 9px; font-weight: 500; letter-spacing: .16em; }
+.organ-explorer .organ-detail-close { display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; padding: 5px; background: transparent; border: 0; color: var(--organ-muted); }
+.organ-explorer .organ-detail-close:hover { color: #fff; background: #ffffff08; }
+.organ-explorer .atlas-search { margin: 14px 12px 6px; height: 38px; background: #080a0c; border-color: var(--organ-line-strong); border-radius: 4px; color: var(--organ-muted); }
+.organ-explorer .atlas-search input { color: #eef1f2; font-size: 11px; }
+.organ-explorer .atlas-search input::placeholder { color: var(--organ-dim); }
+.organ-explorer .atlas-search input:focus-visible { outline: none; }
+.organ-explorer .atlas-search:focus-within { border-color: #86bec880; box-shadow: 0 0 0 2px #86bec80b; }
+.organ-explorer .atlas-tree-heading { color: var(--organ-dim); padding: 16px 16px 10px; font-size: 8px; letter-spacing: .12em; }
+.organ-explorer .atlas-tree-heading button { color: var(--organ-muted); }
+.organ-explorer :is(.atlas-tree, .atlas-detail-content) { scrollbar-width: thin; scrollbar-color: #ffffff29 transparent; overscroll-behavior: contain; }
+.organ-explorer .atlas-tree-row { color: #c1c7cb; border-radius: 3px; min-height: 36px; }
+.organ-explorer .atlas-tree-row:hover { background: #ffffff06; }
+.organ-explorer .atlas-tree-row.is-selected { background: #ffffff0a; color: #f1f4f5; }
+.organ-explorer .atlas-tree-row.is-selected::before { background: #86bec8; }
+.organ-explorer :is(.atlas-tree-toggle, .atlas-tree-eye) { color: var(--organ-dim); }
+.organ-explorer .atlas-tree-dot { background: #626d74; }
+.organ-explorer .atlas-tree-row.is-hidden .atlas-tree-label { color: #80898f; }
+.organ-explorer .atlas-search-result { color: #e0e5e8; }
+.organ-explorer .atlas-search-result:hover,
+.organ-explorer .atlas-search-result.is-selected { background: #ffffff09; box-shadow: inset 2px 0 #86bec8; }
+.organ-explorer :is(.atlas-search-result small, .atlas-empty) { color: var(--organ-dim); }
+
+/* Only the container changes. Canvas dimensions continue to follow its existing resize mechanism. */
+.organ-explorer .atlas-viewport { background: #050607; }
+.organ-explorer .atlas-viewbar { height: 46px; padding-inline: 14px; border-color: #ffffff0a; gap: 10px; }
+.organ-explorer .atlas-viewbar>span { flex: 1; color: var(--organ-dim); font-size: 10px; overflow: hidden; text-overflow: ellipsis; }
+.organ-explorer .atlas-viewbar button { justify-content: center; width: 32px; height: 32px; padding: 6px; border: 1px solid var(--organ-line-strong); border-radius: 4px; background: #0d1012; color: #c2c9ce; flex-shrink: 0; }
+.organ-explorer .atlas-viewbar button:hover { color: #fff; border-color: #ffffff40; }
+.organ-explorer .atlas-viewbar .organ-detail-toggle[aria-expanded=true] { color: #a6ccd3; }
+.organ-explorer .atlas-viewbar .organ-structures-toggle { display: none; }
+.organ-explorer .atlas-canvas { inset: 47px 0 112px; }
+.organ-explorer .atlas-view-controls { right: 14px; top: calc(50% - 95px); padding: 3px; background: #0b0e10e8; border-color: var(--organ-line-strong); border-radius: 5px; }
+.organ-explorer .atlas-view-controls button { padding: 9px; color: #c5cdd2; }
+.organ-explorer .atlas-view-controls button:hover { background: #ffffff0b; color: #fff; }
+.organ-explorer .atlas-view-controls>span { background: var(--organ-line); }
+.organ-explorer .atlas-explode-bar { left: 18px; right: 18px; bottom: 39px; padding: 13px 14px; gap: 14px; background: #0c0f11ed; border-color: var(--organ-line-strong); border-radius: 5px; backdrop-filter: blur(12px); }
+.organ-explorer .atlas-explode-bar>div:first-child { color: #d2d9de; font-size: 11px; gap: 7px; }
+.organ-explorer .atlas-explode-bar strong { color: var(--organ-muted); font-family: var(--mono); }
+.organ-explorer input[type=range] { accent-color: #a8ccd2; }
+.organ-explorer .atlas-explode-level { background: #060809; border-color: var(--organ-line); }
+.organ-explorer .atlas-explode-level button { padding: 5px 7px; color: var(--organ-dim); }
+.organ-explorer .atlas-explode-level .is-active { color: #e0eaed; background: #20282c; }
+.organ-explorer .atlas-interaction-hint { bottom: 16px; color: #879198; pointer-events: none; }
+.organ-explorer .atlas-interaction-hint span { color: #9aa3a9; }
+.organ-explorer .atlas-interaction-hint i { background: var(--organ-line-strong); }
+.organ-explorer .model-loading { color: var(--organ-muted); }
+
+.organ-explorer .atlas-detail-content { padding: 22px 20px 24px; }
+.organ-explorer .atlas-detail-content>.anatomy-eyebrow { font-size: 8px; color: var(--organ-dim); }
+.organ-explorer .atlas-detail-content h2 { color: #f0f2f3; font-size: 26px; line-height: 1.18; font-weight: 450; margin-top: 10px; }
+.organ-explorer .atlas-latin { color: var(--organ-muted); font-size: 12px; margin-bottom: 20px; min-height: 0; }
+.organ-explorer .atlas-latin:empty { display: none; }
+.organ-explorer .atlas-description { color: #aeb6bc; font-size: 12px; line-height: 1.75; margin-bottom: 20px; }
+.organ-explorer .atlas-education { border-color: var(--organ-line); padding-top: 18px; margin-bottom: 22px; }
+.organ-explorer .atlas-education dl { grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 22px; }
+.organ-explorer .atlas-education dt { color: var(--organ-dim); font-size: 8px; letter-spacing: .12em; margin-bottom: 6px; }
+.organ-explorer .atlas-education dd { color: #cbd2d7; font-size: 11px; line-height: 1.6; }
+.organ-explorer :is(.atlas-education h3, .atlas-source h3) { color: #e1e6e9; font-size: 12px; font-weight: 500; margin: 20px 0 8px; }
+.organ-explorer .atlas-education p { color: #adb6bc; font-size: 12px; line-height: 1.75; }
+.organ-explorer .atlas-related { gap: 0; }
+.organ-explorer .atlas-related button { border: 0; border-bottom: 1px solid var(--organ-line); border-radius: 0; background: transparent; color: #c6ced3; font-size: 11px!important; padding: 10px 0; }
+.organ-explorer .atlas-related button:hover { background: #ffffff04; color: #fff; }
+.organ-explorer .atlas-education>a { color: #a7c9d0; font-size: 10px; line-height: 1.6; margin-top: 18px; }
+.organ-explorer .atlas-select-hint { background: transparent; border: 0; border-top: 1px solid var(--organ-line); border-radius: 0; padding: 18px 0 0; color: var(--organ-dim); margin-bottom: 22px; }
+.organ-explorer .atlas-select-hint p { color: var(--organ-muted); font-size: 11px; }
+.organ-explorer .atlas-selection-actions { gap: 6px; margin-bottom: 22px; }
+.organ-explorer .atlas-selection-actions button { background: #0d1012; border-color: var(--organ-line-strong); color: #bdc6cd; padding: 9px 4px; }
+.organ-explorer .atlas-selection-actions button:hover,
+.organ-explorer .atlas-selection-actions button.is-active { background: #182126; color: #d7e7eb; }
+.organ-explorer .atlas-property { border-color: var(--organ-line); padding: 18px 0; }
+.organ-explorer .atlas-property>label { color: #cbd3d9; }
+.organ-explorer .atlas-property strong { color: var(--organ-muted); font-family: var(--mono); }
+.organ-explorer .atlas-property small { color: var(--organ-dim); font-size: 10px; }
+.organ-explorer .atlas-show-all { background: #10171a; color: #b9d4d9; border-color: var(--organ-line-strong); }
+.organ-explorer .atlas-source { border-color: var(--organ-line); padding-top: 0; }
+.organ-explorer .atlas-source p { color: var(--organ-muted); font-size: 11px; line-height: 1.75; margin: 10px 0; }
+.organ-explorer .atlas-source strong { color: #d2d9de; font-weight: 500; }
+.organ-explorer .atlas-source p.atlas-source-note { color: var(--organ-muted); font-size: 10px; }
+.organ-source-links { display: flex; gap: 20px; flex-wrap: wrap; }
+.organ-explorer .atlas-source a { color: #a7c9d0; font-size: 10px; margin-top: 2px; }
+.organ-explorer .atlas-scope { color: var(--organ-dim); border-top: 1px solid var(--organ-line); padding-top: 18px; margin-top: 20px; font-size: 10px; line-height: 1.7; }
+
+@media (min-width: 1550px) {
+  .organ-explorer { --organ-tree-width: 240px; --organ-info-width: 310px; }
+}
+@media (max-width: 1180px) {
+  .organ-explorer { --organ-tree-width: 196px; --organ-info-width: 254px; padding: 20px 18px 16px; }
+  .organ-explorer .atlas-detail-content { padding: 20px 16px; }
+  .organ-explorer .atlas-explode-bar { left: 12px; right: 12px; gap: 9px; padding: 12px; }
+  body:has(.organ-explorer) .site-header-inner { padding-inline: 24px; gap: 32px; }
+}
+@media (max-width: 960px) {
+  .organ-explorer .atlas-workspace { grid-template-columns: minmax(0, 1fr) var(--organ-info-width); }
+  .organ-explorer .atlas-workspace.is-details-collapsed { grid-template-columns: minmax(0, 1fr); }
+  .organ-explorer .atlas-sidebar { display: none; }
+  .organ-explorer .atlas-sidebar.is-open { display: flex; position: absolute; inset: 0 auto 0 0; width: 280px; max-width: 84%; border-right: 1px solid var(--organ-line-strong); box-shadow: 16px 0 40px #0008; z-index: 5; }
+  .organ-explorer .atlas-mobile-close { color: var(--organ-muted); }
+  .organ-explorer .atlas-viewbar .organ-structures-toggle { display: flex; }
+}
+@media (max-width: 768px) {
+  .organ-explorer { padding: 18px 12px 14px; }
+  .organ-explorer .atlas-heading { margin-bottom: 12px; }
+  .organ-explorer .atlas-heading h1 { font-size: 29px; gap: 14px; }
+  .organ-explorer .atlas-heading .anatomy-eyebrow { font-size: 8px; }
+  .organ-explorer .atlas-edition { display: none; }
+  .organ-navigation { gap: 28px; margin-bottom: 12px; }
+  .organ-navigation button { font-size: 10px; padding-bottom: 11px; }
+  .organ-explorer .atlas-workspace,
+  .organ-explorer .atlas-workspace.is-details-collapsed { display: block; height: calc(100svh - 226px); min-height: 510px; max-height: none; }
+  .organ-explorer .atlas-viewport { height: 100%; }
+  .organ-explorer .atlas-detail.is-open { position: absolute; inset: 0 0 0 auto; width: 290px; max-width: 84%; border: 0; border-left: 1px solid var(--organ-line-strong); box-shadow: -16px 0 40px #0008; z-index: 5; }
+  .organ-explorer .atlas-detail-content { padding: 20px; }
+  .organ-explorer .atlas-viewbar>span { font-size: 9px; }
+  .organ-explorer .atlas-tree-eye { opacity: 1; }
+  .organ-explorer .atlas-view-controls { right: 10px; }
+  .organ-explorer .atlas-explode-bar { flex-wrap: wrap; gap: 10px; padding: 10px; bottom: 38px; }
+  .organ-explorer .atlas-explode-bar>div:first-child { min-width: 80px; }
+  .organ-explorer .atlas-explode-bar>input { flex-basis: 80px; }
+  .organ-explorer .atlas-interaction-hint { font-size: 6px; gap: 4px; }
+  .organ-explorer .atlas-interaction-hint span { font-size: 7px; }
+  .organ-explorer .atlas-interaction-hint i { margin-inline: 2px; }
+  body:has(.organ-explorer) .site-header-inner { padding-inline: 22px; }
+  body:has(.organ-explorer) .site-wordmark { font-size: 24px; }
+  body:has(.organ-explorer) .main-nav { background: #080a0c; gap: 0; }
+  body:has(.organ-explorer) .main-nav>a { font-size: 14px; }
+}

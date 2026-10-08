@@ -1,5 +1,5 @@
 import { Component, lazy, Suspense, useEffect, useRef, useState, type ReactNode } from 'react';
-import { ArrowRight, ArrowDown, Pause, Play } from '@phosphor-icons/react';
+import { ArrowRight, Pause, Play } from '@phosphor-icons/react';
 import SiteLink from '../../components/SiteLink';
 import './hero.css';
 
@@ -63,7 +63,6 @@ export default function HomeHero() {
       <SiteLink href="/anatomia/" className="home-hero-cta">Explorar ahora <ArrowRight size={20} weight="light"/></SiteLink>
     </div>
     <div className="home-hero-foot">
-      <SiteLink href="#plataforma" className="home-scroll-link"><ArrowDown size={15} weight="light"/><span>Una nueva perspectiva</span></SiteLink>
       {!ready && !failed && <span className="home-scene-status" role="status">Preparando el modelo 3D</span>}
       {failed && <span className="home-scene-status" role="status">La vista 3D no está disponible. Puedes abrir el atlas.</span>}
       {ready && !failed && !reducedMotion && <button className="home-motion-toggle" type="button" onClick={() => setPaused(!paused)}

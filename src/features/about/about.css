@@ -14,8 +14,6 @@ body:has(.about-page) .main-nav { gap: 32px; }
 body:has(.about-page) .main-nav>a { font-size: 13px; }
 body:has(.about-page) .main-nav>a[aria-current=page]::after { height: 1px; bottom: 13px; }
 body:has(.about-page) .nav-atlas { color: #d4dadd; border-color: #ffffff30; font-size: 12px; }
-body:has(.about-page) .site-footer { max-width: 1240px; padding-inline: 56px; }
-body:has(.about-page) .site-footer-bottom { color: var(--muted); }
 
 .about-page { --about-line: #ffffff18; --about-dim: #8e979e; background: #050607; color: #f0f2f3; }
 .about-page-inner { max-width: 1240px; padding: 0 56px; margin: 0 auto; }
@@ -111,7 +109,6 @@ body:has(.about-page) .site-footer-bottom { color: var(--muted); }
   .about-source-title p { max-width: 160px; }
   .about-tools, .about-method { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .about-systems { grid-template-columns: repeat(2,minmax(0,1fr)); }
-  body:has(.about-page) .site-footer { padding-inline: 30px; }
 }
 @media (max-width: 760px) {
   body:has(.about-page) .site-header-inner { padding-inline: 20px; }
@@ -146,6 +143,5 @@ body:has(.about-page) .site-footer-bottom { color: var(--muted); }
   .about-source-notes p+p { margin-top: 20px; }
   .about-closing { padding-block: 65px 75px; }
   .about-closing h2 { font-size: 45px; }
-  body:has(.about-page) .site-footer { padding-inline: 22px; }
 }
 @media (prefers-reduced-motion: reduce) { .about-atlas-link { transition: none; } }

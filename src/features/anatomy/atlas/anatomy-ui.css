@@ -16,8 +16,6 @@ body:has(.atlas-phase2) .main-nav { gap: 32px; }
 body:has(.atlas-phase2) .main-nav>a { font-size: 13px; }
 body:has(.atlas-phase2) .main-nav>a[aria-current=page]::after { height: 1px; bottom: 13px; }
 body:has(.atlas-phase2) .nav-atlas { color: #d4dadd; border-color: #ffffff30; font-size: 12px; }
-body:has(.atlas-phase2) .site-footer { border-color: var(--border); }
-body:has(.atlas-phase2) .site-footer-bottom { color: var(--muted); }
 
 .atlas-phase2 {
   --ui-line: #ffffff14;

@@ -1,5 +1,6 @@
 /* Home-only presentation. Shared atlas styles and materials remain independent. */
 body:has(.home-page){background:#050505}
+body:has(.home-page) .site-footer{background:#050505}
 .site-header--home{height:84px;background:rgba(5,5,5,.88);border:0;backdrop-filter:blur(12px);transform:translateZ(0)}
 .site-header--home .site-header-inner{max-width:1800px;padding-inline:4.7%;gap:5.5vw}
 .site-header--home .site-wordmark{font-size:27px;letter-spacing:-1.4px;color:#f5f5f5}
@@ -31,11 +32,9 @@ body:has(.home-page){background:#050505}
 .home-hero-cta{display:inline-flex;align-items:center;justify-content:center;gap:24px;border:1px solid #c4c4c4;border-radius:40px;background:#08080850;color:#f5f5f5;font-size:14px;font-weight:450;padding:16px 24px;min-height:52px;pointer-events:auto;transition:background .25s,border-color .25s,transform .25s}
 .home-hero-cta:hover{background:#ffffff14;border-color:white;transform:translateY(-2px)}
 .home-hero-cta svg{transition:transform .25s}.home-hero-cta:hover svg{transform:translateX(4px)}
-.home-hero-foot{transform:translateZ(0);position:absolute;bottom:29px;left:4.7%;right:4.7%;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#959595}
-.home-scroll-link{display:inline-flex;align-items:center;gap:12px;font-size:10px;letter-spacing:.03em;padding:10px 0}
-.home-scroll-link svg{color:#c5c5c5}
+.home-hero-foot{transform:translateZ(0);position:absolute;bottom:29px;left:4.7%;right:4.7%;z-index:5;display:flex;align-items:center;justify-content:flex-end;gap:20px;color:#959595}
 .home-motion-toggle{border:0;background:transparent;color:#a8a8a8;display:inline-flex;align-items:center;gap:9px;padding:12px 0 12px 12px;font-size:10px;min-height:44px}
-.home-motion-toggle:hover,.home-scroll-link:hover{color:#fff}
+.home-motion-toggle:hover{color:#fff}
 .home-scene-status{font-size:10px;color:#aaa;max-width:245px;text-align:right}
 @media(max-width:1150px){
  .home-page{--hero-gutter:36px}
@@ -72,7 +71,6 @@ body:has(.home-page){background:#050505}
  .home-hero-copy>p{font-size:15px;max-width:290px;margin:0 auto 28px;line-height:1.6}
  .home-hero-cta{font-size:13px;padding:15px 23px;gap:22px}
  .home-hero-foot{bottom:17px;left:22px;right:22px}
- .home-scroll-link{font-size:9px;gap:9px}
  .home-motion-toggle{font-size:9px}
 }
 @media(max-width:599px){

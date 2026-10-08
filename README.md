@@ -1,6 +1,6 @@
 # MED3D
 
-Plataforma educativa en español con anatomía 3D interactiva, procedimientos y primeros auxilios.
+Plataforma educativa en español centrada en anatomía 3D interactiva. Incluye Inicio, el atlas corporal, Acerca del proyecto y exploradores independientes de corazón, pulmones y encéfalo. Procedimientos y Primeros Auxilios se conservan en la historia del proyecto; sus antiguas URLs redirigen al atlas.
 
 ## Desarrollo
 
@@ -18,7 +18,18 @@ npm run build
 npm run typecheck
 ```
 
-`dist/` contiene la web estática y 18 rutas que se pueden abrir directamente.
+`dist/` contiene la web estática: tres páginas públicas y 15 redirecciones de compatibilidad para enlaces antiguos.
+
+En este Windows, si Application Control bloquea el binario nativo de Rollup, el adaptador local existente permite ejecutar Vite sin modificar las dependencias del producto:
+
+```powershell
+$env:NODE_OPTIONS='--require ./.cache/home-redesign/rollup-wasm.cjs'
+npm run dev
+# En otra ejecución con la misma variable:
+npm run build
+```
+
+El adaptador y su instalación WASM son recursos locales ignorados, no incluidos en un clon nuevo. Conserva esa carpeta en este equipo. Consulta [la auditoría del repositorio](docs/repository-audit.md).
 
 ## GitHub Pages
 
@@ -30,6 +41,8 @@ Para otro alojamiento estático cambia `BASE_PATH` y `SITE_ORIGIN` al compilar; 
 
 ## Núcleo anatómico · piloto multisistema Fase 3A
 
+La siguiente sección describe el hito histórico de Fase 3A; no es el inventario actual de cobertura. El atlas actual incorpora once sistemas y la documentación de fases posteriores se conserva en `docs/`.
+
 `/anatomia/` abre el atlas corporal modular con raíz «Cuerpo humano» y sistemas óseo y muscular. Conserva los catálogos fuente, los identificadores óseos y los órganos anteriores mediante `?organ=heart`, `?organ=lungs` y `?organ=brain`.
 
 - BodyParts3D 4.0: 199 huesos convencionales y 4 sesamoideos accesorios; 205 mallas seleccionables en 7 GLB.
@@ -38,7 +51,7 @@ Para otro alojamiento estático cambia `BASE_PATH` y `SITE_ORIGIN` al compilar; 
 - Capas ósea y muscular independientes, visualización simultánea, fichas musculares y contexto músculo-hueso basado en orígenes e inserciones documentados. Las zonas exactas de fijación no se señalan en las superficies. El despiece por sistemas modifica únicamente la presentación.
 - Fase 2.1: veinte fichas individuales para los principales huesos, seis vistas anatómicas, encuadre adaptado a estructuras pequeñas y controles legibles. Las fichas de familia siguen disponibles como contenido general identificado.
 - Faltan cóccix y seis huesecillos auditivos en el cuerpo registrado. Las fuentes adicionales están identificadas; su alineación y lateralidad requieren revisión antes de incorporarlas. No se declara un esqueleto de 206 huesos completo.
-- Procedimientos y primeros auxilios conservan sus prototipos existentes.
+- En aquella fase, Procedimientos y Primeros Auxilios incluían prototipos; actualmente esas áreas están retiradas de la experiencia pública.
 
 Consulta `docs/phase2-audit.md`, `docs/phase2-architecture.md`, `docs/phase2-missing-bones.md` y `scripts/anatomy/README.md`.
 
@@ -56,6 +69,6 @@ Modelos óseos BodyParts3D / DBCLS bajo CC BY 4.0: atribución, versiones, fuent
 
 El piloto muscular utiliza el mismo paquete BodyParts3D 4.0 OBJ99 / DBCLS, bajo CC BY 4.0. Sus dos GLB suman 539.932 bytes, 26 mallas y 39.604 triángulos; procedencia y verificación en `public/models/anatomy/muscular/`. Conserva la conversión común `(x, y, z) → (x, z, −y) / 1000`, sin centrar, escalar ni ajustar cada músculo. La compatibilidad del marco no implica precisión clínica ni validación de las zonas de inserción.
 
-Además se conservan tres órganos y una envolvente de piel, 355 mallas anatómicas, 23 fichas explicativas curadas. Dos escenas esquemáticas: RCP de adultos y medición de presión arterial; el resto del contenido identifica su estado de preparación. Material educativo sin validación clínica, no sustituye formación práctica ni atención sanitaria.
+Además se conservan tres órganos y una envolvente de piel, 355 mallas anatómicas, 23 fichas explicativas curadas. Las dos escenas esquemáticas históricas de RCP de adultos y medición de presión arterial permanecen en Git y en las ramas anteriores. Material educativo sin validación clínica, no sustituye formación práctica ni atención sanitaria.
 
 Modelos HRA / HuBMAP bajo CC BY 4.0. Consulta `docs/model-licenses.md` y `public/models/LICENSE.txt` para fuentes, licencias y transformaciones. Las ilustraciones fueron creadas para MED3D con Higgsfield.

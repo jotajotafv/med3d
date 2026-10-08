@@ -1,5 +1,5 @@
 import {lazy, Suspense, useEffect, useMemo, useRef, useState} from 'react';
-import {ArrowCounterClockwise, ArrowSquareOut, ArrowsOut, Bone, CaretRight, Cube, Eye, EyeSlash, List, MagnifyingGlass, Minus, Plus, Scan, SlidersHorizontal, Stack, X} from '@phosphor-icons/react';
+import {ArrowCounterClockwise, ArrowSquareOut, ArrowsOut, Bone, CaretRight, Cube, Eye, EyeSlash, List, MagnifyingGlass, Minus, Plus, Scan, SidebarSimple, SlidersHorizontal, Stack, X} from '@phosphor-icons/react';
 import SiteLink from '../../../components/SiteLink';
 import {MODEL_DEFINITIONS, STRUCTURES, type OrganId, type Structure} from '../data';
 import {BONE_TERMS} from './bone-education';
@@ -50,6 +50,7 @@ export default function SkeletalAtlas() {
   const [searchPage,setSearchPage] = useState(0);
   const [query,setQuery] = useState(''), [expanded,setExpanded] = useState<Set<string>>(new Set());
   const [panel,setPanel] = useState<'structures'|'details'|null>(null), [mobileTab,setMobileTab] = useState<'tree'|'layers'>('tree');
+  const [detailsOpen,setDetailsOpen] = useState(true);
   const [statuses,setStatuses] = useState<AssetLoadStatus[]>([]), [metrics,setMetrics] = useState<AtlasMetrics|null>(null);
   const [cameraRequest,setCameraRequest] = useState<AtlasCameraRequest>({kind:'reset',version:0});
   useEffect(() => {
@@ -154,7 +155,7 @@ export default function SkeletalAtlas() {
   return <main className="atlas-page atlas-phase2">
     <div className="atlas-heading"><div><span className="anatomy-eyebrow">EL CUERPO, PIEZA A PIEZA</span><h1>Explorador anatómico</h1></div><span className="atlas-edition">ANATOMÍA HUMANA <span>·</span> COBERTURA DISPONIBLE</span></div>
     {!catalog ? <section className="atlas-catalog-state" role={catalogError?'alert':'status'}><Bone size={36} weight="light"/><h2>{catalogError?'No se pudo abrir el atlas':'Preparando el atlas anatómico'}</h2><p>{catalogError||'Las estructuras se cargarán por regiones.'}</p>{catalogError&&<button onClick={()=>setCatalogRetry(value=>value+1)}>Reintentar</button>}</section> : <>
-      <div className="atlas-workspace">
+      <div className={'atlas-workspace'+(detailsOpen?'':' is-detail-collapsed')}>
         <aside className={'atlas-sidebar '+(panel==='structures'?'is-open':'')}>
           <div className="atlas-panel-heading"><span>ESTRUCTURAS</span><span className="atlas-count">{catalog.coverage.structures}</span><button className="atlas-mobile-close" onClick={()=>setPanel(null)} aria-label="Cerrar estructuras"><X size={18}/></button></div>
           <label className="atlas-search"><MagnifyingGlass size={16}/><input value={query} onChange={event=>setQuery(event.target.value)} placeholder="Buscar nombre, sinónimo o latín" aria-label="Buscar estructura anatómica"/>{query&&<button aria-label="Limpiar búsqueda" onClick={()=>setQuery('')}><X size={13}/></button>}</label>
@@ -182,7 +183,7 @@ export default function SkeletalAtlas() {
           <div className="atlas-sidebar-footer"><span className="atlas-status-dot"/>{publicStatus}</div>
         </aside>
         <section className="atlas-viewport" aria-label="Modelo interactivo del cuerpo humano" data-selected-id={selected||''} data-context-ids={contextIds.join(',')} aria-busy={statuses.some(status=>status.state==='loading'||status.state==='queued')} data-loaded-assets={metrics?.loadedAssets||0} data-mesh-count={metrics?.meshes||0} data-triangle-count={metrics?.triangles||0} data-geometry-bytes={metrics?.geometryBytes||0} data-draw-calls={metrics?.drawCalls||0} data-render-geometries={metrics?.renderGeometries||0} data-render-textures={metrics?.renderTextures||0} data-load-ms={metrics?.loadMs||0} data-first-geometry-ms={metrics?.firstGeometryMs||0} data-full-system-ms={metrics?.fullSystemMs||0}>
-          <div className="atlas-viewbar"><span><Bone size={15}/><strong>Cuerpo humano · {registeredSystems.length} sistemas</strong></span><button onClick={reset} aria-label="Restablecer atlas"><ArrowCounterClockwise size={16}/><span>Restablecer</span></button></div>
+          <div className="atlas-viewbar"><span><Bone size={15}/><strong>Cuerpo humano · {registeredSystems.length} sistemas</strong></span><button onClick={reset} aria-label="Restablecer atlas"><ArrowCounterClockwise size={16}/><span>Restablecer</span></button><button className="atlas-detail-toggle" type="button" onClick={()=>setDetailsOpen(open=>!open)} aria-controls="atlas-anatomical-info" aria-expanded={detailsOpen} aria-label={detailsOpen?'Ocultar ficha anatómica':'Mostrar ficha anatómica'} title={detailsOpen?'Ocultar ficha anatómica':'Mostrar ficha anatómica'}><SidebarSimple size={20} weight="light" mirrored aria-hidden="true"/></button></div>
           <div className="atlas-canvas"><Suspense fallback={<div className="model-loading">Preparando el visor anatómico…</div>}><Scene catalog={catalog} assetIds={assetIds} selected={selected} hidden={hidden} isolated={isolated} contextIds={contextIds} opacityBySystem={opacityBySystem} exploded={exploded/100} explodeLevel={explodeLevel} cameraRequest={cameraRequest} onSelect={selectByPointer} onLoadStatus={setStatuses} onMetrics={setMetrics}/></Suspense></div>
           <div className="atlas-model-title"><span className="atlas-mono">{current?.systemId==='urinary'?'Systema urinarium':current?.systemId==='endocrine'?'Systema endocrinum':current?.systemId==='lymphatic'?'Systema lymphoideum':current?.systemId==='reproductive'?'Systema genitale masculinum':current?.systemId==='digestive'?'Systema digestorium':current?.systemId==='respiratory'?'Systema respiratorium':current?.systemId==='cardiovascular'?'Systema cardiovasculare':current?.systemId==='nervous'?'Systema nervosum':current?.systemId==='muscular'?'Systema musculare':current?.systemId==='skeletal'?'Systema skeletale':'Corpus humanum'}</span><h2>{current?.name||'Cuerpo humano'}</h2><p>{selectionHidden?'Estructura oculta':contextIds.length?'Contexto anatómico seleccionado':isolated?'Estructura aislada':current?nodeKind:'Modelo anatómico de referencia'}</p></div>
           <label className="atlas-view-picker"><span>Vista</span><select aria-label="Vista anatómica" value="" onChange={event=>{const view=event.target.value as NonNullable<AtlasCameraRequest['view']>;setCameraRequest(value=>({kind:'view',view,id:selected,version:value.version+1}));}}><option value="" disabled>Elegir perspectiva</option><option value="anterior">Frontal</option><option value="posterior">Posterior</option><option value="left">Lateral izquierda</option><option value="right">Lateral derecha</option><option value="superior">Superior</option><option value="inferior">Inferior</option></select></label>
@@ -194,7 +195,7 @@ export default function SkeletalAtlas() {
           {current?.systemId&&current.systemId!=='integumentary'&&assetIds.includes('integumentary:skin')&&!isHidden('integ:FMA7163')&&!isolated&&(!contextIds.length||contextIds.some(id=>index?.inside('integ:FMA7163',id)))&&<div className="atlas-skin-notice" role="status">Piel al {Math.round((opacityBySystem.integumentary??1)*100)} % · selección interior</div>}
           <div className="atlas-interaction-hint"><span>Arrastra para girar · Rueda o pellizco para acercar</span></div>
         </section>
-        <aside className={'atlas-detail '+(panel==='details'?'is-open':'')}>
+        <aside id="atlas-anatomical-info" aria-label="Ficha anatómica" className={'atlas-detail '+(panel==='details'?'is-open':'')}>
           <div className="atlas-panel-heading"><span>INSPECCIÓN</span><button className="atlas-mobile-close" onClick={()=>setPanel(null)} aria-label="Cerrar inspección"><X size={18}/></button><Cube size={16}/></div>
           <div className="atlas-detail-content"><div className="atlas-detail-icon"><Bone size={26}/></div><span className="anatomy-eyebrow">{nodeKind.toUpperCase()}</span><h2>{current?.name||'Cuerpo humano'}</h2><p className="atlas-latin">{current?.latin||terms?.latin||(!current?'Corpus humanum':'')}</p>
             {current&&<><nav className="atlas-hierarchy-path" aria-label="Ubicación anatómica">{path.map(id=><button key={id} onClick={()=>choose(id)}>{index?.byId.get(id)?.name}<CaretRight size={10}/></button>)}</nav></>}

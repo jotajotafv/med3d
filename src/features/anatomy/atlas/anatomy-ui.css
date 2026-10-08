@@ -1,4 +1,4 @@
-/* Presentation only. Scene, canvas bounds, virtual rows and atlas behavior stay unchanged. */
+/* Presentation only. The existing canvas responds to its container size; scene and atlas behavior stay unchanged. */
 body:has(.atlas-phase2) {
   --bg: #050607;
   --panel: #0b0d0f;
@@ -26,31 +26,36 @@ body:has(.atlas-phase2) .site-footer-bottom { color: var(--muted); }
   --ui-dim: #879096;
   --ui-panel: #0b0d0f;
   --ui-control: #101315;
-  padding: 26px 28px 24px;
+  --atlas-tree-width: 232px;
+  --atlas-info-width: 280px;
+  padding: 16px 16px 18px;
   color: #f0f2f3;
 }
-.atlas-phase2 .atlas-heading { margin-bottom: 22px; }
-.atlas-phase2 .atlas-heading h1 { font-size: 29px; font-weight: 450; letter-spacing: -.035em; margin-top: 7px; }
+.atlas-phase2 .atlas-heading { margin-bottom: 12px; }
+.atlas-phase2 .atlas-heading h1 { font-size: 26px; line-height: 1.2; font-weight: 450; letter-spacing: -.035em; margin-top: 4px; }
 .atlas-phase2 .anatomy-eyebrow { color: var(--ui-muted); font-size: 10px; font-weight: 500; letter-spacing: .19em; }
 .atlas-phase2 .atlas-edition { color: var(--ui-dim); font-size: 9px; letter-spacing: .16em; }
 .atlas-phase2 .atlas-edition span { color: #646d73; }
 .atlas-phase2 .atlas-workspace {
-  grid-template-columns: 256px minmax(350px, 1fr) 300px;
+  grid-template-columns: var(--atlas-tree-width) minmax(0, 1fr) var(--atlas-info-width);
+  height: calc(100svh - 174px);
+  min-height: 480px;
+  max-height: none;
   background: var(--bg);
   border-color: var(--ui-line);
   border-radius: 6px;
 }
 .atlas-phase2 .atlas-sidebar,
 .atlas-phase2 .atlas-detail { background: var(--ui-panel); border-color: var(--ui-line); }
-.atlas-phase2 .atlas-panel-heading { height: 52px; padding-inline: 18px; border-color: var(--ui-line); color: var(--ui-dim); font-size: 10px; font-weight: 500; letter-spacing: .16em; }
+.atlas-phase2 .atlas-panel-heading { height: 46px; padding-inline: 16px; border-color: var(--ui-line); color: var(--ui-dim); font-size: 10px; font-weight: 500; letter-spacing: .16em; }
 .atlas-phase2 .atlas-count { background: transparent; border: 0; padding: 0; color: #cdd4d8; font-family: var(--mono); font-size: 12px; letter-spacing: 0; font-weight: 400; }
-.atlas-phase2 .atlas-search { background: #080a0c; border-color: var(--ui-line-strong); border-radius: 5px; margin: 16px 14px 14px; color: var(--ui-muted); }
+.atlas-phase2 .atlas-search { background: #080a0c; border-color: var(--ui-line-strong); border-radius: 5px; margin: 12px 12px 10px; color: var(--ui-muted); }
 .atlas-phase2 .atlas-search:focus-within { border-color: #86bec880; box-shadow: 0 0 0 2px #86bec80b; }
 .atlas-phase2 .atlas-search input { color: #eef1f2; font-size: 12px; }
 .atlas-phase2 .atlas-search input::placeholder { color: var(--ui-dim); }
 .atlas-phase2 .atlas-search input:focus-visible { outline: none; }
 .atlas-phase2 .atlas-search>button { color: var(--ui-muted); }
-.atlas-phase2 .atlas-sidebar-tabs { gap: 20px; padding-bottom: 0; margin-bottom: 14px; border-color: var(--ui-line); }
+.atlas-phase2 .atlas-sidebar-tabs { gap: 20px; padding-bottom: 0; margin-bottom: 10px; border-color: var(--ui-line); }
 .atlas-phase2 .atlas-sidebar-tabs button { border: 0; border-bottom: 1px solid transparent; border-radius: 0; padding: 10px 0 12px; color: var(--ui-dim); }
 .atlas-phase2 .atlas-sidebar-tabs button:hover { color: #eef1f2; }
 .atlas-phase2 .atlas-sidebar-tabs button.is-active { background: transparent; color: #eef1f2; border-bottom-color: #86bec8; }
@@ -80,7 +85,12 @@ body:has(.atlas-phase2) .site-footer-bottom { color: var(--muted); }
 
 /* The transparent, unmodified canvas reveals this neutral container background. */
 .atlas-phase2 .atlas-viewport { background: #050607; }
-.atlas-phase2 .atlas-viewbar { border-color: #ffffff0a; padding-inline: 20px; }
+.atlas-phase2 .atlas-viewbar { height: 46px; border-color: #ffffff0a; padding-inline: 16px; justify-content: flex-start; gap: 12px; }
+.atlas-phase2 .atlas-viewbar>span { margin-right: auto; }
+.atlas-phase2 .atlas-viewbar>.atlas-detail-toggle { flex-shrink: 0; width: 34px; height: 34px; padding: 6px; justify-content: center; border: 1px solid var(--ui-line-strong); border-radius: 4px; background: var(--ui-control); }
+.atlas-phase2 .atlas-detail-toggle[aria-expanded=true] { color: #bed5da; }
+.atlas-phase2 .atlas-detail-toggle:focus-visible { outline: 2px solid #86bec8; outline-offset: 3px; }
+.atlas-phase2 .atlas-canvas { inset: 48px 0 112px; }
 .atlas-phase2 .atlas-viewbar>span { color: var(--ui-dim); }
 .atlas-phase2 .atlas-viewbar strong { color: var(--ui-muted); font-weight: 400; }
 .atlas-phase2 .atlas-viewbar>button { color: var(--ui-muted); }
@@ -106,7 +116,7 @@ body:has(.atlas-phase2) .site-footer-bottom { color: var(--muted); }
 .atlas-phase2 .atlas-nolayers { color: var(--ui-muted); }
 .atlas-phase2 .atlas-skin-notice { background: #111719ed; color: #c3cdd1; border: 1px solid var(--ui-line); }
 
-.atlas-phase2 .atlas-detail-content { padding: 26px 23px; }
+.atlas-phase2 .atlas-detail-content { padding: 22px 18px; }
 .atlas-phase2 .atlas-detail-icon { display: none; }
 .atlas-phase2 .atlas-detail-content>.anatomy-eyebrow { color: var(--ui-dim); font-size: 9px; letter-spacing: .18em; }
 .atlas-phase2 .atlas-detail-content h2 { font-size: 29px; font-weight: 450; line-height: 1.15; letter-spacing: -.035em; margin: 12px 0 10px; }
@@ -144,14 +154,18 @@ body:has(.atlas-phase2) .site-footer-bottom { color: var(--muted); }
 .atlas-phase2 .atlas-catalog-state h2 { color: #e3e8eb; }
 .atlas-phase2 :is(button, select, input):focus-visible { outline-color: #86bec8; }
 
+@media (min-width: 1151px) {
+  .atlas-phase2 .atlas-workspace.is-detail-collapsed { grid-template-columns: var(--atlas-tree-width) minmax(0, 1fr); }
+  .atlas-phase2 .is-detail-collapsed>.atlas-detail { display: none; }
+}
 @media (min-width: 1600px) {
-  .atlas-phase2 .atlas-workspace { grid-template-columns: 280px minmax(400px, 1fr) 326px; }
+  .atlas-phase2 { --atlas-tree-width: 252px; --atlas-info-width: 300px; }
 }
 @media (max-width: 1150px) {
   body:has(.atlas-phase2) .site-header-inner { padding-inline: 24px; gap: 32px; }
   body:has(.atlas-phase2) .main-nav { gap: 24px; }
-  .atlas-phase2 { padding-inline: 20px; }
-  .atlas-phase2 .atlas-workspace { grid-template-columns: 256px minmax(330px, 1fr); }
+  .atlas-phase2 .atlas-workspace { grid-template-columns: var(--atlas-tree-width) minmax(0, 1fr); }
+  .atlas-phase2 .atlas-viewbar>.atlas-detail-toggle { display: none; }
   .atlas-phase2 .atlas-detail.is-open { background: #0b0d0f; border-color: var(--ui-line-strong); box-shadow: -18px 0 48px #0006; }
   .atlas-phase2 .atlas-mobile-actions button { background: #101315f5; color: #cdd4d8; border-color: var(--ui-line-strong); border-radius: 4px; }
   .atlas-phase2 .atlas-mobile-close { color: #cdd4d8; }
@@ -160,7 +174,7 @@ body:has(.atlas-phase2) .site-footer-bottom { color: var(--muted); }
   body:has(.atlas-phase2) .site-header-inner { gap: 28px; }
   body:has(.atlas-phase2) .main-nav { gap: 20px; }
   body:has(.atlas-phase2) .main-nav>a { font-size: 12px; }
-  .atlas-phase2 .atlas-workspace { grid-template-columns: 238px minmax(330px, 1fr); }
+  .atlas-phase2 { --atlas-tree-width: 216px; }
   .atlas-phase2 .atlas-edition { display: none; }
   .atlas-phase2 .atlas-viewbar { padding-inline: 14px; gap: 8px; }
   .atlas-phase2 .atlas-viewbar>button span { display: none; }
@@ -172,9 +186,11 @@ body:has(.atlas-phase2) .site-footer-bottom { color: var(--muted); }
   body:has(.atlas-phase2) .main-nav>a { font-size: 14px; }
 }
 @media (max-width: 680px) {
-  .atlas-phase2 { padding: 21px 12px 18px; }
-  .atlas-phase2 .atlas-heading { margin-bottom: 19px; }
-  .atlas-phase2 .atlas-heading h1 { font-size: 25px; }
+  .atlas-phase2 { padding: 14px 12px 18px; }
+  .atlas-phase2 .atlas-heading { margin-bottom: 12px; }
+  .atlas-phase2 .atlas-heading h1 { font-size: 24px; }
+  .atlas-phase2 .atlas-workspace { height: calc(100svh - 154px); min-height: 480px; max-height: none; }
+  .atlas-phase2 .atlas-canvas { inset: 148px 0 114px; }
   .atlas-phase2 .atlas-heading .anatomy-eyebrow { font-size: 9px; }
   .atlas-phase2 .atlas-sidebar.is-open { background: #0b0d0f; border-color: var(--ui-line-strong); box-shadow: 18px 0 48px #0006; }
   .atlas-phase2 .atlas-detail-content { padding: 23px 20px; }

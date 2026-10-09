@@ -94,11 +94,11 @@ export default function XrHeartExperience() {
         <dl className="xr-tracking-status" aria-live="polite" aria-atomic="true">
           <div><dt>Cámara</dt><dd data-active={status.camera === 'active'}>{cameraLabel}</dd></div>
           <div><dt>Manos</dt><dd>{status.hands === 1 ? '1 detectada' : status.hands + ' detectadas'}</dd></div>
-          <div><dt>Interacción</dt><dd>{{ idle: 'En espera', pointing: 'Apuntando', candidate: 'Seleccionando', rotate: 'Rotar', scale: 'Escalar' }[status.gesture]}</dd></div>
+          <div><dt>Interacción</dt><dd>{{ idle: 'En espera', pointing: 'Apuntando', candidate: 'Preparando rotación', rotate: 'Rotar', scale: 'Escalar' }[status.gesture]}</dd></div>
         </dl>
         {status.message && <p className="xr-status-message" role={status.camera === 'error' ? 'alert' : 'status'}>{status.message}</p>}
         {cameraOn && <button type="button" className="xr-preview-toggle" aria-label={showCamera ? 'Ocultar cámara' : 'Mostrar cámara'} aria-pressed={showCamera} onClick={() => setShowCamera(value => !value)}>{showCamera ? 'Ocultar cámara' : 'Mostrar cámara'}</button>}
-        <div className="xr-gesture-guide"><Hand size={20} aria-hidden="true"/><div><p><strong>Apunta para explorar.</strong> Señala con el índice y junta y suelta brevemente pulgar e índice para seleccionar.</p>
+        <div className="xr-gesture-guide"><Hand size={20} aria-hidden="true"/><div><p><strong>Apunta para explorar.</strong> Señala con el índice y mantén el puntero sobre una estructura durante 1 segundo.</p>
           <p><strong>Una mano para rotar.</strong> Mantén el pinch o mueve la mano mientras lo haces.</p>
           <p><strong>Dos manos para escalar.</strong> Haz pinch con ambas y sepáralas o acércalas.</p></div></div>
       </aside>

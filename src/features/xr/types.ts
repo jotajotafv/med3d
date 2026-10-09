@@ -5,6 +5,8 @@ export type InteractionMode = GestureMode | 'pointing' | 'candidate';
 export type HandTrackingInput = {
   update: (samples: HandSample[], now: number, aspect: number) => InteractionMode;
   endGesture: () => void;
+  suspendGesture?: (now: number, lastReliable: number) => void;
+  resumeGesture?: (now: number, nearby: boolean, lossMs: number) => void;
 };
 export type ModelTransform = { rotationX: number; rotationY: number; scale: number };
 export type HandFrame = { landmarks: Landmark[][]; handedness: { categoryName: string; score: number }[][] };

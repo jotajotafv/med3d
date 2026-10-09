@@ -96,10 +96,10 @@ export default function XrAtlasExperience() {
           <button type="button" className="xr-primary-button" onClick={active ? stop : start}><Camera size={17}/>{active ? 'Desactivar control con manos' : 'Activar control con manos'}</button>
           <p className="xr-privacy">La imagen de la cámara se procesa localmente en tu dispositivo. No se graba ni se envía.</p>
           <dl className="xr-tracking-status" aria-live="polite"><div><dt>Cámara</dt><dd>{{ off: 'Desactivada', requesting: 'Permiso pendiente', loading: 'Preparando', active: 'Activa', paused: 'En pausa', error: 'No disponible' }[status.camera]}</dd></div>
-            <div><dt>Manos</dt><dd>{status.hands} detectadas</dd></div><div><dt>Interacción</dt><dd>{{ idle: 'En espera', pointing: 'Apuntando', candidate: 'Seleccionando', rotate: 'Rotar', scale: 'Escalar' }[status.gesture]}</dd></div></dl>
+            <div><dt>Manos</dt><dd>{status.hands} detectadas</dd></div><div><dt>Interacción</dt><dd>{{ idle: 'En espera', pointing: 'Apuntando', candidate: 'Preparando rotación', rotate: 'Rotar', scale: 'Escalar' }[status.gesture]}</dd></div></dl>
           {status.message && <p className="xr-status-message" role="status">{status.message}</p>}
           {cameraOn && <button type="button" className="xr-preview-toggle" onClick={() => setShowCamera(value => !value)}>{showCamera ? 'Ocultar cámara' : 'Mostrar cámara'}</button>}
-          <p className="xr-atlas-guide">Índice para apuntar · pinch breve para seleccionar o activar controles · pinch y arrastre en sliders. Sobre el cuerpo: pinch sostenido o movido para rotar · dos pinches para escalar.</p>
+          <p className="xr-atlas-guide">Apunta 1 segundo para seleccionar o activar controles. En sliders, espera el aro y mueve el índice horizontalmente; sal verticalmente para soltar. Pinch y movimiento para rotar · dos pinches para escalar.</p>
         </div>
       </aside>
     </section>

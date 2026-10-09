@@ -29,13 +29,13 @@ test('one open hand points; hover queries do not select or change pose', () => {
   assert.equal(f.interaction.hoveredHandStructure, a); assert.deepEqual(f.selected, []);
   assert.deepEqual(f.gestures.target, { rotationX: 0, rotationY: 0, scale: 1 });
 });
-test('moderate open-hand jitter never rotates or selects', () => {
+test('moderate open-hand jitter selects once by dwell and never rotates', () => {
   const f = fixture();
   for (let i = 0; i < 100; i++) assert.equal(f.interaction.update([hand(jitter(i))], 100 + i * 50), 'pointing');
   assert.deepEqual(f.gestures.target, { rotationX: 0, rotationY: 0, scale: 1 });
-  assert.deepEqual(f.selected, []); assert.deepEqual(f.summaries, []);
+  assert.deepEqual(f.selected, [a]); assert.deepEqual(f.summaries, []);
 });
-test('350/430 ms natural pinches and every grace boundary select despite moderate candidate jitter', () => {
+test('short pinches never select at any previous calibration boundary', () => {
   for (const duration of [350, 430, 450, 451, 500, 549]) {
     const f = fixture(); prime(f); f.interaction.update([pinched({ pinchRatio: .33 })], 150);
     for (let t = 200, i = 0; t < 150 + duration; t += 50, i++) {
@@ -44,17 +44,17 @@ test('350/430 ms natural pinches and every grace boundary select despite moderat
       assert.deepEqual(f.selected, []); assert.deepEqual(f.summaries, []);
     }
     f.interaction.update([hand({ pinchRatio: .43 })], 150 + duration);
-    assert.deepEqual(f.selected, [a], `${duration} ms release`);
+    assert.deepEqual(f.selected, [], `${duration} ms release`);
     assert.equal(f.summaries.length, 1); assert.equal(f.summaries[0].durationMs, duration);
-    assert.equal(f.summaries[0].outcome, 'select'); assert.equal(f.summaries[0].minRatio, .32);
+    assert.equal(f.summaries[0].outcome, 'cancel'); assert.equal(f.summaries[0].minRatio, .32);
   }
 });
-test('550/551 ms release is manipulation even without an inference exactly at hold', () => {
+test('550/551 ms release never selects, with or without a closed inference at hold', () => {
   for (const duration of [550, 551]) {
     const f = fixture(); prime(f); f.interaction.update([pinched()], 150);
     for (let t = 200; t < 150 + duration; t += 50) f.interaction.update([pinched()], t);
     f.interaction.update([hand()], 150 + duration);
-    assert.deepEqual(f.selected, []); assert.equal(f.summaries.at(-1).outcome, 'rotate');
+    assert.deepEqual(f.selected, []); assert.equal(f.summaries.at(-1).outcome, duration === 550 ? 'cancel' : 'rotate');
   }
 });
 test('movement below .040 stays still; above .040 rotates and cannot select after returning', () => {
@@ -67,19 +67,13 @@ test('movement below .040 stays still; above .040 rotates and cannot select afte
   assert.deepEqual(f.selected, []); assert.equal(f.summaries[0].outcome, 'rotate');
   assert.ok(Math.abs(f.summaries[0].maxCandidateMovement - .041) < 1e-10);
 });
-test('snapshot survives crossing a structure boundary during candidate jitter', () => {
-  const f = fixture(point => point.x < 160.1 ? a : b);
-  prime(f); f.interaction.update([pinched()], 150);
-  f.interaction.update([pinched({ x: .412, indexX: .414 })], 200);
-  assert.equal(f.interaction.hoveredHandStructure, b);
-  f.interaction.update([hand({ indexX: .414 })], 500);
-  assert.deepEqual(f.selected, []); // A tracking gap must still cancel the snapshot.
-  const g = fixture(point => point.x < 160.1 ? a : b);
-  prime(g); g.interaction.update([pinched()], 150);
-  for (let t = 200; t < 500; t += 50) g.interaction.update([pinched({ x: .412, indexX: .414 })], t);
-  g.interaction.update([hand({ indexX: .414 })], 500); assert.deepEqual(g.selected, [a]);
-});
-test('acquiring a closed hand or a secondary pinch also requires manipulation intent', () => {
+test('closing-finger boundary movement cannot select either structure', () => {
+  const f = fixture(point => point.x < 160.1 ? a : b); prime(f);
+  f.interaction.update([pinched()], 150);
+  for (let t = 200; t <= 500; t += 50) f.interaction.update([pinched({ x: .412, indexX: .414 })], t);
+  f.interaction.update([hand({ indexX: .414 })], 550);
+  assert.deepEqual(f.selected, []); assert.deepEqual(f.gestures.target, { rotationX: 0, rotationY: 0, scale: 1 });
+});test('acquiring a closed hand or a secondary pinch also requires manipulation intent', () => {
   for (const secondary of [false, true]) {
     const f = fixture(), samples = h => secondary ? [hand(), { ...h, id: 'Right' }] : [h];
     f.interaction.update(samples(pinched()), 100);
@@ -105,17 +99,17 @@ test('calibration reports only four derived values once; loss and two pinches ca
     assert.deepEqual(f.selected, []);
   }
 });
-test('pinch onset creates a candidate; stable short release selects with exactly zero rotation', () => {
+test('pinch onset waits for movement; short release neither selects nor rotates', () => {
   const f = fixture(); prime(f);
   assert.equal(f.interaction.update([pinched()], 150), 'candidate'); assert.deepEqual(f.selected, []);
   f.interaction.update([pinched({ x: .402 })], 200);
   f.interaction.update([hand()], 250);
-  assert.deepEqual(f.selected, [a]); assert.deepEqual(f.gestures.target, { rotationX: 0, rotationY: 0, scale: 1 });
+  assert.deepEqual(f.selected, []); assert.deepEqual(f.gestures.target, { rotationX: 0, rotationY: 0, scale: 1 });
 });
-test('selection uses the pinch-onset target even when release points at a different structure', () => {
+test('pinch release over another structure does not select', () => {
   const f = fixture(); prime(f); f.interaction.update([pinched()], 150);
   f.interaction.update([hand({ indexX: .53 })], 250);
-  assert.equal(f.interaction.hoveredHandStructure, b); assert.deepEqual(f.selected, [a]);
+  assert.equal(f.interaction.hoveredHandStructure, b); assert.deepEqual(f.selected, []);
 });
 test('movement rotates, permanently cancels selection, including return to origin before release', () => {
   const f = fixture(); prime(f); f.interaction.update([pinched()], 150);
@@ -124,7 +118,7 @@ test('movement rotates, permanently cancels selection, including return to origi
   f.interaction.update([pinched()], 250); f.interaction.update([hand()], 300);
   assert.deepEqual(f.selected, []);
 });
-test('sustained pinch enables slow rotation without a click; grace interval release selects', () => {
+test('sustained pinch enables slow rotation; short release never selects', () => {
   const f = fixture(); prime(f); f.interaction.update([pinched()], 150);
   for (let t = 200; t < 150 + PINCH_HOLD_THRESHOLD; t += 50) f.interaction.update([pinched()], t);
   assert.equal(f.interaction.update([pinched()], 150 + PINCH_HOLD_THRESHOLD), 'rotate');
@@ -133,7 +127,7 @@ test('sustained pinch enables slow rotation without a click; grace interval rele
   const g = fixture(); prime(g); g.interaction.update([pinched()], 150);
   for (let t = 200; t < 150 + SHORT_PINCH_MAX_MS + 1; t += 50) g.interaction.update([pinched()], t);
   g.interaction.update([hand()], 150 + SHORT_PINCH_MAX_MS + 1);
-  assert.deepEqual(g.selected, [a]);
+  assert.deepEqual(g.selected, []);
 });
 test('a second pinch immediately scales, cancels candidate, and cannot select on two-to-one release', () => {
   const f = fixture(); prime(f); f.interaction.update([pinched()], 150);
@@ -166,20 +160,16 @@ test('invalid/outside pointer performs no raycast and cancels candidate without 
   assert.equal(f.queries.length, count); assert.equal(f.drawings.at(-1), null);
   f.interaction.update([hand()], 250); assert.deepEqual(f.selected, []);
 });
-test('only a valid short pinch on an actual empty hit requests deselection', () => {
-  const f = fixture(() => empty); prime(f); f.interaction.update([pinched()], 150);
-  f.interaction.update([hand()], 250); assert.deepEqual(f.selected, [empty]);
-  const unavailable = fixture(() => null); unavailable.interaction.update([hand()], 100);
-  unavailable.interaction.update([pinched()], 150); unavailable.interaction.update([hand()], 250);
-  assert.deepEqual(unavailable.selected, []);
-});
-test('hand selection switches A → B without clearing between selections', () => {
-  const f = fixture(); prime(f); f.interaction.update([pinched()], 150); f.interaction.update([hand()], 200);
-  for (let t = 250; t <= 500; t += 50) f.interaction.update([hand({ indexX: Math.min(.7, .4 + (t - 200) / 500) })], t);
-  f.interaction.update([pinched({ indexX: .7 })], 550); f.interaction.update([hand({ indexX: .7 })], 650);
+test('dwell or pinch on empty never requests deselection', () => {
+  for (const hit of [empty, null]) {
+    const f = fixture(() => hit); for (let t = 100; t <= 4000; t += 50) f.interaction.update([hand()], t);
+    f.interaction.update([pinched()], 4050); f.interaction.update([hand()], 4100); assert.deepEqual(f.selected, []);
+  }
+});test('dwell switches A → B without clearing between selections', () => {
+  const f = fixture(); for (let t = 100; t <= 1500; t += 50) f.interaction.update([hand()], t);
+  for (let t = 1550; t <= 3000; t += 50) f.interaction.update([hand({ indexX: .6 })], t);
   assert.deepEqual(f.selected, [a, b]);
-});
-test('manual priority cancels a candidate and reanchors the cursor; a held pinch cannot become a click', () => {
+});test('manual priority cancels a candidate and reanchors the cursor; a held pinch cannot become a click', () => {
   const f = fixture(); prime(f); f.interaction.update([pinched()], 150);
   f.gestures.beginManual(); assert.equal(f.interaction.update([pinched()], 200), 'idle');
   assert.equal(f.drawings.at(-1), null); f.gestures.endManual();

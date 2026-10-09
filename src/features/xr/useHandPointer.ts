@@ -78,7 +78,7 @@ export function useHandPointer<T extends PickTarget>(gestures: GestureController
     const router = registry ? new HandUiRouter(gestures, anatomy, registry, blocked, {
       point: () => stability.point,
       surface: () => stability.surface,
-      reportPinch: outcome => { lastPinch = outcome; if (outcome === 'select') confirm(); },
+      dwell: anatomy.dwell, confirm,
     }) : null;
     stability = new HandStability(router ?? anatomy, gestures, {
       surface: frameAspect => registry ? registry.surface(frameAspect) : pickRef.current?.rect() ?? null,
@@ -87,6 +87,9 @@ export function useHandPointer<T extends PickTarget>(gestures: GestureController
         const element = cursorRef.current;
         if (element) {
           element.dataset.tracking = snapshot.tracking;
+          const dwell = anatomy.dwell.snapshot;
+          element.dataset.dwell = dwell.state;
+          element.style.setProperty('--xr-dwell-angle', `${dwell.progress * 360}deg`);
           if (snapshot.tracking !== 'tracking') {
             element.hidden = !snapshot.point;
             element.dataset.stable = element.dataset.candidate = element.dataset.rotating = element.dataset.hover = 'false';
@@ -100,7 +103,7 @@ export function useHandPointer<T extends PickTarget>(gestures: GestureController
         if (debugEnabled && mounted.current && (latestTime - debugTime >= 100 || snapshot.tracking !== 'tracking')) {
           debugTime = latestTime;
           const ui = router?.route === 'ui' ? router.targets : null;
-          setCalibration({ ...snapshot, point: null, lastPinch,
+          setCalibration({ ...snapshot, point: null, lastPinch, dwell: anatomy.dwell.snapshot,
             rawTarget: ui ? ui.raw?.name || 'none' : targetName(anatomy.targets.raw),
             stableTarget: ui ? ui.stable?.name || 'none' : targetName(anatomy.targets.stable),
             stableTimeMs: (ui ?? anatomy.targets).age(latestTime) });

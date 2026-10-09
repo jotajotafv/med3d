@@ -1,8 +1,9 @@
 import { GestureController, isPinching } from './gestures.ts';
 import { HandPointer, type PointerPoint, type PointerRect } from './handPointer.ts';
-import { pinchDurationBand, PINCH_HOLD_THRESHOLD, ROTATE_MOVE_THRESHOLD, MAX_TRACKING_GAP_MS, MAX_HAND_JUMP, TARGET_DWELL_MS } from './handConfig.ts';
+import { PINCH_HOLD_THRESHOLD, ROTATE_MOVE_THRESHOLD, MAX_TRACKING_GAP_MS, MAX_HAND_JUMP, TARGET_DWELL_MS } from './handConfig.ts';
+import { DwellController } from './dwell.ts';
 import { TargetStability } from './targetStability.ts';
-import type { HandSample, InteractionMode, ModelTransform } from './types';
+import type { HandSample, InteractionMode } from './types';
 
 export type HandCursor<T> = { point: PointerPoint; hovered: T | null; stable: T | null; mode: InteractionMode };
 export type PinchCalibration = { durationMs: number; maxCandidateMovement: number; minRatio: number; outcome: 'select' | 'rotate' | 'cancel' };
@@ -16,18 +17,20 @@ type Ports<T> = {
   point?: () => PointerPoint | null;
   targetKey: (target: T) => unknown;
   isEmpty?: (target: T) => boolean;
+  dwell?: DwellController;
 };
 type Tracked = HandSample & { pinching: boolean };
-type Candidate<T> = { time: number; origin: PointerPoint; point: PointerPoint | null; target: T | null; pose: ModelTransform };
+type Candidate = { time: number; origin: PointerPoint };
 
 /** Pure interaction arbitration. No camera, DOM, Three.js, or React state. */
 export class HandInteraction<T> {
   mode: InteractionMode = 'idle';
   primaryId: string | null = null;
   hoveredHandStructure: T | null = null;
+  readonly dwell: DwellController;
   readonly targets: TargetStability<T>;
   private hands = new Map<string, Tracked>();
-  private candidate: Candidate<T> | null = null;
+  private candidate: Candidate | null = null;
   private pinchOwner: string | null = null;
   private calibration: { started: number; maxCandidateMovement: number; minRatio: number } | null = null;
   private pointer = new HandPointer();
@@ -37,6 +40,7 @@ export class HandInteraction<T> {
   private ports: Ports<T>;
   constructor(gestures: GestureController, ports: Ports<T>) {
     this.gestures = gestures; this.ports = ports; this.revision = gestures.inputRevision;
+    this.dwell = ports.dwell ?? new DwellController();
     this.targets = new TargetStability(ports.targetKey, TARGET_DWELL_MS);
   }
   private finishPinch(outcome: PinchCalibration['outcome'], now: number) {
@@ -44,7 +48,12 @@ export class HandInteraction<T> {
     if (summary) this.ports.reportCalibration?.({ durationMs: Math.max(0, (Number.isFinite(now) ? now : this.time) - summary.started),
       maxCandidateMovement: summary.maxCandidateMovement, minRatio: summary.minRatio, outcome });
   }
-  endGesture(now = this.time) {
+  suspendGesture(now: number, lastReliable: number) {
+    this.dwell.pause(now, lastReliable); this.endGesture(now, true);
+  }
+  resumeGesture(now: number, nearby: boolean, lossMs: number) { this.dwell.recover(now, nearby, lossMs); }
+  endGesture(now = this.time, preserveDwell = false) {
+    if (!preserveDwell) this.dwell.cancel('anatomy');
     this.finishPinch(this.mode === 'rotate' ? 'rotate' : 'cancel', now);
     this.mode = 'idle'; this.primaryId = null; this.hoveredHandStructure = null;
     this.hands.clear(); this.candidate = null; this.pinchOwner = null; this.pointer.reset(); this.time = 0;
@@ -72,15 +81,16 @@ export class HandInteraction<T> {
     const next = new Map(valid.map(hand => [hand.id, { ...hand, pinching: isPinching(hand.pinchRatio, this.hands.get(hand.id)?.pinching) }]));
     this.hands = next; this.time = now;
     const active = [...next.values()].filter(hand => hand.pinching);
+    if (active.length) { this.dwell.cancel(); this.targets.reset(); }
     if (active.length === 2) {
       this.finishPinch('cancel', now); this.pinchOwner = null;
       this.candidate = null; this.mode = 'scale'; this.hoveredHandStructure = null;
       this.pointer.reset(); this.targets.reset(); this.gestures.update(valid, now, aspect); this.ports.draw(null); return this.mode;
     }
     const point = this.ports.point ? this.ports.point() : this.pointer.update(primary, now, aspect, this.ports.viewport());
-    const hit = point ? this.ports.hitTest(point) : null;
+    const hit = point && !active.length ? this.ports.hitTest(point) : null;
     this.hoveredHandStructure = hit;
-    const stable = point ? this.targets.update(hit, point, now) : null;
+    const stable = point && !active.length ? this.targets.update(hit, point, now) : null;
     if (active.length === 1) {
       const pinching = active[0];
       if (this.pinchOwner !== pinching.id) {
@@ -89,35 +99,29 @@ export class HandInteraction<T> {
         this.calibration = this.ports.reportCalibration ? { started: now, maxCandidateMovement: 0, minRatio: pinching.pinchRatio } : null;
         if (this.mode === 'scale') { this.candidate = null; this.mode = 'rotate'; }
         else {
-          // A hand acquired closed (or the secondary hand) must also show manipulation intent.
-          // It can never select without an observed open → closed transition of the primary.
-          const maySelect = pinching.id === primary.id && previous && !previous.pinching;
-          this.candidate = { time: now, origin: { x: pinching.x, y: pinching.y }, point,
-            target: maySelect ? stable ?? (hit && this.ports.isEmpty?.(hit) && now - this.targets.rawSince >= TARGET_DWELL_MS ? hit : null) : null,
-            pose: { ...this.gestures.target } };
+          // Closing fingers alone never selects or visibly rotates the model.
+          this.candidate = { time: now, origin: { x: pinching.x, y: pinching.y } };
           this.mode = 'candidate';
         }
       }
       if (this.calibration) this.calibration.minRatio = Math.min(this.calibration.minRatio, pinching.pinchRatio);
       if (this.candidate) {
-        if (!point || hit === null) this.candidate.target = null; // Invalid tracking is never an empty selection.
         const moved = Math.hypot((pinching.x - this.candidate.origin.x) * aspect, pinching.y - this.candidate.origin.y);
         if (this.calibration) this.calibration.maxCandidateMovement = Math.max(this.calibration.maxCandidateMovement, moved);
         if (moved > ROTATE_MOVE_THRESHOLD || now - this.candidate.time >= PINCH_HOLD_THRESHOLD) {
           this.candidate = null; this.mode = 'rotate';
         }
       }
-      // Keep the existing anchor/filter warm, but freeze rotation throughout the click candidate.
+      // Keep the existing anchor/filter warm, but freeze rotation until movement/hold demonstrates manipulation intent.
       this.gestures.update(valid, now, aspect, this.mode !== 'candidate');
     } else {
-      const candidate = this.candidate;
-      const held = candidate && pinchDurationBand(now - candidate.time) === 'hold';
-      let outcome: PinchCalibration['outcome'] = this.mode === 'rotate' || held ? 'rotate' : 'cancel';
+      const outcome = this.mode === 'rotate' ? 'rotate' : 'cancel';
       this.candidate = null; this.pinchOwner = null; this.mode = point ? 'pointing' : 'idle';
       this.gestures.update(valid, now, aspect);
-      if (candidate && previous?.pinching && point && candidate.target !== null && !held) {
-        this.ports.select(candidate.target); // Snapshot at pinch onset; never retarget on release.
-        outcome = 'select'; // Includes the 450–550 ms grace interval: no dropped stable gesture.
+      const id = stable ? this.ports.targetKey(stable) : null;
+      const departed = !!point && now - this.targets.rawSince >= TARGET_DWELL_MS && !stable;
+      if (this.dwell.update(id == null ? null : { domain: 'anatomy', id: String(id), kind: 'anatomy' }, now, departed) && stable) {
+        this.ports.select(stable);
       }
       this.finishPinch(outcome, now);
     }

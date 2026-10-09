@@ -30,3 +30,8 @@ export const PINCH_EXIT_RATIO = 0.43;
 export const HAND_SMOOTHING_MS = 65;
 export const ROTATION_DEAD_ZONE = 0.006;
 export const ROTATION_SENSITIVITY = Math.PI * 2;
+// XR 1.5.2: activation starts AFTER the existing target acquisition dwell.
+export const DWELL_ACTIVATION_MS = 1000;
+export const DWELL_GRACE_RESUME_MS = 225;
+export const SLIDER_RELEASE_VERTICAL_PX = 60;
+export const SLIDER_RELEASE_MS = 300;

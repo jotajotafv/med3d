@@ -135,7 +135,9 @@ test('hand pointer raycasts actual heart meshes after XR rotation/scale and open
         hitTest: point => pickHeart(point, rect, camera, gltf.scene, realIndex, ray),
         select: result => selected.push(result), draw() {} });
       const hand = { id: 'Left', x, y, indexX: x, indexY: y, pinchRatio: .8 };
-      for (const time of [-100, -50, 0, 50, 100]) interaction.update([hand], time); interaction.update([{ ...hand, pinchRatio: .1 }], 150); interaction.update([hand], 250);
+      for (let time = 100; time <= 1400; time += 50) interaction.update([hand], time);
+      interaction.update([{ ...hand, pinchRatio: .1 }], 1450); interaction.update([hand], 1500);
+      assert.equal(selected.length, 1, 'dwell selects once; pinch never selects');
       assert.equal(selected[0].selection, hit.selection);
       const html = renderToStaticMarkup(createElement(XrEducationCard, { selection: selected[0].selection, unknown: false, onClose() {} }));
       assert.ok(html.includes(hit.selection.structure.title));

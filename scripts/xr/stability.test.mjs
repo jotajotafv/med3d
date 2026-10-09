@@ -83,7 +83,7 @@ test('one to three missing inference results recover nearby without crossing the
   }
 });
 test('loss beyond grace hides cursor and ends manipulation without clearing the existing selection', () => {
-  const f = fixture(); f.warm(); f.tick([hand(.4, .5, .2)]); f.tick(); assert.deepEqual(f.selected, [a]);
+  const f = fixture(); f.warm(hand(), 30); assert.deepEqual(f.selected, [a]);
   for (let i = 0; i < 8; i++) f.tick([]);
   assert.equal(f.stability.trackingState, 'lost'); assert.equal(f.reports.at(-1).point, null); assert.deepEqual(f.selected, [a]);
 });
@@ -141,21 +141,22 @@ test('deliberate departure clears stale A immediately, without selecting unseen 
   const t = targets(); stableA(t); assert.equal(t.update(b, { x: 119, y: 100 }, 300), null);
   assert.equal(t.update(b, { x: 119, y: 100 }, 450), b);
 });
-test('pinch uses stable A when the raw raycast becomes B exactly at onset; later jitter cannot retarget', () => {
-  let raw = a; const f = fixture({ hit: () => raw }); f.warm(); raw = b;
-  f.tick([hand(.402, .5, .2)]); assert.equal(f.anatomy.hoveredHandStructure, b); assert.equal(f.anatomy.targets.stable, a);
-  f.tick([hand(.398, .504, .2)]); f.tick([hand(.401, .498, .2)]); f.tick();
+test('raw boundary jitter retains stable A through a complete dwell', () => {
+  let raw = a; const f = fixture({ hit: () => raw }); f.warm();
+  for (let i = 0; i < 25; i++) {
+    raw = i % 3 ? a : b; f.tick([hand(.4 + Math.sin(i) * .002)]);
+    assert.equal(f.anatomy.targets.stable, a);
+  }
   assert.deepEqual(f.selected, [a]); assert.deepEqual(f.gestures.target, idlePose);
-});
-test('pinch before anatomy dwell refuses raw fallback', () => {
+});test('pinch before anatomy dwell refuses raw fallback', () => {
   const f = fixture(); f.warm(hand(), 4); f.tick([hand(.4, .5, .2)]); f.tick(); assert.deepEqual(f.selected, []);
 });
 test('UI requires stable dwell before capturing a button', () => {
   const f = fixture({ ui: true }); f.warm(hand(.7), 4); f.tick([hand(.7, .5, .2)]); f.tick([hand(.7)]);
   assert.deepEqual(f.actions, []); assert.deepEqual(f.selected, []); assert.equal(f.queries.length, 0);
-  f.warm(hand(.7)); f.tick([hand(.7, .5, .2)]); f.tick([hand(.7)]); assert.deepEqual(f.actions, ['muscle']);
+  f.warm(hand(.7), 32); assert.deepEqual(f.actions, ['muscle']);
 });
-test('moderate button jitter and pinch produce one UI action and no anatomy/rotation', () => {
+test('moderate button jitter completes dwell; later pinch cannot repeat it', () => {
   const f = fixture({ ui: true }); f.warm(hand(.7));
   for (let i = 0; i < 20; i++) f.tick([hand(.7 + Math.sin(i * 1.7) * .007, .5 + Math.cos(i) * .006)]);
   f.tick([hand(.705, .503, .2)]); f.tick([hand(.696, .5, .2)]); f.tick([hand(.7)]); f.warm(hand(.7));
@@ -168,8 +169,8 @@ test('another actual control or blocked UI cannot inherit the stable control cap
 });
 test('slider starts after dwell, follows smoothed cursor outside rect, and loss cancels without changes in grace', () => {
   const f = fixture({ ui: true }); f.control.kind = 'slider'; f.control.range = { min: 0, max: 100, step: 1, value: 0 };
-  f.warm(hand(.7)); f.tick([hand(.7, .5, .2)]); assert.ok(f.values.length);
-  for (let i = 1; i <= 6; i++) f.tick([hand(.7 - .035 * i, .5, .2)]);
+  f.warm(hand(.7), 32); assert.ok(f.values.length);
+  for (let i = 1; i <= 6; i++) f.tick([hand(.7 - .035 * i, .5)]);
   assert.equal(f.values.at(-1), 0); assert.equal(f.queries.length, 0);
   const count = f.values.length; for (let i = 0; i < 4; i++) f.tick([]);
   assert.equal(f.stability.trackingState, 'grace'); assert.equal(f.values.length, count);

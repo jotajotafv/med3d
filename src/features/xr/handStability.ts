@@ -1,3 +1,4 @@
+import type { DwellSnapshot } from './dwell';
 import { HandPointer, jumpAllowance, validPoint, projectIndex, type PointerPoint, type PointerRect } from './handPointer.ts';
 import { MAX_TRACKING_GAP_MS, TRACKING_GRACE_MS, REACQUIRE_NEAR_RADIUS, REACQUIRE_SETTLE_MS, PINCH_EXIT_RATIO } from './handConfig.ts';
 import type { GestureController } from './gestures';
@@ -5,7 +6,7 @@ import type { HandSample, HandTrackingInput, InteractionMode } from './types';
 
 export type HandTrackingState = 'tracking' | 'grace' | 'lost' | 'reacquiring';
 export type StabilitySnapshot = { tracking: HandTrackingState; point: PointerPoint | null; velocity: number; lostDurationMs: number };
-export type HandStabilityDebug = StabilitySnapshot & { rawTarget: string; stableTarget: string; stableTimeMs: number; lastPinch: 'select' | 'rotate' | 'cancel' | null };
+export type HandStabilityDebug = StabilitySnapshot & { rawTarget: string; stableTarget: string; stableTimeMs: number; lastPinch: 'select' | 'rotate' | 'cancel' | null; dwell: DwellSnapshot };
 type Ports = { surface: (aspect: number) => PointerRect | null; blocked: () => boolean; report: (value: StabilitySnapshot) => void };
 const index = (hand: HandSample) => ({ x: hand.indexX ?? NaN, y: hand.indexY ?? NaN });
 const distance = (a: PointerPoint, b: PointerPoint) => Math.hypot(a.x - b.x, a.y - b.y);
@@ -41,7 +42,8 @@ export class HandStability implements HandTrackingInput {
     this.settleSince = null; this.trackingState = 'lost'; this.time = -Infinity; this.report(0);
   }
   private lose(now: number) {
-    if (this.trackingState === 'tracking' || this.trackingState === 'reacquiring') this.inner.endGesture();
+    if (this.inner.suspendGesture) this.inner.suspendGesture(now, this.lastReliableTime ?? now);
+    else if (this.trackingState === 'tracking' || this.trackingState === 'reacquiring') this.inner.endGesture();
     this.settleSince = null;
     this.trackingState = this.lastReliableTime !== null && now - this.lastReliableTime <= TRACKING_GRACE_MS ? 'grace' : 'lost';
     if (this.trackingState === 'lost') { this.primary = this.secondary = null; this.pointer.reset(); }
@@ -70,7 +72,9 @@ export class HandStability implements HandTrackingInput {
       (this.trackingState === 'tracking' ? jumpAllowance(dt) : REACQUIRE_NEAR_RADIUS)) return this.lose(now);
     if (this.trackingState === 'grace' || this.trackingState === 'lost') {
       this.nearby = !!this.pointer.point && !!this.lastReliablePointer && distance(raw, this.lastReliablePointer) <= REACQUIRE_NEAR_RADIUS && sinceReliable <= TRACKING_GRACE_MS;
-      this.inner.endGesture(); this.pointer.reanchor(raw, now, this.nearby);
+      if (this.inner.resumeGesture) this.inner.resumeGesture(now, this.nearby, sinceReliable);
+      else this.inner.endGesture();
+      this.pointer.reanchor(raw, now, this.nearby);
       this.trackingState = 'reacquiring'; this.settleSince = null;
     } else {
       const next = this.pointer.update(primary, now, aspect, rect);
@@ -84,7 +88,7 @@ export class HandStability implements HandTrackingInput {
     this.lastReliablePointer = raw; this.lastReliableTime = now;
     if (this.trackingState === 'reacquiring') {
       if (valid.every(hand => hand.pinchRatio >= PINCH_EXIT_RATIO)) this.settleSince ??= now;
-      else this.settleSince = null;
+      else { this.settleSince = null; this.inner.endGesture(); }
       if (this.settleSince === null || now - this.settleSince < REACQUIRE_SETTLE_MS) { this.report(now); return 'idle'; }
       this.trackingState = 'tracking';
     }

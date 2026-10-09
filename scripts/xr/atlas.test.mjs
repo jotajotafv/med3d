@@ -173,13 +173,11 @@ test('same calibrated hand arbitration selects atlas ID, rotates whole root targ
     viewport: () => ({ left: 0, top: 0, width: 400, height: 300 }), hitTest: () => hit, select: value => selected.push(value), draw() {},
   });
   const hand = (pinchRatio, x = .5, id = 'Left') => ({ id, x, y: .5, indexX: x, indexY: .5, pinchRatio });
-  for (const time of [-100, -50, 0, 50, 100]) interaction.update([hand(.5)], time); interaction.update([hand(.33)], 150);
-  for (let t = 200; t < 580; t += 50) interaction.update([hand(.36)], t);
-  interaction.update([hand(.5)], 580); assert.equal(selected[0].selection.id, part.node.id);
-  interaction.update([hand(.33)], 650); assert.equal(interaction.update([hand(.33, .56)], 700), 'rotate');
-  assert.ok(gestures.target.rotationY > 0); interaction.update([hand(.5)], 750); assert.equal(selected.length, 1);
-  interaction.update([hand(.2, .4), hand(.2, .6, 'Right')], 800);
-  assert.equal(interaction.update([hand(.2, .35), hand(.2, .65, 'Right')], 850), 'scale'); assert.ok(gestures.target.scale > 1);
+  for (let t = 100; t <= 1400; t += 50) interaction.update([hand(.5)], t); assert.equal(selected[0].selection.id, part.node.id);
+  interaction.update([hand(.33)], 1450); assert.equal(interaction.update([hand(.33, .56)], 1500), 'rotate');
+  assert.ok(gestures.target.rotationY > 0); interaction.update([hand(.5)], 1550); assert.equal(selected.length, 1);
+  interaction.update([hand(.2, .4), hand(.2, .6, 'Right')], 1600);
+  assert.equal(interaction.update([hand(.2, .35), hand(.2, .65, 'Right')], 1650), 'scale'); assert.ok(gestures.target.scale > 1);
 });
 test('release restores instance transforms/material ownership; geometry disposes once on owner teardown', () => {
   let materialDisposals = 0, geometryDisposals = 0;

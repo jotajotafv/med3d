@@ -43,3 +43,12 @@
 .xr-calibration-debug h2{font-size:11px;font-weight:500;margin:0 0 8px}.xr-calibration-debug p{margin:0}.xr-calibration-debug dl{margin:0}.xr-calibration-debug dl>div{display:flex;justify-content:space-between;gap:8px;padding:3px 0}.xr-calibration-debug dd{margin:0;font-variant-numeric:tabular-nums}
 @media(prefers-reduced-motion:reduce){.xr-page *{transition:none!important}.xr-hand-cursor[data-confirmed=true]::after{animation:none}}
 .xr-mode-switch{max-width:1360px;margin:0 auto;padding:24px 64px 0;display:flex;align-items:center;gap:8px;color:#a5b0b5;font-family:Geist,sans-serif}.xr-mode-switch>span{font-size:9px;letter-spacing:1.5px;margin-right:12px}.xr-mode-switch button{font:inherit;font-size:12px;color:#a5b0b5;background:transparent;border:1px solid #28363b;border-radius:3px;padding:8px 15px;cursor:pointer}.xr-mode-switch button[aria-pressed=true]{color:#d3e9ed;border-color:#89b6bf;background:#101d21}.xr-mode-switch button:focus-visible{outline:2px solid #9dcbd2;outline-offset:3px}@media(max-width:760px){.xr-mode-switch{padding:20px 22px 0}}
+
+/* Inference drives progress; CSS interpolates only pixels, with no extra picking or React renders. */
+@property --xr-dwell-angle{syntax:'<angle>';inherits:false;initial-value:0deg}
+.xr-hand-cursor::before{content:"";position:absolute;inset:-7px;border-radius:50%;background:conic-gradient(#a6e8ef var(--xr-dwell-angle),#a6e8ef20 0);mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 0);--xr-dwell-angle:inherit;transition:--xr-dwell-angle 55ms linear;opacity:0}
+.xr-hand-cursor[data-dwell=dwelling]::before,.xr-hand-cursor[data-dwell=paused]::before,.xr-hand-cursor[data-dwell=fired]::before,.xr-hand-cursor[data-dwell=sliderCaptured]::before{opacity:1}
+.xr-hand-cursor[data-dwell=paused]::before,.xr-hand-cursor[data-tracking=grace]::before,.xr-hand-cursor[data-tracking=reacquiring]::before{transition:none}
+.xr-hand-cursor[data-dwell=sliderCaptured]{border-radius:3px;box-shadow:0 0 0 3px #9fe8ef25}
+.xr-hand-cursor[data-dwell=sliderCaptured]::after{content:"";position:absolute;left:-3px;right:-3px;top:5px;height:1px;background:#bceef4}
+@media(prefers-reduced-motion:reduce){.xr-hand-cursor::before{transition:none}.xr-hand-cursor[data-confirmed=true]::after{animation:none}}

@@ -8,20 +8,99 @@ import { SHORT_PINCH_MAX_MS, PINCH_HOLD_THRESHOLD } from '../../src/features/xr/
 const a = { kind: 'selected', id: 'A' }, b = { kind: 'selected', id: 'B' }, empty = { kind: 'empty' };
 const hand = (extra = {}) => ({ id: 'Left', x: .4, y: .5, indexX: .4, indexY: .5, pinchRatio: .8, ...extra });
 const pinched = extra => hand({ pinchRatio: .1, ...extra });
+const jitter = i => ({ x: .4 + Math.sin(i * 1.7) * .012, y: .5 + Math.cos(i * 2.3) * .009,
+  indexX: .4 + Math.sin(i * 2.1) * .014, indexY: .5 + Math.cos(i * 1.3) * .011 });
 function fixture(hitTest = point => point.x < 200 ? a : b) {
-  const gestures = new GestureController(), selected = [], queries = [], drawings = [];
+  const gestures = new GestureController(), selected = [], queries = [], drawings = [], summaries = [];
   let blocked = false;
   const interaction = new HandInteraction(gestures, {
     viewport: () => ({ left: 0, top: 0, width: 400, height: 300 }),
     hitTest: point => { queries.push(point); return hitTest(point); },
     select: target => selected.push(target), draw: cursor => drawings.push(cursor), blocked: () => blocked,
+    reportCalibration: summary => summaries.push(summary),
   });
-  return { gestures, interaction, selected, queries, drawings, block: value => { blocked = value; } };
+  return { gestures, interaction, selected, queries, drawings, summaries, block: value => { blocked = value; } };
 }
 test('one open hand points; hover queries do not select or change pose', () => {
   const f = fixture(); assert.equal(f.interaction.update([hand()], 100), 'pointing');
   assert.equal(f.interaction.hoveredHandStructure, a); assert.deepEqual(f.selected, []);
   assert.deepEqual(f.gestures.target, { rotationX: 0, rotationY: 0, scale: 1 });
+});
+test('moderate open-hand jitter never rotates or selects', () => {
+  const f = fixture();
+  for (let i = 0; i < 100; i++) assert.equal(f.interaction.update([hand(jitter(i))], 100 + i * 50), 'pointing');
+  assert.deepEqual(f.gestures.target, { rotationX: 0, rotationY: 0, scale: 1 });
+  assert.deepEqual(f.selected, []); assert.deepEqual(f.summaries, []);
+});
+test('350/430 ms natural pinches and every grace boundary select despite moderate candidate jitter', () => {
+  for (const duration of [350, 430, 450, 451, 500, 549]) {
+    const f = fixture(); f.interaction.update([hand()], 100); f.interaction.update([pinched({ pinchRatio: .33 })], 150);
+    for (let t = 200, i = 0; t < 150 + duration; t += 50, i++) {
+      assert.equal(f.interaction.update([pinched({ ...jitter(i), pinchRatio: i % 2 ? .39 : .32 })], t), 'candidate');
+      assert.deepEqual(f.gestures.target, { rotationX: 0, rotationY: 0, scale: 1 });
+      assert.deepEqual(f.selected, []); assert.deepEqual(f.summaries, []);
+    }
+    f.interaction.update([hand({ pinchRatio: .43 })], 150 + duration);
+    assert.deepEqual(f.selected, [a], `${duration} ms release`);
+    assert.equal(f.summaries.length, 1); assert.equal(f.summaries[0].durationMs, duration);
+    assert.equal(f.summaries[0].outcome, 'select'); assert.equal(f.summaries[0].minRatio, .32);
+  }
+});
+test('550/551 ms release is manipulation even without an inference exactly at hold', () => {
+  for (const duration of [550, 551]) {
+    const f = fixture(); f.interaction.update([hand()], 100); f.interaction.update([pinched()], 150);
+    for (let t = 200; t < 150 + duration; t += 50) f.interaction.update([pinched()], t);
+    f.interaction.update([hand()], 150 + duration);
+    assert.deepEqual(f.selected, []); assert.equal(f.summaries.at(-1).outcome, 'rotate');
+  }
+});
+test('movement below .040 stays still; above .040 rotates and cannot select after returning', () => {
+  const f = fixture(); f.interaction.update([hand()], 100); f.interaction.update([pinched()], 150);
+  assert.equal(f.interaction.update([pinched({ y: .539 })], 200), 'candidate');
+  assert.deepEqual(f.gestures.target, { rotationX: 0, rotationY: 0, scale: 1 });
+  assert.equal(f.interaction.update([pinched({ y: .541 })], 250), 'rotate');
+  assert.ok(f.gestures.target.rotationX > 0);
+  f.interaction.update([pinched()], 300); f.interaction.update([hand()], 350);
+  assert.deepEqual(f.selected, []); assert.equal(f.summaries[0].outcome, 'rotate');
+  assert.ok(Math.abs(f.summaries[0].maxCandidateMovement - .041) < 1e-10);
+});
+test('snapshot survives crossing a structure boundary during candidate jitter', () => {
+  const f = fixture(point => point.x < 160.1 ? a : b);
+  f.interaction.update([hand()], 100); f.interaction.update([pinched()], 150);
+  f.interaction.update([pinched({ x: .412, indexX: .414 })], 200);
+  assert.equal(f.interaction.hoveredHandStructure, b);
+  f.interaction.update([hand({ indexX: .414 })], 500);
+  assert.deepEqual(f.selected, []); // A tracking gap must still cancel the snapshot.
+  const g = fixture(point => point.x < 160.1 ? a : b);
+  g.interaction.update([hand()], 100); g.interaction.update([pinched()], 150);
+  for (let t = 200; t < 500; t += 50) g.interaction.update([pinched({ x: .412, indexX: .414 })], t);
+  g.interaction.update([hand({ indexX: .414 })], 500); assert.deepEqual(g.selected, [a]);
+});
+test('acquiring a closed hand or a secondary pinch also requires manipulation intent', () => {
+  for (const secondary of [false, true]) {
+    const f = fixture(), samples = h => secondary ? [hand(), { ...h, id: 'Right' }] : [h];
+    f.interaction.update(samples(pinched()), 100);
+    assert.equal(f.interaction.update(samples(pinched({ y: .53 })), 150), 'candidate');
+    assert.deepEqual(f.gestures.target, { rotationX: 0, rotationY: 0, scale: 1 });
+    f.interaction.update(samples(hand()), 200); assert.deepEqual(f.selected, []);
+    f.interaction.update(samples(pinched()), 250);
+    assert.equal(f.interaction.update(samples(pinched({ y: .55 })), 300), 'rotate');
+    f.interaction.update(samples(hand()), 350); assert.deepEqual(f.selected, []);
+  }
+});
+test('calibration reports only four derived values once; loss and two pinches cancel the candidate', () => {
+  for (const interruption of ['loss', 'scale', 'stop']) {
+    const f = fixture(); f.interaction.update([hand()], 100); f.interaction.update([pinched({ pinchRatio: .33 })], 150);
+    f.interaction.update([pinched({ y: .52, pinchRatio: .31 })], 200);
+    if (interruption === 'loss') f.interaction.update([], 250);
+    else if (interruption === 'scale') f.interaction.update([pinched(), pinched({ id: 'Right', x: .7 })], 250);
+    else f.interaction.endGesture(250);
+    f.interaction.endGesture(300);
+    assert.equal(f.summaries.length, 1); assert.deepEqual(Object.keys(f.summaries[0]).sort(), ['durationMs', 'maxCandidateMovement', 'minRatio', 'outcome']);
+    assert.equal(f.summaries[0].durationMs, 100); assert.equal(f.summaries[0].outcome, 'cancel');
+    assert.equal(f.summaries[0].minRatio, .31); assert.ok(Math.abs(f.summaries[0].maxCandidateMovement - .02) < 1e-10);
+    assert.deepEqual(f.selected, []);
+  }
 });
 test('pinch onset creates a candidate; stable short release selects with exactly zero rotation', () => {
   const f = fixture(); f.interaction.update([hand()], 100);
@@ -42,15 +121,16 @@ test('movement rotates, permanently cancels selection, including return to origi
   f.interaction.update([pinched()], 250); f.interaction.update([hand()], 300);
   assert.deepEqual(f.selected, []);
 });
-test('sustained pinch enables slow rotation without a click; intermediate-duration release is also not a click', () => {
+test('sustained pinch enables slow rotation without a click; grace interval release selects', () => {
   const f = fixture(); f.interaction.update([hand()], 100); f.interaction.update([pinched()], 150);
   for (let t = 200; t < 150 + PINCH_HOLD_THRESHOLD; t += 50) f.interaction.update([pinched()], t);
   assert.equal(f.interaction.update([pinched()], 150 + PINCH_HOLD_THRESHOLD), 'rotate');
-  f.interaction.update([pinched({ x: .415 })], 530); assert.ok(f.gestures.target.rotationY > 0);
-  f.interaction.update([hand()], 580); assert.deepEqual(f.selected, []);
+  f.interaction.update([pinched({ x: .415 })], 200 + PINCH_HOLD_THRESHOLD); assert.ok(f.gestures.target.rotationY > 0);
+  f.interaction.update([hand()], 250 + PINCH_HOLD_THRESHOLD); assert.deepEqual(f.selected, []);
   const g = fixture(); g.interaction.update([hand()], 100); g.interaction.update([pinched()], 150);
-  g.interaction.update([pinched()], 300); g.interaction.update([hand()], 150 + SHORT_PINCH_MAX_MS + 1);
-  assert.deepEqual(g.selected, []);
+  for (let t = 200; t < 150 + SHORT_PINCH_MAX_MS + 1; t += 50) g.interaction.update([pinched()], t);
+  g.interaction.update([hand()], 150 + SHORT_PINCH_MAX_MS + 1);
+  assert.deepEqual(g.selected, [a]);
 });
 test('a second pinch immediately scales, cancels candidate, and cannot select on two-to-one release', () => {
   const f = fixture(); f.interaction.update([hand()], 100); f.interaction.update([pinched()], 150);

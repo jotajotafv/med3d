@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useRef, type RefObject } from 'react';
-import { HandInteraction } from './handInteraction';
+import { useEffect, useMemo, useRef, useState, type RefObject } from 'react';
+import { HandInteraction, type PinchCalibration } from './handInteraction';
 import { MAX_TRACKING_GAP_MS, MANUAL_HAND_COOLDOWN_MS } from './handConfig';
 import type { GestureController } from './gestures';
 import type { SelectionRaycastApi, SelectionResult } from './selection';
@@ -10,22 +10,36 @@ export function useHandPointer(gestures: GestureController, pickRef: RefObject<S
   const cursorRef = useRef<HTMLSpanElement>(null);
   const manualPointers = useRef(new Set<number>());
   const manualUntil = useRef(0);
+  const mounted = useRef(false);
+  const debugEnabled = import.meta.env.DEV && new URLSearchParams(window.location.search).get('xrDebug') === '1';
+  const [calibration, setCalibration] = useState<PinchCalibration | null>(null);
   const tracking = useMemo<HandTrackingInput>(() => {
     let stale: ReturnType<typeof setTimeout> | undefined;
+    let pulse: ReturnType<typeof setTimeout> | undefined;
+    const clearPulse = () => { clearTimeout(pulse); if (cursorRef.current) cursorRef.current.dataset.confirmed = 'false'; };
     const interaction = new HandInteraction<SelectionResult>(gestures, {
       viewport: () => pickRef.current?.rect() ?? null,
       hitTest: point => pickRef.current?.hitTest(point) ?? null,
-      select: result => pickRef.current?.select(result),
+      select: result => {
+        pickRef.current?.select(result);
+        clearPulse();
+        if (result.kind === 'selected' && cursorRef.current) {
+          cursorRef.current.dataset.confirmed = 'true';
+          pulse = setTimeout(clearPulse, 220);
+        }
+      },
+      reportCalibration: debugEnabled ? summary => { if (mounted.current) setCalibration(summary); } : undefined,
       blocked: () => manualPointers.current.size > 0 || performance.now() < manualUntil.current,
       draw: cursor => {
         const element = cursorRef.current, viewport = viewportRef.current;
         if (!element) return;
         element.hidden = !cursor || !viewport;
-        if (!cursor || !viewport) return;
+        if (!cursor || !viewport) { clearPulse(); return; }
         const rect = viewport.getBoundingClientRect();
         element.style.transform = `translate(${cursor.point.x - rect.left}px, ${cursor.point.y - rect.top}px)`;
         element.dataset.hover = String(cursor.hovered?.kind === 'selected');
         element.dataset.candidate = String(cursor.mode === 'candidate');
+        element.dataset.rotating = String(cursor.mode === 'rotate');
       },
     });
     return {
@@ -35,10 +49,11 @@ export function useHandPointer(gestures: GestureController, pickRef: RefObject<S
         stale = setTimeout(() => interaction.endGesture(), MAX_TRACKING_GAP_MS);
         return mode;
       },
-      endGesture: () => { clearTimeout(stale); interaction.endGesture(); },
+      endGesture: () => { clearTimeout(stale); clearPulse(); interaction.endGesture(); },
     };
-  }, [gestures, pickRef, viewportRef]);
+  }, [gestures, pickRef, viewportRef, debugEnabled]);
   useEffect(() => {
+    mounted.current = true;
     const interrupt = () => { manualUntil.current = performance.now() + MANUAL_HAND_COOLDOWN_MS; tracking.endGesture(); };
     const inXr = (event: Event) => event.target instanceof Element && !!event.target.closest('.xr-page');
     const down = (event: PointerEvent) => { if (inXr(event)) { manualPointers.current.add(event.pointerId); interrupt(); } };
@@ -52,11 +67,12 @@ export function useHandPointer(gestures: GestureController, pickRef: RefObject<S
     document.addEventListener('wheel', wheel, { capture: true, passive: true });
     window.addEventListener('keydown', key, true); window.addEventListener('blur', blur);
     return () => {
+      mounted.current = false;
       document.removeEventListener('pointerdown', down, true); document.removeEventListener('pointerup', up, true);
       document.removeEventListener('pointercancel', up, true); document.removeEventListener('wheel', wheel, true);
       window.removeEventListener('keydown', key, true); window.removeEventListener('blur', blur);
       manualPointers.current.clear(); tracking.endGesture();
     };
   }, [tracking]);
-  return { cursorRef, tracking };
+  return { cursorRef, tracking, debugEnabled, calibration };
 }

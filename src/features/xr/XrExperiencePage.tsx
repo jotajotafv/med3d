@@ -7,6 +7,7 @@ import { useHandTracking } from './useHandTracking';
 import { useHandPointer } from './useHandPointer';
 import { useManualControls } from './useManualControls';
 import XrEducationCard from './XrEducationCard';
+import XrCalibrationDebug from './XrCalibrationDebug';
 import type { HeartSelection, PickHandler, SelectionResult, SelectionRaycastApi } from './selection';
 import './xr.css';
 
@@ -28,7 +29,7 @@ export default function XrExperiencePage() {
   }, []);
   const clearSelection = useCallback(() => onSelect({ kind: 'empty' }), [onSelect]);
   const manual = useManualControls(gestures, onTap);
-  const { cursorRef, tracking } = useHandPointer(gestures, pickRef, manual.ref);
+  const { cursorRef, tracking, debugEnabled, calibration } = useHandPointer(gestures, pickRef, manual.ref);
   const { videoRef, status, start, stop } = useHandTracking(tracking);
   useEffect(() => {
     // Keep the heart above the mobile sheet without resizing/remounting its canvas.
@@ -57,6 +58,7 @@ export default function XrExperiencePage() {
   }, []);
   const cameraLabel = { off: 'Desactivada', requesting: 'Permiso pendiente', loading: 'Preparando', active: 'Activa', paused: 'En pausa', error: 'No disponible' }[status.camera];
   return <main className="xr-page">
+    {debugEnabled && <XrCalibrationDebug summary={calibration}/>}
     <header className="xr-heading">
       <div><p className="xr-eyebrow">MED3D <span>/</span> EXPERIENCIA INMERSIVA</p>
         <h1>La anatomía,<br/><span>en tus manos.</span></h1>

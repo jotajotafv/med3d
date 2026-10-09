@@ -4,8 +4,9 @@ import { GestureController, isPinching, normalizeHands, clampScale, MIN_SCALE, M
 
 const hand = (id = 'Left', x = 0.4, y = 0.5, pinchRatio = 0.15) => ({ id, x, y, pinchRatio });
 test('pinch uses hysteresis and rejects invalid samples', () => {
-  assert.equal(isPinching(0.29), true); assert.equal(isPinching(0.32), false);
-  assert.equal(isPinching(0.32, true), true); assert.equal(isPinching(0.44, true), false);
+  assert.equal(isPinching(0.29), true); assert.equal(isPinching(0.33), true);
+  assert.equal(isPinching(0.34), false); assert.equal(isPinching(0.35), false);
+  assert.equal(isPinching(0.40, true), true); assert.equal(isPinching(0.43, true), false);
   assert.equal(isPinching(NaN), false); assert.equal(isPinching(-1), false);
 });
 test('idle → rotate has no jump; horizontal and vertical movements rotate their axes', () => {

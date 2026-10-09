@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ExperienciaXrRouteImport } from './routes/experiencia-xr'
 import { Route as ArquitecturaRouteImport } from './routes/arquitectura'
 import { Route as AnatomiaRouteImport } from './routes/anatomia'
 import { Route as AcercaRouteImport } from './routes/acerca'
@@ -18,6 +19,11 @@ import { Route as PrimerosAuxiliosIndexRouteImport } from './routes/primeros-aux
 import { Route as ProcedimientosSlugRouteImport } from './routes/procedimientos/$slug'
 import { Route as PrimerosAuxiliosSlugRouteImport } from './routes/primeros-auxilios/$slug'
 
+const ExperienciaXrRoute = ExperienciaXrRouteImport.update({
+  id: '/experiencia-xr',
+  path: '/experiencia-xr',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ArquitecturaRoute = ArquitecturaRouteImport.update({
   id: '/arquitectura',
   path: '/arquitectura',
@@ -64,6 +70,7 @@ export interface FileRoutesByFullPath {
   '/acerca': typeof AcercaRoute
   '/anatomia': typeof AnatomiaRoute
   '/arquitectura': typeof ArquitecturaRoute
+  '/experiencia-xr': typeof ExperienciaXrRoute
   '/primeros-auxilios/$slug': typeof PrimerosAuxiliosSlugRoute
   '/procedimientos/$slug': typeof ProcedimientosSlugRoute
   '/primeros-auxilios/': typeof PrimerosAuxiliosIndexRoute
@@ -74,6 +81,7 @@ export interface FileRoutesByTo {
   '/acerca': typeof AcercaRoute
   '/anatomia': typeof AnatomiaRoute
   '/arquitectura': typeof ArquitecturaRoute
+  '/experiencia-xr': typeof ExperienciaXrRoute
   '/primeros-auxilios/$slug': typeof PrimerosAuxiliosSlugRoute
   '/procedimientos/$slug': typeof ProcedimientosSlugRoute
   '/primeros-auxilios': typeof PrimerosAuxiliosIndexRoute
@@ -85,6 +93,7 @@ export interface FileRoutesById {
   '/acerca': typeof AcercaRoute
   '/anatomia': typeof AnatomiaRoute
   '/arquitectura': typeof ArquitecturaRoute
+  '/experiencia-xr': typeof ExperienciaXrRoute
   '/primeros-auxilios/$slug': typeof PrimerosAuxiliosSlugRoute
   '/procedimientos/$slug': typeof ProcedimientosSlugRoute
   '/primeros-auxilios/': typeof PrimerosAuxiliosIndexRoute
@@ -97,6 +106,7 @@ export interface FileRouteTypes {
     | '/acerca'
     | '/anatomia'
     | '/arquitectura'
+    | '/experiencia-xr'
     | '/primeros-auxilios/$slug'
     | '/procedimientos/$slug'
     | '/primeros-auxilios/'
@@ -107,6 +117,7 @@ export interface FileRouteTypes {
     | '/acerca'
     | '/anatomia'
     | '/arquitectura'
+    | '/experiencia-xr'
     | '/primeros-auxilios/$slug'
     | '/procedimientos/$slug'
     | '/primeros-auxilios'
@@ -117,6 +128,7 @@ export interface FileRouteTypes {
     | '/acerca'
     | '/anatomia'
     | '/arquitectura'
+    | '/experiencia-xr'
     | '/primeros-auxilios/$slug'
     | '/procedimientos/$slug'
     | '/primeros-auxilios/'
@@ -128,6 +140,7 @@ export interface RootRouteChildren {
   AcercaRoute: typeof AcercaRoute
   AnatomiaRoute: typeof AnatomiaRoute
   ArquitecturaRoute: typeof ArquitecturaRoute
+  ExperienciaXrRoute: typeof ExperienciaXrRoute
   PrimerosAuxiliosSlugRoute: typeof PrimerosAuxiliosSlugRoute
   ProcedimientosSlugRoute: typeof ProcedimientosSlugRoute
   PrimerosAuxiliosIndexRoute: typeof PrimerosAuxiliosIndexRoute
@@ -136,6 +149,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/experiencia-xr': {
+      id: '/experiencia-xr'
+      path: '/experiencia-xr'
+      fullPath: '/experiencia-xr'
+      preLoaderRoute: typeof ExperienciaXrRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/arquitectura': {
       id: '/arquitectura'
       path: '/arquitectura'
@@ -200,6 +220,7 @@ const rootRouteChildren: RootRouteChildren = {
   AcercaRoute: AcercaRoute,
   AnatomiaRoute: AnatomiaRoute,
   ArquitecturaRoute: ArquitecturaRoute,
+  ExperienciaXrRoute: ExperienciaXrRoute,
   PrimerosAuxiliosSlugRoute: PrimerosAuxiliosSlugRoute,
   ProcedimientosSlugRoute: ProcedimientosSlugRoute,
   PrimerosAuxiliosIndexRoute: PrimerosAuxiliosIndexRoute,

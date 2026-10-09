@@ -1,7 +1,7 @@
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 const base=process.env.BASE_PATH || '/med3d/';
 const origin=process.env.SITE_ORIGIN || 'https://jotajotafv.github.io';
-const paths=['','anatomia','acerca'];
+const paths=['','anatomia','acerca','experiencia-xr'];
 const retiredPaths=['procedimientos','primeros-auxilios',...['presion-arterial','signos-vitales','vendaje','inmovilizacion'].map(x=>'procedimientos/'+x),...['rcp','atragantamiento','hemorragias','quemaduras','fracturas','desmayos','convulsiones','botiquin'].map(x=>'primeros-auxilios/'+x)];
 const html=await readFile('dist/index.html','utf8');
 for(const path of paths){if(path){await mkdir('dist/'+path,{recursive:true});await writeFile('dist/'+path+'/index.html',html);}}

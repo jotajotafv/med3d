@@ -8,7 +8,8 @@
     "build": "vite build && node scripts/static-routes.mjs",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview --host 0.0.0.0",
-    "verify:anatomy": "node scripts/test-atlas-catalog.mjs && node scripts/test-atlas-renderer.mjs && node scripts/test-atlas-multisystem.mjs && node scripts/test-atlas-torso.mjs && node scripts/test-atlas-limbs.mjs && node scripts/test-atlas-head-neck.mjs && node scripts/test-atlas-muscle-gaps.mjs"
+    "verify:anatomy": "node scripts/test-atlas-catalog.mjs && node scripts/test-atlas-renderer.mjs && node scripts/test-atlas-multisystem.mjs && node scripts/test-atlas-torso.mjs && node scripts/test-atlas-limbs.mjs && node scripts/test-atlas-head-neck.mjs && node scripts/test-atlas-muscle-gaps.mjs",
+    "test:xr": "node --experimental-strip-types --test scripts/xr/*.test.mjs"
   },
   "dependencies": {
     "react": "19.2.7",
@@ -20,7 +21,8 @@
     "@react-three/drei": "10.7.8",
     "@phosphor-icons/react": "2.1.10",
     "@fontsource-variable/geist": "5.3.0",
-    "@fontsource-variable/geist-mono": "5.3.0"
+    "@fontsource-variable/geist-mono": "5.3.0",
+    "@mediapipe/tasks-vision": "1.1.0"
   },
   "devDependencies": {
     "@tanstack/router-plugin": "1.168.19",

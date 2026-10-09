@@ -1,0 +1,25 @@
+MED3D experimental XR hand tracking
+
+MediaPipe Tasks Vision 1.1.0
+Copyright The MediaPipe Authors / Google LLC.
+Licensed under the Apache License, Version 2.0; see LICENSE-mediapipe.txt.
+Official package: https://www.npmjs.com/package/@mediapipe/tasks-vision
+Source project: https://github.com/google-ai-edge/mediapipe
+Runtime JS/WASM files are emitted from the pinned npm package by Vite.
+They are not modified. The local inference worker restricts network reads.
+
+Hand Landmarker float16 model, version 1
+Original, unmodified bundle:
+https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task
+SHA-256: fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1
+Bytes: 7819105
+The official Hand Tracking model card lists Apache License, Version 2.0:
+https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Hand%20Tracking%20(Lite_Full)%20with%20Fairness%20Oct%202021.pdf
+
+The runtime's repository license text was obtained from:
+https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.35/LICENSE
+The installed 1.1.0 package independently declares Apache-2.0.
+
+These notices concern the hand-tracking runtime/model only.
+The existing heart anatomy asset retains its separate HRA / CC BY 4.0
+attribution and licensing, documented in docs/model-licenses.md.

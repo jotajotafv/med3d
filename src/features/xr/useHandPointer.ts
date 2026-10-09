@@ -2,11 +2,13 @@ import { useEffect, useMemo, useRef, useState, type RefObject } from 'react';
 import { HandInteraction, type PinchCalibration } from './handInteraction';
 import { MAX_TRACKING_GAP_MS, MANUAL_HAND_COOLDOWN_MS } from './handConfig';
 import type { GestureController } from './gestures';
-import type { SelectionRaycastApi, SelectionResult } from './selection';
+import type { PointerPoint, PointerRect } from './handPointer';
 import type { HandTrackingInput } from './types';
 
 /** DOM-only adapter: one cursor update per inference, no landmark setState or render loop. */
-export function useHandPointer(gestures: GestureController, pickRef: RefObject<SelectionRaycastApi | null>, viewportRef: RefObject<HTMLDivElement | null>) {
+export function useHandPointer<T extends { kind: string }>(gestures: GestureController,
+  pickRef: RefObject<{ rect: () => PointerRect; hitTest: (point: PointerPoint) => T; select: (result: T) => void } | null>,
+  viewportRef: RefObject<HTMLDivElement | null>) {
   const cursorRef = useRef<HTMLSpanElement>(null);
   const manualPointers = useRef(new Set<number>());
   const manualUntil = useRef(0);
@@ -17,7 +19,7 @@ export function useHandPointer(gestures: GestureController, pickRef: RefObject<S
     let stale: ReturnType<typeof setTimeout> | undefined;
     let pulse: ReturnType<typeof setTimeout> | undefined;
     const clearPulse = () => { clearTimeout(pulse); if (cursorRef.current) cursorRef.current.dataset.confirmed = 'false'; };
-    const interaction = new HandInteraction<SelectionResult>(gestures, {
+    const interaction = new HandInteraction<T>(gestures, {
       viewport: () => pickRef.current?.rect() ?? null,
       hitTest: point => pickRef.current?.hitTest(point) ?? null,
       select: result => {

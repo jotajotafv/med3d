@@ -1,0 +1,111 @@
+import { useCallback, useEffect, useReducer, useRef, useState } from 'react';
+import { Camera, Minus, Plus } from '@phosphor-icons/react';
+import { GestureController } from '../gestures';
+import { useManualControls } from '../useManualControls';
+import { useHandPointer } from '../useHandPointer';
+import { useHandTracking } from '../useHandTracking';
+import XrCalibrationDebug from '../XrCalibrationDebug';
+import { SYSTEMS } from '../../anatomy/atlas/catalog-index';
+import { XrAtlasAssets, type AtlasAssetsSnapshot } from './assets';
+import { atlasReducer, initialAtlasState, PILOT_SYSTEMS } from './state';
+import type { AtlasPicker } from './presentation';
+import XrAtlasScene from './XrAtlasScene';
+import XrAtlasCard from './XrAtlasCard';
+import './atlas-xr.css';
+
+const EMPTY: AtlasAssetsSnapshot = { catalog: null, resources: [], systems: {} };
+const labels = { skeletal: 'Óseo', muscular: 'Muscular', cardiovascular: 'Cardiovascular' };
+export default function XrAtlasExperience() {
+  const [state, dispatch] = useReducer(atlasReducer, undefined, initialAtlasState);
+  const [gestures] = useState(() => new GestureController());
+  const [assets, setAssets] = useState(EMPTY), owner = useRef<XrAtlasAssets | null>(null);
+  const [layersOpen, setLayersOpen] = useState(() => !window.matchMedia('(max-width:760px)').matches);
+  const [showCamera, setShowCamera] = useState(true);
+  const pickRef = useRef<AtlasPicker | null>(null);
+  const onSelect = useCallback((id: string | null) => dispatch({ type: 'select', id }), []);
+  const onTap = useCallback((point: { x: number; y: number }) => { const picker = pickRef.current; if (picker) picker.select(picker.hitTest(point)); }, []);
+  const manual = useManualControls(gestures, onTap);
+  const { cursorRef, tracking, debugEnabled, calibration } = useHandPointer(gestures, pickRef, manual.ref);
+  const { videoRef, status, start, stop } = useHandTracking(tracking);
+  const active = ['requesting', 'loading', 'active', 'paused'].includes(status.camera);
+  const cameraOn = ['loading', 'active', 'paused'].includes(status.camera);
+  useEffect(() => {
+    const manager = new XrAtlasAssets(async (system, signal) => {
+      const response = await fetch(import.meta.env.BASE_URL + `models/anatomy/${system}/catalog.json`, { signal });
+      if (!response.ok) throw new Error('No se pudo cargar el catálogo del sistema.');
+      return response.json();
+    });
+    owner.current = manager; const unsubscribe = manager.subscribe(setAssets);
+    void manager.ensure('skeletal');
+    return () => { unsubscribe(); manager.dispose(); if (owner.current === manager) owner.current = null; };
+  }, []);
+  useEffect(() => { PILOT_SYSTEMS.forEach(system => { if (state.systemVisibility[system]) void owner.current?.ensure(system); }); }, [state.systemVisibility]);
+  useEffect(() => {
+    const escape = (event: KeyboardEvent) => { if (event.key === 'Escape' && !event.defaultPrevented) onSelect(null); };
+    window.addEventListener('keydown', escape); return () => window.removeEventListener('keydown', escape);
+  }, [onSelect]);
+  useEffect(() => {
+    if (state.selectedStructure && window.matchMedia('(max-width:760px)').matches) manual.ref.current?.scrollIntoView({ block: 'start', behavior: 'instant' });
+  }, [state.selectedStructure, manual.ref]);
+  const selected = assets.catalog?.nodes.find(node => node.id === state.selectedStructure);
+  const resetView = () => { gestures.reset(); tracking.endGesture(); dispatch({ type: 'resetView' }); };
+  return <main className="xr-page xr-atlas-page">
+    {debugEnabled && <XrCalibrationDebug summary={calibration}/>}
+    <header className="xr-heading"><div><p className="xr-eyebrow">MED3D <span>/</span> ATLAS XR PILOTO</p>
+      <h1>El cuerpo,<br/><span>en tus manos.</span></h1><p className="xr-intro">Explora huesos, músculos y vasos. Activa las capas que quieras estudiar.</p></div>
+      <p className="xr-atlas-note">Experiencia experimental · pantalla y cámara opcional.</p></header>
+    <section className="xr-atlas-workspace" aria-label="Atlas XR de tres sistemas">
+      <div className="xr-viewport" {...manual} onKeyDown={event => { if (event.target === event.currentTarget && event.key === '0') { event.preventDefault(); resetView(); } else manual.onKeyDown(event); }}
+        tabIndex={0} role="group" aria-label="Atlas XR 3D interactivo" aria-describedby="xr-atlas-help">
+        <div className="xr-model-label"><span className="xr-eyebrow">ATLAS PILOTO</span><strong>Cuerpo humano</strong></div>
+        {assets.catalog ? <XrAtlasScene assets={assets} state={state} gestures={gestures} pickRef={pickRef} onSelect={onSelect}/>
+          : <div className="xr-scene-message" role="status">Preparando sistema óseo…</div>}
+        <span className="xr-hand-cursor" ref={cursorRef} hidden aria-hidden="true"/>
+        <div className={'xr-camera-preview' + (cameraOn && showCamera ? ' is-visible' : '')} aria-hidden={!cameraOn || !showCamera}>
+          <video ref={videoRef} autoPlay muted playsInline aria-label="Vista previa de cámara en espejo"/><span>Cámara · Vista espejo</span></div>
+        <div className="xr-atlas-loading" data-xr-ui>{PILOT_SYSTEMS.map(system => {
+          const load = assets.systems[system];
+          return load?.error ? <p role="alert" key={system}>{labels[system]}: {load.error} <button type="button" onClick={() => owner.current?.retry(system)}>Reintentar {labels[system]}</button></p>
+            : load?.pending && state.systemVisibility[system] ? <p role="status" key={system}>Cargando {SYSTEMS.find(item => item.id === system)?.name.toLowerCase()}…</p> : null;
+        })}</div>
+        <div className="xr-viewport-controls"><button type="button" onClick={resetView}>Restablecer vista</button>
+          <div><button type="button" aria-label="Reducir tamaño del atlas" onClick={() => gestures.scale(gestures.target.scale / 1.12, performance.now())}><Minus size={17}/></button>
+            <button type="button" aria-label="Aumentar tamaño del atlas" onClick={() => gestures.scale(gestures.target.scale * 1.12, performance.now())}><Plus size={17}/></button></div></div>
+      </div>
+      <aside className="xr-atlas-tools" aria-label="Capas y control del Atlas XR" data-xr-ui>
+        <details className="xr-atlas-layers" open={layersOpen} onToggle={event => setLayersOpen(event.currentTarget.open)}>
+          <summary>Sistemas y despiece</summary>
+          <fieldset disabled={!!state.isolatedStructure}><legend>Sistemas</legend>
+            {PILOT_SYSTEMS.map(system => <div className="xr-atlas-layer" key={system}>
+              <label><input type="checkbox" checked={state.systemVisibility[system]} onChange={event => dispatch({ type: 'system', system, enabled: event.target.checked })}/>{labels[system]}</label>
+              {state.systemVisibility[system] && <label className="xr-atlas-range">Opacidad {labels[system]} <output>{Math.round(state.systemOpacity[system] * 100)}%</output>
+                <input type="range" min="10" max="100" step="1" aria-label={'Opacidad ' + labels[system]} value={state.systemOpacity[system] * 100} onChange={event => dispatch({ type: 'opacity', system, value: Number(event.target.value) / 100 })}/></label>}
+            </div>)}
+          </fieldset>
+          <label className="xr-atlas-range xr-atlas-explode">Despiece <output>{Math.round(state.explodedAmount * 100)}%</output>
+            <input type="range" aria-label="Despiece" min="0" max="100" step="1" value={state.explodedAmount * 100} onChange={event => dispatch({ type: 'explode', value: Number(event.target.value) / 100 })}/></label>
+          {state.isolatedStructure && <p className="xr-atlas-isolation">Estructura aislada. <button type="button" onClick={() => dispatch({ type: 'exitIsolation' })}>Restaurar conjunto</button></p>}
+          <div className="xr-atlas-restore"><button type="button" disabled={!state.hiddenStructures.length || !!state.isolatedStructure} onClick={() => dispatch({ type: 'restoreHidden' })}>Restaurar estructuras</button>
+            <button type="button" onClick={() => dispatch({ type: 'restoreAtlas' })}>Restaurar atlas</button></div>
+        </details>
+        <div className="xr-atlas-hands"><p className="xr-eyebrow">CONTROL CON MANOS</p>
+          <button type="button" className="xr-primary-button" onClick={active ? stop : start}><Camera size={17}/>{active ? 'Desactivar control con manos' : 'Activar control con manos'}</button>
+          <p className="xr-privacy">La imagen de la cámara se procesa localmente en tu dispositivo. No se graba ni se envía.</p>
+          <dl className="xr-tracking-status" aria-live="polite"><div><dt>Cámara</dt><dd>{{ off: 'Desactivada', requesting: 'Permiso pendiente', loading: 'Preparando', active: 'Activa', paused: 'En pausa', error: 'No disponible' }[status.camera]}</dd></div>
+            <div><dt>Manos</dt><dd>{status.hands} detectadas</dd></div><div><dt>Interacción</dt><dd>{{ idle: 'En espera', pointing: 'Apuntando', candidate: 'Seleccionando', rotate: 'Rotar', scale: 'Escalar' }[status.gesture]}</dd></div></dl>
+          {status.message && <p className="xr-status-message" role="status">{status.message}</p>}
+          {cameraOn && <button type="button" className="xr-preview-toggle" onClick={() => setShowCamera(value => !value)}>{showCamera ? 'Ocultar cámara' : 'Mostrar cámara'}</button>}
+          <p className="xr-atlas-guide">Índice para apuntar · pinch breve para seleccionar · pinch sostenido o con movimiento para rotar · dos pinches para escalar.</p>
+        </div>
+      </aside>
+    </section>
+    <p id="xr-atlas-help" className="xr-manual-help">Clic o toque: seleccionar · arrastra para rotar · rueda o dos dedos para ampliar · flechas y + / − · 0: restablecer vista · Escape: deseleccionar.</p>
+    <p className="xr-selection-announcement" role="status" aria-live="polite">{selected ? `${selected.name} seleccionado.` : 'Sin estructura seleccionada.'}</p>
+    {!selected && <div className="xr-selection-prompt"><h2>SELECCIONA UNA ESTRUCTURA</h2><p>Toca o haz clic sobre el cuerpo para explorar su anatomía.</p></div>}
+    {selected && assets.catalog && <XrAtlasCard node={selected} catalog={assets.catalog} isolated={state.isolatedStructure === selected.id}
+      onClose={() => { onSelect(null); manual.ref.current?.focus({ preventScroll: true }); }}
+      onIsolate={() => dispatch(state.isolatedStructure === selected.id ? { type: 'exitIsolation' } : { type: 'isolate', id: selected.id })}
+      onHide={() => dispatch({ type: 'hide', id: selected.id })}/>}
+    <p className="xr-attribution">Modelos: BodyParts3D / DBCLS · <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html" target="_blank" rel="noreferrer">Fuente</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a>. Cobertura anatómica disponible del Atlas MED3D.</p>
+  </main>;
+}

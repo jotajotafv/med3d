@@ -54,7 +54,9 @@ try {
   await shot('02-hover-estructura-simulado');
   const beforeSelect = await canvas.screenshot({ style: '.xr-hand-cursor,.xr-camera-preview{visibility:hidden!important}' });
   await pinch(); const a = await title(); await shot('03-pinch-seleccion-simulado');
-  await clear(); assert.ok((await canvas.screenshot({ style: '.xr-hand-cursor,.xr-camera-preview{visibility:hidden!important}' })).equals(beforeSelect), 'short pinch must not rotate at all');
+  await clear(); const restoredPose = await canvas.screenshot({ style: '.xr-hand-cursor,.xr-camera-preview{visibility:hidden!important}' });
+  if (!restoredPose.equals(beforeSelect)) { await writeFile(`${output}/pose-before.png`, beforeSelect); await writeFile(`${output}/pose-after.png`, restoredPose); }
+  assert.ok(restoredPose.equals(beforeSelect), 'short pinch must not rotate at all');
   const first = await findSelection(), second = await findSelection(first.name); assert.notEqual(first.name, second.name);
   await shot('04-ficha-estructura-b-simulada');
   results.push({ test: 'index pointer, hover without selection, short pinch with zero rotation, A → B, same educational card', a, b: second.name, passed: true });

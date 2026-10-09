@@ -41,7 +41,7 @@ try {
     }, { syntheticHands });
     const page = await context.newPage(); page.setDefaultTimeout(60000);
     const errors = []; page.on('pageerror', e => errors.push(e.message));
-    await page.goto(origin + '/med3d/experiencia-xr/?xrQa=1'); await page.getByRole('button', { name: 'Atlas XR', exact: true }).click();
+    await page.goto(origin + '/med3d/experiencia-xr/?xrQa=1');
     await page.waitForFunction(() => window.__med3dXrAtlas?.().meshes === 205);
     await page.getByRole('button', { name: 'Activar control con manos', exact: true }).click(); await page.getByText('Activa', { exact: true }).waitFor();
     for (const [level, active, meshes] of levels) {

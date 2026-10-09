@@ -8,7 +8,7 @@ const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.XR_PLAYWRIGHT_MODULE || process.argv[2] || 'playwright');
 const executablePath = process.env.XR_BROWSER_EXECUTABLE || process.argv[3];
 const origin = process.env.XR_QA_DEV_ORIGIN || 'http://127.0.0.1:5173';
-const output = '.cache/xr-full-atlas'; await mkdir(output, { recursive: true });
+const output = process.env.XR_QA_OUTPUT || '.cache/xr-full-atlas'; await mkdir(output, { recursive: true });
 const browser = await chromium.launch({ headless: true, ...(executablePath ? { executablePath } : {}) });
 const context = await browser.newContext({ viewport: { width: 1366, height: 1000 }, hasTouch: true });
 await context.addInitScript(installHandFixture);
@@ -73,7 +73,6 @@ async function slider(id, value, screenshot) {
 
 try {
   await page.goto(origin + '/med3d/experiencia-xr/?xrQa=1');
-  await page.getByRole('button', { name: 'Atlas XR', exact: true }).click();
   await page.waitForFunction(() => window.__med3dXrAtlas?.().meshes === 205);
   await page.evaluate(async () => {
     const qa = window.dwellQa = { raycasts: 0, calls: 0, raw: null, stable: null, point: null, state: 'lost', lastTime: 0 };
@@ -281,11 +280,10 @@ try {
     }
   }
   pass('responsive 1366/1050/900/768/390; eleven controls, manual list scroll and mobile bottom sheet', { responsive });
-  await page.setViewportSize({ width: 1366, height: 1000 });
-  await page.getByRole('button', { name: 'Corazón', exact: true }).click(); await page.locator('[data-model-status="ready"]').waitFor();
-  await page.getByRole('button', { name: 'Activar control con manos', exact: true }).click(); await page.getByText('Activa', { exact: true }).waitFor();
-  await hands([{ id: 'Left', u: .5, v: .53, ratio: .5 }], 35); await page.locator('.xr-education-card').waitFor(); await shot('12-corazon-regresion');
-  pass('unchanged XR Heart still loads, tracks synthetic landmarks and opens its own card');
+  assert.equal(await page.locator('.xr-mode-switch').count(), 0);
+  assert.ok(requests.every(url => !url.endsWith('/models/heart.glb')));
+  assert.ok(requests.some(url => url.endsWith('/models/anatomy/cardiovascular/heart.glb')));
+  pass('unified public route has no mode selector or separate heart download');
   assert.deepEqual(errors, []);
   await writeFile(output + '/browser-results.json', JSON.stringify({ synthetic: true, results, progressive, representatives, responsive, requests, errors }, null, 2));
 } catch (error) {

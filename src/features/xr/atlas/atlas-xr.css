@@ -6,3 +6,5 @@
 
 .xr-atlas-system-list{max-height:300px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#637478 transparent;padding:4px 7px 6px 4px}.xr-atlas-system-list .xr-atlas-layer{padding:8px 0}.xr-atlas-system-list .xr-atlas-layer>label:first-child{font-size:12px;line-height:1.5}.xr-atlas-system-list .xr-atlas-range{padding-top:8px}.xr-atlas-system-list input[type=range]{margin-top:8px}.xr-atlas-page .xr-attribution p{margin:4px 0}
 @media(max-width:760px){.xr-atlas-system-list{max-height:320px}}
+
+.xr-atlas-card .xr-education-content{scrollbar-width:thin;scrollbar-color:#637478 #0b1012;touch-action:pan-y}.xr-atlas-card .xr-education-content:focus-visible{outline:1px solid #9dcbd2;outline-offset:-3px}.xr-atlas-page .xr-hand-cursor[data-ui=scroll]{border-color:#9dcbd2;background:#9dcbd233;box-shadow:0 0 0 3px #9fe8ef25}.xr-atlas-page .xr-hand-cursor[data-ui=scroll]::after{content:"";position:absolute;top:-3px;bottom:-3px;left:5px;width:1px;background:#bceef4;animation:none;border:0;border-radius:0;inset-block:-3px;inset-inline:5px auto}

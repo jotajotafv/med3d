@@ -4,17 +4,21 @@ import { MAX_HAND_JUMP, MAX_TRACKING_GAP_MS, PINCH_EXIT_RATIO, UI_TARGET_DWELL_M
 import { DwellController } from '../dwell.ts';
 import { TargetStability } from '../targetStability.ts';
 import type { HandSample, HandTrackingInput, InteractionMode } from '../types';
+import { TRACKING_GRACE_MS } from '../handConfig.ts';
+import { HandScroll } from './handScroll.ts';
 
-export type UiTarget = { id: string; name?: string; kind: 'button' | 'toggle' | 'slider'; rect: PointerRect; enabled: boolean;
-  range?: { min: number; max: number; step: number | 'any'; value: number } };
+export type UiTarget = { id: string; name?: string; kind: 'button' | 'toggle' | 'slider' | 'scroll-region'; rect: PointerRect; enabled: boolean;
+  range?: { min: number; max: number; step: number | 'any'; value: number };
+  scroll?: { top: number; max: number; token: object } };
 export type UiHit = { route: 'anatomy' } | { route: 'ui'; target: UiTarget | null; blocked?: boolean };
-export type UiFeedback = { point: PointerPoint; target: UiTarget | null; stable?: boolean; state: 'hover' | 'press' | 'drag' | 'blocked' } | null;
+export type UiFeedback = { point: PointerPoint; target: UiTarget | null; stable?: boolean; state: 'hover' | 'press' | 'drag' | 'scroll' | 'blocked' } | null;
 export interface HandUiPort {
   surface(aspect: number): PointerRect | null;
   hitTest(point: PointerPoint): UiHit;
   resolve(id: string): UiTarget | null;
   activate(id: string): void;
   change(id: string, value: number): void;
+  scroll?(id: string, value: number): void;
   feedback(value: UiFeedback): void;
 }
 export const contains = (rect: PointerRect, point: PointerPoint, tolerance = 0) => point.x >= rect.left - tolerance
@@ -39,6 +43,7 @@ type RouterOptions = { point?: () => PointerPoint | null; surface?: () => Pointe
 export class HandUiRouter implements HandTrackingInput {
   readonly targets = new TargetStability<UiTarget>(target => target.id, UI_TARGET_DWELL_MS);
   readonly dwell: DwellController;
+  readonly scroll = new HandScroll();
   route: 'ui' | 'anatomy' = 'anatomy';
   private pointer = new HandPointer();
   private hands = new Map<string, Tracked>();
@@ -61,7 +66,7 @@ export class HandUiRouter implements HandTrackingInput {
     this.options = options; this.dwell = options.dwell ?? anatomy.dwell ?? new DwellController();
   }
   private reset() {
-    this.owner = null; this.capture = null; this.hands.clear(); this.primary = null; this.time = 0;
+    this.owner = null; this.capture = null; this.scroll.end(); this.hands.clear(); this.primary = null; this.time = 0;
     this.targets.reset(); this.surface = null; this.waitForOpen = true; this.pointer.reset(); this.mode = 'idle';
     this.ui.feedback(null);
   }
@@ -70,11 +75,18 @@ export class HandUiRouter implements HandTrackingInput {
     this.dwell.pause(now, lastReliable);
     if (this.anatomy.suspendGesture) this.anatomy.suspendGesture(now, lastReliable);
     else this.anatomy.endGesture();
+    if (this.scroll.capture && now - lastReliable <= TRACKING_GRACE_MS) {
+      this.scroll.pause(); this.hands.clear(); this.primary = null; this.time = 0; this.pointer.reset();
+      this.ui.feedback(null); this.mode = 'idle'; return;
+    }
     this.reset();
   }
-  resumeGesture(now: number, nearby: boolean, lossMs: number) { this.dwell.recover(now, nearby, lossMs); }
+  resumeGesture(now: number, nearby: boolean, lossMs: number) {
+    this.dwell.recover(now, nearby, lossMs);
+    if (this.scroll.capture && (!nearby || lossMs > TRACKING_GRACE_MS)) this.release();
+  }
   private release() {
-    this.capture = null; this.dwell.cancel(); this.targets.reset(); this.waitForOpen = true;
+    this.capture = null; this.scroll.end(); this.dwell.cancel(); this.targets.reset(); this.waitForOpen = true;
     this.pointer.reset(); this.anatomy.endGesture(); this.ui.feedback(null);
     return this.mode = 'idle' as const;
   }
@@ -90,7 +102,7 @@ export class HandUiRouter implements HandTrackingInput {
     const previous = this.hands.get(primary.id);
     if (previous && Math.hypot(primary.x - previous.x, primary.y - previous.y) > MAX_HAND_JUMP) { this.endGesture(); return this.mode; }
     const surface = this.options.surface ? this.options.surface() : this.ui.surface(aspect);
-    if ((this.owner || this.capture) && this.surface && surface && ['left', 'top', 'width', 'height'].some(key => Math.abs(surface[key as keyof PointerRect] - this.surface![key as keyof PointerRect]) > 1)) {
+    if ((this.owner || this.capture || this.scroll.capture) && this.surface && surface && ['left', 'top', 'width', 'height'].some(key => Math.abs(surface[key as keyof PointerRect] - this.surface![key as keyof PointerRect]) > 1)) {
       this.endGesture(); return this.mode;
     }
     this.surface = surface;
@@ -103,6 +115,15 @@ export class HandUiRouter implements HandTrackingInput {
       this.ui.feedback(null);
       if (valid.every(hand => hand.pinchRatio >= PINCH_EXIT_RATIO)) { this.waitForOpen = false; this.pointer.reset(); }
       return this.mode = 'idle';
+    }
+    if (this.scroll.capture) {
+      const target = this.ui.resolve(this.scroll.capture.id);
+      if (anyClosed) return this.release();
+      const result = this.scroll.move(target, point, now);
+      if (result.release) return this.release();
+      if (result.value !== undefined && result.value !== target?.scroll?.top) this.ui.scroll?.(target!.id, result.value);
+      this.ui.feedback({ point, target, stable: true, state: 'scroll' });
+      return this.mode = 'pointing';
     }
     if (this.capture) {
       const target = this.ui.resolve(this.capture.id);
@@ -132,14 +153,17 @@ export class HandUiRouter implements HandTrackingInput {
       if ((!hit.target?.enabled || hit.blocked) && (this.targets.stable || this.targets.raw)) this.targets.reset();
       const stable = this.targets.update(hit.target?.enabled && !hit.blocked ? hit.target : null, point, now);
       const target = stable ? (stable.id === hit.target?.id ? hit.target : this.ui.resolve(stable.id)) : null;
-      const eligible = target?.enabled ? target : null;
-      const fired = this.dwell.update(eligible ? { domain: 'ui', id: eligible.id, kind: eligible.kind } : null,
+      const eligible = target?.enabled && (target.kind !== 'scroll-region' || (hit.target?.id === target.id && contains(target.rect, point))) ? target : null;
+      // Scroll uses the unchanged one-shot dwell clock; its capture/loss lifecycle belongs to this router.
+      const fired = this.dwell.update(eligible ? { domain: 'ui', id: eligible.id, kind: eligible.kind === 'scroll-region' ? 'button' : eligible.kind } : null,
         now, !stable && now - this.targets.rawSince >= UI_TARGET_DWELL_MS);
       this.ui.feedback({ point, target: eligible ?? hit.target, stable: !!eligible, state: 'hover' });
       if (fired && eligible) {
         if (eligible.kind === 'slider') {
           this.capture = { id: eligible.id, outsideSince: null };
           this.ui.feedback({ point, target: eligible, stable: true, state: 'drag' });
+        } else if (eligible.kind === 'scroll-region') {
+          if (this.scroll.begin(eligible, point)) this.ui.feedback({ point, target: eligible, stable: true, state: 'scroll' });
         } else this.ui.activate(eligible.id);
         this.options.confirm?.();
       }

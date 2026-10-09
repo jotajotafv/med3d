@@ -6,6 +6,7 @@ const rectOf = (element: Element): PointerRect => {
   const { left, top, width, height } = element.getBoundingClientRect();
   return { left, top, width, height };
 };
+const isScrollRegion = (element: HTMLElement) => element.dataset.xrHandKind === 'scroll-region';
 const visible = (element: HTMLElement) => {
   if (!element.isConnected || !element.getClientRects().length || element.closest('[hidden],[inert],[aria-hidden="true"]')) return false;
   for (let parent: HTMLElement | null = element; parent; parent = parent.parentElement) {
@@ -36,7 +37,7 @@ export class HandUiRegistry implements HandUiPort {
     this.controls.clear();
     this.root?.querySelectorAll<HTMLElement>('[data-xr-hand-control]').forEach(element => {
       const id = element.dataset.xrHandControl;
-      if (id && (element instanceof HTMLButtonElement || element instanceof HTMLInputElement || element.tagName === 'SUMMARY')) this.controls.set(id, element);
+      if (id && (element instanceof HTMLButtonElement || element instanceof HTMLInputElement || element.tagName === 'SUMMARY' || isScrollRegion(element))) this.controls.set(id, element);
     });
     this.blocks = [...(this.root?.querySelectorAll<HTMLElement>('[data-xr-ui],.xr-viewport-controls,.xr-camera-preview.is-visible') ?? [])];
   }
@@ -57,19 +58,28 @@ export class HandUiRegistry implements HandUiPort {
     const rect = rectOf(this.hitElement(element));
     if (rect.width <= 0 || rect.height <= 0) return null;
     const enabled = !element.matches(':disabled,[aria-disabled="true"]');
-    const kind = element instanceof HTMLInputElement ? element.type === 'range' ? 'slider' : 'toggle' : 'button';
+    const kind = isScrollRegion(element) ? 'scroll-region' : element instanceof HTMLInputElement ? element.type === 'range' ? 'slider' : 'toggle' : 'button';
     const target: UiTarget = { id, kind, rect, enabled,
       name: (element.getAttribute('aria-label') || this.hitElement(element).textContent || '').trim().replace(/\s+/g, ' ').slice(0, 60) };
     if (kind === 'slider' && element instanceof HTMLInputElement) target.range = {
       min: element.min ? Number(element.min) : 0, max: element.max ? Number(element.max) : 100,
       step: element.step === 'any' ? 'any' : Number(element.step) > 0 ? Number(element.step) : 1, value: Number(element.value),
     };
+    if (kind === 'scroll-region') {
+      const max = element.scrollHeight - element.clientHeight;
+      const left = Math.max(0, rect.left), right = Math.min(innerWidth, rect.left + rect.width);
+      const top = Math.max(0, rect.top), bottom = Math.min(innerHeight, rect.top + rect.height);
+      const probe = right > left && bottom > top ? document.elementFromPoint((left + right) / 2, (top + bottom) / 2) : null;
+      if (max <= 0 || !probe || !element.contains(probe)) return null;
+      target.scroll = { top: element.scrollTop, max, token: element };
+    }
     return target;
   }
   hitTest(point: PointerPoint) {
     const top = document.elementFromPoint(point.x, point.y);
     if (!top || !this.root?.contains(top)) return { route: 'ui' as const, target: null, blocked: true };
     for (const [id, element] of this.controls) {
+      if (isScrollRegion(element)) continue;
       // Filter by actual topmost element before style/layout reads. This also rejects covered controls.
       if (!this.hitElement(element).contains(top)) continue;
       const target = this.resolve(id);
@@ -80,6 +90,7 @@ export class HandUiRegistry implements HandUiPort {
     const candidates: { target: UiTarget; distance: number; z: number; order: number }[] = [];
     let order = 0;
     for (const [id, element] of this.controls) {
+      if (isScrollRegion(element)) continue;
       order++;
       const hitElement = this.hitElement(element), panel = this.blocks.find(block => block.contains(element));
       if (!panel?.contains(top) || !top.contains(hitElement)) continue;
@@ -100,13 +111,26 @@ export class HandUiRegistry implements HandUiPort {
     }
     candidates.sort((a, b) => b.z - a.z || a.distance - b.distance || b.order - a.order);
     if (candidates.length) return { route: 'ui' as const, target: candidates[0].target };
+    // Explicit scroll regions only, without hit slop. Text/links can scroll, but never receive a synthetic click.
+    for (const [id, element] of this.controls) {
+      if (!isScrollRegion(element) || !element.contains(top)) continue;
+      if (top.closest('button,input,select,textarea,[role="button"]')) return { route: 'ui' as const, target: null, blocked: true };
+      const target = this.resolve(id);
+      if (target && contains(target.rect, point)) return { route: 'ui' as const, target };
+    }
     if (this.blocks.some(element => element.contains(top))) return { route: 'ui' as const, target: null, blocked: true };
     const canvas = this.root.querySelector('canvas');
     return canvas && (top === canvas || canvas.contains(top)) ? { route: 'anatomy' as const } : { route: 'ui' as const, target: null, blocked: true };
   }
   activate(id: string) {
     const target = this.resolve(id);
-    if (target?.enabled && target.kind !== 'slider') this.controls.get(id)?.click();
+    if (target?.enabled && (target.kind === 'button' || target.kind === 'toggle')) this.controls.get(id)?.click();
+  }
+  scroll(id: string, value: number) {
+    const target = this.resolve(id), element = this.controls.get(id);
+    if (target?.enabled && target.kind === 'scroll-region' && target.scroll && element && Number.isFinite(value)) {
+      element.scrollTop = Math.max(0, Math.min(target.scroll.max, value));
+    }
   }
   change(id: string, value: number) {
     const target = this.resolve(id), element = this.controls.get(id);

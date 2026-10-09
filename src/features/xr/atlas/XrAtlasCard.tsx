@@ -13,7 +13,8 @@ export default function XrAtlasCard({ node, catalog, isolated, onClose, onIsolat
       {lesson.latin && <p className="xr-education-latin" lang="la">{lesson.latin}</p>}
       <div className="xr-atlas-actions"><button type="button" data-xr-hand-control="isolate" onClick={onIsolate}>{isolated ? 'Restaurar' : 'Aislar'}</button><button type="button" data-xr-hand-control="hide" onClick={onHide}>Ocultar</button></div>
     </header>
-    <div className="xr-education-content">
+    <div key={node.id} className="xr-education-content" tabIndex={0} role="region" aria-label="Contenido de la ficha educativa"
+      data-xr-hand-control="education-scroll" data-xr-hand-kind="scroll-region">
       <dl className="xr-education-context">{lesson.system && <div><dt>Sistema</dt><dd>{lesson.system}</dd></div>}
         {lesson.region && <div><dt>Región</dt><dd>{lesson.region}</dd></div>}</dl>
       {lesson.scope && <p className="xr-lesson-scope">{lesson.scope}</p>}

@@ -187,7 +187,9 @@ try {
 
   const simulated = await open({ mockWorker: true, label: true }); const sim = simulated.page;
   await activate(sim); await expectStatus(sim, 'Activa');
-  await sim.evaluate(() => { window.xrQa.hands = [{ id: 'Left', x: 0.4, y: 0.5 }]; }); await expectStatus(sim, 'Rotar');
+  await sim.evaluate(() => { window.xrQa.hands = [{ id: 'Left', x: 0.4, y: 0.5, open: true }]; });
+  await sim.waitForFunction(() => document.querySelector('.xr-hand-cursor').dataset.tracking === 'tracking');
+  await sim.evaluate(() => { window.xrQa.hands[0].open = false; }); await expectStatus(sim, 'Rotar');
   const beforeGesture = await sim.locator('canvas').screenshot();
   await sim.evaluate(() => { window.xrQa.hands[0].x = 0.58; window.xrQa.hands[0].y = 0.58; }); await pause(sim);
   assert.notDeepEqual(await sim.locator('canvas').screenshot(), beforeGesture); await shot(sim, '05-una-mano-rotacion-simulada');
@@ -196,12 +198,17 @@ try {
   await sim.evaluate(() => { window.xrQa.hands[0].x = 0.3; window.xrQa.hands[1].x = 0.7; }); await pause(sim);
   assert.notDeepEqual(await sim.locator('canvas').screenshot(), beforeScale); await shot(sim, '06-dos-manos-escala-simulada');
   await sim.evaluate(() => { window.xrQa.hands = []; }); await expectStatus(sim, 'En espera');
-  await sim.evaluate(() => { window.xrQa.hands = [{ id: 'Right', x: 0.3, y: 0.4 }]; }); await expectStatus(sim, 'Rotar');
+  await sim.evaluate(() => { window.xrQa.hands = [{ id: 'Right', x: 0.3, y: 0.4, open: true }]; });
+  await sim.waitForFunction(() => document.querySelector('.xr-hand-cursor').dataset.tracking === 'tracking');
+  await sim.evaluate(() => { window.xrQa.hands[0].open = false; }); await expectStatus(sim, 'Rotar');
   await sim.evaluate(() => { Object.defineProperty(document, 'visibilityState', { value: 'hidden', configurable: true }); document.dispatchEvent(new Event('visibilitychange')); });
   await expectStatus(sim, 'En pausa'); const frames = await sim.evaluate(() => window.xrQa.frames);
   await pause(sim); assert.equal(await sim.evaluate(() => window.xrQa.frames), frames);
   await sim.evaluate(() => { Object.defineProperty(document, 'visibilityState', { value: 'visible', configurable: true }); document.dispatchEvent(new Event('visibilitychange')); });
-  await expectStatus(sim, 'Activa'); await expectStatus(sim, 'Rotar');
+  await expectStatus(sim, 'Activa');
+  await sim.evaluate(() => { window.xrQa.hands[0].open = true; });
+  await sim.waitForFunction(() => document.querySelector('.xr-hand-cursor').dataset.tracking === 'tracking');
+  await sim.evaluate(() => { window.xrQa.hands[0].open = false; }); await expectStatus(sim, 'Rotar');
   await sim.evaluate(() => window.dispatchEvent(new Event('pagehide')));
   await sim.waitForFunction(() => window.xrQa.stops === 1 && window.xrQa.closed === 1);
   await activate(sim); await expectStatus(sim, 'Activa');

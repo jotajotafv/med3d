@@ -19,14 +19,14 @@ page.on('request', request => requests.push({ url: request.url(), method: reques
 const canvas = page.locator('.xr-scene canvas'), cursor = page.locator('.xr-hand-cursor');
 const title = () => page.locator('#xr-education-title').textContent();
 const cardCount = () => page.locator('.xr-education-card').count();
-const pause = () => page.waitForTimeout(450);
+const pause = () => page.waitForTimeout(750);
 const shot = name => page.screenshot({ path: `${output}/${name}.png`, fullPage: false });
 async function hands(value, frames = 1) {
   const before = await page.evaluate(value => { window.handQa.hands = value; return window.handQa.frames; }, value);
   await page.waitForFunction(({ before, frames }) => window.handQa.frames >= before + frames, { before, frames });
 }
 const one = (u = .5, v = .53, pinch = false, id = 'Left') => ({ id, u, v, pinch });
-async function point(u = .5, v = .53) { await hands([one(u, v)], 8); await cursor.waitFor({ state: 'visible' }); }
+async function point(u = .5, v = .53) { await hands([one(u, v)], 18); await cursor.waitFor({ state: 'visible' }); }
 async function pinch(u = .5, v = .53) {
   await hands([one(u, v, true)]);
   assert.equal(await cursor.getAttribute('data-candidate'), 'true');
@@ -97,7 +97,8 @@ try {
   results.push({ test: 'open educational card preserves selection while hands rotate and scale', passed: true });
 
   // Loss must preserve selection; recovery with an already closed hand is not a click.
-  const selectedBeforeLoss = await title(); await hands([], 2); assert.equal(await cursor.isVisible(), false);
+  const selectedBeforeLoss = await title(); await hands([], 2); assert.equal(await cursor.getAttribute('data-tracking'), 'grace');
+  await hands([], 8); assert.equal(await cursor.isVisible(), false);
   assert.equal(await title(), selectedBeforeLoss); const beforeRecovery = await canvas.screenshot({ style: '.xr-hand-cursor,.xr-camera-preview{visibility:hidden!important}' });
   await hands([one(.7, .4, true)], 2); await hands([one(.7, .4)], 2);
   assert.equal(await title(), selectedBeforeLoss); assert.ok((await canvas.screenshot({ style: '.xr-hand-cursor,.xr-camera-preview{visibility:hidden!important}' })).equals(beforeRecovery));
@@ -106,8 +107,8 @@ try {
   await hands([one(.5, .53), one(.8, .4, false, 'Right')], 3);
   const reordered = await cursor.boundingBox(); assert.ok(Math.abs(primary.x - reordered.x) < 1);
   await point(.08, .2); await pinch(.08, .2); assert.equal(await cardCount(), 0, 'valid empty pinch clears');
-  await point(); await hands([one(1.1, .5)], 2); assert.equal(await cursor.isVisible(), false); assert.equal(await cardCount(), 0);
-  results.push({ test: 'loss/recovery without jumps or false clicks, sticky primary across reordered hands, empty pinch clears, outside pointer hidden', passed: true });
+  await point(); await hands([one(1.1, .5)], 2); assert.equal(await cursor.getAttribute('data-tracking'), 'grace'); await hands([], 8); assert.equal(await cursor.isVisible(), false); assert.equal(await cardCount(), 0);
+  results.push({ test: 'loss/recovery without jumps or false clicks, sticky primary across reordered hands, empty pinch clears, outside pointer enters grace then hides', passed: true });
 
   await point(); const box = await canvas.boundingBox();
   await page.mouse.move(box.x + box.width * .5, box.y + box.height * .5); await page.mouse.down();
@@ -133,7 +134,7 @@ try {
   await findSelection(); await pause(); await shot('07-mobile-pinch-simulado');
   const sheet = await page.locator('.xr-education-card').boundingBox(); assert.ok(sheet.height <= 844 * .44 + 1);
   const beforeStall = await title(); await page.evaluate(() => { window.handQa.frozen = true; });
-  await page.waitForTimeout(400); assert.equal(await cursor.isVisible(), false); assert.equal(await title(), beforeStall);
+  await page.waitForTimeout(500); assert.equal(await cursor.isVisible(), false); assert.equal(await title(), beforeStall);
   results.push({ test: 'stalled inference hides stale cursor and cancels gesture without clearing the card', passed: true });
   await clear();
   await page.getByRole('button', { name: 'Desactivar control con manos', exact: true }).click();

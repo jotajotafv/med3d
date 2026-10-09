@@ -4,7 +4,23 @@ export const SHORT_PINCH_MAX_MS = 450;
 export const PINCH_HOLD_THRESHOLD = 550;
 export const ROTATE_MOVE_THRESHOLD = 0.040;
 export const pinchDurationBand = (duration: number) => duration <= SHORT_PINCH_MAX_MS ? 'short' : duration < PINCH_HOLD_THRESHOLD ? 'grace' : 'hold';
-export const CURSOR_SMOOTHING_MS = 45;
+// XR 1.5.1 starting values; physical acceptance remains pending.
+export const CURSOR_FAST_SMOOTHING_MS = 45;
+export const CURSOR_SLOW_SMOOTHING_MS = 110;
+export const CURSOR_SLOW_VELOCITY = 0.15; // normalized video units / second
+export const CURSOR_FAST_VELOCITY = 1.2;
+export const CURSOR_JUMP_BASE = 0.08;
+export const CURSOR_JUMP_SPEED = 2.4; // allowance = base + speed * dt, capped below
+export const CURSOR_JUMP_MAX = 0.25;
+export const TRACKING_GRACE_MS = 380;
+export const REACQUIRE_SETTLE_MS = 150;
+export const REACQUIRE_NEAR_RADIUS = 0.08;
+export const TARGET_DWELL_MS = 150;
+export const TARGET_STICK_RADIUS_PX = 18;
+export const UI_TARGET_DWELL_MS = 120;
+export const UI_HIT_SLOP_PX = 10;
+export const UI_SLIDER_SLOP_Y_PX = 8;
+export const UI_CAPTURE_TOLERANCE_PX = 14;
 export const MAX_TRACKING_GAP_MS = 250;
 export const MAX_HAND_JUMP = 0.25;
 export const MANUAL_HAND_COOLDOWN_MS = 250;

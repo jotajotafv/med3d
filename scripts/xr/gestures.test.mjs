@@ -57,12 +57,12 @@ test('manual input takes precedence and reset restores only XR pose', () => {
   controller.scale(99, 600); assert.equal(controller.target.scale, MAX_SCALE);
   controller.reset(); assert.deepEqual(controller.target, { rotationX: 0, rotationY: 0, scale: 1 });
 });
-test('normalization mirrors X, accounts for aspect ratio, filters malformed and duplicate hands', () => {
+test('normalization mirrors X, accounts for aspect ratio, filters malformed hands and retains distinct samples despite duplicate handedness', () => {
   const points = Array.from({ length: 21 }, () => ({ x: 0.2, y: 0.5, z: 0 }));
   points[9].y = 0.3; points[4].x = 0.19; points[8].x = 0.21;
   const category = [{ categoryName: 'Left', score: 0.9 }];
   const samples = normalizeHands({ landmarks: [points, points], handedness: [category, category] }, 2);
-  assert.equal(samples.length, 1); assert.equal(samples[0].x, 0.8); assert.ok(Math.abs(samples[0].pinchRatio - 0.2) < 1e-9);
+  assert.equal(samples.length, 2); assert.notEqual(samples[0].id, samples[1].id); assert.equal(samples[0].x, 0.8); assert.ok(Math.abs(samples[0].pinchRatio - 0.2) < 1e-9);
   assert.deepEqual(normalizeHands({ landmarks: [points.slice(0, 20)], handedness: [category] }, 1), []);
   points[4].x = NaN; assert.deepEqual(normalizeHands({ landmarks: [points], handedness: [category] }, 1), []);
 });

@@ -130,11 +130,12 @@ test('hand pointer raycasts actual heart meshes after XR rotation/scale and open
     assert.ok(found.size >= 2, 'at least two real visible structures per pose');
     for (const { x, y, hit } of [...found.values()].slice(0, 2)) {
       const selected = [], gestures = new GestureController();
-      const interaction = new HandInteraction(gestures, { viewport: () => rect,
+      const interaction = new HandInteraction(gestures, {
+    targetKey: value => value.kind === 'selected' ? value.selection.id : null, viewport: () => rect,
         hitTest: point => pickHeart(point, rect, camera, gltf.scene, realIndex, ray),
         select: result => selected.push(result), draw() {} });
       const hand = { id: 'Left', x, y, indexX: x, indexY: y, pinchRatio: .8 };
-      interaction.update([hand], 100); interaction.update([{ ...hand, pinchRatio: .1 }], 150); interaction.update([hand], 250);
+      for (const time of [-100, -50, 0, 50, 100]) interaction.update([hand], time); interaction.update([{ ...hand, pinchRatio: .1 }], 150); interaction.update([hand], 250);
       assert.equal(selected[0].selection, hit.selection);
       const html = renderToStaticMarkup(createElement(XrEducationCard, { selection: selected[0].selection, unknown: false, onClose() {} }));
       assert.ok(html.includes(hit.selection.structure.title));

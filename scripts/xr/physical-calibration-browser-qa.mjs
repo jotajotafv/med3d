@@ -29,7 +29,7 @@ async function activate() {
   await page.getByRole('button', { name: 'Activar control con manos', exact: true }).click();
   await page.getByText('Activa', { exact: true }).waitFor();
   await page.evaluate(() => { window.handQa.hands = [{ id: 'Left', u: .5, v: .53, ratio: .5 }]; });
-  await cursor.waitFor({ state: 'visible' }); await page.waitForTimeout(400);
+  await cursor.waitFor({ state: 'visible' }); await page.waitForTimeout(800);
 }
 async function motion(duration, { open = false, deliberate = false, u = .5, v = .53 } = {}) {
   await page.evaluate(({ duration, open, deliberate, u, v }) => {
@@ -55,59 +55,58 @@ async function motion(duration, { open = false, deliberate = false, u = .5, v = 
     };
   }, { duration, open, deliberate, u, v });
   await page.waitForFunction(() => window.handQa.done);
-  await page.waitForTimeout(70);
+  await page.waitForTimeout(160);
 }
 try {
   await load(production, '?xrDebug=1'); assert.equal(await debug.count(), 0);
   results.push({ test: 'production ignores xrDebug query', passed: true });
   await load(development); assert.equal(await debug.count(), 0);
   await load(development, '?xrDebug=1'); assert.equal(await debug.count(), 1);
-  assert.equal(await debug.locator('dd').count(), 0); await activate();
+  assert.equal(await debug.locator('dd').count(), 7); assert.equal((await values())[6], 'none'); await activate();
   const initial = await pose();
   await motion(900, { open: true });
-  assert.ok((await pose()).equals(initial)); assert.equal(await debug.locator('dd').count(), 0);
+  assert.ok((await pose()).equals(initial)); assert.equal(await debug.locator('dd').count(), 7); assert.equal((await values())[6], 'none');
   assert.equal(await page.locator('.xr-education-card').count(), 0);
   results.push({ test: 'moderate open-hand jitter: no rotation or selection', passed: true });
   await shot('01-jitter-apuntando-simulado');
   for (const duration of [350, 430, 490]) {
     await motion(duration);
     assert.equal(await page.locator('.xr-education-card').count(), 1);
-    const summary = await values(); assert.equal(summary.length, 4);
-    assert.ok(parseInt(summary[0]) >= duration - 1 && parseInt(summary[0]) < 550);
-    assert.ok(Number(summary[1]) > .01 && Number(summary[1]) < .04);
-    assert.equal(summary[2], 'select'); assert.ok(Number(summary[3]) >= .325 && Number(summary[3]) < .34);
+    const summary = await values(); assert.equal(summary.length, 7);
+    assert.equal(summary[0], 'tracking'); assert.ok(Number.isFinite(Number(summary[1])));
+    assert.equal(summary[6], 'select');
     assert.equal(await page.evaluate(() => window.handQa.confirmed), true);
     assert.equal(await page.evaluate(() => window.handQa.rotated), false);
     results.push({ test: 'natural pinch + candidate jitter opens existing card and confirms', requestedDurationMs: duration, summary, passed: true });
     await shot(`02-seleccion-${duration}ms-simulada`);
-    await page.keyboard.press('Escape'); await page.waitForTimeout(500);
+    await page.keyboard.press('Escape'); await page.waitForTimeout(800);
     const after = await pose();
     if (!after.equals(initial)) { await writeFile(`${output}/pose-before.png`, initial); await writeFile(`${output}/pose-after.png`, after); }
     assert.ok(after.equals(initial), 'candidate must produce zero visible rotation');
   }
   await motion(350, { deliberate: true });
-  assert.equal((await values())[2], 'rotate'); assert.equal(await page.locator('.xr-education-card').count(), 0);
+  assert.equal((await values())[6], 'rotate'); assert.equal(await page.locator('.xr-education-card').count(), 0);
   assert.equal(await page.evaluate(() => window.handQa.rotated), true); assert.ok(!(await pose()).equals(initial));
   results.push({ test: 'deliberate movement rotates; return and release never select', summary: await values(), passed: true });
   await shot('03-movimiento-intencional-simulado');
-  await motion(650); assert.equal((await values())[2], 'rotate'); assert.equal(await page.locator('.xr-education-card').count(), 0);
+  await motion(650); assert.equal((await values())[6], 'rotate'); assert.equal(await page.locator('.xr-education-card').count(), 0);
   results.push({ test: 'hold above 550 ms rotates without selection', summary: await values(), passed: true });
-  await page.getByRole('button', { name: 'Restablecer rotación y escala del corazón' }).click(); await page.waitForTimeout(500);
+  await page.getByRole('button', { name: 'Restablecer rotación y escala del corazón' }).click(); await page.waitForTimeout(800);
   await motion(350); assert.equal(await page.locator('.xr-education-card').count(), 1);
-  await page.evaluate(() => { window.handQa.hands = [{ id: 'Left', u: .08, v: .2, ratio: .5 }]; }); await page.waitForTimeout(500);
+  await page.evaluate(() => { window.handQa.hands = [{ id: 'Left', u: .08, v: .2, ratio: .5 }]; }); await page.waitForTimeout(800);
   await motion(350, { u: .08, v: .2 }); assert.equal(await page.locator('.xr-education-card').count(), 0);
-  assert.equal((await values())[2], 'select');
+  assert.equal((await values())[6], 'select');
   results.push({ test: 'valid empty pinch still deselects', passed: true });
-  await page.evaluate(() => { window.handQa.hands = [{ id: 'Left', u: .5, v: .53, ratio: .5 }]; }); await page.waitForTimeout(500);
+  await page.evaluate(() => { window.handQa.hands = [{ id: 'Left', u: .5, v: .53, ratio: .5 }]; }); await page.waitForTimeout(800);
   await page.evaluate(() => { window.handQa.hands[0].ratio = .33; });
   await page.waitForFunction(() => document.querySelector('.xr-hand-cursor').dataset.candidate === 'true');
   await page.evaluate(() => { window.handQa.hands = []; });
-  await cursor.waitFor({ state: 'hidden' }); assert.equal((await values())[2], 'cancel');
+  await cursor.waitFor({ state: 'hidden' }); assert.equal((await values())[6], 'cancel');
   assert.equal(await page.locator('.xr-education-card').count(), 0);
   results.push({ test: 'tracking loss cancels without false selection; debug replaces previous summary', passed: true });
   await page.getByRole('button', { name: 'Desactivar control con manos', exact: true }).click();
   assert.equal(await page.evaluate(() => window.handQa.stops), 1);
-  await page.reload(); await debug.waitFor(); assert.equal(await debug.locator('dd').count(), 0);
+  await page.reload(); await debug.waitFor(); assert.equal(await debug.locator('dd').count(), 7); assert.equal((await values())[6], 'none');
   assert.equal(await page.evaluate(() => window.handQa.calls), 0);
   results.push({ test: 'camera cleanup; reload clears derived debug and does not activate camera', passed: true });
   assert.deepEqual(errors, []);

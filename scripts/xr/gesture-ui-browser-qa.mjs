@@ -155,7 +155,9 @@ try {
   await hands([{ ...end, pinch: false }], 3); assert.ok(Math.abs((await pose()).rotation[1]) > .1); assert.equal((await inspect()).state.systemVisibility.muscular, true);
   await pinch('reset-view'); await page.waitForTimeout(500);
   const center = await atPoint({ x: canvasBox.x + canvasBox.width * .5, y: canvasBox.y + canvasBox.height * .45 });
-  await hands([center], 8); await hands([{ ...center, pinch: true }, { ...center, id: 'Right', u: center.u + .15, pinch: true }], 3);
+  // A direct synthetic jump from UI to canvas now needs loss/reacquire + open settle.
+  await hands([center], 16); await page.waitForFunction(() => document.querySelector('.xr-hand-cursor').dataset.tracking === 'tracking');
+  await hands([{ ...center, pinch: true }, { ...center, id: 'Right', u: center.u + .15, pinch: true }], 3);
   await hands([{ ...center, u: center.u - .04, pinch: true }, { ...center, id: 'Right', u: center.u + .2, pinch: true }], 6);
   assert.ok((await pose()).scale > 1); await hands([]);
   pass('anatomy keeps ownership when crossing UI; normal two-hand scale reanchors after UI');

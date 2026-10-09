@@ -169,10 +169,11 @@ test('educational adapter reuses scoped sources; unknown content only renders av
 test('same calibrated hand arbitration selects atlas ID, rotates whole root target and scales with two pinches', () => {
   const part = presentation.parts.find(part => part.node.systemId === 'skeletal'), { hit } = pickPart(part, { ...all(), isolatedStructure: part.node.id });
   const gestures = new GestureController(), selected = [], interaction = new HandInteraction(gestures, {
+    targetKey: value => value.kind === 'selected' ? value.selection.id : null,
     viewport: () => ({ left: 0, top: 0, width: 400, height: 300 }), hitTest: () => hit, select: value => selected.push(value), draw() {},
   });
   const hand = (pinchRatio, x = .5, id = 'Left') => ({ id, x, y: .5, indexX: x, indexY: .5, pinchRatio });
-  interaction.update([hand(.5)], 100); interaction.update([hand(.33)], 150);
+  for (const time of [-100, -50, 0, 50, 100]) interaction.update([hand(.5)], time); interaction.update([hand(.33)], 150);
   for (let t = 200; t < 580; t += 50) interaction.update([hand(.36)], t);
   interaction.update([hand(.5)], 580); assert.equal(selected[0].selection.id, part.node.id);
   interaction.update([hand(.33)], 650); assert.equal(interaction.update([hand(.33, .56)], 700), 'rotate');

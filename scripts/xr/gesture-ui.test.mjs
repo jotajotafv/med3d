@@ -19,12 +19,13 @@ function fixture(control = target(), action) {
     change: (id, value) => { values.push(value); control.range.value = value; },
     feedback: value => feedback.push(value),
   };
-  const anatomy = new HandInteraction(gestures, { viewport: () => rect, hitTest: p => { queries.push(p); return { kind: 'selected', id: 'bone' }; }, select: value => selected.push(value), draw() {} });
+  const anatomy = new HandInteraction(gestures, { targetKey: value => value.id, viewport: () => rect, hitTest: p => { queries.push(p); return { kind: 'selected', id: 'bone' }; }, select: value => selected.push(value), draw() {} });
   const router = new HandUiRouter(gestures, anatomy, ui, () => manual);
   const tick = (hands = [sample()], dt = 50) => router.update(hands, time += dt, 4 / 3);
-  const move = (x, y, closed, frames = 6) => { for (let i = 0; i < frames; i++) tick([sample(x, y, closed)]); };
-  const click = () => { tick(); tick([sample(300, 130, true)]); tick([sample(300, 130, true)]); tick(); tick(); };
-  return { gestures, router, tick, move, click, actions, values, selected, queries, feedback, control,
+  const move = (x, y, closed, frames = 10) => { for (let i = 0; i < frames; i++) tick([sample(x, y, closed)]); };
+  const warm = () => { for (let i = 0; i < 5; i++) tick(); };
+  const click = () => { warm(); tick([sample(300, 130, true)]); tick([sample(300, 130, true)]); tick(); tick(); };
+  return { gestures, router, tick, move, click, warm, actions, values, selected, queries, feedback, control,
     state: () => state, dispatch: a => { state = atlasReducer(state, a); }, remove: () => { control = null; }, manual: () => { manual = true; } };
 }
 test('anatomy route preserves native selection, rotation and scale', () => {
@@ -41,7 +42,7 @@ test('noninteractive panel text blocks anatomy and never activates', () => {
   const f = fixture(null); f.click(); assert.deepEqual(f.actions, []); assert.deepEqual(f.selected, []); assert.deepEqual(f.queries, []);
 });
 test('button activates on release exactly once, never on onset or repeated open frames', () => {
-  const f = fixture(); f.tick(); f.tick([sample(300, 130, true)]); assert.deepEqual(f.actions, []);
+  const f = fixture(); f.warm(); f.tick([sample(300, 130, true)]); assert.deepEqual(f.actions, []);
   f.tick([sample(300, 130, true)]); f.tick(); for (let i = 0; i < 10; i++) f.tick(); assert.deepEqual(f.actions, ['button']);
 });
 test('button hold remains UI, with no action, rotation, selection or scale', () => {
@@ -68,28 +69,28 @@ for (const value of [0, 60, 100]) test(`Despiece ${value}% maps using actual ran
 });
 test('slider captures outside rect and across hold; release ends updates', () => {
   const f = fixture(target('slider', 'slider', { min: 0, max: 100, step: 1, value: 0 }));
-  f.tick(); f.tick([sample(300, 130, true)]); f.move(250, 180, true); f.move(190, 210, true);
+  f.warm(); f.tick([sample(300, 130, true)]); f.move(275, 155, true, 2); f.move(250, 180, true); f.move(220, 195, true, 2); f.move(190, 210, true);
   assert.equal(f.values.at(-1), 0); assert.equal(f.queries.length, 0); assert.equal(f.gestures.target.rotationY, 0);
   f.tick([sample(190, 210)]); const count = f.values.length; f.move(300, 130, false); assert.equal(f.values.length, count);
 });
 test('tracking loss cancels capture and a closed reacquisition cannot act', () => {
-  const f = fixture(); f.tick(); f.tick([sample(300, 130, true)]); f.tick([]); f.tick([sample(300, 130, true)]); f.tick(); f.tick(); assert.deepEqual(f.actions, []);
+  const f = fixture(); f.warm(); f.tick([sample(300, 130, true)]); f.tick([]); f.tick([sample(300, 130, true)]); f.tick(); f.tick(); assert.deepEqual(f.actions, []);
   f.click(); assert.equal(f.actions.length, 1);
 });
 test('reanchor after loss requires the existing .43 exit ratio, not an ambiguous .38 hand', () => {
-  const f = fixture(); f.tick(); f.tick([sample(300, 130, true)]); f.tick([]);
+  const f = fixture(); f.warm(); f.tick([sample(300, 130, true)]); f.tick([]);
   f.tick([{ ...sample(), pinchRatio: .38 }]); f.tick([sample(300, 130, true)]); f.tick();
   assert.equal(f.actions.length, 0); f.click(); assert.equal(f.actions.length, 1);
 });
 test('gap and primary identity loss cancel a UI press without transferring it', () => {
   for (const gap of [true, false]) {
-    const f = fixture(); f.tick(); f.tick([sample(300, 130, true)]);
+    const f = fixture(); f.warm(); f.tick([sample(300, 130, true)]);
     if (gap) f.tick([sample(300, 130, true)], 251); else f.tick([sample(300, 130, true, 'Right')]);
     f.tick(); f.tick(); assert.deepEqual(f.actions, []); assert.deepEqual(f.queries, []);
   }
 });
 test('secondary pinch never scales during UI nor on primary release while secondary stays closed', () => {
-  const f = fixture(); f.tick(); f.tick([sample(300, 130, true)]);
+  const f = fixture(); f.warm(); f.tick([sample(300, 130, true)]);
   for (let i = 0; i < 5; i++) f.tick([sample(300, 130, true), sample(120 - i * 5, 150, true, 'Right')]);
   f.tick([sample(), sample(100, 150, true, 'Right')]); f.tick([sample(100, 130, true), sample(80, 150, true, 'Right')]);
   assert.equal(f.gestures.target.scale, 1); assert.deepEqual(f.queries, []);
@@ -106,16 +107,16 @@ test('anatomy pinch crossing a panel retains anatomy ownership', () => {
 });
 test('button tolerates 14px departure but cancels a large departure permanently', () => {
   const f = fixture(); f.move(350, 130, false); f.tick([sample(350, 130, true)]); f.move(367, 130, true, 3); f.tick([sample(367, 130)]); assert.equal(f.actions.length, 1);
-  const g = fixture(); g.tick(); g.tick([sample(300, 130, true)]); g.move(300, 205, true, 3); g.move(300, 130, true, 2); g.tick(); assert.equal(g.actions.length, 0);
+  const g = fixture(); g.warm(); g.tick([sample(300, 130, true)]); g.move(300, 205, true, 3); g.move(300, 130, true, 2); g.tick(); assert.equal(g.actions.length, 0);
 });
 test('disabled or removed controls cancel; stale frames cannot repeat an action', () => {
   for (const remove of [false, true]) {
-    const f = fixture(); f.tick(); f.tick([sample(300, 130, true)]); if (remove) f.remove(); else f.control.enabled = false;
+    const f = fixture(); f.warm(); f.tick([sample(300, 130, true)]); if (remove) f.remove(); else f.control.enabled = false;
     f.tick(); f.tick([], -20); assert.deepEqual(f.actions, []);
   }
 });
 test('manual input interrupts an active UI capture', () => {
-  const f = fixture(); f.tick(); f.tick([sample(300, 130, true)]); f.manual(); f.tick(); assert.deepEqual(f.actions, []);
+  const f = fixture(); f.warm(); f.tick([sample(300, 130, true)]); f.manual(); f.tick(); assert.deepEqual(f.actions, []);
 });
 for (const [id, action, check] of [
   ['isolate', { type: 'isolate', id: 'bone' }, s => s.isolatedStructure === 'bone'],

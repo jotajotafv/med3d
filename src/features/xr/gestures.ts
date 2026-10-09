@@ -12,13 +12,15 @@ export function normalizeHands(frame: HandFrame, aspect: number): HandSample[] {
   const seen = new Set<string>();
   return frame.landmarks.slice(0, 2).flatMap((points, index) => {
     const category = frame.handedness[index]?.[0];
-    if (points.length !== 21 || !category || category.score < 0.6 || seen.has(category.categoryName)
+    if (points.length !== 21 || !category || category.score < 0.6
       || !Number.isFinite(aspect) || aspect <= 0 || points.some(p => ![p.x, p.y, p.z].every(Number.isFinite))) return [];
+    // A transient duplicate label must not discard a spatially distinct hand.
+    const id = seen.has(category.categoryName) ? `${category.categoryName}-${index}` : category.categoryName;
     seen.add(category.categoryName);
     const distance = (a: number, b: number) => Math.hypot((points[a].x - points[b].x) * aspect, points[a].y - points[b].y);
     const palm = Math.max(distance(0, 9), distance(5, 17));
     if (palm < 0.02) return [];
-    return [{ id: category.categoryName, x: 1 - (points[4].x + points[8].x) / 2,
+    return [{ id, x: 1 - (points[4].x + points[8].x) / 2,
       y: (points[4].y + points[8].y) / 2, pinchRatio: distance(4, 8) / palm,
       indexX: 1 - points[8].x, indexY: points[8].y }];
   });

@@ -126,7 +126,7 @@ try {
   assert.ok(u >= 0 && u <= 1 && v >= 0 && v <= 1);
   await hands([one(u, v)], 8); await hands([one(u, v, true)], 3); await hands([one(u, v)], 2);
   assert.ok((await inspect()).state.selectedStructure); await clear();
-  await hands([one(.5, .5)], 8); await hands([one(.5, .5, true)]); await hands([one(.58, .53, true)], 4);
+  await hands([one(.5, .5)], 18); await hands([one(.5, .5, true)]); await hands([one(.58, .53, true)], 4);
   await hands([one(.58, .53)], 3); assert.ok(Math.abs((await inspect()).root.rotation[1]) > .1); assert.equal((await inspect()).state.selectedStructure, null);
   await hands([one(.4, .5, true), one(.6, .5, true, 'Right')]); await hands([one(.32, .5, true), one(.68, .5, true, 'Right')], 5);
   assert.ok((await inspect()).root.scale > 1); await hands([], 2);

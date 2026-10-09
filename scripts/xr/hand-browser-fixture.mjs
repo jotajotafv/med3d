@@ -30,7 +30,7 @@ export function installHandFixture() {
           points[8] = { x, y, z: 0 }; return points;
         });
         const handedness = samples.map(hand => [{ categoryName: hand.id, score: .99 }]);
-        queueMicrotask(() => { this.onmessage?.({ data: { type: 'result', timestamp: message.timestamp, frame: { landmarks, handedness } } }); qa.frames++; });
+        queueMicrotask(() => { this.onmessage?.({ data: { type: 'result', timestamp: qa.timestamp ?? message.timestamp, frame: { landmarks, handedness } } }); qa.frames++; });
       }
     }
     terminate() {}

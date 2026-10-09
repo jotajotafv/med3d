@@ -1,9 +1,10 @@
 import { GestureController, isPinching } from './gestures.ts';
 import { HandPointer, type PointerPoint, type PointerRect } from './handPointer.ts';
-import { pinchDurationBand, PINCH_HOLD_THRESHOLD, ROTATE_MOVE_THRESHOLD, MAX_TRACKING_GAP_MS, MAX_HAND_JUMP } from './handConfig.ts';
+import { pinchDurationBand, PINCH_HOLD_THRESHOLD, ROTATE_MOVE_THRESHOLD, MAX_TRACKING_GAP_MS, MAX_HAND_JUMP, TARGET_DWELL_MS } from './handConfig.ts';
+import { TargetStability } from './targetStability.ts';
 import type { HandSample, InteractionMode, ModelTransform } from './types';
 
-export type HandCursor<T> = { point: PointerPoint; hovered: T | null; mode: InteractionMode };
+export type HandCursor<T> = { point: PointerPoint; hovered: T | null; stable: T | null; mode: InteractionMode };
 export type PinchCalibration = { durationMs: number; maxCandidateMovement: number; minRatio: number; outcome: 'select' | 'rotate' | 'cancel' };
 type Ports<T> = {
   viewport: () => PointerRect | null;
@@ -12,6 +13,9 @@ type Ports<T> = {
   draw: (cursor: HandCursor<T> | null) => void;
   blocked?: () => boolean;
   reportCalibration?: (summary: PinchCalibration) => void;
+  point?: () => PointerPoint | null;
+  targetKey: (target: T) => unknown;
+  isEmpty?: (target: T) => boolean;
 };
 type Tracked = HandSample & { pinching: boolean };
 type Candidate<T> = { time: number; origin: PointerPoint; point: PointerPoint | null; target: T | null; pose: ModelTransform };
@@ -21,6 +25,7 @@ export class HandInteraction<T> {
   mode: InteractionMode = 'idle';
   primaryId: string | null = null;
   hoveredHandStructure: T | null = null;
+  readonly targets: TargetStability<T>;
   private hands = new Map<string, Tracked>();
   private candidate: Candidate<T> | null = null;
   private pinchOwner: string | null = null;
@@ -32,6 +37,7 @@ export class HandInteraction<T> {
   private ports: Ports<T>;
   constructor(gestures: GestureController, ports: Ports<T>) {
     this.gestures = gestures; this.ports = ports; this.revision = gestures.inputRevision;
+    this.targets = new TargetStability(ports.targetKey, TARGET_DWELL_MS);
   }
   private finishPinch(outcome: PinchCalibration['outcome'], now: number) {
     const summary = this.calibration; this.calibration = null;
@@ -42,6 +48,7 @@ export class HandInteraction<T> {
     this.finishPinch(this.mode === 'rotate' ? 'rotate' : 'cancel', now);
     this.mode = 'idle'; this.primaryId = null; this.hoveredHandStructure = null;
     this.hands.clear(); this.candidate = null; this.pinchOwner = null; this.pointer.reset(); this.time = 0;
+    this.targets.reset();
     this.gestures.endGesture(); this.ports.draw(null);
   }
   update(samples: HandSample[], now: number, aspect = 4 / 3): InteractionMode {
@@ -68,11 +75,12 @@ export class HandInteraction<T> {
     if (active.length === 2) {
       this.finishPinch('cancel', now); this.pinchOwner = null;
       this.candidate = null; this.mode = 'scale'; this.hoveredHandStructure = null;
-      this.pointer.reset(); this.gestures.update(valid, now, aspect); this.ports.draw(null); return this.mode;
+      this.pointer.reset(); this.targets.reset(); this.gestures.update(valid, now, aspect); this.ports.draw(null); return this.mode;
     }
-    const point = this.pointer.update(primary, now, aspect, this.ports.viewport());
+    const point = this.ports.point ? this.ports.point() : this.pointer.update(primary, now, aspect, this.ports.viewport());
     const hit = point ? this.ports.hitTest(point) : null;
     this.hoveredHandStructure = hit;
+    const stable = point ? this.targets.update(hit, point, now) : null;
     if (active.length === 1) {
       const pinching = active[0];
       if (this.pinchOwner !== pinching.id) {
@@ -85,7 +93,8 @@ export class HandInteraction<T> {
           // It can never select without an observed open → closed transition of the primary.
           const maySelect = pinching.id === primary.id && previous && !previous.pinching;
           this.candidate = { time: now, origin: { x: pinching.x, y: pinching.y }, point,
-            target: maySelect ? hit : null, pose: { ...this.gestures.target } };
+            target: maySelect ? stable ?? (hit && this.ports.isEmpty?.(hit) && now - this.targets.rawSince >= TARGET_DWELL_MS ? hit : null) : null,
+            pose: { ...this.gestures.target } };
           this.mode = 'candidate';
         }
       }
@@ -112,7 +121,7 @@ export class HandInteraction<T> {
       }
       this.finishPinch(outcome, now);
     }
-    this.ports.draw(point ? { point, hovered: hit, mode: this.mode } : null);
+    this.ports.draw(point ? { point, hovered: hit, stable, mode: this.mode } : null);
     return this.mode;
   }
 }

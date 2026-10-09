@@ -1,12 +1,13 @@
 import { HandPointer, type PointerPoint, type PointerRect } from '../handPointer.ts';
 import { isPinching, type GestureController } from '../gestures.ts';
-import { MAX_HAND_JUMP, MAX_TRACKING_GAP_MS, PINCH_HOLD_THRESHOLD, PINCH_EXIT_RATIO } from '../handConfig.ts';
+import { MAX_HAND_JUMP, MAX_TRACKING_GAP_MS, PINCH_HOLD_THRESHOLD, PINCH_EXIT_RATIO, UI_TARGET_DWELL_MS, UI_CAPTURE_TOLERANCE_PX } from '../handConfig.ts';
+import { TargetStability } from '../targetStability.ts';
 import type { HandSample, HandTrackingInput, InteractionMode } from '../types';
 
-export type UiTarget = { id: string; kind: 'button' | 'toggle' | 'slider'; rect: PointerRect; enabled: boolean;
+export type UiTarget = { id: string; name?: string; kind: 'button' | 'toggle' | 'slider'; rect: PointerRect; enabled: boolean;
   range?: { min: number; max: number; step: number | 'any'; value: number } };
-export type UiHit = { route: 'anatomy' } | { route: 'ui'; target: UiTarget | null };
-export type UiFeedback = { point: PointerPoint; target: UiTarget | null; state: 'hover' | 'press' | 'drag' | 'blocked' } | null;
+export type UiHit = { route: 'anatomy' } | { route: 'ui'; target: UiTarget | null; blocked?: boolean };
+export type UiFeedback = { point: PointerPoint; target: UiTarget | null; stable?: boolean; state: 'hover' | 'press' | 'drag' | 'blocked' } | null;
 export interface HandUiPort {
   surface(aspect: number): PointerRect | null;
   hitTest(point: PointerPoint): UiHit;
@@ -31,9 +32,12 @@ export function sliderValue(pointX: number, target: UiTarget): number | null {
   return Number(Math.max(range.min, Math.min(range.max, value)).toFixed(10));
 }
 type Tracked = HandSample & { pinching: boolean };
+type RouterOptions = { point?: () => PointerPoint | null; surface?: () => PointerRect | null; reportPinch?: (outcome: 'select' | 'cancel') => void };
 
 /** One owner from onset through release. DOM lives in the port; anatomy remains unchanged. */
 export class HandUiRouter implements HandTrackingInput {
+  readonly targets = new TargetStability<UiTarget>(target => target.id, UI_TARGET_DWELL_MS);
+  route: 'ui' | 'anatomy' = 'anatomy';
   private pointer = new HandPointer();
   private hands = new Map<string, Tracked>();
   private primary: string | null = null;
@@ -48,11 +52,16 @@ export class HandUiRouter implements HandTrackingInput {
   private anatomy: HandTrackingInput;
   private ui: HandUiPort;
   private blocked: () => boolean;
-  constructor(gestures: GestureController, anatomy: HandTrackingInput, ui: HandUiPort, blocked: () => boolean) {
+  private options: RouterOptions;
+  constructor(gestures: GestureController, anatomy: HandTrackingInput, ui: HandUiPort, blocked: () => boolean,
+    options: RouterOptions = {}) {
     this.gestures = gestures; this.anatomy = anatomy; this.ui = ui; this.blocked = blocked; this.revision = gestures.inputRevision;
+    this.options = options;
   }
   endGesture() {
+    if (this.owner === 'ui') this.options.reportPinch?.('cancel');
     this.owner = null; this.capture = null; this.hands.clear(); this.primary = null; this.time = 0;
+    this.targets.reset();
     this.surface = null; this.waitForOpen = true; this.pointer.reset(); this.mode = 'idle';
     this.anatomy.endGesture(); this.ui.feedback(null);
   }
@@ -67,7 +76,7 @@ export class HandUiRouter implements HandTrackingInput {
     const primary = valid.find(hand => hand.id === this.primary)!;
     const previous = this.hands.get(primary.id);
     if (previous && Math.hypot(primary.x - previous.x, primary.y - previous.y) > MAX_HAND_JUMP) { this.endGesture(); return this.mode; }
-    const surface = this.ui.surface(aspect);
+    const surface = this.options.surface ? this.options.surface() : this.ui.surface(aspect);
     if (this.owner && this.surface && surface && ['left', 'top', 'width', 'height'].some(key => Math.abs(surface[key as keyof PointerRect] - this.surface![key as keyof PointerRect]) > 1)) {
       this.endGesture(); return this.mode; // Scroll/resize cannot move a captured control beneath a closed hand.
     }
@@ -75,7 +84,7 @@ export class HandUiRouter implements HandTrackingInput {
     this.hands = new Map(valid.map(hand => [hand.id, { ...hand, pinching: isPinching(hand.pinchRatio, this.hands.get(hand.id)?.pinching) }]));
     this.time = now;
     const pinching = this.hands.get(primary.id)!.pinching, anyClosed = [...this.hands.values()].some(hand => hand.pinching);
-    const point = this.pointer.update(primary, now, aspect, surface);
+    const point = this.options.point ? this.options.point() : this.pointer.update(primary, now, aspect, surface);
     if (!point) { this.endGesture(); return this.mode; }
     if (this.waitForOpen) {
       this.ui.feedback(null);
@@ -91,37 +100,49 @@ export class HandUiRouter implements HandTrackingInput {
       const capture = this.capture;
       const target = capture ? this.ui.resolve(capture.id) : null;
       if (capture && (!target?.enabled || target.kind !== capture.kind)) capture.cancelled = true;
-      if (capture && target && capture.kind !== 'slider' && !contains(target.rect, point, 14)) capture.cancelled = true;
+      if (capture && target && capture.kind !== 'slider') {
+        const hit = this.ui.hitTest(point);
+        if (!contains(target.rect, point, UI_CAPTURE_TOLERANCE_PX) || hit.route !== 'ui' || hit.blocked
+          || (hit.target && hit.target.id !== capture.id)) capture.cancelled = true;
+      }
       if (pinching) {
         if (capture && target?.enabled && !capture.cancelled && capture.kind === 'slider') {
           const value = sliderValue(point.x, target);
           if (value !== null && value !== target.range?.value) this.ui.change(target.id, value);
         }
-        this.ui.feedback({ point, target, state: capture?.cancelled || !capture ? 'blocked' : capture.kind === 'slider' ? 'drag' : 'press' });
+        this.ui.feedback({ point, target, stable: !!capture && !capture.cancelled, state: capture?.cancelled || !capture ? 'blocked' : capture.kind === 'slider' ? 'drag' : 'press' });
         return this.mode = 'candidate';
       }
       // Clear ownership before callbacks: a view reset may synchronously call endGesture.
       this.owner = null; this.capture = null; this.waitForOpen = true; this.pointer.reset(); this.anatomy.endGesture();
+      this.targets.reset();
       this.ui.feedback(null);
-      if (capture && target?.enabled && !capture.cancelled && capture.kind !== 'slider' && now - capture.started < PINCH_HOLD_THRESHOLD) this.ui.activate(capture.id);
+      const accepted = !!capture && !!target?.enabled && !capture.cancelled && (capture.kind === 'slider' || now - capture.started < PINCH_HOLD_THRESHOLD);
+      this.options.reportPinch?.(accepted ? 'select' : 'cancel');
+      if (accepted && capture.kind !== 'slider') this.ui.activate(capture.id);
       return this.mode = 'idle';
     }
     const hit = this.ui.hitTest(point);
+    this.route = hit.route;
     if (hit.route === 'ui') {
       this.anatomy.endGesture();
+      // An occluder/unauthorized region cannot inherit a nearby stable control.
+      if (!hit.target?.enabled) this.targets.reset();
+      const stable = this.targets.update(hit.target?.enabled ? hit.target : null, point, now);
+      const target = stable && stable.id === hit.target?.id ? hit.target : null;
       if (anyClosed) {
         this.owner = 'ui';
-        this.capture = pinching && previous && !previous.pinching && hit.target?.enabled
-          ? { id: hit.target.id, kind: hit.target.kind, started: now, cancelled: false } : null;
-        if (this.capture?.kind === 'slider' && hit.target) {
-          const value = sliderValue(point.x, hit.target);
-          if (value !== null && value !== hit.target.range?.value) this.ui.change(hit.target.id, value);
+        this.capture = pinching && previous && !previous.pinching && target?.enabled
+          ? { id: target.id, kind: target.kind, started: now, cancelled: false } : null;
+        if (this.capture?.kind === 'slider' && target) {
+          const value = sliderValue(point.x, target);
+          if (value !== null && value !== target.range?.value) this.ui.change(target.id, value);
         }
       }
-      this.ui.feedback({ point, target: hit.target, state: anyClosed ? this.capture ? this.capture.kind === 'slider' ? 'drag' : 'press' : 'blocked' : 'hover' });
+      this.ui.feedback({ point, target: hit.target, stable: !!target, state: anyClosed ? this.capture ? this.capture.kind === 'slider' ? 'drag' : 'press' : 'blocked' : 'hover' });
       return this.mode = anyClosed ? 'candidate' : 'pointing';
     }
-    this.ui.feedback(null);
+    this.targets.reset(); this.ui.feedback(null);
     if (anyClosed) this.owner = 'anatomy';
     return this.mode = this.anatomy.update(samples, now, aspect);
   }

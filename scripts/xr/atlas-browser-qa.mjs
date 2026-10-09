@@ -116,8 +116,13 @@ try {
   assert.ok(Math.abs((await inspect()).root.rotation[1]) < .001);
   await page.getByRole('button', { name: 'Activar control con manos', exact: true }).click(); await page.getByText('Activa', { exact: true }).waitFor();
   await canvas.scrollIntoViewIfNeeded(); const handTarget = await select('skeletal'); await clear();
-  const rect = await canvas.boundingBox(), fitH = Math.min(rect.height, rect.width / (4 / 3)), fitW = fitH * 4 / 3;
-  const u = (handTarget.point.x - rect.x - (rect.width - fitW) / 2) / fitW, v = (handTarget.point.y - rect.y - (rect.height - fitH) / 2) / fitH;
+  const { u, v } = await page.evaluate(point => {
+    const workspace = document.querySelector('.xr-atlas-workspace').getBoundingClientRect();
+    const left = Math.max(0, workspace.left), top = Math.max(0, workspace.top);
+    const width = Math.min(innerWidth, workspace.right) - left, height = Math.min(innerHeight, workspace.bottom) - top;
+    const fitW = Math.max(width, height * 4 / 3), fitH = fitW / (4 / 3);
+    return { u: (point.x - left + (fitW - width) / 2) / fitW, v: (point.y - top + (fitH - height) / 2) / fitH };
+  }, handTarget.point);
   assert.ok(u >= 0 && u <= 1 && v >= 0 && v <= 1);
   await hands([one(u, v)], 8); await hands([one(u, v, true)], 3); await hands([one(u, v)], 2);
   assert.ok((await inspect()).state.selectedStructure); await clear();

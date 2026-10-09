@@ -22,10 +22,11 @@ export default function XrAtlasExperience() {
   const [layersOpen, setLayersOpen] = useState(() => !window.matchMedia('(max-width:760px)').matches);
   const [showCamera, setShowCamera] = useState(true);
   const pickRef = useRef<AtlasPicker | null>(null);
+  const uiRootRef = useRef<HTMLElement | null>(null);
   const onSelect = useCallback((id: string | null) => dispatch({ type: 'select', id }), []);
   const onTap = useCallback((point: { x: number; y: number }) => { const picker = pickRef.current; if (picker) picker.select(picker.hitTest(point)); }, []);
   const manual = useManualControls(gestures, onTap);
-  const { cursorRef, tracking, debugEnabled, calibration } = useHandPointer(gestures, pickRef, manual.ref);
+  const { cursorRef, tracking, debugEnabled, calibration } = useHandPointer(gestures, pickRef, manual.ref, uiRootRef);
   const { videoRef, status, start, stop } = useHandTracking(tracking);
   const active = ['requesting', 'loading', 'active', 'paused'].includes(status.camera);
   const cameraOn = ['loading', 'active', 'paused'].includes(status.camera);
@@ -49,7 +50,11 @@ export default function XrAtlasExperience() {
   }, [state.selectedStructure, manual.ref]);
   const selected = assets.catalog?.nodes.find(node => node.id === state.selectedStructure);
   const resetView = () => { gestures.reset(); tracking.endGesture(); dispatch({ type: 'resetView' }); };
-  return <main className="xr-page xr-atlas-page">
+  useEffect(() => {
+    if (status.camera === 'active') uiRootRef.current?.querySelector('.xr-atlas-workspace')?.scrollIntoView({ block: 'start', behavior: 'instant' });
+  }, [status.camera]);
+  return <main className="xr-page xr-atlas-page" ref={uiRootRef}>
+    <span className="xr-hand-cursor" ref={cursorRef} hidden aria-hidden="true"/>
     {debugEnabled && <XrCalibrationDebug summary={calibration}/>}
     <header className="xr-heading"><div><p className="xr-eyebrow">MED3D <span>/</span> ATLAS XR PILOTO</p>
       <h1>El cuerpo,<br/><span>en tus manos.</span></h1><p className="xr-intro">Explora huesos, músculos y vasos. Activa las capas que quieras estudiar.</p></div>
@@ -60,7 +65,6 @@ export default function XrAtlasExperience() {
         <div className="xr-model-label"><span className="xr-eyebrow">ATLAS PILOTO</span><strong>Cuerpo humano</strong></div>
         {assets.catalog ? <XrAtlasScene assets={assets} state={state} gestures={gestures} pickRef={pickRef} onSelect={onSelect}/>
           : <div className="xr-scene-message" role="status">Preparando sistema óseo…</div>}
-        <span className="xr-hand-cursor" ref={cursorRef} hidden aria-hidden="true"/>
         <div className={'xr-camera-preview' + (cameraOn && showCamera ? ' is-visible' : '')} aria-hidden={!cameraOn || !showCamera}>
           <video ref={videoRef} autoPlay muted playsInline aria-label="Vista previa de cámara en espejo"/><span>Cámara · Vista espejo</span></div>
         <div className="xr-atlas-loading" data-xr-ui>{PILOT_SYSTEMS.map(system => {
@@ -68,25 +72,25 @@ export default function XrAtlasExperience() {
           return load?.error ? <p role="alert" key={system}>{labels[system]}: {load.error} <button type="button" onClick={() => owner.current?.retry(system)}>Reintentar {labels[system]}</button></p>
             : load?.pending && state.systemVisibility[system] ? <p role="status" key={system}>Cargando {SYSTEMS.find(item => item.id === system)?.name.toLowerCase()}…</p> : null;
         })}</div>
-        <div className="xr-viewport-controls"><button type="button" onClick={resetView}>Restablecer vista</button>
+        <div className="xr-viewport-controls"><button type="button" data-xr-hand-control="reset-view" onClick={resetView}>Restablecer vista</button>
           <div><button type="button" aria-label="Reducir tamaño del atlas" onClick={() => gestures.scale(gestures.target.scale / 1.12, performance.now())}><Minus size={17}/></button>
             <button type="button" aria-label="Aumentar tamaño del atlas" onClick={() => gestures.scale(gestures.target.scale * 1.12, performance.now())}><Plus size={17}/></button></div></div>
       </div>
       <aside className="xr-atlas-tools" aria-label="Capas y control del Atlas XR" data-xr-ui>
         <details className="xr-atlas-layers" open={layersOpen} onToggle={event => setLayersOpen(event.currentTarget.open)}>
-          <summary>Sistemas y despiece</summary>
+          <summary data-xr-hand-control="layers-panel">Sistemas y despiece</summary>
           <fieldset disabled={!!state.isolatedStructure}><legend>Sistemas</legend>
             {PILOT_SYSTEMS.map(system => <div className="xr-atlas-layer" key={system}>
-              <label><input type="checkbox" checked={state.systemVisibility[system]} onChange={event => dispatch({ type: 'system', system, enabled: event.target.checked })}/>{labels[system]}</label>
+              <label><input type="checkbox" data-xr-hand-control={system + '-toggle'} checked={state.systemVisibility[system]} onChange={event => dispatch({ type: 'system', system, enabled: event.target.checked })}/>{labels[system]}</label>
               {state.systemVisibility[system] && <label className="xr-atlas-range">Opacidad {labels[system]} <output>{Math.round(state.systemOpacity[system] * 100)}%</output>
-                <input type="range" min="10" max="100" step="1" aria-label={'Opacidad ' + labels[system]} value={state.systemOpacity[system] * 100} onChange={event => dispatch({ type: 'opacity', system, value: Number(event.target.value) / 100 })}/></label>}
+                <input type="range" data-xr-hand-control={system + '-opacity'} min="10" max="100" step="1" aria-label={'Opacidad ' + labels[system]} value={state.systemOpacity[system] * 100} onChange={event => dispatch({ type: 'opacity', system, value: Number(event.target.value) / 100 })}/></label>}
             </div>)}
           </fieldset>
           <label className="xr-atlas-range xr-atlas-explode">Despiece <output>{Math.round(state.explodedAmount * 100)}%</output>
-            <input type="range" aria-label="Despiece" min="0" max="100" step="1" value={state.explodedAmount * 100} onChange={event => dispatch({ type: 'explode', value: Number(event.target.value) / 100 })}/></label>
-          {state.isolatedStructure && <p className="xr-atlas-isolation">Estructura aislada. <button type="button" onClick={() => dispatch({ type: 'exitIsolation' })}>Restaurar conjunto</button></p>}
-          <div className="xr-atlas-restore"><button type="button" disabled={!state.hiddenStructures.length || !!state.isolatedStructure} onClick={() => dispatch({ type: 'restoreHidden' })}>Restaurar estructuras</button>
-            <button type="button" onClick={() => dispatch({ type: 'restoreAtlas' })}>Restaurar atlas</button></div>
+            <input type="range" data-xr-hand-control="explosion" aria-label="Despiece" min="0" max="100" step="1" value={state.explodedAmount * 100} onChange={event => dispatch({ type: 'explode', value: Number(event.target.value) / 100 })}/></label>
+          {state.isolatedStructure && <p className="xr-atlas-isolation">Estructura aislada. <button type="button" data-xr-hand-control="exit-isolation" onClick={() => dispatch({ type: 'exitIsolation' })}>Restaurar conjunto</button></p>}
+          <div className="xr-atlas-restore"><button type="button" data-xr-hand-control="restore-hidden" disabled={!state.hiddenStructures.length || !!state.isolatedStructure} onClick={() => dispatch({ type: 'restoreHidden' })}>Restaurar estructuras</button>
+            <button type="button" data-xr-hand-control="restore-atlas" onClick={() => dispatch({ type: 'restoreAtlas' })}>Restaurar atlas</button></div>
         </details>
         <div className="xr-atlas-hands"><p className="xr-eyebrow">CONTROL CON MANOS</p>
           <button type="button" className="xr-primary-button" onClick={active ? stop : start}><Camera size={17}/>{active ? 'Desactivar control con manos' : 'Activar control con manos'}</button>
@@ -95,7 +99,7 @@ export default function XrAtlasExperience() {
             <div><dt>Manos</dt><dd>{status.hands} detectadas</dd></div><div><dt>Interacción</dt><dd>{{ idle: 'En espera', pointing: 'Apuntando', candidate: 'Seleccionando', rotate: 'Rotar', scale: 'Escalar' }[status.gesture]}</dd></div></dl>
           {status.message && <p className="xr-status-message" role="status">{status.message}</p>}
           {cameraOn && <button type="button" className="xr-preview-toggle" onClick={() => setShowCamera(value => !value)}>{showCamera ? 'Ocultar cámara' : 'Mostrar cámara'}</button>}
-          <p className="xr-atlas-guide">Índice para apuntar · pinch breve para seleccionar · pinch sostenido o con movimiento para rotar · dos pinches para escalar.</p>
+          <p className="xr-atlas-guide">Índice para apuntar · pinch breve para seleccionar o activar controles · pinch y arrastre en sliders. Sobre el cuerpo: pinch sostenido o movido para rotar · dos pinches para escalar.</p>
         </div>
       </aside>
     </section>

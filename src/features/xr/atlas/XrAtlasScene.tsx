@@ -71,7 +71,7 @@ function AtlasContents({ assets, state, gestures, pickRef, onSelect }: Props) {
     };
     const inspect = () => {
       scene.updateMatrixWorld(true);
-      return { ...metrics.current, sceneId: scene.uuid, timings: timings.current, state: latest.current.state,
+      return { ...metrics.current, target: { ...gestures.target }, sceneId: scene.uuid, timings: timings.current, state: latest.current.state,
         modules: latest.current.assets.resources.map(resource => resource.asset.id),
         bytes: latest.current.assets.resources.reduce((sum, resource) => sum + resource.asset.bytes, 0),
         triangles: latest.current.assets.resources.reduce((sum, resource) => sum + resource.triangles, 0),

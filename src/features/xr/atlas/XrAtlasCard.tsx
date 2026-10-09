@@ -8,10 +8,10 @@ export default function XrAtlasCard({ node, catalog, isolated, onClose, onIsolat
   const lesson = atlasEducation(node, catalog);
   return <aside className="xr-education-card xr-atlas-card" aria-labelledby="xr-education-title" data-xr-ui>
     <header className="xr-education-heading"><p className="xr-eyebrow">ANATOMÍA</p>
-      <button type="button" aria-label="Cerrar ficha educativa y limpiar selección" onClick={onClose}><X size={18}/></button>
+      <button type="button" data-xr-hand-control="close-card" aria-label="Cerrar ficha educativa y limpiar selección" onClick={onClose}><X size={18}/></button>
       <h2 id="xr-education-title">{lesson.name}</h2>
       {lesson.latin && <p className="xr-education-latin" lang="la">{lesson.latin}</p>}
-      <div className="xr-atlas-actions"><button type="button" onClick={onIsolate}>{isolated ? 'Restaurar' : 'Aislar'}</button><button type="button" onClick={onHide}>Ocultar</button></div>
+      <div className="xr-atlas-actions"><button type="button" data-xr-hand-control="isolate" onClick={onIsolate}>{isolated ? 'Restaurar' : 'Aislar'}</button><button type="button" data-xr-hand-control="hide" onClick={onHide}>Ocultar</button></div>
     </header>
     <div className="xr-education-content">
       <dl className="xr-education-context">{lesson.system && <div><dt>Sistema</dt><dd>{lesson.system}</dd></div>}

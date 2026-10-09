@@ -1,11 +1,12 @@
-import { Component, useEffect, useRef, useState, type ReactNode } from 'react';
+import { Component, useEffect, useRef, useState, type ReactNode, type RefObject } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import type { GestureController } from './gestures';
+import { highlightHeartMesh, indexHeartMeshes, pickHeart, type HeartSelection, type SelectionIndex, type SelectionResult, type PickHandler } from './selection';
 
-type HeartResource = { scene: THREE.Group; center: THREE.Vector3; scale: number };
+type HeartResource = { scene: THREE.Group; center: THREE.Vector3; scale: number; index: SelectionIndex };
 function disposeHeart(scene: THREE.Group) {
   const geometries = new Set<THREE.BufferGeometry>(), materials = new Set<THREE.Material>(), textures = new Set<THREE.Texture>();
   scene.traverse(object => {
@@ -45,6 +46,19 @@ function Framing() {
   return null;
 }
 
+function SelectionRaycast({ resource, pickRef, onSelect }: {
+  resource: HeartResource; pickRef: RefObject<PickHandler | null>; onSelect: (result: SelectionResult) => void;
+}) {
+  const { camera, gl } = useThree();
+  useEffect(() => {
+    const raycaster = new THREE.Raycaster();
+    const pick: PickHandler = point => onSelect(pickHeart(point, gl.domElement.getBoundingClientRect(), camera, resource.scene, resource.index, raycaster));
+    pickRef.current = pick;
+    return () => { if (pickRef.current === pick) pickRef.current = null; };
+  }, [camera, gl, resource, pickRef, onSelect]);
+  return null;
+}
+
 class XrSceneBoundary extends Component<{ children: ReactNode; retry: () => void }, { failed: boolean }> {
   state = { failed: false };
   static getDerivedStateFromError() { return { failed: true }; }
@@ -55,14 +69,19 @@ class XrSceneBoundary extends Component<{ children: ReactNode; retry: () => void
   }
 }
 
-export default function XrHeartScene({ gestures }: { gestures: GestureController }) {
+export default function XrHeartScene({ gestures, selectedStructure, pickRef, onSelect }: {
+  gestures: GestureController; selectedStructure: HeartSelection | null;
+  pickRef: RefObject<PickHandler | null>; onSelect: (result: SelectionResult) => void;
+}) {
   const [resource, setResource] = useState<HeartResource | null>(null);
   const [error, setError] = useState(false);
   const [retry, setRetry] = useState(0);
+  const restoreHighlight = useRef<(() => void) | null>(null);
   useEffect(() => {
     const abort = new AbortController();
     let owned: THREE.Group | null = null;
     setResource(null); setError(false);
+    onSelect({ kind: 'empty' });
     const load = async () => {
       const response = await fetch(import.meta.env.BASE_URL + 'models/heart.glb', { signal: abort.signal });
       if (!response.ok) throw new Error('Heart unavailable');
@@ -73,11 +92,19 @@ export default function XrHeartScene({ gestures }: { gestures: GestureController
       const bounds = new THREE.Box3().setFromObject(owned);
       if (bounds.isEmpty()) throw new Error('Empty heart');
       const size = bounds.getSize(new THREE.Vector3());
-      setResource({ scene: owned, center: bounds.getCenter(new THREE.Vector3()), scale: 3 / Math.max(size.x, size.y, size.z) });
+      setResource({ scene: owned, center: bounds.getCenter(new THREE.Vector3()), scale: 3 / Math.max(size.x, size.y, size.z), index: indexHeartMeshes(owned) });
     };
     void load().catch(() => { if (!abort.signal.aborted) setError(true); });
-    return () => { abort.abort(); if (owned) disposeHeart(owned); };
-  }, [retry]);
+    return () => {
+      abort.abort(); restoreHighlight.current?.(); restoreHighlight.current = null;
+      if (owned) disposeHeart(owned);
+    };
+  }, [retry, onSelect]);
+  useEffect(() => {
+    if (!selectedStructure || !resource?.index.byMesh.has(selectedStructure.mesh)) return;
+    const restore = highlightHeartMesh(selectedStructure.mesh); restoreHighlight.current = restore;
+    return () => { restore(); if (restoreHighlight.current === restore) restoreHighlight.current = null; };
+  }, [selectedStructure, resource]);
   const retryLoad = () => setRetry(value => value + 1);
   return <div className="xr-scene" data-model-status={error ? 'error' : resource ? 'ready' : 'loading'}>
     {error ? <div className="xr-scene-message" role="alert"><p>No se pudo cargar el corazón. Comprueba la conexión e inténtalo de nuevo.</p>
@@ -86,6 +113,7 @@ export default function XrHeartScene({ gestures }: { gestures: GestureController
         <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 7], fov: 38, near: 0.1, far: 100 }} gl={{ alpha: true, antialias: true }}>
           <Framing/><ambientLight intensity={1.3}/><directionalLight position={[3, 5, 5]} intensity={3.2}/>
           <directionalLight position={[-4, 1, -2]} intensity={1.4}/><Heart resource={resource} gestures={gestures}/>
+          <SelectionRaycast resource={resource} pickRef={pickRef} onSelect={onSelect}/>
         </Canvas>
       </XrSceneBoundary>
         : <div className="xr-scene-message" role="status">Cargando corazón…</div>}

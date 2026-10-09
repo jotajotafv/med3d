@@ -1,10 +1,12 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { ArrowUpRight, ArrowCounterClockwise, Camera, Hand, Minus, Plus } from '@phosphor-icons/react';
 import XrHeartScene from './XrHeartScene';
 import { GestureController } from './gestures';
 import { arExplanation, detectCapabilities, UNKNOWN_CAPABILITIES, type Support } from './capabilities';
 import { useHandTracking } from './useHandTracking';
 import { useManualControls } from './useManualControls';
+import XrEducationCard from './XrEducationCard';
+import type { HeartSelection, PickHandler, SelectionResult } from './selection';
 import './xr.css';
 
 const supportLabel = (value: Support) => value === 'available' ? 'Disponible' : value === 'unknown' ? 'Sin confirmar' : 'No disponible';
@@ -14,7 +16,27 @@ export default function XrExperiencePage() {
   if (!gesturesRef.current) gesturesRef.current = new GestureController();
   const gestures = gesturesRef.current;
   const { videoRef, status, start, stop } = useHandTracking(gestures);
-  const manual = useManualControls(gestures);
+  const [selectedStructure, setSelectedStructure] = useState<HeartSelection | null>(null);
+  const [unknownStructure, setUnknownStructure] = useState(false);
+  const pickRef = useRef<PickHandler | null>(null);
+  const onTap = useCallback<PickHandler>(point => pickRef.current?.(point), []);
+  const onSelect = useCallback((result: SelectionResult) => {
+    setSelectedStructure(result.kind === 'selected' ? result.selection : null);
+    setUnknownStructure(result.kind === 'unknown');
+  }, []);
+  const clearSelection = useCallback(() => onSelect({ kind: 'empty' }), [onSelect]);
+  const manual = useManualControls(gestures, onTap);
+  useEffect(() => {
+    // Keep the heart above the mobile sheet without resizing/remounting its canvas.
+    if (selectedStructure && window.matchMedia('(max-width: 760px)').matches) {
+      manual.ref.current?.scrollIntoView({ block: 'start', behavior: 'instant' });
+    }
+  }, [selectedStructure, manual.ref]);
+  useEffect(() => {
+    const onEscape = (event: KeyboardEvent) => { if (event.key === 'Escape' && !event.defaultPrevented) clearSelection(); };
+    window.addEventListener('keydown', onEscape);
+    return () => window.removeEventListener('keydown', onEscape);
+  }, [clearSelection]);
   const [capabilities, setCapabilities] = useState(UNKNOWN_CAPABILITIES);
   const [showCamera, setShowCamera] = useState(true);
   const [showAr, setShowAr] = useState(false);
@@ -45,7 +67,7 @@ export default function XrExperiencePage() {
     <section className="xr-workspace" aria-label="Experiencia interactiva con el corazón">
       <div className="xr-viewport" {...manual} tabIndex={0} role="group" aria-label="Corazón 3D interactivo" aria-describedby="xr-manual-help">
         <div className="xr-model-label"><span className="xr-eyebrow">MODELO PILOTO</span><strong>Corazón</strong><span>Vista anatómica 3D</span></div>
-        <XrHeartScene gestures={gestures}/>
+        <XrHeartScene gestures={gestures} selectedStructure={selectedStructure} pickRef={pickRef} onSelect={onSelect}/>
         <div className={'xr-camera-preview' + (cameraOn && showCamera ? ' is-visible' : '')} aria-hidden={!cameraOn || !showCamera}>
           <video ref={videoRef} autoPlay muted playsInline aria-label="Vista previa de cámara en espejo"/>
           <span>Cámara · Vista espejo</span>
@@ -73,7 +95,10 @@ export default function XrExperiencePage() {
           <p><strong>Dos manos para escalar.</strong> Haz pinch con ambas y sepáralas o acércalas.</p></div></div>
       </aside>
     </section>
-    <p id="xr-manual-help" className="xr-manual-help">Sin cámara: arrastra para rotar · rueda o dos dedos para ampliar · teclado: flechas, + / − y 0 para restablecer.</p>
+    <XrEducationCard selection={selectedStructure} unknown={unknownStructure} onClose={() => {
+      clearSelection(); manual.ref.current?.focus({ preventScroll: true });
+    }}/>
+    <p id="xr-manual-help" className="xr-manual-help">Clic o toque breve: seleccionar · arrastra para rotar · rueda o dos dedos para ampliar · teclado: flechas, + / −, 0 para restablecer y Escape para deseleccionar.</p>
     <section className="xr-capabilities" aria-labelledby="xr-device-title">
       <div><h2 id="xr-device-title" className="xr-eyebrow">TU DISPOSITIVO</h2><p>La disponibilidad depende de tu navegador y hardware.</p></div>
       <dl><div><dt>Control con cámara</dt><dd>{supportLabel(capabilities.camera)}</dd></div>

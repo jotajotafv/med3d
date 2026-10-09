@@ -3,11 +3,11 @@ import type { AtlasPart, AtlasResource } from '../../anatomy/atlas/asset-manager
 import type { AnatomyCatalog, AnatomyNode } from '../../anatomy/atlas/types';
 import { createExplosionOffsets, explosionTarget } from '../../anatomy/atlas/explosion';
 import { atlasPartVisible, type AtlasState } from './state';
+import { xrSystem } from './systems';
 
 export type AtlasPick = { kind: 'empty' } | { kind: 'selected'; selection: { id: string; node: AnatomyNode; mesh: THREE.Mesh } };
 export type AtlasPicker = { rect: () => DOMRect; hitTest: (point: { x: number; y: number }) => AtlasPick; select: (result: AtlasPick) => void };
 type Variants = { base: THREE.MeshStandardMaterial; selected: THREE.MeshStandardMaterial };
-const colors = { skeletal: '#d7c6a1', muscular: '#b67070', heart: '#a96d78', arterial: '#b5635e', venous: '#648fab' };
 
 /** Own only XR material clones and instance offsets. Manager remains the geometry owner. */
 export class XrAtlasPresentation {
@@ -17,14 +17,20 @@ export class XrAtlasPresentation {
   private originals = new Map<AtlasPart, THREE.MeshStandardMaterial>();
   private materials = new Map<string, Variants>();
   private variants = new Map<AtlasPart, Variants>();
+  private visibility?: Pick<AtlasState, 'systemVisibility' | 'hiddenStructures' | 'isolatedStructure'>;
+  private shown = new Set<AtlasPart>();
+  private offsets: ReturnType<typeof createExplosionOffsets> = new Map();
+  private offsetCatalog?: AnatomyCatalog;
+  private partCount = 0;
   add(resources: AtlasResource[]) {
     for (const resource of resources) for (const part of resource.parts) {
       if (this.byMesh.has(part.mesh)) continue;
-      const key = part.node.systemId === 'cardiovascular' ? part.node.vascularClass || 'heart' : part.node.systemId!;
+      const color = xrSystem(part.node.systemId!).color(part.node);
+      const key = part.node.systemId + ':' + color;
       let variant = this.materials.get(key);
       if (!variant) {
         const base = part.mesh.material.clone();
-        base.color.set(colors[key as keyof typeof colors]); base.roughness = .78; base.metalness = .015; base.side = THREE.DoubleSide;
+        base.color.set(color); base.roughness = .78; base.metalness = .015; base.side = THREE.DoubleSide;
         const selected = base.clone(); selected.emissive.set('#9dcbd2'); selected.emissiveIntensity = .24;
         variant = { base, selected }; this.materials.set(key, variant);
       }
@@ -33,20 +39,29 @@ export class XrAtlasPresentation {
     }
   }
   apply(state: AtlasState, catalog: AnatomyCatalog) {
-    const visible = this.parts.filter(part => atlasPartVisible(state, part.node, part.ancestors));
-    const offsets = createExplosionOffsets(catalog, new Set(visible.map(part => part.node.systemId!)));
-    this.visibleMeshes = visible.map(part => part.mesh);
-    const shown = new Set(visible);
+    const changed = this.partCount !== this.parts.length || this.visibility?.systemVisibility !== state.systemVisibility
+      || this.visibility.hiddenStructures !== state.hiddenStructures || this.visibility.isolatedStructure !== state.isolatedStructure;
+    if (changed) {
+      const visible = this.parts.filter(part => atlasPartVisible(state, part.node, part.ancestors));
+      this.visibleMeshes = visible.map(part => part.mesh); this.shown = new Set(visible);
+      this.visibility = state; this.partCount = this.parts.length;
+    }
+    if (changed || this.offsetCatalog !== catalog) {
+      this.offsets = createExplosionOffsets(catalog, new Set([...this.shown].map(part => part.node.systemId!)));
+      this.offsetCatalog = catalog;
+    }
     for (const part of this.parts) {
       const variant = this.variants.get(part)!, opacity = state.systemOpacity[part.node.systemId as keyof AtlasState['systemOpacity']];
-      for (const material of [variant.base, variant.selected]) {
-        const transparent = opacity < .999;
+      for (const [index, material] of [variant.base, variant.selected].entries()) {
+        // Preserve the Atlas's corneal presentation for the newly included ocular surfaces.
+        const effectiveOpacity = opacity * (part.node.ocularClass === 'cornea' ? [.22, .55][index] : 1);
+        const transparent = effectiveOpacity < .999;
         if (material.transparent !== transparent) material.needsUpdate = true;
-        material.opacity = opacity; material.transparent = transparent; material.depthWrite = !transparent;
+        material.opacity = effectiveOpacity; material.transparent = transparent; material.depthWrite = !transparent;
       }
       part.mesh.material = part.ancestors.has(state.selectedStructure || '') ? variant.selected : variant.base;
-      part.mesh.visible = shown.has(part); part.mesh.renderOrder = opacity < .999 ? 1 : 0;
-      part.targetOffset.set(...explosionTarget(offsets.get(part.node.id), 'regions', state.explodedAmount));
+      part.mesh.visible = this.shown.has(part); part.mesh.renderOrder = part.mesh.material.transparent ? 1 : 0;
+      part.targetOffset.set(...explosionTarget(this.offsets.get(part.node.id), 'regions', state.explodedAmount));
       part.offset.copy(part.targetOffset); part.mesh.position.copy(part.basePosition).add(part.offset);
     }
   }
@@ -64,5 +79,6 @@ export class XrAtlasPresentation {
     this.originals.forEach((original, part) => { part.mesh.material = original; part.mesh.position.copy(part.basePosition); });
     this.materials.forEach(({ base, selected }) => { base.dispose(); selected.dispose(); });
     this.materials.clear(); this.originals.clear(); this.variants.clear(); this.byMesh.clear(); this.parts.length = 0; this.visibleMeshes = [];
+    this.shown.clear(); this.offsets.clear(); this.visibility = undefined; this.offsetCatalog = undefined; this.partCount = 0;
   }
 }

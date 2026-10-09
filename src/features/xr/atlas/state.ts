@@ -1,24 +1,23 @@
 import type { AnatomyNode } from '../../anatomy/atlas/types';
 
-export const PILOT_SYSTEMS = ['skeletal', 'muscular', 'cardiovascular'] as const;
-export type PilotSystem = typeof PILOT_SYSTEMS[number];
-export const isPilotSystem = (value?: string): value is PilotSystem => PILOT_SYSTEMS.some(id => id === value);
+import { XR_ATLAS_SYSTEMS, isXrAtlasSystem, type XrAtlasSystem } from './systems';
+
 export type AtlasState = {
-  systemVisibility: Record<PilotSystem, boolean>;
-  systemOpacity: Record<PilotSystem, number>;
+  systemVisibility: Record<XrAtlasSystem, boolean>;
+  systemOpacity: Record<XrAtlasSystem, number>;
   hiddenStructures: string[];
   isolatedStructure: string | null;
   selectedStructure: string | null;
   explodedAmount: number;
 };
 export const initialAtlasState = (): AtlasState => ({
-  systemVisibility: { skeletal: true, muscular: false, cardiovascular: false },
-  systemOpacity: { skeletal: 1, muscular: 1, cardiovascular: 1 },
+  systemVisibility: Object.fromEntries(XR_ATLAS_SYSTEMS.map(system => [system.id, system.defaultVisible])) as Record<XrAtlasSystem, boolean>,
+  systemOpacity: Object.fromEntries(XR_ATLAS_SYSTEMS.map(system => [system.id, 1])) as Record<XrAtlasSystem, number>,
   hiddenStructures: [], isolatedStructure: null, selectedStructure: null, explodedAmount: 0,
 });
 export type AtlasAction =
-  | { type: 'system'; system: PilotSystem; enabled: boolean }
-  | { type: 'opacity'; system: PilotSystem; value: number }
+  | { type: 'system'; system: XrAtlasSystem; enabled: boolean }
+  | { type: 'opacity'; system: XrAtlasSystem; value: number }
   | { type: 'select'; id: string | null }
   | { type: 'hide' | 'isolate'; id: string }
   | { type: 'restoreHidden' | 'exitIsolation' | 'resetView' | 'restoreAtlas' }
@@ -40,7 +39,7 @@ export function atlasReducer(state: AtlasState, action: AtlasAction): AtlasState
   }
 }
 export function atlasPartVisible(state: AtlasState, node: AnatomyNode, ancestors: ReadonlySet<string>): boolean {
-  return isPilotSystem(node.systemId) && state.systemVisibility[node.systemId]
+  return isXrAtlasSystem(node.systemId) && state.systemVisibility[node.systemId]
     && !state.hiddenStructures.some(id => ancestors.has(id))
     && (!state.isolatedStructure || ancestors.has(state.isolatedStructure));
 }

@@ -3,7 +3,12 @@ import assert from 'node:assert/strict';
 import { HandUiRouter, sliderValue, handUiSurface, contains } from '../../src/features/xr/ui/handUiRouter.ts';
 import { HandInteraction } from '../../src/features/xr/handInteraction.ts';
 import { GestureController } from '../../src/features/xr/gestures.ts';
-import { atlasReducer, initialAtlasState } from '../../src/features/xr/atlas/state.ts';
+import path from 'node:path';
+import { pathToFileURL } from 'node:url';
+import { atlasTestCompiler } from './atlas-test-compiler.mjs';
+const out = path.resolve('.cache/xr-gesture-state-tests');
+await atlasTestCompiler(out)('features/xr/atlas/state.ts');
+const { atlasReducer, initialAtlasState } = await import(pathToFileURL(path.join(out, 'features/xr/atlas/state.mjs')));
 
 const rect = { left: 0, top: 0, width: 400, height: 300 };
 const target = (id = 'button', kind = 'button', range) => ({ id, kind, enabled: true, rect: { left: 240, top: 100, width: 120, height: 60 }, range });

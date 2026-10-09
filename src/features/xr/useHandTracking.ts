@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { HandTrackingSession, INITIAL_STATUS } from './HandTrackingSession';
-import type { GestureController } from './gestures';
+import type { HandTrackingInput } from './types';
 
-export function useHandTracking(gestures: GestureController) {
+export function useHandTracking(gestures: HandTrackingInput) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const session = useRef<HandTrackingSession | null>(null);
   const [status, setStatus] = useState(INITIAL_STATUS);

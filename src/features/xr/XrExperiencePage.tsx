@@ -4,9 +4,10 @@ import XrHeartScene from './XrHeartScene';
 import { GestureController } from './gestures';
 import { arExplanation, detectCapabilities, UNKNOWN_CAPABILITIES, type Support } from './capabilities';
 import { useHandTracking } from './useHandTracking';
+import { useHandPointer } from './useHandPointer';
 import { useManualControls } from './useManualControls';
 import XrEducationCard from './XrEducationCard';
-import type { HeartSelection, PickHandler, SelectionResult } from './selection';
+import type { HeartSelection, PickHandler, SelectionResult, SelectionRaycastApi } from './selection';
 import './xr.css';
 
 const supportLabel = (value: Support) => value === 'available' ? 'Disponible' : value === 'unknown' ? 'Sin confirmar' : 'No disponible';
@@ -15,17 +16,20 @@ export default function XrExperiencePage() {
   const gesturesRef = useRef<GestureController | null>(null);
   if (!gesturesRef.current) gesturesRef.current = new GestureController();
   const gestures = gesturesRef.current;
-  const { videoRef, status, start, stop } = useHandTracking(gestures);
   const [selectedStructure, setSelectedStructure] = useState<HeartSelection | null>(null);
   const [unknownStructure, setUnknownStructure] = useState(false);
-  const pickRef = useRef<PickHandler | null>(null);
-  const onTap = useCallback<PickHandler>(point => pickRef.current?.(point), []);
+  const pickRef = useRef<SelectionRaycastApi | null>(null);
+  const onTap = useCallback<PickHandler>(point => {
+    const picker = pickRef.current; if (picker) picker.select(picker.hitTest(point));
+  }, []);
   const onSelect = useCallback((result: SelectionResult) => {
     setSelectedStructure(result.kind === 'selected' ? result.selection : null);
     setUnknownStructure(result.kind === 'unknown');
   }, []);
   const clearSelection = useCallback(() => onSelect({ kind: 'empty' }), [onSelect]);
   const manual = useManualControls(gestures, onTap);
+  const { cursorRef, tracking } = useHandPointer(gestures, pickRef, manual.ref);
+  const { videoRef, status, start, stop } = useHandTracking(tracking);
   useEffect(() => {
     // Keep the heart above the mobile sheet without resizing/remounting its canvas.
     if (selectedStructure && window.matchMedia('(max-width: 760px)').matches) {
@@ -68,6 +72,7 @@ export default function XrExperiencePage() {
       <div className="xr-viewport" {...manual} tabIndex={0} role="group" aria-label="Corazón 3D interactivo" aria-describedby="xr-manual-help">
         <div className="xr-model-label"><span className="xr-eyebrow">MODELO PILOTO</span><strong>Corazón</strong><span>Vista anatómica 3D</span></div>
         <XrHeartScene gestures={gestures} selectedStructure={selectedStructure} pickRef={pickRef} onSelect={onSelect}/>
+        <span className="xr-hand-cursor" ref={cursorRef} hidden aria-hidden="true"/>
         <div className={'xr-camera-preview' + (cameraOn && showCamera ? ' is-visible' : '')} aria-hidden={!cameraOn || !showCamera}>
           <video ref={videoRef} autoPlay muted playsInline aria-label="Vista previa de cámara en espejo"/>
           <span>Cámara · Vista espejo</span>
@@ -87,11 +92,12 @@ export default function XrExperiencePage() {
         <dl className="xr-tracking-status" aria-live="polite" aria-atomic="true">
           <div><dt>Cámara</dt><dd data-active={status.camera === 'active'}>{cameraLabel}</dd></div>
           <div><dt>Manos</dt><dd>{status.hands === 1 ? '1 detectada' : status.hands + ' detectadas'}</dd></div>
-          <div><dt>Gesto</dt><dd>{status.gesture === 'rotate' ? 'Rotar' : status.gesture === 'scale' ? 'Escalar' : 'En espera'}</dd></div>
+          <div><dt>Interacción</dt><dd>{{ idle: 'En espera', pointing: 'Apuntando', candidate: 'Seleccionando', rotate: 'Rotar', scale: 'Escalar' }[status.gesture]}</dd></div>
         </dl>
         {status.message && <p className="xr-status-message" role={status.camera === 'error' ? 'alert' : 'status'}>{status.message}</p>}
         {cameraOn && <button type="button" className="xr-preview-toggle" aria-label={showCamera ? 'Ocultar cámara' : 'Mostrar cámara'} aria-pressed={showCamera} onClick={() => setShowCamera(value => !value)}>{showCamera ? 'Ocultar cámara' : 'Mostrar cámara'}</button>}
-        <div className="xr-gesture-guide"><Hand size={20} aria-hidden="true"/><div><p><strong>Una mano para rotar.</strong> Junta pulgar e índice y mueve la mano.</p>
+        <div className="xr-gesture-guide"><Hand size={20} aria-hidden="true"/><div><p><strong>Apunta para explorar.</strong> Señala con el índice y junta y suelta brevemente pulgar e índice para seleccionar.</p>
+          <p><strong>Una mano para rotar.</strong> Mantén el pinch o mueve la mano mientras lo haces.</p>
           <p><strong>Dos manos para escalar.</strong> Haz pinch con ambas y sepáralas o acércalas.</p></div></div>
       </aside>
     </section>

@@ -6,6 +6,11 @@ export type SelectionIndex = { meshes: THREE.Mesh[]; byMesh: Map<THREE.Mesh, Hea
 export type ScreenPoint = { x: number; y: number };
 export type SelectionResult = { kind: 'empty' } | { kind: 'unknown' } | { kind: 'selected'; selection: HeartSelection };
 export type PickHandler = (point: ScreenPoint) => void;
+export type SelectionRaycastApi = {
+  rect: () => { left: number; top: number; width: number; height: number };
+  hitTest: (point: ScreenPoint) => SelectionResult;
+  select: (result: SelectionResult) => void;
+};
 
 /** Build once per resource. All meshes remain occluders, including any unknown mesh. */
 export function indexHeartMeshes(scene: THREE.Object3D): SelectionIndex {
@@ -24,7 +29,7 @@ function visible(object: THREE.Object3D) {
   return true;
 }
 
-/** Called only for a qualified click/tap. Uses the rendered matrices, not gesture targets. */
+/** Called for click/tap or new hand results. Uses rendered matrices, not gesture targets. */
 export function pickHeart(point: ScreenPoint, rect: { left: number; top: number; width: number; height: number },
   camera: THREE.Camera, scene: THREE.Object3D, index: SelectionIndex, raycaster: THREE.Raycaster): SelectionResult {
   if (rect.width <= 0 || rect.height <= 0 || point.x < rect.left || point.y < rect.top

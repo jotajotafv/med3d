@@ -1,6 +1,6 @@
 import { requestCamera, stopCamera, cameraError } from './camera';
-import { GestureController, normalizeHands } from './gestures';
-import type { TrackingStatus, WorkerRequest, WorkerResponse } from './types';
+import { normalizeHands } from './gestures';
+import type { HandTrackingInput, TrackingStatus, WorkerRequest, WorkerResponse } from './types';
 
 const INITIAL_STATUS: TrackingStatus = { camera: 'off', hands: 0, gesture: 'idle', message: '' };
 export { INITIAL_STATUS };
@@ -21,7 +21,7 @@ export class HandTrackingSession {
   private pendingReject: (() => void) | null = null;
   private watchdog: ReturnType<typeof setTimeout> | undefined;
 
-  constructor(private video: HTMLVideoElement, private gestures: GestureController,
+  constructor(private video: HTMLVideoElement, private gestures: HandTrackingInput,
     private onStatus: (status: TrackingStatus) => void) {}
 
   private report(status: TrackingStatus, force = false) {

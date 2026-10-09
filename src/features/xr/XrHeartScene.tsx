@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import type { GestureController } from './gestures';
-import { highlightHeartMesh, indexHeartMeshes, pickHeart, type HeartSelection, type SelectionIndex, type SelectionResult, type PickHandler } from './selection';
+import { highlightHeartMesh, indexHeartMeshes, pickHeart, type HeartSelection, type SelectionIndex, type SelectionResult, type SelectionRaycastApi } from './selection';
 
 type HeartResource = { scene: THREE.Group; center: THREE.Vector3; scale: number; index: SelectionIndex };
 function disposeHeart(scene: THREE.Group) {
@@ -47,12 +47,18 @@ function Framing() {
 }
 
 function SelectionRaycast({ resource, pickRef, onSelect }: {
-  resource: HeartResource; pickRef: RefObject<PickHandler | null>; onSelect: (result: SelectionResult) => void;
+  resource: HeartResource; pickRef: RefObject<SelectionRaycastApi | null>; onSelect: (result: SelectionResult) => void;
 }) {
   const { camera, gl } = useThree();
   useEffect(() => {
     const raycaster = new THREE.Raycaster();
-    const pick: PickHandler = point => onSelect(pickHeart(point, gl.domElement.getBoundingClientRect(), camera, resource.scene, resource.index, raycaster));
+    const pick: SelectionRaycastApi = {
+      rect: () => gl.domElement.getBoundingClientRect(),
+      hitTest: point => pickHeart(point, gl.domElement.getBoundingClientRect(), camera, resource.scene, resource.index, raycaster),
+      select: result => {
+        if (result.kind !== 'selected' || resource.index.byMesh.get(result.selection.mesh) === result.selection) onSelect(result);
+      },
+    };
     pickRef.current = pick;
     return () => { if (pickRef.current === pick) pickRef.current = null; };
   }, [camera, gl, resource, pickRef, onSelect]);
@@ -71,7 +77,7 @@ class XrSceneBoundary extends Component<{ children: ReactNode; retry: () => void
 
 export default function XrHeartScene({ gestures, selectedStructure, pickRef, onSelect }: {
   gestures: GestureController; selectedStructure: HeartSelection | null;
-  pickRef: RefObject<PickHandler | null>; onSelect: (result: SelectionResult) => void;
+  pickRef: RefObject<SelectionRaycastApi | null>; onSelect: (result: SelectionResult) => void;
 }) {
   const [resource, setResource] = useState<HeartResource | null>(null);
   const [error, setError] = useState(false);

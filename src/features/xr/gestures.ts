@@ -1,10 +1,11 @@
 import type { HandFrame, HandSample, GestureMode, ModelTransform } from './types';
+import { PINCH_ENTER_RATIO, PINCH_EXIT_RATIO, HAND_SMOOTHING_MS, ROTATION_DEAD_ZONE, ROTATION_SENSITIVITY, MAX_TRACKING_GAP_MS, MAX_HAND_JUMP, MANUAL_HAND_COOLDOWN_MS } from './handConfig.ts';
 
 export const MIN_SCALE = 0.55;
 export const MAX_SCALE = 1.8;
 export const INITIAL_TRANSFORM: ModelTransform = { rotationX: 0, rotationY: 0, scale: 1 };
 export const clampScale = (value: number) => Math.min(MAX_SCALE, Math.max(MIN_SCALE, Number.isFinite(value) ? value : 1));
-export const isPinching = (ratio: number, previous = false) => Number.isFinite(ratio) && ratio >= 0 && ratio < (previous ? 0.43 : 0.3);
+export const isPinching = (ratio: number, previous = false) => Number.isFinite(ratio) && ratio >= 0 && ratio < (previous ? PINCH_EXIT_RATIO : PINCH_ENTER_RATIO);
 
 /** Coordinates match the mirrored preview. Correct aspect ratio before measuring distance. */
 export function normalizeHands(frame: HandFrame, aspect: number): HandSample[] {
@@ -18,7 +19,8 @@ export function normalizeHands(frame: HandFrame, aspect: number): HandSample[] {
     const palm = Math.max(distance(0, 9), distance(5, 17));
     if (palm < 0.02) return [];
     return [{ id: category.categoryName, x: 1 - (points[4].x + points[8].x) / 2,
-      y: (points[4].y + points[8].y) / 2, pinchRatio: distance(4, 8) / palm }];
+      y: (points[4].y + points[8].y) / 2, pinchRatio: distance(4, 8) / palm,
+      indexX: 1 - points[8].x, indexY: points[8].y }];
   });
 }
 
@@ -29,6 +31,7 @@ type Anchor = { key: string; x: number; y: number; distance: number; transform: 
 /** Transient gesture state only; no camera or React dependencies and no landmark history. */
 export class GestureController {
   readonly target: ModelTransform = { ...INITIAL_TRANSFORM };
+  inputRevision = 0;
   mode: GestureMode = 'idle';
   private hands = new Map<string, TrackedHand>();
   private anchor: Anchor | null = null;
@@ -37,29 +40,30 @@ export class GestureController {
   private ignoreUntil = 0;
 
   endGesture() { this.hands.clear(); this.anchor = null; this.mode = 'idle'; this.lastTime = 0; }
-  reset() { Object.assign(this.target, INITIAL_TRANSFORM); this.endGesture(); }
-  beginManual() { this.manual = true; this.endGesture(); }
-  endManual() { this.manual = false; this.endGesture(); }
+  reset() { this.inputRevision++; Object.assign(this.target, INITIAL_TRANSFORM); this.endGesture(); }
+  beginManual() { this.inputRevision++; this.manual = true; this.endGesture(); }
+  endManual() { this.inputRevision++; this.manual = false; this.endGesture(); }
+  manualActive(now: number) { return this.manual || now < this.ignoreUntil; }
   rotate(x: number, y: number, now: number) {
-    this.endGesture(); this.ignoreUntil = now + 250;
+    this.inputRevision++; this.endGesture(); this.ignoreUntil = now + MANUAL_HAND_COOLDOWN_MS;
     this.target.rotationX += x; this.target.rotationY += y;
   }
   scale(value: number, now: number) {
-    this.endGesture(); this.ignoreUntil = now + 250; this.target.scale = clampScale(value);
+    this.inputRevision++; this.endGesture(); this.ignoreUntil = now + MANUAL_HAND_COOLDOWN_MS; this.target.scale = clampScale(value);
   }
 
-  update(samples: HandSample[], now: number, aspect = 4 / 3): GestureMode {
+  update(samples: HandSample[], now: number, aspect = 4 / 3, allowRotation = true): GestureMode {
     if (this.manual || now < this.ignoreUntil) return 'idle';
     if (!Number.isFinite(now) || !Number.isFinite(aspect) || aspect <= 0) { this.endGesture(); return this.mode; }
-    if (this.lastTime && (now - this.lastTime > 250 || now <= this.lastTime)) this.endGesture();
+    if (this.lastTime && (now - this.lastTime > MAX_TRACKING_GAP_MS || now <= this.lastTime)) this.endGesture();
     const dt = this.lastTime ? now - this.lastTime : 50;
     this.lastTime = now;
-    const alpha = 1 - Math.exp(-dt / 65);
+    const alpha = 1 - Math.exp(-dt / HAND_SMOOTHING_MS);
     const next = new Map<string, TrackedHand>();
     for (const hand of samples.slice(0, 2)) {
       if (![hand.x, hand.y, hand.pinchRatio].every(Number.isFinite)) continue;
       const previous = this.hands.get(hand.id);
-      if (previous && Math.hypot(hand.x - previous.x, hand.y - previous.y) > 0.25) this.anchor = null;
+      if (previous && Math.hypot(hand.x - previous.x, hand.y - previous.y) > MAX_HAND_JUMP) this.anchor = null;
       next.set(hand.id, { ...hand,
         x: previous ? previous.x + (hand.x - previous.x) * alpha : hand.x,
         y: previous ? previous.y + (hand.y - previous.y) * alpha : hand.y,
@@ -81,8 +85,9 @@ export class GestureController {
     }
     const anchor = this.anchor;
     if (this.mode === 'rotate') {
-      this.target.rotationY = anchor.transform.rotationY + deadZone(first.x - anchor.x, 0.006) * Math.PI * 2;
-      this.target.rotationX = anchor.transform.rotationX + deadZone(first.y - anchor.y, 0.006) * Math.PI * 2;
+      if (!allowRotation) return this.mode;
+      this.target.rotationY = anchor.transform.rotationY + deadZone(first.x - anchor.x, ROTATION_DEAD_ZONE) * ROTATION_SENSITIVITY;
+      this.target.rotationX = anchor.transform.rotationX + deadZone(first.y - anchor.y, ROTATION_DEAD_ZONE) * ROTATION_SENSITIVITY;
     } else if (anchor.distance > 0.06) {
       const ratio = 1 + deadZone(distance / anchor.distance - 1, 0.025);
       this.target.scale = clampScale(anchor.transform.scale * ratio);

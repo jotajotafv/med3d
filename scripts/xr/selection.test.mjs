@@ -10,6 +10,8 @@ import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.j
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { PointerIntent } from '../../src/features/xr/pointerIntent.ts';
+import { HandInteraction } from '../../src/features/xr/handInteraction.ts';
+import { GestureController } from '../../src/features/xr/gestures.ts';
 
 // Compile the actual adapters and existing data for Node, without changing production sources.
 const directory = path.resolve('.cache/xr-selection-tests'); await mkdir(directory, { recursive: true });
@@ -107,4 +109,37 @@ test('card renders existing educational fields only, no source IDs or invented p
   const partialHtml = renderToStaticMarkup(createElement(XrEducationCard, { selection: partial, unknown: false, onClose() {} }));
   for (const missing of ['Descripción', 'Función', 'Relaciones anatómicas', 'Región']) assert.ok(!partialHtml.includes(missing));
   assert.ok(partialHtml.includes(partial.structure.title)); assert.ok(!partialHtml.replace(/<[^>]*>/g, '').includes('VH_M_'));
+});
+
+test('hand pointer raycasts actual heart meshes after XR rotation/scale and opens the matching existing card', () => {
+  const root = new THREE.Group(), fitted = new THREE.Group(), centered = new THREE.Group();
+  const bounds = new THREE.Box3().setFromObject(gltf.scene), center = bounds.getCenter(new THREE.Vector3());
+  const size = bounds.getSize(new THREE.Vector3());
+  fitted.scale.setScalar(3 / Math.max(size.x, size.y, size.z)); centered.position.copy(center).negate();
+  root.add(fitted); fitted.add(centered); centered.add(gltf.scene);
+  const rect = { left: 25, top: 80, width: 800, height: 600 }, ray = new THREE.Raycaster();
+  const camera = new THREE.PerspectiveCamera(38, 4 / 3, .1, 100); camera.position.z = 6.8; camera.lookAt(0, 0, 0);
+  const materials = realIndex.meshes.map(mesh => mesh.material);
+  for (const [angle, scale] of [[0, 1], [.6, 1.5], [-.7, .7]]) {
+    root.rotation.set(.2, angle, 0); root.scale.setScalar(scale);
+    const found = new Map();
+    for (let y = .2; y < .8; y += .025) for (let x = .2; x < .8; x += .025) {
+      const hit = pickHeart({ x: rect.left + x * rect.width, y: rect.top + y * rect.height }, rect, camera, gltf.scene, realIndex, ray);
+      if (hit.kind === 'selected' && !found.has(hit.selection.id)) found.set(hit.selection.id, { x, y, hit });
+    }
+    assert.ok(found.size >= 2, 'at least two real visible structures per pose');
+    for (const { x, y, hit } of [...found.values()].slice(0, 2)) {
+      const selected = [], gestures = new GestureController();
+      const interaction = new HandInteraction(gestures, { viewport: () => rect,
+        hitTest: point => pickHeart(point, rect, camera, gltf.scene, realIndex, ray),
+        select: result => selected.push(result), draw() {} });
+      const hand = { id: 'Left', x, y, indexX: x, indexY: y, pinchRatio: .8 };
+      interaction.update([hand], 100); interaction.update([{ ...hand, pinchRatio: .1 }], 150); interaction.update([hand], 250);
+      assert.equal(selected[0].selection, hit.selection);
+      const html = renderToStaticMarkup(createElement(XrEducationCard, { selection: selected[0].selection, unknown: false, onClose() {} }));
+      assert.ok(html.includes(hit.selection.structure.title));
+    }
+  }
+  assert.deepEqual(realIndex.meshes.map(mesh => mesh.material), materials, 'hand hover never allocates/replaces materials');
+  centered.remove(gltf.scene);
 });

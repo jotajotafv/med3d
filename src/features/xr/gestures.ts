@@ -3,6 +3,12 @@ import { PINCH_ENTER_RATIO, PINCH_EXIT_RATIO, HAND_SMOOTHING_MS, ROTATION_DEAD_Z
 
 export const MIN_SCALE = 0.55;
 export const MAX_SCALE = 1.8;
+// Atlas presentation units (the normalized body is 3.45 units tall), not anatomical coordinates.
+export const TWO_HAND_VERTICAL_PAN_SENSITIVITY = 4;
+export const MIN_VERTICAL_OFFSET = -0.9;
+export const MAX_VERTICAL_OFFSET = 0.9;
+export const VERTICAL_PAN_KEY_STEP = 0.15;
+export const clampVerticalOffset = (value: number) => Math.min(MAX_VERTICAL_OFFSET, Math.max(MIN_VERTICAL_OFFSET, Number.isFinite(value) ? value : 0));
 export const INITIAL_TRANSFORM: ModelTransform = { rotationX: 0, rotationY: 0, scale: 1 };
 export const clampScale = (value: number) => Math.min(MAX_SCALE, Math.max(MIN_SCALE, Number.isFinite(value) ? value : 1));
 export const isPinching = (ratio: number, previous = false) => Number.isFinite(ratio) && ratio >= 0 && ratio < (previous ? PINCH_EXIT_RATIO : PINCH_ENTER_RATIO);
@@ -28,11 +34,12 @@ export function normalizeHands(frame: HandFrame, aspect: number): HandSample[] {
 
 const deadZone = (value: number, threshold: number) => Math.sign(value) * Math.max(0, Math.abs(value) - threshold);
 type TrackedHand = HandSample & { pinching: boolean };
-type Anchor = { key: string; x: number; y: number; distance: number; transform: ModelTransform };
+type Anchor = { key: string; x: number; y: number; distance: number; centerY: number; verticalOffset: number; transform: ModelTransform };
 
 /** Transient gesture state only; no camera or React dependencies and no landmark history. */
 export class GestureController {
   readonly target: ModelTransform = { ...INITIAL_TRANSFORM };
+  verticalOffset = 0;
   inputRevision = 0;
   mode: GestureMode = 'idle';
   private hands = new Map<string, TrackedHand>();
@@ -40,9 +47,12 @@ export class GestureController {
   private lastTime = 0;
   private manual = false;
   private ignoreUntil = 0;
+  private verticalPan: boolean;
+
+  constructor(options: { verticalPan?: boolean } = {}) { this.verticalPan = !!options.verticalPan; }
 
   endGesture() { this.hands.clear(); this.anchor = null; this.mode = 'idle'; this.lastTime = 0; }
-  reset() { this.inputRevision++; Object.assign(this.target, INITIAL_TRANSFORM); this.endGesture(); }
+  reset() { this.inputRevision++; Object.assign(this.target, INITIAL_TRANSFORM); this.verticalOffset = 0; this.endGesture(); }
   beginManual() { this.inputRevision++; this.manual = true; this.endGesture(); }
   endManual() { this.inputRevision++; this.manual = false; this.endGesture(); }
   manualActive(now: number) { return this.manual || now < this.ignoreUntil; }
@@ -52,6 +62,11 @@ export class GestureController {
   }
   scale(value: number, now: number) {
     this.inputRevision++; this.endGesture(); this.ignoreUntil = now + MANUAL_HAND_COOLDOWN_MS; this.target.scale = clampScale(value);
+  }
+  panVertical(value: number, now: number) {
+    if (!this.verticalPan) return;
+    this.inputRevision++; this.endGesture(); this.ignoreUntil = now + MANUAL_HAND_COOLDOWN_MS;
+    this.verticalOffset = clampVerticalOffset(value);
   }
 
   update(samples: HandSample[], now: number, aspect = 4 / 3, allowRotation = true): GestureMode {
@@ -79,10 +94,11 @@ export class GestureController {
     if (!active.length) { this.anchor = null; return this.mode; }
     const first = active[0];
     const distance = active.length === 2 ? Math.hypot((first.x - active[1].x) * aspect, first.y - active[1].y) : 0;
+    const centerY = active.length === 2 ? (first.y + active[1].y) / 2 : first.y;
     const key = this.mode + active.map(hand => hand.id).join(',');
     // Every hand-count / identity / mode transition starts a new baseline, including tracking loss.
     if (changed || !this.anchor || this.anchor.key !== key) {
-      this.anchor = { key, x: first.x, y: first.y, distance, transform: { ...this.target } };
+      this.anchor = { key, x: first.x, y: first.y, distance, centerY, verticalOffset: this.verticalOffset, transform: { ...this.target } };
       return this.mode;
     }
     const anchor = this.anchor;
@@ -93,6 +109,7 @@ export class GestureController {
     } else if (anchor.distance > 0.06) {
       const ratio = 1 + deadZone(distance / anchor.distance - 1, 0.025);
       this.target.scale = clampScale(anchor.transform.scale * ratio);
+      if (this.verticalPan) this.verticalOffset = clampVerticalOffset(anchor.verticalOffset + (anchor.centerY - centerY) * TWO_HAND_VERTICAL_PAN_SENSITIVITY);
     } else {
       this.anchor = null;
     }

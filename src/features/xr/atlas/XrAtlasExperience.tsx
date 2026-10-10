@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useReducer, useRef, useState } from 'react';
 import { Camera, Minus, Plus } from '@phosphor-icons/react';
-import { GestureController } from '../gestures';
+import { GestureController, VERTICAL_PAN_KEY_STEP } from '../gestures';
 import { useManualControls } from '../useManualControls';
 import { useHandPointer } from '../useHandPointer';
 import { useHandTracking } from '../useHandTracking';
@@ -17,7 +17,7 @@ const EMPTY: AtlasAssetsSnapshot = { catalog: null, resources: [], systems: {} }
 
 export default function XrAtlasExperience() {
   const [state, dispatch] = useReducer(atlasReducer, undefined, initialAtlasState);
-  const [gestures] = useState(() => new GestureController());
+  const [gestures] = useState(() => new GestureController({ verticalPan: true }));
   const [assets, setAssets] = useState(EMPTY), owner = useRef<XrAtlasAssets | null>(null);
   const [layersOpen, setLayersOpen] = useState(() => !window.matchMedia('(max-width:760px)').matches);
   const [showCamera, setShowCamera] = useState(true);
@@ -56,7 +56,12 @@ export default function XrAtlasExperience() {
       <h1>El cuerpo,<br/><span>en tus manos.</span></h1><p className="xr-intro">Explora los once sistemas del atlas. Activa las capas que quieras estudiar.</p></div>
       <p className="xr-atlas-note">Experiencia experimental · pantalla y cámara opcional.</p></header>
     <section className="xr-atlas-workspace" aria-label="Atlas XR de once sistemas">
-      <div className="xr-viewport" {...manual} onKeyDown={event => { if (event.target === event.currentTarget && event.key === '0') { event.preventDefault(); resetView(); } else manual.onKeyDown(event); }}
+      <div className="xr-viewport" {...manual} onKeyDown={event => {
+        if (event.target === event.currentTarget && event.shiftKey && !event.altKey && !event.ctrlKey && !event.metaKey && ['ArrowUp', 'ArrowDown'].includes(event.key)) {
+          event.preventDefault(); gestures.panVertical(gestures.verticalOffset + (event.key === 'ArrowUp' ? 1 : -1) * VERTICAL_PAN_KEY_STEP, performance.now());
+        } else if (event.target === event.currentTarget && event.key === '0') { event.preventDefault(); resetView(); }
+        else manual.onKeyDown(event);
+      }}
         tabIndex={0} role="group" aria-label="Atlas XR 3D interactivo" aria-describedby="xr-atlas-help">
         <div className="xr-model-label"><span className="xr-eyebrow">ATLAS XR</span><strong>Cuerpo humano</strong></div>
         {assets.catalog ? <XrAtlasScene assets={assets} state={state} gestures={gestures} pickRef={pickRef} onSelect={onSelect}/>
@@ -76,7 +81,8 @@ export default function XrAtlasExperience() {
         <details className="xr-atlas-layers" open={layersOpen} onToggle={event => setLayersOpen(event.currentTarget.open)}>
           <summary data-xr-hand-control="layers-panel">Sistemas y despiece</summary>
           <fieldset disabled={!!state.isolatedStructure}><legend>Sistemas</legend>
-            <div className="xr-atlas-system-list" role="group" aria-label="Once sistemas anatómicos">
+            <div className="xr-atlas-system-list" role="region" tabIndex={0} aria-label="Once sistemas anatómicos"
+              data-xr-hand-control="systems-scroll" data-xr-hand-kind="scroll-region">
             {XR_ATLAS_SYSTEMS.map(({ id: system, label }) => <div className="xr-atlas-layer" key={system}>
               <label><input type="checkbox" data-xr-hand-control={system + '-toggle'} checked={state.systemVisibility[system]} onChange={event => dispatch({ type: 'system', system, enabled: event.target.checked })}/>{label}</label>
               {state.systemVisibility[system] && <label className="xr-atlas-range">Opacidad {label} <output>{Math.round(state.systemOpacity[system] * 100)}%</output>
@@ -94,14 +100,14 @@ export default function XrAtlasExperience() {
           <button type="button" className="xr-primary-button" onClick={active ? stop : start}><Camera size={17}/>{active ? 'Desactivar control con manos' : 'Activar control con manos'}</button>
           <p className="xr-privacy">La imagen de la cámara se procesa localmente en tu dispositivo. No se graba ni se envía.</p>
           <dl className="xr-tracking-status" aria-live="polite"><div><dt>Cámara</dt><dd>{{ off: 'Desactivada', requesting: 'Permiso pendiente', loading: 'Preparando', active: 'Activa', paused: 'En pausa', error: 'No disponible' }[status.camera]}</dd></div>
-            <div><dt>Manos</dt><dd>{status.hands} detectadas</dd></div><div><dt>Interacción</dt><dd>{{ idle: 'En espera', pointing: 'Apuntando', candidate: 'Preparando rotación', rotate: 'Rotar', scale: 'Escalar' }[status.gesture]}</dd></div></dl>
+            <div><dt>Manos</dt><dd>{status.hands} detectadas</dd></div><div><dt>Interacción</dt><dd>{{ idle: 'En espera', pointing: 'Apuntando', candidate: 'Preparando rotación', rotate: 'Rotar', scale: 'Escalar / desplazar' }[status.gesture]}</dd></div></dl>
           {status.message && <p className="xr-status-message" role="status">{status.message}</p>}
           {cameraOn && <button type="button" className="xr-preview-toggle" onClick={() => setShowCamera(value => !value)}>{showCamera ? 'Ocultar cámara' : 'Mostrar cámara'}</button>}
-          <p className="xr-atlas-guide">Apunta 1 segundo para seleccionar o activar controles. En sliders, espera el aro y mueve el índice horizontalmente; sal verticalmente para soltar. Pinch y movimiento para rotar · dos pinches para escalar.</p>
+          <p className="xr-atlas-guide">Apunta 1 segundo para seleccionar o activar controles. En sliders, espera el aro y mueve el índice horizontalmente; sal verticalmente para soltar. En el espacio entre sistemas, espera el aro y mueve el índice verticalmente para desplazar la lista; sal horizontalmente para soltar. Pinch y movimiento para rotar · dos pinches para escalar y subir/bajar el cuerpo.</p>
         </div>
       </aside>
     </section>
-    <p id="xr-atlas-help" className="xr-manual-help">Clic o toque: seleccionar · arrastra para rotar · rueda o dos dedos para ampliar · flechas y + / − · 0: restablecer vista · Escape: deseleccionar.</p>
+    <p id="xr-atlas-help" className="xr-manual-help">Clic o toque: seleccionar · arrastra para rotar · rueda o dos dedos para ampliar · flechas y + / − · Shift + ↑/↓: subir/bajar cuerpo · 0: restablecer vista · Escape: deseleccionar.</p>
     <p className="xr-selection-announcement" role="status" aria-live="polite">{selected ? `${selected.name} seleccionado.` : 'Sin estructura seleccionada.'}</p>
     {!selected && <div className="xr-selection-prompt"><h2>SELECCIONA UNA ESTRUCTURA</h2><p>Toca o haz clic sobre el cuerpo para explorar su anatomía.</p></div>}
     {selected && assets.catalog && <XrAtlasCard node={selected} catalog={assets.catalog} isolated={state.isolatedStructure === selected.id}

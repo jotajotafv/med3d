@@ -88,9 +88,12 @@ export class HandUiRegistry implements HandUiPort {
     // Slop is allowed only on an actual ancestor's background inside the same authorized panel.
     // A sibling overlay, text from another control, canvas or header cannot enlarge a target.
     const candidates: { target: UiTarget; distance: number; z: number; order: number }[] = [];
+    const scrollRegion = top.closest('[data-xr-hand-control][data-xr-hand-kind="scroll-region"]');
     let order = 0;
     for (const [id, element] of this.controls) {
       if (isScrollRegion(element)) continue;
+      // Real controls already won above. Keep gaps inside a scroll region reachable instead of consuming them with slop.
+      if (scrollRegion?.contains(element)) continue;
       order++;
       const hitElement = this.hitElement(element), panel = this.blocks.find(block => block.contains(element));
       if (!panel?.contains(top) || !top.contains(hitElement)) continue;

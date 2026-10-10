@@ -17,7 +17,8 @@ const results = [], errors = [], requests = [];
 page.on('pageerror', error => errors.push(error.message));
 page.on('request', request => { if (request.url().endsWith('.glb') || /models\/anatomy\/.*catalog\.json$/.test(request.url())) requests.push(request.url()); });
 const inspect = () => page.evaluate(() => window.__med3dXrAtlas());
-const observe = () => page.evaluate(() => ({ ...window.dwellQa, probe: undefined, point: window.dwellQa.point }));
+const pose = () => page.evaluate(() => window.dwellQa.pose());
+const observe = () => page.evaluate(() => ({ ...window.dwellQa, probe: undefined, pose: undefined, point: window.dwellQa.point }));
 const cursor = page.locator('.xr-atlas-page>.xr-hand-cursor');
 const control = id => page.locator(`[data-xr-hand-control="${id}"]`);
 const shot = name => page.screenshot({ path: `${output}/${name}.png` });
@@ -56,14 +57,16 @@ async function glide(from, to, frames = 8) {
   await hands([to], 6);
 }
 async function slider(id, value, screenshot) {
+  // Inspecting every loaded mesh is deliberately outside the captured gesture: QA must not create a tracking gap itself.
+  const before = await inspect();
   const aimed = await dwellControl(id);
   assert.equal(await cursor.getAttribute('data-dwell'), 'sliderCaptured');
   const min = Number(await control(id).getAttribute('min')), max = Number(await control(id).getAttribute('max'));
   const end = await at({ x: aimed.box.x + aimed.box.width * (value - min) / (max - min), y: aimed.point.y });
-  const before = (await inspect()).target;
   await glide(aimed.h, end);
   await page.waitForFunction(({ id, value }) => Number(document.querySelector('[data-xr-hand-control="' + id + '"]').value) === value, { id, value });
-  assert.deepEqual((await inspect()).target, before);
+  const after = await pose();
+  assert.deepEqual(after.target, before.target); assert.equal(after.verticalOffset, before.verticalOffset);
   if (screenshot) await shot(screenshot);
   const exit = await at({ x: aimed.box.x + aimed.box.width * (value - min) / (max - min), y: aimed.box.y - 85 });
   await glide(end, exit); await hands([exit], 8);
@@ -97,6 +100,7 @@ try {
     };
     const update = HandStability.prototype.update;
     HandStability.prototype.update = function (...args) {
+      qa.pose ??= () => ({ target: { ...this.gestures.target }, verticalOffset: this.gestures.verticalOffset });
       const mode = update.apply(this, args); qa.state = this.trackingState; qa.point = this.point; qa.rawPointer = this.lastReliablePointer; qa.lastTime = args[1]; return mode;
     };
   });
@@ -240,13 +244,14 @@ try {
   pass('anatomical dwell opens nervous, respiratory and skin cards using real raycasts');
   await hands([], 8); await setLayers(ids); await control('reset-view').click();
   let h = await aimPoint((await findSurface('integumentary', true)).point);
-  const before = (await inspect()).target;
+  const before = (await pose()).target;
   await hands([{ ...h, ratio: .2 }], 2); await glide({ ...h, ratio: .2 }, { ...h, u: h.u + .07, ratio: .2 });
-  assert.notEqual((await inspect()).target.rotationY, before.rotationY); assert.equal((await inspect()).state.selectedStructure, null);
+  assert.notEqual((await pose()).target.rotationY, before.rotationY);
   const left = { ...h, u: h.u + .07, ratio: .2 }, right = { ...left, id: 'Right', u: left.u + .2 };
-  await hands([left, right], 3); const scale = (await inspect()).target.scale;
+  await hands([left, right], 3); const scale = (await pose()).target.scale;
   for (let i = 1; i <= 5; i++) await hands([{ ...left, u: left.u - i * .012 }, { ...right, u: right.u + i * .012 }], 1);
-  assert.ok((await inspect()).target.scale > scale); await hands([], 8);
+  assert.ok((await pose()).target.scale > scale); await hands([], 8);
+  assert.equal((await inspect()).state.selectedStructure, null);
   pass('all eleven loaded: pinch rotates whole root and two pinches scale without selection');
   await control('reset-view').click(); await setLayers(['skeletal']); await page.waitForTimeout(350);
   const manualHit = await findSurface('skeletal');

@@ -47,6 +47,7 @@ function AtlasContents({ assets, state, gestures, pickRef, onSelect }: Props) {
     root.current.rotation.x = THREE.MathUtils.lerp(root.current.rotation.x, target.rotationX, alpha);
     root.current.rotation.y = THREE.MathUtils.lerp(root.current.rotation.y, target.rotationY, alpha);
     root.current.scale.setScalar(THREE.MathUtils.lerp(root.current.scale.x, target.scale, alpha));
+    root.current.position.y = THREE.MathUtils.lerp(root.current.position.y, gestures.verticalOffset, alpha);
   });
   useEffect(() => {
     // Read-only QA measurements, never landmarks or user/session persistence.
@@ -71,14 +72,14 @@ function AtlasContents({ assets, state, gestures, pickRef, onSelect }: Props) {
     };
     const inspect = () => {
       scene.updateMatrixWorld(true);
-      return { ...metrics.current, target: { ...gestures.target }, sceneId: scene.uuid, timings: timings.current, state: latest.current.state,
+      return { ...metrics.current, target: { ...gestures.target }, verticalOffset: gestures.verticalOffset, sceneId: scene.uuid, timings: timings.current, state: latest.current.state,
         modules: latest.current.assets.resources.map(resource => resource.asset.id),
         bytes: latest.current.assets.resources.reduce((sum, resource) => sum + resource.asset.bytes, 0),
         triangles: latest.current.assets.resources.reduce((sum, resource) => sum + resource.triangles, 0),
         geometryBytes: latest.current.assets.resources.reduce((sum, resource) => sum + resource.geometryBytes, 0),
         visibleMeshes: presentation.visibleMeshes.length, meshes: presentation.parts.length,
         materials: presentation.materialCount, geometries: gl.info.memory.geometries,
-        root: { rotation: root.current?.rotation.toArray(), scale: root.current?.scale.x },
+        root: { rotation: root.current?.rotation.toArray(), scale: root.current?.scale.x, position: root.current?.position.toArray() },
         parts: presentation.parts.map(part => {
           const positions = part.mesh.geometry.getAttribute('position'), indices = part.mesh.geometry.index;
           const screenSamples = [part.baseBounds.getCenter(new THREE.Vector3()).add(part.offset).applyMatrix4(part.mesh.parent!.matrixWorld).project(camera).toArray()];

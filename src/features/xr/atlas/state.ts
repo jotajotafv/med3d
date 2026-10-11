@@ -5,6 +5,7 @@ import { XR_ATLAS_SYSTEMS, isXrAtlasSystem, type XrAtlasSystem } from './systems
 export type AtlasState = {
   systemVisibility: Record<XrAtlasSystem, boolean>;
   systemOpacity: Record<XrAtlasSystem, number>;
+  optionalSystems: Partial<Record<XrAtlasSystem, boolean>>;
   hiddenStructures: string[];
   isolatedStructure: string | null;
   selectedStructure: string | null;
@@ -13,10 +14,11 @@ export type AtlasState = {
 export const initialAtlasState = (): AtlasState => ({
   systemVisibility: Object.fromEntries(XR_ATLAS_SYSTEMS.map(system => [system.id, system.defaultVisible])) as Record<XrAtlasSystem, boolean>,
   systemOpacity: Object.fromEntries(XR_ATLAS_SYSTEMS.map(system => [system.id, 1])) as Record<XrAtlasSystem, number>,
-  hiddenStructures: [], isolatedStructure: null, selectedStructure: null, explodedAmount: 0,
+  optionalSystems: {}, hiddenStructures: [], isolatedStructure: null, selectedStructure: null, explodedAmount: 0,
 });
 export type AtlasAction =
   | { type: 'system'; system: XrAtlasSystem; enabled: boolean }
+  | { type: 'optional'; system: XrAtlasSystem; enabled: boolean }
   | { type: 'opacity'; system: XrAtlasSystem; value: number }
   | { type: 'select'; id: string | null }
   | { type: 'hide' | 'isolate'; id: string }
@@ -26,6 +28,7 @@ export type AtlasAction =
 export function atlasReducer(state: AtlasState, action: AtlasAction): AtlasState {
   switch (action.type) {
     case 'system': return { ...state, systemVisibility: { ...state.systemVisibility, [action.system]: action.enabled }, selectedStructure: null };
+    case 'optional': return { ...state, optionalSystems: { ...state.optionalSystems, [action.system]: action.enabled }, selectedStructure: null };
     case 'opacity': return Number.isFinite(action.value) ? { ...state, systemOpacity: { ...state.systemOpacity, [action.system]: Math.max(.1, Math.min(1, action.value)) } } : state;
     case 'select': return { ...state, selectedStructure: action.id };
     case 'hide': return { ...state, hiddenStructures: [...new Set([...state.hiddenStructures, action.id])], selectedStructure: null,

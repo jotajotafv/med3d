@@ -146,59 +146,20 @@
     },
     {
       "id": "muscular:completion-hip-right",
-      "bytes": 183876,
-      "sha256": "aff1eef99fae59fcea1447a08fc91a3b37321468872bc5bf40a1181b4589f05e",
-      "meshes": 8,
-      "triangles": 14344,
-      "vertices": 11518,
+      "bytes": 17984,
+      "sha256": "daf5620a542f52083157e4cb4353b49b88900e472e82d10e495fe8f1246bcf60",
+      "meshes": 2,
+      "triangles": 1044,
+      "vertices": 1028,
       "materials": 1,
-      "decodedAccessorBytes": 293388,
+      "decodedAccessorBytes": 24768,
       "compression": [
         "EXT_meshopt_compression",
         "KHR_mesh_quantization"
       ],
-      "maxPositionErrorMetres": 5.958736358976355e-8,
-      "maxBoundsErrorMetres": 2.562713619091994e-8,
+      "maxPositionErrorMetres": 2.9997226606337716e-8,
+      "maxBoundsErrorMetres": 2.4131774911673176e-8,
       "elements": [
-        {
-          "elementId": "FJ1428",
-          "sourceId": "FMA22340",
-          "anatomyId": "bp3d:FMA22340",
-          "side": "right",
-          "triangles": 1092,
-          "vertices": 798,
-          "uniqueUsedSourcePositions": 554,
-          "maxPositionErrorMetres": 3.001396868862906e-8,
-          "rmsPositionErrorMetres": 1.682284311807273e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 2.562713619091994e-8
-        },
-        {
-          "elementId": "FJ1426",
-          "sourceId": "FMA22324",
-          "anatomyId": "bp3d:FMA22324",
-          "side": "right",
-          "triangles": 2466,
-          "vertices": 1883,
-          "uniqueUsedSourcePositions": 1239,
-          "maxPositionErrorMetres": 2.986647225125477e-8,
-          "rmsPositionErrorMetres": 1.708007762877037e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 2.5230407652010456e-8
-        },
-        {
-          "elementId": "FJ1425",
-          "sourceId": "FMA22326",
-          "anatomyId": "bp3d:FMA22326",
-          "side": "right",
-          "triangles": 784,
-          "vertices": 715,
-          "uniqueUsedSourcePositions": 424,
-          "maxPositionErrorMetres": 2.9960327949083205e-8,
-          "rmsPositionErrorMetres": 1.6944803328203337e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 8.739471479835004e-9
-        },
         {
           "elementId": "FJ1417",
           "sourceId": "FMA22334",
@@ -224,103 +185,25 @@
           "rmsPositionErrorMetres": 1.6941325170912456e-8,
           "triangleMultisetAndWindingPreserved": true,
           "maxBoundsErrorMetres": 2.4131774911673176e-8
-        },
-        {
-          "elementId": "FJ1432",
-          "sourceId": "FMA22338",
-          "anatomyId": "bp3d:FMA22338",
-          "side": "right",
-          "triangles": 1196,
-          "vertices": 1015,
-          "uniqueUsedSourcePositions": 600,
-          "maxPositionErrorMetres": 3.024512462947842e-8,
-          "rmsPositionErrorMetres": 1.7583225546363222e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 1.2680053673719272e-8
-        },
-        {
-          "elementId": "FJ1431",
-          "sourceId": "FMA22342",
-          "anatomyId": "bp3d:FMA22342",
-          "side": "right",
-          "triangles": 4900,
-          "vertices": 3632,
-          "uniqueUsedSourcePositions": 2468,
-          "maxPositionErrorMetres": 5.958736358976355e-8,
-          "rmsPositionErrorMetres": 2.6502924107008195e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 1.8348693897607404e-8
-        },
-        {
-          "elementId": "FJ1422",
-          "sourceId": "FMA22322",
-          "anatomyId": "bp3d:FMA22322",
-          "side": "right",
-          "triangles": 2862,
-          "vertices": 2447,
-          "uniqueUsedSourcePositions": 1459,
-          "maxPositionErrorMetres": 3.032680634483804e-8,
-          "rmsPositionErrorMetres": 1.7218675083763683e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 1.1894226048525525e-8
         }
       ]
     },
     {
       "id": "muscular:completion-hip-left",
-      "bytes": 184092,
-      "sha256": "6281e236cab0ab04eb7d55793e6a1166f2a9d08d0257cbe7d18565d2e74cb2f7",
-      "meshes": 8,
-      "triangles": 14344,
-      "vertices": 11524,
+      "bytes": 18040,
+      "sha256": "874e5b68984856f8917f194fb29219fd380340c32fe959094c8757ae72117d03",
+      "meshes": 2,
+      "triangles": 1044,
+      "vertices": 1030,
       "materials": 1,
-      "decodedAccessorBytes": 293496,
+      "decodedAccessorBytes": 24804,
       "compression": [
         "EXT_meshopt_compression",
         "KHR_mesh_quantization"
       ],
-      "maxPositionErrorMetres": 5.952911822039512e-8,
-      "maxBoundsErrorMetres": 2.562713619091994e-8,
+      "maxPositionErrorMetres": 3.011881628616755e-8,
+      "maxBoundsErrorMetres": 2.4131774911673176e-8,
       "elements": [
-        {
-          "elementId": "FJ1428M",
-          "sourceId": "FMA22341",
-          "anatomyId": "bp3d:FMA22341",
-          "side": "left",
-          "triangles": 1092,
-          "vertices": 796,
-          "uniqueUsedSourcePositions": 554,
-          "maxPositionErrorMetres": 3.001396868862906e-8,
-          "rmsPositionErrorMetres": 1.6834098087569173e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 2.562713619091994e-8
-        },
-        {
-          "elementId": "FJ1426M",
-          "sourceId": "FMA22325",
-          "anatomyId": "bp3d:FMA22325",
-          "side": "left",
-          "triangles": 2466,
-          "vertices": 1884,
-          "uniqueUsedSourcePositions": 1239,
-          "maxPositionErrorMetres": 2.999299279509369e-8,
-          "rmsPositionErrorMetres": 1.704519137234144e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 2.5230407652010456e-8
-        },
-        {
-          "elementId": "FJ1425M",
-          "sourceId": "FMA22327",
-          "anatomyId": "bp3d:FMA22327",
-          "side": "left",
-          "triangles": 784,
-          "vertices": 715,
-          "uniqueUsedSourcePositions": 424,
-          "maxPositionErrorMetres": 2.9960327949083205e-8,
-          "rmsPositionErrorMetres": 1.6944454190623933e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 8.739471479835004e-9
-        },
         {
           "elementId": "FJ1417M",
           "sourceId": "FMA22335",
@@ -346,45 +229,6 @@
           "rmsPositionErrorMetres": 1.7168450964341683e-8,
           "triangleMultisetAndWindingPreserved": true,
           "maxBoundsErrorMetres": 2.4131774911673176e-8
-        },
-        {
-          "elementId": "FJ1432M",
-          "sourceId": "FMA22339",
-          "anatomyId": "bp3d:FMA22339",
-          "side": "left",
-          "triangles": 1196,
-          "vertices": 1013,
-          "uniqueUsedSourcePositions": 600,
-          "maxPositionErrorMetres": 3.024512462947842e-8,
-          "rmsPositionErrorMetres": 1.773662082457156e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 1.2680053673719272e-8
-        },
-        {
-          "elementId": "FJ1431M",
-          "sourceId": "FMA22343",
-          "anatomyId": "bp3d:FMA22343",
-          "side": "left",
-          "triangles": 4900,
-          "vertices": 3634,
-          "uniqueUsedSourcePositions": 2468,
-          "maxPositionErrorMetres": 5.952911822039512e-8,
-          "rmsPositionErrorMetres": 2.6425456142386877e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 1.8348693897607404e-8
-        },
-        {
-          "elementId": "FJ1422M",
-          "sourceId": "FMA22323",
-          "anatomyId": "bp3d:FMA22323",
-          "side": "left",
-          "triangles": 2862,
-          "vertices": 2452,
-          "uniqueUsedSourcePositions": 1459,
-          "maxPositionErrorMetres": 3.002544519753705e-8,
-          "rmsPositionErrorMetres": 1.7240294080233196e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 1.1894226048525525e-8
         }
       ]
     },
@@ -1208,19 +1052,19 @@
     },
     {
       "id": "cardiovascular:completion-femoral-branches-right",
-      "bytes": 104524,
-      "sha256": "a4b9443f83af07fe891f34063b56787b5df36a51351cc42373f94a93e1508456",
-      "meshes": 3,
-      "triangles": 12880,
-      "vertices": 6536,
+      "bytes": 63572,
+      "sha256": "227ddff2d0911d3340fd49b6c054ec8f7c160f7c971a8542eaa7444b86f21a8e",
+      "meshes": 2,
+      "triangles": 7646,
+      "vertices": 3917,
       "materials": 1,
-      "decodedAccessorBytes": 194928,
+      "decodedAccessorBytes": 116382,
       "compression": [
         "EXT_meshopt_compression",
         "KHR_mesh_quantization"
       ],
-      "maxPositionErrorMetres": 3.0161022069692794e-8,
-      "maxBoundsErrorMetres": 1.4583587670813358e-8,
+      "maxPositionErrorMetres": 3.00151084160844e-8,
+      "maxBoundsErrorMetres": 9.407043477516197e-9,
       "elements": [
         {
           "elementId": "FJ2158",
@@ -1234,19 +1078,6 @@
           "rmsPositionErrorMetres": 1.7715200670902403e-8,
           "triangleMultisetAndWindingPreserved": true,
           "maxBoundsErrorMetres": 9.407043477516197e-9
-        },
-        {
-          "elementId": "FJ2057",
-          "sourceId": "FMA21422",
-          "anatomyId": "bp3d:FMA21422",
-          "side": "midline",
-          "triangles": 5234,
-          "vertices": 2619,
-          "uniqueUsedSourcePositions": 2619,
-          "maxPositionErrorMetres": 3.0161022069692794e-8,
-          "rmsPositionErrorMetres": 1.619927652038309e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 1.4583587670813358e-8
         },
         {
           "elementId": "FJ2137",
@@ -1265,13 +1096,13 @@
     },
     {
       "id": "cardiovascular:completion-femoral-branches-left",
-      "bytes": 104144,
-      "sha256": "1e0baf7432eb9f4f57c0238874d0efe022d7e7a926f7019f9e53ebc05d2f8b5a",
-      "meshes": 3,
-      "triangles": 12862,
-      "vertices": 6487,
+      "bytes": 63152,
+      "sha256": "48bc1680d7a71b2689eebdcd0c22c19a7ca23847771e36f3b26679ffe5ec2b56",
+      "meshes": 2,
+      "triangles": 7632,
+      "vertices": 3870,
       "materials": 1,
-      "decodedAccessorBytes": 193938,
+      "decodedAccessorBytes": 115452,
       "compression": [
         "EXT_meshopt_compression",
         "KHR_mesh_quantization"
@@ -1291,19 +1122,6 @@
           "rmsPositionErrorMetres": 1.755908297645235e-8,
           "triangleMultisetAndWindingPreserved": true,
           "maxBoundsErrorMetres": 2.2987365677629157e-8
-        },
-        {
-          "elementId": "FJ2063",
-          "sourceId": "FMA21423",
-          "anatomyId": "bp3d:FMA21423",
-          "side": "midline",
-          "triangles": 5230,
-          "vertices": 2617,
-          "uniqueUsedSourcePositions": 2617,
-          "maxPositionErrorMetres": 2.9975662559431646e-8,
-          "rmsPositionErrorMetres": 1.6111130241772766e-8,
-          "triangleMultisetAndWindingPreserved": true,
-          "maxBoundsErrorMetres": 1.8463134798807346e-8
         },
         {
           "elementId": "FJ2069",
@@ -1352,11 +1170,11 @@
       ]
     }
   ],
-  "totalBytes": 9404780,
-  "totalTriangles": 860774,
-  "totalMeshes": 86,
-  "totalVertices": 631384,
-  "totalDecodedAccessorBytes": 19841364,
+  "totalBytes": 8990892,
+  "totalTriangles": 823710,
+  "totalMeshes": 72,
+  "totalVertices": 605164,
+  "totalDecodedAccessorBytes": 19147020,
   "maxPositionErrorMetres": 6.010618735117701e-8,
   "maxBoundsErrorMetres": 5.958557136587217e-8
 }

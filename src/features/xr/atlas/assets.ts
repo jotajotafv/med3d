@@ -6,6 +6,7 @@ import { XR_ATLAS_SYSTEM_IDS, composeXrCatalog, type XrAtlasSystem } from './sys
 export const XR_ATLAS_LOAD_SLOTS = 2;
 type SystemEntry = { abort: AbortController; catalog?: AnatomyCatalog; manager?: AtlasAssetManager;
   unsubscribe?: () => void; snapshot: AssetSnapshot; error?: string; startedAt: number;
+  includeOptional: boolean; desired: string[];
   phase: 'queued' | 'active' | 'settled'; initialized: Promise<void>; resolve: () => void };
 export type AtlasAssetsSnapshot = { catalog: AnatomyCatalog | null; resources: AtlasResource[];
   systems: Partial<Record<XrAtlasSystem, { pending: boolean; error?: string; ready: number; total: number; startedAt: number }>> };
@@ -29,17 +30,28 @@ export class XrAtlasAssets {
       const ready = entry.snapshot.statuses.filter(status => status.state === 'ready').length;
       const failed = entry.snapshot.statuses.some(status => status.state === 'error');
       return [id, { pending: entry.phase !== 'settled',
-        error: entry.error || (failed ? 'No se pudo cargar una región.' : undefined), ready, total: entry.catalog?.assets.length ?? 0, startedAt: entry.startedAt }];
+        error: entry.error || (failed ? 'No se pudo cargar una región.' : undefined), ready, total: entry.desired.length, startedAt: entry.startedAt }];
     })) };
   }
   private emit() { if (!this.disposed) { const value = this.snapshot(); this.listeners.forEach(listener => listener(value)); } }
-  ensure(system: XrAtlasSystem): Promise<void> {
+  ensure(system: XrAtlasSystem, includeOptional = false): Promise<void> {
     if (this.disposed) return Promise.resolve();
-    const existing = this.entries.get(system); if (existing) return existing.initialized;
+    const existing = this.entries.get(system);
+    if (existing) {
+      if (includeOptional && !existing.includeOptional) {
+        existing.includeOptional = true;
+        if (existing.catalog) {
+          existing.desired = existing.catalog.assets.map(asset => asset.id);
+          if (existing.phase === 'settled') { existing.phase = 'queued'; this.emit(); this.pump(); }
+          else if (existing.phase === 'active') existing.manager?.setDesired(existing.desired);
+        }
+      }
+      return existing.initialized;
+    }
     let resolve!: () => void;
     const initialized = new Promise<void>(done => { resolve = done; });
     const entry: SystemEntry = { abort: new AbortController(), snapshot: { resources: [], statuses: [] },
-      startedAt: performance.now(), phase: 'queued', initialized, resolve };
+      includeOptional, desired: [], startedAt: performance.now(), phase: 'queued', initialized, resolve };
     this.entries.set(system, entry); this.emit(); this.pump(); return initialized;
   }
   private pump() {
@@ -56,24 +68,30 @@ export class XrAtlasAssets {
   }
   private async start(system: XrAtlasSystem, entry: SystemEntry) {
     try {
-      if (entry.manager) { entry.manager.retry(); return; }
+      if (entry.manager) {
+        const current = entry.snapshot.statuses.map(status => status.id);
+        if (current.length !== entry.desired.length || current.some((id, i) => id !== entry.desired[i])) entry.manager.setDesired(entry.desired);
+        else entry.manager.retry();
+        return;
+      }
       const catalog = await this.fetchCatalog(system, entry.abort.signal);
       if (this.disposed || entry.abort.signal.aborted) return;
       if (catalog.assets.some(asset => asset.systemId !== system)) throw new Error('Catálogo fuera del sistema solicitado.');
       const catalogs = Object.fromEntries([...this.entries].flatMap(([id, value]) => value.catalog ? [[id, value.catalog]] : []));
       const composed = composeXrCatalog({ ...catalogs, [system]: catalog });
       entry.catalog = catalog; this.catalog = composed;
+      entry.desired = catalog.assets.filter(asset => asset.defaultEnabled !== false || entry.includeOptional).map(asset => asset.id);
       const manager = this.createManager(catalog); entry.manager = manager;
       entry.unsubscribe = manager.subscribe(snapshot => {
         entry.snapshot = snapshot;
         const resources = XR_ATLAS_SYSTEM_IDS.flatMap(id => this.entries.get(id)?.snapshot.resources ?? []);
         if (resources.length !== this.resources.length || resources.some((resource, i) => resource !== this.resources[i])) this.resources = resources;
-        const settled = snapshot.statuses.length === catalog.assets.length
+        const settled = snapshot.statuses.length === entry.desired.length
           && snapshot.statuses.every(status => status.state === 'ready' || status.state === 'error');
         if (settled && entry.phase === 'active') this.settle(entry); else this.emit();
       });
       // Retain every requested module until leaving Atlas XR, even while its layer is off.
-      manager.setDesired(catalog.assets.map(asset => asset.id));
+      manager.setDesired(entry.desired);
     } catch (error) {
       if (this.disposed || entry.abort.signal.aborted) return;
       entry.error = error instanceof Error ? error.message : 'No se pudo cargar el sistema.'; this.settle(entry);
@@ -84,7 +102,7 @@ export class XrAtlasAssets {
     if (entry.manager) {
       if (!entry.snapshot.statuses.some(status => status.state === 'error')) return;
       entry.phase = 'queued'; this.emit(); this.pump();
-    } else { this.entries.delete(system); void this.ensure(system); }
+    } else { this.entries.delete(system); void this.ensure(system, entry.includeOptional); }
   }
   dispose() {
     if (this.disposed) return; this.disposed = true;

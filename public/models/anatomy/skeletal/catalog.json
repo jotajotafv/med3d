@@ -43,7 +43,9 @@
         "skeletal:leg-right",
         "skeletal:skull",
         "skeletal:spine",
-        "skeletal:thorax"
+        "skeletal:thorax",
+        "skeletal:completion2-styloid-ligament-left",
+        "skeletal:completion2-styloid-ligament-right"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -77,7 +79,9 @@
       "assetIds": [
         "skeletal:skull",
         "skeletal:spine",
-        "skeletal:thorax"
+        "skeletal:thorax",
+        "skeletal:completion2-styloid-ligament-left",
+        "skeletal:completion2-styloid-ligament-right"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -145,11 +149,15 @@
       "children": [
         "skeletal:group:skull:face",
         "bp3d:FMA52749",
-        "skeletal:group:skull:neurocranium"
+        "skeletal:group:skull:neurocranium",
+        "bp3d:FMA72311",
+        "bp3d:FMA72309"
       ],
       "kind": "region",
       "assetIds": [
-        "skeletal:skull"
+        "skeletal:skull",
+        "skeletal:completion2-styloid-ligament-left",
+        "skeletal:completion2-styloid-ligament-right"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -568,7 +576,7 @@
         [
           -0.037383,
           1.04996,
-          -0.0000185
+          -1.85e-05
         ],
         [
           0.0363206,
@@ -2837,7 +2845,7 @@
         [
           -0.036151499999999996,
           1.23977,
-          -0.0000185499
+          -1.85499e-05
         ],
         [
           0.034889699999999996,
@@ -10084,6 +10092,94 @@
           0.21335300000000001
         ]
       ]
+    },
+    {
+      "id": "bp3d:FMA72311",
+      "sourceId": "FMA72311",
+      "name": "Ligamento estilohioideo · lado izquierdo",
+      "anatomicalName": "Ligamento estilohioideo",
+      "latin": "Ligamentum stylohyoideum",
+      "aliases": [
+        "Left stylohyoid ligament",
+        "FMA72311",
+        "FJ2763",
+        "Ligamento estilohioideo",
+        "Ligamentum stylohyoideum"
+      ],
+      "systemId": "skeletal",
+      "parentId": "skeletal:region:skull",
+      "regionId": "skeletal:region:skull",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "skeletal:completion2-styloid-ligament-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA72311_FJ2763"
+      ],
+      "family": "completion2:stylohyoid-ligament",
+      "educationId": "completion2:stylohyoid-ligament",
+      "side": "left",
+      "anatomyType": "Ligamento",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "bounds": [
+        [
+          0.0116624,
+          1.43335,
+          0.0868472
+        ],
+        [
+          0.040872500000000006,
+          1.47821,
+          0.123393
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72309",
+      "sourceId": "FMA72309",
+      "name": "Ligamento estilohioideo · lado derecho",
+      "anatomicalName": "Ligamento estilohioideo",
+      "latin": "Ligamentum stylohyoideum",
+      "aliases": [
+        "Right stylohyoid ligament",
+        "FMA72309",
+        "FJ2764",
+        "Ligamento estilohioideo",
+        "Ligamentum stylohyoideum"
+      ],
+      "systemId": "skeletal",
+      "parentId": "skeletal:region:skull",
+      "regionId": "skeletal:region:skull",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "skeletal:completion2-styloid-ligament-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA72309_FJ2764"
+      ],
+      "family": "completion2:stylohyoid-ligament",
+      "educationId": "completion2:stylohyoid-ligament",
+      "side": "right",
+      "anatomyType": "Ligamento",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "bounds": [
+        [
+          -0.0421703,
+          1.43333,
+          0.0868352
+        ],
+        [
+          -0.0129676,
+          1.4782000000000002,
+          0.123386
+        ]
+      ]
     }
   ],
   "assets": [
@@ -10254,6 +10350,58 @@
         ]
       ],
       "provenanceId": "bodyparts3d-4.0"
+    },
+    {
+      "id": "skeletal:completion2-styloid-ligament-left",
+      "label": "Ligamento estilohioideo · lado izquierdo",
+      "path": "models/anatomy/skeletal/completion2-styloid-ligament-left.glb",
+      "systemId": "skeletal",
+      "regionId": "skeletal:region:skull",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 54264,
+      "sha256": "9b6e0a0db9af7dd1cf7d964e4d3459a19074effc527089693b86d1a8d27aa46f",
+      "meshCount": 1,
+      "triangles": 5758,
+      "bounds": [
+        [
+          0.0116624,
+          1.43335,
+          0.0868472
+        ],
+        [
+          0.040872500000000006,
+          1.47821,
+          0.123393
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
+    },
+    {
+      "id": "skeletal:completion2-styloid-ligament-right",
+      "label": "Ligamento estilohioideo · lado derecho",
+      "path": "models/anatomy/skeletal/completion2-styloid-ligament-right.glb",
+      "systemId": "skeletal",
+      "regionId": "skeletal:region:skull",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 54048,
+      "sha256": "a4ea687fa432aa22b85a0f6c4dd3c25b8e5b9347d868e555ddeb8aad7032e5fc",
+      "meshCount": 1,
+      "triangles": 5758,
+      "bounds": [
+        [
+          -0.0421703,
+          1.43333,
+          0.0868352
+        ],
+        [
+          -0.0129676,
+          1.4782000000000002,
+          0.123386
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
     }
   ],
   "provenance": [
@@ -10275,19 +10423,58 @@
         "Applied the current official CC BY 4.0 license declaration updated 2025-02-27; the older OBJ comment headers still mention legacy CC BY-SA 2.1 Japan.",
         "Meshopt compression and quantization are performed by optimize-skeleton.mjs; output hashes in this catalog are final-file hashes."
       ]
+    },
+    {
+      "id": "bodyparts3d-4.0-completion-wave2",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
+        "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
+        "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
+        "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
+      ]
     }
   ],
   "coverage": {
     "title": "Sistema óseo · BodyParts3D",
     "structures": 203,
-    "meshes": 205,
+    "meshes": 207,
     "note": "199 huesos del recuento adulto habitual, más 4 sesamoideos accesorios del pie. El esternón conserva 3 componentes originales. Se retiró una copia exactamente duplicada del hioides. No existe un cóccix separable identificado.",
     "limitations": [
       "Pendientes 7 huesos del recuento adulto habitual: cóccix identificable por separado y 6 huesecillos del oído (martillo, yunque y estribo de ambos lados).",
       "205 mallas no equivalen a 205 huesos: el esternón tiene 3 componentes; se incluyen 4 sesamoideos accesorios. El hioides duplicado en la fuente se muestra una sola vez.",
       "Modelo de referencia masculino adulto; no representa variación individual ni un esqueleto pediátrico.",
       "La fuente OBJ99 tiene resolución reducida; no permite interpretar microanatomía ni planificar procedimientos.",
-      "Fichas educativas y relaciones articulares se incorporan sólo con referencias verificadas."
+      "Fichas educativas y relaciones articulares se incorporan sólo con referencias verificadas.",
+      "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa."
     ]
+  },
+  "education": {
+    "completion2:stylohyoid-ligament": {
+      "description": "Tejido conectivo de soporte.",
+      "function": "Conecta la apófisis estiloides con el hioides.",
+      "relations": "Entre apófisis estiloides e hioides.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No es un hueso ni completa una articulación.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    }
   }
 }

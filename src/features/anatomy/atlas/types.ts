@@ -39,7 +39,7 @@ export interface AnatomyNode {
   /** Surface identity; does not assert histological layers. */
   integumentaryType?: string;
   /** Partial sensory-organ coverage; no additional body system. */
-  ocularClass?: 'eyeball' | 'cornea' | 'sclera' | 'iris' | 'lens' | 'retina' | 'extraocular' | 'eyelid-muscle';
+  ocularClass?: 'eyeball' | 'cornea' | 'sclera' | 'iris' | 'lens' | 'retina' | 'extraocular' | 'eyelid-muscle' | 'chamber' | 'choroid' | 'ciliary' | 'zonule' | 'vitreous' | 'lacrimal' | 'tarsal' | 'support';
   digestiveClass?: 'tract' | 'liver' | 'biliary' | 'gland';
   side?: 'left' | 'right' | 'midline';
   relatedIds: string[];

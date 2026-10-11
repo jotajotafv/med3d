@@ -48,7 +48,10 @@ export function atlasEducation(node: AnatomyNode, catalog: AnatomyCatalog) {
       if (detail.scope === 'component') scope = `Componente de ${detail.muscleName}. Función general del músculo.`;
     }
   } else if (node.systemId === 'nervous') {
-    if (node.ocularClass) fields = [['Descripción', OCULAR_DESCRIPTION[node.ocularClass]]];
+    if (node.ocularClass) {
+      const description = OCULAR_DESCRIPTION[node.ocularClass];
+      if (description) fields = [['Descripción', description]];
+    }
     else {
       const detail = resolveNerveDetail(node);
       if (detail) {

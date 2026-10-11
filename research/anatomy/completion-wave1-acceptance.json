@@ -1,0 +1,1055 @@
+{
+  "wave": 1,
+  "selectionSha256": "9e16c766d66d819e2cc750cd3b5f3bcb71118791c0cbbe46ecf6698ac31aba2e",
+  "review": "WAVE 2 expanded screening supersedes the limited WAVE 1 contact assessment. Three millimetres is a review trigger, not a clinical threshold. Rejection can also follow smaller contacts in small structures. Conservative non-acceptance does not assert all rejected interfaces are equally severe.",
+  "acceptedNodeIds": [
+    "bp3d:FMA13295",
+    "bp3d:FMA9756",
+    "bp3d:FMA9757",
+    "bp3d:FMA9758",
+    "bp3d:FMA22334",
+    "bp3d:FMA22336",
+    "bp3d:FMA22335",
+    "bp3d:FMA22337",
+    "dig:FMA55704",
+    "dig:FMA55693",
+    "dig:FMA55703",
+    "dig:FMA55692",
+    "dig:FMA57143",
+    "dig:FMA57141",
+    "dig:FMA55687",
+    "dig:FMA55699",
+    "dig:FMA55690",
+    "dig:FMA55700",
+    "dig:FMA55691",
+    "dig:FMA55682",
+    "dig:FMA55683",
+    "dig:FMA55799",
+    "dig:FMA55705",
+    "dig:FMA55694",
+    "dig:FMA55706",
+    "dig:FMA55695",
+    "dig:FMA57142",
+    "dig:FMA57140",
+    "dig:FMA55686",
+    "dig:FMA55697",
+    "dig:FMA55698",
+    "dig:FMA55689",
+    "dig:FMA55688",
+    "dig:FMA55681",
+    "dig:FMA55680",
+    "dig:FMA55798",
+    "ocular:FMA49051",
+    "ocular:FMA49047",
+    "ocular:FMA49055",
+    "ocular:FMA58243",
+    "ocular:FMA49049",
+    "ocular:FMA49057",
+    "ocular:FMA58608",
+    "ocular:FMA49053",
+    "ocular:FMA49045",
+    "ocular:FMA49050",
+    "ocular:FMA49046",
+    "ocular:FMA49054",
+    "ocular:FMA58242",
+    "ocular:FMA49048",
+    "ocular:FMA49056",
+    "ocular:FMA58607",
+    "ocular:FMA49052",
+    "ocular:FMA49044",
+    "muscular:region:pelvis",
+    "bp3d:FMA46444",
+    "bp3d:FMA46443",
+    "bp3d:FMA45859",
+    "bp3d:FMA45858",
+    "bp3d:FMA45855",
+    "bp3d:FMA45854",
+    "bp3d:FMA45857",
+    "bp3d:FMA45856",
+    "dig:FMA21930",
+    "bp3d:FMA20801",
+    "bp3d:FMA22507",
+    "bp3d:FMA20802",
+    "bp3d:FMA22508",
+    "bp3d:FMA83966"
+  ],
+  "rejected": [
+    {
+      "id": "bp3d:FMA22340",
+      "name": "Piriforme derecho",
+      "sourceElements": [
+        "FJ1428"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El control ampliado detecta inclusión en hueso; la revisión regional no permite justificar el encaje como una interfaz anatómica segura. Se excluye el original completo; no se recorta ni desplaza.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA16202",
+            "name": "Sacro",
+            "samples": 114,
+            "over1mm": 99,
+            "over3mm": 22,
+            "maxDepthMm": 3.7542625041944637,
+            "deepestPointMetres": [
+              -0.02864290028810501,
+              0.8590239882469177,
+              0.013496099971234798
+            ],
+            "nearestSurfaceMetres": [
+              -0.026311772238429443,
+              0.8577389418054387,
+              0.01614354866944568
+            ]
+          },
+          {
+            "bone": "bp3d:FMA16586",
+            "name": "Hueso coxal derecho",
+            "samples": 49,
+            "over1mm": 23,
+            "over3mm": 0,
+            "maxDepthMm": 2.4381917199768113,
+            "deepestPointMetres": [
+              -0.08879639953374863,
+              0.8244730234146118,
+              0.05207040160894394
+            ],
+            "nearestSurfaceMetres": [
+              -0.08968701131884055,
+              0.8245080064029213,
+              0.049800959892982104
+            ]
+          },
+          {
+            "bone": "bp3d:FMA24474",
+            "name": "Fémur derecho",
+            "samples": 22,
+            "over1mm": 0,
+            "over3mm": 0,
+            "maxDepthMm": 0.8660714024755464,
+            "deepestPointMetres": [
+              -0.13567900657653809,
+              0.8080779910087585,
+              0.07105150073766708
+            ],
+            "nearestSurfaceMetres": [
+              -0.1356048265008946,
+              0.8089404345386633,
+              0.07107921622591766
+            ]
+          }
+        ]
+      },
+      "representativeCapture": "contact-detail/07-FMA22340.png",
+      "nextPossibleAction": "Evaluar una revisión original o fuente alternativa con identidad y registro regional independiente; no corregir a ojo."
+    },
+    {
+      "id": "bp3d:FMA22324",
+      "name": "Obturador interno derecho",
+      "sourceElements": [
+        "FJ1426"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El control ampliado detecta inclusión en hueso; la revisión regional no permite justificar el encaje como una interfaz anatómica segura. Se excluye el original completo; no se recorta ni desplaza.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA16586",
+            "name": "Hueso coxal derecho",
+            "samples": 166,
+            "over1mm": 63,
+            "over3mm": 13,
+            "maxDepthMm": 3.3406734751940808,
+            "deepestPointMetres": [
+              -0.07160239666700363,
+              0.8025299906730652,
+              0.041067298501729965
+            ],
+            "nearestSurfaceMetres": [
+              -0.07302742102780028,
+              0.8045758864439627,
+              0.038843851777919165
+            ]
+          },
+          {
+            "bone": "bp3d:FMA24474",
+            "name": "Fémur derecho",
+            "samples": 29,
+            "over1mm": 5,
+            "over3mm": 0,
+            "maxDepthMm": 1.308499269260293,
+            "deepestPointMetres": [
+              -0.11765100061893463,
+              0.7972390055656433,
+              0.07157810032367706
+            ],
+            "nearestSurfaceMetres": [
+              -0.11795390230191535,
+              0.7980732815436953,
+              0.07061664075585967
+            ]
+          }
+        ]
+      },
+      "representativeCapture": "contact-detail-more/02-FMA22324.png",
+      "nextPossibleAction": "Evaluar una revisión original o fuente alternativa con identidad y registro regional independiente; no corregir a ojo."
+    },
+    {
+      "id": "bp3d:FMA22326",
+      "name": "Obturador externo derecho",
+      "sourceElements": [
+        "FJ1425"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El control ampliado detecta inclusión en hueso; la revisión regional no permite justificar el encaje como una interfaz anatómica segura. Se excluye el original completo; no se recorta ni desplaza.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA24474",
+            "name": "Fémur derecho",
+            "samples": 59,
+            "over1mm": 45,
+            "over3mm": 22,
+            "maxDepthMm": 7.579646345168938,
+            "deepestPointMetres": [
+              -0.12832599878311157,
+              0.7887409925460815,
+              0.06484620273113251
+            ],
+            "nearestSurfaceMetres": [
+              -0.12114124724708152,
+              0.7911510184893364,
+              0.06469734361590973
+            ]
+          },
+          {
+            "bone": "bp3d:FMA16586",
+            "name": "Hueso coxal derecho",
+            "samples": 129,
+            "over1mm": 41,
+            "over3mm": 0,
+            "maxDepthMm": 2.401416365299173,
+            "deepestPointMetres": [
+              -0.04171289876103401,
+              0.7705820202827454,
+              0.06779470294713974
+            ],
+            "nearestSurfaceMetres": [
+              -0.043593795880473796,
+              0.7705729701971039,
+              0.0692876680108836
+            ]
+          }
+        ]
+      },
+      "representativeCapture": "contact-detail/04-FMA22326.png",
+      "nextPossibleAction": "Evaluar una revisión original o fuente alternativa con identidad y registro regional independiente; no corregir a ojo."
+    },
+    {
+      "id": "bp3d:FMA22338",
+      "name": "Cuadrado femoral derecho",
+      "sourceElements": [
+        "FJ1432"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El control ampliado detecta inclusión en hueso; la revisión regional no permite justificar el encaje como una interfaz anatómica segura. Se excluye el original completo; no se recorta ni desplaza.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA16586",
+            "name": "Hueso coxal derecho",
+            "samples": 109,
+            "over1mm": 98,
+            "over3mm": 91,
+            "maxDepthMm": 7.561367429877944,
+            "deepestPointMetres": [
+              -0.06967730075120926,
+              0.7763019800186157,
+              0.04649990051984787
+            ],
+            "nearestSurfaceMetres": [
+              -0.07702673510981889,
+              0.7748446828572659,
+              0.04548187448794639
+            ]
+          },
+          {
+            "bone": "bp3d:FMA24474",
+            "name": "Fémur derecho",
+            "samples": 34,
+            "over1mm": 0,
+            "over3mm": 0,
+            "maxDepthMm": 0.41131612754323305,
+            "deepestPointMetres": [
+              -0.1194709986448288,
+              0.7581999897956848,
+              0.054740600287914276
+            ],
+            "nearestSurfaceMetres": [
+              -0.1193950812799818,
+              0.7580821506076246,
+              0.05435390733963468
+            ]
+          }
+        ]
+      },
+      "representativeCapture": "contact-detail/05-FMA22338.png",
+      "nextPossibleAction": "Evaluar una revisión original o fuente alternativa con identidad y registro regional independiente; no corregir a ojo."
+    },
+    {
+      "id": "bp3d:FMA22342",
+      "name": "Psoas mayor derecho",
+      "sourceElements": [
+        "FJ1431"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El control ampliado detecta inclusión en hueso; la revisión regional no permite justificar el encaje como una interfaz anatómica segura. Se excluye el original completo; no se recorta ni desplaza.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA10081",
+            "name": "Vértebra torácica · T12",
+            "samples": 96,
+            "over1mm": 69,
+            "over3mm": 43,
+            "maxDepthMm": 7.293581844744011,
+            "deepestPointMetres": [
+              -0.007827980443835258,
+              1.0811799764633179,
+              0.08595489710569382
+            ],
+            "nearestSurfaceMetres": [
+              -0.00753865297845559,
+              1.0740081520279396,
+              0.08725010365751025
+            ]
+          },
+          {
+            "bone": "bp3d:FMA24474",
+            "name": "Fémur derecho",
+            "samples": 133,
+            "over1mm": 95,
+            "over3mm": 51,
+            "maxDepthMm": 5.120262194928601,
+            "deepestPointMetres": [
+              -0.11270900070667267,
+              0.7399790287017822,
+              0.0659760981798172
+            ],
+            "nearestSurfaceMetres": [
+              -0.11328796967199264,
+              0.7375118669699305,
+              0.061526941757426776
+            ]
+          },
+          {
+            "bone": "bp3d:FMA13072",
+            "name": "Vértebra lumbar · L1",
+            "samples": 68,
+            "over1mm": 31,
+            "over3mm": 10,
+            "maxDepthMm": 3.7573799758402195,
+            "deepestPointMetres": [
+              -0.014524299651384354,
+              1.0459599494934082,
+              0.09491389989852905
+            ],
+            "nearestSurfaceMetres": [
+              -0.014312810006120237,
+              1.0423360706094367,
+              0.09588378558617289
+            ]
+          },
+          {
+            "bone": "bp3d:FMA13076",
+            "name": "Vértebra lumbar · L5",
+            "samples": 43,
+            "over1mm": 19,
+            "over3mm": 2,
+            "maxDepthMm": 3.298851392376853,
+            "deepestPointMetres": [
+              -0.043033499270677567,
+              0.9443529844284058,
+              0.05776619911193848
+            ],
+            "nearestSurfaceMetres": [
+              -0.042737440273761355,
+              0.9470626376796685,
+              0.05962430267128416
+            ]
+          },
+          {
+            "bone": "bp3d:FMA13074",
+            "name": "Vértebra lumbar · L3",
+            "samples": 65,
+            "over1mm": 29,
+            "over3mm": 0,
+            "maxDepthMm": 2.9457113633436873,
+            "deepestPointMetres": [
+              -0.014424700289964676,
+              0.9783790111541748,
+              0.09645599871873856
+            ],
+            "nearestSurfaceMetres": [
+              -0.014444278362733095,
+              0.9754733930012155,
+              0.09597204078214476
+            ]
+          },
+          {
+            "bone": "bp3d:FMA13075",
+            "name": "Vértebra lumbar · L4",
+            "samples": 72,
+            "over1mm": 37,
+            "over3mm": 0,
+            "maxDepthMm": 2.586964317382088,
+            "deepestPointMetres": [
+              -0.021285099908709526,
+              0.9486989974975586,
+              0.08301889896392822
+            ],
+            "nearestSurfaceMetres": [
+              -0.02097124637727019,
+              0.946247234676976,
+              0.0822555252600189
+            ]
+          },
+          {
+            "bone": "bp3d:FMA13073",
+            "name": "Vértebra lumbar · L2",
+            "samples": 50,
+            "over1mm": 31,
+            "over3mm": 0,
+            "maxDepthMm": 1.9227617059342987,
+            "deepestPointMetres": [
+              -0.018045000731945038,
+              1.0332800149917603,
+              0.09493809938430786
+            ],
+            "nearestSurfaceMetres": [
+              -0.019763365767607278,
+              1.0325098518977889,
+              0.09532679333937447
+            ]
+          },
+          {
+            "bone": "bp3d:FMA16586",
+            "name": "Hueso coxal derecho",
+            "samples": 9,
+            "over1mm": 3,
+            "over3mm": 0,
+            "maxDepthMm": 1.6687181680598433,
+            "deepestPointMetres": [
+              -0.06781639903783798,
+              0.8102080225944519,
+              0.10818099975585938
+            ],
+            "nearestSurfaceMetres": [
+              -0.068341565030079,
+              0.8090768103923546,
+              0.10928968364174958
+            ]
+          }
+        ]
+      },
+      "representativeCapture": "contact-detail/06-FMA22342.png",
+      "nextPossibleAction": "Evaluar una revisión original o fuente alternativa con identidad y registro regional independiente; no corregir a ojo."
+    },
+    {
+      "id": "bp3d:FMA22322",
+      "name": "Ilíaco derecho",
+      "sourceElements": [
+        "FJ1422"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El control ampliado detecta inclusión en hueso; la revisión regional no permite justificar el encaje como una interfaz anatómica segura. Se excluye el original completo; no se recorta ni desplaza.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA16586",
+            "name": "Hueso coxal derecho",
+            "samples": 275,
+            "over1mm": 173,
+            "over3mm": 47,
+            "maxDepthMm": 4.615265735086395,
+            "deepestPointMetres": [
+              -0.07635840028524399,
+              0.9461719989776611,
+              0.04652930051088333
+            ],
+            "nearestSurfaceMetres": [
+              -0.07469166879184662,
+              0.946796579761759,
+              0.05078753756141441
+            ]
+          },
+          {
+            "bone": "bp3d:FMA24474",
+            "name": "Fémur derecho",
+            "samples": 82,
+            "over1mm": 29,
+            "over3mm": 5,
+            "maxDepthMm": 4.384889742717281,
+            "deepestPointMetres": [
+              -0.09590809792280197,
+              0.7462980151176453,
+              0.06573940068483353
+            ],
+            "nearestSurfaceMetres": [
+              -0.09174008685790072,
+              0.7470715532819234,
+              0.06686037371174057
+            ]
+          }
+        ]
+      },
+      "representativeCapture": "contact-detail-more/03-FMA22322.png",
+      "nextPossibleAction": "Evaluar una revisión original o fuente alternativa con identidad y registro regional independiente; no corregir a ojo."
+    },
+    {
+      "id": "bp3d:FMA22341",
+      "name": "Piriforme izquierdo",
+      "sourceElements": [
+        "FJ1428M"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El control ampliado detecta inclusión en hueso; la revisión regional no permite justificar el encaje como una interfaz anatómica segura. Se excluye el original completo; no se recorta ni desplaza.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA16202",
+            "name": "Sacro",
+            "samples": 110,
+            "over1mm": 104,
+            "over3mm": 44,
+            "maxDepthMm": 4.792632191608408,
+            "deepestPointMetres": [
+              0.03158630058169365,
+              0.8689650297164917,
+              0.024709900841116905
+            ],
+            "nearestSurfaceMetres": [
+              0.02790423133391602,
+              0.8665627381871267,
+              0.02661795869835098
+            ]
+          },
+          {
+            "bone": "bp3d:FMA16587",
+            "name": "Hueso coxal izquierdo",
+            "samples": 28,
+            "over1mm": 10,
+            "over3mm": 0,
+            "maxDepthMm": 1.9530966672108157,
+            "deepestPointMetres": [
+              0.09110970050096512,
+              0.8253840208053589,
+              0.05306360125541687
+            ],
+            "nearestSurfaceMetres": [
+              0.09195615191430309,
+              0.8254661263396885,
+              0.05130537337554447
+            ]
+          },
+          {
+            "bone": "bp3d:FMA24475",
+            "name": "Fémur izquierdo",
+            "samples": 25,
+            "over1mm": 0,
+            "over3mm": 0,
+            "maxDepthMm": 0.8576577789273733,
+            "deepestPointMetres": [
+              0.13691000640392303,
+              0.8077629804611206,
+              0.06908659636974335
+            ],
+            "nearestSurfaceMetres": [
+              0.137159640422749,
+              0.8085762617214276,
+              0.06897781533264177
+            ]
+          }
+        ]
+      },
+      "representativeCapture": null,
+      "nextPossibleAction": "Evaluar una revisión original o fuente alternativa con identidad y registro regional independiente; no corregir a ojo."
+    },
+    {
+      "id": "bp3d:FMA22325",
+      "name": "Obturador interno izquierdo",
+      "sourceElements": [
+        "FJ1426M"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El control ampliado detecta inclusión en hueso; la revisión regional no permite justificar el encaje como una interfaz anatómica segura. Se excluye el original completo; no se recorta ni desplaza.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA16587",
+            "name": "Hueso coxal izquierdo",
+            "samples": 163,
+            "over1mm": 65,
+            "over3mm": 13,
+            "maxDepthMm": 3.473114761118869,
+            "deepestPointMetres": [
+              0.07286489754915237,
+              0.8001199960708618,
+              0.03963610157370567
+            ],
+            "nearestSurfaceMetres": [
+              0.07608689808694738,
+              0.7994867134290335,
+              0.038504645974086545
+            ]
+          },
+          {
+            "bone": "bp3d:FMA24475",
+            "name": "Fémur izquierdo",
+            "samples": 26,
+            "over1mm": 2,
+            "over3mm": 0,
+            "maxDepthMm": 1.0309418824847845,
+            "deepestPointMetres": [
+              0.1157350018620491,
+              0.7972779870033264,
+              0.0705668032169342
+            ],
+            "nearestSurfaceMetres": [
+              0.11618744340959374,
+              0.7978064538491637,
+              0.06980597432423397
+            ]
+          }
+        ]
+      },
+      "representativeCapture": null,
+      "nextPossibleAction": "Evaluar una revisión original o fuente alternativa con identidad y registro regional independiente; no corregir a ojo."
+    },
+    {
+      "id": "bp3d:FMA22327",
+      "name": "Obturador externo izquierdo",
+      "sourceElements": [
+        "FJ1425M"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El control ampliado detecta inclusión en hueso; la revisión regional no permite justificar el encaje como una interfaz anatómica segura. Se excluye el original completo; no se recorta ni desplaza.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA24475",
+            "name": "Fémur izquierdo",
+            "samples": 60,
+            "over1mm": 44,
+            "over3mm": 23,
+            "maxDepthMm": 7.55559728729238,
+            "deepestPointMetres": [
+              0.12832599878311157,
+              0.7887409925460815,
+              0.06484620273113251
+            ],
+            "nearestSurfaceMetres": [
+              0.12131129745650295,
+              0.791548052398745,
+              0.06488402666244501
+            ]
+          },
+          {
+            "bone": "bp3d:FMA16587",
+            "name": "Hueso coxal izquierdo",
+            "samples": 124,
+            "over1mm": 50,
+            "over3mm": 0,
+            "maxDepthMm": 2.3604758162134414,
+            "deepestPointMetres": [
+              0.04047450050711632,
+              0.7718380093574524,
+              0.06564749777317047
+            ],
+            "nearestSurfaceMetres": [
+              0.04148702052742771,
+              0.7739347221733227,
+              0.06603536973034486
+            ]
+          }
+        ]
+      },
+      "representativeCapture": null,
+      "nextPossibleAction": "Evaluar una revisión original o fuente alternativa con identidad y registro regional independiente; no corregir a ojo."
+    },
+    {
+      "id": "bp3d:FMA22339",
+      "name": "Cuadrado femoral izquierdo",
+      "sourceElements": [
+        "FJ1432M"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El control ampliado detecta inclusión en hueso; la revisión regional no permite justificar el encaje como una interfaz anatómica segura. Se excluye el original completo; no se recorta ni desplaza.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA16587",
+            "name": "Hueso coxal izquierdo",
+            "samples": 107,
+            "over1mm": 98,
+            "over3mm": 91,
+            "maxDepthMm": 7.427949380045893,
+            "deepestPointMetres": [
+              0.06967730075120926,
+              0.7763019800186157,
+              0.04649990051984787
+            ],
+            "nearestSurfaceMetres": [
+              0.072253241184474,
+              0.7734445335455734,
+              0.05285395139550932
+            ]
+          },
+          {
+            "bone": "bp3d:FMA24475",
+            "name": "Fémur izquierdo",
+            "samples": 32,
+            "over1mm": 0,
+            "over3mm": 0,
+            "maxDepthMm": 0.34542427430361966,
+            "deepestPointMetres": [
+              0.11464300006628036,
+              0.7510849833488464,
+              0.05700879916548729
+            ],
+            "nearestSurfaceMetres": [
+              0.11465803822997785,
+              0.7509814100026196,
+              0.0566796117646619
+            ]
+          }
+        ]
+      },
+      "representativeCapture": null,
+      "nextPossibleAction": "Evaluar una revisión original o fuente alternativa con identidad y registro regional independiente; no corregir a ojo."
+    },
+    {
+      "id": "bp3d:FMA22343",
+      "name": "Psoas mayor izquierdo",
+      "sourceElements": [
+        "FJ1431M"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El control ampliado detecta inclusión en hueso; la revisión regional no permite justificar el encaje como una interfaz anatómica segura. Se excluye el original completo; no se recorta ni desplaza.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA10081",
+            "name": "Vértebra torácica · T12",
+            "samples": 77,
+            "over1mm": 50,
+            "over3mm": 38,
+            "maxDepthMm": 7.265979640576542,
+            "deepestPointMetres": [
+              0.009281359612941742,
+              1.0802500247955322,
+              0.08153379708528519
+            ],
+            "nearestSurfaceMetres": [
+              0.007417247963676821,
+              1.07328301376906,
+              0.08241714597069992
+            ]
+          },
+          {
+            "bone": "bp3d:FMA24475",
+            "name": "Fémur izquierdo",
+            "samples": 132,
+            "over1mm": 95,
+            "over3mm": 52,
+            "maxDepthMm": 5.034361743474328,
+            "deepestPointMetres": [
+              0.11270900070667267,
+              0.7399790287017822,
+              0.0659760981798172
+            ],
+            "nearestSurfaceMetres": [
+              0.1131591349844728,
+              0.7380981954353465,
+              0.06132801862800487
+            ]
+          },
+          {
+            "bone": "bp3d:FMA13072",
+            "name": "Vértebra lumbar · L1",
+            "samples": 38,
+            "over1mm": 19,
+            "over3mm": 7,
+            "maxDepthMm": 3.8195377911195156,
+            "deepestPointMetres": [
+              0.013664799742400646,
+              1.0456199645996094,
+              0.09283190220594406
+            ],
+            "nearestSurfaceMetres": [
+              0.013382351555066521,
+              1.041836055137748,
+              0.0932690762487429
+            ]
+          },
+          {
+            "bone": "bp3d:FMA13076",
+            "name": "Vértebra lumbar · L5",
+            "samples": 29,
+            "over1mm": 18,
+            "over3mm": 1,
+            "maxDepthMm": 3.0956403060865174,
+            "deepestPointMetres": [
+              0.043033499270677567,
+              0.9443529844284058,
+              0.057766299694776535
+            ],
+            "nearestSurfaceMetres": [
+              0.04313890711715693,
+              0.9463259423868875,
+              0.06014943103497405
+            ]
+          },
+          {
+            "bone": "bp3d:FMA13074",
+            "name": "Vértebra lumbar · L3",
+            "samples": 33,
+            "over1mm": 19,
+            "over3mm": 0,
+            "maxDepthMm": 2.8851125817531176,
+            "deepestPointMetres": [
+              0.014424700289964676,
+              0.978380024433136,
+              0.09645599871873856
+            ],
+            "nearestSurfaceMetres": [
+              0.014315512640917372,
+              0.9755382018635711,
+              0.0959702033402125
+            ]
+          },
+          {
+            "bone": "bp3d:FMA13075",
+            "name": "Vértebra lumbar · L4",
+            "samples": 35,
+            "over1mm": 17,
+            "over3mm": 0,
+            "maxDepthMm": 2.0907206978028277,
+            "deepestPointMetres": [
+              0.020717699080705643,
+              0.9482460021972656,
+              0.08337129652500153
+            ],
+            "nearestSurfaceMetres": [
+              0.022763236738699108,
+              0.9483389529974663,
+              0.08379349182897092
+            ]
+          },
+          {
+            "bone": "bp3d:FMA13073",
+            "name": "Vértebra lumbar · L2",
+            "samples": 34,
+            "over1mm": 24,
+            "over3mm": 0,
+            "maxDepthMm": 1.7092428069690668,
+            "deepestPointMetres": [
+              0.015440300107002258,
+              1.0116000175476074,
+              0.09915559738874435
+            ],
+            "nearestSurfaceMetres": [
+              0.01532648827788469,
+              1.009894597561941,
+              0.09916562301682066
+            ]
+          },
+          {
+            "bone": "bp3d:FMA16587",
+            "name": "Hueso coxal izquierdo",
+            "samples": 9,
+            "over1mm": 3,
+            "over3mm": 0,
+            "maxDepthMm": 1.6651161893930104,
+            "deepestPointMetres": [
+              0.06781639903783798,
+              0.8102080225944519,
+              0.10818099975585938
+            ],
+            "nearestSurfaceMetres": [
+              0.06843737878674241,
+              0.8096425666814674,
+              0.10961879518153722
+            ]
+          }
+        ]
+      },
+      "representativeCapture": null,
+      "nextPossibleAction": "Evaluar una revisión original o fuente alternativa con identidad y registro regional independiente; no corregir a ojo."
+    },
+    {
+      "id": "bp3d:FMA22323",
+      "name": "Ilíaco izquierdo",
+      "sourceElements": [
+        "FJ1422M"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El control ampliado detecta inclusión en hueso; la revisión regional no permite justificar el encaje como una interfaz anatómica segura. Se excluye el original completo; no se recorta ni desplaza.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA16587",
+            "name": "Hueso coxal izquierdo",
+            "samples": 273,
+            "over1mm": 167,
+            "over3mm": 45,
+            "maxDepthMm": 4.72129441420833,
+            "deepestPointMetres": [
+              0.07635840028524399,
+              0.9461719989776611,
+              0.04652930051088333
+            ],
+            "nearestSurfaceMetres": [
+              0.07451904726765364,
+              0.9465160617575591,
+              0.050863931086353974
+            ]
+          },
+          {
+            "bone": "bp3d:FMA24475",
+            "name": "Fémur izquierdo",
+            "samples": 79,
+            "over1mm": 31,
+            "over3mm": 4,
+            "maxDepthMm": 4.454830340720973,
+            "deepestPointMetres": [
+              0.09590809792280197,
+              0.7462980151176453,
+              0.06573940068483353
+            ],
+            "nearestSurfaceMetres": [
+              0.09152454246498491,
+              0.7458084584231456,
+              0.06511466941803079
+            ]
+          }
+        ]
+      },
+      "representativeCapture": null,
+      "nextPossibleAction": "Evaluar una revisión original o fuente alternativa con identidad y registro regional independiente; no corregir a ojo."
+    },
+    {
+      "id": "bp3d:FMA21422",
+      "name": "Rama descendente de la arteria circunfleja femoral lateral derecha",
+      "sourceElements": [
+        "FJ2057"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El vaso discurre dentro del hueso de control; la revisión visual no permite aprobar ese trayecto. No se desplaza ni se recorta para forzar su encaje.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/extended-candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA24474",
+            "name": "Fémur derecho",
+            "samples": 303,
+            "over1mm": 165,
+            "over3mm": 1,
+            "maxDepthMm": 3.0025852923602563,
+            "deepestPointMetres": [
+              -0.11609199643135071,
+              0.6983140110969543,
+              0.09486360102891922
+            ],
+            "nearestSurfaceMetres": [
+              -0.11752575657670437,
+              0.6986342095708199,
+              0.09748225015028461
+            ]
+          }
+        ]
+      },
+      "nextPossibleAction": "Buscar revisión original o fuente alternativa con trayecto y relación ósea verificados."
+    },
+    {
+      "id": "bp3d:FMA21423",
+      "name": "Rama descendente de la arteria circunfleja femoral lateral izquierda",
+      "sourceElements": [
+        "FJ2063"
+      ],
+      "status": "BLOCKED_ANATOMY",
+      "reason": "El vaso discurre dentro del hueso de control; la revisión visual no permite aprobar ese trayecto. No se desplaza ni se recorta para forzar su encaje.",
+      "evidence": {
+        "report": "research/anatomy/completion-wave2/extended-candidate-bone-screen.json",
+        "measurements": [
+          {
+            "bone": "bp3d:FMA24475",
+            "name": "Fémur izquierdo",
+            "samples": 291,
+            "over1mm": 159,
+            "over3mm": 2,
+            "maxDepthMm": 3.027622739023733,
+            "deepestPointMetres": [
+              0.11582600325345993,
+              0.701088011264801,
+              0.09458830207586288
+            ],
+            "nearestSurfaceMetres": [
+              0.11651512501734612,
+              0.7015882289075784,
+              0.09749370961255135
+            ]
+          }
+        ]
+      },
+      "nextPossibleAction": "Buscar revisión original o fuente alternativa con trayecto y relación ósea verificados."
+    }
+  ],
+  "limitationsByNode": {
+    "bp3d:FMA13295": "La interfaz de inserción es esquemática y conserva contactos locales con el hueso de la fuente; no representa una separación tisular ni una interfaz para planificación clínica.",
+    "bp3d:FMA9756": "La interfaz de inserción es esquemática y conserva contactos locales con el hueso de la fuente; no representa una separación tisular ni una interfaz para planificación clínica.",
+    "bp3d:FMA9757": "La interfaz de inserción es esquemática y conserva contactos locales con el hueso de la fuente; no representa una separación tisular ni una interfaz para planificación clínica.",
+    "bp3d:FMA9758": "La interfaz de inserción es esquemática y conserva contactos locales con el hueso de la fuente; no representa una separación tisular ni una interfaz para planificación clínica.",
+    "dig:FMA55704": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55693": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55703": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55692": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA57143": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA57141": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55687": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55699": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55690": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55700": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55691": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55682": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55683": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55799": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55705": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55694": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55706": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55695": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA57142": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA57140": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55686": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55697": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55698": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55689": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55688": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55681": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55680": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+    "dig:FMA55798": "La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares."
+  },
+  "coverageNote": "Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa."
+}

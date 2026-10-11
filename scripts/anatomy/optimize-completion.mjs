@@ -53,7 +53,8 @@ print(json.dumps(result,separators=(',',':')))
 const parsed = spawnSync(process.env.ANATOMY_PYTHON || 'python', ['-c', originalParser, sourceZip], { encoding: 'utf8', maxBuffer: 128 * 1024 * 1024 });
 if (parsed.status !== 0) throw Error(parsed.stderr || 'Could not read original OBJ references');
 const originals = JSON.parse(parsed.stdout);
-if (Object.keys(originals).length !== manifest.files.length) throw Error('Expected exactly the approved internal elements');
+const excluded=new Set(manifest.excludedSourceElements||[]);
+if (Object.keys(originals).length !== manifest.files.length+excluded.size || manifest.files.some(f=>excluded.has(f.elementId)) || [...excluded].some(id=>!originals[id])) throw Error('Expected an explicit disposition for every original element');
 const tolerance = 0.00005; // 0.05 mm numerical conversion tolerance, not clinical accuracy.
 
 function canonicalTriangle(a, b, c) {

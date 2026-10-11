@@ -6,7 +6,7 @@ Build requires pinned originals and selection. Optimize/validate BEFORE --instal
 from pathlib import Path
 import argparse,copy,hashlib,json,struct,zipfile
 ROOT=Path(__file__).resolve().parents[2]
-p=argparse.ArgumentParser();p.add_argument('wave');p.add_argument('--install',action='store_true');A=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('wave');p.add_argument('--install',action='store_true');p.add_argument('--replace-reviewed-cohort',action='store_true');A=p.parse_args()
 assert A.wave in ['wave1','wave2']
 research=ROOT/'research/anatomy';out=ROOT/'.cache/anatomy-completion'/A.wave
 out.mkdir(parents=True,exist_ok=True)
@@ -21,6 +21,36 @@ selection=read(selection_path);lock=read(lock_path)
 assert sha(selection_path.read_bytes())==lock['selectionSha256']
 assert sha(source_path.read_bytes())==lock['sourceZipSha256']
 approved={f['elementId']:f for f in lock['files']}
+candidate_selection=copy.deepcopy(selection)
+acceptance_path=research/f'completion-{A.wave}-acceptance.json'
+acceptance=read(acceptance_path) if acceptance_path.exists() else None
+if acceptance:
+ assert acceptance['selectionSha256']==lock['selectionSha256']
+ accepted=set(acceptance['acceptedNodeIds']);rejected={n['id'] for n in acceptance['rejected']}
+ assert accepted.isdisjoint(rejected)
+ assert accepted|rejected=={n['id'] for n in selection['nodes']}
+ selection['nodes']=[n for n in selection['nodes'] if n['id'] in accepted]
+ for n in selection['nodes']:
+  n['children']=[i for i in n['children'] if i not in rejected]
+  n['relatedIds']=[i for i in n['relatedIds'] if i not in rejected]
+  note=acceptance.get('limitationsByNode',{}).get(n['id'])
+  if note:selection['education'][n['educationId']]['limits']+=' '+note
+ active_modules={i for n in selection['nodes'] if n.get('sourceElements') for i in n['assetIds']}
+ selection['modules']=[m for m in selection['modules'] if m['id'] in active_modules]
+ for n in selection['nodes']:n['assetIds']=[i for i in n['assetIds'] if i in active_modules]
+ selection['education']={k:v for k,v in selection['education'].items() if k in {n.get('educationId') for n in selection['nodes']}}
+ selection['coverageNote']+=' '+acceptance['coverageNote']
+
+previous=read(out/'catalog.json') if A.replace_reviewed_cohort and not A.install else None
+if A.replace_reviewed_cohort:
+ assert acceptance,'Replacement requires an explicit reviewed acceptance ledger'
+ if not A.install:
+  allowed={m['id']:m['path'] for m in candidate_selection['modules']}
+  for asset in previous['assets']:
+   target=(ROOT/'public'/asset['path']).resolve()
+   assert target.is_relative_to((ROOT/'public/models/anatomy').resolve())
+   assert allowed.get(asset['id'])==asset['path'] and asset['provenanceId']=='bodyparts3d-4.0-completion-'+A.wave
+   assert target.suffix=='.glb' and sha(target.read_bytes())==asset['sha256'],'Refuse changed or unrelated GLB'
 def parse_obj(data):
     positions, normals, faces = [], [], []
     for line in data.decode().splitlines():
@@ -91,6 +121,18 @@ if A.install:
   assert sha((ROOT/'public'/asset['path']).read_bytes())==asset['sha256']
  for destination in selection['catalogs']:
   path=ROOT/f'public/models/anatomy/{destination}/catalog.json';base=read(path)
+  if A.replace_reviewed_cohort:
+   oldids={n['id'] for n in candidate_selection['nodes']};oldassets={m['id'] for m in candidate_selection['modules']}
+   oldlessons={n.get('educationId') for n in candidate_selection['nodes']}
+   base['nodes']=[n for n in base['nodes'] if n['id'] not in oldids]
+   base['assets']=[a for a in base['assets'] if a['id'] not in oldassets]
+   base['education']={k:v for k,v in base.get('education',{}).items() if k not in oldlessons}
+   base['provenance']=[p for p in base['provenance'] if p['id']!='bodyparts3d-4.0-completion-'+A.wave]
+   for n in base['nodes']:
+    n['children']=[i for i in n['children'] if i not in oldids]
+    n['assetIds']=[i for i in n['assetIds'] if i not in oldassets]
+    n['relatedIds']=[i for i in n.get('relatedIds',[]) if i not in rejected]
+   base['coverage']['limitations']=[s for s in base['coverage']['limitations'] if not s.startswith(candidate_selection['coverageNote'])]
   nodes=[n for n in catalog['nodes'] if n['id'] in selection['catalogs'][destination]]
   assets=[a for a in catalog['assets'] if a['id'] in {i for n in nodes for i in n['assetIds']}]
   ids={n['id'] for n in nodes};assert not ids.intersection(n['id'] for n in base['nodes']),'Already installed; verify existing cohort instead of rebuilding'
@@ -113,7 +155,7 @@ if A.install:
    for child in n['children']:aggregate(byid[child])
    children=[byid[i] for i in n['children']]
    n['assetIds']=list(dict.fromkeys(n['assetIds']+[a for c in children for a in c['assetIds']]))
-   n['bounds']=union([c['bounds'] for c in children if c.get('bounds')]+([n['bounds']] if n.get('bounds') else []))
+   n['bounds']=union([c['bounds'] for c in children if c.get('bounds')]+([n['bounds']] if n.get('bounds') and n.get('meshNames') else []))
   for n in base['nodes']:
    if not n.get('parentId'):aggregate(n)
   base['coverage']['structures']=sum(n['kind']=='structure' for n in base['nodes'])
@@ -142,7 +184,8 @@ with zipfile.ZipFile(source_path) as z:
     entry=dict(**f,anatomyId=node['id'],ownerSourceId=node['sourceId'],side=node.get('side'),family=node['family'],moduleId=module['id'],triangles=len(parsed[2])//3,sourcePositionCount=parsed[4],vertices=len(parsed[0]),boundsMetres=parsed[3])
     module_files.append(entry);files.append(entry)
    node['bounds']=union(bounds)
-  target=ROOT/'public'/module['path'];target.parent.mkdir(parents=True,exist_ok=True);assert not target.exists(),'Do not overwrite final GLB; use verify-only'
+  target=ROOT/'public'/module['path'];target.parent.mkdir(parents=True,exist_ok=True)
+  if target.exists():assert previous and any(a['id']==module['id'] and a['path']==module['path'] for a in previous['assets']),'Do not overwrite unrelated GLB'
   g.write(target)
   assets.append(dict(**module,frameId=skeleton['frame']['id'],defaultEnabled=False,bytes=target.stat().st_size,sha256=sha(target.read_bytes()),meshCount=len(module_files),triangles=sum(f['triangles'] for f in module_files),bounds=union([f['boundsMetres'] for f in module_files]),provenanceId=prov['id']))
 byid={n['id']:n for n in nodes}
@@ -152,5 +195,11 @@ for node in nodes:
   node['children']=[n['id'] for n in descendants];node['bounds']=union([n['bounds'] for n in descendants])
 catalog=dict(schemaVersion=1,id='completion-'+A.wave,frame=skeleton['frame'],nodes=nodes,assets=assets,education=selection['education'],provenance=[prov],coverage=dict(title='Ampliación anatómica opcional',structures=sum(n['kind']=='structure' for n in nodes),meshes=len(files),note=selection['coverageNote'],limitations=[]))
 write(out/'catalog.json',catalog)
-write(out/'completion-source-manifest.json',dict(sourceZip=str(source_path.relative_to(ROOT)).replace('\\','/'),sourceZipSha256=lock['sourceZipSha256'],selectionSha256=lock['selectionSha256'],sourceLock=str(lock_path.relative_to(ROOT)).replace('\\','/'),transform=[[.001,0,0,0],[0,0,.001,0],[0,-.001,0,0],[0,0,0,1]],additionalRegistration='none; native BP3D 4.0 frame',files=files))
+write(out/'completion-source-manifest.json',dict(sourceZip=str(source_path.relative_to(ROOT)).replace('\\','/'),sourceZipSha256=lock['sourceZipSha256'],selectionSha256=lock['selectionSha256'],sourceLock=str(lock_path.relative_to(ROOT)).replace('\\','/'),acceptanceSha256=sha(acceptance_path.read_bytes()) if acceptance else None,excludedSourceElements=sorted(set(approved)-{f['elementId'] for f in files}),transform=[[.001,0,0,0],[0,0,.001,0],[0,-.001,0,0],[0,0,0,1]],additionalRegistration='none; native BP3D 4.0 frame',files=files))
+if previous:
+ active={a['id'] for a in assets}
+ for asset in previous['assets']:
+  if asset['id'] not in active:
+   # Every resolved path, cohort identity and prior hash was checked before writes.
+   (ROOT/'public'/asset['path']).unlink()
 print(json.dumps(dict(wave=A.wave,modules=len(assets),meshes=len(files),triangles=sum(a['triangles'] for a in assets))))

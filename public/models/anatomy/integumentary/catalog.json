@@ -35,11 +35,13 @@
       "systemId": "integumentary",
       "regionId": "integumentary",
       "children": [
-        "integ:FMA7163"
+        "integ:FMA7163",
+        "integ:region:hair"
       ],
       "kind": "system",
       "assetIds": [
-        "integumentary:skin"
+        "integumentary:skin",
+        "integumentary:completion2-hair"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -51,7 +53,7 @@
         ],
         [
           0.332825,
-          1.64136,
+          1.6516300000000002,
           0.246783
         ]
       ]
@@ -99,6 +101,172 @@
           0.246783
         ]
       ]
+    },
+    {
+      "id": "integ:region:hair",
+      "name": "Cobertura pilosa disponible",
+      "anatomicalName": "Cobertura pilosa disponible",
+      "aliases": [
+        "Cobertura pilosa disponible"
+      ],
+      "systemId": "integumentary",
+      "regionId": "integ:region:hair",
+      "parentId": "integumentary",
+      "children": [
+        "integ:FMA54237",
+        "integ:FMA54241",
+        "integ:FMA54319"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "integumentary:completion2-hair"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "bounds": [
+        [
+          -0.08318819999999999,
+          0.765261,
+          -0.030371300000000004
+        ],
+        [
+          0.0813955,
+          1.6516300000000002,
+          0.187252
+        ]
+      ]
+    },
+    {
+      "id": "integ:FMA54237",
+      "sourceId": "FMA54237",
+      "name": "Cejas · superficie pilosa disponible",
+      "anatomicalName": "Cejas · superficie pilosa disponible",
+      "latin": "Supercilia",
+      "aliases": [
+        "Eyebrow",
+        "FMA54237",
+        "FJ2812",
+        "Cejas · superficie pilosa disponible",
+        "Supercilia"
+      ],
+      "systemId": "integumentary",
+      "parentId": "integ:region:hair",
+      "regionId": "integ:region:hair",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "integumentary:completion2-hair"
+      ],
+      "meshNames": [
+        "bp3d_FMA54237_FJ2812"
+      ],
+      "family": "completion2:eyebrow",
+      "educationId": "completion2:eyebrow",
+      "side": "midline",
+      "anatomyType": "Superficie pilosa",
+      "relatedIds": [
+        "integ:FMA7163"
+      ],
+      "bounds": [
+        [
+          -0.0568484,
+          1.53433,
+          0.15488200000000002
+        ],
+        [
+          0.0555629,
+          1.5458699999999999,
+          0.183498
+        ]
+      ]
+    },
+    {
+      "id": "integ:FMA54241",
+      "sourceId": "FMA54241",
+      "name": "Cabello · superficie disponible",
+      "anatomicalName": "Cabello · superficie disponible",
+      "latin": "Capilli",
+      "aliases": [
+        "Hair of head",
+        "FMA54241",
+        "FJ2813",
+        "Cabello · superficie disponible",
+        "Capilli"
+      ],
+      "systemId": "integumentary",
+      "parentId": "integ:region:hair",
+      "regionId": "integ:region:hair",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "integumentary:completion2-hair"
+      ],
+      "meshNames": [
+        "bp3d_FMA54241_FJ2813"
+      ],
+      "family": "completion2:hair-of-head",
+      "educationId": "completion2:hair-of-head",
+      "side": "midline",
+      "anatomyType": "Superficie pilosa",
+      "relatedIds": [
+        "integ:FMA7163"
+      ],
+      "bounds": [
+        [
+          -0.08318819999999999,
+          1.44618,
+          -0.030371300000000004
+        ],
+        [
+          0.0813955,
+          1.6516300000000002,
+          0.17137200000000002
+        ]
+      ]
+    },
+    {
+      "id": "integ:FMA54319",
+      "sourceId": "FMA54319",
+      "name": "Vello púbico · superficie disponible",
+      "anatomicalName": "Vello púbico · superficie disponible",
+      "latin": "Pubes",
+      "aliases": [
+        "Pubic hair",
+        "FMA54319",
+        "FJ2815",
+        "Vello púbico · superficie disponible",
+        "Pubes"
+      ],
+      "systemId": "integumentary",
+      "parentId": "integ:region:hair",
+      "regionId": "integ:region:hair",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "integumentary:completion2-hair"
+      ],
+      "meshNames": [
+        "bp3d_FMA54319_FJ2815"
+      ],
+      "family": "completion2:pubic-hair",
+      "educationId": "completion2:pubic-hair",
+      "side": "midline",
+      "anatomyType": "Superficie pilosa",
+      "relatedIds": [
+        "integ:FMA7163"
+      ],
+      "bounds": [
+        [
+          -0.061808999999999996,
+          0.765261,
+          0.149848
+        ],
+        [
+          0.0599573,
+          0.8289,
+          0.187252
+        ]
+      ]
     }
   ],
   "assets": [
@@ -125,6 +293,32 @@
         ]
       ],
       "provenanceId": "bodyparts3d-4.0-integumentary"
+    },
+    {
+      "id": "integumentary:completion2-hair",
+      "label": "Cobertura pilosa disponible",
+      "path": "models/anatomy/integumentary/completion2-hair.glb",
+      "systemId": "integumentary",
+      "regionId": "integ:region:hair",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 451060,
+      "sha256": "bba1c51e33a420050ae4437d8436317df95b0f881b8ebd35eb19d664d7212818",
+      "meshCount": 3,
+      "triangles": 28878,
+      "bounds": [
+        [
+          -0.08318819999999999,
+          0.765261,
+          -0.030371300000000004
+        ],
+        [
+          0.0813955,
+          1.6516300000000002,
+          0.187252
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
     }
   ],
   "provenance": [
@@ -143,19 +337,86 @@
         "Posiciones Float32; compresión Meshopt y cuantización sólo de normales.",
         "Material neutro sin textura ni identificación de etnia. No se representan capas histológicas."
       ]
+    },
+    {
+      "id": "bodyparts3d-4.0-completion-wave2",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
+        "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
+        "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
+        "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
+      ]
     }
   ],
   "coverage": {
     "title": "Superficie corporal tegumentaria disponible",
-    "structures": 1,
-    "meshes": 1,
+    "structures": 4,
+    "meshes": 4,
     "note": "Piel: una superficie corporal nativa, una unidad y una malla. Sin particiones regionales inventadas.",
     "limitations": [
       "Superficie externa del cuerpo masculino de referencia, no representación universal de cuerpos o fenotipos.",
       "No representa grosor clínico ni capas histológicas separadas de epidermis, dermis o hipodermis.",
       "Subcutáneo y uñas pendientes; pelo no integrado. No hay regiones cutáneas independientes para aislar.",
       "Se conservan costuras, orificios y posibles penetraciones del modelo fuente. No constituye validación clínica.",
-      "La pieza fuente contiene dos superficies principales y pequeños fragmentos geométricos; no se etiquetan como capas histológicas ni regiones anatómicas."
+      "La pieza fuente contiene dos superficies principales y pequeños fragmentos geométricos; no se etiquetan como capas histológicas ni regiones anatómicas.",
+      "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa."
     ]
+  },
+  "education": {
+    "completion2:pubic-hair": {
+      "description": "Envolvente macroscópica de una región pilosa.",
+      "function": "Cobertura pilosa especializada de la región púbica.",
+      "relations": "En relación con la superficie de la región púbica.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No individualiza pelos, folículos ni capas cutáneas; no es una malla de piel recortada.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/5-2-accessory-structures-of-the-skin",
+          "title": "OpenStax · Anexos cutáneos"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:eyebrow": {
+      "description": "Envolvente macroscópica de una región pilosa.",
+      "function": "Contribuyen a desviar humedad de la región ocular.",
+      "relations": "En relación con la superficie de cabeza y cara.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No individualiza pelos, folículos ni capas cutáneas; no es una malla de piel recortada.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/5-2-accessory-structures-of-the-skin",
+          "title": "OpenStax · Anexos cutáneos"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:hair-of-head": {
+      "description": "Envolvente macroscópica de una región pilosa.",
+      "function": "Contribuye a la protección de la superficie craneal.",
+      "relations": "En relación con la superficie de cabeza y cara.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No individualiza pelos, folículos ni capas cutáneas; no es una malla de piel recortada.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/5-2-accessory-structures-of-the-skin",
+          "title": "OpenStax · Anexos cutáneos"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    }
   }
 }

@@ -1,0 +1,80 @@
+{
+  "method": "Separate QA viewer. Original GLBs and matrices; temporary transparent materials and a magenta measurement marker. Left: regional anatomy; right: 50 mm field centred at the measured source vertex. Camera follows the direction from that point to its nearest bone surface. No geometry registration or deformation.",
+  "captures": [
+    {
+      "id": "bp3d:FMA21422",
+      "bone": "bp3d:FMA24474",
+      "file": "01-FMA21422.png",
+      "contact": {
+        "bone": "bp3d:FMA24474",
+        "name": "Fémur derecho",
+        "samples": 303,
+        "over1mm": 165,
+        "over3mm": 1,
+        "maxDepthMm": 3.0025852923602563,
+        "deepestPointMetres": [
+          -0.11609199643135071,
+          0.6983140110969543,
+          0.09486360102891922
+        ],
+        "nearestSurfaceMetres": [
+          -0.11752575657670437,
+          0.6986342095708199,
+          0.09748225015028461
+        ]
+      },
+      "sha256": "4b96985879b3330033d21517733e467eba3c2788822461ee656301af1140cbf9",
+      "manualReview": "Reviewed regional anatomy and contact detail. Vessel trajectories rejected; dental root/alveolar schematic occupancy documented separately."
+    },
+    {
+      "id": "bp3d:FMA50860",
+      "bone": "bp3d:FMA13323",
+      "file": "02-FMA50860.png",
+      "contact": {
+        "bone": "bp3d:FMA13323",
+        "name": "Clavícula izquierda",
+        "samples": 104,
+        "over1mm": 75,
+        "over3mm": 23,
+        "maxDepthMm": 3.9879052001231314,
+        "deepestPointMetres": [
+          0.08810549974441528,
+          1.3416399955749512,
+          0.09416420012712479
+        ],
+        "nearestSurfaceMetres": [
+          0.08894573313079727,
+          1.3377694172202492,
+          0.09369942174801177
+        ]
+      },
+      "sha256": "3374ecdeb7dc63493f4769e2b721ca07e7fdabc09affa48b241d802d8d0d3340",
+      "manualReview": "Reviewed regional anatomy and contact detail. Vessel trajectories rejected; dental root/alveolar schematic occupancy documented separately."
+    },
+    {
+      "id": "dig:FMA55704",
+      "bone": "bp3d:FMA52748",
+      "file": "03-FMA55704.png",
+      "contact": {
+        "bone": "bp3d:FMA52748",
+        "name": "Mandíbula",
+        "samples": 431,
+        "over1mm": 407,
+        "over3mm": 325,
+        "maxDepthMm": 7.667380850772816,
+        "deepestPointMetres": [
+          0.026596799492836,
+          1.4456100463867188,
+          0.14005500078201294
+        ],
+        "nearestSurfaceMetres": [
+          0.021097127826928946,
+          1.4425884223811296,
+          0.1356490810089276
+        ]
+      },
+      "sha256": "47227e0c9e1edd5dd91b71523d3bafa8b0c926575c2e5ff4380d702c632882f7",
+      "manualReview": "Reviewed regional anatomy and contact detail. Vessel trajectories rejected; dental root/alveolar schematic occupancy documented separately."
+    }
+  ]
+}

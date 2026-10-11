@@ -17,7 +17,8 @@ export class XrAtlasPresentation {
   private originals = new Map<AtlasPart, THREE.MeshStandardMaterial>();
   private materials = new Map<string, Variants>();
   private variants = new Map<AtlasPart, Variants>();
-  private visibility?: Pick<AtlasState, 'systemVisibility' | 'hiddenStructures' | 'isolatedStructure'>;
+  private visibility?: Pick<AtlasState, 'systemVisibility' | 'hiddenStructures' | 'isolatedStructure' | 'optionalSystems'>;
+  private optionalParts = new Set<AtlasPart>();
   private shown = new Set<AtlasPart>();
   private offsets: ReturnType<typeof createExplosionOffsets> = new Map();
   private offsetCatalog?: AnatomyCatalog;
@@ -36,13 +37,16 @@ export class XrAtlasPresentation {
       }
       this.originals.set(part, part.mesh.material); this.variants.set(part, variant);
       this.parts.push(part); this.byMesh.set(part.mesh, part);
+      if (resource.asset.defaultEnabled === false) this.optionalParts.add(part);
     }
   }
   apply(state: AtlasState, catalog: AnatomyCatalog) {
     const changed = this.partCount !== this.parts.length || this.visibility?.systemVisibility !== state.systemVisibility
+      || this.visibility.optionalSystems !== state.optionalSystems
       || this.visibility.hiddenStructures !== state.hiddenStructures || this.visibility.isolatedStructure !== state.isolatedStructure;
     if (changed) {
-      const visible = this.parts.filter(part => atlasPartVisible(state, part.node, part.ancestors));
+      const visible = this.parts.filter(part => atlasPartVisible(state, part.node, part.ancestors)
+        && (!this.optionalParts.has(part) || state.optionalSystems[part.node.systemId as keyof AtlasState['optionalSystems']] === true));
       this.visibleMeshes = visible.map(part => part.mesh); this.shown = new Set(visible);
       this.visibility = state; this.partCount = this.parts.length;
     }
@@ -79,6 +83,6 @@ export class XrAtlasPresentation {
     this.originals.forEach((original, part) => { part.mesh.material = original; part.mesh.position.copy(part.basePosition); });
     this.materials.forEach(({ base, selected }) => { base.dispose(); selected.dispose(); });
     this.materials.clear(); this.originals.clear(); this.variants.clear(); this.byMesh.clear(); this.parts.length = 0; this.visibleMeshes = [];
-    this.shown.clear(); this.offsets.clear(); this.visibility = undefined; this.offsetCatalog = undefined; this.partCount = 0;
+    this.shown.clear(); this.optionalParts.clear(); this.offsets.clear(); this.visibility = undefined; this.offsetCatalog = undefined; this.partCount = 0;
   }
 }

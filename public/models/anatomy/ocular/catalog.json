@@ -51,7 +51,23 @@
         "ocular:FMA49048",
         "ocular:FMA49056",
         "ocular:FMA49052",
-        "ocular:FMA49044"
+        "ocular:FMA49044",
+        "ocular:FMA59103",
+        "ocular:FMA59556",
+        "ocular:FMA59546",
+        "ocular:FMA59092",
+        "ocular:FMA59090",
+        "ocular:FMA59102",
+        "ocular:FMA59555",
+        "ocular:FMA59545",
+        "ocular:FMA59091",
+        "ocular:FMA59089",
+        "ocular:FMA49145",
+        "ocular:FMA49148",
+        "ocular:FMA49068",
+        "ocular:FMA49144",
+        "ocular:FMA49147",
+        "ocular:FMA49067"
       ],
       "kind": "region",
       "ocularClass": "eyeball",
@@ -59,18 +75,21 @@
       "assetIds": [
         "nervous:ocular",
         "nervous:completion-ocular-internal",
-        "nervous:completion-ocular-muscles"
+        "nervous:completion-ocular-muscles",
+        "nervous:completion2-ocular-interior",
+        "nervous:completion2-ocular-lacrimal-palpebral",
+        "nervous:completion2-ocular-support"
       ],
       "meshNames": [],
       "relatedIds": [],
       "bounds": [
         [
-          -0.0441111,
-          1.5031400000000001,
+          -0.0499666,
+          1.4877200000000002,
           0.11904
         ],
         [
-          0.0427963,
+          0.0486556,
           1.5369700000000002,
           0.166313
         ]
@@ -363,7 +382,11 @@
         "ocular:FMA58271",
         "ocular:FMA58236",
         "ocular:FMA58242",
-        "ocular:FMA58607"
+        "ocular:FMA58607",
+        "ocular:FMA58081",
+        "ocular:FMA58299",
+        "ocular:FMA58483",
+        "ocular:FMA58828"
       ],
       "kind": "structure",
       "family": "eyeball",
@@ -371,7 +394,8 @@
       "neuralType": "órgano sensorial · cobertura parcial",
       "assetIds": [
         "nervous:ocular",
-        "nervous:completion-ocular-internal"
+        "nervous:completion-ocular-internal",
+        "nervous:completion2-ocular-interior"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -385,7 +409,7 @@
           0.138829
         ],
         [
-          0.0312616,
+          0.0345885,
           1.53119,
           0.166051
         ]
@@ -414,7 +438,11 @@
         "ocular:FMA58272",
         "ocular:FMA58237",
         "ocular:FMA58243",
-        "ocular:FMA58608"
+        "ocular:FMA58608",
+        "ocular:FMA58082",
+        "ocular:FMA58300",
+        "ocular:FMA58484",
+        "ocular:FMA58829"
       ],
       "kind": "structure",
       "family": "eyeball",
@@ -422,7 +450,8 @@
       "neuralType": "órgano sensorial · cobertura parcial",
       "assetIds": [
         "nervous:ocular",
-        "nervous:completion-ocular-internal"
+        "nervous:completion-ocular-internal",
+        "nervous:completion2-ocular-interior"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -1287,6 +1316,1186 @@
           0.161616
         ]
       ]
+    },
+    {
+      "id": "ocular:FMA58082",
+      "sourceId": "FMA58082",
+      "name": "Cámara anterior del ojo · lado izquierdo",
+      "anatomicalName": "Cámara anterior del ojo",
+      "latin": "Camera anterior bulbi",
+      "aliases": [
+        "Anterior chamber of left eyeball",
+        "FMA58082",
+        "FJ1282",
+        "Cámara anterior del ojo",
+        "Camera anterior bulbi"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12515",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-interior"
+      ],
+      "meshNames": [
+        "bp3d_FMA58082_FJ1282"
+      ],
+      "family": "completion2:anterior-chamber-of-eyeball",
+      "educationId": "completion2:anterior-chamber-of-eyeball",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "chamber",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.023408500000000002,
+          1.5114100000000001,
+          0.161462
+        ],
+        [
+          0.0361584,
+          1.52417,
+          0.165201
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58300",
+      "sourceId": "FMA58300",
+      "name": "Coroides · porciones disponibles · lado izquierdo",
+      "anatomicalName": "Coroides · porciones disponibles",
+      "latin": "Choroidea",
+      "aliases": [
+        "Left choroid",
+        "FMA58300",
+        "FJ1285",
+        "FJ1286",
+        "Coroides · porciones disponibles",
+        "Choroidea"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12515",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-interior"
+      ],
+      "meshNames": [
+        "bp3d_FMA58300_FJ1285",
+        "bp3d_FMA58300_FJ1286"
+      ],
+      "family": "completion2:choroid",
+      "educationId": "completion2:choroid",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "choroid",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0171543,
+          1.50612,
+          0.139995
+        ],
+        [
+          0.041144,
+          1.53003,
+          0.162392
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58484",
+      "sourceId": "FMA58484",
+      "name": "Corona ciliar · porción disponible · lado izquierdo",
+      "anatomicalName": "Corona ciliar · porción disponible",
+      "latin": "Corona ciliaris",
+      "aliases": [
+        "Left corona ciliaris",
+        "FMA58484",
+        "FJ1287",
+        "Corona ciliar · porción disponible",
+        "Corona ciliaris"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12515",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-interior"
+      ],
+      "meshNames": [
+        "bp3d_FMA58484_FJ1287"
+      ],
+      "family": "completion2:corona-ciliaris",
+      "educationId": "completion2:corona-ciliaris",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "ciliary",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.021212900000000003,
+          1.50933,
+          0.158387
+        ],
+        [
+          0.038143500000000004,
+          1.52637,
+          0.161339
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA59103",
+      "sourceId": "FMA59103",
+      "name": "Glándula lagrimal · lado izquierdo",
+      "anatomicalName": "Glándula lagrimal",
+      "latin": "Glandula lacrimalis",
+      "aliases": [
+        "Left lacrimal gland",
+        "FMA59103",
+        "FJ1299",
+        "Glándula lagrimal",
+        "Glandula lacrimalis"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-lacrimal-palpebral"
+      ],
+      "meshNames": [
+        "bp3d_FMA59103_FJ1299"
+      ],
+      "family": "completion2:lacrimal-gland",
+      "educationId": "completion2:lacrimal-gland",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "lacrimal",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.031659400000000004,
+          1.5202200000000001,
+          0.14899500000000002
+        ],
+        [
+          0.046473999999999994,
+          1.53532,
+          0.16144
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA59556",
+      "sourceId": "FMA59556",
+      "name": "Conducto nasolagrimal · lado izquierdo",
+      "anatomicalName": "Conducto nasolagrimal",
+      "latin": "Ductus nasolacrimalis",
+      "aliases": [
+        "Left nasolacrimal duct",
+        "FMA59556",
+        "FJ1302",
+        "Conducto nasolagrimal",
+        "Ductus nasolacrimalis"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-lacrimal-palpebral"
+      ],
+      "meshNames": [
+        "bp3d_FMA59556_FJ1302"
+      ],
+      "family": "completion2:nasolacrimal-duct",
+      "educationId": "completion2:nasolacrimal-duct",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "lacrimal",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0107706,
+          1.4877500000000001,
+          0.15195
+        ],
+        [
+          0.0157531,
+          1.50468,
+          0.16148300000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA59546",
+      "sourceId": "FMA59546",
+      "name": "Saco lagrimal · lado izquierdo",
+      "anatomicalName": "Saco lagrimal",
+      "latin": "Saccus lacrimalis",
+      "aliases": [
+        "Left lacrimal sac",
+        "FMA59546",
+        "FJ1309",
+        "Saco lagrimal",
+        "Saccus lacrimalis"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-lacrimal-palpebral"
+      ],
+      "meshNames": [
+        "bp3d_FMA59546_FJ1309"
+      ],
+      "family": "completion2:lacrimal-sac",
+      "educationId": "completion2:lacrimal-sac",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "lacrimal",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.012432499999999999,
+          1.5035100000000001,
+          0.15937700000000002
+        ],
+        [
+          0.015764300000000002,
+          1.51865,
+          0.164333
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA59092",
+      "sourceId": "FMA59092",
+      "name": "Tarso del párpado superior · lado izquierdo",
+      "anatomicalName": "Tarso del párpado superior",
+      "latin": "Tarsus superior",
+      "aliases": [
+        "Tarsal plate of left upper eyelid",
+        "FMA59092",
+        "FJ1324",
+        "Tarso del párpado superior",
+        "Tarsus superior"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-lacrimal-palpebral"
+      ],
+      "meshNames": [
+        "bp3d_FMA59092_FJ1324"
+      ],
+      "family": "completion2:tarsal-plate-of-upper-eyelid",
+      "educationId": "completion2:tarsal-plate-of-upper-eyelid",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "tarsal",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.017353300000000002,
+          1.51668,
+          0.15665
+        ],
+        [
+          0.0429379,
+          1.52921,
+          0.16623400000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA59090",
+      "sourceId": "FMA59090",
+      "name": "Tarso del párpado inferior · lado izquierdo",
+      "anatomicalName": "Tarso del párpado inferior",
+      "latin": "Tarsus inferior",
+      "aliases": [
+        "Tarsal plate of left lower eyelid",
+        "FMA59090",
+        "FJ1328",
+        "Tarso del párpado inferior",
+        "Tarsus inferior"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-lacrimal-palpebral"
+      ],
+      "meshNames": [
+        "bp3d_FMA59090_FJ1328"
+      ],
+      "family": "completion2:tarsal-plate-of-lower-eyelid",
+      "educationId": "completion2:tarsal-plate-of-lower-eyelid",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "tarsal",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0181183,
+          1.50701,
+          0.156101
+        ],
+        [
+          0.0420141,
+          1.5153800000000002,
+          0.165108
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58829",
+      "sourceId": "FMA58829",
+      "name": "Cuerpo vítreo · lado izquierdo",
+      "anatomicalName": "Cuerpo vítreo",
+      "latin": "Corpus vitreum",
+      "aliases": [
+        "Left vitreous body",
+        "FMA58829",
+        "FJ1331",
+        "Cuerpo vítreo",
+        "Corpus vitreum"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12515",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-interior"
+      ],
+      "meshNames": [
+        "bp3d_FMA58829_FJ1331"
+      ],
+      "family": "completion2:vitreous-body",
+      "educationId": "completion2:vitreous-body",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "vitreous",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0189652,
+          1.5079200000000001,
+          0.14179499999999998
+        ],
+        [
+          0.0393467,
+          1.5282200000000001,
+          0.15950999999999999
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58081",
+      "sourceId": "FMA58081",
+      "name": "Cámara anterior del ojo · lado derecho",
+      "anatomicalName": "Cámara anterior del ojo",
+      "latin": "Camera anterior bulbi",
+      "aliases": [
+        "Anterior chamber of right eyeball",
+        "FMA58081",
+        "FJ1332",
+        "Cámara anterior del ojo",
+        "Camera anterior bulbi"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12514",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-interior"
+      ],
+      "meshNames": [
+        "bp3d_FMA58081_FJ1332"
+      ],
+      "family": "completion2:anterior-chamber-of-eyeball",
+      "educationId": "completion2:anterior-chamber-of-eyeball",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "chamber",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0374648,
+          1.5114100000000001,
+          0.16146000000000002
+        ],
+        [
+          -0.024716000000000002,
+          1.5241600000000002,
+          0.165202
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58299",
+      "sourceId": "FMA58299",
+      "name": "Coroides · porciones disponibles · lado derecho",
+      "anatomicalName": "Coroides · porciones disponibles",
+      "latin": "Choroidea",
+      "aliases": [
+        "Right choroid",
+        "FMA58299",
+        "FJ1336",
+        "FJ1337",
+        "Coroides · porciones disponibles",
+        "Choroidea"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12514",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-interior"
+      ],
+      "meshNames": [
+        "bp3d_FMA58299_FJ1336",
+        "bp3d_FMA58299_FJ1337"
+      ],
+      "family": "completion2:choroid",
+      "educationId": "completion2:choroid",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "choroid",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.042454900000000004,
+          1.50612,
+          0.139994
+        ],
+        [
+          0.0345885,
+          1.53002,
+          0.162391
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58483",
+      "sourceId": "FMA58483",
+      "name": "Corona ciliar · porción disponible · lado derecho",
+      "anatomicalName": "Corona ciliar · porción disponible",
+      "latin": "Corona ciliaris",
+      "aliases": [
+        "Right corona ciliaris",
+        "FMA58483",
+        "FJ1338",
+        "Corona ciliar · porción disponible",
+        "Corona ciliaris"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12514",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-interior"
+      ],
+      "meshNames": [
+        "bp3d_FMA58483_FJ1338"
+      ],
+      "family": "completion2:corona-ciliaris",
+      "educationId": "completion2:corona-ciliaris",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "ciliary",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0394651,
+          1.50932,
+          0.15838300000000002
+        ],
+        [
+          -0.022518899999999998,
+          1.52637,
+          0.16131800000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA59102",
+      "sourceId": "FMA59102",
+      "name": "Glándula lagrimal · lado derecho",
+      "anatomicalName": "Glándula lagrimal",
+      "latin": "Glandula lacrimalis",
+      "aliases": [
+        "Right lacrimal gland",
+        "FMA59102",
+        "FJ1350",
+        "Glándula lagrimal",
+        "Glandula lacrimalis"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-lacrimal-palpebral"
+      ],
+      "meshNames": [
+        "bp3d_FMA59102_FJ1350"
+      ],
+      "family": "completion2:lacrimal-gland",
+      "educationId": "completion2:lacrimal-gland",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "lacrimal",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0478014,
+          1.5202,
+          0.14899500000000002
+        ],
+        [
+          -0.032982500000000005,
+          1.5353800000000002,
+          0.161439
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA59555",
+      "sourceId": "FMA59555",
+      "name": "Conducto nasolagrimal · lado derecho",
+      "anatomicalName": "Conducto nasolagrimal",
+      "latin": "Ductus nasolacrimalis",
+      "aliases": [
+        "Right nasolacrimal duct",
+        "FMA59555",
+        "FJ1353",
+        "Conducto nasolagrimal",
+        "Ductus nasolacrimalis"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-lacrimal-palpebral"
+      ],
+      "meshNames": [
+        "bp3d_FMA59555_FJ1353"
+      ],
+      "family": "completion2:nasolacrimal-duct",
+      "educationId": "completion2:nasolacrimal-duct",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "lacrimal",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0170417,
+          1.4877200000000002,
+          0.151944
+        ],
+        [
+          -0.0121136,
+          1.50468,
+          0.1615
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA59545",
+      "sourceId": "FMA59545",
+      "name": "Saco lagrimal · lado derecho",
+      "anatomicalName": "Saco lagrimal",
+      "latin": "Saccus lacrimalis",
+      "aliases": [
+        "Right lacrimal sac",
+        "FMA59545",
+        "FJ1360",
+        "Saco lagrimal",
+        "Saccus lacrimalis"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-lacrimal-palpebral"
+      ],
+      "meshNames": [
+        "bp3d_FMA59545_FJ1360"
+      ],
+      "family": "completion2:lacrimal-sac",
+      "educationId": "completion2:lacrimal-sac",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "lacrimal",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.017038499999999998,
+          1.50349,
+          0.159352
+        ],
+        [
+          -0.0137396,
+          1.51865,
+          0.164382
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA59091",
+      "sourceId": "FMA59091",
+      "name": "Tarso del párpado superior · lado derecho",
+      "anatomicalName": "Tarso del párpado superior",
+      "latin": "Tarsus superior",
+      "aliases": [
+        "Tarsal plate of right upper eyelid",
+        "FMA59091",
+        "FJ1375",
+        "Tarso del párpado superior",
+        "Tarsus superior"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-lacrimal-palpebral"
+      ],
+      "meshNames": [
+        "bp3d_FMA59091_FJ1375"
+      ],
+      "family": "completion2:tarsal-plate-of-upper-eyelid",
+      "educationId": "completion2:tarsal-plate-of-upper-eyelid",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "tarsal",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0442496,
+          1.5166600000000001,
+          0.15664
+        ],
+        [
+          -0.018660799999999998,
+          1.52921,
+          0.16623
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA59089",
+      "sourceId": "FMA59089",
+      "name": "Tarso del párpado inferior · lado derecho",
+      "anatomicalName": "Tarso del párpado inferior",
+      "latin": "Tarsus inferior",
+      "aliases": [
+        "Tarsal plate of right lower eyelid",
+        "FMA59089",
+        "FJ1379",
+        "Tarso del párpado inferior",
+        "Tarsus inferior"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-lacrimal-palpebral"
+      ],
+      "meshNames": [
+        "bp3d_FMA59089_FJ1379"
+      ],
+      "family": "completion2:tarsal-plate-of-lower-eyelid",
+      "educationId": "completion2:tarsal-plate-of-lower-eyelid",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "tarsal",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.043326500000000004,
+          1.5070000000000001,
+          0.1561
+        ],
+        [
+          -0.0194243,
+          1.5153800000000002,
+          0.165113
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58828",
+      "sourceId": "FMA58828",
+      "name": "Cuerpo vítreo · lado derecho",
+      "anatomicalName": "Cuerpo vítreo",
+      "latin": "Corpus vitreum",
+      "aliases": [
+        "Right vitreous body",
+        "FMA58828",
+        "FJ1382",
+        "Cuerpo vítreo",
+        "Corpus vitreum"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12514",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-interior"
+      ],
+      "meshNames": [
+        "bp3d_FMA58828_FJ1382"
+      ],
+      "family": "completion2:vitreous-body",
+      "educationId": "completion2:vitreous-body",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "vitreous",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0406511,
+          1.50791,
+          0.141799
+        ],
+        [
+          -0.0202728,
+          1.5282,
+          0.159502
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49145",
+      "sourceId": "FMA49145",
+      "name": "Ligamento de contención del recto lateral · lado izquierdo",
+      "anatomicalName": "Ligamento de contención del recto lateral",
+      "latin": "Ligamentum musculi recti lateralis",
+      "aliases": [
+        "Check ligament of left lateral rectus",
+        "FMA49145",
+        "FJ1284",
+        "Ligamento de contención del recto lateral",
+        "Ligamentum musculi recti lateralis"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-support"
+      ],
+      "meshNames": [
+        "bp3d_FMA49145_FJ1284"
+      ],
+      "family": "completion2:check-ligament-of-lateral-rectus",
+      "educationId": "completion2:check-ligament-of-lateral-rectus",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "support",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.038451099999999995,
+          1.51636,
+          0.14336400000000002
+        ],
+        [
+          0.0486556,
+          1.52545,
+          0.155546
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49148",
+      "sourceId": "FMA49148",
+      "name": "Ligamento de contención del recto medial · lado izquierdo",
+      "anatomicalName": "Ligamento de contención del recto medial",
+      "latin": "Ligamentum musculi recti medialis",
+      "aliases": [
+        "Check ligament of left medial rectus",
+        "FMA49148",
+        "FJ1292",
+        "Ligamento de contención del recto medial",
+        "Ligamentum musculi recti medialis"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-support"
+      ],
+      "meshNames": [
+        "bp3d_FMA49148_FJ1292"
+      ],
+      "family": "completion2:check-ligament-of-medial-rectus",
+      "educationId": "completion2:check-ligament-of-medial-rectus",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "support",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0101777,
+          1.51409,
+          0.148602
+        ],
+        [
+          0.0192802,
+          1.52252,
+          0.160071
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49068",
+      "sourceId": "FMA49068",
+      "name": "Tróclea del oblicuo superior · lado izquierdo",
+      "anatomicalName": "Tróclea del oblicuo superior",
+      "latin": "Trochlea musculi obliqui superioris",
+      "aliases": [
+        "Trochlea of left superior oblique",
+        "FMA49068",
+        "FJ1329",
+        "Tróclea del oblicuo superior",
+        "Trochlea musculi obliqui superioris"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-support"
+      ],
+      "meshNames": [
+        "bp3d_FMA49068_FJ1329"
+      ],
+      "family": "completion2:trochlea-of-superior-oblique",
+      "educationId": "completion2:trochlea-of-superior-oblique",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "support",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0111489,
+          1.53244,
+          0.16231700000000002
+        ],
+        [
+          0.0154099,
+          1.53606,
+          0.16531200000000001
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49144",
+      "sourceId": "FMA49144",
+      "name": "Ligamento de contención del recto lateral · lado derecho",
+      "anatomicalName": "Ligamento de contención del recto lateral",
+      "latin": "Ligamentum musculi recti lateralis",
+      "aliases": [
+        "Check ligament of right lateral rectus",
+        "FMA49144",
+        "FJ1334",
+        "Ligamento de contención del recto lateral",
+        "Ligamentum musculi recti lateralis"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-support"
+      ],
+      "meshNames": [
+        "bp3d_FMA49144_FJ1334"
+      ],
+      "family": "completion2:check-ligament-of-lateral-rectus",
+      "educationId": "completion2:check-ligament-of-lateral-rectus",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "support",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0499666,
+          1.51636,
+          0.143368
+        ],
+        [
+          -0.039750900000000006,
+          1.5254400000000001,
+          0.15555000000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49147",
+      "sourceId": "FMA49147",
+      "name": "Ligamento de contención del recto medial · lado derecho",
+      "anatomicalName": "Ligamento de contención del recto medial",
+      "latin": "Ligamentum musculi recti medialis",
+      "aliases": [
+        "Check ligament of right medial rectus",
+        "FMA49147",
+        "FJ1335",
+        "Ligamento de contención del recto medial",
+        "Ligamentum musculi recti medialis"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-support"
+      ],
+      "meshNames": [
+        "bp3d_FMA49147_FJ1335"
+      ],
+      "family": "completion2:check-ligament-of-medial-rectus",
+      "educationId": "completion2:check-ligament-of-medial-rectus",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "support",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0205824,
+          1.5140799999999999,
+          0.148594
+        ],
+        [
+          -0.011489699999999999,
+          1.52253,
+          0.16007400000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49067",
+      "sourceId": "FMA49067",
+      "name": "Tróclea del oblicuo superior · lado derecho",
+      "anatomicalName": "Tróclea del oblicuo superior",
+      "latin": "Trochlea musculi obliqui superioris",
+      "aliases": [
+        "Trochlea of right superior oblique",
+        "FMA49067",
+        "FJ1380",
+        "Tróclea del oblicuo superior",
+        "Trochlea musculi obliqui superioris"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ocular-support"
+      ],
+      "meshNames": [
+        "bp3d_FMA49067_FJ1380"
+      ],
+      "family": "completion2:trochlea-of-superior-oblique",
+      "educationId": "completion2:trochlea-of-superior-oblique",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "support",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.016712599999999998,
+          1.53244,
+          0.162341
+        ],
+        [
+          -0.0124643,
+          1.53606,
+          0.16531700000000002
+        ]
+      ]
     }
   ],
   "assets": [
@@ -1319,6 +2528,7 @@
       "path": "models/anatomy/ocular/completion-ocular-muscles.glb",
       "systemId": "nervous",
       "regionId": "nervous:ocular",
+      "label": "Músculos orbitarios",
       "frameId": "bodyparts3d-4.0-male",
       "defaultEnabled": false,
       "bytes": 381476,
@@ -1337,14 +2547,14 @@
           0.166313
         ]
       ],
-      "provenanceId": "bodyparts3d-4.0-completion-wave1",
-      "label": "Músculos orbitarios"
+      "provenanceId": "bodyparts3d-4.0-completion-wave1"
     },
     {
       "id": "nervous:completion-ocular-internal",
       "path": "models/anatomy/ocular/completion-ocular-internal.glb",
       "systemId": "nervous",
       "regionId": "nervous:ocular",
+      "label": "Cristalinos y retina óptica",
       "frameId": "bodyparts3d-4.0-male",
       "defaultEnabled": false,
       "bytes": 356076,
@@ -1363,8 +2573,85 @@
           0.16159600000000002
         ]
       ],
-      "provenanceId": "bodyparts3d-4.0-completion-wave1",
-      "label": "Cristalinos y retina óptica"
+      "provenanceId": "bodyparts3d-4.0-completion-wave1"
+    },
+    {
+      "id": "nervous:completion2-ocular-interior",
+      "label": "Úvea, zónula y medios oculares",
+      "path": "models/anatomy/ocular/completion2-ocular-interior.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 1182304,
+      "sha256": "2d17f06df79dbd26fb5caeefb055e1dbe260b85b22623662541734468c3e3264",
+      "meshCount": 10,
+      "triangles": 128720,
+      "bounds": [
+        [
+          -0.042454900000000004,
+          1.50612,
+          0.139994
+        ],
+        [
+          0.041144,
+          1.53003,
+          0.165202
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
+    },
+    {
+      "id": "nervous:completion2-ocular-lacrimal-palpebral",
+      "label": "Aparato lagrimal y tarsos palpebrales",
+      "path": "models/anatomy/ocular/completion2-ocular-lacrimal-palpebral.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 93360,
+      "sha256": "4fa8008e770acbfe1c37a24c15a9f6e2acbbe5450316dcc164c68c1d74c5bc64",
+      "meshCount": 10,
+      "triangles": 10252,
+      "bounds": [
+        [
+          -0.0478014,
+          1.4877200000000002,
+          0.14899500000000002
+        ],
+        [
+          0.046473999999999994,
+          1.5353800000000002,
+          0.16623400000000002
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
+    },
+    {
+      "id": "nervous:completion2-ocular-support",
+      "label": "Soportes orbitarios disponibles",
+      "path": "models/anatomy/ocular/completion2-ocular-support.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 106624,
+      "sha256": "4700c50b8ea9194e065b13263d725d2eb54b236591017f89436d4fecb29f5936",
+      "meshCount": 6,
+      "triangles": 12596,
+      "bounds": [
+        [
+          -0.0499666,
+          1.5140799999999999,
+          0.14336400000000002
+        ],
+        [
+          0.0486556,
+          1.53606,
+          0.16531700000000002
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
     }
   ],
   "provenance": [
@@ -1394,7 +2681,23 @@
       "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
       "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
       "modifications": [
-        "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps.",
+        "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
+        "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
+        "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
+        "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
+      ]
+    },
+    {
+      "id": "bodyparts3d-4.0-completion-wave2",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
         "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
         "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
         "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
@@ -1404,36 +2707,26 @@
   "coverage": {
     "title": "Cobertura ocular parcial disponible",
     "structures": 16,
-    "meshes": 24,
+    "meshes": 50,
     "note": "Globos oculares parciales y estructuras orbitarias disponibles. Cobertura macroscópica, sin simulación óptica ni histología.",
     "limitations": [
       "La córnea usa transparencia esquemática para mostrar el iris; no constituye simulación óptica.",
-      "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps.",
+      "Persisten estructuras oculares ausentes; no se representan capas celulares ni dinámica ocular.",
+      "Persisten estructuras oculares ausentes; no se representan capas celulares ni dinámica ocular.",
+      "Persisten estructuras oculares ausentes; no se representan capas celulares ni dinámica ocular.",
+      "Persisten estructuras oculares ausentes; no se representan capas celulares ni dinámica ocular.",
+      "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
+      "Persisten estructuras oculares ausentes; no se representan capas celulares ni dinámica ocular.",
+      "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
       "Persisten estructuras oculares ausentes; no se representan capas celulares ni dinámica ocular."
     ]
   },
   "education": {
-    "completion:eyelid": {
-      "description": "Músculo elevador del párpado superior.",
-      "function": "Contribuye a elevar el párpado superior.",
-      "relations": "Por encima del globo ocular, en la órbita.",
-      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida. Tendones palpebrales no completados.",
-      "sources": [
-        {
-          "title": "OpenStax · Percepción sensorial",
-          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception"
-        },
-        {
-          "title": "BodyParts3D · identidad y representación",
-          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
-        }
-      ]
-    },
-    "completion:extraocular": {
-      "description": "Músculo de la órbita.",
-      "function": "Participa en el movimiento del globo ocular.",
-      "relations": "Entre la órbita y el globo ocular.",
-      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida. No simula motilidad ocular.",
+    "completion:lens": {
+      "description": "Lente situada detrás del iris.",
+      "function": "Participa en el enfoque de la luz sobre la retina.",
+      "relations": "Posterior al iris y anterior al cuerpo vítreo.",
+      "limits": "Superficie macroscópica estática; sin simulación óptica, acomodación ni fibras del cristalino.",
       "sources": [
         {
           "title": "OpenStax · Percepción sensorial",
@@ -1461,11 +2754,11 @@
         }
       ]
     },
-    "completion:lens": {
-      "description": "Lente situada detrás del iris.",
-      "function": "Participa en el enfoque de la luz sobre la retina.",
-      "relations": "Posterior al iris y anterior al cuerpo vítreo.",
-      "limits": "Superficie macroscópica estática; sin simulación óptica, acomodación ni fibras del cristalino.",
+    "completion:extraocular": {
+      "description": "Músculo de la órbita.",
+      "function": "Participa en el movimiento del globo ocular.",
+      "relations": "Entre la órbita y el globo ocular.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida. No simula motilidad ocular.",
       "sources": [
         {
           "title": "OpenStax · Percepción sensorial",
@@ -1474,6 +2767,262 @@
         {
           "title": "BodyParts3D · identidad y representación",
           "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:eyelid": {
+      "description": "Músculo elevador del párpado superior.",
+      "function": "Contribuye a elevar el párpado superior.",
+      "relations": "Por encima del globo ocular, en la órbita.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida. Tendones palpebrales no completados.",
+      "sources": [
+        {
+          "title": "OpenStax · Percepción sensorial",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion2:corona-ciliaris": {
+      "description": "Componente macroscópico del ojo o de su aparato accesorio.",
+      "function": "Sus procesos participan en la producción de humor acuoso.",
+      "relations": "En relación con el globo ocular del mismo lado.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Cobertura parcial; no simula acomodación, dinámica lagrimal ni movimiento ocular. Sólo corona ciliar identificada; no todo el cuerpo ciliar.",
+      "sources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11534/",
+          "title": "Webvision · anatomía macroscópica del ojo"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11120/",
+          "title": "Neuroscience · anatomía ocular"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:tarsal-plate-of-lower-eyelid": {
+      "description": "Componente macroscópico del ojo o de su aparato accesorio.",
+      "function": "Da soporte al párpado inferior.",
+      "relations": "En la órbita o su región palpebral y lagrimal.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Cobertura parcial; no simula acomodación, dinámica lagrimal ni movimiento ocular. Sólo tarso palpebral, no el párpado completo.",
+      "sources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11534/",
+          "title": "Webvision · anatomía macroscópica del ojo"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11120/",
+          "title": "Neuroscience · anatomía ocular"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:lacrimal-sac": {
+      "description": "Componente macroscópico del ojo o de su aparato accesorio.",
+      "function": "Recoge lágrimas que llegan por los canalículos lagrimales.",
+      "relations": "En la órbita o su región palpebral y lagrimal.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Cobertura parcial; no simula acomodación, dinámica lagrimal ni movimiento ocular.",
+      "sources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11534/",
+          "title": "Webvision · anatomía macroscópica del ojo"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11120/",
+          "title": "Neuroscience · anatomía ocular"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:anterior-chamber-of-eyeball": {
+      "description": "Componente macroscópico del ojo o de su aparato accesorio.",
+      "function": "Espacio que contiene humor acuoso.",
+      "relations": "En relación con el globo ocular del mismo lado.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Cobertura parcial; no simula acomodación, dinámica lagrimal ni movimiento ocular.",
+      "sources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11534/",
+          "title": "Webvision · anatomía macroscópica del ojo"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11120/",
+          "title": "Neuroscience · anatomía ocular"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:lacrimal-gland": {
+      "description": "Componente macroscópico del ojo o de su aparato accesorio.",
+      "function": "Produce el componente acuoso de la película lagrimal.",
+      "relations": "En la órbita o su región palpebral y lagrimal.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Cobertura parcial; no simula acomodación, dinámica lagrimal ni movimiento ocular.",
+      "sources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11534/",
+          "title": "Webvision · anatomía macroscópica del ojo"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11120/",
+          "title": "Neuroscience · anatomía ocular"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:vitreous-body": {
+      "description": "Componente macroscópico del ojo o de su aparato accesorio.",
+      "function": "Ocupa el compartimento posterior al cristalino y permite el paso de luz.",
+      "relations": "En relación con el globo ocular del mismo lado.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Cobertura parcial; no simula acomodación, dinámica lagrimal ni movimiento ocular.",
+      "sources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11534/",
+          "title": "Webvision · anatomía macroscópica del ojo"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11120/",
+          "title": "Neuroscience · anatomía ocular"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:choroid": {
+      "description": "Componente macroscópico del ojo o de su aparato accesorio.",
+      "function": "Participa en la nutrición de la retina externa.",
+      "relations": "En relación con el globo ocular del mismo lado.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Cobertura parcial; no simula acomodación, dinámica lagrimal ni movimiento ocular.",
+      "sources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11534/",
+          "title": "Webvision · anatomía macroscópica del ojo"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11120/",
+          "title": "Neuroscience · anatomía ocular"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:tarsal-plate-of-upper-eyelid": {
+      "description": "Componente macroscópico del ojo o de su aparato accesorio.",
+      "function": "Da soporte al párpado superior.",
+      "relations": "En la órbita o su región palpebral y lagrimal.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Cobertura parcial; no simula acomodación, dinámica lagrimal ni movimiento ocular. Sólo tarso palpebral, no el párpado completo.",
+      "sources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11534/",
+          "title": "Webvision · anatomía macroscópica del ojo"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11120/",
+          "title": "Neuroscience · anatomía ocular"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:nasolacrimal-duct": {
+      "description": "Componente macroscópico del ojo o de su aparato accesorio.",
+      "function": "Drena lágrimas hacia la cavidad nasal.",
+      "relations": "En la órbita o su región palpebral y lagrimal.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Cobertura parcial; no simula acomodación, dinámica lagrimal ni movimiento ocular.",
+      "sources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11534/",
+          "title": "Webvision · anatomía macroscópica del ojo"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11120/",
+          "title": "Neuroscience · anatomía ocular"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:trochlea-of-superior-oblique": {
+      "description": "Componente macroscópico del ojo o de su aparato accesorio.",
+      "function": "Redirige el tendón del oblicuo superior.",
+      "relations": "En la órbita o su región palpebral y lagrimal.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Cobertura parcial; no simula acomodación, dinámica lagrimal ni movimiento ocular.",
+      "sources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11534/",
+          "title": "Webvision · anatomía macroscópica del ojo"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11120/",
+          "title": "Neuroscience · anatomía ocular"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:check-ligament-of-medial-rectus": {
+      "description": "Componente macroscópico del ojo o de su aparato accesorio.",
+      "function": "Contribuye a limitar el desplazamiento del globo ocular.",
+      "relations": "En la órbita o su región palpebral y lagrimal.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Cobertura parcial; no simula acomodación, dinámica lagrimal ni movimiento ocular.",
+      "sources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11534/",
+          "title": "Webvision · anatomía macroscópica del ojo"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11120/",
+          "title": "Neuroscience · anatomía ocular"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:check-ligament-of-lateral-rectus": {
+      "description": "Componente macroscópico del ojo o de su aparato accesorio.",
+      "function": "Contribuye a limitar el desplazamiento del globo ocular.",
+      "relations": "En la órbita o su región palpebral y lagrimal.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Cobertura parcial; no simula acomodación, dinámica lagrimal ni movimiento ocular.",
+      "sources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11534/",
+          "title": "Webvision · anatomía macroscópica del ojo"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11120/",
+          "title": "Neuroscience · anatomía ocular"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
         }
       ]
     }

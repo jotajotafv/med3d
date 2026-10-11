@@ -38,13 +38,17 @@
     },
     {
       "gap": "muscular-iliopsoas",
-      "status": "INTEGRATED",
-      "evidence": "Psoas major and iliacus separately, both source sides; no extra iliopsoas duplicate."
+      "status": "BLOCKED_ANATOMY",
+      "evidence": "Four native candidates withdrawn after pelvic/spinal bone contact review; original identities and geometry remain retained as research evidence.",
+      "initialStatus": "INTEGRATED",
+      "initialEvidence": "Psoas major and iliacus separately, both source sides; no extra iliopsoas duplicate."
     },
     {
       "gap": "muscular-hip-rotators",
-      "status": "INTEGRATED",
-      "evidence": "Six named deep rotators per side; 12 explicit original identities."
+      "status": "PARTIAL_ACCEPTED",
+      "evidence": "Only superior/inferior gemelli remain accepted bilaterally. Piriformis, obturators and quadratus femoris withdrawn after bone-interface screening and visual review.",
+      "initialStatus": "INTEGRATED",
+      "initialEvidence": "Six named deep rotators per side; 12 explicit original identities."
     },
     {
       "gap": "ocular-lens",
@@ -84,7 +88,9 @@
     {
       "gap": "cardio-profunda",
       "status": "PARTIAL_ACCEPTED",
-      "evidence": "Actual originals are lateral circumflex femoral arteries, descending branches and descending genicular arteries. Nominal deep-femoral mapping rejected as whole-trunk identity. Deep femoral main arterial trunks remain absent."
+      "evidence": "Lateral circumflex and descending genicular arteries retained. Descending lateral-circumflex branches withdrawn because their path enters the femur; no whole profunda trunk claim.",
+      "initialStatus": "PARTIAL_ACCEPTED",
+      "initialEvidence": "Actual originals are lateral circumflex femoral arteries, descending branches and descending genicular arteries. Nominal deep-femoral mapping rejected as whole-trunk identity. Deep femoral main arterial trunks remain absent."
     },
     {
       "gap": "nervous-meninges",
@@ -170,5 +176,11 @@
     "browser": "PASS; every new owner lifecycle; seven representative real pointer picks; visual review complete",
     "fullXrAtlas": "PASS; 7 tests",
     "verifyAnatomy": "Deferred to final global campaign"
-  }
+  },
+  "reviewWave2": {
+    "reason": "Expanded independent bone controls and corrected normalized-accessor decoding supersede the original limited contact screen.",
+    "acceptance": "research/anatomy/completion-wave1-acceptance.json",
+    "originalWave1Commit": "42def42361a0a39af7e1e7494a779bb4befbc382"
+  },
+  "validationScope": "Original validation values below describe the first WAVE 1 commit. Active reviewed cohort and validation are in completion-wave1 and the WAVE 2 report."
 }

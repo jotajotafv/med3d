@@ -10,7 +10,9 @@ La auditoría original se conserva intacta. **FUTURE SEPARATE FEMALE ATLAS**: ni
 
 Inventario rehecho desde catálogos y GLB: 11 sistemas, 580 estructuras, 228 componentes, 981 nodos (173 editoriales), 937 mallas, 52 módulos, 3.240.172 triángulos y 29.795.780 bytes. Baseline local en `.cache/anatomy-completion/inventory.json`.
 
-## WAVE 1 — nativos prioritarios
+## WAVE 1 — nativos prioritarios (checkpoint inicial)
+
+Los números y pruebas de esta sección describen el commit inicial `42def42361a0a39af7e1e7494a779bb4befbc382`. La revisión ampliada de WAVE 2 retira catorce de sus candidatos; la cobertura activa y las decisiones revisadas se describen más abajo. No se borra el historial de la primera aceptación.
 
 Cohorte: 77 estructuras, 5 componentes, 1 región editorial, 86 mallas, 11 módulos opcionales. Total provisional: 657 estructuras, 233 componentes, 1.064 nodos, 1.023 mallas, 63 módulos, 4.100.946 triángulos y 39.200.560 bytes. El número de estructuras óseas no aumenta; los 28 dientes pertenecen a Digestivo.
 
@@ -30,7 +32,7 @@ Transformación única `(x,y,z) -> (x,z,-y)/1000`. Sin centrar, escalar, refleja
 
 860.774 triángulos conservados; 9.404.780 bytes añadidos; 19.841.364 bytes de accessors decodificados. Error máximo de posición: 6,010618735117701e-8 m; tolerancia de aceptación: 0,00005 m. Son medidas numéricas, no precisión anatómica o clínica. Validador glTF: cero errores y advertencias en archivos comprimidos y decodificados.
 
-Las pruebas de superficies registran contactos reales del dataset. El muestreo determinista con tres rayos por punto no detectó profundidades mayores de 1 mm en las relaciones examinadas: diafragma/hígado 0,964 mm máximo muestreado; diafragma/pulmón derecho 0,049 mm e izquierdo 0,091 mm. Este muestreo no prueba estanqueidad ni mide volumen de penetración. No se ajustaron las superficies para ocultar contactos.
+Las pruebas de superficies registran contactos reales del dataset. En las relaciones pulmonares y hepáticas, el muestreo determinista con tres rayos por punto no detectó profundidades mayores de 1 mm: diafragma/hígado 0,964 mm máximo muestreado; diafragma/pulmón derecho 0,049 mm e izquierdo 0,091 mm. Este muestreo no prueba estanqueidad ni mide volumen de penetración. No se ajustaron las superficies para ocultar contactos.
 
 FJ2549/FJ2550/FJ2551 contienen pequeños fragmentos contralaterales de origen: áreas de 0,277/0,310/1,650 mm² respectivamente, frente a 4.954/5.873/4.822 mm² totales. Se conservan en las mallas fuente, sin recortar, sin propietarios adicionales y sin interpretarlos como nuevas estructuras. Inspección aislada y regional documentada.
 
@@ -44,7 +46,7 @@ Las nuevas lecciones se almacenan una vez por familia en el catálogo y se refer
 
 Pruebas nuevas: `node scripts/test-anatomy-completion.mjs`. Verifican catálogos completos, hashes históricos, IDs/owners, búsqueda, fichas compartidas, cargas opcionales, alcance real y despiece cero. Las suites históricas usan una proyección de sus módulos originales reales; sus cifras y afirmaciones anteriores se mantienen, y la suite nueva valida la composición completa.
 
-Geometría reproducible desde el checkout base y originales fijados: `python scripts/anatomy/build-completion.py wave1`, optimizador, validador e instalación explícita. El builder se niega a sobrescribir GLB existentes. Para verificar este checkout sin reconstruir ni modificar modelos:
+Geometría reproducible desde el checkout base y originales fijados: `python scripts/anatomy/build-completion.py wave1`, optimizador, validador e instalación explícita. El builder se niega a sobrescribir GLB existentes salvo con `--replace-reviewed-cohort`, un ledger de aceptación explícito y coincidencia exacta de ruta, procedencia y hash previo del módulo creado por este programa. Nunca autoriza sobrescribir modelos históricos. Para verificar este checkout sin reconstruir ni modificar modelos:
 
 `node scripts/anatomy/optimize-completion.mjs --output research/anatomy/completion-wave1 --source research/anatomy/completion-wave1-originals.zip --verify-only`
 
@@ -60,6 +62,60 @@ Los cinco escenarios (primera carga, muscular aislado, varios sistemas, completo
 
 QA funcional recorre cada nuevo owner con búsqueda por FMA, carga real, ficha, aislar, ocultar, restaurar y mismo Canvas. Tres niveles de despiece vuelven exactamente a reposo. Capturas regionales y aisladas revisadas manualmente, además de móvil a 390 px y nombres públicos de cada módulo. La revisión responsive completa se reserva para el cierre global.
 
+## WAVE 2 — selección nativa ampliada y revisión de contactos
+
+Se inspeccionaron 282 originales BP3D 4.0, incluidos 57 candidatos adicionales a la consulta nominal de la auditoría. La cohorte inicial para QA contenía 277 mallas; 225 se conservan tras la revisión. No se tomaron las coincidencias de las tablas ISA/PARTOF como identidad definitiva: cada decisión conserva encabezado, FJ, FMA, hash, bounds y topología del original.
+
+La cohorte activa de esta wave añade 96 estructuras, 89 componentes y 3 editoriales, distribuidos en 26 módulos opcionales: 881.476 triángulos, 9.044.004 bytes GLB y 16.090.512 bytes de accessors decodificados. Los 203 owners estructurales del sistema óseo permanecen iguales; sus ligamentos añadidos son componentes.
+
+### Cobertura y límites
+
+Se añaden músculos y porciones de cuello, antebrazo, mano y pie; tálamos, caudados, putámenes y globos pálidos; ventrículos y acueducto; porciones coronarias y papilares; tejidos musculares/ligamentosos de laringe, faringe y región oral; mesoapéndice; superficies de cabello, cejas y pubis; coroides, corona ciliar, vítreo, cámaras anteriores, aparato lagrimal, tarsos y soportes oculares. Cada conjunto mantiene la granularidad del original.
+
+Los ligamentos estilohioideos son las piezas conectivas óseas aceptadas en esta wave. No se añade geometría nominal de disco, menisco o cápsula sin original BP3D identificado; esas alternativas pasan a la investigación de fuentes registrables. La búsqueda de ramas vasculares regionales adicionales continúa en WAVE 4.
+
+FJ1469/FJ1469M tienen lateralidad de encabezado opuesta a su ubicación nativa: quedan fuera. Se aceptan únicamente las cabezas superficiales identificadas del flexor corto del pulgar. Los supuestos candidatos yugulares externos eran venas supraescapulares, que además no pasan el control óseo; no se publica una yugular falsa. El largo del cuello sólo tiene tres porciones izquierdas verificadas. Corona ciliar no equivale a cuerpo ciliar completo; tarso no equivale a párpado completo.
+
+### Corrección del control geométrico y retiradas
+
+La revisión detectó que el control de contactos de WAVE 1 aplicaba matrices sobre accessors enteros normalizados de algunos huesos históricos. Al escribir metros en esos arrays se distorsionaban las coordenadas de la copia de medición. `qa-world-geometry.mjs` expande a Float32 antes de transformar y comprueba los bounds decodificados de los 205 controles óseos contra el catálogo. Una prueba de regresión conserva los índices, grupos y arrays originales. Este fallo afectaba al control de contactos; la comparación independiente OBJ → GLB de las incorporaciones utilizaba otro decodificador y sigue pasando.
+
+El nuevo control muestrea hasta 3.072 posiciones únicas por owner, exige tres votos de paridad y mide distancia a superficie. Es un cribado geométrico, no volumen de interpenetración ni precisión clínica. El disparador de 3 mm no es un umbral médico: estructuras pequeñas también se rechazan con valores menores si la interfaz no es defendible. Las raíces en la región alveolar se documentan aparte, porque el hueso esquemático no resuelve alvéolos y espacio periodontal.
+
+Se retiraron 14 owners de WAVE 1: piriformes, obturadores internos/externos, cuadrados femorales, psoas mayores, ilíacos y ramas descendentes de las circunflejas femorales laterales. La cobertura de rotadores conserva los gemelos superiores e inferiores bilaterales; el iliopsoas vuelve a quedar bloqueado. Los originales y las decisiones iniciales se conservan, y sus estados activos se corrigen explícitamente.
+
+WAVE 2 excluye 51 owners candidatos por encaje no aprobado. Entre ellos hay aductores, pectíneos, plantares, poplíteos, otros músculos de pierna/cuello/espalda, cabezas ulnares del FCU, ligamentos plantares, retináculos, constrictores faríngeos inferiores, rafe, venas supraescapulares, zónulas, mesenterio y mesocolon. Ejemplos máximos muestreados: aductor mayor/fémur ~14,7 mm; poplíteo/tibia ~10,5 mm; mesocolon/colon ~9,3 mm. Las fichas aceptadas explicitan las interfaces de inserción esquemáticas que permanecen.
+
+No se cortó, desplazó, reflejó ni deformó ninguna pieza para ocultar el conflicto. Se excluyó cada original completo y se reconstruyeron únicamente módulos creados por este programa. Los 52 GLB corporales y los cuatro assets de exploradores históricos mantienen sus hashes.
+
+Evidencia versionada: `research/anatomy/completion-wave1-acceptance.json`, `completion-wave2-acceptance.json`, los respectivos ledgers de decisiones y `completion-wave2/contact-evidence/`. Las tablas de candidatos distinguen originales investigados de cobertura activa. El reporte corregido de contactos de WAVE 1 se conserva en la carpeta de WAVE 2, sin presentar el reporte anterior como validación vigente.
+
+### Catálogos, XR y pruebas
+
+Los nuevos tipos oculares usan las lecciones compartidas del catálogo; un tipo nuevo no fuerza una descripción de una clase histórica distinta. Búsqueda, árbol, ficha, contexto, aislar, ocultar, restaurar y despiece utilizan los mismos owners. Los músculos laríngeos/faríngeos pertenecen a Respiratorio y tienen relaciones educativas con Digestivo. No hay geometría propietaria duplicada.
+
+XR incorpora un control manual «Ampliación anatómica» por sistema. Activar un sistema carga inicialmente sólo sus módulos históricos; activar su ampliación añade los opcionales a la misma cola global de dos descargas. Desactivar/reabrir retiene recursos y bloquea picking de las piezas ocultas. No cambian gestos, dwell, pan ni MediaPipe. La única modificación adicional de AtlasScene amplía el inspector de QA, habilitado por URL, a las nuevas mallas nerviosas.
+
+Geometría: todos los triángulos orientados y posiciones usadas de los originales activos conservados; máximo error numérico WAVE 2 6,122820607893197e-8 m. Validador glTF comprimido y decodificado: cero errores y advertencias en 26 módulos. Typecheck y build pasan; persiste la advertencia conocida de tamaño de chunk. Las 19 pruebas dirigidas XR (piloto histórico y composición completa) pasan. La suite de cobertura comprueba además rechazos ausentes, conflicto de lateralidad, granularidad de corona/tarsos, largo del cuello unilateral y conteo óseo.
+
+QA funcional completado: 185 owners activos recorridos; 26 módulos con hover y clic real; búsqueda, ficha, aislamiento, ocultación y restauración pasan. No hubo errores de consola ni peticiones fallidas. Los tres modos de despiece retornan exactamente a reposo. Las 17 capturas regionales/móvil y cuatro vistas interiores suplementarias se revisaron manualmente. Las vistas opacas de contexto pueden ocultar estructuras internas; las cuatro vistas aisladas confirman su geometría visible. El seguimiento suplementario comprueba identidad del objeto DOM Canvas a través de selección, aislamiento, ocultación, restauración y deselección. La primera pasada comprobó el conteo de Canvas para todos los owners.
+
+Rendimiento puntual en Chromium headless/SwiftShader con movimiento reducido, HTTP loopback y caché HTTP desactivada:
+
+| Escenario | Módulos | Bytes GLB | Bytes de geometría | Draw calls | Primera geometría / completo (ms) | CPU render (ms) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Primera carga | 51 | 28.164.276 | 53.567.064 | 892 | 176 / 3.786 | 3,9 |
+| Muscular con ampliaciones | 31 | 19.999.752 | 40.157.492 | 278 | 151 / 3.016 | 1,5 |
+| Óseo, muscular y nervioso | 55 | 31.478.980 | 62.869.616 | 644 | 161 / 6.408 | 3,4 |
+| Completo sin piel, con pelo | 88 | 46.199.172 | 91.215.108 | 1.187 | 155 / 4.748 | 4,0 |
+| Completo con piel | 89 | 47.830.676 | 95.705.032 | 1.188 | 165 / 4.266 | 5,3 |
+
+Sólo se registraron uno o dos intervalos de frame por zoom: no representan FPS sostenidos. CPU render mide envío de comandos/driver, no finalización GPU. El primer escenario «sin piel» omitía también el pelo; se repitió con los 88 módulos correctos y se conserva la observación anterior como escenario más limitado, no como cifra vigente. Evidencia, transferencias y hashes de las 21 capturas en `research/anatomy/completion-wave2/qa-summary.json`. El cierre del navegador suplementario agotó su plazo de cinco segundos después de superar todas las comprobaciones y guardar el reporte; no fue un error de la aplicación.
+
+### Inventario activo tras esta selección
+
+11 sistemas; 739 estructuras; 322 componentes; 1.238 nodos; 177 editoriales; 1.234 mallas; 89 módulos; 4.945.358 triángulos; 47.830.676 bytes GLB. Son cifras derivadas por `test-anatomy-completion.mjs`, todavía provisionales para el programa. La primera carga conserva 51 módulos históricos sin piel ni ampliaciones.
+
 ## Waves pendientes
 
-WAVE 2: restantes nativos A/B. WAVE 3: fuentes registrables con pruebas nuevas. WAVE 4: candidatos macro de fuente desconocida. WAVE 5: fuentes y arquitectura micro independiente vinculada. Al cierre se emitirán las decisiones de todos los gaps y los ledgers finales; no se considera este atlas completo.
+ WAVE 3: fuentes registrables con pruebas nuevas. WAVE 4: candidatos macro de fuente desconocida. WAVE 5: fuentes y arquitectura micro independiente vinculada. Al cierre se emitirán las decisiones de todos los gaps y los ledgers finales; no se considera este atlas completo.

@@ -1,0 +1,592 @@
+{
+  "wave": 2,
+  "scope": "Native candidate decisions at this wave; final gap decisions may add later source attempts.",
+  "gaps": [
+    {
+      "gap": "skeletal-ligaments",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Dos ligamentos estilohioideos. Retináculos y ligamentos plantares candidatos excluidos por interfaz ósea.",
+      "acceptedNodeIds": [
+        "bp3d:FMA72311",
+        "bp3d:FMA72309"
+      ],
+      "rejectedNodeIds": [
+        "bp3d:FMA44249",
+        "bp3d:FMA44250",
+        "bp3d:FMA40120",
+        "bp3d:FMA40121"
+      ],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "muscular-thorax-deep",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Conjuntos y porciones reales; no individualizar fascículos. Elevadores costales, interespinosos lumbares y serratos inferiores rechazados tras control óseo.",
+      "acceptedNodeIds": [
+        "bp3d:FMA9761",
+        "bp3d:FMA9762",
+        "bp3d:FMA22872",
+        "bp3d:FMA22873",
+        "bp3d:FMA13403",
+        "bp3d:FMA13404",
+        "bp3d:FMA71442",
+        "bp3d:FMA71309",
+        "bp3d:FMA71443"
+      ],
+      "rejectedNodeIds": [
+        "bp3d:FMA74077",
+        "bp3d:FMA74078",
+        "bp3d:FMA74075",
+        "bp3d:FMA74076",
+        "bp3d:FMA13405",
+        "bp3d:FMA13406",
+        "bp3d:FMA71307"
+      ],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "muscular-neck",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Cobertura cervical parcial. El iliocostal cervical sólo se acepta a la izquierda; otros candidatos rechazados permanecen documentados.",
+      "acceptedNodeIds": [
+        "bp3d:FMA22745",
+        "bp3d:FMA32540",
+        "bp3d:FMA32541",
+        "bp3d:FMA22876",
+        "bp3d:FMA22877",
+        "bp3d:FMA22726",
+        "bp3d:FMA22727",
+        "bp3d:FMA46293",
+        "bp3d:FMA46292",
+        "bp3d:FMA13349",
+        "bp3d:FMA45827",
+        "bp3d:FMA13353",
+        "bp3d:FMA13348",
+        "bp3d:FMA45826",
+        "bp3d:FMA13352"
+      ],
+      "rejectedNodeIds": [
+        "bp3d:FMA22744",
+        "bp3d:FMA22754",
+        "bp3d:FMA22756",
+        "bp3d:FMA22757",
+        "bp3d:FMA22758",
+        "bp3d:FMA22874",
+        "bp3d:FMA22875",
+        "bp3d:FMA13351",
+        "bp3d:FMA13350"
+      ],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "muscular-suboccipital",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Suboccipitales y rectos identificados; largo del cuello sólo con tres porciones originales izquierdas.",
+      "acceptedNodeIds": [
+        "bp3d:FMA46288",
+        "bp3d:FMA32537",
+        "bp3d:FMA32535",
+        "bp3d:FMA46314",
+        "bp3d:FMA32531",
+        "bp3d:FMA32533",
+        "bp3d:FMA46318",
+        "bp3d:FMA32536",
+        "bp3d:FMA32534",
+        "bp3d:FMA46313",
+        "bp3d:FMA32530",
+        "bp3d:FMA32532",
+        "bp3d:FMA46317",
+        "bp3d:FMA46284",
+        "bp3d:FMA46286"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "muscular-forearm-flexors",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "FCU sólo cabeza humeral: la cabeza ulnar no pasa el control óseo. FDS conserva dos porciones bajo un owner.",
+      "acceptedNodeIds": [
+        "bp3d:FMA38617",
+        "bp3d:FMA38618",
+        "bp3d:FMA38470",
+        "bp3d:FMA38471",
+        "bp3d:FMA38479",
+        "bp3d:FMA38480",
+        "bp3d:FMA38482",
+        "bp3d:FMA38484",
+        "bp3d:FMA38463",
+        "bp3d:FMA38464",
+        "bp3d:FMA38454",
+        "bp3d:FMA38455"
+      ],
+      "rejectedNodeIds": [
+        "bp3d:FMA38619",
+        "bp3d:FMA38620"
+      ],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "muscular-forearm-extensors",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Extensores restantes y abductor largo del pulgar presentes bilateralmente; conservar granularidad de las porciones y límites de inserción.",
+      "acceptedNodeIds": [
+        "bp3d:FMA38507",
+        "bp3d:FMA38508",
+        "bp3d:FMA38516",
+        "bp3d:FMA38517",
+        "bp3d:FMA38486",
+        "bp3d:FMA38487",
+        "bp3d:FMA38498",
+        "bp3d:FMA38499",
+        "bp3d:FMA38504",
+        "bp3d:FMA38505",
+        "bp3d:FMA38501",
+        "bp3d:FMA38502",
+        "bp3d:FMA38525",
+        "bp3d:FMA38526",
+        "bp3d:FMA38519",
+        "bp3d:FMA38520",
+        "bp3d:FMA38522",
+        "bp3d:FMA38523"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "muscular-fpb",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Sólo cabezas superficiales bilaterales. FJ1469/FJ1469M tienen conflicto entre lateridad del encabezado y posición original; no se relabelan.",
+      "acceptedNodeIds": [
+        "bp3d:FMA65198",
+        "bp3d:FMA65199"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "muscular-hand-lumbricals",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Un agregado por mano; no cuatro músculos independientes.",
+      "acceptedNodeIds": [
+        "bp3d:FMA42398",
+        "bp3d:FMA42399"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "muscular-hand-interossei",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Dos agregados por mano; no fingir la individualización de cada interóseo.",
+      "acceptedNodeIds": [
+        "bp3d:FMA42404",
+        "bp3d:FMA42405",
+        "bp3d:FMA42402",
+        "bp3d:FMA42403"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "muscular-thigh",
+      "status": "BLOCKED_ANATOMY",
+      "scope": "Los candidatos nativos estudiados presentan penetraciones óseas incompatibles o interfaces no justificadas.",
+      "acceptedNodeIds": [],
+      "rejectedNodeIds": [
+        "bp3d:FMA22452",
+        "bp3d:FMA22454",
+        "bp3d:FMA22459",
+        "bp3d:FMA22460",
+        "bp3d:FMA43886",
+        "bp3d:FMA43887",
+        "bp3d:FMA22450",
+        "bp3d:FMA22451"
+      ],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "muscular-leg",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Se conserva extensor largo del dedo gordo bilateral; el resto de los candidatos de este conjunto se excluye tras control óseo.",
+      "acceptedNodeIds": [
+        "bp3d:FMA22546",
+        "bp3d:FMA22547"
+      ],
+      "rejectedNodeIds": [
+        "bp3d:FMA22548",
+        "bp3d:FMA22549",
+        "bp3d:FMA22550",
+        "bp3d:FMA22551",
+        "bp3d:FMA65016",
+        "bp3d:FMA65017",
+        "bp3d:FMA65014",
+        "bp3d:FMA65015",
+        "bp3d:FMA22560",
+        "bp3d:FMA22561",
+        "bp3d:FMA22591",
+        "bp3d:FMA22592"
+      ],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "muscular-opponens-foot",
+      "status": "INTEGRATED",
+      "scope": "Dos originales identificados, sin reflexión nueva.",
+      "acceptedNodeIds": [
+        "bp3d:FMA86034",
+        "bp3d:FMA86035"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "nervous-deep-brain",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Tálamos, caudados, putámenes y globos pálidos bilaterales; no todos los núcleos profundos.",
+      "acceptedNodeIds": [
+        "bp3d:FMA72827",
+        "bp3d:FMA72831",
+        "bp3d:FMA72829",
+        "bp3d:FMA258716",
+        "bp3d:FMA72826",
+        "bp3d:FMA72830",
+        "bp3d:FMA72828",
+        "bp3d:FMA258714"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "nervous-ventricles",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Ventrículos y acueducto disponibles; sin simulación de circulación de LCR ni conductos fabricados.",
+      "acceptedNodeIds": [
+        "bp3d:FMA78454",
+        "bp3d:FMA78469",
+        "bp3d:FMA78467",
+        "bp3d:FMA78450",
+        "bp3d:FMA78449"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "cardio-external-jugulars",
+      "status": "BLOCKED_IDENTITY",
+      "scope": "Los FJ nominales resultaron ser venas supraescapulares; además se rechazó su encaje. No se integró una yugular externa falsa.",
+      "acceptedNodeIds": [],
+      "rejectedNodeIds": [
+        "bp3d:FMA50860",
+        "bp3d:FMA50859"
+      ],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "cardio-coronary",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Ramas y porciones coronarias adicionales con owner único; no subdividir bifurcaciones.",
+      "acceptedNodeIds": [
+        "bp3d:FMA3818",
+        "bp3d:FMA4713",
+        "bp3d:FMA3840",
+        "bp3d:FMA4714",
+        "bp3d:FMA3847",
+        "bp3d:FMA3848"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "cardio-internal-heart",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Cinco identidades papilares. No añade septos completos, cuerdas o válvulas nuevas.",
+      "acceptedNodeIds": [
+        "bp3d:FMA7265",
+        "bp3d:FMA7260",
+        "bp3d:FMA7264",
+        "bp3d:FMA7261",
+        "bp3d:FMA7262"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "cardio-secondary",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Ramas capsulares bilaterales y arteria bronquial disponible. La investigación regional restante continúa en WAVE 4.",
+      "acceptedNodeIds": [
+        "bp3d:FMA50146",
+        "bp3d:FMA50147",
+        "bp3d:FMA68109"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "resp-larynx",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Músculos y ligamentos laríngeos identificados; no se denomina pliegue completo a un ligamento o músculo.",
+      "acceptedNodeIds": [
+        "resp:FMA55246",
+        "resp:FMA55245",
+        "resp:FMA55227",
+        "resp:FMA46605",
+        "resp:FMA46581",
+        "resp:FMA55141",
+        "resp:FMA46585",
+        "resp:FMA46614",
+        "resp:FMA46578",
+        "resp:FMA46612",
+        "resp:FMA46590",
+        "resp:FMA46593",
+        "resp:FMA55237",
+        "resp:FMA55138",
+        "resp:FMA46604",
+        "resp:FMA46580",
+        "resp:FMA55140",
+        "resp:FMA46584",
+        "resp:FMA46613",
+        "resp:FMA46577",
+        "resp:FMA46611",
+        "resp:FMA46589",
+        "resp:FMA46592",
+        "resp:FMA55230",
+        "resp:FMA46582"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "resp-pharynx",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Porciones musculares superiores/medias y elevadoras; constrictores inferiores y rafe rechazados. Owner Respiratorio, relaciones con Digestivo.",
+      "acceptedNodeIds": [
+        "resp:FMA46633",
+        "resp:FMA46672",
+        "resp:FMA46670",
+        "resp:FMA46668",
+        "resp:FMA46632",
+        "resp:FMA46634",
+        "resp:FMA46671",
+        "resp:FMA46669",
+        "resp:FMA46667",
+        "resp:FMA46631"
+      ],
+      "rejectedNodeIds": [
+        "resp:FMA46636",
+        "resp:FMA55077",
+        "resp:FMA46635"
+      ],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "digestive-oral",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Porciones musculares orales reales; no cavidad oral blanda completa.",
+      "acceptedNodeIds": [
+        "dig:FMA46729",
+        "dig:FMA46732",
+        "dig:FMA46728",
+        "dig:FMA46731",
+        "dig:FMA46733",
+        "dig:FMA46702",
+        "dig:FMA46704",
+        "dig:FMA46698",
+        "dig:FMA46703"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "digestive-mesentery",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Mesoapéndice aceptado. Mesenterio y mesocolon rechazados por interfaces intestinales no justificadas.",
+      "acceptedNodeIds": [
+        "dig:FMA16549"
+      ],
+      "rejectedNodeIds": [
+        "dig:FMA14647",
+        "dig:FMA14643"
+      ],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "integumentary-hair",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Tres superficies pilosas agregadas; no cabello individual ni folículos.",
+      "acceptedNodeIds": [
+        "integ:FMA54237",
+        "integ:FMA54241",
+        "integ:FMA54319"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "ocular-ciliary",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Corona ciliar bilateral; no cuerpo ciliar completo. Zónula excluida por invasión del cristalino.",
+      "acceptedNodeIds": [
+        "ocular:FMA58484",
+        "ocular:FMA58483"
+      ],
+      "rejectedNodeIds": [
+        "ocular:FMA58840",
+        "ocular:FMA58839"
+      ],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "ocular-choroid",
+      "status": "INTEGRATED",
+      "scope": "Dos porciones del mismo owner por ojo, sin duplicar coroides.",
+      "acceptedNodeIds": [
+        "ocular:FMA58300",
+        "ocular:FMA58299"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "ocular-vitreous",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Vítreo y cámara anterior bilaterales. No se afirma cámara posterior ni dinámica de fluidos.",
+      "acceptedNodeIds": [
+        "ocular:FMA58082",
+        "ocular:FMA58829",
+        "ocular:FMA58081",
+        "ocular:FMA58828"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    },
+    {
+      "gap": "ocular-lacrimal",
+      "status": "PARTIAL_ACCEPTED",
+      "scope": "Glándulas, sacos y conductos nasolagrimales; tarsos superior/inferior. No párpados completos ni todos los conductillos.",
+      "acceptedNodeIds": [
+        "ocular:FMA59103",
+        "ocular:FMA59556",
+        "ocular:FMA59546",
+        "ocular:FMA59092",
+        "ocular:FMA59090",
+        "ocular:FMA59102",
+        "ocular:FMA59555",
+        "ocular:FMA59545",
+        "ocular:FMA59091",
+        "ocular:FMA59089"
+      ],
+      "rejectedNodeIds": [],
+      "evidence": [
+        "research/anatomy/completion-wave2-selection.json",
+        "research/anatomy/completion-wave2-acceptance.json",
+        "research/anatomy/completion-wave2/candidate-source-research.json"
+      ]
+    }
+  ]
+}

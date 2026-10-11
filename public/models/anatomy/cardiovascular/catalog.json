@@ -42,7 +42,12 @@
         "cardio:upper-left",
         "cardio:upper-right",
         "cardiovascular:completion-femoral-branches-right",
-        "cardiovascular:completion-femoral-branches-left"
+        "cardiovascular:completion-femoral-branches-left",
+        "cardiovascular:completion2-cerebral-arteries",
+        "cardiovascular:completion2-coronary-arteries",
+        "cardiovascular:completion2-bronchial-arteries",
+        "cardiovascular:completion2-coronary-veins",
+        "cardiovascular:completion2-papillary"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -55,7 +60,7 @@
         ],
         [
           0.279507,
-          1.53772,
+          1.57049,
           0.20079400000000003
         ]
       ]
@@ -85,7 +90,10 @@
         "cardio:upper-left",
         "cardio:upper-right",
         "cardiovascular:completion-femoral-branches-right",
-        "cardiovascular:completion-femoral-branches-left"
+        "cardiovascular:completion-femoral-branches-left",
+        "cardiovascular:completion2-cerebral-arteries",
+        "cardiovascular:completion2-coronary-arteries",
+        "cardiovascular:completion2-bronchial-arteries"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -100,7 +108,7 @@
         ],
         [
           0.279507,
-          1.53772,
+          1.57049,
           0.20079400000000003
         ]
       ]
@@ -128,7 +136,8 @@
         "cardio:lower-right",
         "cardio:trunk",
         "cardio:upper-left",
-        "cardio:upper-right"
+        "cardio:upper-right",
+        "cardiovascular:completion2-coronary-veins"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -171,11 +180,17 @@
         "bp3d:FMA11359",
         "bp3d:FMA9465",
         "bp3d:FMA9291",
-        "bp3d:FMA9466"
+        "bp3d:FMA9466",
+        "bp3d:FMA7265",
+        "bp3d:FMA7260",
+        "bp3d:FMA7264",
+        "bp3d:FMA7261",
+        "bp3d:FMA7262"
       ],
       "kind": "structure",
       "assetIds": [
-        "cardio:heart"
+        "cardio:heart",
+        "cardiovascular:completion2-papillary"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -213,11 +228,14 @@
         "bp3d:FMA4062",
         "bp3d:FMA3958",
         "bp3d:FMA4066",
-        "bp3d:FMA50542"
+        "bp3d:FMA50542",
+        "bp3d:FMA50146",
+        "bp3d:FMA50147"
       ],
       "kind": "region",
       "assetIds": [
-        "cardio:head-neck"
+        "cardio:head-neck",
+        "cardiovascular:completion2-cerebral-arteries"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -232,7 +250,7 @@
         ],
         [
           0.037465200000000004,
-          1.53772,
+          1.57049,
           0.117548
         ]
       ]
@@ -268,12 +286,20 @@
         "bp3d:FMA3802",
         "bp3d:FMA3855",
         "bp3d:FMA74912",
-        "bp3d:FMA3895"
+        "bp3d:FMA3895",
+        "bp3d:FMA3818",
+        "bp3d:FMA3840",
+        "bp3d:FMA3847",
+        "bp3d:FMA3848",
+        "bp3d:FMA68109",
+        "bp3d:FMA14177"
       ],
       "kind": "region",
       "assetIds": [
         "cardio:heart",
-        "cardio:trunk"
+        "cardio:trunk",
+        "cardiovascular:completion2-coronary-arteries",
+        "cardiovascular:completion2-bronchial-arteries"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -381,7 +407,6 @@
         "bp3d:FMA43896",
         "bp3d:FMA43898",
         "bp3d:FMA20801",
-        "bp3d:FMA21422",
         "bp3d:FMA22507"
       ],
       "kind": "region",
@@ -396,7 +421,7 @@
       "explosionRegionId": "lower-limb-right",
       "bounds": [
         [
-          -0.121253,
+          -0.12054300000000001,
           -0.0413313,
           0.050347499999999996
         ],
@@ -421,7 +446,6 @@
         "bp3d:FMA43897",
         "bp3d:FMA43899",
         "bp3d:FMA20802",
-        "bp3d:FMA21423",
         "bp3d:FMA22508"
       ],
       "kind": "region",
@@ -441,7 +465,7 @@
           0.0503494
         ],
         [
-          0.12125100000000001,
+          0.120521,
           0.912336,
           0.152944
         ]
@@ -469,12 +493,12 @@
       "explosionRegionId": "head-neck",
       "bounds": [
         [
-          -0.03114,
-          1.3374100000000002,
-          0.111701
+          -0.13965,
+          1.2831199999999998,
+          0.0516802
         ],
         [
-          0.0309054,
+          0.13961500000000002,
           1.38174,
           0.122114
         ]
@@ -513,12 +537,15 @@
         "bp3d:FMA49911",
         "bp3d:FMA49913",
         "bp3d:FMA4706",
-        "bp3d:FMA4707"
+        "bp3d:FMA4707",
+        "bp3d:FMA4713",
+        "bp3d:FMA4714"
       ],
       "kind": "region",
       "assetIds": [
         "cardio:heart",
-        "cardio:trunk"
+        "cardio:trunk",
+        "cardiovascular:completion2-coronary-veins"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -6754,51 +6781,6 @@
       ]
     },
     {
-      "id": "bp3d:FMA21422",
-      "sourceId": "FMA21422",
-      "name": "Rama descendente de la arteria circunfleja femoral lateral derecha",
-      "anatomicalName": "Rama descendente de la arteria circunfleja femoral lateral derecha",
-      "latin": "Ramus descendens arteriae circumflexae femoris lateralis sinistrae",
-      "aliases": [
-        "Descending branch of right lateral circumflex femoral artery",
-        "FMA21422",
-        "FJ2057"
-      ],
-      "systemId": "cardiovascular",
-      "parentId": "cardio:arterial:lower-right",
-      "regionId": "cardio:arterial:lower-right",
-      "children": [],
-      "kind": "structure",
-      "assetIds": [
-        "cardiovascular:completion-femoral-branches-right"
-      ],
-      "meshNames": [
-        "bp3d_FMA21422_FJ2057"
-      ],
-      "family": "descending-lateral-circumflex",
-      "educationId": "completion:femoral-branches",
-      "side": "midline",
-      "anatomyType": "Arteria · trayecto disponible",
-      "relatedIds": [
-        "bp3d:FMA70249",
-        "bp3d:FMA24474"
-      ],
-      "cardioType": "Arteria · trayecto disponible",
-      "vascularClass": "arterial",
-      "bounds": [
-        [
-          -0.121253,
-          0.41125700000000004,
-          0.09131210000000001
-        ],
-        [
-          -0.0752153,
-          0.772983,
-          0.122364
-        ]
-      ]
-    },
-    {
       "id": "bp3d:FMA22507",
       "sourceId": "FMA22507",
       "name": "Arteria genicular descendente derecha",
@@ -6889,51 +6871,6 @@
       ]
     },
     {
-      "id": "bp3d:FMA21423",
-      "sourceId": "FMA21423",
-      "name": "Rama descendente de la arteria circunfleja femoral lateral izquierda",
-      "anatomicalName": "Rama descendente de la arteria circunfleja femoral lateral izquierda",
-      "latin": "Ramus descendens arteriae circumflexae femoris lateralis sinistrae",
-      "aliases": [
-        "Descending branch of left lateral circumflex femoral artery",
-        "FMA21423",
-        "FJ2063"
-      ],
-      "systemId": "cardiovascular",
-      "parentId": "cardio:arterial:lower-left",
-      "regionId": "cardio:arterial:lower-left",
-      "children": [],
-      "kind": "structure",
-      "assetIds": [
-        "cardiovascular:completion-femoral-branches-left"
-      ],
-      "meshNames": [
-        "bp3d_FMA21423_FJ2063"
-      ],
-      "family": "descending-lateral-circumflex",
-      "educationId": "completion:femoral-branches",
-      "side": "midline",
-      "anatomyType": "Arteria · trayecto disponible",
-      "relatedIds": [
-        "bp3d:FMA70250",
-        "bp3d:FMA24475"
-      ],
-      "cardioType": "Arteria · trayecto disponible",
-      "vascularClass": "arterial",
-      "bounds": [
-        [
-          0.0752162,
-          0.41126100000000004,
-          0.09131600000000001
-        ],
-        [
-          0.12125100000000001,
-          0.772985,
-          0.12235800000000001
-        ]
-      ]
-    },
-    {
       "id": "bp3d:FMA22508",
       "sourceId": "FMA22508",
       "name": "Arteria genicular descendente izquierda",
@@ -6975,6 +6912,735 @@
           0.0633074,
           0.482598,
           0.112134
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7265",
+      "sourceId": "FMA7265",
+      "name": "Cabeza anterolateral del músculo papilar lateral del ventrículo izquierdo",
+      "anatomicalName": "Cabeza anterolateral del músculo papilar lateral del ventrículo izquierdo",
+      "latin": "Caput anterolaterale musculi papillaris lateralis",
+      "aliases": [
+        "Anterolateral head of lateral papillary muscle of left ventricle",
+        "FMA7265",
+        "FJ2418",
+        "Cabeza anterolateral del músculo papilar lateral del ventrículo izquierdo",
+        "Caput anterolaterale musculi papillaris lateralis"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:heart",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardiovascular:completion2-papillary"
+      ],
+      "meshNames": [
+        "bp3d_FMA7265_FJ2418"
+      ],
+      "family": "completion2:anterolateral-head-of-lateral-papillary-muscle-of-ventricle",
+      "educationId": "completion2:anterolateral-head-of-lateral-papillary-muscle-of-ventricle",
+      "side": "midline",
+      "anatomyType": "Componente muscular cardíaco",
+      "relatedIds": [
+        "cardio:heart"
+      ],
+      "vascularClass": "heart",
+      "bounds": [
+        [
+          0.0315447,
+          1.19181,
+          0.124512
+        ],
+        [
+          0.0565892,
+          1.22465,
+          0.160032
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7260",
+      "sourceId": "FMA7260",
+      "name": "Músculo papilar anterior del ventrículo derecho",
+      "anatomicalName": "Músculo papilar anterior del ventrículo derecho",
+      "latin": "Musculus papillaris anterior",
+      "aliases": [
+        "Anterior papillary muscle of right ventricle",
+        "FMA7260",
+        "FJ2419",
+        "Músculo papilar anterior del ventrículo derecho",
+        "Musculus papillaris anterior"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:heart",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardiovascular:completion2-papillary"
+      ],
+      "meshNames": [
+        "bp3d_FMA7260_FJ2419"
+      ],
+      "family": "completion2:anterior-papillary-muscle-of-ventricle",
+      "educationId": "completion2:anterior-papillary-muscle-of-ventricle",
+      "side": "midline",
+      "anatomyType": "Componente muscular cardíaco",
+      "relatedIds": [
+        "cardio:heart"
+      ],
+      "vascularClass": "heart",
+      "bounds": [
+        [
+          0.0120583,
+          1.1798,
+          0.15113100000000002
+        ],
+        [
+          0.0471424,
+          1.20905,
+          0.17271
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7264",
+      "sourceId": "FMA7264",
+      "name": "Músculo papilar lateral del ventrículo izquierdo · porción disponible",
+      "anatomicalName": "Músculo papilar lateral del ventrículo izquierdo · porción disponible",
+      "latin": "Musculus papillaris lateralis",
+      "aliases": [
+        "Lateral papillary muscle of left ventricle",
+        "FMA7264",
+        "FJ2429",
+        "Músculo papilar lateral del ventrículo izquierdo · porción disponible",
+        "Musculus papillaris lateralis"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:heart",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardiovascular:completion2-papillary"
+      ],
+      "meshNames": [
+        "bp3d_FMA7264_FJ2429"
+      ],
+      "family": "completion2:lateral-papillary-muscle-of-ventricle",
+      "educationId": "completion2:lateral-papillary-muscle-of-ventricle",
+      "side": "midline",
+      "anatomyType": "Componente muscular cardíaco",
+      "relatedIds": [
+        "cardio:heart"
+      ],
+      "vascularClass": "heart",
+      "bounds": [
+        [
+          0.0464648,
+          1.1884400000000002,
+          0.104767
+        ],
+        [
+          0.0745404,
+          1.2182600000000001,
+          0.14692
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7261",
+      "sourceId": "FMA7261",
+      "name": "Músculo papilar posterior del ventrículo derecho",
+      "anatomicalName": "Músculo papilar posterior del ventrículo derecho",
+      "latin": "Musculus papillaris posterior",
+      "aliases": [
+        "Posterior papillary muscle of right ventricle",
+        "FMA7261",
+        "FJ2430",
+        "Músculo papilar posterior del ventrículo derecho",
+        "Musculus papillaris posterior"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:heart",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardiovascular:completion2-papillary"
+      ],
+      "meshNames": [
+        "bp3d_FMA7261_FJ2430"
+      ],
+      "family": "completion2:posterior-papillary-muscle-of-ventricle",
+      "educationId": "completion2:posterior-papillary-muscle-of-ventricle",
+      "side": "midline",
+      "anatomyType": "Componente muscular cardíaco",
+      "relatedIds": [
+        "cardio:heart"
+      ],
+      "vascularClass": "heart",
+      "bounds": [
+        [
+          0.00716454,
+          1.1784400000000002,
+          0.131886
+        ],
+        [
+          0.0367766,
+          1.19279,
+          0.160418
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA7262",
+      "sourceId": "FMA7262",
+      "name": "Músculo papilar septal del ventrículo derecho",
+      "anatomicalName": "Músculo papilar septal del ventrículo derecho",
+      "latin": "Musculus papillaris septalis",
+      "aliases": [
+        "Septal papillary muscle of right ventricle",
+        "FMA7262",
+        "FJ2437",
+        "Músculo papilar septal del ventrículo derecho",
+        "Musculus papillaris septalis"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:heart",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "cardiovascular:completion2-papillary"
+      ],
+      "meshNames": [
+        "bp3d_FMA7262_FJ2437"
+      ],
+      "family": "completion2:septal-papillary-muscle-of-ventricle",
+      "educationId": "completion2:septal-papillary-muscle-of-ventricle",
+      "side": "midline",
+      "anatomyType": "Componente muscular cardíaco",
+      "relatedIds": [
+        "cardio:heart"
+      ],
+      "vascularClass": "heart",
+      "bounds": [
+        [
+          0.0128912,
+          1.21346,
+          0.128195
+        ],
+        [
+          0.032174100000000004,
+          1.24017,
+          0.143599
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3818",
+      "sourceId": "FMA3818",
+      "name": "Rama marginal de la arteria coronaria derecha · porciones disponibles",
+      "anatomicalName": "Rama marginal de la arteria coronaria derecha · porciones disponibles",
+      "latin": "Ramus marginalis dexter",
+      "aliases": [
+        "Marginal branch of right coronary artery",
+        "FMA3818",
+        "FJ2667",
+        "FJ2668",
+        "FJ2672",
+        "FJ2674",
+        "FJ2675",
+        "Rama marginal de la arteria coronaria derecha · porciones disponibles",
+        "Ramus marginalis dexter"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:trunk",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion2-coronary-arteries"
+      ],
+      "meshNames": [
+        "bp3d_FMA3818_FJ2667",
+        "bp3d_FMA3818_FJ2668",
+        "bp3d_FMA3818_FJ2672",
+        "bp3d_FMA3818_FJ2674",
+        "bp3d_FMA3818_FJ2675"
+      ],
+      "family": "completion2:marginal-branch-of-coronary-artery",
+      "educationId": "completion2:marginal-branch-of-coronary-artery",
+      "side": "midline",
+      "anatomyType": "Arteria · porciones disponibles",
+      "relatedIds": [
+        "cardio:heart"
+      ],
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          -0.0142896,
+          1.1943800000000002,
+          0.15858000000000003
+        ],
+        [
+          0.035717599999999995,
+          1.22011,
+          0.173963
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4713",
+      "sourceId": "FMA4713",
+      "name": "Vena cardíaca media · porciones disponibles",
+      "anatomicalName": "Vena cardíaca media · porciones disponibles",
+      "latin": "Vena cardiaca media",
+      "aliases": [
+        "Middle cardiac vein",
+        "FMA4713",
+        "FJ2678",
+        "FJ2679",
+        "FJ2680",
+        "FJ2681",
+        "FJ2682",
+        "FJ2683",
+        "FJ2684",
+        "FJ2685",
+        "FJ2686",
+        "FJ2687",
+        "FJ2688",
+        "FJ2689",
+        "FJ2690",
+        "FJ2691",
+        "Vena cardíaca media · porciones disponibles",
+        "Vena cardiaca media"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:venous:trunk",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion2-coronary-veins"
+      ],
+      "meshNames": [
+        "bp3d_FMA4713_FJ2678",
+        "bp3d_FMA4713_FJ2679",
+        "bp3d_FMA4713_FJ2680",
+        "bp3d_FMA4713_FJ2681",
+        "bp3d_FMA4713_FJ2682",
+        "bp3d_FMA4713_FJ2683",
+        "bp3d_FMA4713_FJ2684",
+        "bp3d_FMA4713_FJ2685",
+        "bp3d_FMA4713_FJ2686",
+        "bp3d_FMA4713_FJ2687",
+        "bp3d_FMA4713_FJ2688",
+        "bp3d_FMA4713_FJ2689",
+        "bp3d_FMA4713_FJ2690",
+        "bp3d_FMA4713_FJ2691"
+      ],
+      "family": "completion2:middle-cardiac-vein",
+      "educationId": "completion2:middle-cardiac-vein",
+      "side": "midline",
+      "anatomyType": "Vena · porciones disponibles",
+      "relatedIds": [
+        "cardio:heart"
+      ],
+      "vascularClass": "venous",
+      "bounds": [
+        [
+          0.0016033100000000002,
+          1.17452,
+          0.108003
+        ],
+        [
+          0.0705967,
+          1.2073900000000002,
+          0.15652000000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3840",
+      "sourceId": "FMA3840",
+      "name": "Rama interventricular posterior de la coronaria derecha · porciones disponibles",
+      "anatomicalName": "Rama interventricular posterior de la coronaria derecha · porciones disponibles",
+      "latin": "Ramus interventricularis posterior",
+      "aliases": [
+        "Posterior interventricular branch of right coronary artery",
+        "FMA3840",
+        "FJ2692",
+        "FJ2693",
+        "FJ2694",
+        "FJ2695",
+        "FJ2696",
+        "FJ2697",
+        "FJ2698",
+        "FJ2699",
+        "FJ2700",
+        "Rama interventricular posterior de la coronaria derecha · porciones disponibles",
+        "Ramus interventricularis posterior"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:trunk",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion2-coronary-arteries"
+      ],
+      "meshNames": [
+        "bp3d_FMA3840_FJ2692",
+        "bp3d_FMA3840_FJ2693",
+        "bp3d_FMA3840_FJ2694",
+        "bp3d_FMA3840_FJ2695",
+        "bp3d_FMA3840_FJ2696",
+        "bp3d_FMA3840_FJ2697",
+        "bp3d_FMA3840_FJ2698",
+        "bp3d_FMA3840_FJ2699",
+        "bp3d_FMA3840_FJ2700"
+      ],
+      "family": "completion2:posterior-interventricular-branch-of-coronary-artery",
+      "educationId": "completion2:posterior-interventricular-branch-of-coronary-artery",
+      "side": "midline",
+      "anatomyType": "Arteria · porciones disponibles",
+      "relatedIds": [
+        "cardio:heart"
+      ],
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          -0.000896807,
+          1.1749200000000002,
+          0.11758700000000001
+        ],
+        [
+          0.06687850000000001,
+          1.1914,
+          0.15587
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA4714",
+      "sourceId": "FMA4714",
+      "name": "Vena cardíaca menor · porciones disponibles",
+      "anatomicalName": "Vena cardíaca menor · porciones disponibles",
+      "latin": "Vena cardiaca parva",
+      "aliases": [
+        "Small cardiac vein",
+        "FMA4714",
+        "FJ2724",
+        "FJ2731",
+        "Vena cardíaca menor · porciones disponibles",
+        "Vena cardiaca parva"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:venous:trunk",
+      "regionId": "cardio:venous:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion2-coronary-veins"
+      ],
+      "meshNames": [
+        "bp3d_FMA4714_FJ2724",
+        "bp3d_FMA4714_FJ2731"
+      ],
+      "family": "completion2:small-cardiac-vein",
+      "educationId": "completion2:small-cardiac-vein",
+      "side": "midline",
+      "anatomyType": "Vena · porciones disponibles",
+      "relatedIds": [
+        "cardio:heart"
+      ],
+      "vascularClass": "venous",
+      "bounds": [
+        [
+          -0.0208401,
+          1.1865999999999999,
+          0.114357
+        ],
+        [
+          0.0059949,
+          1.24113,
+          0.16043100000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3847",
+      "sourceId": "FMA3847",
+      "name": "Primera rama septal de la arteria interventricular posterior derecha",
+      "anatomicalName": "Primera rama septal de la arteria interventricular posterior derecha",
+      "latin": "Ramus septalis",
+      "aliases": [
+        "First septal branch of right posterior interventricular artery",
+        "FMA3847",
+        "FJ2735",
+        "Primera rama septal de la arteria interventricular posterior derecha",
+        "Ramus septalis"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:trunk",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion2-coronary-arteries"
+      ],
+      "meshNames": [
+        "bp3d_FMA3847_FJ2735"
+      ],
+      "family": "completion2:first-septal-branch-of-posterior-interventricular-artery",
+      "educationId": "completion2:first-septal-branch-of-posterior-interventricular-artery",
+      "side": "midline",
+      "anatomyType": "Arteria · porciones disponibles",
+      "relatedIds": [
+        "cardio:heart"
+      ],
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          0.0092823,
+          1.18296,
+          0.118672
+        ],
+        [
+          0.014900600000000002,
+          1.19986,
+          0.126334
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA3848",
+      "sourceId": "FMA3848",
+      "name": "Segunda rama septal de la arteria interventricular posterior derecha",
+      "anatomicalName": "Segunda rama septal de la arteria interventricular posterior derecha",
+      "latin": "Ramus septalis",
+      "aliases": [
+        "Second septal branch of right posterior interventricular artery",
+        "FMA3848",
+        "FJ2736",
+        "Segunda rama septal de la arteria interventricular posterior derecha",
+        "Ramus septalis"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:trunk",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion2-coronary-arteries"
+      ],
+      "meshNames": [
+        "bp3d_FMA3848_FJ2736"
+      ],
+      "family": "completion2:second-septal-branch-of-posterior-interventricular-artery",
+      "educationId": "completion2:second-septal-branch-of-posterior-interventricular-artery",
+      "side": "midline",
+      "anatomyType": "Arteria · porciones disponibles",
+      "relatedIds": [
+        "cardio:heart"
+      ],
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          0.022674,
+          1.17908,
+          0.12838300000000002
+        ],
+        [
+          0.030008700000000003,
+          1.1961,
+          0.13184600000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA50146",
+      "sourceId": "FMA50146",
+      "name": "Rama de la coroidea anterior para el brazo posterior de la cápsula interna · lado derecho",
+      "anatomicalName": "Rama de la coroidea anterior para el brazo posterior de la cápsula interna",
+      "latin": "Ramus capsularis arteriae choroideae anterioris",
+      "aliases": [
+        "Branch of right anterior choroidal artery to posterior limb of right internal capsule",
+        "FMA50146",
+        "FJ1674",
+        "Rama de la coroidea anterior para el brazo posterior de la cápsula interna",
+        "Ramus capsularis arteriae choroideae anterioris"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:head-neck",
+      "regionId": "cardio:arterial:head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion2-cerebral-arteries"
+      ],
+      "meshNames": [
+        "bp3d_FMA50146_FJ1674"
+      ],
+      "family": "completion2:branch-of-anterior-choroidal-artery-to-posterior-limb-of-internal-capsule",
+      "educationId": "completion2:branch-of-anterior-choroidal-artery-to-posterior-limb-of-internal-capsule",
+      "side": "right",
+      "anatomyType": "Arteria · porciones disponibles",
+      "relatedIds": [
+        "nervous:brain"
+      ],
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          -0.0314861,
+          1.53854,
+          0.074131
+        ],
+        [
+          -0.0194128,
+          1.57049,
+          0.0906504
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA50147",
+      "sourceId": "FMA50147",
+      "name": "Rama de la coroidea anterior para el brazo posterior de la cápsula interna · lado izquierdo",
+      "anatomicalName": "Rama de la coroidea anterior para el brazo posterior de la cápsula interna",
+      "latin": "Ramus capsularis arteriae choroideae anterioris",
+      "aliases": [
+        "Branch of left anterior choroidal artery to posterior limb of left internal capsule",
+        "FMA50147",
+        "FJ1674M",
+        "Rama de la coroidea anterior para el brazo posterior de la cápsula interna",
+        "Ramus capsularis arteriae choroideae anterioris"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:head-neck",
+      "regionId": "cardio:arterial:head-neck",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion2-cerebral-arteries"
+      ],
+      "meshNames": [
+        "bp3d_FMA50147_FJ1674M"
+      ],
+      "family": "completion2:branch-of-anterior-choroidal-artery-to-posterior-limb-of-internal-capsule",
+      "educationId": "completion2:branch-of-anterior-choroidal-artery-to-posterior-limb-of-internal-capsule",
+      "side": "left",
+      "anatomyType": "Arteria · porciones disponibles",
+      "relatedIds": [
+        "nervous:brain"
+      ],
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          0.0194128,
+          1.53854,
+          0.074131
+        ],
+        [
+          0.0314861,
+          1.57049,
+          0.0906504
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA68109",
+      "sourceId": "FMA68109",
+      "name": "Arteria bronquial · porción disponible",
+      "anatomicalName": "Arteria bronquial · porción disponible",
+      "latin": "Arteria bronchialis",
+      "aliases": [
+        "Bronchial artery",
+        "FMA68109",
+        "FJ1933",
+        "Arteria bronquial · porción disponible",
+        "Arteria bronchialis"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:trunk",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion2-bronchial-arteries"
+      ],
+      "meshNames": [
+        "bp3d_FMA68109_FJ1933"
+      ],
+      "family": "completion2:bronchial-artery",
+      "educationId": "completion2:bronchial-artery",
+      "side": "midline",
+      "anatomyType": "Arteria · porciones disponibles",
+      "relatedIds": [
+        "resp:lower",
+        "cardio:aorta"
+      ],
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          -0.049386400000000004,
+          1.28142,
+          0.0736218
+        ],
+        [
+          0.0127412,
+          1.31942,
+          0.0951026
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA14177",
+      "sourceId": "FMA14177",
+      "name": "Rama bronquial del arco aórtico",
+      "anatomicalName": "Rama bronquial del arco aórtico",
+      "latin": "Ramus bronchialis arcus aortae",
+      "aliases": [
+        "Bronchial branch of arch of aorta",
+        "FMA14177",
+        "FJ3418",
+        "Rama bronquial del arco aórtico",
+        "Ramus bronchialis arcus aortae"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:trunk",
+      "regionId": "cardio:arterial:trunk",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion2-bronchial-arteries"
+      ],
+      "meshNames": [
+        "bp3d_FMA14177_FJ3418"
+      ],
+      "family": "completion2:bronchial-branch-of-arch-of-aorta",
+      "educationId": "completion2:bronchial-branch-of-arch-of-aorta",
+      "side": "midline",
+      "anatomyType": "Arteria · porciones disponibles",
+      "relatedIds": [
+        "resp:lower",
+        "cardio:aorta"
+      ],
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          -0.0296218,
+          1.26174,
+          0.07007089999999999
+        ],
+        [
+          0.0173324,
+          1.3030899999999999,
+          0.0790958
         ]
       ]
     }
@@ -7153,15 +7819,16 @@
       "path": "models/anatomy/cardiovascular/completion-femoral-branches-right.glb",
       "systemId": "cardiovascular",
       "regionId": "cardio:arterial:lower-right",
+      "label": "Ramas femorales derechas",
       "frameId": "bodyparts3d-4.0-male",
       "defaultEnabled": false,
-      "bytes": 104524,
-      "sha256": "a4b9443f83af07fe891f34063b56787b5df36a51351cc42373f94a93e1508456",
-      "meshCount": 3,
-      "triangles": 12880,
+      "bytes": 63572,
+      "sha256": "227ddff2d0911d3340fd49b6c054ec8f7c160f7c971a8542eaa7444b86f21a8e",
+      "meshCount": 2,
+      "triangles": 7646,
       "bounds": [
         [
-          -0.121253,
+          -0.12054300000000001,
           0.360248,
           0.061512500000000005
         ],
@@ -7171,20 +7838,20 @@
           0.124624
         ]
       ],
-      "provenanceId": "bodyparts3d-4.0-completion-wave1",
-      "label": "Ramas femorales derechas"
+      "provenanceId": "bodyparts3d-4.0-completion-wave1"
     },
     {
       "id": "cardiovascular:completion-femoral-branches-left",
       "path": "models/anatomy/cardiovascular/completion-femoral-branches-left.glb",
       "systemId": "cardiovascular",
       "regionId": "cardio:arterial:lower-left",
+      "label": "Ramas femorales izquierdas",
       "frameId": "bodyparts3d-4.0-male",
       "defaultEnabled": false,
-      "bytes": 104144,
-      "sha256": "1e0baf7432eb9f4f57c0238874d0efe022d7e7a926f7019f9e53ebc05d2f8b5a",
-      "meshCount": 3,
-      "triangles": 12862,
+      "bytes": 63152,
+      "sha256": "48bc1680d7a71b2689eebdcd0c22c19a7ca23847771e36f3b26679ffe5ec2b56",
+      "meshCount": 2,
+      "triangles": 7632,
       "bounds": [
         [
           0.032847900000000006,
@@ -7192,13 +7859,142 @@
           0.061526000000000004
         ],
         [
-          0.12125100000000001,
+          0.120521,
           0.794804,
           0.124615
         ]
       ],
-      "provenanceId": "bodyparts3d-4.0-completion-wave1",
-      "label": "Ramas femorales izquierdas"
+      "provenanceId": "bodyparts3d-4.0-completion-wave1"
+    },
+    {
+      "id": "cardiovascular:completion2-papillary",
+      "label": "Músculos papilares disponibles",
+      "path": "models/anatomy/cardiovascular/completion2-papillary.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 47796,
+      "sha256": "4f975509e99d60e771ff2c591c0889805941e11d42387811f63cfa65c61d62e0",
+      "meshCount": 5,
+      "triangles": 4014,
+      "bounds": [
+        [
+          0.00716454,
+          1.1784400000000002,
+          0.104767
+        ],
+        [
+          0.0745404,
+          1.24017,
+          0.17271
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
+    },
+    {
+      "id": "cardiovascular:completion2-coronary-arteries",
+      "label": "Ramas coronarias disponibles",
+      "path": "models/anatomy/cardiovascular/completion2-coronary-arteries.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 85504,
+      "sha256": "4af4eff5f7c198c9387e7e90f6b9d510531188de8aacf11489545934f5b88eac",
+      "meshCount": 16,
+      "triangles": 5972,
+      "bounds": [
+        [
+          -0.0142896,
+          1.1749200000000002,
+          0.11758700000000001
+        ],
+        [
+          0.06687850000000001,
+          1.22011,
+          0.173963
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
+    },
+    {
+      "id": "cardiovascular:completion2-coronary-veins",
+      "label": "Venas cardíacas disponibles",
+      "path": "models/anatomy/cardiovascular/completion2-coronary-veins.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:venous:trunk",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 85772,
+      "sha256": "0f0d74c4b1653dfaf44aac27e68326c6cde806ef912634ea4a92321ee3fb3d34",
+      "meshCount": 16,
+      "triangles": 6090,
+      "bounds": [
+        [
+          -0.0208401,
+          1.17452,
+          0.108003
+        ],
+        [
+          0.0705967,
+          1.24113,
+          0.16043100000000002
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
+    },
+    {
+      "id": "cardiovascular:completion2-cerebral-arteries",
+      "label": "Ramas coroideas disponibles",
+      "path": "models/anatomy/cardiovascular/completion2-cerebral-arteries.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:head-neck",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 14588,
+      "sha256": "ed2e8a979cd6e8bcca7297e6deec3d0c0748cca766d3f22199611d9163ed258c",
+      "meshCount": 2,
+      "triangles": 692,
+      "bounds": [
+        [
+          -0.0314861,
+          1.53854,
+          0.074131
+        ],
+        [
+          0.0314861,
+          1.57049,
+          0.0906504
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
+    },
+    {
+      "id": "cardiovascular:completion2-bronchial-arteries",
+      "label": "Arterias bronquiales disponibles",
+      "path": "models/anatomy/cardiovascular/completion2-bronchial-arteries.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:trunk",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 29460,
+      "sha256": "71b4f34147f687ebfd013380d341c8355ce2c79463cb779a7e90d5be98b9fb72",
+      "meshCount": 2,
+      "triangles": 2482,
+      "bounds": [
+        [
+          -0.049386400000000004,
+          1.26174,
+          0.07007089999999999
+        ],
+        [
+          0.0173324,
+          1.31942,
+          0.0951026
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
     }
   ],
   "provenance": [
@@ -7228,7 +8024,23 @@
       "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
       "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
       "modifications": [
-        "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps.",
+        "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
+        "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
+        "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
+        "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
+      ]
+    },
+    {
+      "id": "bodyparts3d-4.0-completion-wave2",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
         "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
         "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
         "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
@@ -7237,8 +8049,8 @@
   ],
   "coverage": {
     "title": "Cobertura cardiovascular macroscópica disponible",
-    "structures": 116,
-    "meshes": 168,
+    "structures": 124,
+    "meshes": 207,
     "note": "110 unidades cardiovasculares y 30 componentes; corazón corporal y vasos principales de cabeza/cuello, tronco y extremidades.",
     "limitations": [
       "Cobertura parcial: sin carótidas externas, yugulares externas, troncos femorales profundos ni arterias fibulares inequívocos en esta selección.",
@@ -7246,7 +8058,8 @@
       "Red vascular segmentada de origen; no se fabrican tubos para cerrar discontinuidades ni se altera el diámetro.",
       "La nomenclatura de valvas semilunares se conserva con advertencia de fuente; no se equipara automáticamente a cúspides coronarias.",
       "El corazón HRA detallado sigue independiente; no se superpone su frame al corporal.",
-      "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps."
+      "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
+      "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa."
     ]
   },
   "education": {
@@ -7263,6 +8076,230 @@
         {
           "title": "BodyParts3D · identidad y representación",
           "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion2:bronchial-branch-of-arch-of-aorta": {
+      "description": "Porción de un trayecto vascular.",
+      "function": "Participa en la irrigación de tejidos bronquiales.",
+      "relations": "En relación con aorta y bronquios.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+          "title": "OpenStax · Trayectos circulatorios"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:marginal-branch-of-coronary-artery": {
+      "description": "Porción de un trayecto vascular.",
+      "function": "Distribuye sangre al miocardio de su territorio.",
+      "relations": "En relación con la superficie y paredes del corazón.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "title": "OpenStax · Anatomía cardíaca"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:posterior-papillary-muscle-of-ventricle": {
+      "description": "Porción muscular que se proyecta hacia una cavidad ventricular.",
+      "function": "Contribuye a mantener la tensión de las cuerdas tendinosas durante la contracción ventricular.",
+      "relations": "En el interior ventricular, relacionada con válvulas y cuerdas tendinosas.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "title": "OpenStax · Anatomía cardíaca"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:lateral-papillary-muscle-of-ventricle": {
+      "description": "Porción muscular que se proyecta hacia una cavidad ventricular.",
+      "function": "Contribuye a mantener la tensión de las cuerdas tendinosas durante la contracción ventricular.",
+      "relations": "En el interior ventricular, relacionada con válvulas y cuerdas tendinosas.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "title": "OpenStax · Anatomía cardíaca"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:posterior-interventricular-branch-of-coronary-artery": {
+      "description": "Porción de un trayecto vascular.",
+      "function": "Distribuye sangre al miocardio de su territorio.",
+      "relations": "En relación con la superficie y paredes del corazón.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "title": "OpenStax · Anatomía cardíaca"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:septal-papillary-muscle-of-ventricle": {
+      "description": "Porción muscular que se proyecta hacia una cavidad ventricular.",
+      "function": "Contribuye a mantener la tensión de las cuerdas tendinosas durante la contracción ventricular.",
+      "relations": "En el interior ventricular, relacionada con válvulas y cuerdas tendinosas.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "title": "OpenStax · Anatomía cardíaca"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:second-septal-branch-of-posterior-interventricular-artery": {
+      "description": "Porción de un trayecto vascular.",
+      "function": "Distribuye sangre hacia el tabique interventricular.",
+      "relations": "En relación con la superficie y paredes del corazón.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "title": "OpenStax · Anatomía cardíaca"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:first-septal-branch-of-posterior-interventricular-artery": {
+      "description": "Porción de un trayecto vascular.",
+      "function": "Distribuye sangre hacia el tabique interventricular.",
+      "relations": "En relación con la superficie y paredes del corazón.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "title": "OpenStax · Anatomía cardíaca"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:bronchial-artery": {
+      "description": "Porción de un trayecto vascular.",
+      "function": "Participa en la irrigación de tejidos bronquiales.",
+      "relations": "En relación con aorta y bronquios.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+          "title": "OpenStax · Trayectos circulatorios"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:small-cardiac-vein": {
+      "description": "Porción de un trayecto vascular.",
+      "function": "Participa en el drenaje venoso del corazón.",
+      "relations": "En relación con la superficie y paredes del corazón.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "title": "OpenStax · Anatomía cardíaca"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:middle-cardiac-vein": {
+      "description": "Porción de un trayecto vascular.",
+      "function": "Participa en el drenaje venoso del corazón.",
+      "relations": "En relación con la superficie y paredes del corazón.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "title": "OpenStax · Anatomía cardíaca"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:branch-of-anterior-choroidal-artery-to-posterior-limb-of-internal-capsule": {
+      "description": "Porción de un trayecto vascular.",
+      "function": "Conduce sangre hacia su territorio encefálico.",
+      "relations": "En relación con la circulación coroidea anterior y la cápsula interna.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+          "title": "OpenStax · Trayectos circulatorios"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:anterolateral-head-of-lateral-papillary-muscle-of-ventricle": {
+      "description": "Porción muscular que se proyecta hacia una cavidad ventricular.",
+      "function": "Contribuye a mantener la tensión de las cuerdas tendinosas durante la contracción ventricular.",
+      "relations": "En el interior ventricular, relacionada con válvulas y cuerdas tendinosas.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "title": "OpenStax · Anatomía cardíaca"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:anterior-papillary-muscle-of-ventricle": {
+      "description": "Porción muscular que se proyecta hacia una cavidad ventricular.",
+      "function": "Contribuye a mantener la tensión de las cuerdas tendinosas durante la contracción ventricular.",
+      "relations": "En el interior ventricular, relacionada con válvulas y cuerdas tendinosas.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No demuestra continuidad vascular completa ni añade ramas por interpolación.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "title": "OpenStax · Anatomía cardíaca"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
         }
       ]
     }

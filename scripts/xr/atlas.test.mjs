@@ -9,6 +9,7 @@ import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { GestureController } from '../../src/features/xr/gestures.ts';
 import { HandInteraction } from '../../src/features/xr/handInteraction.ts';
+import { preCompletionCatalog } from '../anatomy/pre-completion-catalog.mjs';
 
 const out = path.resolve('.cache/xr-atlas-tests');
 const compile = atlasTestCompiler(out);
@@ -20,7 +21,7 @@ const { AtlasAssetManager, createAssetLoader } = await import(pathToFileURL(path
 const { composeBodyCatalog } = await import(pathToFileURL(path.join(out, 'features/anatomy/atlas/body-catalog.mjs')));
 const { createExplosionOffsets, explosionTarget } = await import(pathToFileURL(path.join(out, 'features/anatomy/atlas/explosion.mjs')));
 const systems = ['skeletal', 'muscular', 'cardiovascular'];
-const catalogs = Object.fromEntries(await Promise.all(systems.map(async id => [id, JSON.parse(await readFile(`public/models/anatomy/${id}/catalog.json`, 'utf8'))])));
+const catalogs = Object.fromEntries(await Promise.all(systems.map(async id => [id, preCompletionCatalog(JSON.parse(await readFile(`public/models/anatomy/${id}/catalog.json`, 'utf8')))])));
 const catalog = composeBodyCatalog(catalogs.skeletal, catalogs.muscular, undefined, catalogs.cardiovascular);
 const originalCatalogs = JSON.stringify(catalogs);
 globalThis.window = { location: { origin: 'http://xr-test.local' } };

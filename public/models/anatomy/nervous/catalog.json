@@ -39,7 +39,9 @@
         "nervous:upper-left",
         "nervous:lower-right",
         "nervous:lower-left",
-        "nervous:completion-tentorium"
+        "nervous:completion-tentorium",
+        "nervous:completion2-deep-brain",
+        "nervous:completion2-ventricles"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -75,7 +77,9 @@
       "kind": "division",
       "assetIds": [
         "nervous:cns",
-        "nervous:completion-tentorium"
+        "nervous:completion-tentorium",
+        "nervous:completion2-deep-brain",
+        "nervous:completion2-ventricles"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -113,12 +117,19 @@
         "nervous:diencephalon",
         "nervous:brainstem",
         "bp3d:FMA67944",
-        "bp3d:FMA83966"
+        "bp3d:FMA83966",
+        "bp3d:FMA78454",
+        "bp3d:FMA78469",
+        "bp3d:FMA78467",
+        "bp3d:FMA78450",
+        "bp3d:FMA78449"
       ],
       "kind": "region",
       "assetIds": [
         "nervous:cns",
-        "nervous:completion-tentorium"
+        "nervous:completion-tentorium",
+        "nervous:completion2-deep-brain",
+        "nervous:completion2-ventricles"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -184,11 +195,18 @@
         "bp3d:FMA72672",
         "bp3d:FMA72671",
         "bp3d:FMA72668",
-        "bp3d:FMA72667"
+        "bp3d:FMA72667",
+        "bp3d:FMA72827",
+        "bp3d:FMA72831",
+        "bp3d:FMA72829",
+        "bp3d:FMA72826",
+        "bp3d:FMA72830",
+        "bp3d:FMA72828"
       ],
       "kind": "region",
       "assetIds": [
-        "nervous:cns"
+        "nervous:cns",
+        "nervous:completion2-deep-brain"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -219,11 +237,14 @@
       "explosionRegionId": "head-neck",
       "children": [
         "bp3d:FMA62008",
-        "bp3d:FMA62032"
+        "bp3d:FMA62032",
+        "bp3d:FMA258716",
+        "bp3d:FMA258714"
       ],
       "kind": "region",
       "assetIds": [
-        "nervous:cns"
+        "nervous:cns",
+        "nervous:completion2-deep-brain"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -233,13 +254,13 @@
       "parentId": "nervous:brain",
       "bounds": [
         [
-          -0.00924961,
+          -0.0246054,
           1.53212,
-          0.0669468
+          0.0618068
         ],
         [
-          0.00793961,
-          1.5521,
+          0.0233736,
+          1.56575,
           0.11017700000000001
         ]
       ]
@@ -552,7 +573,7 @@
       "parentId": "nervous:cerebrum",
       "bounds": [
         [
-          0.000041231200000000006,
+          4.1231200000000006e-05,
           1.53058,
           0.0307274
         ],
@@ -2553,7 +2574,7 @@
       "parentId": "nervous:optic",
       "bounds": [
         [
-          -0.00000264154,
+          -2.64154e-06,
           1.51828,
           0.10214100000000001
         ],
@@ -5970,6 +5991,589 @@
           0.0932923
         ]
       ]
+    },
+    {
+      "id": "bp3d:FMA78454",
+      "sourceId": "FMA78454",
+      "name": "Tercer ventrículo",
+      "anatomicalName": "Tercer ventrículo",
+      "latin": "Ventriculus tertius",
+      "aliases": [
+        "Third ventricle",
+        "FMA78454",
+        "FJ1730",
+        "Tercer ventrículo",
+        "Ventriculus tertius"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:brain",
+      "regionId": "nervous:brain",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ventricles"
+      ],
+      "meshNames": [
+        "bp3d_FMA78454_FJ1730"
+      ],
+      "family": "completion2:third-ventricle",
+      "educationId": "completion2:third-ventricle",
+      "side": "midline",
+      "anatomyType": "Espacio ventricular",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0045601,
+          1.53758,
+          0.0650499
+        ],
+        [
+          0.00320519,
+          1.5606900000000001,
+          0.105155
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA78469",
+      "sourceId": "FMA78469",
+      "name": "Cuarto ventrículo",
+      "anatomicalName": "Cuarto ventrículo",
+      "latin": "Ventriculus quartus",
+      "aliases": [
+        "Fourth ventricle",
+        "FMA78469",
+        "FJ1731",
+        "Cuarto ventrículo",
+        "Ventriculus quartus"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:brain",
+      "regionId": "nervous:brain",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ventricles"
+      ],
+      "meshNames": [
+        "bp3d_FMA78469_FJ1731"
+      ],
+      "family": "completion2:fourth-ventricle",
+      "educationId": "completion2:fourth-ventricle",
+      "side": "midline",
+      "anatomyType": "Espacio ventricular",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.014790900000000001,
+          1.49111,
+          0.0513202
+        ],
+        [
+          0.013482,
+          1.52884,
+          0.0747731
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA78467",
+      "sourceId": "FMA78467",
+      "name": "Acueducto cerebral",
+      "anatomicalName": "Acueducto cerebral",
+      "latin": "Aqueductus mesencephali",
+      "aliases": [
+        "Cerebral aqueduct",
+        "FMA78467",
+        "FJ1738",
+        "Acueducto cerebral",
+        "Aqueductus mesencephali"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:brain",
+      "regionId": "nervous:brain",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ventricles"
+      ],
+      "meshNames": [
+        "bp3d_FMA78467_FJ1738"
+      ],
+      "family": "completion2:cerebral-aqueduct",
+      "educationId": "completion2:cerebral-aqueduct",
+      "side": "midline",
+      "anatomyType": "Espacio ventricular",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.00217433,
+          1.52874,
+          0.0723294
+        ],
+        [
+          0.00102308,
+          1.54636,
+          0.0788331
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72827",
+      "sourceId": "FMA72827",
+      "name": "Núcleo caudado · lado izquierdo",
+      "anatomicalName": "Núcleo caudado",
+      "latin": "Nucleus caudatus",
+      "aliases": [
+        "Left caudate nucleus",
+        "FMA72827",
+        "FJ1754",
+        "Núcleo caudado",
+        "Nucleus caudatus"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:cerebrum",
+      "regionId": "nervous:cerebrum",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-deep-brain"
+      ],
+      "meshNames": [
+        "bp3d_FMA72827_FJ1754"
+      ],
+      "family": "completion2:caudate-nucleus",
+      "educationId": "completion2:caudate-nucleus",
+      "side": "left",
+      "anatomyType": "Región de sustancia gris",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.00190331,
+          1.54026,
+          0.0603566
+        ],
+        [
+          0.0336849,
+          1.57732,
+          0.123942
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72831",
+      "sourceId": "FMA72831",
+      "name": "Globo pálido · lado izquierdo",
+      "anatomicalName": "Globo pálido",
+      "latin": "Globus pallidus",
+      "aliases": [
+        "Left globus pallidus",
+        "FMA72831",
+        "FJ1757",
+        "Globo pálido",
+        "Globus pallidus"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:cerebrum",
+      "regionId": "nervous:cerebrum",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-deep-brain"
+      ],
+      "meshNames": [
+        "bp3d_FMA72831_FJ1757"
+      ],
+      "family": "completion2:globus-pallidus",
+      "educationId": "completion2:globus-pallidus",
+      "side": "left",
+      "anatomyType": "Región de sustancia gris",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0122833,
+          1.54631,
+          0.08022280000000001
+        ],
+        [
+          0.0290216,
+          1.56361,
+          0.109502
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA78450",
+      "sourceId": "FMA78450",
+      "name": "Ventrículo lateral · lado izquierdo",
+      "anatomicalName": "Ventrículo lateral",
+      "latin": "Ventriculus lateralis",
+      "aliases": [
+        "Left lateral ventricle",
+        "FMA78450",
+        "FJ1767",
+        "Ventrículo lateral",
+        "Ventriculus lateralis"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:brain",
+      "regionId": "nervous:brain",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ventricles"
+      ],
+      "meshNames": [
+        "bp3d_FMA78450_FJ1767"
+      ],
+      "family": "completion2:lateral-ventricle",
+      "educationId": "completion2:lateral-ventricle",
+      "side": "left",
+      "anatomyType": "Espacio ventricular",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.00044720500000000005,
+          1.53031,
+          0.0176094
+        ],
+        [
+          0.0380975,
+          1.57934,
+          0.12694
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72829",
+      "sourceId": "FMA72829",
+      "name": "Putamen · lado izquierdo",
+      "anatomicalName": "Putamen",
+      "latin": "Putamen",
+      "aliases": [
+        "Left putamen",
+        "FMA72829",
+        "FJ1776",
+        "Putamen"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:cerebrum",
+      "regionId": "nervous:cerebrum",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-deep-brain"
+      ],
+      "meshNames": [
+        "bp3d_FMA72829_FJ1776"
+      ],
+      "family": "completion2:putamen",
+      "educationId": "completion2:putamen",
+      "side": "left",
+      "anatomyType": "Región de sustancia gris",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.016189000000000002,
+          1.54543,
+          0.07552679999999999
+        ],
+        [
+          0.034444499999999996,
+          1.57154,
+          0.118368
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA258716",
+      "sourceId": "FMA258716",
+      "name": "Tálamo · lado izquierdo",
+      "anatomicalName": "Tálamo",
+      "latin": "Thalamus",
+      "aliases": [
+        "Left thalamus",
+        "FMA258716",
+        "FJ1782",
+        "Tálamo",
+        "Thalamus"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:diencephalon",
+      "regionId": "nervous:diencephalon",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-deep-brain"
+      ],
+      "meshNames": [
+        "bp3d_FMA258716_FJ1782"
+      ],
+      "family": "completion2:thalamus",
+      "educationId": "completion2:thalamus",
+      "side": "left",
+      "anatomyType": "Región de sustancia gris",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -9.246880000000001e-05,
+          1.54207,
+          0.0618068
+        ],
+        [
+          0.0233736,
+          1.56575,
+          0.0983957
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72826",
+      "sourceId": "FMA72826",
+      "name": "Núcleo caudado · lado derecho",
+      "anatomicalName": "Núcleo caudado",
+      "latin": "Nucleus caudatus",
+      "aliases": [
+        "Right caudate nucleus",
+        "FMA72826",
+        "FJ1802",
+        "Núcleo caudado",
+        "Nucleus caudatus"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:cerebrum",
+      "regionId": "nervous:cerebrum",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-deep-brain"
+      ],
+      "meshNames": [
+        "bp3d_FMA72826_FJ1802"
+      ],
+      "family": "completion2:caudate-nucleus",
+      "educationId": "completion2:caudate-nucleus",
+      "side": "right",
+      "anatomyType": "Región de sustancia gris",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0350094,
+          1.54027,
+          0.060371
+        ],
+        [
+          -0.0032008200000000005,
+          1.57735,
+          0.123932
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72830",
+      "sourceId": "FMA72830",
+      "name": "Globo pálido · lado derecho",
+      "anatomicalName": "Globo pálido",
+      "latin": "Globus pallidus",
+      "aliases": [
+        "Right globus pallidus",
+        "FMA72830",
+        "FJ1805",
+        "Globo pálido",
+        "Globus pallidus"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:cerebrum",
+      "regionId": "nervous:cerebrum",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-deep-brain"
+      ],
+      "meshNames": [
+        "bp3d_FMA72830_FJ1805"
+      ],
+      "family": "completion2:globus-pallidus",
+      "educationId": "completion2:globus-pallidus",
+      "side": "right",
+      "anatomyType": "Región de sustancia gris",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0303274,
+          1.54631,
+          0.0802248
+        ],
+        [
+          -0.013594,
+          1.56361,
+          0.109496
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA78449",
+      "sourceId": "FMA78449",
+      "name": "Ventrículo lateral · lado derecho",
+      "anatomicalName": "Ventrículo lateral",
+      "latin": "Ventriculus lateralis",
+      "aliases": [
+        "Right lateral ventricle",
+        "FMA78449",
+        "FJ1814",
+        "Ventrículo lateral",
+        "Ventriculus lateralis"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:brain",
+      "regionId": "nervous:brain",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-ventricles"
+      ],
+      "meshNames": [
+        "bp3d_FMA78449_FJ1814"
+      ],
+      "family": "completion2:lateral-ventricle",
+      "educationId": "completion2:lateral-ventricle",
+      "side": "right",
+      "anatomyType": "Espacio ventricular",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0394058,
+          1.53031,
+          0.0176072
+        ],
+        [
+          -0.000851348,
+          1.57934,
+          0.12694
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA72828",
+      "sourceId": "FMA72828",
+      "name": "Putamen · lado derecho",
+      "anatomicalName": "Putamen",
+      "latin": "Putamen",
+      "aliases": [
+        "Right putamen",
+        "FMA72828",
+        "FJ1823",
+        "Putamen"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:cerebrum",
+      "regionId": "nervous:cerebrum",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-deep-brain"
+      ],
+      "meshNames": [
+        "bp3d_FMA72828_FJ1823"
+      ],
+      "family": "completion2:putamen",
+      "educationId": "completion2:putamen",
+      "side": "right",
+      "anatomyType": "Región de sustancia gris",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0357525,
+          1.54543,
+          0.07552750000000001
+        ],
+        [
+          -0.0174745,
+          1.57154,
+          0.118366
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA258714",
+      "sourceId": "FMA258714",
+      "name": "Tálamo · lado derecho",
+      "anatomicalName": "Tálamo",
+      "latin": "Thalamus",
+      "aliases": [
+        "Right thalamus",
+        "FMA258714",
+        "FJ1827",
+        "Tálamo",
+        "Thalamus"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:diencephalon",
+      "regionId": "nervous:diencephalon",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion2-deep-brain"
+      ],
+      "meshNames": [
+        "bp3d_FMA258714_FJ1827"
+      ],
+      "family": "completion2:thalamus",
+      "educationId": "completion2:thalamus",
+      "side": "right",
+      "anatomyType": "Región de sustancia gris",
+      "relatedIds": [
+        "skeletal:region:skull"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0246054,
+          1.5421300000000002,
+          0.0618705
+        ],
+        [
+          -0.00124775,
+          1.56572,
+          0.09836690000000001
+        ]
+      ]
     }
   ],
   "assets": [
@@ -6122,6 +6726,7 @@
       "path": "models/anatomy/nervous/completion-tentorium.glb",
       "systemId": "nervous",
       "regionId": "nervous:brain",
+      "label": "Tienda del cerebelo · parcial",
       "frameId": "bodyparts3d-4.0-male",
       "defaultEnabled": false,
       "bytes": 175016,
@@ -6140,8 +6745,59 @@
           0.0932923
         ]
       ],
-      "provenanceId": "bodyparts3d-4.0-completion-wave1",
-      "label": "Tienda del cerebelo · parcial"
+      "provenanceId": "bodyparts3d-4.0-completion-wave1"
+    },
+    {
+      "id": "nervous:completion2-ventricles",
+      "label": "Espacios ventriculares disponibles",
+      "path": "models/anatomy/nervous/completion2-ventricles.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:brain",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 370260,
+      "sha256": "45f311551eccf5dda98a7adb1e26ea40893557f239d43b9f17ba3a4afd0e70ed",
+      "meshCount": 5,
+      "triangles": 47312,
+      "bounds": [
+        [
+          -0.0394058,
+          1.49111,
+          0.0176072
+        ],
+        [
+          0.0380975,
+          1.57934,
+          0.12694
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
+    },
+    {
+      "id": "nervous:completion2-deep-brain",
+      "label": "Núcleos profundos y tálamos",
+      "path": "models/anatomy/nervous/completion2-deep-brain.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:cerebrum",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 271632,
+      "sha256": "7ec91a7724a31f64bbd2f39b9b60d552f6442a6281b41e4b56029a3362969c7c",
+      "meshCount": 8,
+      "triangles": 34118,
+      "bounds": [
+        [
+          -0.0357525,
+          1.54026,
+          0.0603566
+        ],
+        [
+          0.034444499999999996,
+          1.57735,
+          0.123942
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
     }
   ],
   "provenance": [
@@ -6187,7 +6843,23 @@
       "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
       "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
       "modifications": [
-        "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps.",
+        "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
+        "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
+        "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
+        "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
+      ]
+    },
+    {
+      "id": "bodyparts3d-4.0-completion-wave2",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
         "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
         "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
         "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
@@ -6197,7 +6869,7 @@
   "coverage": {
     "title": "Cobertura nerviosa disponible",
     "structures": 56,
-    "meshes": 126,
+    "meshes": 139,
     "note": "Encéfalo y órbitas BP3D, más 26 nervios y 12 componentes periféricos seleccionados de Z-Anatomy. Cobertura corporal parcial; no representa una red continua completa.",
     "limitations": [
       "Médula, raíces espinales, ciático y otras piezas pendientes: el registro permitido produce solapes óseos; no se deforman para forzar su encaje.",
@@ -6207,7 +6879,8 @@
       "Encéfalo y nervios craneales parciales: no se reconstruyen estructuras ausentes.",
       "II se presenta en SNC; III sólo mediante ramas; V sólo división oftálmica y ramas.",
       "El encéfalo HRA permanece como explorador independiente, sin superposición corporal.",
-      "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps."
+      "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
+      "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa."
     ]
   },
   "education": {
@@ -6224,6 +6897,166 @@
         {
           "title": "BodyParts3D · identidad y representación",
           "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion2:lateral-ventricle": {
+      "description": "Representación del espacio de una cavidad o conducto encefálico.",
+      "function": "Forma parte de los espacios de circulación del líquido cefalorraquídeo.",
+      "relations": "En el interior del encéfalo, vinculada al sistema ventricular.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Superficie de un espacio; no representa una masa de tejido ni flujo de líquido.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+          "title": "OpenStax · Sistema nervioso central"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system",
+          "title": "OpenStax · Líquido cefalorraquídeo"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:caudate-nucleus": {
+      "description": "Región profunda del encéfalo.",
+      "function": "Participa en circuitos de los núcleos basales.",
+      "relations": "Relacionada con las regiones encefálicas que la rodean.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No individualiza todos los núcleos o conexiones.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+          "title": "OpenStax · Sistema nervioso central"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system",
+          "title": "OpenStax · Líquido cefalorraquídeo"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:putamen": {
+      "description": "Región profunda del encéfalo.",
+      "function": "Participa en circuitos de los núcleos basales.",
+      "relations": "Relacionada con las regiones encefálicas que la rodean.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No individualiza todos los núcleos o conexiones.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+          "title": "OpenStax · Sistema nervioso central"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system",
+          "title": "OpenStax · Líquido cefalorraquídeo"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:cerebral-aqueduct": {
+      "description": "Representación del espacio de una cavidad o conducto encefálico.",
+      "function": "Comunica el tercer y cuarto ventrículos.",
+      "relations": "En el interior del encéfalo, vinculada al sistema ventricular.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Superficie de un espacio; no representa una masa de tejido ni flujo de líquido.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+          "title": "OpenStax · Sistema nervioso central"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system",
+          "title": "OpenStax · Líquido cefalorraquídeo"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:third-ventricle": {
+      "description": "Representación del espacio de una cavidad o conducto encefálico.",
+      "function": "Forma parte de los espacios de circulación del líquido cefalorraquídeo.",
+      "relations": "En el interior del encéfalo, vinculada al sistema ventricular.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Superficie de un espacio; no representa una masa de tejido ni flujo de líquido.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+          "title": "OpenStax · Sistema nervioso central"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system",
+          "title": "OpenStax · Líquido cefalorraquídeo"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:globus-pallidus": {
+      "description": "Región profunda del encéfalo.",
+      "function": "Participa en circuitos de los núcleos basales.",
+      "relations": "Relacionada con las regiones encefálicas que la rodean.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No individualiza todos los núcleos o conexiones.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+          "title": "OpenStax · Sistema nervioso central"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system",
+          "title": "OpenStax · Líquido cefalorraquídeo"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:fourth-ventricle": {
+      "description": "Representación del espacio de una cavidad o conducto encefálico.",
+      "function": "Forma parte de los espacios de circulación del líquido cefalorraquídeo.",
+      "relations": "En el interior del encéfalo, vinculada al sistema ventricular.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. Superficie de un espacio; no representa una masa de tejido ni flujo de líquido.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+          "title": "OpenStax · Sistema nervioso central"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system",
+          "title": "OpenStax · Líquido cefalorraquídeo"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:thalamus": {
+      "description": "Región profunda del encéfalo.",
+      "function": "Participa en el relevo y procesamiento de información hacia la corteza.",
+      "relations": "Relacionada con las regiones encefálicas que la rodean.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No individualiza todos los núcleos o conexiones.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+          "title": "OpenStax · Sistema nervioso central"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system",
+          "title": "OpenStax · Líquido cefalorraquídeo"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
         }
       ]
     }

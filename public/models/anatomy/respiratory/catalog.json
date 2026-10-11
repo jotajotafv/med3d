@@ -39,7 +39,9 @@
       "assetIds": [
         "respiratory:airway",
         "respiratory:larynx",
-        "respiratory:lungs"
+        "respiratory:lungs",
+        "respiratory:completion2-larynx-soft",
+        "respiratory:completion2-pharynx-soft"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -52,7 +54,7 @@
         ],
         [
           0.127442,
-          1.4382300000000001,
+          1.49976,
           0.19647900000000001
         ]
       ]
@@ -69,11 +71,14 @@
       "systemId": "respiratory",
       "regionId": "resp:upper",
       "children": [
-        "resp:larynx"
+        "resp:larynx",
+        "resp:region:pharyngeal-muscles"
       ],
       "kind": "region",
       "assetIds": [
-        "respiratory:larynx"
+        "respiratory:larynx",
+        "respiratory:completion2-larynx-soft",
+        "respiratory:completion2-pharynx-soft"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -82,14 +87,14 @@
       "parentId": "respiratory",
       "bounds": [
         [
-          -0.0199803,
+          -0.0403892,
           1.3872,
-          0.0915061
+          0.0840465
         ],
         [
-          0.0186825,
-          1.4382300000000001,
-          0.122446
+          0.039093,
+          1.49976,
+          0.127777
         ]
       ]
     },
@@ -113,11 +118,37 @@
         "resp:FMA55115",
         "resp:FMA55116",
         "resp:FMA55117",
-        "resp:FMA55118"
+        "resp:FMA55118",
+        "resp:FMA55246",
+        "resp:FMA55245",
+        "resp:FMA55227",
+        "resp:FMA46605",
+        "resp:FMA46581",
+        "resp:FMA55141",
+        "resp:FMA46585",
+        "resp:FMA46614",
+        "resp:FMA46578",
+        "resp:FMA46612",
+        "resp:FMA46590",
+        "resp:FMA46593",
+        "resp:FMA55237",
+        "resp:FMA55138",
+        "resp:FMA46604",
+        "resp:FMA46580",
+        "resp:FMA55140",
+        "resp:FMA46584",
+        "resp:FMA46613",
+        "resp:FMA46577",
+        "resp:FMA46611",
+        "resp:FMA46589",
+        "resp:FMA46592",
+        "resp:FMA55230",
+        "resp:FMA46582"
       ],
       "kind": "structure",
       "assetIds": [
-        "respiratory:larynx"
+        "respiratory:larynx",
+        "respiratory:completion2-larynx-soft"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -136,8 +167,8 @@
         ],
         [
           0.0186825,
-          1.4382300000000001,
-          0.122446
+          1.439,
+          0.126048
         ]
       ]
     },
@@ -2986,6 +3017,1697 @@
           0.08898489999999999
         ]
       ]
+    },
+    {
+      "id": "resp:FMA55246",
+      "sourceId": "FMA55246",
+      "name": "Ligamento vocal · lado izquierdo",
+      "anatomicalName": "Ligamento vocal",
+      "latin": "Ligamentum vocale",
+      "aliases": [
+        "Left vocal ligament",
+        "FMA55246",
+        "FJ2787",
+        "Ligamento vocal",
+        "Ligamentum vocale"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA55246_FJ2787"
+      ],
+      "family": "completion2:vocal-ligament",
+      "educationId": "completion2:vocal-ligament",
+      "side": "left",
+      "anatomyType": "Tejido conectivo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.00011723400000000001,
+          1.40377,
+          0.10177800000000001
+        ],
+        [
+          0.00230972,
+          1.40473,
+          0.115104
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55245",
+      "sourceId": "FMA55245",
+      "name": "Ligamento vocal · lado derecho",
+      "anatomicalName": "Ligamento vocal",
+      "latin": "Ligamentum vocale",
+      "aliases": [
+        "Right vocal ligament",
+        "FMA55245",
+        "FJ2805",
+        "Ligamento vocal",
+        "Ligamentum vocale"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA55245_FJ2805"
+      ],
+      "family": "completion2:vocal-ligament",
+      "educationId": "completion2:vocal-ligament",
+      "side": "right",
+      "anatomyType": "Tejido conectivo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0036122100000000002,
+          1.40378,
+          0.10178400000000001
+        ],
+        [
+          -0.00142763,
+          1.40477,
+          0.115111
+        ]
+      ]
+    },
+    {
+      "id": "resp:region:pharyngeal-muscles",
+      "name": "Pared muscular faríngea disponible",
+      "anatomicalName": "Pared muscular faríngea disponible",
+      "aliases": [
+        "Pared muscular faríngea disponible"
+      ],
+      "systemId": "respiratory",
+      "regionId": "resp:region:pharyngeal-muscles",
+      "parentId": "resp:upper",
+      "children": [
+        "resp:FMA46633",
+        "resp:FMA46672",
+        "resp:FMA46670",
+        "resp:FMA46668",
+        "resp:FMA46632",
+        "resp:FMA46634",
+        "resp:FMA46671",
+        "resp:FMA46669",
+        "resp:FMA46667",
+        "resp:FMA46631"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "respiratory:completion2-pharynx-soft"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0403892,
+          1.3882400000000001,
+          0.0840465
+        ],
+        [
+          0.039093,
+          1.49976,
+          0.127777
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46633",
+      "sourceId": "FMA46633",
+      "name": "Constrictor medio de la faringe · lado derecho",
+      "anatomicalName": "Constrictor medio de la faringe",
+      "latin": "Musculus constrictor pharyngis medius",
+      "aliases": [
+        "Right middle pharyngeal constrictor",
+        "FMA46633",
+        "FJ2742",
+        "Constrictor medio de la faringe",
+        "Musculus constrictor pharyngis medius"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:region:pharyngeal-muscles",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-pharynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46633_FJ2742"
+      ],
+      "family": "completion2:middle-pharyngeal-constrictor",
+      "educationId": "completion2:middle-pharyngeal-constrictor",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.000662964,
+          1.43011,
+          0.0913659
+        ],
+        [
+          0.017650600000000002,
+          1.47035,
+          0.122932
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46672",
+      "sourceId": "FMA46672",
+      "name": "Palatofaríngeo · lado izquierdo",
+      "anatomicalName": "Palatofaríngeo",
+      "latin": "Musculus palatopharyngeus",
+      "aliases": [
+        "Left palatopharyngeus",
+        "FMA46672",
+        "FJ2743",
+        "Palatofaríngeo",
+        "Musculus palatopharyngeus"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:region:pharyngeal-muscles",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-pharynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46672_FJ2743"
+      ],
+      "family": "completion2:palatopharyngeus",
+      "educationId": "completion2:palatopharyngeus",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.00199191,
+          1.3882400000000001,
+          0.0890547
+        ],
+        [
+          0.0185027,
+          1.47628,
+          0.104317
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46670",
+      "sourceId": "FMA46670",
+      "name": "Salpingofaríngeo · lado izquierdo",
+      "anatomicalName": "Salpingofaríngeo",
+      "latin": "Musculus salpingopharyngeus",
+      "aliases": [
+        "Left salpingopharyngeus",
+        "FMA46670",
+        "FJ2745",
+        "Salpingofaríngeo",
+        "Musculus salpingopharyngeus"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:region:pharyngeal-muscles",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-pharynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46670_FJ2745"
+      ],
+      "family": "completion2:salpingopharyngeus",
+      "educationId": "completion2:salpingopharyngeus",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.007165980000000001,
+          1.4576300000000002,
+          0.0865282
+        ],
+        [
+          0.0209843,
+          1.49879,
+          0.106317
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46668",
+      "sourceId": "FMA46668",
+      "name": "Estilofaríngeo · lado izquierdo",
+      "anatomicalName": "Estilofaríngeo",
+      "latin": "Musculus stylopharyngeus",
+      "aliases": [
+        "Left stylopharyngeus",
+        "FMA46668",
+        "FJ2746",
+        "Estilofaríngeo",
+        "Musculus stylopharyngeus"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:region:pharyngeal-muscles",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-pharynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46668_FJ2746"
+      ],
+      "family": "completion2:stylopharyngeus",
+      "educationId": "completion2:stylopharyngeus",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.011729100000000001,
+          1.42857,
+          0.0840465
+        ],
+        [
+          0.039093,
+          1.48282,
+          0.107904
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46632",
+      "sourceId": "FMA46632",
+      "name": "Constrictor superior de la faringe · lado izquierdo",
+      "anatomicalName": "Constrictor superior de la faringe",
+      "latin": "Musculus constrictor pharyngis superior",
+      "aliases": [
+        "Left superior pharyngeal constrictor",
+        "FMA46632",
+        "FJ2747",
+        "Constrictor superior de la faringe",
+        "Musculus constrictor pharyngis superior"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:region:pharyngeal-muscles",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-pharynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46632_FJ2747"
+      ],
+      "family": "completion2:superior-pharyngeal-constrictor",
+      "educationId": "completion2:superior-pharyngeal-constrictor",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.000649527,
+          1.4461600000000001,
+          0.0950792
+        ],
+        [
+          0.0322937,
+          1.49976,
+          0.127777
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46634",
+      "sourceId": "FMA46634",
+      "name": "Constrictor medio de la faringe · lado izquierdo",
+      "anatomicalName": "Constrictor medio de la faringe",
+      "latin": "Musculus constrictor pharyngis medius",
+      "aliases": [
+        "Left middle pharyngeal constrictor",
+        "FMA46634",
+        "FJ2754",
+        "Constrictor medio de la faringe",
+        "Musculus constrictor pharyngis medius"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:region:pharyngeal-muscles",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-pharynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46634_FJ2754"
+      ],
+      "family": "completion2:middle-pharyngeal-constrictor",
+      "educationId": "completion2:middle-pharyngeal-constrictor",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0192071,
+          1.42999,
+          0.0913296
+        ],
+        [
+          -0.000421954,
+          1.47046,
+          0.123312
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46671",
+      "sourceId": "FMA46671",
+      "name": "Palatofaríngeo · lado derecho",
+      "anatomicalName": "Palatofaríngeo",
+      "latin": "Musculus palatopharyngeus",
+      "aliases": [
+        "Right palatopharyngeus",
+        "FMA46671",
+        "FJ2755",
+        "Palatofaríngeo",
+        "Musculus palatopharyngeus"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:region:pharyngeal-muscles",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-pharynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46671_FJ2755"
+      ],
+      "family": "completion2:palatopharyngeus",
+      "educationId": "completion2:palatopharyngeus",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0198137,
+          1.38825,
+          0.08905410000000001
+        ],
+        [
+          0.0006816600000000001,
+          1.47628,
+          0.10432
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46669",
+      "sourceId": "FMA46669",
+      "name": "Salpingofaríngeo · lado derecho",
+      "anatomicalName": "Salpingofaríngeo",
+      "latin": "Musculus salpingopharyngeus",
+      "aliases": [
+        "Right salpingopharyngeus",
+        "FMA46669",
+        "FJ2757",
+        "Salpingofaríngeo",
+        "Musculus salpingopharyngeus"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:region:pharyngeal-muscles",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-pharynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46669_FJ2757"
+      ],
+      "family": "completion2:salpingopharyngeus",
+      "educationId": "completion2:salpingopharyngeus",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.022287500000000002,
+          1.4576300000000002,
+          0.0865281
+        ],
+        [
+          -0.008478999999999999,
+          1.49879,
+          0.106307
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46667",
+      "sourceId": "FMA46667",
+      "name": "Estilofaríngeo · lado derecho",
+      "anatomicalName": "Estilofaríngeo",
+      "latin": "Musculus stylopharyngeus",
+      "aliases": [
+        "Right stylopharyngeus",
+        "FMA46667",
+        "FJ2758",
+        "Estilofaríngeo",
+        "Musculus stylopharyngeus"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:region:pharyngeal-muscles",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-pharynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46667_FJ2758"
+      ],
+      "family": "completion2:stylopharyngeus",
+      "educationId": "completion2:stylopharyngeus",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0403892,
+          1.4159300000000001,
+          0.084054
+        ],
+        [
+          -0.0126353,
+          1.48269,
+          0.10835800000000001
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46631",
+      "sourceId": "FMA46631",
+      "name": "Constrictor superior de la faringe · lado derecho",
+      "anatomicalName": "Constrictor superior de la faringe",
+      "latin": "Musculus constrictor pharyngis superior",
+      "aliases": [
+        "Right superior pharyngeal constrictor",
+        "FMA46631",
+        "FJ2759",
+        "Constrictor superior de la faringe",
+        "Musculus constrictor pharyngis superior"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:region:pharyngeal-muscles",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-pharynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46631_FJ2759"
+      ],
+      "family": "completion2:superior-pharyngeal-constrictor",
+      "educationId": "completion2:superior-pharyngeal-constrictor",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0336258,
+          1.4461600000000001,
+          0.0950792
+        ],
+        [
+          -0.000660391,
+          1.49976,
+          0.127765
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55227",
+      "sourceId": "FMA55227",
+      "name": "Ligamento hioepiglótico",
+      "anatomicalName": "Ligamento hioepiglótico",
+      "latin": "Ligamentum hyoepiglotticum",
+      "aliases": [
+        "Hyo-epiglottic ligament",
+        "FMA55227",
+        "FJ2771",
+        "Ligamento hioepiglótico",
+        "Ligamentum hyoepiglotticum"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA55227_FJ2771"
+      ],
+      "family": "completion2:hyo-epiglottic-ligament",
+      "educationId": "completion2:hyo-epiglottic-ligament",
+      "side": "midline",
+      "anatomyType": "Tejido conectivo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.00112919,
+          1.4119100000000002,
+          0.110622
+        ],
+        [
+          -0.00019186,
+          1.43504,
+          0.125121
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46605",
+      "sourceId": "FMA46605",
+      "name": "Ariepiglótico · lado izquierdo",
+      "anatomicalName": "Ariepiglótico",
+      "latin": "Musculus aryepiglotticus",
+      "aliases": [
+        "Left aryepiglotticus",
+        "FMA46605",
+        "FJ2774",
+        "Ariepiglótico",
+        "Musculus aryepiglotticus"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46605_FJ2774"
+      ],
+      "family": "completion2:aryepiglotticus",
+      "educationId": "completion2:aryepiglotticus",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0035512,
+          1.4094200000000001,
+          0.0967822
+        ],
+        [
+          0.00785456,
+          1.43245,
+          0.108822
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46581",
+      "sourceId": "FMA46581",
+      "name": "Cricoaritenoideo lateral · lado izquierdo",
+      "anatomicalName": "Cricoaritenoideo lateral",
+      "latin": "Musculus cricoarytenoideus lateralis",
+      "aliases": [
+        "Left lateral crico-arytenoid",
+        "FMA46581",
+        "FJ2778",
+        "Cricoaritenoideo lateral",
+        "Musculus cricoarytenoideus lateralis"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46581_FJ2778"
+      ],
+      "family": "completion2:lateral-crico-arytenoid",
+      "educationId": "completion2:lateral-crico-arytenoid",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.00596481,
+          1.39442,
+          0.0972576
+        ],
+        [
+          0.010436299999999999,
+          1.40523,
+          0.10731399999999999
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55141",
+      "sourceId": "FMA55141",
+      "name": "Ligamento tirohioideo lateral · lado izquierdo",
+      "anatomicalName": "Ligamento tirohioideo lateral",
+      "latin": "Ligamentum thyrohyoideum laterale",
+      "aliases": [
+        "Left lateral thyrohyoid ligament",
+        "FMA55141",
+        "FJ2779",
+        "Ligamento tirohioideo lateral",
+        "Ligamentum thyrohyoideum laterale"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA55141_FJ2779"
+      ],
+      "family": "completion2:lateral-thyrohyoid-ligament",
+      "educationId": "completion2:lateral-thyrohyoid-ligament",
+      "side": "left",
+      "anatomyType": "Tejido conectivo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.014927600000000001,
+          1.4279000000000002,
+          0.0925645
+        ],
+        [
+          0.0186646,
+          1.439,
+          0.0975473
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46585",
+      "sourceId": "FMA46585",
+      "name": "Aritenoideo oblicuo · lado izquierdo",
+      "anatomicalName": "Aritenoideo oblicuo",
+      "latin": "Musculus arytenoideus obliquus",
+      "aliases": [
+        "Left oblique arytenoid",
+        "FMA46585",
+        "FJ2780",
+        "Aritenoideo oblicuo",
+        "Musculus arytenoideus obliquus"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46585_FJ2780"
+      ],
+      "family": "completion2:oblique-arytenoid",
+      "educationId": "completion2:oblique-arytenoid",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.007297240000000001,
+          1.4036,
+          0.09362260000000001
+        ],
+        [
+          0.00565565,
+          1.41022,
+          0.0967783
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46614",
+      "sourceId": "FMA46614",
+      "name": "Porción oblicua del cricotiroideo · lado izquierdo",
+      "anatomicalName": "Porción oblicua del cricotiroideo",
+      "latin": "Pars obliqua musculi cricothyroidei",
+      "aliases": [
+        "Oblique part of left cricothyroid",
+        "FMA46614",
+        "FJ2781",
+        "Porción oblicua del cricotiroideo",
+        "Pars obliqua musculi cricothyroidei"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46614_FJ2781"
+      ],
+      "family": "completion2:oblique-part-of-cricothyroid",
+      "educationId": "completion2:oblique-part-of-cricothyroid",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0035398,
+          1.38828,
+          0.0934977
+        ],
+        [
+          0.0118537,
+          1.40142,
+          0.10969100000000001
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46578",
+      "sourceId": "FMA46578",
+      "name": "Cricoaritenoideo posterior · lado izquierdo",
+      "anatomicalName": "Cricoaritenoideo posterior",
+      "latin": "Musculus cricoarytenoideus posterior",
+      "aliases": [
+        "Left posterior crico-arytenoid",
+        "FMA46578",
+        "FJ2782",
+        "Cricoaritenoideo posterior",
+        "Musculus cricoarytenoideus posterior"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46578_FJ2782"
+      ],
+      "family": "completion2:posterior-crico-arytenoid",
+      "educationId": "completion2:posterior-crico-arytenoid",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0009708329999999999,
+          1.39055,
+          0.0926623
+        ],
+        [
+          0.010085100000000001,
+          1.4049200000000002,
+          0.0984061
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46612",
+      "sourceId": "FMA46612",
+      "name": "Porción recta del cricotiroideo · lado izquierdo",
+      "anatomicalName": "Porción recta del cricotiroideo",
+      "latin": "Pars recta musculi cricothyroidei",
+      "aliases": [
+        "Straight part of left cricothyroid",
+        "FMA46612",
+        "FJ2783",
+        "Porción recta del cricotiroideo",
+        "Pars recta musculi cricothyroidei"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46612_FJ2783"
+      ],
+      "family": "completion2:straight-part-of-cricothyroid",
+      "educationId": "completion2:straight-part-of-cricothyroid",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0009601960000000001,
+          1.3882400000000001,
+          0.104616
+        ],
+        [
+          0.010697,
+          1.39856,
+          0.111489
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46590",
+      "sourceId": "FMA46590",
+      "name": "Tiroaritenoideo · porciones disponibles · lado izquierdo",
+      "anatomicalName": "Tiroaritenoideo · porciones disponibles",
+      "latin": "Musculus thyroarytenoideus",
+      "aliases": [
+        "Left thyro-arytenoid",
+        "FMA46590",
+        "FJ2784",
+        "FJ2785",
+        "Tiroaritenoideo · porciones disponibles",
+        "Musculus thyroarytenoideus"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46590_FJ2784",
+        "bp3d_FMA46590_FJ2785"
+      ],
+      "family": "completion2:thyro-arytenoid",
+      "educationId": "completion2:thyro-arytenoid",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.00104591,
+          1.40232,
+          0.0958557
+        ],
+        [
+          0.00746922,
+          1.42997,
+          0.11751900000000001
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46593",
+      "sourceId": "FMA46593",
+      "name": "Músculo vocal · lado izquierdo",
+      "anatomicalName": "Músculo vocal",
+      "latin": "Musculus vocalis",
+      "aliases": [
+        "Left vocalis",
+        "FMA46593",
+        "FJ2788",
+        "Músculo vocal",
+        "Musculus vocalis"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46593_FJ2788"
+      ],
+      "family": "completion2:vocalis",
+      "educationId": "completion2:vocalis",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0011831,
+          1.4037000000000002,
+          0.100883
+        ],
+        [
+          0.00277049,
+          1.4051300000000002,
+          0.114979
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55237",
+      "sourceId": "FMA55237",
+      "name": "Ligamento cricotiroideo medio",
+      "anatomicalName": "Ligamento cricotiroideo medio",
+      "latin": "Ligamentum cricothyroideum medianum",
+      "aliases": [
+        "Median cricothyroid ligament",
+        "FMA55237",
+        "FJ2789",
+        "Ligamento cricotiroideo medio",
+        "Ligamentum cricothyroideum medianum"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA55237_FJ2789"
+      ],
+      "family": "completion2:median-cricothyroid-ligament",
+      "educationId": "completion2:median-cricothyroid-ligament",
+      "side": "midline",
+      "anatomyType": "Tejido conectivo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.00401523,
+          1.39151,
+          0.108959
+        ],
+        [
+          0.00270742,
+          1.40445,
+          0.11676600000000001
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55138",
+      "sourceId": "FMA55138",
+      "name": "Ligamento tirohioideo medio",
+      "anatomicalName": "Ligamento tirohioideo medio",
+      "latin": "Ligamentum thyrohyoideum medianum",
+      "aliases": [
+        "Median thyrohyoid ligament",
+        "FMA55138",
+        "FJ2790",
+        "Ligamento tirohioideo medio",
+        "Ligamentum thyrohyoideum medianum"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA55138_FJ2790"
+      ],
+      "family": "completion2:median-thyrohyoid-ligament",
+      "educationId": "completion2:median-thyrohyoid-ligament",
+      "side": "midline",
+      "anatomyType": "Tejido conectivo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.00917397,
+          1.40648,
+          0.118491
+        ],
+        [
+          0.0079,
+          1.42411,
+          0.126048
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46604",
+      "sourceId": "FMA46604",
+      "name": "Ariepiglótico · lado derecho",
+      "anatomicalName": "Ariepiglótico",
+      "latin": "Musculus aryepiglotticus",
+      "aliases": [
+        "Right aryepiglotticus",
+        "FMA46604",
+        "FJ2791",
+        "Ariepiglótico",
+        "Musculus aryepiglotticus"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46604_FJ2791"
+      ],
+      "family": "completion2:aryepiglotticus",
+      "educationId": "completion2:aryepiglotticus",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0091688,
+          1.4094200000000001,
+          0.0967789
+        ],
+        [
+          0.0075112,
+          1.43245,
+          0.10882299999999999
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46580",
+      "sourceId": "FMA46580",
+      "name": "Cricoaritenoideo lateral · lado derecho",
+      "anatomicalName": "Cricoaritenoideo lateral",
+      "latin": "Musculus cricoarytenoideus lateralis",
+      "aliases": [
+        "Right lateral crico-arytenoid",
+        "FMA46580",
+        "FJ2796",
+        "Cricoaritenoideo lateral",
+        "Musculus cricoarytenoideus lateralis"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46580_FJ2796"
+      ],
+      "family": "completion2:lateral-crico-arytenoid",
+      "educationId": "completion2:lateral-crico-arytenoid",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0117348,
+          1.39442,
+          0.09725990000000001
+        ],
+        [
+          -0.00728367,
+          1.40523,
+          0.107312
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55140",
+      "sourceId": "FMA55140",
+      "name": "Ligamento tirohioideo lateral · lado derecho",
+      "anatomicalName": "Ligamento tirohioideo lateral",
+      "latin": "Ligamentum thyrohyoideum laterale",
+      "aliases": [
+        "Right lateral thyrohyoid ligament",
+        "FMA55140",
+        "FJ2797",
+        "Ligamento tirohioideo lateral",
+        "Ligamentum thyrohyoideum laterale"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA55140_FJ2797"
+      ],
+      "family": "completion2:lateral-thyrohyoid-ligament",
+      "educationId": "completion2:lateral-thyrohyoid-ligament",
+      "side": "right",
+      "anatomyType": "Tejido conectivo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.019979900000000002,
+          1.42794,
+          0.0925779
+        ],
+        [
+          -0.0162152,
+          1.43899,
+          0.0975448
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46584",
+      "sourceId": "FMA46584",
+      "name": "Aritenoideo oblicuo · lado derecho",
+      "anatomicalName": "Aritenoideo oblicuo",
+      "latin": "Musculus arytenoideus obliquus",
+      "aliases": [
+        "Right oblique arytenoid",
+        "FMA46584",
+        "FJ2798",
+        "Aritenoideo oblicuo",
+        "Musculus arytenoideus obliquus"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46584_FJ2798"
+      ],
+      "family": "completion2:oblique-arytenoid",
+      "educationId": "completion2:oblique-arytenoid",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.00696925,
+          1.40361,
+          0.0936181
+        ],
+        [
+          0.00597263,
+          1.41023,
+          0.0967666
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46613",
+      "sourceId": "FMA46613",
+      "name": "Porción oblicua del cricotiroideo · lado derecho",
+      "anatomicalName": "Porción oblicua del cricotiroideo",
+      "latin": "Pars obliqua musculi cricothyroidei",
+      "aliases": [
+        "Oblique part of right cricothyroid",
+        "FMA46613",
+        "FJ2799",
+        "Porción oblicua del cricotiroideo",
+        "Pars obliqua musculi cricothyroidei"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46613_FJ2799"
+      ],
+      "family": "completion2:oblique-part-of-cricothyroid",
+      "educationId": "completion2:oblique-part-of-cricothyroid",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0131716,
+          1.38829,
+          0.0935098
+        ],
+        [
+          -0.00484406,
+          1.4014000000000002,
+          0.109689
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46577",
+      "sourceId": "FMA46577",
+      "name": "Cricoaritenoideo posterior · lado derecho",
+      "anatomicalName": "Cricoaritenoideo posterior",
+      "latin": "Musculus cricoarytenoideus posterior",
+      "aliases": [
+        "Right posterior crico-arytenoid",
+        "FMA46577",
+        "FJ2800",
+        "Cricoaritenoideo posterior",
+        "Musculus cricoarytenoideus posterior"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46577_FJ2800"
+      ],
+      "family": "completion2:posterior-crico-arytenoid",
+      "educationId": "completion2:posterior-crico-arytenoid",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0113752,
+          1.39055,
+          0.09265989999999999
+        ],
+        [
+          -0.00227576,
+          1.4049200000000002,
+          0.0983916
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46611",
+      "sourceId": "FMA46611",
+      "name": "Porción recta del cricotiroideo · lado derecho",
+      "anatomicalName": "Porción recta del cricotiroideo",
+      "latin": "Pars recta musculi cricothyroidei",
+      "aliases": [
+        "Straight part of right cricothyroid",
+        "FMA46611",
+        "FJ2801",
+        "Porción recta del cricotiroideo",
+        "Pars recta musculi cricothyroidei"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46611_FJ2801"
+      ],
+      "family": "completion2:straight-part-of-cricothyroid",
+      "educationId": "completion2:straight-part-of-cricothyroid",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.012019700000000001,
+          1.38826,
+          0.104647
+        ],
+        [
+          0.01044,
+          1.39856,
+          0.11148999999999999
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46589",
+      "sourceId": "FMA46589",
+      "name": "Tiroaritenoideo · porciones disponibles · lado derecho",
+      "anatomicalName": "Tiroaritenoideo · porciones disponibles",
+      "latin": "Musculus thyroarytenoideus",
+      "aliases": [
+        "Right thyro-arytenoid",
+        "FMA46589",
+        "FJ2802",
+        "FJ2803",
+        "Tiroaritenoideo · porciones disponibles",
+        "Musculus thyroarytenoideus"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46589_FJ2802",
+        "bp3d_FMA46589_FJ2803"
+      ],
+      "family": "completion2:thyro-arytenoid",
+      "educationId": "completion2:thyro-arytenoid",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.00877783,
+          1.40235,
+          0.0958425
+        ],
+        [
+          -0.000261758,
+          1.42997,
+          0.11752
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46592",
+      "sourceId": "FMA46592",
+      "name": "Músculo vocal · lado derecho",
+      "anatomicalName": "Músculo vocal",
+      "latin": "Musculus vocalis",
+      "aliases": [
+        "Right vocalis",
+        "FMA46592",
+        "FJ2806",
+        "Músculo vocal",
+        "Musculus vocalis"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46592_FJ2806"
+      ],
+      "family": "completion2:vocalis",
+      "educationId": "completion2:vocalis",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.00408703,
+          1.40369,
+          0.10088
+        ],
+        [
+          -0.00249583,
+          1.4051300000000002,
+          0.114971
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA55230",
+      "sourceId": "FMA55230",
+      "name": "Ligamento tiroepiglótico",
+      "anatomicalName": "Ligamento tiroepiglótico",
+      "latin": "Ligamentum thyroepiglotticum",
+      "aliases": [
+        "Thyro-epiglottic ligament",
+        "FMA55230",
+        "FJ2807",
+        "Ligamento tiroepiglótico",
+        "Ligamentum thyroepiglotticum"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA55230_FJ2807"
+      ],
+      "family": "completion2:thyro-epiglottic-ligament",
+      "educationId": "completion2:thyro-epiglottic-ligament",
+      "side": "midline",
+      "anatomyType": "Tejido conectivo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.00230523,
+          1.4046800000000002,
+          0.114021
+        ],
+        [
+          0.000868064,
+          1.4111900000000002,
+          0.117877
+        ]
+      ]
+    },
+    {
+      "id": "resp:FMA46582",
+      "sourceId": "FMA46582",
+      "name": "Aritenoideo transverso",
+      "anatomicalName": "Aritenoideo transverso",
+      "latin": "Musculus arytenoideus transversus",
+      "aliases": [
+        "Transverse arytenoid",
+        "FMA46582",
+        "FJ2809",
+        "Aritenoideo transverso",
+        "Musculus arytenoideus transversus"
+      ],
+      "systemId": "respiratory",
+      "parentId": "resp:larynx",
+      "regionId": "resp:upper",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "respiratory:completion2-larynx-soft"
+      ],
+      "meshNames": [
+        "bp3d_FMA46582_FJ2809"
+      ],
+      "family": "completion2:transverse-arytenoid",
+      "educationId": "completion2:transverse-arytenoid",
+      "side": "midline",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "dig:oral",
+        "dig:upper",
+        "resp:larynx"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.008016170000000001,
+          1.40341,
+          0.0947002
+        ],
+        [
+          0.00669442,
+          1.40965,
+          0.0977751
+        ]
+      ]
     }
   ],
   "assets": [
@@ -3060,6 +4782,58 @@
         ]
       ],
       "provenanceId": "bodyparts3d-4.3-respiratory"
+    },
+    {
+      "id": "respiratory:completion2-larynx-soft",
+      "label": "Tejidos laríngeos disponibles",
+      "path": "models/anatomy/respiratory/completion2-larynx-soft.glb",
+      "systemId": "respiratory",
+      "regionId": "resp:upper",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 1206880,
+      "sha256": "c4a375f236ece0dc4ff807f068fe572fe996b943096bcfb702296a6c3f5d20e7",
+      "meshCount": 27,
+      "triangles": 115484,
+      "bounds": [
+        [
+          -0.019979900000000002,
+          1.3882400000000001,
+          0.0925645
+        ],
+        [
+          0.0186646,
+          1.439,
+          0.126048
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
+    },
+    {
+      "id": "respiratory:completion2-pharynx-soft",
+      "label": "Pared muscular faríngea disponible",
+      "path": "models/anatomy/respiratory/completion2-pharynx-soft.glb",
+      "systemId": "respiratory",
+      "regionId": "resp:upper",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 1315912,
+      "sha256": "08ebfeecf93212ef853d4c598c30c06219e99092094c29bc04fcfde0cec4fd5f",
+      "meshCount": 10,
+      "triangles": 163344,
+      "bounds": [
+        [
+          -0.0403892,
+          1.3882400000000001,
+          0.0840465
+        ],
+        [
+          0.039093,
+          1.49976,
+          0.127777
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
     }
   ],
   "provenance": [
@@ -3092,19 +4866,438 @@
         "Coordenadas nativas conservadas; misma transformación corporal. Verificación de compatibilidad entre revisiones documentada.",
         "Conversión OBJ a GLB y compresión Meshopt con posiciones Float32; GLB derivado distribuido bajo CC BY-SA 2.1 Japan."
       ]
+    },
+    {
+      "id": "bodyparts3d-4.0-completion-wave2",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
+        "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
+        "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
+        "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
+      ]
     }
   ],
   "coverage": {
     "title": "Cobertura respiratoria macroscópica disponible",
     "structures": 6,
-    "meshes": 128,
+    "meshes": 165,
     "note": "6 unidades de nivel estructural y 51 componentes: laringe cartilaginosa disponible, tráquea, bronquios y dos pulmones agrupados en cinco lóbulos.",
     "limitations": [
       "Cavidad nasal, faringe, mucosa/pliegues laríngeos y pleuras independientes pendientes.",
       "Carina sin malla individual; los grupos lobares bronquiales agrupan árboles segmentarios, no nuevos troncos fabricados.",
       "Parénquima por segmentos fuente: variantes de nomenclatura basal 7.8 conservadas; sin alvéolos ni fisiología simulada.",
       "Diafragma explicado como relación muscular, sin geometría nueva ni duplicación respiratoria. Vasos pulmonares y corazón se muestran mediante contexto cardiovascular.",
-      "Explorador HRA pulmonar detallado conservado independiente. Sin validación clínica."
+      "Explorador HRA pulmonar detallado conservado independiente. Sin validación clínica.",
+      "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa."
     ]
+  },
+  "education": {
+    "completion2:thyro-epiglottic-ligament": {
+      "description": "Elemento fibroso de sostén.",
+      "function": "Conecta la epiglotis con el cartílago tiroides.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No representa un pliegue mucoso completo.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:palatopharyngeus": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Participa en la elevación de la faringe durante la deglución.",
+      "relations": "En relación con paladar, hioides, laringe y esófago.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:vocalis": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Ajusta la tensión de los pliegues vocales.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:lateral-crico-arytenoid": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Aduce los pliegues vocales.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:stylopharyngeus": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Eleva la faringe durante la deglución.",
+      "relations": "En relación con paladar, hioides, laringe y esófago.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:median-thyrohyoid-ligament": {
+      "description": "Elemento fibroso de sostén.",
+      "function": "Refuerza la unión anterior del hioides y el cartílago tiroides.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No representa un pliegue mucoso completo.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:vocal-ligament": {
+      "description": "Elemento fibroso de sostén.",
+      "function": "Forma el soporte elástico del pliegue vocal.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No representa un pliegue mucoso completo.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:oblique-part-of-cricothyroid": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Participa en la tensión de los ligamentos vocales.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:superior-pharyngeal-constrictor": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Participa en la propulsión faríngea durante la deglución.",
+      "relations": "En relación con paladar, hioides, laringe y esófago.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:thyro-arytenoid": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Participa en el ajuste de los pliegues vocales.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:middle-pharyngeal-constrictor": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Participa en la propulsión faríngea durante la deglución.",
+      "relations": "En relación con paladar, hioides, laringe y esófago.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:median-cricothyroid-ligament": {
+      "description": "Elemento fibroso de sostén.",
+      "function": "Conecta los cartílagos cricoides y tiroides anteriormente.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No representa un pliegue mucoso completo.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:oblique-arytenoid": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Aproxima los cartílagos aritenoides.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:posterior-crico-arytenoid": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Abduce los pliegues vocales.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:hyo-epiglottic-ligament": {
+      "description": "Elemento fibroso de sostén.",
+      "function": "Conecta el hioides con la epiglotis.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No representa un pliegue mucoso completo.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:aryepiglotticus": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Contribuye al estrechamiento de la entrada laríngea.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:lateral-thyrohyoid-ligament": {
+      "description": "Elemento fibroso de sostén.",
+      "function": "Vincula el hioides y el cartílago tiroides.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No representa un pliegue mucoso completo.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:salpingopharyngeus": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Participa en la elevación de la faringe durante la deglución.",
+      "relations": "En relación con paladar, hioides, laringe y esófago.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:transverse-arytenoid": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Aproxima los cartílagos aritenoides.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:straight-part-of-cricothyroid": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Participa en la tensión de los ligamentos vocales.",
+      "relations": "En relación con cartílagos laríngeos, hioides y pliegues vocales.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida. No completa toda la pared mucosa, cavidad ni dinámica de la vía aérea.",
+      "sources": [
+        {
+          "url": "https://anatomy.ttuhscep.edu/nervous_system/deepneck_tables.html",
+          "title": "TTUHSC El Paso · faringe y laringe"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/schemes/larynx_ans.html",
+          "title": "TTUHSC El Paso · acción laríngea"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    }
   }
 }

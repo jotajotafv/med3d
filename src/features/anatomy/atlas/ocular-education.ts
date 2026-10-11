@@ -7,7 +7,7 @@ export function ocularContextIds(node: AnatomyNode, byId: ReadonlyMap<string,Ana
   // Frontal and sphenoid are explicit orbital references, never proximity guesses.
   return [...new Set([...ids,'bp3d:FMA52734','bp3d:FMA52736'])].filter(id=>id!==node.id&&byId.has(id));
 }
-export const OCULAR_DESCRIPTION = {
+export const OCULAR_DESCRIPTION: Partial<Record<NonNullable<AnatomyNode['ocularClass']>, string>> = {
   eyeball:'Cobertura parcial de los globos oculares y sus componentes disponibles. Se agrupa con las vías sensoriales para facilitar su estudio; no constituye un sistema corporal adicional.',
   cornea:'La córnea forma la porción anterior transparente de la cubierta del globo ocular. El material translúcido del atlas permite reconocer el iris y no simula la óptica del ojo.',
   sclera:'La esclerótica forma la cubierta fibrosa externa que rodea gran parte del globo ocular. Se conserva su geometría fuente, sin inflarla ni ajustarla a los párpados.',

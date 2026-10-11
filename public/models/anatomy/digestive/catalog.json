@@ -37,7 +37,8 @@
         "dig:small",
         "dig:large",
         "dig:accessory",
-        "dig:FMA7148"
+        "dig:FMA7148",
+        "dig:region:mesenteries"
       ],
       "kind": "system",
       "assetIds": [
@@ -46,7 +47,9 @@
         "digestive:stomach-accessory",
         "digestive:upper",
         "digestive:completion-dentition",
-        "digestive:completion-anal-sphincter"
+        "digestive:completion-anal-sphincter",
+        "digestive:completion2-oral",
+        "digestive:completion2-mesentery"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -60,7 +63,7 @@
         ],
         [
           0.117482,
-          1.48452,
+          1.50335,
           0.202413
         ]
       ]
@@ -79,7 +82,8 @@
       "kind": "region",
       "assetIds": [
         "digestive:upper",
-        "digestive:completion-dentition"
+        "digestive:completion-dentition",
+        "digestive:completion2-oral"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -95,7 +99,7 @@
         ],
         [
           0.032158200000000005,
-          1.48452,
+          1.50335,
           0.18334899999999998
         ]
       ]
@@ -141,12 +145,22 @@
         "dig:FMA55688",
         "dig:FMA55681",
         "dig:FMA55680",
-        "dig:FMA55798"
+        "dig:FMA55798",
+        "dig:FMA46729",
+        "dig:FMA46732",
+        "dig:FMA46728",
+        "dig:FMA46731",
+        "dig:FMA46733",
+        "dig:FMA46702",
+        "dig:FMA46704",
+        "dig:FMA46698",
+        "dig:FMA46703"
       ],
       "kind": "region",
       "assetIds": [
         "digestive:upper",
-        "digestive:completion-dentition"
+        "digestive:completion-dentition",
+        "digestive:completion2-oral"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -157,12 +171,12 @@
       "bounds": [
         [
           -0.0334475,
-          1.4271500000000001,
-          0.110473
+          1.42535,
+          0.0881797
         ],
         [
           0.032158200000000005,
-          1.48452,
+          1.50335,
           0.18334899999999998
         ]
       ]
@@ -3696,6 +3710,488 @@
           0.038724400000000006
         ]
       ]
+    },
+    {
+      "id": "dig:FMA46729",
+      "sourceId": "FMA46729",
+      "name": "Elevador del velo del paladar · lado izquierdo",
+      "anatomicalName": "Elevador del velo del paladar",
+      "latin": "Musculus levator veli palatini",
+      "aliases": [
+        "Left levator veli palatini",
+        "FMA46729",
+        "FJ2741",
+        "Elevador del velo del paladar",
+        "Musculus levator veli palatini"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion2-oral"
+      ],
+      "meshNames": [
+        "bp3d_FMA46729_FJ2741"
+      ],
+      "family": "completion2:levator-veli-palatini",
+      "educationId": "completion2:levator-veli-palatini",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "resp:larynx",
+        "dig:FMA54640"
+      ],
+      "bounds": [
+        [
+          0.0013861000000000001,
+          1.46368,
+          0.0881805
+        ],
+        [
+          0.0313553,
+          1.49698,
+          0.110106
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA46732",
+      "sourceId": "FMA46732",
+      "name": "Tensor del velo del paladar · lado izquierdo",
+      "anatomicalName": "Tensor del velo del paladar",
+      "latin": "Musculus tensor veli palatini",
+      "aliases": [
+        "Left tensor veli palatini",
+        "FMA46732",
+        "FJ2748",
+        "Tensor del velo del paladar",
+        "Musculus tensor veli palatini"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion2-oral"
+      ],
+      "meshNames": [
+        "bp3d_FMA46732_FJ2748"
+      ],
+      "family": "completion2:tensor-veli-palatini",
+      "educationId": "completion2:tensor-veli-palatini",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "resp:larynx",
+        "dig:FMA54640"
+      ],
+      "bounds": [
+        [
+          0.000760697,
+          1.461,
+          0.1001
+        ],
+        [
+          0.016656900000000002,
+          1.50334,
+          0.120492
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA46728",
+      "sourceId": "FMA46728",
+      "name": "Elevador del velo del paladar · lado derecho",
+      "anatomicalName": "Elevador del velo del paladar",
+      "latin": "Musculus levator veli palatini",
+      "aliases": [
+        "Right levator veli palatini",
+        "FMA46728",
+        "FJ2753",
+        "Elevador del velo del paladar",
+        "Musculus levator veli palatini"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion2-oral"
+      ],
+      "meshNames": [
+        "bp3d_FMA46728_FJ2753"
+      ],
+      "family": "completion2:levator-veli-palatini",
+      "educationId": "completion2:levator-veli-palatini",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "resp:larynx",
+        "dig:FMA54640"
+      ],
+      "bounds": [
+        [
+          -0.0326653,
+          1.4636900000000002,
+          0.0881797
+        ],
+        [
+          -0.0025623300000000002,
+          1.49699,
+          0.1101
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA46731",
+      "sourceId": "FMA46731",
+      "name": "Tensor del velo del paladar · lado derecho",
+      "anatomicalName": "Tensor del velo del paladar",
+      "latin": "Musculus tensor veli palatini",
+      "aliases": [
+        "Right tensor veli palatini",
+        "FMA46731",
+        "FJ2760",
+        "Tensor del velo del paladar",
+        "Musculus tensor veli palatini"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion2-oral"
+      ],
+      "meshNames": [
+        "bp3d_FMA46731_FJ2760"
+      ],
+      "family": "completion2:tensor-veli-palatini",
+      "educationId": "completion2:tensor-veli-palatini",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "resp:larynx",
+        "dig:FMA54640"
+      ],
+      "bounds": [
+        [
+          -0.0179738,
+          1.46099,
+          0.1001
+        ],
+        [
+          -0.00206905,
+          1.50335,
+          0.120495
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA46733",
+      "sourceId": "FMA46733",
+      "name": "Músculo de la úvula",
+      "anatomicalName": "Músculo de la úvula",
+      "latin": "Musculus uvulae",
+      "aliases": [
+        "Uvular muscle",
+        "FMA46733",
+        "FJ2762",
+        "Músculo de la úvula",
+        "Musculus uvulae"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion2-oral"
+      ],
+      "meshNames": [
+        "bp3d_FMA46733_FJ2762"
+      ],
+      "family": "completion2:uvular-muscle",
+      "educationId": "completion2:uvular-muscle",
+      "side": "midline",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "resp:larynx",
+        "dig:FMA54640"
+      ],
+      "bounds": [
+        [
+          -0.00324152,
+          1.4686,
+          0.09788240000000001
+        ],
+        [
+          0.0017569999999999999,
+          1.4778900000000001,
+          0.102396
+        ]
+      ]
+    },
+    {
+      "id": "dig:region:mesenteries",
+      "name": "Mesenterios disponibles",
+      "anatomicalName": "Mesenterios disponibles",
+      "aliases": [
+        "Mesenterios disponibles"
+      ],
+      "systemId": "digestive",
+      "regionId": "dig:region:mesenteries",
+      "parentId": "digestive",
+      "children": [
+        "dig:FMA16549"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "digestive:completion2-mesentery"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "explosionRegionId": "digestive-abdomen",
+      "bounds": [
+        [
+          -0.0831061,
+          0.870205,
+          0.08607909999999999
+        ],
+        [
+          -0.019806999999999998,
+          0.915591,
+          0.126007
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA16549",
+      "sourceId": "FMA16549",
+      "name": "Mesoapéndice",
+      "anatomicalName": "Mesoapéndice",
+      "latin": "Mesoappendix",
+      "aliases": [
+        "Mesoappendix",
+        "FMA16549",
+        "FJ3397",
+        "Mesoapéndice"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:region:mesenteries",
+      "regionId": "dig:region:mesenteries",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "digestive:completion2-mesentery"
+      ],
+      "meshNames": [
+        "bp3d_FMA16549_FJ3397"
+      ],
+      "family": "completion2:mesoappendix",
+      "educationId": "completion2:mesoappendix",
+      "side": "midline",
+      "anatomyType": "Pliegue peritoneal",
+      "relatedIds": [
+        "dig:FMA14542",
+        "dig:large"
+      ],
+      "bounds": [
+        [
+          -0.0831061,
+          0.870205,
+          0.08607909999999999
+        ],
+        [
+          -0.019806999999999998,
+          0.915591,
+          0.126007
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA46702",
+      "sourceId": "FMA46702",
+      "name": "Geniogloso · lado izquierdo",
+      "anatomicalName": "Geniogloso",
+      "latin": "Musculus genioglossus",
+      "aliases": [
+        "Left genioglossus",
+        "FMA46702",
+        "FJ2738",
+        "Geniogloso",
+        "Musculus genioglossus"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion2-oral"
+      ],
+      "meshNames": [
+        "bp3d_FMA46702_FJ2738"
+      ],
+      "family": "completion2:genioglossus",
+      "educationId": "completion2:genioglossus",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "resp:larynx",
+        "dig:FMA54640"
+      ],
+      "bounds": [
+        [
+          -0.00150631,
+          1.42797,
+          0.117236
+        ],
+        [
+          0.00727159,
+          1.45618,
+          0.164546
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA46704",
+      "sourceId": "FMA46704",
+      "name": "Hiogloso · lado izquierdo",
+      "anatomicalName": "Hiogloso",
+      "latin": "Musculus hyoglossus",
+      "aliases": [
+        "Left hyoglossus",
+        "FMA46704",
+        "FJ2739",
+        "Hiogloso",
+        "Musculus hyoglossus"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion2-oral"
+      ],
+      "meshNames": [
+        "bp3d_FMA46704_FJ2739"
+      ],
+      "family": "completion2:hyoglossus",
+      "educationId": "completion2:hyoglossus",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "resp:larynx",
+        "dig:FMA54640"
+      ],
+      "bounds": [
+        [
+          0.00378822,
+          1.42535,
+          0.121839
+        ],
+        [
+          0.011698100000000001,
+          1.44909,
+          0.15141300000000002
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA46698",
+      "sourceId": "FMA46698",
+      "name": "Geniogloso · lado derecho",
+      "anatomicalName": "Geniogloso",
+      "latin": "Musculus genioglossus",
+      "aliases": [
+        "Right genioglossus",
+        "FMA46698",
+        "FJ2750",
+        "Geniogloso",
+        "Musculus genioglossus"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion2-oral"
+      ],
+      "meshNames": [
+        "bp3d_FMA46698_FJ2750"
+      ],
+      "family": "completion2:genioglossus",
+      "educationId": "completion2:genioglossus",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "resp:larynx",
+        "dig:FMA54640"
+      ],
+      "bounds": [
+        [
+          -0.00858361,
+          1.42795,
+          0.117241
+        ],
+        [
+          -0.0006507030000000001,
+          1.45618,
+          0.164541
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA46703",
+      "sourceId": "FMA46703",
+      "name": "Hiogloso · lado derecho",
+      "anatomicalName": "Hiogloso",
+      "latin": "Musculus hyoglossus",
+      "aliases": [
+        "Right hyoglossus",
+        "FMA46703",
+        "FJ2751",
+        "Hiogloso",
+        "Musculus hyoglossus"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion2-oral"
+      ],
+      "meshNames": [
+        "bp3d_FMA46703_FJ2751"
+      ],
+      "family": "completion2:hyoglossus",
+      "educationId": "completion2:hyoglossus",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "resp:larynx",
+        "dig:FMA54640"
+      ],
+      "bounds": [
+        [
+          -0.0129692,
+          1.42536,
+          0.121832
+        ],
+        [
+          -0.00509714,
+          1.44908,
+          0.15141900000000003
+        ]
+      ]
     }
   ],
   "assets": [
@@ -3800,6 +4296,7 @@
       "path": "models/anatomy/digestive/completion-dentition.glb",
       "systemId": "digestive",
       "regionId": "dig:oral",
+      "label": "Dentición permanente · 28 piezas",
       "frameId": "bodyparts3d-4.0-male",
       "defaultEnabled": false,
       "bytes": 350100,
@@ -3818,14 +4315,14 @@
           0.18334899999999998
         ]
       ],
-      "provenanceId": "bodyparts3d-4.0-completion-wave1",
-      "label": "Dentición permanente · 28 piezas"
+      "provenanceId": "bodyparts3d-4.0-completion-wave1"
     },
     {
       "id": "digestive:completion-anal-sphincter",
       "path": "models/anatomy/digestive/completion-anal-sphincter.glb",
       "systemId": "digestive",
       "regionId": "dig:large",
+      "label": "Esfínter anal externo · parcial",
       "frameId": "bodyparts3d-4.0-male",
       "defaultEnabled": false,
       "bytes": 11480,
@@ -3844,8 +4341,59 @@
           0.038724400000000006
         ]
       ],
-      "provenanceId": "bodyparts3d-4.0-completion-wave1",
-      "label": "Esfínter anal externo · parcial"
+      "provenanceId": "bodyparts3d-4.0-completion-wave1"
+    },
+    {
+      "id": "digestive:completion2-oral",
+      "label": "Musculatura oral y palatina disponible",
+      "path": "models/anatomy/digestive/completion2-oral.glb",
+      "systemId": "digestive",
+      "regionId": "dig:oral",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 667852,
+      "sha256": "b413fd529cdca737508322170288ddef81fb3b157340a3875ae94c57552d40f3",
+      "meshCount": 9,
+      "triangles": 75576,
+      "bounds": [
+        [
+          -0.0326653,
+          1.42535,
+          0.0881797
+        ],
+        [
+          0.0313553,
+          1.50335,
+          0.164546
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
+    },
+    {
+      "id": "digestive:completion2-mesentery",
+      "label": "Mesenterios disponibles",
+      "path": "models/anatomy/digestive/completion2-mesentery.glb",
+      "systemId": "digestive",
+      "regionId": "dig:region:mesenteries",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 14820,
+      "sha256": "5ffb9c2e9b5a510c90f5aa604951716b049e7c68a140e11e1a54a52daca986aa",
+      "meshCount": 1,
+      "triangles": 1388,
+      "bounds": [
+        [
+          -0.0831061,
+          0.870205,
+          0.08607909999999999
+        ],
+        [
+          -0.019806999999999998,
+          0.915591,
+          0.126007
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave2"
     }
   ],
   "provenance": [
@@ -3874,7 +4422,23 @@
       "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
       "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
       "modifications": [
-        "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps.",
+        "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
+        "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
+        "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
+        "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
+      ]
+    },
+    {
+      "id": "bodyparts3d-4.0-completion-wave2",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
         "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
         "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
         "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
@@ -3883,8 +4447,8 @@
   ],
   "coverage": {
     "title": "Cobertura digestiva macroscópica disponible",
-    "structures": 52,
-    "meshes": 126,
+    "structures": 61,
+    "meshes": 136,
     "note": "23 unidades anatómicas de nivel estructural, 17 componentes y cuatro módulos: región oral disponible, esófago, estómago, intestinos y órganos accesorios.",
     "limitations": [
       "Cavidad oral y faringe completas pendientes; no se fabrica conexión hasta el esófago.",
@@ -3892,10 +4456,27 @@
       "Parótidas, colédoco separado, hilio y microanatomía no integrados.",
       "Hígado agregado sin exponer la segmentación hepática inconsistente de la fuente. Páncreas y estómago sin cortes artificiales.",
       "Discontinuidades y superficies originales conservadas; las fichas distinguen continuidad anatómica y cobertura geométrica. Sin validación clínica.",
-      "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps."
+      "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
+      "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa."
     ]
   },
   "education": {
+    "completion:teeth": {
+      "description": "Pieza de dentición permanente.",
+      "function": "Participa en la preparación mecánica del alimento.",
+      "relations": "Implantada en la arcada superior o inferior indicada en su nombre.",
+      "limits": "Veintiocho piezas individualizadas; no hay terceros molares ni dentición decidua. No se representan esmalte, dentina, pulpa o periodonto por separado. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares. La raíz se representa en la región alveolar. El hueso de contexto no resuelve el espacio periodontal ni todos los alvéolos; el solapamiento de esas superficies esquemáticas no sirve para medir interfaces dentoalveolares.",
+      "sources": [
+        {
+          "title": "OpenStax · Boca y dentición",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
     "completion:anal-sphincter": {
       "description": "Músculo estriado de la región anal.",
       "function": "Participa en el cierre del conducto anal.",
@@ -3912,19 +4493,119 @@
         }
       ]
     },
-    "completion:teeth": {
-      "description": "Pieza de dentición permanente.",
-      "function": "Participa en la preparación mecánica del alimento.",
-      "relations": "Implantada en la arcada superior o inferior indicada en su nombre.",
-      "limits": "Veintiocho piezas individualizadas; no hay terceros molares ni dentición decidua. No se representan esmalte, dentina, pulpa o periodonto por separado.",
+    "completion2:genioglossus": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Participa en la protrusión de la lengua.",
+      "relations": "En relación con lengua, paladar blando, hioides y faringe.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida.",
       "sources": [
         {
-          "title": "OpenStax · Boca y dentición",
-          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus"
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+          "title": "OpenStax · Cabeza, cuello y espalda"
         },
         {
-          "title": "BodyParts3D · identidad y representación",
-          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+          "url": "https://anatomy.ttuhscep.edu/anatomytables/muscles_head_neck.html",
+          "title": "TTUHSC El Paso · músculos de cabeza y cuello"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:hyoglossus": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Participa en el descenso de la lengua.",
+      "relations": "En relación con lengua, paladar blando, hioides y faringe.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+          "title": "OpenStax · Cabeza, cuello y espalda"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/anatomytables/muscles_head_neck.html",
+          "title": "TTUHSC El Paso · músculos de cabeza y cuello"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:tensor-veli-palatini": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Tensa el paladar blando.",
+      "relations": "En relación con lengua, paladar blando, hioides y faringe.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+          "title": "OpenStax · Cabeza, cuello y espalda"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/anatomytables/muscles_head_neck.html",
+          "title": "TTUHSC El Paso · músculos de cabeza y cuello"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:uvular-muscle": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Acorta y eleva la úvula.",
+      "relations": "En relación con lengua, paladar blando, hioides y faringe.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+          "title": "OpenStax · Cabeza, cuello y espalda"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/anatomytables/muscles_head_neck.html",
+          "title": "TTUHSC El Paso · músculos de cabeza y cuello"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:levator-veli-palatini": {
+      "description": "Músculo esquelético de la región indicada.",
+      "function": "Eleva el paladar blando durante la deglución.",
+      "relations": "En relación con lengua, paladar blando, hioides y faringe.",
+      "limits": "Superficie macroscópica estática; no representa fibras, actividad ni inserciones puntuales. Originales conservados sin recortes ni reflexión añadida.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+          "title": "OpenStax · Cabeza, cuello y espalda"
+        },
+        {
+          "url": "https://anatomy.ttuhscep.edu/anatomytables/muscles_head_neck.html",
+          "title": "TTUHSC El Paso · músculos de cabeza y cuello"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion2:mesoappendix": {
+      "description": "Pliegue peritoneal de sostén visceral.",
+      "function": "Une el apéndice al mesenterio y contiene sus vasos.",
+      "relations": "Entre intestino y pared posterior abdominal.",
+      "limits": "Representación macroscópica disponible del original; no incorpora histología ni simulación fisiológica. No constituye un peritoneo completo ni incorpora vasos como propietarios nuevos.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-1-overview-of-the-digestive-system",
+          "title": "OpenStax · Peritoneo y mesenterios"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
         }
       ]
     }

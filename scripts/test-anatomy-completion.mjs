@@ -27,7 +27,19 @@ for (const selection of selections) {
  assert.equal(hash(await readFile(prefix+'-selection.json')),lock.selectionSha256,'Pinned selection');
  assert.equal(hash(await readFile(prefix+'-originals.zip')),lock.sourceZipSha256,'Pinned originals');
 }
-const added=selections.flatMap(s=>s.nodes),modules=selections.flatMap(s=>s.modules),moduleIds=new Set(modules.map(a=>a.id));
+const activeSelections=[];
+for(const selection of selections){
+ let acceptance;try{acceptance=JSON.parse(await readFile('research/anatomy/completion-wave'+selection.wave+'-acceptance.json','utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
+ if(!acceptance){activeSelections.push(selection);continue;}
+ assert.equal(acceptance.selectionSha256,hash(await readFile('research/anatomy/completion-wave'+selection.wave+'-selection.json')));
+ const active=new Set(acceptance.acceptedNodeIds),rejected=new Set(acceptance.rejected.map(n=>n.id));
+ assert.equal(active.size+rejected.size,selection.nodes.length);assert.ok([...active].every(id=>!rejected.has(id)));
+ for(const id of rejected){assert.ok(!index.byId.has(id),'Rejected candidate absent '+id);for(const fj of selection.nodes.find(n=>n.id===id).sourceElements||[])assert.ok(!body.nodes.some(n=>n.meshNames.some(name=>name.endsWith('_'+fj))),'Rejected source absent '+fj);}
+ const nodes=selection.nodes.filter(n=>active.has(n.id)).map(n=>({...n,relatedIds:n.relatedIds.filter(id=>!rejected.has(id))}));
+ const moduleIds=new Set(nodes.filter(n=>n.sourceElements).flatMap(n=>n.assetIds));
+ activeSelections.push({...selection,nodes,modules:selection.modules.filter(m=>moduleIds.has(m.id))});
+}
+const added=activeSelections.flatMap(s=>s.nodes),modules=activeSelections.flatMap(s=>s.modules),moduleIds=new Set(modules.map(a=>a.id));
 assert.equal(new Set(added.map(n=>n.id)).size,added.length);assert.equal(new Set(modules.map(a=>a.id)).size,modules.length);
 assert.equal(body.nodes.length,981+added.length);assert.equal(body.assets.length,52+modules.length);
 assert.equal(body.nodes.filter(n=>n.kind==='structure').length,580+added.filter(n=>n.kind==='structure').length);
@@ -52,6 +64,18 @@ if(wave1){assert.equal(wave1.nodes.filter(n=>n.family==='permanent-tooth').lengt
  assert.deepEqual(wave1.nodes.filter(n=>n.family==='intercostals').map(n=>n.sourceElements.length),[2,2,2]);
  assert.ok(wave1.nodes.filter(n=>n.systemId==='cardiovascular').every(n=>!/^Arteria femoral profunda/.test(n.name)));
  assert.equal(wave1.nodes.filter(n=>n.family==='extraocular').length,12);assert.equal(wave1.nodes.filter(n=>n.family==='eyelid-muscle').length,2);
+}
+const wave2=activeSelections.find(s=>s.wave===2);
+if(wave2){
+ const names=[...owners.keys()];
+ for(const id of ['FJ1469','FJ1469M','FJ2440'])assert.ok(!names.some(name=>name.endsWith('_'+id)),'No disputed side or duplicate cricoid '+id);
+ assert.equal(wave2.nodes.filter(n=>n.family==='completion2:superficial-head-of-flexor-pollicis-brevis').length,2);
+ assert.equal(wave2.nodes.filter(n=>n.family?.includes('part-of-longus-colli')).length,3);
+ assert.ok(wave2.nodes.filter(n=>n.family?.includes('part-of-longus-colli')).every(n=>n.side==='left'));
+ assert.ok(wave2.nodes.filter(n=>n.ocularClass==='tarsal').every(n=>n.kind==='component'&&n.name.startsWith('Tarso')));
+ assert.ok(wave2.nodes.filter(n=>n.ocularClass==='ciliary').every(n=>n.name.startsWith('Corona ciliar')));
+ assert.ok(!wave2.nodes.some(n=>/yugular externa/i.test(n.name)));
+ assert.equal(skeletal.coverage.structures,203,'Connective components do not inflate bone count');
 }
 
 const brokenLesson=structuredClone(body);delete brokenLesson.education[added.find(n=>n.educationId).educationId];

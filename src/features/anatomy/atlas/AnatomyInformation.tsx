@@ -1,4 +1,5 @@
-import type {AnatomyNode} from './types';
+import type {AnatomyNode, AnatomyCatalog} from './types';
+import SourceInformation from './SourceInformation';
 import InternalInformation from './InternalInformation';
 import IntegumentaryInformation from './IntegumentaryInformation';
 import OcularInformation from './OcularInformation';
@@ -11,7 +12,9 @@ import RespiratoryInformation from './RespiratoryInformation';
 import CardiovascularInformation from './CardiovascularInformation';
 
 /** System-neutral routing; a body root must not inherit a bone information card. */
-export default function AnatomyInformation({node}: {node: AnatomyNode}) {
+export default function AnatomyInformation({node, catalog}: {node: AnatomyNode; catalog?: AnatomyCatalog}) {
+  const lesson = node.educationId && catalog?.education?.[node.educationId];
+  if (lesson) return <SourceInformation node={node} detail={lesson}/>;
   if (node.ocularClass) return <OcularInformation node={node}/>;
   if (node.systemId === 'integumentary') return <IntegumentaryInformation node={node}/>;
   if (node.systemId && INTERNAL_SYSTEMS.includes(node.systemId)) return <InternalInformation node={node}/>;

@@ -1,0 +1,3444 @@
+{
+  "sourceArchive": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+  "version": "4.0 OBJ99",
+  "acquiredAt": "2026-10-11",
+  "author": "Database Center for Life Science (DBCLS), Japan",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "licenseDeclarationSha256": "8f9260788539f3ba0b5fe14fe94f72a089cffd994f1072b1a5d6f52dda327710",
+  "licenseVerifiedBeforeAcquisition": true,
+  "directorySha256": "edde15c7c5f34b2b9743935fb3c1873cce3a9789164427ddf8343c879bcde96b",
+  "selectionSha256": "9e16c766d66d819e2cc750cd3b5f3bcb71118791c0cbbe46ecf6698ac31aba2e",
+  "sourceZipSha256": "d233bfad217458c333c397281d5a6513a0e239f57461e53c14477b9229c80d40",
+  "sourceZipBytes": 20105869,
+  "files": [
+    {
+      "elementId": "FJ3131",
+      "sourceId": "FMA13295",
+      "sha256": "db97e5f8f8d46928ea54b42fb50789e8f5523ef973cc744b2c2f17930fc33dc8",
+      "bytes": 4828611,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ3131",
+        "Representation ID": "BP8798",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA13295",
+        "English name": "Diaphragm",
+        "Bounds(mm)": "(-122.329000,-205.323000,985.852000)-(120.863000,-25.915800,1192.580000)",
+        "Volume(cm3)": "320.548300"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ3131.obj",
+        "method": 8,
+        "crc": 973699536,
+        "compressedBytes": 1330252,
+        "bytes": 4828611,
+        "offset": 119725405
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA13295",
+          "name": "diaphragm",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1451",
+      "sourceId": "FMA9756",
+      "sha256": "588de751687a05ae711f9b8d65f78ddac891994158fa4a94ea2ca48d36dc1b61",
+      "bytes": 9118989,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "",
+        "File ID": "FJ1451",
+        "Representation ID": "",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "",
+        "English name": "",
+        "Bounds(mm)": "(-136.265600,-191.641100,1011.510800)-(-23.285900,-3.228600,1365.365700)",
+        "Volume(cm3)": "80.884000"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1451.obj",
+        "method": 8,
+        "crc": 472385656,
+        "compressedBytes": 2578978,
+        "bytes": 9118989,
+        "offset": 17079976
+      },
+      "identityEvidence": "Exact official 4.0 archive member and FJ-to-FMA isa table; paired aggregate has matching concept header. No individual intercostal or side identity inferred.",
+      "nominalConcepts": [
+        {
+          "id": "FMA9756",
+          "name": "external intercostal muscle",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA13354",
+          "name": "intercostal muscle",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1451M",
+      "sourceId": "FMA9756",
+      "sha256": "d4c021ba00dbe2bd3c7e722cb5982df7659d7d68fe6f4ec980588bfd65d31214",
+      "bytes": 9040548,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1451M",
+        "Representation ID": "BP8306",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA9756",
+        "English name": "External intercostal muscle",
+        "Bounds(mm)": "(23.295300,-191.641000,1011.510000)-(136.166000,-3.281700,1365.370000)",
+        "Volume(cm3)": "80.673700"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1451M.obj",
+        "method": 8,
+        "crc": 1476658691,
+        "compressedBytes": 2576114,
+        "bytes": 9040548,
+        "offset": 19659014
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA9756",
+          "name": "external intercostal muscle",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA13354",
+          "name": "intercostal muscle",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1455",
+      "sourceId": "FMA9757",
+      "sha256": "aa71a14eb5d50c91569fb348ccf3747438bf0e5a4a8cd73784f7ae9ad2f801e3",
+      "bytes": 7706472,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "",
+        "File ID": "FJ1455",
+        "Representation ID": "",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "",
+        "English name": "",
+        "Bounds(mm)": "(-132.914100,-209.310900,1018.442200)-(-16.167200,-4.654700,1314.023400)",
+        "Volume(cm3)": "65.323100"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1455.obj",
+        "method": 8,
+        "crc": 2840494934,
+        "compressedBytes": 2242785,
+        "bytes": 7706472,
+        "offset": 31508592
+      },
+      "identityEvidence": "Exact official 4.0 archive member and FJ-to-FMA isa table; paired aggregate has matching concept header. No individual intercostal or side identity inferred.",
+      "nominalConcepts": [
+        {
+          "id": "FMA9757",
+          "name": "internal intercostal muscle",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA13354",
+          "name": "intercostal muscle",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1455M",
+      "sourceId": "FMA9757",
+      "sha256": "d92760297b5c8ceacf1013460e372abcb05f97192ffc514758d74ac0b73af373",
+      "bytes": 7632850,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1455M",
+        "Representation ID": "BP8018",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA9757",
+        "English name": "Internal intercostal muscle",
+        "Bounds(mm)": "(16.245700,-209.311000,1018.440000)-(132.914000,-4.654700,1314.020000)",
+        "Volume(cm3)": "64.638900"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1455M.obj",
+        "method": 8,
+        "crc": 1246052574,
+        "compressedBytes": 2237818,
+        "bytes": 7632850,
+        "offset": 33751437
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA9757",
+          "name": "internal intercostal muscle",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA13354",
+          "name": "intercostal muscle",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1454",
+      "sourceId": "FMA9758",
+      "sha256": "8e9a5c48482ba61dfe2ed19ced05121093a7bf3f8c6e0ac7d0c0b8ebe8bce45d",
+      "bytes": 7720469,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "",
+        "File ID": "FJ1454",
+        "Representation ID": "",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "",
+        "English name": "",
+        "Bounds(mm)": "(-134.646600,-193.373500,1019.160200)-(-50.776300,-6.257800,1315.021100)",
+        "Volume(cm3)": "63.890500"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1454.obj",
+        "method": 8,
+        "crc": 903866739,
+        "compressedBytes": 2213395,
+        "bytes": 7720469,
+        "offset": 27087542
+      },
+      "identityEvidence": "Exact official 4.0 archive member and FJ-to-FMA isa table; paired aggregate has matching concept header. No individual intercostal or side identity inferred.",
+      "nominalConcepts": [
+        {
+          "id": "FMA9758",
+          "name": "innermost intercostal muscle",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA13354",
+          "name": "intercostal muscle",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1454M",
+      "sourceId": "FMA9758",
+      "sha256": "7458ea18bdf836da68b0220da5421cddb1bb653da909d998dea14db3d5ef00c5",
+      "bytes": 7642908,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1454M",
+        "Representation ID": "BP9146",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA9758",
+        "English name": "Innermost intercostal muscle",
+        "Bounds(mm)": "(50.776300,-193.373000,1019.160000)-(134.625000,-6.302800,1314.980000)",
+        "Volume(cm3)": "64.008300"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1454M.obj",
+        "method": 8,
+        "crc": 2552863082,
+        "compressedBytes": 2207534,
+        "bytes": 7642908,
+        "offset": 29300997
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA9758",
+          "name": "innermost intercostal muscle",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA13354",
+          "name": "intercostal muscle",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1428",
+      "sourceId": "FMA22340",
+      "sha256": "b5420d081245d8f0dd276625a3c96fb5180dd2fcc4c0dc6a3f7990869090a23f",
+      "bytes": 79475,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1428",
+        "Representation ID": "BP5076",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22340",
+        "English name": "Right piriformis",
+        "Bounds(mm)": "(-137.060000,-72.018600,805.849900)-(-25.480500,-12.082200,872.403000)",
+        "Volume(cm3)": "29.233400"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1428.obj",
+        "method": 8,
+        "crc": 3266448261,
+        "compressedBytes": 25975,
+        "bytes": 79475,
+        "offset": 14114931
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA19082",
+          "name": "piriformis",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22340",
+          "name": "right piriformis",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1426",
+      "sourceId": "FMA22324",
+      "sha256": "977a261dc98ce11a53282b2400b4b1f89160000c5e254bbd1755b26bbbab8ed4",
+      "bytes": 189554,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1426",
+        "Representation ID": "BP5079",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22324",
+        "English name": "Right obturator internus",
+        "Bounds(mm)": "(-119.051000,-107.096300,770.373400)-(-21.533300,-29.226600,827.573300)",
+        "Volume(cm3)": "17.151000"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1426.obj",
+        "method": 8,
+        "crc": 2773582935,
+        "compressedBytes": 59090,
+        "bytes": 189554,
+        "offset": 13933471
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA22298",
+          "name": "obturator internus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22324",
+          "name": "right obturator internus",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1425",
+      "sourceId": "FMA22326",
+      "sha256": "ccf94b03dc0f4c669c2ac96441127c17ad9287edc0001b5923879df99c75f3ae",
+      "bytes": 65272,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1425",
+        "Representation ID": "BP5081",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22326",
+        "English name": "Right obturator externus",
+        "Bounds(mm)": "(-128.530200,-109.507500,767.112500)-(-24.429200,-55.301800,796.614400)",
+        "Volume(cm3)": "17.752700"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1425.obj",
+        "method": 8,
+        "crc": 3572664915,
+        "compressedBytes": 20708,
+        "bytes": 65272,
+        "offset": 13891872
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA22299",
+          "name": "obturator externus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22326",
+          "name": "right obturator externus",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1417",
+      "sourceId": "FMA22334",
+      "sha256": "57a2cec17f38fe60323d68942a7458512f0fe836a6e9ace69cf5fe6535e64365",
+      "bytes": 42970,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1417",
+        "Representation ID": "BP5068",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22334",
+        "English name": "Right gemellus superior",
+        "Bounds(mm)": "(-125.190600,-78.041600,797.951400)-(-45.334900,-32.873900,825.188500)",
+        "Volume(cm3)": "4.572600"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1417.obj",
+        "method": 8,
+        "crc": 3878791722,
+        "compressedBytes": 12454,
+        "bytes": 42970,
+        "offset": 12263679
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA22318",
+          "name": "gemellus superior",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22319",
+          "name": "gemellus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22334",
+          "name": "right gemellus superior",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1416",
+      "sourceId": "FMA22336",
+      "sha256": "4479931f789d919fe352532a1b377f88c48914d461d5bd68ffd008082e7e92c7",
+      "bytes": 48712,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1416",
+        "Representation ID": "BP5070",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22336",
+        "English name": "Right gemellus inferior",
+        "Bounds(mm)": "(-125.865300,-77.825100,780.900700)-(-55.529100,-23.792900,803.014000)",
+        "Volume(cm3)": "4.162200"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1416.obj",
+        "method": 8,
+        "crc": 3415162089,
+        "compressedBytes": 15903,
+        "bytes": 48712,
+        "offset": 12231789
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA22319",
+          "name": "gemellus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22320",
+          "name": "gemellus inferior",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22336",
+          "name": "right gemellus inferior",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1432",
+      "sourceId": "FMA22338",
+      "sha256": "3c1121d358ea50cfb88fe829c5128ecc3470309e3de5d7f642bc8cf35555fdb1",
+      "bytes": 96117,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1432",
+        "Representation ID": "BP5074",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22338",
+        "English name": "Right quadratus femoris",
+        "Bounds(mm)": "(-127.187000,-57.950800,743.579000)-(-56.570600,-42.434700,789.862400)",
+        "Volume(cm3)": "12.921000"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1432.obj",
+        "method": 8,
+        "crc": 2338641197,
+        "compressedBytes": 29740,
+        "bytes": 96117,
+        "offset": 14556156
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA22321",
+          "name": "quadratus femoris",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22338",
+          "name": "right quadratus femoris",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1431",
+      "sourceId": "FMA22342",
+      "sha256": "b66009da13d6241d66de3c0242288abfe0c90ce1c76b38000f9a92b02e2f1e0f",
+      "bytes": 379043,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1431",
+        "Representation ID": "BP4701",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22342",
+        "English name": "Right psoas major",
+        "Bounds(mm)": "(-113.804500,-119.917200,735.107700)-(-7.475200,-53.134900,1098.740700)",
+        "Volume(cm3)": "173.682800"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1431.obj",
+        "method": 8,
+        "crc": 2983641614,
+        "compressedBytes": 120493,
+        "bytes": 379043,
+        "offset": 14315819
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA18060",
+          "name": "psoas major",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22342",
+          "name": "right psoas major",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1422",
+      "sourceId": "FMA22322",
+      "sha256": "e7201ed4264a06a3689592625a20abcc9aed26435f0797a1e8e41b68335d1e24",
+      "bytes": 238318,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1422",
+        "Representation ID": "BP5085",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22322",
+        "English name": "Right iliacus",
+        "Bounds(mm)": "(-127.253800,-129.448800,733.822100)-(-72.644400,-46.238800,957.991500)",
+        "Volume(cm3)": "122.588200"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1422.obj",
+        "method": 8,
+        "crc": 3418156486,
+        "compressedBytes": 74437,
+        "bytes": 238318,
+        "offset": 12902470
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA22310",
+          "name": "iliacus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22322",
+          "name": "right iliacus",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1428M",
+      "sourceId": "FMA22341",
+      "sha256": "358d903b3d4f530e4219cfc7e6a64e24afda7e544d74aea5df42e89b8ae543bc",
+      "bytes": 78577,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1428M",
+        "Representation ID": "BP8131",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22341",
+        "English name": "Left piriformis",
+        "Bounds(mm)": "(25.480500,-72.018600,806.056000)-(137.060000,-12.082200,872.403000)",
+        "Volume(cm3)": "29.193300"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1428M.obj",
+        "method": 8,
+        "crc": 1516731514,
+        "compressedBytes": 25898,
+        "bytes": 78577,
+        "offset": 14140966
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA19082",
+          "name": "piriformis",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22341",
+          "name": "left piriformis",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1426M",
+      "sourceId": "FMA22325",
+      "sha256": "48e688da5e4d5ce01ff70dbedcf4b6232a4a2f64295ee5c8d89f8b4ee7b3889c",
+      "bytes": 187902,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1426M",
+        "Representation ID": "BP7986",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22325",
+        "English name": "Left obturator internus",
+        "Bounds(mm)": "(21.533300,-107.096000,770.373000)-(119.051000,-29.343100,827.494000)",
+        "Volume(cm3)": "16.840400"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1426M.obj",
+        "method": 8,
+        "crc": 2934273557,
+        "compressedBytes": 58892,
+        "bytes": 187902,
+        "offset": 13992621
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA22298",
+          "name": "obturator internus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22325",
+          "name": "left obturator internus",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1425M",
+      "sourceId": "FMA22327",
+      "sha256": "706257705ecc5fd6b12fa106eceea754e1200a68745e1d474ab4098e186c402a",
+      "bytes": 64765,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1425M",
+        "Representation ID": "BP8506",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22327",
+        "English name": "Left obturator externus",
+        "Bounds(mm)": "(24.429200,-109.507000,767.380000)-(128.389000,-55.467200,796.614000)",
+        "Volume(cm3)": "18.257600"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1425M.obj",
+        "method": 8,
+        "crc": 1293571388,
+        "compressedBytes": 20770,
+        "bytes": 64765,
+        "offset": 13912640
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA22299",
+          "name": "obturator externus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22327",
+          "name": "left obturator externus",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1417M",
+      "sourceId": "FMA22335",
+      "sha256": "b703d944a851871af8f4aab31d567e328a2b73e4709bc5703531faf7e9d6681d",
+      "bytes": 42601,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1417M",
+        "Representation ID": "BP8028",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22335",
+        "English name": "Left gemellus superior",
+        "Bounds(mm)": "(45.334900,-78.041600,798.182000)-(125.191000,-33.169700,825.188000)",
+        "Volume(cm3)": "3.290700"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1417M.obj",
+        "method": 8,
+        "crc": 104527881,
+        "compressedBytes": 12513,
+        "bytes": 42601,
+        "offset": 12276193
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA22318",
+          "name": "gemellus superior",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22319",
+          "name": "gemellus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22335",
+          "name": "left gemellus superior",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1416M",
+      "sourceId": "FMA22337",
+      "sha256": "9fc9803d6dc438dfccb5a12e8644927cefae78db28975a8e864f16bd3ac19d77",
+      "bytes": 48307,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1416M",
+        "Representation ID": "BP8454",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22337",
+        "English name": "Left gemellus inferior",
+        "Bounds(mm)": "(55.529100,-77.825100,780.901000)-(125.865000,-23.882200,802.879000)",
+        "Volume(cm3)": "3.654200"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1416M.obj",
+        "method": 8,
+        "crc": 3902705983,
+        "compressedBytes": 15866,
+        "bytes": 48307,
+        "offset": 12247752
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA22319",
+          "name": "gemellus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22320",
+          "name": "gemellus inferior",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22337",
+          "name": "left gemellus inferior",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1432M",
+      "sourceId": "FMA22339",
+      "sha256": "50f5a96e1a54247754748700a75f30f65936e639da558845cdb73a4665a5c5cf",
+      "bytes": 94874,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1432M",
+        "Representation ID": "BP8661",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22339",
+        "English name": "Left quadratus femoris",
+        "Bounds(mm)": "(56.570600,-57.886400,743.654000)-(127.187000,-42.656100,789.854000)",
+        "Volume(cm3)": "12.780900"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1432M.obj",
+        "method": 8,
+        "crc": 2442966238,
+        "compressedBytes": 29725,
+        "bytes": 94874,
+        "offset": 14585956
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA22321",
+          "name": "quadratus femoris",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22339",
+          "name": "left quadratus femoris",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1431M",
+      "sourceId": "FMA22343",
+      "sha256": "6ab42a645723e66a32b2c64e72be87e0a13fb497cbbf2ff29d26bc827fbaa0ce",
+      "bytes": 376391,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1431M",
+        "Representation ID": "BP8373",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22343",
+        "English name": "Left psoas major",
+        "Bounds(mm)": "(7.475200,-119.566000,735.215000)-(113.757000,-53.134900,1098.740000)",
+        "Volume(cm3)": "172.927500"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1431M.obj",
+        "method": 8,
+        "crc": 3481644695,
+        "compressedBytes": 119723,
+        "bytes": 376391,
+        "offset": 14436372
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA18060",
+          "name": "psoas major",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22343",
+          "name": "left psoas major",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1422M",
+      "sourceId": "FMA22323",
+      "sha256": "0f8dc9b412a3f0095a86db8aeca0bd80edf0a80b75d92f5edb5e0c4e1186e164",
+      "bytes": 236600,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1422M",
+        "Representation ID": "BP8312",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22323",
+        "English name": "Left iliacus",
+        "Bounds(mm)": "(72.749100,-129.449000,733.822000)-(127.254000,-46.353400,957.991000)",
+        "Volume(cm3)": "121.248800"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1422M.obj",
+        "method": 8,
+        "crc": 2113812140,
+        "compressedBytes": 74176,
+        "bytes": 236600,
+        "offset": 12976967
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA22310",
+          "name": "iliacus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA22323",
+          "name": "left iliacus",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1254",
+      "sourceId": "FMA55704",
+      "sha256": "7ac5ee013326492b1d51795eb292a7e5bba0647b74c30b09dc715f9a1dc28754",
+      "bytes": 103775,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1254",
+        "Representation ID": "BP5462",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55704",
+        "English name": "Left lower first secondary molar tooth",
+        "Bounds(mm)": "(16.398500,-154.091400,1439.084100)-(28.773500,-138.962000,1458.867900)",
+        "Volume(cm3)": "1.278100"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1254.obj",
+        "method": 8,
+        "crc": 3041378299,
+        "compressedBytes": 32484,
+        "bytes": 103775,
+        "offset": 75028
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55704",
+          "name": "left lower first secondary molar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1255",
+      "sourceId": "FMA55693",
+      "sha256": "6cbac9debf9b9cd9825f096c5ac84911f91020a36ec6f95fdfc49f10a679822b",
+      "bytes": 69150,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1255",
+        "Representation ID": "BP5472",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55693",
+        "English name": "Left lower first secondary premolar tooth",
+        "Bounds(mm)": "(12.543900,-167.548600,1432.066400)-(20.505000,-153.367700,1454.586900)",
+        "Volume(cm3)": "0.698400"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1255.obj",
+        "method": 8,
+        "crc": 27355767,
+        "compressedBytes": 22147,
+        "bytes": 69150,
+        "offset": 107572
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55693",
+          "name": "left lower first secondary premolar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1256",
+      "sourceId": "FMA55703",
+      "sha256": "a5dfb507dc76447d6ca09e4a5e11b8750571227d13b582cfffac1d2f35cd1bec",
+      "bytes": 95723,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1256",
+        "Representation ID": "BP5459",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55703",
+        "English name": "Left lower second secondary molar tooth",
+        "Bounds(mm)": "(20.032300,-142.864600,1444.459000)-(32.177500,-126.327700,1463.194500)",
+        "Volume(cm3)": "1.150000"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1256.obj",
+        "method": 8,
+        "crc": 479391246,
+        "compressedBytes": 30204,
+        "bytes": 95723,
+        "offset": 129779
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55703",
+          "name": "left lower second secondary molar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1257",
+      "sourceId": "FMA55692",
+      "sha256": "b4e2d2cb7d5e7d41d82bc6e48b3de5cb628a0786ae0d82abadd39250f6dff3a7",
+      "bytes": 65949,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1257",
+        "Representation ID": "BP5475",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55692",
+        "English name": "Left lower second secondary premolar tooth",
+        "Bounds(mm)": "(15.560100,-160.667800,1432.449300)-(23.714200,-147.339300,1455.853400)",
+        "Volume(cm3)": "0.606700"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1257.obj",
+        "method": 8,
+        "crc": 747442654,
+        "compressedBytes": 21226,
+        "bytes": 65949,
+        "offset": 160043
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55692",
+          "name": "left lower second secondary premolar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1258",
+      "sourceId": "FMA57143",
+      "sha256": "56fe0ccb8277f4ae0c945d3f2b3cf0a3a816ec2edf31eae4ab46a91954bde7aa",
+      "bytes": 53967,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1258",
+        "Representation ID": "BP5447",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA57143",
+        "English name": "Left lower central secondary incisor tooth",
+        "Bounds(mm)": "(-0.505700,-178.501500,1428.074100)-(5.410500,-160.257400,1453.566900)",
+        "Volume(cm3)": "0.387000"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1258.obj",
+        "method": 8,
+        "crc": 1217217672,
+        "compressedBytes": 17850,
+        "bytes": 53967,
+        "offset": 181329
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA57143",
+          "name": "left lower central secondary incisor tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1259",
+      "sourceId": "FMA57141",
+      "sha256": "f2a5c7fb06457bf61d55f8cab4048983651418f01b3bad013e9a2dea7a383b62",
+      "bytes": 56256,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1259",
+        "Representation ID": "BP5444",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA57141",
+        "English name": "Left lower lateral secondary incisor tooth",
+        "Bounds(mm)": "(3.513700,-177.820600,1428.377700)-(11.395600,-160.967900,1453.538800)",
+        "Volume(cm3)": "0.423400"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1259.obj",
+        "method": 8,
+        "crc": 1624544816,
+        "compressedBytes": 18437,
+        "bytes": 56256,
+        "offset": 199239
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA57141",
+          "name": "left lower lateral secondary incisor tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1260",
+      "sourceId": "FMA55687",
+      "sha256": "4dd682c058f3949b30077712296603c1c508423a58998ad909baeec5bfa56b72",
+      "bytes": 69212,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1260",
+        "Representation ID": "BP5480",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55687",
+        "English name": "Left lower secondary canine tooth",
+        "Bounds(mm)": "(7.660300,-173.867400,1427.134200)-(16.319100,-158.247700,1453.995600)",
+        "Volume(cm3)": "0.608600"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1260.obj",
+        "method": 8,
+        "crc": 1853292295,
+        "compressedBytes": 22306,
+        "bytes": 69212,
+        "offset": 217736
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55687",
+          "name": "left lower secondary canine tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1261",
+      "sourceId": "FMA55699",
+      "sha256": "529061a7fdb28af07855e7350f788f93ef6c97e3bfead2e28bb9efe0256b0728",
+      "bytes": 128003,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1261",
+        "Representation ID": "BP5455",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55699",
+        "English name": "Left upper first secondary molar tooth",
+        "Bounds(mm)": "(18.274700,-154.215200,1457.845100)-(29.899400,-142.632000,1482.445800)",
+        "Volume(cm3)": "1.410000"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1261.obj",
+        "method": 8,
+        "crc": 1363036261,
+        "compressedBytes": 39308,
+        "bytes": 128003,
+        "offset": 240102
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55699",
+          "name": "left upper first secondary molar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1262",
+      "sourceId": "FMA55690",
+      "sha256": "5f45ec1015edb7c7539a3ef7a7577d4a0a723beb4dbfb18e36eca77663431c18",
+      "bytes": 95273,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1262",
+        "Representation ID": "BP5468",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55690",
+        "English name": "Left upper first secondary premolar tooth",
+        "Bounds(mm)": "(15.133400,-167.530600,1454.706400)-(24.650200,-159.476000,1483.184400)",
+        "Volume(cm3)": "0.812700"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1262.obj",
+        "method": 8,
+        "crc": 2440869384,
+        "compressedBytes": 29950,
+        "bytes": 95273,
+        "offset": 279470
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55690",
+          "name": "left upper first secondary premolar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1263",
+      "sourceId": "FMA55700",
+      "sha256": "5811bdc8cfed255f8aa9e10fa8dd4815b5d0924c2a23f1d7e373c8521be6c65a",
+      "bytes": 110058,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1263",
+        "Representation ID": "BP5453",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55700",
+        "English name": "Left upper second secondary molar tooth",
+        "Bounds(mm)": "(17.642400,-144.691600,1461.455600)-(29.555400,-134.777800,1484.146500)",
+        "Volume(cm3)": "1.066000"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1263.obj",
+        "method": 8,
+        "crc": 2586304566,
+        "compressedBytes": 34319,
+        "bytes": 110058,
+        "offset": 309480
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55700",
+          "name": "left upper second secondary molar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1264",
+      "sourceId": "FMA55691",
+      "sha256": "e882218931e8f197490f16ba8058a87502edccc5e8e1f2d50fbd715a0386d33b",
+      "bytes": 86905,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1264",
+        "Representation ID": "BP5466",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55691",
+        "English name": "Left upper second secondary premolar tooth",
+        "Bounds(mm)": "(18.310000,-161.179100,1455.839400)-(27.638300,-153.576700,1481.800000)",
+        "Volume(cm3)": "0.777700"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1264.obj",
+        "method": 8,
+        "crc": 1363186216,
+        "compressedBytes": 27468,
+        "bytes": 86905,
+        "offset": 343859
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55691",
+          "name": "left upper second secondary premolar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1265",
+      "sourceId": "FMA55682",
+      "sha256": "bd094c59fb378809a534467b70b5b24ae0b147bc31f42c004e7ddadf8f0b7328",
+      "bytes": 75752,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1265",
+        "Representation ID": "BP5440",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55682",
+        "English name": "Left upper central secondary incisor tooth",
+        "Bounds(mm)": "(-0.504700,-183.372700,1452.344200)-(8.380400,-170.451500,1478.797100)",
+        "Volume(cm3)": "0.649700"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1265.obj",
+        "method": 8,
+        "crc": 1212567688,
+        "compressedBytes": 24767,
+        "bytes": 75752,
+        "offset": 371387
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55682",
+          "name": "left upper central secondary incisor tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1266",
+      "sourceId": "FMA55683",
+      "sha256": "4df1ab640352a074623d02e755e7632de180da9dc957503f887c791a533d5ea5",
+      "bytes": 80970,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1266",
+        "Representation ID": "BP5438",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55683",
+        "English name": "Left upper lateral secondary incisor tooth",
+        "Bounds(mm)": "(5.972600,-180.629100,1451.651500)-(15.624800,-168.928300,1480.609600)",
+        "Volume(cm3)": "0.674200"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1266.obj",
+        "method": 8,
+        "crc": 3302206407,
+        "compressedBytes": 26100,
+        "bytes": 80970,
+        "offset": 396214
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55683",
+          "name": "left upper lateral secondary incisor tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1267",
+      "sourceId": "FMA55799",
+      "sha256": "44f5accf76e8b0a1ac2aefb55d031508fedad0bacda03b598aef71f88ca2462d",
+      "bytes": 81747,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1267",
+        "Representation ID": "BP5482",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55799",
+        "English name": "Left upper secondary canine tooth",
+        "Bounds(mm)": "(12.193100,-175.949700,1453.123000)-(21.473600,-166.604400,1484.523900)",
+        "Volume(cm3)": "0.720400"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1267.obj",
+        "method": 8,
+        "crc": 2209167125,
+        "compressedBytes": 26160,
+        "bytes": 81747,
+        "offset": 422374
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55799",
+          "name": "left upper secondary canine tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1268",
+      "sourceId": "FMA55705",
+      "sha256": "692c5313517c8b049fac739a068710f8bdbd1f3e201a1b88819aff6f8f1a6eda",
+      "bytes": 104807,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1268",
+        "Representation ID": "BP5461",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55705",
+        "English name": "Right lower first secondary molar tooth",
+        "Bounds(mm)": "(-30.090600,-154.093000,1439.098000)-(-17.708700,-138.955300,1458.849600)",
+        "Volume(cm3)": "1.278300"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1268.obj",
+        "method": 8,
+        "crc": 2564525064,
+        "compressedBytes": 32527,
+        "bytes": 104807,
+        "offset": 448594
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55705",
+          "name": "right lower first secondary molar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1269",
+      "sourceId": "FMA55694",
+      "sha256": "7b3067782910e38d45b03901ba998fcf35088b9f85c523b3cc890cf11adbf17f",
+      "bytes": 69791,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1269",
+        "Representation ID": "BP5471",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55694",
+        "English name": "Right lower first secondary premolar tooth",
+        "Bounds(mm)": "(-21.802200,-167.553600,1432.063200)-(-13.819100,-153.368600,1454.599600)",
+        "Volume(cm3)": "0.699500"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1269.obj",
+        "method": 8,
+        "crc": 45779006,
+        "compressedBytes": 22226,
+        "bytes": 69791,
+        "offset": 481181
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55694",
+          "name": "right lower first secondary premolar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1270",
+      "sourceId": "FMA55706",
+      "sha256": "722d80bd11c7e814c3c1c2b20fe2621ed8327319028ad67c6e4dce24d7ee4458",
+      "bytes": 96262,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1270",
+        "Representation ID": "BP5458",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55706",
+        "English name": "Right lower second secondary molar tooth",
+        "Bounds(mm)": "(-33.476200,-142.890800,1444.476600)-(-21.351500,-126.328700,1463.192900)",
+        "Volume(cm3)": "1.148700"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1270.obj",
+        "method": 8,
+        "crc": 3570424007,
+        "compressedBytes": 30182,
+        "bytes": 96262,
+        "offset": 503467
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55706",
+          "name": "right lower second secondary molar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1271",
+      "sourceId": "FMA55695",
+      "sha256": "220723db70ad6e5edd497977f656be1df7d407804d5ca31302bca598a3d81c41",
+      "bytes": 66636,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1271",
+        "Representation ID": "BP5474",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55695",
+        "English name": "Right lower second secondary premolar tooth",
+        "Bounds(mm)": "(-25.028500,-160.661800,1432.439800)-(-16.866600,-147.311900,1455.842200)",
+        "Volume(cm3)": "0.606900"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1271.obj",
+        "method": 8,
+        "crc": 2686905129,
+        "compressedBytes": 21230,
+        "bytes": 66636,
+        "offset": 533709
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55695",
+          "name": "right lower second secondary premolar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1272",
+      "sourceId": "FMA57142",
+      "sha256": "17927707d17fa7a78f9743f90b4150d6e7b4eaa4fe5c8ad29a961b4ea795272b",
+      "bytes": 54356,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1272",
+        "Representation ID": "BP5446",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA57142",
+        "English name": "Right lower central secondary incisor tooth",
+        "Bounds(mm)": "(-6.725600,-178.511900,1428.081200)-(-0.809300,-160.247700,1453.584400)",
+        "Volume(cm3)": "0.387900"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1272.obj",
+        "method": 8,
+        "crc": 3471681247,
+        "compressedBytes": 17806,
+        "bytes": 54356,
+        "offset": 554999
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA57142",
+          "name": "right lower central secondary incisor tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1273",
+      "sourceId": "FMA57140",
+      "sha256": "43ca036b3bf66dad24be63b0f95a2a8ecf839b61d2d83981659e03b4a357f869",
+      "bytes": 56841,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1273",
+        "Representation ID": "BP5443",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA57140",
+        "English name": "Right lower lateral secondary incisor tooth",
+        "Bounds(mm)": "(-12.714100,-177.839500,1428.372400)-(-4.821000,-160.962600,1453.537800)",
+        "Volume(cm3)": "0.424200"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1273.obj",
+        "method": 8,
+        "crc": 3934426498,
+        "compressedBytes": 18544,
+        "bytes": 56841,
+        "offset": 572865
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA57140",
+          "name": "right lower lateral secondary incisor tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1274",
+      "sourceId": "FMA55686",
+      "sha256": "a7ded2520e6c1e41154d89a389b4ded0daf733f23d47e4a02fb97230c07b4907",
+      "bytes": 69629,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1274",
+        "Representation ID": "BP5479",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55686",
+        "English name": "Right lower secondary canine tooth",
+        "Bounds(mm)": "(-17.630600,-173.868600,1427.137700)-(-8.974700,-158.243900,1453.998800)",
+        "Volume(cm3)": "0.608800"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1274.obj",
+        "method": 8,
+        "crc": 2888173401,
+        "compressedBytes": 22226,
+        "bytes": 69629,
+        "offset": 591469
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55686",
+          "name": "right lower secondary canine tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1275",
+      "sourceId": "FMA55697",
+      "sha256": "457c1d089e24d7e120abf97c2af844ff609a58c3292446e4b1814137d3691416",
+      "bytes": 111671,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1275",
+        "Representation ID": "BP5452",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55697",
+        "English name": "Right upper second secondary molar tooth",
+        "Bounds(mm)": "(-30.887200,-144.668600,1461.445900)-(-18.943300,-134.811900,1484.155600)",
+        "Volume(cm3)": "1.066000"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1275.obj",
+        "method": 8,
+        "crc": 1706483614,
+        "compressedBytes": 34609,
+        "bytes": 111671,
+        "offset": 613755
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55697",
+          "name": "right upper second secondary molar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1276",
+      "sourceId": "FMA55698",
+      "sha256": "95ba31eb43e4975d8f36be7595e383baf31b21b68c829a5e6c419a0125682ef6",
+      "bytes": 130145,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1276",
+        "Representation ID": "BP7680",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55698",
+        "English name": "Right upper first secondary molar tooth",
+        "Bounds(mm)": "(-31.214300,-154.202600,1457.851400)-(-19.592000,-142.649100,1482.442600)",
+        "Volume(cm3)": "1.408900"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1276.obj",
+        "method": 8,
+        "crc": 3267674907,
+        "compressedBytes": 39623,
+        "bytes": 130145,
+        "offset": 648424
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55698",
+          "name": "right upper first secondary molar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1277",
+      "sourceId": "FMA55689",
+      "sha256": "46d0a4b9528553387811d65040836ccfe7dc971fec56254e01c9eabdc16156a0",
+      "bytes": 95890,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1277",
+        "Representation ID": "BP7681",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55689",
+        "English name": "Right upper first secondary premolar tooth",
+        "Bounds(mm)": "(-25.972600,-167.545200,1454.722200)-(-16.420200,-159.476500,1483.184000)",
+        "Volume(cm3)": "0.813100"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1277.obj",
+        "method": 8,
+        "crc": 786198245,
+        "compressedBytes": 29949,
+        "bytes": 95890,
+        "offset": 688107
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55689",
+          "name": "right upper first secondary premolar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1278",
+      "sourceId": "FMA55688",
+      "sha256": "32f4db913923278b7cbfcaf8e64d1073604951dd58493e3310da30bec1ff3829",
+      "bytes": 87622,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1278",
+        "Representation ID": "BP7682",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55688",
+        "English name": "Right upper second secondary premolar tooth",
+        "Bounds(mm)": "(-28.957500,-161.178800,1455.828600)-(-19.629400,-153.555700,1481.799800)",
+        "Volume(cm3)": "0.777500"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1278.obj",
+        "method": 8,
+        "crc": 3426749849,
+        "compressedBytes": 27569,
+        "bytes": 87622,
+        "offset": 718116
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55688",
+          "name": "right upper second secondary premolar tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1279",
+      "sourceId": "FMA55681",
+      "sha256": "e8b9c01f57a8a723f9ea0497dfbe2df5f95e23786d0663f196a3608f995d6b22",
+      "bytes": 76355,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1279",
+        "Representation ID": "BP7683",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55681",
+        "English name": "Right upper central secondary incisor tooth",
+        "Bounds(mm)": "(-9.686500,-183.370300,1452.351200)-(-0.798700,-170.449900,1478.779500)",
+        "Volume(cm3)": "0.650300"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1279.obj",
+        "method": 8,
+        "crc": 877801183,
+        "compressedBytes": 24715,
+        "bytes": 76355,
+        "offset": 745745
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55681",
+          "name": "right upper central secondary incisor tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1280",
+      "sourceId": "FMA55680",
+      "sha256": "5c06c01ee01c337523fc9cf641c31c65856a52c74237d9d86989d93dd6847c0e",
+      "bytes": 81012,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1280",
+        "Representation ID": "BP7747",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55680",
+        "English name": "Right upper lateral secondary incisor tooth",
+        "Bounds(mm)": "(-16.899500,-180.258200,1451.659200)-(-7.284600,-168.925700,1480.599600)",
+        "Volume(cm3)": "0.664400"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1280.obj",
+        "method": 8,
+        "crc": 2621060245,
+        "compressedBytes": 25739,
+        "bytes": 81012,
+        "offset": 770520
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55680",
+          "name": "right upper lateral secondary incisor tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1281",
+      "sourceId": "FMA55798",
+      "sha256": "2d8f105ee772e727e3b4ccbb6370a893a213174c0f90155054dac20bc053512c",
+      "bytes": 82485,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1281",
+        "Representation ID": "BP7684",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA55798",
+        "English name": "Right upper secondary canine tooth",
+        "Bounds(mm)": "(-22.782300,-175.946100,1453.117400)-(-13.489400,-166.606800,1484.522600)",
+        "Volume(cm3)": "0.719800"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1281.obj",
+        "method": 8,
+        "crc": 3527098819,
+        "compressedBytes": 26183,
+        "bytes": 82485,
+        "offset": 796319
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA55798",
+          "name": "right upper secondary canine tooth",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1294",
+      "sourceId": "FMA49051",
+      "sha256": "fc7dd40ee970cbbeae8ee147d0e7638e94fb166d28d4b1e1e62314f19395d6a8",
+      "bytes": 143313,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1294",
+        "Representation ID": "BP4948",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49051",
+        "English name": "Left inferior oblique",
+        "Bounds(mm)": "(12.549100,-166.324200,1503.138400)-(41.935200,-140.471700,1519.502100)",
+        "Volume(cm3)": "0.326400"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1294.obj",
+        "method": 8,
+        "crc": 166383132,
+        "compressedBytes": 43524,
+        "bytes": 143313,
+        "offset": 2302350
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49051",
+          "name": "left inferior oblique",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1295",
+      "sourceId": "FMA49047",
+      "sha256": "7e5c20a2e78d0d606c370a626b299d6fa9183c5be487a04dd5c760ee6ec8d801",
+      "bytes": 224110,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1295",
+        "Representation ID": "BP4945",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49047",
+        "English name": "Left inferior rectus",
+        "Bounds(mm)": "(12.108900,-160.011900,1504.210200)-(34.299600,-119.045100,1526.899900)",
+        "Volume(cm3)": "0.625700"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1295.obj",
+        "method": 8,
+        "crc": 348924465,
+        "compressedBytes": 66522,
+        "bytes": 224110,
+        "offset": 2345934
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49047",
+          "name": "left inferior rectus",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1304",
+      "sourceId": "FMA49055",
+      "sha256": "214943158bb5b523bd981c0040f49df1210e7d3afa6a5df861dac2b5d4436549",
+      "bytes": 209042,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1304",
+        "Representation ID": "BP4942",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49055",
+        "English name": "Left lateral rectus",
+        "Bounds(mm)": "(16.349900,-158.734400,1513.160200)-(42.805200,-119.108500,1530.713000)",
+        "Volume(cm3)": "0.518500"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1304.obj",
+        "method": 8,
+        "crc": 1685746482,
+        "compressedBytes": 62291,
+        "bytes": 209042,
+        "offset": 2573201
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49055",
+          "name": "left lateral rectus",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1305",
+      "sourceId": "FMA58243",
+      "sha256": "3e8ca31d6e284af6ea990eb528ba6c31420339802ea5da94ee32dc0ddac8708f",
+      "bytes": 94398,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1305",
+        "Representation ID": "BP6529",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA58243",
+        "English name": "Left lens",
+        "Bounds(mm)": "(24.484000,-161.603600,1512.657000)-(34.801500,-156.816300,1523.110400)",
+        "Volume(cm3)": "0.259300"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1305.obj",
+        "method": 8,
+        "crc": 646715371,
+        "compressedBytes": 29275,
+        "bytes": 94398,
+        "offset": 2635552
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA58243",
+          "name": "left lens",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1306",
+      "sourceId": "FMA49049",
+      "sha256": "114bfa94da75435db3d4afadafe060c57e0345c78e2174068ef4698a61d72e49",
+      "bytes": 281893,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1306",
+        "Representation ID": "BP4939",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49049",
+        "English name": "Left levator palpebrae superioris",
+        "Bounds(mm)": "(11.840200,-165.393800,1520.870200)-(41.992200,-119.558800,1536.966600)",
+        "Volume(cm3)": "0.786700"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1306.obj",
+        "method": 8,
+        "crc": 3604456415,
+        "compressedBytes": 82738,
+        "bytes": 281893,
+        "offset": 2664887
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49041",
+          "name": "levator palpebrae superioris",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA49049",
+          "name": "left levator palpebrae superioris",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1308",
+      "sourceId": "FMA49057",
+      "sha256": "98d6d7cb6842243dceacbea4c494b1554d719b7fbb76e2c90020f126beb4defe",
+      "bytes": 159703,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1308",
+        "Representation ID": "BP4935",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49057",
+        "English name": "Left medial rectus",
+        "Bounds(mm)": "(11.240100,-161.186600,1512.403400)-(21.245600,-120.934500,1530.030600)",
+        "Volume(cm3)": "0.448700"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1308.obj",
+        "method": 8,
+        "crc": 3899579086,
+        "compressedBytes": 48253,
+        "bytes": 159703,
+        "offset": 2747685
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49057",
+          "name": "left medial rectus",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1316",
+      "sourceId": "FMA58608",
+      "sha256": "07d5cde3fa96dcfa9a854ac8e241f2e30791d5736d2edcc83eced0896c7e1f6e",
+      "bytes": 1533399,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1316",
+        "Representation ID": "BP5501",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA58608",
+        "English name": "Optic part of left retina",
+        "Bounds(mm)": "(18.217900,-158.541300,1507.178300)-(40.088500,-141.046600,1528.969400)",
+        "Volume(cm3)": "0.774500"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1316.obj",
+        "method": 8,
+        "crc": 458695507,
+        "compressedBytes": 419148,
+        "bytes": 1533399,
+        "offset": 2899968
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA58608",
+          "name": "optic part of left retina",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1322",
+      "sourceId": "FMA49053",
+      "sha256": "3a84379998b92f3c359c41426dba02b79c9fe648cfb9e3e835ce63677c9f8e9a",
+      "bytes": 227279,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1322",
+        "Representation ID": "BP4933",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49053",
+        "English name": "Left superior oblique",
+        "Bounds(mm)": "(11.294600,-165.525000,1523.309000)-(39.291700,-122.094700,1534.704500)",
+        "Volume(cm3)": "0.518100"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1322.obj",
+        "method": 8,
+        "crc": 4028124369,
+        "compressedBytes": 67093,
+        "bytes": 227279,
+        "offset": 4273428
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49053",
+          "name": "left superior oblique",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1323",
+      "sourceId": "FMA49045",
+      "sha256": "e79c60ca4e54078df13c609d739a09f8e83c7fddebcc79a4f03f785c006423a1",
+      "bytes": 179094,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1323",
+        "Representation ID": "BP4930",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49045",
+        "English name": "Left superior rectus",
+        "Bounds(mm)": "(12.585800,-161.618000,1525.788900)-(35.521300,-121.073300,1532.620800)",
+        "Volume(cm3)": "0.496500"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1323.obj",
+        "method": 8,
+        "crc": 386044646,
+        "compressedBytes": 54196,
+        "bytes": 179094,
+        "offset": 4340581
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49045",
+          "name": "left superior rectus",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1345",
+      "sourceId": "FMA49050",
+      "sha256": "b5508969b711e3c7bbfff0fdffc7567157326ee0e88b28416326513e06263c41",
+      "bytes": 145259,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1345",
+        "Representation ID": "BP4947",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49050",
+        "English name": "Right inferior oblique",
+        "Bounds(mm)": "(-43.241100,-166.321600,1503.127300)-(-13.854800,-140.462300,1519.504300)",
+        "Volume(cm3)": "0.327100"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1345.obj",
+        "method": 8,
+        "crc": 1440104264,
+        "compressedBytes": 43843,
+        "bytes": 145259,
+        "offset": 6339348
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49050",
+          "name": "right inferior oblique",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1346",
+      "sourceId": "FMA49046",
+      "sha256": "f961776090739a493c006f8933c8ded45365a86a92bdbfee2fb8dc0e35b651bc",
+      "bytes": 224609,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1346",
+        "Representation ID": "BP4944",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49046",
+        "English name": "Right inferior rectus",
+        "Bounds(mm)": "(-35.613100,-160.006000,1504.208000)-(-13.396200,-119.040000,1526.906500)",
+        "Volume(cm3)": "0.626600"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1346.obj",
+        "method": 8,
+        "crc": 3530743220,
+        "compressedBytes": 66197,
+        "bytes": 224609,
+        "offset": 6383251
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49046",
+          "name": "right inferior rectus",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1355",
+      "sourceId": "FMA49054",
+      "sha256": "0e1019c51724d672a6673e97f81f3e57f41f568d5ef5d68cf024096215165797",
+      "bytes": 206490,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1355",
+        "Representation ID": "BP4941",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49054",
+        "English name": "Right lateral rectus",
+        "Bounds(mm)": "(-44.120300,-158.738900,1513.171600)-(-17.658100,-119.096100,1530.719200)",
+        "Volume(cm3)": "0.518500"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1355.obj",
+        "method": 8,
+        "crc": 3412661157,
+        "compressedBytes": 61051,
+        "bytes": 206490,
+        "offset": 6610879
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49054",
+          "name": "right lateral rectus",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1356",
+      "sourceId": "FMA58242",
+      "sha256": "b9b3f98de4ed3a327e841dd129e423345e93d0615ca62181dda72ad8556a8a06",
+      "bytes": 94704,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1356",
+        "Representation ID": "BP6530",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA58242",
+        "English name": "Right lens",
+        "Bounds(mm)": "(-36.109300,-161.603200,1512.651000)-(-25.790800,-156.818800,1523.112300)",
+        "Volume(cm3)": "0.259300"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1356.obj",
+        "method": 8,
+        "crc": 3483756783,
+        "compressedBytes": 29132,
+        "bytes": 94704,
+        "offset": 6671990
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA58242",
+          "name": "right lens",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1357",
+      "sourceId": "FMA49048",
+      "sha256": "430068a4d8fc68e5e96b725c8e09849f757ccdc090ab6cec84341d945c22b9c5",
+      "bytes": 290489,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1357",
+        "Representation ID": "BP4938",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49048",
+        "English name": "Right levator palpebrae superioris",
+        "Bounds(mm)": "(-43.311900,-165.400900,1520.858600)-(-13.152800,-119.557800,1536.982300)",
+        "Volume(cm3)": "0.785500"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1357.obj",
+        "method": 8,
+        "crc": 1159964622,
+        "compressedBytes": 84782,
+        "bytes": 290489,
+        "offset": 6701182
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49041",
+          "name": "levator palpebrae superioris",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA49048",
+          "name": "right levator palpebrae superioris",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1359",
+      "sourceId": "FMA49056",
+      "sha256": "ad4c08e84c570715c5cdc24faf0bdb9bc54030b7fe6131a10e27e0c43e0588a1",
+      "bytes": 159884,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1359",
+        "Representation ID": "BP4936",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49056",
+        "English name": "Right medial rectus",
+        "Bounds(mm)": "(-22.557700,-161.190400,1512.385000)-(-12.525900,-120.943700,1530.054800)",
+        "Volume(cm3)": "0.447900"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1359.obj",
+        "method": 8,
+        "crc": 4262162615,
+        "compressedBytes": 48062,
+        "bytes": 159884,
+        "offset": 6786024
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49056",
+          "name": "right medial rectus",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1367",
+      "sourceId": "FMA58607",
+      "sha256": "24e44393620abb6f3bd4c94c8c6b1d4210727d41d9143f22d83842aa09b43121",
+      "bytes": 1545768,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1367",
+        "Representation ID": "BP5500",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA58607",
+        "English name": "Optic part of right retina",
+        "Bounds(mm)": "(-41.399400,-158.538400,1507.180800)-(-19.525200,-141.046300,1528.969800)",
+        "Volume(cm3)": "0.774300"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1367.obj",
+        "method": 8,
+        "crc": 2610016988,
+        "compressedBytes": 421844,
+        "bytes": 1545768,
+        "offset": 6938164
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA58607",
+          "name": "optic part of right retina",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1373",
+      "sourceId": "FMA49052",
+      "sha256": "90d01a639fd51a3cb956e17dbb581f6d51e037cfacdcfccf21716e8a57f50c6e",
+      "bytes": 226350,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1373",
+        "Representation ID": "BP4932",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49052",
+        "English name": "Right superior oblique",
+        "Bounds(mm)": "(-40.585900,-165.525300,1523.317000)-(-12.599900,-122.072500,1534.704500)",
+        "Volume(cm3)": "0.518400"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1373.obj",
+        "method": 8,
+        "crc": 4152197378,
+        "compressedBytes": 67452,
+        "bytes": 226350,
+        "offset": 8338759
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49052",
+          "name": "right superior oblique",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1374",
+      "sourceId": "FMA49044",
+      "sha256": "ae2a718964765d9492e871dd9d2d41246bf8b9f9f01b3c2e4f612bd72e165013",
+      "bytes": 180066,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1374",
+        "Representation ID": "BP4929",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA49044",
+        "English name": "Right superior rectus",
+        "Bounds(mm)": "(-36.832500,-161.617100,1525.787000)-(-13.879300,-121.055700,1532.627000)",
+        "Volume(cm3)": "0.497100"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1374.obj",
+        "method": 8,
+        "crc": 3512990993,
+        "compressedBytes": 53948,
+        "bytes": 180066,
+        "offset": 8406271
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA49044",
+          "name": "right superior rectus",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1449M",
+      "sourceId": "FMA46444",
+      "sha256": "9ef81d97ab697662e5701385dd7a92a3528612f7a98ef042bbaafde2f1426d24",
+      "bytes": 159532,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1449M",
+        "Representation ID": "BP9157",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA46444",
+        "English name": "Left coccygeus",
+        "Bounds(mm)": "(2.476500,-38.038500,788.078000)-(48.713800,-8.799900,828.624000)",
+        "Volume(cm3)": "3.590900"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1449M.obj",
+        "method": 8,
+        "crc": 786403908,
+        "compressedBytes": 49070,
+        "bytes": 159532,
+        "offset": 17013041
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA19088",
+          "name": "coccygeus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA46444",
+          "name": "left coccygeus",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ2547",
+      "sourceId": "FMA46443",
+      "sha256": "d35abd27f997258397ede969ad78b9943c1f7f52bf7dd564d106cfc32af6eb5b",
+      "bytes": 159594,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ2547",
+        "Representation ID": "BP8115",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA46443",
+        "English name": "Right coccygeus",
+        "Bounds(mm)": "(-48.713800,-38.038500,788.078000)-(-2.476500,-8.709500,828.624000)",
+        "Volume(cm3)": "3.602700"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2547.obj",
+        "method": 8,
+        "crc": 3470138376,
+        "compressedBytes": 48697,
+        "bytes": 159594,
+        "offset": 96873940
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA19088",
+          "name": "coccygeus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA46443",
+          "name": "right coccygeus",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1453M",
+      "sourceId": "FMA45859",
+      "sha256": "32c66e9739f2a0074be36918181d288dad7c79e781d0ca680212d10e85a01429",
+      "bytes": 321290,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1453M",
+        "Representation ID": "BP8007",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA45859",
+        "English name": "Left iliococcygeus",
+        "Bounds(mm)": "(0.657000,-88.400900,776.036000)-(49.188400,-15.066200,821.722000)",
+        "Volume(cm3)": "7.086100"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1453M.obj",
+        "method": 8,
+        "crc": 1703451372,
+        "compressedBytes": 98693,
+        "bytes": 321290,
+        "offset": 26988788
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA19089",
+          "name": "zone of levator ani",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA19092",
+          "name": "iliococcygeus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA45859",
+          "name": "left iliococcygeus",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ2549",
+      "sourceId": "FMA45858",
+      "sha256": "b5733ded901a2785ed87a12451f77118f4ca3e72abba87d1900a5fd758f23ccc",
+      "bytes": 325824,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ2549",
+        "Representation ID": "BP8874",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA45858",
+        "English name": "Right iliococcygeus",
+        "Bounds(mm)": "(-49.188400,-88.194200,776.094000)-(44.387700,-15.052900,821.722000)",
+        "Volume(cm3)": "7.096000"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2549.obj",
+        "method": 8,
+        "crc": 4215895704,
+        "compressedBytes": 99382,
+        "bytes": 325824,
+        "offset": 96931615
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA19089",
+          "name": "zone of levator ani",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA19092",
+          "name": "iliococcygeus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA45858",
+          "name": "right iliococcygeus",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1457M",
+      "sourceId": "FMA45855",
+      "sha256": "8ed11be992637e9e9a13c19191767cdda90f0f822444c3571e8f3784c7c43940",
+      "bytes": 348032,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1457M",
+        "Representation ID": "BP7791",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA45855",
+        "English name": "Left pubococcygeus",
+        "Bounds(mm)": "(3.164700,-100.530000,767.231000)-(35.406500,-10.482000,814.623000)",
+        "Volume(cm3)": "5.691700"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1457M.obj",
+        "method": 8,
+        "crc": 4234311330,
+        "compressedBytes": 106969,
+        "bytes": 348032,
+        "offset": 36409800
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA19089",
+          "name": "zone of levator ani",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA19090",
+          "name": "pubococcygeus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA45855",
+          "name": "left pubococcygeus",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ2550",
+      "sourceId": "FMA45854",
+      "sha256": "7621e58ec06b0bd01e66d84e8d3f9d7245c1a892bdf44e514cc7a8694df8d574",
+      "bytes": 364094,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ2550",
+        "Representation ID": "BP9143",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA45854",
+        "English name": "Right pubococcygeus",
+        "Bounds(mm)": "(-35.406500,-100.530000,767.246000)-(28.254700,-10.482000,814.623000)",
+        "Volume(cm3)": "5.755600"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2550.obj",
+        "method": 8,
+        "crc": 2316578153,
+        "compressedBytes": 110550,
+        "bytes": 364094,
+        "offset": 97031057
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA19089",
+          "name": "zone of levator ani",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA19090",
+          "name": "pubococcygeus",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA45854",
+          "name": "right pubococcygeus",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1458M",
+      "sourceId": "FMA45857",
+      "sha256": "9a1b0ccb5c9221adc38d914567bf9ec7ca060787e923bced5aa608040c21926a",
+      "bytes": 342998,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1458M",
+        "Representation ID": "BP8228",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA45857",
+        "English name": "Left puborectalis",
+        "Bounds(mm)": "(3.214600,-102.803000,763.102000)-(32.625800,-21.305700,791.816000)",
+        "Volume(cm3)": "5.546200"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1458M.obj",
+        "method": 8,
+        "crc": 2009420610,
+        "compressedBytes": 100332,
+        "bytes": 342998,
+        "offset": 36516830
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA19089",
+          "name": "zone of levator ani",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ2551",
+      "sourceId": "FMA45856",
+      "sha256": "e6fd6ceaabdfdab3c0af96815aede5e76d16bc59c52da4dd393c5b6f42239a81",
+      "bytes": 367735,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ2551",
+        "Representation ID": "BP8202",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA45856",
+        "English name": "Right puborectalis",
+        "Bounds(mm)": "(-32.466100,-102.803000,763.008000)-(24.609500,-21.305700,791.816000)",
+        "Volume(cm3)": "5.092600"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2551.obj",
+        "method": 8,
+        "crc": 3885179437,
+        "compressedBytes": 105027,
+        "bytes": 367735,
+        "offset": 97141667
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA19089",
+          "name": "zone of levator ani",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1450M",
+      "sourceId": "FMA21930",
+      "sha256": "39c0f4dd34d4548ce828b96167127b30d5369adca1cbc74eb0eae3e986a5801e",
+      "bytes": 25107,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1450M",
+        "Representation ID": "BP8934",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA21930",
+        "English name": "External anal sphincter",
+        "Bounds(mm)": "(3.282000,-38.724400,753.610000)-(14.787400,-16.943900,774.861000)",
+        "Volume(cm3)": "0.403300"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1450M.obj",
+        "method": 8,
+        "crc": 901540833,
+        "compressedBytes": 8864,
+        "bytes": 25107,
+        "offset": 17071051
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA21930",
+          "name": "external anal sphincter",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ2548",
+      "sourceId": "FMA21930",
+      "sha256": "bfeda8dbd502a9dc9835b8c38fdb580d7cc1655a8847aa7f8cbab6f8f8cec408",
+      "bytes": 25320,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ2548",
+        "Representation ID": "BP8934",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA21930",
+        "English name": "External anal sphincter",
+        "Bounds(mm)": "(-14.787400,-38.724400,753.610000)-(-3.281900,-16.943900,774.861000)",
+        "Volume(cm3)": "0.403300"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2548.obj",
+        "method": 8,
+        "crc": 338773970,
+        "compressedBytes": 8858,
+        "bytes": 25320,
+        "offset": 96922697
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA21930",
+          "name": "external anal sphincter",
+          "tables": [
+            "isa",
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ2158",
+      "sourceId": "FMA20801",
+      "sha256": "1f8a97a4d0624c081ab2f274e4f8c6a967a411a48b4dba37fb436fba3bb2b6fd",
+      "bytes": 67041,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ2158",
+        "Representation ID": "BP6035",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA20801",
+        "English name": "Right lateral circumflex femoral artery",
+        "Bounds(mm)": "(-120.552300,-124.633500,769.025500)-(-75.966600,-61.503600,794.828400)",
+        "Volume(cm3)": "0.110600"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2158.obj",
+        "method": 8,
+        "crc": 2046425260,
+        "compressedBytes": 21968,
+        "bytes": 67041,
+        "offset": 81164849
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA69459",
+          "name": "subdivision of deep femoral artery",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA20796",
+          "name": "right deep femoral artery",
+          "tables": [
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ2057",
+      "sourceId": "FMA21422",
+      "sha256": "b9a4618409103711ee922dac578f542734951f4bc65fa1368b12bdec331bc930",
+      "bytes": 331542,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ2057",
+        "Representation ID": "BP6042",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA21422",
+        "English name": "Descending branch of right lateral circumflex femoral artery",
+        "Bounds(mm)": "(-121.259100,-122.369700,411.253800)-(-75.211700,-91.304800,772.990900)",
+        "Volume(cm3)": "3.869200"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2057.obj",
+        "method": 8,
+        "crc": 2350655020,
+        "compressedBytes": 97634,
+        "bytes": 331542,
+        "offset": 74938447
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA69459",
+          "name": "subdivision of deep femoral artery",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ2137",
+      "sourceId": "FMA22507",
+      "sha256": "9fcd0cd8b83dde9441e35c9bcb8fdc963644bb2ae8ca4cd5c283a9b564bfed50",
+      "bytes": 420293,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ2137",
+        "Representation ID": "BP6038",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22507",
+        "English name": "Right descending genicular artery",
+        "Bounds(mm)": "(-63.319400,-112.132800,360.242600)-(-32.843700,-88.879200,482.604300)",
+        "Volume(cm3)": "2.362600"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2137.obj",
+        "method": 8,
+        "crc": 799691424,
+        "compressedBytes": 124062,
+        "bytes": 420293,
+        "offset": 80159489
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA69459",
+          "name": "subdivision of deep femoral artery",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA20796",
+          "name": "right deep femoral artery",
+          "tables": [
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ2078",
+      "sourceId": "FMA20802",
+      "sha256": "3a4f8ba7a995eb0788d7d15f12e6d03a292d733a00ccbff22b69e1f072ee7e4f",
+      "bytes": 66029,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ2078",
+        "Representation ID": "BP6036",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA20802",
+        "English name": "Left lateral circumflex femoral artery",
+        "Bounds(mm)": "(75.969800,-124.628700,769.018800)-(120.538000,-61.509500,794.814700)",
+        "Volume(cm3)": "0.109600"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2078.obj",
+        "method": 8,
+        "crc": 1065551778,
+        "compressedBytes": 21810,
+        "bytes": 66029,
+        "offset": 76078561
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA69459",
+          "name": "subdivision of deep femoral artery",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA20797",
+          "name": "left deep femoral artery",
+          "tables": [
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ2063",
+      "sourceId": "FMA21423",
+      "sha256": "095e3e9d4ef41d5b56b165998622bf54ca7998dc123ca09cf1c14a0a48b414fb",
+      "bytes": 328613,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ2063",
+        "Representation ID": "BP6043",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA21423",
+        "English name": "Descending branch of left lateral circumflex femoral artery",
+        "Bounds(mm)": "(75.210200,-122.366900,411.256700)-(121.258000,-91.311300,772.989100)",
+        "Volume(cm3)": "3.865300"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2063.obj",
+        "method": 8,
+        "crc": 2286362029,
+        "compressedBytes": 96935,
+        "bytes": 328613,
+        "offset": 75148241
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA69459",
+          "name": "subdivision of deep femoral artery",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ2069",
+      "sourceId": "FMA22508",
+      "sha256": "3514bcb7c45881bf196a33982849cc1157a0ba8e9ba365b20aecc5d7720093d7",
+      "bytes": 413997,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ2069",
+        "Representation ID": "BP6039",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22508",
+        "English name": "Left descending genicular artery",
+        "Bounds(mm)": "(32.841000,-112.139500,360.248100)-(63.314800,-88.882000,482.601900)",
+        "Volume(cm3)": "2.361400"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2069.obj",
+        "method": 8,
+        "crc": 3686119421,
+        "compressedBytes": 122489,
+        "bytes": 413997,
+        "offset": 75723561
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA69459",
+          "name": "subdivision of deep femoral artery",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA20797",
+          "name": "left deep femoral artery",
+          "tables": [
+            "partof"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "FJ1843",
+      "sourceId": "FMA83966",
+      "sha256": "bd212fe0b2800bcb8c3ea350099f5bc563d438d8efd5409761fff47e8b150533",
+      "bytes": 1492065,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ1843",
+        "Representation ID": "BP5496",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA83966",
+        "English name": "Tentorium cerebelli",
+        "Bounds(mm)": "(-63.329700,-93.304000,1507.515400)-(-2.325000,-5.814800,1541.654900)",
+        "Volume(cm3)": "3.466300"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ1843.obj",
+        "method": 8,
+        "crc": 3229346058,
+        "compressedBytes": 424317,
+        "bytes": 1492065,
+        "offset": 69587541
+      },
+      "identityEvidence": "Original OBJ File ID / Concept ID / English name / version; nominal tables independently compared",
+      "nominalConcepts": [
+        {
+          "id": "FMA71235",
+          "name": "region of dura mater",
+          "tables": [
+            "isa"
+          ]
+        },
+        {
+          "id": "FMA266054",
+          "name": "subdivision of cranial dura mater",
+          "tables": [
+            "isa"
+          ]
+        }
+      ]
+    }
+  ],
+  "licenseEvidence": {
+    "path": "research/anatomy/completion-bp40-license.html.gz",
+    "sha256": "52593c1d25931c476c5f3332088c275e160ec36b16f90ca55aeb6c8681cd87d6",
+    "decodedSha256": "8f9260788539f3ba0b5fe14fe94f72a089cffd994f1072b1a5d6f52dda327710",
+    "note": "Exact original HTML, gzip container prevents line-ending normalization"
+  }
+}

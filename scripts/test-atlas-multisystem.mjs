@@ -1,3 +1,4 @@
+import {preCompletionCatalog} from './anatomy/pre-completion-catalog.mjs';
 // Source catalog composition and actual nine-GLB lifecycle checks. No WebGL mock.
 import assert from 'node:assert/strict';
 import { mkdtemp, readFile, writeFile, rm } from 'node:fs/promises';
@@ -10,19 +11,19 @@ const project = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const temporary = await mkdtemp(path.join(project, '.multisystem-tests-'));
 const previousFetch = globalThis.fetch, previousWindow = globalThis.window;
 try {
-  for (const file of ['asset-manager', 'explosion', 'catalog-index', 'body-catalog', 'muscle-education', 'limb-education','neck-education','gaps-education']) {
+  for (const file of ['catalog-education','asset-manager', 'explosion', 'catalog-index', 'body-catalog', 'muscle-education', 'limb-education','neck-education','gaps-education']) {
     const source = (await readFile(path.join(project, 'src/features/anatomy/atlas', `${file}.ts`), 'utf8'))
       .replaceAll('import.meta.env.BASE_URL', JSON.stringify('/med3d/'));
     const compiled = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } });
-    await writeFile(path.join(temporary, `${file}.mjs`), compiled.outputText.replaceAll("'./gaps-education'","'./gaps-education.mjs'").replaceAll("'./neck-education'","'./neck-education.mjs'").replaceAll("'./catalog-index'", "'./catalog-index.mjs'").replaceAll("'./limb-education'", "'./limb-education.mjs'"));
+    await writeFile(path.join(temporary, `${file}.mjs`), compiled.outputText.replaceAll("'./catalog-education'","'./catalog-education.mjs'").replaceAll("'./gaps-education'","'./gaps-education.mjs'").replaceAll("'./neck-education'","'./neck-education.mjs'").replaceAll("'./catalog-index'", "'./catalog-index.mjs'").replaceAll("'./limb-education'", "'./limb-education.mjs'"));
   }
   const { composeBodyCatalog, BODY_ROOT_ID } = await import(pathToFileURL(path.join(temporary, 'body-catalog.mjs')));
   const { createCatalogIndex, flattenTree } = await import(pathToFileURL(path.join(temporary, 'catalog-index.mjs')));
   const { createExplosionOffsets, explosionTarget } = await import(pathToFileURL(path.join(temporary, 'explosion.mjs')));
   const { createAssetLoader, AtlasAssetManager } = await import(pathToFileURL(path.join(temporary, 'asset-manager.mjs')));
   const { MUSCLE_EDUCATION, resolveMuscleDetail, getMuscleContextIds } = await import(pathToFileURL(path.join(temporary, 'muscle-education.mjs')));
-  const skeletal = JSON.parse(await readFile(path.join(project, 'public/models/anatomy/skeletal/catalog.json'), 'utf8'));
-  const muscular = pilotCatalog(JSON.parse(await readFile(path.join(project, 'public/models/anatomy/muscular/catalog.json'), 'utf8')));
+  const skeletal = preCompletionCatalog(JSON.parse(await readFile(path.join(project, 'public/models/anatomy/skeletal/catalog.json'), 'utf8')));
+  const muscular = pilotCatalog(preCompletionCatalog(JSON.parse(await readFile(path.join(project, 'public/models/anatomy/muscular/catalog.json'), 'utf8'))));
   const originalSkeleton = JSON.stringify(skeletal), originalMuscular = JSON.stringify(muscular);
   const catalog = composeBodyCatalog(skeletal, muscular), index = createCatalogIndex(catalog);
   assert.equal(JSON.stringify(skeletal), originalSkeleton, 'composition must not mutate the source skeleton');

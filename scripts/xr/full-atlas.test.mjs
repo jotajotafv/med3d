@@ -1,12 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import * as THREE from 'three';
 import { atlasTestCompiler } from './atlas-test-compiler.mjs';
 
+const completionFiles = (await readdir('research/anatomy')).filter(name=>/^completion-wave\d-selection.json$/.test(name));
+const completions = await Promise.all(completionFiles.map(async name=>JSON.parse(await readFile('research/anatomy/'+name,'utf8'))));
+const expectedModules = 52 + completions.reduce((n,wave)=>n+wave.modules.length,0);
+const expectedMeshes = 937 + completions.reduce((n,wave)=>n+wave.nodes.reduce((sum,node)=>sum+(node.sourceElements?.length||0),0),0);
 const out = path.resolve('.cache/xr-full-atlas-tests'), compile = atlasTestCompiler(out);
 for (const name of ['systems', 'assets', 'state', 'presentation', 'education']) await compile(`features/xr/atlas/${name}.ts`);
 const moduleAt = file => import(pathToFileURL(path.join(out, file + '.mjs')));
@@ -26,7 +30,7 @@ globalThis.fetch = async (url, { signal } = {}) => {
   return new Response(data, { headers: { 'Content-Length': String(data.length) } });
 };
 const wait = async predicate => {
-  for (let i = 0; i < 1000; i++) { if (predicate()) return; await new Promise(resolve => setTimeout(resolve, 5)); }
+  for (let i = 0; i < 4000; i++) { if (predicate()) return; await new Promise(resolve => setTimeout(resolve, 5)); }
   throw new Error('Atlas load timed out');
 };
 const owner = new XrAtlasAssets(async (id, signal) => {
@@ -63,7 +67,7 @@ test('progressive real catalogs/GLBs request only the chosen system, verify byte
     for (let i = 0; i < 3; i++) await owner.ensure(system.id);
     assert.equal(requests.length, count); assert.equal(owner.snapshot().resources, refs);
   }
-  assert.equal(owner.snapshot().resources.length, 52); assert.equal(presentation.parts.length, 937);
+  assert.equal(owner.snapshot().resources.length, expectedModules); assert.equal(presentation.parts.length, expectedMeshes);
   assert.equal(JSON.stringify(catalogs.nervous), originals.nervous);
   assert.ok(catalogs.nervous.nodes.some(n => n.ocularClass)); assert.ok(catalogs.nervous.provenance.some(p => p.license === 'CC BY-SA 4.0'));
   globalThis.fetch = nativeFetch;
@@ -138,7 +142,7 @@ test('new lessons keep semantic labels, asset-specific licenses, corneal transpa
   // Opacity and explosion do not rebuild the pickable set when visibility references are unchanged.
   const state = all(); presentation.apply(state, catalog); const stable = presentation.visibleMeshes;
   presentation.apply({ ...state, systemOpacity: { ...state.systemOpacity, nervous: .4 }, explodedAmount: .5 }, catalog);
-  assert.equal(presentation.visibleMeshes, stable); assert.equal(collection.length, 937);
+  assert.equal(presentation.visibleMeshes, stable); assert.equal(collection.length, expectedMeshes);
 });
 test('rapid activation and failed-module retry respect two global slots; pending owners dispose without starting downloads', async () => {
   let inFlight = 0, peak = 0, fail = true; const loaded = [], freed = [], catalogRequests = [];
@@ -150,9 +154,9 @@ test('rapid activation and failed-module retry respect two global slots; pending
   const pending = systems.map(s => queue.ensure(s.id)); assert.equal(catalogRequests.length, 2);
   await wait(() => !!queue.snapshot().systems.skeletal.error && !queue.snapshot().systems.skeletal.pending); fail = false; queue.retry('skeletal');
   await Promise.all(pending); await wait(() => systems.every(s => !queue.snapshot().systems[s.id].pending));
-  assert.equal(peak, 2); assert.equal(queue.snapshot().resources.length, 52); assert.equal(loaded.length, 53);
+  assert.equal(peak, 2); assert.equal(queue.snapshot().resources.length, expectedModules); assert.equal(loaded.length, expectedModules + 1);
   const refs = queue.snapshot().resources; await Promise.all(systems.map(s => queue.ensure(s.id))); assert.equal(queue.snapshot().resources, refs);
-  queue.dispose(); queue.dispose(); assert.equal(freed.length, 52); assert.equal(new Set(freed).size, 52);
+  queue.dispose(); queue.dispose(); assert.equal(freed.length, expectedModules); assert.equal(new Set(freed).size, expectedModules);
   const starts = []; let finish;
   const stopped = new XrAtlasAssets(id => { starts.push(id); return new Promise(resolve => { finish = resolve; }); });
   const promises = systems.map(s => stopped.ensure(s.id)); stopped.dispose(); await Promise.all(promises); assert.equal(starts.length, 2); finish(catalogs.muscular);

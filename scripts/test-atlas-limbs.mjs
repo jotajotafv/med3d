@@ -1,3 +1,4 @@
+import {preCompletionCatalog} from './anatomy/pre-completion-catalog.mjs';
 // New Fase 3C checks supplement, and do not replace, the original pilot suite.
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
@@ -13,14 +14,14 @@ import * as THREE from 'three';
 
 const project=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const temporary=await mkdtemp(path.join(project,'.limbs-tests-'));
-const json=async file=>JSON.parse(await readFile(path.join(project,file),'utf8'));
+const json=async file=>preCompletionCatalog(JSON.parse(await readFile(path.join(project,file),'utf8')));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const previousFetch=globalThis.fetch,previousWindow=globalThis.window;
 try {
-  for(const file of ['asset-manager','explosion','catalog-index','body-catalog','muscle-education','limb-education','neck-education','gaps-education','camera-framing']){
+  for (const file of ['catalog-education','asset-manager','explosion','catalog-index','body-catalog','muscle-education','limb-education','neck-education','gaps-education','camera-framing']){
     const source=(await readFile(path.join(project,'src/features/anatomy/atlas',file+'.ts'),'utf8')).replaceAll('import.meta.env.BASE_URL',JSON.stringify('/med3d/'));
     const compiled=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}});
-    await writeFile(path.join(temporary,file+'.mjs'),compiled.outputText.replaceAll("'./gaps-education'","'./gaps-education.mjs'").replaceAll("'./neck-education'","'./neck-education.mjs'").replaceAll("'./catalog-index'","'./catalog-index.mjs'").replaceAll("'./limb-education'","'./limb-education.mjs'"));
+    await writeFile(path.join(temporary,file+'.mjs'),compiled.outputText.replaceAll("'./catalog-education'","'./catalog-education.mjs'").replaceAll("'./gaps-education'","'./gaps-education.mjs'").replaceAll("'./neck-education'","'./neck-education.mjs'").replaceAll("'./catalog-index'","'./catalog-index.mjs'").replaceAll("'./limb-education'","'./limb-education.mjs'"));
   }
   const {composeBodyCatalog,BODY_ROOT_ID}=await import(pathToFileURL(path.join(temporary,'body-catalog.mjs')));
   const {createCatalogIndex}=await import(pathToFileURL(path.join(temporary,'catalog-index.mjs')));

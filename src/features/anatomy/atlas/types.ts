@@ -20,6 +20,10 @@ export interface AnatomyNode {
   assetIds: string[];
   meshNames: string[];
   family?: string;
+  /** Shared educational family record, referenced by Atlas and XR. */
+  educationId?: string;
+  /** Distinguishes teeth, connective tissue and other entities from bones/muscles. */
+  anatomyType?: string;
   /** Curated nervous entity type; independent of mesh subdivision. */
   neuralType?: string;
   /** Cardiovascular identity and presentation class; independent of oxygenation. */
@@ -35,7 +39,7 @@ export interface AnatomyNode {
   /** Surface identity; does not assert histological layers. */
   integumentaryType?: string;
   /** Partial sensory-organ coverage; no additional body system. */
-  ocularClass?: 'eyeball' | 'cornea' | 'sclera' | 'iris';
+  ocularClass?: 'eyeball' | 'cornea' | 'sclera' | 'iris' | 'lens' | 'retina' | 'extraocular' | 'eyelid-muscle';
   digestiveClass?: 'tract' | 'liver' | 'biliary' | 'gland';
   side?: 'left' | 'right' | 'midline';
   relatedIds: string[];
@@ -43,6 +47,8 @@ export interface AnatomyNode {
 }
 export interface AnatomyAsset {
   id: string;
+  /** Public module name when several optional modules share one region. */
+  label?: string;
   path: string;
   systemId: SystemId;
   regionId: string;
@@ -53,6 +59,8 @@ export interface AnatomyAsset {
   triangles: number;
   bounds: Bounds;
   provenanceId: string;
+  /** Optional extensions load through search or the module control. */
+  defaultEnabled?: boolean;
 }
 export interface AssetProvenance {
   id: string;
@@ -65,7 +73,15 @@ export interface AssetProvenance {
   attribution: string;
   modifications: string[];
 }
+export interface AnatomyLesson {
+  description: string;
+  function: string;
+  relations: string;
+  limits: string;
+  sources: {title: string; url: string}[];
+}
 export interface AnatomyCatalog {
+  education?: Record<string, AnatomyLesson>;
   schemaVersion: 1;
   id: string;
   frame: { id: string; units: 'metres'; up: 'Y'; bounds: Bounds; note: string };

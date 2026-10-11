@@ -1,0 +1,312 @@
+{
+  "frame": "bodyparts3d-4.0-male",
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "registration": "No registration fitted. Original coordinates retained.",
+  "method": "Triangle/triangle surface crossings on independently decoded world-coordinate meshes using MeshBVH; coplanar contact is included. Counts are not penetration volume or clinical accuracy. Visual review required.",
+  "pairs": [
+    {
+      "a": "bp3d:FMA13295",
+      "b": "dig:FMA7197",
+      "meshPairs": 8,
+      "interiorSamples": {
+        "sampleCount": 1008,
+        "allRayVotesInsideAndBeyond001mm": 2,
+        "over1mm": 0,
+        "over3mm": 0,
+        "maxDepthMetres": 0.0009643159442038412,
+        "scope": "Sampling screen, not a proof of closed topology or penetration volume. Contacts within 0.01 mm excluded."
+      },
+      "intersectingTrianglePairs": 443,
+      "crossingBoundsMetres": [
+        [
+          -0.07104070342263237,
+          1.0815358275659719,
+          0.05047734972103012
+        ],
+        [
+          0.05687148618204361,
+          1.1730572798118477,
+          0.19676911646004333
+        ]
+      ]
+    },
+    {
+      "a": "bp3d:FMA13295",
+      "b": "resp:lung:right",
+      "meshPairs": 9,
+      "interiorSamples": {
+        "sampleCount": 1008,
+        "allRayVotesInsideAndBeyond001mm": 74,
+        "over1mm": 0,
+        "over3mm": 0,
+        "maxDepthMetres": 0.000048502217127014316,
+        "scope": "Sampling screen, not a proof of closed topology or penetration volume. Contacts within 0.01 mm excluded."
+      },
+      "intersectingTrianglePairs": 16658,
+      "crossingBoundsMetres": [
+        [
+          -0.11919611900564668,
+          1.1198809845557331,
+          0.034339501201663625
+        ],
+        [
+          -0.017639004443386612,
+          1.1925677107514847,
+          0.19052230350909702
+        ]
+      ]
+    },
+    {
+      "a": "bp3d:FMA13295",
+      "b": "resp:lung:left",
+      "meshPairs": 9,
+      "interiorSamples": {
+        "sampleCount": 1008,
+        "allRayVotesInsideAndBeyond001mm": 46,
+        "over1mm": 0,
+        "over3mm": 0,
+        "maxDepthMetres": 0.00009057001298050321,
+        "scope": "Sampling screen, not a proof of closed topology or penetration volume. Contacts within 0.01 mm excluded."
+      },
+      "intersectingTrianglePairs": 12081,
+      "crossingBoundsMetres": [
+        [
+          0.02249346857587771,
+          1.1184495579018903,
+          0.031058865758918516
+        ],
+        [
+          0.11727603584129613,
+          1.1748144804814673,
+          0.18640652937249327
+        ]
+      ]
+    },
+    {
+      "a": "bp3d:FMA13295",
+      "b": "skeletal:region:thorax",
+      "meshPairs": 27,
+      "interiorSamples": {
+        "sampleCount": 1008,
+        "allRayVotesInsideAndBeyond001mm": 0,
+        "over1mm": 0,
+        "over3mm": 0,
+        "maxDepthMetres": 0,
+        "scope": "Sampling screen, not a proof of closed topology or penetration volume. Contacts within 0.01 mm excluded."
+      },
+      "intersectingTrianglePairs": 0,
+      "crossingBoundsMetres": null
+    },
+    {
+      "a": "bp3d:FMA13295",
+      "b": "skeletal:group:spine:lumbarvertebrae",
+      "meshPairs": 5,
+      "interiorSamples": {
+        "sampleCount": 1008,
+        "allRayVotesInsideAndBeyond001mm": 1,
+        "over1mm": 0,
+        "over3mm": 0,
+        "maxDepthMetres": 0.000016049217331272565,
+        "scope": "Sampling screen, not a proof of closed topology or penetration volume. Contacts within 0.01 mm excluded."
+      },
+      "intersectingTrianglePairs": 134,
+      "crossingBoundsMetres": [
+        [
+          -0.013024131742017301,
+          0.986396341857287,
+          0.1096914899370966
+        ],
+        [
+          -0.004955546387376585,
+          0.9995518729889736,
+          0.1147919305435485
+        ]
+      ]
+    },
+    {
+      "a": "ocular:FMA58242",
+      "b": "ocular:FMA12514",
+      "meshPairs": 4,
+      "interiorSamples": {
+        "sampleCount": 801,
+        "allRayVotesInsideAndBeyond001mm": 1,
+        "over1mm": 0,
+        "over3mm": 0,
+        "maxDepthMetres": 0.00001189313020641587,
+        "scope": "Sampling screen, not a proof of closed topology or penetration volume. Contacts within 0.01 mm excluded."
+      },
+      "intersectingTrianglePairs": 34,
+      "crossingBoundsMetres": [
+        [
+          -0.031089563669920592,
+          1.5158015274159824,
+          0.16134931617553977
+        ],
+        [
+          -0.029633683626144738,
+          1.5199171992819214,
+          0.161543869097139
+        ]
+      ]
+    },
+    {
+      "a": "ocular:FMA58243",
+      "b": "ocular:FMA12515",
+      "meshPairs": 4,
+      "interiorSamples": {
+        "sampleCount": 805,
+        "allRayVotesInsideAndBeyond001mm": 0,
+        "over1mm": 0,
+        "over3mm": 0,
+        "maxDepthMetres": 0,
+        "scope": "Sampling screen, not a proof of closed topology or penetration volume. Contacts within 0.01 mm excluded."
+      },
+      "intersectingTrianglePairs": 39,
+      "crossingBoundsMetres": [
+        [
+          0.028054239175875722,
+          1.5185539291548438,
+          0.16142689848889047
+        ],
+        [
+          0.03034865957810748,
+          1.519783693812712,
+          0.16153822755198416
+        ]
+      ]
+    },
+    {
+      "a": "ocular:FMA58607",
+      "b": "ocular:FMA12514",
+      "meshPairs": 4,
+      "interiorSamples": {
+        "sampleCount": 975,
+        "allRayVotesInsideAndBeyond001mm": 0,
+        "over1mm": 0,
+        "over3mm": 0,
+        "maxDepthMetres": 0,
+        "scope": "Sampling screen, not a proof of closed topology or penetration volume. Contacts within 0.01 mm excluded."
+      },
+      "intersectingTrianglePairs": 0,
+      "crossingBoundsMetres": null
+    },
+    {
+      "a": "ocular:FMA58608",
+      "b": "ocular:FMA12515",
+      "meshPairs": 4,
+      "interiorSamples": {
+        "sampleCount": 976,
+        "allRayVotesInsideAndBeyond001mm": 0,
+        "over1mm": 0,
+        "over3mm": 0,
+        "maxDepthMetres": 0,
+        "scope": "Sampling screen, not a proof of closed topology or penetration volume. Contacts within 0.01 mm excluded."
+      },
+      "intersectingTrianglePairs": 0,
+      "crossingBoundsMetres": null
+    },
+    {
+      "a": "bp3d:FMA45858",
+      "b": "bp3d:FMA45859",
+      "meshPairs": 1,
+      "interiorSamples": {
+        "sampleCount": 973,
+        "allRayVotesInsideAndBeyond001mm": 1,
+        "over1mm": 0,
+        "over3mm": 0,
+        "maxDepthMetres": 0.000036383448149885285,
+        "scope": "Sampling screen, not a proof of closed topology or penetration volume. Contacts within 0.01 mm excluded."
+      },
+      "intersectingTrianglePairs": 49,
+      "crossingBoundsMetres": [
+        [
+          0.016933352019922264,
+          0.7976520174319875,
+          0.018119364971506353
+        ],
+        [
+          0.04438327502429525,
+          0.8038307968013777,
+          0.05978496196228452
+        ]
+      ]
+    },
+    {
+      "a": "bp3d:FMA45854",
+      "b": "bp3d:FMA45855",
+      "meshPairs": 1,
+      "interiorSamples": {
+        "sampleCount": 774,
+        "allRayVotesInsideAndBeyond001mm": 3,
+        "over1mm": 0,
+        "over3mm": 0,
+        "maxDepthMetres": 0.000035180356948547216,
+        "scope": "Sampling screen, not a proof of closed topology or penetration volume. Contacts within 0.01 mm excluded."
+      },
+      "intersectingTrianglePairs": 50,
+      "crossingBoundsMetres": [
+        [
+          0.027239873494356644,
+          0.7868271227577036,
+          0.09301644540333938
+        ],
+        [
+          0.02756195855093174,
+          0.7871851744681512,
+          0.09354292860828654
+        ]
+      ]
+    },
+    {
+      "a": "bp3d:FMA45856",
+      "b": "bp3d:FMA45857",
+      "meshPairs": 1,
+      "interiorSamples": {
+        "sampleCount": 957,
+        "allRayVotesInsideAndBeyond001mm": 9,
+        "over1mm": 0,
+        "over3mm": 0,
+        "maxDepthMetres": 0.00003064383844272008,
+        "scope": "Sampling screen, not a proof of closed topology or penetration volume. Contacts within 0.01 mm excluded."
+      },
+      "intersectingTrianglePairs": 149,
+      "crossingBoundsMetres": [
+        [
+          0.011027299799025059,
+          0.778682212577999,
+          0.09438964484434566
+        ],
+        [
+          0.02397269941866398,
+          0.7886595587313472,
+          0.09960444701804587
+        ]
+      ]
+    }
+  ]
+}

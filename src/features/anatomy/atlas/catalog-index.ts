@@ -7,6 +7,7 @@ export function createCatalogIndex(catalog: AnatomyCatalog) {
   const assetIds = new Set(catalog.assets.map(asset => asset.id));
   if (assetIds.size !== catalog.assets.length) throw new Error('El catálogo contiene módulos repetidos.');
   for (const node of catalog.nodes) {
+    if (node.educationId && !catalog.education?.[node.educationId]) throw new Error('Falta la ficha educativa referenciada por una estructura.');
     if (node.kind === 'body' && (node.systemId || node.parentId || node.meshNames.length)) throw new Error('La raíz corporal debe ser neutral y no poseer mallas.');
     if (node.kind !== 'body' && !node.systemId) throw new Error('Falta el sistema de una estructura anatómica.');
     if (new Set(node.children).size !== node.children.length || node.children.some(id => !byId.has(id) || byId.get(id)?.parentId !== node.id)) throw new Error('Los componentes de un grupo no concuerdan con la jerarquía.');

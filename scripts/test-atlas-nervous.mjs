@@ -1,3 +1,4 @@
+import {preCompletionCatalog} from './anatomy/pre-completion-catalog.mjs';
 // Focused nervous checks; the original source-triangle proof is in nervous-validation.json.
 import assert from 'node:assert/strict';
 import {mkdtemp,readFile,writeFile,rm} from 'node:fs/promises';
@@ -6,10 +7,10 @@ import {pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
 import ts from 'typescript';
 const temporary=await mkdtemp(path.resolve('.nervous-tests-'));
-const json=async p=>JSON.parse(await readFile(p,'utf8'));
+const json=async p=>preCompletionCatalog(JSON.parse(await readFile(p,'utf8')));
 const checks=[];const check=name=>{checks.push(name);console.log('PASS',name);};
 try {
- const files=['catalog-index','body-catalog','explosion','nerve-education','nerve-expansion-education'];
+ const files=['catalog-education','catalog-index','body-catalog','explosion','nerve-education','nerve-expansion-education'];
  for(const file of files){
   const source=await readFile('src/features/anatomy/atlas/'+file+'.ts','utf8');
   let output=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText;

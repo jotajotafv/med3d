@@ -1,3 +1,4 @@
+import {preCompletionCatalog} from './anatomy/pre-completion-catalog.mjs';
 // Focused Phase 3DE checks. Historical geometry is not rebuilt or revalidated here.
 import assert from 'node:assert/strict';
 import {cohortCatalog} from './anatomy/cohort-catalog.mjs';
@@ -10,13 +11,13 @@ import ts from 'typescript';
 import * as THREE from 'three';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const temporary=await mkdtemp(path.join(root,'.head-neck-tests-'));
-const json=async p=>JSON.parse(await readFile(path.join(root,p),'utf8'));
+const json=async p=>preCompletionCatalog(JSON.parse(await readFile(path.join(root,p),'utf8')));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const oldFetch=globalThis.fetch,oldWindow=globalThis.window;
 const checks=[];
 const check=name=>{checks.push(name);console.log('PASS',name);};
 try{
- const files=['asset-manager','explosion','catalog-index','body-catalog','muscle-education','limb-education','neck-education','gaps-education','camera-framing'];
+ const files=['catalog-education','asset-manager','explosion','catalog-index','body-catalog','muscle-education','limb-education','neck-education','gaps-education','camera-framing'];
  for(const file of files){
   const source=(await readFile(path.join(root,'src/features/anatomy/atlas',file+'.ts'),'utf8')).replaceAll('import.meta.env.BASE_URL',JSON.stringify('/med3d/'));
   let output=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText;

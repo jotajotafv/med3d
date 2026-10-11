@@ -1,3 +1,4 @@
+import {preCompletionCatalog} from './anatomy/pre-completion-catalog.mjs';
 // Meaningful ownership/regression checks without a browser or WebGL dependency.
 import assert from 'node:assert/strict';
 import { mkdtemp, readFile, writeFile, rm } from 'node:fs/promises';
@@ -120,7 +121,7 @@ try {
 
   // Parse the actual optimized GLBs with the browser's loader/decoder, replacing
   // only HTTP transport. This catches mesh-name, frame and ownership mismatches.
-  const realCatalog = JSON.parse(await readFile(path.join(project, 'public/models/anatomy/skeletal/catalog.json'), 'utf8'));
+  const realCatalog = preCompletionCatalog(JSON.parse(await readFile(path.join(project, 'public/models/anatomy/skeletal/catalog.json'), 'utf8')));
   const previousFetch = globalThis.fetch, previousWindow = globalThis.window;
   let meshes = 0, triangles = 0, geometryBytes = 0, decodingMs = 0;
   try {

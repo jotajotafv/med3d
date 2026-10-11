@@ -1,3 +1,4 @@
+import {mergeCatalogEducation} from './catalog-education';
 import { createCatalogIndex } from './catalog-index';
 import type { AnatomyCatalog, AnatomyNode, AssetProvenance } from './types';
 
@@ -61,7 +62,7 @@ export function composeBodyCatalog(skeletal: AnatomyCatalog, muscular?: AnatomyC
   };
   const result: AnatomyCatalog = {
     schemaVersion: 1, id: 'med3d-body', frame: structuredClone(reference),
-    nodes: [root, ...nodes], assets, provenance: [...provenance.values()],
+    education: mergeCatalogEducation(catalogs), nodes: [root, ...nodes], assets, provenance: [...provenance.values()],
     coverage: {
       title: internal.length ? `Cobertura corporal integrada de ${catalogs.length} sistemas disponible` : digestive ? 'Cobertura corporal integrada de seis sistemas disponible' : respiratory ? 'Cobertura ósea, muscular, nerviosa, cardiovascular y respiratoria disponible' : cardiovascular ? 'Cobertura ósea, muscular, nerviosa y cardiovascular disponible' : nervous ? 'Cobertura ósea, muscular y nerviosa disponible' : muscular ? 'Sistema óseo y cobertura muscular integrada disponible' : skeletal.coverage.title,
       structures: catalogs.reduce((sum, catalog) => sum + catalog.coverage.structures, 0),

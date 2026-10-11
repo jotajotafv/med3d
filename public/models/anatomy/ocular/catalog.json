@@ -37,26 +37,42 @@
       "explosionRegionId": "head-neck",
       "children": [
         "ocular:FMA12514",
-        "ocular:FMA12515"
+        "ocular:FMA12515",
+        "ocular:FMA49051",
+        "ocular:FMA49047",
+        "ocular:FMA49055",
+        "ocular:FMA49049",
+        "ocular:FMA49057",
+        "ocular:FMA49053",
+        "ocular:FMA49045",
+        "ocular:FMA49050",
+        "ocular:FMA49046",
+        "ocular:FMA49054",
+        "ocular:FMA49048",
+        "ocular:FMA49056",
+        "ocular:FMA49052",
+        "ocular:FMA49044"
       ],
       "kind": "region",
       "ocularClass": "eyeball",
       "neuralType": "región ocular",
       "assetIds": [
-        "nervous:ocular"
+        "nervous:ocular",
+        "nervous:completion-ocular-internal",
+        "nervous:completion-ocular-muscles"
       ],
       "meshNames": [],
       "relatedIds": [],
       "bounds": [
         [
-          -0.0436181,
-          1.50496,
-          0.138829
+          -0.0441111,
+          1.5031400000000001,
+          0.11904
         ],
         [
-          0.042310400000000005,
-          1.53119,
-          0.166051
+          0.0427963,
+          1.5369700000000002,
+          0.166313
         ]
       ]
     },
@@ -345,14 +361,17 @@
       "children": [
         "ocular:FMA58239",
         "ocular:FMA58271",
-        "ocular:FMA58236"
+        "ocular:FMA58236",
+        "ocular:FMA58242",
+        "ocular:FMA58607"
       ],
       "kind": "structure",
       "family": "eyeball",
       "ocularClass": "eyeball",
       "neuralType": "órgano sensorial · cobertura parcial",
       "assetIds": [
-        "nervous:ocular"
+        "nervous:ocular",
+        "nervous:completion-ocular-internal"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -393,14 +412,17 @@
       "children": [
         "ocular:FMA58240",
         "ocular:FMA58272",
-        "ocular:FMA58237"
+        "ocular:FMA58237",
+        "ocular:FMA58243",
+        "ocular:FMA58608"
       ],
       "kind": "structure",
       "family": "eyeball",
       "ocularClass": "eyeball",
       "neuralType": "órgano sensorial · cobertura parcial",
       "assetIds": [
-        "nervous:ocular"
+        "nervous:ocular",
+        "nervous:completion-ocular-internal"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -417,6 +439,852 @@
           0.042310400000000005,
           1.53119,
           0.166049
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49051",
+      "sourceId": "FMA49051",
+      "name": "Oblicuo inferior del ojo izquierdo",
+      "anatomicalName": "Oblicuo inferior del ojo izquierdo",
+      "latin": "Musculus obliquus inferior sinister",
+      "aliases": [
+        "Left inferior oblique",
+        "FMA49051",
+        "FJ1294"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49051_FJ1294"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.012558099999999999,
+          1.5031500000000002,
+          0.14047900000000002
+        ],
+        [
+          0.0419178,
+          1.5195,
+          0.166313
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49047",
+      "sourceId": "FMA49047",
+      "name": "Recto inferior del ojo izquierdo",
+      "anatomicalName": "Recto inferior del ojo izquierdo",
+      "latin": "Musculus rectus inferior sinister",
+      "aliases": [
+        "Left inferior rectus",
+        "FMA49047",
+        "FJ1295"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49047_FJ1295"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.012115,
+          1.5042200000000001,
+          0.119045
+        ],
+        [
+          0.0342923,
+          1.5269000000000001,
+          0.160005
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49055",
+      "sourceId": "FMA49055",
+      "name": "Recto lateral del ojo izquierdo",
+      "anatomicalName": "Recto lateral del ojo izquierdo",
+      "latin": "Musculus rectus lateralis sinister",
+      "aliases": [
+        "Left lateral rectus",
+        "FMA49055",
+        "FJ1304"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49055_FJ1304"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0163569,
+          1.5131700000000001,
+          0.119108
+        ],
+        [
+          0.0427963,
+          1.53071,
+          0.158727
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58243",
+      "sourceId": "FMA58243",
+      "name": "Cristalino izquierdo",
+      "anatomicalName": "Cristalino izquierdo",
+      "latin": "Lens sinistra",
+      "aliases": [
+        "Left lens",
+        "FMA58243",
+        "FJ1305"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12515",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion-ocular-internal"
+      ],
+      "meshNames": [
+        "bp3d_FMA58243_FJ1305"
+      ],
+      "family": "lens",
+      "educationId": "completion:lens",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "lens",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0244899,
+          1.5126700000000002,
+          0.15682300000000002
+        ],
+        [
+          0.0347934,
+          1.52311,
+          0.16159600000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49049",
+      "sourceId": "FMA49049",
+      "name": "Elevador del párpado superior izquierdo",
+      "anatomicalName": "Elevador del párpado superior izquierdo",
+      "latin": "Musculus levator palpebrae superioris sinister",
+      "aliases": [
+        "Left levator palpebrae superioris",
+        "FMA49049",
+        "FJ1306"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49049_FJ1306"
+      ],
+      "family": "eyelid-muscle",
+      "educationId": "completion:eyelid",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "eyelid-muscle",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0118402,
+          1.5208800000000002,
+          0.119571
+        ],
+        [
+          0.04197120000000001,
+          1.53696,
+          0.16537700000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49057",
+      "sourceId": "FMA49057",
+      "name": "Recto medial del ojo izquierdo",
+      "anatomicalName": "Recto medial del ojo izquierdo",
+      "latin": "Musculus rectus medialis sinister",
+      "aliases": [
+        "Left medial rectus",
+        "FMA49057",
+        "FJ1308"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49057_FJ1308"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0112401,
+          1.51241,
+          0.120934
+        ],
+        [
+          0.0212375,
+          1.53003,
+          0.16117900000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58608",
+      "sourceId": "FMA58608",
+      "name": "Retina óptica · ojo izquierdo",
+      "anatomicalName": "Retina óptica · ojo izquierdo",
+      "latin": "Pars optica retinae sinistrae",
+      "aliases": [
+        "Optic part of left retina",
+        "FMA58608",
+        "FJ1316"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12515",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion-ocular-internal"
+      ],
+      "meshNames": [
+        "bp3d_FMA58608_FJ1316"
+      ],
+      "family": "retina",
+      "educationId": "completion:retina",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "retina",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0182202,
+          1.5071800000000002,
+          0.141049
+        ],
+        [
+          0.0400851,
+          1.5289700000000002,
+          0.158536
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49053",
+      "sourceId": "FMA49053",
+      "name": "Oblicuo superior del ojo izquierdo",
+      "anatomicalName": "Oblicuo superior del ojo izquierdo",
+      "latin": "Musculus obliquus superior sinister",
+      "aliases": [
+        "Left superior oblique",
+        "FMA49053",
+        "FJ1322"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49053_FJ1322"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.011307000000000001,
+          1.52331,
+          0.12210800000000001
+        ],
+        [
+          0.0392835,
+          1.53469,
+          0.165509
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49045",
+      "sourceId": "FMA49045",
+      "name": "Recto superior del ojo izquierdo",
+      "anatomicalName": "Recto superior del ojo izquierdo",
+      "latin": "Musculus rectus superior sinister",
+      "aliases": [
+        "Left superior rectus",
+        "FMA49045",
+        "FJ1323"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49045_FJ1323"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.012585800000000001,
+          1.5258,
+          0.121073
+        ],
+        [
+          0.035514699999999996,
+          1.53261,
+          0.161615
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49050",
+      "sourceId": "FMA49050",
+      "name": "Oblicuo inferior del ojo derecho",
+      "anatomicalName": "Oblicuo inferior del ojo derecho",
+      "latin": "Musculus obliquus inferior dexter",
+      "aliases": [
+        "Right inferior oblique",
+        "FMA49050",
+        "FJ1345"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49050_FJ1345"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0432376,
+          1.5031400000000001,
+          0.140471
+        ],
+        [
+          -0.013864699999999999,
+          1.5195,
+          0.16630699999999998
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49046",
+      "sourceId": "FMA49046",
+      "name": "Recto inferior del ojo derecho",
+      "anatomicalName": "Recto inferior del ojo derecho",
+      "latin": "Musculus rectus inferior dexter",
+      "aliases": [
+        "Right inferior rectus",
+        "FMA49046",
+        "FJ1346"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49046_FJ1346"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.035603,
+          1.5042200000000001,
+          0.11904
+        ],
+        [
+          -0.0133962,
+          1.5269100000000002,
+          0.16
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49054",
+      "sourceId": "FMA49054",
+      "name": "Recto lateral del ojo derecho",
+      "anatomicalName": "Recto lateral del ojo derecho",
+      "latin": "Musculus rectus lateralis dexter",
+      "aliases": [
+        "Right lateral rectus",
+        "FMA49054",
+        "FJ1355"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49054_FJ1355"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0441111,
+          1.5131800000000002,
+          0.11909600000000001
+        ],
+        [
+          -0.017658100000000003,
+          1.53072,
+          0.158732
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58242",
+      "sourceId": "FMA58242",
+      "name": "Cristalino derecho",
+      "anatomicalName": "Cristalino derecho",
+      "latin": "Lens dextra",
+      "aliases": [
+        "Right lens",
+        "FMA58242",
+        "FJ1356"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12514",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion-ocular-internal"
+      ],
+      "meshNames": [
+        "bp3d_FMA58242_FJ1356"
+      ],
+      "family": "lens",
+      "educationId": "completion:lens",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "lens",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.036099,
+          1.5126600000000001,
+          0.156827
+        ],
+        [
+          -0.0257958,
+          1.5231,
+          0.16159600000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49048",
+      "sourceId": "FMA49048",
+      "name": "Elevador del párpado superior derecho",
+      "anatomicalName": "Elevador del párpado superior derecho",
+      "latin": "Musculus levator palpebrae superioris dexter",
+      "aliases": [
+        "Right levator palpebrae superioris",
+        "FMA49048",
+        "FJ1357"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49048_FJ1357"
+      ],
+      "family": "eyelid-muscle",
+      "educationId": "completion:eyelid",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "eyelid-muscle",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.04329740000000001,
+          1.5208599999999999,
+          0.11955800000000001
+        ],
+        [
+          -0.0131642,
+          1.5369700000000002,
+          0.165379
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49056",
+      "sourceId": "FMA49056",
+      "name": "Recto medial del ojo derecho",
+      "anatomicalName": "Recto medial del ojo derecho",
+      "latin": "Musculus rectus medialis dexter",
+      "aliases": [
+        "Right medial rectus",
+        "FMA49056",
+        "FJ1359"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49056_FJ1359"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0225492,
+          1.5124000000000002,
+          0.12094400000000001
+        ],
+        [
+          -0.0125357,
+          1.53005,
+          0.161177
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58607",
+      "sourceId": "FMA58607",
+      "name": "Retina óptica · ojo derecho",
+      "anatomicalName": "Retina óptica · ojo derecho",
+      "latin": "Pars optica retinae dextrae",
+      "aliases": [
+        "Optic part of right retina",
+        "FMA58607",
+        "FJ1367"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12514",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion-ocular-internal"
+      ],
+      "meshNames": [
+        "bp3d_FMA58607_FJ1367"
+      ],
+      "family": "retina",
+      "educationId": "completion:retina",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "retina",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0413959,
+          1.5071800000000002,
+          0.141049
+        ],
+        [
+          -0.019527799999999998,
+          1.5289700000000002,
+          0.158535
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49052",
+      "sourceId": "FMA49052",
+      "name": "Oblicuo superior del ojo derecho",
+      "anatomicalName": "Oblicuo superior del ojo derecho",
+      "latin": "Musculus obliquus superior dexter",
+      "aliases": [
+        "Right superior oblique",
+        "FMA49052",
+        "FJ1373"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49052_FJ1373"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0405805,
+          1.52332,
+          0.122073
+        ],
+        [
+          -0.0126366,
+          1.53469,
+          0.16551
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49044",
+      "sourceId": "FMA49044",
+      "name": "Recto superior del ojo derecho",
+      "anatomicalName": "Recto superior del ojo derecho",
+      "latin": "Musculus rectus superior dexter",
+      "aliases": [
+        "Right superior rectus",
+        "FMA49044",
+        "FJ1374"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49044_FJ1374"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.036829900000000006,
+          1.52579,
+          0.121056
+        ],
+        [
+          -0.0138793,
+          1.5326199999999999,
+          0.161616
         ]
       ]
     }
@@ -445,6 +1313,58 @@
         ]
       ],
       "provenanceId": "bodyparts3d-4.0-ocular"
+    },
+    {
+      "id": "nervous:completion-ocular-muscles",
+      "path": "models/anatomy/ocular/completion-ocular-muscles.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 381476,
+      "sha256": "fe9ca0f3efa2614bdde0c6d820bdbaead5456819838ba29d036e4b76b70a748d",
+      "meshCount": 14,
+      "triangles": 45038,
+      "bounds": [
+        [
+          -0.0441111,
+          1.5031400000000001,
+          0.11904
+        ],
+        [
+          0.0427963,
+          1.5369700000000002,
+          0.166313
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Músculos orbitarios"
+    },
+    {
+      "id": "nervous:completion-ocular-internal",
+      "path": "models/anatomy/ocular/completion-ocular-internal.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 356076,
+      "sha256": "e6f9c26c8227cc87b1b2f57634032009e86794c781844313860056edbad1b0b4",
+      "meshCount": 4,
+      "triangles": 50008,
+      "bounds": [
+        [
+          -0.0413959,
+          1.5071800000000002,
+          0.141049
+        ],
+        [
+          0.0400851,
+          1.5289700000000002,
+          0.16159600000000002
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Cristalinos y retina óptica"
     }
   ],
   "provenance": [
@@ -463,17 +1383,99 @@
         "Posiciones Float32, Meshopt y cuantización sólo de normales.",
         "Materiales esquemáticos; no simulación óptica ni color de iris representativo del individuo."
       ]
+    },
+    {
+      "id": "bodyparts3d-4.0-completion-wave1",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps.",
+        "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
+        "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
+        "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
+      ]
     }
   ],
   "coverage": {
     "title": "Cobertura ocular parcial disponible",
-    "structures": 2,
-    "meshes": 6,
-    "note": "Dos globos oculares parciales: córnea, esclerótica e iris. Agrupados editorialmente con las vías sensoriales, sin un sistema adicional.",
+    "structures": 16,
+    "meshes": 24,
+    "note": "Globos oculares parciales y estructuras orbitarias disponibles. Cobertura macroscópica, sin simulación óptica ni histología.",
     "limitations": [
-      "No se representa el globo ocular completo ni sus capas internas, cristalino o humores.",
       "La córnea usa transparencia esquemática para mostrar el iris; no constituye simulación óptica.",
-      "No se añaden músculos extraoculares ni se corrigen las aperturas de la piel."
+      "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps.",
+      "Persisten estructuras oculares ausentes; no se representan capas celulares ni dinámica ocular."
     ]
+  },
+  "education": {
+    "completion:eyelid": {
+      "description": "Músculo elevador del párpado superior.",
+      "function": "Contribuye a elevar el párpado superior.",
+      "relations": "Por encima del globo ocular, en la órbita.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida. Tendones palpebrales no completados.",
+      "sources": [
+        {
+          "title": "OpenStax · Percepción sensorial",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:extraocular": {
+      "description": "Músculo de la órbita.",
+      "function": "Participa en el movimiento del globo ocular.",
+      "relations": "Entre la órbita y el globo ocular.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida. No simula motilidad ocular.",
+      "sources": [
+        {
+          "title": "OpenStax · Percepción sensorial",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:retina": {
+      "description": "Porción óptica macroscópica de la retina.",
+      "function": "Participa en la recepción de estímulos luminosos.",
+      "relations": "En la pared interna posterior del globo ocular.",
+      "limits": "Sólo porción óptica identificada. No representa todas las regiones retinales ni sus capas celulares.",
+      "sources": [
+        {
+          "title": "OpenStax · Percepción sensorial",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:lens": {
+      "description": "Lente situada detrás del iris.",
+      "function": "Participa en el enfoque de la luz sobre la retina.",
+      "relations": "Posterior al iris y anterior al cuerpo vítreo.",
+      "limits": "Superficie macroscópica estática; sin simulación óptica, acomodación ni fibras del cristalino.",
+      "sources": [
+        {
+          "title": "OpenStax · Percepción sensorial",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    }
   }
 }

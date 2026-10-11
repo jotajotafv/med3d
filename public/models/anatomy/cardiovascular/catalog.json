@@ -40,7 +40,9 @@
         "cardio:lower-right",
         "cardio:trunk",
         "cardio:upper-left",
-        "cardio:upper-right"
+        "cardio:upper-right",
+        "cardiovascular:completion-femoral-branches-right",
+        "cardiovascular:completion-femoral-branches-left"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -81,7 +83,9 @@
         "cardio:lower-right",
         "cardio:trunk",
         "cardio:upper-left",
-        "cardio:upper-right"
+        "cardio:upper-right",
+        "cardiovascular:completion-femoral-branches-right",
+        "cardiovascular:completion-femoral-branches-left"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -375,11 +379,15 @@
         "bp3d:FMA70249",
         "bp3d:FMA77380",
         "bp3d:FMA43896",
-        "bp3d:FMA43898"
+        "bp3d:FMA43898",
+        "bp3d:FMA20801",
+        "bp3d:FMA21422",
+        "bp3d:FMA22507"
       ],
       "kind": "region",
       "assetIds": [
-        "cardio:lower-right"
+        "cardio:lower-right",
+        "cardiovascular:completion-femoral-branches-right"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -388,7 +396,7 @@
       "explosionRegionId": "lower-limb-right",
       "bounds": [
         [
-          -0.10555500000000001,
+          -0.121253,
           -0.0413313,
           0.050347499999999996
         ],
@@ -411,11 +419,15 @@
         "bp3d:FMA70250",
         "bp3d:FMA77381",
         "bp3d:FMA43897",
-        "bp3d:FMA43899"
+        "bp3d:FMA43899",
+        "bp3d:FMA20802",
+        "bp3d:FMA21423",
+        "bp3d:FMA22508"
       ],
       "kind": "region",
       "assetIds": [
-        "cardio:lower-left"
+        "cardio:lower-left",
+        "cardiovascular:completion-femoral-branches-left"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -429,7 +441,7 @@
           0.0503494
         ],
         [
-          0.105556,
+          0.12125100000000001,
           0.912336,
           0.152944
         ]
@@ -6695,6 +6707,276 @@
           0.12665600000000002
         ]
       ]
+    },
+    {
+      "id": "bp3d:FMA20801",
+      "sourceId": "FMA20801",
+      "name": "Arteria circunfleja femoral lateral derecha",
+      "anatomicalName": "Arteria circunfleja femoral lateral derecha",
+      "latin": "Arteria circumflexa femoris lateralis dextra",
+      "aliases": [
+        "Right lateral circumflex femoral artery",
+        "FMA20801",
+        "FJ2158"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:lower-right",
+      "regionId": "cardio:arterial:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion-femoral-branches-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA20801_FJ2158"
+      ],
+      "family": "lateral-circumflex-femoral",
+      "educationId": "completion:femoral-branches",
+      "side": "right",
+      "anatomyType": "Arteria · trayecto disponible",
+      "relatedIds": [
+        "bp3d:FMA70249",
+        "bp3d:FMA24474"
+      ],
+      "cardioType": "Arteria · trayecto disponible",
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          -0.12054300000000001,
+          0.769032,
+          0.061512500000000005
+        ],
+        [
+          -0.0760099,
+          0.794814,
+          0.124624
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA21422",
+      "sourceId": "FMA21422",
+      "name": "Rama descendente de la arteria circunfleja femoral lateral derecha",
+      "anatomicalName": "Rama descendente de la arteria circunfleja femoral lateral derecha",
+      "latin": "Ramus descendens arteriae circumflexae femoris lateralis sinistrae",
+      "aliases": [
+        "Descending branch of right lateral circumflex femoral artery",
+        "FMA21422",
+        "FJ2057"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:lower-right",
+      "regionId": "cardio:arterial:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion-femoral-branches-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA21422_FJ2057"
+      ],
+      "family": "descending-lateral-circumflex",
+      "educationId": "completion:femoral-branches",
+      "side": "midline",
+      "anatomyType": "Arteria · trayecto disponible",
+      "relatedIds": [
+        "bp3d:FMA70249",
+        "bp3d:FMA24474"
+      ],
+      "cardioType": "Arteria · trayecto disponible",
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          -0.121253,
+          0.41125700000000004,
+          0.09131210000000001
+        ],
+        [
+          -0.0752153,
+          0.772983,
+          0.122364
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22507",
+      "sourceId": "FMA22507",
+      "name": "Arteria genicular descendente derecha",
+      "anatomicalName": "Arteria genicular descendente derecha",
+      "latin": "Arteria descendens genus dextra",
+      "aliases": [
+        "Right descending genicular artery",
+        "FMA22507",
+        "FJ2137"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:lower-right",
+      "regionId": "cardio:arterial:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion-femoral-branches-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22507_FJ2137"
+      ],
+      "family": "descending-genicular",
+      "educationId": "completion:femoral-branches",
+      "side": "right",
+      "anatomyType": "Arteria · trayecto disponible",
+      "relatedIds": [
+        "bp3d:FMA70249",
+        "bp3d:FMA24474"
+      ],
+      "cardioType": "Arteria · trayecto disponible",
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          -0.0633138,
+          0.360248,
+          0.08888410000000001
+        ],
+        [
+          -0.0328503,
+          0.48260000000000003,
+          0.112127
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA20802",
+      "sourceId": "FMA20802",
+      "name": "Arteria circunfleja femoral lateral izquierda",
+      "anatomicalName": "Arteria circunfleja femoral lateral izquierda",
+      "latin": "Arteria circumflexa femoris lateralis sinistra",
+      "aliases": [
+        "Left lateral circumflex femoral artery",
+        "FMA20802",
+        "FJ2078"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:lower-left",
+      "regionId": "cardio:arterial:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion-femoral-branches-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA20802_FJ2078"
+      ],
+      "family": "lateral-circumflex-femoral",
+      "educationId": "completion:femoral-branches",
+      "side": "left",
+      "anatomyType": "Arteria · trayecto disponible",
+      "relatedIds": [
+        "bp3d:FMA70250",
+        "bp3d:FMA24475"
+      ],
+      "cardioType": "Arteria · trayecto disponible",
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          0.07598730000000001,
+          0.769026,
+          0.061526000000000004
+        ],
+        [
+          0.120521,
+          0.794804,
+          0.124615
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA21423",
+      "sourceId": "FMA21423",
+      "name": "Rama descendente de la arteria circunfleja femoral lateral izquierda",
+      "anatomicalName": "Rama descendente de la arteria circunfleja femoral lateral izquierda",
+      "latin": "Ramus descendens arteriae circumflexae femoris lateralis sinistrae",
+      "aliases": [
+        "Descending branch of left lateral circumflex femoral artery",
+        "FMA21423",
+        "FJ2063"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:lower-left",
+      "regionId": "cardio:arterial:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion-femoral-branches-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA21423_FJ2063"
+      ],
+      "family": "descending-lateral-circumflex",
+      "educationId": "completion:femoral-branches",
+      "side": "midline",
+      "anatomyType": "Arteria · trayecto disponible",
+      "relatedIds": [
+        "bp3d:FMA70250",
+        "bp3d:FMA24475"
+      ],
+      "cardioType": "Arteria · trayecto disponible",
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          0.0752162,
+          0.41126100000000004,
+          0.09131600000000001
+        ],
+        [
+          0.12125100000000001,
+          0.772985,
+          0.12235800000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22508",
+      "sourceId": "FMA22508",
+      "name": "Arteria genicular descendente izquierda",
+      "anatomicalName": "Arteria genicular descendente izquierda",
+      "latin": "Arteria descendens genus sinistra",
+      "aliases": [
+        "Left descending genicular artery",
+        "FMA22508",
+        "FJ2069"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:lower-left",
+      "regionId": "cardio:arterial:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion-femoral-branches-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22508_FJ2069"
+      ],
+      "family": "descending-genicular",
+      "educationId": "completion:femoral-branches",
+      "side": "left",
+      "anatomyType": "Arteria · trayecto disponible",
+      "relatedIds": [
+        "bp3d:FMA70250",
+        "bp3d:FMA24475"
+      ],
+      "cardioType": "Arteria · trayecto disponible",
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          0.032847900000000006,
+          0.36025599999999997,
+          0.0888881
+        ],
+        [
+          0.0633074,
+          0.482598,
+          0.112134
+        ]
+      ]
     }
   ],
   "assets": [
@@ -6865,6 +7147,58 @@
         ]
       ],
       "provenanceId": "bodyparts3d-4.0-cardiovascular"
+    },
+    {
+      "id": "cardiovascular:completion-femoral-branches-right",
+      "path": "models/anatomy/cardiovascular/completion-femoral-branches-right.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-right",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 104524,
+      "sha256": "a4b9443f83af07fe891f34063b56787b5df36a51351cc42373f94a93e1508456",
+      "meshCount": 3,
+      "triangles": 12880,
+      "bounds": [
+        [
+          -0.121253,
+          0.360248,
+          0.061512500000000005
+        ],
+        [
+          -0.0328503,
+          0.794814,
+          0.124624
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Ramas femorales derechas"
+    },
+    {
+      "id": "cardiovascular:completion-femoral-branches-left",
+      "path": "models/anatomy/cardiovascular/completion-femoral-branches-left.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-left",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 104144,
+      "sha256": "1e0baf7432eb9f4f57c0238874d0efe022d7e7a926f7019f9e53ebc05d2f8b5a",
+      "meshCount": 3,
+      "triangles": 12862,
+      "bounds": [
+        [
+          0.032847900000000006,
+          0.36025599999999997,
+          0.061526000000000004
+        ],
+        [
+          0.12125100000000001,
+          0.794804,
+          0.124615
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Ramas femorales izquierdas"
     }
   ],
   "provenance": [
@@ -6883,19 +7217,54 @@
         "Grupos editoriales y componentes distinguidos. Las cavidades cardíacas son espacios, no tejido ni corazones adicionales.",
         "Declaración actual CC BY 4.0 del editor; cabeceras antiguas conservadas. Sin validación clínica."
       ]
+    },
+    {
+      "id": "bodyparts3d-4.0-completion-wave1",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps.",
+        "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
+        "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
+        "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
+      ]
     }
   ],
   "coverage": {
     "title": "Cobertura cardiovascular macroscópica disponible",
-    "structures": 110,
-    "meshes": 162,
+    "structures": 116,
+    "meshes": 168,
     "note": "110 unidades cardiovasculares y 30 componentes; corazón corporal y vasos principales de cabeza/cuello, tronco y extremidades.",
     "limitations": [
       "Cobertura parcial: sin carótidas externas, yugulares externas, troncos femorales profundos ni arterias fibulares inequívocos en esta selección.",
       "Corazón por paredes, valvas y cavidades disponibles; pared ventricular sin separación derecha/izquierda y sin septo independiente. Las cavidades representan espacios, no miocardio.",
       "Red vascular segmentada de origen; no se fabrican tubos para cerrar discontinuidades ni se altera el diámetro.",
       "La nomenclatura de valvas semilunares se conserva con advertencia de fuente; no se equipara automáticamente a cúspides coronarias.",
-      "El corazón HRA detallado sigue independiente; no se superpone su frame al corporal."
+      "El corazón HRA detallado sigue independiente; no se superpone su frame al corporal.",
+      "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps."
     ]
+  },
+  "education": {
+    "completion:femoral-branches": {
+      "description": "Rama arterial del miembro inferior.",
+      "function": "Conduce sangre hacia territorios del muslo o la rodilla según su identidad.",
+      "relations": "Asociada a la circulación femoral.",
+      "limits": "Trayecto parcial de la fuente. No representa el tronco completo de la arteria femoral profunda ni garantiza continuidad vascular.",
+      "sources": [
+        {
+          "title": "OpenStax · Trayectos circulatorios",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    }
   }
 }

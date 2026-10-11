@@ -1,3 +1,4 @@
+import {preCompletionCatalog} from './anatomy/pre-completion-catalog.mjs';
 import assert from 'node:assert/strict';
 import {mkdtemp,readFile,writeFile,rm} from 'node:fs/promises';
 import path from 'node:path';
@@ -5,10 +6,10 @@ import {pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
 import ts from 'typescript';
 const temporary=await mkdtemp(path.resolve('.digestive-tests-'));
-const json=async p=>JSON.parse(await readFile(p,'utf8'));
+const json=async p=>preCompletionCatalog(JSON.parse(await readFile(p,'utf8')));
 let checks=0;const pass=name=>{checks++;console.log('PASS',name);};
 try{
- const files=['catalog-index','body-catalog','explosion','digestive-education'];
+ const files=['catalog-education','catalog-index','body-catalog','explosion','digestive-education'];
  for(const file of files){let out=ts.transpileModule(await readFile('src/features/anatomy/atlas/'+file+'.ts','utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText;for(const dep of files)out=out.replaceAll("'./"+dep+"'","'./"+dep+".mjs'");await writeFile(path.join(temporary,file+'.mjs'),out);}
  const load=n=>import(pathToFileURL(path.join(temporary,n+'.mjs')));
  const {composeBodyCatalog}=await load('body-catalog'),{createCatalogIndex,flattenTree}=await load('catalog-index'),{resolveDigestiveDetail,getDigestiveContextIds}=await load('digestive-education'),{createExplosionOffsets,explosionTarget}=await load('explosion');

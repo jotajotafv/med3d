@@ -24,7 +24,13 @@ const detailResolvers: Partial<Record<XrAtlasSystem, (node: AnatomyNode) => Exis
 export function atlasEducation(node: AnatomyNode, catalog: AnatomyCatalog) {
   let fields: [string, string][] = [], sources: { title: string; url: string }[] = [], scope: string | undefined;
   let latin = node.latin;
-  if (node.systemId === 'skeletal') {
+  const lesson = node.educationId && catalog.education?.[node.educationId];
+  if (lesson) {
+    const detail = lesson;
+    fields = [['Descripción', detail.description], ['Función', detail.function],
+      ['Relaciones anatómicas', detail.relations], ['Representación', detail.limits]];
+    sources = detail.sources;
+  } else if (node.systemId === 'skeletal') {
     const bone = resolveBoneDetail(node), family = BONE_EDUCATION[node.family || ''];
     const detail = bone || family;
     latin ||= BONE_TERMS[node.family || '']?.latin;

@@ -1,0 +1,4439 @@
+{
+  "schemaVersion": 1,
+  "id": "completion-wave1",
+  "frame": {
+    "id": "bodyparts3d-4.0-male",
+    "units": "metres",
+    "up": "Y",
+    "bounds": [
+      [
+        -0.323914,
+        -0.0704799,
+        -0.018001
+      ],
+      [
+        0.323935,
+        1.63627,
+        0.236044
+      ]
+    ],
+    "note": "OBJ99 source millimetres; source superior Z becomes Y-up; (x,y,z)→(x,z,-y)/1000. One common original frame, with no bone-wise or module-wise centering. HRA organ assets are separate frames and must not be overlaid without validated registration."
+  },
+  "nodes": [
+    {
+      "id": "bp3d:FMA13295",
+      "sourceId": "FMA13295",
+      "name": "Diafragma",
+      "anatomicalName": "Diafragma",
+      "latin": "Diaphragma",
+      "aliases": [
+        "Diaphragm",
+        "FMA13295",
+        "FJ3131"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:thorax-anterior",
+      "regionId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-respiratory-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA13295_FJ3131"
+      ],
+      "family": "diaphragm",
+      "educationId": "completion:diaphragm",
+      "side": "midline",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "skeletal:region:thorax",
+        "skeletal:group:spine:lumbarvertebrae",
+        "resp:lung:right",
+        "resp:lung:left",
+        "dig:FMA7197"
+      ],
+      "bounds": [
+        [
+          -0.122329,
+          0.985852,
+          0.025915800000000003
+        ],
+        [
+          0.120863,
+          1.19258,
+          0.205323
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA9756",
+      "sourceId": "FMA9756",
+      "name": "Intercostales externos · conjunto disponible",
+      "anatomicalName": "Intercostales externos · conjunto disponible",
+      "latin": "Musculi intercostales externi",
+      "aliases": [
+        "FMA9756",
+        "FJ1451",
+        "FJ1451M",
+        "intercostales",
+        "externos"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:thorax-anterior",
+      "regionId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-respiratory-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA9756_FJ1451",
+        "bp3d_FMA9756_FJ1451M"
+      ],
+      "family": "intercostals",
+      "educationId": "completion:intercostals",
+      "side": "midline",
+      "anatomyType": "Conjunto muscular",
+      "relatedIds": [
+        "skeletal:region:thorax"
+      ],
+      "bounds": [
+        [
+          -0.136166,
+          1.01151,
+          0.00328174
+        ],
+        [
+          0.136166,
+          1.36537,
+          0.191641
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA9757",
+      "sourceId": "FMA9757",
+      "name": "Intercostales internos · conjunto disponible",
+      "anatomicalName": "Intercostales internos · conjunto disponible",
+      "latin": "Musculi intercostales interni",
+      "aliases": [
+        "FMA9757",
+        "FJ1455",
+        "FJ1455M",
+        "intercostales",
+        "internos"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:thorax-anterior",
+      "regionId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-respiratory-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA9757_FJ1455",
+        "bp3d_FMA9757_FJ1455M"
+      ],
+      "family": "intercostals",
+      "educationId": "completion:intercostals",
+      "side": "midline",
+      "anatomyType": "Conjunto muscular",
+      "relatedIds": [
+        "skeletal:region:thorax"
+      ],
+      "bounds": [
+        [
+          -0.13291399999999998,
+          1.01844,
+          0.00465469
+        ],
+        [
+          0.13291399999999998,
+          1.31402,
+          0.20931100000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA9758",
+      "sourceId": "FMA9758",
+      "name": "Intercostales íntimos · conjunto disponible",
+      "anatomicalName": "Intercostales íntimos · conjunto disponible",
+      "latin": "Musculi intercostales intimi",
+      "aliases": [
+        "FMA9758",
+        "FJ1454",
+        "FJ1454M",
+        "intercostales",
+        "íntimos"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:thorax-anterior",
+      "regionId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-respiratory-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA9758_FJ1454",
+        "bp3d_FMA9758_FJ1454M"
+      ],
+      "family": "intercostals",
+      "educationId": "completion:intercostals",
+      "side": "midline",
+      "anatomyType": "Conjunto muscular",
+      "relatedIds": [
+        "skeletal:region:thorax"
+      ],
+      "bounds": [
+        [
+          -0.134625,
+          1.01916,
+          0.00630278
+        ],
+        [
+          0.134625,
+          1.31499,
+          0.193373
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22340",
+      "sourceId": "FMA22340",
+      "name": "Piriforme derecho",
+      "anatomicalName": "Piriforme derecho",
+      "latin": "Musculus piriformis dexter",
+      "aliases": [
+        "Right piriformis",
+        "FMA22340",
+        "FJ1428"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22340_FJ1428"
+      ],
+      "family": "piriformis",
+      "educationId": "completion:hip-rotators",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.13706000000000002,
+          0.8060560000000001,
+          0.012082200000000001
+        ],
+        [
+          -0.0254805,
+          0.872403,
+          0.0720186
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22324",
+      "sourceId": "FMA22324",
+      "name": "Obturador interno derecho",
+      "anatomicalName": "Obturador interno derecho",
+      "latin": "Musculus obturatorius internus dexter",
+      "aliases": [
+        "Right obturator internus",
+        "FMA22324",
+        "FJ1426"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22324_FJ1426"
+      ],
+      "family": "obturator-internus",
+      "educationId": "completion:hip-rotators",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.119051,
+          0.7703730000000001,
+          0.0293431
+        ],
+        [
+          -0.021533300000000002,
+          0.8274940000000001,
+          0.10709600000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22326",
+      "sourceId": "FMA22326",
+      "name": "Obturador externo derecho",
+      "anatomicalName": "Obturador externo derecho",
+      "latin": "Musculus obturatorius externus dexter",
+      "aliases": [
+        "Right obturator externus",
+        "FMA22326",
+        "FJ1425"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22326_FJ1425"
+      ],
+      "family": "obturator-externus",
+      "educationId": "completion:hip-rotators",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.128389,
+          0.7673800000000001,
+          0.0554672
+        ],
+        [
+          -0.0244292,
+          0.796614,
+          0.10950700000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22334",
+      "sourceId": "FMA22334",
+      "name": "Gemelo superior derecho",
+      "anatomicalName": "Gemelo superior derecho",
+      "latin": "Musculus gemellus superior dexter",
+      "aliases": [
+        "Right gemellus superior",
+        "FMA22334",
+        "FJ1417"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22334_FJ1417"
+      ],
+      "family": "gemellus-superior",
+      "educationId": "completion:hip-rotators",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.125191,
+          0.7981820000000001,
+          0.033169699999999996
+        ],
+        [
+          -0.0453349,
+          0.825188,
+          0.0780416
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22336",
+      "sourceId": "FMA22336",
+      "name": "Gemelo inferior derecho",
+      "anatomicalName": "Gemelo inferior derecho",
+      "latin": "Musculus gemellus inferior dexter",
+      "aliases": [
+        "Right gemellus inferior",
+        "FMA22336",
+        "FJ1416"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22336_FJ1416"
+      ],
+      "family": "gemellus-inferior",
+      "educationId": "completion:hip-rotators",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.125865,
+          0.780901,
+          0.023882200000000003
+        ],
+        [
+          -0.0555291,
+          0.802879,
+          0.07782510000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22338",
+      "sourceId": "FMA22338",
+      "name": "Cuadrado femoral derecho",
+      "anatomicalName": "Cuadrado femoral derecho",
+      "latin": "Musculus quadratus femoris dexter",
+      "aliases": [
+        "Right quadratus femoris",
+        "FMA22338",
+        "FJ1432"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22338_FJ1432"
+      ],
+      "family": "quadratus-femoris",
+      "educationId": "completion:hip-rotators",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.127187,
+          0.743654,
+          0.0426561
+        ],
+        [
+          -0.0565706,
+          0.7898540000000001,
+          0.057886400000000005
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22342",
+      "sourceId": "FMA22342",
+      "name": "Psoas mayor derecho",
+      "anatomicalName": "Psoas mayor derecho",
+      "latin": "Musculus psoas major dexter",
+      "aliases": [
+        "Right psoas major",
+        "FMA22342",
+        "FJ1431"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:thigh:anterior",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22342_FJ1431"
+      ],
+      "family": "psoas-major",
+      "educationId": "completion:iliopsoas",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.113758,
+          0.7352150000000001,
+          0.053134900000000006
+        ],
+        [
+          -0.00747519,
+          1.09874,
+          0.119566
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22322",
+      "sourceId": "FMA22322",
+      "name": "Ilíaco derecho",
+      "anatomicalName": "Ilíaco derecho",
+      "latin": "Musculus iliacus dexter",
+      "aliases": [
+        "Right iliacus",
+        "FMA22322",
+        "FJ1422"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:thigh:anterior",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22322_FJ1422"
+      ],
+      "family": "iliacus",
+      "educationId": "completion:iliopsoas",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.127254,
+          0.733822,
+          0.0463534
+        ],
+        [
+          -0.0727491,
+          0.957991,
+          0.129449
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22341",
+      "sourceId": "FMA22341",
+      "name": "Piriforme izquierdo",
+      "anatomicalName": "Piriforme izquierdo",
+      "latin": "Musculus piriformis sinister",
+      "aliases": [
+        "Left piriformis",
+        "FMA22341",
+        "FJ1428M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22341_FJ1428M"
+      ],
+      "family": "piriformis",
+      "educationId": "completion:hip-rotators",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.0254805,
+          0.8060560000000001,
+          0.012082200000000001
+        ],
+        [
+          0.13706000000000002,
+          0.872403,
+          0.0720186
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22325",
+      "sourceId": "FMA22325",
+      "name": "Obturador interno izquierdo",
+      "anatomicalName": "Obturador interno izquierdo",
+      "latin": "Musculus obturatorius internus sinister",
+      "aliases": [
+        "Left obturator internus",
+        "FMA22325",
+        "FJ1426M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22325_FJ1426M"
+      ],
+      "family": "obturator-internus",
+      "educationId": "completion:hip-rotators",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.021533300000000002,
+          0.7703730000000001,
+          0.0293431
+        ],
+        [
+          0.119051,
+          0.8274940000000001,
+          0.10709600000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22327",
+      "sourceId": "FMA22327",
+      "name": "Obturador externo izquierdo",
+      "anatomicalName": "Obturador externo izquierdo",
+      "latin": "Musculus obturatorius externus sinister",
+      "aliases": [
+        "Left obturator externus",
+        "FMA22327",
+        "FJ1425M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22327_FJ1425M"
+      ],
+      "family": "obturator-externus",
+      "educationId": "completion:hip-rotators",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.0244292,
+          0.7673800000000001,
+          0.0554672
+        ],
+        [
+          0.128389,
+          0.796614,
+          0.10950700000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22335",
+      "sourceId": "FMA22335",
+      "name": "Gemelo superior izquierdo",
+      "anatomicalName": "Gemelo superior izquierdo",
+      "latin": "Musculus gemellus superior sinister",
+      "aliases": [
+        "Left gemellus superior",
+        "FMA22335",
+        "FJ1417M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22335_FJ1417M"
+      ],
+      "family": "gemellus-superior",
+      "educationId": "completion:hip-rotators",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.0453349,
+          0.7981820000000001,
+          0.033169699999999996
+        ],
+        [
+          0.125191,
+          0.825188,
+          0.0780416
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22337",
+      "sourceId": "FMA22337",
+      "name": "Gemelo inferior izquierdo",
+      "anatomicalName": "Gemelo inferior izquierdo",
+      "latin": "Musculus gemellus inferior sinister",
+      "aliases": [
+        "Left gemellus inferior",
+        "FMA22337",
+        "FJ1416M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22337_FJ1416M"
+      ],
+      "family": "gemellus-inferior",
+      "educationId": "completion:hip-rotators",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.0555291,
+          0.780901,
+          0.023882200000000003
+        ],
+        [
+          0.125865,
+          0.802879,
+          0.07782510000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22339",
+      "sourceId": "FMA22339",
+      "name": "Cuadrado femoral izquierdo",
+      "anatomicalName": "Cuadrado femoral izquierdo",
+      "latin": "Musculus quadratus femoris sinister",
+      "aliases": [
+        "Left quadratus femoris",
+        "FMA22339",
+        "FJ1432M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22339_FJ1432M"
+      ],
+      "family": "quadratus-femoris",
+      "educationId": "completion:hip-rotators",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.0565706,
+          0.743654,
+          0.0426561
+        ],
+        [
+          0.127187,
+          0.7898540000000001,
+          0.057886400000000005
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22343",
+      "sourceId": "FMA22343",
+      "name": "Psoas mayor izquierdo",
+      "anatomicalName": "Psoas mayor izquierdo",
+      "latin": "Musculus psoas major sinister",
+      "aliases": [
+        "Left psoas major",
+        "FMA22343",
+        "FJ1431M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:thigh:anterior",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22343_FJ1431M"
+      ],
+      "family": "psoas-major",
+      "educationId": "completion:iliopsoas",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.00747519,
+          0.7352150000000001,
+          0.053134900000000006
+        ],
+        [
+          0.11375700000000001,
+          1.09874,
+          0.119566
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22323",
+      "sourceId": "FMA22323",
+      "name": "Ilíaco izquierdo",
+      "anatomicalName": "Ilíaco izquierdo",
+      "latin": "Musculus iliacus sinister",
+      "aliases": [
+        "Left iliacus",
+        "FMA22323",
+        "FJ1422M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:thigh:anterior",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22323_FJ1422M"
+      ],
+      "family": "iliacus",
+      "educationId": "completion:iliopsoas",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.0727491,
+          0.733822,
+          0.0463534
+        ],
+        [
+          0.127254,
+          0.957991,
+          0.129449
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55704",
+      "sourceId": "FMA55704",
+      "name": "Primer molar inferior izquierdo permanente",
+      "anatomicalName": "Primer molar inferior izquierdo permanente",
+      "latin": "Dens molaris primus inferior sinister",
+      "aliases": [
+        "Left lower first secondary molar tooth",
+        "FMA55704",
+        "FJ1254",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55704_FJ1254"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0164209,
+          1.43911,
+          0.138972
+        ],
+        [
+          0.0287551,
+          1.45881,
+          0.154078
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55693",
+      "sourceId": "FMA55693",
+      "name": "Primer premolar inferior izquierdo permanente",
+      "anatomicalName": "Primer premolar inferior izquierdo permanente",
+      "latin": "Dens premolaris primus inferior sinister",
+      "aliases": [
+        "Left lower first secondary premolar tooth",
+        "FMA55693",
+        "FJ1255",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55693_FJ1255"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.012587300000000001,
+          1.43208,
+          0.153377
+        ],
+        [
+          0.0204983,
+          1.45457,
+          0.1675
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55703",
+      "sourceId": "FMA55703",
+      "name": "Segundo molar inferior izquierdo permanente",
+      "anatomicalName": "Segundo molar inferior izquierdo permanente",
+      "latin": "Dens molaris secundus inferior sinister",
+      "aliases": [
+        "Left lower second secondary molar tooth",
+        "FMA55703",
+        "FJ1256",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55703_FJ1256"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.020059300000000002,
+          1.4444700000000001,
+          0.12634
+        ],
+        [
+          0.032158200000000005,
+          1.46317,
+          0.14284100000000002
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55692",
+      "sourceId": "FMA55692",
+      "name": "Segundo premolar inferior izquierdo permanente",
+      "anatomicalName": "Segundo premolar inferior izquierdo permanente",
+      "latin": "Dens premolaris secundus inferior sinister",
+      "aliases": [
+        "Left lower second secondary premolar tooth",
+        "FMA55692",
+        "FJ1257",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55692_FJ1257"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0155793,
+          1.43246,
+          0.14735800000000002
+        ],
+        [
+          0.023697500000000003,
+          1.45584,
+          0.16065600000000002
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA57143",
+      "sourceId": "FMA57143",
+      "name": "Incisivo central inferior izquierdo permanente",
+      "anatomicalName": "Incisivo central inferior izquierdo permanente",
+      "latin": "Dens incisivus medialis inferior sinister",
+      "aliases": [
+        "Left lower central secondary incisor tooth",
+        "FMA57143",
+        "FJ1258",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA57143_FJ1258"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0004914450000000001,
+          1.42808,
+          0.16026900000000002
+        ],
+        [
+          0.00539112,
+          1.45355,
+          0.17849
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA57141",
+      "sourceId": "FMA57141",
+      "name": "Incisivo lateral inferior izquierdo permanente",
+      "anatomicalName": "Incisivo lateral inferior izquierdo permanente",
+      "latin": "Dens incisivus lateralis inferior sinister",
+      "aliases": [
+        "Left lower lateral secondary incisor tooth",
+        "FMA57141",
+        "FJ1259",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA57141_FJ1259"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0035276,
+          1.4283800000000002,
+          0.160976
+        ],
+        [
+          0.0113867,
+          1.45352,
+          0.177803
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55687",
+      "sourceId": "FMA55687",
+      "name": "Canino inferior izquierdo permanente",
+      "anatomicalName": "Canino inferior izquierdo permanente",
+      "latin": "Dens caninus inferior sinister",
+      "aliases": [
+        "Left lower secondary canine tooth",
+        "FMA55687",
+        "FJ1260",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55687_FJ1260"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0076894400000000005,
+          1.4271500000000001,
+          0.15825999999999998
+        ],
+        [
+          0.0163045,
+          1.45398,
+          0.173856
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55699",
+      "sourceId": "FMA55699",
+      "name": "Primer molar superior izquierdo permanente",
+      "anatomicalName": "Primer molar superior izquierdo permanente",
+      "latin": "Dens molaris primus superior sinister",
+      "aliases": [
+        "Left upper first secondary molar tooth",
+        "FMA55699",
+        "FJ1261",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55699_FJ1261"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.018311599999999997,
+          1.45787,
+          0.142646
+        ],
+        [
+          0.029886299999999998,
+          1.48244,
+          0.15418500000000002
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55690",
+      "sourceId": "FMA55690",
+      "name": "Primer premolar superior izquierdo permanente",
+      "anatomicalName": "Primer premolar superior izquierdo permanente",
+      "latin": "Dens premolaris primus superior sinister",
+      "aliases": [
+        "Left upper first secondary premolar tooth",
+        "FMA55690",
+        "FJ1262",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55690_FJ1262"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0151614,
+          1.45472,
+          0.15949000000000002
+        ],
+        [
+          0.0246329,
+          1.48317,
+          0.16751400000000002
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55700",
+      "sourceId": "FMA55700",
+      "name": "Segundo molar superior izquierdo permanente",
+      "anatomicalName": "Segundo molar superior izquierdo permanente",
+      "latin": "Dens molaris secundus superior sinister",
+      "aliases": [
+        "Left upper second secondary molar tooth",
+        "FMA55700",
+        "FJ1263",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55700_FJ1263"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0176709,
+          1.46147,
+          0.13481100000000001
+        ],
+        [
+          0.0295245,
+          1.4841300000000002,
+          0.14467
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55691",
+      "sourceId": "FMA55691",
+      "name": "Segundo premolar superior izquierdo permanente",
+      "anatomicalName": "Segundo premolar superior izquierdo permanente",
+      "latin": "Dens premolaris secundus superior sinister",
+      "aliases": [
+        "Left upper second secondary premolar tooth",
+        "FMA55691",
+        "FJ1264",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55691_FJ1264"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.018328399999999998,
+          1.4558499999999999,
+          0.153592
+        ],
+        [
+          0.0276263,
+          1.48179,
+          0.161168
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55682",
+      "sourceId": "FMA55682",
+      "name": "Incisivo central superior izquierdo permanente",
+      "anatomicalName": "Incisivo central superior izquierdo permanente",
+      "latin": "Dens incisivus medialis superior sinister",
+      "aliases": [
+        "Left upper central secondary incisor tooth",
+        "FMA55682",
+        "FJ1265",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55682_FJ1265"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.00048429100000000003,
+          1.4523599999999999,
+          0.17047
+        ],
+        [
+          0.008366910000000002,
+          1.47879,
+          0.18334899999999998
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55683",
+      "sourceId": "FMA55683",
+      "name": "Incisivo lateral superior izquierdo permanente",
+      "anatomicalName": "Incisivo lateral superior izquierdo permanente",
+      "latin": "Dens incisivus lateralis superior sinister",
+      "aliases": [
+        "Left upper lateral secondary incisor tooth",
+        "FMA55683",
+        "FJ1266",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55683_FJ1266"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.00598812,
+          1.45167,
+          0.168937
+        ],
+        [
+          0.0155987,
+          1.4806,
+          0.180611
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55799",
+      "sourceId": "FMA55799",
+      "name": "Canino superior izquierdo permanente",
+      "anatomicalName": "Canino superior izquierdo permanente",
+      "latin": "Dens caninus superior sinister",
+      "aliases": [
+        "Left upper secondary canine tooth",
+        "FMA55799",
+        "FJ1267",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "izquierdo"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55799_FJ1267"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "left",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.012203900000000002,
+          1.45314,
+          0.166625
+        ],
+        [
+          0.021450399999999998,
+          1.48452,
+          0.17593
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55705",
+      "sourceId": "FMA55705",
+      "name": "Primer molar inferior derecho permanente",
+      "anatomicalName": "Primer molar inferior derecho permanente",
+      "latin": "Dens molaris primus inferior dexter",
+      "aliases": [
+        "Right lower first secondary molar tooth",
+        "FMA55705",
+        "FJ1268",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55705_FJ1268"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.030054400000000002,
+          1.43911,
+          0.138965
+        ],
+        [
+          -0.0177383,
+          1.4588299999999998,
+          0.154076
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55694",
+      "sourceId": "FMA55694",
+      "name": "Primer premolar inferior derecho permanente",
+      "anatomicalName": "Primer premolar inferior derecho permanente",
+      "latin": "Dens premolaris primus inferior dexter",
+      "aliases": [
+        "Right lower first secondary premolar tooth",
+        "FMA55694",
+        "FJ1269",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55694_FJ1269"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0217807,
+          1.43207,
+          0.153376
+        ],
+        [
+          -0.0138348,
+          1.45459,
+          0.167523
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55706",
+      "sourceId": "FMA55706",
+      "name": "Segundo molar inferior derecho permanente",
+      "anatomicalName": "Segundo molar inferior derecho permanente",
+      "latin": "Dens molaris secundus inferior dexter",
+      "aliases": [
+        "Right lower second secondary molar tooth",
+        "FMA55706",
+        "FJ1270",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55706_FJ1270"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0334475,
+          1.44449,
+          0.126341
+        ],
+        [
+          -0.0213755,
+          1.46317,
+          0.142863
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55695",
+      "sourceId": "FMA55695",
+      "name": "Segundo premolar inferior derecho permanente",
+      "anatomicalName": "Segundo premolar inferior derecho permanente",
+      "latin": "Dens premolaris secundus inferior dexter",
+      "aliases": [
+        "Right lower second secondary premolar tooth",
+        "FMA55695",
+        "FJ1271",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55695_FJ1271"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.025005299999999998,
+          1.43246,
+          0.14732599999999998
+        ],
+        [
+          -0.016891200000000002,
+          1.45582,
+          0.16065100000000002
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA57142",
+      "sourceId": "FMA57142",
+      "name": "Incisivo central inferior derecho permanente",
+      "anatomicalName": "Incisivo central inferior derecho permanente",
+      "latin": "Dens incisivus medialis inferior dexter",
+      "aliases": [
+        "Right lower central secondary incisor tooth",
+        "FMA57142",
+        "FJ1272",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA57142_FJ1272"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0067020000000000005,
+          1.4281,
+          0.160261
+        ],
+        [
+          -0.000827842,
+          1.45356,
+          0.17849700000000002
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA57140",
+      "sourceId": "FMA57140",
+      "name": "Incisivo lateral inferior derecho permanente",
+      "anatomicalName": "Incisivo lateral inferior derecho permanente",
+      "latin": "Dens incisivus lateralis inferior dexter",
+      "aliases": [
+        "Right lower lateral secondary incisor tooth",
+        "FMA57140",
+        "FJ1273",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA57140_FJ1273"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0126934,
+          1.4283800000000002,
+          0.16097
+        ],
+        [
+          -0.00484447,
+          1.45352,
+          0.177832
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55686",
+      "sourceId": "FMA55686",
+      "name": "Canino inferior derecho permanente",
+      "anatomicalName": "Canino inferior derecho permanente",
+      "latin": "Dens caninus inferior dexter",
+      "aliases": [
+        "Right lower secondary canine tooth",
+        "FMA55686",
+        "FJ1274",
+        "diente",
+        "dentición permanente",
+        "inferior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55686_FJ1274"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0176204,
+          1.4271500000000001,
+          0.158257
+        ],
+        [
+          -0.00899553,
+          1.45398,
+          0.173857
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55697",
+      "sourceId": "FMA55697",
+      "name": "Segundo molar superior derecho permanente",
+      "anatomicalName": "Segundo molar superior derecho permanente",
+      "latin": "Dens molaris secundus superior dexter",
+      "aliases": [
+        "Right upper second secondary molar tooth",
+        "FMA55697",
+        "FJ1275",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55697_FJ1275"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.030861100000000002,
+          1.46147,
+          0.13483699999999998
+        ],
+        [
+          -0.018951000000000003,
+          1.4841400000000002,
+          0.14463800000000002
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55698",
+      "sourceId": "FMA55698",
+      "name": "Primer molar superior derecho permanente",
+      "anatomicalName": "Primer molar superior derecho permanente",
+      "latin": "Dens molaris primus superior dexter",
+      "aliases": [
+        "Right upper first secondary molar tooth",
+        "FMA55698",
+        "FJ1276",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55698_FJ1276"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.031189599999999998,
+          1.45787,
+          0.142665
+        ],
+        [
+          -0.0196288,
+          1.48242,
+          0.154164
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55689",
+      "sourceId": "FMA55689",
+      "name": "Primer premolar superior derecho permanente",
+      "anatomicalName": "Primer premolar superior derecho permanente",
+      "latin": "Dens premolaris primus superior dexter",
+      "aliases": [
+        "Right upper first secondary premolar tooth",
+        "FMA55689",
+        "FJ1277",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55689_FJ1277"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0259511,
+          1.4547400000000001,
+          0.15949700000000003
+        ],
+        [
+          -0.0164381,
+          1.4831800000000002,
+          0.167534
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55688",
+      "sourceId": "FMA55688",
+      "name": "Segundo premolar superior derecho permanente",
+      "anatomicalName": "Segundo premolar superior derecho permanente",
+      "latin": "Dens premolaris secundus superior dexter",
+      "aliases": [
+        "Right upper second secondary premolar tooth",
+        "FMA55688",
+        "FJ1278",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55688_FJ1278"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0289407,
+          1.45584,
+          0.153585
+        ],
+        [
+          -0.019647500000000002,
+          1.48179,
+          0.161163
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55681",
+      "sourceId": "FMA55681",
+      "name": "Incisivo central superior derecho permanente",
+      "anatomicalName": "Incisivo central superior derecho permanente",
+      "latin": "Dens incisivus medialis superior dexter",
+      "aliases": [
+        "Right upper central secondary incisor tooth",
+        "FMA55681",
+        "FJ1279",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55681_FJ1279"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.00967948,
+          1.45237,
+          0.17046100000000003
+        ],
+        [
+          -0.000808877,
+          1.47876,
+          0.183332
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55680",
+      "sourceId": "FMA55680",
+      "name": "Incisivo lateral superior derecho permanente",
+      "anatomicalName": "Incisivo lateral superior derecho permanente",
+      "latin": "Dens incisivus lateralis superior dexter",
+      "aliases": [
+        "Right upper lateral secondary incisor tooth",
+        "FMA55680",
+        "FJ1280",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55680_FJ1280"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.016875499999999998,
+          1.45167,
+          0.168934
+        ],
+        [
+          -0.007301,
+          1.4805899999999999,
+          0.18025
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA55798",
+      "sourceId": "FMA55798",
+      "name": "Canino superior derecho permanente",
+      "anatomicalName": "Canino superior derecho permanente",
+      "latin": "Dens caninus superior dexter",
+      "aliases": [
+        "Right upper secondary canine tooth",
+        "FMA55798",
+        "FJ1281",
+        "diente",
+        "dentición permanente",
+        "superior",
+        "derecho"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:oral",
+      "regionId": "dig:oral",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-dentition"
+      ],
+      "meshNames": [
+        "bp3d_FMA55798_FJ1281"
+      ],
+      "family": "permanent-tooth",
+      "educationId": "completion:teeth",
+      "side": "right",
+      "anatomyType": "Diente permanente",
+      "relatedIds": [
+        "bp3d:FMA52748",
+        "bp3d:FMA53649",
+        "bp3d:FMA53650",
+        "dig:FMA54640"
+      ],
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0227535,
+          1.45313,
+          0.166613
+        ],
+        [
+          -0.013495799999999999,
+          1.48451,
+          0.175932
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49051",
+      "sourceId": "FMA49051",
+      "name": "Oblicuo inferior del ojo izquierdo",
+      "anatomicalName": "Oblicuo inferior del ojo izquierdo",
+      "latin": "Musculus obliquus inferior sinister",
+      "aliases": [
+        "Left inferior oblique",
+        "FMA49051",
+        "FJ1294"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49051_FJ1294"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.012558099999999999,
+          1.5031500000000002,
+          0.14047900000000002
+        ],
+        [
+          0.0419178,
+          1.5195,
+          0.166313
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49047",
+      "sourceId": "FMA49047",
+      "name": "Recto inferior del ojo izquierdo",
+      "anatomicalName": "Recto inferior del ojo izquierdo",
+      "latin": "Musculus rectus inferior sinister",
+      "aliases": [
+        "Left inferior rectus",
+        "FMA49047",
+        "FJ1295"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49047_FJ1295"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.012115,
+          1.5042200000000001,
+          0.119045
+        ],
+        [
+          0.0342923,
+          1.5269000000000001,
+          0.160005
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49055",
+      "sourceId": "FMA49055",
+      "name": "Recto lateral del ojo izquierdo",
+      "anatomicalName": "Recto lateral del ojo izquierdo",
+      "latin": "Musculus rectus lateralis sinister",
+      "aliases": [
+        "Left lateral rectus",
+        "FMA49055",
+        "FJ1304"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49055_FJ1304"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0163569,
+          1.5131700000000001,
+          0.119108
+        ],
+        [
+          0.0427963,
+          1.53071,
+          0.158727
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58243",
+      "sourceId": "FMA58243",
+      "name": "Cristalino izquierdo",
+      "anatomicalName": "Cristalino izquierdo",
+      "latin": "Lens sinistra",
+      "aliases": [
+        "Left lens",
+        "FMA58243",
+        "FJ1305"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12515",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion-ocular-internal"
+      ],
+      "meshNames": [
+        "bp3d_FMA58243_FJ1305"
+      ],
+      "family": "lens",
+      "educationId": "completion:lens",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "lens",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0244899,
+          1.5126700000000002,
+          0.15682300000000002
+        ],
+        [
+          0.0347934,
+          1.52311,
+          0.16159600000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49049",
+      "sourceId": "FMA49049",
+      "name": "Elevador del párpado superior izquierdo",
+      "anatomicalName": "Elevador del párpado superior izquierdo",
+      "latin": "Musculus levator palpebrae superioris sinister",
+      "aliases": [
+        "Left levator palpebrae superioris",
+        "FMA49049",
+        "FJ1306"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49049_FJ1306"
+      ],
+      "family": "eyelid-muscle",
+      "educationId": "completion:eyelid",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "eyelid-muscle",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0118402,
+          1.5208800000000002,
+          0.119571
+        ],
+        [
+          0.04197120000000001,
+          1.53696,
+          0.16537700000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49057",
+      "sourceId": "FMA49057",
+      "name": "Recto medial del ojo izquierdo",
+      "anatomicalName": "Recto medial del ojo izquierdo",
+      "latin": "Musculus rectus medialis sinister",
+      "aliases": [
+        "Left medial rectus",
+        "FMA49057",
+        "FJ1308"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49057_FJ1308"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0112401,
+          1.51241,
+          0.120934
+        ],
+        [
+          0.0212375,
+          1.53003,
+          0.16117900000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58608",
+      "sourceId": "FMA58608",
+      "name": "Retina óptica · ojo izquierdo",
+      "anatomicalName": "Retina óptica · ojo izquierdo",
+      "latin": "Pars optica retinae sinistrae",
+      "aliases": [
+        "Optic part of left retina",
+        "FMA58608",
+        "FJ1316"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12515",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion-ocular-internal"
+      ],
+      "meshNames": [
+        "bp3d_FMA58608_FJ1316"
+      ],
+      "family": "retina",
+      "educationId": "completion:retina",
+      "side": "left",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "retina",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.0182202,
+          1.5071800000000002,
+          0.141049
+        ],
+        [
+          0.0400851,
+          1.5289700000000002,
+          0.158536
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49053",
+      "sourceId": "FMA49053",
+      "name": "Oblicuo superior del ojo izquierdo",
+      "anatomicalName": "Oblicuo superior del ojo izquierdo",
+      "latin": "Musculus obliquus superior sinister",
+      "aliases": [
+        "Left superior oblique",
+        "FMA49053",
+        "FJ1322"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49053_FJ1322"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.011307000000000001,
+          1.52331,
+          0.12210800000000001
+        ],
+        [
+          0.0392835,
+          1.53469,
+          0.165509
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49045",
+      "sourceId": "FMA49045",
+      "name": "Recto superior del ojo izquierdo",
+      "anatomicalName": "Recto superior del ojo izquierdo",
+      "latin": "Musculus rectus superior sinister",
+      "aliases": [
+        "Left superior rectus",
+        "FMA49045",
+        "FJ1323"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49045_FJ1323"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "left",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12515",
+        "bp3d:FMA50878",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          0.012585800000000001,
+          1.5258,
+          0.121073
+        ],
+        [
+          0.035514699999999996,
+          1.53261,
+          0.161615
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49050",
+      "sourceId": "FMA49050",
+      "name": "Oblicuo inferior del ojo derecho",
+      "anatomicalName": "Oblicuo inferior del ojo derecho",
+      "latin": "Musculus obliquus inferior dexter",
+      "aliases": [
+        "Right inferior oblique",
+        "FMA49050",
+        "FJ1345"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49050_FJ1345"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0432376,
+          1.5031400000000001,
+          0.140471
+        ],
+        [
+          -0.013864699999999999,
+          1.5195,
+          0.16630699999999998
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49046",
+      "sourceId": "FMA49046",
+      "name": "Recto inferior del ojo derecho",
+      "anatomicalName": "Recto inferior del ojo derecho",
+      "latin": "Musculus rectus inferior dexter",
+      "aliases": [
+        "Right inferior rectus",
+        "FMA49046",
+        "FJ1346"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49046_FJ1346"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.035603,
+          1.5042200000000001,
+          0.11904
+        ],
+        [
+          -0.0133962,
+          1.5269100000000002,
+          0.16
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49054",
+      "sourceId": "FMA49054",
+      "name": "Recto lateral del ojo derecho",
+      "anatomicalName": "Recto lateral del ojo derecho",
+      "latin": "Musculus rectus lateralis dexter",
+      "aliases": [
+        "Right lateral rectus",
+        "FMA49054",
+        "FJ1355"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49054_FJ1355"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0441111,
+          1.5131800000000002,
+          0.11909600000000001
+        ],
+        [
+          -0.017658100000000003,
+          1.53072,
+          0.158732
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58242",
+      "sourceId": "FMA58242",
+      "name": "Cristalino derecho",
+      "anatomicalName": "Cristalino derecho",
+      "latin": "Lens dextra",
+      "aliases": [
+        "Right lens",
+        "FMA58242",
+        "FJ1356"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12514",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion-ocular-internal"
+      ],
+      "meshNames": [
+        "bp3d_FMA58242_FJ1356"
+      ],
+      "family": "lens",
+      "educationId": "completion:lens",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "lens",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.036099,
+          1.5126600000000001,
+          0.156827
+        ],
+        [
+          -0.0257958,
+          1.5231,
+          0.16159600000000002
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49048",
+      "sourceId": "FMA49048",
+      "name": "Elevador del párpado superior derecho",
+      "anatomicalName": "Elevador del párpado superior derecho",
+      "latin": "Musculus levator palpebrae superioris dexter",
+      "aliases": [
+        "Right levator palpebrae superioris",
+        "FMA49048",
+        "FJ1357"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49048_FJ1357"
+      ],
+      "family": "eyelid-muscle",
+      "educationId": "completion:eyelid",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "eyelid-muscle",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.04329740000000001,
+          1.5208599999999999,
+          0.11955800000000001
+        ],
+        [
+          -0.0131642,
+          1.5369700000000002,
+          0.165379
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49056",
+      "sourceId": "FMA49056",
+      "name": "Recto medial del ojo derecho",
+      "anatomicalName": "Recto medial del ojo derecho",
+      "latin": "Musculus rectus medialis dexter",
+      "aliases": [
+        "Right medial rectus",
+        "FMA49056",
+        "FJ1359"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49056_FJ1359"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0225492,
+          1.5124000000000002,
+          0.12094400000000001
+        ],
+        [
+          -0.0125357,
+          1.53005,
+          0.161177
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA58607",
+      "sourceId": "FMA58607",
+      "name": "Retina óptica · ojo derecho",
+      "anatomicalName": "Retina óptica · ojo derecho",
+      "latin": "Pars optica retinae dextrae",
+      "aliases": [
+        "Optic part of right retina",
+        "FMA58607",
+        "FJ1367"
+      ],
+      "systemId": "nervous",
+      "parentId": "ocular:FMA12514",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion-ocular-internal"
+      ],
+      "meshNames": [
+        "bp3d_FMA58607_FJ1367"
+      ],
+      "family": "retina",
+      "educationId": "completion:retina",
+      "side": "right",
+      "anatomyType": "Componente ocular",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "retina",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0413959,
+          1.5071800000000002,
+          0.141049
+        ],
+        [
+          -0.019527799999999998,
+          1.5289700000000002,
+          0.158535
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49052",
+      "sourceId": "FMA49052",
+      "name": "Oblicuo superior del ojo derecho",
+      "anatomicalName": "Oblicuo superior del ojo derecho",
+      "latin": "Musculus obliquus superior dexter",
+      "aliases": [
+        "Right superior oblique",
+        "FMA49052",
+        "FJ1373"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49052_FJ1373"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0405805,
+          1.52332,
+          0.122073
+        ],
+        [
+          -0.0126366,
+          1.53469,
+          0.16551
+        ]
+      ]
+    },
+    {
+      "id": "ocular:FMA49044",
+      "sourceId": "FMA49044",
+      "name": "Recto superior del ojo derecho",
+      "anatomicalName": "Recto superior del ojo derecho",
+      "latin": "Musculus rectus superior dexter",
+      "aliases": [
+        "Right superior rectus",
+        "FMA49044",
+        "FJ1374"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:ocular",
+      "regionId": "nervous:ocular",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "nervous:completion-ocular-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA49044_FJ1374"
+      ],
+      "family": "extraocular",
+      "educationId": "completion:extraocular",
+      "side": "right",
+      "anatomyType": "Músculo orbitario",
+      "relatedIds": [
+        "ocular:FMA12514",
+        "bp3d:FMA50875",
+        "bp3d:FMA52734",
+        "bp3d:FMA52736"
+      ],
+      "ocularClass": "extraocular",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.036829900000000006,
+          1.52579,
+          0.121056
+        ],
+        [
+          -0.0138793,
+          1.5326199999999999,
+          0.161616
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:pelvis",
+      "name": "Suelo pélvico · cobertura masculina",
+      "anatomicalName": "Suelo pélvico",
+      "aliases": [
+        "periné",
+        "pelvis",
+        "suelo pélvico"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:pelvis",
+      "parentId": "muscular",
+      "children": [
+        "bp3d:FMA46444",
+        "bp3d:FMA46443",
+        "bp3d:FMA45859",
+        "bp3d:FMA45858",
+        "bp3d:FMA45855",
+        "bp3d:FMA45854",
+        "bp3d:FMA45857",
+        "bp3d:FMA45856"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "bounds": [
+        [
+          -0.0491884,
+          0.763008,
+          0.00870952
+        ],
+        [
+          0.0491884,
+          0.828624,
+          0.102803
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46444",
+      "sourceId": "FMA46444",
+      "name": "Coccígeo izquierdo",
+      "anatomicalName": "Coccígeo izquierdo",
+      "latin": "Musculus coccygeus sinister",
+      "aliases": [
+        "Left coccygeus",
+        "FMA46444",
+        "FJ1449M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA46444_FJ1449M"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          0.00247649,
+          0.788078,
+          0.00879995
+        ],
+        [
+          0.0487138,
+          0.828624,
+          0.0380385
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46443",
+      "sourceId": "FMA46443",
+      "name": "Coccígeo derecho",
+      "anatomicalName": "Coccígeo derecho",
+      "latin": "Musculus coccygeus dexter",
+      "aliases": [
+        "Right coccygeus",
+        "FMA46443",
+        "FJ2547"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA46443_FJ2547"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          -0.0487138,
+          0.788078,
+          0.00870952
+        ],
+        [
+          -0.00247649,
+          0.828624,
+          0.0380385
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45859",
+      "sourceId": "FMA45859",
+      "name": "Iliococcígeo izquierdo",
+      "anatomicalName": "Iliococcígeo izquierdo",
+      "latin": "Musculus iliococcygeus sinister",
+      "aliases": [
+        "Left iliococcygeus",
+        "FMA45859",
+        "FJ1453M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA45859_FJ1453M"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          0.000657022,
+          0.776036,
+          0.0150662
+        ],
+        [
+          0.0491884,
+          0.821722,
+          0.08840089999999999
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45858",
+      "sourceId": "FMA45858",
+      "name": "Iliococcígeo derecho",
+      "anatomicalName": "Iliococcígeo derecho",
+      "latin": "Musculus iliococcygeus dexter",
+      "aliases": [
+        "Right iliococcygeus",
+        "FMA45858",
+        "FJ2549"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA45858_FJ2549"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          -0.0491884,
+          0.7760940000000001,
+          0.0150529
+        ],
+        [
+          0.0443877,
+          0.821722,
+          0.0881942
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45855",
+      "sourceId": "FMA45855",
+      "name": "Pubococcígeo izquierdo",
+      "anatomicalName": "Pubococcígeo izquierdo",
+      "latin": "Musculus pubococcygeus sinister",
+      "aliases": [
+        "Left pubococcygeus",
+        "FMA45855",
+        "FJ1457M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA45855_FJ1457M"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          0.00316466,
+          0.767231,
+          0.010482
+        ],
+        [
+          0.0354065,
+          0.8146230000000001,
+          0.10053000000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45854",
+      "sourceId": "FMA45854",
+      "name": "Pubococcígeo derecho",
+      "anatomicalName": "Pubococcígeo derecho",
+      "latin": "Musculus pubococcygeus dexter",
+      "aliases": [
+        "Right pubococcygeus",
+        "FMA45854",
+        "FJ2550"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA45854_FJ2550"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          -0.0354065,
+          0.767246,
+          0.010482
+        ],
+        [
+          0.0282547,
+          0.8146230000000001,
+          0.10053000000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45857",
+      "sourceId": "FMA45857",
+      "name": "Puborrectal izquierdo",
+      "anatomicalName": "Puborrectal izquierdo",
+      "latin": "Musculus puborectalis sinister",
+      "aliases": [
+        "Left puborectalis",
+        "FMA45857",
+        "FJ1458M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA45857_FJ1458M"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          0.00321461,
+          0.763102,
+          0.021305700000000004
+        ],
+        [
+          0.032625799999999996,
+          0.7918160000000001,
+          0.102803
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45856",
+      "sourceId": "FMA45856",
+      "name": "Puborrectal derecho",
+      "anatomicalName": "Puborrectal derecho",
+      "latin": "Musculus puborectalis dexter",
+      "aliases": [
+        "Right puborectalis",
+        "FMA45856",
+        "FJ2551"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA45856_FJ2551"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          -0.0324661,
+          0.763008,
+          0.021305700000000004
+        ],
+        [
+          0.0246095,
+          0.7918160000000001,
+          0.102803
+        ]
+      ]
+    },
+    {
+      "id": "dig:FMA21930",
+      "sourceId": "FMA21930",
+      "name": "Esfínter anal externo · porciones disponibles",
+      "anatomicalName": "Esfínter anal externo · porciones disponibles",
+      "latin": "Musculus sphincter ani externus",
+      "aliases": [
+        "External anal sphincter",
+        "FMA21930",
+        "FJ1450M",
+        "FJ2548"
+      ],
+      "systemId": "digestive",
+      "parentId": "dig:large",
+      "regionId": "dig:large",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "digestive:completion-anal-sphincter"
+      ],
+      "meshNames": [
+        "bp3d_FMA21930_FJ1450M",
+        "bp3d_FMA21930_FJ2548"
+      ],
+      "family": "anal-sphincter",
+      "educationId": "completion:anal-sphincter",
+      "side": "midline",
+      "anatomyType": "Esfínter muscular",
+      "relatedIds": [
+        "dig:FMA14544",
+        "muscular:region:pelvis"
+      ],
+      "bounds": [
+        [
+          -0.014787400000000001,
+          0.75361,
+          0.0169439
+        ],
+        [
+          0.014787400000000001,
+          0.774861,
+          0.038724400000000006
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA20801",
+      "sourceId": "FMA20801",
+      "name": "Arteria circunfleja femoral lateral derecha",
+      "anatomicalName": "Arteria circunfleja femoral lateral derecha",
+      "latin": "Arteria circumflexa femoris lateralis dextra",
+      "aliases": [
+        "Right lateral circumflex femoral artery",
+        "FMA20801",
+        "FJ2158"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:lower-right",
+      "regionId": "cardio:arterial:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion-femoral-branches-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA20801_FJ2158"
+      ],
+      "family": "lateral-circumflex-femoral",
+      "educationId": "completion:femoral-branches",
+      "side": "right",
+      "anatomyType": "Arteria · trayecto disponible",
+      "relatedIds": [
+        "bp3d:FMA70249",
+        "bp3d:FMA24474"
+      ],
+      "cardioType": "Arteria · trayecto disponible",
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          -0.12054300000000001,
+          0.769032,
+          0.061512500000000005
+        ],
+        [
+          -0.0760099,
+          0.794814,
+          0.124624
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA21422",
+      "sourceId": "FMA21422",
+      "name": "Rama descendente de la arteria circunfleja femoral lateral derecha",
+      "anatomicalName": "Rama descendente de la arteria circunfleja femoral lateral derecha",
+      "latin": "Ramus descendens arteriae circumflexae femoris lateralis sinistrae",
+      "aliases": [
+        "Descending branch of right lateral circumflex femoral artery",
+        "FMA21422",
+        "FJ2057"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:lower-right",
+      "regionId": "cardio:arterial:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion-femoral-branches-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA21422_FJ2057"
+      ],
+      "family": "descending-lateral-circumflex",
+      "educationId": "completion:femoral-branches",
+      "side": "midline",
+      "anatomyType": "Arteria · trayecto disponible",
+      "relatedIds": [
+        "bp3d:FMA70249",
+        "bp3d:FMA24474"
+      ],
+      "cardioType": "Arteria · trayecto disponible",
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          -0.121253,
+          0.41125700000000004,
+          0.09131210000000001
+        ],
+        [
+          -0.0752153,
+          0.772983,
+          0.122364
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22507",
+      "sourceId": "FMA22507",
+      "name": "Arteria genicular descendente derecha",
+      "anatomicalName": "Arteria genicular descendente derecha",
+      "latin": "Arteria descendens genus dextra",
+      "aliases": [
+        "Right descending genicular artery",
+        "FMA22507",
+        "FJ2137"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:lower-right",
+      "regionId": "cardio:arterial:lower-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion-femoral-branches-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22507_FJ2137"
+      ],
+      "family": "descending-genicular",
+      "educationId": "completion:femoral-branches",
+      "side": "right",
+      "anatomyType": "Arteria · trayecto disponible",
+      "relatedIds": [
+        "bp3d:FMA70249",
+        "bp3d:FMA24474"
+      ],
+      "cardioType": "Arteria · trayecto disponible",
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          -0.0633138,
+          0.360248,
+          0.08888410000000001
+        ],
+        [
+          -0.0328503,
+          0.48260000000000003,
+          0.112127
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA20802",
+      "sourceId": "FMA20802",
+      "name": "Arteria circunfleja femoral lateral izquierda",
+      "anatomicalName": "Arteria circunfleja femoral lateral izquierda",
+      "latin": "Arteria circumflexa femoris lateralis sinistra",
+      "aliases": [
+        "Left lateral circumflex femoral artery",
+        "FMA20802",
+        "FJ2078"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:lower-left",
+      "regionId": "cardio:arterial:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion-femoral-branches-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA20802_FJ2078"
+      ],
+      "family": "lateral-circumflex-femoral",
+      "educationId": "completion:femoral-branches",
+      "side": "left",
+      "anatomyType": "Arteria · trayecto disponible",
+      "relatedIds": [
+        "bp3d:FMA70250",
+        "bp3d:FMA24475"
+      ],
+      "cardioType": "Arteria · trayecto disponible",
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          0.07598730000000001,
+          0.769026,
+          0.061526000000000004
+        ],
+        [
+          0.120521,
+          0.794804,
+          0.124615
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA21423",
+      "sourceId": "FMA21423",
+      "name": "Rama descendente de la arteria circunfleja femoral lateral izquierda",
+      "anatomicalName": "Rama descendente de la arteria circunfleja femoral lateral izquierda",
+      "latin": "Ramus descendens arteriae circumflexae femoris lateralis sinistrae",
+      "aliases": [
+        "Descending branch of left lateral circumflex femoral artery",
+        "FMA21423",
+        "FJ2063"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:lower-left",
+      "regionId": "cardio:arterial:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion-femoral-branches-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA21423_FJ2063"
+      ],
+      "family": "descending-lateral-circumflex",
+      "educationId": "completion:femoral-branches",
+      "side": "midline",
+      "anatomyType": "Arteria · trayecto disponible",
+      "relatedIds": [
+        "bp3d:FMA70250",
+        "bp3d:FMA24475"
+      ],
+      "cardioType": "Arteria · trayecto disponible",
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          0.0752162,
+          0.41126100000000004,
+          0.09131600000000001
+        ],
+        [
+          0.12125100000000001,
+          0.772985,
+          0.12235800000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22508",
+      "sourceId": "FMA22508",
+      "name": "Arteria genicular descendente izquierda",
+      "anatomicalName": "Arteria genicular descendente izquierda",
+      "latin": "Arteria descendens genus sinistra",
+      "aliases": [
+        "Left descending genicular artery",
+        "FMA22508",
+        "FJ2069"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:lower-left",
+      "regionId": "cardio:arterial:lower-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion-femoral-branches-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22508_FJ2069"
+      ],
+      "family": "descending-genicular",
+      "educationId": "completion:femoral-branches",
+      "side": "left",
+      "anatomyType": "Arteria · trayecto disponible",
+      "relatedIds": [
+        "bp3d:FMA70250",
+        "bp3d:FMA24475"
+      ],
+      "cardioType": "Arteria · trayecto disponible",
+      "vascularClass": "arterial",
+      "bounds": [
+        [
+          0.032847900000000006,
+          0.36025599999999997,
+          0.0888881
+        ],
+        [
+          0.0633074,
+          0.482598,
+          0.112134
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA83966",
+      "sourceId": "FMA83966",
+      "name": "Tienda del cerebelo · porción disponible",
+      "anatomicalName": "Tienda del cerebelo · porción disponible",
+      "latin": "Tentorium cerebelli",
+      "aliases": [
+        "Tentorium cerebelli",
+        "FMA83966",
+        "FJ1843"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:brain",
+      "regionId": "nervous:brain",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion-tentorium"
+      ],
+      "meshNames": [
+        "bp3d_FMA83966_FJ1843"
+      ],
+      "family": "tentorium",
+      "educationId": "completion:tentorium",
+      "side": "midline",
+      "anatomyType": "Pliegue dural · porción disponible",
+      "relatedIds": [
+        "nervous:brain",
+        "skeletal:region:skull"
+      ],
+      "neuralType": "Pliegue dural",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0633281,
+          1.50753,
+          0.00582047
+        ],
+        [
+          -0.00233016,
+          1.5416500000000002,
+          0.0932923
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "muscular:completion-respiratory-muscles",
+      "path": "models/anatomy/muscular/completion-respiratory-muscles.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 7183820,
+      "sha256": "81597c56bdc19b87779fd42347a7fc23e61894437b8a640ed0833a422b90a041",
+      "meshCount": 7,
+      "triangles": 620490,
+      "bounds": [
+        [
+          -0.136166,
+          0.985852,
+          0.00328174
+        ],
+        [
+          0.136166,
+          1.36537,
+          0.20931100000000002
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Diafragma e intercostales"
+    },
+    {
+      "id": "muscular:completion-hip-right",
+      "path": "models/anatomy/muscular/completion-hip-right.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 183876,
+      "sha256": "aff1eef99fae59fcea1447a08fc91a3b37321468872bc5bf40a1181b4589f05e",
+      "meshCount": 8,
+      "triangles": 14344,
+      "bounds": [
+        [
+          -0.13706000000000002,
+          0.733822,
+          0.012082200000000001
+        ],
+        [
+          -0.00747519,
+          1.09874,
+          0.129449
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Rotadores profundos e iliopsoas derechos"
+    },
+    {
+      "id": "muscular:completion-hip-left",
+      "path": "models/anatomy/muscular/completion-hip-left.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 184092,
+      "sha256": "6281e236cab0ab04eb7d55793e6a1166f2a9d08d0257cbe7d18565d2e74cb2f7",
+      "meshCount": 8,
+      "triangles": 14344,
+      "bounds": [
+        [
+          0.00747519,
+          0.733822,
+          0.012082200000000001
+        ],
+        [
+          0.13706000000000002,
+          1.09874,
+          0.129449
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Rotadores profundos e iliopsoas izquierdos"
+    },
+    {
+      "id": "digestive:completion-dentition",
+      "path": "models/anatomy/digestive/completion-dentition.glb",
+      "systemId": "digestive",
+      "regionId": "dig:oral",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 350100,
+      "sha256": "5f39ba49e427959fa652d7a0a10dfc7da93d0f0b074066304e6f7bed0c6d8ce4",
+      "meshCount": 28,
+      "triangles": 39744,
+      "bounds": [
+        [
+          -0.0334475,
+          1.4271500000000001,
+          0.12634
+        ],
+        [
+          0.032158200000000005,
+          1.48452,
+          0.18334899999999998
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Dentición permanente · 28 piezas"
+    },
+    {
+      "id": "nervous:completion-ocular-muscles",
+      "path": "models/anatomy/ocular/completion-ocular-muscles.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 381476,
+      "sha256": "fe9ca0f3efa2614bdde0c6d820bdbaead5456819838ba29d036e4b76b70a748d",
+      "meshCount": 14,
+      "triangles": 45038,
+      "bounds": [
+        [
+          -0.0441111,
+          1.5031400000000001,
+          0.11904
+        ],
+        [
+          0.0427963,
+          1.5369700000000002,
+          0.166313
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Músculos orbitarios"
+    },
+    {
+      "id": "nervous:completion-ocular-internal",
+      "path": "models/anatomy/ocular/completion-ocular-internal.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:ocular",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 356076,
+      "sha256": "e6f9c26c8227cc87b1b2f57634032009e86794c781844313860056edbad1b0b4",
+      "meshCount": 4,
+      "triangles": 50008,
+      "bounds": [
+        [
+          -0.0413959,
+          1.5071800000000002,
+          0.141049
+        ],
+        [
+          0.0400851,
+          1.5289700000000002,
+          0.16159600000000002
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Cristalinos y retina óptica"
+    },
+    {
+      "id": "muscular:completion-pelvic-floor",
+      "path": "models/anatomy/muscular/completion-pelvic-floor.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:pelvis",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 370176,
+      "sha256": "613144bcb1ac0e61458b50ea90898c4ed87b9e8033767e49be5fec4d7b178f6d",
+      "meshCount": 8,
+      "triangles": 28404,
+      "bounds": [
+        [
+          -0.0491884,
+          0.763008,
+          0.00870952
+        ],
+        [
+          0.0491884,
+          0.828624,
+          0.102803
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Suelo pélvico masculino · parcial"
+    },
+    {
+      "id": "digestive:completion-anal-sphincter",
+      "path": "models/anatomy/digestive/completion-anal-sphincter.glb",
+      "systemId": "digestive",
+      "regionId": "dig:large",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 11480,
+      "sha256": "2593ff39aeca0589059682cc3fa7ec36b2acfe66248be9b0e38effe440969c59",
+      "meshCount": 2,
+      "triangles": 736,
+      "bounds": [
+        [
+          -0.014787400000000001,
+          0.75361,
+          0.0169439
+        ],
+        [
+          0.014787400000000001,
+          0.774861,
+          0.038724400000000006
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Esfínter anal externo · parcial"
+    },
+    {
+      "id": "cardiovascular:completion-femoral-branches-right",
+      "path": "models/anatomy/cardiovascular/completion-femoral-branches-right.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-right",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 104524,
+      "sha256": "a4b9443f83af07fe891f34063b56787b5df36a51351cc42373f94a93e1508456",
+      "meshCount": 3,
+      "triangles": 12880,
+      "bounds": [
+        [
+          -0.121253,
+          0.360248,
+          0.061512500000000005
+        ],
+        [
+          -0.0328503,
+          0.794814,
+          0.124624
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Ramas femorales derechas"
+    },
+    {
+      "id": "cardiovascular:completion-femoral-branches-left",
+      "path": "models/anatomy/cardiovascular/completion-femoral-branches-left.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial:lower-left",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 104144,
+      "sha256": "1e0baf7432eb9f4f57c0238874d0efe022d7e7a926f7019f9e53ebc05d2f8b5a",
+      "meshCount": 3,
+      "triangles": 12862,
+      "bounds": [
+        [
+          0.032847900000000006,
+          0.36025599999999997,
+          0.061526000000000004
+        ],
+        [
+          0.12125100000000001,
+          0.794804,
+          0.124615
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Ramas femorales izquierdas"
+    },
+    {
+      "id": "nervous:completion-tentorium",
+      "path": "models/anatomy/nervous/completion-tentorium.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:brain",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 175016,
+      "sha256": "95772a2efea5a614c5375f9f21cb3d147fff2fbcb33080677380fa91b29a5709",
+      "meshCount": 1,
+      "triangles": 21924,
+      "bounds": [
+        [
+          -0.0633281,
+          1.50753,
+          0.00582047
+        ],
+        [
+          -0.00233016,
+          1.5416500000000002,
+          0.0932923
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Tienda del cerebelo · parcial"
+    }
+  ],
+  "education": {
+    "completion:diaphragm": {
+      "description": "Tabique musculotendinoso entre tórax y abdomen.",
+      "function": "Su contracción participa en la inspiración.",
+      "relations": "Inferior a los pulmones y superior al hígado; vinculado con columna, costillas y esternón.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida.",
+      "sources": [
+        {
+          "title": "OpenStax · Tórax y pared abdominal",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:hip-rotators": {
+      "description": "Grupo profundo de músculos de la cadera.",
+      "function": "Participan en la rotación lateral y estabilización de la cadera.",
+      "relations": "Relacionan la pelvis con la región proximal del fémur.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida.",
+      "sources": [
+        {
+          "title": "OpenStax · Cintura pélvica y miembro inferior",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:iliopsoas": {
+      "description": "Psoas mayor e ilíaco son componentes del iliopsoas.",
+      "function": "Participan en la flexión de la cadera.",
+      "relations": "Relacionan columna lumbar y pelvis con el fémur proximal.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida.",
+      "sources": [
+        {
+          "title": "OpenStax · Cintura pélvica y miembro inferior",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:intercostals": {
+      "description": "Capas musculares situadas entre las costillas.",
+      "function": "Participan en la mecánica respiratoria y estabilización de los espacios intercostales.",
+      "relations": "Entre costillas adyacentes de la pared torácica.",
+      "limits": "Representaciones agregadas por capa, sin individualizar once pares ni asegurar cobertura de todos los espacios. No se han dividido las mallas.",
+      "sources": [
+        {
+          "title": "OpenStax · Tórax y pared abdominal",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:pelvic-floor": {
+      "description": "Músculos de soporte del suelo pélvico.",
+      "function": "Contribuyen al sostén de las vísceras pélvicas.",
+      "relations": "Entre pelvis ósea y región anorrectal.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida. Cobertura parcial del periné masculino.",
+      "sources": [
+        {
+          "title": "OpenStax · Tórax y pared abdominal",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:anal-sphincter": {
+      "description": "Músculo estriado de la región anal.",
+      "function": "Participa en el cierre del conducto anal.",
+      "relations": "Relacionado con el extremo distal del recto y el suelo pélvico.",
+      "limits": "Porciones disponibles del esfínter externo. No representan un conducto anal completo ni el esfínter interno.",
+      "sources": [
+        {
+          "title": "OpenStax · Tórax y pared abdominal",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:teeth": {
+      "description": "Pieza de dentición permanente.",
+      "function": "Participa en la preparación mecánica del alimento.",
+      "relations": "Implantada en la arcada superior o inferior indicada en su nombre.",
+      "limits": "Veintiocho piezas individualizadas; no hay terceros molares ni dentición decidua. No se representan esmalte, dentina, pulpa o periodonto por separado.",
+      "sources": [
+        {
+          "title": "OpenStax · Boca y dentición",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:extraocular": {
+      "description": "Músculo de la órbita.",
+      "function": "Participa en el movimiento del globo ocular.",
+      "relations": "Entre la órbita y el globo ocular.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida. No simula motilidad ocular.",
+      "sources": [
+        {
+          "title": "OpenStax · Percepción sensorial",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:eyelid": {
+      "description": "Músculo elevador del párpado superior.",
+      "function": "Contribuye a elevar el párpado superior.",
+      "relations": "Por encima del globo ocular, en la órbita.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida. Tendones palpebrales no completados.",
+      "sources": [
+        {
+          "title": "OpenStax · Percepción sensorial",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:lens": {
+      "description": "Lente situada detrás del iris.",
+      "function": "Participa en el enfoque de la luz sobre la retina.",
+      "relations": "Posterior al iris y anterior al cuerpo vítreo.",
+      "limits": "Superficie macroscópica estática; sin simulación óptica, acomodación ni fibras del cristalino.",
+      "sources": [
+        {
+          "title": "OpenStax · Percepción sensorial",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:retina": {
+      "description": "Porción óptica macroscópica de la retina.",
+      "function": "Participa en la recepción de estímulos luminosos.",
+      "relations": "En la pared interna posterior del globo ocular.",
+      "limits": "Sólo porción óptica identificada. No representa todas las regiones retinales ni sus capas celulares.",
+      "sources": [
+        {
+          "title": "OpenStax · Percepción sensorial",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:femoral-branches": {
+      "description": "Rama arterial del miembro inferior.",
+      "function": "Conduce sangre hacia territorios del muslo o la rodilla según su identidad.",
+      "relations": "Asociada a la circulación femoral.",
+      "limits": "Trayecto parcial de la fuente. No representa el tronco completo de la arteria femoral profunda ni garantiza continuidad vascular.",
+      "sources": [
+        {
+          "title": "OpenStax · Trayectos circulatorios",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:tentorium": {
+      "description": "Pliegue de duramadre denominado tienda del cerebelo.",
+      "function": "Contribuye a separar los compartimentos craneales supra e infratentoriales.",
+      "relations": "Entre cerebelo y porciones posteriores del cerebro.",
+      "limits": "La fuente sólo aporta una porción lateral; no constituye las tres meninges ni una tienda completa.",
+      "sources": [
+        {
+          "title": "OpenStax · Cubiertas del sistema nervioso central",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    }
+  },
+  "provenance": [
+    {
+      "id": "bodyparts3d-4.0-completion-wave1",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps.",
+        "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
+        "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
+        "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
+      ]
+    }
+  ],
+  "coverage": {
+    "title": "Ampliación anatómica opcional",
+    "structures": 77,
+    "meshes": 86,
+    "note": "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps.",
+    "limitations": []
+  }
+}

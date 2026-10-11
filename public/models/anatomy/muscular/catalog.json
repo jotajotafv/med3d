@@ -37,7 +37,8 @@
         "muscular:region:arm-right",
         "muscular:region:arm-left",
         "muscular:region:leg-right",
-        "muscular:region:leg-left"
+        "muscular:region:leg-left",
+        "muscular:region:pelvis"
       ],
       "kind": "system",
       "assetIds": [
@@ -58,7 +59,11 @@
         "muscular:thigh-right",
         "muscular:thorax-anterior",
         "muscular:upper-left",
-        "muscular:upper-right"
+        "muscular:upper-right",
+        "muscular:completion-respiratory-muscles",
+        "muscular:completion-hip-right",
+        "muscular:completion-hip-left",
+        "muscular:completion-pelvic-floor"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -1788,7 +1793,8 @@
       "assetIds": [
         "muscular:abdomen",
         "muscular:back",
-        "muscular:thorax-anterior"
+        "muscular:thorax-anterior",
+        "muscular:completion-respiratory-muscles"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -1823,11 +1829,16 @@
         "bp3d:FMA13398",
         "bp3d:FMA13399",
         "bp3d:FMA13412",
-        "bp3d:FMA13411"
+        "bp3d:FMA13411",
+        "bp3d:FMA13295",
+        "bp3d:FMA9756",
+        "bp3d:FMA9757",
+        "bp3d:FMA9758"
       ],
       "kind": "region",
       "assetIds": [
-        "muscular:thorax-anterior"
+        "muscular:thorax-anterior",
+        "muscular:completion-respiratory-muscles"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -1837,12 +1848,12 @@
       "bounds": [
         [
           -0.19426200000000002,
-          1.07816,
+          0.985852,
           -0.00526406
         ],
         [
           0.19426200000000002,
-          1.3483800000000001,
+          1.36537,
           0.21935300000000002
         ]
       ]
@@ -3654,7 +3665,8 @@
         "muscular:foot-right",
         "muscular:gluteal-right",
         "muscular:leg-right",
-        "muscular:thigh-right"
+        "muscular:thigh-right",
+        "muscular:completion-hip-right"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -3670,7 +3682,7 @@
         ],
         [
           0.00152091,
-          0.950903,
+          1.09874,
           0.218194
         ]
       ]
@@ -3687,11 +3699,18 @@
         "bp3d:FMA22328",
         "bp3d:FMA22330",
         "bp3d:FMA22332",
-        "bp3d:FMA22425"
+        "bp3d:FMA22425",
+        "bp3d:FMA22340",
+        "bp3d:FMA22324",
+        "bp3d:FMA22326",
+        "bp3d:FMA22334",
+        "bp3d:FMA22336",
+        "bp3d:FMA22338"
       ],
       "kind": "region",
       "assetIds": [
-        "muscular:gluteal-right"
+        "muscular:gluteal-right",
+        "muscular:completion-hip-right"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -3727,7 +3746,8 @@
       ],
       "kind": "region",
       "assetIds": [
-        "muscular:thigh-right"
+        "muscular:thigh-right",
+        "muscular:completion-hip-right"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -3742,8 +3762,8 @@
           0.0183096
         ],
         [
-          -0.0120663,
-          0.901792,
+          -0.00747519,
+          1.09874,
           0.15246600000000002
         ]
       ]
@@ -3758,11 +3778,14 @@
       "parentId": "muscular:region:leg-right:thigh",
       "children": [
         "muscular:group:quadriceps:right",
-        "bp3d:FMA22354"
+        "bp3d:FMA22354",
+        "bp3d:FMA22342",
+        "bp3d:FMA22322"
       ],
       "kind": "division",
       "assetIds": [
-        "muscular:thigh-right"
+        "muscular:thigh-right",
+        "muscular:completion-hip-right"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -3774,11 +3797,11 @@
         [
           -0.159632,
           0.27419,
-          0.057503200000000004
+          0.0463534
         ],
         [
-          -0.0206605,
-          0.901792,
+          -0.00747519,
+          1.09874,
           0.15246600000000002
         ]
       ]
@@ -4161,7 +4184,8 @@
         "muscular:foot-left",
         "muscular:gluteal-left",
         "muscular:leg-left",
-        "muscular:thigh-left"
+        "muscular:thigh-left",
+        "muscular:completion-hip-left"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -4177,7 +4201,7 @@
         ],
         [
           0.164326,
-          0.950903,
+          1.09874,
           0.218194
         ]
       ]
@@ -4194,11 +4218,18 @@
         "bp3d:FMA22329",
         "bp3d:FMA22331",
         "bp3d:FMA22333",
-        "bp3d:FMA22426"
+        "bp3d:FMA22426",
+        "bp3d:FMA22341",
+        "bp3d:FMA22325",
+        "bp3d:FMA22327",
+        "bp3d:FMA22335",
+        "bp3d:FMA22337",
+        "bp3d:FMA22339"
       ],
       "kind": "region",
       "assetIds": [
-        "muscular:gluteal-left"
+        "muscular:gluteal-left",
+        "muscular:completion-hip-left"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -4234,7 +4265,8 @@
       ],
       "kind": "region",
       "assetIds": [
-        "muscular:thigh-left"
+        "muscular:thigh-left",
+        "muscular:completion-hip-left"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -4244,13 +4276,13 @@
       "explosionRegionId": "lower-limb-left",
       "bounds": [
         [
-          0.0120663,
+          0.00747519,
           0.27419,
           0.0183095
         ],
         [
           0.15963300000000002,
-          0.901792,
+          1.09874,
           0.15246600000000002
         ]
       ]
@@ -4265,11 +4297,14 @@
       "parentId": "muscular:region:leg-left:thigh",
       "children": [
         "muscular:group:quadriceps:left",
-        "bp3d:FMA22355"
+        "bp3d:FMA22355",
+        "bp3d:FMA22343",
+        "bp3d:FMA22323"
       ],
       "kind": "division",
       "assetIds": [
-        "muscular:thigh-left"
+        "muscular:thigh-left",
+        "muscular:completion-hip-left"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -4279,13 +4314,13 @@
       "explosionRegionId": "lower-limb-left",
       "bounds": [
         [
-          0.0206605,
+          0.00747519,
           0.27419,
-          0.057503200000000004
+          0.0463534
         ],
         [
           0.15963300000000002,
-          0.901792,
+          1.09874,
           0.15246600000000002
         ]
       ]
@@ -10938,6 +10973,1292 @@
           0.178952
         ]
       ]
+    },
+    {
+      "id": "bp3d:FMA13295",
+      "sourceId": "FMA13295",
+      "name": "Diafragma",
+      "anatomicalName": "Diafragma",
+      "latin": "Diaphragma",
+      "aliases": [
+        "Diaphragm",
+        "FMA13295",
+        "FJ3131"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:thorax-anterior",
+      "regionId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-respiratory-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA13295_FJ3131"
+      ],
+      "family": "diaphragm",
+      "educationId": "completion:diaphragm",
+      "side": "midline",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "skeletal:region:thorax",
+        "skeletal:group:spine:lumbarvertebrae",
+        "resp:lung:right",
+        "resp:lung:left",
+        "dig:FMA7197"
+      ],
+      "bounds": [
+        [
+          -0.122329,
+          0.985852,
+          0.025915800000000003
+        ],
+        [
+          0.120863,
+          1.19258,
+          0.205323
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA9756",
+      "sourceId": "FMA9756",
+      "name": "Intercostales externos · conjunto disponible",
+      "anatomicalName": "Intercostales externos · conjunto disponible",
+      "latin": "Musculi intercostales externi",
+      "aliases": [
+        "FMA9756",
+        "FJ1451",
+        "FJ1451M",
+        "intercostales",
+        "externos"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:thorax-anterior",
+      "regionId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-respiratory-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA9756_FJ1451",
+        "bp3d_FMA9756_FJ1451M"
+      ],
+      "family": "intercostals",
+      "educationId": "completion:intercostals",
+      "side": "midline",
+      "anatomyType": "Conjunto muscular",
+      "relatedIds": [
+        "skeletal:region:thorax"
+      ],
+      "bounds": [
+        [
+          -0.136166,
+          1.01151,
+          0.00328174
+        ],
+        [
+          0.136166,
+          1.36537,
+          0.191641
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA9757",
+      "sourceId": "FMA9757",
+      "name": "Intercostales internos · conjunto disponible",
+      "anatomicalName": "Intercostales internos · conjunto disponible",
+      "latin": "Musculi intercostales interni",
+      "aliases": [
+        "FMA9757",
+        "FJ1455",
+        "FJ1455M",
+        "intercostales",
+        "internos"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:thorax-anterior",
+      "regionId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-respiratory-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA9757_FJ1455",
+        "bp3d_FMA9757_FJ1455M"
+      ],
+      "family": "intercostals",
+      "educationId": "completion:intercostals",
+      "side": "midline",
+      "anatomyType": "Conjunto muscular",
+      "relatedIds": [
+        "skeletal:region:thorax"
+      ],
+      "bounds": [
+        [
+          -0.13291399999999998,
+          1.01844,
+          0.00465469
+        ],
+        [
+          0.13291399999999998,
+          1.31402,
+          0.20931100000000002
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA9758",
+      "sourceId": "FMA9758",
+      "name": "Intercostales íntimos · conjunto disponible",
+      "anatomicalName": "Intercostales íntimos · conjunto disponible",
+      "latin": "Musculi intercostales intimi",
+      "aliases": [
+        "FMA9758",
+        "FJ1454",
+        "FJ1454M",
+        "intercostales",
+        "íntimos"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:thorax-anterior",
+      "regionId": "muscular:region:thorax-anterior",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-respiratory-muscles"
+      ],
+      "meshNames": [
+        "bp3d_FMA9758_FJ1454",
+        "bp3d_FMA9758_FJ1454M"
+      ],
+      "family": "intercostals",
+      "educationId": "completion:intercostals",
+      "side": "midline",
+      "anatomyType": "Conjunto muscular",
+      "relatedIds": [
+        "skeletal:region:thorax"
+      ],
+      "bounds": [
+        [
+          -0.134625,
+          1.01916,
+          0.00630278
+        ],
+        [
+          0.134625,
+          1.31499,
+          0.193373
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22340",
+      "sourceId": "FMA22340",
+      "name": "Piriforme derecho",
+      "anatomicalName": "Piriforme derecho",
+      "latin": "Musculus piriformis dexter",
+      "aliases": [
+        "Right piriformis",
+        "FMA22340",
+        "FJ1428"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22340_FJ1428"
+      ],
+      "family": "piriformis",
+      "educationId": "completion:hip-rotators",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.13706000000000002,
+          0.8060560000000001,
+          0.012082200000000001
+        ],
+        [
+          -0.0254805,
+          0.872403,
+          0.0720186
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22324",
+      "sourceId": "FMA22324",
+      "name": "Obturador interno derecho",
+      "anatomicalName": "Obturador interno derecho",
+      "latin": "Musculus obturatorius internus dexter",
+      "aliases": [
+        "Right obturator internus",
+        "FMA22324",
+        "FJ1426"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22324_FJ1426"
+      ],
+      "family": "obturator-internus",
+      "educationId": "completion:hip-rotators",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.119051,
+          0.7703730000000001,
+          0.0293431
+        ],
+        [
+          -0.021533300000000002,
+          0.8274940000000001,
+          0.10709600000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22326",
+      "sourceId": "FMA22326",
+      "name": "Obturador externo derecho",
+      "anatomicalName": "Obturador externo derecho",
+      "latin": "Musculus obturatorius externus dexter",
+      "aliases": [
+        "Right obturator externus",
+        "FMA22326",
+        "FJ1425"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22326_FJ1425"
+      ],
+      "family": "obturator-externus",
+      "educationId": "completion:hip-rotators",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.128389,
+          0.7673800000000001,
+          0.0554672
+        ],
+        [
+          -0.0244292,
+          0.796614,
+          0.10950700000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22334",
+      "sourceId": "FMA22334",
+      "name": "Gemelo superior derecho",
+      "anatomicalName": "Gemelo superior derecho",
+      "latin": "Musculus gemellus superior dexter",
+      "aliases": [
+        "Right gemellus superior",
+        "FMA22334",
+        "FJ1417"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22334_FJ1417"
+      ],
+      "family": "gemellus-superior",
+      "educationId": "completion:hip-rotators",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.125191,
+          0.7981820000000001,
+          0.033169699999999996
+        ],
+        [
+          -0.0453349,
+          0.825188,
+          0.0780416
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22336",
+      "sourceId": "FMA22336",
+      "name": "Gemelo inferior derecho",
+      "anatomicalName": "Gemelo inferior derecho",
+      "latin": "Musculus gemellus inferior dexter",
+      "aliases": [
+        "Right gemellus inferior",
+        "FMA22336",
+        "FJ1416"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22336_FJ1416"
+      ],
+      "family": "gemellus-inferior",
+      "educationId": "completion:hip-rotators",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.125865,
+          0.780901,
+          0.023882200000000003
+        ],
+        [
+          -0.0555291,
+          0.802879,
+          0.07782510000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22338",
+      "sourceId": "FMA22338",
+      "name": "Cuadrado femoral derecho",
+      "anatomicalName": "Cuadrado femoral derecho",
+      "latin": "Musculus quadratus femoris dexter",
+      "aliases": [
+        "Right quadratus femoris",
+        "FMA22338",
+        "FJ1432"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:gluteal",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22338_FJ1432"
+      ],
+      "family": "quadratus-femoris",
+      "educationId": "completion:hip-rotators",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.127187,
+          0.743654,
+          0.0426561
+        ],
+        [
+          -0.0565706,
+          0.7898540000000001,
+          0.057886400000000005
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22342",
+      "sourceId": "FMA22342",
+      "name": "Psoas mayor derecho",
+      "anatomicalName": "Psoas mayor derecho",
+      "latin": "Musculus psoas major dexter",
+      "aliases": [
+        "Right psoas major",
+        "FMA22342",
+        "FJ1431"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:thigh:anterior",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22342_FJ1431"
+      ],
+      "family": "psoas-major",
+      "educationId": "completion:iliopsoas",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.113758,
+          0.7352150000000001,
+          0.053134900000000006
+        ],
+        [
+          -0.00747519,
+          1.09874,
+          0.119566
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22322",
+      "sourceId": "FMA22322",
+      "name": "Ilíaco derecho",
+      "anatomicalName": "Ilíaco derecho",
+      "latin": "Musculus iliacus dexter",
+      "aliases": [
+        "Right iliacus",
+        "FMA22322",
+        "FJ1422"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-right:thigh:anterior",
+      "regionId": "muscular:region:leg-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-right"
+      ],
+      "meshNames": [
+        "bp3d_FMA22322_FJ1422"
+      ],
+      "family": "iliacus",
+      "educationId": "completion:iliopsoas",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA24474",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          -0.127254,
+          0.733822,
+          0.0463534
+        ],
+        [
+          -0.0727491,
+          0.957991,
+          0.129449
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22341",
+      "sourceId": "FMA22341",
+      "name": "Piriforme izquierdo",
+      "anatomicalName": "Piriforme izquierdo",
+      "latin": "Musculus piriformis sinister",
+      "aliases": [
+        "Left piriformis",
+        "FMA22341",
+        "FJ1428M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22341_FJ1428M"
+      ],
+      "family": "piriformis",
+      "educationId": "completion:hip-rotators",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.0254805,
+          0.8060560000000001,
+          0.012082200000000001
+        ],
+        [
+          0.13706000000000002,
+          0.872403,
+          0.0720186
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22325",
+      "sourceId": "FMA22325",
+      "name": "Obturador interno izquierdo",
+      "anatomicalName": "Obturador interno izquierdo",
+      "latin": "Musculus obturatorius internus sinister",
+      "aliases": [
+        "Left obturator internus",
+        "FMA22325",
+        "FJ1426M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22325_FJ1426M"
+      ],
+      "family": "obturator-internus",
+      "educationId": "completion:hip-rotators",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.021533300000000002,
+          0.7703730000000001,
+          0.0293431
+        ],
+        [
+          0.119051,
+          0.8274940000000001,
+          0.10709600000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22327",
+      "sourceId": "FMA22327",
+      "name": "Obturador externo izquierdo",
+      "anatomicalName": "Obturador externo izquierdo",
+      "latin": "Musculus obturatorius externus sinister",
+      "aliases": [
+        "Left obturator externus",
+        "FMA22327",
+        "FJ1425M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22327_FJ1425M"
+      ],
+      "family": "obturator-externus",
+      "educationId": "completion:hip-rotators",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.0244292,
+          0.7673800000000001,
+          0.0554672
+        ],
+        [
+          0.128389,
+          0.796614,
+          0.10950700000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22335",
+      "sourceId": "FMA22335",
+      "name": "Gemelo superior izquierdo",
+      "anatomicalName": "Gemelo superior izquierdo",
+      "latin": "Musculus gemellus superior sinister",
+      "aliases": [
+        "Left gemellus superior",
+        "FMA22335",
+        "FJ1417M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22335_FJ1417M"
+      ],
+      "family": "gemellus-superior",
+      "educationId": "completion:hip-rotators",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.0453349,
+          0.7981820000000001,
+          0.033169699999999996
+        ],
+        [
+          0.125191,
+          0.825188,
+          0.0780416
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22337",
+      "sourceId": "FMA22337",
+      "name": "Gemelo inferior izquierdo",
+      "anatomicalName": "Gemelo inferior izquierdo",
+      "latin": "Musculus gemellus inferior sinister",
+      "aliases": [
+        "Left gemellus inferior",
+        "FMA22337",
+        "FJ1416M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22337_FJ1416M"
+      ],
+      "family": "gemellus-inferior",
+      "educationId": "completion:hip-rotators",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.0555291,
+          0.780901,
+          0.023882200000000003
+        ],
+        [
+          0.125865,
+          0.802879,
+          0.07782510000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22339",
+      "sourceId": "FMA22339",
+      "name": "Cuadrado femoral izquierdo",
+      "anatomicalName": "Cuadrado femoral izquierdo",
+      "latin": "Musculus quadratus femoris sinister",
+      "aliases": [
+        "Left quadratus femoris",
+        "FMA22339",
+        "FJ1432M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:gluteal",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22339_FJ1432M"
+      ],
+      "family": "quadratus-femoris",
+      "educationId": "completion:hip-rotators",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.0565706,
+          0.743654,
+          0.0426561
+        ],
+        [
+          0.127187,
+          0.7898540000000001,
+          0.057886400000000005
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22343",
+      "sourceId": "FMA22343",
+      "name": "Psoas mayor izquierdo",
+      "anatomicalName": "Psoas mayor izquierdo",
+      "latin": "Musculus psoas major sinister",
+      "aliases": [
+        "Left psoas major",
+        "FMA22343",
+        "FJ1431M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:thigh:anterior",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22343_FJ1431M"
+      ],
+      "family": "psoas-major",
+      "educationId": "completion:iliopsoas",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.00747519,
+          0.7352150000000001,
+          0.053134900000000006
+        ],
+        [
+          0.11375700000000001,
+          1.09874,
+          0.119566
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22323",
+      "sourceId": "FMA22323",
+      "name": "Ilíaco izquierdo",
+      "anatomicalName": "Ilíaco izquierdo",
+      "latin": "Musculus iliacus sinister",
+      "aliases": [
+        "Left iliacus",
+        "FMA22323",
+        "FJ1422M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:leg-left:thigh:anterior",
+      "regionId": "muscular:region:leg-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-hip-left"
+      ],
+      "meshNames": [
+        "bp3d_FMA22323_FJ1422M"
+      ],
+      "family": "iliacus",
+      "educationId": "completion:iliopsoas",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16587",
+        "bp3d:FMA24475",
+        "bp3d:FMA16202"
+      ],
+      "bounds": [
+        [
+          0.0727491,
+          0.733822,
+          0.0463534
+        ],
+        [
+          0.127254,
+          0.957991,
+          0.129449
+        ]
+      ]
+    },
+    {
+      "id": "muscular:region:pelvis",
+      "name": "Suelo pélvico · cobertura masculina",
+      "anatomicalName": "Suelo pélvico",
+      "aliases": [
+        "periné",
+        "pelvis",
+        "suelo pélvico"
+      ],
+      "systemId": "muscular",
+      "regionId": "muscular:region:pelvis",
+      "parentId": "muscular",
+      "children": [
+        "bp3d:FMA46444",
+        "bp3d:FMA46443",
+        "bp3d:FMA45859",
+        "bp3d:FMA45858",
+        "bp3d:FMA45855",
+        "bp3d:FMA45854",
+        "bp3d:FMA45857",
+        "bp3d:FMA45856"
+      ],
+      "kind": "region",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [],
+      "relatedIds": [],
+      "bounds": [
+        [
+          -0.0491884,
+          0.763008,
+          0.00870952
+        ],
+        [
+          0.0491884,
+          0.828624,
+          0.102803
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46444",
+      "sourceId": "FMA46444",
+      "name": "Coccígeo izquierdo",
+      "anatomicalName": "Coccígeo izquierdo",
+      "latin": "Musculus coccygeus sinister",
+      "aliases": [
+        "Left coccygeus",
+        "FMA46444",
+        "FJ1449M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA46444_FJ1449M"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          0.00247649,
+          0.788078,
+          0.00879995
+        ],
+        [
+          0.0487138,
+          0.828624,
+          0.0380385
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA46443",
+      "sourceId": "FMA46443",
+      "name": "Coccígeo derecho",
+      "anatomicalName": "Coccígeo derecho",
+      "latin": "Musculus coccygeus dexter",
+      "aliases": [
+        "Right coccygeus",
+        "FMA46443",
+        "FJ2547"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA46443_FJ2547"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          -0.0487138,
+          0.788078,
+          0.00870952
+        ],
+        [
+          -0.00247649,
+          0.828624,
+          0.0380385
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45859",
+      "sourceId": "FMA45859",
+      "name": "Iliococcígeo izquierdo",
+      "anatomicalName": "Iliococcígeo izquierdo",
+      "latin": "Musculus iliococcygeus sinister",
+      "aliases": [
+        "Left iliococcygeus",
+        "FMA45859",
+        "FJ1453M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA45859_FJ1453M"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          0.000657022,
+          0.776036,
+          0.0150662
+        ],
+        [
+          0.0491884,
+          0.821722,
+          0.08840089999999999
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45858",
+      "sourceId": "FMA45858",
+      "name": "Iliococcígeo derecho",
+      "anatomicalName": "Iliococcígeo derecho",
+      "latin": "Musculus iliococcygeus dexter",
+      "aliases": [
+        "Right iliococcygeus",
+        "FMA45858",
+        "FJ2549"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA45858_FJ2549"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          -0.0491884,
+          0.7760940000000001,
+          0.0150529
+        ],
+        [
+          0.0443877,
+          0.821722,
+          0.0881942
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45855",
+      "sourceId": "FMA45855",
+      "name": "Pubococcígeo izquierdo",
+      "anatomicalName": "Pubococcígeo izquierdo",
+      "latin": "Musculus pubococcygeus sinister",
+      "aliases": [
+        "Left pubococcygeus",
+        "FMA45855",
+        "FJ1457M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA45855_FJ1457M"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          0.00316466,
+          0.767231,
+          0.010482
+        ],
+        [
+          0.0354065,
+          0.8146230000000001,
+          0.10053000000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45854",
+      "sourceId": "FMA45854",
+      "name": "Pubococcígeo derecho",
+      "anatomicalName": "Pubococcígeo derecho",
+      "latin": "Musculus pubococcygeus dexter",
+      "aliases": [
+        "Right pubococcygeus",
+        "FMA45854",
+        "FJ2550"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA45854_FJ2550"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          -0.0354065,
+          0.767246,
+          0.010482
+        ],
+        [
+          0.0282547,
+          0.8146230000000001,
+          0.10053000000000001
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45857",
+      "sourceId": "FMA45857",
+      "name": "Puborrectal izquierdo",
+      "anatomicalName": "Puborrectal izquierdo",
+      "latin": "Musculus puborectalis sinister",
+      "aliases": [
+        "Left puborectalis",
+        "FMA45857",
+        "FJ1458M"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA45857_FJ1458M"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "left",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          0.00321461,
+          0.763102,
+          0.021305700000000004
+        ],
+        [
+          0.032625799999999996,
+          0.7918160000000001,
+          0.102803
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA45856",
+      "sourceId": "FMA45856",
+      "name": "Puborrectal derecho",
+      "anatomicalName": "Puborrectal derecho",
+      "latin": "Musculus puborectalis dexter",
+      "aliases": [
+        "Right puborectalis",
+        "FMA45856",
+        "FJ2551"
+      ],
+      "systemId": "muscular",
+      "parentId": "muscular:region:pelvis",
+      "regionId": "muscular:region:pelvis",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "muscular:completion-pelvic-floor"
+      ],
+      "meshNames": [
+        "bp3d_FMA45856_FJ2551"
+      ],
+      "family": "pelvic-floor",
+      "educationId": "completion:pelvic-floor",
+      "side": "right",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA16586",
+        "bp3d:FMA16587",
+        "bp3d:FMA16202",
+        "dig:FMA14544"
+      ],
+      "bounds": [
+        [
+          -0.0324661,
+          0.763008,
+          0.021305700000000004
+        ],
+        [
+          0.0246095,
+          0.7918160000000001,
+          0.102803
+        ]
+      ]
     }
   ],
   "assets": [
@@ -11372,6 +12693,110 @@
         ]
       ],
       "provenanceId": "bodyparts3d-4.0-muscular-gaps"
+    },
+    {
+      "id": "muscular:completion-respiratory-muscles",
+      "path": "models/anatomy/muscular/completion-respiratory-muscles.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:thorax-anterior",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 7183820,
+      "sha256": "81597c56bdc19b87779fd42347a7fc23e61894437b8a640ed0833a422b90a041",
+      "meshCount": 7,
+      "triangles": 620490,
+      "bounds": [
+        [
+          -0.136166,
+          0.985852,
+          0.00328174
+        ],
+        [
+          0.136166,
+          1.36537,
+          0.20931100000000002
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Diafragma e intercostales"
+    },
+    {
+      "id": "muscular:completion-hip-right",
+      "path": "models/anatomy/muscular/completion-hip-right.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 183876,
+      "sha256": "aff1eef99fae59fcea1447a08fc91a3b37321468872bc5bf40a1181b4589f05e",
+      "meshCount": 8,
+      "triangles": 14344,
+      "bounds": [
+        [
+          -0.13706000000000002,
+          0.733822,
+          0.012082200000000001
+        ],
+        [
+          -0.00747519,
+          1.09874,
+          0.129449
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Rotadores profundos e iliopsoas derechos"
+    },
+    {
+      "id": "muscular:completion-hip-left",
+      "path": "models/anatomy/muscular/completion-hip-left.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 184092,
+      "sha256": "6281e236cab0ab04eb7d55793e6a1166f2a9d08d0257cbe7d18565d2e74cb2f7",
+      "meshCount": 8,
+      "triangles": 14344,
+      "bounds": [
+        [
+          0.00747519,
+          0.733822,
+          0.012082200000000001
+        ],
+        [
+          0.13706000000000002,
+          1.09874,
+          0.129449
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Rotadores profundos e iliopsoas izquierdos"
+    },
+    {
+      "id": "muscular:completion-pelvic-floor",
+      "path": "models/anatomy/muscular/completion-pelvic-floor.glb",
+      "systemId": "muscular",
+      "regionId": "muscular:region:pelvis",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 370176,
+      "sha256": "613144bcb1ac0e61458b50ea90898c4ed87b9e8033767e49be5fec4d7b178f6d",
+      "meshCount": 8,
+      "triangles": 28404,
+      "bounds": [
+        [
+          -0.0491884,
+          0.763008,
+          0.00870952
+        ],
+        [
+          0.0491884,
+          0.828624,
+          0.102803
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Suelo pélvico masculino · parcial"
     }
   ],
   "provenance": [
@@ -11459,12 +12884,28 @@
         "Shared transform (x,y,z) to (x,z,-y)/1000; Float32 positions, Meshopt and 12-bit display normals. Historical GLB untouched.",
         "DBCLS publisher CC BY 4.0 declaration and original legacy headers retained. No clinical validation."
       ]
+    },
+    {
+      "id": "bodyparts3d-4.0-completion-wave1",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps.",
+        "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
+        "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
+        "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
+      ]
     }
   ],
   "coverage": {
     "title": "Sistema Muscular de MED3D",
-    "structures": 152,
-    "meshes": 182,
+    "structures": 180,
+    "meshes": 213,
     "note": "Cobertura muscular integrada disponible: 152 músculos representados por 182 mallas, incluidos intrínsecos de mano y pie. Cabezas y grupos no son músculos adicionales.",
     "limitations": [
       "Cobertura parcial: no es la musculatura completa del cuerpo ni del torso.",
@@ -11475,7 +12916,90 @@
       "Cuádriceps es un grupo de cuatro músculos; se conserva la clasificación BP3D de sus elementos como zonas en la procedencia.",
       "Cabeza sin musculatura facial o masticatoria identificada en las tablas de BP3D 4.0 consultadas; no se representa una cobertura humana completa.",
       "Cuello parcial: diez familias bilaterales seleccionadas. Digástrico y largo del cuello pendientes de curación de componentes.",
-      "Intrínsecos de mano/pie: cobertura parcial. Pendientes flexor corto del pulgar, grupos lumbrical/interóseo de mano, palmar corto, extensor corto de los dedos e interóseos dorsales del pie y oponente del quinto dedo del pie."
+      "Intrínsecos de mano/pie: cobertura parcial. Pendientes flexor corto del pulgar, grupos lumbrical/interóseo de mano, palmar corto, extensor corto de los dedos e interóseos dorsales del pie y oponente del quinto dedo del pie.",
+      "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps."
     ]
+  },
+  "education": {
+    "completion:hip-rotators": {
+      "description": "Grupo profundo de músculos de la cadera.",
+      "function": "Participan en la rotación lateral y estabilización de la cadera.",
+      "relations": "Relacionan la pelvis con la región proximal del fémur.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida.",
+      "sources": [
+        {
+          "title": "OpenStax · Cintura pélvica y miembro inferior",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:intercostals": {
+      "description": "Capas musculares situadas entre las costillas.",
+      "function": "Participan en la mecánica respiratoria y estabilización de los espacios intercostales.",
+      "relations": "Entre costillas adyacentes de la pared torácica.",
+      "limits": "Representaciones agregadas por capa, sin individualizar once pares ni asegurar cobertura de todos los espacios. No se han dividido las mallas.",
+      "sources": [
+        {
+          "title": "OpenStax · Tórax y pared abdominal",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:pelvic-floor": {
+      "description": "Músculos de soporte del suelo pélvico.",
+      "function": "Contribuyen al sostén de las vísceras pélvicas.",
+      "relations": "Entre pelvis ósea y región anorrectal.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida. Cobertura parcial del periné masculino.",
+      "sources": [
+        {
+          "title": "OpenStax · Tórax y pared abdominal",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:iliopsoas": {
+      "description": "Psoas mayor e ilíaco son componentes del iliopsoas.",
+      "function": "Participan en la flexión de la cadera.",
+      "relations": "Relacionan columna lumbar y pelvis con el fémur proximal.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida.",
+      "sources": [
+        {
+          "title": "OpenStax · Cintura pélvica y miembro inferior",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    },
+    "completion:diaphragm": {
+      "description": "Tabique musculotendinoso entre tórax y abdomen.",
+      "function": "Su contracción participa en la inspiración.",
+      "relations": "Inferior a los pulmones y superior al hígado; vinculado con columna, costillas y esternón.",
+      "limits": "Superficie macroscópica fuente; no representa fibras, actividad ni inserciones puntuales. Las piezas bilaterales proceden de originales distintos del archivo, sin reflexión añadida.",
+      "sources": [
+        {
+          "title": "OpenStax · Tórax y pared abdominal",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    }
   }
 }

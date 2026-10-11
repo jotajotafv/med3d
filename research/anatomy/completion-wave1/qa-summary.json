@@ -1,0 +1,240 @@
+{
+  "wave": 1,
+  "environment": "Headless Chromium / ANGLE SwiftShader; loopback no-store; not physical-device FPS",
+  "functional": {
+    "success": true,
+    "checks": [
+      "Every new owner: source-ID search, lazy load, selection, isolate, hide, restore and card without remount",
+      "All explosion modes return to exact rest",
+      "Default load unchanged; skin and added modules remain off",
+      "Mobile optional selection and educational panel"
+    ],
+    "ownerChecksDate": "2026-10-11T18:48:52.774Z",
+    "errors": [],
+    "badRequests": []
+  },
+  "performance": [
+    {
+      "name": "first-load-default",
+      "modules": 51,
+      "encodedBytes": 28164276,
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 51,
+        "meshCount": 936,
+        "triangleCount": 3036790,
+        "geometryBytes": 53567064,
+        "drawCalls": 892,
+        "renderGeometries": 940,
+        "renderTextures": 4,
+        "loadMs": 861.5999999642372,
+        "firstGeometryMs": 222.4000000357628,
+        "fullSystemMs": 2323.100000023842
+      },
+      "meanFrameIntervalMs": 16.699999999999818,
+      "intervalSamples": 1,
+      "note": "Demand-rendering samples after one zoom; small sample count, no sustained FPS conclusion."
+    },
+    {
+      "name": "isolated-muscular-with-additions",
+      "modules": 22,
+      "encodedBytes": 17339828,
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 22,
+        "meshCount": 213,
+        "triangleCount": 1563442,
+        "geometryBytes": 35412580,
+        "drawCalls": 199,
+        "renderGeometries": 217,
+        "renderTextures": 4,
+        "loadMs": 572.6000000238419,
+        "firstGeometryMs": 215.30000001192093,
+        "fullSystemMs": 1391.1000000238419
+      },
+      "meanFrameIntervalMs": 39.39999999999997,
+      "intervalSamples": 11,
+      "note": "Demand-rendering samples after one zoom; small sample count, no sustained FPS conclusion."
+    },
+    {
+      "name": "multiple-systems",
+      "modules": 39,
+      "encodedBytes": 26686564,
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 39,
+        "meshCount": 568,
+        "triangleCount": 2715898,
+        "geometryBytes": 53752820,
+        "drawCalls": 524,
+        "renderGeometries": 572,
+        "renderTextures": 4,
+        "loadMs": 436.39999997615814,
+        "firstGeometryMs": 264.39999997615814,
+        "fullSystemMs": 2390.099999964237
+      },
+      "meanFrameIntervalMs": 16.600000000000364,
+      "intervalSamples": 1,
+      "note": "Demand-rendering samples after one zoom; small sample count, no sustained FPS conclusion."
+    },
+    {
+      "name": "full-without-skin",
+      "modules": 62,
+      "encodedBytes": 37569056,
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 62,
+        "meshCount": 1022,
+        "triangleCount": 3897564,
+        "geometryBytes": 74671196,
+        "drawCalls": 978,
+        "renderGeometries": 1026,
+        "renderTextures": 4,
+        "loadMs": 1088,
+        "firstGeometryMs": 641.8000000119209,
+        "fullSystemMs": 2733.199999988079
+      },
+      "meanFrameIntervalMs": 16.69999999999709,
+      "intervalSamples": 1,
+      "note": "Demand-rendering samples after one zoom; small sample count, no sustained FPS conclusion."
+    },
+    {
+      "name": "full-with-skin",
+      "modules": 63,
+      "encodedBytes": 39200560,
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 63,
+        "meshCount": 1023,
+        "triangleCount": 4100946,
+        "geometryBytes": 79161120,
+        "drawCalls": 979,
+        "renderGeometries": 1027,
+        "renderTextures": 4,
+        "loadMs": 965.5,
+        "firstGeometryMs": 232.5,
+        "fullSystemMs": 4644.800000011921
+      },
+      "meanFrameIntervalMs": 16.599999999998545,
+      "intervalSamples": 1,
+      "note": "Demand-rendering samples after one zoom; small sample count, no sustained FPS conclusion."
+    }
+  ],
+  "renderCpu": [
+    {
+      "name": "default",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 51,
+      "meshCount": 936,
+      "triangleCount": 3036790,
+      "geometryBytes": 53567064,
+      "drawCalls": 938,
+      "renderGeometries": 940,
+      "renderTextures": 4,
+      "loadMs": 913.6000000238419,
+      "renderCpuMs": 13.699999988079071,
+      "firstGeometryMs": 265.7000000476837,
+      "fullSystemMs": 2840.900000035763,
+      "cpuScope": "Published render submission duration; excludes GPU completion"
+    },
+    {
+      "name": "muscular",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 22,
+      "meshCount": 213,
+      "triangleCount": 1563442,
+      "geometryBytes": 35412580,
+      "drawCalls": 213,
+      "renderGeometries": 217,
+      "renderTextures": 4,
+      "loadMs": 1039.6000000238419,
+      "renderCpuMs": 3.199999988079071,
+      "firstGeometryMs": 219.60000002384186,
+      "fullSystemMs": 1581.5,
+      "cpuScope": "Published render submission duration; excludes GPU completion"
+    },
+    {
+      "name": "several",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 39,
+      "meshCount": 568,
+      "triangleCount": 2715898,
+      "geometryBytes": 53752820,
+      "drawCalls": 570,
+      "renderGeometries": 572,
+      "renderTextures": 4,
+      "loadMs": 904,
+      "renderCpuMs": 822.1000000238419,
+      "firstGeometryMs": 240.80000001192093,
+      "fullSystemMs": 2596.300000011921,
+      "cpuScope": "Published render submission duration; excludes GPU completion"
+    },
+    {
+      "name": "complete-no-skin",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 62,
+      "meshCount": 1022,
+      "triangleCount": 3897564,
+      "geometryBytes": 74671196,
+      "drawCalls": 1024,
+      "renderGeometries": 1026,
+      "renderTextures": 4,
+      "loadMs": 320.5,
+      "renderCpuMs": 1418.7999999523163,
+      "firstGeometryMs": 235.10000002384186,
+      "fullSystemMs": 3326.199999988079,
+      "cpuScope": "Published render submission duration; excludes GPU completion"
+    },
+    {
+      "name": "complete-skin",
+      "selectedId": 0,
+      "contextIds": 0,
+      "loadedAssets": 63,
+      "meshCount": 1023,
+      "triangleCount": 4100946,
+      "geometryBytes": 79161120,
+      "drawCalls": 1025,
+      "renderGeometries": 1027,
+      "renderTextures": 4,
+      "loadMs": 1427.2999999523163,
+      "renderCpuMs": 1148.300000011921,
+      "firstGeometryMs": 324.80000001192093,
+      "fullSystemMs": 4970.100000023842,
+      "cpuScope": "Published render submission duration; excludes GPU completion"
+    }
+  ],
+  "geometryReport": "research/anatomy/completion-wave1/completion-validation.json",
+  "visualReview": {
+    "state": "PASS; all numbered captures manually reviewed, including reframed dental overview and isolated internal surfaces",
+    "captureDirectory": ".cache/anatomy-completion/wave1",
+    "notes": [
+      "Original macroscopic contours preserved; no geometry edits for fit.",
+      "Context may occlude lens, retina and tentorium; separate isolated captures inspect these surfaces.",
+      "Tiny source pelvic fragments retained and quantified, not labeled as anatomical subdivisions.",
+      "Mobile educational panel scrolls and closes; no horizontal overflow."
+    ]
+  },
+  "pointer": {
+    "picks": [
+      "bp3d:FMA13295",
+      "bp3d:FMA9756",
+      "dig:FMA55699",
+      "ocular:FMA58242",
+      "ocular:FMA58607",
+      "bp3d:FMA83966",
+      "bp3d:FMA20801"
+    ],
+    "method": "Real browser mouse events at projected actual triangle/centre candidates; asserted resulting application selected ID",
+    "errors": [],
+    "badRequests": []
+  }
+}

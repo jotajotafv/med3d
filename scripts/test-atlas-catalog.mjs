@@ -1,3 +1,4 @@
+import {preCompletionCatalog} from './anatomy/pre-completion-catalog.mjs';
 import assert from 'node:assert/strict';
 import {readFile,writeFile,mkdtemp,rm} from 'node:fs/promises';
 import path from 'node:path';
@@ -12,7 +13,7 @@ try {
  const detailSource=await readFile(path.join(root,'src/features/anatomy/atlas/bone-details.ts'),'utf8');
  await writeFile(path.join(tmp,'bone-details.mjs'),ts.transpileModule(detailSource,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText);
  const {BONE_DETAILS,resolveBoneDetail}=await import(pathToFileURL(path.join(tmp,'bone-details.mjs')));
- const catalog=JSON.parse(await readFile(path.join(root,'public/models/anatomy/skeletal/catalog.json'),'utf8'));
+ const catalog=preCompletionCatalog(JSON.parse(await readFile(path.join(root,'public/models/anatomy/skeletal/catalog.json'),'utf8')));
  const index=createCatalogIndex(catalog);
  // Phase 2.1 educational coverage: named bones only, never groups or components.
  assert.equal(Object.keys(BONE_DETAILS).length,20,'Expected 20 reviewed bone cards');

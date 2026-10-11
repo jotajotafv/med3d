@@ -38,7 +38,8 @@
         "nervous:upper-right",
         "nervous:upper-left",
         "nervous:lower-right",
-        "nervous:lower-left"
+        "nervous:lower-left",
+        "nervous:completion-tentorium"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -73,7 +74,8 @@
       ],
       "kind": "division",
       "assetIds": [
-        "nervous:cns"
+        "nervous:cns",
+        "nervous:completion-tentorium"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -110,11 +112,13 @@
         "nervous:cerebrum",
         "nervous:diencephalon",
         "nervous:brainstem",
-        "bp3d:FMA67944"
+        "bp3d:FMA67944",
+        "bp3d:FMA83966"
       ],
       "kind": "region",
       "assetIds": [
-        "nervous:cns"
+        "nervous:cns",
+        "nervous:completion-tentorium"
       ],
       "meshNames": [],
       "relatedIds": [
@@ -5921,6 +5925,51 @@
         ]
       ],
       "explosionRegionId": "upper-limb-left"
+    },
+    {
+      "id": "bp3d:FMA83966",
+      "sourceId": "FMA83966",
+      "name": "Tienda del cerebelo · porción disponible",
+      "anatomicalName": "Tienda del cerebelo · porción disponible",
+      "latin": "Tentorium cerebelli",
+      "aliases": [
+        "Tentorium cerebelli",
+        "FMA83966",
+        "FJ1843"
+      ],
+      "systemId": "nervous",
+      "parentId": "nervous:brain",
+      "regionId": "nervous:brain",
+      "children": [],
+      "kind": "component",
+      "assetIds": [
+        "nervous:completion-tentorium"
+      ],
+      "meshNames": [
+        "bp3d_FMA83966_FJ1843"
+      ],
+      "family": "tentorium",
+      "educationId": "completion:tentorium",
+      "side": "midline",
+      "anatomyType": "Pliegue dural · porción disponible",
+      "relatedIds": [
+        "nervous:brain",
+        "skeletal:region:skull"
+      ],
+      "neuralType": "Pliegue dural",
+      "explosionRegionId": "head-neck",
+      "bounds": [
+        [
+          -0.0633281,
+          1.50753,
+          0.00582047
+        ],
+        [
+          -0.00233016,
+          1.5416500000000002,
+          0.0932923
+        ]
+      ]
     }
   ],
   "assets": [
@@ -6067,6 +6116,32 @@
         ]
       ],
       "provenanceId": "z-anatomy-38649f4-peripheral"
+    },
+    {
+      "id": "nervous:completion-tentorium",
+      "path": "models/anatomy/nervous/completion-tentorium.glb",
+      "systemId": "nervous",
+      "regionId": "nervous:brain",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 175016,
+      "sha256": "95772a2efea5a614c5375f9f21cb3d147fff2fbcb33080677380fa91b29a5709",
+      "meshCount": 1,
+      "triangles": 21924,
+      "bounds": [
+        [
+          -0.0633281,
+          1.50753,
+          0.00582047
+        ],
+        [
+          -0.00233016,
+          1.5416500000000002,
+          0.0932923
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave1",
+      "label": "Tienda del cerebelo · parcial"
     }
   ],
   "provenance": [
@@ -6101,12 +6176,28 @@
         "Se excluyen cerebro/pares craneales adicionales, oído interno y riñón; no se distribuyen los contenidos con excepciones NC.",
         "Derivados GLB y originales de esta selección bajo CC BY-SA 4.0. Matrices y métricas en nervous-expansion-manifest.json."
       ]
+    },
+    {
+      "id": "bodyparts3d-4.0-completion-wave1",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps.",
+        "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
+        "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
+        "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
+      ]
     }
   ],
   "coverage": {
     "title": "Cobertura nerviosa disponible",
     "structures": 56,
-    "meshes": 125,
+    "meshes": 126,
     "note": "Encéfalo y órbitas BP3D, más 26 nervios y 12 componentes periféricos seleccionados de Z-Anatomy. Cobertura corporal parcial; no representa una red continua completa.",
     "limitations": [
       "Médula, raíces espinales, ciático y otras piezas pendientes: el registro permitido produce solapes óseos; no se deforman para forzar su encaje.",
@@ -6115,7 +6206,26 @@
       "Curvas tubulares educativas originales; bilateralidad simétrica de la fuente, sin diámetro físico exacto ni validación clínica.",
       "Encéfalo y nervios craneales parciales: no se reconstruyen estructuras ausentes.",
       "II se presenta en SNC; III sólo mediante ramas; V sólo división oftálmica y ramas.",
-      "El encéfalo HRA permanece como explorador independiente, sin superposición corporal."
+      "El encéfalo HRA permanece como explorador independiente, sin superposición corporal.",
+      "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps."
     ]
+  },
+  "education": {
+    "completion:tentorium": {
+      "description": "Pliegue de duramadre denominado tienda del cerebelo.",
+      "function": "Contribuye a separar los compartimentos craneales supra e infratentoriales.",
+      "relations": "Entre cerebelo y porciones posteriores del cerebro.",
+      "limits": "La fuente sólo aporta una porción lateral; no constituye las tres meninges ni una tienda completa.",
+      "sources": [
+        {
+          "title": "OpenStax · Cubiertas del sistema nervioso central",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+        },
+        {
+          "title": "BodyParts3D · identidad y representación",
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"
+        }
+      ]
+    }
   }
 }

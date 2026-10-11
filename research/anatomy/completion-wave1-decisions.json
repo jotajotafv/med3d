@@ -1,0 +1,174 @@
+{
+  "wave": 1,
+  "baseline": "101024e8d4083fcaf991e9c683733d0a02388e29",
+  "frame": "bodyparts3d-4.0-male",
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "registration": "Native frame; no fitted or per-piece transform",
+  "status": "ACCEPTED_WITH_DOCUMENTED_PARTIAL_COVERAGE",
+  "gaps": [
+    {
+      "gap": "muscular-diaphragm",
+      "status": "INTEGRATED",
+      "evidence": "FMA13295 / FJ3131 original confirmed; one native muscular owner."
+    },
+    {
+      "gap": "muscular-iliopsoas",
+      "status": "INTEGRATED",
+      "evidence": "Psoas major and iliacus separately, both source sides; no extra iliopsoas duplicate."
+    },
+    {
+      "gap": "muscular-hip-rotators",
+      "status": "INTEGRATED",
+      "evidence": "Six named deep rotators per side; 12 explicit original identities."
+    },
+    {
+      "gap": "ocular-lens",
+      "status": "INTEGRATED",
+      "evidence": "Two original lenses, components of existing eyes."
+    },
+    {
+      "gap": "ocular-extraocular",
+      "status": "INTEGRATED",
+      "evidence": "Six extraocular muscles and levator per side, 14 owners in ocular/nervous extension. Tendon FJ1343 not substituted for muscle."
+    },
+    {
+      "gap": "muscular-intercostals",
+      "status": "PARTIAL_ACCEPTED",
+      "evidence": "Three aggregate layers, six original meshes. FJ1451/1454/1455 have blank anatomical headers: exact FJ-to-FMA isa mapping plus paired concept-bearing originals and regional inspection support only the aggregate, never eleven individual pairs."
+    },
+    {
+      "gap": "digestive-teeth",
+      "status": "PARTIAL_ACCEPTED",
+      "evidence": "28 permanent teeth with individual original identities. No third molars, deciduous dentition or separately modeled tooth tissues."
+    },
+    {
+      "gap": "ocular-retina",
+      "status": "PARTIAL_ACCEPTED",
+      "evidence": "Two optic portions only; no whole retinal circumference or histological layers claimed."
+    },
+    {
+      "gap": "muscular-pelvic-floor",
+      "status": "PARTIAL_ACCEPTED",
+      "evidence": "Eight identified muscles. Perineal transverses, bulbospongiosus and ischiocavernosus still absent. Tiny source debris retained without trimming or separate anatomical labels."
+    },
+    {
+      "gap": "digestive-anal",
+      "status": "PARTIAL_ACCEPTED",
+      "evidence": "Two source portions of one external anal sphincter, one digestive owner; no complete canal or internal sphincter."
+    },
+    {
+      "gap": "cardio-profunda",
+      "status": "PARTIAL_ACCEPTED",
+      "evidence": "Actual originals are lateral circumflex femoral arteries, descending branches and descending genicular arteries. Nominal deep-femoral mapping rejected as whole-trunk identity. Deep femoral main arterial trunks remain absent."
+    },
+    {
+      "gap": "nervous-meninges",
+      "status": "PARTIAL_ACCEPTED",
+      "evidence": "One lateral tentorial portion; not dura as a whole, arachnoid, pia or spinal meninges."
+    }
+  ],
+  "sourceRejectedAsDuplicates": [
+    {
+      "elementId": "FJ1343",
+      "decision": "NOT_SELECTED",
+      "sourceId": "FMA54159",
+      "reason": "Tendinous adjunct outside the accepted muscle surface cohort; no claim of complete attachment anatomy."
+    },
+    {
+      "elementId": "FJ1450",
+      "decision": "NOT_SELECTED",
+      "sourceId": null,
+      "reason": "Empty anatomical header; better identified representation of the same nominal territory is available."
+    },
+    {
+      "elementId": "FJ1465",
+      "decision": "NOT_SELECTED",
+      "sourceId": null,
+      "reason": "Empty anatomical header; better identified representation of the same nominal territory is available."
+    },
+    {
+      "elementId": "FJ1465M",
+      "decision": "NOT_SELECTED",
+      "sourceId": "FMA46442",
+      "reason": "Tendinous adjunct outside the accepted muscle surface cohort; no claim of complete attachment anatomy."
+    },
+    {
+      "elementId": "FJ2542",
+      "decision": "NOT_SELECTED",
+      "sourceId": "FMA46444",
+      "reason": "Alternative representation of an already selected identity; near-coincident bounds and different topology. Do not double anatomy."
+    },
+    {
+      "elementId": "FJ2543",
+      "decision": "NOT_SELECTED",
+      "sourceId": "FMA21930",
+      "reason": "Alternative representation of an already selected identity; near-coincident bounds and different topology. Do not double anatomy."
+    },
+    {
+      "elementId": "FJ2544",
+      "decision": "NOT_SELECTED",
+      "sourceId": "FMA45859",
+      "reason": "Alternative representation of an already selected identity; near-coincident bounds and different topology. Do not double anatomy."
+    },
+    {
+      "elementId": "FJ2545",
+      "decision": "NOT_SELECTED",
+      "sourceId": "FMA45855",
+      "reason": "Alternative representation of an already selected identity; near-coincident bounds and different topology. Do not double anatomy."
+    },
+    {
+      "elementId": "FJ2546",
+      "decision": "NOT_SELECTED",
+      "sourceId": "FMA45857",
+      "reason": "Alternative representation of an already selected identity; near-coincident bounds and different topology. Do not double anatomy."
+    },
+    {
+      "elementId": "FJ2552",
+      "decision": "NOT_SELECTED",
+      "sourceId": "FMA46442",
+      "reason": "Tendinous adjunct outside the accepted muscle surface cohort; no claim of complete attachment anatomy."
+    },
+    {
+      "elementId": "FJ2553",
+      "decision": "NOT_SELECTED",
+      "sourceId": "FMA46442",
+      "reason": "Tendinous adjunct outside the accepted muscle surface cohort; no claim of complete attachment anatomy."
+    }
+  ],
+  "female": "FUTURE SEPARATE FEMALE ATLAS; no female resource acquired or integrated",
+  "validation": {
+    "catalogTests": "PASS",
+    "typecheck": "PASS",
+    "build": "PASS",
+    "gltf": "PASS; compressed and decoded",
+    "originalTriangles": "PASS; all 860774 oriented source triangles retained",
+    "browser": "PASS; every new owner lifecycle; seven representative real pointer picks; visual review complete",
+    "fullXrAtlas": "PASS; 7 tests",
+    "verifyAnatomy": "Deferred to final global campaign"
+  }
+}

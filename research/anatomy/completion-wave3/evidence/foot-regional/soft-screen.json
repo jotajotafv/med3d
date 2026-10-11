@@ -1,0 +1,1295 @@
+{
+  "method": "Original current soft tissues; deterministic used-vertex sampling; three parity directions, maximum sampled nearest-surface depth. Skin is a volumetric shell: parity measures skin tissue occupancy, NOT body enclosure. Expected physiological interfaces require separate interpretation.",
+  "results": [
+    {
+      "sourceObject": "Articular capsule of interphalangeal joint of great toe.l",
+      "samples": 216,
+      "outsideSkinTissueSamples": 210,
+      "distanceToSkinTissueMm": 8.68710782378912,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Articular capsule of interphalangeal joint of great toe.r",
+      "samples": 216,
+      "outsideSkinTissueSamples": 213,
+      "distanceToSkinTissueMm": 8.767073042690754,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Articular capsules of distal interphalangeal joints of foot.l",
+      "samples": 796,
+      "outsideSkinTissueSamples": 796,
+      "distanceToSkinTissueMm": 8.979898877441883,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Articular capsules of distal interphalangeal joints of foot.r",
+      "samples": 796,
+      "outsideSkinTissueSamples": 796,
+      "distanceToSkinTissueMm": 8.72840080410242,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Articular capsules of proximal interphalangeal joints of foot.l",
+      "samples": 818,
+      "outsideSkinTissueSamples": 808,
+      "distanceToSkinTissueMm": 8.391276001930237,
+      "contacts": [
+        {
+          "target": "bp3d:FMA37462",
+          "name": "Flexor corto de los dedos del pie izquierdo",
+          "samples": 48,
+          "over1mm": 0,
+          "maxDepthMm": 0.9783324785530567,
+          "deepest": {
+            "depthMm": 0.9783324785530567,
+            "point": [
+              0.130569037,
+              -0.0678181098,
+              0.2083989503
+            ],
+            "surface": [
+              0.13126018643379211,
+              -0.0673631951212883,
+              0.20787693560123444
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Articular capsules of proximal interphalangeal joints of foot.r",
+      "samples": 818,
+      "outsideSkinTissueSamples": 796,
+      "distanceToSkinTissueMm": 8.25001671910286,
+      "contacts": [
+        {
+          "target": "bp3d:FMA37461",
+          "name": "Flexor corto de los dedos del pie derecho",
+          "samples": 48,
+          "over1mm": 0,
+          "maxDepthMm": 0.9831279749050736,
+          "deepest": {
+            "depthMm": 0.9831279749050736,
+            "point": [
+              -0.1305596495,
+              -0.0678205749,
+              0.2083933242
+            ],
+            "surface": [
+              -0.131254181265831,
+              -0.06736340373754501,
+              0.207868754863739
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Flexor retinaculum of ankle.l",
+      "samples": 350,
+      "outsideSkinTissueSamples": 350,
+      "distanceToSkinTissueMm": 9.14657860994339,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Flexor retinaculum of ankle.r",
+      "samples": 350,
+      "outsideSkinTissueSamples": 349,
+      "distanceToSkinTissueMm": 7.921482436358929,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Inferior extensor retinaculum of ankle.l",
+      "samples": 160,
+      "outsideSkinTissueSamples": 158,
+      "distanceToSkinTissueMm": 11.48295309394598,
+      "contacts": [
+        {
+          "target": "bp3d:FMA22547",
+          "name": "Extensor largo del dedo gordo \u00b7 lado izquierdo",
+          "samples": 7,
+          "over1mm": 0,
+          "maxDepthMm": 0.9497881401330233,
+          "deepest": {
+            "depthMm": 0.9497881401330233,
+            "point": [
+              0.0852564754,
+              0.0234490587,
+              0.0936869455
+            ],
+            "surface": [
+              0.08434118330478668,
+              0.0236675925552845,
+              0.09355815500020981
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Inferior extensor retinaculum of ankle.r",
+      "samples": 160,
+      "outsideSkinTissueSamples": 160,
+      "distanceToSkinTissueMm": 11.66424248367548,
+      "contacts": [
+        {
+          "target": "bp3d:FMA22546",
+          "name": "Extensor largo del dedo gordo \u00b7 lado derecho",
+          "samples": 7,
+          "over1mm": 0,
+          "maxDepthMm": 0.9427693439647555,
+          "deepest": {
+            "depthMm": 0.9427693439647555,
+            "point": [
+              -0.0852507536,
+              0.0234556164,
+              0.0936869799
+            ],
+            "surface": [
+              -0.08434222638607025,
+              0.02367253601551056,
+              0.0935591384768486
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Superior extensor retinaculum of ankle.l",
+      "samples": 132,
+      "outsideSkinTissueSamples": 132,
+      "distanceToSkinTissueMm": 10.654314421117306,
+      "contacts": [
+        {
+          "target": "bp3d:FMA22547",
+          "name": "Extensor largo del dedo gordo \u00b7 lado izquierdo",
+          "samples": 11,
+          "over1mm": 6,
+          "maxDepthMm": 2.0409226417541504,
+          "deepest": {
+            "depthMm": 2.0409226417541504,
+            "point": [
+              0.0916637788,
+              0.0468382911,
+              0.0805154197
+            ],
+            "surface": [
+              0.09367173910140991,
+              0.04647864028811455,
+              0.08045132458209991
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA22545",
+          "name": "Tibial anterior izquierdo",
+          "samples": 10,
+          "over1mm": 1,
+          "maxDepthMm": 1.2267549755051732,
+          "deepest": {
+            "depthMm": 1.2267549755051732,
+            "point": [
+              0.0873274565,
+              0.0564869556,
+              0.0874664852
+            ],
+            "surface": [
+              0.08838476240634918,
+              0.056277502328157425,
+              0.08805228769779205
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Superior extensor retinaculum of ankle.r",
+      "samples": 132,
+      "outsideSkinTissueSamples": 132,
+      "distanceToSkinTissueMm": 10.913046076893806,
+      "contacts": [
+        {
+          "target": "bp3d:FMA22546",
+          "name": "Extensor largo del dedo gordo \u00b7 lado derecho",
+          "samples": 11,
+          "over1mm": 6,
+          "maxDepthMm": 2.0537907257676125,
+          "deepest": {
+            "depthMm": 2.0537907257676125,
+            "point": [
+              -0.0916532022,
+              0.0468506167,
+              0.0805233414
+            ],
+            "surface": [
+              -0.09367383271455765,
+              0.046488724648952484,
+              0.08045888692140579
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA22544",
+          "name": "Tibial anterior derecho",
+          "samples": 10,
+          "over1mm": 1,
+          "maxDepthMm": 1.2388682225719094,
+          "deepest": {
+            "depthMm": 1.2388682225719094,
+            "point": [
+              -0.0873104582,
+              0.0564958432,
+              0.0874751649
+            ],
+            "surface": [
+              -0.0883781909942627,
+              0.05628432705998421,
+              0.08806677162647247
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Common plantar digital branches of lateral plantar nerve.l",
+      "samples": 756,
+      "outsideSkinTissueSamples": 756,
+      "distanceToSkinTissueMm": 14.528194442391396,
+      "contacts": [
+        {
+          "target": "bp3d:FMA37472",
+          "name": "Flexor corto del quinto dedo del pie izquierdo",
+          "samples": 58,
+          "over1mm": 27,
+          "maxDepthMm": 2.3030033335089684,
+          "deepest": {
+            "depthMm": 2.3030033335089684,
+            "point": [
+              0.1275859548,
+              -0.0623055037,
+              0.125689714
+            ],
+            "surface": [
+              0.12858474254608154,
+              -0.06023193895816803,
+              0.1256086826324463
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37484",
+          "name": "Cuarto lumbrical del pie izquierdo",
+          "samples": 12,
+          "over1mm": 9,
+          "maxDepthMm": 1.484389416873455,
+          "deepest": {
+            "depthMm": 1.484389416873455,
+            "point": [
+              0.1079508361,
+              -0.0589150894,
+              0.1243687747
+            ],
+            "surface": [
+              0.10681969672441483,
+              -0.05894632637500763,
+              0.12532947957515717
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37464",
+          "name": "Abductor del quinto dedo del pie izquierdo",
+          "samples": 23,
+          "over1mm": 1,
+          "maxDepthMm": 1.0558631038293242,
+          "deepest": {
+            "depthMm": 1.0558631038293242,
+            "point": [
+              0.1481125098,
+              -0.066758115,
+              0.1421026535
+            ],
+            "surface": [
+              0.1471969336271286,
+              -0.06669553369283676,
+              0.14262482523918152
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37466",
+          "name": "Cuadrado plantar izquierdo",
+          "samples": 66,
+          "over1mm": 1,
+          "maxDepthMm": 1.0466163512319326,
+          "deepest": {
+            "depthMm": 1.0466163512319326,
+            "point": [
+              0.1050175955,
+              -0.0581003445,
+              0.1136150553
+            ],
+            "surface": [
+              0.10443766415119171,
+              -0.05895907059311867,
+              0.1137622743844986
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37742",
+          "name": "Tercer inter\u00f3seo plantar izquierdo",
+          "samples": 34,
+          "over1mm": 0,
+          "maxDepthMm": 0.6775448564440012,
+          "deepest": {
+            "depthMm": 0.6775448564440012,
+            "point": [
+              0.1370813617,
+              -0.0611102291,
+              0.152218123
+            ],
+            "surface": [
+              0.13676854968070984,
+              -0.061708975583314896,
+              0.15227028727531433
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA86035",
+          "name": "Oponente del quinto dedo del pie \u00b7 lado izquierdo",
+          "samples": 24,
+          "over1mm": 0,
+          "maxDepthMm": 0.5122475558891892,
+          "deepest": {
+            "depthMm": 0.5122475558891892,
+            "point": [
+              0.1353745553,
+              -0.0629197486,
+              0.1312696767
+            ],
+            "surface": [
+              0.1352759748697281,
+              -0.06245982646942139,
+              0.13147252798080444
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA46021",
+          "name": "Cabeza transversa del aductor del dedo gordo izquierdo",
+          "samples": 9,
+          "over1mm": 0,
+          "maxDepthMm": 0.44340663589537144,
+          "deepest": {
+            "depthMm": 0.44340663589537144,
+            "point": [
+              0.1357627729,
+              -0.0614214932,
+              0.1513641275
+            ],
+            "surface": [
+              0.13581746816635132,
+              -0.060984913259744644,
+              0.1514190286397934
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Common plantar digital branches of lateral plantar nerve.r",
+      "samples": 756,
+      "outsideSkinTissueSamples": 756,
+      "distanceToSkinTissueMm": 14.765067026019096,
+      "contacts": [
+        {
+          "target": "bp3d:FMA37471",
+          "name": "Flexor corto del quinto dedo del pie derecho",
+          "samples": 57,
+          "over1mm": 29,
+          "maxDepthMm": 2.2800746373832226,
+          "deepest": {
+            "depthMm": 2.2800746373832226,
+            "point": [
+              -0.1276038762,
+              -0.0622893699,
+              0.1256845558
+            ],
+            "surface": [
+              -0.1285933554172516,
+              -0.06023678183555603,
+              0.1256036013364792
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37483",
+          "name": "Cuarto lumbrical del pie derecho",
+          "samples": 12,
+          "over1mm": 9,
+          "maxDepthMm": 1.5048818895593286,
+          "deepest": {
+            "depthMm": 1.5048818895593286,
+            "point": [
+              -0.1079678464,
+              -0.0589066615,
+              0.1243574182
+            ],
+            "surface": [
+              -0.10682108998298645,
+              -0.05893833190202713,
+              0.12533138692378998
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37465",
+          "name": "Cuadrado plantar derecho",
+          "samples": 66,
+          "over1mm": 1,
+          "maxDepthMm": 1.067717676050961,
+          "deepest": {
+            "depthMm": 1.067717676050961,
+            "point": [
+              -0.1050381107,
+              -0.0580905447,
+              0.1136028474
+            ],
+            "surface": [
+              -0.10444638878107071,
+              -0.0589665025472641,
+              0.11375311762094498
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37463",
+          "name": "Abductor del quinto dedo del pie derecho",
+          "samples": 23,
+          "over1mm": 1,
+          "maxDepthMm": 1.0658805258572102,
+          "deepest": {
+            "depthMm": 1.0658805258572102,
+            "point": [
+              -0.1481263909,
+              -0.0667375182,
+              0.1421037568
+            ],
+            "surface": [
+              -0.1472022831439972,
+              -0.06667460501194,
+              0.1426311731338501
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37741",
+          "name": "Tercer inter\u00f3seo plantar derecho",
+          "samples": 34,
+          "over1mm": 0,
+          "maxDepthMm": 0.6932131946086884,
+          "deepest": {
+            "depthMm": 0.6932131946086884,
+            "point": [
+              -0.1370893272,
+              -0.061096557,
+              0.1522166371
+            ],
+            "surface": [
+              -0.1367688924074173,
+              -0.06170892342925072,
+              0.15227024257183075
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA86034",
+          "name": "Oponente del quinto dedo del pie \u00b7 lado derecho",
+          "samples": 24,
+          "over1mm": 0,
+          "maxDepthMm": 0.5060788244009018,
+          "deepest": {
+            "depthMm": 0.5060788244009018,
+            "point": [
+              -0.135479265,
+              -0.0630829074,
+              0.131106844
+            ],
+            "surface": [
+              -0.13552550971508026,
+              -0.0635666698217392,
+              0.13096557557582855
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA46020",
+          "name": "Cabeza transversa del aductor del dedo gordo derecho",
+          "samples": 8,
+          "over1mm": 0,
+          "maxDepthMm": 0.4294831887818873,
+          "deepest": {
+            "depthMm": 0.4294831887818873,
+            "point": [
+              -0.1357711705,
+              -0.0614081557,
+              0.1513620967
+            ],
+            "surface": [
+              -0.13582418859004974,
+              -0.06098528578877449,
+              0.15141525864601135
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Common plantar digital branches of medial plantar nerve.l",
+      "samples": 900,
+      "outsideSkinTissueSamples": 900,
+      "distanceToSkinTissueMm": 14.342469163239002,
+      "contacts": [
+        {
+          "target": "bp3d:FMA37718",
+          "name": "Primer lumbrical del pie izquierdo",
+          "samples": 301,
+          "over1mm": 98,
+          "maxDepthMm": 1.8786302534863353,
+          "deepest": {
+            "depthMm": 1.8786302534863353,
+            "point": [
+              0.0947395536,
+              -0.058960153,
+              0.1519194444
+            ],
+            "surface": [
+              0.09373579919338226,
+              -0.06054780259728432,
+              0.1519525647163391
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA46019",
+          "name": "Cabeza oblicua del aductor del dedo gordo izquierdo",
+          "samples": 42,
+          "over1mm": 14,
+          "maxDepthMm": 1.786392298527062,
+          "deepest": {
+            "depthMm": 1.786392298527062,
+            "point": [
+              0.101070607,
+              -0.0628647206,
+              0.1703820846
+            ],
+            "surface": [
+              0.10036202520132065,
+              -0.06384004652500153,
+              0.1717003583908081
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37720",
+          "name": "Segundo lumbrical del pie izquierdo",
+          "samples": 101,
+          "over1mm": 12,
+          "maxDepthMm": 1.3322983868420124,
+          "deepest": {
+            "depthMm": 1.3322983868420124,
+            "point": [
+              0.1151297698,
+              -0.0655704273,
+              0.1671566411
+            ],
+            "surface": [
+              0.1140567809343338,
+              -0.06621212512254715,
+              0.16761700809001923
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37460",
+          "name": "Abductor del dedo gordo izquierdo",
+          "samples": 36,
+          "over1mm": 0,
+          "maxDepthMm": 0.6974063580855727,
+          "deepest": {
+            "depthMm": 0.6974063580855727,
+            "point": [
+              0.0807264531,
+              -0.0604109672,
+              0.1734571848
+            ],
+            "surface": [
+              0.08141669631004333,
+              -0.06035209447145462,
+              0.17337673902511597
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA46021",
+          "name": "Cabeza transversa del aductor del dedo gordo izquierdo",
+          "samples": 15,
+          "over1mm": 0,
+          "maxDepthMm": 0.6133611896075308,
+          "deepest": {
+            "depthMm": 0.6133611896075308,
+            "point": [
+              0.102378954,
+              -0.0636899069,
+              0.173919287
+            ],
+            "surface": [
+              0.10206926614046097,
+              -0.06317827105522156,
+              0.17378316819667816
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37462",
+          "name": "Flexor corto de los dedos del pie izquierdo",
+          "samples": 2,
+          "over1mm": 0,
+          "maxDepthMm": 0.045299078919924796,
+          "deepest": {
+            "depthMm": 0.045299078919924796,
+            "point": [
+              0.103183253,
+              -0.0635520014,
+              0.152126583
+            ],
+            "surface": [
+              0.1032036766409874,
+              -0.06351156532764435,
+              0.1521264612674713
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.l",
+      "samples": 588,
+      "outsideSkinTissueSamples": 588,
+      "distanceToSkinTissueMm": 15.764754265546799,
+      "contacts": [
+        {
+          "target": "bp3d:FMA37460",
+          "name": "Abductor del dedo gordo izquierdo",
+          "samples": 222,
+          "over1mm": 54,
+          "maxDepthMm": 1.8121288157999516,
+          "deepest": {
+            "depthMm": 1.8121288157999516,
+            "point": [
+              0.0665302386,
+              -0.0507906135,
+              0.0795951819
+            ],
+            "surface": [
+              0.06728146225214005,
+              -0.04919455200433731,
+              0.07918037474155426
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37462",
+          "name": "Flexor corto de los dedos del pie izquierdo",
+          "samples": 99,
+          "over1mm": 17,
+          "maxDepthMm": 1.371926162391901,
+          "deepest": {
+            "depthMm": 1.371926162391901,
+            "point": [
+              0.0799649844,
+              -0.0562593094,
+              0.0933848168
+            ],
+            "surface": [
+              0.080378457903862,
+              -0.0549665167927742,
+              0.09318502992391586
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37466",
+          "name": "Cuadrado plantar izquierdo",
+          "samples": 4,
+          "over1mm": 0,
+          "maxDepthMm": 0.2123292360920459,
+          "deepest": {
+            "depthMm": 0.2123292360920459,
+            "point": [
+              0.1007273209,
+              -0.0578129194,
+              0.108654131
+            ],
+            "surface": [
+              0.10066523402929306,
+              -0.0580156184732914,
+              0.10866603255271912
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.r",
+      "samples": 588,
+      "outsideSkinTissueSamples": 588,
+      "distanceToSkinTissueMm": 14.51758574694395,
+      "contacts": [
+        {
+          "target": "bp3d:FMA37459",
+          "name": "Abductor del dedo gordo derecho",
+          "samples": 221,
+          "over1mm": 50,
+          "maxDepthMm": 1.7824991373345256,
+          "deepest": {
+            "depthMm": 1.7824991373345256,
+            "point": [
+              -0.0665599122,
+              -0.0507884053,
+              0.0795709864
+            ],
+            "surface": [
+              -0.06823804974555969,
+              -0.05051908269524574,
+              0.0790337547659874
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37461",
+          "name": "Flexor corto de los dedos del pie derecho",
+          "samples": 97,
+          "over1mm": 17,
+          "maxDepthMm": 1.3566336128860712,
+          "deepest": {
+            "depthMm": 1.3566336128860712,
+            "point": [
+              -0.0799919699,
+              -0.0562549081,
+              0.093364109
+            ],
+            "surface": [
+              -0.08040082454681396,
+              -0.05497652664780617,
+              0.09316655248403549
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37465",
+          "name": "Cuadrado plantar derecho",
+          "samples": 7,
+          "over1mm": 0,
+          "maxDepthMm": 0.2282824571011588,
+          "deepest": {
+            "depthMm": 0.2282824571011588,
+            "point": [
+              -0.1007494896,
+              -0.0578036859,
+              0.1086404615
+            ],
+            "surface": [
+              -0.10068275034427643,
+              -0.05802161991596222,
+              0.1086532473564148
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Medial plantar nerve.l",
+      "samples": 600,
+      "outsideSkinTissueSamples": 600,
+      "distanceToSkinTissueMm": 19.72408965229988,
+      "contacts": [
+        {
+          "target": "bp3d:FMA37718",
+          "name": "Primer lumbrical del pie izquierdo",
+          "samples": 20,
+          "over1mm": 0,
+          "maxDepthMm": 0.7723651942797005,
+          "deepest": {
+            "depthMm": 0.7723651942797005,
+            "point": [
+              0.0875883061,
+              -0.0542576672,
+              0.1336045917
+            ],
+            "surface": [
+              0.08703058212995529,
+              -0.0547904446721077,
+              0.13364514708518982
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37460",
+          "name": "Abductor del dedo gordo izquierdo",
+          "samples": 27,
+          "over1mm": 0,
+          "maxDepthMm": 0.5290304543450475,
+          "deepest": {
+            "depthMm": 0.5290304543450475,
+            "point": [
+              0.0747875846,
+              -0.0450634254,
+              0.1179350285
+            ],
+            "surface": [
+              0.07524263858795166,
+              -0.04479805380105972,
+              0.1178862527012825
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Medial plantar nerve.r",
+      "samples": 600,
+      "outsideSkinTissueSamples": 600,
+      "distanceToSkinTissueMm": 18.908342346549034,
+      "contacts": [
+        {
+          "target": "bp3d:FMA37717",
+          "name": "Primer lumbrical del pie derecho",
+          "samples": 20,
+          "over1mm": 0,
+          "maxDepthMm": 0.780345406383276,
+          "deepest": {
+            "depthMm": 0.780345406383276,
+            "point": [
+              -0.087600121,
+              -0.0542597649,
+              0.1335870794
+            ],
+            "surface": [
+              -0.08703664690256119,
+              -0.05479805916547775,
+              0.13362804055213928
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37459",
+          "name": "Abductor del dedo gordo derecho",
+          "samples": 27,
+          "over1mm": 0,
+          "maxDepthMm": 0.5172595847398043,
+          "deepest": {
+            "depthMm": 0.5172595847398043,
+            "point": [
+              -0.0748012359,
+              -0.0450670082,
+              0.1179151448
+            ],
+            "surface": [
+              -0.075246162712574,
+              -0.044807542115449905,
+              0.11786744743585587
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of lateral plantar nerve.l",
+      "samples": 1902,
+      "outsideSkinTissueSamples": 1863,
+      "distanceToSkinTissueMm": 14.512601308524609,
+      "contacts": [
+        {
+          "target": "bp3d:FMA37464",
+          "name": "Abductor del quinto dedo del pie izquierdo",
+          "samples": 55,
+          "over1mm": 22,
+          "maxDepthMm": 1.4950513141229749,
+          "deepest": {
+            "depthMm": 1.4950513141229749,
+            "point": [
+              0.1490149309,
+              -0.067474741,
+              0.1432416884
+            ],
+            "surface": [
+              0.14770419895648956,
+              -0.06771428138017654,
+              0.14391975104808807
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37742",
+          "name": "Tercer inter\u00f3seo plantar izquierdo",
+          "samples": 14,
+          "over1mm": 0,
+          "maxDepthMm": 0.569780997466296,
+          "deepest": {
+            "depthMm": 0.569780997466296,
+            "point": [
+              0.1383048272,
+              -0.0615345368,
+              0.1537972957
+            ],
+            "surface": [
+              0.13795921206474304,
+              -0.06137881800532341,
+              0.15422268211841583
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37462",
+          "name": "Flexor corto de los dedos del pie izquierdo",
+          "samples": 4,
+          "over1mm": 0,
+          "maxDepthMm": 0.16933787264861166,
+          "deepest": {
+            "depthMm": 0.16933787264861166,
+            "point": [
+              0.1509736346,
+              -0.0690393187,
+              0.1912833236
+            ],
+            "surface": [
+              0.15084123611450195,
+              -0.06900817900896072,
+              0.1913842111825943
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of lateral plantar nerve.r",
+      "samples": 1902,
+      "outsideSkinTissueSamples": 1883,
+      "distanceToSkinTissueMm": 14.760507270693779,
+      "contacts": [
+        {
+          "target": "bp3d:FMA37463",
+          "name": "Abductor del quinto dedo del pie derecho",
+          "samples": 53,
+          "over1mm": 14,
+          "maxDepthMm": 1.461487147025764,
+          "deepest": {
+            "depthMm": 1.461487147025764,
+            "point": [
+              -0.150176592,
+              -0.067532645,
+              0.1455408563
+            ],
+            "surface": [
+              -0.14889343082904816,
+              -0.06777334958314896,
+              0.14619776606559753
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37741",
+          "name": "Tercer inter\u00f3seo plantar derecho",
+          "samples": 23,
+          "over1mm": 0,
+          "maxDepthMm": 0.5874945200048387,
+          "deepest": {
+            "depthMm": 0.5874945200048387,
+            "point": [
+              -0.1382332549,
+              -0.0615214095,
+              0.153711103
+            ],
+            "surface": [
+              -0.13787703216075897,
+              -0.061360493302345276,
+              0.15414969623088837
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37461",
+          "name": "Flexor corto de los dedos del pie derecho",
+          "samples": 4,
+          "over1mm": 0,
+          "maxDepthMm": 0.11184471077285707,
+          "deepest": {
+            "depthMm": 0.11184471077285707,
+            "point": [
+              -0.1512368123,
+              -0.0687782026,
+              0.1916446221
+            ],
+            "surface": [
+              -0.15114937722682953,
+              -0.06875763833522797,
+              0.19171126186847687
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of medial plantar nerve.l",
+      "samples": 1614,
+      "outsideSkinTissueSamples": 1488,
+      "distanceToSkinTissueMm": 9.402069263160229,
+      "contacts": [
+        {
+          "target": "bp3d:FMA37460",
+          "name": "Abductor del dedo gordo izquierdo",
+          "samples": 16,
+          "over1mm": 0,
+          "maxDepthMm": 0.7371672545559704,
+          "deepest": {
+            "depthMm": 0.7371672545559704,
+            "point": [
+              0.0814066028,
+              -0.0613859271,
+              0.1775994042
+            ],
+            "surface": [
+              0.08081108331680298,
+              -0.06181978061795235,
+              0.1776227355003357
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37720",
+          "name": "Segundo lumbrical del pie izquierdo",
+          "samples": 25,
+          "over1mm": 0,
+          "maxDepthMm": 0.7213412900455296,
+          "deepest": {
+            "depthMm": 0.7213412900455296,
+            "point": [
+              0.1194242195,
+              -0.0659245833,
+              0.1741026237
+            ],
+            "surface": [
+              0.11916808038949966,
+              -0.06651043891906738,
+              0.1744365394115448
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of medial plantar nerve.r",
+      "samples": 1614,
+      "outsideSkinTissueSamples": 1490,
+      "distanceToSkinTissueMm": 9.32035781443119,
+      "contacts": [
+        {
+          "target": "bp3d:FMA37719",
+          "name": "Segundo lumbrical del pie derecho",
+          "samples": 25,
+          "over1mm": 0,
+          "maxDepthMm": 0.7328630890697241,
+          "deepest": {
+            "depthMm": 0.7328630890697241,
+            "point": [
+              -0.1192846208,
+              -0.0657420342,
+              0.1742092929
+            ],
+            "surface": [
+              -0.11890842020511627,
+              -0.06626108288764954,
+              0.17456446588039398
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA37459",
+          "name": "Abductor del dedo gordo derecho",
+          "samples": 17,
+          "over1mm": 0,
+          "maxDepthMm": 0.6358171813189983,
+          "deepest": {
+            "depthMm": 0.6358171813189983,
+            "point": [
+              -0.0814663564,
+              -0.0616444546,
+              0.1775195168
+            ],
+            "surface": [
+              -0.0809527114033699,
+              -0.062018658965826035,
+              0.1775396317243576
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Extensor digitorum brevis.l",
+      "samples": 1596,
+      "outsideSkinTissueSamples": 1596,
+      "distanceToSkinTissueMm": 15.166259370744228,
+      "contacts": [
+        {
+          "target": "bp3d:FMA22555",
+          "name": "Fibular corto izquierdo",
+          "samples": 8,
+          "over1mm": 0,
+          "maxDepthMm": 0.883820466697216,
+          "deepest": {
+            "depthMm": 0.883820466697216,
+            "point": [
+              0.0950672388,
+              -0.0369306869,
+              0.0688431172
+            ],
+            "surface": [
+              0.09583815932273865,
+              -0.03688275068998337,
+              0.06841355562210083
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA51145",
+          "name": "Extensor corto del dedo gordo izquierdo",
+          "samples": 10,
+          "over1mm": 0,
+          "maxDepthMm": 0.7455109735019505,
+          "deepest": {
+            "depthMm": 0.7455109735019505,
+            "point": [
+              0.1022718,
+              -0.0143387319,
+              0.1185521576
+            ],
+            "surface": [
+              0.10294412821531296,
+              -0.01406596414744854,
+              0.11872351169586182
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Extensor digitorum brevis.r",
+      "samples": 1596,
+      "outsideSkinTissueSamples": 1596,
+      "distanceToSkinTissueMm": 16.402019187808037,
+      "contacts": [
+        {
+          "target": "bp3d:FMA22554",
+          "name": "Fibular corto derecho",
+          "samples": 8,
+          "over1mm": 0,
+          "maxDepthMm": 0.8534117951057851,
+          "deepest": {
+            "depthMm": 0.8534117951057851,
+            "point": [
+              -0.0950950075,
+              -0.0369141506,
+              0.0688322406
+            ],
+            "surface": [
+              -0.09583941102027893,
+              -0.03686783090233803,
+              0.06841747462749481
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA51144",
+          "name": "Extensor corto del dedo gordo derecho",
+          "samples": 10,
+          "over1mm": 0,
+          "maxDepthMm": 0.7426675874739885,
+          "deepest": {
+            "depthMm": 0.7426675874739885,
+            "point": [
+              -0.1022725952,
+              -0.014331163,
+              0.1185492283
+            ],
+            "surface": [
+              -0.10294235497713089,
+              -0.014059432782232761,
+              0.1187199205160141
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Dorsal interossei muscles of foot.l",
+      "samples": 975,
+      "outsideSkinTissueSamples": 975,
+      "distanceToSkinTissueMm": 16.483455896377563,
+      "contacts": [
+        {
+          "target": "bp3d:FMA51145",
+          "name": "Extensor corto del dedo gordo izquierdo",
+          "samples": 2,
+          "over1mm": 0,
+          "maxDepthMm": 0.6990235415287316,
+          "deepest": {
+            "depthMm": 0.6990235415287316,
+            "point": [
+              0.0932682608,
+              -0.0327319787,
+              0.1581367518
+            ],
+            "surface": [
+              0.09298218786716461,
+              -0.03324926644563675,
+              0.15776364505290985
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Dorsal interossei muscles of foot.r",
+      "samples": 975,
+      "outsideSkinTissueSamples": 975,
+      "distanceToSkinTissueMm": 17.22484454512596,
+      "contacts": [
+        {
+          "target": "bp3d:FMA51144",
+          "name": "Extensor corto del dedo gordo derecho",
+          "samples": 3,
+          "over1mm": 0,
+          "maxDepthMm": 0.6865908508189023,
+          "deepest": {
+            "depthMm": 0.6865908508189023,
+            "point": [
+              -0.0932624426,
+              -0.032737548,
+              0.1581261905
+            ],
+            "surface": [
+              -0.0929822325706482,
+              -0.03324589878320694,
+              0.15775948762893677
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

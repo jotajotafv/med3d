@@ -1,0 +1,1062 @@
+{
+  "method": "Same candidate sample in original source bones versus corresponding target bones after one craniofacial registration. Signed nearest depth, three parity directions. Positive means inside bone. Source contact is not itself proof of anatomical correctness; new/deeper occupancy requires review.",
+  "results": [
+    {
+      "sourceObject": "Depressor anguli oris.l",
+      "samples": 299,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 125,
+          "newContactSamples": 125,
+          "maxTargetDepthMm": 1.7131040804088116,
+          "maxSourceDepthAtTargetContactMm": -0.1616497453946253,
+          "maxDepthIncreaseMm": 3.1455045602508673
+        }
+      ]
+    },
+    {
+      "sourceObject": "Depressor anguli oris.r",
+      "samples": 299,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 140,
+          "newContactSamples": 140,
+          "maxTargetDepthMm": 2.030136762186885,
+          "maxSourceDepthAtTargetContactMm": -0.16165212049448488,
+          "maxDepthIncreaseMm": 3.4567743260006605
+        }
+      ]
+    },
+    {
+      "sourceObject": "Depressor labii inferioris.l",
+      "samples": 418,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 66,
+          "newContactSamples": 66,
+          "maxTargetDepthMm": 0.8125395397655666,
+          "maxSourceDepthAtTargetContactMm": -0.1390608802636814,
+          "maxDepthIncreaseMm": 1.3510319426991966
+        }
+      ]
+    },
+    {
+      "sourceObject": "Depressor labii inferioris.r",
+      "samples": 418,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 81,
+          "newContactSamples": 80,
+          "maxTargetDepthMm": 1.0108804563060403,
+          "maxSourceDepthAtTargetContactMm": 0.02842739824177414,
+          "maxDepthIncreaseMm": 1.6141498163508263
+        }
+      ]
+    },
+    {
+      "sourceObject": "Frontalis muscle.l",
+      "samples": 1467,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52734",
+          "source": "Frontal bone",
+          "sampleCount": 895,
+          "newContactSamples": 879,
+          "maxTargetDepthMm": 2.4786763824522495,
+          "maxSourceDepthAtTargetContactMm": 0.23305437103273186,
+          "maxDepthIncreaseMm": 4.163241692585428
+        }
+      ]
+    },
+    {
+      "sourceObject": "Frontalis muscle.r",
+      "samples": 1467,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52734",
+          "source": "Frontal bone",
+          "sampleCount": 999,
+          "newContactSamples": 986,
+          "maxTargetDepthMm": 2.538390224799514,
+          "maxSourceDepthAtTargetContactMm": 0.23305884606844288,
+          "maxDepthIncreaseMm": 3.8119457310058302
+        }
+      ]
+    },
+    {
+      "sourceObject": "Levator anguli oris.l",
+      "samples": 165,
+      "contacts": [
+        {
+          "target": "bp3d:FMA53650",
+          "source": "Maxilla.l",
+          "sampleCount": 80,
+          "newContactSamples": 67,
+          "maxTargetDepthMm": 1.329257502220571,
+          "maxSourceDepthAtTargetContactMm": 0.5207879724216926,
+          "maxDepthIncreaseMm": 1.5321907862652402
+        }
+      ]
+    },
+    {
+      "sourceObject": "Levator anguli oris.r",
+      "samples": 165,
+      "contacts": [
+        {
+          "target": "bp3d:FMA53649",
+          "source": "Maxilla.r",
+          "sampleCount": 94,
+          "newContactSamples": 78,
+          "maxTargetDepthMm": 1.4323240611702204,
+          "maxSourceDepthAtTargetContactMm": 0.5207843808072709,
+          "maxDepthIncreaseMm": 1.4884239995061725
+        }
+      ]
+    },
+    {
+      "sourceObject": "Levator labii superioris.l",
+      "samples": 272,
+      "contacts": [
+        {
+          "target": "bp3d:FMA53650",
+          "source": "Maxilla.l",
+          "sampleCount": 28,
+          "newContactSamples": 12,
+          "maxTargetDepthMm": 0.5587187479250133,
+          "maxSourceDepthAtTargetContactMm": 0.6790899421526628,
+          "maxDepthIncreaseMm": 0.8171678749592421
+        },
+        {
+          "target": "bp3d:FMA52893",
+          "source": "Zygomatic bone.l",
+          "sampleCount": 12,
+          "newContactSamples": 12,
+          "maxTargetDepthMm": 0.19526963296812028,
+          "maxSourceDepthAtTargetContactMm": -0.058037480355087975,
+          "maxDepthIncreaseMm": 0.3078312561756491
+        }
+      ]
+    },
+    {
+      "sourceObject": "Levator labii superioris.r",
+      "samples": 272,
+      "contacts": [
+        {
+          "target": "bp3d:FMA53649",
+          "source": "Maxilla.r",
+          "sampleCount": 61,
+          "newContactSamples": 43,
+          "maxTargetDepthMm": 0.9843539446592331,
+          "maxSourceDepthAtTargetContactMm": 0.6790827589238192,
+          "maxDepthIncreaseMm": 1.641504540079968
+        },
+        {
+          "target": "bp3d:FMA52892",
+          "source": "Zygomatic bone.r",
+          "sampleCount": 14,
+          "newContactSamples": 14,
+          "maxTargetDepthMm": 0.5701640038751066,
+          "maxSourceDepthAtTargetContactMm": -0.05804458393119238,
+          "maxDepthIncreaseMm": 0.6770567778400504
+        }
+      ]
+    },
+    {
+      "sourceObject": "Mentalis muscle.l",
+      "samples": 85,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 29,
+          "newContactSamples": 17,
+          "maxTargetDepthMm": 0.9137460147030652,
+          "maxSourceDepthAtTargetContactMm": 0.6342640452809493,
+          "maxDepthIncreaseMm": 0.8162821408650602
+        }
+      ]
+    },
+    {
+      "sourceObject": "Mentalis muscle.r",
+      "samples": 85,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 32,
+          "newContactSamples": 19,
+          "maxTargetDepthMm": 1.0307858465239406,
+          "maxSourceDepthAtTargetContactMm": 0.6342569779106354,
+          "maxDepthIncreaseMm": 0.9614213415285319
+        }
+      ]
+    },
+    {
+      "sourceObject": "Nasalis muscle.l",
+      "samples": 352,
+      "contacts": [
+        {
+          "target": "bp3d:FMA53648",
+          "sourceControlAbsent": true
+        },
+        {
+          "target": "bp3d:FMA53650",
+          "source": "Maxilla.l",
+          "sampleCount": 98,
+          "newContactSamples": 70,
+          "maxTargetDepthMm": 0.9858213597908616,
+          "maxSourceDepthAtTargetContactMm": 0.33538982076589846,
+          "maxDepthIncreaseMm": 1.6530500935811283
+        },
+        {
+          "target": "bp3d:FMA52734",
+          "source": "Frontal bone",
+          "sampleCount": 2,
+          "newContactSamples": 2,
+          "maxTargetDepthMm": 0.5978464032523334,
+          "maxSourceDepthAtTargetContactMm": -2.3780255191700554,
+          "maxDepthIncreaseMm": 2.975871922422389
+        }
+      ]
+    },
+    {
+      "sourceObject": "Nasalis muscle.r",
+      "samples": 352,
+      "contacts": [
+        {
+          "target": "bp3d:FMA53649",
+          "source": "Maxilla.r",
+          "sampleCount": 137,
+          "newContactSamples": 109,
+          "maxTargetDepthMm": 1.1572237126529217,
+          "maxSourceDepthAtTargetContactMm": 0.33538486781375226,
+          "maxDepthIncreaseMm": 1.3115276813430587
+        },
+        {
+          "target": "bp3d:FMA53647",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Occipitalis muscle.l",
+      "samples": 1297,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52735",
+          "source": "Occipital bone",
+          "sampleCount": 960,
+          "newContactSamples": 921,
+          "maxTargetDepthMm": 3.007370512932539,
+          "maxSourceDepthAtTargetContactMm": 0.351385336275075,
+          "maxDepthIncreaseMm": 4.116835845628416
+        },
+        {
+          "target": "bp3d:FMA52789",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Occipitalis muscle.r",
+      "samples": 1297,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52735",
+          "source": "Occipital bone",
+          "sampleCount": 1133,
+          "newContactSamples": 1094,
+          "maxTargetDepthMm": 2.965328749269247,
+          "maxSourceDepthAtTargetContactMm": 0.35140025306077843,
+          "maxDepthIncreaseMm": 4.457333128104249
+        },
+        {
+          "target": "bp3d:FMA52788",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Orbicularis oris muscle.l",
+      "samples": 940,
+      "contacts": [
+        {
+          "target": "bp3d:FMA53650",
+          "source": "Maxilla.l",
+          "sampleCount": 79,
+          "newContactSamples": 52,
+          "maxTargetDepthMm": 0.7868723478168249,
+          "maxSourceDepthAtTargetContactMm": 0.9999392857197001,
+          "maxDepthIncreaseMm": 1.6044452678868486
+        },
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 26,
+          "newContactSamples": 23,
+          "maxTargetDepthMm": 0.7331715896725655,
+          "maxSourceDepthAtTargetContactMm": 0.0544591679407336,
+          "maxDepthIncreaseMm": 1.4490175001014207
+        }
+      ]
+    },
+    {
+      "sourceObject": "Orbicularis oris muscle.r",
+      "samples": 940,
+      "contacts": [
+        {
+          "target": "bp3d:FMA53649",
+          "source": "Maxilla.r",
+          "sampleCount": 77,
+          "newContactSamples": 49,
+          "maxTargetDepthMm": 1.0403416818007827,
+          "maxSourceDepthAtTargetContactMm": 0.9999308280470294,
+          "maxDepthIncreaseMm": 1.4941772183505098
+        },
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 28,
+          "newContactSamples": 25,
+          "maxTargetDepthMm": 0.8082094718702137,
+          "maxSourceDepthAtTargetContactMm": 0.054458642956770734,
+          "maxDepthIncreaseMm": 1.4746558418776192
+        },
+        {
+          "target": "bp3d:FMA53650",
+          "source": "Maxilla.l",
+          "sampleCount": 4,
+          "newContactSamples": 4,
+          "maxTargetDepthMm": 0.5727201350964606,
+          "maxSourceDepthAtTargetContactMm": -0.47082986129365445,
+          "maxDepthIncreaseMm": 1.4076951801205468
+        }
+      ]
+    },
+    {
+      "sourceObject": "Procerus muscle.l",
+      "samples": 273,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52734",
+          "source": "Frontal bone",
+          "sampleCount": 168,
+          "newContactSamples": 155,
+          "maxTargetDepthMm": 2.029767259955406,
+          "maxSourceDepthAtTargetContactMm": 0.1741831039066654,
+          "maxDepthIncreaseMm": 3.3722228532596046
+        },
+        {
+          "target": "bp3d:FMA53648",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Procerus muscle.r",
+      "samples": 273,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52734",
+          "source": "Frontal bone",
+          "sampleCount": 184,
+          "newContactSamples": 171,
+          "maxTargetDepthMm": 2.090785652399063,
+          "maxSourceDepthAtTargetContactMm": 0.1741831039066654,
+          "maxDepthIncreaseMm": 3.5296201238773337
+        },
+        {
+          "target": "bp3d:FMA53647",
+          "sourceControlAbsent": true
+        },
+        {
+          "target": "bp3d:FMA53648",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Risorius muscle.l",
+      "samples": 296,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Risorius muscle.r",
+      "samples": 296,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 5,
+          "newContactSamples": 5,
+          "maxTargetDepthMm": 0.3271672467235476,
+          "maxSourceDepthAtTargetContactMm": -1.4951964987410895,
+          "maxDepthIncreaseMm": 2.073924011181905
+        }
+      ]
+    },
+    {
+      "sourceObject": "Orbital part of orbicularis oculi.l",
+      "samples": 1195,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52893",
+          "source": "Zygomatic bone.l",
+          "sampleCount": 71,
+          "newContactSamples": 64,
+          "maxTargetDepthMm": 1.2656771577894688,
+          "maxSourceDepthAtTargetContactMm": 0.36534292921083705,
+          "maxDepthIncreaseMm": 1.3851814872385353
+        },
+        {
+          "target": "bp3d:FMA52734",
+          "source": "Frontal bone",
+          "sampleCount": 38,
+          "newContactSamples": 38,
+          "maxTargetDepthMm": 1.2278326321393251,
+          "maxSourceDepthAtTargetContactMm": -0.021562604756863293,
+          "maxDepthIncreaseMm": 2.4947745419469287
+        },
+        {
+          "target": "bp3d:FMA53650",
+          "source": "Maxilla.l",
+          "sampleCount": 44,
+          "newContactSamples": 27,
+          "maxTargetDepthMm": 1.0153470793738961,
+          "maxSourceDepthAtTargetContactMm": 0.6186843170703609,
+          "maxDepthIncreaseMm": 0.9160463089357848
+        },
+        {
+          "target": "bp3d:FMA53646",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Orbital part of orbicularis oculi.r",
+      "samples": 1195,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52892",
+          "source": "Zygomatic bone.r",
+          "sampleCount": 110,
+          "newContactSamples": 100,
+          "maxTargetDepthMm": 1.9757065456360579,
+          "maxSourceDepthAtTargetContactMm": 0.3653387003745017,
+          "maxDepthIncreaseMm": 2.106720099777541
+        },
+        {
+          "target": "bp3d:FMA52734",
+          "source": "Frontal bone",
+          "sampleCount": 48,
+          "newContactSamples": 48,
+          "maxTargetDepthMm": 1.649973331950605,
+          "maxSourceDepthAtTargetContactMm": -0.02155477706494804,
+          "maxDepthIncreaseMm": 2.601461766671451
+        },
+        {
+          "target": "bp3d:FMA53649",
+          "source": "Maxilla.r",
+          "sampleCount": 67,
+          "newContactSamples": 49,
+          "maxTargetDepthMm": 1.2532752007246017,
+          "maxSourceDepthAtTargetContactMm": 0.618670240258998,
+          "maxDepthIncreaseMm": 1.1241486664024618
+        },
+        {
+          "target": "bp3d:FMA53645",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Palpebral part of orbicularis oculi.l",
+      "samples": 415,
+      "contacts": [
+        {
+          "target": "bp3d:FMA53646",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Palpebral part of orbicularis oculi.r",
+      "samples": 415,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Zygomaticus major muscle.l",
+      "samples": 397,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52893",
+          "source": "Zygomatic bone.l",
+          "sampleCount": 76,
+          "newContactSamples": 67,
+          "maxTargetDepthMm": 1.3245937880128622,
+          "maxSourceDepthAtTargetContactMm": 0.2063660256148929,
+          "maxDepthIncreaseMm": 1.3305968645610413
+        },
+        {
+          "target": "bp3d:FMA53650",
+          "source": "Maxilla.l",
+          "sampleCount": 4,
+          "newContactSamples": 3,
+          "maxTargetDepthMm": 0.6057855789549649,
+          "maxSourceDepthAtTargetContactMm": 0.02948330572744032,
+          "maxDepthIncreaseMm": 0.7174208408056775
+        }
+      ]
+    },
+    {
+      "sourceObject": "Zygomaticus major muscle.r",
+      "samples": 397,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52892",
+          "source": "Zygomatic bone.r",
+          "sampleCount": 97,
+          "newContactSamples": 88,
+          "maxTargetDepthMm": 1.8208251567557454,
+          "maxSourceDepthAtTargetContactMm": 0.20635271636628952,
+          "maxDepthIncreaseMm": 1.856291381779272
+        },
+        {
+          "target": "bp3d:FMA53649",
+          "source": "Maxilla.r",
+          "sampleCount": 7,
+          "newContactSamples": 6,
+          "maxTargetDepthMm": 0.9281688253395259,
+          "maxSourceDepthAtTargetContactMm": 0.0294815551774676,
+          "maxDepthIncreaseMm": 0.8986872701620583
+        }
+      ]
+    },
+    {
+      "sourceObject": "Zygomaticus minor muscle.l",
+      "samples": 218,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52893",
+          "source": "Zygomatic bone.l",
+          "sampleCount": 19,
+          "newContactSamples": 18,
+          "maxTargetDepthMm": 0.9906010236591101,
+          "maxSourceDepthAtTargetContactMm": 0.008236830925552665,
+          "maxDepthIncreaseMm": 1.1878140371547898
+        }
+      ]
+    },
+    {
+      "sourceObject": "Zygomaticus minor muscle.r",
+      "samples": 218,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52892",
+          "source": "Zygomatic bone.r",
+          "sampleCount": 42,
+          "newContactSamples": 41,
+          "maxTargetDepthMm": 1.5116927679628134,
+          "maxSourceDepthAtTargetContactMm": 0.008230176301250983,
+          "maxDepthIncreaseMm": 1.7228403392896716
+        },
+        {
+          "target": "bp3d:FMA53649",
+          "source": "Maxilla.r",
+          "sampleCount": 2,
+          "newContactSamples": 2,
+          "maxTargetDepthMm": 0.27852191124111414,
+          "maxSourceDepthAtTargetContactMm": -0.5725718112259349,
+          "maxDepthIncreaseMm": 0.8510937224670491
+        }
+      ]
+    },
+    {
+      "sourceObject": "Deep part of masseter.l",
+      "samples": 497,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 126,
+          "newContactSamples": 66,
+          "maxTargetDepthMm": 3.805458312854171,
+          "maxSourceDepthAtTargetContactMm": 2.266073970774323,
+          "maxDepthIncreaseMm": 1.8459705074124158
+        },
+        {
+          "target": "bp3d:FMA52739",
+          "source": "Temporal bone.l",
+          "sampleCount": 31,
+          "newContactSamples": 29,
+          "maxTargetDepthMm": 0.8947965106926858,
+          "maxSourceDepthAtTargetContactMm": 0.030755790821262174,
+          "maxDepthIncreaseMm": 0.9705248463970927
+        }
+      ]
+    },
+    {
+      "sourceObject": "Deep part of masseter.r",
+      "samples": 497,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 163,
+          "newContactSamples": 101,
+          "maxTargetDepthMm": 4.397623240947723,
+          "maxSourceDepthAtTargetContactMm": 2.2660892641002484,
+          "maxDepthIncreaseMm": 2.4450897310143542
+        },
+        {
+          "target": "bp3d:FMA52738",
+          "source": "Temporal bone.r",
+          "sampleCount": 22,
+          "newContactSamples": 19,
+          "maxTargetDepthMm": 0.8681002072989941,
+          "maxSourceDepthAtTargetContactMm": 0.05290069330741784,
+          "maxDepthIncreaseMm": 0.9546806638307149
+        }
+      ]
+    },
+    {
+      "sourceObject": "Inferior head of lateral pterygoid muscle.l",
+      "samples": 164,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52736",
+          "source": "Sphenoid bone",
+          "sampleCount": 11,
+          "newContactSamples": 4,
+          "maxTargetDepthMm": 0.5876835784874856,
+          "maxSourceDepthAtTargetContactMm": 0.1798738431702123,
+          "maxDepthIncreaseMm": 0.5300883040775863
+        },
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 5,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.5543436273001134,
+          "maxSourceDepthAtTargetContactMm": 1.669225858378796,
+          "maxDepthIncreaseMm": -0.1985423554364517
+        },
+        {
+          "target": "bp3d:FMA52739",
+          "source": "Temporal bone.l",
+          "sampleCount": 6,
+          "newContactSamples": 5,
+          "maxTargetDepthMm": 0.5217433208599687,
+          "maxSourceDepthAtTargetContactMm": 0.08842944280776928,
+          "maxDepthIncreaseMm": 0.5718594268167755
+        }
+      ]
+    },
+    {
+      "sourceObject": "Inferior head of lateral pterygoid muscle.r",
+      "samples": 164,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52738",
+          "source": "Temporal bone.r",
+          "sampleCount": 11,
+          "newContactSamples": 10,
+          "maxTargetDepthMm": 1.0678713442757726,
+          "maxSourceDepthAtTargetContactMm": 0.08852491747742941,
+          "maxDepthIncreaseMm": 1.1237319360506777
+        },
+        {
+          "target": "bp3d:FMA52736",
+          "source": "Sphenoid bone",
+          "sampleCount": 68,
+          "newContactSamples": 61,
+          "maxTargetDepthMm": 0.7913001463748515,
+          "maxSourceDepthAtTargetContactMm": 0.17996564657271144,
+          "maxDepthIncreaseMm": 1.4847302973869025
+        },
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 5,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.323462241794914,
+          "maxSourceDepthAtTargetContactMm": 1.6692246997934985,
+          "maxDepthIncreaseMm": -0.3731297532937081
+        }
+      ]
+    },
+    {
+      "sourceObject": "Masseteric fascia.l",
+      "samples": 226,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 22,
+          "newContactSamples": 22,
+          "maxTargetDepthMm": 1.6288188053295016,
+          "maxSourceDepthAtTargetContactMm": -0.02852359702724512,
+          "maxDepthIncreaseMm": 1.9548463010599035
+        },
+        {
+          "target": "bp3d:FMA52893",
+          "source": "Zygomatic bone.l",
+          "sampleCount": 19,
+          "newContactSamples": 19,
+          "maxTargetDepthMm": 1.0290619684383273,
+          "maxSourceDepthAtTargetContactMm": -0.0003904833261501019,
+          "maxDepthIncreaseMm": 1.5839801732325038
+        },
+        {
+          "target": "bp3d:FMA52739",
+          "source": "Temporal bone.l",
+          "sampleCount": 9,
+          "newContactSamples": 9,
+          "maxTargetDepthMm": 1.0206986917182803,
+          "maxSourceDepthAtTargetContactMm": -0.20549375570914696,
+          "maxDepthIncreaseMm": 1.2535125642677112
+        }
+      ]
+    },
+    {
+      "sourceObject": "Masseteric fascia.r",
+      "samples": 226,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 24,
+          "newContactSamples": 24,
+          "maxTargetDepthMm": 2.176746493205428,
+          "maxSourceDepthAtTargetContactMm": -0.028496954996274543,
+          "maxDepthIncreaseMm": 2.5027588693976996
+        },
+        {
+          "target": "bp3d:FMA52892",
+          "source": "Zygomatic bone.r",
+          "sampleCount": 23,
+          "newContactSamples": 23,
+          "maxTargetDepthMm": 1.7228367505595088,
+          "maxSourceDepthAtTargetContactMm": -0.00036516255196235515,
+          "maxDepthIncreaseMm": 2.1896891998365757
+        },
+        {
+          "target": "bp3d:FMA52738",
+          "source": "Temporal bone.r",
+          "sampleCount": 10,
+          "newContactSamples": 10,
+          "maxTargetDepthMm": 1.5353183262050152,
+          "maxSourceDepthAtTargetContactMm": -0.20546878819598896,
+          "maxDepthIncreaseMm": 1.9924145201362538
+        }
+      ]
+    },
+    {
+      "sourceObject": "Medial pterygoid muscle.l",
+      "samples": 249,
+      "contacts": [
+        {
+          "target": "bp3d:FMA53650",
+          "source": "Maxilla.l",
+          "sampleCount": 26,
+          "newContactSamples": 23,
+          "maxTargetDepthMm": 2.1853537764400244,
+          "maxSourceDepthAtTargetContactMm": 0.5170975306740286,
+          "maxDepthIncreaseMm": 3.522158771008348
+        },
+        {
+          "target": "bp3d:FMA53656",
+          "sourceControlAbsent": true
+        },
+        {
+          "target": "bp3d:FMA52736",
+          "source": "Sphenoid bone",
+          "sampleCount": 42,
+          "newContactSamples": 18,
+          "maxTargetDepthMm": 1.3250266201794147,
+          "maxSourceDepthAtTargetContactMm": 0.7205788816509353,
+          "maxDepthIncreaseMm": 0.724631059770477
+        },
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 1,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.12172749120509252,
+          "maxSourceDepthAtTargetContactMm": 0.8749417772294292,
+          "maxDepthIncreaseMm": -0.7532142860243367
+        }
+      ]
+    },
+    {
+      "sourceObject": "Medial pterygoid muscle.r",
+      "samples": 249,
+      "contacts": [
+        {
+          "target": "bp3d:FMA53655",
+          "sourceControlAbsent": true
+        },
+        {
+          "target": "bp3d:FMA52736",
+          "source": "Sphenoid bone",
+          "sampleCount": 34,
+          "newContactSamples": 12,
+          "maxTargetDepthMm": 1.5049977228045464,
+          "maxSourceDepthAtTargetContactMm": 0.7205679330198753,
+          "maxDepthIncreaseMm": 1.2986517134723172
+        },
+        {
+          "target": "bp3d:FMA53649",
+          "source": "Maxilla.r",
+          "sampleCount": 4,
+          "newContactSamples": 3,
+          "maxTargetDepthMm": 0.4397163284011185,
+          "maxSourceDepthAtTargetContactMm": 0.053516097611582124,
+          "maxDepthIncreaseMm": 0.5729379330251572
+        }
+      ]
+    },
+    {
+      "sourceObject": "Parotideomasseteric region.l",
+      "samples": 118,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Parotideomasseteric region.r",
+      "samples": 118,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Superficial part of masseter.l",
+      "samples": 702,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52893",
+          "source": "Zygomatic bone.l",
+          "sampleCount": 125,
+          "newContactSamples": 103,
+          "maxTargetDepthMm": 1.2781640980392694,
+          "maxSourceDepthAtTargetContactMm": 0.1327868801968137,
+          "maxDepthIncreaseMm": 1.6440870391650868
+        },
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 63,
+          "newContactSamples": 63,
+          "maxTargetDepthMm": 1.0706325992941856,
+          "maxSourceDepthAtTargetContactMm": -0.0025652123925635406,
+          "maxDepthIncreaseMm": 1.6924623517957154
+        },
+        {
+          "target": "bp3d:FMA52739",
+          "source": "Temporal bone.l",
+          "sampleCount": 6,
+          "newContactSamples": 5,
+          "maxTargetDepthMm": 0.7813735282979906,
+          "maxSourceDepthAtTargetContactMm": 0.005512852520881931,
+          "maxDepthIncreaseMm": 0.8760622716216674
+        }
+      ]
+    },
+    {
+      "sourceObject": "Superficial part of masseter.r",
+      "samples": 702,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 90,
+          "newContactSamples": 90,
+          "maxTargetDepthMm": 1.6575561603531241,
+          "maxSourceDepthAtTargetContactMm": -0.0025358519855818067,
+          "maxDepthIncreaseMm": 2.156194292622674
+        },
+        {
+          "target": "bp3d:FMA52892",
+          "source": "Zygomatic bone.r",
+          "sampleCount": 109,
+          "newContactSamples": 90,
+          "maxTargetDepthMm": 1.656820997595787,
+          "maxSourceDepthAtTargetContactMm": 0.1215011297799138,
+          "maxDepthIncreaseMm": 1.837025339127512
+        },
+        {
+          "target": "bp3d:FMA52738",
+          "source": "Temporal bone.r",
+          "sampleCount": 9,
+          "newContactSamples": 8,
+          "maxTargetDepthMm": 1.441487343981862,
+          "maxSourceDepthAtTargetContactMm": 0.005542394183102567,
+          "maxDepthIncreaseMm": 1.5361463261457131
+        }
+      ]
+    },
+    {
+      "sourceObject": "Superior head of lateral pterygoid muscle.l",
+      "samples": 115,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52736",
+          "source": "Sphenoid bone",
+          "sampleCount": 12,
+          "newContactSamples": 3,
+          "maxTargetDepthMm": 0.656008895020932,
+          "maxSourceDepthAtTargetContactMm": 0.2249590459137901,
+          "maxDepthIncreaseMm": 0.5528543327236937
+        },
+        {
+          "target": "bp3d:FMA52739",
+          "source": "Temporal bone.l",
+          "sampleCount": 4,
+          "newContactSamples": 3,
+          "maxTargetDepthMm": 0.43640154763124883,
+          "maxSourceDepthAtTargetContactMm": 0.0024308479518509265,
+          "maxDepthIncreaseMm": 0.6806871431603239
+        }
+      ]
+    },
+    {
+      "sourceObject": "Superior head of lateral pterygoid muscle.r",
+      "samples": 115,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52736",
+          "source": "Sphenoid bone",
+          "sampleCount": 21,
+          "newContactSamples": 10,
+          "maxTargetDepthMm": 1.0060023050755262,
+          "maxSourceDepthAtTargetContactMm": 0.35877600981616564,
+          "maxDepthIncreaseMm": 1.6123280473903874
+        },
+        {
+          "target": "bp3d:FMA52738",
+          "source": "Temporal bone.r",
+          "sampleCount": 7,
+          "newContactSamples": 6,
+          "maxTargetDepthMm": 0.835115322843194,
+          "maxSourceDepthAtTargetContactMm": 0.12900359231988293,
+          "maxDepthIncreaseMm": 0.8980483872693591
+        }
+      ]
+    },
+    {
+      "sourceObject": "Temporalis muscle.l",
+      "samples": 1709,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52734",
+          "source": "Frontal bone",
+          "sampleCount": 135,
+          "newContactSamples": 127,
+          "maxTargetDepthMm": 2.6287564542144537,
+          "maxSourceDepthAtTargetContactMm": 0.22837816146712983,
+          "maxDepthIncreaseMm": 4.421568834534311
+        },
+        {
+          "target": "bp3d:FMA52789",
+          "sourceControlAbsent": true
+        },
+        {
+          "target": "bp3d:FMA52736",
+          "source": "Sphenoid bone",
+          "sampleCount": 18,
+          "newContactSamples": 14,
+          "maxTargetDepthMm": 1.369053847156465,
+          "maxSourceDepthAtTargetContactMm": 0.22842249183706986,
+          "maxDepthIncreaseMm": 1.1406313553193952
+        },
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 30,
+          "newContactSamples": 25,
+          "maxTargetDepthMm": 1.031265826895833,
+          "maxSourceDepthAtTargetContactMm": 0.23737163639089717,
+          "maxDepthIncreaseMm": 1.169292702724789
+        },
+        {
+          "target": "bp3d:FMA52739",
+          "source": "Temporal bone.l",
+          "sampleCount": 87,
+          "newContactSamples": 61,
+          "maxTargetDepthMm": 1.0732859373092651,
+          "maxSourceDepthAtTargetContactMm": 0.5102485536887162,
+          "maxDepthIncreaseMm": 2.8970902693679568
+        },
+        {
+          "target": "bp3d:FMA52893",
+          "source": "Zygomatic bone.l",
+          "sampleCount": 2,
+          "newContactSamples": 1,
+          "maxTargetDepthMm": 0.2262671769130975,
+          "maxSourceDepthAtTargetContactMm": 0.13173866463134823,
+          "maxDepthIncreaseMm": 0.09452851228174927
+        }
+      ]
+    },
+    {
+      "sourceObject": "Temporalis muscle.r",
+      "samples": 1709,
+      "contacts": [
+        {
+          "target": "bp3d:FMA52788",
+          "sourceControlAbsent": true
+        },
+        {
+          "target": "bp3d:FMA52734",
+          "source": "Frontal bone",
+          "sampleCount": 112,
+          "newContactSamples": 106,
+          "maxTargetDepthMm": 2.2782268933951855,
+          "maxSourceDepthAtTargetContactMm": 0.22840703920566638,
+          "maxDepthIncreaseMm": 3.376662509152763
+        },
+        {
+          "target": "bp3d:FMA52738",
+          "source": "Temporal bone.r",
+          "sampleCount": 153,
+          "newContactSamples": 122,
+          "maxTargetDepthMm": 1.9965632818639278,
+          "maxSourceDepthAtTargetContactMm": 0.5103106538606544,
+          "maxDepthIncreaseMm": 2.9896452300405536
+        },
+        {
+          "target": "bp3d:FMA52736",
+          "source": "Sphenoid bone",
+          "sampleCount": 35,
+          "newContactSamples": 31,
+          "maxTargetDepthMm": 1.646082499064505,
+          "maxSourceDepthAtTargetContactMm": 0.22850873403014169,
+          "maxDepthIncreaseMm": 2.2328722832374206
+        },
+        {
+          "target": "bp3d:FMA52748",
+          "source": "Mandible",
+          "sampleCount": 34,
+          "newContactSamples": 29,
+          "maxTargetDepthMm": 1.473233918659389,
+          "maxSourceDepthAtTargetContactMm": 0.23740122376292838,
+          "maxDepthIncreaseMm": 1.7849294245003604
+        },
+        {
+          "target": "bp3d:FMA52892",
+          "source": "Zygomatic bone.r",
+          "sampleCount": 13,
+          "newContactSamples": 11,
+          "maxTargetDepthMm": 0.5507311434485018,
+          "maxSourceDepthAtTargetContactMm": 0.1317515538927813,
+          "maxDepthIncreaseMm": 0.895862275287892
+        }
+      ]
+    }
+  ]
+}

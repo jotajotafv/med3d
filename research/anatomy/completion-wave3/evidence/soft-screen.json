@@ -1,0 +1,4252 @@
+{
+  "method": "Original current soft tissues; deterministic used-vertex sampling; three parity directions, maximum sampled nearest-surface depth. Skin enclosure and expected physiological interfaces require separate interpretation.",
+  "results": [
+    {
+      "sourceObject": "Depressor anguli oris.l",
+      "samples": 299,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45740",
+          "name": "Platisma izquierdo",
+          "samples": 37,
+          "over1mm": 1,
+          "maxDepthMm": 1.060407143086195,
+          "deepest": {
+            "depthMm": 1.060407143086195,
+            "point": [
+              0.0267914858,
+              1.4321126533,
+              0.1530524825
+            ],
+            "surface": [
+              0.025965549051761627,
+              1.4324512481689453,
+              0.15248005092144012
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 299,
+      "distanceToSkinTissueMm": 14.782540500164032
+    },
+    {
+      "sourceObject": "Depressor anguli oris.r",
+      "samples": 299,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45739",
+          "name": "Platisma derecho",
+          "samples": 23,
+          "over1mm": 1,
+          "maxDepthMm": 1.1448849691078067,
+          "deepest": {
+            "depthMm": 1.1448849691078067,
+            "point": [
+              -0.0353555743,
+              1.4409818855,
+              0.1448294348
+            ],
+            "surface": [
+              -0.03632093593478203,
+              1.4410039186477661,
+              0.14544454216957092
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 299,
+      "distanceToSkinTissueMm": 15.138344839215279
+    },
+    {
+      "sourceObject": "Depressor labii inferioris.l",
+      "samples": 418,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45740",
+          "name": "Platisma izquierdo",
+          "samples": 9,
+          "over1mm": 0,
+          "maxDepthMm": 0.9103423217311502,
+          "deepest": {
+            "depthMm": 0.9103423217311502,
+            "point": [
+              0.0123265408,
+              1.4285776501,
+              0.1650889643
+            ],
+            "surface": [
+              0.011800485663115978,
+              1.4287320375442505,
+              0.16436222195625305
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 418,
+      "distanceToSkinTissueMm": 14.321844093501568
+    },
+    {
+      "sourceObject": "Depressor labii inferioris.r",
+      "samples": 418,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45739",
+          "name": "Platisma derecho",
+          "samples": 9,
+          "over1mm": 0,
+          "maxDepthMm": 0.7297685951925814,
+          "deepest": {
+            "depthMm": 0.7297685951925814,
+            "point": [
+              -0.0135386142,
+              1.4286215328,
+              0.1649877175
+            ],
+            "surface": [
+              -0.0130917401984334,
+              1.4286736249923706,
+              0.16441312432289124
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 418,
+      "distanceToSkinTissueMm": 14.645939692854881
+    },
+    {
+      "sourceObject": "Frontalis muscle.l",
+      "samples": 1467,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1407,
+      "distanceToSkinTissueMm": 8.712525479495525
+    },
+    {
+      "sourceObject": "Frontalis muscle.r",
+      "samples": 1467,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1445,
+      "distanceToSkinTissueMm": 9.27025731652975
+    },
+    {
+      "sourceObject": "Levator anguli oris.l",
+      "samples": 165,
+      "contacts": [],
+      "outsideSkinTissueSamples": 165,
+      "distanceToSkinTissueMm": 16.45301654934883
+    },
+    {
+      "sourceObject": "Levator anguli oris.r",
+      "samples": 165,
+      "contacts": [],
+      "outsideSkinTissueSamples": 165,
+      "distanceToSkinTissueMm": 16.766589134931564
+    },
+    {
+      "sourceObject": "Levator labii superioris.l",
+      "samples": 272,
+      "contacts": [],
+      "outsideSkinTissueSamples": 272,
+      "distanceToSkinTissueMm": 14.022132381796837
+    },
+    {
+      "sourceObject": "Levator labii superioris.r",
+      "samples": 272,
+      "contacts": [],
+      "outsideSkinTissueSamples": 272,
+      "distanceToSkinTissueMm": 14.33536596596241
+    },
+    {
+      "sourceObject": "Mentalis muscle.l",
+      "samples": 85,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45740",
+          "name": "Platisma izquierdo",
+          "samples": 23,
+          "over1mm": 6,
+          "maxDepthMm": 1.3613144401460886,
+          "deepest": {
+            "depthMm": 1.3613144401460886,
+            "point": [
+              0.0044013219,
+              1.4279841802,
+              0.171045621
+            ],
+            "surface": [
+              0.004409390036016703,
+              1.429340124130249,
+              0.17116679251194
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 85,
+      "distanceToSkinTissueMm": 11.970177292823792
+    },
+    {
+      "sourceObject": "Mentalis muscle.r",
+      "samples": 85,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45739",
+          "name": "Platisma derecho",
+          "samples": 24,
+          "over1mm": 5,
+          "maxDepthMm": 1.3378902804106474,
+          "deepest": {
+            "depthMm": 1.3378902804106474,
+            "point": [
+              -0.0056623303,
+              1.4280012541,
+              0.1710062278
+            ],
+            "surface": [
+              -0.005662601441144943,
+              1.4293345212936401,
+              0.17111772298812866
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 85,
+      "distanceToSkinTissueMm": 12.05407828092575
+    },
+    {
+      "sourceObject": "Nasalis muscle.l",
+      "samples": 352,
+      "contacts": [],
+      "outsideSkinTissueSamples": 352,
+      "distanceToSkinTissueMm": 11.562461033463478
+    },
+    {
+      "sourceObject": "Nasalis muscle.r",
+      "samples": 352,
+      "contacts": [],
+      "outsideSkinTissueSamples": 352,
+      "distanceToSkinTissueMm": 11.914413422346115
+    },
+    {
+      "sourceObject": "Occipitalis muscle.l",
+      "samples": 1297,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1297,
+      "distanceToSkinTissueMm": 9.235533885657787
+    },
+    {
+      "sourceObject": "Occipitalis muscle.r",
+      "samples": 1297,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1297,
+      "distanceToSkinTissueMm": 9.792855940759182
+    },
+    {
+      "sourceObject": "Orbicularis oris muscle.l",
+      "samples": 940,
+      "contacts": [],
+      "outsideSkinTissueSamples": 940,
+      "distanceToSkinTissueMm": 13.244492001831532
+    },
+    {
+      "sourceObject": "Orbicularis oris muscle.r",
+      "samples": 940,
+      "contacts": [],
+      "outsideSkinTissueSamples": 940,
+      "distanceToSkinTissueMm": 13.529643416404724
+    },
+    {
+      "sourceObject": "Procerus muscle.l",
+      "samples": 273,
+      "contacts": [],
+      "outsideSkinTissueSamples": 273,
+      "distanceToSkinTissueMm": 7.418208289891481
+    },
+    {
+      "sourceObject": "Procerus muscle.r",
+      "samples": 273,
+      "contacts": [],
+      "outsideSkinTissueSamples": 273,
+      "distanceToSkinTissueMm": 7.600863929837942
+    },
+    {
+      "sourceObject": "Risorius muscle.l",
+      "samples": 296,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45740",
+          "name": "Platisma izquierdo",
+          "samples": 32,
+          "over1mm": 6,
+          "maxDepthMm": 1.3301600702106953,
+          "deepest": {
+            "depthMm": 1.3301600702106953,
+            "point": [
+              0.0389363099,
+              1.4424967129,
+              0.1356316619
+            ],
+            "surface": [
+              0.040062494575977325,
+              1.4420419931411743,
+              0.13617417216300964
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 296,
+      "distanceToSkinTissueMm": 15.993069857358932
+    },
+    {
+      "sourceObject": "Risorius muscle.r",
+      "samples": 296,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45739",
+          "name": "Platisma derecho",
+          "samples": 37,
+          "over1mm": 16,
+          "maxDepthMm": 1.425384427420795,
+          "deepest": {
+            "depthMm": 1.425384427420795,
+            "point": [
+              -0.0399719828,
+              1.4437932677,
+              0.1368514142
+            ],
+            "surface": [
+              -0.04120324179530144,
+              1.4438328742980957,
+              0.13756845891475677
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 296,
+      "distanceToSkinTissueMm": 16.360962763428688
+    },
+    {
+      "sourceObject": "Orbital part of orbicularis oculi.l",
+      "samples": 1195,
+      "contacts": [
+        {
+          "target": "ocular:FMA59546",
+          "name": "Saco lagrimal · lado izquierdo",
+          "samples": 11,
+          "over1mm": 4,
+          "maxDepthMm": 1.4221299206838012,
+          "deepest": {
+            "depthMm": 1.4221299206838012,
+            "point": [
+              0.0140830604,
+              1.513894158,
+              0.1620985058
+            ],
+            "surface": [
+              0.015471094287931919,
+              1.513846516609192,
+              0.1624043583869934
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA59103",
+          "name": "Glándula lagrimal · lado izquierdo",
+          "samples": 33,
+          "over1mm": 3,
+          "maxDepthMm": 1.2241447111591697,
+          "deepest": {
+            "depthMm": 1.2241447111591697,
+            "point": [
+              0.039917606,
+              1.5298965898,
+              0.158051942
+            ],
+            "surface": [
+              0.040665172040462494,
+              1.5301880836486816,
+              0.1589764505624771
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA49051",
+          "name": "Oblicuo inferior del ojo izquierdo",
+          "samples": 3,
+          "over1mm": 0,
+          "maxDepthMm": 0.4784087941516191,
+          "deepest": {
+            "depthMm": 0.4784087941516191,
+            "point": [
+              0.017187256,
+              1.5048972505,
+              0.1633915183
+            ],
+            "surface": [
+              0.017238778993487358,
+              1.5053727626800537,
+              0.16338174045085907
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA49049",
+          "name": "Elevador del párpado superior izquierdo",
+          "samples": 14,
+          "over1mm": 0,
+          "maxDepthMm": 0.3994349972344935,
+          "deepest": {
+            "depthMm": 0.3994349972344935,
+            "point": [
+              0.0240987739,
+              1.5297694423,
+              0.1635973739
+            ],
+            "surface": [
+              0.024085594341158867,
+              1.5296128988265991,
+              0.16323012113571167
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA49068",
+          "name": "Tróclea del oblicuo superior · lado izquierdo",
+          "samples": 1,
+          "over1mm": 0,
+          "maxDepthMm": 0.212015031138435,
+          "deepest": {
+            "depthMm": 0.212015031138435,
+            "point": [
+              0.0135190076,
+              1.5327083992,
+              0.1636846044
+            ],
+            "surface": [
+              0.013441328890621662,
+              1.532512903213501,
+              0.16371096670627594
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA49145",
+          "name": "Ligamento de contención del recto lateral · lado izquierdo",
+          "samples": 2,
+          "over1mm": 0,
+          "maxDepthMm": 0.13616186333820224,
+          "deepest": {
+            "depthMm": 0.13616186333820224,
+            "point": [
+              0.0465245396,
+              1.520784843,
+              0.1498083143
+            ],
+            "surface": [
+              0.04651040956377983,
+              1.5207675695419312,
+              0.14994263648986816
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA49053",
+          "name": "Oblicuo superior del ojo izquierdo",
+          "samples": 1,
+          "over1mm": 0,
+          "maxDepthMm": 0.015633033399353735,
+          "deepest": {
+            "depthMm": 0.015633033399353735,
+            "point": [
+              0.015458831,
+              1.5329723629,
+              0.1635053915
+            ],
+            "surface": [
+              0.01544946152716875,
+              1.5329827070236206,
+              0.1634983867406845
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1193,
+      "distanceToSkinTissueMm": 10.761452838778496
+    },
+    {
+      "sourceObject": "Orbital part of orbicularis oculi.r",
+      "samples": 1195,
+      "contacts": [
+        {
+          "target": "ocular:FMA59102",
+          "name": "Glándula lagrimal · lado derecho",
+          "samples": 45,
+          "over1mm": 9,
+          "maxDepthMm": 1.542392186820507,
+          "deepest": {
+            "depthMm": 1.542392186820507,
+            "point": [
+              -0.0407297963,
+              1.5300334158,
+              0.1577362549
+            ],
+            "surface": [
+              -0.04176650941371918,
+              1.5311442613601685,
+              0.15800146758556366
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA59545",
+          "name": "Saco lagrimal · lado derecho",
+          "samples": 9,
+          "over1mm": 1,
+          "maxDepthMm": 1.0535584297031164,
+          "deepest": {
+            "depthMm": 1.0535584297031164,
+            "point": [
+              -0.0149821687,
+              1.5139434699,
+              0.1619847326
+            ],
+            "surface": [
+              -0.013940809294581413,
+              1.5138976573944092,
+              0.1618315577507019
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA49050",
+          "name": "Oblicuo inferior del ojo derecho",
+          "samples": 5,
+          "over1mm": 0,
+          "maxDepthMm": 0.4774601839017123,
+          "deepest": {
+            "depthMm": 0.4774601839017123,
+            "point": [
+              -0.0205794856,
+              1.504636369,
+              0.1624193795
+            ],
+            "surface": [
+              -0.020696138963103294,
+              1.50426185131073,
+              0.16269153356552124
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA49144",
+          "name": "Ligamento de contención del recto lateral · lado derecho",
+          "samples": 4,
+          "over1mm": 0,
+          "maxDepthMm": 0.4677916585933417,
+          "deepest": {
+            "depthMm": 0.4677916585933417,
+            "point": [
+              -0.04730287,
+              1.5209440301,
+              0.1494410352
+            ],
+            "surface": [
+              -0.047249071300029755,
+              1.520851969718933,
+              0.1498965173959732
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA49048",
+          "name": "Elevador del párpado superior derecho",
+          "samples": 27,
+          "over1mm": 0,
+          "maxDepthMm": 0.42893318459391594,
+          "deepest": {
+            "depthMm": 0.42893318459391594,
+            "point": [
+              -0.0309970693,
+              1.5310406087,
+              0.1630321373
+            ],
+            "surface": [
+              -0.03107527084648609,
+              1.5313092470169067,
+              0.163357213139534
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA49067",
+          "name": "Tróclea del oblicuo superior · lado derecho",
+          "samples": 2,
+          "over1mm": 0,
+          "maxDepthMm": 0.06090544047765434,
+          "deepest": {
+            "depthMm": 0.06090544047765434,
+            "point": [
+              -0.0143667144,
+              1.53275571,
+              0.1635754482
+            ],
+            "surface": [
+              -0.014340762048959732,
+              1.5327008962631226,
+              0.16358083486557007
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1192,
+      "distanceToSkinTissueMm": 11.059249751269817
+    },
+    {
+      "sourceObject": "Palpebral part of orbicularis oculi.l",
+      "samples": 415,
+      "contacts": [
+        {
+          "target": "ocular:FMA59546",
+          "name": "Saco lagrimal · lado izquierdo",
+          "samples": 19,
+          "over1mm": 1,
+          "maxDepthMm": 1.1665737256407738,
+          "deepest": {
+            "depthMm": 1.1665737256407738,
+            "point": [
+              0.0142855726,
+              1.5166172405,
+              0.1612039241
+            ],
+            "surface": [
+              0.014168273657560349,
+              1.5165947675704956,
+              0.16004347801208496
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA49049",
+          "name": "Elevador del párpado superior izquierdo",
+          "samples": 14,
+          "over1mm": 0,
+          "maxDepthMm": 0.3954341809730977,
+          "deepest": {
+            "depthMm": 0.3954341809730977,
+            "point": [
+              0.0216974857,
+              1.5286223313,
+              0.1638993579
+            ],
+            "surface": [
+              0.021664198487997055,
+              1.528761625289917,
+              0.16426797211170197
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA59092",
+          "name": "Tarso del párpado superior · lado izquierdo",
+          "samples": 6,
+          "over1mm": 0,
+          "maxDepthMm": 0.32535105128772557,
+          "deepest": {
+            "depthMm": 0.32535105128772557,
+            "point": [
+              0.0199836631,
+              1.5210450388,
+              0.1650884453
+            ],
+            "surface": [
+              0.01996687985956669,
+              1.5210132598876953,
+              0.1654118001461029
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA59090",
+          "name": "Tarso del párpado inferior · lado izquierdo",
+          "samples": 8,
+          "over1mm": 0,
+          "maxDepthMm": 0.25035892031155527,
+          "deepest": {
+            "depthMm": 0.25035892031155527,
+            "point": [
+              0.0248503424,
+              1.5082409689,
+              0.1632068906
+            ],
+            "surface": [
+              0.02477521263062954,
+              1.5080467462539673,
+              0.16334590315818787
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 310,
+      "distanceToSkinTissueMm": 4.265938885509968
+    },
+    {
+      "sourceObject": "Palpebral part of orbicularis oculi.r",
+      "samples": 415,
+      "contacts": [
+        {
+          "target": "ocular:FMA59545",
+          "name": "Saco lagrimal · lado derecho",
+          "samples": 21,
+          "over1mm": 1,
+          "maxDepthMm": 1.400723704136908,
+          "deepest": {
+            "depthMm": 1.400723704136908,
+            "point": [
+              -0.0155047442,
+              1.5157480617,
+              0.1615794769
+            ],
+            "surface": [
+              -0.0169004388153553,
+              1.5157772302627563,
+              0.16146454215049744
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA49048",
+          "name": "Elevador del párpado superior derecho",
+          "samples": 18,
+          "over1mm": 0,
+          "maxDepthMm": 0.5243232590146363,
+          "deepest": {
+            "depthMm": 0.5243232590146363,
+            "point": [
+              -0.0399661804,
+              1.5280371598,
+              0.1599493848
+            ],
+            "surface": [
+              -0.039613667875528336,
+              1.527773141860962,
+              0.15966491401195526
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA59091",
+          "name": "Tarso del párpado superior · lado derecho",
+          "samples": 9,
+          "over1mm": 0,
+          "maxDepthMm": 0.46099076280370355,
+          "deepest": {
+            "depthMm": 0.46099076280370355,
+            "point": [
+              -0.0208817,
+              1.5211143707,
+              0.1649284815
+            ],
+            "surface": [
+              -0.02086261473596096,
+              1.5210986137390137,
+              0.1653888076543808
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA59089",
+          "name": "Tarso del párpado inferior · lado derecho",
+          "samples": 14,
+          "over1mm": 0,
+          "maxDepthMm": 0.41441438952460885,
+          "deepest": {
+            "depthMm": 0.41441438952460885,
+            "point": [
+              -0.038311519,
+              1.5098793388,
+              0.1610950776
+            ],
+            "surface": [
+              -0.03809501230716705,
+              1.5099612474441528,
+              0.1607513427734375
+            ]
+          }
+        },
+        {
+          "target": "ocular:FMA59102",
+          "name": "Glándula lagrimal · lado derecho",
+          "samples": 1,
+          "over1mm": 0,
+          "maxDepthMm": 0.143316516187042,
+          "deepest": {
+            "depthMm": 0.143316516187042,
+            "point": [
+              -0.0445467691,
+              1.522365906,
+              0.1550317741
+            ],
+            "surface": [
+              -0.04462214931845665,
+              1.5223007202148438,
+              0.15513475239276886
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 322,
+      "distanceToSkinTissueMm": 4.443249199539423
+    },
+    {
+      "sourceObject": "Zygomaticus major muscle.l",
+      "samples": 397,
+      "contacts": [],
+      "outsideSkinTissueSamples": 397,
+      "distanceToSkinTissueMm": 16.393324360251427
+    },
+    {
+      "sourceObject": "Zygomaticus major muscle.r",
+      "samples": 397,
+      "contacts": [],
+      "outsideSkinTissueSamples": 397,
+      "distanceToSkinTissueMm": 16.826314851641655
+    },
+    {
+      "sourceObject": "Zygomaticus minor muscle.l",
+      "samples": 218,
+      "contacts": [],
+      "outsideSkinTissueSamples": 218,
+      "distanceToSkinTissueMm": 12.399917468428612
+    },
+    {
+      "sourceObject": "Zygomaticus minor muscle.r",
+      "samples": 218,
+      "contacts": [],
+      "outsideSkinTissueSamples": 218,
+      "distanceToSkinTissueMm": 12.677946127951145
+    },
+    {
+      "sourceObject": "Deep part of masseter.l",
+      "samples": 497,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45740",
+          "name": "Platisma izquierdo",
+          "samples": 1,
+          "over1mm": 0,
+          "maxDepthMm": 0.11085169535363093,
+          "deepest": {
+            "depthMm": 0.11085169535363093,
+            "point": [
+              0.0457844821,
+              1.4632802391,
+              0.1220629501
+            ],
+            "surface": [
+              0.04568439722061157,
+              1.4633252620697021,
+              0.12207847088575363
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 497,
+      "distanceToSkinTissueMm": 16.52606576681137
+    },
+    {
+      "sourceObject": "Deep part of masseter.r",
+      "samples": 497,
+      "contacts": [],
+      "outsideSkinTissueSamples": 497,
+      "distanceToSkinTissueMm": 17.042119055986404
+    },
+    {
+      "sourceObject": "Inferior head of lateral pterygoid muscle.l",
+      "samples": 164,
+      "contacts": [],
+      "outsideSkinTissueSamples": 164,
+      "distanceToSkinTissueMm": 40.0846004486084
+    },
+    {
+      "sourceObject": "Inferior head of lateral pterygoid muscle.r",
+      "samples": 164,
+      "contacts": [],
+      "outsideSkinTissueSamples": 164,
+      "distanceToSkinTissueMm": 40.84068536758423
+    },
+    {
+      "sourceObject": "Masseteric fascia.l",
+      "samples": 226,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45740",
+          "name": "Platisma izquierdo",
+          "samples": 41,
+          "over1mm": 16,
+          "maxDepthMm": 1.760559855028987,
+          "deepest": {
+            "depthMm": 1.760559855028987,
+            "point": [
+              0.0424827312,
+              1.4468367336,
+              0.1205948617
+            ],
+            "surface": [
+              0.04089764505624771,
+              1.44757080078125,
+              0.12081437557935715
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 226,
+      "distanceToSkinTissueMm": 15.275049954652786
+    },
+    {
+      "sourceObject": "Masseteric fascia.r",
+      "samples": 226,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45739",
+          "name": "Platisma derecho",
+          "samples": 44,
+          "over1mm": 19,
+          "maxDepthMm": 1.590693718753755,
+          "deepest": {
+            "depthMm": 1.590693718753755,
+            "point": [
+              -0.0441093214,
+              1.4477584912,
+              0.1267712196
+            ],
+            "surface": [
+              -0.045588862150907516,
+              1.4473271369934082,
+              0.12716524302959442
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 226,
+      "distanceToSkinTissueMm": 15.713322907686234
+    },
+    {
+      "sourceObject": "Medial pterygoid muscle.l",
+      "samples": 249,
+      "contacts": [],
+      "outsideSkinTissueSamples": 249,
+      "distanceToSkinTissueMm": 48.60512912273407
+    },
+    {
+      "sourceObject": "Medial pterygoid muscle.r",
+      "samples": 249,
+      "contacts": [],
+      "outsideSkinTissueSamples": 249,
+      "distanceToSkinTissueMm": 48.877328634262085
+    },
+    {
+      "sourceObject": "Parotideomasseteric region.l",
+      "samples": 118,
+      "contacts": [],
+      "outsideSkinTissueSamples": 76,
+      "distanceToSkinTissueMm": 3.796713426709175
+    },
+    {
+      "sourceObject": "Parotideomasseteric region.r",
+      "samples": 118,
+      "contacts": [],
+      "outsideSkinTissueSamples": 75,
+      "distanceToSkinTissueMm": 4.259634763002396
+    },
+    {
+      "sourceObject": "Superficial part of masseter.l",
+      "samples": 702,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45740",
+          "name": "Platisma izquierdo",
+          "samples": 91,
+          "over1mm": 46,
+          "maxDepthMm": 1.7452366882935166,
+          "deepest": {
+            "depthMm": 1.7452366882935166,
+            "point": [
+              0.0445045223,
+              1.4528483544,
+              0.1141808428
+            ],
+            "surface": [
+              0.04286045953631401,
+              1.4534024000167847,
+              0.11437030136585236
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 702,
+      "distanceToSkinTissueMm": 17.82257854938507
+    },
+    {
+      "sourceObject": "Superficial part of masseter.r",
+      "samples": 702,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45739",
+          "name": "Platisma derecho",
+          "samples": 83,
+          "over1mm": 38,
+          "maxDepthMm": 1.5410995110869408,
+          "deepest": {
+            "depthMm": 1.5410995110869408,
+            "point": [
+              -0.0457813368,
+              1.4522449359,
+              0.1171102981
+            ],
+            "surface": [
+              -0.04432980343699455,
+              1.4527435302734375,
+              0.11724952608346939
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 702,
+      "distanceToSkinTissueMm": 18.262779340147972
+    },
+    {
+      "sourceObject": "Superior head of lateral pterygoid muscle.l",
+      "samples": 115,
+      "contacts": [],
+      "outsideSkinTissueSamples": 115,
+      "distanceToSkinTissueMm": 43.32210123538971
+    },
+    {
+      "sourceObject": "Superior head of lateral pterygoid muscle.r",
+      "samples": 115,
+      "contacts": [],
+      "outsideSkinTissueSamples": 115,
+      "distanceToSkinTissueMm": 43.727487325668335
+    },
+    {
+      "sourceObject": "Temporalis muscle.l",
+      "samples": 1709,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1495,
+      "distanceToSkinTissueMm": 22.853057831525803
+    },
+    {
+      "sourceObject": "Temporalis muscle.r",
+      "samples": 1709,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1687,
+      "distanceToSkinTissueMm": 23.486824706196785
+    },
+    {
+      "sourceObject": "Internal abdominal oblique muscle.l",
+      "samples": 1802,
+      "contacts": [
+        {
+          "target": "dig:FMA14546",
+          "name": "Colon transverso",
+          "samples": 52,
+          "over1mm": 41,
+          "maxDepthMm": 7.674828637391329,
+          "deepest": {
+            "depthMm": 7.674828637391329,
+            "point": [
+              0.0297845368,
+              1.0065572739,
+              0.1849606433
+            ],
+            "surface": [
+              0.030839962884783745,
+              1.0010067224502563,
+              0.19015496969223022
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA7197",
+          "name": "Hígado",
+          "samples": 42,
+          "over1mm": 31,
+          "maxDepthMm": 7.313358597457409,
+          "deepest": {
+            "depthMm": 7.313358597457409,
+            "point": [
+              0.0304576664,
+              1.1085743548,
+              0.1928522629
+            ],
+            "surface": [
+              0.030980806797742844,
+              1.1069145202636719,
+              0.1999555230140686
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14965",
+          "name": "Porción media del íleon",
+          "samples": 19,
+          "over1mm": 14,
+          "maxDepthMm": 6.614170037209988,
+          "deepest": {
+            "depthMm": 6.614170037209988,
+            "point": [
+              0.0186782699,
+              0.8854210159,
+              0.16236094
+            ],
+            "surface": [
+              0.0235447995364666,
+              0.880952000617981,
+              0.162663996219635
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA16982",
+          "name": "Porción media del yeyuno",
+          "samples": 25,
+          "over1mm": 19,
+          "maxDepthMm": 6.486899685114622,
+          "deepest": {
+            "depthMm": 6.486899685114622,
+            "point": [
+              0.0429560195,
+              0.9294812512,
+              0.170153205
+            ],
+            "surface": [
+              0.044119738042354584,
+              0.9291520714759827,
+              0.17652636766433716
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA16983",
+          "name": "Porción distal del yeyuno",
+          "samples": 24,
+          "over1mm": 16,
+          "maxDepthMm": 6.366755813360214,
+          "deepest": {
+            "depthMm": 6.366755813360214,
+            "point": [
+              0.0345023078,
+              0.9281411094,
+              0.1728380487
+            ],
+            "surface": [
+              0.03822438791394234,
+              0.928436279296875,
+              0.17799504101276398
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14964",
+          "name": "Porción proximal del íleon",
+          "samples": 22,
+          "over1mm": 14,
+          "maxDepthMm": 4.37694787979126,
+          "deepest": {
+            "depthMm": 4.37694787979126,
+            "point": [
+              0.0399691049,
+              0.9112642849,
+              0.1685403963
+            ],
+            "surface": [
+              0.0370040237903595,
+              0.9142438173294067,
+              0.1673203855752945
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14547",
+          "name": "Colon descendente",
+          "samples": 13,
+          "over1mm": 7,
+          "maxDepthMm": 4.316410515457392,
+          "deepest": {
+            "depthMm": 4.316410515457392,
+            "point": [
+              0.1113842908,
+              0.9513499214,
+              0.1097882248
+            ],
+            "surface": [
+              0.11560221016407013,
+              0.9519146680831909,
+              0.10906601697206497
+            ]
+          }
+        },
+        {
+          "target": "rep:FMA19618",
+          "name": "Cuerpo cavernoso del pene · representación fuente",
+          "samples": 3,
+          "over1mm": 2,
+          "maxDepthMm": 3.9415578357875347,
+          "deepest": {
+            "depthMm": 3.9415578357875347,
+            "point": [
+              0.006442279,
+              0.7819299688,
+              0.1434234919
+            ],
+            "surface": [
+              0.003482651663944125,
+              0.779345691204071,
+              0.14373652637004852
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA13337",
+          "name": "Oblicuo externo del abdomen izquierdo",
+          "samples": 221,
+          "over1mm": 80,
+          "maxDepthMm": 3.6175413988530636,
+          "deepest": {
+            "depthMm": 3.6175413988530636,
+            "point": [
+              0.1122999641,
+              0.9965139077,
+              0.0816905975
+            ],
+            "surface": [
+              0.11507017910480499,
+              0.9959554076194763,
+              0.07943214476108551
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA7148",
+          "name": "Estómago",
+          "samples": 14,
+          "over1mm": 7,
+          "maxDepthMm": 3.2306823413819075,
+          "deepest": {
+            "depthMm": 3.2306823413819075,
+            "point": [
+              0.058343159,
+              1.0741309129,
+              0.1887457345
+            ],
+            "surface": [
+              0.059385739266872406,
+              1.07368803024292,
+              0.19177132844924927
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA16981",
+          "name": "Porción proximal del yeyuno",
+          "samples": 9,
+          "over1mm": 0,
+          "maxDepthMm": 0.9536093566566706,
+          "deepest": {
+            "depthMm": 0.9536093566566706,
+            "point": [
+              0.0230656309,
+              0.9782038228,
+              0.1805632623
+            ],
+            "surface": [
+              0.022878043353557587,
+              0.978998601436615,
+              0.1810557246208191
+            ]
+          }
+        },
+        {
+          "target": "rep:FMA19236",
+          "name": "Conducto deferente izquierdo",
+          "samples": 1,
+          "over1mm": 0,
+          "maxDepthMm": 0.3310990578029305,
+          "deepest": {
+            "depthMm": 0.3310990578029305,
+            "point": [
+              0.0359161138,
+              0.8097387335,
+              0.1522030367
+            ],
+            "surface": [
+              0.03617816045880318,
+              0.8095430731773376,
+              0.15215140581130981
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1793,
+      "distanceToSkinTissueMm": 30.9376772493124
+    },
+    {
+      "sourceObject": "Internal abdominal oblique muscle.r",
+      "samples": 1802,
+      "contacts": [
+        {
+          "target": "dig:FMA14545",
+          "name": "Colon ascendente",
+          "samples": 29,
+          "over1mm": 22,
+          "maxDepthMm": 12.06975057721138,
+          "deepest": {
+            "depthMm": 12.06975057721138,
+            "point": [
+              -0.1118206583,
+              0.9459588899,
+              0.1170436967
+            ],
+            "surface": [
+              -0.12034132331609726,
+              0.941278338432312,
+              0.109890416264534
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA7197",
+          "name": "Hígado",
+          "samples": 30,
+          "over1mm": 22,
+          "maxDepthMm": 5.67545834928751,
+          "deepest": {
+            "depthMm": 5.67545834928751,
+            "point": [
+              -0.0263211848,
+              1.10869015,
+              0.1937123726
+            ],
+            "surface": [
+              -0.02594677358865738,
+              1.1079092025756836,
+              0.19932135939598083
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14964",
+          "name": "Porción proximal del íleon",
+          "samples": 13,
+          "over1mm": 10,
+          "maxDepthMm": 5.349078215658665,
+          "deepest": {
+            "depthMm": 5.349078215658665,
+            "point": [
+              -0.0086775063,
+              0.9050265271,
+              0.1710531557
+            ],
+            "surface": [
+              -0.011417831294238567,
+              0.9093874096870422,
+              0.16960878670215607
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14546",
+          "name": "Colon transverso",
+          "samples": 20,
+          "over1mm": 17,
+          "maxDepthMm": 5.216436460614204,
+          "deepest": {
+            "depthMm": 5.216436460614204,
+            "point": [
+              -0.0151412057,
+              1.0078537392,
+              0.1878931253
+            ],
+            "surface": [
+              -0.016353264451026917,
+              1.0057432651519775,
+              0.19250701367855072
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14965",
+          "name": "Porción media del íleon",
+          "samples": 22,
+          "over1mm": 18,
+          "maxDepthMm": 4.896056372672319,
+          "deepest": {
+            "depthMm": 4.896056372672319,
+            "point": [
+              -0.0118557353,
+              0.8798567566,
+              0.162715654
+            ],
+            "surface": [
+              -0.007089943625032902,
+              0.8808931112289429,
+              0.16228602826595306
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA16983",
+          "name": "Porción distal del yeyuno",
+          "samples": 12,
+          "over1mm": 7,
+          "maxDepthMm": 3.9642807096242905,
+          "deepest": {
+            "depthMm": 3.9642807096242905,
+            "point": [
+              -0.0131573826,
+              0.931655467,
+              0.176646062
+            ],
+            "surface": [
+              -0.015514404512941837,
+              0.9342228174209595,
+              0.1747569739818573
+            ]
+          }
+        },
+        {
+          "target": "rep:FMA19618",
+          "name": "Cuerpo cavernoso del pene · representación fuente",
+          "samples": 3,
+          "over1mm": 2,
+          "maxDepthMm": 3.756763180717826,
+          "deepest": {
+            "depthMm": 3.756763180717826,
+            "point": [
+              -0.0063295804,
+              0.7823715021,
+              0.1479664044
+            ],
+            "surface": [
+              -0.008428732864558697,
+              0.7854809761047363,
+              0.1481616348028183
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA13336",
+          "name": "Oblicuo externo del abdomen derecho",
+          "samples": 243,
+          "over1mm": 99,
+          "maxDepthMm": 3.2994078937917948,
+          "deepest": {
+            "depthMm": 3.2994078937917948,
+            "point": [
+              -0.0949719907,
+              1.0311613424,
+              0.1779730293
+            ],
+            "surface": [
+              -0.09712759405374527,
+              1.0302773714065552,
+              0.18030929565429688
+            ]
+          }
+        },
+        {
+          "target": "rep:FMA19235",
+          "name": "Conducto deferente derecho",
+          "samples": 1,
+          "over1mm": 1,
+          "maxDepthMm": 1.1428836733102798,
+          "deepest": {
+            "depthMm": 1.1428836733102798,
+            "point": [
+              -0.0291224384,
+              0.7994342791,
+              0.1522028777
+            ],
+            "surface": [
+              -0.029658643528819084,
+              0.798997700214386,
+              0.15311284363269806
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1795,
+      "distanceToSkinTissueMm": 33.20379555225372
+    },
+    {
+      "sourceObject": "Rectus abdominis muscle.l",
+      "samples": 1718,
+      "contacts": [
+        {
+          "target": "dig:FMA14546",
+          "name": "Colon transverso",
+          "samples": 38,
+          "over1mm": 31,
+          "maxDepthMm": 6.586314644664526,
+          "deepest": {
+            "depthMm": 6.586314644664526,
+            "point": [
+              0.0270066003,
+              1.0114830376,
+              0.188600528
+            ],
+            "surface": [
+              0.026156911626458168,
+              1.011281132698059,
+              0.1951286792755127
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA16983",
+          "name": "Porción distal del yeyuno",
+          "samples": 17,
+          "over1mm": 15,
+          "maxDepthMm": 6.479872856289148,
+          "deepest": {
+            "depthMm": 6.479872856289148,
+            "point": [
+              0.0316199678,
+              0.9320181383,
+              0.1739836862
+            ],
+            "surface": [
+              0.032738782465457916,
+              0.9327729940414429,
+              0.18032145500183105
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14965",
+          "name": "Porción media del íleon",
+          "samples": 13,
+          "over1mm": 9,
+          "maxDepthMm": 5.643383599817753,
+          "deepest": {
+            "depthMm": 5.643383599817753,
+            "point": [
+              0.0186830486,
+              0.8889667561,
+              0.1673976175
+            ],
+            "surface": [
+              0.020020591095089912,
+              0.8934898972511292,
+              0.17049597203731537
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA16982",
+          "name": "Porción media del yeyuno",
+          "samples": 14,
+          "over1mm": 10,
+          "maxDepthMm": 5.064430646598339,
+          "deepest": {
+            "depthMm": 5.064430646598339,
+            "point": [
+              0.0389493127,
+              0.9284728986,
+              0.1727690339
+            ],
+            "surface": [
+              0.03998278081417084,
+              0.9286370873451233,
+              0.1777241826057434
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA7197",
+          "name": "Hígado",
+          "samples": 49,
+          "over1mm": 30,
+          "maxDepthMm": 4.860854707658291,
+          "deepest": {
+            "depthMm": 4.860854707658291,
+            "point": [
+              0.0266245394,
+              1.1061457403,
+              0.1950648943
+            ],
+            "surface": [
+              0.02682417258620262,
+              1.1051063537597656,
+              0.19980911910533905
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14964",
+          "name": "Porción proximal del íleon",
+          "samples": 15,
+          "over1mm": 7,
+          "maxDepthMm": 4.801333881914616,
+          "deepest": {
+            "depthMm": 4.801333881914616,
+            "point": [
+              0.0216861794,
+              0.9133537815,
+              0.1723180411
+            ],
+            "surface": [
+              0.022740235552191734,
+              0.9089076519012451,
+              0.17084375023841858
+            ]
+          }
+        },
+        {
+          "target": "rep:FMA19618",
+          "name": "Cuerpo cavernoso del pene · representación fuente",
+          "samples": 4,
+          "over1mm": 2,
+          "maxDepthMm": 3.4055307041853666,
+          "deepest": {
+            "depthMm": 3.4055307041853666,
+            "point": [
+              0.0062468389,
+              0.7823274312,
+              0.1374076737
+            ],
+            "surface": [
+              0.008276887238025665,
+              0.7850542068481445,
+              0.1372048407793045
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14966",
+          "name": "Porción distal del íleon",
+          "samples": 17,
+          "over1mm": 11,
+          "maxDepthMm": 3.079882124438882,
+          "deepest": {
+            "depthMm": 3.079882124438882,
+            "point": [
+              0.0266861111,
+              0.8499287825,
+              0.1566673724
+            ],
+            "surface": [
+              0.027152687311172485,
+              0.8488461375236511,
+              0.1595126837491989
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA13337",
+          "name": "Oblicuo externo del abdomen izquierdo",
+          "samples": 37,
+          "over1mm": 6,
+          "maxDepthMm": 1.5645696548745036,
+          "deepest": {
+            "depthMm": 1.5645696548745036,
+            "point": [
+              0.0803279794,
+              1.069144066,
+              0.2000580073
+            ],
+            "surface": [
+              0.08100305497646332,
+              1.0686827898025513,
+              0.20139196515083313
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA16981",
+          "name": "Porción proximal del yeyuno",
+          "samples": 10,
+          "over1mm": 1,
+          "maxDepthMm": 1.042618416249752,
+          "deepest": {
+            "depthMm": 1.042618416249752,
+            "point": [
+              0.0277799432,
+              0.9886351161,
+              0.1814147374
+            ],
+            "surface": [
+              0.02779826521873474,
+              0.9889434576034546,
+              0.18241055309772491
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1718,
+      "distanceToSkinTissueMm": 33.19866582751274
+    },
+    {
+      "sourceObject": "Rectus abdominis muscle.r",
+      "samples": 1718,
+      "contacts": [
+        {
+          "target": "dig:FMA14964",
+          "name": "Porción proximal del íleon",
+          "samples": 9,
+          "over1mm": 8,
+          "maxDepthMm": 4.1402168571949005,
+          "deepest": {
+            "depthMm": 4.1402168571949005,
+            "point": [
+              -0.0136769833,
+              0.9049174867,
+              0.1715662239
+            ],
+            "surface": [
+              -0.013739937916398048,
+              0.9089036583900452,
+              0.1704491674900055
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA16983",
+          "name": "Porción distal del yeyuno",
+          "samples": 12,
+          "over1mm": 8,
+          "maxDepthMm": 4.0409257635474205,
+          "deepest": {
+            "depthMm": 4.0409257635474205,
+            "point": [
+              -0.0112646675,
+              0.934090417,
+              0.1766650705
+            ],
+            "surface": [
+              -0.014159882441163063,
+              0.9361071586608887,
+              0.17469538748264313
+            ]
+          }
+        },
+        {
+          "target": "rep:FMA19618",
+          "name": "Cuerpo cavernoso del pene · representación fuente",
+          "samples": 4,
+          "over1mm": 4,
+          "maxDepthMm": 3.808429231867194,
+          "deepest": {
+            "depthMm": 3.808429231867194,
+            "point": [
+              -0.006097739,
+              0.7814917984,
+              0.1393955213
+            ],
+            "surface": [
+              -0.004384451080113649,
+              0.7781804800033569,
+              0.1401725858449936
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA7197",
+          "name": "Hígado",
+          "samples": 25,
+          "over1mm": 19,
+          "maxDepthMm": 3.424517810344696,
+          "deepest": {
+            "depthMm": 3.424517810344696,
+            "point": [
+              -0.025524886,
+              1.1097325483,
+              0.1960831244
+            ],
+            "surface": [
+              -0.025246525183320045,
+              1.1092054843902588,
+              0.1994553804397583
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14546",
+          "name": "Colon transverso",
+          "samples": 11,
+          "over1mm": 7,
+          "maxDepthMm": 3.148099174723029,
+          "deepest": {
+            "depthMm": 3.148099174723029,
+            "point": [
+              -0.0172735601,
+              1.0114546452,
+              0.1903686141
+            ],
+            "surface": [
+              -0.01819116249680519,
+              1.0112682580947876,
+              0.19337423145771027
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA13336",
+          "name": "Oblicuo externo del abdomen derecho",
+          "samples": 58,
+          "over1mm": 5,
+          "maxDepthMm": 1.5441905707120895,
+          "deepest": {
+            "depthMm": 1.5441905707120895,
+            "point": [
+              -0.0527853495,
+              1.023987477,
+              0.1986035185
+            ],
+            "surface": [
+              -0.05216284468770027,
+              1.0243922472000122,
+              0.19724956154823303
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14965",
+          "name": "Porción media del íleon",
+          "samples": 4,
+          "over1mm": 0,
+          "maxDepthMm": 0.9728581644594669,
+          "deepest": {
+            "depthMm": 0.9728581644594669,
+            "point": [
+              -0.0202684333,
+              0.8982561075,
+              0.1707903804
+            ],
+            "surface": [
+              -0.020320327952504158,
+              0.8988978266716003,
+              0.17151974141597748
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1718,
+      "distanceToSkinTissueMm": 33.09227153658867
+    },
+    {
+      "sourceObject": "Transversus abdominis muscle.l",
+      "samples": 1908,
+      "contacts": [
+        {
+          "target": "dig:FMA14547",
+          "name": "Colon descendente",
+          "samples": 71,
+          "over1mm": 60,
+          "maxDepthMm": 12.931768782436848,
+          "deepest": {
+            "depthMm": 12.931768782436848,
+            "point": [
+              0.1006257867,
+              0.9674247361,
+              0.1132849626
+            ],
+            "surface": [
+              0.11350277811288834,
+              0.9682241082191467,
+              0.11240480840206146
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14546",
+          "name": "Colon transverso",
+          "samples": 28,
+          "over1mm": 25,
+          "maxDepthMm": 12.154134921729565,
+          "deepest": {
+            "depthMm": 12.154134921729565,
+            "point": [
+              0.0265556203,
+              1.0107113063,
+              0.1826441997
+            ],
+            "surface": [
+              0.025476926937699318,
+              1.0060665607452393,
+              0.193823903799057
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA7197",
+          "name": "Hígado",
+          "samples": 68,
+          "over1mm": 61,
+          "maxDepthMm": 10.74899174273014,
+          "deepest": {
+            "depthMm": 10.74899174273014,
+            "point": [
+              0.0229854561,
+              1.1157289496,
+              0.1909941862
+            ],
+            "surface": [
+              0.02307698503136635,
+              1.1142867803573608,
+              0.2016455978155136
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA7148",
+          "name": "Estómago",
+          "samples": 83,
+          "over1mm": 66,
+          "maxDepthMm": 9.402959607541561,
+          "deepest": {
+            "depthMm": 9.402959607541561,
+            "point": [
+              0.0571064898,
+              1.0736803672,
+              0.182512181
+            ],
+            "surface": [
+              0.06058385968208313,
+              1.0721256732940674,
+              0.1911090612411499
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA16982",
+          "name": "Porción media del yeyuno",
+          "samples": 28,
+          "over1mm": 14,
+          "maxDepthMm": 7.810467388480902,
+          "deepest": {
+            "depthMm": 7.810467388480902,
+            "point": [
+              0.0448071905,
+              0.9264048724,
+              0.1637690344
+            ],
+            "surface": [
+              0.04160226881504059,
+              0.919851541519165,
+              0.1609787940979004
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA16983",
+          "name": "Porción distal del yeyuno",
+          "samples": 16,
+          "over1mm": 8,
+          "maxDepthMm": 7.077602203935385,
+          "deepest": {
+            "depthMm": 7.077602203935385,
+            "point": [
+              0.0330399491,
+              0.9351309298,
+              0.1663460991
+            ],
+            "surface": [
+              0.03425496071577072,
+              0.9370779395103455,
+              0.15965092182159424
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14965",
+          "name": "Porción media del íleon",
+          "samples": 17,
+          "over1mm": 16,
+          "maxDepthMm": 6.5431441180408,
+          "deepest": {
+            "depthMm": 6.5431441180408,
+            "point": [
+              0.0184248174,
+              0.8856807259,
+              0.159676983
+            ],
+            "surface": [
+              0.020651305094361305,
+              0.890278160572052,
+              0.1555880755186081
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA16981",
+          "name": "Porción proximal del yeyuno",
+          "samples": 21,
+          "over1mm": 12,
+          "maxDepthMm": 5.788963288068771,
+          "deepest": {
+            "depthMm": 5.788963288068771,
+            "point": [
+              0.0898478243,
+              0.9764352978,
+              0.1481282336
+            ],
+            "surface": [
+              0.09534360468387604,
+              0.9748302698135376,
+              0.14898401498794556
+            ]
+          }
+        },
+        {
+          "target": "rep:FMA19618",
+          "name": "Cuerpo cavernoso del pene · representación fuente",
+          "samples": 2,
+          "over1mm": 2,
+          "maxDepthMm": 3.7955932784825563,
+          "deepest": {
+            "depthMm": 3.7955932784825563,
+            "point": [
+              0.0065058484,
+              0.7820952341,
+              0.1434280118
+            ],
+            "surface": [
+              0.008768404833972454,
+              0.7851343750953674,
+              0.14320194721221924
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14964",
+          "name": "Porción proximal del íleon",
+          "samples": 11,
+          "over1mm": 3,
+          "maxDepthMm": 2.9999450780451298,
+          "deepest": {
+            "depthMm": 2.9999450780451298,
+            "point": [
+              0.0385763684,
+              0.9092245365,
+              0.1620038724
+            ],
+            "surface": [
+              0.0365440808236599,
+              0.9112666249275208,
+              0.1611676663160324
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27390",
+          "name": "Parénquima del segmento basal lateral izquierdo",
+          "samples": 37,
+          "over1mm": 31,
+          "maxDepthMm": 2.7896498795598745,
+          "deepest": {
+            "depthMm": 2.7896498795598745,
+            "point": [
+              0.1059421895,
+              1.1257263724,
+              0.0493529016
+            ],
+            "surface": [
+              0.10825134813785553,
+              1.1259822845458984,
+              0.04780874401330948
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA13337",
+          "name": "Oblicuo externo del abdomen izquierdo",
+          "samples": 38,
+          "over1mm": 10,
+          "maxDepthMm": 2.686203923076391,
+          "deepest": {
+            "depthMm": 2.686203923076391,
+            "point": [
+              0.1115007536,
+              1.0102811195,
+              0.0754887811
+            ],
+            "surface": [
+              0.11297862231731415,
+              1.0095988512039185,
+              0.07335192710161209
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27392",
+          "name": "Parénquima del segmento basal anterior izquierdo",
+          "samples": 12,
+          "over1mm": 4,
+          "maxDepthMm": 1.7471136525273323,
+          "deepest": {
+            "depthMm": 1.7471136525273323,
+            "point": [
+              0.1243011558,
+              1.1466578469,
+              0.0954562261
+            ],
+            "surface": [
+              0.12602899968624115,
+              1.1465729475021362,
+              0.09521175920963287
+            ]
+          }
+        },
+        {
+          "target": "rep:FMA19236",
+          "name": "Conducto deferente izquierdo",
+          "samples": 5,
+          "over1mm": 0,
+          "maxDepthMm": 0.9940771851688623,
+          "deepest": {
+            "depthMm": 0.9940771851688623,
+            "point": [
+              0.0649236852,
+              0.8291956476,
+              0.1473304803
+            ],
+            "surface": [
+              0.06503903120756149,
+              0.8286342024803162,
+              0.1465182602405548
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14966",
+          "name": "Porción distal del íleon",
+          "samples": 1,
+          "over1mm": 0,
+          "maxDepthMm": 0.014665142771264073,
+          "deepest": {
+            "depthMm": 0.014665142771264073,
+            "point": [
+              0.0497867511,
+              0.8375002067,
+              0.1524600259
+            ],
+            "surface": [
+              0.04977845028042793,
+              0.8375111222267151,
+              0.15245480835437775
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1908,
+      "distanceToSkinTissueMm": 49.484774470329285
+    },
+    {
+      "sourceObject": "Transversus abdominis muscle.r",
+      "samples": 1908,
+      "contacts": [
+        {
+          "target": "dig:FMA14545",
+          "name": "Colon ascendente",
+          "samples": 87,
+          "over1mm": 72,
+          "maxDepthMm": 14.862419106066227,
+          "deepest": {
+            "depthMm": 14.862419106066227,
+            "point": [
+              -0.1016814355,
+              0.9552586417,
+              0.115274209
+            ],
+            "surface": [
+              -0.10215402394533157,
+              0.9603725671768188,
+              0.129221111536026
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA7197",
+          "name": "Hígado",
+          "samples": 122,
+          "over1mm": 95,
+          "maxDepthMm": 8.257171139121056,
+          "deepest": {
+            "depthMm": 8.257171139121056,
+            "point": [
+              -0.0245995909,
+              1.0999241022,
+              0.1894736981
+            ],
+            "surface": [
+              -0.024091778323054314,
+              1.0983045101165771,
+              0.1975545436143875
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14546",
+          "name": "Colon transverso",
+          "samples": 30,
+          "over1mm": 23,
+          "maxDepthMm": 6.675996817648411,
+          "deepest": {
+            "depthMm": 6.675996817648411,
+            "point": [
+              -0.0200101014,
+              1.0056832489,
+              0.1827192328
+            ],
+            "surface": [
+              -0.022494666278362274,
+              1.0009629726409912,
+              0.18673349916934967
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14964",
+          "name": "Porción proximal del íleon",
+          "samples": 11,
+          "over1mm": 10,
+          "maxDepthMm": 5.82065898925066,
+          "deepest": {
+            "depthMm": 5.82065898925066,
+            "point": [
+              -0.0268807364,
+              0.9206396205,
+              0.1648146785
+            ],
+            "surface": [
+              -0.021885057911276817,
+              0.9179674386978149,
+              0.16614983975887299
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14965",
+          "name": "Porción media del íleon",
+          "samples": 14,
+          "over1mm": 12,
+          "maxDepthMm": 4.655797965824604,
+          "deepest": {
+            "depthMm": 4.655797965824604,
+            "point": [
+              -0.0203693027,
+              0.8800707908,
+              0.1597295321
+            ],
+            "surface": [
+              -0.020889800041913986,
+              0.884427011013031,
+              0.15817099809646606
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27391",
+          "name": "Parénquima del segmento basal anterior derecho",
+          "samples": 15,
+          "over1mm": 13,
+          "maxDepthMm": 3.9416453801095486,
+          "deepest": {
+            "depthMm": 3.9416453801095486,
+            "point": [
+              -0.1175562106,
+              1.1793549474,
+              0.0661796564
+            ],
+            "surface": [
+              -0.12127631902694702,
+              1.1790471076965332,
+              0.06491371989250183
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27389",
+          "name": "Parénquima del segmento basal lateral derecho",
+          "samples": 53,
+          "over1mm": 45,
+          "maxDepthMm": 3.9041335694491863,
+          "deepest": {
+            "depthMm": 3.9041335694491863,
+            "point": [
+              -0.1105227935,
+              1.1819419516,
+              0.0511602407
+            ],
+            "surface": [
+              -0.11375084519386292,
+              1.1813106536865234,
+              0.049057066440582275
+            ]
+          }
+        },
+        {
+          "target": "rep:FMA19618",
+          "name": "Cuerpo cavernoso del pene · representación fuente",
+          "samples": 8,
+          "over1mm": 6,
+          "maxDepthMm": 3.603826044127345,
+          "deepest": {
+            "depthMm": 3.603826044127345,
+            "point": [
+              -0.0073549066,
+              0.7818852936,
+              0.1433773076
+            ],
+            "surface": [
+              -0.009803359396755695,
+              0.7845296263694763,
+              0.14337798953056335
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA16983",
+          "name": "Porción distal del yeyuno",
+          "samples": 24,
+          "over1mm": 11,
+          "maxDepthMm": 3.0270942952483892,
+          "deepest": {
+            "depthMm": 3.0270942952483892,
+            "point": [
+              -0.0413888668,
+              0.9432858996,
+              0.1691069972
+            ],
+            "surface": [
+              -0.043864656239748,
+              0.9423884153366089,
+              0.17059974372386932
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA13336",
+          "name": "Oblicuo externo del abdomen derecho",
+          "samples": 34,
+          "over1mm": 6,
+          "maxDepthMm": 1.6922603826969862,
+          "deepest": {
+            "depthMm": 1.6922603826969862,
+            "point": [
+              -0.1110058729,
+              1.032695707,
+              0.0688675628
+            ],
+            "surface": [
+              -0.10979114472866058,
+              1.033077597618103,
+              0.069982148706913
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1908,
+      "distanceToSkinTissueMm": 52.74168401956558
+    },
+    {
+      "sourceObject": "Latissimus dorsi muscle.l",
+      "samples": 1800,
+      "contacts": [
+        {
+          "target": "bp3d:FMA13337",
+          "name": "Oblicuo externo del abdomen izquierdo",
+          "samples": 1,
+          "over1mm": 0,
+          "maxDepthMm": 0.23529145983047783,
+          "deepest": {
+            "depthMm": 0.23529145983047783,
+            "point": [
+              0.0893095514,
+              0.9615622508,
+              0.0487689367
+            ],
+            "surface": [
+              0.08940805494785309,
+              0.9615867733955383,
+              0.04855666682124138
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1747,
+      "distanceToSkinTissueMm": 65.60882180929184
+    },
+    {
+      "sourceObject": "Latissimus dorsi muscle.r",
+      "samples": 1800,
+      "contacts": [
+        {
+          "target": "bp3d:FMA13336",
+          "name": "Oblicuo externo del abdomen derecho",
+          "samples": 3,
+          "over1mm": 2,
+          "maxDepthMm": 1.823887461796403,
+          "deepest": {
+            "depthMm": 1.823887461796403,
+            "point": [
+              -0.0894686855,
+              0.9567119811,
+              0.0513095592
+            ],
+            "surface": [
+              -0.08848520368337631,
+              0.9558654427528381,
+              0.05002789944410324
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1777,
+      "distanceToSkinTissueMm": 63.76521289348602
+    },
+    {
+      "sourceObject": "Quadratus lumborum muscle.l",
+      "samples": 1416,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1416,
+      "distanceToSkinTissueMm": 59.41002443432808
+    },
+    {
+      "sourceObject": "Quadratus lumborum muscle.r",
+      "samples": 1416,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1416,
+      "distanceToSkinTissueMm": 60.47319993376732
+    },
+    {
+      "sourceObject": "Pyramidalis muscle.l",
+      "samples": 554,
+      "contacts": [
+        {
+          "target": "rep:FMA19618",
+          "name": "Cuerpo cavernoso del pene · representación fuente",
+          "samples": 28,
+          "over1mm": 18,
+          "maxDepthMm": 4.0450068190693855,
+          "deepest": {
+            "depthMm": 4.0450068190693855,
+            "point": [
+              0.0073198903,
+              0.7807150772,
+              0.1396600268
+            ],
+            "surface": [
+              0.010292408987879753,
+              0.7834556698799133,
+              0.13953670859336853
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA13337",
+          "name": "Oblicuo externo del abdomen izquierdo",
+          "samples": 57,
+          "over1mm": 0,
+          "maxDepthMm": 0.9229537099599838,
+          "deepest": {
+            "depthMm": 0.9229537099599838,
+            "point": [
+              0.0134225633,
+              0.8184090103,
+              0.1603811386
+            ],
+            "surface": [
+              0.013688132166862488,
+              0.8188145756721497,
+              0.15959574282169342
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 554,
+      "distanceToSkinTissueMm": 26.92590467631817
+    },
+    {
+      "sourceObject": "Pyramidalis muscle.r",
+      "samples": 554,
+      "contacts": [
+        {
+          "target": "rep:FMA19618",
+          "name": "Cuerpo cavernoso del pene · representación fuente",
+          "samples": 33,
+          "over1mm": 28,
+          "maxDepthMm": 4.053344950079918,
+          "deepest": {
+            "depthMm": 4.053344950079918,
+            "point": [
+              -0.0072930305,
+              0.7813305904,
+              0.1409842714
+            ],
+            "surface": [
+              -0.010046876966953278,
+              0.7843047976493835,
+              0.14098504185676575
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA13336",
+          "name": "Oblicuo externo del abdomen derecho",
+          "samples": 61,
+          "over1mm": 2,
+          "maxDepthMm": 1.0733621893450618,
+          "deepest": {
+            "depthMm": 1.0733621893450618,
+            "point": [
+              -0.0110938267,
+              0.821344918,
+              0.1615890414
+            ],
+            "surface": [
+              -0.011344198137521744,
+              0.821941077709198,
+              0.16073229908943176
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 554,
+      "distanceToSkinTissueMm": 28.012609109282494
+    },
+    {
+      "sourceObject": "Multifidus colli muscle.l",
+      "samples": 696,
+      "contacts": [],
+      "outsideSkinTissueSamples": 696,
+      "distanceToSkinTissueMm": 51.840100437402725
+    },
+    {
+      "sourceObject": "Multifidus colli muscle.r",
+      "samples": 696,
+      "contacts": [],
+      "outsideSkinTissueSamples": 696,
+      "distanceToSkinTissueMm": 53.542573004961014
+    },
+    {
+      "sourceObject": "Multifidus lumborum muscle.l",
+      "samples": 1413,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1413,
+      "distanceToSkinTissueMm": 60.65951660275459
+    },
+    {
+      "sourceObject": "Multifidus lumborum muscle.r",
+      "samples": 1413,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1413,
+      "distanceToSkinTissueMm": 61.945296823978424
+    },
+    {
+      "sourceObject": "Multifidus thoracis muscle.l",
+      "samples": 1976,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1976,
+      "distanceToSkinTissueMm": 54.12084236741066
+    },
+    {
+      "sourceObject": "Multifidus thoracis muscle.r",
+      "samples": 1976,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1976,
+      "distanceToSkinTissueMm": 54.43622171878815
+    },
+    {
+      "sourceObject": "Anterior horn of spinal cord",
+      "samples": 1496,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1496,
+      "distanceToSkinTissueMm": 66.29008799791336
+    },
+    {
+      "sourceObject": "Posterior horn of spinal cord",
+      "samples": 1632,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1632,
+      "distanceToSkinTissueMm": 65.9782737493515
+    },
+    {
+      "sourceObject": "White matter of spinal cord",
+      "samples": 1964,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1964,
+      "distanceToSkinTissueMm": 66.68590009212494
+    },
+    {
+      "sourceObject": "Anterior root of spinal nerve.l",
+      "samples": 1782,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1782,
+      "distanceToSkinTissueMm": 67.21585243940353
+    },
+    {
+      "sourceObject": "Anterior root of spinal nerve.r",
+      "samples": 1782,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1782,
+      "distanceToSkinTissueMm": 67.40215420722961
+    },
+    {
+      "sourceObject": "Posterior root of spinal nerve.l",
+      "samples": 1638,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1638,
+      "distanceToSkinTissueMm": 67.22106784582138
+    },
+    {
+      "sourceObject": "Posterior root of spinal nerve.r",
+      "samples": 1638,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1638,
+      "distanceToSkinTissueMm": 67.405104637146
+    },
+    {
+      "sourceObject": "Spinal ganglion.l",
+      "samples": 882,
+      "contacts": [],
+      "outsideSkinTissueSamples": 882,
+      "distanceToSkinTissueMm": 68.44305247068405
+    },
+    {
+      "sourceObject": "Spinal ganglion.r",
+      "samples": 882,
+      "contacts": [],
+      "outsideSkinTissueSamples": 882,
+      "distanceToSkinTissueMm": 68.62879544496536
+    },
+    {
+      "sourceObject": "Cauda equina",
+      "samples": 1782,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1782,
+      "distanceToSkinTissueMm": 75.88010281324387
+    },
+    {
+      "sourceObject": "Roots of brachial plexus.l",
+      "samples": 1194,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1194,
+      "distanceToSkinTissueMm": 62.22828850150108
+    },
+    {
+      "sourceObject": "Roots of brachial plexus.r",
+      "samples": 1194,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1194,
+      "distanceToSkinTissueMm": 60.83584949374199
+    },
+    {
+      "sourceObject": "Anterior division of inferior trunk of brachial plexus.l",
+      "samples": 300,
+      "contacts": [],
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 26.58531442284584
+    },
+    {
+      "sourceObject": "Anterior division of inferior trunk of brachial plexus.r",
+      "samples": 300,
+      "contacts": [],
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 26.522241532802582
+    },
+    {
+      "sourceObject": "Anterior division of middle trunk of brachial plexus.l",
+      "samples": 156,
+      "contacts": [],
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 26.67059935629368
+    },
+    {
+      "sourceObject": "Anterior division of middle trunk of brachial plexus.r",
+      "samples": 156,
+      "contacts": [],
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 26.39639750123024
+    },
+    {
+      "sourceObject": "Anterior division of superior trunk of brachial plexus.l",
+      "samples": 156,
+      "contacts": [],
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 31.160729005932808
+    },
+    {
+      "sourceObject": "Anterior division of superior trunk of brachial plexus.r",
+      "samples": 156,
+      "contacts": [],
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 31.04625828564167
+    },
+    {
+      "sourceObject": "Posterior division of inferior trunk of brachial plexus.l",
+      "samples": 156,
+      "contacts": [],
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 24.965085089206696
+    },
+    {
+      "sourceObject": "Posterior division of inferior trunk of brachial plexus.r",
+      "samples": 156,
+      "contacts": [],
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 25.2227783203125
+    },
+    {
+      "sourceObject": "Posterior division of middle trunk of brachial plexus.l",
+      "samples": 156,
+      "contacts": [],
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 36.086760461330414
+    },
+    {
+      "sourceObject": "Posterior division of middle trunk of brachial plexus.r",
+      "samples": 156,
+      "contacts": [],
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 36.05649620294571
+    },
+    {
+      "sourceObject": "Posterior division of superior trunk of brachial plexus.l",
+      "samples": 156,
+      "contacts": [],
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 36.08028218150139
+    },
+    {
+      "sourceObject": "Posterior division of superior trunk of brachial plexus.r",
+      "samples": 156,
+      "contacts": [],
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 36.047160625457764
+    },
+    {
+      "sourceObject": "Radial nerve.l",
+      "samples": 1164,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1164,
+      "distanceToSkinTissueMm": 65.4277428984642
+    },
+    {
+      "sourceObject": "Radial nerve.r",
+      "samples": 1164,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1164,
+      "distanceToSkinTissueMm": 64.93818014860153
+    },
+    {
+      "sourceObject": "Sciatic nerve.l",
+      "samples": 1242,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1242,
+      "distanceToSkinTissueMm": 100.06040334701538
+    },
+    {
+      "sourceObject": "Sciatic nerve.r",
+      "samples": 1242,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1242,
+      "distanceToSkinTissueMm": 100.7845476269722
+    },
+    {
+      "sourceObject": "Obturator nerve.l",
+      "samples": 1764,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1764,
+      "distanceToSkinTissueMm": 95.56121379137039
+    },
+    {
+      "sourceObject": "Obturator nerve.r",
+      "samples": 1764,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1764,
+      "distanceToSkinTissueMm": 96.07723355293274
+    },
+    {
+      "sourceObject": "Femoral branch of genitofemoral nerve.l",
+      "samples": 1320,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1320,
+      "distanceToSkinTissueMm": 86.38135343790054
+    },
+    {
+      "sourceObject": "Femoral branch of genitofemoral nerve.r",
+      "samples": 1320,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1320,
+      "distanceToSkinTissueMm": 85.63370257616043
+    },
+    {
+      "sourceObject": "Genital branch of genitofemoral nerve.l",
+      "samples": 876,
+      "contacts": [],
+      "outsideSkinTissueSamples": 825,
+      "distanceToSkinTissueMm": 86.38133108615875
+    },
+    {
+      "sourceObject": "Genital branch of genitofemoral nerve.r",
+      "samples": 876,
+      "contacts": [],
+      "outsideSkinTissueSamples": 867,
+      "distanceToSkinTissueMm": 85.63368767499924
+    },
+    {
+      "sourceObject": "Genitofemoral nerve.l",
+      "samples": 456,
+      "contacts": [],
+      "outsideSkinTissueSamples": 456,
+      "distanceToSkinTissueMm": 89.82657641172409
+    },
+    {
+      "sourceObject": "Genitofemoral nerve.r",
+      "samples": 456,
+      "contacts": [],
+      "outsideSkinTissueSamples": 456,
+      "distanceToSkinTissueMm": 90.49896150827408
+    },
+    {
+      "sourceObject": "Pudendal nerve.l",
+      "samples": 1908,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1908,
+      "distanceToSkinTissueMm": 55.993448942899704
+    },
+    {
+      "sourceObject": "Pudendal nerve.r",
+      "samples": 1908,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1908,
+      "distanceToSkinTissueMm": 57.10357427597046
+    },
+    {
+      "sourceObject": "Superior gluteal nerve.l",
+      "samples": 1764,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1764,
+      "distanceToSkinTissueMm": 93.29026937484741
+    },
+    {
+      "sourceObject": "Superior gluteal nerve.r",
+      "samples": 1764,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1764,
+      "distanceToSkinTissueMm": 94.38662230968475
+    },
+    {
+      "sourceObject": "Long thoracic nerve.l",
+      "samples": 2040,
+      "contacts": [],
+      "outsideSkinTissueSamples": 2040,
+      "distanceToSkinTissueMm": 62.243714928627014
+    },
+    {
+      "sourceObject": "Long thoracic nerve.r",
+      "samples": 2040,
+      "contacts": [],
+      "outsideSkinTissueSamples": 2040,
+      "distanceToSkinTissueMm": 61.029449105262756
+    },
+    {
+      "sourceObject": "Suprascapular nerve.l",
+      "samples": 1254,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1254,
+      "distanceToSkinTissueMm": 63.34588676691055
+    },
+    {
+      "sourceObject": "Suprascapular nerve.r",
+      "samples": 1254,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1254,
+      "distanceToSkinTissueMm": 62.84070760011673
+    },
+    {
+      "sourceObject": "Common plantar digital branches of lateral plantar nerve.l",
+      "samples": 756,
+      "contacts": [],
+      "outsideSkinTissueSamples": 751,
+      "distanceToSkinTissueMm": 27.69598178565502
+    },
+    {
+      "sourceObject": "Common plantar digital branches of lateral plantar nerve.r",
+      "samples": 756,
+      "contacts": [],
+      "outsideSkinTissueSamples": 744,
+      "distanceToSkinTissueMm": 27.453256770968437
+    },
+    {
+      "sourceObject": "Common plantar digital branches of medial plantar nerve.l",
+      "samples": 900,
+      "contacts": [],
+      "outsideSkinTissueSamples": 823,
+      "distanceToSkinTissueMm": 14.726752415299416
+    },
+    {
+      "sourceObject": "Infrapatellar branch of saphenous nerve.l",
+      "samples": 300,
+      "contacts": [],
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 12.4981002882123
+    },
+    {
+      "sourceObject": "Infrapatellar branch of saphenous nerve.r",
+      "samples": 300,
+      "contacts": [],
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 10.514858178794384
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.l",
+      "samples": 588,
+      "contacts": [],
+      "outsideSkinTissueSamples": 588,
+      "distanceToSkinTissueMm": 26.998749002814293
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.r",
+      "samples": 588,
+      "contacts": [],
+      "outsideSkinTissueSamples": 588,
+      "distanceToSkinTissueMm": 26.735490188002586
+    },
+    {
+      "sourceObject": "Medial crural cutaneous branches of saphenous nerve.l",
+      "samples": 300,
+      "contacts": [],
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 29.258916154503822
+    },
+    {
+      "sourceObject": "Medial crural cutaneous branches of saphenous nerve.r",
+      "samples": 300,
+      "contacts": [],
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 26.90935507416725
+    },
+    {
+      "sourceObject": "Medial plantar nerve.l",
+      "samples": 600,
+      "contacts": [],
+      "outsideSkinTissueSamples": 600,
+      "distanceToSkinTissueMm": 20.956262946128845
+    },
+    {
+      "sourceObject": "Medial plantar nerve.r",
+      "samples": 600,
+      "contacts": [],
+      "outsideSkinTissueSamples": 588,
+      "distanceToSkinTissueMm": 20.27599886059761
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of lateral plantar nerve.l",
+      "samples": 1902,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1524,
+      "distanceToSkinTissueMm": 7.513345684856176
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of lateral plantar nerve.r",
+      "samples": 1902,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1513,
+      "distanceToSkinTissueMm": 6.659515667706728
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of medial plantar nerve.l",
+      "samples": 1614,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1547,
+      "distanceToSkinTissueMm": 24.760330095887184
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of medial plantar nerve.r",
+      "samples": 1614,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1574,
+      "distanceToSkinTissueMm": 30.595317482948303
+    },
+    {
+      "sourceObject": "Common plantar digital branches of medial plantar nerve",
+      "samples": 900,
+      "contacts": [],
+      "outsideSkinTissueSamples": 804,
+      "distanceToSkinTissueMm": 18.94175261259079
+    },
+    {
+      "sourceObject": "Saphenous nerve.l",
+      "samples": 1680,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1679,
+      "distanceToSkinTissueMm": 29.255231842398643
+    },
+    {
+      "sourceObject": "Saphenous nerve.r",
+      "samples": 1680,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1641,
+      "distanceToSkinTissueMm": 26.79576724767685
+    },
+    {
+      "sourceObject": "Sural nerve.l",
+      "samples": 1026,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1001,
+      "distanceToSkinTissueMm": 15.3361102566123
+    },
+    {
+      "sourceObject": "Sural nerve.r",
+      "samples": 1026,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1007,
+      "distanceToSkinTissueMm": 17.785731703042984
+    },
+    {
+      "sourceObject": "Abducens nerve (VI).l",
+      "samples": 1236,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1236,
+      "distanceToSkinTissueMm": 60.97255274653435
+    },
+    {
+      "sourceObject": "Abducens nerve (VI).r",
+      "samples": 1236,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1236,
+      "distanceToSkinTissueMm": 61.874646693468094
+    },
+    {
+      "sourceObject": "Accessory nerve (XI).l",
+      "samples": 1926,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1926,
+      "distanceToSkinTissueMm": 56.73269182443619
+    },
+    {
+      "sourceObject": "Accessory nerve (XI).r",
+      "samples": 1926,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1926,
+      "distanceToSkinTissueMm": 57.51766264438629
+    },
+    {
+      "sourceObject": "Facial nerve (VII).l",
+      "samples": 1955,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1923,
+      "distanceToSkinTissueMm": 61.90745532512665
+    },
+    {
+      "sourceObject": "Facial nerve (VII).r",
+      "samples": 1955,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1953,
+      "distanceToSkinTissueMm": 62.627218663692474
+    },
+    {
+      "sourceObject": "Glossopharyngeal nerve (IX).l",
+      "samples": 1677,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1677,
+      "distanceToSkinTissueMm": 58.27254056930542
+    },
+    {
+      "sourceObject": "Glossopharyngeal nerve (IX).r",
+      "samples": 1677,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1677,
+      "distanceToSkinTissueMm": 59.33980643749237
+    },
+    {
+      "sourceObject": "Hypoglossal nerve (XII).l",
+      "samples": 2040,
+      "contacts": [],
+      "outsideSkinTissueSamples": 2040,
+      "distanceToSkinTissueMm": 58.61912667751312
+    },
+    {
+      "sourceObject": "Hypoglossal nerve (XII).r",
+      "samples": 2040,
+      "contacts": [],
+      "outsideSkinTissueSamples": 2040,
+      "distanceToSkinTissueMm": 59.53768640756607
+    },
+    {
+      "sourceObject": "Motor nucleus of facial nerve.l",
+      "samples": 386,
+      "contacts": [],
+      "outsideSkinTissueSamples": 386,
+      "distanceToSkinTissueMm": 57.516150176525116
+    },
+    {
+      "sourceObject": "Motor nucleus of facial nerve.r",
+      "samples": 386,
+      "contacts": [],
+      "outsideSkinTissueSamples": 386,
+      "distanceToSkinTissueMm": 58.457955718040466
+    },
+    {
+      "sourceObject": "Nucleus of abducens nerve.l",
+      "samples": 386,
+      "contacts": [],
+      "outsideSkinTissueSamples": 386,
+      "distanceToSkinTissueMm": 61.48280203342438
+    },
+    {
+      "sourceObject": "Nucleus of abducens nerve.r",
+      "samples": 386,
+      "contacts": [],
+      "outsideSkinTissueSamples": 386,
+      "distanceToSkinTissueMm": 62.4510832130909
+    },
+    {
+      "sourceObject": "Nucleus of accessory nerve.l",
+      "samples": 898,
+      "contacts": [],
+      "outsideSkinTissueSamples": 898,
+      "distanceToSkinTissueMm": 55.745575577020645
+    },
+    {
+      "sourceObject": "Nucleus of accessory nerve.r",
+      "samples": 898,
+      "contacts": [],
+      "outsideSkinTissueSamples": 898,
+      "distanceToSkinTissueMm": 56.750282645225525
+    },
+    {
+      "sourceObject": "Nucleus of hypoglossal nerve.l",
+      "samples": 386,
+      "contacts": [],
+      "outsideSkinTissueSamples": 386,
+      "distanceToSkinTissueMm": 60.11943891644478
+    },
+    {
+      "sourceObject": "Nucleus of hypoglossal nerve.r",
+      "samples": 386,
+      "contacts": [],
+      "outsideSkinTissueSamples": 386,
+      "distanceToSkinTissueMm": 60.940396040678024
+    },
+    {
+      "sourceObject": "Olfactory nerve (I).l",
+      "samples": 1932,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1932,
+      "distanceToSkinTissueMm": 55.88873848319054
+    },
+    {
+      "sourceObject": "Olfactory nerve (I).r",
+      "samples": 1932,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1932,
+      "distanceToSkinTissueMm": 56.18046969175339
+    },
+    {
+      "sourceObject": "Posterior nucleus of vagus nerve.l",
+      "samples": 386,
+      "contacts": [],
+      "outsideSkinTissueSamples": 386,
+      "distanceToSkinTissueMm": 59.18123573064804
+    },
+    {
+      "sourceObject": "Posterior nucleus of vagus nerve.r",
+      "samples": 386,
+      "contacts": [],
+      "outsideSkinTissueSamples": 386,
+      "distanceToSkinTissueMm": 60.204602777957916
+    },
+    {
+      "sourceObject": "Vagus nerve (X).l",
+      "samples": 1821,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1821,
+      "distanceToSkinTissueMm": 85.2600410580635
+    },
+    {
+      "sourceObject": "Vagus nerve (X).r",
+      "samples": 1917,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1917,
+      "distanceToSkinTissueMm": 111.56891286373138
+    },
+    {
+      "sourceObject": "Vestibulocochlear nerve (VIII).l",
+      "samples": 888,
+      "contacts": [],
+      "outsideSkinTissueSamples": 888,
+      "distanceToSkinTissueMm": 54.424598813056946
+    },
+    {
+      "sourceObject": "Vestibulocochlear nerve (VIII).r",
+      "samples": 888,
+      "contacts": [],
+      "outsideSkinTissueSamples": 888,
+      "distanceToSkinTissueMm": 55.362872779369354
+    },
+    {
+      "sourceObject": "Accessory nucleus of oculomotor nerve.l",
+      "samples": 386,
+      "contacts": [],
+      "outsideSkinTissueSamples": 386,
+      "distanceToSkinTissueMm": 69.82563436031342
+    },
+    {
+      "sourceObject": "Accessory nucleus of oculomotor nerve.r",
+      "samples": 386,
+      "contacts": [],
+      "outsideSkinTissueSamples": 386,
+      "distanceToSkinTissueMm": 70.68303227424622
+    },
+    {
+      "sourceObject": "Anterior division of mandibular nerve.l",
+      "samples": 300,
+      "contacts": [],
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 42.444270104169846
+    },
+    {
+      "sourceObject": "Anterior division of mandibular nerve.r",
+      "samples": 300,
+      "contacts": [],
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 43.2644821703434
+    },
+    {
+      "sourceObject": "Maxillary nerve.l",
+      "samples": 1974,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1974,
+      "distanceToSkinTissueMm": 57.22841992974281
+    },
+    {
+      "sourceObject": "Maxillary nerve.r",
+      "samples": 1974,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1974,
+      "distanceToSkinTissueMm": 58.116551488637924
+    },
+    {
+      "sourceObject": "Meningeal branch of maxillary nerve.l",
+      "samples": 1530,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1197,
+      "distanceToSkinTissueMm": 42.33216866850853
+    },
+    {
+      "sourceObject": "Meningeal branch of maxillary nerve.r",
+      "samples": 1530,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1395,
+      "distanceToSkinTissueMm": 43.07681694626808
+    },
+    {
+      "sourceObject": "Motor root of trigeminal nerve.l",
+      "samples": 482,
+      "contacts": [],
+      "outsideSkinTissueSamples": 482,
+      "distanceToSkinTissueMm": 57.820338755846024
+    },
+    {
+      "sourceObject": "Motor root of trigeminal nerve.r",
+      "samples": 482,
+      "contacts": [],
+      "outsideSkinTissueSamples": 482,
+      "distanceToSkinTissueMm": 58.819834142923355
+    },
+    {
+      "sourceObject": "Nucleus of oculomotor nerve.l",
+      "samples": 386,
+      "contacts": [],
+      "outsideSkinTissueSamples": 386,
+      "distanceToSkinTissueMm": 68.20815056562424
+    },
+    {
+      "sourceObject": "Nucleus of oculomotor nerve.r",
+      "samples": 386,
+      "contacts": [],
+      "outsideSkinTissueSamples": 386,
+      "distanceToSkinTissueMm": 69.27259266376495
+    },
+    {
+      "sourceObject": "Oculomotor nerve (III).l",
+      "samples": 1468,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1468,
+      "distanceToSkinTissueMm": 68.75186413526535
+    },
+    {
+      "sourceObject": "Oculomotor nerve (III).r",
+      "samples": 1468,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1468,
+      "distanceToSkinTissueMm": 69.85767185688019
+    },
+    {
+      "sourceObject": "Posterior division of mandibular nerve.l",
+      "samples": 444,
+      "contacts": [],
+      "outsideSkinTissueSamples": 444,
+      "distanceToSkinTissueMm": 42.42400452494621
+    },
+    {
+      "sourceObject": "Posterior division of mandibular nerve.r",
+      "samples": 444,
+      "contacts": [],
+      "outsideSkinTissueSamples": 444,
+      "distanceToSkinTissueMm": 43.24767738580704
+    },
+    {
+      "sourceObject": "Sensory root of trigeminal nerve.l",
+      "samples": 1378,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1378,
+      "distanceToSkinTissueMm": 65.84300100803375
+    },
+    {
+      "sourceObject": "Sensory root of trigeminal nerve.r",
+      "samples": 1378,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1378,
+      "distanceToSkinTissueMm": 66.95853173732758
+    },
+    {
+      "sourceObject": "Trigeminal nerve (V).l",
+      "samples": 1176,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1176,
+      "distanceToSkinTissueMm": 60.014672577381134
+    },
+    {
+      "sourceObject": "Trigeminal nerve (V).r",
+      "samples": 1176,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1176,
+      "distanceToSkinTissueMm": 60.96305698156357
+    },
+    {
+      "sourceObject": "Ganglia of sympathetic trunk.l",
+      "samples": 1816,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1816,
+      "distanceToSkinTissueMm": 72.29800522327423
+    },
+    {
+      "sourceObject": "Ganglia of sympathetic trunk.r",
+      "samples": 1816,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1816,
+      "distanceToSkinTissueMm": 72.17219471931458
+    },
+    {
+      "sourceObject": "Sympathetic trunk.l",
+      "samples": 1812,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1812,
+      "distanceToSkinTissueMm": 76.24854147434235
+    },
+    {
+      "sourceObject": "Sympathetic trunk.r",
+      "samples": 1812,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1812,
+      "distanceToSkinTissueMm": 76.1781707406044
+    },
+    {
+      "sourceObject": "Mucosa of nasal cavity",
+      "samples": 1620,
+      "contacts": [],
+      "outsideSkinTissueSamples": 1593,
+      "distanceToSkinTissueMm": 46.3472418487072
+    },
+    {
+      "sourceObject": "Laryngopharynx",
+      "samples": 1238,
+      "contacts": [
+        {
+          "target": "resp:FMA7394",
+          "name": "Tráquea",
+          "samples": 86,
+          "over1mm": 23,
+          "maxDepthMm": 2.5323431473225355,
+          "deepest": {
+            "depthMm": 2.5323431473225355,
+            "point": [
+              -0.0077005898,
+              1.386379798,
+              0.0971359976
+            ],
+            "surface": [
+              -0.009786424227058887,
+              1.3867980241775513,
+              0.09576225280761719
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA9615",
+          "name": "Cartílago cricoides",
+          "samples": 159,
+          "over1mm": 55,
+          "maxDepthMm": 2.0273204427212477,
+          "deepest": {
+            "depthMm": 2.0273204427212477,
+            "point": [
+              -0.0097895447,
+              1.393339575,
+              0.0993060488
+            ],
+            "surface": [
+              -0.007825617678463459,
+              1.3932353258132935,
+              0.09979812055826187
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA55099",
+          "name": "Cartílago tiroides",
+          "samples": 223,
+          "over1mm": 21,
+          "maxDepthMm": 1.2949854135513306,
+          "deepest": {
+            "depthMm": 1.2949854135513306,
+            "point": [
+              0.0012720758,
+              1.4043934173,
+              0.1165837374
+            ],
+            "surface": [
+              0.0022040510084480047,
+              1.403963327407837,
+              0.11737330257892609
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1238,
+      "distanceToSkinTissueMm": 40.34077748656273
+    },
+    {
+      "sourceObject": "Nasopharynx",
+      "samples": 978,
+      "contacts": [],
+      "outsideSkinTissueSamples": 978,
+      "distanceToSkinTissueMm": 61.94709986448288
+    },
+    {
+      "sourceObject": "Oropharynx",
+      "samples": 1274,
+      "contacts": [
+        {
+          "target": "dig:FMA59803",
+          "name": "Glándula submandibular izquierda",
+          "samples": 7,
+          "over1mm": 0,
+          "maxDepthMm": 0.9253479074686766,
+          "deepest": {
+            "depthMm": 0.9253479074686766,
+            "point": [
+              0.0212814996,
+              1.4549129215,
+              0.1275653872
+            ],
+            "surface": [
+              0.020498016849160194,
+              1.4551184177398682,
+              0.12711796164512634
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA59802",
+          "name": "Glándula submandibular derecha",
+          "samples": 4,
+          "over1mm": 0,
+          "maxDepthMm": 0.9041160810738802,
+          "deepest": {
+            "depthMm": 0.9041160810738802,
+            "point": [
+              -0.0243851496,
+              1.4573363512,
+              0.1304396967
+            ],
+            "surface": [
+              -0.0249947439879179,
+              1.4574813842773438,
+              0.13109144568443298
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA54640",
+          "name": "Lengua · estructura oral",
+          "samples": 11,
+          "over1mm": 0,
+          "maxDepthMm": 0.8246065699495375,
+          "deepest": {
+            "depthMm": 0.8246065699495375,
+            "point": [
+              -0.01660846,
+              1.4442442529,
+              0.1229700761
+            ],
+            "surface": [
+              -0.017367355525493622,
+              1.4439659118652344,
+              0.12280706316232681
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1274,
+      "distanceToSkinTissueMm": 57.03641474246979
+    },
+    {
+      "sourceObject": "Pleura",
+      "samples": 2006,
+      "contacts": [
+        {
+          "target": "resp:FMA27394",
+          "name": "Parénquima del segmento basal posterior izquierdo",
+          "samples": 54,
+          "over1mm": 48,
+          "maxDepthMm": 10.962409898638725,
+          "deepest": {
+            "depthMm": 10.962409898638725,
+            "point": [
+              0.0570378209,
+              1.1569637126,
+              0.0567977717
+            ],
+            "surface": [
+              0.057619571685791016,
+              1.1478464603424072,
+              0.06285680085420609
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27390",
+          "name": "Parénquima del segmento basal lateral izquierdo",
+          "samples": 43,
+          "over1mm": 39,
+          "maxDepthMm": 10.29855478554964,
+          "deepest": {
+            "depthMm": 10.29855478554964,
+            "point": [
+              0.0843156768,
+              1.1554427436,
+              0.05896847
+            ],
+            "surface": [
+              0.0821591317653656,
+              1.147144079208374,
+              0.0646730437874794
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27392",
+          "name": "Parénquima del segmento basal anterior izquierdo",
+          "samples": 59,
+          "over1mm": 54,
+          "maxDepthMm": 7.656039670109749,
+          "deepest": {
+            "depthMm": 7.656039670109749,
+            "point": [
+              0.1029968686,
+              1.1590747628,
+              0.1082352444
+            ],
+            "surface": [
+              0.09813865274190903,
+              1.153164029121399,
+              0.10851028561592102
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27376",
+          "name": "Parénquima del segmento lingular inferior",
+          "samples": 30,
+          "over1mm": 23,
+          "maxDepthMm": 6.9352202117443085,
+          "deepest": {
+            "depthMm": 6.9352202117443085,
+            "point": [
+              0.0779942962,
+              1.1839595495,
+              0.1553647341
+            ],
+            "surface": [
+              0.07642070949077606,
+              1.1783241033554077,
+              0.15164153277873993
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27373",
+          "name": "Parénquima del segmento anterior derecho",
+          "samples": 56,
+          "over1mm": 47,
+          "maxDepthMm": 6.413727067410946,
+          "deepest": {
+            "depthMm": 6.413727067410946,
+            "point": [
+              -0.0537042005,
+              1.2405357804,
+              0.1659927219
+            ],
+            "surface": [
+              -0.05573546513915062,
+              1.2436041831970215,
+              0.1712457686662674
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA68418",
+          "name": "Bronquio principal derecho · porción disponible",
+          "samples": 6,
+          "over1mm": 4,
+          "maxDepthMm": 5.839748773723841,
+          "deepest": {
+            "depthMm": 5.839748773723841,
+            "point": [
+              -0.0244264354,
+              1.261332251,
+              0.0781006341
+            ],
+            "surface": [
+              -0.019289344549179077,
+              1.2585550546646118,
+              0.07810379564762115
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27369",
+          "name": "Parénquima del segmento apical derecho",
+          "samples": 29,
+          "over1mm": 21,
+          "maxDepthMm": 5.484758410602808,
+          "deepest": {
+            "depthMm": 5.484758410602808,
+            "point": [
+              -0.0237734245,
+              1.345198005,
+              0.0793972725
+            ],
+            "surface": [
+              -0.019003303721547127,
+              1.3471946716308594,
+              0.07756917178630829
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27375",
+          "name": "Parénquima del segmento lingular superior",
+          "samples": 40,
+          "over1mm": 30,
+          "maxDepthMm": 5.332858767360449,
+          "deepest": {
+            "depthMm": 5.332858767360449,
+            "point": [
+              0.0631152664,
+              1.2304412984,
+              0.1687533822
+            ],
+            "surface": [
+              0.06562302261590958,
+              1.2325998544692993,
+              0.17293564975261688
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27374",
+          "name": "Parénquima del segmento anterior izquierdo",
+          "samples": 72,
+          "over1mm": 52,
+          "maxDepthMm": 5.300316959619522,
+          "deepest": {
+            "depthMm": 5.300316959619522,
+            "point": [
+              0.0232783181,
+              1.2827112726,
+              0.1512566988
+            ],
+            "surface": [
+              0.023351121693849564,
+              1.278469204902649,
+              0.1480797529220581
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27448",
+          "name": "Parénquima del segmento medial derecho",
+          "samples": 68,
+          "over1mm": 46,
+          "maxDepthMm": 5.043376702815294,
+          "deepest": {
+            "depthMm": 5.043376702815294,
+            "point": [
+              -0.0601705417,
+              1.2232876256,
+              0.1744832432
+            ],
+            "surface": [
+              -0.06212745979428291,
+              1.2251282930374146,
+              0.17875148355960846
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27368",
+          "name": "Parénquima del segmento apicoposterior izquierdo",
+          "samples": 15,
+          "over1mm": 9,
+          "maxDepthMm": 4.911372903734446,
+          "deepest": {
+            "depthMm": 4.911372903734446,
+            "point": [
+              0.0275527445,
+              1.3065049763,
+              0.1208396037
+            ],
+            "surface": [
+              0.023713205009698868,
+              1.3048818111419678,
+              0.11824250966310501
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA7396",
+          "name": "Bronquio principal izquierdo",
+          "samples": 2,
+          "over1mm": 2,
+          "maxDepthMm": 3.114167135208845,
+          "deepest": {
+            "depthMm": 3.114167135208845,
+            "point": [
+              0.0405625134,
+              1.2595483162,
+              0.0726027223
+            ],
+            "surface": [
+              0.04221276193857193,
+              1.2621712684631348,
+              0.0729105994105339
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27391",
+          "name": "Parénquima del segmento basal anterior derecho",
+          "samples": 7,
+          "over1mm": 3,
+          "maxDepthMm": 2.811980899423361,
+          "deepest": {
+            "depthMm": 2.811980899423361,
+            "point": [
+              -0.1215738718,
+              1.1374543021,
+              0.1236902014
+            ],
+            "surface": [
+              -0.11876614391803741,
+              1.1373926401138306,
+              0.12354844063520432
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27389",
+          "name": "Parénquima del segmento basal lateral derecho",
+          "samples": 8,
+          "over1mm": 6,
+          "maxDepthMm": 2.8082765638828278,
+          "deepest": {
+            "depthMm": 2.8082765638828278,
+            "point": [
+              -0.1213934369,
+              1.1419267624,
+              0.1004723071
+            ],
+            "surface": [
+              -0.12312667816877365,
+              1.1437652111053467,
+              0.10169803351163864
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27393",
+          "name": "Parénquima del segmento basal posterior derecho",
+          "samples": 3,
+          "over1mm": 2,
+          "maxDepthMm": 2.4030727799981833,
+          "deepest": {
+            "depthMm": 2.4030727799981833,
+            "point": [
+              -0.0222539685,
+              1.1516218982,
+              0.0718721009
+            ],
+            "surface": [
+              -0.02429795265197754,
+              1.1514480113983154,
+              0.0731237530708313
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA7131",
+          "name": "Esófago",
+          "samples": 5,
+          "over1mm": 4,
+          "maxDepthMm": 2.3620747961103916,
+          "deepest": {
+            "depthMm": 2.3620747961103916,
+            "point": [
+              -0.0033438937,
+              1.1936122887,
+              0.0782314359
+            ],
+            "surface": [
+              -0.004508416634052992,
+              1.192898154258728,
+              0.07630446553230286
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27385",
+          "name": "Parénquima del segmento superior derecho",
+          "samples": 14,
+          "over1mm": 3,
+          "maxDepthMm": 1.3592381728813052,
+          "deepest": {
+            "depthMm": 1.3592381728813052,
+            "point": [
+              -0.0195602271,
+              1.2683302843,
+              0.0592756543
+            ],
+            "surface": [
+              -0.018311208114027977,
+              1.2684831619262695,
+              0.05876172333955765
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA68227",
+          "name": "Árbol bronquial lingular inferior",
+          "samples": 2,
+          "over1mm": 1,
+          "maxDepthMm": 1.305515761487186,
+          "deepest": {
+            "depthMm": 1.305515761487186,
+            "point": [
+              0.0775873873,
+              1.184121557,
+              0.1551285273
+            ],
+            "surface": [
+              0.07885359227657318,
+              1.1841617822647095,
+              0.15544393658638
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA27371",
+          "name": "Parénquima del segmento posterior derecho",
+          "samples": 5,
+          "over1mm": 2,
+          "maxDepthMm": 1.1165898758918047,
+          "deepest": {
+            "depthMm": 1.1165898758918047,
+            "point": [
+              -0.0183898324,
+              1.3165586821,
+              0.0664863837
+            ],
+            "surface": [
+              -0.017335204407572746,
+              1.316580057144165,
+              0.0661202147603035
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA7197",
+          "name": "Hígado",
+          "samples": 2,
+          "over1mm": 0,
+          "maxDepthMm": 0.7469630218110979,
+          "deepest": {
+            "depthMm": 0.7469630218110979,
+            "point": [
+              0.0448104895,
+              1.1651097593,
+              0.1734060387
+            ],
+            "surface": [
+              0.04505899176001549,
+              1.1657313108444214,
+              0.17373749613761902
+            ]
+          }
+        },
+        {
+          "target": "resp:FMA68220",
+          "name": "Árbol bronquial basal lateral derecho",
+          "samples": 1,
+          "over1mm": 0,
+          "maxDepthMm": 0.240339373704046,
+          "deepest": {
+            "depthMm": 0.240339373704046,
+            "point": [
+              -0.0958847497,
+              1.1665610354,
+              0.0683854909
+            ],
+            "surface": [
+              -0.09606793522834778,
+              1.1667143106460571,
+              0.06835896521806717
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 2006,
+      "distanceToSkinTissueMm": 111.92262917757034
+    },
+    {
+      "sourceObject": "(Accessory parotid gland).l",
+      "samples": 108,
+      "contacts": [],
+      "outsideSkinTissueSamples": 108,
+      "distanceToSkinTissueMm": 7.5697931461036205
+    },
+    {
+      "sourceObject": "(Accessory parotid gland).r",
+      "samples": 108,
+      "contacts": [],
+      "outsideSkinTissueSamples": 108,
+      "distanceToSkinTissueMm": 8.160997182130814
+    },
+    {
+      "sourceObject": "Parotid gland.l",
+      "samples": 854,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45740",
+          "name": "Platisma izquierdo",
+          "samples": 3,
+          "over1mm": 0,
+          "maxDepthMm": 0.37036597495898604,
+          "deepest": {
+            "depthMm": 0.37036597495898604,
+            "point": [
+              0.0449781007,
+              1.4592129932,
+              0.1085096331
+            ],
+            "surface": [
+              0.044643107801675797,
+              1.4593552350997925,
+              0.10844089090824127
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 843,
+      "distanceToSkinTissueMm": 22.688956931233406
+    },
+    {
+      "sourceObject": "Parotid gland.r",
+      "samples": 854,
+      "contacts": [],
+      "outsideSkinTissueSamples": 854,
+      "distanceToSkinTissueMm": 23.424752056598663
+    },
+    {
+      "sourceObject": "Sigmoid colon",
+      "samples": 1716,
+      "contacts": [
+        {
+          "target": "dig:FMA14544",
+          "name": "Recto",
+          "samples": 688,
+          "over1mm": 621,
+          "maxDepthMm": 17.727850005030632,
+          "deepest": {
+            "depthMm": 17.727850005030632,
+            "point": [
+              0.0003423786,
+              0.8530551704,
+              0.0461901077
+            ],
+            "surface": [
+              0.001624693046323955,
+              0.8688445687294006,
+              0.03823225200176239
+            ]
+          }
+        },
+        {
+          "target": "uri:FMA15900",
+          "name": "Vejiga urinaria",
+          "samples": 61,
+          "over1mm": 56,
+          "maxDepthMm": 12.6701220870018,
+          "deepest": {
+            "depthMm": 12.6701220870018,
+            "point": [
+              -0.0088412886,
+              0.8164593704,
+              0.0699765734
+            ],
+            "surface": [
+              -0.010902517475187778,
+              0.814827024936676,
+              0.057582270354032516
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14547",
+          "name": "Colon descendente",
+          "samples": 55,
+          "over1mm": 50,
+          "maxDepthMm": 7.661128882318735,
+          "deepest": {
+            "depthMm": 7.661128882318735,
+            "point": [
+              0.0230768128,
+              0.8504831442,
+              0.0594309206
+            ],
+            "surface": [
+              0.021779855713248253,
+              0.8524869084358215,
+              0.05215111002326012
+            ]
+          }
+        },
+        {
+          "target": "rep:FMA19236",
+          "name": "Conducto deferente izquierdo",
+          "samples": 12,
+          "over1mm": 5,
+          "maxDepthMm": 2.6641767472028732,
+          "deepest": {
+            "depthMm": 2.6641767472028732,
+            "point": [
+              0.0105278146,
+              0.813851538,
+              0.0576782344
+            ],
+            "surface": [
+              0.010668107308447361,
+              0.8147562742233276,
+              0.06018015369772911
+            ]
+          }
+        },
+        {
+          "target": "rep:FMA19235",
+          "name": "Conducto deferente derecho",
+          "samples": 5,
+          "over1mm": 1,
+          "maxDepthMm": 1.788985333405435,
+          "deepest": {
+            "depthMm": 1.788985333405435,
+            "point": [
+              -0.0092631639,
+              0.815273096,
+              0.056664958
+            ],
+            "surface": [
+              -0.007589572109282017,
+              0.8158934712409973,
+              0.05654369667172432
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1697,
+      "distanceToSkinTissueMm": 92.87196397781372
+    },
+    {
+      "sourceObject": "Bile duct",
+      "samples": 1020,
+      "contacts": [
+        {
+          "target": "dig:FMA7198",
+          "name": "Páncreas",
+          "samples": 298,
+          "over1mm": 268,
+          "maxDepthMm": 6.789755541831255,
+          "deepest": {
+            "depthMm": 6.789755541831255,
+            "point": [
+              -0.0158635997,
+              1.0549284387,
+              0.1318821207
+            ],
+            "surface": [
+              -0.017039300873875618,
+              1.060044765472412,
+              0.1361881047487259
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA7206",
+          "name": "Duodeno",
+          "samples": 55,
+          "over1mm": 27,
+          "maxDepthMm": 2.669811015948653,
+          "deepest": {
+            "depthMm": 2.669811015948653,
+            "point": [
+              -0.0557990346,
+              1.0200557618,
+              0.1236824955
+            ],
+            "surface": [
+              -0.05692363902926445,
+              1.020263671875,
+              0.12609495222568512
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14539",
+          "name": "Conducto cístico",
+          "samples": 10,
+          "over1mm": 0,
+          "maxDepthMm": 0.707564817275852,
+          "deepest": {
+            "depthMm": 0.707564817275852,
+            "point": [
+              -0.0259432598,
+              1.0877747726,
+              0.1333446257
+            ],
+            "surface": [
+              -0.025381136685609818,
+              1.0881901979446411,
+              0.13323475420475006
+            ]
+          }
+        },
+        {
+          "target": "dig:FMA14668",
+          "name": "Conducto hepático común",
+          "samples": 15,
+          "over1mm": 0,
+          "maxDepthMm": 0.549908319953829,
+          "deepest": {
+            "depthMm": 0.549908319953829,
+            "point": [
+              -0.0216133751,
+              1.089735617,
+              0.1353988512
+            ],
+            "surface": [
+              -0.02158098667860031,
+              1.0901247262954712,
+              0.13501161336898804
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 1020,
+      "distanceToSkinTissueMm": 83.50402861833572
+    },
+    {
+      "sourceObject": "Parotid duct.l",
+      "samples": 588,
+      "contacts": [],
+      "outsideSkinTissueSamples": 588,
+      "distanceToSkinTissueMm": 20.914936438202858
+    },
+    {
+      "sourceObject": "Parotid duct.r",
+      "samples": 588,
+      "contacts": [],
+      "outsideSkinTissueSamples": 588,
+      "distanceToSkinTissueMm": 21.354611963033676
+    },
+    {
+      "sourceObject": "Submandibular duct.l",
+      "samples": 588,
+      "contacts": [
+        {
+          "target": "dig:FMA59803",
+          "name": "Glándula submandibular izquierda",
+          "samples": 122,
+          "over1mm": 98,
+          "maxDepthMm": 3.4577851183712482,
+          "deepest": {
+            "depthMm": 3.4577851183712482,
+            "point": [
+              0.0228680819,
+              1.4472564563,
+              0.1292929857
+            ],
+            "surface": [
+              0.01971105858683586,
+              1.4473649263381958,
+              0.12788666784763336
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 588,
+      "distanceToSkinTissueMm": 25.08932538330555
+    },
+    {
+      "sourceObject": "Submandibular duct.r",
+      "samples": 588,
+      "contacts": [
+        {
+          "target": "dig:FMA59802",
+          "name": "Glándula submandibular derecha",
+          "samples": 112,
+          "over1mm": 85,
+          "maxDepthMm": 3.229082329198718,
+          "deepest": {
+            "depthMm": 3.229082329198718,
+            "point": [
+              -0.0238179456,
+              1.4472634238,
+              0.1293438814
+            ],
+            "surface": [
+              -0.026181070134043694,
+              1.447946310043335,
+              0.13143585622310638
+            ]
+          }
+        }
+      ],
+      "outsideSkinTissueSamples": 588,
+      "distanceToSkinTissueMm": 25.16670897603035
+    }
+  ],
+  "skinInterpretation": "The original skin is a volumetric shell with an inner and outer surface: two intersections from known internal body points. Outside the SKIN TISSUE does not mean outside the BODY. These raw parity statistics are not body enclosure or an acceptance test."
+}

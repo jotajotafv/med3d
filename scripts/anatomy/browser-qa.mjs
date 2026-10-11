@@ -48,7 +48,7 @@ export async function createHarness(options={}) {
   const origin = `http://127.0.0.1:${server.address().port}`;
   const browser = await playwright.chromium.launch({headless:true, ...(process.env.QA_BROWSER_EXECUTABLE?{executablePath:process.env.QA_BROWSER_EXECUTABLE}:{}), args:['--no-sandbox','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
   const context = await browser.newContext({viewport:options.viewport||{width:1440,height:900}, deviceScaleFactor:1,reducedMotion:options.reducedMotion||'no-preference'});
-  context.setDefaultTimeout(20000);context.setDefaultNavigationTimeout(60000);
+  context.setDefaultTimeout(options.actionTimeoutMs||20000);context.setDefaultNavigationTimeout(options.navigationTimeoutMs||60000);
   await context.addInitScript(() => {
     window.__atlasQa = {draws:0, captureFrames:false, frames:[], firstMeshObservedMs:null, fullMeshObservedMs:null};
     const request = window.requestAnimationFrame.bind(window); let frameTime=0;
@@ -72,7 +72,7 @@ export async function createHarness(options={}) {
   page.on('pageerror', error => errors.push(error.message));
   page.on('response', response => { if(response.status() >= 400) badRequests.push({url:response.url(),status:response.status()}); });
   const metrics = () => page.locator('.atlas-viewport').evaluate(element => Object.fromEntries(Object.entries(element.dataset).map(([key,value])=>[key,Number(value)])));
-  const waitMeshes = count => page.waitForFunction(expected=>Number(document.querySelector('.atlas-viewport')?.dataset.meshCount)===expected,count,{timeout:120000});
+  const waitMeshes = count => page.waitForFunction(expected=>Number(document.querySelector('.atlas-viewport')?.dataset.meshCount)===expected,count,{timeout:options.meshTimeoutMs||120000});
   const waitDraws = count => page.waitForFunction(expected=>Number(document.querySelector('.atlas-viewport')?.dataset.drawCalls)===expected,count,{timeout:30000});
   const choose = async (name,id) => {
     const input=page.getByRole('textbox',{name:'Buscar estructura anatómica'});

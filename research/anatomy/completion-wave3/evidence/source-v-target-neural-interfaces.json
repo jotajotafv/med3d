@@ -1,0 +1,405 @@
+{
+  "method": "Same candidate sample in original source bones versus corresponding target bones after one craniofacial registration. Signed nearest depth, three parity directions. Positive means inside bone. Source contact is not itself proof of anatomical correctness; new/deeper occupancy requires review.",
+  "results": [
+    {
+      "sourceObject": "Radial nerve.l",
+      "samples": 1164,
+      "contacts": [
+        {
+          "target": "bp3d:FMA23131",
+          "source": "Humerus.l",
+          "sampleCount": 34,
+          "newContactSamples": 32,
+          "maxTargetDepthMm": 1.0877130553126335,
+          "maxSourceDepthAtTargetContactMm": 0.04532098571332663,
+          "maxDepthIncreaseMm": 2.786090128333956
+        }
+      ]
+    },
+    {
+      "sourceObject": "Radial nerve.r",
+      "samples": 1164,
+      "contacts": [
+        {
+          "target": "bp3d:FMA23130",
+          "source": "Humerus.r",
+          "sampleCount": 35,
+          "newContactSamples": 34,
+          "maxTargetDepthMm": 1.182582345791161,
+          "maxSourceDepthAtTargetContactMm": 0.04533168090385283,
+          "maxDepthIncreaseMm": 2.850376526936319
+        }
+      ]
+    },
+    {
+      "sourceObject": "Femoral branch of genitofemoral nerve.l",
+      "samples": 1320,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Femoral branch of genitofemoral nerve.r",
+      "samples": 1320,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Genital branch of genitofemoral nerve.l",
+      "samples": 876,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Genital branch of genitofemoral nerve.r",
+      "samples": 876,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Genitofemoral nerve.l",
+      "samples": 456,
+      "contacts": [
+        {
+          "target": "bp3d:FMA13074",
+          "source": "Vertebra L3",
+          "sampleCount": 12,
+          "newContactSamples": 12,
+          "maxTargetDepthMm": 1.0402941843494773,
+          "maxSourceDepthAtTargetContactMm": -7.125741694880997,
+          "maxDepthIncreaseMm": 8.892200995751136
+        }
+      ]
+    },
+    {
+      "sourceObject": "Genitofemoral nerve.r",
+      "samples": 456,
+      "contacts": [
+        {
+          "target": "bp3d:FMA13074",
+          "source": "Vertebra L3",
+          "sampleCount": 17,
+          "newContactSamples": 17,
+          "maxTargetDepthMm": 0.716871814802289,
+          "maxSourceDepthAtTargetContactMm": -7.177967476046915,
+          "maxDepthIncreaseMm": 10.022291543116808
+        }
+      ]
+    },
+    {
+      "sourceObject": "Pudendal nerve.l",
+      "samples": 1908,
+      "contacts": [
+        {
+          "target": "bp3d:FMA16202",
+          "source": "Sacrum",
+          "sampleCount": 113,
+          "newContactSamples": 106,
+          "maxTargetDepthMm": 1.7218083376064897,
+          "maxSourceDepthAtTargetContactMm": 0.3999690176648613,
+          "maxDepthIncreaseMm": 7.471828977319023
+        }
+      ]
+    },
+    {
+      "sourceObject": "Pudendal nerve.r",
+      "samples": 1908,
+      "contacts": [
+        {
+          "target": "bp3d:FMA16202",
+          "source": "Sacrum",
+          "sampleCount": 154,
+          "newContactSamples": 131,
+          "maxTargetDepthMm": 2.3461799137294292,
+          "maxSourceDepthAtTargetContactMm": 0.5096533884214651,
+          "maxDepthIncreaseMm": 6.5959615636144555
+        }
+      ]
+    },
+    {
+      "sourceObject": "Superior gluteal nerve.l",
+      "samples": 1764,
+      "contacts": [
+        {
+          "target": "bp3d:FMA16202",
+          "source": "Sacrum",
+          "sampleCount": 223,
+          "newContactSamples": 222,
+          "maxTargetDepthMm": 6.546880584210157,
+          "maxSourceDepthAtTargetContactMm": 0.05614407319462318,
+          "maxDepthIncreaseMm": 10.66355167807346
+        },
+        {
+          "target": "bp3d:FMA16587",
+          "source": "Hip bone.l",
+          "sampleCount": 194,
+          "newContactSamples": 189,
+          "maxTargetDepthMm": 5.497844889760017,
+          "maxSourceDepthAtTargetContactMm": 0.5039511791634744,
+          "maxDepthIncreaseMm": 7.523223531796408
+        }
+      ]
+    },
+    {
+      "sourceObject": "Superior gluteal nerve.r",
+      "samples": 1764,
+      "contacts": [
+        {
+          "target": "bp3d:FMA16202",
+          "source": "Sacrum",
+          "sampleCount": 213,
+          "newContactSamples": 213,
+          "maxTargetDepthMm": 6.663743872195482,
+          "maxSourceDepthAtTargetContactMm": -0.21408075546365363,
+          "maxDepthIncreaseMm": 11.027921493409915
+        },
+        {
+          "target": "bp3d:FMA16586",
+          "source": "Hip bone.r",
+          "sampleCount": 183,
+          "newContactSamples": 180,
+          "maxTargetDepthMm": 5.436357576400042,
+          "maxSourceDepthAtTargetContactMm": 0.1372832193950014,
+          "maxDepthIncreaseMm": 7.496022831826661
+        }
+      ]
+    },
+    {
+      "sourceObject": "Common plantar digital branches of lateral plantar nerve.l",
+      "samples": 756,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24512",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Common plantar digital branches of lateral plantar nerve.r",
+      "samples": 756,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24511",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Common plantar digital branches of medial plantar nerve.l",
+      "samples": 900,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24508",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Infrapatellar branch of saphenous nerve.l",
+      "samples": 300,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Infrapatellar branch of saphenous nerve.r",
+      "samples": 300,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.l",
+      "samples": 588,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24483",
+          "source": "Talus.l",
+          "sampleCount": 84,
+          "newContactSamples": 84,
+          "maxTargetDepthMm": 6.359189748764038,
+          "maxSourceDepthAtTargetContactMm": -0.4110340865472476,
+          "maxDepthIncreaseMm": 12.6775490261938
+        },
+        {
+          "target": "bp3d:FMA24498",
+          "source": "Calcaneus.l",
+          "sampleCount": 127,
+          "newContactSamples": 127,
+          "maxTargetDepthMm": 4.499043803662062,
+          "maxSourceDepthAtTargetContactMm": -4.4008589093888855,
+          "maxDepthIncreaseMm": 11.157649827878535
+        }
+      ]
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.r",
+      "samples": 588,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24482",
+          "source": "Talus.r",
+          "sampleCount": 84,
+          "newContactSamples": 84,
+          "maxTargetDepthMm": 6.3819969072937965,
+          "maxSourceDepthAtTargetContactMm": -0.4109085827949116,
+          "maxDepthIncreaseMm": 12.618015951923013
+        },
+        {
+          "target": "bp3d:FMA24497",
+          "source": "Calcaneus.r",
+          "sampleCount": 129,
+          "newContactSamples": 129,
+          "maxTargetDepthMm": 4.4289384968578815,
+          "maxSourceDepthAtTargetContactMm": -4.400897837854877,
+          "maxDepthIncreaseMm": 11.016113853751863
+        }
+      ]
+    },
+    {
+      "sourceObject": "Medial crural cutaneous branches of saphenous nerve.l",
+      "samples": 300,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Medial crural cutaneous branches of saphenous nerve.r",
+      "samples": 300,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Medial plantar nerve.l",
+      "samples": 600,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24483",
+          "source": "Talus.l",
+          "sampleCount": 228,
+          "newContactSamples": 228,
+          "maxTargetDepthMm": 7.292380556464195,
+          "maxSourceDepthAtTargetContactMm": -0.22775957829455593,
+          "maxDepthIncreaseMm": 15.848663413615519
+        },
+        {
+          "target": "bp3d:FMA24501",
+          "sourceControlAbsent": true
+        },
+        {
+          "target": "bp3d:FMA24522",
+          "sourceControlAbsent": true
+        },
+        {
+          "target": "bp3d:FMA24508",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Medial plantar nerve.r",
+      "samples": 600,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24482",
+          "source": "Talus.r",
+          "sampleCount": 225,
+          "newContactSamples": 225,
+          "maxTargetDepthMm": 7.147880271077156,
+          "maxSourceDepthAtTargetContactMm": -0.22763867991877695,
+          "maxDepthIncreaseMm": 15.608893046559508
+        },
+        {
+          "target": "bp3d:FMA24500",
+          "sourceControlAbsent": true
+        },
+        {
+          "target": "bp3d:FMA24521",
+          "sourceControlAbsent": true
+        },
+        {
+          "target": "bp3d:FMA24507",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of lateral plantar nerve.l",
+      "samples": 1902,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of lateral plantar nerve.r",
+      "samples": 1902,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of medial plantar nerve.l",
+      "samples": 1614,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of medial plantar nerve.r",
+      "samples": 1614,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Common plantar digital branches of medial plantar nerve",
+      "samples": 900,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24507",
+          "sourceControlAbsent": true
+        }
+      ]
+    },
+    {
+      "sourceObject": "Saphenous nerve.l",
+      "samples": 1680,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24478",
+          "source": "Tibia.l",
+          "sampleCount": 120,
+          "newContactSamples": 61,
+          "maxTargetDepthMm": 2.211868530139327,
+          "maxSourceDepthAtTargetContactMm": 2.4618357258442205,
+          "maxDepthIncreaseMm": 2.5160434533499973
+        }
+      ]
+    },
+    {
+      "sourceObject": "Saphenous nerve.r",
+      "samples": 1680,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24477",
+          "source": "Tibia.r",
+          "sampleCount": 101,
+          "newContactSamples": 44,
+          "maxTargetDepthMm": 2.2229270543903112,
+          "maxSourceDepthAtTargetContactMm": 2.4622942939049133,
+          "maxDepthIncreaseMm": 2.509512823686955
+        }
+      ]
+    },
+    {
+      "sourceObject": "Sural nerve.l",
+      "samples": 1026,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24481",
+          "source": "Fibula.l",
+          "sampleCount": 59,
+          "newContactSamples": 59,
+          "maxTargetDepthMm": 6.793309934437275,
+          "maxSourceDepthAtTargetContactMm": -2.9673246373436086,
+          "maxDepthIncreaseMm": 10.489697449720467
+        }
+      ]
+    },
+    {
+      "sourceObject": "Sural nerve.r",
+      "samples": 1026,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24480",
+          "source": "Fibula.r",
+          "sampleCount": 60,
+          "newContactSamples": 60,
+          "maxTargetDepthMm": 6.874662823975086,
+          "maxSourceDepthAtTargetContactMm": -2.967177265293785,
+          "maxDepthIncreaseMm": 10.58211455810139
+        }
+      ]
+    }
+  ]
+}

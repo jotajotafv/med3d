@@ -1,0 +1,28 @@
+{
+  "method": "Three panels: source in global similarity orientation; target original bones; regional overlay. Only QA display materials. Target/source landmark errors shown with green/magenta points and connecting lines. Each named region uses one shared rigid transform after global similarity, no candidate-specific fit.",
+  "captures": [
+    {
+      "region": "spinal",
+      "file": "24-discs-spinal.png",
+      "gaps": [
+        "skeletal-discs"
+      ]
+    },
+    {
+      "region": "lower",
+      "file": "25-lower-articular.png",
+      "gaps": [
+        "skeletal-joints"
+      ]
+    },
+    {
+      "region": "upper",
+      "file": "26-upper-articular.png",
+      "gaps": [
+        "skeletal-joints"
+      ]
+    }
+  ],
+  "errors": [],
+  "badRequests": []
+}

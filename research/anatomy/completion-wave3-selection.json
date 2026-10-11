@@ -1,0 +1,231 @@
+{
+  "wave": 3,
+  "baseSha": "83deba445c221adb2a21098143c81e563ae8816a",
+  "scope": "Four owners, including two intact aggregate dorsal-interossei meshes. No artificial split.",
+  "nodes": [
+    {
+      "id": "zanatomy:extensor-digitorum-brevis-l",
+      "name": "Extensor corto de los dedos del pie izquierdo",
+      "anatomicalName": "Extensor corto de los dedos del pie izquierdo",
+      "latin": "Musculus extensor digitorum brevis",
+      "systemId": "muscular",
+      "kind": "structure",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "assetIds": [
+        "muscular:completion3-foot-left"
+      ],
+      "meshNames": [
+        "zanatomy_extensor-digitorum-brevis-l"
+      ],
+      "sourceId": "Extensor digitorum brevis.l",
+      "sourceElements": [
+        "Extensor digitorum brevis.l"
+      ],
+      "aliases": [
+        "Extensor digitorum brevis.l",
+        "Musculus extensor digitorum brevis",
+        "EDB",
+        "zanatomy:extensor-digitorum-brevis-l"
+      ],
+      "family": "completion3:edb",
+      "educationId": "completion3:edb",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA24498",
+        "bp3d:FMA32635",
+        "bp3d:FMA32637",
+        "bp3d:FMA32639",
+        "bp3d:FMA51145"
+      ],
+      "gaps": [
+        "muscular-edb"
+      ],
+      "sourceObject": "Extensor digitorum brevis.l",
+      "registrationRegion": "foot_l"
+    },
+    {
+      "id": "zanatomy:dorsal-interossei-foot-l",
+      "name": "Interóseos dorsales del pie izquierdo · conjunto",
+      "anatomicalName": "Interóseos dorsales del pie izquierdo · conjunto",
+      "latin": "Musculi interossei dorsales pedis",
+      "systemId": "muscular",
+      "kind": "structure",
+      "regionId": "muscular:region:leg-left:foot",
+      "parentId": "muscular:region:leg-left:foot",
+      "children": [],
+      "side": "left",
+      "explosionRegionId": "lower-limb-left",
+      "assetIds": [
+        "muscular:completion3-foot-left"
+      ],
+      "meshNames": [
+        "zanatomy_dorsal-interossei-foot-l"
+      ],
+      "sourceId": "Dorsal interossei muscles of foot.l",
+      "sourceElements": [
+        "Dorsal interossei muscles of foot.l"
+      ],
+      "aliases": [
+        "Dorsal interossei muscles of foot.l",
+        "Musculi interossei dorsales pedis",
+        "interóseos dorsales del pie",
+        "zanatomy:dorsal-interossei-foot-l"
+      ],
+      "family": "completion3:dorsal-interossei",
+      "educationId": "completion3:dorsal-interossei",
+      "anatomyType": "Conjunto muscular de la fuente",
+      "relatedIds": [
+        "bp3d:FMA24508",
+        "bp3d:FMA24510",
+        "bp3d:FMA32635",
+        "bp3d:FMA24512",
+        "bp3d:FMA32637",
+        "bp3d:FMA24514",
+        "bp3d:FMA32639",
+        "bp3d:FMA24516",
+        "bp3d:FMA51145"
+      ],
+      "gaps": [
+        "muscular-foot-dorsal-interossei"
+      ],
+      "sourceObject": "Dorsal interossei muscles of foot.l",
+      "registrationRegion": "foot_l"
+    },
+    {
+      "id": "zanatomy:extensor-digitorum-brevis-r",
+      "name": "Extensor corto de los dedos del pie derecho",
+      "anatomicalName": "Extensor corto de los dedos del pie derecho",
+      "latin": "Musculus extensor digitorum brevis",
+      "systemId": "muscular",
+      "kind": "structure",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "assetIds": [
+        "muscular:completion3-foot-right"
+      ],
+      "meshNames": [
+        "zanatomy_extensor-digitorum-brevis-r"
+      ],
+      "sourceId": "Extensor digitorum brevis.r",
+      "sourceElements": [
+        "Extensor digitorum brevis.r"
+      ],
+      "aliases": [
+        "Extensor digitorum brevis.r",
+        "Musculus extensor digitorum brevis",
+        "EDB",
+        "zanatomy:extensor-digitorum-brevis-r"
+      ],
+      "family": "completion3:edb",
+      "educationId": "completion3:edb",
+      "anatomyType": "Músculo",
+      "relatedIds": [
+        "bp3d:FMA24497",
+        "bp3d:FMA32634",
+        "bp3d:FMA32636",
+        "bp3d:FMA32638",
+        "bp3d:FMA51144"
+      ],
+      "gaps": [
+        "muscular-edb"
+      ],
+      "sourceObject": "Extensor digitorum brevis.r",
+      "registrationRegion": "foot_r"
+    },
+    {
+      "id": "zanatomy:dorsal-interossei-foot-r",
+      "name": "Interóseos dorsales del pie derecho · conjunto",
+      "anatomicalName": "Interóseos dorsales del pie derecho · conjunto",
+      "latin": "Musculi interossei dorsales pedis",
+      "systemId": "muscular",
+      "kind": "structure",
+      "regionId": "muscular:region:leg-right:foot",
+      "parentId": "muscular:region:leg-right:foot",
+      "children": [],
+      "side": "right",
+      "explosionRegionId": "lower-limb-right",
+      "assetIds": [
+        "muscular:completion3-foot-right"
+      ],
+      "meshNames": [
+        "zanatomy_dorsal-interossei-foot-r"
+      ],
+      "sourceId": "Dorsal interossei muscles of foot.r",
+      "sourceElements": [
+        "Dorsal interossei muscles of foot.r"
+      ],
+      "aliases": [
+        "Dorsal interossei muscles of foot.r",
+        "Musculi interossei dorsales pedis",
+        "interóseos dorsales del pie",
+        "zanatomy:dorsal-interossei-foot-r"
+      ],
+      "family": "completion3:dorsal-interossei",
+      "educationId": "completion3:dorsal-interossei",
+      "anatomyType": "Conjunto muscular de la fuente",
+      "relatedIds": [
+        "bp3d:FMA24507",
+        "bp3d:FMA24509",
+        "bp3d:FMA32634",
+        "bp3d:FMA24511",
+        "bp3d:FMA32636",
+        "bp3d:FMA24513",
+        "bp3d:FMA32638",
+        "bp3d:FMA24515",
+        "bp3d:FMA51144"
+      ],
+      "gaps": [
+        "muscular-foot-dorsal-interossei"
+      ],
+      "sourceObject": "Dorsal interossei muscles of foot.r",
+      "registrationRegion": "foot_r"
+    }
+  ],
+  "modules": [
+    {
+      "id": "muscular:completion3-foot-left",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-left:foot",
+      "label": "Musculatura dorsal del pie izquierdo"
+    },
+    {
+      "id": "muscular:completion3-foot-right",
+      "systemId": "muscular",
+      "regionId": "muscular:region:leg-right:foot",
+      "label": "Musculatura dorsal del pie derecho"
+    }
+  ],
+  "education": {
+    "completion3:edb": {
+      "description": "Músculo del dorso del pie, desde el calcáneo hacia los dedos segundo a cuarto. El extensor corto del dedo gordo se identifica por separado.",
+      "function": "Colabora en la extensión de los dedos segundo a cuarto.",
+      "relations": "Sus tendones se relacionan con el aparato extensor de los dedos; es vecino del extensor corto del dedo gordo.",
+      "limits": "Modelo educativo de otra fuente registrado con una transformación rígida común al pie, sin ajustes por pieza. Conserva contactos locales esquemáticos con huesos y músculos vecinos; no representa interfaces tisulares exactas ni sirve para planificación clínica.",
+      "sources": [
+        {
+          "title": "NCBI Bookshelf · Músculos del pie",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK539705/table/article-32230.table2/"
+        }
+      ]
+    },
+    "completion3:dorsal-interossei": {
+      "description": "Conjunto de músculos situados entre los metatarsianos, representado por una malla original por pie.",
+      "function": "Participan en la separación de los dedos segundo a cuarto y colaboran en su flexión y extensión.",
+      "relations": "Se originan en lados adyacentes de los metatarsianos y se relacionan con las bases de las falanges proximales y el aparato extensor.",
+      "limits": "La fuente agrupa los cuatro interóseos dorsales: no permite seleccionarlos individualmente. Modelo educativo de otra fuente registrado con una transformación rígida común al pie, sin ajustes por pieza. Conserva contactos locales esquemáticos con huesos y músculos vecinos; no representa interfaces tisulares exactas ni sirve para planificación clínica.",
+      "sources": [
+        {
+          "title": "NCBI Bookshelf · Músculos del pie",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK539705/table/article-32230.table2/"
+        }
+      ]
+    }
+  }
+}

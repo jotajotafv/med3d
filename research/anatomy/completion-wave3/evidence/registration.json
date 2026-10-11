@@ -1,0 +1,4371 @@
+{
+  "method": "Fresh global similarity from whole-bone bounds centers, followed by one rigid regional point-to-surface fit per anatomical cohort. Fixed global scale. Every fourth sorted regional control held out of regional optimization. 90% nearest-point trimming within each fitting bone. No candidate geometry participates in fitting. Positive determinant only.",
+  "globalSimilarity": {
+    "matrix": [
+      [
+        0.9952170509449157,
+        -8.34858069085454e-05,
+        -0.0005239213635953865,
+        0.00011043704989799027
+      ],
+      [
+        0.0005229056973487769,
+        -0.011677612121796282,
+        0.9951485416256886,
+        -0.06273026133608539
+      ],
+      [
+        -8.962760103347193e-05,
+        -0.995148675505437,
+        -0.011677566597549394,
+        0.11107579388259353
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "scale": 0.9952171923529913,
+    "landmarks": [
+      {
+        "source": "Atlas (C1)",
+        "target": "bp3d:FMA12519",
+        "sourceLandmark": [
+          4.132570839789074e-06,
+          0.021419518909909972,
+          1.5429322203078817
+        ],
+        "targetLandmark": [
+          -0.0005669500678777695,
+          1.471820056438446,
+          0.06411999836564064
+        ],
+        "landmarkErrorMm": 7.650928150717903,
+        "surfaceRmsMm": 4.299090989347908,
+        "surfaceMaxMm": 8.304692804813385,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Axis (C2)",
+        "target": "bp3d:FMA12520",
+        "sourceLandmark": [
+          1.5628588256128007e-05,
+          0.026012921131367994,
+          1.529980217302458
+        ],
+        "targetLandmark": [
+          -0.0006937002763152122,
+          1.4557600021362305,
+          0.061604999005794525
+        ],
+        "landmarkErrorMm": 6.845132651267005,
+        "surfaceRmsMm": 3.9705254684870512,
+        "surfaceMaxMm": 9.696508757770061,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Clavicle.r",
+        "target": "bp3d:FMA13322",
+        "sourceLandmark": [
+          -0.08277257897859899,
+          0.0008759426042934462,
+          1.4071637648969233
+        ],
+        "targetLandmark": [
+          -0.07746932189911604,
+          1.3320299983024597,
+          0.10068024694919586
+        ],
+        "landmarkErrorMm": 10.428661823323317,
+        "surfaceRmsMm": 5.485522088874796,
+        "surfaceMaxMm": 14.24548402428627,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Clavicle.l",
+        "target": "bp3d:FMA13323",
+        "sourceLandmark": [
+          0.0827725640774378,
+          0.0008759426042934462,
+          1.4071637648969233
+        ],
+        "targetLandmark": [
+          0.07616036431863904,
+          1.3318549990653992,
+          0.10073274560272694
+        ],
+        "landmarkErrorMm": 10.64248533193326,
+        "surfaceRmsMm": 5.520991991986621,
+        "surfaceMaxMm": 14.203296042978764,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Scapula.r",
+        "target": "bp3d:FMA13395",
+        "sourceLandmark": [
+          -0.11709325968152873,
+          0.05577132937669602,
+          1.3360572019518684
+        ],
+        "targetLandmark": [
+          -0.11175890080630779,
+          1.2669099569320679,
+          0.048886626260355115
+        ],
+        "landmarkErrorMm": 10.425383574072814,
+        "surfaceRmsMm": 7.249356979142836,
+        "surfaceMaxMm": 15.054014511406422,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Scapula.l",
+        "target": "bp3d:FMA13396",
+        "sourceLandmark": [
+          0.11709327458268992,
+          0.05577132937669602,
+          1.3360572019518684
+        ],
+        "targetLandmark": [
+          0.11176270060241222,
+          1.2669049501419067,
+          0.048884299118071795
+        ],
+        "landmarkErrorMm": 9.872183025315767,
+        "surfaceRmsMm": 6.90965471544473,
+        "surfaceMaxMm": 14.922244474291801,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Sacrum",
+        "target": "bp3d:FMA16202",
+        "sourceLandmark": [
+          -3.9095243000560054e-05,
+          0.049301523715257686,
+          0.9232941847294571
+        ],
+        "targetLandmark": [
+          -0.0006941501051187515,
+          0.8550184965133667,
+          0.0370713253505528
+        ],
+        "landmarkErrorMm": 14.17150814882102,
+        "surfaceRmsMm": 11.217151645382419,
+        "surfaceMaxMm": 22.900661453604698,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Hip bone.r",
+        "target": "bp3d:FMA16586",
+        "sourceLandmark": [
+          -0.06891577318310738,
+          0.015357465643282227,
+          0.9046399949382279
+        ],
+        "targetLandmark": [
+          -0.07383114739786834,
+          0.855010986328125,
+          0.07006888877367601
+        ],
+        "landmarkErrorMm": 23.818283670207713,
+        "surfaceRmsMm": 11.317303016906823,
+        "surfaceMaxMm": 26.741649955511093,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Hip bone.l",
+        "target": "bp3d:FMA16587",
+        "sourceLandmark": [
+          0.06891577318310738,
+          0.015357465643282227,
+          0.9046399949382279
+        ],
+        "targetLandmark": [
+          0.07375215133652091,
+          0.8550204932689667,
+          0.07020496675977483
+        ],
+        "landmarkErrorMm": 23.819998917647517,
+        "surfaceRmsMm": 11.352559657525115,
+        "surfaceMaxMm": 26.64301171898842,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Humerus.r",
+        "target": "bp3d:FMA23130",
+        "sourceLandmark": [
+          -0.19671966509696737,
+          0.02744267687499568,
+          1.2458133858466303
+        ],
+        "targetLandmark": [
+          -0.1904655024409294,
+          1.1828699707984924,
+          0.07562904804944992
+        ],
+        "landmarkErrorMm": 10.691232056063047,
+        "surfaceRmsMm": 6.014911155187444,
+        "surfaceMaxMm": 13.514391146600246,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Humerus.l",
+        "target": "bp3d:FMA23131",
+        "sourceLandmark": [
+          0.19671969489928975,
+          0.02744267687499568,
+          1.2458133858466303
+        ],
+        "targetLandmark": [
+          0.19041649997234344,
+          1.1828649640083313,
+          0.07564245164394379
+        ],
+        "landmarkErrorMm": 10.061408144226805,
+        "surfaceRmsMm": 5.708859505243838,
+        "surfaceMaxMm": 12.996340170502663,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Radius.r",
+        "target": "bp3d:FMA23464",
+        "sourceLandmark": [
+          -0.25777194178866997,
+          0.007605227777660296,
+          0.9748274816683247
+        ],
+        "targetLandmark": [
+          -0.24968399852514267,
+          0.920442521572113,
+          0.09400530159473419
+        ],
+        "landmarkErrorMm": 15.2625553956335,
+        "surfaceRmsMm": 5.883117903396834,
+        "surfaceMaxMm": 17.61753484606743,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Radius.l",
+        "target": "bp3d:FMA23465",
+        "sourceLandmark": [
+          0.25777194178866997,
+          0.007605227777660296,
+          0.9748274816683247
+        ],
+        "targetLandmark": [
+          0.24948950111865997,
+          0.920586496591568,
+          0.09436064958572388
+        ],
+        "landmarkErrorMm": 14.927467049977167,
+        "surfaceRmsMm": 5.65208489873706,
+        "surfaceMaxMm": 17.234189435839653,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Ulna.r",
+        "target": "bp3d:FMA23467",
+        "sourceLandmark": [
+          -0.2294336984028985,
+          0.01876828532029111,
+          0.9833000012265182
+        ],
+        "targetLandmark": [
+          -0.22202999889850616,
+          0.9288114607334137,
+          0.08414660021662712
+        ],
+        "landmarkErrorMm": 15.284663453635973,
+        "surfaceRmsMm": 6.611035883949475,
+        "surfaceMaxMm": 17.62665994465351,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Ulna.l",
+        "target": "bp3d:FMA23468",
+        "sourceLandmark": [
+          0.2294337282052209,
+          0.01876828532029111,
+          0.9833000012265182
+        ],
+        "targetLandmark": [
+          0.22200599312782288,
+          0.9287429749965668,
+          0.08391564898192883
+        ],
+        "landmarkErrorMm": 14.640103754398616,
+        "surfaceRmsMm": 6.250120046671118,
+        "surfaceMaxMm": 16.85446873307228,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Femur.r",
+        "target": "bp3d:FMA24474",
+        "sourceLandmark": [
+          -0.09023460385962445,
+          0.020297355814991033,
+          0.6570856645740681
+        ],
+        "targetLandmark": [
+          -0.09101414866745472,
+          0.6012009978294373,
+          0.08086109906435013
+        ],
+        "landmarkErrorMm": 10.626909366623684,
+        "surfaceRmsMm": 6.772394888078025,
+        "surfaceMaxMm": 25.84603801369667,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Femur.l",
+        "target": "bp3d:FMA24475",
+        "sourceLandmark": [
+          0.09023460385962445,
+          0.020297355814991033,
+          0.6570856645740681
+        ],
+        "targetLandmark": [
+          0.09110159613192081,
+          0.6011475026607513,
+          0.08087910152971745
+        ],
+        "landmarkErrorMm": 10.54248473791576,
+        "surfaceRmsMm": 6.780510664181876,
+        "surfaceMaxMm": 25.79866163432598,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Tibia.r",
+        "target": "bp3d:FMA24477",
+        "sourceLandmark": [
+          -0.0765656138835703,
+          0.02894810090494454,
+          0.25419984591547173
+        ],
+        "targetLandmark": [
+          -0.07228449918329716,
+          0.18394141690805554,
+          0.08345395140349865
+        ],
+        "landmarkErrorMm": 8.230071370272965,
+        "surfaceRmsMm": 4.920337284112126,
+        "surfaceMaxMm": 13.228341937065125,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Tibia.l",
+        "target": "bp3d:FMA24478",
+        "sourceLandmark": [
+          0.0765656138835703,
+          0.02894810090494454,
+          0.25419984591547173
+        ],
+        "targetLandmark": [
+          0.07224459759891033,
+          0.18388333404436707,
+          0.08324855007231236
+        ],
+        "landmarkErrorMm": 8.231214039866222,
+        "surfaceRmsMm": 4.968848194325554,
+        "surfaceMaxMm": 14.195769093930721,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Fibula.r",
+        "target": "bp3d:FMA24480",
+        "sourceLandmark": [
+          -0.10673540547566746,
+          0.043223464325571254,
+          0.2364572160392892
+        ],
+        "targetLandmark": [
+          -0.10225474834442139,
+          0.16693504620343447,
+          0.06332810036838055
+        ],
+        "landmarkErrorMm": 6.758404404552746,
+        "surfaceRmsMm": 3.394339225383705,
+        "surfaceMaxMm": 8.121096529066563,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Fibula.l",
+        "target": "bp3d:FMA24481",
+        "sourceLandmark": [
+          0.10673542037682865,
+          0.043223464325571254,
+          0.2364572160392892
+        ],
+        "targetLandmark": [
+          0.10231849923729897,
+          0.16697020456194878,
+          0.06332650035619736
+        ],
+        "landmarkErrorMm": 6.754221260362759,
+        "surfaceRmsMm": 3.328184917332321,
+        "surfaceMaxMm": 7.965083234012127,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Talus.r",
+        "target": "bp3d:FMA24482",
+        "sourceLandmark": [
+          -0.07470057552309006,
+          0.03657284474715705,
+          0.06766913016554066
+        ],
+        "targetLandmark": [
+          -0.06987045146524906,
+          -0.014022585120983422,
+          0.07716149836778641
+        ],
+        "landmarkErrorMm": 18.975412020659924,
+        "surfaceRmsMm": 10.877116163280572,
+        "surfaceMaxMm": 19.421471282839775,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Talus.l",
+        "target": "bp3d:FMA24483",
+        "sourceLandmark": [
+          0.07470057552309006,
+          0.03657284474715705,
+          0.06766913016554066
+        ],
+        "targetLandmark": [
+          0.06990689970552921,
+          -0.014103744993917644,
+          0.07724549993872643
+        ],
+        "landmarkErrorMm": 19.169803291107165,
+        "surfaceRmsMm": 10.936567501400125,
+        "surfaceMaxMm": 19.193245097994804,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Calcaneus.r",
+        "target": "bp3d:FMA24497",
+        "sourceLandmark": [
+          -0.07845637308021995,
+          0.05371231657031732,
+          0.03700307030010514
+        ],
+        "targetLandmark": [
+          -0.07282840088009834,
+          -0.043822699226439,
+          0.05907680094242096
+        ],
+        "landmarkErrorMm": 18.102475750800746,
+        "surfaceRmsMm": 11.053086509762705,
+        "surfaceMaxMm": 21.864674985408783,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Calcaneus.l",
+        "target": "bp3d:FMA24498",
+        "sourceLandmark": [
+          0.07845637309177456,
+          0.05371231657031732,
+          0.03700307028871922
+        ],
+        "targetLandmark": [
+          0.07288900017738342,
+          -0.04374419990926981,
+          0.05917430203408003
+        ],
+        "landmarkErrorMm": 18.15017839824685,
+        "surfaceRmsMm": 11.139321201868604,
+        "surfaceMaxMm": 22.080281749367714,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Frontal bone",
+        "target": "bp3d:FMA52734",
+        "sourceLandmark": [
+          -1.4893230648738154e-08,
+          -0.0525625739246605,
+          1.6459020596491127
+        ],
+        "targetLandmark": [
+          -0.000655200332403183,
+          1.575415015220642,
+          0.14201200008392334
+        ],
+        "landmarkErrorMm": 2.187466222745468,
+        "surfaceRmsMm": 1.0067651637221802,
+        "surfaceMaxMm": 3.3739409409463406,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Occipital bone",
+        "target": "bp3d:FMA52735",
+        "sourceLandmark": [
+          -1.69887073298014e-08,
+          0.04545146785676483,
+          1.6029645301668063
+        ],
+        "targetLandmark": [
+          -0.0006279498338699341,
+          1.5311399698257446,
+          0.04147900175303221
+        ],
+        "landmarkErrorMm": 5.702621255164275,
+        "surfaceRmsMm": 3.6344457567261634,
+        "surfaceMaxMm": 7.464350666850805,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra T1",
+        "target": "bp3d:FMA9165",
+        "sourceLandmark": [
+          -2.2218198808543477e-10,
+          0.047353021544037366,
+          1.4379930844372455
+        ],
+        "targetLandmark": [
+          -0.0007333997637033463,
+          1.3620599508285522,
+          0.05197929963469505
+        ],
+        "landmarkErrorMm": 7.444453075365664,
+        "surfaceRmsMm": 4.493924994530069,
+        "surfaceMaxMm": 8.294717408716679,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra T2",
+        "target": "bp3d:FMA9187",
+        "sourceLandmark": [
+          3.519096992976589e-09,
+          0.05276584569468305,
+          1.4200630769614675
+        ],
+        "targetLandmark": [
+          -0.0006718486547470093,
+          1.3434749841690063,
+          0.047398149967193604
+        ],
+        "landmarkErrorMm": 8.347205854069266,
+        "surfaceRmsMm": 4.687584303860975,
+        "surfaceMaxMm": 9.018747135996819,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra T3",
+        "target": "bp3d:FMA9209",
+        "sourceLandmark": [
+          -3.935409831345993e-09,
+          0.061479791405786896,
+          1.398801857087609
+        ],
+        "targetLandmark": [
+          -0.000562598928809166,
+          1.3220400214195251,
+          0.039048205595463514
+        ],
+        "landmarkErrorMm": 8.528506375050554,
+        "surfaceRmsMm": 4.865386149402122,
+        "surfaceMaxMm": 11.755441315472126,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra T4",
+        "target": "bp3d:FMA9248",
+        "sourceLandmark": [
+          -2.1011770795498208e-10,
+          0.06525581180725933,
+          1.3752223733058675
+        ],
+        "targetLandmark": [
+          -0.0005898512899875641,
+          1.2995749711990356,
+          0.034901399732916616
+        ],
+        "landmarkErrorMm": 7.303342869359028,
+        "surfaceRmsMm": 4.579951300350893,
+        "surfaceMaxMm": 8.755397982895374,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra T5",
+        "target": "bp3d:FMA9922",
+        "sourceLandmark": [
+          5.194394692847881e-08,
+          0.06606699772332447,
+          1.3472536235857078
+        ],
+        "targetLandmark": [
+          -0.0006308984011411667,
+          1.2685200572013855,
+          0.03299522502220498
+        ],
+        "landmarkErrorMm": 9.33624853279856,
+        "surfaceRmsMm": 4.052348697460475,
+        "surfaceMaxMm": 8.147911168634892,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra T6",
+        "target": "bp3d:FMA9945",
+        "sourceLandmark": [
+          -2.1011601486486953e-10,
+          0.06675404311435298,
+          1.314240310255109
+        ],
+        "targetLandmark": [
+          -0.0006943996995687485,
+          1.2392300367355347,
+          0.03320666495710611
+        ],
+        "landmarkErrorMm": 6.445679592752122,
+        "surfaceRmsMm": 3.7635222795859793,
+        "surfaceMaxMm": 7.343280594795942,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra T7",
+        "target": "bp3d:FMA9968",
+        "sourceLandmark": [
+          -2.1011497403078394e-10,
+          0.0649507710063615,
+          1.2860407214611773
+        ],
+        "targetLandmark": [
+          -0.00045285001397132874,
+          1.2105499505996704,
+          0.033825346326921135
+        ],
+        "landmarkErrorMm": 6.244896262382557,
+        "surfaceRmsMm": 3.1661820154265206,
+        "surfaceMaxMm": 6.5945531241595745,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra T8",
+        "target": "bp3d:FMA9991",
+        "sourceLandmark": [
+          -2.1011299644602133e-10,
+          0.06341774965385766,
+          1.255830272249287
+        ],
+        "targetLandmark": [
+          -0.0007533486932516098,
+          1.1833999752998352,
+          0.03647969863959588
+        ],
+        "landmarkErrorMm": 4.285483277117228,
+        "surfaceRmsMm": 2.9411886812414925,
+        "surfaceMaxMm": 5.897159688174725,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra T9",
+        "target": "bp3d:FMA10014",
+        "sourceLandmark": [
+          3.515177489366028e-09,
+          0.05859734122692229,
+          1.22848068727775
+        ],
+        "targetLandmark": [
+          -0.0006984006613492966,
+          1.1557349562644958,
+          0.041904480662196875
+        ],
+        "landmarkErrorMm": 4.853169002230491,
+        "surfaceRmsMm": 2.2892009172010566,
+        "surfaceMaxMm": 6.3172983936965466,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra T10",
+        "target": "bp3d:FMA10037",
+        "sourceLandmark": [
+          5.9325044962872664e-05,
+          0.053173522920897595,
+          1.197508763567328
+        ],
+        "targetLandmark": [
+          -0.0007057990878820419,
+          1.1284499764442444,
+          0.045940150041133165
+        ],
+        "landmarkErrorMm": 1.7835516661985968,
+        "surfaceRmsMm": 1.6072296756873887,
+        "surfaceMaxMm": 4.672105889767408,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra T11",
+        "target": "bp3d:FMA10059",
+        "sourceLandmark": [
+          -2.1011165030060397e-10,
+          0.04507779951353658,
+          1.1693154886493617
+        ],
+        "targetLandmark": [
+          -0.0006008492782711983,
+          1.1024949550628662,
+          0.052770648151636124
+        ],
+        "landmarkErrorMm": 2.1214411167957827,
+        "surfaceRmsMm": 1.6779926337828521,
+        "surfaceMaxMm": 3.934923093765974,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra T12",
+        "target": "bp3d:FMA10081",
+        "sourceLandmark": [
+          -3.935401875904132e-09,
+          0.03673141023580975,
+          1.1390766227605158
+        ],
+        "targetLandmark": [
+          -0.0006657997146248817,
+          1.0757750272750854,
+          0.06197294872254133
+        ],
+        "landmarkErrorMm": 5.438911705743187,
+        "surfaceRmsMm": 2.79859837609457,
+        "surfaceMaxMm": 5.972664337605238,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra C3",
+        "target": "bp3d:FMA12521",
+        "sourceLandmark": [
+          -2.0108970981425056e-09,
+          0.026889748079351423,
+          1.5063802859047408
+        ],
+        "targetLandmark": [
+          -0.0006517497822642326,
+          1.4313700199127197,
+          0.06297314912080765
+        ],
+        "landmarkErrorMm": 5.981443496871674,
+        "surfaceRmsMm": 3.294154888246291,
+        "surfaceMaxMm": 7.64575507491827,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra C4",
+        "target": "bp3d:FMA12522",
+        "sourceLandmark": [
+          7.541486374089759e-05,
+          0.026470066529413562,
+          1.4930745974762267
+        ],
+        "targetLandmark": [
+          -0.0006879502907395363,
+          1.418370008468628,
+          0.0649008508771658
+        ],
+        "landmarkErrorMm": 5.030761861984773,
+        "surfaceRmsMm": 2.6587326910595963,
+        "surfaceMaxMm": 5.963556468486786,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra C5",
+        "target": "bp3d:FMA12523",
+        "sourceLandmark": [
+          -3.867913191124561e-09,
+          0.029776539035291486,
+          1.48014458825025
+        ],
+        "targetLandmark": [
+          -0.0006822999566793442,
+          1.4058799743652344,
+          0.06342754885554314
+        ],
+        "landmarkErrorMm": 4.072074377456022,
+        "surfaceRmsMm": 1.8131189407567547,
+        "surfaceMaxMm": 5.024543032050133,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra C6",
+        "target": "bp3d:FMA12524",
+        "sourceLandmark": [
+          -1.4267032694137427e-10,
+          0.0349563711495342,
+          1.466026169193996
+        ],
+        "targetLandmark": [
+          -0.0006587496027350443,
+          1.3931649923324585,
+          0.06042519863694906
+        ],
+        "landmarkErrorMm": 2.896714443195027,
+        "surfaceRmsMm": 1.86445755924144,
+        "surfaceMaxMm": 4.675145260989666,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra C7",
+        "target": "bp3d:FMA12525",
+        "sourceLandmark": [
+          -3.867911956001446e-09,
+          0.04207336005837485,
+          1.4520207020792868
+        ],
+        "targetLandmark": [
+          -0.0006488487124443054,
+          1.3782749772071838,
+          0.05564915016293526
+        ],
+        "landmarkErrorMm": 4.864105235905155,
+        "surfaceRmsMm": 3.0571860437694576,
+        "surfaceMaxMm": 6.242464296519756,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra L1",
+        "target": "bp3d:FMA13072",
+        "sourceLandmark": [
+          -1.6010429787494118e-10,
+          0.029237417504191284,
+          1.1039149230346084
+        ],
+        "targetLandmark": [
+          -0.0006591994315385818,
+          1.043590009212494,
+          0.06935120094567537
+        ],
+        "landmarkErrorMm": 8.108802722925791,
+        "surfaceRmsMm": 4.349978537591083,
+        "surfaceMaxMm": 10.080650448799133,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra L2",
+        "target": "bp3d:FMA13073",
+        "sourceLandmark": [
+          -1.6010341663541539e-10,
+          0.0241035680598048,
+          1.0749188838526607
+        ],
+        "targetLandmark": [
+          -0.0006450489163398743,
+          1.0160380005836487,
+          0.07453440129756927
+        ],
+        "landmarkErrorMm": 9.347711962893959,
+        "surfaceRmsMm": 5.246285376065389,
+        "surfaceMaxMm": 10.620195418596268,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra L3",
+        "target": "bp3d:FMA13074",
+        "sourceLandmark": [
+          1.031191205523585e-05,
+          0.02316831228272424,
+          1.043366922194335
+        ],
+        "targetLandmark": [
+          -0.0006809495389461517,
+          0.9887114763259888,
+          0.07243350148200989
+        ],
+        "landmarkErrorMm": 13.834508630887791,
+        "surfaceRmsMm": 6.716689702284603,
+        "surfaceMaxMm": 17.359044402837753,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra L4",
+        "target": "bp3d:FMA13075",
+        "sourceLandmark": [
+          7.2904780615279385e-09,
+          0.024053417146205885,
+          1.0150479991213337
+        ],
+        "targetLandmark": [
+          -0.0006753504276275635,
+          0.9610330164432526,
+          0.06828059908002615
+        ],
+        "landmarkErrorMm": 15.585887970209683,
+        "surfaceRmsMm": 9.635071991509426,
+        "surfaceMaxMm": 22.195667028427124,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Vertebra L5",
+        "target": "bp3d:FMA13076",
+        "sourceLandmark": [
+          -7.610679274294707e-09,
+          0.029125198146232018,
+          0.9828057281738154
+        ],
+        "targetLandmark": [
+          -0.0007135495543479919,
+          0.9297139942646027,
+          0.05866075120866299
+        ],
+        "landmarkErrorMm": 18.985925832951562,
+        "surfaceRmsMm": 9.61250525234771,
+        "surfaceMaxMm": 20.49410715699196,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Sphenoid bone",
+        "target": "bp3d:FMA52736",
+        "sourceLandmark": [
+          -1.6996636986732483e-08,
+          -0.028852781537174233,
+          1.585280442314314
+        ],
+        "targetLandmark": [
+          -0.0006434489041566849,
+          1.5136849880218506,
+          0.11771584674715996
+        ],
+        "landmarkErrorMm": 3.8686782526563834,
+        "surfaceRmsMm": 1.9756449901388926,
+        "surfaceMaxMm": 5.967834964394569,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Temporal bone.r",
+        "target": "bp3d:FMA52738",
+        "sourceLandmark": [
+          -0.04103446484397888,
+          0.003390447236597552,
+          1.5859360297766827
+        ],
+        "targetLandmark": [
+          -0.04334224946796894,
+          1.5135499835014343,
+          0.08437429927289486
+        ],
+        "landmarkErrorMm": 5.47185199907764,
+        "surfaceRmsMm": 2.433376800838162,
+        "surfaceMaxMm": 6.880724336951971,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Temporal bone.l",
+        "target": "bp3d:FMA52739",
+        "sourceLandmark": [
+          0.04103446484397888,
+          0.003390447236597552,
+          1.5859360297766827
+        ],
+        "targetLandmark": [
+          0.04210474994033575,
+          1.5134699940681458,
+          0.08431870304048061
+        ],
+        "landmarkErrorMm": 5.62665124610522,
+        "surfaceRmsMm": 2.4654813643478866,
+        "surfaceMaxMm": 6.9258324801921844,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Mandible",
+        "target": "bp3d:FMA52748",
+        "sourceLandmark": [
+          7.930968382030557e-12,
+          -0.04275397832456529,
+          1.5374719918892845
+        ],
+        "targetLandmark": [
+          -0.0006459001451730728,
+          1.463865041732788,
+          0.13184284791350365
+        ],
+        "landmarkErrorMm": 5.475381748960495,
+        "surfaceRmsMm": 2.6540370518963687,
+        "surfaceMaxMm": 7.614017464220524,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Zygomatic bone.r",
+        "target": "bp3d:FMA52892",
+        "sourceLandmark": [
+          -0.046970905414469744,
+          -0.05219299532473093,
+          1.5810910829385993
+        ],
+        "targetLandmark": [
+          -0.048906249925494194,
+          1.5086400508880615,
+          0.14161349833011627
+        ],
+        "landmarkErrorMm": 4.206799961925519,
+        "surfaceRmsMm": 1.933158229582391,
+        "surfaceMaxMm": 4.372213501483202,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Zygomatic bone.l",
+        "target": "bp3d:FMA52893",
+        "sourceLandmark": [
+          0.046970905414469744,
+          -0.05219299532473093,
+          1.5810910829385993
+        ],
+        "targetLandmark": [
+          0.047568852081894875,
+          1.508679986000061,
+          0.1415874995291233
+        ],
+        "landmarkErrorMm": 4.256422621082519,
+        "surfaceRmsMm": 1.853844383827221,
+        "surfaceMaxMm": 4.72967978566885,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Maxilla.r",
+        "target": "bp3d:FMA53649",
+        "sourceLandmark": [
+          -0.02291150723734614,
+          -0.06696651689708227,
+          1.5713315473973695
+        ],
+        "targetLandmark": [
+          -0.0239308770687785,
+          1.498669981956482,
+          0.156701497733593
+        ],
+        "landmarkErrorMm": 4.095632212349402,
+        "surfaceRmsMm": 2.0609885851374337,
+        "surfaceMaxMm": 4.792593419551849,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Maxilla.l",
+        "target": "bp3d:FMA53650",
+        "sourceLandmark": [
+          0.02291150723734614,
+          -0.06696651689708227,
+          1.5713315473973695
+        ],
+        "targetLandmark": [
+          0.021363634266890585,
+          1.49864000082016,
+          0.15484699606895447
+        ],
+        "landmarkErrorMm": 5.5467018833394,
+        "surfaceRmsMm": 2.150270330618304,
+        "surfaceMaxMm": 5.477177910506725,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "First rib.l",
+        "target": "bp3d:FMA7987",
+        "sourceLandmark": [
+          0.04372448398281915,
+          -0.0017957380888829963,
+          1.4168420271192637
+        ],
+        "targetLandmark": [
+          0.04112750058993697,
+          1.34027498960495,
+          0.09741849824786186
+        ],
+        "landmarkErrorMm": 7.307583866850548,
+        "surfaceRmsMm": 4.9292703321166,
+        "surfaceMaxMm": 7.70955067127943,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "First rib.r",
+        "target": "bp3d:FMA7857",
+        "sourceLandmark": [
+          -0.043724491345843636,
+          -0.0017957380888829998,
+          1.4168420271192634
+        ],
+        "targetLandmark": [
+          -0.04243749985471368,
+          1.34027498960495,
+          0.09741929545998573
+        ],
+        "landmarkErrorMm": 7.251569706855011,
+        "surfaceRmsMm": 4.89115979594223,
+        "surfaceMaxMm": 7.697680499404669,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Second rib.l",
+        "target": "bp3d:FMA8012",
+        "sourceLandmark": [
+          0.058337609008548855,
+          -0.010701326543408846,
+          1.390745269468304
+        ],
+        "targetLandmark": [
+          0.05519794952124357,
+          1.3162699937820435,
+          0.10888689942657948
+        ],
+        "landmarkErrorMm": 6.572679113689147,
+        "surfaceRmsMm": 3.477858210701308,
+        "surfaceMaxMm": 8.560186251997948,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Second rib.r",
+        "target": "bp3d:FMA7882",
+        "sourceLandmark": [
+          -0.05833760794962847,
+          -0.010701326077747236,
+          1.3907452694683036
+        ],
+        "targetLandmark": [
+          -0.05651080049574375,
+          1.316290020942688,
+          0.10890494659543037
+        ],
+        "landmarkErrorMm": 6.486783752544698,
+        "surfaceRmsMm": 3.4499811389950428,
+        "surfaceMaxMm": 8.450605906546116,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Third rib.l",
+        "target": "bp3d:FMA8039",
+        "sourceLandmark": [
+          0.06479350155003681,
+          -0.006820667367537385,
+          1.3636157223546956
+        ],
+        "targetLandmark": [
+          0.06017865100875497,
+          1.2899100184440613,
+          0.10805745236575603
+        ],
+        "landmarkErrorMm": 8.438691599237256,
+        "surfaceRmsMm": 4.880589811221911,
+        "surfaceMaxMm": 10.838243179023266,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Third rib.r",
+        "target": "bp3d:FMA7909",
+        "sourceLandmark": [
+          -0.06479350820561297,
+          -0.006820667367537829,
+          1.3636157223546965
+        ],
+        "targetLandmark": [
+          -0.061485500540584326,
+          1.2898949980735779,
+          0.10804850049316883
+        ],
+        "landmarkErrorMm": 8.352284390323105,
+        "surfaceRmsMm": 4.837170407200598,
+        "surfaceMaxMm": 10.76661515980959,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Fourth rib.l",
+        "target": "bp3d:FMA8148",
+        "sourceLandmark": [
+          0.07059040498372238,
+          -0.007893587695334076,
+          1.3360628546563285
+        ],
+        "targetLandmark": [
+          0.06459335144609213,
+          1.263225018978119,
+          0.10769344959408045
+        ],
+        "landmarkErrorMm": 7.675379946632712,
+        "surfaceRmsMm": 5.548122405842393,
+        "surfaceMaxMm": 10.193239897489548,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Fourth rib.r",
+        "target": "bp3d:FMA7957",
+        "sourceLandmark": [
+          -0.07059040509985469,
+          -0.00789358955797867,
+          1.3360628546563276
+        ],
+        "targetLandmark": [
+          -0.06630244897678494,
+          1.263225018978119,
+          0.10769325122237206
+        ],
+        "landmarkErrorMm": 7.290034653517728,
+        "surfaceRmsMm": 5.457349922180146,
+        "surfaceMaxMm": 10.100421495735645,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Fifth rib.l",
+        "target": "bp3d:FMA8093",
+        "sourceLandmark": [
+          0.07340186893690656,
+          -0.0074394555377955834,
+          1.3043036351055242
+        ],
+        "targetLandmark": [
+          0.06988625274971128,
+          1.2317450046539307,
+          0.10520534915849566
+        ],
+        "landmarkErrorMm": 4.870655653731589,
+        "surfaceRmsMm": 4.661842980955965,
+        "surfaceMaxMm": 10.156067088246346,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Fifth rib.r",
+        "target": "bp3d:FMA8066",
+        "sourceLandmark": [
+          -0.07340186884849453,
+          -0.0074394555377955696,
+          1.3043036351055242
+        ],
+        "targetLandmark": [
+          -0.07119659753516316,
+          1.2317399978637695,
+          0.10518929921090603
+        ],
+        "landmarkErrorMm": 4.7182961076060685,
+        "surfaceRmsMm": 4.577676895666682,
+        "surfaceMaxMm": 10.002844966948032,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Sixth rib.l",
+        "target": "bp3d:FMA8202",
+        "sourceLandmark": [
+          0.07727358320155461,
+          -0.0007614782778873827,
+          1.275113759963466
+        ],
+        "targetLandmark": [
+          0.0729147014208138,
+          1.202364981174469,
+          0.09856970270629972
+        ],
+        "landmarkErrorMm": 5.43245727277772,
+        "surfaceRmsMm": 5.182641787959247,
+        "surfaceMaxMm": 9.582305327057838,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Sixth rib.r",
+        "target": "bp3d:FMA8175",
+        "sourceLandmark": [
+          -0.07727358342423271,
+          -0.000761480140532525,
+          1.275113759963466
+        ],
+        "targetLandmark": [
+          -0.07459315191954374,
+          1.2018049955368042,
+          0.09857320704031736
+        ],
+        "landmarkErrorMm": 5.466113292771784,
+        "surfaceRmsMm": 5.08803652967065,
+        "surfaceMaxMm": 9.619799442589283,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Seventh rib.l",
+        "target": "bp3d:FMA8256",
+        "sourceLandmark": [
+          0.07904758120262562,
+          0.005653479295285105,
+          1.2436239598750602
+        ],
+        "targetLandmark": [
+          0.07408024743199348,
+          1.1727200150489807,
+          0.09235297376289964
+        ],
+        "landmarkErrorMm": 4.7866793133107315,
+        "surfaceRmsMm": 4.816256063768235,
+        "surfaceMaxMm": 8.936768397688866,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Seventh rib.r",
+        "target": "bp3d:FMA8229",
+        "sourceLandmark": [
+          -0.07904758190250114,
+          0.005653479295285632,
+          1.2436239598750594
+        ],
+        "targetLandmark": [
+          -0.07538735261186957,
+          1.172730028629303,
+          0.09234495786949992
+        ],
+        "landmarkErrorMm": 4.550070548931598,
+        "surfaceRmsMm": 4.687006269834223,
+        "surfaceMaxMm": 8.695880882441998,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Eighth rib.l",
+        "target": "bp3d:FMA8310",
+        "sourceLandmark": [
+          0.0763499392175565,
+          0.014670394427590563,
+          1.2110634819396369
+        ],
+        "targetLandmark": [
+          0.07200420275330544,
+          1.1429850459098816,
+          0.08362228167243302
+        ],
+        "landmarkErrorMm": 3.748235889248309,
+        "surfaceRmsMm": 3.857280211770122,
+        "surfaceMaxMm": 7.860157638788223,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Eighth rib.r",
+        "target": "bp3d:FMA8283",
+        "sourceLandmark": [
+          -0.07634993921125943,
+          0.014670394427590563,
+          1.2110634819396369
+        ],
+        "targetLandmark": [
+          -0.07332224678248167,
+          1.142994999885559,
+          0.08362124674022198
+        ],
+        "landmarkErrorMm": 3.515812616825251,
+        "surfaceRmsMm": 3.751079471456276,
+        "surfaceMaxMm": 7.814014330506325,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Ninth rib.l",
+        "target": "bp3d:FMA8391",
+        "sourceLandmark": [
+          0.07578238983235082,
+          0.027114953317422273,
+          1.1814124912882122
+        ],
+        "targetLandmark": [
+          0.07117060013115406,
+          1.1177249550819397,
+          0.07156482874415815
+        ],
+        "landmarkErrorMm": 6.4123818512092186,
+        "surfaceRmsMm": 4.413233386352997,
+        "surfaceMaxMm": 13.87887354940176,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Ninth rib.r",
+        "target": "bp3d:FMA8364",
+        "sourceLandmark": [
+          -0.07578238914672414,
+          0.027114953317422273,
+          1.1814124912882122
+        ],
+        "targetLandmark": [
+          -0.0724812988191843,
+          1.1177299618721008,
+          0.07158053177408874
+        ],
+        "landmarkErrorMm": 6.3169837874596535,
+        "surfaceRmsMm": 4.309363875511088,
+        "surfaceMaxMm": 14.332480728626251,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Tenth rib.l",
+        "target": "bp3d:FMA8472",
+        "sourceLandmark": [
+          0.07499409458866776,
+          0.030511961305693912,
+          1.1508547352349572
+        ],
+        "targetLandmark": [
+          0.06895565055310726,
+          1.0909749865531921,
+          0.06453475076705217
+        ],
+        "landmarkErrorMm": 10.531816106219821,
+        "surfaceRmsMm": 5.688932631176062,
+        "surfaceMaxMm": 19.271910190582275,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Tenth rib.r",
+        "target": "bp3d:FMA8445",
+        "sourceLandmark": [
+          -0.0749941088170932,
+          0.030511961305693905,
+          1.1508547352349572
+        ],
+        "targetLandmark": [
+          -0.07026045117527246,
+          1.0909799933433533,
+          0.06452315114438534
+        ],
+        "landmarkErrorMm": 10.457537848074532,
+        "surfaceRmsMm": 5.556128934220707,
+        "surfaceMaxMm": 19.212976098060608,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Eleventh rib.l",
+        "target": "bp3d:FMA8532",
+        "sourceLandmark": [
+          0.06980227485337023,
+          0.03766151789890693,
+          1.125067410853493
+        ],
+        "targetLandmark": [
+          0.06316650100052357,
+          1.064899981021881,
+          0.05698654893785715
+        ],
+        "landmarkErrorMm": 10.80986826900419,
+        "surfaceRmsMm": 4.503086531649429,
+        "surfaceMaxMm": 19.130045548081398,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Eleventh rib.r",
+        "target": "bp3d:FMA8531",
+        "sourceLandmark": [
+          -0.06980228857256184,
+          0.03766151765789047,
+          1.1250674109293006
+        ],
+        "targetLandmark": [
+          -0.06447465158998966,
+          1.0649049878120422,
+          0.056990149430930614
+        ],
+        "landmarkErrorMm": 10.693536579739176,
+        "surfaceRmsMm": 4.383300585913093,
+        "surfaceMaxMm": 19.02049221098423,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Twelfth rib.l",
+        "target": "bp3d:FMA8534",
+        "sourceLandmark": [
+          0.05243223614800619,
+          0.045919317671513575,
+          1.1053893017624548
+        ],
+        "targetLandmark": [
+          0.05105569865554571,
+          1.0502449870109558,
+          0.04704234842211008
+        ],
+        "landmarkErrorMm": 14.524129761953551,
+        "surfaceRmsMm": 7.613399276590716,
+        "surfaceMaxMm": 23.042818531394005,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Twelfth rib.r",
+        "target": "bp3d:FMA8533",
+        "sourceLandmark": [
+          -0.05243225041764968,
+          0.0459193178556146,
+          1.1053893017119507
+        ],
+        "targetLandmark": [
+          -0.05237285140901804,
+          1.050255000591278,
+          0.047044748440384865
+        ],
+        "landmarkErrorMm": 14.574918398734603,
+        "surfaceRmsMm": 7.72264201969598,
+        "surfaceMaxMm": 23.240217939019203,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Manubrium of sternum",
+        "target": "bp3d:FMA7486",
+        "sourceLandmark": [
+          -0.000129704203102321,
+          -0.057717041135225966,
+          1.3769282949214974
+        ],
+        "targetLandmark": [
+          0.0,
+          1.3027600049972534,
+          0.15469450503587723
+        ],
+        "landmarkErrorMm": 5.929325835917476,
+        "surfaceRmsMm": 4.774347150953072,
+        "surfaceMaxMm": 10.859404690563679,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Body of sternum",
+        "target": "bp3d:FMA7487",
+        "sourceLandmark": [
+          1.0240910341963172e-09,
+          -0.09996513874755664,
+          1.2992680028893098
+        ],
+        "targetLandmark": [
+          0.0001703500747680664,
+          1.2346449494361877,
+          0.18949900567531586
+        ],
+        "landmarkErrorMm": 6.7589918295340405,
+        "surfaceRmsMm": 3.8179447999264164,
+        "surfaceMaxMm": 9.541008621454239,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Hyoid bone",
+        "target": "bp3d:FMA52749",
+        "sourceLandmark": [
+          7.575733373954563e-10,
+          -0.02101287972346809,
+          1.5012745599245303
+        ],
+        "targetLandmark": [
+          -0.0006208503618836403,
+          1.4316149950027466,
+          0.1117093451321125
+        ],
+        "landmarkErrorMm": 2.7488253123398625,
+        "surfaceRmsMm": 2.3519038718443683,
+        "surfaceMaxMm": 4.197141155600548,
+        "holdout": false,
+        "samples": 800
+      }
+    ],
+    "landmarkRmsMm": 9.92277777121984,
+    "landmarkMaxMm": 23.819998917647517,
+    "surfaceRmsMm": 5.577304958364057,
+    "surfaceMaxMm": 26.741649955511093
+  },
+  "regions": {
+    "craniofacial": {
+      "globalScale": 0.9952171923529913,
+      "regionalRigid": [
+        [
+          0.9999895049102834,
+          0.0022398186692435262,
+          -0.003996658806562591,
+          -0.0024723282524183095
+        ],
+        [
+          -0.00222158104007307,
+          0.9999871270210673,
+          0.004561838427202564,
+          -0.0035421110134807865
+        ],
+        [
+          0.004006825048533521,
+          -0.004552911648870117,
+          0.9999816080051414,
+          0.003854378428038846
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix": [
+        [
+          0.9952081354775627,
+          0.003867629053437807,
+          0.0017517076665913313,
+          -0.0029463288218509543
+        ],
+        [
+          -0.0016884652317764408,
+          -0.016216983794356148,
+          0.9950836238612042,
+          -0.06576510034422409
+        ],
+        [
+          0.003895653912409935,
+          -0.9950775401128755,
+          -0.016210274472571392,
+          0.11521417724471392
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "iterations": 69,
+      "fittedBones": [
+        "Frontal bone",
+        "Mandible",
+        "Maxilla.l",
+        "Occipital bone",
+        "Sphenoid bone",
+        "Temporal bone.l",
+        "Zygomatic bone.l",
+        "Zygomatic bone.r"
+      ],
+      "heldOutBones": [
+        "Maxilla.r",
+        "Temporal bone.r"
+      ],
+      "landmarks": [
+        {
+          "source": "Frontal bone",
+          "target": "bp3d:FMA52734",
+          "sourceLandmark": [
+            -1.4893230648738154e-08,
+            -0.0525625739246605,
+            1.6459020596491127
+          ],
+          "targetLandmark": [
+            -0.000655200332403183,
+            1.575415015220642,
+            0.14201200008392334
+          ],
+          "landmarkErrorMm": 2.8050823973474595,
+          "surfaceRmsMm": 1.911164547220964,
+          "surfaceMaxMm": 4.556549713015556,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Mandible",
+          "target": "bp3d:FMA52748",
+          "sourceLandmark": [
+            7.930968382030557e-12,
+            -0.04275397832456529,
+            1.5374719918892845
+          ],
+          "targetLandmark": [
+            -0.0006459001451730728,
+            1.463865041732788,
+            0.13184284791350365
+          ],
+          "landmarkErrorMm": 1.4103752612029403,
+          "surfaceRmsMm": 2.164916037836853,
+          "surfaceMaxMm": 6.802594754844904,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Maxilla.l",
+          "target": "bp3d:FMA53650",
+          "sourceLandmark": [
+            0.02291150723734614,
+            -0.06696651689708227,
+            1.5713315473973695
+          ],
+          "targetLandmark": [
+            0.021363634266890585,
+            1.49864000082016,
+            0.15484699606895447
+          ],
+          "landmarkErrorMm": 1.9136567829978737,
+          "surfaceRmsMm": 0.8014641971231429,
+          "surfaceMaxMm": 4.056933335959911,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Maxilla.r",
+          "target": "bp3d:FMA53649",
+          "sourceLandmark": [
+            -0.02291150723734614,
+            -0.06696651689708227,
+            1.5713315473973695
+          ],
+          "targetLandmark": [
+            -0.0239308770687785,
+            1.498669981956482,
+            0.156701497733593
+          ],
+          "landmarkErrorMm": 0.8451331203562087,
+          "surfaceRmsMm": 0.7427768963588581,
+          "surfaceMaxMm": 2.343703294172883,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Occipital bone",
+          "target": "bp3d:FMA52735",
+          "sourceLandmark": [
+            -1.69887073298014e-08,
+            0.04545146785676483,
+            1.6029645301668063
+          ],
+          "targetLandmark": [
+            -0.0006279498338699341,
+            1.5311399698257446,
+            0.04147900175303221
+          ],
+          "landmarkErrorMm": 3.6542202535198136,
+          "surfaceRmsMm": 1.940149245790114,
+          "surfaceMaxMm": 4.784561228007078,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Sphenoid bone",
+          "target": "bp3d:FMA52736",
+          "sourceLandmark": [
+            -1.6996636986732483e-08,
+            -0.028852781537174233,
+            1.585280442314314
+          ],
+          "targetLandmark": [
+            -0.0006434489041566849,
+            1.5136849880218506,
+            0.11771584674715996
+          ],
+          "landmarkErrorMm": 1.621574775705609,
+          "surfaceRmsMm": 1.1118505228019617,
+          "surfaceMaxMm": 5.694370251148939,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Temporal bone.l",
+          "target": "bp3d:FMA52739",
+          "sourceLandmark": [
+            0.04103446484397888,
+            0.003390447236597552,
+            1.5859360297766827
+          ],
+          "targetLandmark": [
+            0.04210474994033575,
+            1.5134699940681458,
+            0.08431870304048061
+          ],
+          "landmarkErrorMm": 2.7211614628716454,
+          "surfaceRmsMm": 1.7677502876554096,
+          "surfaceMaxMm": 7.48905586078763,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Temporal bone.r",
+          "target": "bp3d:FMA52738",
+          "sourceLandmark": [
+            -0.04103446484397888,
+            0.003390447236597552,
+            1.5859360297766827
+          ],
+          "targetLandmark": [
+            -0.04334224946796894,
+            1.5135499835014343,
+            0.08437429927289486
+          ],
+          "landmarkErrorMm": 3.0695243330712234,
+          "surfaceRmsMm": 1.8973914675003016,
+          "surfaceMaxMm": 7.705244235694408,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Zygomatic bone.l",
+          "target": "bp3d:FMA52893",
+          "sourceLandmark": [
+            0.046970905414469744,
+            -0.05219299532473093,
+            1.5810910829385993
+          ],
+          "targetLandmark": [
+            0.047568852081894875,
+            1.508679986000061,
+            0.1415874995291233
+          ],
+          "landmarkErrorMm": 1.2597512703119589,
+          "surfaceRmsMm": 0.7367438758932845,
+          "surfaceMaxMm": 2.762414747849107,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Zygomatic bone.r",
+          "target": "bp3d:FMA52892",
+          "sourceLandmark": [
+            -0.046970905414469744,
+            -0.05219299532473093,
+            1.5810910829385993
+          ],
+          "targetLandmark": [
+            -0.048906249925494194,
+            1.5086400508880615,
+            0.14161349833011627
+          ],
+          "landmarkErrorMm": 1.8103372267504005,
+          "surfaceRmsMm": 1.1170619777972348,
+          "surfaceMaxMm": 2.0544675644487143,
+          "holdout": false,
+          "samples": 800
+        }
+      ],
+      "landmarkRmsMm": 2.278328374004563,
+      "landmarkMaxMm": 3.6542202535198136,
+      "surfaceRmsMm": 1.5182068006968772,
+      "surfaceMaxMm": 7.705244235694408
+    },
+    "spinal": {
+      "globalScale": 0.9952171923529913,
+      "regionalRigid": [
+        [
+          0.9999856854149608,
+          0.0017206211667272929,
+          0.005066401876593381,
+          -0.0024872209218333215
+        ],
+        [
+          -0.001670768901658771,
+          0.9999503119452354,
+          -0.009827622902035487,
+          0.0009722813163268729
+        ],
+        [
+          -0.005083059752923336,
+          0.009819017436992981,
+          0.9999388728317952,
+          -0.01259154815345593
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix": [
+        [
+          0.9952032504589726,
+          -0.00514540047550762,
+          0.001129196535556614,
+          -0.0019219658576742054
+        ],
+        [
+          -0.0011390171576728966,
+          -0.0018969464841482302,
+          0.9952147327029086,
+          -0.06284665860570876
+        ],
+        [
+          -0.0051432354392730115,
+          -0.9952020831986618,
+          -0.001902808774754003,
+          0.09786094509239174
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "iterations": 45,
+      "fittedBones": [
+        "Atlas (C1)",
+        "Axis (C2)",
+        "Sacrum",
+        "Vertebra C4",
+        "Vertebra C5",
+        "Vertebra C6",
+        "Vertebra L1",
+        "Vertebra L2",
+        "Vertebra L3",
+        "Vertebra L5",
+        "Vertebra T1",
+        "Vertebra T10",
+        "Vertebra T12",
+        "Vertebra T2",
+        "Vertebra T3",
+        "Vertebra T5",
+        "Vertebra T6",
+        "Vertebra T7",
+        "Vertebra T9"
+      ],
+      "heldOutBones": [
+        "Vertebra C3",
+        "Vertebra C7",
+        "Vertebra L4",
+        "Vertebra T11",
+        "Vertebra T4",
+        "Vertebra T8"
+      ],
+      "landmarks": [
+        {
+          "source": "Atlas (C1)",
+          "target": "bp3d:FMA12519",
+          "sourceLandmark": [
+            4.132570839789074e-06,
+            0.021419518909909972,
+            1.5429322203078817
+          ],
+          "targetLandmark": [
+            -0.0005669500678777695,
+            1.471820056438446,
+            0.06411999836564064
+          ],
+          "landmarkErrorMm": 9.529664004175366,
+          "surfaceRmsMm": 5.415308291475628,
+          "surfaceMaxMm": 10.04030928015709,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Axis (C2)",
+          "target": "bp3d:FMA12520",
+          "sourceLandmark": [
+            1.5628588256128007e-05,
+            0.026012921131367994,
+            1.529980217302458
+          ],
+          "targetLandmark": [
+            -0.0006937002763152122,
+            1.4557600021362305,
+            0.061604999005794525
+          ],
+          "landmarkErrorMm": 8.471549691228667,
+          "surfaceRmsMm": 4.763756451396555,
+          "surfaceMaxMm": 11.387786827981472,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Sacrum",
+          "target": "bp3d:FMA16202",
+          "sourceLandmark": [
+            -3.9095243000560054e-05,
+            0.049301523715257686,
+            0.9232941847294571
+          ],
+          "targetLandmark": [
+            -0.0006941501051187515,
+            0.8550184965133667,
+            0.0370713253505528
+          ],
+          "landmarkErrorMm": 10.021508931630656,
+          "surfaceRmsMm": 9.450357619748903,
+          "surfaceMaxMm": 20.077507942914963,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra C3",
+          "target": "bp3d:FMA12521",
+          "sourceLandmark": [
+            -2.0108970981425056e-09,
+            0.026889748079351423,
+            1.5063802859047408
+          ],
+          "targetLandmark": [
+            -0.0006517497822642326,
+            1.4313700199127197,
+            0.06297314912080765
+          ],
+          "landmarkErrorMm": 7.198015101580121,
+          "surfaceRmsMm": 3.8104316044549265,
+          "surfaceMaxMm": 8.862038142979145,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra C4",
+          "target": "bp3d:FMA12522",
+          "sourceLandmark": [
+            7.541486374089759e-05,
+            0.026470066529413562,
+            1.4930745974762267
+          ],
+          "targetLandmark": [
+            -0.0006879502907395363,
+            1.418370008468628,
+            0.0649008508771658
+          ],
+          "landmarkErrorMm": 6.012511916869261,
+          "surfaceRmsMm": 3.233223370096507,
+          "surfaceMaxMm": 7.155825383961201,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra C5",
+          "target": "bp3d:FMA12523",
+          "sourceLandmark": [
+            -3.867913191124561e-09,
+            0.029776539035291486,
+            1.48014458825025
+          ],
+          "targetLandmark": [
+            -0.0006822999566793442,
+            1.4058799743652344,
+            0.06342754885554314
+          ],
+          "landmarkErrorMm": 4.724116206889584,
+          "surfaceRmsMm": 2.0260707680632044,
+          "surfaceMaxMm": 4.935118835419416,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra C6",
+          "target": "bp3d:FMA12524",
+          "sourceLandmark": [
+            -1.4267032694137427e-10,
+            0.0349563711495342,
+            1.466026169193996
+          ],
+          "targetLandmark": [
+            -0.0006587496027350443,
+            1.3931649923324585,
+            0.06042519863694906
+          ],
+          "landmarkErrorMm": 2.9440077473882424,
+          "surfaceRmsMm": 1.8539792587008048,
+          "surfaceMaxMm": 4.517367575317621,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra C7",
+          "target": "bp3d:FMA12525",
+          "sourceLandmark": [
+            -3.867911956001446e-09,
+            0.04207336005837485,
+            1.4520207020792868
+          ],
+          "targetLandmark": [
+            -0.0006488487124443054,
+            1.3782749772071838,
+            0.05564915016293526
+          ],
+          "landmarkErrorMm": 4.569006780384417,
+          "surfaceRmsMm": 2.936789392602643,
+          "surfaceMaxMm": 5.9477766044437885,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L1",
+          "target": "bp3d:FMA13072",
+          "sourceLandmark": [
+            -1.6010429787494118e-10,
+            0.029237417504191284,
+            1.1039149230346084
+          ],
+          "targetLandmark": [
+            -0.0006591994315385818,
+            1.043590009212494,
+            0.06935120094567537
+          ],
+          "landmarkErrorMm": 8.308320722307355,
+          "surfaceRmsMm": 4.393487035497896,
+          "surfaceMaxMm": 10.345983318984509,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L2",
+          "target": "bp3d:FMA13073",
+          "sourceLandmark": [
+            -1.6010341663541539e-10,
+            0.0241035680598048,
+            1.0749188838526607
+          ],
+          "targetLandmark": [
+            -0.0006450489163398743,
+            1.0160380005836487,
+            0.07453440129756927
+          ],
+          "landmarkErrorMm": 9.548847888096647,
+          "surfaceRmsMm": 5.286014573888765,
+          "surfaceMaxMm": 10.525981895625591,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L3",
+          "target": "bp3d:FMA13074",
+          "sourceLandmark": [
+            1.031191205523585e-05,
+            0.02316831228272424,
+            1.043366922194335
+          ],
+          "targetLandmark": [
+            -0.0006809495389461517,
+            0.9887114763259888,
+            0.07243350148200989
+          ],
+          "landmarkErrorMm": 13.234677149509434,
+          "surfaceRmsMm": 6.42470376442839,
+          "surfaceMaxMm": 15.981437638401985,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L4",
+          "target": "bp3d:FMA13075",
+          "sourceLandmark": [
+            7.2904780615279385e-09,
+            0.024053417146205885,
+            1.0150479991213337
+          ],
+          "targetLandmark": [
+            -0.0006753504276275635,
+            0.9610330164432526,
+            0.06828059908002615
+          ],
+          "landmarkErrorMm": 14.228832403254616,
+          "surfaceRmsMm": 9.018193122042264,
+          "surfaceMaxMm": 20.636597648262978,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L5",
+          "target": "bp3d:FMA13076",
+          "sourceLandmark": [
+            -7.610679274294707e-09,
+            0.029125198146232018,
+            0.9828057281738154
+          ],
+          "targetLandmark": [
+            -0.0007135495543479919,
+            0.9297139942646027,
+            0.05866075120866299
+          ],
+          "landmarkErrorMm": 16.742960099374617,
+          "surfaceRmsMm": 8.632381355216793,
+          "surfaceMaxMm": 18.188172951340675,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T1",
+          "target": "bp3d:FMA9165",
+          "sourceLandmark": [
+            -2.2218198808543477e-10,
+            0.047353021544037366,
+            1.4379930844372455
+          ],
+          "targetLandmark": [
+            -0.0007333997637033463,
+            1.3620599508285522,
+            0.05197929963469505
+          ],
+          "landmarkErrorMm": 7.299265141104409,
+          "surfaceRmsMm": 4.408700974063769,
+          "surfaceMaxMm": 8.203200064599514,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T10",
+          "target": "bp3d:FMA10037",
+          "sourceLandmark": [
+            5.9325044962872664e-05,
+            0.053173522920897595,
+            1.197508763567328
+          ],
+          "targetLandmark": [
+            -0.0007057990878820419,
+            1.1284499764442444,
+            0.045940150041133165
+          ],
+          "landmarkErrorMm": 3.299528445986861,
+          "surfaceRmsMm": 2.2463008289479265,
+          "surfaceMaxMm": 4.830337129533291,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T11",
+          "target": "bp3d:FMA10059",
+          "sourceLandmark": [
+            -2.1011165030060397e-10,
+            0.04507779951353658,
+            1.1693154886493617
+          ],
+          "targetLandmark": [
+            -0.0006008492782711983,
+            1.1024949550628662,
+            0.052770648151636124
+          ],
+          "landmarkErrorMm": 2.63690067521654,
+          "surfaceRmsMm": 2.0909410223639324,
+          "surfaceMaxMm": 4.841711837798357,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T12",
+          "target": "bp3d:FMA10081",
+          "sourceLandmark": [
+            -3.935401875904132e-09,
+            0.03673141023580975,
+            1.1390766227605158
+          ],
+          "targetLandmark": [
+            -0.0006657997146248817,
+            1.0757750272750854,
+            0.06197294872254133
+          ],
+          "landmarkErrorMm": 5.80688517315213,
+          "surfaceRmsMm": 2.9222293741400582,
+          "surfaceMaxMm": 6.494296249002218,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T2",
+          "target": "bp3d:FMA9187",
+          "sourceLandmark": [
+            3.519096992976589e-09,
+            0.05276584569468305,
+            1.4200630769614675
+          ],
+          "targetLandmark": [
+            -0.0006718486547470093,
+            1.3434749841690063,
+            0.047398149967193604
+          ],
+          "landmarkErrorMm": 8.333984567227716,
+          "surfaceRmsMm": 4.69383240471989,
+          "surfaceMaxMm": 9.021269157528877,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T3",
+          "target": "bp3d:FMA9209",
+          "sourceLandmark": [
+            -3.935409831345993e-09,
+            0.061479791405786896,
+            1.398801857087609
+          ],
+          "targetLandmark": [
+            -0.000562598928809166,
+            1.3220400214195251,
+            0.039048205595463514
+          ],
+          "landmarkErrorMm": 8.707896649564814,
+          "surfaceRmsMm": 4.928273535517466,
+          "surfaceMaxMm": 11.82304136455059,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T4",
+          "target": "bp3d:FMA9248",
+          "sourceLandmark": [
+            -2.1011770795498208e-10,
+            0.06525581180725933,
+            1.3752223733058675
+          ],
+          "targetLandmark": [
+            -0.0005898512899875641,
+            1.2995749711990356,
+            0.034901399732916616
+          ],
+          "landmarkErrorMm": 7.63779395731714,
+          "surfaceRmsMm": 4.756314696330131,
+          "surfaceMaxMm": 9.297213517129421,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T5",
+          "target": "bp3d:FMA9922",
+          "sourceLandmark": [
+            5.194394692847881e-08,
+            0.06606699772332447,
+            1.3472536235857078
+          ],
+          "targetLandmark": [
+            -0.0006308984011411667,
+            1.2685200572013855,
+            0.03299522502220498
+          ],
+          "landmarkErrorMm": 9.932863825905056,
+          "surfaceRmsMm": 4.293484444130761,
+          "surfaceMaxMm": 8.675157092511654,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T6",
+          "target": "bp3d:FMA9945",
+          "sourceLandmark": [
+            -2.1011601486486953e-10,
+            0.06675404311435298,
+            1.314240310255109
+          ],
+          "targetLandmark": [
+            -0.0006943996995687485,
+            1.2392300367355347,
+            0.03320666495710611
+          ],
+          "landmarkErrorMm": 7.1671046944079535,
+          "surfaceRmsMm": 4.1067291164987,
+          "surfaceMaxMm": 8.11114814132452,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T7",
+          "target": "bp3d:FMA9968",
+          "sourceLandmark": [
+            -2.1011497403078394e-10,
+            0.0649507710063615,
+            1.2860407214611773
+          ],
+          "targetLandmark": [
+            -0.00045285001397132874,
+            1.2105499505996704,
+            0.033825346326921135
+          ],
+          "landmarkErrorMm": 7.068698560061919,
+          "surfaceRmsMm": 3.5152854422633135,
+          "surfaceMaxMm": 7.363872602581978,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T8",
+          "target": "bp3d:FMA9991",
+          "sourceLandmark": [
+            -2.1011299644602133e-10,
+            0.06341774965385766,
+            1.255830272249287
+          ],
+          "targetLandmark": [
+            -0.0007533486932516098,
+            1.1833999752998352,
+            0.03647969863959588
+          ],
+          "landmarkErrorMm": 5.378154115179095,
+          "surfaceRmsMm": 3.413269124890008,
+          "surfaceMaxMm": 6.99958298355341,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T9",
+          "target": "bp3d:FMA10014",
+          "sourceLandmark": [
+            3.515177489366028e-09,
+            0.05859734122692229,
+            1.22848068727775
+          ],
+          "targetLandmark": [
+            -0.0006984006613492966,
+            1.1557349562644958,
+            0.041904480662196875
+          ],
+          "landmarkErrorMm": 6.112796581599616,
+          "surfaceRmsMm": 2.8804495460376685,
+          "surfaceMaxMm": 7.895895279943943,
+          "holdout": false,
+          "samples": 800
+        }
+      ],
+      "landmarkRmsMm": 8.47521213873747,
+      "landmarkMaxMm": 16.742960099374617,
+      "surfaceRmsMm": 4.902145936351265,
+      "surfaceMaxMm": 20.636597648262978
+    },
+    "upper": {
+      "globalScale": 0.9952171923529913,
+      "regionalRigid": [
+        [
+          0.999988869526815,
+          -0.004516141128269695,
+          -0.0013657568568930037,
+          0.004432257918766117
+        ],
+        [
+          0.004524150440816831,
+          0.9999722467210307,
+          0.005919277868328528,
+          -0.004955587875062228
+        ],
+        [
+          0.0013389866584311225,
+          -0.005925390873451113,
+          0.9999815482586288,
+          0.012435348290439428
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix": [
+        [
+          0.9952037346018016,
+          0.0013283839939107558,
+          -0.005002198073023648,
+          0.004674289925524501
+        ],
+        [
+          0.005024872314066763,
+          -0.017568227262735277,
+          0.9950494299300121,
+          -0.0670261201184407
+        ],
+        [
+          0.001239857985563505,
+          -0.9950612306495421,
+          -0.01757469673610365,
+          0.12388094182295811
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "iterations": 80,
+      "fittedBones": [
+        "Clavicle.l",
+        "Clavicle.r",
+        "Humerus.l",
+        "Radius.l",
+        "Radius.r",
+        "Scapula.l",
+        "Ulna.l",
+        "Ulna.r",
+        "Vertebra C5",
+        "Vertebra C7",
+        "Vertebra T1",
+        "Vertebra T2",
+        "Vertebra T4"
+      ],
+      "heldOutBones": [
+        "Humerus.r",
+        "Scapula.r",
+        "Vertebra C6",
+        "Vertebra T3"
+      ],
+      "landmarks": [
+        {
+          "source": "Clavicle.l",
+          "target": "bp3d:FMA13323",
+          "sourceLandmark": [
+            0.0827725640774378,
+            0.0008759426042934462,
+            1.4071637648969233
+          ],
+          "targetLandmark": [
+            0.07616036431863904,
+            1.3318549990653992,
+            0.10073274560272694
+          ],
+          "landmarkErrorMm": 4.828269939641868,
+          "surfaceRmsMm": 3.64596155706089,
+          "surfaceMaxMm": 9.996498934924603,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Clavicle.r",
+          "target": "bp3d:FMA13322",
+          "sourceLandmark": [
+            -0.08277257897859899,
+            0.0008759426042934462,
+            1.4071637648969233
+          ],
+          "targetLandmark": [
+            -0.07746932189911604,
+            1.3320299983024597,
+            0.10068024694919586
+          ],
+          "landmarkErrorMm": 7.721600560023659,
+          "surfaceRmsMm": 4.422073535915893,
+          "surfaceMaxMm": 13.074089772999287,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Humerus.l",
+          "target": "bp3d:FMA23131",
+          "sourceLandmark": [
+            0.19671969489928975,
+            0.02744267687499568,
+            1.2458133858466303
+          ],
+          "targetLandmark": [
+            0.19041649997234344,
+            1.1828649640083313,
+            0.07564245164394379
+          ],
+          "landmarkErrorMm": 10.492719789776432,
+          "surfaceRmsMm": 3.864245120093094,
+          "surfaceMaxMm": 14.568068087100983,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Humerus.r",
+          "target": "bp3d:FMA23130",
+          "sourceLandmark": [
+            -0.19671966509696737,
+            0.02744267687499568,
+            1.2458133858466303
+          ],
+          "targetLandmark": [
+            -0.1904655024409294,
+            1.1828699707984924,
+            0.07562904804944992
+          ],
+          "landmarkErrorMm": 13.61891644601813,
+          "surfaceRmsMm": 5.3901663754739,
+          "surfaceMaxMm": 17.279822379350662,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Radius.l",
+          "target": "bp3d:FMA23465",
+          "sourceLandmark": [
+            0.25777194178866997,
+            0.007605227777660296,
+            0.9748274816683247
+          ],
+          "targetLandmark": [
+            0.24948950111865997,
+            0.920586496591568,
+            0.09436064958572388
+          ],
+          "landmarkErrorMm": 18.546770088689026,
+          "surfaceRmsMm": 6.1408673631938715,
+          "surfaceMaxMm": 21.260781213641167,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Radius.r",
+          "target": "bp3d:FMA23464",
+          "sourceLandmark": [
+            -0.25777194178866997,
+            0.007605227777660296,
+            0.9748274816683247
+          ],
+          "targetLandmark": [
+            -0.24968399852514267,
+            0.920442521572113,
+            0.09400530159473419
+          ],
+          "landmarkErrorMm": 20.74248659752813,
+          "surfaceRmsMm": 6.716680049832871,
+          "surfaceMaxMm": 23.572931066155434,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Scapula.l",
+          "target": "bp3d:FMA13396",
+          "sourceLandmark": [
+            0.11709327458268992,
+            0.05577132937669602,
+            1.3360572019518684
+          ],
+          "targetLandmark": [
+            0.11176270060241222,
+            1.2669049501419067,
+            0.048884299118071795
+          ],
+          "landmarkErrorMm": 6.822631629118446,
+          "surfaceRmsMm": 3.7372359478794706,
+          "surfaceMaxMm": 9.794882498681545,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Scapula.r",
+          "target": "bp3d:FMA13395",
+          "sourceLandmark": [
+            -0.11709325968152873,
+            0.05577132937669602,
+            1.3360572019518684
+          ],
+          "targetLandmark": [
+            -0.11175890080630779,
+            1.2669099569320679,
+            0.048886626260355115
+          ],
+          "landmarkErrorMm": 9.938204049383877,
+          "surfaceRmsMm": 5.354730666546892,
+          "surfaceMaxMm": 11.867976747453213,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Ulna.l",
+          "target": "bp3d:FMA23468",
+          "sourceLandmark": [
+            0.2294337282052209,
+            0.01876828532029111,
+            0.9833000012265182
+          ],
+          "targetLandmark": [
+            0.22200599312782288,
+            0.9287429749965668,
+            0.08391564898192883
+          ],
+          "landmarkErrorMm": 18.122983600224178,
+          "surfaceRmsMm": 5.631566991288275,
+          "surfaceMaxMm": 21.54439687728882,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Ulna.r",
+          "target": "bp3d:FMA23467",
+          "sourceLandmark": [
+            -0.2294336984028985,
+            0.01876828532029111,
+            0.9833000012265182
+          ],
+          "targetLandmark": [
+            -0.22202999889850616,
+            0.9288114607334137,
+            0.08414660021662712
+          ],
+          "landmarkErrorMm": 20.285631500816134,
+          "surfaceRmsMm": 6.28726082958918,
+          "surfaceMaxMm": 23.574545979499817,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra C5",
+          "target": "bp3d:FMA12523",
+          "sourceLandmark": [
+            -3.867913191124561e-09,
+            0.029776539035291486,
+            1.48014458825025
+          ],
+          "targetLandmark": [
+            -0.0006822999566793442,
+            1.4058799743652344,
+            0.06342754885554314
+          ],
+          "landmarkErrorMm": 5.248826218463545,
+          "surfaceRmsMm": 2.97421905192515,
+          "surfaceMaxMm": 6.608286406844854,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra C6",
+          "target": "bp3d:FMA12524",
+          "sourceLandmark": [
+            -1.4267032694137427e-10,
+            0.0349563711495342,
+            1.466026169193996
+          ],
+          "targetLandmark": [
+            -0.0006587496027350443,
+            1.3931649923324585,
+            0.06042519863694906
+          ],
+          "landmarkErrorMm": 4.051769854442677,
+          "surfaceRmsMm": 2.4105538183453885,
+          "surfaceMaxMm": 8.106788620352745,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra C7",
+          "target": "bp3d:FMA12525",
+          "sourceLandmark": [
+            -3.867911956001446e-09,
+            0.04207336005837485,
+            1.4520207020792868
+          ],
+          "targetLandmark": [
+            -0.0006488487124443054,
+            1.3782749772071838,
+            0.05564915016293526
+          ],
+          "landmarkErrorMm": 2.393226845603714,
+          "surfaceRmsMm": 1.4818274393601794,
+          "surfaceMaxMm": 4.836954176425934,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T1",
+          "target": "bp3d:FMA9165",
+          "sourceLandmark": [
+            -2.2218198808543477e-10,
+            0.047353021544037366,
+            1.4379930844372455
+          ],
+          "targetLandmark": [
+            -0.0007333997637033463,
+            1.3620599508285522,
+            0.05197929963469505
+          ],
+          "landmarkErrorMm": 2.0301201867772276,
+          "surfaceRmsMm": 1.3595534004539411,
+          "surfaceMaxMm": 3.9428817108273506,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T2",
+          "target": "bp3d:FMA9187",
+          "sourceLandmark": [
+            3.519096992976589e-09,
+            0.05276584569468305,
+            1.4200630769614675
+          ],
+          "targetLandmark": [
+            -0.0006718486547470093,
+            1.3434749841690063,
+            0.047398149967193604
+          ],
+          "landmarkErrorMm": 2.526236149745111,
+          "surfaceRmsMm": 1.692160812154207,
+          "surfaceMaxMm": 4.053451120853424,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T3",
+          "target": "bp3d:FMA9209",
+          "sourceLandmark": [
+            -3.935409831345993e-09,
+            0.061479791405786896,
+            1.398801857087609
+          ],
+          "targetLandmark": [
+            -0.000562598928809166,
+            1.3220400214195251,
+            0.039048205595463514
+          ],
+          "landmarkErrorMm": 2.5830607926133853,
+          "surfaceRmsMm": 1.8438433546055801,
+          "surfaceMaxMm": 5.90171804651618,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T4",
+          "target": "bp3d:FMA9248",
+          "sourceLandmark": [
+            -2.1011770795498208e-10,
+            0.06525581180725933,
+            1.3752223733058675
+          ],
+          "targetLandmark": [
+            -0.0005898512899875641,
+            1.2995749711990356,
+            0.034901399732916616
+          ],
+          "landmarkErrorMm": 1.6719436954931117,
+          "surfaceRmsMm": 1.754667293760644,
+          "surfaceMaxMm": 4.769228398799896,
+          "holdout": false,
+          "samples": 800
+        }
+      ],
+      "landmarkRmsMm": 11.134661776132832,
+      "landmarkMaxMm": 20.74248659752813,
+      "surfaceRmsMm": 4.211925198272098,
+      "surfaceMaxMm": 23.574545979499817
+    },
+    "lower": {
+      "globalScale": 0.9952171923529913,
+      "regionalRigid": [
+        [
+          0.9998719643229717,
+          -2.0866365737662025e-05,
+          0.016001703831648322,
+          -0.0014868988919596324
+        ],
+        [
+          -0.00022687453893840116,
+          0.9998801489985227,
+          0.015480186259673784,
+          -0.0025252866824722053
+        ],
+        [
+          -0.016000109026646933,
+          -0.015481834622724542,
+          0.9997521239326517,
+          0.005005869100438112
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix": [
+        [
+          0.9950881825505394,
+          -0.01600730582231636,
+          -0.0007314803785700862,
+          0.0004022349272062393
+        ],
+        [
+          0.00029566616504250254,
+          -0.0270812804603765,
+          0.994848620034784,
+          -0.06352858081102464
+        ],
+        [
+          -0.016021282244322525,
+          -0.994719875323655,
+          -0.027073014355820497,
+          0.11702354247907305
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "iterations": 42,
+      "fittedBones": [
+        "Calcaneus.l",
+        "Calcaneus.r",
+        "Femur.l",
+        "Fibula.l",
+        "Fibula.r",
+        "Hip bone.l",
+        "Sacrum",
+        "Talus.l",
+        "Talus.r",
+        "Tibia.r",
+        "Vertebra L1",
+        "Vertebra L2",
+        "Vertebra L4",
+        "Vertebra L5"
+      ],
+      "heldOutBones": [
+        "Femur.r",
+        "Hip bone.r",
+        "Tibia.l",
+        "Vertebra L3"
+      ],
+      "landmarks": [
+        {
+          "source": "Calcaneus.l",
+          "target": "bp3d:FMA24498",
+          "sourceLandmark": [
+            0.07845637309177456,
+            0.05371231657031732,
+            0.03700307028871922
+          ],
+          "targetLandmark": [
+            0.07288900017738342,
+            -0.04374419990926981,
+            0.05917430203408003
+          ],
+          "landmarkErrorMm": 16.431520782812633,
+          "surfaceRmsMm": 9.665349587155147,
+          "surfaceMaxMm": 18.020542338490486,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Calcaneus.r",
+          "target": "bp3d:FMA24497",
+          "sourceLandmark": [
+            -0.07845637308021995,
+            0.05371231657031732,
+            0.03700307030010514
+          ],
+          "targetLandmark": [
+            -0.07282840088009834,
+            -0.043822699226439,
+            0.05907680094242096
+          ],
+          "landmarkErrorMm": 17.315988384624376,
+          "surfaceRmsMm": 9.69660925869506,
+          "surfaceMaxMm": 18.692683428525925,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Femur.l",
+          "target": "bp3d:FMA24475",
+          "sourceLandmark": [
+            0.09023460385962445,
+            0.020297355814991033,
+            0.6570856645740681
+          ],
+          "targetLandmark": [
+            0.09110159613192081,
+            0.6011475026607513,
+            0.08087910152971745
+          ],
+          "landmarkErrorMm": 12.079340474719446,
+          "surfaceRmsMm": 4.9756026012669485,
+          "surfaceMaxMm": 21.924668923020363,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Femur.r",
+          "target": "bp3d:FMA24474",
+          "sourceLandmark": [
+            -0.09023460385962445,
+            0.020297355814991033,
+            0.6570856645740681
+          ],
+          "targetLandmark": [
+            -0.09101414866745472,
+            0.6012009978294373,
+            0.08086109906435013
+          ],
+          "landmarkErrorMm": 11.63998959098301,
+          "surfaceRmsMm": 5.484363816251538,
+          "surfaceMaxMm": 23.316120728850365,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Fibula.l",
+          "target": "bp3d:FMA24481",
+          "sourceLandmark": [
+            0.10673542037682865,
+            0.043223464325571254,
+            0.2364572160392892
+          ],
+          "targetLandmark": [
+            0.10231849923729897,
+            0.16697020456194878,
+            0.06332650035619736
+          ],
+          "landmarkErrorMm": 5.607481857055782,
+          "surfaceRmsMm": 3.4746346461502373,
+          "surfaceMaxMm": 10.692170821130276,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Fibula.r",
+          "target": "bp3d:FMA24480",
+          "sourceLandmark": [
+            -0.10673540547566746,
+            0.043223464325571254,
+            0.2364572160392892
+          ],
+          "targetLandmark": [
+            -0.10225474834442139,
+            0.16693504620343447,
+            0.06332810036838055
+          ],
+          "landmarkErrorMm": 8.270461543033417,
+          "surfaceRmsMm": 4.972737300497576,
+          "surfaceMaxMm": 13.567180372774601,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Hip bone.l",
+          "target": "bp3d:FMA16587",
+          "sourceLandmark": [
+            0.06891577318310738,
+            0.015357465643282227,
+            0.9046399949382279
+          ],
+          "targetLandmark": [
+            0.07375215133652091,
+            0.8550204932689667,
+            0.07020496675977483
+          ],
+          "landmarkErrorMm": 20.670998176542582,
+          "surfaceRmsMm": 9.257551238918339,
+          "surfaceMaxMm": 24.084586650133133,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Hip bone.r",
+          "target": "bp3d:FMA16586",
+          "sourceLandmark": [
+            -0.06891577318310738,
+            0.015357465643282227,
+            0.9046399949382279
+          ],
+          "targetLandmark": [
+            -0.07383114739786834,
+            0.855010986328125,
+            0.07006888877367601
+          ],
+          "landmarkErrorMm": 21.263542491089925,
+          "surfaceRmsMm": 9.692180998349668,
+          "surfaceMaxMm": 24.210955947637558,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Sacrum",
+          "target": "bp3d:FMA16202",
+          "sourceLandmark": [
+            -3.9095243000560054e-05,
+            0.049301523715257686,
+            0.9232941847294571
+          ],
+          "targetLandmark": [
+            -0.0006941501051187515,
+            0.8550184965133667,
+            0.0370713253505528
+          ],
+          "landmarkErrorMm": 6.079751795842583,
+          "surfaceRmsMm": 8.943944505066593,
+          "surfaceMaxMm": 20.67607082426548,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Talus.l",
+          "target": "bp3d:FMA24483",
+          "sourceLandmark": [
+            0.07470057552309006,
+            0.03657284474715705,
+            0.06766913016554066
+          ],
+          "targetLandmark": [
+            0.06990689970552921,
+            -0.014103744993917644,
+            0.07724549993872643
+          ],
+          "landmarkErrorMm": 17.443105936711827,
+          "surfaceRmsMm": 10.025482489961718,
+          "surfaceMaxMm": 18.418027088046074,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Talus.r",
+          "target": "bp3d:FMA24482",
+          "sourceLandmark": [
+            -0.07470057552309006,
+            0.03657284474715705,
+            0.06766913016554066
+          ],
+          "targetLandmark": [
+            -0.06987045146524906,
+            -0.014022585120983422,
+            0.07716149836778641
+          ],
+          "landmarkErrorMm": 17.67668947428664,
+          "surfaceRmsMm": 10.147686989242038,
+          "surfaceMaxMm": 19.11015249788761,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Tibia.l",
+          "target": "bp3d:FMA24478",
+          "sourceLandmark": [
+            0.0765656138835703,
+            0.02894810090494454,
+            0.25419984591547173
+          ],
+          "targetLandmark": [
+            0.07224459759891033,
+            0.18388333404436707,
+            0.08324855007231236
+          ],
+          "landmarkErrorMm": 6.761321627328874,
+          "surfaceRmsMm": 5.163124555143577,
+          "surfaceMaxMm": 16.775669530034065,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Tibia.r",
+          "target": "bp3d:FMA24477",
+          "sourceLandmark": [
+            -0.0765656138835703,
+            0.02894810090494454,
+            0.25419984591547173
+          ],
+          "targetLandmark": [
+            -0.07228449918329716,
+            0.18394141690805554,
+            0.08345395140349865
+          ],
+          "landmarkErrorMm": 6.269223281626651,
+          "surfaceRmsMm": 4.326331559959417,
+          "surfaceMaxMm": 13.912109658122063,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L1",
+          "target": "bp3d:FMA13072",
+          "sourceLandmark": [
+            -1.6010429787494118e-10,
+            0.029237417504191284,
+            1.1039149230346084
+          ],
+          "targetLandmark": [
+            -0.0006591994315385818,
+            1.043590009212494,
+            0.06935120094567537
+          ],
+          "landmarkErrorMm": 14.879916796725867,
+          "surfaceRmsMm": 6.733586490667437,
+          "surfaceMaxMm": 16.595149412751198,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L2",
+          "target": "bp3d:FMA13073",
+          "sourceLandmark": [
+            -1.6010341663541539e-10,
+            0.0241035680598048,
+            1.0749188838526607
+          ],
+          "targetLandmark": [
+            -0.0006450489163398743,
+            1.0160380005836487,
+            0.07453440129756927
+          ],
+          "landmarkErrorMm": 15.15216535633579,
+          "surfaceRmsMm": 7.42748831952724,
+          "surfaceMaxMm": 16.282618045806885,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L3",
+          "target": "bp3d:FMA13074",
+          "sourceLandmark": [
+            1.031191205523585e-05,
+            0.02316831228272424,
+            1.043366922194335
+          ],
+          "targetLandmark": [
+            -0.0006809495389461517,
+            0.9887114763259888,
+            0.07243350148200989
+          ],
+          "landmarkErrorMm": 16.31594767532988,
+          "surfaceRmsMm": 8.001659954280475,
+          "surfaceMaxMm": 16.9866643846035,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L4",
+          "target": "bp3d:FMA13075",
+          "sourceLandmark": [
+            7.2904780615279385e-09,
+            0.024053417146205885,
+            1.0150479991213337
+          ],
+          "targetLandmark": [
+            -0.0006753504276275635,
+            0.9610330164432526,
+            0.06828059908002615
+          ],
+          "landmarkErrorMm": 15.622761973451166,
+          "surfaceRmsMm": 9.933136641458773,
+          "surfaceMaxMm": 21.597841754555702,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L5",
+          "target": "bp3d:FMA13076",
+          "sourceLandmark": [
+            -7.610679274294707e-09,
+            0.029125198146232018,
+            0.9828057281738154
+          ],
+          "targetLandmark": [
+            -0.0007135495543479919,
+            0.9297139942646027,
+            0.05866075120866299
+          ],
+          "landmarkErrorMm": 16.524729751203207,
+          "surfaceRmsMm": 8.87393359678282,
+          "surfaceMaxMm": 18.680252134799957,
+          "holdout": false,
+          "samples": 800
+        }
+      ],
+      "landmarkRmsMm": 14.536482505293039,
+      "landmarkMaxMm": 21.263542491089925,
+      "surfaceRmsMm": 7.921574399998752,
+      "surfaceMaxMm": 24.210955947637558
+    },
+    "trunk": {
+      "globalScale": 0.9952171923529913,
+      "regionalRigid": [
+        [
+          0.9998831514335761,
+          0.0029772825607041237,
+          0.014993974383488758,
+          -0.00366657670514536
+        ],
+        [
+          -0.002565335762622791,
+          0.9996207411982363,
+          -0.027418840579299684,
+          0.0010613690735539194
+        ],
+        [
+          -0.015069921422621875,
+          0.02737717214837521,
+          0.9995115746770885,
+          -0.03185560068112775
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix": [
+        [
+          0.9951009742232919,
+          -0.015039477350923872,
+          0.002263885119732033,
+          -0.0020774506646613847
+        ],
+        [
+          -0.002027901026696174,
+          0.015612853770895432,
+          0.9950926521533179,
+          -0.06469095405158243
+        ],
+        [
+          -0.015073110901543164,
+          -0.9949810615650486,
+          0.01558038541275886,
+          0.07744689952979635
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "iterations": 54,
+      "fittedBones": [
+        "Body of sternum",
+        "Clavicle.l",
+        "Clavicle.r",
+        "Eighth rib.r",
+        "Eleventh rib.l",
+        "Eleventh rib.r",
+        "Fifth rib.r",
+        "First rib.l",
+        "First rib.r",
+        "Fourth rib.r",
+        "Hip bone.l",
+        "Hip bone.r",
+        "Ninth rib.l",
+        "Ninth rib.r",
+        "Sacrum",
+        "Scapula.r",
+        "Second rib.l",
+        "Second rib.r",
+        "Seventh rib.r",
+        "Sixth rib.l",
+        "Sixth rib.r",
+        "Tenth rib.r",
+        "Third rib.l",
+        "Third rib.r",
+        "Twelfth rib.r",
+        "Vertebra L1",
+        "Vertebra L2",
+        "Vertebra L4",
+        "Vertebra L5",
+        "Vertebra T1",
+        "Vertebra T11",
+        "Vertebra T12",
+        "Vertebra T2",
+        "Vertebra T4",
+        "Vertebra T5",
+        "Vertebra T6",
+        "Vertebra T8",
+        "Vertebra T9"
+      ],
+      "heldOutBones": [
+        "Eighth rib.l",
+        "Fifth rib.l",
+        "Fourth rib.l",
+        "Manubrium of sternum",
+        "Scapula.l",
+        "Seventh rib.l",
+        "Tenth rib.l",
+        "Twelfth rib.l",
+        "Vertebra L3",
+        "Vertebra T10",
+        "Vertebra T3",
+        "Vertebra T7"
+      ],
+      "landmarks": [
+        {
+          "source": "Body of sternum",
+          "target": "bp3d:FMA7487",
+          "sourceLandmark": [
+            1.0240910341963172e-09,
+            -0.09996513874755664,
+            1.2992680028893098
+          ],
+          "targetLandmark": [
+            0.0001703500747680664,
+            1.2346449494361877,
+            0.18949900567531586
+          ],
+          "landmarkErrorMm": 11.291170230946522,
+          "surfaceRmsMm": 4.7949204158368355,
+          "surfaceMaxMm": 13.573290780186653,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Clavicle.l",
+          "target": "bp3d:FMA13323",
+          "sourceLandmark": [
+            0.0827725640774378,
+            0.0008759426042934462,
+            1.4071637648969233
+          ],
+          "targetLandmark": [
+            0.07616036431863904,
+            1.3318549990653992,
+            0.10073274560272694
+          ],
+          "landmarkErrorMm": 8.836994128246355,
+          "surfaceRmsMm": 4.257961235406536,
+          "surfaceMaxMm": 11.9355833157897,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Clavicle.r",
+          "target": "bp3d:FMA13322",
+          "sourceLandmark": [
+            -0.08277257897859899,
+            0.0008759426042934462,
+            1.4071637648969233
+          ],
+          "targetLandmark": [
+            -0.07746932189911604,
+            1.3320299983024597,
+            0.10068024694919586
+          ],
+          "landmarkErrorMm": 5.400145773986934,
+          "surfaceRmsMm": 3.781152704992796,
+          "surfaceMaxMm": 9.571351110935211,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Eighth rib.l",
+          "target": "bp3d:FMA8310",
+          "sourceLandmark": [
+            0.0763499392175565,
+            0.014670394427590563,
+            1.2110634819396369
+          ],
+          "targetLandmark": [
+            0.07200420275330544,
+            1.1429850459098816,
+            0.08362228167243302
+          ],
+          "landmarkErrorMm": 5.914408436881154,
+          "surfaceRmsMm": 4.661529746405478,
+          "surfaceMaxMm": 11.400122195482254,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Eighth rib.r",
+          "target": "bp3d:FMA8283",
+          "sourceLandmark": [
+            -0.07634993921125943,
+            0.014670394427590563,
+            1.2110634819396369
+          ],
+          "targetLandmark": [
+            -0.07332224678248167,
+            1.142994999885559,
+            0.08362124674022198
+          ],
+          "landmarkErrorMm": 3.1951111250102495,
+          "surfaceRmsMm": 3.59409999985334,
+          "surfaceMaxMm": 9.04425885528326,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Eleventh rib.l",
+          "target": "bp3d:FMA8532",
+          "sourceLandmark": [
+            0.06980227485337023,
+            0.03766151789890693,
+            1.125067410853493
+          ],
+          "targetLandmark": [
+            0.06316650100052357,
+            1.064899981021881,
+            0.05698654893785715
+          ],
+          "landmarkErrorMm": 11.43739011431831,
+          "surfaceRmsMm": 5.979557666350872,
+          "surfaceMaxMm": 20.521720871329308,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Eleventh rib.r",
+          "target": "bp3d:FMA8531",
+          "sourceLandmark": [
+            -0.06980228857256184,
+            0.03766151765789047,
+            1.1250674109293006
+          ],
+          "targetLandmark": [
+            -0.06447465158998966,
+            1.0649049878120422,
+            0.056990149430930614
+          ],
+          "landmarkErrorMm": 10.730613103586375,
+          "surfaceRmsMm": 4.729450337360906,
+          "surfaceMaxMm": 19.52589303255081,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Fifth rib.l",
+          "target": "bp3d:FMA8093",
+          "sourceLandmark": [
+            0.07340186893690656,
+            -0.0074394555377955834,
+            1.3043036351055242
+          ],
+          "targetLandmark": [
+            0.06988625274971128,
+            1.2317450046539307,
+            0.10520534915849566
+          ],
+          "landmarkErrorMm": 4.462463559388033,
+          "surfaceRmsMm": 4.618058008358667,
+          "surfaceMaxMm": 9.579143486917019,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Fifth rib.r",
+          "target": "bp3d:FMA8066",
+          "sourceLandmark": [
+            -0.07340186884849453,
+            -0.0074394555377955696,
+            1.3043036351055242
+          ],
+          "targetLandmark": [
+            -0.07119659753516316,
+            1.2317399978637695,
+            0.10518929921090603
+          ],
+          "landmarkErrorMm": 2.045508039287571,
+          "surfaceRmsMm": 3.769755618043697,
+          "surfaceMaxMm": 8.697557263076305,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "First rib.l",
+          "target": "bp3d:FMA7987",
+          "sourceLandmark": [
+            0.04372448398281915,
+            -0.0017957380888829963,
+            1.4168420271192637
+          ],
+          "targetLandmark": [
+            0.04112750058993697,
+            1.34027498960495,
+            0.09741849824786186
+          ],
+          "landmarkErrorMm": 6.787648975346943,
+          "surfaceRmsMm": 5.524156947164842,
+          "surfaceMaxMm": 8.042984642088413,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "First rib.r",
+          "target": "bp3d:FMA7857",
+          "sourceLandmark": [
+            -0.043724491345843636,
+            -0.0017957380888829998,
+            1.4168420271192634
+          ],
+          "targetLandmark": [
+            -0.04243749985471368,
+            1.34027498960495,
+            0.09741929545998573
+          ],
+          "landmarkErrorMm": 6.747781120674574,
+          "surfaceRmsMm": 5.812668916348785,
+          "surfaceMaxMm": 8.559045381844044,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Fourth rib.l",
+          "target": "bp3d:FMA8148",
+          "sourceLandmark": [
+            0.07059040498372238,
+            -0.007893587695334076,
+            1.3360628546563285
+          ],
+          "targetLandmark": [
+            0.06459335144609213,
+            1.263225018978119,
+            0.10769344959408045
+          ],
+          "landmarkErrorMm": 7.337864657923212,
+          "surfaceRmsMm": 6.029387780806491,
+          "surfaceMaxMm": 9.776179678738117,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Fourth rib.r",
+          "target": "bp3d:FMA7957",
+          "sourceLandmark": [
+            -0.07059040509985469,
+            -0.00789358955797867,
+            1.3360628546563276
+          ],
+          "targetLandmark": [
+            -0.06630244897678494,
+            1.263225018978119,
+            0.10769325122237206
+          ],
+          "landmarkErrorMm": 3.335785538434375,
+          "surfaceRmsMm": 4.640266716897499,
+          "surfaceMaxMm": 9.175628423690796,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Hip bone.l",
+          "target": "bp3d:FMA16587",
+          "sourceLandmark": [
+            0.06891577318310738,
+            0.015357465643282227,
+            0.9046399949382279
+          ],
+          "targetLandmark": [
+            0.07375215133652091,
+            0.8550204932689667,
+            0.07020496675977483
+          ],
+          "landmarkErrorMm": 20.77226662724845,
+          "surfaceRmsMm": 9.048352386148617,
+          "surfaceMaxMm": 23.020168766379356,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Hip bone.r",
+          "target": "bp3d:FMA16586",
+          "sourceLandmark": [
+            -0.06891577318310738,
+            0.015357465643282227,
+            0.9046399949382279
+          ],
+          "targetLandmark": [
+            -0.07383114739786834,
+            0.855010986328125,
+            0.07006888877367601
+          ],
+          "landmarkErrorMm": 21.044167384128947,
+          "surfaceRmsMm": 9.424231036355122,
+          "surfaceMaxMm": 23.086348548531532,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Manubrium of sternum",
+          "target": "bp3d:FMA7486",
+          "sourceLandmark": [
+            -0.000129704203102321,
+            -0.057717041135225966,
+            1.3769282949214974
+          ],
+          "targetLandmark": [
+            0.0,
+            1.3027600049972534,
+            0.15469450503587723
+          ],
+          "landmarkErrorMm": 3.0243366829928786,
+          "surfaceRmsMm": 4.0272035569968745,
+          "surfaceMaxMm": 7.76631198823452,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Ninth rib.l",
+          "target": "bp3d:FMA8391",
+          "sourceLandmark": [
+            0.07578238983235082,
+            0.027114953317422273,
+            1.1814124912882122
+          ],
+          "targetLandmark": [
+            0.07117060013115406,
+            1.1177249550819397,
+            0.07156482874415815
+          ],
+          "landmarkErrorMm": 8.773150468821102,
+          "surfaceRmsMm": 5.809390918284076,
+          "surfaceMaxMm": 18.11453327536583,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Ninth rib.r",
+          "target": "bp3d:FMA8364",
+          "sourceLandmark": [
+            -0.07578238914672414,
+            0.027114953317422273,
+            1.1814124912882122
+          ],
+          "targetLandmark": [
+            -0.0724812988191843,
+            1.1177299618721008,
+            0.07158053177408874
+          ],
+          "landmarkErrorMm": 6.982471543700848,
+          "surfaceRmsMm": 4.46344859139068,
+          "surfaceMaxMm": 16.520975157618523,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Sacrum",
+          "target": "bp3d:FMA16202",
+          "sourceLandmark": [
+            -3.9095243000560054e-05,
+            0.049301523715257686,
+            0.9232941847294571
+          ],
+          "targetLandmark": [
+            -0.0006941501051187515,
+            0.8550184965133667,
+            0.0370713253505528
+          ],
+          "landmarkErrorMm": 5.710557191225633,
+          "surfaceRmsMm": 8.648250794625218,
+          "surfaceMaxMm": 19.522910937666893,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Scapula.l",
+          "target": "bp3d:FMA13396",
+          "sourceLandmark": [
+            0.11709327458268992,
+            0.05577132937669602,
+            1.3360572019518684
+          ],
+          "targetLandmark": [
+            0.11176270060241222,
+            1.2669049501419067,
+            0.048884299118071795
+          ],
+          "landmarkErrorMm": 9.37358076084014,
+          "surfaceRmsMm": 6.056678791548827,
+          "surfaceMaxMm": 12.88157980889082,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Scapula.r",
+          "target": "bp3d:FMA13395",
+          "sourceLandmark": [
+            -0.11709325968152873,
+            0.05577132937669602,
+            1.3360572019518684
+          ],
+          "targetLandmark": [
+            -0.11175890080630779,
+            1.2669099569320679,
+            0.048886626260355115
+          ],
+          "landmarkErrorMm": 6.4458657330478,
+          "surfaceRmsMm": 4.4860334013651135,
+          "surfaceMaxMm": 11.22413482517004,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Second rib.l",
+          "target": "bp3d:FMA8012",
+          "sourceLandmark": [
+            0.058337609008548855,
+            -0.010701326543408846,
+            1.390745269468304
+          ],
+          "targetLandmark": [
+            0.05519794952124357,
+            1.3162699937820435,
+            0.10888689942657948
+          ],
+          "landmarkErrorMm": 4.883109536595159,
+          "surfaceRmsMm": 3.1636313250975685,
+          "surfaceMaxMm": 7.32855312526226,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Second rib.r",
+          "target": "bp3d:FMA7882",
+          "sourceLandmark": [
+            -0.05833760794962847,
+            -0.010701326077747236,
+            1.3907452694683036
+          ],
+          "targetLandmark": [
+            -0.05651080049574375,
+            1.316290020942688,
+            0.10890494659543037
+          ],
+          "landmarkErrorMm": 3.3866461799195835,
+          "surfaceRmsMm": 3.194373591022958,
+          "surfaceMaxMm": 7.330245804041624,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Seventh rib.l",
+          "target": "bp3d:FMA8256",
+          "sourceLandmark": [
+            0.07904758120262562,
+            0.005653479295285105,
+            1.2436239598750602
+          ],
+          "targetLandmark": [
+            0.07408024743199348,
+            1.1727200150489807,
+            0.09235297376289964
+          ],
+          "landmarkErrorMm": 5.735171488023736,
+          "surfaceRmsMm": 5.198735614746941,
+          "surfaceMaxMm": 10.936831124126911,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Seventh rib.r",
+          "target": "bp3d:FMA8229",
+          "sourceLandmark": [
+            -0.07904758190250114,
+            0.005653479295285632,
+            1.2436239598750594
+          ],
+          "targetLandmark": [
+            -0.07538735261186957,
+            1.172730028629303,
+            0.09234495786949992
+          ],
+          "landmarkErrorMm": 2.643497245636335,
+          "surfaceRmsMm": 4.021035342108942,
+          "surfaceMaxMm": 8.063708432018757,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Sixth rib.l",
+          "target": "bp3d:FMA8202",
+          "sourceLandmark": [
+            0.07727358320155461,
+            -0.0007614782778873827,
+            1.275113759963466
+          ],
+          "targetLandmark": [
+            0.0729147014208138,
+            1.202364981174469,
+            0.09856970270629972
+          ],
+          "landmarkErrorMm": 5.336543207816136,
+          "surfaceRmsMm": 5.078606640576432,
+          "surfaceMaxMm": 9.29004792124033,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Sixth rib.r",
+          "target": "bp3d:FMA8175",
+          "sourceLandmark": [
+            -0.07727358342423271,
+            -0.000761480140532525,
+            1.275113759963466
+          ],
+          "targetLandmark": [
+            -0.07459315191954374,
+            1.2018049955368042,
+            0.09857320704031736
+          ],
+          "landmarkErrorMm": 2.984832715430879,
+          "surfaceRmsMm": 4.396002274596477,
+          "surfaceMaxMm": 8.85553564876318,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Tenth rib.l",
+          "target": "bp3d:FMA8472",
+          "sourceLandmark": [
+            0.07499409458866776,
+            0.030511961305693912,
+            1.1508547352349572
+          ],
+          "targetLandmark": [
+            0.06895565055310726,
+            1.0909749865531921,
+            0.06453475076705217
+          ],
+          "landmarkErrorMm": 11.665151758726317,
+          "surfaceRmsMm": 7.297057436000828,
+          "surfaceMaxMm": 22.160455584526062,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Tenth rib.r",
+          "target": "bp3d:FMA8445",
+          "sourceLandmark": [
+            -0.0749941088170932,
+            0.030511961305693905,
+            1.1508547352349572
+          ],
+          "targetLandmark": [
+            -0.07026045117527246,
+            1.0909799933433533,
+            0.06452315114438534
+          ],
+          "landmarkErrorMm": 10.855644921465075,
+          "surfaceRmsMm": 5.879702741047241,
+          "surfaceMaxMm": 20.791662856936455,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Third rib.l",
+          "target": "bp3d:FMA8039",
+          "sourceLandmark": [
+            0.06479350155003681,
+            -0.006820667367537385,
+            1.3636157223546956
+          ],
+          "targetLandmark": [
+            0.06017865100875497,
+            1.2899100184440613,
+            0.10805745236575603
+          ],
+          "landmarkErrorMm": 6.80077315993382,
+          "surfaceRmsMm": 4.699220788585797,
+          "surfaceMaxMm": 9.796416386961937,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Third rib.r",
+          "target": "bp3d:FMA7909",
+          "sourceLandmark": [
+            -0.06479350820561297,
+            -0.006820667367537829,
+            1.3636157223546965
+          ],
+          "targetLandmark": [
+            -0.061485500540584326,
+            1.2898949980735779,
+            0.10804850049316883
+          ],
+          "landmarkErrorMm": 3.413068161032871,
+          "surfaceRmsMm": 4.088702908608413,
+          "surfaceMaxMm": 9.697954170405865,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Twelfth rib.l",
+          "target": "bp3d:FMA8534",
+          "sourceLandmark": [
+            0.05243223614800619,
+            0.045919317671513575,
+            1.1053893017624548
+          ],
+          "targetLandmark": [
+            0.05105569865554571,
+            1.0502449870109558,
+            0.04704234842211008
+          ],
+          "landmarkErrorMm": 14.431655572155323,
+          "surfaceRmsMm": 8.724664100108924,
+          "surfaceMaxMm": 24.524865671992302,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Twelfth rib.r",
+          "target": "bp3d:FMA8533",
+          "sourceLandmark": [
+            -0.05243225041764968,
+            0.0459193178556146,
+            1.1053893017119507
+          ],
+          "targetLandmark": [
+            -0.05237285140901804,
+            1.050255000591278,
+            0.047044748440384865
+          ],
+          "landmarkErrorMm": 14.41813312309127,
+          "surfaceRmsMm": 8.176927642720418,
+          "surfaceMaxMm": 24.053089320659637,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L1",
+          "target": "bp3d:FMA13072",
+          "sourceLandmark": [
+            -1.6010429787494118e-10,
+            0.029237417504191284,
+            1.1039149230346084
+          ],
+          "targetLandmark": [
+            -0.0006591994315385818,
+            1.043590009212494,
+            0.06935120094567537
+          ],
+          "landmarkErrorMm": 10.089974662439799,
+          "surfaceRmsMm": 5.2994186865935236,
+          "surfaceMaxMm": 12.059571221470833,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L2",
+          "target": "bp3d:FMA13073",
+          "sourceLandmark": [
+            -1.6010341663541539e-10,
+            0.0241035680598048,
+            1.0749188838526607
+          ],
+          "targetLandmark": [
+            -0.0006450489163398743,
+            1.0160380005836487,
+            0.07453440129756927
+          ],
+          "landmarkErrorMm": 11.565836210802154,
+          "surfaceRmsMm": 6.318892656892451,
+          "surfaceMaxMm": 12.492838315665722,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L3",
+          "target": "bp3d:FMA13074",
+          "sourceLandmark": [
+            1.031191205523585e-05,
+            0.02316831228272424,
+            1.043366922194335
+          ],
+          "targetLandmark": [
+            -0.0006809495389461517,
+            0.9887114763259888,
+            0.07243350148200989
+          ],
+          "landmarkErrorMm": 14.914197541093774,
+          "surfaceRmsMm": 7.420002845968788,
+          "surfaceMaxMm": 15.903446823358536,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L4",
+          "target": "bp3d:FMA13075",
+          "sourceLandmark": [
+            7.2904780615279385e-09,
+            0.024053417146205885,
+            1.0150479991213337
+          ],
+          "targetLandmark": [
+            -0.0006753504276275635,
+            0.9610330164432526,
+            0.06828059908002615
+          ],
+          "landmarkErrorMm": 15.32685535174283,
+          "surfaceRmsMm": 9.714656841264153,
+          "surfaceMaxMm": 21.12184651196003,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra L5",
+          "target": "bp3d:FMA13076",
+          "sourceLandmark": [
+            -7.610679274294707e-09,
+            0.029125198146232018,
+            0.9828057281738154
+          ],
+          "targetLandmark": [
+            -0.0007135495543479919,
+            0.9297139942646027,
+            0.05866075120866299
+          ],
+          "landmarkErrorMm": 16.7734703212155,
+          "surfaceRmsMm": 8.876633420017727,
+          "surfaceMaxMm": 18.03990639746189,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T1",
+          "target": "bp3d:FMA9165",
+          "sourceLandmark": [
+            -2.2218198808543477e-10,
+            0.047353021544037366,
+            1.4379930844372455
+          ],
+          "targetLandmark": [
+            -0.0007333997637033463,
+            1.3620599508285522,
+            0.05197929963469505
+          ],
+          "landmarkErrorMm": 5.124850459528645,
+          "surfaceRmsMm": 3.014153358074753,
+          "surfaceMaxMm": 5.887412000447512,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T10",
+          "target": "bp3d:FMA10037",
+          "sourceLandmark": [
+            5.9325044962872664e-05,
+            0.053173522920897595,
+            1.197508763567328
+          ],
+          "targetLandmark": [
+            -0.0007057990878820419,
+            1.1284499764442444,
+            0.045940150041133165
+          ],
+          "landmarkErrorMm": 2.8885823695298263,
+          "surfaceRmsMm": 1.909080113793971,
+          "surfaceMaxMm": 4.806828685104847,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T11",
+          "target": "bp3d:FMA10059",
+          "sourceLandmark": [
+            -2.1011165030060397e-10,
+            0.04507779951353658,
+            1.1693154886493617
+          ],
+          "targetLandmark": [
+            -0.0006008492782711983,
+            1.1024949550628662,
+            0.052770648151636124
+          ],
+          "landmarkErrorMm": 3.5370153399484967,
+          "surfaceRmsMm": 2.486560269773855,
+          "surfaceMaxMm": 5.2918302826583385,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T12",
+          "target": "bp3d:FMA10081",
+          "sourceLandmark": [
+            -3.935401875904132e-09,
+            0.03673141023580975,
+            1.1390766227605158
+          ],
+          "targetLandmark": [
+            -0.0006657997146248817,
+            1.0757750272750854,
+            0.06197294872254133
+          ],
+          "landmarkErrorMm": 7.243782419798953,
+          "surfaceRmsMm": 3.7038235161230584,
+          "surfaceMaxMm": 7.934184744954109,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T2",
+          "target": "bp3d:FMA9187",
+          "sourceLandmark": [
+            3.519096992976589e-09,
+            0.05276584569468305,
+            1.4200630769614675
+          ],
+          "targetLandmark": [
+            -0.0006718486547470093,
+            1.3434749841690063,
+            0.047398149967193604
+          ],
+          "landmarkErrorMm": 5.850358009227113,
+          "surfaceRmsMm": 3.2776639139806187,
+          "surfaceMaxMm": 7.161490619182587,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T3",
+          "target": "bp3d:FMA9209",
+          "sourceLandmark": [
+            -3.935409831345993e-09,
+            0.061479791405786896,
+            1.398801857087609
+          ],
+          "targetLandmark": [
+            -0.000562598928809166,
+            1.3220400214195251,
+            0.039048205595463514
+          ],
+          "landmarkErrorMm": 6.285740368256404,
+          "surfaceRmsMm": 3.447200761279178,
+          "surfaceMaxMm": 9.205798618495464,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T4",
+          "target": "bp3d:FMA9248",
+          "sourceLandmark": [
+            -2.1011770795498208e-10,
+            0.06525581180725933,
+            1.3752223733058675
+          ],
+          "targetLandmark": [
+            -0.0005898512899875641,
+            1.2995749711990356,
+            0.034901399732916616
+          ],
+          "landmarkErrorMm": 5.352275057194126,
+          "surfaceRmsMm": 3.4526572605397035,
+          "surfaceMaxMm": 7.158094551414251,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T5",
+          "target": "bp3d:FMA9922",
+          "sourceLandmark": [
+            5.194394692847881e-08,
+            0.06606699772332447,
+            1.3472536235857078
+          ],
+          "targetLandmark": [
+            -0.0006308984011411667,
+            1.2685200572013855,
+            0.03299522502220498
+          ],
+          "landmarkErrorMm": 8.489672387256837,
+          "surfaceRmsMm": 3.1447173873606986,
+          "surfaceMaxMm": 6.830187980085611,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T6",
+          "target": "bp3d:FMA9945",
+          "sourceLandmark": [
+            -2.1011601486486953e-10,
+            0.06675404311435298,
+            1.314240310255109
+          ],
+          "targetLandmark": [
+            -0.0006943996995687485,
+            1.2392300367355347,
+            0.03320666495710611
+          ],
+          "landmarkErrorMm": 5.231926306109475,
+          "surfaceRmsMm": 2.999839458805624,
+          "surfaceMaxMm": 6.356058642268181,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T7",
+          "target": "bp3d:FMA9968",
+          "sourceLandmark": [
+            -2.1011497403078394e-10,
+            0.0649507710063615,
+            1.2860407214611773
+          ],
+          "targetLandmark": [
+            -0.00045285001397132874,
+            1.2105499505996704,
+            0.033825346326921135
+          ],
+          "landmarkErrorMm": 5.5956134538309765,
+          "surfaceRmsMm": 2.6387680615942894,
+          "surfaceMaxMm": 5.5976686999201775,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T8",
+          "target": "bp3d:FMA9991",
+          "sourceLandmark": [
+            -2.1011299644602133e-10,
+            0.06341774965385766,
+            1.255830272249287
+          ],
+          "targetLandmark": [
+            -0.0007533486932516098,
+            1.1833999752998352,
+            0.03647969863959588
+          ],
+          "landmarkErrorMm": 3.673052940435963,
+          "surfaceRmsMm": 2.546355883355604,
+          "surfaceMaxMm": 5.689470563083887,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Vertebra T9",
+          "target": "bp3d:FMA10014",
+          "sourceLandmark": [
+            3.515177489366028e-09,
+            0.05859734122692229,
+            1.22848068727775
+          ],
+          "targetLandmark": [
+            -0.0006984006613492966,
+            1.1557349562644958,
+            0.041904480662196875
+          ],
+          "landmarkErrorMm": 4.693616861932716,
+          "surfaceRmsMm": 2.2048939653799713,
+          "surfaceMaxMm": 6.90092658624053,
+          "holdout": false,
+          "samples": 800
+        }
+      ],
+      "landmarkRmsMm": 9.01209069134569,
+      "landmarkMaxMm": 21.044167384128947,
+      "surfaceRmsMm": 5.397836907866646,
+      "surfaceMaxMm": 24.524865671992302
+    }
+  },
+  "inputs": {
+    ".cache\\anatomy-completion\\wave3\\source-geometry.npz": "3292653dc5490222da10930f3161a071754247ca1bfd202ad9445e9bdbb77c59",
+    ".cache\\anatomy-completion\\wave3\\reference-plan.json": "4bb0955bd210644efe44de32d35ac8653ec16e5c1bc2f6bde1be10b5568cb67e",
+    ".cache\\phase4-expansion\\bp-reference.json": "0ae48e1b5e9c6b79c03d71bf9e89e30ab5a4a3b79bc3c339a1cf549e28e1a66b"
+  }
+}

@@ -1,0 +1,825 @@
+{
+  "method": "Same candidate sample in original source bones versus corresponding target bones after one rigid registration per whole foot after the fixed global similarity. Signed nearest depth, three parity directions. Positive means inside bone. Source contact is not itself proof of anatomical correctness; new/deeper occupancy requires review.",
+  "results": [
+    {
+      "sourceObject": "Articular capsule of interphalangeal joint of great toe.l",
+      "samples": 216,
+      "contacts": [
+        {
+          "target": "bp3d:FMA43254",
+          "source": "Proximal phalanx of first finger of foot.l",
+          "sampleCount": 24,
+          "newContactSamples": 13,
+          "maxTargetDepthMm": 1.3774193357676268,
+          "maxSourceDepthAtTargetContactMm": 0.41722293059475973,
+          "maxDepthIncreaseMm": 1.3951658098191488
+        },
+        {
+          "target": "bp3d:FMA32651",
+          "source": "Distal phalanx of first finger of foot.l",
+          "sampleCount": 5,
+          "newContactSamples": 2,
+          "maxTargetDepthMm": 0.29206814360804856,
+          "maxSourceDepthAtTargetContactMm": 0.4362040335213221,
+          "maxDepthIncreaseMm": 1.4597373801947744
+        }
+      ]
+    },
+    {
+      "sourceObject": "Articular capsule of interphalangeal joint of great toe.r",
+      "samples": 216,
+      "contacts": [
+        {
+          "target": "bp3d:FMA43253",
+          "source": "Proximal phalanx of first finger of foot.r",
+          "sampleCount": 29,
+          "newContactSamples": 17,
+          "maxTargetDepthMm": 1.3431045226752758,
+          "maxSourceDepthAtTargetContactMm": 0.4675467781365404,
+          "maxDepthIncreaseMm": 1.332242770234644
+        },
+        {
+          "target": "bp3d:FMA32650",
+          "source": "Distal phalanx of first finger of foot.r",
+          "sampleCount": 5,
+          "newContactSamples": 3,
+          "maxTargetDepthMm": 0.32641709549352527,
+          "maxSourceDepthAtTargetContactMm": 0.4313876785816888,
+          "maxDepthIncreaseMm": 1.634285939249382
+        }
+      ]
+    },
+    {
+      "sourceObject": "Articular capsules of distal interphalangeal joints of foot.l",
+      "samples": 796,
+      "contacts": [
+        {
+          "target": "bp3d:FMA32643",
+          "source": "Middle phalanx of second finger of foot.l",
+          "sampleCount": 35,
+          "newContactSamples": 15,
+          "maxTargetDepthMm": 1.2705294648185372,
+          "maxSourceDepthAtTargetContactMm": 0.44573244175919435,
+          "maxDepthIncreaseMm": 1.1918164034719778
+        },
+        {
+          "target": "bp3d:FMA230988",
+          "source": "Middle phalanx of fifth finger of foot.l",
+          "sampleCount": 12,
+          "newContactSamples": 4,
+          "maxTargetDepthMm": 0.762019248213619,
+          "maxSourceDepthAtTargetContactMm": 0.43497213873927726,
+          "maxDepthIncreaseMm": 0.5617722618820726
+        },
+        {
+          "target": "bp3d:FMA32647",
+          "source": "Middle phalanx of fourth finger of foot.l",
+          "sampleCount": 46,
+          "newContactSamples": 30,
+          "maxTargetDepthMm": 0.6310195894911885,
+          "maxSourceDepthAtTargetContactMm": 0.5473385765299924,
+          "maxDepthIncreaseMm": 0.868453943496746
+        },
+        {
+          "target": "bp3d:FMA32645",
+          "source": "Middle phalanx of third finger of foot.l",
+          "sampleCount": 28,
+          "newContactSamples": 16,
+          "maxTargetDepthMm": 0.5709413671866059,
+          "maxSourceDepthAtTargetContactMm": 0.33139009467310565,
+          "maxDepthIncreaseMm": 0.4884677434249419
+        },
+        {
+          "target": "bp3d:FMA32659",
+          "source": "Distal phalanx of fifth finger of foot.l",
+          "sampleCount": 5,
+          "newContactSamples": 3,
+          "maxTargetDepthMm": 0.4764408222399652,
+          "maxSourceDepthAtTargetContactMm": 0.15369605732828515,
+          "maxDepthIncreaseMm": 1.4961657592133535
+        },
+        {
+          "target": "bp3d:FMA32657",
+          "source": "Distal phalanx of fourth finger of foot.l",
+          "sampleCount": 3,
+          "newContactSamples": 3,
+          "maxTargetDepthMm": 0.2111578796757385,
+          "maxSourceDepthAtTargetContactMm": -0.7233980672549886,
+          "maxDepthIncreaseMm": 1.5841431103325736
+        }
+      ]
+    },
+    {
+      "sourceObject": "Articular capsules of distal interphalangeal joints of foot.r",
+      "samples": 796,
+      "contacts": [
+        {
+          "target": "bp3d:FMA32642",
+          "source": "Middle phalanx of second finger of foot.r",
+          "sampleCount": 39,
+          "newContactSamples": 18,
+          "maxTargetDepthMm": 1.3029139954596758,
+          "maxSourceDepthAtTargetContactMm": 0.445740030492892,
+          "maxDepthIncreaseMm": 1.2242009341131164
+        },
+        {
+          "target": "bp3d:FMA32646",
+          "source": "Middle phalanx of fourth finger of foot.r",
+          "sampleCount": 44,
+          "newContactSamples": 29,
+          "maxTargetDepthMm": 0.6705707055516541,
+          "maxSourceDepthAtTargetContactMm": 0.5473548546534202,
+          "maxDepthIncreaseMm": 0.8827969859414131
+        },
+        {
+          "target": "bp3d:FMA32644",
+          "source": "Middle phalanx of third finger of foot.r",
+          "sampleCount": 23,
+          "newContactSamples": 12,
+          "maxTargetDepthMm": 0.6356408703140914,
+          "maxSourceDepthAtTargetContactMm": 0.3313788853603537,
+          "maxDepthIncreaseMm": 0.47204209250889384
+        },
+        {
+          "target": "bp3d:FMA230986",
+          "source": "Middle phalanx of fifth finger of foot.r",
+          "sampleCount": 10,
+          "newContactSamples": 3,
+          "maxTargetDepthMm": 0.6185350939631462,
+          "maxSourceDepthAtTargetContactMm": 0.43497213873927726,
+          "maxDepthIncreaseMm": 0.43044333764544795
+        },
+        {
+          "target": "bp3d:FMA32658",
+          "source": "Distal phalanx of fifth finger of foot.r",
+          "sampleCount": 5,
+          "newContactSamples": 3,
+          "maxTargetDepthMm": 0.5206509958952665,
+          "maxSourceDepthAtTargetContactMm": 0.17100755194746206,
+          "maxDepthIncreaseMm": 1.5223744861354036
+        },
+        {
+          "target": "bp3d:FMA32656",
+          "source": "Distal phalanx of fourth finger of foot.r",
+          "sampleCount": 4,
+          "newContactSamples": 4,
+          "maxTargetDepthMm": 0.2653117699082941,
+          "maxSourceDepthAtTargetContactMm": -0.7084938522020229,
+          "maxDepthIncreaseMm": 1.5787961710493166
+        }
+      ]
+    },
+    {
+      "sourceObject": "Articular capsules of proximal interphalangeal joints of foot.l",
+      "samples": 818,
+      "contacts": [
+        {
+          "target": "bp3d:FMA32635",
+          "source": "Proximal phalanx of second finger of foot.l",
+          "sampleCount": 37,
+          "newContactSamples": 15,
+          "maxTargetDepthMm": 1.281567383557558,
+          "maxSourceDepthAtTargetContactMm": 0.6460623827980313,
+          "maxDepthIncreaseMm": 0.9501604823169372
+        },
+        {
+          "target": "bp3d:FMA32641",
+          "source": "Proximal phalanx of fifth finger of foot.l",
+          "sampleCount": 28,
+          "newContactSamples": 14,
+          "maxTargetDepthMm": 1.2102368054911494,
+          "maxSourceDepthAtTargetContactMm": 0.43311252244312565,
+          "maxDepthIncreaseMm": 0.7994352251710052
+        },
+        {
+          "target": "bp3d:FMA32639",
+          "source": "Proximal phalanx of fourth finger of foot.l",
+          "sampleCount": 18,
+          "newContactSamples": 6,
+          "maxTargetDepthMm": 0.9620600030757487,
+          "maxSourceDepthAtTargetContactMm": 0.4306822159941295,
+          "maxDepthIncreaseMm": 0.6771162223474132
+        },
+        {
+          "target": "bp3d:FMA32637",
+          "source": "Proximal phalanx of third finger of foot.l",
+          "sampleCount": 23,
+          "newContactSamples": 11,
+          "maxTargetDepthMm": 0.8803720120340586,
+          "maxSourceDepthAtTargetContactMm": 0.7442319797890806,
+          "maxDepthIncreaseMm": 0.6237769685560758
+        },
+        {
+          "target": "bp3d:FMA230988",
+          "source": "Middle phalanx of fifth finger of foot.l",
+          "sampleCount": 21,
+          "newContactSamples": 13,
+          "maxTargetDepthMm": 0.7565084961242974,
+          "maxSourceDepthAtTargetContactMm": 0.25983717011693763,
+          "maxDepthIncreaseMm": 0.9867913406400614
+        },
+        {
+          "target": "bp3d:FMA32643",
+          "source": "Middle phalanx of second finger of foot.l",
+          "sampleCount": 2,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.3138174652121961,
+          "maxSourceDepthAtTargetContactMm": 0.19504540178054264,
+          "maxDepthIncreaseMm": 0.11877206343165347
+        },
+        {
+          "target": "bp3d:FMA32647",
+          "source": "Middle phalanx of fourth finger of foot.l",
+          "sampleCount": 2,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.2903811982832849,
+          "maxSourceDepthAtTargetContactMm": 0.3192993302269712,
+          "maxDepthIncreaseMm": -0.010327854932974279
+        },
+        {
+          "target": "bp3d:FMA32645",
+          "source": "Middle phalanx of third finger of foot.l",
+          "sampleCount": 2,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.18042395822703838,
+          "maxSourceDepthAtTargetContactMm": 0.40387999612387676,
+          "maxDepthIncreaseMm": -0.22345603789683838
+        }
+      ]
+    },
+    {
+      "sourceObject": "Articular capsules of proximal interphalangeal joints of foot.r",
+      "samples": 818,
+      "contacts": [
+        {
+          "target": "bp3d:FMA32634",
+          "source": "Proximal phalanx of second finger of foot.r",
+          "sampleCount": 39,
+          "newContactSamples": 18,
+          "maxTargetDepthMm": 1.28912553191185,
+          "maxSourceDepthAtTargetContactMm": 0.6460623827980313,
+          "maxDepthIncreaseMm": 0.9559915318796176
+        },
+        {
+          "target": "bp3d:FMA32640",
+          "source": "Proximal phalanx of fifth finger of foot.r",
+          "sampleCount": 28,
+          "newContactSamples": 15,
+          "maxTargetDepthMm": 1.2445369502529502,
+          "maxSourceDepthAtTargetContactMm": 0.43311252244312565,
+          "maxDepthIncreaseMm": 0.8534256091162671
+        },
+        {
+          "target": "bp3d:FMA32638",
+          "source": "Proximal phalanx of fourth finger of foot.r",
+          "sampleCount": 22,
+          "newContactSamples": 10,
+          "maxTargetDepthMm": 0.9467906202189624,
+          "maxSourceDepthAtTargetContactMm": 0.4306922087923192,
+          "maxDepthIncreaseMm": 0.6618932197246645
+        },
+        {
+          "target": "bp3d:FMA32636",
+          "source": "Proximal phalanx of third finger of foot.r",
+          "sampleCount": 22,
+          "newContactSamples": 10,
+          "maxTargetDepthMm": 0.8541234419681132,
+          "maxSourceDepthAtTargetContactMm": 0.7442409008958702,
+          "maxDepthIncreaseMm": 0.6098038859733319
+        },
+        {
+          "target": "bp3d:FMA230986",
+          "source": "Middle phalanx of fifth finger of foot.r",
+          "sampleCount": 20,
+          "newContactSamples": 13,
+          "maxTargetDepthMm": 0.7024744991213083,
+          "maxSourceDepthAtTargetContactMm": 0.24687850942455486,
+          "maxDepthIncreaseMm": 0.9753495991716312
+        },
+        {
+          "target": "bp3d:FMA32642",
+          "source": "Middle phalanx of second finger of foot.r",
+          "sampleCount": 3,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.4169344902038574,
+          "maxSourceDepthAtTargetContactMm": 0.19503808821085308,
+          "maxDepthIncreaseMm": 0.22189640199300434
+        },
+        {
+          "target": "bp3d:FMA32646",
+          "source": "Middle phalanx of fourth finger of foot.r",
+          "sampleCount": 3,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.2159146824851632,
+          "maxSourceDepthAtTargetContactMm": 0.31928232798773254,
+          "maxDepthIncreaseMm": -0.009594994295679893
+        },
+        {
+          "target": "bp3d:FMA32644",
+          "source": "Middle phalanx of third finger of foot.r",
+          "sampleCount": 3,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.17342613136861473,
+          "maxSourceDepthAtTargetContactMm": 0.40545920581343614,
+          "maxDepthIncreaseMm": -0.2304374707733045
+        }
+      ]
+    },
+    {
+      "sourceObject": "Flexor retinaculum of ankle.l",
+      "samples": 350,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Flexor retinaculum of ankle.r",
+      "samples": 350,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24477",
+          "source": "Tibia.r",
+          "sampleCount": 1,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.1506168337073177,
+          "maxSourceDepthAtTargetContactMm": 0.8025427667952355,
+          "maxDepthIncreaseMm": -0.6519259330879178
+        }
+      ]
+    },
+    {
+      "sourceObject": "Inferior extensor retinaculum of ankle.l",
+      "samples": 160,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24481",
+          "source": "Fibula.l",
+          "sampleCount": 22,
+          "newContactSamples": 9,
+          "maxTargetDepthMm": 5.48408180475235,
+          "maxSourceDepthAtTargetContactMm": 1.5679649240973448,
+          "maxDepthIncreaseMm": 4.085867430486746
+        },
+        {
+          "target": "bp3d:FMA24478",
+          "source": "Tibia.l",
+          "sampleCount": 6,
+          "newContactSamples": 4,
+          "maxTargetDepthMm": 1.0230813641101122,
+          "maxSourceDepthAtTargetContactMm": 0.14253570928750767,
+          "maxDepthIncreaseMm": 1.6417125974048608
+        }
+      ]
+    },
+    {
+      "sourceObject": "Inferior extensor retinaculum of ankle.r",
+      "samples": 160,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24480",
+          "source": "Fibula.r",
+          "sampleCount": 22,
+          "newContactSamples": 9,
+          "maxTargetDepthMm": 5.343886092305183,
+          "maxSourceDepthAtTargetContactMm": 1.5679235626022292,
+          "maxDepthIncreaseMm": 3.816662775207754
+        },
+        {
+          "target": "bp3d:FMA24477",
+          "source": "Tibia.r",
+          "sampleCount": 5,
+          "newContactSamples": 3,
+          "maxTargetDepthMm": 0.5012291367165744,
+          "maxSourceDepthAtTargetContactMm": 0.14253398589187785,
+          "maxDepthIncreaseMm": 0.940337887531046
+        }
+      ]
+    },
+    {
+      "sourceObject": "Superior extensor retinaculum of ankle.l",
+      "samples": 132,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24481",
+          "source": "Fibula.l",
+          "sampleCount": 18,
+          "newContactSamples": 12,
+          "maxTargetDepthMm": 4.59734071046114,
+          "maxSourceDepthAtTargetContactMm": 1.0396657852636366,
+          "maxDepthIncreaseMm": 3.8127459809501714
+        },
+        {
+          "target": "bp3d:FMA24478",
+          "source": "Tibia.l",
+          "sampleCount": 19,
+          "newContactSamples": 8,
+          "maxTargetDepthMm": 3.7423204630613327,
+          "maxSourceDepthAtTargetContactMm": 1.477229389666772,
+          "maxDepthIncreaseMm": 3.2862454486421275
+        }
+      ]
+    },
+    {
+      "sourceObject": "Superior extensor retinaculum of ankle.r",
+      "samples": 132,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24480",
+          "source": "Fibula.r",
+          "sampleCount": 18,
+          "newContactSamples": 12,
+          "maxTargetDepthMm": 4.556164611130953,
+          "maxSourceDepthAtTargetContactMm": 1.0396274360902942,
+          "maxDepthIncreaseMm": 3.7227644154399093
+        },
+        {
+          "target": "bp3d:FMA24477",
+          "source": "Tibia.r",
+          "sampleCount": 16,
+          "newContactSamples": 5,
+          "maxTargetDepthMm": 3.615644061937928,
+          "maxSourceDepthAtTargetContactMm": 1.4772350667347292,
+          "maxDepthIncreaseMm": 2.962697070059497
+        }
+      ]
+    },
+    {
+      "sourceObject": "Common plantar digital branches of lateral plantar nerve.l",
+      "samples": 756,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Common plantar digital branches of lateral plantar nerve.r",
+      "samples": 756,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Common plantar digital branches of medial plantar nerve.l",
+      "samples": 900,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.l",
+      "samples": 588,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.r",
+      "samples": 588,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Medial plantar nerve.l",
+      "samples": 600,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Medial plantar nerve.r",
+      "samples": 600,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of lateral plantar nerve.l",
+      "samples": 1902,
+      "contacts": [
+        {
+          "target": "bp3d:FMA32641",
+          "source": "Proximal phalanx of fifth finger of foot.l",
+          "sampleCount": 28,
+          "newContactSamples": 26,
+          "maxTargetDepthMm": 0.7254682714119554,
+          "maxSourceDepthAtTargetContactMm": 0.11105637470688938,
+          "maxDepthIncreaseMm": 0.788143468986358
+        },
+        {
+          "target": "bp3d:FMA32637",
+          "source": "Proximal phalanx of third finger of foot.l",
+          "sampleCount": 2,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.028522130378405564,
+          "maxSourceDepthAtTargetContactMm": 0.3521003571913375,
+          "maxDepthIncreaseMm": -0.1373949731453098
+        }
+      ]
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of lateral plantar nerve.r",
+      "samples": 1902,
+      "contacts": [
+        {
+          "target": "bp3d:FMA32640",
+          "source": "Proximal phalanx of fifth finger of foot.r",
+          "sampleCount": 27,
+          "newContactSamples": 25,
+          "maxTargetDepthMm": 0.7726271287538111,
+          "maxSourceDepthAtTargetContactMm": 0.1110259546016757,
+          "maxDepthIncreaseMm": 0.7731474009832087
+        },
+        {
+          "target": "bp3d:FMA32636",
+          "source": "Proximal phalanx of third finger of foot.r",
+          "sampleCount": 6,
+          "newContactSamples": 2,
+          "maxTargetDepthMm": 0.1805982319638133,
+          "maxSourceDepthAtTargetContactMm": 0.3521807630109739,
+          "maxDepthIncreaseMm": 0.38736047594758005
+        },
+        {
+          "target": "bp3d:FMA230986",
+          "source": "Middle phalanx of fifth finger of foot.r",
+          "sampleCount": 1,
+          "newContactSamples": 1,
+          "maxTargetDepthMm": 0.09988842793973163,
+          "maxSourceDepthAtTargetContactMm": -0.7015696251016472,
+          "maxDepthIncreaseMm": 0.8014580530413788
+        }
+      ]
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of medial plantar nerve.l",
+      "samples": 1614,
+      "contacts": [
+        {
+          "target": "bp3d:FMA43254",
+          "source": "Proximal phalanx of first finger of foot.l",
+          "sampleCount": 1,
+          "newContactSamples": 1,
+          "maxTargetDepthMm": 0.056359858717769384,
+          "maxSourceDepthAtTargetContactMm": -0.3470232626305345,
+          "maxDepthIncreaseMm": 0.4033831213483039
+        }
+      ]
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of medial plantar nerve.r",
+      "samples": 1614,
+      "contacts": [
+        {
+          "target": "bp3d:FMA43253",
+          "source": "Proximal phalanx of first finger of foot.r",
+          "sampleCount": 2,
+          "newContactSamples": 2,
+          "maxTargetDepthMm": 0.15772281039971858,
+          "maxSourceDepthAtTargetContactMm": -0.34683345739419535,
+          "maxDepthIncreaseMm": 0.6005996476159835
+        },
+        {
+          "target": "bp3d:FMA32650",
+          "source": "Distal phalanx of first finger of foot.r",
+          "sampleCount": 1,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.003567326757547562,
+          "maxSourceDepthAtTargetContactMm": 0.4641080390447267,
+          "maxDepthIncreaseMm": -0.46054071228717913
+        }
+      ]
+    },
+    {
+      "sourceObject": "Extensor digitorum brevis.l",
+      "samples": 1596,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24498",
+          "source": "Calcaneus.l",
+          "sampleCount": 12,
+          "newContactSamples": 10,
+          "maxTargetDepthMm": 1.0897761676460505,
+          "maxSourceDepthAtTargetContactMm": 0.13297542547164196,
+          "maxDepthIncreaseMm": 1.3580007712000255
+        },
+        {
+          "target": "bp3d:FMA24526",
+          "source": "Lateral cuneiform bone.l",
+          "sampleCount": 19,
+          "newContactSamples": 4,
+          "maxTargetDepthMm": 0.9982804767787457,
+          "maxSourceDepthAtTargetContactMm": 1.2267069846588745,
+          "maxDepthIncreaseMm": 0.5438616260533213
+        },
+        {
+          "target": "bp3d:FMA24514",
+          "source": "Fourth metatarsal bone.l",
+          "sampleCount": 9,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.6859798450022936,
+          "maxSourceDepthAtTargetContactMm": 0.4773956221030285,
+          "maxDepthIncreaseMm": 0.3730483914662144
+        },
+        {
+          "target": "bp3d:FMA32645",
+          "source": "Middle phalanx of third finger of foot.l",
+          "sampleCount": 5,
+          "newContactSamples": 5,
+          "maxTargetDepthMm": 0.3841135767288506,
+          "maxSourceDepthAtTargetContactMm": -0.26057915710599605,
+          "maxDepthIncreaseMm": 1.2440656476993863
+        },
+        {
+          "target": "bp3d:FMA32643",
+          "source": "Middle phalanx of second finger of foot.l",
+          "sampleCount": 3,
+          "newContactSamples": 1,
+          "maxTargetDepthMm": 0.3091976104769856,
+          "maxSourceDepthAtTargetContactMm": 0.37001431616513886,
+          "maxDepthIncreaseMm": 0.42215008967573514
+        },
+        {
+          "target": "bp3d:FMA32635",
+          "source": "Proximal phalanx of second finger of foot.l",
+          "sampleCount": 1,
+          "newContactSamples": 1,
+          "maxTargetDepthMm": 0.09626243263483047,
+          "maxSourceDepthAtTargetContactMm": -0.07619501378476291,
+          "maxDepthIncreaseMm": 0.17245744641959337
+        },
+        {
+          "target": "bp3d:FMA32647",
+          "source": "Middle phalanx of fourth finger of foot.l",
+          "sampleCount": 1,
+          "newContactSamples": 1,
+          "maxTargetDepthMm": 0.047250872739823535,
+          "maxSourceDepthAtTargetContactMm": -0.945827964911602,
+          "maxDepthIncreaseMm": 0.9930788376514256
+        }
+      ]
+    },
+    {
+      "sourceObject": "Extensor digitorum brevis.r",
+      "samples": 1596,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24497",
+          "source": "Calcaneus.r",
+          "sampleCount": 9,
+          "newContactSamples": 8,
+          "maxTargetDepthMm": 0.9722990216687322,
+          "maxSourceDepthAtTargetContactMm": 0.1329903567396616,
+          "maxDepthIncreaseMm": 1.2405170792157771
+        },
+        {
+          "target": "bp3d:FMA24525",
+          "source": "Lateral cuneiform bone.r",
+          "sampleCount": 19,
+          "newContactSamples": 4,
+          "maxTargetDepthMm": 0.9398635011166334,
+          "maxSourceDepthAtTargetContactMm": 1.2266466223648822,
+          "maxDepthIncreaseMm": 0.5712599368987267
+        },
+        {
+          "target": "bp3d:FMA24513",
+          "source": "Fourth metatarsal bone.r",
+          "sampleCount": 10,
+          "newContactSamples": 1,
+          "maxTargetDepthMm": 0.7951174629852176,
+          "maxSourceDepthAtTargetContactMm": 0.47735037934716684,
+          "maxDepthIncreaseMm": 0.5517624072321543
+        },
+        {
+          "target": "bp3d:FMA32644",
+          "source": "Middle phalanx of third finger of foot.r",
+          "sampleCount": 6,
+          "newContactSamples": 6,
+          "maxTargetDepthMm": 0.5462182452902198,
+          "maxSourceDepthAtTargetContactMm": -0.2607087738361376,
+          "maxDepthIncreaseMm": 1.3795521903177852
+        },
+        {
+          "target": "bp3d:FMA32642",
+          "source": "Middle phalanx of second finger of foot.r",
+          "sampleCount": 4,
+          "newContactSamples": 2,
+          "maxTargetDepthMm": 0.5458247615024447,
+          "maxSourceDepthAtTargetContactMm": 0.3699866839057969,
+          "maxDepthIncreaseMm": 0.6588957567359556
+        },
+        {
+          "target": "bp3d:FMA32646",
+          "source": "Middle phalanx of fourth finger of foot.r",
+          "sampleCount": 1,
+          "newContactSamples": 1,
+          "maxTargetDepthMm": 0.15439986600540578,
+          "maxSourceDepthAtTargetContactMm": -0.9459463143997268,
+          "maxDepthIncreaseMm": 1.1003461804051327
+        },
+        {
+          "target": "bp3d:FMA32634",
+          "source": "Proximal phalanx of second finger of foot.r",
+          "sampleCount": 1,
+          "newContactSamples": 1,
+          "maxTargetDepthMm": 0.04976132186129689,
+          "maxSourceDepthAtTargetContactMm": -0.07630842480305772,
+          "maxDepthIncreaseMm": 0.1260697466643546
+        }
+      ]
+    },
+    {
+      "sourceObject": "Dorsal interossei muscles of foot.l",
+      "samples": 975,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24508",
+          "source": "First metatarsal bone.l",
+          "sampleCount": 25,
+          "newContactSamples": 21,
+          "maxTargetDepthMm": 0.7474153535440564,
+          "maxSourceDepthAtTargetContactMm": 0.05061761046450401,
+          "maxDepthIncreaseMm": 0.857769482865293
+        },
+        {
+          "target": "bp3d:FMA24516",
+          "source": "Fifth metatarsal bone.l",
+          "sampleCount": 14,
+          "newContactSamples": 14,
+          "maxTargetDepthMm": 0.5609772051684558,
+          "maxSourceDepthAtTargetContactMm": -0.0494649339521658,
+          "maxDepthIncreaseMm": 0.7143609079005742
+        },
+        {
+          "target": "bp3d:FMA32635",
+          "source": "Proximal phalanx of second finger of foot.l",
+          "sampleCount": 3,
+          "newContactSamples": 3,
+          "maxTargetDepthMm": 0.55184360826388,
+          "maxSourceDepthAtTargetContactMm": -0.14716417065654247,
+          "maxDepthIncreaseMm": 0.7348278474526356
+        },
+        {
+          "target": "bp3d:FMA24510",
+          "source": "Second metatarsal bone.l",
+          "sampleCount": 6,
+          "newContactSamples": 5,
+          "maxTargetDepthMm": 0.15992065891623497,
+          "maxSourceDepthAtTargetContactMm": 0.037865279331263865,
+          "maxDepthIncreaseMm": 0.4219326491403497
+        },
+        {
+          "target": "bp3d:FMA24512",
+          "source": "Third metatarsal bone.l",
+          "sampleCount": 1,
+          "newContactSamples": 1,
+          "maxTargetDepthMm": 0.051431219617370516,
+          "maxSourceDepthAtTargetContactMm": -0.02217176537244855,
+          "maxDepthIncreaseMm": 0.07360298498981907
+        }
+      ]
+    },
+    {
+      "sourceObject": "Dorsal interossei muscles of foot.r",
+      "samples": 975,
+      "contacts": [
+        {
+          "target": "bp3d:FMA24507",
+          "source": "First metatarsal bone.r",
+          "sampleCount": 27,
+          "newContactSamples": 23,
+          "maxTargetDepthMm": 0.6220971117727458,
+          "maxSourceDepthAtTargetContactMm": 0.05059946412228419,
+          "maxDepthIncreaseMm": 0.6719299695556293
+        },
+        {
+          "target": "bp3d:FMA32634",
+          "source": "Proximal phalanx of second finger of foot.r",
+          "sampleCount": 3,
+          "newContactSamples": 3,
+          "maxTargetDepthMm": 0.6206188118085265,
+          "maxSourceDepthAtTargetContactMm": -0.1471410134329116,
+          "maxDepthIncreaseMm": 0.8036879028879972
+        },
+        {
+          "target": "bp3d:FMA24515",
+          "source": "Fifth metatarsal bone.r",
+          "sampleCount": 13,
+          "newContactSamples": 13,
+          "maxTargetDepthMm": 0.3930105594918132,
+          "maxSourceDepthAtTargetContactMm": -0.049540260099389125,
+          "maxDepthIncreaseMm": 0.5464989693701799
+        },
+        {
+          "target": "bp3d:FMA24513",
+          "source": "Fourth metatarsal bone.r",
+          "sampleCount": 4,
+          "newContactSamples": 4,
+          "maxTargetDepthMm": 0.30732175218872726,
+          "maxSourceDepthAtTargetContactMm": -0.12022407913590456,
+          "maxDepthIncreaseMm": 0.6187061779921873
+        },
+        {
+          "target": "bp3d:FMA24511",
+          "source": "Third metatarsal bone.r",
+          "sampleCount": 5,
+          "newContactSamples": 0,
+          "maxTargetDepthMm": 0.24675624445080757,
+          "maxSourceDepthAtTargetContactMm": 0.4495496037737565,
+          "maxDepthIncreaseMm": -0.16849502093337182
+        },
+        {
+          "target": "bp3d:FMA24509",
+          "source": "Second metatarsal bone.r",
+          "sampleCount": 7,
+          "newContactSamples": 6,
+          "maxTargetDepthMm": 0.18931820522993803,
+          "maxSourceDepthAtTargetContactMm": 0.03786454797429491,
+          "maxDepthIncreaseMm": 0.3444223486844988
+        }
+      ]
+    }
+  ]
+}

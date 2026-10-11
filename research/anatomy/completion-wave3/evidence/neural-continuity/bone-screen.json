@@ -1,0 +1,2933 @@
+{
+  "method": "Fresh global similarity plus regional rigid; up to 4096 deterministic unique used vertices; three ray-parity votes within each original bone; closest-surface sampled depth. No deformation or piece-specific fit. Open surfaces and sparse sampling require visual review; not clinical accuracy.",
+  "bones": 205,
+  "results": [
+    {
+      "sourceObject": "Roots of brachial plexus.l",
+      "gaps": [
+        "nervous-brachial-roots"
+      ],
+      "region": "upper",
+      "samples": 2388,
+      "bounds": [
+        [
+          0.01278627394621009,
+          1.3637059521768151,
+          0.06778863690721836
+        ],
+        [
+          0.05561667707012191,
+          1.4352310881209422,
+          0.09712393829101931
+        ]
+      ],
+      "sideMedianX": 0.028219294221858114,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA9165",
+          "name": "V\u00e9rtebra tor\u00e1cica \u00b7 T1",
+          "sampleCount": 41,
+          "over1mm": 27,
+          "over3mm": 0,
+          "maxDepthMm": 2.460813382640481,
+          "deepest": {
+            "depthMm": 2.460813382640481,
+            "point": [
+              0.0134433537,
+              1.3645944301,
+              0.068255633
+            ],
+            "surface": [
+              0.01348278857767582,
+              1.3670251369476318,
+              0.06863754242658615
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA12525",
+          "name": "V\u00e9rtebra cervical \u00b7 C7",
+          "sampleCount": 34,
+          "over1mm": 4,
+          "over3mm": 0,
+          "maxDepthMm": 1.1366765247657895,
+          "deepest": {
+            "depthMm": 1.1366765247657895,
+            "point": [
+              0.0138593568,
+              1.3786607444,
+              0.0745359808
+            ],
+            "surface": [
+              0.014949781820178032,
+              1.3789548873901367,
+              0.07440745830535889
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA7987",
+          "name": "Costilla 1 izquierda",
+          "sampleCount": 5,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.15668255218770355,
+          "deepest": {
+            "depthMm": 0.15668255218770355,
+            "point": [
+              0.0217485655,
+              1.3641061704,
+              0.0691721111
+            ],
+            "surface": [
+              0.02172277495265007,
+              1.3642534017562866,
+              0.06912510842084885
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.460813382640481
+    },
+    {
+      "sourceObject": "Roots of brachial plexus.r",
+      "gaps": [
+        "nervous-brachial-roots"
+      ],
+      "region": "upper",
+      "samples": 2388,
+      "bounds": [
+        [
+          -0.056114072201123834,
+          1.3636868498845574,
+          0.06778943501767079
+        ],
+        [
+          -0.013337840647825373,
+          1.4352172727616148,
+          0.0971259063382307
+        ]
+      ],
+      "sideMedianX": -0.028739051878768764,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA9165",
+          "name": "V\u00e9rtebra tor\u00e1cica \u00b7 T1",
+          "sampleCount": 48,
+          "over1mm": 36,
+          "over3mm": 0,
+          "maxDepthMm": 2.7135112322866917,
+          "deepest": {
+            "depthMm": 2.7135112322866917,
+            "point": [
+              -0.0153612712,
+              1.3641361997,
+              0.0684689231
+            ],
+            "surface": [
+              -0.017935240641236305,
+              1.3646737337112427,
+              0.06913892179727554
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA12525",
+          "name": "V\u00e9rtebra cervical \u00b7 C7",
+          "sampleCount": 34,
+          "over1mm": 13,
+          "over3mm": 0,
+          "maxDepthMm": 1.839985023252666,
+          "deepest": {
+            "depthMm": 1.839985023252666,
+            "point": [
+              -0.0143698027,
+              1.3786464173,
+              0.0745367845
+            ],
+            "surface": [
+              -0.016165558248758316,
+              1.3785290718078613,
+              0.07415331900119781
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA12524",
+          "name": "V\u00e9rtebra cervical \u00b7 C6",
+          "sampleCount": 10,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.2889297902584076,
+          "deepest": {
+            "depthMm": 0.2889297902584076,
+            "point": [
+              -0.0154654514,
+              1.3885793939,
+              0.0804945724
+            ],
+            "surface": [
+              -0.015749257057905197,
+              1.3885620832443237,
+              0.08044323325157166
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA7857",
+          "name": "Costilla 1 derecha",
+          "sampleCount": 1,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.013089585081615951,
+          "deepest": {
+            "depthMm": 0.013089585081615951,
+            "point": [
+              -0.0221999167,
+              1.3641450949,
+              0.069420002
+            ],
+            "surface": [
+              -0.022198304533958435,
+              1.3641573190689087,
+              0.06941576302051544
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.7135112322866917
+    },
+    {
+      "sourceObject": "Anterior division of inferior trunk of brachial plexus.l",
+      "gaps": [
+        "nervous-brachial-divisions"
+      ],
+      "region": "upper",
+      "samples": 300,
+      "bounds": [
+        [
+          0.08174080951547001,
+          1.329088344786822,
+          0.08521298766521701
+        ],
+        [
+          0.1010931169552235,
+          1.3485051619185833,
+          0.09380892525939467
+        ]
+      ],
+      "sideMedianX": 0.09232277096211391,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13323",
+          "name": "Clav\u00edcula izquierda",
+          "sampleCount": 82,
+          "over1mm": 58,
+          "over3mm": 15,
+          "maxDepthMm": 3.879549214616418,
+          "deepest": {
+            "depthMm": 3.879549214616418,
+            "point": [
+              0.0894749983,
+              1.341990956,
+              0.0869877848
+            ],
+            "surface": [
+              0.09116262197494507,
+              1.3385473489761353,
+              0.08757469058036804
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 3.879549214616418
+    },
+    {
+      "sourceObject": "Anterior division of inferior trunk of brachial plexus.r",
+      "gaps": [
+        "nervous-brachial-divisions"
+      ],
+      "region": "upper",
+      "samples": 300,
+      "bounds": [
+        [
+          -0.10155369501834417,
+          1.3289864498068724,
+          0.08521757619622472
+        ],
+        [
+          -0.0822179799472597,
+          1.3484194702116787,
+          0.09381449064974756
+        ]
+      ],
+      "sideMedianX": -0.09279060175956966,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13322",
+          "name": "Clav\u00edcula derecha",
+          "sampleCount": 74,
+          "over1mm": 54,
+          "over3mm": 9,
+          "maxDepthMm": 4.05404157936573,
+          "deepest": {
+            "depthMm": 4.05404157936573,
+            "point": [
+              -0.0898880389,
+              1.3418920866,
+              0.0875917935
+            ],
+            "surface": [
+              -0.08623211830854416,
+              1.3418916463851929,
+              0.08583979308605194
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 4.05404157936573
+    },
+    {
+      "sourceObject": "Anterior division of middle trunk of brachial plexus.l",
+      "gaps": [
+        "nervous-brachial-divisions"
+      ],
+      "region": "upper",
+      "samples": 156,
+      "bounds": [
+        [
+          0.08269677151130869,
+          1.3292824852029215,
+          0.07819917705531362
+        ],
+        [
+          0.1105980181797801,
+          1.35120513178095,
+          0.08963879006175543
+        ]
+      ],
+      "sideMedianX": 0.09692798221858215,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13323",
+          "name": "Clav\u00edcula izquierda",
+          "sampleCount": 42,
+          "over1mm": 36,
+          "over3mm": 12,
+          "maxDepthMm": 4.791243467479944,
+          "deepest": {
+            "depthMm": 4.791243467479944,
+            "point": [
+              0.092183588,
+              1.3439542311,
+              0.0844553529
+            ],
+            "surface": [
+              0.09399919211864471,
+              1.33955979347229,
+              0.08504590392112732
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 4.791243467479944
+    },
+    {
+      "sourceObject": "Anterior division of middle trunk of brachial plexus.r",
+      "gaps": [
+        "nervous-brachial-divisions"
+      ],
+      "region": "upper",
+      "samples": 156,
+      "bounds": [
+        [
+          -0.11105906335864105,
+          1.3291713261984666,
+          0.07820387086774035
+        ],
+        [
+          -0.08317675279480627,
+          1.3511192316752776,
+          0.08964495330086764
+        ]
+      ],
+      "sideMedianX": -0.097399025309531,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13322",
+          "name": "Clav\u00edcula derecha",
+          "sampleCount": 43,
+          "over1mm": 36,
+          "over3mm": 15,
+          "maxDepthMm": 4.414069931954145,
+          "deepest": {
+            "depthMm": 4.414069931954145,
+            "point": [
+              -0.0926582178,
+              1.3438604492,
+              0.0844605145
+            ],
+            "surface": [
+              -0.0898352861404419,
+              1.347052812576294,
+              0.08330973982810974
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 4.414069931954145
+    },
+    {
+      "sourceObject": "Anterior division of superior trunk of brachial plexus.l",
+      "gaps": [
+        "nervous-brachial-divisions"
+      ],
+      "region": "upper",
+      "samples": 156,
+      "bounds": [
+        [
+          0.08597867212124678,
+          1.3295246253508146,
+          0.07412643990093912
+        ],
+        [
+          0.11035690783255855,
+          1.3499728272119786,
+          0.08953225761365316
+        ]
+      ],
+      "sideMedianX": 0.10175715535357314,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13323",
+          "name": "Clav\u00edcula izquierda",
+          "sampleCount": 22,
+          "over1mm": 16,
+          "over3mm": 0,
+          "maxDepthMm": 2.9838334303349257,
+          "deepest": {
+            "depthMm": 2.9838334303349257,
+            "point": [
+              0.0944459289,
+              1.342134823,
+              0.0773708456
+            ],
+            "surface": [
+              0.09572596102952957,
+              1.3394395112991333,
+              0.07736649364233017
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.9838334303349257
+    },
+    {
+      "sourceObject": "Anterior division of superior trunk of brachial plexus.r",
+      "gaps": [
+        "nervous-brachial-divisions"
+      ],
+      "region": "upper",
+      "samples": 156,
+      "bounds": [
+        [
+          -0.11081818469594393,
+          1.3294133912321486,
+          0.07413126592442373
+        ],
+        [
+          -0.08645808440518775,
+          1.3498826352676938,
+          0.08953834864499213
+        ]
+      ],
+      "sideMedianX": -0.10222239101028764,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13322",
+          "name": "Clav\u00edcula derecha",
+          "sampleCount": 17,
+          "over1mm": 12,
+          "over3mm": 4,
+          "maxDepthMm": 3.245588857680559,
+          "deepest": {
+            "depthMm": 3.245588857680559,
+            "point": [
+              -0.0949191324,
+              1.3420383881,
+              0.0773760758
+            ],
+            "surface": [
+              -0.0962924212217331,
+              1.3391013145446777,
+              0.07722948491573334
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 3.245588857680559
+    },
+    {
+      "sourceObject": "Posterior division of inferior trunk of brachial plexus.l",
+      "gaps": [
+        "nervous-brachial-divisions"
+      ],
+      "region": "upper",
+      "samples": 156,
+      "bounds": [
+        [
+          0.08215776740420623,
+          1.3303358619765906,
+          0.08516169313770386
+        ],
+        [
+          0.1101299077796736,
+          1.3487151953626506,
+          0.08956141056876735
+        ]
+      ],
+      "sideMedianX": 0.10051194547178523,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13323",
+          "name": "Clav\u00edcula izquierda",
+          "sampleCount": 35,
+          "over1mm": 27,
+          "over3mm": 10,
+          "maxDepthMm": 3.7396939005702734,
+          "deepest": {
+            "depthMm": 3.7396939005702734,
+            "point": [
+              0.0924163599,
+              1.3431289593,
+              0.0872635132
+            ],
+            "surface": [
+              0.09348759055137634,
+              1.3395509719848633,
+              0.08707359433174133
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 3.7396939005702734
+    },
+    {
+      "sourceObject": "Posterior division of inferior trunk of brachial plexus.r",
+      "gaps": [
+        "nervous-brachial-divisions"
+      ],
+      "region": "upper",
+      "samples": 156,
+      "bounds": [
+        [
+          -0.11059132769244558,
+          1.3302240571284862,
+          0.08516627968280605
+        ],
+        [
+          -0.08263452658936109,
+          1.3486296810393625,
+          0.08956749476800105
+        ]
+      ],
+      "sideMedianX": -0.10097897164817647,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13322",
+          "name": "Clav\u00edcula derecha",
+          "sampleCount": 33,
+          "over1mm": 28,
+          "over3mm": 7,
+          "maxDepthMm": 4.014060366898775,
+          "deepest": {
+            "depthMm": 4.014060366898775,
+            "point": [
+              -0.0928900168,
+              1.3430345863,
+              0.0872686323
+            ],
+            "surface": [
+              -0.09431186318397522,
+              1.3392871618270874,
+              0.08748669922351837
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 4.014060366898775
+    },
+    {
+      "sourceObject": "Posterior division of middle trunk of brachial plexus.l",
+      "gaps": [
+        "nervous-brachial-divisions"
+      ],
+      "region": "upper",
+      "samples": 156,
+      "bounds": [
+        [
+          0.08268616804197333,
+          1.3294943713121197,
+          0.07573953556061072
+        ],
+        [
+          0.10080215414152638,
+          1.3512244941637186,
+          0.08164652180504031
+        ]
+      ],
+      "sideMedianX": 0.09163054953426158,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13323",
+          "name": "Clav\u00edcula izquierda",
+          "sampleCount": 48,
+          "over1mm": 36,
+          "over3mm": 5,
+          "maxDepthMm": 3.478920552879572,
+          "deepest": {
+            "depthMm": 3.478920552879572,
+            "point": [
+              0.0925453005,
+              1.3418895118,
+              0.078586546
+            ],
+            "surface": [
+              0.09389059990644455,
+              1.3386974334716797,
+              0.07890867441892624
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 3.478920552879572
+    },
+    {
+      "sourceObject": "Posterior division of middle trunk of brachial plexus.r",
+      "gaps": [
+        "nervous-brachial-divisions"
+      ],
+      "region": "upper",
+      "samples": 156,
+      "bounds": [
+        [
+          -0.10126396104622515,
+          1.3293932269725452,
+          0.07574515659126899
+        ],
+        [
+          -0.08316603662750112,
+          1.3511386637562737,
+          0.08165137153688837
+        ]
+      ],
+      "sideMedianX": -0.09210264449067163,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13322",
+          "name": "Clav\u00edcula derecha",
+          "sampleCount": 42,
+          "over1mm": 29,
+          "over3mm": 4,
+          "maxDepthMm": 3.443935187533498,
+          "deepest": {
+            "depthMm": 3.443935187533498,
+            "point": [
+              -0.093158456,
+              1.3416904053,
+              0.0792125283
+            ],
+            "surface": [
+              -0.09000160545110703,
+              1.341813564300537,
+              0.07784146070480347
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 3.443935187533498
+    },
+    {
+      "sourceObject": "Posterior division of superior trunk of brachial plexus.l",
+      "gaps": [
+        "nervous-brachial-divisions"
+      ],
+      "region": "upper",
+      "samples": 156,
+      "bounds": [
+        [
+          0.08634479330714474,
+          1.3294839297610208,
+          0.07460918278340042
+        ],
+        [
+          0.10081646304205412,
+          1.3496594734888059,
+          0.07771221655347621
+        ]
+      ],
+      "sideMedianX": 0.09284263228685008,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13323",
+          "name": "Clav\u00edcula izquierda",
+          "sampleCount": 47,
+          "over1mm": 39,
+          "over3mm": 3,
+          "maxDepthMm": 3.0649786349385977,
+          "deepest": {
+            "depthMm": 3.0649786349385977,
+            "point": [
+              0.0924454827,
+              1.3412751204,
+              0.0770527917
+            ],
+            "surface": [
+              0.09376029670238495,
+              1.3385064601898193,
+              0.07704831659793854
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 3.0649786349385977
+    },
+    {
+      "sourceObject": "Posterior division of superior trunk of brachial plexus.r",
+      "gaps": [
+        "nervous-brachial-divisions"
+      ],
+      "region": "upper",
+      "samples": 156,
+      "bounds": [
+        [
+          -0.10127828785441552,
+          1.329382800613559,
+          0.07461406324072709
+        ],
+        [
+          -0.08682449007811793,
+          1.3495700088507678,
+          0.07771782582862269
+        ]
+      ],
+      "sideMedianX": -0.09331330423273654,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13322",
+          "name": "Clav\u00edcula derecha",
+          "sampleCount": 50,
+          "over1mm": 25,
+          "over3mm": 0,
+          "maxDepthMm": 2.568706404417753,
+          "deepest": {
+            "depthMm": 2.568706404417753,
+            "point": [
+              -0.0932725053,
+              1.341343839,
+              0.0767203345
+            ],
+            "surface": [
+              -0.0909179300069809,
+              1.3414357900619507,
+              0.07569770514965057
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.568706404417753
+    },
+    {
+      "sourceObject": "Radial nerve.l",
+      "gaps": [
+        "nervous-radial"
+      ],
+      "region": "upper",
+      "samples": 1164,
+      "bounds": [
+        [
+          0.12027734017783329,
+          1.0233824825552826,
+          0.0559280287850332
+        ],
+        [
+          0.2433884066305889,
+          1.3105306771266623,
+          0.08813572743763137
+        ]
+      ],
+      "sideMedianX": 0.21065665810518774,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA23131",
+          "name": "H\u00famero izquierdo",
+          "sampleCount": 32,
+          "over1mm": 2,
+          "over3mm": 0,
+          "maxDepthMm": 1.0877130553126335,
+          "deepest": {
+            "depthMm": 1.0877130553126335,
+            "point": [
+              0.1948890767,
+              1.1957148515,
+              0.0604336741
+            ],
+            "surface": [
+              0.1950266808271408,
+              1.1958038806915283,
+              0.0593583807349205
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 1.0877130553126335
+    },
+    {
+      "sourceObject": "Radial nerve.r",
+      "gaps": [
+        "nervous-radial"
+      ],
+      "region": "upper",
+      "samples": 1164,
+      "bounds": [
+        [
+          -0.24358532812651962,
+          1.0231456300232975,
+          0.05593966720351782
+        ],
+        [
+          -0.12071715929103603,
+          1.310406864991508,
+          0.0881488810202142
+        ]
+      ],
+      "sideMedianX": -0.21094233231991616,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA23130",
+          "name": "H\u00famero derecho",
+          "sampleCount": 34,
+          "over1mm": 4,
+          "over3mm": 0,
+          "maxDepthMm": 1.182582345791161,
+          "deepest": {
+            "depthMm": 1.182582345791161,
+            "point": [
+              -0.1952146126,
+              1.1955169226,
+              0.0604446427
+            ],
+            "surface": [
+              -0.1951335221529007,
+              1.1956249475479126,
+              0.059269797056913376
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 1.182582345791161
+    },
+    {
+      "sourceObject": "Sciatic nerve.l",
+      "gaps": [
+        "nervous-sciatic"
+      ],
+      "region": "lower",
+      "samples": 2484,
+      "bounds": [
+        [
+          0.016278384097494682,
+          0.4743945783892679,
+          0.015747137774152237
+        ],
+        [
+          0.079620848124264,
+          0.9113353645101876,
+          0.06793074792116707
+        ]
+      ],
+      "sideMedianX": 0.046740196209504606,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA16202",
+          "name": "Sacro",
+          "sampleCount": 247,
+          "over1mm": 236,
+          "over3mm": 199,
+          "maxDepthMm": 6.179474294185638,
+          "deepest": {
+            "depthMm": 6.179474294185638,
+            "point": [
+              0.0306485642,
+              0.8963841205,
+              0.056137458
+            ],
+            "surface": [
+              0.032118070870637894,
+              0.8994903564453125,
+              0.06127338483929634
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA16587",
+          "name": "Hueso coxal izquierdo",
+          "sampleCount": 81,
+          "over1mm": 46,
+          "over3mm": 8,
+          "maxDepthMm": 4.68328595161438,
+          "deepest": {
+            "depthMm": 4.68328595161438,
+            "point": [
+              0.0548224872,
+              0.8158441848,
+              0.042656915
+            ],
+            "surface": [
+              0.0567479133605957,
+              0.8168476819992065,
+              0.03850734978914261
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 6.179474294185638
+    },
+    {
+      "sourceObject": "Sciatic nerve.r",
+      "gaps": [
+        "nervous-sciatic"
+      ],
+      "region": "lower",
+      "samples": 2484,
+      "bounds": [
+        [
+          -0.07944378856628263,
+          0.47439479927299066,
+          0.015767619967352375
+        ],
+        [
+          -0.01611433919080928,
+          0.9113354500136719,
+          0.06794629370624974
+        ]
+      ],
+      "sideMedianX": -0.046563542917119505,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA16202",
+          "name": "Sacro",
+          "sampleCount": 246,
+          "over1mm": 235,
+          "over3mm": 197,
+          "maxDepthMm": 6.42032315954566,
+          "deepest": {
+            "depthMm": 6.42032315954566,
+            "point": [
+              -0.0301004702,
+              0.8980991949,
+              0.0553530895
+            ],
+            "surface": [
+              -0.031613048166036606,
+              0.9021896719932556,
+              0.06006483733654022
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA16586",
+          "name": "Hueso coxal derecho",
+          "sampleCount": 82,
+          "over1mm": 50,
+          "over3mm": 9,
+          "maxDepthMm": 4.588081501424313,
+          "deepest": {
+            "depthMm": 4.588081501424313,
+            "point": [
+              -0.0557459268,
+              0.8203251739,
+              0.0439304489
+            ],
+            "surface": [
+              -0.05729100853204727,
+              0.8205831050872803,
+              0.03961805999279022
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 6.42032315954566
+    },
+    {
+      "sourceObject": "Obturator nerve.l",
+      "gaps": [
+        "nervous-obturator"
+      ],
+      "region": "lower",
+      "samples": 1764,
+      "bounds": [
+        [
+          0.016388629426679405,
+          0.7965884996047413,
+          0.0567666179128407
+        ],
+        [
+          0.059996899367645525,
+          1.0126657207346068,
+          0.10171726409080016
+        ]
+      ],
+      "sideMedianX": 0.048062514846135204,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA16202",
+          "name": "Sacro",
+          "sampleCount": 167,
+          "over1mm": 133,
+          "over3mm": 60,
+          "maxDepthMm": 4.968280903995037,
+          "deepest": {
+            "depthMm": 4.968280903995037,
+            "point": [
+              0.0495101422,
+              0.888844053,
+              0.0598820139
+            ],
+            "surface": [
+              0.04855582118034363,
+              0.8908516764640808,
+              0.06432528048753738
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA13075",
+          "name": "V\u00e9rtebra lumbar \u00b7 L4",
+          "sampleCount": 15,
+          "over1mm": 12,
+          "over3mm": 0,
+          "maxDepthMm": 1.9338891142979264,
+          "deepest": {
+            "depthMm": 1.9338891142979264,
+            "point": [
+              0.016654109,
+              0.9686959484,
+              0.0620894377
+            ],
+            "surface": [
+              0.015413870103657246,
+              0.9693025350570679,
+              0.060735270380973816
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 4.968280903995037
+    },
+    {
+      "sourceObject": "Obturator nerve.r",
+      "gaps": [
+        "nervous-obturator"
+      ],
+      "region": "lower",
+      "samples": 1764,
+      "bounds": [
+        [
+          -0.059818441632722416,
+          0.7965886244623752,
+          0.05677770703504115
+        ],
+        [
+          -0.016210369074933124,
+          1.0126658644010826,
+          0.10173221911749702
+        ]
+      ],
+      "sideMedianX": -0.047883853778076656,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA16202",
+          "name": "Sacro",
+          "sampleCount": 149,
+          "over1mm": 119,
+          "over3mm": 37,
+          "maxDepthMm": 4.566609393805265,
+          "deepest": {
+            "depthMm": 4.566609393805265,
+            "point": [
+              -0.0490920525,
+              0.8889079878,
+              0.0598327529
+            ],
+            "surface": [
+              -0.048151638358831406,
+              0.8897619843482971,
+              0.06421911716461182
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA13075",
+          "name": "V\u00e9rtebra lumbar \u00b7 L4",
+          "sampleCount": 26,
+          "over1mm": 5,
+          "over3mm": 0,
+          "maxDepthMm": 1.1765847448259592,
+          "deepest": {
+            "depthMm": 1.1765847448259592,
+            "point": [
+              -0.0164756685,
+              0.9686959932,
+              0.0620955658
+            ],
+            "surface": [
+              -0.01581513322889805,
+              0.9689807295799255,
+              0.061164453625679016
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 4.566609393805265
+    },
+    {
+      "sourceObject": "Femoral branch of genitofemoral nerve.l",
+      "gaps": [
+        "nervous-lumbar-plexus"
+      ],
+      "region": "lower",
+      "samples": 1320,
+      "bounds": [
+        [
+          0.03542824587331367,
+          0.7352908910905921,
+          0.10027843405461956
+        ],
+        [
+          0.056551625903140695,
+          0.9505897412661314,
+          0.14217482307401863
+        ]
+      ],
+      "sideMedianX": 0.04355800962888063,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Femoral branch of genitofemoral nerve.r",
+      "gaps": [
+        "nervous-lumbar-plexus"
+      ],
+      "region": "lower",
+      "samples": 1320,
+      "bounds": [
+        [
+          -0.05635161588687765,
+          0.7352909966827303,
+          0.10029364766601216
+        ],
+        [
+          -0.03522212898018995,
+          0.9505898508546867,
+          0.1421908668559866
+        ]
+      ],
+      "sideMedianX": -0.04335119301203848,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Genital branch of genitofemoral nerve.l",
+      "gaps": [
+        "nervous-lumbar-plexus"
+      ],
+      "region": "lower",
+      "samples": 876,
+      "bounds": [
+        [
+          0.016346357841420585,
+          0.6961616590237061,
+          0.10027843807483419
+        ],
+        [
+          0.044819726903852164,
+          0.9505896548114613,
+          0.14105519215957849
+        ]
+      ],
+      "sideMedianX": 0.0311723800726343,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Genital branch of genitofemoral nerve.r",
+      "gaps": [
+        "nervous-lumbar-plexus"
+      ],
+      "region": "lower",
+      "samples": 876,
+      "bounds": [
+        [
+          -0.0446197108684173,
+          0.6961617181331669,
+          0.10029364980396165
+        ],
+        [
+          -0.01614160565022463,
+          0.9505897658419652,
+          0.14106418750084176
+        ]
+      ],
+      "sideMedianX": -0.030966686282501515,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Genitofemoral nerve.l",
+      "gaps": [
+        "nervous-lumbar-plexus"
+      ],
+      "region": "lower",
+      "samples": 456,
+      "bounds": [
+        [
+          0.014243552512219326,
+          0.9501746387807374,
+          0.05268543107003684
+        ],
+        [
+          0.04231026203517706,
+          1.026527513412305,
+          0.1011734176834605
+        ]
+      ],
+      "sideMedianX": 0.03438716199068695,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13074",
+          "name": "V\u00e9rtebra lumbar \u00b7 L3",
+          "sampleCount": 12,
+          "over1mm": 1,
+          "over3mm": 0,
+          "maxDepthMm": 1.0402941843494773,
+          "deepest": {
+            "depthMm": 1.0402941843494773,
+            "point": [
+              0.0187452482,
+              1.0028109637,
+              0.055105082
+            ],
+            "surface": [
+              0.019201485440135002,
+              1.0028578042984009,
+              0.05417134612798691
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 1.0402941843494773
+    },
+    {
+      "sourceObject": "Genitofemoral nerve.r",
+      "gaps": [
+        "nervous-lumbar-plexus"
+      ],
+      "region": "lower",
+      "samples": 456,
+      "bounds": [
+        [
+          -0.04212751869266531,
+          0.9501747552616787,
+          0.052695519493114684
+        ],
+        [
+          -0.01406783813080593,
+          1.0265275764952853,
+          0.10118868012783395
+        ]
+      ],
+      "sideMedianX": -0.034211767277192814,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13074",
+          "name": "V\u00e9rtebra lumbar \u00b7 L3",
+          "sampleCount": 16,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.716871814802289,
+          "deepest": {
+            "depthMm": 0.716871814802289,
+            "point": [
+              -0.0206797251,
+              1.0037769007,
+              0.0551032355
+            ],
+            "surface": [
+              -0.021042203530669212,
+              1.0040119886398315,
+              0.05453117564320564
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 0.716871814802289
+    },
+    {
+      "sourceObject": "Pudendal nerve.l",
+      "gaps": [
+        "nervous-sacral-plexus"
+      ],
+      "region": "lower",
+      "samples": 1908,
+      "bounds": [
+        [
+          0.008705897513126936,
+          0.7482722923394401,
+          0.003768529071718471
+        ],
+        [
+          0.028957247227736654,
+          0.8618799188456319,
+          0.1110782000293209
+        ]
+      ],
+      "sideMedianX": 0.020659687603090462,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA16202",
+          "name": "Sacro",
+          "sampleCount": 112,
+          "over1mm": 35,
+          "over3mm": 0,
+          "maxDepthMm": 1.7218083376064897,
+          "deepest": {
+            "depthMm": 1.7218083376064897,
+            "point": [
+              0.0155637881,
+              0.8346725449,
+              0.0086966685
+            ],
+            "surface": [
+              0.016706662252545357,
+              0.8345798254013062,
+              0.00741219986230135
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 1.7218083376064897
+    },
+    {
+      "sourceObject": "Pudendal nerve.r",
+      "gaps": [
+        "nervous-sacral-plexus"
+      ],
+      "region": "lower",
+      "samples": 1908,
+      "bounds": [
+        [
+          -0.028795886479663288,
+          0.7482723358851918,
+          0.0037734456135572053
+        ],
+        [
+          -0.00850992454076905,
+          0.8618799526880948,
+          0.11108166186384573
+        ]
+      ],
+      "sideMedianX": -0.020492164006811885,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA16202",
+          "name": "Sacro",
+          "sampleCount": 154,
+          "over1mm": 78,
+          "over3mm": 0,
+          "maxDepthMm": 2.3461799137294292,
+          "deepest": {
+            "depthMm": 2.3461799137294292,
+            "point": [
+              -0.0160527247,
+              0.8329612845,
+              0.0096450895
+            ],
+            "surface": [
+              -0.01784384250640869,
+              0.8322457075119019,
+              0.0083092600107193
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.3461799137294292
+    },
+    {
+      "sourceObject": "Superior gluteal nerve.l",
+      "gaps": [
+        "nervous-sacral-plexus"
+      ],
+      "region": "lower",
+      "samples": 1764,
+      "bounds": [
+        [
+          0.02932366889600644,
+          0.8377246396443769,
+          0.0435657634716721
+        ],
+        [
+          0.11740421588574985,
+          0.8986910350497681,
+          0.06134826620017759
+        ]
+      ],
+      "sideMedianX": 0.06339805289757347,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA16202",
+          "name": "Sacro",
+          "sampleCount": 223,
+          "over1mm": 196,
+          "over3mm": 144,
+          "maxDepthMm": 6.546880584210157,
+          "deepest": {
+            "depthMm": 6.546880584210157,
+            "point": [
+              0.0321438063,
+              0.8951977144,
+              0.0559671767
+            ],
+            "surface": [
+              0.03370792791247368,
+              0.8965951800346375,
+              0.062168966978788376
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA16587",
+          "name": "Hueso coxal izquierdo",
+          "sampleCount": 191,
+          "over1mm": 154,
+          "over3mm": 67,
+          "maxDepthMm": 5.497844889760017,
+          "deepest": {
+            "depthMm": 5.497844889760017,
+            "point": [
+              0.0645515424,
+              0.842114216,
+              0.0515597858
+            ],
+            "surface": [
+              0.05931932106614113,
+              0.8432457447052002,
+              0.05281271040439606
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 6.546880584210157
+    },
+    {
+      "sourceObject": "Superior gluteal nerve.r",
+      "gaps": [
+        "nervous-sacral-plexus"
+      ],
+      "region": "lower",
+      "samples": 1764,
+      "bounds": [
+        [
+          -0.1172297056953383,
+          0.837724858227748,
+          0.04360036175283463
+        ],
+        [
+          -0.0291493576549059,
+          0.8986911223786643,
+          0.06136228169519088
+        ]
+      ],
+      "sideMedianX": -0.063224680614417,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA16202",
+          "name": "Sacro",
+          "sampleCount": 213,
+          "over1mm": 190,
+          "over3mm": 144,
+          "maxDepthMm": 6.663743406534195,
+          "deepest": {
+            "depthMm": 6.663743406534195,
+            "point": [
+              -0.0319678392,
+              0.8951978054,
+              0.0559790919
+            ],
+            "surface": [
+              -0.03296419978141785,
+              0.8977165222167969,
+              0.062067508697509766
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA16586",
+          "name": "Hueso coxal derecho",
+          "sampleCount": 183,
+          "over1mm": 153,
+          "over3mm": 68,
+          "maxDepthMm": 5.436357576400042,
+          "deepest": {
+            "depthMm": 5.436357576400042,
+            "point": [
+              -0.0656620456,
+              0.8407233917,
+              0.0511256619
+            ],
+            "surface": [
+              -0.06613896787166595,
+              0.8425114750862122,
+              0.046013977378606796
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 6.663743406534195
+    },
+    {
+      "sourceObject": "Long thoracic nerve.l",
+      "gaps": [
+        "nervous-upper-branches"
+      ],
+      "region": "upper",
+      "samples": 2040,
+      "bounds": [
+        [
+          0.0226428993323154,
+          1.1263107817340305,
+          0.04927882993367455
+        ],
+        [
+          0.1430444218371557,
+          1.4130823843733968,
+          0.10839674886445558
+        ]
+      ],
+      "sideMedianX": 0.12215638909085882,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13323",
+          "name": "Clav\u00edcula izquierda",
+          "sampleCount": 48,
+          "over1mm": 32,
+          "over3mm": 0,
+          "maxDepthMm": 2.370555652305484,
+          "deepest": {
+            "depthMm": 2.370555652305484,
+            "point": [
+              0.0825279093,
+              1.3396844998,
+              0.1065405537
+            ],
+            "surface": [
+              0.08263743668794632,
+              1.3419294357299805,
+              0.10729403793811798
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.370555652305484
+    },
+    {
+      "sourceObject": "Long thoracic nerve.r",
+      "gaps": [
+        "nervous-upper-branches"
+      ],
+      "region": "upper",
+      "samples": 2040,
+      "bounds": [
+        [
+          -0.14339469207179678,
+          1.1261817117600672,
+          0.0492860317260534
+        ],
+        [
+          -0.023175158688042555,
+          1.4130547660199075,
+          0.1084017463954491
+        ]
+      ],
+      "sideMedianX": -0.12257471192513,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13322",
+          "name": "Clav\u00edcula derecha",
+          "sampleCount": 48,
+          "over1mm": 38,
+          "over3mm": 1,
+          "maxDepthMm": 3.004467347636819,
+          "deepest": {
+            "depthMm": 3.004467347636819,
+            "point": [
+              -0.0848936112,
+              1.3380101295,
+              0.1071003217
+            ],
+            "surface": [
+              -0.08669791370630264,
+              1.3395675420761108,
+              0.10892942547798157
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 3.004467347636819
+    },
+    {
+      "sourceObject": "Suprascapular nerve.l",
+      "gaps": [
+        "nervous-upper-branches"
+      ],
+      "region": "upper",
+      "samples": 2508,
+      "bounds": [
+        [
+          0.05338668372747907,
+          1.2469840283647646,
+          0.012086482186964773
+        ],
+        [
+          0.14260732712746588,
+          1.384217733597077,
+          0.09029338119155819
+        ]
+      ],
+      "sideMedianX": 0.11581786424139488,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13396",
+          "name": "Esc\u00e1pula izquierda",
+          "sampleCount": 365,
+          "over1mm": 108,
+          "over3mm": 0,
+          "maxDepthMm": 2.624982735142112,
+          "deepest": {
+            "depthMm": 2.624982735142112,
+            "point": [
+              0.1202672087,
+              1.3119071674,
+              0.0377839371
+            ],
+            "surface": [
+              0.11880108714103699,
+              1.3139201402664185,
+              0.038613978773355484
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.624982735142112
+    },
+    {
+      "sourceObject": "Suprascapular nerve.r",
+      "gaps": [
+        "nervous-upper-branches"
+      ],
+      "region": "upper",
+      "samples": 2508,
+      "bounds": [
+        [
+          -0.14305252672929616,
+          1.2468749363795244,
+          0.012092544574882
+        ],
+        [
+          -0.05390130406131511,
+          1.3841625472341286,
+          0.09029639889789132
+        ]
+      ],
+      "sideMedianX": -0.1162525180721184,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA13395",
+          "name": "Esc\u00e1pula derecha",
+          "sampleCount": 412,
+          "over1mm": 156,
+          "over3mm": 0,
+          "maxDepthMm": 2.9466815758496523,
+          "deepest": {
+            "depthMm": 2.9466815758496523,
+            "point": [
+              -0.120711931,
+              1.3117849033,
+              0.0377907138
+            ],
+            "surface": [
+              -0.11906186491250992,
+              1.31402587890625,
+              0.038759250193834305
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.9466815758496523
+    },
+    {
+      "sourceObject": "Common plantar digital branches of lateral plantar nerve.l",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 756,
+      "bounds": [
+        [
+          0.09474542375058816,
+          -0.046944578466184265,
+          0.12150664430814162
+        ],
+        [
+          0.13356482080267024,
+          -0.03736831234413357,
+          0.18557277283499254
+        ]
+      ],
+      "sideMedianX": 0.10934157505930207,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24512",
+          "name": "Metatarsiano 3 izquierdo",
+          "sampleCount": 97,
+          "over1mm": 47,
+          "over3mm": 0,
+          "maxDepthMm": 2.9329590033739805,
+          "deepest": {
+            "depthMm": 2.9329590033739805,
+            "point": [
+              0.1154787776,
+              -0.0412993577,
+              0.1426008981
+            ],
+            "surface": [
+              0.11290040612220764,
+              -0.042636942118406296,
+              0.14300724864006042
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.9329590033739805
+    },
+    {
+      "sourceObject": "Common plantar digital branches of lateral plantar nerve.r",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 756,
+      "bounds": [
+        [
+          -0.1333507853075922,
+          -0.04694416122272652,
+          0.12154230055546231
+        ],
+        [
+          -0.09454764882348345,
+          -0.03736795731145816,
+          0.18561324468214624
+        ]
+      ],
+      "sideMedianX": -0.10913561578253018,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24511",
+          "name": "Metatarsiano 3 derecho",
+          "sampleCount": 102,
+          "over1mm": 44,
+          "over3mm": 0,
+          "maxDepthMm": 2.916503231972456,
+          "deepest": {
+            "depthMm": 2.916503231972456,
+            "point": [
+              -0.115450334,
+              -0.0413713318,
+              0.1424706797
+            ],
+            "surface": [
+              -0.113528773188591,
+              -0.04350479319691658,
+              0.14298245310783386
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.916503231972456
+    },
+    {
+      "sourceObject": "Common plantar digital branches of medial plantar nerve.l",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 900,
+      "bounds": [
+        [
+          0.05957544585182163,
+          -0.04532752787161298,
+          0.14214225816137885
+        ],
+        [
+          0.09820952837360647,
+          -0.03006516569761576,
+          0.1944089868048161
+        ]
+      ],
+      "sideMedianX": 0.0789218550503224,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24508",
+          "name": "Metatarsiano 1 izquierdo",
+          "sampleCount": 251,
+          "over1mm": 197,
+          "over3mm": 89,
+          "maxDepthMm": 4.878970794379711,
+          "deepest": {
+            "depthMm": 4.878970794379711,
+            "point": [
+              0.0871141766,
+              -0.0423714176,
+              0.162434947
+            ],
+            "surface": [
+              0.08368135243654251,
+              -0.03980504348874092,
+              0.16476599872112274
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 4.878970794379711
+    },
+    {
+      "sourceObject": "Infrapatellar branch of saphenous nerve.l",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 300,
+      "bounds": [
+        [
+          0.053233077685138484,
+          0.2840138058036158,
+          0.08491050194663424
+        ],
+        [
+          0.08804247125884365,
+          0.2949652174504688,
+          0.1158211618075562
+        ]
+      ],
+      "sideMedianX": 0.06849552884298256,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Infrapatellar branch of saphenous nerve.r",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 300,
+      "bounds": [
+        [
+          -0.08784633637768367,
+          0.28401406820428243,
+          0.0849306465779363
+        ],
+        [
+          -0.05304787073306474,
+          0.2949653731551415,
+          0.11585377273925745
+        ]
+      ],
+      "sideMedianX": -0.0683047831537678,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.l",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 588,
+      "bounds": [
+        [
+          0.05734381152309995,
+          -0.039798193082287325,
+          0.06208938873894194
+        ],
+        [
+          0.09559878918197495,
+          -0.006161571351900222,
+          0.12216274328104677
+        ]
+      ],
+      "sideMedianX": 0.07203059641131486,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24483",
+          "name": "Astr\u00e1galo izquierdo",
+          "sampleCount": 84,
+          "over1mm": 63,
+          "over3mm": 47,
+          "maxDepthMm": 6.359189748764038,
+          "deepest": {
+            "depthMm": 6.359189748764038,
+            "point": [
+              0.0595727144,
+              -0.0118536206,
+              0.0664140792
+            ],
+            "surface": [
+              0.0572778582572937,
+              -0.00781604740768671,
+              0.06207001209259033
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24498",
+          "name": "Calc\u00e1neo izquierdo",
+          "sampleCount": 127,
+          "over1mm": 99,
+          "over3mm": 51,
+          "maxDepthMm": 4.499043803662062,
+          "deepest": {
+            "depthMm": 4.499043803662062,
+            "point": [
+              0.0675750879,
+              -0.0300326421,
+              0.0810031504
+            ],
+            "surface": [
+              0.0681784376502037,
+              -0.026159316301345825,
+              0.0832110270857811
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 6.359189748764038
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.r",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 588,
+      "bounds": [
+        [
+          -0.09540116510344995,
+          -0.03979789784120028,
+          0.06211099875795342
+        ],
+        [
+          -0.05716797348305661,
+          -0.006161401509108759,
+          0.122198126963204
+        ]
+      ],
+      "sideMedianX": -0.0718445474107381,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24482",
+          "name": "Astr\u00e1galo derecho",
+          "sampleCount": 84,
+          "over1mm": 62,
+          "over3mm": 43,
+          "maxDepthMm": 6.3819969072937965,
+          "deepest": {
+            "depthMm": 6.3819969072937965,
+            "point": [
+              -0.0593954713,
+              -0.0118534449,
+              0.0664363574
+            ],
+            "surface": [
+              -0.057246048003435135,
+              -0.007616099901497364,
+              0.06217551603913307
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24497",
+          "name": "Calc\u00e1neo derecho",
+          "sampleCount": 129,
+          "over1mm": 102,
+          "over3mm": 47,
+          "maxDepthMm": 4.4289384968578815,
+          "deepest": {
+            "depthMm": 4.4289384968578815,
+            "point": [
+              -0.0673924817,
+              -0.0300324388,
+              0.0810284033
+            ],
+            "surface": [
+              -0.06764338165521622,
+              -0.026617955416440964,
+              0.08383800089359283
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 6.3819969072937965
+    },
+    {
+      "sourceObject": "Medial crural cutaneous branches of saphenous nerve.l",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 300,
+      "bounds": [
+        [
+          0.024789641168170676,
+          0.69757255044117,
+          0.12214065219832893
+        ],
+        [
+          0.06325928333509508,
+          0.7983423328639515,
+          0.1410380283594537
+        ]
+      ],
+      "sideMedianX": 0.04029960231985689,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Medial crural cutaneous branches of saphenous nerve.r",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 300,
+      "bounds": [
+        [
+          -0.06305695266466632,
+          0.6975726226164696,
+          0.1221500951911993
+        ],
+        [
+          -0.02458955326746216,
+          0.7983425116752558,
+          0.14105371336265962
+        ]
+      ],
+      "sideMedianX": -0.040092778800720805,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Medial plantar nerve.l",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 600,
+      "bounds": [
+        [
+          0.05734381152309995,
+          -0.03531302883978224,
+          0.06208938873894194
+        ],
+        [
+          0.0769093983873297,
+          -0.006161571351900222,
+          0.1429554009190359
+        ]
+      ],
+      "sideMedianX": 0.06763321295091357,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24483",
+          "name": "Astr\u00e1galo izquierdo",
+          "sampleCount": 228,
+          "over1mm": 204,
+          "over3mm": 175,
+          "maxDepthMm": 7.292380556464195,
+          "deepest": {
+            "depthMm": 7.292380556464195,
+            "point": [
+              0.0593489237,
+              -0.0107223864,
+              0.0705867112
+            ],
+            "surface": [
+              0.061792127788066864,
+              -0.017087571322917938,
+              0.07317398488521576
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24501",
+          "name": "Navicular del pie izquierdo",
+          "sampleCount": 108,
+          "over1mm": 108,
+          "over3mm": 63,
+          "maxDepthMm": 6.649207323789597,
+          "deepest": {
+            "depthMm": 6.649207323789597,
+            "point": [
+              0.068512374,
+              -0.0227175705,
+              0.111020933
+            ],
+            "surface": [
+              0.06938192993402481,
+              -0.021040109917521477,
+              0.10464582592248917
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24522",
+          "name": "Cuneiforme medial izquierdo",
+          "sampleCount": 111,
+          "over1mm": 71,
+          "over3mm": 10,
+          "maxDepthMm": 3.669732017442584,
+          "deepest": {
+            "depthMm": 3.669732017442584,
+            "point": [
+              0.071659582,
+              -0.0271170506,
+              0.1217030715
+            ],
+            "surface": [
+              0.06864286959171295,
+              -0.02683122269809246,
+              0.12377302348613739
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24508",
+          "name": "Metatarsiano 1 izquierdo",
+          "sampleCount": 21,
+          "over1mm": 4,
+          "over3mm": 0,
+          "maxDepthMm": 1.2738172663375735,
+          "deepest": {
+            "depthMm": 1.2738172663375735,
+            "point": [
+              0.076864116,
+              -0.0346083347,
+              0.1427825709
+            ],
+            "surface": [
+              0.07566215097904205,
+              -0.0350247286260128,
+              0.1427154392004013
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 7.292380556464195
+    },
+    {
+      "sourceObject": "Medial plantar nerve.r",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 600,
+      "bounds": [
+        [
+          -0.07670390583396305,
+          -0.03531278032741557,
+          0.06211099875795342
+        ],
+        [
+          -0.05716797348305661,
+          -0.006161401509108759,
+          0.1429838557547962
+        ]
+      ],
+      "sideMedianX": -0.06743600167020564,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24482",
+          "name": "Astr\u00e1galo derecho",
+          "sampleCount": 225,
+          "over1mm": 204,
+          "over3mm": 171,
+          "maxDepthMm": 7.147880271077156,
+          "deepest": {
+            "depthMm": 7.147880271077156,
+            "point": [
+              -0.0591701288,
+              -0.01072221,
+              0.0706089056
+            ],
+            "surface": [
+              -0.062052253633737564,
+              -0.016780367121100426,
+              0.0730755403637886
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24500",
+          "name": "Navicular del pie derecho",
+          "sampleCount": 116,
+          "over1mm": 103,
+          "over3mm": 72,
+          "maxDepthMm": 6.431007292121649,
+          "deepest": {
+            "depthMm": 6.431007292121649,
+            "point": [
+              -0.0684565297,
+              -0.0225418712,
+              0.1109672538
+            ],
+            "surface": [
+              -0.06439459323883057,
+              -0.020314181223511696,
+              0.11542773991823196
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24521",
+          "name": "Cuneiforme medial derecho",
+          "sampleCount": 106,
+          "over1mm": 72,
+          "over3mm": 8,
+          "maxDepthMm": 3.5574575886130333,
+          "deepest": {
+            "depthMm": 3.5574575886130333,
+            "point": [
+              -0.0714618623,
+              -0.0271168224,
+              0.1217298366
+            ],
+            "surface": [
+              -0.06878417730331421,
+              -0.026227861642837524,
+              0.12389668822288513
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24507",
+          "name": "Metatarsiano 1 derecho",
+          "sampleCount": 19,
+          "over1mm": 3,
+          "over3mm": 0,
+          "maxDepthMm": 1.1543616419658065,
+          "deepest": {
+            "depthMm": 1.1543616419658065,
+            "point": [
+              -0.076658594,
+              -0.0346080848,
+              0.1428112685
+            ],
+            "surface": [
+              -0.0755806714296341,
+              -0.03502095863223076,
+              0.1428244560956955
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 7.147880271077156
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of lateral plantar nerve.l",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 3804,
+      "bounds": [
+        [
+          0.1086190099041842,
+          -0.05159774818628694,
+          0.1658036028686219
+        ],
+        [
+          0.1459184693998639,
+          -0.03738950840766127,
+          0.23727835638049297
+        ]
+      ],
+      "sideMedianX": 0.1273284268630645,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of lateral plantar nerve.r",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 3804,
+      "bounds": [
+        [
+          -0.14568986651835417,
+          -0.051597283021938944,
+          0.1658533475441863
+        ],
+        [
+          -0.1083975709606741,
+          -0.03738915290295126,
+          0.23732402081400517
+        ]
+      ],
+      "sideMedianX": -0.12709776659508676,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of medial plantar nerve.l",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 3228,
+      "bounds": [
+        [
+          0.059079891573006436,
+          -0.04822359928917694,
+          0.1821375633678313
+        ],
+        [
+          0.11431881484844146,
+          -0.03944161021085678,
+          0.24874681417539202
+        ]
+      ],
+      "sideMedianX": 0.09573118064303474,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of medial plantar nerve.r",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 3228,
+      "bounds": [
+        [
+          -0.11407727081524334,
+          -0.04822321231015597,
+          0.1821599388510133
+        ],
+        [
+          -0.058856770380492904,
+          -0.03944139536623174,
+          0.24878370829804
+        ]
+      ],
+      "sideMedianX": -0.09548891245728854,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Common plantar digital branches of medial plantar nerve",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 900,
+      "bounds": [
+        [
+          -0.09798642019927048,
+          -0.04532720350987167,
+          0.14216737619284478
+        ],
+        [
+          -0.05935531780948781,
+          -0.030064943897682328,
+          0.19443970351205006
+        ]
+      ],
+      "sideMedianX": -0.07871194197845054,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24507",
+          "name": "Metatarsiano 1 derecho",
+          "sampleCount": 248,
+          "over1mm": 192,
+          "over3mm": 86,
+          "maxDepthMm": 4.826242569833994,
+          "deepest": {
+            "depthMm": 4.826242569833994,
+            "point": [
+              -0.0869013825,
+              -0.0423711325,
+              0.1624674499
+            ],
+            "surface": [
+              -0.08426329493522644,
+              -0.039227552711963654,
+              0.1650073379278183
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 4.826242569833994
+    },
+    {
+      "sourceObject": "Saphenous nerve.l",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 3360,
+      "bounds": [
+        [
+          0.030902444412258475,
+          0.04132944737932093,
+          0.003129277884941023
+        ],
+        [
+          0.07291980597324048,
+          0.7982547851359807,
+          0.1357759373189239
+        ]
+      ],
+      "sideMedianX": 0.054977894576636106,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24478",
+          "name": "Tibia izquierda",
+          "sampleCount": 238,
+          "over1mm": 120,
+          "over3mm": 0,
+          "maxDepthMm": 2.211868530139327,
+          "deepest": {
+            "depthMm": 2.211868530139327,
+            "point": [
+              0.0426088516,
+              0.3565673582,
+              0.0656197385
+            ],
+            "surface": [
+              0.04163225367665291,
+              0.3584021031856537,
+              0.06486322730779648
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.211868530139327
+    },
+    {
+      "sourceObject": "Saphenous nerve.r",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 3360,
+      "bounds": [
+        [
+          -0.07273264051129492,
+          0.04132917260465335,
+          0.0031488740744754495
+        ],
+        [
+          -0.03072017599248416,
+          0.7982545905146834,
+          0.13579611244482426
+        ]
+      ],
+      "sideMedianX": -0.05477518349980699,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24477",
+          "name": "Tibia derecha",
+          "sampleCount": 200,
+          "over1mm": 108,
+          "over3mm": 0,
+          "maxDepthMm": 2.2229270543903112,
+          "deepest": {
+            "depthMm": 2.2229270543903112,
+            "point": [
+              -0.0424308533,
+              0.3565670341,
+              0.0656356604
+            ],
+            "surface": [
+              -0.041815564036369324,
+              0.35862642526626587,
+              0.06506847590208054
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.2229270543903112
+    },
+    {
+      "sourceObject": "Sural nerve.l",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 2052,
+      "bounds": [
+        [
+          0.07017902797034467,
+          -0.045920896859066,
+          0.004264558351998349
+        ],
+        [
+          0.14446978776968722,
+          0.3434593533739879,
+          0.19791407537458688
+        ]
+      ],
+      "sideMedianX": 0.10453239536709849,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24481",
+          "name": "Peron\u00e9 izquierdo",
+          "sampleCount": 118,
+          "over1mm": 96,
+          "over3mm": 80,
+          "maxDepthMm": 6.793309934437275,
+          "deepest": {
+            "depthMm": 6.793309934437275,
+            "point": [
+              0.0973686162,
+              -0.0078964376,
+              0.0587718291
+            ],
+            "surface": [
+              0.10377908498048782,
+              -0.00738611351698637,
+              0.05658220127224922
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 6.793309934437275
+    },
+    {
+      "sourceObject": "Sural nerve.r",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 2052,
+      "bounds": [
+        [
+          -0.14424392475864206,
+          -0.045920441009152116,
+          0.004293975479786438
+        ],
+        [
+          -0.07002036846975038,
+          0.3434595402447863,
+          0.19796753377541518
+        ]
+      ],
+      "sideMedianX": -0.10435104302976246,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24480",
+          "name": "Peron\u00e9 derecho",
+          "sampleCount": 120,
+          "over1mm": 100,
+          "over3mm": 84,
+          "maxDepthMm": 6.874662823975086,
+          "deepest": {
+            "depthMm": 6.874662823975086,
+            "point": [
+              -0.0966028739,
+              -0.0059938775,
+              0.0576293411
+            ],
+            "surface": [
+              -0.10240790992975235,
+              -0.004839735105633736,
+              0.054132129997015
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 6.874662823975086
+    },
+    {
+      "sourceObject": "Deep branch of radial nerve.l",
+      "gaps": [
+        "nervous-radial"
+      ],
+      "region": "upper",
+      "samples": 1020,
+      "bounds": [
+        [
+          0.23249099184200908,
+          0.7781454665531874,
+          0.07119006369024672
+        ],
+        [
+          0.2653331624643109,
+          1.0238097785344682,
+          0.11751930111072505
+        ]
+      ],
+      "sideMedianX": 0.2456568212779781,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24445",
+          "name": "Trapezoide izquierdo",
+          "sampleCount": 12,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.9085529018193483,
+          "deepest": {
+            "depthMm": 0.9085529018193483,
+            "point": [
+              0.2649405278,
+              0.7852952373,
+              0.1148701182
+            ],
+            "surface": [
+              0.26460784673690796,
+              0.7850950956344604,
+              0.11404869705438614
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24469",
+          "name": "Metacarpiano 3 izquierdo",
+          "sampleCount": 24,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.6027318304404616,
+          "deepest": {
+            "depthMm": 0.6027318304404616,
+            "point": [
+              0.2651701884,
+              0.7781507987,
+              0.117358943
+            ],
+            "surface": [
+              0.2656455636024475,
+              0.778367280960083,
+              0.11765967309474945
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 0.9085529018193483
+    },
+    {
+      "sourceObject": "Deep branch of radial nerve.r",
+      "gaps": [
+        "nervous-radial"
+      ],
+      "region": "upper",
+      "samples": 1020,
+      "bounds": [
+        [
+          -0.2652317727247193,
+          0.7778764058212736,
+          0.07120393694737992
+        ],
+        [
+          -0.2326399380148803,
+          1.0235730245631283,
+          0.11753435305867452
+        ]
+      ],
+      "sideMedianX": -0.24576429316146786,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24468",
+          "name": "Metacarpiano 3 derecho",
+          "sampleCount": 24,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.7752288365736604,
+          "deepest": {
+            "depthMm": 0.7752288365736604,
+            "point": [
+              -0.2650687723,
+              0.7778817849,
+              0.1173739902
+            ],
+            "surface": [
+              -0.26565176248550415,
+              0.7781335115432739,
+              0.1178186684846878
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA23725",
+          "name": "Trapezoide derecho",
+          "sampleCount": 12,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.6854144157841802,
+          "deepest": {
+            "depthMm": 0.6854144157841802,
+            "point": [
+              -0.2649237879,
+              0.7850146782,
+              0.1148493001
+            ],
+            "surface": [
+              -0.26452866196632385,
+              0.7847875952720642,
+              0.11433733999729156
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 0.7752288365736604
+    },
+    {
+      "sourceObject": "Medial sural cutaneous nerve.l",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 156,
+      "bounds": [
+        [
+          0.06996043449156183,
+          0.3431945457332919,
+          0.013179100328486557
+        ],
+        [
+          0.07689594643072035,
+          0.47485231103187997,
+          0.05966961978843252
+        ]
+      ],
+      "sideMedianX": 0.07218374984476772,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Medial sural cutaneous nerve.r",
+      "gaps": [
+        "nervous-lower-branches"
+      ],
+      "region": "lower",
+      "samples": 156,
+      "bounds": [
+        [
+          -0.07672001132675989,
+          0.34319473293253033,
+          0.013205367232149517
+        ],
+        [
+          -0.06980053935845276,
+          0.47485252877879724,
+          0.059698004505485236
+        ]
+      ],
+      "sideMedianX": -0.07201719859638535,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Muscular branches of radial nerve.l",
+      "gaps": [
+        "nervous-radial"
+      ],
+      "region": "upper",
+      "samples": 1356,
+      "bounds": [
+        [
+          0.20164738284640937,
+          1.0243812319512722,
+          0.04450423798611425
+        ],
+        [
+          0.26346590084554483,
+          1.0911811508501652,
+          0.08445287200579246
+        ]
+      ],
+      "sideMedianX": 0.24453006404662292,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Muscular branches of radial nerve.r",
+      "gaps": [
+        "nervous-radial"
+      ],
+      "region": "upper",
+      "samples": 1356,
+      "bounds": [
+        [
+          -0.2636262719164568,
+          1.0241197080703766,
+          0.04451666500634986
+        ],
+        [
+          -0.20186235428289204,
+          1.0909573939334634,
+          0.08446654704880623
+        ]
+      ],
+      "sideMedianX": -0.24471585459741454,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "Superficial branch of radial nerve.l",
+      "gaps": [
+        "nervous-radial"
+      ],
+      "region": "upper",
+      "samples": 2208,
+      "bounds": [
+        [
+          0.2323995286750393,
+          0.7562100656490965,
+          0.08723272104463062
+        ],
+        [
+          0.3010684871539947,
+          1.0237556944967487,
+          0.15046905879023592
+        ]
+      ],
+      "sideMedianX": 0.2814498365285254,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24465",
+          "name": "Metacarpiano 1 izquierdo",
+          "sampleCount": 72,
+          "over1mm": 32,
+          "over3mm": 0,
+          "maxDepthMm": 2.4940709117799997,
+          "deepest": {
+            "depthMm": 2.4940709117799997,
+            "point": [
+              0.280935102,
+              0.7928395327,
+              0.1337249547
+            ],
+            "surface": [
+              0.2813391387462616,
+              0.7925928831100464,
+              0.13617369532585144
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24444",
+          "name": "Trapecio izquierdo",
+          "sampleCount": 24,
+          "over1mm": 2,
+          "over3mm": 0,
+          "maxDepthMm": 1.1235028505325317,
+          "deepest": {
+            "depthMm": 1.1235028505325317,
+            "point": [
+              0.2800448426,
+              0.7973403657,
+              0.1309286071
+            ],
+            "surface": [
+              0.2808183431625366,
+              0.7967249751091003,
+              0.1314626783132553
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.4940709117799997
+    },
+    {
+      "sourceObject": "Superficial branch of radial nerve.r",
+      "gaps": [
+        "nervous-radial"
+      ],
+      "region": "upper",
+      "samples": 2208,
+      "bounds": [
+        [
+          -0.30095682309483685,
+          0.7559270938523361,
+          0.08724587504213717
+        ],
+        [
+          -0.23254874658955735,
+          1.0235192092847842,
+          0.15048612243924506
+        ]
+      ],
+      "sideMedianX": -0.28134936398820665,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA24464",
+          "name": "Metacarpiano 1 derecho",
+          "sampleCount": 66,
+          "over1mm": 30,
+          "over3mm": 0,
+          "maxDepthMm": 2.529033226892352,
+          "deepest": {
+            "depthMm": 2.529033226892352,
+            "point": [
+              -0.2810952042,
+              0.7926254247,
+              0.1337244925
+            ],
+            "surface": [
+              -0.280743271112442,
+              0.7922295331954956,
+              0.13619743287563324
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24443",
+          "name": "Trapecio derecho",
+          "sampleCount": 29,
+          "over1mm": 3,
+          "over3mm": 0,
+          "maxDepthMm": 1.0955417528748512,
+          "deepest": {
+            "depthMm": 1.0955417528748512,
+            "point": [
+              -0.2803220786,
+              0.7982477378,
+              0.1298230463
+            ],
+            "surface": [
+              -0.2808320224285126,
+              0.79908686876297,
+              0.13030889630317688
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.529033226892352
+    }
+  ],
+  "inputs": {
+    ".cache\\anatomy-completion\\wave3\\neural-continuity\\source-geometry.npz": "0b8bb2fa1670d1a1828574ab774ca02cc8de5ae8fdde4f4a90c72e1e85a1f4be",
+    ".cache\\anatomy-completion\\wave3\\neural-continuity\\candidate-plan.json": "fa02f88a7d534b46d90be2eee0eced7c7fdfca2751a9f517ae28fef04f579319",
+    ".cache\\anatomy-completion\\wave3\\neural-continuity\\registration.json": "3d99fe0a4edd8ff786cae087ec5353b63c110963995906965a212cf41b1043fe",
+    ".cache\\anatomy-completion\\wave3\\neural-continuity\\target-bones.json": "fcf82a107fa2fa627d412e108e697341394b5f769e004fdb88c7be831f9d5e44"
+  }
+}

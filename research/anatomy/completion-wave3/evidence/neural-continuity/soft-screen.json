@@ -1,0 +1,815 @@
+{
+  "method": "Original current soft tissues; deterministic used-vertex sampling; three parity directions, maximum sampled nearest-surface depth. Skin is a volumetric shell: parity measures skin tissue occupancy, NOT body enclosure. Expected physiological interfaces require separate interpretation.",
+  "results": [
+    {
+      "sourceObject": "Roots of brachial plexus.l",
+      "samples": 1194,
+      "outsideSkinTissueSamples": 1194,
+      "distanceToSkinTissueMm": 56.63270503282547,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45740",
+          "name": "Platisma izquierdo",
+          "samples": 28,
+          "over1mm": 4,
+          "maxDepthMm": 1.2220757780596614,
+          "deepest": {
+            "depthMm": 1.2220757780596614,
+            "point": [
+              0.0470184189,
+              1.3876717637,
+              0.0885646541
+            ],
+            "surface": [
+              0.045906912535429,
+              1.3875393867492676,
+              0.08807423710823059
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Roots of brachial plexus.r",
+      "samples": 1194,
+      "outsideSkinTissueSamples": 1194,
+      "distanceToSkinTissueMm": 56.838929653167725,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45739",
+          "name": "Platisma derecho",
+          "samples": 31,
+          "over1mm": 2,
+          "maxDepthMm": 1.2833154760301113,
+          "deepest": {
+            "depthMm": 1.2833154760301113,
+            "point": [
+              -0.0478838502,
+              1.3906522654,
+              0.0891042487
+            ],
+            "surface": [
+              -0.04665643349289894,
+              1.390511393547058,
+              0.08875712752342224
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Anterior division of inferior trunk of brachial plexus.l",
+      "samples": 300,
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 20.443761721253395,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Anterior division of inferior trunk of brachial plexus.r",
+      "samples": 300,
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 20.762203261256218,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Anterior division of middle trunk of brachial plexus.l",
+      "samples": 156,
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 20.22002637386322,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45740",
+          "name": "Platisma izquierdo",
+          "samples": 3,
+          "over1mm": 0,
+          "maxDepthMm": 0.2091801870847121,
+          "deepest": {
+            "depthMm": 0.2091801870847121,
+            "point": [
+              0.0837161567,
+              1.3507737167,
+              0.080891914
+            ],
+            "surface": [
+              0.08371621370315552,
+              1.3505674600601196,
+              0.08085691928863525
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Anterior division of middle trunk of brachial plexus.r",
+      "samples": 156,
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 20.659733563661575,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45739",
+          "name": "Platisma derecho",
+          "samples": 2,
+          "over1mm": 0,
+          "maxDepthMm": 0.1530254230601713,
+          "deepest": {
+            "depthMm": 0.1530254230601713,
+            "point": [
+              -0.0846206836,
+              1.3510626115,
+              0.0803669836
+            ],
+            "surface": [
+              -0.08462242782115936,
+              1.3509129285812378,
+              0.08033543080091476
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Anterior division of superior trunk of brachial plexus.l",
+      "samples": 156,
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 24.851327762007713,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Anterior division of superior trunk of brachial plexus.r",
+      "samples": 156,
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 25.23447386920452,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Posterior division of inferior trunk of brachial plexus.l",
+      "samples": 156,
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 18.88366788625717,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Posterior division of inferior trunk of brachial plexus.r",
+      "samples": 156,
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 19.326990470290184,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Posterior division of middle trunk of brachial plexus.l",
+      "samples": 156,
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 29.866289347410202,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45740",
+          "name": "Platisma izquierdo",
+          "samples": 3,
+          "over1mm": 0,
+          "maxDepthMm": 0.22727064788341522,
+          "deepest": {
+            "depthMm": 0.22727064788341522,
+            "point": [
+              0.0843441341,
+              1.3512244942,
+              0.0798850462
+            ],
+            "surface": [
+              0.08432362228631973,
+              1.351445198059082,
+              0.0799354612827301
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Posterior division of middle trunk of brachial plexus.r",
+      "samples": 156,
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 30.246904119849205,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45739",
+          "name": "Platisma derecho",
+          "samples": 2,
+          "over1mm": 0,
+          "maxDepthMm": 0.12059980508638546,
+          "deepest": {
+            "depthMm": 0.12059980508638546,
+            "point": [
+              -0.0844945328,
+              1.3509725184,
+              0.0805690494
+            ],
+            "surface": [
+              -0.08449479192495346,
+              1.3508570194244385,
+              0.08053439855575562
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Posterior division of superior trunk of brachial plexus.l",
+      "samples": 156,
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 29.8612117767334,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Posterior division of superior trunk of brachial plexus.r",
+      "samples": 156,
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 30.239414423704147,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Radial nerve.l",
+      "samples": 1164,
+      "outsideSkinTissueSamples": 1164,
+      "distanceToSkinTissueMm": 62.575921416282654,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Radial nerve.r",
+      "samples": 1164,
+      "outsideSkinTissueSamples": 1164,
+      "distanceToSkinTissueMm": 62.853336334228516,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Sciatic nerve.l",
+      "samples": 1242,
+      "outsideSkinTissueSamples": 1242,
+      "distanceToSkinTissueMm": 93.37542951107025,
+      "contacts": [
+        {
+          "target": "dig:FMA14544",
+          "name": "Recto",
+          "samples": 75,
+          "over1mm": 21,
+          "maxDepthMm": 1.5741073293611407,
+          "deepest": {
+            "depthMm": 1.5741073293611407,
+            "point": [
+              0.0270427877,
+              0.8590207868,
+              0.0503472702
+            ],
+            "surface": [
+              0.028161171823740005,
+              0.8597748875617981,
+              0.04953588917851448
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Sciatic nerve.r",
+      "samples": 1242,
+      "outsideSkinTissueSamples": 1242,
+      "distanceToSkinTissueMm": 92.79046952724457,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Obturator nerve.l",
+      "samples": 1764,
+      "outsideSkinTissueSamples": 1764,
+      "distanceToSkinTissueMm": 95.20067274570465,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Obturator nerve.r",
+      "samples": 1764,
+      "outsideSkinTissueSamples": 1764,
+      "distanceToSkinTissueMm": 96.17333859205246,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Femoral branch of genitofemoral nerve.l",
+      "samples": 1320,
+      "outsideSkinTissueSamples": 1320,
+      "distanceToSkinTissueMm": 90.65920114517212,
+      "contacts": [
+        {
+          "target": "dig:FMA14547",
+          "name": "Colon descendente",
+          "samples": 84,
+          "over1mm": 84,
+          "maxDepthMm": 14.914209954440594,
+          "deepest": {
+            "depthMm": 14.914209954440594,
+            "point": [
+              0.0557669472,
+              0.8606412749,
+              0.1206827612
+            ],
+            "surface": [
+              0.061746176332235336,
+              0.8513678312301636,
+              0.1307169646024704
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Femoral branch of genitofemoral nerve.r",
+      "samples": 1320,
+      "outsideSkinTissueSamples": 1320,
+      "distanceToSkinTissueMm": 91.56408905982971,
+      "contacts": [
+        {
+          "target": "dig:FMA14966",
+          "name": "Porci\u00f3n distal del \u00edleon",
+          "samples": 31,
+          "over1mm": 12,
+          "maxDepthMm": 1.8485330510884523,
+          "deepest": {
+            "depthMm": 1.8485330510884523,
+            "point": [
+              -0.0550662936,
+              0.8414264141,
+              0.1245255249
+            ],
+            "surface": [
+              -0.05365951731801033,
+              0.8406688570976257,
+              0.1254551112651825
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Genital branch of genitofemoral nerve.l",
+      "samples": 876,
+      "outsideSkinTissueSamples": 859,
+      "distanceToSkinTissueMm": 91.25792980194092,
+      "contacts": [
+        {
+          "target": "dig:FMA14547",
+          "name": "Colon descendente",
+          "samples": 69,
+          "over1mm": 60,
+          "maxDepthMm": 16.583995893597603,
+          "deepest": {
+            "depthMm": 16.583995893597603,
+            "point": [
+              0.0437718514,
+              0.8535331304,
+              0.1222806164
+            ],
+            "surface": [
+              0.047516390681266785,
+              0.8388928174972534,
+              0.12911202013492584
+            ]
+          }
+        },
+        {
+          "target": "rep:FMA19236",
+          "name": "Conducto deferente izquierdo",
+          "samples": 15,
+          "over1mm": 0,
+          "maxDepthMm": 0.6882103625684977,
+          "deepest": {
+            "depthMm": 0.6882103625684977,
+            "point": [
+              0.0182385418,
+              0.7061166269,
+              0.1365584258
+            ],
+            "surface": [
+              0.018145114183425903,
+              0.7061927914619446,
+              0.13588085770606995
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Genital branch of genitofemoral nerve.r",
+      "samples": 876,
+      "outsideSkinTissueSamples": 857,
+      "distanceToSkinTissueMm": 91.90377593040466,
+      "contacts": [
+        {
+          "target": "dig:FMA14966",
+          "name": "Porci\u00f3n distal del \u00edleon",
+          "samples": 43,
+          "over1mm": 18,
+          "maxDepthMm": 1.9674059003591537,
+          "deepest": {
+            "depthMm": 1.9674059003591537,
+            "point": [
+              -0.0418266023,
+              0.8285748917,
+              0.1277657765
+            ],
+            "surface": [
+              -0.04049672931432724,
+              0.8274775147438049,
+              0.12871333956718445
+            ]
+          }
+        },
+        {
+          "target": "rep:FMA19235",
+          "name": "Conducto deferente derecho",
+          "samples": 17,
+          "over1mm": 0,
+          "maxDepthMm": 0.8592823287472129,
+          "deepest": {
+            "depthMm": 0.8592823287472129,
+            "point": [
+              -0.0190472138,
+              0.7030607848,
+              0.136669121
+            ],
+            "surface": [
+              -0.018440006300807,
+              0.7030109763145447,
+              0.13606315851211548
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Genitofemoral nerve.l",
+      "samples": 456,
+      "outsideSkinTissueSamples": 456,
+      "distanceToSkinTissueMm": 88.45938742160797,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Genitofemoral nerve.r",
+      "samples": 456,
+      "outsideSkinTissueSamples": 456,
+      "distanceToSkinTissueMm": 89.7681787610054,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Pudendal nerve.l",
+      "samples": 1908,
+      "outsideSkinTissueSamples": 1908,
+      "distanceToSkinTissueMm": 50.41354149580002,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Pudendal nerve.r",
+      "samples": 1908,
+      "outsideSkinTissueSamples": 1908,
+      "distanceToSkinTissueMm": 49.82364922761917,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Superior gluteal nerve.l",
+      "samples": 1764,
+      "outsideSkinTissueSamples": 1764,
+      "distanceToSkinTissueMm": 86.69579029083252,
+      "contacts": [
+        {
+          "target": "dig:FMA14544",
+          "name": "Recto",
+          "samples": 19,
+          "over1mm": 5,
+          "maxDepthMm": 1.3859013561159372,
+          "deepest": {
+            "depthMm": 1.3859013561159372,
+            "point": [
+              0.0294441084,
+              0.856972246,
+              0.0520367245
+            ],
+            "surface": [
+              0.03052271530032158,
+              0.8574289679527283,
+              0.05129597708582878
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Superior gluteal nerve.r",
+      "samples": 1764,
+      "outsideSkinTissueSamples": 1764,
+      "distanceToSkinTissueMm": 86.81540936231613,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Long thoracic nerve.l",
+      "samples": 2040,
+      "outsideSkinTissueSamples": 2040,
+      "distanceToSkinTissueMm": 59.01589244604111,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45740",
+          "name": "Platisma izquierdo",
+          "samples": 58,
+          "over1mm": 1,
+          "maxDepthMm": 1.0486822575330734,
+          "deepest": {
+            "depthMm": 1.0486822575330734,
+            "point": [
+              0.0788443193,
+              1.342837798,
+              0.1055731581
+            ],
+            "surface": [
+              0.07894188910722733,
+              1.3437591791152954,
+              0.10606437176465988
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Long thoracic nerve.r",
+      "samples": 2040,
+      "outsideSkinTissueSamples": 2040,
+      "distanceToSkinTissueMm": 59.50639024376869,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45739",
+          "name": "Platisma derecho",
+          "samples": 51,
+          "over1mm": 4,
+          "maxDepthMm": 1.0709097841754556,
+          "deepest": {
+            "depthMm": 1.0709097841754556,
+            "point": [
+              -0.0794424609,
+              1.3429684865,
+              0.1056566686
+            ],
+            "surface": [
+              -0.07929284870624542,
+              1.3420391082763672,
+              0.10514602065086365
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Suprascapular nerve.l",
+      "samples": 1254,
+      "outsideSkinTissueSamples": 1254,
+      "distanceToSkinTissueMm": 63.91425430774689,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45740",
+          "name": "Platisma izquierdo",
+          "samples": 5,
+          "over1mm": 0,
+          "maxDepthMm": 0.4107890708837658,
+          "deepest": {
+            "depthMm": 0.4107890708837658,
+            "point": [
+              0.0781902694,
+              1.3547859729,
+              0.0721017259
+            ],
+            "surface": [
+              0.07803032547235489,
+              1.3544399738311768,
+              0.07194846868515015
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Suprascapular nerve.r",
+      "samples": 1254,
+      "outsideSkinTissueSamples": 1254,
+      "distanceToSkinTissueMm": 64.10094350576401,
+      "contacts": [
+        {
+          "target": "bp3d:FMA45739",
+          "name": "Platisma derecho",
+          "samples": 5,
+          "over1mm": 0,
+          "maxDepthMm": 0.43465427006594837,
+          "deepest": {
+            "depthMm": 0.43465427006594837,
+            "point": [
+              -0.0763127334,
+              1.3558566911,
+              0.0730335002
+            ],
+            "surface": [
+              -0.0761619359254837,
+              1.3554511070251465,
+              0.07307488471269608
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "Common plantar digital branches of lateral plantar nerve.l",
+      "samples": 756,
+      "outsideSkinTissueSamples": 748,
+      "distanceToSkinTissueMm": 29.160384088754654,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Common plantar digital branches of lateral plantar nerve.r",
+      "samples": 756,
+      "outsideSkinTissueSamples": 752,
+      "distanceToSkinTissueMm": 29.06208485364914,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Common plantar digital branches of medial plantar nerve.l",
+      "samples": 900,
+      "outsideSkinTissueSamples": 817,
+      "distanceToSkinTissueMm": 17.65279471874237,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Infrapatellar branch of saphenous nerve.l",
+      "samples": 300,
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 13.387270271778107,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Infrapatellar branch of saphenous nerve.r",
+      "samples": 300,
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 12.404689565300941,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.l",
+      "samples": 588,
+      "outsideSkinTissueSamples": 588,
+      "distanceToSkinTissueMm": 28.670532628893852,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.r",
+      "samples": 588,
+      "outsideSkinTissueSamples": 588,
+      "distanceToSkinTissueMm": 28.57455424964428,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Medial crural cutaneous branches of saphenous nerve.l",
+      "samples": 300,
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 35.690173506736755,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Medial crural cutaneous branches of saphenous nerve.r",
+      "samples": 300,
+      "outsideSkinTissueSamples": 300,
+      "distanceToSkinTissueMm": 35.41696071624756,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Medial plantar nerve.l",
+      "samples": 600,
+      "outsideSkinTissueSamples": 588,
+      "distanceToSkinTissueMm": 21.130254492163658,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Medial plantar nerve.r",
+      "samples": 600,
+      "outsideSkinTissueSamples": 584,
+      "distanceToSkinTissueMm": 19.71123367547989,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of lateral plantar nerve.l",
+      "samples": 1902,
+      "outsideSkinTissueSamples": 1838,
+      "distanceToSkinTissueMm": 10.486670769751072,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of lateral plantar nerve.r",
+      "samples": 1902,
+      "outsideSkinTissueSamples": 1840,
+      "distanceToSkinTissueMm": 10.200624354183674,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of medial plantar nerve.l",
+      "samples": 1614,
+      "outsideSkinTissueSamples": 1578,
+      "distanceToSkinTissueMm": 28.98748777806759,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Proper plantar digital branches of medial plantar nerve.r",
+      "samples": 1614,
+      "outsideSkinTissueSamples": 1570,
+      "distanceToSkinTissueMm": 30.178522691130638,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Common plantar digital branches of medial plantar nerve",
+      "samples": 900,
+      "outsideSkinTissueSamples": 815,
+      "distanceToSkinTissueMm": 18.97631399333477,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Saphenous nerve.l",
+      "samples": 1680,
+      "outsideSkinTissueSamples": 1639,
+      "distanceToSkinTissueMm": 35.69105640053749,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Saphenous nerve.r",
+      "samples": 1680,
+      "outsideSkinTissueSamples": 1653,
+      "distanceToSkinTissueMm": 35.42032837867737,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Sural nerve.l",
+      "samples": 1026,
+      "outsideSkinTissueSamples": 1004,
+      "distanceToSkinTissueMm": 15.471957623958588,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Sural nerve.r",
+      "samples": 1026,
+      "outsideSkinTissueSamples": 1008,
+      "distanceToSkinTissueMm": 15.51439892500639,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Deep branch of radial nerve.l",
+      "samples": 1020,
+      "outsideSkinTissueSamples": 1020,
+      "distanceToSkinTissueMm": 28.54635752737522,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Deep branch of radial nerve.r",
+      "samples": 1020,
+      "outsideSkinTissueSamples": 1020,
+      "distanceToSkinTissueMm": 29.345126822590828,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Medial sural cutaneous nerve.l",
+      "samples": 156,
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 38.57651352882385,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Medial sural cutaneous nerve.r",
+      "samples": 156,
+      "outsideSkinTissueSamples": 156,
+      "distanceToSkinTissueMm": 38.82851079106331,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Muscular branches of radial nerve.l",
+      "samples": 1356,
+      "outsideSkinTissueSamples": 1344,
+      "distanceToSkinTissueMm": 36.1674427986145,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Muscular branches of radial nerve.r",
+      "samples": 1356,
+      "outsideSkinTissueSamples": 1356,
+      "distanceToSkinTissueMm": 35.53207218647003,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Superficial branch of radial nerve.l",
+      "samples": 1104,
+      "outsideSkinTissueSamples": 1095,
+      "distanceToSkinTissueMm": 17.871052026748657,
+      "contacts": []
+    },
+    {
+      "sourceObject": "Superficial branch of radial nerve.r",
+      "samples": 1104,
+      "outsideSkinTissueSamples": 1104,
+      "distanceToSkinTissueMm": 17.976412549614906,
+      "contacts": []
+    }
+  ]
+}

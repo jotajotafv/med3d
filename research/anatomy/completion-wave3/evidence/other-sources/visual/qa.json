@@ -1,0 +1,77 @@
+{
+  "method": "Unregistered source/target inspection. Every original bone vertex displayed as a point; ossicles use original indexed triangles. No subsampling. Panels independently center the complete objects, at the same physical scale. No anatomical transform or landmark correspondence asserted; RMS/max not available without validated correspondences.",
+  "captures": [
+    {
+      "cohort": "zeta",
+      "file": "27-openear-zeta.png",
+      "sourceBoundsMetres": [
+        [
+          -0.017337501525878908,
+          -0.00018283772468567061,
+          -0.06492195129394532
+        ],
+        [
+          0.06275933074951172,
+          0.059176502227783215,
+          0.007444052219390883
+        ]
+      ],
+      "targetBoundsMetres": [
+        [
+          -0.0739893764257431,
+          1.475569486618042,
+          0.03501259908080101
+        ],
+        [
+          -0.012695121578872204,
+          1.5515304803848267,
+          0.1337359994649887
+        ]
+      ],
+      "sourceVertices": 3559010
+    },
+    {
+      "cohort": "epsilon",
+      "file": "27-openear-epsilon.png",
+      "sourceBoundsMetres": [
+        [
+          -0.009543159484863282,
+          -0.001448875427246097,
+          -0.059295879364013676
+        ],
+        [
+          0.05707347106933594,
+          0.057126255035400406,
+          0.014785346031188978
+        ]
+      ],
+      "targetBoundsMetres": [
+        [
+          -0.0739893764257431,
+          1.475569486618042,
+          0.03501259908080101
+        ],
+        [
+          -0.012695121578872204,
+          1.5515304803848267,
+          0.1337359994649887
+        ]
+      ],
+      "sourceVertices": 3380016
+    }
+  ],
+  "files": [
+    {
+      "name": "zeta-Bone.ply",
+      "vertices": 3559010,
+      "faces": 7120812
+    },
+    {
+      "name": "epsilon-Bone.ply",
+      "vertices": 3380016,
+      "faces": 6762916
+    }
+  ],
+  "errors": [],
+  "badRequests": []
+}

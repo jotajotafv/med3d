@@ -1,0 +1,914 @@
+{
+  "method": "Fresh authored spline endpoints transformed once by cohort matrix; nearest original target surface in millimetres. No endpoint editing or bridge geometry.",
+  "results": [
+    {
+      "sourceObject": "Radial nerve.l",
+      "reason": "Proximal posterior cord and distal available radial branches in current atlas; endpoint distances are surface gaps, not axonal continuity proof.",
+      "endpoints": [
+        [
+          0.12103643247402349,
+          1.3098851636163518,
+          0.07737922420597602
+        ],
+        [
+          0.23288893640510994,
+          1.0234887000162862,
+          0.08764600733371888
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-l",
+          "name": "Fasc\u00edculo posterior del plexo braquial izquierdo",
+          "endpointDistancesMm": [
+            0.9628719417378306,
+            307.2236478328705
+          ],
+          "minimumEndpointSurfaceDistanceMm": 0.9628719417378306
+        },
+        {
+          "target": "zanatomy:dorsal-digital-branches-of-radial-nerve-l",
+          "name": "Ramas digitales dorsales del radial izquierdo",
+          "endpointDistancesMm": [
+            573.1686353683472,
+            267.6253914833069
+          ],
+          "minimumEndpointSurfaceDistanceMm": 267.6253914833069
+        }
+      ]
+    },
+    {
+      "sourceObject": "Submandibular duct.l",
+      "reason": "Original duct endpoints versus own gland and available tongue; a tongue surface is not a validated duct papilla landmark.",
+      "endpoints": [
+        [
+          0.02421661882049205,
+          1.4453960106263914,
+          0.12870257677381997
+        ],
+        [
+          0.00437340067301096,
+          1.4392346870295016,
+          0.1545929775948359
+        ]
+      ],
+      "targets": [
+        {
+          "target": "dig:FMA59803",
+          "name": "Gl\u00e1ndula submandibular izquierda",
+          "endpointDistancesMm": [
+            1.7370523419231176,
+            18.203968182206154
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.7370523419231176
+        },
+        {
+          "target": "dig:FMA54640",
+          "name": "Lengua \u00b7 estructura oral",
+          "endpointDistancesMm": [
+            6.0891141183674335,
+            3.099793568253517
+          ],
+          "minimumEndpointSurfaceDistanceMm": 3.099793568253517
+        }
+      ]
+    },
+    {
+      "sourceObject": "Anterior division of superior trunk of brachial plexus.l",
+      "reason": "Division endpoints versus homologous current trunk and posterior cord; medial/lateral cords remain absent.",
+      "endpoints": [
+        [
+          0.1096965563101456,
+          1.3302691946685345,
+          0.08853956805168572
+        ],
+        [
+          0.08713523828244556,
+          1.3490549491533486,
+          0.07560296948384299
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:superior-trunk-of-brachial-plexus-l",
+          "name": "Tronco superior del plexo braquial izquierdo",
+          "endpointDistancesMm": [
+            31.500283628702164,
+            1.442883163690567
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.442883163690567
+        },
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-l",
+          "name": "Fasc\u00edculo posterior del plexo braquial izquierdo",
+          "endpointDistancesMm": [
+            12.465212494134903,
+            22.75070920586586
+          ],
+          "minimumEndpointSurfaceDistanceMm": 12.465212494134903
+        }
+      ]
+    },
+    {
+      "sourceObject": "Posterior division of superior trunk of brachial plexus.l",
+      "reason": "Division endpoints versus homologous current trunk and posterior cord; medial/lateral cords remain absent.",
+      "endpoints": [
+        [
+          0.08713519412118008,
+          1.3490549682304325,
+          0.07560295224047159
+        ],
+        [
+          0.10012394101916812,
+          1.3301987397076709,
+          0.07671721512420392
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:superior-trunk-of-brachial-plexus-l",
+          "name": "Tronco superior del plexo braquial izquierdo",
+          "endpointDistancesMm": [
+            1.4428601134568453,
+            22.90218137204647
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.4428601134568453
+        },
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-l",
+          "name": "Fasc\u00edculo posterior del plexo braquial izquierdo",
+          "endpointDistancesMm": [
+            22.7507334202528,
+            0.9628873085603118
+          ],
+          "minimumEndpointSurfaceDistanceMm": 0.9628873085603118
+        }
+      ]
+    },
+    {
+      "sourceObject": "Anterior division of middle trunk of brachial plexus.l",
+      "reason": "Division endpoints versus homologous current trunk and posterior cord; medial/lateral cords remain absent.",
+      "endpoints": [
+        [
+          0.10995771592970194,
+          1.3300461248275603,
+          0.08864292930741224
+        ],
+        [
+          0.08357840771380115,
+          1.349962858333357,
+          0.07964304800553108
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:middle-trunk-of-brachial-plexus-l",
+          "name": "Tronco medio del plexo braquial izquierdo",
+          "endpointDistancesMm": [
+            34.20758992433548,
+            1.4435286866500974
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.4435286866500974
+        },
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-l",
+          "name": "Fasc\u00edculo posterior del plexo braquial izquierdo",
+          "endpointDistancesMm": [
+            12.558987364172935,
+            25.792423635721207
+          ],
+          "minimumEndpointSurfaceDistanceMm": 12.558987364172935
+        }
+      ]
+    },
+    {
+      "sourceObject": "Posterior division of middle trunk of brachial plexus.l",
+      "reason": "Division endpoints versus homologous current trunk and posterior cord; medial/lateral cords remain absent.",
+      "endpoints": [
+        [
+          0.08357839245167156,
+          1.3499630626116708,
+          0.0796430486795882
+        ],
+        [
+          0.10012392164853531,
+          1.3301989076679854,
+          0.07671721589727984
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:middle-trunk-of-brachial-plexus-l",
+          "name": "Tronco medio del plexo braquial izquierdo",
+          "endpointDistancesMm": [
+            1.443613669835031,
+            25.30760131776333
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.443613669835031
+        },
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-l",
+          "name": "Fasc\u00edculo posterior del plexo braquial izquierdo",
+          "endpointDistancesMm": [
+            25.79261176288128,
+            0.9628839325159788
+          ],
+          "minimumEndpointSurfaceDistanceMm": 0.9628839325159788
+        }
+      ]
+    },
+    {
+      "sourceObject": "Anterior division of inferior trunk of brachial plexus.l",
+      "reason": "Division endpoints versus homologous current trunk and posterior cord; medial/lateral cords remain absent.",
+      "endpoints": [
+        [
+          0.08290587199581326,
+          1.3474591841236052,
+          0.0866081298788856
+        ],
+        [
+          0.10037915939119091,
+          1.3298711770870575,
+          0.09290946368150078
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:inferior-trunk-of-brachial-plexus-l",
+          "name": "Tronco inferior del plexo braquial izquierdo",
+          "endpointDistancesMm": [
+            1.3914087321609259,
+            25.115489959716797
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.3914087321609259
+        },
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-l",
+          "name": "Fasc\u00edculo posterior del plexo braquial izquierdo",
+          "endpointDistancesMm": [
+            25.93076042830944,
+            15.182028524577618
+          ],
+          "minimumEndpointSurfaceDistanceMm": 15.182028524577618
+        }
+      ]
+    },
+    {
+      "sourceObject": "Posterior division of inferior trunk of brachial plexus.l",
+      "reason": "Division endpoints versus homologous current trunk and posterior cord; medial/lateral cords remain absent.",
+      "endpoints": [
+        [
+          0.08292142887935311,
+          1.3474298456500817,
+          0.0866556139463287
+        ],
+        [
+          0.10986383200298089,
+          1.3307572311590277,
+          0.08901952677094083
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:inferior-trunk-of-brachial-plexus-l",
+          "name": "Tronco inferior del plexo braquial izquierdo",
+          "endpointDistancesMm": [
+            1.4392266748473048,
+            31.748563051223755
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.4392266748473048
+        },
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-l",
+          "name": "Fasc\u00edculo posterior del plexo braquial izquierdo",
+          "endpointDistancesMm": [
+            25.917284190654755,
+            13.119448907673359
+          ],
+          "minimumEndpointSurfaceDistanceMm": 13.119448907673359
+        }
+      ]
+    },
+    {
+      "sourceObject": "Saphenous nerve.l",
+      "reason": "Proximal parent nerve continuity.",
+      "endpoints": [
+        [
+          0.06279698202170803,
+          0.798131131591217,
+          0.12773877895312197
+        ],
+        [
+          0.04932354050002129,
+          0.3212674887941902,
+          0.06464443539560022
+        ],
+        [
+          0.04932354050002129,
+          0.3212674887941902,
+          0.06464443539560022
+        ],
+        [
+          0.06875417909177528,
+          0.041475068875452034,
+          0.10292253311895719
+        ],
+        [
+          0.04932354050002129,
+          0.3212674887941902,
+          0.06464443539560022
+        ],
+        [
+          0.06509125151026784,
+          0.17979741229083612,
+          0.011448170643809735
+        ],
+        [
+          0.06750701393025288,
+          0.24602185566342608,
+          0.08877161954869323
+        ],
+        [
+          0.06312457346071043,
+          0.14951876131723688,
+          0.0731186241320255
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:femoral-nerve-l",
+          "name": "Nervio femoral izquierdo",
+          "endpointDistancesMm": [
+            0.9626388200558722,
+            255.2970051765442,
+            255.2970051765442,
+            525.3257155418396,
+            255.2970051765442,
+            405.703604221344,
+            323.25541973114014,
+            421.00825905799866
+          ],
+          "minimumEndpointSurfaceDistanceMm": 0.9626388200558722
+        }
+      ]
+    },
+    {
+      "sourceObject": "Medial plantar nerve.l",
+      "reason": "Proximal parent nerve continuity.",
+      "endpoints": [
+        [
+          0.05783747446019244,
+          -0.006408594419056848,
+          0.06251797525158609
+        ],
+        [
+          0.06721770983949789,
+          -0.030544254946888838,
+          0.14227971669126643
+        ],
+        [
+          0.06092818797943314,
+          -0.02655128127824763,
+          0.07851152631023375
+        ],
+        [
+          0.06092818797943314,
+          -0.02655128127824763,
+          0.07851152631023375
+        ],
+        [
+          0.06825744037087245,
+          -0.022305173036311687,
+          0.11113662205198416
+        ],
+        [
+          0.07641970530888276,
+          -0.03483364441326192,
+          0.1427966364219766
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:tibial-nerve-l",
+          "name": "Nervio tibial izquierdo",
+          "endpointDistancesMm": [
+            0.4811272956430912,
+            83.5191160440445,
+            25.828922167420387,
+            25.828922167420387,
+            51.875319331884384,
+            86.84778213500977
+          ],
+          "minimumEndpointSurfaceDistanceMm": 0.4811272956430912
+        }
+      ]
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.l",
+      "reason": "Proximal parent nerve continuity.",
+      "endpoints": [
+        [
+          0.05783747446019244,
+          -0.006408594419056848,
+          0.06251797525158609
+        ],
+        [
+          0.09523247553225454,
+          -0.039312809187375335,
+          0.12183522213079942
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:tibial-nerve-l",
+          "name": "Nervio tibial izquierdo",
+          "endpointDistancesMm": [
+            0.4811272956430912,
+            77.15379446744919
+          ],
+          "minimumEndpointSurfaceDistanceMm": 0.4811272956430912
+        }
+      ]
+    },
+    {
+      "sourceObject": "Radial nerve.r",
+      "reason": "Proximal posterior cord and distal available radial branches in current atlas; endpoint distances are surface gaps, not axonal continuity proof.",
+      "endpoints": [
+        [
+          -0.12147690450438235,
+          1.3097621220728366,
+          0.07738600348151847
+        ],
+        [
+          -0.23303815929750654,
+          1.0232523100043747,
+          0.08765916519244654
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-r",
+          "name": "Fasc\u00edculo posterior del plexo braquial derecho",
+          "endpointDistancesMm": [
+            0.9628791594877839,
+            307.22346901893616
+          ],
+          "minimumEndpointSurfaceDistanceMm": 0.9628791594877839
+        },
+        {
+          "target": "zanatomy:dorsal-digital-branches-of-radial-nerve-r",
+          "name": "Ramas digitales dorsales del radial derecho",
+          "endpointDistancesMm": [
+            573.1686353683472,
+            267.62551069259644
+          ],
+          "minimumEndpointSurfaceDistanceMm": 267.62551069259644
+        }
+      ]
+    },
+    {
+      "sourceObject": "Submandibular duct.r",
+      "reason": "Original duct endpoints versus own gland and available tongue; a tongue surface is not a validated duct papilla landmark.",
+      "endpoints": [
+        [
+          -0.025086201722100507,
+          1.445479666365925,
+          0.12850959023846661
+        ],
+        [
+          -0.0054672997325009905,
+          1.4392513768773143,
+          0.15455445853062263
+        ]
+      ],
+      "targets": [
+        {
+          "target": "dig:FMA59802",
+          "name": "Gl\u00e1ndula submandibular derecha",
+          "endpointDistancesMm": [
+            1.9181914394721389,
+            18.636364489793777
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.9181914394721389
+        },
+        {
+          "target": "dig:FMA54640",
+          "name": "Lengua \u00b7 estructura oral",
+          "endpointDistancesMm": [
+            5.71112846955657,
+            2.675555879250169
+          ],
+          "minimumEndpointSurfaceDistanceMm": 2.675555879250169
+        }
+      ]
+    },
+    {
+      "sourceObject": "Anterior division of superior trunk of brachial plexus.r",
+      "reason": "Division endpoints versus homologous current trunk and posterior cord; medial/lateral cords remain absent.",
+      "endpoints": [
+        [
+          -0.11015708133533367,
+          1.330157290378043,
+          0.08854566388458054
+        ],
+        [
+          -0.08761556791123547,
+          1.348965930865519,
+          0.07560778569813803
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:superior-trunk-of-brachial-plexus-r",
+          "name": "Tronco superior del plexo braquial derecho",
+          "endpointDistancesMm": [
+            31.50048851966858,
+            1.442857668735087
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.442857668735087
+        },
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-r",
+          "name": "Fasc\u00edculo posterior del plexo braquial derecho",
+          "endpointDistancesMm": [
+            12.464981526136398,
+            22.750377655029297
+          ],
+          "minimumEndpointSurfaceDistanceMm": 12.464981526136398
+        }
+      ]
+    },
+    {
+      "sourceObject": "Posterior division of superior trunk of brachial plexus.r",
+      "reason": "Division endpoints versus homologous current trunk and posterior cord; medial/lateral cords remain absent.",
+      "endpoints": [
+        [
+          -0.08761550047842014,
+          1.3489663059217392,
+          0.07560782824839649
+        ],
+        [
+          -0.10058504408399462,
+          1.3300969074930065,
+          0.07672282755668244
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:superior-trunk-of-brachial-plexus-r",
+          "name": "Tronco superior del plexo braquial derecho",
+          "endpointDistancesMm": [
+            1.4428753638640046,
+            22.902145981788635
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.4428753638640046
+        },
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-r",
+          "name": "Fasc\u00edculo posterior del plexo braquial derecho",
+          "endpointDistancesMm": [
+            22.750794887542725,
+            0.9628779371269047
+          ],
+          "minimumEndpointSurfaceDistanceMm": 0.9628779371269047
+        }
+      ]
+    },
+    {
+      "sourceObject": "Anterior division of middle trunk of brachial plexus.r",
+      "reason": "Division endpoints versus homologous current trunk and posterior cord; medial/lateral cords remain absent.",
+      "endpoints": [
+        [
+          -0.11041798804841856,
+          1.3299343157085421,
+          0.08864909511786266
+        ],
+        [
+          -0.08405940984812936,
+          1.3498778035196455,
+          0.07964772365980625
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:middle-trunk-of-brachial-plexus-r",
+          "name": "Tronco medio del plexo braquial derecho",
+          "endpointDistancesMm": [
+            34.20758992433548,
+            1.4435487100854516
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.4435487100854516
+        },
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-r",
+          "name": "Fasc\u00edculo posterior del plexo braquial derecho",
+          "endpointDistancesMm": [
+            12.558906339108944,
+            25.79246088862419
+          ],
+          "minimumEndpointSurfaceDistanceMm": 12.558906339108944
+        }
+      ]
+    },
+    {
+      "sourceObject": "Posterior division of middle trunk of brachial plexus.r",
+      "reason": "Division endpoints versus homologous current trunk and posterior cord; medial/lateral cords remain absent.",
+      "endpoints": [
+        [
+          -0.08405939479425373,
+          1.3498780097852774,
+          0.07964772443360822
+        ],
+        [
+          -0.10058502488342377,
+          1.3300970748146919,
+          0.07672282847688777
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:middle-trunk-of-brachial-plexus-r",
+          "name": "Tronco medio del plexo braquial derecho",
+          "endpointDistancesMm": [
+            1.4435768825933337,
+            25.307537987828255
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.4435768825933337
+        },
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-r",
+          "name": "Fasc\u00edculo posterior del plexo braquial derecho",
+          "endpointDistancesMm": [
+            25.7925596088171,
+            0.9628686821088195
+          ],
+          "minimumEndpointSurfaceDistanceMm": 0.9628686821088195
+        }
+      ]
+    },
+    {
+      "sourceObject": "Anterior division of inferior trunk of brachial plexus.r",
+      "reason": "Division endpoints versus homologous current trunk and posterior cord; medial/lateral cords remain absent.",
+      "endpoints": [
+        [
+          -0.0833839725929953,
+          1.3473744606139142,
+          0.0866127125809316
+        ],
+        [
+          -0.10083904733895847,
+          1.3297687279884214,
+          0.09291503700215448
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:inferior-trunk-of-brachial-plexus-r",
+          "name": "Tronco inferior del plexo braquial derecho",
+          "endpointDistancesMm": [
+            1.3914909213781357,
+            25.115756317973137
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.3914909213781357
+        },
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-r",
+          "name": "Fasc\u00edculo posterior del plexo braquial derecho",
+          "endpointDistancesMm": [
+            25.930454954504967,
+            15.18194004893303
+          ],
+          "minimumEndpointSurfaceDistanceMm": 15.18194004893303
+        }
+      ]
+    },
+    {
+      "sourceObject": "Posterior division of inferior trunk of brachial plexus.r",
+      "reason": "Division endpoints versus homologous current trunk and posterior cord; medial/lateral cords remain absent.",
+      "endpoints": [
+        [
+          -0.08339949023535043,
+          1.3473451064252793,
+          0.08666019733107852
+        ],
+        [
+          -0.11032482510308068,
+          1.3306451562545862,
+          0.08902563188640461
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:inferior-trunk-of-brachial-plexus-r",
+          "name": "Tronco inferior del plexo braquial derecho",
+          "endpointDistancesMm": [
+            1.4389706775546074,
+            31.748805195093155
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.4389706775546074
+        },
+        {
+          "target": "zanatomy:posterior-cord-of-brachial-plexus-r",
+          "name": "Fasc\u00edculo posterior del plexo braquial derecho",
+          "endpointDistancesMm": [
+            25.916989892721176,
+            13.119213283061981
+          ],
+          "minimumEndpointSurfaceDistanceMm": 13.119213283061981
+        }
+      ]
+    },
+    {
+      "sourceObject": "Saphenous nerve.r",
+      "reason": "Proximal parent nerve continuity.",
+      "endpoints": [
+        [
+          -0.06259466798837927,
+          0.7981309379746551,
+          0.12776205232271654
+        ],
+        [
+          -0.04914600437488391,
+          0.32126717935990956,
+          0.0646628608128809
+        ],
+        [
+          -0.04914600437488391,
+          0.32126717935990956,
+          0.0646628608128809
+        ],
+        [
+          -0.06856323382418603,
+          0.041474793988016484,
+          0.10294826308985706
+        ],
+        [
+          -0.04914600437488391,
+          0.32126717935990956,
+          0.0646628608128809
+        ],
+        [
+          -0.06493386075880953,
+          0.17979711368190934,
+          0.01147249143983338
+        ],
+        [
+          -0.06732073692058363,
+          0.2460215969966504,
+          0.08879681918755503
+        ],
+        [
+          -0.06294438143259717,
+          0.1495184735489694,
+          0.07314222801960954
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:femoral-nerve-r",
+          "name": "Nervio femoral derecho",
+          "endpointDistancesMm": [
+            0.9627402178011835,
+            255.29739260673523,
+            255.29739260673523,
+            525.326132774353,
+            255.29739260673523,
+            405.7040214538574,
+            323.25583696365356,
+            421.0086762905121
+          ],
+          "minimumEndpointSurfaceDistanceMm": 0.9627402178011835
+        }
+      ]
+    },
+    {
+      "sourceObject": "Medial plantar nerve.r",
+      "reason": "Proximal parent nerve continuity.",
+      "endpoints": [
+        [
+          -0.05766166197001927,
+          -0.0064084248901734725,
+          0.06253960785337889
+        ],
+        [
+          -0.06701236352789573,
+          -0.03054403270305464,
+          0.142304832972186
+        ],
+        [
+          -0.06074649705226513,
+          -0.026551097726737707,
+          0.07853431144379974
+        ],
+        [
+          -0.06074649705226513,
+          -0.026551097726737707,
+          0.07853431144379974
+        ],
+        [
+          -0.06806362864199991,
+          -0.022304957956756973,
+          0.11116212366482081
+        ],
+        [
+          -0.0762141787583021,
+          -0.03483339574246255,
+          0.14282516921196775
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:tibial-nerve-r",
+          "name": "Nervio tibial derecho",
+          "endpointDistancesMm": [
+            0.48112665535882115,
+            83.51912349462509,
+            25.82891844213009,
+            25.82891844213009,
+            51.875319331884384,
+            86.84778213500977
+          ],
+          "minimumEndpointSurfaceDistanceMm": 0.48112665535882115
+        }
+      ]
+    },
+    {
+      "sourceObject": "Lateral plantar nerve.r",
+      "reason": "Proximal parent nerve continuity.",
+      "endpoints": [
+        [
+          -0.05766166197001927,
+          -0.0064084248901734725,
+          0.06253960785337889
+        ],
+        [
+          -0.09503473989546461,
+          -0.039312513651487746,
+          0.12187073982635248
+        ]
+      ],
+      "targets": [
+        {
+          "target": "zanatomy:tibial-nerve-r",
+          "name": "Nervio tibial derecho",
+          "endpointDistancesMm": [
+            0.48112665535882115,
+            77.15378701686859
+          ],
+          "minimumEndpointSurfaceDistanceMm": 0.48112665535882115
+        }
+      ]
+    },
+    {
+      "sourceObject": "Bile duct",
+      "reason": "Common hepatic/cystic ducts and duodenum; surface distance does not validate luminal continuity.",
+      "endpoints": [
+        [
+          -0.02890975109805547,
+          1.0864485921914255,
+          0.13490246363206598
+        ],
+        [
+          -0.0564545971009854,
+          1.0197681551788222,
+          0.12437385614942217
+        ]
+      ],
+      "targets": [
+        {
+          "target": "dig:FMA14668",
+          "name": "Conducto hep\u00e1tico com\u00fan",
+          "endpointDistancesMm": [
+            4.961428698152304,
+            13.732069171965122
+          ],
+          "minimumEndpointSurfaceDistanceMm": 4.961428698152304
+        },
+        {
+          "target": "dig:FMA14539",
+          "name": "Conducto c\u00edstico",
+          "endpointDistancesMm": [
+            2.26214318536222,
+            68.80100816488266
+          ],
+          "minimumEndpointSurfaceDistanceMm": 2.26214318536222
+        },
+        {
+          "target": "dig:FMA7206",
+          "name": "Duodeno",
+          "endpointDistancesMm": [
+            9.735151194036007,
+            1.7913553165271878
+          ],
+          "minimumEndpointSurfaceDistanceMm": 1.7913553165271878
+        }
+      ]
+    },
+    {
+      "sourceObject": "VH_M_coccyx",
+      "method": "All original coccyx vertices to original source sacrum versus registered target sacrum; minimum distance, not joint registration.",
+      "sourceMinimumDistanceMm": 1.8692929297685623,
+      "targetMinimumDistanceMm": 4.689570516347885
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "method": "Three panels: source in global similarity orientation; target original bones; regional overlay. Only QA display materials. Target/source landmark errors shown with green/magenta points and connecting lines. Each named region uses one shared rigid transform after global similarity, no candidate-specific fit.",
+  "captures": [
+    {
+      "region": "hra-pelvis",
+      "file": "10-hra-pelvis-anterior.png",
+      "gaps": null
+    },
+    {
+      "region": "hra-pelvis",
+      "file": "11-hra-pelvis-lateral.png",
+      "gaps": null
+    },
+    {
+      "region": "hra-spinal",
+      "file": "12-hra-spinal-lateral.png",
+      "gaps": null
+    }
+  ],
+  "errors": [],
+  "badRequests": []
+}

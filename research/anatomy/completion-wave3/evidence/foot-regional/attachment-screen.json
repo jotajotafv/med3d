@@ -1,0 +1,371 @@
+{
+  "method": "Source candidate vertices nearest to homologous attachment bone surfaces. Track the same closest one percent after regional transform. Whole surfaces are coarse attachment controls, not confirmed entheses. No geometry changes.",
+  "results": [
+    {
+      "sourceObject": "Flexor retinaculum of ankle.l",
+      "interfaces": [
+        {
+          "sourceBone": "Calcaneus.l",
+          "target": "bp3d:FMA24498",
+          "sourceMinimumMm": 0.0071213617047760636,
+          "targetMinimumMm": 0.423816149123013,
+          "sourceClosestOnePercentTargetMedianMm": 2.272467827424407,
+          "sourceClosestOnePercentTargetMaxMm": 3.6990356165915728
+        },
+        {
+          "sourceBone": "Proximal phalanx of first finger of foot.l",
+          "target": "bp3d:FMA43254",
+          "sourceMinimumMm": 126.71150267124176,
+          "targetMinimumMm": 125.23029744625092,
+          "sourceClosestOnePercentTargetMedianMm": 125.37996470928192,
+          "sourceClosestOnePercentTargetMaxMm": 129.9661099910736
+        },
+        {
+          "sourceBone": "Proximal phalanx of second finger of foot.l",
+          "target": "bp3d:FMA32635",
+          "sourceMinimumMm": 132.80434906482697,
+          "targetMinimumMm": 131.264328956604,
+          "sourceClosestOnePercentTargetMedianMm": 131.29477202892303,
+          "sourceClosestOnePercentTargetMaxMm": 136.03174686431885
+        },
+        {
+          "sourceBone": "Proximal phalanx of third finger of foot.l",
+          "target": "bp3d:FMA32637",
+          "sourceMinimumMm": 136.2423151731491,
+          "targetMinimumMm": 134.59986448287964,
+          "sourceClosestOnePercentTargetMedianMm": 134.7452998161316,
+          "sourceClosestOnePercentTargetMaxMm": 137.13647425174713
+        },
+        {
+          "sourceBone": "Proximal phalanx of fourth finger of foot.l",
+          "target": "bp3d:FMA32639",
+          "sourceMinimumMm": 134.1349482536316,
+          "targetMinimumMm": 132.70168006420135,
+          "sourceClosestOnePercentTargetMedianMm": 132.94607400894165,
+          "sourceClosestOnePercentTargetMaxMm": 134.822279214859
+        },
+        {
+          "sourceBone": "Proximal phalanx of fifth finger of foot.l",
+          "target": "bp3d:FMA32641",
+          "sourceMinimumMm": 130.4302215576172,
+          "targetMinimumMm": 129.15195524692535,
+          "sourceClosestOnePercentTargetMedianMm": 129.21708822250366,
+          "sourceClosestOnePercentTargetMaxMm": 129.86430525779724
+        },
+        {
+          "sourceBone": "Tibia.l",
+          "target": "bp3d:FMA24478",
+          "sourceMinimumMm": 0.021731495507992804,
+          "targetMinimumMm": 0.025694958821986802,
+          "sourceClosestOnePercentTargetMedianMm": 2.4652560241520405,
+          "sourceClosestOnePercentTargetMaxMm": 2.857174724340439
+        }
+      ]
+    },
+    {
+      "sourceObject": "Flexor retinaculum of ankle.r",
+      "interfaces": [
+        {
+          "sourceBone": "Calcaneus.r",
+          "target": "bp3d:FMA24497",
+          "sourceMinimumMm": 0.007234661552502075,
+          "targetMinimumMm": 0.4849547112826258,
+          "sourceClosestOnePercentTargetMedianMm": 2.0976962987333536,
+          "sourceClosestOnePercentTargetMaxMm": 3.6231637932360172
+        },
+        {
+          "sourceBone": "Proximal phalanx of first finger of foot.r",
+          "target": "bp3d:FMA43253",
+          "sourceMinimumMm": 126.71153247356415,
+          "targetMinimumMm": 125.15945732593536,
+          "sourceClosestOnePercentTargetMedianMm": 125.30948221683502,
+          "sourceClosestOnePercentTargetMaxMm": 129.88948822021484
+        },
+        {
+          "sourceBone": "Proximal phalanx of second finger of foot.r",
+          "target": "bp3d:FMA32634",
+          "sourceMinimumMm": 132.80439376831055,
+          "targetMinimumMm": 131.2246322631836,
+          "sourceClosestOnePercentTargetMedianMm": 131.25480711460114,
+          "sourceClosestOnePercentTargetMaxMm": 135.99136471748352
+        },
+        {
+          "sourceBone": "Proximal phalanx of third finger of foot.r",
+          "target": "bp3d:FMA32636",
+          "sourceMinimumMm": 136.2423300743103,
+          "targetMinimumMm": 134.60932672023773,
+          "sourceClosestOnePercentTargetMedianMm": 134.7474604845047,
+          "sourceClosestOnePercentTargetMaxMm": 137.10175454616547
+        },
+        {
+          "sourceBone": "Proximal phalanx of fourth finger of foot.r",
+          "target": "bp3d:FMA32638",
+          "sourceMinimumMm": 134.13497805595398,
+          "targetMinimumMm": 132.56129622459412,
+          "sourceClosestOnePercentTargetMedianMm": 132.79974460601807,
+          "sourceClosestOnePercentTargetMaxMm": 134.76479053497314
+        },
+        {
+          "sourceBone": "Proximal phalanx of fifth finger of foot.r",
+          "target": "bp3d:FMA32640",
+          "sourceMinimumMm": 130.4302215576172,
+          "targetMinimumMm": 129.06117737293243,
+          "sourceClosestOnePercentTargetMedianMm": 129.12572920322418,
+          "sourceClosestOnePercentTargetMaxMm": 129.75214421749115
+        },
+        {
+          "sourceBone": "Tibia.r",
+          "target": "bp3d:FMA24477",
+          "sourceMinimumMm": 0.021730114895035513,
+          "targetMinimumMm": 0.04402302874950692,
+          "sourceClosestOnePercentTargetMedianMm": 2.2299292031675577,
+          "sourceClosestOnePercentTargetMaxMm": 2.67617404460907
+        }
+      ]
+    },
+    {
+      "sourceObject": "Extensor digitorum brevis.l",
+      "interfaces": [
+        {
+          "sourceBone": "Calcaneus.l",
+          "target": "bp3d:FMA24498",
+          "sourceMinimumMm": 0.013007695088163018,
+          "targetMinimumMm": 0.005061695446784142,
+          "sourceClosestOnePercentTargetMedianMm": 0.7817086880095303,
+          "sourceClosestOnePercentTargetMaxMm": 0.9980932809412479
+        },
+        {
+          "sourceBone": "Proximal phalanx of first finger of foot.l",
+          "target": "bp3d:FMA43254",
+          "sourceMinimumMm": 13.17967101931572,
+          "targetMinimumMm": 12.78482936322689,
+          "sourceClosestOnePercentTargetMedianMm": 13.153511099517345,
+          "sourceClosestOnePercentTargetMaxMm": 14.416021294891834
+        },
+        {
+          "sourceBone": "Proximal phalanx of second finger of foot.l",
+          "target": "bp3d:FMA32635",
+          "sourceMinimumMm": 0.07656119123566896,
+          "targetMinimumMm": 0.03817242031800561,
+          "sourceClosestOnePercentTargetMedianMm": 0.3662362287286669,
+          "sourceClosestOnePercentTargetMaxMm": 1.8728451104834676
+        },
+        {
+          "sourceBone": "Proximal phalanx of third finger of foot.l",
+          "target": "bp3d:FMA32637",
+          "sourceMinimumMm": 0.46985902008600533,
+          "targetMinimumMm": 0.8117208490148187,
+          "sourceClosestOnePercentTargetMedianMm": 1.689269905909896,
+          "sourceClosestOnePercentTargetMaxMm": 2.667924389243126
+        },
+        {
+          "sourceBone": "Proximal phalanx of fourth finger of foot.l",
+          "target": "bp3d:FMA32639",
+          "sourceMinimumMm": 0.1182325286208652,
+          "targetMinimumMm": 0.09719284571474418,
+          "sourceClosestOnePercentTargetMedianMm": 0.4710597568191588,
+          "sourceClosestOnePercentTargetMaxMm": 1.4301905175670981
+        },
+        {
+          "sourceBone": "Proximal phalanx of fifth finger of foot.l",
+          "target": "bp3d:FMA32641",
+          "sourceMinimumMm": 10.85083931684494,
+          "targetMinimumMm": 10.345415212213993,
+          "sourceClosestOnePercentTargetMedianMm": 11.250677518546581,
+          "sourceClosestOnePercentTargetMaxMm": 11.870453134179115
+        },
+        {
+          "sourceBone": "Tibia.l",
+          "target": "bp3d:FMA24478",
+          "sourceMinimumMm": 18.093539401888847,
+          "targetMinimumMm": 16.477175056934357,
+          "sourceClosestOnePercentTargetMedianMm": 16.921818256378174,
+          "sourceClosestOnePercentTargetMaxMm": 17.995698377490044
+        }
+      ]
+    },
+    {
+      "sourceObject": "Extensor digitorum brevis.r",
+      "interfaces": [
+        {
+          "sourceBone": "Calcaneus.r",
+          "target": "bp3d:FMA24497",
+          "sourceMinimumMm": 0.012985183275304735,
+          "targetMinimumMm": 0.04644065484171733,
+          "sourceClosestOnePercentTargetMedianMm": 0.7017276948317885,
+          "sourceClosestOnePercentTargetMaxMm": 1.037921174429357
+        },
+        {
+          "sourceBone": "Proximal phalanx of first finger of foot.r",
+          "target": "bp3d:FMA43253",
+          "sourceMinimumMm": 13.179696165025234,
+          "targetMinimumMm": 12.546281330287457,
+          "sourceClosestOnePercentTargetMedianMm": 12.90968619287014,
+          "sourceClosestOnePercentTargetMaxMm": 14.284245669841766
+        },
+        {
+          "sourceBone": "Proximal phalanx of second finger of foot.r",
+          "target": "bp3d:FMA32634",
+          "sourceMinimumMm": 0.0766751472838223,
+          "targetMinimumMm": 0.04976132186129689,
+          "sourceClosestOnePercentTargetMedianMm": 0.519146560691297,
+          "sourceClosestOnePercentTargetMaxMm": 2.022014930844307
+        },
+        {
+          "sourceBone": "Proximal phalanx of third finger of foot.r",
+          "target": "bp3d:FMA32636",
+          "sourceMinimumMm": 0.46995485899969935,
+          "targetMinimumMm": 0.7608006708323956,
+          "sourceClosestOnePercentTargetMedianMm": 1.6962212976068258,
+          "sourceClosestOnePercentTargetMaxMm": 2.671333495527506
+        },
+        {
+          "sourceBone": "Proximal phalanx of fourth finger of foot.r",
+          "target": "bp3d:FMA32638",
+          "sourceMinimumMm": 0.11833987082354724,
+          "targetMinimumMm": 0.016650486941216514,
+          "sourceClosestOnePercentTargetMedianMm": 0.48087452887557447,
+          "sourceClosestOnePercentTargetMaxMm": 1.3066243845969439
+        },
+        {
+          "sourceBone": "Proximal phalanx of fifth finger of foot.r",
+          "target": "bp3d:FMA32640",
+          "sourceMinimumMm": 10.850920341908932,
+          "targetMinimumMm": 10.232501663267612,
+          "sourceClosestOnePercentTargetMedianMm": 11.15221343934536,
+          "sourceClosestOnePercentTargetMaxMm": 11.788001284003258
+        },
+        {
+          "sourceBone": "Tibia.r",
+          "target": "bp3d:FMA24477",
+          "sourceMinimumMm": 18.093470484018326,
+          "targetMinimumMm": 16.345854848623276,
+          "sourceClosestOnePercentTargetMedianMm": 16.792399808764458,
+          "sourceClosestOnePercentTargetMaxMm": 17.68197864294052
+        }
+      ]
+    },
+    {
+      "sourceObject": "Dorsal interossei muscles of foot.l",
+      "interfaces": [
+        {
+          "sourceBone": "Calcaneus.l",
+          "target": "bp3d:FMA24498",
+          "sourceMinimumMm": 42.62952879071236,
+          "targetMinimumMm": 40.82733392715454,
+          "sourceClosestOnePercentTargetMedianMm": 41.86714068055153,
+          "sourceClosestOnePercentTargetMaxMm": 42.464230209589005
+        },
+        {
+          "sourceBone": "Proximal phalanx of first finger of foot.l",
+          "target": "bp3d:FMA43254",
+          "sourceMinimumMm": 4.301518201828003,
+          "targetMinimumMm": 3.785138251259923,
+          "sourceClosestOnePercentTargetMedianMm": 4.947390407323837,
+          "sourceClosestOnePercentTargetMaxMm": 5.326603539288044
+        },
+        {
+          "sourceBone": "Proximal phalanx of second finger of foot.l",
+          "target": "bp3d:FMA32635",
+          "sourceMinimumMm": 0.021109464796609245,
+          "targetMinimumMm": 0.11155768152093515,
+          "sourceClosestOnePercentTargetMedianMm": 0.9709838777780533,
+          "sourceClosestOnePercentTargetMaxMm": 1.322082825936377
+        },
+        {
+          "sourceBone": "Proximal phalanx of third finger of foot.l",
+          "target": "bp3d:FMA32637",
+          "sourceMinimumMm": 0.26190155767835677,
+          "targetMinimumMm": 0.21528704382944852,
+          "sourceClosestOnePercentTargetMedianMm": 0.7457684259861708,
+          "sourceClosestOnePercentTargetMaxMm": 1.4646080089733005
+        },
+        {
+          "sourceBone": "Proximal phalanx of fourth finger of foot.l",
+          "target": "bp3d:FMA32639",
+          "sourceMinimumMm": 0.09123460768023506,
+          "targetMinimumMm": 0.43150968849658966,
+          "sourceClosestOnePercentTargetMedianMm": 0.9367094608023763,
+          "sourceClosestOnePercentTargetMaxMm": 2.3218814749270678
+        },
+        {
+          "sourceBone": "Proximal phalanx of fifth finger of foot.l",
+          "target": "bp3d:FMA32641",
+          "sourceMinimumMm": 3.068813355639577,
+          "targetMinimumMm": 2.4846934247761965,
+          "sourceClosestOnePercentTargetMedianMm": 2.8835248667746782,
+          "sourceClosestOnePercentTargetMaxMm": 3.560676472261548
+        },
+        {
+          "sourceBone": "Tibia.l",
+          "target": "bp3d:FMA24478",
+          "sourceMinimumMm": 64.2290860414505,
+          "targetMinimumMm": 61.762940138578415,
+          "sourceClosestOnePercentTargetMedianMm": 62.84819543361664,
+          "sourceClosestOnePercentTargetMaxMm": 63.99557739496231
+        }
+      ]
+    },
+    {
+      "sourceObject": "Dorsal interossei muscles of foot.r",
+      "interfaces": [
+        {
+          "sourceBone": "Calcaneus.r",
+          "target": "bp3d:FMA24497",
+          "sourceMinimumMm": 42.629510164260864,
+          "targetMinimumMm": 40.778517723083496,
+          "sourceClosestOnePercentTargetMedianMm": 41.79617017507553,
+          "sourceClosestOnePercentTargetMaxMm": 42.34557971358299
+        },
+        {
+          "sourceBone": "Proximal phalanx of first finger of foot.r",
+          "target": "bp3d:FMA43253",
+          "sourceMinimumMm": 4.301527515053749,
+          "targetMinimumMm": 3.7953194696456194,
+          "sourceClosestOnePercentTargetMedianMm": 4.864620976150036,
+          "sourceClosestOnePercentTargetMaxMm": 5.266301333904266
+        },
+        {
+          "sourceBone": "Proximal phalanx of second finger of foot.r",
+          "target": "bp3d:FMA32634",
+          "sourceMinimumMm": 0.021039169951109216,
+          "targetMinimumMm": 0.030556424462702125,
+          "sourceClosestOnePercentTargetMedianMm": 1.0103743989020586,
+          "sourceClosestOnePercentTargetMaxMm": 1.1496188817545772
+        },
+        {
+          "sourceBone": "Proximal phalanx of third finger of foot.r",
+          "target": "bp3d:FMA32636",
+          "sourceMinimumMm": 0.2619246079120785,
+          "targetMinimumMm": 0.12707276619039476,
+          "sourceClosestOnePercentTargetMedianMm": 0.5639059818349779,
+          "sourceClosestOnePercentTargetMaxMm": 1.30261795129627
+        },
+        {
+          "sourceBone": "Proximal phalanx of fourth finger of foot.r",
+          "target": "bp3d:FMA32638",
+          "sourceMinimumMm": 0.09120335744228214,
+          "targetMinimumMm": 0.4707949119620025,
+          "sourceClosestOnePercentTargetMedianMm": 0.8403592510148883,
+          "sourceClosestOnePercentTargetMaxMm": 2.2725947201251984
+        },
+        {
+          "sourceBone": "Proximal phalanx of fifth finger of foot.r",
+          "target": "bp3d:FMA32640",
+          "sourceMinimumMm": 3.068895312026143,
+          "targetMinimumMm": 2.481223316863179,
+          "sourceClosestOnePercentTargetMedianMm": 2.8748686891049147,
+          "sourceClosestOnePercentTargetMaxMm": 3.5674255341291428
+        },
+        {
+          "sourceBone": "Tibia.r",
+          "target": "bp3d:FMA24477",
+          "sourceMinimumMm": 64.22901898622513,
+          "targetMinimumMm": 61.8564710021019,
+          "sourceClosestOnePercentTargetMedianMm": 62.8528967499733,
+          "sourceClosestOnePercentTargetMaxMm": 63.70916962623596
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2281 @@
+{
+  "method": "Fresh global similarity from whole-bone bounds centers, followed by one rigid regional point-to-surface fit per anatomical cohort. Fixed global scale. Every fourth sorted regional control held out of regional optimization. 90% nearest-point trimming within each fitting bone. No candidate geometry participates in fitting. Positive determinant only.",
+  "globalSimilarity": {
+    "matrix": [
+      [
+        0.9952170509449157,
+        -8.34858069085454e-05,
+        -0.0005239213635953865,
+        0.00011043704989799027
+      ],
+      [
+        0.0005229056973487769,
+        -0.011677612121796282,
+        0.9951485416256886,
+        -0.06273026133608539
+      ],
+      [
+        -8.962760103347193e-05,
+        -0.995148675505437,
+        -0.011677566597549394,
+        0.11107579388259353
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "scale": 0.9952171923529913,
+    "landmarks": [
+      {
+        "source": "Talus.l",
+        "target": "bp3d:FMA24483",
+        "sourceLandmark": [
+          0.07470057552309006,
+          0.03657284474715705,
+          0.06766913016554066
+        ],
+        "targetLandmark": [
+          0.06990689970552921,
+          -0.014103744993917644,
+          0.07724549993872643
+        ],
+        "landmarkErrorMm": 19.169803291107165,
+        "surfaceRmsMm": 10.936567501400125,
+        "surfaceMaxMm": 19.193245097994804,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Calcaneus.l",
+        "target": "bp3d:FMA24498",
+        "sourceLandmark": [
+          0.07845637309177456,
+          0.05371231657031732,
+          0.03700307028871922
+        ],
+        "targetLandmark": [
+          0.07288900017738342,
+          -0.04374419990926981,
+          0.05917430203408003
+        ],
+        "landmarkErrorMm": 18.15017839824685,
+        "surfaceRmsMm": 11.139321201868604,
+        "surfaceMaxMm": 22.080281749367714,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Navicular bone.l",
+        "target": "bp3d:FMA24501",
+        "sourceLandmark": [
+          0.07303265947848558,
+          0.0030898967197750416,
+          0.062217523919354964
+        ],
+        "targetLandmark": [
+          0.07728669978678226,
+          -0.018635655054822564,
+          0.10768650099635124
+        ],
+        "landmarkErrorMm": 18.393574986011586,
+        "surfaceRmsMm": 12.37115022946268,
+        "surfaceMaxMm": 19.682560116052628,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Cuboid bone.l",
+        "target": "bp3d:FMA24529",
+        "sourceLandmark": [
+          0.09563752077519894,
+          0.006376528184937311,
+          0.044333095649476816
+        ],
+        "targetLandmark": [
+          0.0985495001077652,
+          -0.03668764978647232,
+          0.0999240018427372
+        ],
+        "landmarkErrorMm": 18.83960972620829,
+        "surfaceRmsMm": 10.996445524045747,
+        "surfaceMaxMm": 18.63943226635456,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Medial cuneiform bone.l",
+        "target": "bp3d:FMA24522",
+        "sourceLandmark": [
+          0.07061169758977509,
+          -0.015482735794220966,
+          0.05158560140128401
+        ],
+        "targetLandmark": [
+          0.08007600158452988,
+          -0.02966825058683753,
+          0.1262899972498417
+        ],
+        "landmarkErrorMm": 20.89301244320275,
+        "surfaceRmsMm": 13.750596683901223,
+        "surfaceMaxMm": 20.98347805440426,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Intermediate cuneiform bone.l",
+        "target": "bp3d:FMA24524",
+        "sourceLandmark": [
+          0.0836129800404396,
+          -0.011261671690733038,
+          0.058688246975560535
+        ],
+        "targetLandmark": [
+          0.09198429808020592,
+          -0.022869600914418697,
+          0.11998099833726883
+        ],
+        "landmarkErrorMm": 20.699820325407817,
+        "surfaceRmsMm": 13.358489895428505,
+        "surfaceMaxMm": 20.70559188723564,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Lateral cuneiform bone.l",
+        "target": "bp3d:FMA24526",
+        "sourceLandmark": [
+          0.09342840324064211,
+          -0.007034279802842325,
+          0.05365467733897577
+        ],
+        "targetLandmark": [
+          0.1000555008649826,
+          -0.0277212499640882,
+          0.11302199959754944
+        ],
+        "landmarkErrorMm": 20.279498802517956,
+        "surfaceRmsMm": 12.671807751937004,
+        "surfaceMaxMm": 20.375333726406097,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "First metatarsal bone.l",
+        "target": "bp3d:FMA24508",
+        "sourceLandmark": [
+          0.071239270779301,
+          -0.052622004082498876,
+          0.03708676574169602
+        ],
+        "targetLandmark": [
+          0.08960749953985214,
+          -0.043758150190114975,
+          0.16110599786043167
+        ],
+        "landmarkErrorMm": 26.3727275922335,
+        "surfaceRmsMm": 17.835115454812275,
+        "surfaceMaxMm": 30.06959706544876,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Proximal phalanx of first finger of foot.l",
+        "target": "bp3d:FMA43254",
+        "sourceLandmark": [
+          0.07396492625137685,
+          -0.0971809662243052,
+          0.020192413692263017
+        ],
+        "targetLandmark": [
+          0.10189265012741089,
+          -0.05998370051383972,
+          0.20265350490808487
+        ],
+        "landmarkErrorMm": 34.06898795674363,
+        "surfaceRmsMm": 25.84034494971025,
+        "surfaceMaxMm": 35.72409600019455,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Distal phalanx of first finger of foot.l",
+        "target": "bp3d:FMA32651",
+        "sourceLandmark": [
+          0.08009178904869702,
+          -0.12116677397576141,
+          0.015682838733170914
+        ],
+        "targetLandmark": [
+          0.11377999931573868,
+          -0.06452379934489727,
+          0.22332199662923813
+        ],
+        "landmarkErrorMm": 39.68753110355762,
+        "surfaceRmsMm": 31.129576230388224,
+        "surfaceMaxMm": 38.21638971567154,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Second metatarsal bone.l",
+        "target": "bp3d:FMA24510",
+        "sourceLandmark": [
+          0.0894431620836258,
+          -0.049925632863853375,
+          0.03848439177059405
+        ],
+        "targetLandmark": [
+          0.10596869885921478,
+          -0.042235298082232475,
+          0.1549299992620945
+        ],
+        "landmarkErrorMm": 25.550653719008274,
+        "surfaceRmsMm": 19.611550243054015,
+        "surfaceMaxMm": 30.520355328917503,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Proximal phalanx of second finger of foot.l",
+        "target": "bp3d:FMA32635",
+        "sourceLandmark": [
+          0.09553599080449932,
+          -0.09713645759339028,
+          0.01950750600063035
+        ],
+        "targetLandmark": [
+          0.12247100472450256,
+          -0.06065509840846062,
+          0.19755449891090393
+        ],
+        "landmarkErrorMm": 34.445113070275696,
+        "surfaceRmsMm": 29.02548947724253,
+        "surfaceMaxMm": 37.29865700006485,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Middle phalanx of second finger of foot.l",
+        "target": "bp3d:FMA32643",
+        "sourceLandmark": [
+          0.10099784591393073,
+          -0.11775627381404871,
+          0.016384313606356827
+        ],
+        "targetLandmark": [
+          0.13216949999332428,
+          -0.0636474508792162,
+          0.2160789966583252
+        ],
+        "landmarkErrorMm": 38.553051900236206,
+        "surfaceRmsMm": 33.90464022978006,
+        "surfaceMaxMm": 39.67471793293953,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Distal phalanx of second finger of foot.l",
+        "target": "bp3d:FMA32653",
+        "sourceLandmark": [
+          0.10380166124849441,
+          -0.13047470891127,
+          0.013254768380205293
+        ],
+        "targetLandmark": [
+          0.1377750039100647,
+          -0.0666247010231018,
+          0.2274404987692833
+        ],
+        "landmarkErrorMm": 41.30170711275756,
+        "surfaceRmsMm": 36.8829762655011,
+        "surfaceMaxMm": 40.86228087544441,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Third metatarsal bone.l",
+        "target": "bp3d:FMA24512",
+        "sourceLandmark": [
+          0.10068313193116518,
+          -0.04743029534269319,
+          0.03564008280960664
+        ],
+        "targetLandmark": [
+          0.11596494913101196,
+          -0.0450864490121603,
+          0.14946800097823143
+        ],
+        "landmarkErrorMm": 25.60091760011995,
+        "surfaceRmsMm": 19.79694202771274,
+        "surfaceMaxMm": 30.62889166176319,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Proximal phalanx of third finger of foot.l",
+        "target": "bp3d:FMA32637",
+        "sourceLandmark": [
+          0.11060660146176815,
+          -0.09118962742638564,
+          0.0181455456661915
+        ],
+        "targetLandmark": [
+          0.13546999543905258,
+          -0.06180584989488125,
+          0.18872550129890442
+        ],
+        "landmarkErrorMm": 33.73919668314298,
+        "surfaceRmsMm": 29.10688911477854,
+        "surfaceMaxMm": 36.05710715055466,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Middle phalanx of third finger of foot.l",
+        "target": "bp3d:FMA32645",
+        "sourceLandmark": [
+          0.11610102861080712,
+          -0.11211781939880436,
+          0.015115289463008674
+        ],
+        "targetLandmark": [
+          0.1453630030155182,
+          -0.06504624895751476,
+          0.2073815017938614
+        ],
+        "landmarkErrorMm": 38.217678024625506,
+        "surfaceRmsMm": 34.41637421884293,
+        "surfaceMaxMm": 39.5323745906353,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Distal phalanx of third finger of foot.l",
+        "target": "bp3d:FMA32655",
+        "sourceLandmark": [
+          0.11879870880222142,
+          -0.1242772530222663,
+          0.012559584129103246
+        ],
+        "targetLandmark": [
+          0.15034150332212448,
+          -0.06731469929218292,
+          0.21798250079154968
+        ],
+        "landmarkErrorMm": 40.56507049864361,
+        "surfaceRmsMm": 36.74817176922243,
+        "surfaceMaxMm": 40.2841791510582,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Fourth metatarsal bone.l",
+        "target": "bp3d:FMA24514",
+        "sourceLandmark": [
+          0.1092851899867443,
+          -0.037925250077496905,
+          0.030896716060107278
+        ],
+        "targetLandmark": [
+          0.12220549955964088,
+          -0.04970580153167248,
+          0.13819549605250359
+        ],
+        "landmarkErrorMm": 24.804084947242547,
+        "surfaceRmsMm": 19.824493116302513,
+        "surfaceMaxMm": 29.995160177350044,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Proximal phalanx of fourth finger of foot.l",
+        "target": "bp3d:FMA32639",
+        "sourceLandmark": [
+          0.12315771636626327,
+          -0.08145776223676965,
+          0.016844553989192837
+        ],
+        "targetLandmark": [
+          0.14510449767112732,
+          -0.06311520002782345,
+          0.176426500082016
+        ],
+        "landmarkErrorMm": 32.76090543371779,
+        "surfaceRmsMm": 27.85639224751977,
+        "surfaceMaxMm": 34.73296761512756,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Middle phalanx of fourth finger of foot.l",
+        "target": "bp3d:FMA32647",
+        "sourceLandmark": [
+          0.129890645841287,
+          -0.09931022598269335,
+          0.013987431675151707
+        ],
+        "targetLandmark": [
+          0.1552170068025589,
+          -0.06588069908320904,
+          0.1921060010790825
+        ],
+        "landmarkErrorMm": 36.23386343696484,
+        "surfaceRmsMm": 32.18691995039986,
+        "surfaceMaxMm": 37.30153664946556,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Distal phalanx of fourth finger of foot.l",
+        "target": "bp3d:FMA32657",
+        "sourceLandmark": [
+          0.13217765728734487,
+          -0.10956527530659449,
+          0.012905598606615793
+        ],
+        "targetLandmark": [
+          0.1596435010433197,
+          -0.0668819509446621,
+          0.20099199563264847
+        ],
+        "landmarkErrorMm": 38.45697530998597,
+        "surfaceRmsMm": 34.276614330096415,
+        "surfaceMaxMm": 37.83014789223671,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Fifth metatarsal bone.l",
+        "target": "bp3d:FMA24516",
+        "sourceLandmark": [
+          0.11944708406824722,
+          -0.02282813220134229,
+          0.02547295812269945
+        ],
+        "targetLandmark": [
+          0.12940599769353867,
+          -0.05479334853589535,
+          0.12218919768929482
+        ],
+        "landmarkErrorMm": 23.47694134328767,
+        "surfaceRmsMm": 17.655131434263634,
+        "surfaceMaxMm": 28.139056637883186,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Proximal phalanx of fifth finger of foot.l",
+        "target": "bp3d:FMA32641",
+        "sourceLandmark": [
+          0.13546761827473305,
+          -0.06840784120510192,
+          0.014922946871914006
+        ],
+        "targetLandmark": [
+          0.15386400371789932,
+          -0.06489815004169941,
+          0.16139699518680573
+        ],
+        "landmarkErrorMm": 31.419800421839625,
+        "surfaceRmsMm": 27.154012478057993,
+        "surfaceMaxMm": 33.393748104572296,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Middle phalanx of fifth finger of foot.l",
+        "target": "bp3d:FMA230988",
+        "sourceLandmark": [
+          0.14112586760893464,
+          -0.08366942422334009,
+          0.012877062785936196
+        ],
+        "targetLandmark": [
+          0.16238699853420258,
+          -0.06691695004701614,
+          0.1752530038356781
+        ],
+        "landmarkErrorMm": 34.06347972772703,
+        "surfaceRmsMm": 31.147250310204385,
+        "surfaceMaxMm": 34.53782573342323,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Distal phalanx of fifth finger of foot.l",
+        "target": "bp3d:FMA32659",
+        "sourceLandmark": [
+          0.14247206417788982,
+          -0.09104915014953999,
+          0.012020460144491808
+        ],
+        "targetLandmark": [
+          0.16530950367450714,
+          -0.06780444830656052,
+          0.18135249614715576
+        ],
+        "landmarkErrorMm": 35.85144652535349,
+        "surfaceRmsMm": 32.59326485840424,
+        "surfaceMaxMm": 36.56446561217308,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Talus.r",
+        "target": "bp3d:FMA24482",
+        "sourceLandmark": [
+          -0.07470057552309006,
+          0.03657284474715705,
+          0.06766913016554066
+        ],
+        "targetLandmark": [
+          -0.06987045146524906,
+          -0.014022585120983422,
+          0.07716149836778641
+        ],
+        "landmarkErrorMm": 18.975412020659924,
+        "surfaceRmsMm": 10.877116163280572,
+        "surfaceMaxMm": 19.421471282839775,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Calcaneus.r",
+        "target": "bp3d:FMA24497",
+        "sourceLandmark": [
+          -0.07845637308021995,
+          0.05371231657031732,
+          0.03700307030010514
+        ],
+        "targetLandmark": [
+          -0.07282840088009834,
+          -0.043822699226439,
+          0.05907680094242096
+        ],
+        "landmarkErrorMm": 18.102475750800746,
+        "surfaceRmsMm": 11.053086509762705,
+        "surfaceMaxMm": 21.864674985408783,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Navicular bone.r",
+        "target": "bp3d:FMA24500",
+        "sourceLandmark": [
+          -0.07303265947848558,
+          0.0030898967197750416,
+          0.062217523919354964
+        ],
+        "targetLandmark": [
+          -0.07747180014848709,
+          -0.018466049805283546,
+          0.10766100138425827
+        ],
+        "landmarkErrorMm": 18.242273891232855,
+        "surfaceRmsMm": 12.326349692625241,
+        "surfaceMaxMm": 19.551241770386696,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Cuboid bone.r",
+        "target": "bp3d:FMA24528",
+        "sourceLandmark": [
+          -0.09563752077519894,
+          0.006376528184937311,
+          0.044333095649476816
+        ],
+        "targetLandmark": [
+          -0.09872574731707573,
+          -0.036604950204491615,
+          0.10025035217404366
+        ],
+        "landmarkErrorMm": 18.66103343174191,
+        "surfaceRmsMm": 11.04441702558353,
+        "surfaceMaxMm": 19.058750942349434,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Medial cuneiform bone.r",
+        "target": "bp3d:FMA24521",
+        "sourceLandmark": [
+          -0.07061169758977509,
+          -0.015482735794220966,
+          0.05158560140128401
+        ],
+        "targetLandmark": [
+          -0.0800660029053688,
+          -0.029751399997621775,
+          0.12624450027942657
+        ],
+        "landmarkErrorMm": 20.974761192079878,
+        "surfaceRmsMm": 13.700944744026614,
+        "surfaceMaxMm": 20.881641656160355,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Intermediate cuneiform bone.r",
+        "target": "bp3d:FMA24523",
+        "sourceLandmark": [
+          -0.0836129800404396,
+          -0.011261671690733038,
+          0.058688246975560535
+        ],
+        "targetLandmark": [
+          -0.0919332504272461,
+          -0.02291099913418293,
+          0.12005949765443802
+        ],
+        "landmarkErrorMm": 20.69995948100945,
+        "surfaceRmsMm": 13.313672068958136,
+        "surfaceMaxMm": 20.439522340893745,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Lateral cuneiform bone.r",
+        "target": "bp3d:FMA24525",
+        "sourceLandmark": [
+          -0.09342840324064211,
+          -0.007034279802842325,
+          0.05365467733897577
+        ],
+        "targetLandmark": [
+          -0.10003665089607239,
+          -0.027710299473255873,
+          0.11303499713540077
+        ],
+        "landmarkErrorMm": 20.232541756034127,
+        "surfaceRmsMm": 12.72762682116613,
+        "surfaceMaxMm": 20.436301827430725,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "First metatarsal bone.r",
+        "target": "bp3d:FMA24507",
+        "sourceLandmark": [
+          -0.0712392856804622,
+          -0.052622004082498876,
+          0.03708676574169602
+        ],
+        "targetLandmark": [
+          -0.08958934992551804,
+          -0.043724700808525085,
+          0.16106300055980682
+        ],
+        "landmarkErrorMm": 26.423298657338517,
+        "surfaceRmsMm": 17.867594712827813,
+        "surfaceMaxMm": 30.271559953689575,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Proximal phalanx of first finger of foot.r",
+        "target": "bp3d:FMA43253",
+        "sourceLandmark": [
+          -0.07396492625137685,
+          -0.0971809662243052,
+          0.020192413692263017
+        ],
+        "targetLandmark": [
+          -0.10192780196666718,
+          -0.060023900121450424,
+          0.20267949998378754
+        ],
+        "landmarkErrorMm": 34.25504497079662,
+        "surfaceRmsMm": 25.897011467121917,
+        "surfaceMaxMm": 35.782452672719955,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Distal phalanx of first finger of foot.r",
+        "target": "bp3d:FMA32650",
+        "sourceLandmark": [
+          -0.08009178904869702,
+          -0.12116677397576141,
+          0.015682838733170914
+        ],
+        "targetLandmark": [
+          -0.11375850066542625,
+          -0.06445164792239666,
+          0.22341300547122955
+        ],
+        "landmarkErrorMm": 39.77238163073647,
+        "surfaceRmsMm": 31.320253191486437,
+        "surfaceMaxMm": 38.22608292102814,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Second metatarsal bone.r",
+        "target": "bp3d:FMA24509",
+        "sourceLandmark": [
+          -0.0894431620836258,
+          -0.049925632863853375,
+          0.03848439177059405
+        ],
+        "targetLandmark": [
+          -0.10596480220556259,
+          -0.04232124797999859,
+          0.15492700040340424
+        ],
+        "landmarkErrorMm": 25.671629706724538,
+        "surfaceRmsMm": 19.63962671013163,
+        "surfaceMaxMm": 30.54138831794262,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Proximal phalanx of second finger of foot.r",
+        "target": "bp3d:FMA32634",
+        "sourceLandmark": [
+          -0.09553600570566051,
+          -0.09713645759339028,
+          0.01950750600063035
+        ],
+        "targetLandmark": [
+          -0.12245549634099007,
+          -0.06071000173687935,
+          0.19761750102043152
+        ],
+        "landmarkErrorMm": 34.56740051852844,
+        "surfaceRmsMm": 29.028387706077453,
+        "surfaceMaxMm": 37.19128668308258,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Middle phalanx of second finger of foot.r",
+        "target": "bp3d:FMA32642",
+        "sourceLandmark": [
+          -0.10099786081509192,
+          -0.11775627381404871,
+          0.016384313606356827
+        ],
+        "targetLandmark": [
+          -0.13229600340127945,
+          -0.06370710022747517,
+          0.21616799384355545
+        ],
+        "landmarkErrorMm": 38.795937322973195,
+        "surfaceRmsMm": 33.994308844886255,
+        "surfaceMaxMm": 39.65624421834946,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Distal phalanx of second finger of foot.r",
+        "target": "bp3d:FMA32652",
+        "sourceLandmark": [
+          -0.10380166124849441,
+          -0.13047470891127,
+          0.013254768380205293
+        ],
+        "targetLandmark": [
+          -0.13784699887037277,
+          -0.06667095050215721,
+          0.22755400091409683
+        ],
+        "landmarkErrorMm": 41.4939501480793,
+        "surfaceRmsMm": 36.98503687624184,
+        "surfaceMaxMm": 40.94153270125389,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Third metatarsal bone.r",
+        "target": "bp3d:FMA24511",
+        "sourceLandmark": [
+          -0.10068313193116518,
+          -0.04743029534269319,
+          0.03564008280960664
+        ],
+        "targetLandmark": [
+          -0.11595910042524338,
+          -0.04502495098859072,
+          0.1496090032160282
+        ],
+        "landmarkErrorMm": 25.555641694712758,
+        "surfaceRmsMm": 19.78767433592231,
+        "surfaceMaxMm": 30.343951657414436,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Proximal phalanx of third finger of foot.r",
+        "target": "bp3d:FMA32636",
+        "sourceLandmark": [
+          -0.11060660146176815,
+          -0.09118962742638564,
+          0.0181455456661915
+        ],
+        "targetLandmark": [
+          -0.13548899441957474,
+          -0.06192469969391823,
+          0.18863850086927414
+        ],
+        "landmarkErrorMm": 33.95888374944734,
+        "surfaceRmsMm": 29.220762776902404,
+        "surfaceMaxMm": 36.386638879776,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Middle phalanx of third finger of foot.r",
+        "target": "bp3d:FMA32644",
+        "sourceLandmark": [
+          -0.11610102861080712,
+          -0.11211781939880436,
+          0.015115289463008674
+        ],
+        "targetLandmark": [
+          -0.1453074961900711,
+          -0.0648727510124445,
+          0.20730599761009216
+        ],
+        "landmarkErrorMm": 38.243562094538675,
+        "surfaceRmsMm": 34.54847049333524,
+        "surfaceMaxMm": 39.587341248989105,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Distal phalanx of third finger of foot.r",
+        "target": "bp3d:FMA32654",
+        "sourceLandmark": [
+          -0.11879872370338261,
+          -0.1242772530222663,
+          0.012559584129103246
+        ],
+        "targetLandmark": [
+          -0.15035799890756607,
+          -0.06729209795594215,
+          0.21796249598264694
+        ],
+        "landmarkErrorMm": 40.708643240953755,
+        "surfaceRmsMm": 36.888621039487816,
+        "surfaceMaxMm": 40.39166495203972,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Fourth metatarsal bone.r",
+        "target": "bp3d:FMA24513",
+        "sourceLandmark": [
+          -0.1092851899867443,
+          -0.037925250077496905,
+          0.030896716060107278
+        ],
+        "targetLandmark": [
+          -0.12226850166916847,
+          -0.04965119995176792,
+          0.13832999765872955
+        ],
+        "landmarkErrorMm": 24.773403923891372,
+        "surfaceRmsMm": 19.718399914201424,
+        "surfaceMaxMm": 29.53183278441429,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Proximal phalanx of fourth finger of foot.r",
+        "target": "bp3d:FMA32638",
+        "sourceLandmark": [
+          -0.12315771636626327,
+          -0.08145776223676965,
+          0.016844553989192837
+        ],
+        "targetLandmark": [
+          -0.14513450115919113,
+          -0.06311980076134205,
+          0.1764035001397133
+        ],
+        "landmarkErrorMm": 32.883320182880055,
+        "surfaceRmsMm": 27.901244117986764,
+        "surfaceMaxMm": 34.78487581014633,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Middle phalanx of fourth finger of foot.r",
+        "target": "bp3d:FMA32646",
+        "sourceLandmark": [
+          -0.1298906756436094,
+          -0.09931022598269335,
+          0.013987431675151707
+        ],
+        "targetLandmark": [
+          -0.15520649403333664,
+          -0.0659121498465538,
+          0.1921204999089241
+        ],
+        "landmarkErrorMm": 36.337393466777954,
+        "surfaceRmsMm": 32.241162536003046,
+        "surfaceMaxMm": 37.372853606939316,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Distal phalanx of fourth finger of foot.r",
+        "target": "bp3d:FMA32656",
+        "sourceLandmark": [
+          -0.13217768708966726,
+          -0.10956527530659449,
+          0.012905598606615793
+        ],
+        "targetLandmark": [
+          -0.15973100066184998,
+          -0.06689415127038956,
+          0.2009515017271042
+        ],
+        "landmarkErrorMm": 38.65736469747847,
+        "surfaceRmsMm": 34.34510412186833,
+        "surfaceMaxMm": 37.879616022109985,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Fifth metatarsal bone.r",
+        "target": "bp3d:FMA24515",
+        "sourceLandmark": [
+          -0.11944709896940842,
+          -0.02282813220134229,
+          0.02547295812269945
+        ],
+        "targetLandmark": [
+          -0.1293944977223873,
+          -0.054849499836564064,
+          0.12223004549741745
+        ],
+        "landmarkErrorMm": 23.499316687089188,
+        "surfaceRmsMm": 17.644222994141437,
+        "surfaceMaxMm": 28.21441926062107,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Proximal phalanx of fifth finger of foot.r",
+        "target": "bp3d:FMA32640",
+        "sourceLandmark": [
+          -0.13546761827473305,
+          -0.06840784120510192,
+          0.014922946871914006
+        ],
+        "targetLandmark": [
+          -0.15386100113391876,
+          -0.06497025117278099,
+          0.16139749437570572
+        ],
+        "landmarkErrorMm": 31.52289920989146,
+        "surfaceRmsMm": 27.160789267638698,
+        "surfaceMaxMm": 33.307768404483795,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Middle phalanx of fifth finger of foot.r",
+        "target": "bp3d:FMA230986",
+        "sourceLandmark": [
+          -0.14112586760893464,
+          -0.08366942422334009,
+          0.012877062785936196
+        ],
+        "targetLandmark": [
+          -0.1623850017786026,
+          -0.06691474840044975,
+          0.17513400316238403
+        ],
+        "landmarkErrorMm": 34.20584881531504,
+        "surfaceRmsMm": 31.23051705820354,
+        "surfaceMaxMm": 34.68185290694237,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Distal phalanx of fifth finger of foot.r",
+        "target": "bp3d:FMA32658",
+        "sourceLandmark": [
+          -0.14247206417788982,
+          -0.09104915014953999,
+          0.012020460144491808
+        ],
+        "targetLandmark": [
+          -0.16524800658226013,
+          -0.06774784997105598,
+          0.18138950318098068
+        ],
+        "landmarkErrorMm": 35.84748455202489,
+        "surfaceRmsMm": 32.61817866666232,
+        "surfaceMaxMm": 36.579858511686325,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Tibia.r",
+        "target": "bp3d:FMA24477",
+        "sourceLandmark": [
+          -0.0765656138835703,
+          0.02894810090494454,
+          0.25419984591547173
+        ],
+        "targetLandmark": [
+          -0.07228449918329716,
+          0.18394141690805554,
+          0.08345395140349865
+        ],
+        "landmarkErrorMm": 8.230071370272965,
+        "surfaceRmsMm": 4.920337284112126,
+        "surfaceMaxMm": 13.228341937065125,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Tibia.l",
+        "target": "bp3d:FMA24478",
+        "sourceLandmark": [
+          0.0765656138835703,
+          0.02894810090494454,
+          0.25419984591547173
+        ],
+        "targetLandmark": [
+          0.07224459759891033,
+          0.18388333404436707,
+          0.08324855007231236
+        ],
+        "landmarkErrorMm": 8.231214039866222,
+        "surfaceRmsMm": 4.968848194325554,
+        "surfaceMaxMm": 14.195769093930721,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Fibula.r",
+        "target": "bp3d:FMA24480",
+        "sourceLandmark": [
+          -0.10673540547566746,
+          0.043223464325571254,
+          0.2364572160392892
+        ],
+        "targetLandmark": [
+          -0.10225474834442139,
+          0.16693504620343447,
+          0.06332810036838055
+        ],
+        "landmarkErrorMm": 6.758404404552746,
+        "surfaceRmsMm": 3.394339225383705,
+        "surfaceMaxMm": 8.121096529066563,
+        "holdout": false,
+        "samples": 800
+      },
+      {
+        "source": "Fibula.l",
+        "target": "bp3d:FMA24481",
+        "sourceLandmark": [
+          0.10673542037682865,
+          0.043223464325571254,
+          0.2364572160392892
+        ],
+        "targetLandmark": [
+          0.10231849923729897,
+          0.16697020456194878,
+          0.06332650035619736
+        ],
+        "landmarkErrorMm": 6.754221260362759,
+        "surfaceRmsMm": 3.328184917332321,
+        "surfaceMaxMm": 7.965083234012127,
+        "holdout": false,
+        "samples": 800
+      }
+    ],
+    "landmarkRmsMm": 29.682222050286658,
+    "landmarkMaxMm": 41.4939501480793,
+    "surfaceRmsMm": 24.67035865941984,
+    "surfaceMaxMm": 40.94153270125389
+  },
+  "regions": {
+    "foot_l": {
+      "globalScale": 0.9952171923529913,
+      "regionalRigid": [
+        [
+          0.972025697988043,
+          -0.0029171273158082878,
+          0.23485640893763454,
+          -0.018698663200741678
+        ],
+        [
+          0.005027484713970687,
+          0.999952186035659,
+          -0.008387493067550211,
+          -0.017576906063942882
+        ],
+        [
+          -0.23482071213653402,
+          0.009333595809267209,
+          0.9719938873989694,
+          0.02047957307089507
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix": [
+        [
+          0.9673539735953197,
+          -0.23376412955667875,
+          -0.006154791379433252,
+          0.007678538679803237
+        ],
+        [
+          0.00552707095674529,
+          -0.003330670875501141,
+          0.9951962711310413,
+          -0.08123526024813232
+        ],
+        [
+          -0.23377981352322771,
+          -0.9673678195593959,
+          -0.0019391815070934782,
+          0.12783313395173979
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "iterations": 74,
+      "fittedBones": [
+        "Calcaneus.l",
+        "Cuboid bone.l",
+        "Distal phalanx of fifth finger of foot.l",
+        "Distal phalanx of fourth finger of foot.l",
+        "Distal phalanx of second finger of foot.l",
+        "Distal phalanx of third finger of foot.l",
+        "First metatarsal bone.l",
+        "Fourth metatarsal bone.l",
+        "Intermediate cuneiform bone.l",
+        "Medial cuneiform bone.l",
+        "Middle phalanx of fifth finger of foot.l",
+        "Middle phalanx of fourth finger of foot.l",
+        "Middle phalanx of third finger of foot.l",
+        "Navicular bone.l",
+        "Proximal phalanx of fifth finger of foot.l",
+        "Proximal phalanx of fourth finger of foot.l",
+        "Proximal phalanx of second finger of foot.l",
+        "Proximal phalanx of third finger of foot.l",
+        "Talus.l",
+        "Third metatarsal bone.l"
+      ],
+      "heldOutBones": [
+        "Distal phalanx of first finger of foot.l",
+        "Fifth metatarsal bone.l",
+        "Lateral cuneiform bone.l",
+        "Middle phalanx of second finger of foot.l",
+        "Proximal phalanx of first finger of foot.l",
+        "Second metatarsal bone.l"
+      ],
+      "landmarks": [
+        {
+          "source": "Calcaneus.l",
+          "target": "bp3d:FMA24498",
+          "sourceLandmark": [
+            0.07845637309177456,
+            0.05371231657031732,
+            0.03700307028871922
+          ],
+          "targetLandmark": [
+            0.07288900017738342,
+            -0.04374419990926981,
+            0.05917430203408003
+          ],
+          "landmarkErrorMm": 2.741006860546057,
+          "surfaceRmsMm": 1.545655809690922,
+          "surfaceMaxMm": 4.2938352562487125,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Cuboid bone.l",
+          "target": "bp3d:FMA24529",
+          "sourceLandmark": [
+            0.09563752077519894,
+            0.006376528184937311,
+            0.044333095649476816
+          ],
+          "targetLandmark": [
+            0.0985495001077652,
+            -0.03668764978647232,
+            0.0999240018427372
+          ],
+          "landmarkErrorMm": 0.7178756675024727,
+          "surfaceRmsMm": 1.0069597088659268,
+          "surfaceMaxMm": 2.9246252961456776,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Distal phalanx of fifth finger of foot.l",
+          "target": "bp3d:FMA32659",
+          "sourceLandmark": [
+            0.14247206417788982,
+            -0.09104915014953999,
+            0.012020460144491808
+          ],
+          "targetLandmark": [
+            0.16530950367450714,
+            -0.06780444830656052,
+            0.18135249614715576
+          ],
+          "landmarkErrorMm": 1.9002660049575755,
+          "surfaceRmsMm": 0.8784591588967648,
+          "surfaceMaxMm": 1.9896666053682566,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Distal phalanx of first finger of foot.l",
+          "target": "bp3d:FMA32651",
+          "sourceLandmark": [
+            0.08009178904869702,
+            -0.12116677397576141,
+            0.015682838733170914
+          ],
+          "targetLandmark": [
+            0.11377999931573868,
+            -0.06452379934489727,
+            0.22332199662923813
+          ],
+          "landmarkErrorMm": 3.0071267627598046,
+          "surfaceRmsMm": 1.0859582813791102,
+          "surfaceMaxMm": 2.7232700958848,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Distal phalanx of fourth finger of foot.l",
+          "target": "bp3d:FMA32657",
+          "sourceLandmark": [
+            0.13217765728734487,
+            -0.10956527530659449,
+            0.012905598606615793
+          ],
+          "targetLandmark": [
+            0.1596435010433197,
+            -0.0668819509446621,
+            0.20099199563264847
+          ],
+          "landmarkErrorMm": 2.418560297999732,
+          "surfaceRmsMm": 0.939526562609905,
+          "surfaceMaxMm": 2.25829822011292,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Distal phalanx of second finger of foot.l",
+          "target": "bp3d:FMA32653",
+          "sourceLandmark": [
+            0.10380166124849441,
+            -0.13047470891127,
+            0.013254768380205293
+          ],
+          "targetLandmark": [
+            0.1377750039100647,
+            -0.0666247010231018,
+            0.2274404987692833
+          ],
+          "landmarkErrorMm": 2.465597490727987,
+          "surfaceRmsMm": 1.1289457170249322,
+          "surfaceMaxMm": 2.571048680692911,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Distal phalanx of third finger of foot.l",
+          "target": "bp3d:FMA32655",
+          "sourceLandmark": [
+            0.11879870880222142,
+            -0.1242772530222663,
+            0.012559584129103246
+          ],
+          "targetLandmark": [
+            0.15034150332212448,
+            -0.06731469929218292,
+            0.21798250079154968
+          ],
+          "landmarkErrorMm": 2.611007626836346,
+          "surfaceRmsMm": 1.0414543166079198,
+          "surfaceMaxMm": 2.49331328086555,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Fifth metatarsal bone.l",
+          "target": "bp3d:FMA24516",
+          "sourceLandmark": [
+            0.11944708406824722,
+            -0.02282813220134229,
+            0.02547295812269945
+          ],
+          "targetLandmark": [
+            0.12940599769353867,
+            -0.05479334853589535,
+            0.12218919768929482
+          ],
+          "landmarkErrorMm": 1.0896565000156349,
+          "surfaceRmsMm": 0.5547350358715694,
+          "surfaceMaxMm": 1.5715225599706173,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "First metatarsal bone.l",
+          "target": "bp3d:FMA24508",
+          "sourceLandmark": [
+            0.071239270779301,
+            -0.052622004082498876,
+            0.03708676574169602
+          ],
+          "targetLandmark": [
+            0.08960749953985214,
+            -0.043758150190114975,
+            0.16110599786043167
+          ],
+          "landmarkErrorMm": 1.307162499420593,
+          "surfaceRmsMm": 0.718924509750598,
+          "surfaceMaxMm": 1.6282425494864583,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Fourth metatarsal bone.l",
+          "target": "bp3d:FMA24514",
+          "sourceLandmark": [
+            0.1092851899867443,
+            -0.037925250077496905,
+            0.030896716060107278
+          ],
+          "targetLandmark": [
+            0.12220549955964088,
+            -0.04970580153167248,
+            0.13819549605250359
+          ],
+          "landmarkErrorMm": 0.7309243832086391,
+          "surfaceRmsMm": 0.5777253872049426,
+          "surfaceMaxMm": 1.623451942577958,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Intermediate cuneiform bone.l",
+          "target": "bp3d:FMA24524",
+          "sourceLandmark": [
+            0.0836129800404396,
+            -0.011261671690733038,
+            0.058688246975560535
+          ],
+          "targetLandmark": [
+            0.09198429808020592,
+            -0.022869600914418697,
+            0.11998099833726883
+          ],
+          "landmarkErrorMm": 1.5662681740227777,
+          "surfaceRmsMm": 0.7654870165009914,
+          "surfaceMaxMm": 1.8185193184763193,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Lateral cuneiform bone.l",
+          "target": "bp3d:FMA24526",
+          "sourceLandmark": [
+            0.09342840324064211,
+            -0.007034279802842325,
+            0.05365467733897577
+          ],
+          "targetLandmark": [
+            0.1000555008649826,
+            -0.0277212499640882,
+            0.11302199959754944
+          ],
+          "landmarkErrorMm": 0.8695081601224227,
+          "surfaceRmsMm": 0.6998071127565828,
+          "surfaceMaxMm": 2.192211803048849,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Medial cuneiform bone.l",
+          "target": "bp3d:FMA24522",
+          "sourceLandmark": [
+            0.07061169758977509,
+            -0.015482735794220966,
+            0.05158560140128401
+          ],
+          "targetLandmark": [
+            0.08007600158452988,
+            -0.02966825058683753,
+            0.1262899972498417
+          ],
+          "landmarkErrorMm": 0.8219076005283177,
+          "surfaceRmsMm": 0.8059557661630147,
+          "surfaceMaxMm": 1.818939344957471,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Middle phalanx of fifth finger of foot.l",
+          "target": "bp3d:FMA230988",
+          "sourceLandmark": [
+            0.14112586760893464,
+            -0.08366942422334009,
+            0.012877062785936196
+          ],
+          "targetLandmark": [
+            0.16238699853420258,
+            -0.06691695004701614,
+            0.1752530038356781
+          ],
+          "landmarkErrorMm": 1.4536666235687057,
+          "surfaceRmsMm": 0.9413788288264069,
+          "surfaceMaxMm": 2.014565747231245,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Middle phalanx of fourth finger of foot.l",
+          "target": "bp3d:FMA32647",
+          "sourceLandmark": [
+            0.129890645841287,
+            -0.09931022598269335,
+            0.013987431675151707
+          ],
+          "targetLandmark": [
+            0.1552170068025589,
+            -0.06588069908320904,
+            0.1921060010790825
+          ],
+          "landmarkErrorMm": 1.912804673482635,
+          "surfaceRmsMm": 0.9502269110163366,
+          "surfaceMaxMm": 2.0909570157527924,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Middle phalanx of second finger of foot.l",
+          "target": "bp3d:FMA32643",
+          "sourceLandmark": [
+            0.10099784591393073,
+            -0.11775627381404871,
+            0.016384313606356827
+          ],
+          "targetLandmark": [
+            0.13216949999332428,
+            -0.0636474508792162,
+            0.2160789966583252
+          ],
+          "landmarkErrorMm": 2.1480695284512286,
+          "surfaceRmsMm": 0.96342713984674,
+          "surfaceMaxMm": 2.549579367041588,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Middle phalanx of third finger of foot.l",
+          "target": "bp3d:FMA32645",
+          "sourceLandmark": [
+            0.11610102861080712,
+            -0.11211781939880436,
+            0.015115289463008674
+          ],
+          "targetLandmark": [
+            0.1453630030155182,
+            -0.06504624895751476,
+            0.2073815017938614
+          ],
+          "landmarkErrorMm": 1.8957756438536613,
+          "surfaceRmsMm": 0.9525133829211144,
+          "surfaceMaxMm": 2.279822016134858,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Navicular bone.l",
+          "target": "bp3d:FMA24501",
+          "sourceLandmark": [
+            0.07303265947848558,
+            0.0030898967197750416,
+            0.062217523919354964
+          ],
+          "targetLandmark": [
+            0.07728669978678226,
+            -0.018635655054822564,
+            0.10768650099635124
+          ],
+          "landmarkErrorMm": 0.29710834385710333,
+          "surfaceRmsMm": 1.1791298712354399,
+          "surfaceMaxMm": 3.1615300104022026,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Proximal phalanx of fifth finger of foot.l",
+          "target": "bp3d:FMA32641",
+          "sourceLandmark": [
+            0.13546761827473305,
+            -0.06840784120510192,
+            0.014922946871914006
+          ],
+          "targetLandmark": [
+            0.15386400371789932,
+            -0.06489815004169941,
+            0.16139699518680573
+          ],
+          "landmarkErrorMm": 1.2920784330645516,
+          "surfaceRmsMm": 0.6807460595051946,
+          "surfaceMaxMm": 1.6822220059111714,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Proximal phalanx of first finger of foot.l",
+          "target": "bp3d:FMA43254",
+          "sourceLandmark": [
+            0.07396492625137685,
+            -0.0971809662243052,
+            0.020192413692263017
+          ],
+          "targetLandmark": [
+            0.10189265012741089,
+            -0.05998370051383972,
+            0.20265350490808487
+          ],
+          "landmarkErrorMm": 1.9076868247642425,
+          "surfaceRmsMm": 1.0029818082592414,
+          "surfaceMaxMm": 2.237160922959447,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Proximal phalanx of fourth finger of foot.l",
+          "target": "bp3d:FMA32639",
+          "sourceLandmark": [
+            0.12315771636626327,
+            -0.08145776223676965,
+            0.016844553989192837
+          ],
+          "targetLandmark": [
+            0.14510449767112732,
+            -0.06311520002782345,
+            0.176426500082016
+          ],
+          "landmarkErrorMm": 1.5794324006566172,
+          "surfaceRmsMm": 0.5975597122451678,
+          "surfaceMaxMm": 1.6721462598070502,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Proximal phalanx of second finger of foot.l",
+          "target": "bp3d:FMA32635",
+          "sourceLandmark": [
+            0.09553599080449932,
+            -0.09713645759339028,
+            0.01950750600063035
+          ],
+          "targetLandmark": [
+            0.12247100472450256,
+            -0.06065509840846062,
+            0.19755449891090393
+          ],
+          "landmarkErrorMm": 1.911123950052798,
+          "surfaceRmsMm": 0.8346009489186771,
+          "surfaceMaxMm": 2.382777165621519,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Proximal phalanx of third finger of foot.l",
+          "target": "bp3d:FMA32637",
+          "sourceLandmark": [
+            0.11060660146176815,
+            -0.09118962742638564,
+            0.0181455456661915
+          ],
+          "targetLandmark": [
+            0.13546999543905258,
+            -0.06180584989488125,
+            0.18872550129890442
+          ],
+          "landmarkErrorMm": 1.5546525658860448,
+          "surfaceRmsMm": 0.6563995067192386,
+          "surfaceMaxMm": 1.9348157802596688,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Second metatarsal bone.l",
+          "target": "bp3d:FMA24510",
+          "sourceLandmark": [
+            0.0894431620836258,
+            -0.049925632863853375,
+            0.03848439177059405
+          ],
+          "targetLandmark": [
+            0.10596869885921478,
+            -0.042235298082232475,
+            0.1549299992620945
+          ],
+          "landmarkErrorMm": 0.39834509027185,
+          "surfaceRmsMm": 0.4860414628299209,
+          "surfaceMaxMm": 1.4054580824449658,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Talus.l",
+          "target": "bp3d:FMA24483",
+          "sourceLandmark": [
+            0.07470057552309006,
+            0.03657284474715705,
+            0.06766913016554066
+          ],
+          "targetLandmark": [
+            0.06990689970552921,
+            -0.014103744993917644,
+            0.07724549993872643
+          ],
+          "landmarkErrorMm": 2.662459408242545,
+          "surfaceRmsMm": 1.3614016612223112,
+          "surfaceMaxMm": 3.195122117176652,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Third metatarsal bone.l",
+          "target": "bp3d:FMA24512",
+          "sourceLandmark": [
+            0.10068313193116518,
+            -0.04743029534269319,
+            0.03564008280960664
+          ],
+          "targetLandmark": [
+            0.11596494913101196,
+            -0.0450864490121603,
+            0.14946800097823143
+          ],
+          "landmarkErrorMm": 0.6421854415664708,
+          "surfaceRmsMm": 0.39401703379589487,
+          "surfaceMaxMm": 1.442373264580965,
+          "holdout": false,
+          "samples": 800
+        }
+      ],
+      "landmarkRmsMm": 1.779630068423461,
+      "landmarkMaxMm": 3.0071267627598046,
+      "surfaceRmsMm": 0.9134300764822992,
+      "surfaceMaxMm": 4.2938352562487125
+    },
+    "foot_r": {
+      "globalScale": 0.9952171923529913,
+      "regionalRigid": [
+        [
+          0.9720610016844176,
+          0.004350461645730053,
+          -0.23468805356846695,
+          0.018530333751804684
+        ],
+        [
+          -0.006533008590628053,
+          0.9999423365349733,
+          -0.008523109980110438,
+          -0.017594558517915602
+        ],
+        [
+          0.23463744117902713,
+          0.009818201894813444,
+          0.9720333708821478,
+          0.020401054647187278
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix": [
+        [
+          0.96743499284334,
+          0.2334175493648694,
+          0.006560657411841369,
+          -0.007703382159695769
+        ],
+        [
+          -0.005978122092667404,
+          -0.003194631728830298,
+          0.9951941098797424,
+          -0.08126863530335546
+        ],
+        [
+          0.2334331952260044,
+          -0.9674519636300235,
+          -0.0017033466946395886,
+          0.12778044729438265
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "iterations": 67,
+      "fittedBones": [
+        "Calcaneus.r",
+        "Cuboid bone.r",
+        "Distal phalanx of fifth finger of foot.r",
+        "Distal phalanx of fourth finger of foot.r",
+        "Distal phalanx of second finger of foot.r",
+        "Distal phalanx of third finger of foot.r",
+        "First metatarsal bone.r",
+        "Fourth metatarsal bone.r",
+        "Intermediate cuneiform bone.r",
+        "Medial cuneiform bone.r",
+        "Middle phalanx of fifth finger of foot.r",
+        "Middle phalanx of fourth finger of foot.r",
+        "Middle phalanx of third finger of foot.r",
+        "Navicular bone.r",
+        "Proximal phalanx of fifth finger of foot.r",
+        "Proximal phalanx of fourth finger of foot.r",
+        "Proximal phalanx of second finger of foot.r",
+        "Proximal phalanx of third finger of foot.r",
+        "Talus.r",
+        "Third metatarsal bone.r"
+      ],
+      "heldOutBones": [
+        "Distal phalanx of first finger of foot.r",
+        "Fifth metatarsal bone.r",
+        "Lateral cuneiform bone.r",
+        "Middle phalanx of second finger of foot.r",
+        "Proximal phalanx of first finger of foot.r",
+        "Second metatarsal bone.r"
+      ],
+      "landmarks": [
+        {
+          "source": "Calcaneus.r",
+          "target": "bp3d:FMA24497",
+          "sourceLandmark": [
+            -0.07845637308021995,
+            0.05371231657031732,
+            0.03700307030010514
+          ],
+          "targetLandmark": [
+            -0.07282840088009834,
+            -0.043822699226439,
+            0.05907680094242096
+          ],
+          "landmarkErrorMm": 2.608032486075339,
+          "surfaceRmsMm": 1.5623443406022162,
+          "surfaceMaxMm": 4.241394344717264,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Cuboid bone.r",
+          "target": "bp3d:FMA24528",
+          "sourceLandmark": [
+            -0.09563752077519894,
+            0.006376528184937311,
+            0.044333095649476816
+          ],
+          "targetLandmark": [
+            -0.09872574731707573,
+            -0.036604950204491615,
+            0.10025035217404366
+          ],
+          "landmarkErrorMm": 1.0760765851098255,
+          "surfaceRmsMm": 0.912322400904274,
+          "surfaceMaxMm": 2.2283729631453753,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Distal phalanx of fifth finger of foot.r",
+          "target": "bp3d:FMA32658",
+          "sourceLandmark": [
+            -0.14247206417788982,
+            -0.09104915014953999,
+            0.012020460144491808
+          ],
+          "targetLandmark": [
+            -0.16524800658226013,
+            -0.06774784997105598,
+            0.18138950318098068
+          ],
+          "landmarkErrorMm": 1.9351283075983055,
+          "surfaceRmsMm": 0.8820125518758527,
+          "surfaceMaxMm": 1.9837124273180962,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Distal phalanx of first finger of foot.r",
+          "target": "bp3d:FMA32650",
+          "sourceLandmark": [
+            -0.08009178904869702,
+            -0.12116677397576141,
+            0.015682838733170914
+          ],
+          "targetLandmark": [
+            -0.11375850066542625,
+            -0.06445164792239666,
+            0.22341300547122955
+          ],
+          "landmarkErrorMm": 2.9146704416596747,
+          "surfaceRmsMm": 1.0883456751247689,
+          "surfaceMaxMm": 2.6272316463291645,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Distal phalanx of fourth finger of foot.r",
+          "target": "bp3d:FMA32656",
+          "sourceLandmark": [
+            -0.13217768708966726,
+            -0.10956527530659449,
+            0.012905598606615793
+          ],
+          "targetLandmark": [
+            -0.15973100066184998,
+            -0.06689415127038956,
+            0.2009515017271042
+          ],
+          "landmarkErrorMm": 2.3967318259678194,
+          "surfaceRmsMm": 0.9356871300446451,
+          "surfaceMaxMm": 2.2461176849901676,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Distal phalanx of second finger of foot.r",
+          "target": "bp3d:FMA32652",
+          "sourceLandmark": [
+            -0.10380166124849441,
+            -0.13047470891127,
+            0.013254768380205293
+          ],
+          "targetLandmark": [
+            -0.13784699887037277,
+            -0.06667095050215721,
+            0.22755400091409683
+          ],
+          "landmarkErrorMm": 2.323460386254077,
+          "surfaceRmsMm": 1.146041046202871,
+          "surfaceMaxMm": 2.6303960476070642,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Distal phalanx of third finger of foot.r",
+          "target": "bp3d:FMA32654",
+          "sourceLandmark": [
+            -0.11879872370338261,
+            -0.1242772530222663,
+            0.012559584129103246
+          ],
+          "targetLandmark": [
+            -0.15035799890756607,
+            -0.06729209795594215,
+            0.21796249598264694
+          ],
+          "landmarkErrorMm": 2.61878709836215,
+          "surfaceRmsMm": 1.0371254884576486,
+          "surfaceMaxMm": 2.5732985232025385,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Fifth metatarsal bone.r",
+          "target": "bp3d:FMA24515",
+          "sourceLandmark": [
+            -0.11944709896940842,
+            -0.02282813220134229,
+            0.02547295812269945
+          ],
+          "targetLandmark": [
+            -0.1293944977223873,
+            -0.054849499836564064,
+            0.12223004549741745
+          ],
+          "landmarkErrorMm": 1.0533297157893107,
+          "surfaceRmsMm": 0.5691565775051953,
+          "surfaceMaxMm": 1.5254595782607794,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "First metatarsal bone.r",
+          "target": "bp3d:FMA24507",
+          "sourceLandmark": [
+            -0.0712392856804622,
+            -0.052622004082498876,
+            0.03708676574169602
+          ],
+          "targetLandmark": [
+            -0.08958934992551804,
+            -0.043724700808525085,
+            0.16106300055980682
+          ],
+          "landmarkErrorMm": 1.3165345046701709,
+          "surfaceRmsMm": 0.7237915949560652,
+          "surfaceMaxMm": 1.611752319149673,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Fourth metatarsal bone.r",
+          "target": "bp3d:FMA24513",
+          "sourceLandmark": [
+            -0.1092851899867443,
+            -0.037925250077496905,
+            0.030896716060107278
+          ],
+          "targetLandmark": [
+            -0.12226850166916847,
+            -0.04965119995176792,
+            0.13832999765872955
+          ],
+          "landmarkErrorMm": 0.6153714715618016,
+          "surfaceRmsMm": 0.5142408893939863,
+          "surfaceMaxMm": 1.599807757884264,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Intermediate cuneiform bone.r",
+          "target": "bp3d:FMA24523",
+          "sourceLandmark": [
+            -0.0836129800404396,
+            -0.011261671690733038,
+            0.058688246975560535
+          ],
+          "targetLandmark": [
+            -0.0919332504272461,
+            -0.02291099913418293,
+            0.12005949765443802
+          ],
+          "landmarkErrorMm": 1.5958802981962052,
+          "surfaceRmsMm": 0.7477532837975983,
+          "surfaceMaxMm": 1.595115871168673,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Lateral cuneiform bone.r",
+          "target": "bp3d:FMA24525",
+          "sourceLandmark": [
+            -0.09342840324064211,
+            -0.007034279802842325,
+            0.05365467733897577
+          ],
+          "targetLandmark": [
+            -0.10003665089607239,
+            -0.027710299473255873,
+            0.11303499713540077
+          ],
+          "landmarkErrorMm": 0.8547723642394753,
+          "surfaceRmsMm": 0.6894154525032218,
+          "surfaceMaxMm": 2.150961896404624,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Medial cuneiform bone.r",
+          "target": "bp3d:FMA24521",
+          "sourceLandmark": [
+            -0.07061169758977509,
+            -0.015482735794220966,
+            0.05158560140128401
+          ],
+          "targetLandmark": [
+            -0.0800660029053688,
+            -0.029751399997621775,
+            0.12624450027942657
+          ],
+          "landmarkErrorMm": 0.8299988063835061,
+          "surfaceRmsMm": 0.76221272976207,
+          "surfaceMaxMm": 1.6522514633834362,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Middle phalanx of fifth finger of foot.r",
+          "target": "bp3d:FMA230986",
+          "sourceLandmark": [
+            -0.14112586760893464,
+            -0.08366942422334009,
+            0.012877062785936196
+          ],
+          "targetLandmark": [
+            -0.1623850017786026,
+            -0.06691474840044975,
+            0.17513400316238403
+          ],
+          "landmarkErrorMm": 1.5001853053507634,
+          "surfaceRmsMm": 0.9575078568378577,
+          "surfaceMaxMm": 1.8854696536436677,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Middle phalanx of fourth finger of foot.r",
+          "target": "bp3d:FMA32646",
+          "sourceLandmark": [
+            -0.1298906756436094,
+            -0.09931022598269335,
+            0.013987431675151707
+          ],
+          "targetLandmark": [
+            -0.15520649403333664,
+            -0.0659121498465538,
+            0.1921204999089241
+          ],
+          "landmarkErrorMm": 1.900650341911383,
+          "surfaceRmsMm": 0.9068023678518243,
+          "surfaceMaxMm": 2.008627401664853,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Middle phalanx of second finger of foot.r",
+          "target": "bp3d:FMA32642",
+          "sourceLandmark": [
+            -0.10099786081509192,
+            -0.11775627381404871,
+            0.016384313606356827
+          ],
+          "targetLandmark": [
+            -0.13229600340127945,
+            -0.06370710022747517,
+            0.21616799384355545
+          ],
+          "landmarkErrorMm": 2.0132806025906183,
+          "surfaceRmsMm": 0.9691307188432179,
+          "surfaceMaxMm": 2.3087316658347845,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Middle phalanx of third finger of foot.r",
+          "target": "bp3d:FMA32644",
+          "sourceLandmark": [
+            -0.11610102861080712,
+            -0.11211781939880436,
+            0.015115289463008674
+          ],
+          "targetLandmark": [
+            -0.1453074961900711,
+            -0.0648727510124445,
+            0.20730599761009216
+          ],
+          "landmarkErrorMm": 2.0015498355507684,
+          "surfaceRmsMm": 0.9565807940311905,
+          "surfaceMaxMm": 2.256930572912097,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Navicular bone.r",
+          "target": "bp3d:FMA24500",
+          "sourceLandmark": [
+            -0.07303265947848558,
+            0.0030898967197750416,
+            0.062217523919354964
+          ],
+          "targetLandmark": [
+            -0.07747180014848709,
+            -0.018466049805283546,
+            0.10766100138425827
+          ],
+          "landmarkErrorMm": 0.5186846485459177,
+          "surfaceRmsMm": 1.1856564923045652,
+          "surfaceMaxMm": 3.27837816439569,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Proximal phalanx of fifth finger of foot.r",
+          "target": "bp3d:FMA32640",
+          "sourceLandmark": [
+            -0.13546761827473305,
+            -0.06840784120510192,
+            0.014922946871914006
+          ],
+          "targetLandmark": [
+            -0.15386100113391876,
+            -0.06497025117278099,
+            0.16139749437570572
+          ],
+          "landmarkErrorMm": 1.2668424335147885,
+          "surfaceRmsMm": 0.662358411250556,
+          "surfaceMaxMm": 1.7129137413576245,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Proximal phalanx of first finger of foot.r",
+          "target": "bp3d:FMA43253",
+          "sourceLandmark": [
+            -0.07396492625137685,
+            -0.0971809662243052,
+            0.020192413692263017
+          ],
+          "targetLandmark": [
+            -0.10192780196666718,
+            -0.060023900121450424,
+            0.20267949998378754
+          ],
+          "landmarkErrorMm": 1.8650387975529146,
+          "surfaceRmsMm": 0.9750003007411534,
+          "surfaceMaxMm": 2.18417402356863,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Proximal phalanx of fourth finger of foot.r",
+          "target": "bp3d:FMA32638",
+          "sourceLandmark": [
+            -0.12315771636626327,
+            -0.08145776223676965,
+            0.016844553989192837
+          ],
+          "targetLandmark": [
+            -0.14513450115919113,
+            -0.06311980076134205,
+            0.1764035001397133
+          ],
+          "landmarkErrorMm": 1.5843723030262191,
+          "surfaceRmsMm": 0.6119909948600797,
+          "surfaceMaxMm": 1.711058197543025,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Proximal phalanx of second finger of foot.r",
+          "target": "bp3d:FMA32634",
+          "sourceLandmark": [
+            -0.09553600570566051,
+            -0.09713645759339028,
+            0.01950750600063035
+          ],
+          "targetLandmark": [
+            -0.12245549634099007,
+            -0.06071000173687935,
+            0.19761750102043152
+          ],
+          "landmarkErrorMm": 1.8354485158309466,
+          "surfaceRmsMm": 0.8034681635423122,
+          "surfaceMaxMm": 1.9597236532717943,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Proximal phalanx of third finger of foot.r",
+          "target": "bp3d:FMA32636",
+          "sourceLandmark": [
+            -0.11060660146176815,
+            -0.09118962742638564,
+            0.0181455456661915
+          ],
+          "targetLandmark": [
+            -0.13548899441957474,
+            -0.06192469969391823,
+            0.18863850086927414
+          ],
+          "landmarkErrorMm": 1.596768761928026,
+          "surfaceRmsMm": 0.6528058563508448,
+          "surfaceMaxMm": 1.8571718828752637,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Second metatarsal bone.r",
+          "target": "bp3d:FMA24509",
+          "sourceLandmark": [
+            -0.0894431620836258,
+            -0.049925632863853375,
+            0.03848439177059405
+          ],
+          "targetLandmark": [
+            -0.10596480220556259,
+            -0.04232124797999859,
+            0.15492700040340424
+          ],
+          "landmarkErrorMm": 0.3935824365506319,
+          "surfaceRmsMm": 0.46885872608699214,
+          "surfaceMaxMm": 1.4153460506349802,
+          "holdout": true,
+          "samples": 800
+        },
+        {
+          "source": "Talus.r",
+          "target": "bp3d:FMA24482",
+          "sourceLandmark": [
+            -0.07470057552309006,
+            0.03657284474715705,
+            0.06766913016554066
+          ],
+          "targetLandmark": [
+            -0.06987045146524906,
+            -0.014022585120983422,
+            0.07716149836778641
+          ],
+          "landmarkErrorMm": 2.6083077175504803,
+          "surfaceRmsMm": 1.3607703689139028,
+          "surfaceMaxMm": 3.1915963627398014,
+          "holdout": false,
+          "samples": 800
+        },
+        {
+          "source": "Third metatarsal bone.r",
+          "target": "bp3d:FMA24511",
+          "sourceLandmark": [
+            -0.10068313193116518,
+            -0.04743029534269319,
+            0.03564008280960664
+          ],
+          "targetLandmark": [
+            -0.11595910042524338,
+            -0.04502495098859072,
+            0.1496090032160282
+          ],
+          "landmarkErrorMm": 0.4951500991281949,
+          "surfaceRmsMm": 0.37921663692384977,
+          "surfaceMaxMm": 1.1911587789654732,
+          "holdout": false,
+          "samples": 800
+        }
+      ],
+      "landmarkRmsMm": 1.7573516147050428,
+      "landmarkMaxMm": 2.9146704416596747,
+      "surfaceRmsMm": 0.9046456202502582,
+      "surfaceMaxMm": 4.241394344717264
+    }
+  },
+  "inputs": {
+    ".cache\\anatomy-completion\\wave3\\foot-regional\\source-geometry.npz": "5760baacf136436047b0c142467338d8c9cb24cc72980665edd3c68af99a172d",
+    ".cache\\anatomy-completion\\wave3\\foot-regional\\reference-plan.json": "8598c9e116f1682315907bb4ef459ca7526788f4cbcefe6b72a59f76cfb724d5",
+    ".cache\\phase4-expansion\\bp-reference.json": "0ae48e1b5e9c6b79c03d71bf9e89e30ab5a4a3b79bc3c339a1cf549e28e1a66b"
+  }
+}

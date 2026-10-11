@@ -1,0 +1,66 @@
+{
+  "method": "Three panels: source in global similarity orientation; target original bones; regional overlay. Only QA display materials. Target/source landmark errors shown with green/magenta points and connecting lines. Each named region uses one shared rigid transform after global similarity, no candidate-specific fit.",
+  "captures": [
+    {
+      "region": "craniofacial",
+      "file": "01-face-anterior.png",
+      "gaps": [
+        "muscular-face",
+        "muscular-mastication"
+      ]
+    },
+    {
+      "region": "craniofacial",
+      "file": "02-face-lateral.png",
+      "gaps": [
+        "muscular-face",
+        "muscular-mastication"
+      ]
+    },
+    {
+      "region": "craniofacial",
+      "file": "03-head-visceral.png",
+      "gaps": [
+        "resp-nasal",
+        "resp-pharynx",
+        "digestive-parotids",
+        "digestive-salivary-ducts"
+      ]
+    },
+    {
+      "region": "craniofacial",
+      "file": "04-cranial-nerves.png",
+      "gaps": [
+        "nervous-cranial-missing",
+        "nervous-cranial-partial"
+      ]
+    },
+    {
+      "region": "trunk",
+      "file": "05-trunk-anterior.png",
+      "gaps": null
+    },
+    {
+      "region": "trunk",
+      "file": "06-trunk-posterior.png",
+      "gaps": null
+    },
+    {
+      "region": "spinal",
+      "file": "07-spinal-lateral.png",
+      "gaps": null
+    },
+    {
+      "region": "upper",
+      "file": "08-upper-anterior.png",
+      "gaps": null
+    },
+    {
+      "region": "lower",
+      "file": "09-lower-posterior.png",
+      "gaps": null
+    }
+  ],
+  "errors": [],
+  "badRequests": []
+}

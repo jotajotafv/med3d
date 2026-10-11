@@ -1,0 +1,35 @@
+{
+  "method": "Three panels: source in global similarity orientation; target original bones; regional overlay. Only QA display materials. Target/source landmark errors shown with green/magenta points and connecting lines. Each named region uses one shared rigid transform after global similarity, no candidate-specific fit.",
+  "captures": [
+    {
+      "region": "foot_l",
+      "file": "20-flexor-retinaculum-medial.png",
+      "gaps": [
+        "skeletal-ligaments"
+      ]
+    },
+    {
+      "region": "foot_l",
+      "file": "21-edb-dorsal.png",
+      "gaps": [
+        "muscular-edb"
+      ]
+    },
+    {
+      "region": "foot_l",
+      "file": "22-interossei-dorsal.png",
+      "gaps": [
+        "muscular-foot-dorsal-interossei"
+      ]
+    },
+    {
+      "region": "foot_r",
+      "file": "23-interossei-right-oblique.png",
+      "gaps": [
+        "muscular-foot-dorsal-interossei"
+      ]
+    }
+  ],
+  "errors": [],
+  "badRequests": []
+}

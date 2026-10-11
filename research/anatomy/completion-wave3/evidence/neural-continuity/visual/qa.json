@@ -1,0 +1,35 @@
+{
+  "method": "Three panels: source in global similarity orientation; target original bones; regional overlay. Only QA display materials. Target/source landmark errors shown with green/magenta points and connecting lines. Each named region uses one shared rigid transform after global similarity, no candidate-specific fit.",
+  "captures": [
+    {
+      "region": "upper",
+      "file": "13-radial-muscular.png",
+      "gaps": [
+        "nervous-radial"
+      ]
+    },
+    {
+      "region": "lower",
+      "file": "14-cutaneous-leg.png",
+      "gaps": [
+        "leg"
+      ]
+    },
+    {
+      "region": "lower",
+      "file": "15-plantar-digital.png",
+      "gaps": [
+        "foot"
+      ]
+    },
+    {
+      "region": "lower",
+      "file": "16-medial-sural.png",
+      "gaps": [
+        "sural"
+      ]
+    }
+  ],
+  "errors": [],
+  "badRequests": []
+}

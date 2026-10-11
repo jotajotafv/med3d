@@ -1,0 +1,73 @@
+{
+  "wave": 3,
+  "sourceZipSha256": "bf337ce98dbdaffebf3f14194ed83996b7cd3e6793bfd70a955340ac2c6ea7e6",
+  "positionBits": 32,
+  "positionQuantization": false,
+  "additionalDecimation": false,
+  "modules": [
+    {
+      "id": "muscular:completion3-foot-left",
+      "bytes": 46328,
+      "sha256": "6d12875c056d648ad1e3cfc608069332be40164809d424805d2c0db65d8de7f3",
+      "meshes": 2,
+      "triangles": 5130,
+      "decodedAccessorBytes": 77058,
+      "elements": [
+        {
+          "id": "zanatomy:extensor-digitorum-brevis-l",
+          "sourceObject": "Extensor digitorum brevis.l",
+          "triangles": 3184,
+          "maxPositionErrorMetres": 1.0249483954344764e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:dorsal-interossei-foot-l",
+          "sourceObject": "Dorsal interossei muscles of foot.l",
+          "triangles": 1946,
+          "maxPositionErrorMetres": 1.0126084189943381e-8,
+          "triangleMultisetAndWindingPreserved": true
+        }
+      ],
+      "gltfValidation": {
+        "rawErrors": 0,
+        "rawWarnings": 0,
+        "decodedErrors": 0,
+        "decodedWarnings": 0
+      }
+    },
+    {
+      "id": "muscular:completion3-foot-right",
+      "bytes": 46316,
+      "sha256": "dc55412a9bdeb4106e35972cac141000744008a691a26849c2046e8e53c14eff",
+      "meshes": 2,
+      "triangles": 5130,
+      "decodedAccessorBytes": 77058,
+      "elements": [
+        {
+          "id": "zanatomy:extensor-digitorum-brevis-r",
+          "sourceObject": "Extensor digitorum brevis.r",
+          "triangles": 3184,
+          "maxPositionErrorMetres": 1.022509463396258e-8,
+          "triangleMultisetAndWindingPreserved": true
+        },
+        {
+          "id": "zanatomy:dorsal-interossei-foot-r",
+          "sourceObject": "Dorsal interossei muscles of foot.r",
+          "triangles": 1946,
+          "maxPositionErrorMetres": 1.0255714611608195e-8,
+          "triangleMultisetAndWindingPreserved": true
+        }
+      ],
+      "gltfValidation": {
+        "rawErrors": 0,
+        "rawWarnings": 0,
+        "decodedErrors": 0,
+        "decodedWarnings": 0
+      }
+    }
+  ],
+  "totalMeshes": 4,
+  "totalTriangles": 10260,
+  "totalBytes": 92644,
+  "maxPositionErrorMetres": 1.0255714611608195e-8
+}

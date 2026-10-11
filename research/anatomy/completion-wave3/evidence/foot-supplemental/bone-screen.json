@@ -1,0 +1,564 @@
+{
+  "method": "Fresh global similarity plus regional rigid; up to 4096 deterministic unique used vertices; three ray-parity votes within each original bone; closest-surface sampled depth. No deformation or piece-specific fit. Open surfaces and sparse sampling require visual review; not clinical accuracy.",
+  "bones": 205,
+  "results": [
+    {
+      "sourceObject": "Articular capsules of metatarsophalangeal joints.l",
+      "gaps": [
+        "skeletal-joints"
+      ],
+      "region": "foot_l",
+      "samples": 984,
+      "bounds": [
+        [
+          0.08232369897521985,
+          -0.07126744147345339,
+          0.1419816598877228
+        ],
+        [
+          0.15708577944822394,
+          -0.04698500029153767,
+          0.20001368735732356
+        ]
+      ],
+      "sideMedianX": 0.12822090972348424,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA45098:FJ3270",
+          "name": "Sesamoideo del pie izquierdo \u00b7 FJ3270",
+          "sampleCount": 5,
+          "over1mm": 4,
+          "over3mm": 0,
+          "maxDepthMm": 2.3307246156036854,
+          "deepest": {
+            "depthMm": 2.3307246156036854,
+            "point": [
+              0.0995348016,
+              -0.065789319,
+              0.1781634475
+            ],
+            "surface": [
+              0.09910814464092255,
+              -0.06359978020191193,
+              0.178838849067688
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA32635",
+          "name": "Falange proximal del dedo 2 del pie izquierdo",
+          "sampleCount": 16,
+          "over1mm": 3,
+          "over3mm": 0,
+          "maxDepthMm": 1.58178829587996,
+          "deepest": {
+            "depthMm": 1.58178829587996,
+            "point": [
+              0.1181744104,
+              -0.0561868834,
+              0.1887858375
+            ],
+            "surface": [
+              0.11790115386247635,
+              -0.05467866733670235,
+              0.1891765594482422
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24508",
+          "name": "Metatarsiano 1 izquierdo",
+          "sampleCount": 23,
+          "over1mm": 5,
+          "over3mm": 0,
+          "maxDepthMm": 1.5607005916535854,
+          "deepest": {
+            "depthMm": 1.5607005916535854,
+            "point": [
+              0.0987092371,
+              -0.0582812117,
+              0.172224611
+            ],
+            "surface": [
+              0.09988102316856384,
+              -0.05762480944395065,
+              0.17142972350120544
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24514",
+          "name": "Metatarsiano 4 izquierdo",
+          "sampleCount": 16,
+          "over1mm": 5,
+          "over3mm": 0,
+          "maxDepthMm": 1.4932086924090981,
+          "deepest": {
+            "depthMm": 1.4932086924090981,
+            "point": [
+              0.1319469516,
+              -0.0646660956,
+              0.156688871
+            ],
+            "surface": [
+              0.1311132311820984,
+              -0.06563007831573486,
+              0.15591084957122803
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24516",
+          "name": "Metatarsiano 5 izquierdo",
+          "sampleCount": 15,
+          "over1mm": 2,
+          "over3mm": 0,
+          "maxDepthMm": 1.3025760417804122,
+          "deepest": {
+            "depthMm": 1.3025760417804122,
+            "point": [
+              0.1381693677,
+              -0.0623942135,
+              0.146861486
+            ],
+            "surface": [
+              0.13690023124217987,
+              -0.062284793704748154,
+              0.14713357388973236
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24510",
+          "name": "Metatarsiano 2 izquierdo",
+          "sampleCount": 23,
+          "over1mm": 2,
+          "over3mm": 0,
+          "maxDepthMm": 1.2675115140154958,
+          "deepest": {
+            "depthMm": 1.2675115140154958,
+            "point": [
+              0.116823558,
+              -0.0521379997,
+              0.1756949243
+            ],
+            "surface": [
+              0.11783963441848755,
+              -0.05213442072272301,
+              0.1749371886253357
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA45098:FJ3266",
+          "name": "Sesamoideo del pie izquierdo \u00b7 FJ3266",
+          "sampleCount": 4,
+          "over1mm": 1,
+          "over3mm": 0,
+          "maxDepthMm": 1.0275683598592877,
+          "deepest": {
+            "depthMm": 1.0275683598592877,
+            "point": [
+              0.092715857,
+              -0.0663073612,
+              0.1817181681
+            ],
+            "surface": [
+              0.09333296865224838,
+              -0.06711600720882416,
+              0.18186363577842712
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24512",
+          "name": "Metatarsiano 3 izquierdo",
+          "sampleCount": 15,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.9826625464484096,
+          "deepest": {
+            "depthMm": 0.9826625464484096,
+            "point": [
+              0.124693896,
+              -0.0634379591,
+              0.1672709225
+            ],
+            "surface": [
+              0.12486455589532852,
+              -0.06394059956073761,
+              0.16644397377967834
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA32641",
+          "name": "Falange proximal del dedo 5 del pie izquierdo",
+          "sampleCount": 11,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.9145843214355409,
+          "deepest": {
+            "depthMm": 0.9145843214355409,
+            "point": [
+              0.1511385167,
+              -0.0613978564,
+              0.1570962928
+            ],
+            "surface": [
+              0.15102629363536835,
+              -0.06057510897517204,
+              0.1574796438217163
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA43254",
+          "name": "Falange proximal del dedo 1 del pie izquierdo",
+          "sampleCount": 11,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.87458681082353,
+          "deepest": {
+            "depthMm": 0.87458681082353,
+            "point": [
+              0.1056918119,
+              -0.0619158754,
+              0.1937945024
+            ],
+            "surface": [
+              0.10654059797525406,
+              -0.062065862119197845,
+              0.19364628195762634
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA32639",
+          "name": "Falange proximal del dedo 4 del pie izquierdo",
+          "sampleCount": 4,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.6198991904966533,
+          "deepest": {
+            "depthMm": 0.6198991904966533,
+            "point": [
+              0.1446259909,
+              -0.0584491948,
+              0.1703379649
+            ],
+            "surface": [
+              0.14471757411956787,
+              -0.05787205323576927,
+              0.17054483294487
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA32637",
+          "name": "Falange proximal del dedo 3 del pie izquierdo",
+          "sampleCount": 6,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.459008093457669,
+          "deepest": {
+            "depthMm": 0.459008093457669,
+            "point": [
+              0.1325332095,
+              -0.0573670348,
+              0.1836689908
+            ],
+            "surface": [
+              0.13258136808872223,
+              -0.056924328207969666,
+              0.1837802529335022
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 2.3307246156036854
+    },
+    {
+      "sourceObject": "Articular capsules of metatarsophalangeal joints.r",
+      "gaps": [
+        "skeletal-joints"
+      ],
+      "region": "foot_r",
+      "samples": 984,
+      "bounds": [
+        [
+          -0.1570952059582672,
+          -0.07124817101599318,
+          0.1419846703883858
+        ],
+        [
+          -0.08231818218609933,
+          -0.04699594207533562,
+          0.19999789562174572
+        ]
+      ],
+      "sideMedianX": -0.12822280313999296,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA45097:FJ3376",
+          "name": "Sesamoideo del pie derecho \u00b7 FJ3376",
+          "sampleCount": 5,
+          "over1mm": 5,
+          "over3mm": 0,
+          "maxDepthMm": 1.7831517616286874,
+          "deepest": {
+            "depthMm": 1.7831517616286874,
+            "point": [
+              -0.0995353796,
+              -0.0657972218,
+              0.1781472324
+            ],
+            "surface": [
+              -0.09915181994438171,
+              -0.06407581269741058,
+              0.1784103810787201
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24507",
+          "name": "Metatarsiano 1 derecho",
+          "sampleCount": 21,
+          "over1mm": 7,
+          "over3mm": 0,
+          "maxDepthMm": 1.5737611101940274,
+          "deepest": {
+            "depthMm": 1.5737611101940274,
+            "point": [
+              -0.0987088671,
+              -0.0582880312,
+              0.1722098975
+            ],
+            "surface": [
+              -0.09925667196512222,
+              -0.058133792132139206,
+              0.17074264585971832
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24513",
+          "name": "Metatarsiano 4 derecho",
+          "sampleCount": 15,
+          "over1mm": 5,
+          "over3mm": 0,
+          "maxDepthMm": 1.3923811493441463,
+          "deepest": {
+            "depthMm": 1.3923811493441463,
+            "point": [
+              -0.1340979318,
+              -0.0558226455,
+              0.1623578185
+            ],
+            "surface": [
+              -0.13336476683616638,
+              -0.054690368473529816,
+              0.1627029925584793
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24515",
+          "name": "Metatarsiano 5 derecho",
+          "sampleCount": 13,
+          "over1mm": 2,
+          "over3mm": 0,
+          "maxDepthMm": 1.3609562302008271,
+          "deepest": {
+            "depthMm": 1.3609562302008271,
+            "point": [
+              -0.1381797173,
+              -0.0623788456,
+              0.1468598768
+            ],
+            "surface": [
+              -0.13685131072998047,
+              -0.06225117668509483,
+              0.14712676405906677
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA32634",
+          "name": "Falange proximal del dedo 2 del pie derecho",
+          "sampleCount": 16,
+          "over1mm": 3,
+          "over3mm": 0,
+          "maxDepthMm": 1.30179594270885,
+          "deepest": {
+            "depthMm": 1.30179594270885,
+            "point": [
+              -0.1205129526,
+              -0.0561302706,
+              0.1876013086
+            ],
+            "surface": [
+              -0.1206667348742485,
+              -0.0548376627266407,
+              0.18761499226093292
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24511",
+          "name": "Metatarsiano 3 derecho",
+          "sampleCount": 14,
+          "over1mm": 1,
+          "over3mm": 0,
+          "maxDepthMm": 1.2133038835600019,
+          "deepest": {
+            "depthMm": 1.2133038835600019,
+            "point": [
+              -0.1246973933,
+              -0.0634329794,
+              0.1672642514
+            ],
+            "surface": [
+              -0.12507076561450958,
+              -0.063714399933815,
+              0.16614465415477753
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA24509",
+          "name": "Metatarsiano 2 derecho",
+          "sampleCount": 22,
+          "over1mm": 2,
+          "over3mm": 0,
+          "maxDepthMm": 1.1153905652463436,
+          "deepest": {
+            "depthMm": 1.1153905652463436,
+            "point": [
+              -0.1168194355,
+              -0.0521382519,
+              0.1756881459
+            ],
+            "surface": [
+              -0.1177881509065628,
+              -0.05194045603275299,
+              0.1751718521118164
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA43253",
+          "name": "Falange proximal del dedo 1 del pie derecho",
+          "sampleCount": 11,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.9255277109332383,
+          "deepest": {
+            "depthMm": 0.9255277109332383,
+            "point": [
+              -0.1056852287,
+              -0.0619250048,
+              0.1937814099
+            ],
+            "surface": [
+              -0.10658933967351913,
+              -0.062037497758865356,
+              0.1936185359954834
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA32640",
+          "name": "Falange proximal del dedo 5 del pie derecho",
+          "sampleCount": 11,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.9078875300474465,
+          "deepest": {
+            "depthMm": 0.9078875300474465,
+            "point": [
+              -0.1511448041,
+              -0.061379641,
+              0.1570995503
+            ],
+            "surface": [
+              -0.15097537636756897,
+              -0.0605752095580101,
+              0.15748482942581177
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA45097:FJ3372",
+          "name": "Sesamoideo del pie derecho \u00b7 FJ3372",
+          "sampleCount": 4,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.8729007677175105,
+          "deepest": {
+            "depthMm": 0.8729007677175105,
+            "point": [
+              -0.0904432746,
+              -0.0667059075,
+              0.1818565923
+            ],
+            "surface": [
+              -0.0903652086853981,
+              -0.0675637349486351,
+              0.18199796974658966
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA32638",
+          "name": "Falange proximal del dedo 4 del pie derecho",
+          "sampleCount": 4,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.7947123376652598,
+          "deepest": {
+            "depthMm": 0.7947123376652598,
+            "point": [
+              -0.1429045291,
+              -0.058414515,
+              0.1710590701
+            ],
+            "surface": [
+              -0.1429930478334427,
+              -0.057667553424835205,
+              0.17131555080413818
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA32636",
+          "name": "Falange proximal del dedo 3 del pie derecho",
+          "sampleCount": 8,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.354897667421028,
+          "deepest": {
+            "depthMm": 0.354897667421028,
+            "point": [
+              -0.1325283739,
+              -0.0573627785,
+              0.1836665685
+            ],
+            "surface": [
+              -0.1325676143169403,
+              -0.05701298639178276,
+              0.1837119311094284
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 1.7831517616286874
+    }
+  ],
+  "inputs": {
+    ".cache\\anatomy-completion\\wave3\\foot-supplemental\\source-geometry.npz": "f7f064eb87b68b335db500be848a79e4b884d52968d1dd09c6ee0080edbd76a7",
+    ".cache\\anatomy-completion\\wave3\\foot-supplemental\\candidate-plan.json": "819a90540f0a4d22942158156788216e4cc5fcc194923d7713d2cebc2c29dbbc",
+    ".cache\\anatomy-completion\\wave3\\foot-supplemental\\registration.json": "060b43c303af1f3a867a6f6eb733b17a45219289e7d97c239d672172e30ca4c5",
+    ".cache\\anatomy-completion\\wave3\\foot-supplemental\\target-bones.json": "fcf82a107fa2fa627d412e108e697341394b5f769e004fdb88c7be831f9d5e44"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "method": "Fresh global similarity plus regional rigid; up to 4096 deterministic unique used vertices; three ray-parity votes within each original bone; closest-surface sampled depth. No deformation or piece-specific fit. Open surfaces and sparse sampling require visual review; not clinical accuracy.",
+  "bones": 205,
+  "results": [
+    {
+      "sourceObject": "VH_M_coccyx",
+      "gaps": [
+        "skeletal-coccyx"
+      ],
+      "region": "pelvis",
+      "samples": 422,
+      "bounds": [
+        [
+          -0.0074017852892580265,
+          0.7804689674969532,
+          -0.017670123865840187
+        ],
+        [
+          0.009801238963884578,
+          0.79933219549706,
+          0.006443094498522803
+        ]
+      ],
+      "sideMedianX": 0.002365412410220041,
+      "contacts": [],
+      "maxDepthMm": 0
+    },
+    {
+      "sourceObject": "VH_M_spinal_cord_all_segments",
+      "gaps": [
+        "nervous-spinal-cord"
+      ],
+      "region": "spinal",
+      "samples": 2998,
+      "bounds": [
+        [
+          -0.006580568427279793,
+          1.030273408913585,
+          0.023405211982034546
+        ],
+        [
+          0.010187754871351092,
+          1.4734153452522776,
+          0.07689765359741141
+        ]
+      ],
+      "sideMedianX": -0.0004064423304543166,
+      "contacts": [
+        {
+          "bone": "bp3d:FMA12520",
+          "name": "Axis \u00b7 C2",
+          "sampleCount": 104,
+          "over1mm": 83,
+          "over3mm": 29,
+          "maxDepthMm": 5.212702322751284,
+          "deepest": {
+            "depthMm": 5.212702322751284,
+            "point": [
+              0.0024813823,
+              1.4583951098,
+              0.076075851
+            ],
+            "surface": [
+              -0.000399896438466385,
+              1.457549810409546,
+              0.0718148723244667
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA12521",
+          "name": "V\u00e9rtebra cervical \u00b7 C3",
+          "sampleCount": 51,
+          "over1mm": 31,
+          "over3mm": 0,
+          "maxDepthMm": 2.764563774690032,
+          "deepest": {
+            "depthMm": 2.764563774690032,
+            "point": [
+              0.0056040896,
+              1.4412288878,
+              0.0742079469
+            ],
+            "surface": [
+              0.004924055188894272,
+              1.4439080953598022,
+              0.07425376027822495
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA12522",
+          "name": "V\u00e9rtebra cervical \u00b7 C4",
+          "sampleCount": 48,
+          "over1mm": 28,
+          "over3mm": 0,
+          "maxDepthMm": 2.2955937311053276,
+          "deepest": {
+            "depthMm": 2.2955937311053276,
+            "point": [
+              0.0036791862,
+              1.4174211075,
+              0.0768038057
+            ],
+            "surface": [
+              0.003741568187251687,
+              1.417432188987732,
+              0.07450908422470093
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA12519",
+          "name": "Atlas \u00b7 C1",
+          "sampleCount": 10,
+          "over1mm": 2,
+          "over3mm": 0,
+          "maxDepthMm": 1.0786430211737752,
+          "deepest": {
+            "depthMm": 1.0786430211737752,
+            "point": [
+              0.0095043563,
+              1.471052468,
+              0.0724301689
+            ],
+            "surface": [
+              0.00860968604683876,
+              1.4709506034851074,
+              0.07183632999658585
+            ]
+          }
+        },
+        {
+          "bone": "bp3d:FMA12523",
+          "name": "V\u00e9rtebra cervical \u00b7 C5",
+          "sampleCount": 7,
+          "over1mm": 0,
+          "over3mm": 0,
+          "maxDepthMm": 0.7442164933308959,
+          "deepest": {
+            "depthMm": 0.7442164933308959,
+            "point": [
+              0.0033985694,
+              1.4016211204,
+              0.0763508979
+            ],
+            "surface": [
+              0.0033929527271538973,
+              1.401727557182312,
+              0.07561435550451279
+            ]
+          }
+        }
+      ],
+      "maxDepthMm": 5.212702322751284
+    }
+  ],
+  "inputs": {
+    ".cache\\anatomy-completion\\wave3\\hra\\source-geometry.npz": "7dda0aa568dc9448fffc91623c2a9eacfde566b101b13956168febaefe1908de",
+    ".cache\\anatomy-completion\\wave3\\hra\\candidate-plan.json": "1b1af19e9aaef1ba66b72b75f2bf44e37d2d668a1d0d27a7e22f1197fa8915aa",
+    ".cache\\anatomy-completion\\wave3\\hra\\registration.json": "d2ddfa733f4ad01b0e16d380241e2b2bd7da2a47dcacf2f695ba3d34a0b6bdd1",
+    ".cache\\anatomy-completion\\wave3\\hra\\target-bones.json": "fcf82a107fa2fa627d412e108e697341394b5f769e004fdb88c7be831f9d5e44"
+  }
+}

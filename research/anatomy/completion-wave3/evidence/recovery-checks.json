@@ -1,0 +1,270 @@
+{
+  "at": "2026-10-11T22:14:42.997Z",
+  "sourceChecks": [
+    {
+      "file": ".cache/phase4-expansion/source/Startup.blend",
+      "sha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+      "match": true
+    },
+    {
+      "file": ".cache/anatomy-completion/z-license-rechecked.txt",
+      "sha256": "196b66b56551a862e59872f7cdb70e6d9a6ad84e9105962fca8ec28c14e97520",
+      "match": true
+    },
+    {
+      "file": ".cache/anatomy-completion/wave3/other-sources/zeta-01_Scala Tympani.ply",
+      "sha256": "98af05f86d72ec8333e943f49b1e46a1a6994f4e1fa84237d748c9b9648d6057",
+      "match": true
+    },
+    {
+      "file": ".cache/anatomy-completion/wave3/other-sources/zeta-02_Scala Vestibuli.ply",
+      "sha256": "bfc2675fde44dc5aa3701a2e6cd6937cf376731980de2b2a22848374492e2610",
+      "match": true
+    },
+    {
+      "file": ".cache/anatomy-completion/wave3/other-sources/zeta-09_Tympanic Membrane.ply",
+      "sha256": "1c4e249ccd92245b310c0f90faa7f8b3f314fd36595edb008d82ec9fcc96ca8d",
+      "match": true
+    },
+    {
+      "file": ".cache/anatomy-completion/wave3/other-sources/zeta-10_External Auditory Canal.ply",
+      "sha256": "a147fe221fbbd4049997c8e25a7ee39e4b2bdf5e41f99df26fbb69a5ea6967f4",
+      "match": true
+    },
+    {
+      "file": ".cache/anatomy-completion/wave3/other-sources/zeta-Bone.ply",
+      "sha256": "380e7ab49bbcb57ac62bd1fd0a1670391c648a7021186ee514d7fe68a67a4573",
+      "match": true
+    },
+    {
+      "file": ".cache/anatomy-completion/wave3/other-sources/epsilon-Bone.ply",
+      "sha256": "b4de2697e8c21df868b25e2db4336794ca7980f6ed52f17780336e0fae138656",
+      "match": true
+    },
+    {
+      "file": ".cache/anatomy-completion/wave3/other-sources/epsilon-External_Auditory_Canal.ply",
+      "sha256": "5fcdf5db0104b18f0b64b522fe92843670b317252533758bdce231324a394439",
+      "match": true
+    },
+    {
+      "file": ".cache/anatomy-completion/wave3/other-sources/epsilon-Scala_Tympani.ply",
+      "sha256": "ee8ea44dc46de0170ce20b94c05ebce4460a4937749d87862fce36a988da4710",
+      "match": true
+    },
+    {
+      "file": ".cache/anatomy-completion/wave3/other-sources/epsilon-Scala_Vestibuli.ply",
+      "sha256": "f1d0a86f0715641741bfc9848c4443f0d70448a3404eaf8d8114dd4cebfd40fc",
+      "match": true
+    },
+    {
+      "file": ".cache/anatomy-completion/wave3/other-sources/epsilon-Tympanic_Membrane.ply",
+      "sha256": "5c4e2667e3eee92ea6fdeb99b0334a2720f696effa2dd22b3fc356b8b0491ba2",
+      "match": true
+    }
+  ],
+  "reportInputs": [
+    {
+      "report": "registration.json",
+      "file": ".cache\\anatomy-completion\\wave3\\source-geometry.npz",
+      "match": true,
+      "expected": "3292653dc5490222da10930f3161a071754247ca1bfd202ad9445e9bdbb77c59",
+      "actual": "3292653dc5490222da10930f3161a071754247ca1bfd202ad9445e9bdbb77c59"
+    },
+    {
+      "report": "registration.json",
+      "file": ".cache\\anatomy-completion\\wave3\\reference-plan.json",
+      "match": true,
+      "expected": "4bb0955bd210644efe44de32d35ac8653ec16e5c1bc2f6bde1be10b5568cb67e",
+      "actual": "4bb0955bd210644efe44de32d35ac8653ec16e5c1bc2f6bde1be10b5568cb67e"
+    },
+    {
+      "report": "registration.json",
+      "file": ".cache\\phase4-expansion\\bp-reference.json",
+      "match": true,
+      "expected": "0ae48e1b5e9c6b79c03d71bf9e89e30ab5a4a3b79bc3c339a1cf549e28e1a66b",
+      "actual": "0ae48e1b5e9c6b79c03d71bf9e89e30ab5a4a3b79bc3c339a1cf549e28e1a66b"
+    },
+    {
+      "report": "bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\source-geometry.npz",
+      "match": true,
+      "expected": "3292653dc5490222da10930f3161a071754247ca1bfd202ad9445e9bdbb77c59",
+      "actual": "3292653dc5490222da10930f3161a071754247ca1bfd202ad9445e9bdbb77c59"
+    },
+    {
+      "report": "bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\candidate-plan.json",
+      "match": true,
+      "expected": "710f46a514964cb6838a10d35a9b328b213b36e038a05f8074094567ee681143",
+      "actual": "710f46a514964cb6838a10d35a9b328b213b36e038a05f8074094567ee681143"
+    },
+    {
+      "report": "bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\registration.json",
+      "match": true,
+      "expected": "f6c3b4e788ed0b9565e203b81cee271234fba5579363fd26a92db6452edbb8e5",
+      "actual": "f6c3b4e788ed0b9565e203b81cee271234fba5579363fd26a92db6452edbb8e5"
+    },
+    {
+      "report": "bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\target-bones.json",
+      "match": true,
+      "expected": "fcf82a107fa2fa627d412e108e697341394b5f769e004fdb88c7be831f9d5e44",
+      "actual": "fcf82a107fa2fa627d412e108e697341394b5f769e004fdb88c7be831f9d5e44"
+    },
+    {
+      "report": "articular/registration.json",
+      "file": ".cache\\anatomy-completion\\wave3\\source-geometry.npz",
+      "match": true,
+      "expected": "3292653dc5490222da10930f3161a071754247ca1bfd202ad9445e9bdbb77c59",
+      "actual": "3292653dc5490222da10930f3161a071754247ca1bfd202ad9445e9bdbb77c59"
+    },
+    {
+      "report": "articular/registration.json",
+      "file": ".cache\\anatomy-completion\\wave3\\reference-plan.json",
+      "match": true,
+      "expected": "4bb0955bd210644efe44de32d35ac8653ec16e5c1bc2f6bde1be10b5568cb67e",
+      "actual": "4bb0955bd210644efe44de32d35ac8653ec16e5c1bc2f6bde1be10b5568cb67e"
+    },
+    {
+      "report": "articular/registration.json",
+      "file": ".cache\\phase4-expansion\\bp-reference.json",
+      "match": true,
+      "expected": "0ae48e1b5e9c6b79c03d71bf9e89e30ab5a4a3b79bc3c339a1cf549e28e1a66b",
+      "actual": "0ae48e1b5e9c6b79c03d71bf9e89e30ab5a4a3b79bc3c339a1cf549e28e1a66b"
+    },
+    {
+      "report": "articular/bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\articular\\source-geometry.npz",
+      "match": true,
+      "expected": "c36fd6714ab2900ea7cb82a9e214e9d855accb0309bf72016fb73bd88bfafd6c",
+      "actual": "c36fd6714ab2900ea7cb82a9e214e9d855accb0309bf72016fb73bd88bfafd6c"
+    },
+    {
+      "report": "articular/bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\articular\\candidate-plan.json",
+      "match": true,
+      "expected": "5317383f0a0e70ffa00b03d12f758b93c14307d04e720affacd073ac912bba82",
+      "actual": "5317383f0a0e70ffa00b03d12f758b93c14307d04e720affacd073ac912bba82"
+    },
+    {
+      "report": "articular/bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\articular\\registration.json",
+      "match": true,
+      "expected": "f6c3b4e788ed0b9565e203b81cee271234fba5579363fd26a92db6452edbb8e5",
+      "actual": "f6c3b4e788ed0b9565e203b81cee271234fba5579363fd26a92db6452edbb8e5"
+    },
+    {
+      "report": "articular/bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\articular\\target-bones.json",
+      "match": true,
+      "expected": "fcf82a107fa2fa627d412e108e697341394b5f769e004fdb88c7be831f9d5e44",
+      "actual": "fcf82a107fa2fa627d412e108e697341394b5f769e004fdb88c7be831f9d5e44"
+    },
+    {
+      "report": "foot-regional/registration.json",
+      "file": ".cache\\anatomy-completion\\wave3\\foot-regional\\source-geometry.npz",
+      "match": true,
+      "expected": "5760baacf136436047b0c142467338d8c9cb24cc72980665edd3c68af99a172d",
+      "actual": "5760baacf136436047b0c142467338d8c9cb24cc72980665edd3c68af99a172d"
+    },
+    {
+      "report": "foot-regional/registration.json",
+      "file": ".cache\\anatomy-completion\\wave3\\foot-regional\\reference-plan.json",
+      "match": true,
+      "expected": "8598c9e116f1682315907bb4ef459ca7526788f4cbcefe6b72a59f76cfb724d5",
+      "actual": "8598c9e116f1682315907bb4ef459ca7526788f4cbcefe6b72a59f76cfb724d5"
+    },
+    {
+      "report": "foot-regional/registration.json",
+      "file": ".cache\\phase4-expansion\\bp-reference.json",
+      "match": true,
+      "expected": "0ae48e1b5e9c6b79c03d71bf9e89e30ab5a4a3b79bc3c339a1cf549e28e1a66b",
+      "actual": "0ae48e1b5e9c6b79c03d71bf9e89e30ab5a4a3b79bc3c339a1cf549e28e1a66b"
+    },
+    {
+      "report": "foot-regional/bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\foot-regional\\source-geometry.npz",
+      "match": false,
+      "expected": "15ad6cfc5db7ff887ff78f87c78973623ae87cce8569ec50b59a28f8083d0373",
+      "actual": "5760baacf136436047b0c142467338d8c9cb24cc72980665edd3c68af99a172d"
+    },
+    {
+      "report": "foot-regional/bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\foot-regional\\candidate-plan.json",
+      "match": true,
+      "expected": "b45f8c13fc21c384534c77f4c0ffeed08faec7cce386801c690506c88210a0ff",
+      "actual": "b45f8c13fc21c384534c77f4c0ffeed08faec7cce386801c690506c88210a0ff"
+    },
+    {
+      "report": "foot-regional/bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\foot-regional\\registration.json",
+      "match": false,
+      "expected": "a48ca5ffffa1b193538df3b6f522a3aed1aba35df39593f5df7d8e041942d0af",
+      "actual": "060b43c303af1f3a867a6f6eb733b17a45219289e7d97c239d672172e30ca4c5"
+    },
+    {
+      "report": "foot-regional/bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\foot-regional\\target-bones.json",
+      "match": true,
+      "expected": "fcf82a107fa2fa627d412e108e697341394b5f769e004fdb88c7be831f9d5e44",
+      "actual": "fcf82a107fa2fa627d412e108e697341394b5f769e004fdb88c7be831f9d5e44"
+    },
+    {
+      "report": "neural-continuity/registration.json",
+      "file": "C:\\Users\\jotaj\\Desktop\\med3d\\.cache\\anatomy-completion\\wave3\\neural-continuity\\source-geometry.npz",
+      "match": true,
+      "expected": "0b8bb2fa1670d1a1828574ab774ca02cc8de5ae8fdde4f4a90c72e1e85a1f4be",
+      "actual": "0b8bb2fa1670d1a1828574ab774ca02cc8de5ae8fdde4f4a90c72e1e85a1f4be"
+    },
+    {
+      "report": "neural-continuity/registration.json",
+      "file": "C:\\Users\\jotaj\\Desktop\\med3d\\.cache\\anatomy-completion\\wave3\\neural-continuity\\reference-plan.json",
+      "match": true,
+      "expected": "dd5deace829395211272291bde4241a570f37399ff234883fdd057d818fd591e",
+      "actual": "dd5deace829395211272291bde4241a570f37399ff234883fdd057d818fd591e"
+    },
+    {
+      "report": "neural-continuity/registration.json",
+      "file": "C:\\Users\\jotaj\\Desktop\\med3d\\.cache\\anatomy-completion\\wave3\\target-soft.json",
+      "match": true,
+      "expected": "bd465ce93956c5858555177779d78fd1caa708f344ea2e440a83db8da2a9320b",
+      "actual": "bd465ce93956c5858555177779d78fd1caa708f344ea2e440a83db8da2a9320b"
+    },
+    {
+      "report": "neural-continuity/registration.json",
+      "file": "C:\\Users\\jotaj\\Desktop\\med3d\\.cache\\anatomy-completion\\wave3\\registration.json",
+      "match": true,
+      "expected": "f6c3b4e788ed0b9565e203b81cee271234fba5579363fd26a92db6452edbb8e5",
+      "actual": "f6c3b4e788ed0b9565e203b81cee271234fba5579363fd26a92db6452edbb8e5"
+    },
+    {
+      "report": "neural-continuity/bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\neural-continuity\\source-geometry.npz",
+      "match": true,
+      "expected": "0b8bb2fa1670d1a1828574ab774ca02cc8de5ae8fdde4f4a90c72e1e85a1f4be",
+      "actual": "0b8bb2fa1670d1a1828574ab774ca02cc8de5ae8fdde4f4a90c72e1e85a1f4be"
+    },
+    {
+      "report": "neural-continuity/bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\neural-continuity\\candidate-plan.json",
+      "match": true,
+      "expected": "fa02f88a7d534b46d90be2eee0eced7c7fdfca2751a9f517ae28fef04f579319",
+      "actual": "fa02f88a7d534b46d90be2eee0eced7c7fdfca2751a9f517ae28fef04f579319"
+    },
+    {
+      "report": "neural-continuity/bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\neural-continuity\\registration.json",
+      "match": true,
+      "expected": "3d99fe0a4edd8ff786cae087ec5353b63c110963995906965a212cf41b1043fe",
+      "actual": "3d99fe0a4edd8ff786cae087ec5353b63c110963995906965a212cf41b1043fe"
+    },
+    {
+      "report": "neural-continuity/bone-screen.json",
+      "file": ".cache\\anatomy-completion\\wave3\\neural-continuity\\target-bones.json",
+      "match": true,
+      "expected": "fcf82a107fa2fa627d412e108e697341394b5f769e004fdb88c7be831f9d5e44",
+      "actual": "fcf82a107fa2fa627d412e108e697341394b5f769e004fdb88c7be831f9d5e44"
+    }
+  ]
+}

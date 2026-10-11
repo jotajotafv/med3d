@@ -1,0 +1,4150 @@
+{
+  "wave": 3,
+  "environment": "Fresh headless Chromium / ANGLE SwiftShader, HTTP loopback no-store. CPU measures command submission, not GPU completion; frame samples do not establish sustained physical-device FPS.",
+  "functional": {
+    "ownerCount": 4,
+    "realPickedModules": [
+      "muscular:completion3-foot-left",
+      "muscular:completion3-foot-right"
+    ],
+    "checks": [
+      "Every new owner: source-ID search, lazy load, selection, isolate, hide, restore and card without remount",
+      "All explosion modes return to exact rest"
+    ],
+    "desktop": {
+      "scenario": "desktop",
+      "environment": "Fresh headless Chromium / ANGLE SwiftShader, HTTP loopback no-store. CPU measures command submission, not GPU completion; frame samples do not establish sustained physical-device FPS.",
+      "expectedModules": 9,
+      "expectedMeshes": 207,
+      "expectedTriangles": 523966,
+      "expectedBytes": 4025252,
+      "progress": [
+        {
+          "elapsedMs": 14999,
+          "glbResponses": 17
+        },
+        {
+          "elapsedMs": 30011,
+          "glbResponses": 20
+        }
+      ],
+      "checks": [
+        "All expected modules, meshes and triangles loaded",
+        "desktop zanatomy:extensor-digitorum-brevis-l: search, selection, card, isolate, hide, restore, focus, same Canvas, no overflow",
+        "desktop zanatomy:dorsal-interossei-foot-l: search, selection, card, isolate, hide, restore, focus, same Canvas, no overflow",
+        "desktop zanatomy:extensor-digitorum-brevis-r: search, selection, card, isolate, hide, restore, focus, same Canvas, no overflow",
+        "desktop zanatomy:dorsal-interossei-foot-r: search, selection, card, isolate, hide, restore, focus, same Canvas, no overflow"
+      ],
+      "errors": [],
+      "badRequests": [],
+      "serverReadyMs": 54,
+      "navigationCompletedMs": 199,
+      "allMeshesObservedWallMs": 2222,
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 9,
+        "meshCount": 207,
+        "triangleCount": 523966,
+        "geometryBytes": 7819708,
+        "drawCalls": 175,
+        "renderGeometries": 211,
+        "renderTextures": 4,
+        "loadMs": 62.5,
+        "renderCpuMs": 2.2000000001862645,
+        "firstGeometryMs": 1072.699999999255,
+        "fullSystemMs": 1072.699999999255
+      },
+      "timing": {
+        "frameIntervalsMs": [
+          16.700000000000273,
+          16.699999999999818
+        ],
+        "buffers": {
+          "created": 635,
+          "deleted": 0,
+          "live": 635
+        },
+        "transfers": [
+          {
+            "file": "arm-left.glb",
+            "bytes": 345860,
+            "durationMs": 9.200000000186265
+          },
+          {
+            "file": "arm-right.glb",
+            "bytes": 336004,
+            "durationMs": 18.40000000037253
+          },
+          {
+            "file": "leg-left.glb",
+            "bytes": 230240,
+            "durationMs": 5.7999999998137355
+          },
+          {
+            "file": "leg-right.glb",
+            "bytes": 230668,
+            "durationMs": 7.599999999627471
+          },
+          {
+            "file": "skull.glb",
+            "bytes": 1002700,
+            "durationMs": 8.899999999441206
+          },
+          {
+            "file": "spine.glb",
+            "bytes": 579828,
+            "durationMs": 6.599999999627471
+          },
+          {
+            "file": "thorax.glb",
+            "bytes": 1191640,
+            "durationMs": 9
+          },
+          {
+            "file": "completion2-styloid-ligament-left.glb",
+            "bytes": 54264,
+            "durationMs": 5.5
+          },
+          {
+            "file": "completion2-styloid-ligament-right.glb",
+            "bytes": 54048,
+            "durationMs": 6.7000000001862645
+          }
+        ]
+      },
+      "measurementComplete": true,
+      "success": true
+    },
+    "mobile": {
+      "scenario": "mobile",
+      "environment": "Fresh headless Chromium / ANGLE SwiftShader, HTTP loopback no-store. CPU measures command submission, not GPU completion; frame samples do not establish sustained physical-device FPS.",
+      "expectedModules": 9,
+      "expectedMeshes": 207,
+      "expectedTriangles": 523966,
+      "expectedBytes": 4025252,
+      "progress": [
+        {
+          "elapsedMs": 15005,
+          "glbResponses": 17
+        }
+      ],
+      "checks": [
+        "All expected modules, meshes and triangles loaded",
+        "mobile zanatomy:extensor-digitorum-brevis-l: search, selection, card, isolate, hide, restore, focus, same Canvas, no overflow",
+        "mobile zanatomy:dorsal-interossei-foot-r: search, selection, card, isolate, hide, restore, focus, same Canvas, no overflow"
+      ],
+      "errors": [],
+      "badRequests": [],
+      "serverReadyMs": 47,
+      "navigationCompletedMs": 172,
+      "allMeshesObservedWallMs": 2226,
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 9,
+        "meshCount": 207,
+        "triangleCount": 523966,
+        "geometryBytes": 7819708,
+        "drawCalls": 175,
+        "renderGeometries": 211,
+        "renderTextures": 4,
+        "loadMs": 75.79999999981374,
+        "renderCpuMs": 3.199999999254942,
+        "firstGeometryMs": 972.1000000005588,
+        "fullSystemMs": 972.1000000005588
+      },
+      "timing": {
+        "frameIntervalsMs": [
+          16.799999999999727,
+          16.700000000000273
+        ],
+        "buffers": {
+          "created": 635,
+          "deleted": 0,
+          "live": 635
+        },
+        "transfers": [
+          {
+            "file": "arm-left.glb",
+            "bytes": 345860,
+            "durationMs": 14
+          },
+          {
+            "file": "arm-right.glb",
+            "bytes": 336004,
+            "durationMs": 12.600000000558794
+          },
+          {
+            "file": "leg-left.glb",
+            "bytes": 230240,
+            "durationMs": 7
+          },
+          {
+            "file": "leg-right.glb",
+            "bytes": 230668,
+            "durationMs": 5.8999999994412065
+          },
+          {
+            "file": "skull.glb",
+            "bytes": 1002700,
+            "durationMs": 11.299999999813735
+          },
+          {
+            "file": "spine.glb",
+            "bytes": 579828,
+            "durationMs": 17.5
+          },
+          {
+            "file": "thorax.glb",
+            "bytes": 1191640,
+            "durationMs": 10.700000000186265
+          },
+          {
+            "file": "completion2-styloid-ligament-left.glb",
+            "bytes": 54264,
+            "durationMs": 4.2999999998137355
+          },
+          {
+            "file": "completion2-styloid-ligament-right.glb",
+            "bytes": 54048,
+            "durationMs": 4.2999999998137355
+          }
+        ]
+      },
+      "measurementComplete": true,
+      "success": true
+    }
+  },
+  "performance": [
+    {
+      "name": "first-load-default",
+      "expectedModules": 51,
+      "expectedBytes": 28164276,
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 51,
+        "meshCount": 936,
+        "triangleCount": 3036790,
+        "geometryBytes": 53567064,
+        "drawCalls": 892,
+        "renderGeometries": 940,
+        "renderTextures": 4,
+        "loadMs": 838.3999999999069,
+        "renderCpuMs": 4.100000000093132,
+        "firstGeometryMs": 353,
+        "fullSystemMs": 2307.6999999997206
+      },
+      "frameIntervalsMs": [
+        16.634000000000015
+      ],
+      "meanFrameIntervalMs": 16.634000000000015,
+      "transfers": [
+        {
+          "file": "arm-left.glb",
+          "bytes": 345860,
+          "durationMs": 4.800000000279397
+        },
+        {
+          "file": "arm-right.glb",
+          "bytes": 336004,
+          "durationMs": 7.199999999720603
+        },
+        {
+          "file": "leg-left.glb",
+          "bytes": 230240,
+          "durationMs": 3.3999999999068677
+        },
+        {
+          "file": "leg-right.glb",
+          "bytes": 230668,
+          "durationMs": 2.8999999999068677
+        },
+        {
+          "file": "skull.glb",
+          "bytes": 1002700,
+          "durationMs": 10.299999999813735
+        },
+        {
+          "file": "spine.glb",
+          "bytes": 579828,
+          "durationMs": 11.100000000093132
+        },
+        {
+          "file": "thorax.glb",
+          "bytes": 1191640,
+          "durationMs": 4.400000000372529
+        },
+        {
+          "file": "muscular-upper-right.glb",
+          "bytes": 269856,
+          "durationMs": 3.2999999998137355
+        },
+        {
+          "file": "muscular-upper-left.glb",
+          "bytes": 270076,
+          "durationMs": 2.8000000002793968
+        },
+        {
+          "file": "muscular-torso-anterior.glb",
+          "bytes": 1372520,
+          "durationMs": 18.5
+        },
+        {
+          "file": "muscular-abdomen.glb",
+          "bytes": 1971408,
+          "durationMs": 81
+        },
+        {
+          "file": "muscular-torso-posterior.glb",
+          "bytes": 1862216,
+          "durationMs": 116.60000000009313
+        },
+        {
+          "file": "muscular-gluteal-right.glb",
+          "bytes": 134776,
+          "durationMs": 85.29999999981374
+        },
+        {
+          "file": "muscular-gluteal-left.glb",
+          "bytes": 134860,
+          "durationMs": 84
+        },
+        {
+          "file": "muscular-thigh-right.glb",
+          "bytes": 446544,
+          "durationMs": 115.70000000018626
+        },
+        {
+          "file": "muscular-thigh-left.glb",
+          "bytes": 446536,
+          "durationMs": 51.5
+        },
+        {
+          "file": "muscular-leg-right.glb",
+          "bytes": 291172,
+          "durationMs": 45.299999999813735
+        },
+        {
+          "file": "muscular-leg-left.glb",
+          "bytes": 291188,
+          "durationMs": 4.2000000001862645
+        },
+        {
+          "file": "muscular-forearm-right.glb",
+          "bytes": 113968,
+          "durationMs": 5.5
+        },
+        {
+          "file": "muscular-forearm-left.glb",
+          "bytes": 114312,
+          "durationMs": 5.2999999998137355
+        },
+        {
+          "file": "muscular-neck.glb",
+          "bytes": 1003996,
+          "durationMs": 8.700000000186265
+        },
+        {
+          "file": "muscular-hand-right.glb",
+          "bytes": 73596,
+          "durationMs": 8.300000000279397
+        },
+        {
+          "file": "muscular-hand-left.glb",
+          "bytes": 73480,
+          "durationMs": 6.300000000279397
+        },
+        {
+          "file": "muscular-foot-right.glb",
+          "bytes": 273584,
+          "durationMs": 3.5
+        },
+        {
+          "file": "muscular-foot-left.glb",
+          "bytes": 273776,
+          "durationMs": 3.2999999998137355
+        },
+        {
+          "file": "cns.glb",
+          "bytes": 2600372,
+          "durationMs": 52.5
+        },
+        {
+          "file": "cranial.glb",
+          "bytes": 332748,
+          "durationMs": 14.200000000186265
+        },
+        {
+          "file": "lower-left.glb",
+          "bytes": 202496,
+          "durationMs": 4.399999999906868
+        },
+        {
+          "file": "lower-right.glb",
+          "bytes": 202584,
+          "durationMs": 7.5
+        },
+        {
+          "file": "upper-left.glb",
+          "bytes": 238688,
+          "durationMs": 3.2999999998137355
+        },
+        {
+          "file": "upper-right.glb",
+          "bytes": 238684,
+          "durationMs": 5.399999999906868
+        },
+        {
+          "file": "ocular.glb",
+          "bytes": 701656,
+          "durationMs": 6.2000000001862645
+        },
+        {
+          "file": "head-neck.glb",
+          "bytes": 68156,
+          "durationMs": 5.7000000001862645
+        },
+        {
+          "file": "heart.glb",
+          "bytes": 1047128,
+          "durationMs": 8.199999999720603
+        },
+        {
+          "file": "lower-left.glb",
+          "bytes": 1150400,
+          "durationMs": 10.399999999906868
+        },
+        {
+          "file": "lower-right.glb",
+          "bytes": 1140020,
+          "durationMs": 9.700000000186265
+        },
+        {
+          "file": "trunk.glb",
+          "bytes": 927548,
+          "durationMs": 33.09999999962747
+        },
+        {
+          "file": "upper-left.glb",
+          "bytes": 663612,
+          "durationMs": 20.300000000279397
+        },
+        {
+          "file": "upper-right.glb",
+          "bytes": 652416,
+          "durationMs": 6.100000000093132
+        },
+        {
+          "file": "larynx.glb",
+          "bytes": 107936,
+          "durationMs": 3.6000000000931323
+        },
+        {
+          "file": "airway.glb",
+          "bytes": 733700,
+          "durationMs": 10
+        },
+        {
+          "file": "lungs.glb",
+          "bytes": 1488376,
+          "durationMs": 10.700000000186265
+        },
+        {
+          "file": "upper.glb",
+          "bytes": 26860,
+          "durationMs": 3.3999999999068677
+        },
+        {
+          "file": "stomach-accessory.glb",
+          "bytes": 1261644,
+          "durationMs": 5.599999999627471
+        },
+        {
+          "file": "small-intestine.glb",
+          "bytes": 212852,
+          "durationMs": 22.200000000186265
+        },
+        {
+          "file": "large-intestine.glb",
+          "bytes": 139840,
+          "durationMs": 14.100000000093132
+        },
+        {
+          "file": "organs.glb",
+          "bytes": 94872,
+          "durationMs": 3.6000000000931323
+        },
+        {
+          "file": "glands.glb",
+          "bytes": 69408,
+          "durationMs": 2.8999999999068677
+        },
+        {
+          "file": "thyroid43.glb",
+          "bytes": 398320,
+          "durationMs": 6.599999999627471
+        },
+        {
+          "file": "central.glb",
+          "bytes": 35160,
+          "durationMs": 3.7000000001862645
+        },
+        {
+          "file": "male.glb",
+          "bytes": 93996,
+          "durationMs": 3.1999999997206032
+        }
+      ]
+    },
+    {
+      "name": "isolated-muscular-with-additions",
+      "expectedModules": 33,
+      "expectedBytes": 20092396,
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 33,
+        "meshCount": 298,
+        "triangleCount": 1780144,
+        "geometryBytes": 40321892,
+        "drawCalls": 282,
+        "renderGeometries": 302,
+        "renderTextures": 4,
+        "loadMs": 542.1000000000931,
+        "renderCpuMs": 2.599999999627471,
+        "firstGeometryMs": 266,
+        "fullSystemMs": 1571.2999999998137
+      },
+      "frameIntervalsMs": [
+        16.600000000002183
+      ],
+      "meanFrameIntervalMs": 16.600000000002183,
+      "transfers": [
+        {
+          "file": "muscular-upper-right.glb",
+          "bytes": 269856,
+          "durationMs": 14.399999999906868
+        },
+        {
+          "file": "muscular-upper-left.glb",
+          "bytes": 270076,
+          "durationMs": 21.700000000186265
+        },
+        {
+          "file": "muscular-torso-anterior.glb",
+          "bytes": 1372520,
+          "durationMs": 17.600000000093132
+        },
+        {
+          "file": "muscular-abdomen.glb",
+          "bytes": 1971408,
+          "durationMs": 21.299999999813735
+        },
+        {
+          "file": "muscular-torso-posterior.glb",
+          "bytes": 1862216,
+          "durationMs": 8.5
+        },
+        {
+          "file": "muscular-gluteal-right.glb",
+          "bytes": 134776,
+          "durationMs": 79.39999999990687
+        },
+        {
+          "file": "muscular-gluteal-left.glb",
+          "bytes": 134860,
+          "durationMs": 50
+        },
+        {
+          "file": "muscular-thigh-right.glb",
+          "bytes": 446544,
+          "durationMs": 29.5
+        },
+        {
+          "file": "muscular-thigh-left.glb",
+          "bytes": 446536,
+          "durationMs": 2.6999999997206032
+        },
+        {
+          "file": "muscular-leg-right.glb",
+          "bytes": 291172,
+          "durationMs": 3.3999999999068677
+        },
+        {
+          "file": "muscular-leg-left.glb",
+          "bytes": 291188,
+          "durationMs": 249.8000000002794
+        },
+        {
+          "file": "muscular-forearm-right.glb",
+          "bytes": 113968,
+          "durationMs": 211.59999999962747
+        },
+        {
+          "file": "muscular-forearm-left.glb",
+          "bytes": 114312,
+          "durationMs": 36.60000000009313
+        },
+        {
+          "file": "muscular-neck.glb",
+          "bytes": 1003996,
+          "durationMs": 24.799999999813735
+        },
+        {
+          "file": "muscular-hand-right.glb",
+          "bytes": 73596,
+          "durationMs": 5.2999999998137355
+        },
+        {
+          "file": "muscular-hand-left.glb",
+          "bytes": 73480,
+          "durationMs": 3.6000000000931323
+        },
+        {
+          "file": "muscular-foot-right.glb",
+          "bytes": 273584,
+          "durationMs": 16.600000000093132
+        },
+        {
+          "file": "muscular-foot-left.glb",
+          "bytes": 273776,
+          "durationMs": 3.2000000001862645
+        },
+        {
+          "file": "completion-respiratory-muscles.glb",
+          "bytes": 7183820,
+          "durationMs": 87.10000000009313
+        },
+        {
+          "file": "completion-hip-right.glb",
+          "bytes": 17984,
+          "durationMs": 5.600000000093132
+        },
+        {
+          "file": "completion-hip-left.glb",
+          "bytes": 18040,
+          "durationMs": 25.100000000093132
+        },
+        {
+          "file": "completion-pelvic-floor.glb",
+          "bytes": 370176,
+          "durationMs": 7.100000000093132
+        },
+        {
+          "file": "completion2-lower-right.glb",
+          "bytes": 84072,
+          "durationMs": 6.7000000001862645
+        },
+        {
+          "file": "completion2-lower-left.glb",
+          "bytes": 84100,
+          "durationMs": 14
+        },
+        {
+          "file": "completion2-thorax.glb",
+          "bytes": 137520,
+          "durationMs": 8.799999999813735
+        },
+        {
+          "file": "completion2-back.glb",
+          "bytes": 339156,
+          "durationMs": 6.600000000093132
+        },
+        {
+          "file": "completion2-forearm-right.glb",
+          "bytes": 575768,
+          "durationMs": 7.800000000279397
+        },
+        {
+          "file": "completion2-forearm-left.glb",
+          "bytes": 575760,
+          "durationMs": 6
+        },
+        {
+          "file": "completion2-hand-right.glb",
+          "bytes": 121928,
+          "durationMs": 4.699999999720603
+        },
+        {
+          "file": "completion2-hand-left.glb",
+          "bytes": 121872,
+          "durationMs": 6.199999999720603
+        },
+        {
+          "file": "completion2-neck.glb",
+          "bytes": 951692,
+          "durationMs": 7.5
+        },
+        {
+          "file": "completion3-foot-left.glb",
+          "bytes": 46328,
+          "durationMs": 3.3999999999068677
+        },
+        {
+          "file": "completion3-foot-right.glb",
+          "bytes": 46316,
+          "durationMs": 3.400000000372529
+        }
+      ]
+    },
+    {
+      "name": "multiple-systems",
+      "expectedModules": 57,
+      "expectedBytes": 31571624,
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 57,
+        "meshCount": 694,
+        "triangleCount": 3177114,
+        "geometryBytes": 63034016,
+        "drawCalls": 648,
+        "renderGeometries": 698,
+        "renderTextures": 4,
+        "loadMs": 725.6000000000931,
+        "renderCpuMs": 3.099999999627471,
+        "firstGeometryMs": 307.10000000009313,
+        "fullSystemMs": 4011.5
+      },
+      "frameIntervalsMs": [
+        833.2000000000007,
+        16.700000000000728
+      ],
+      "meanFrameIntervalMs": 424.9500000000007,
+      "transfers": [
+        {
+          "file": "arm-left.glb",
+          "bytes": 345860,
+          "durationMs": 4.199999999720603
+        },
+        {
+          "file": "arm-right.glb",
+          "bytes": 336004,
+          "durationMs": 3.8999999999068677
+        },
+        {
+          "file": "leg-left.glb",
+          "bytes": 230240,
+          "durationMs": 2.6000000000931323
+        },
+        {
+          "file": "leg-right.glb",
+          "bytes": 230668,
+          "durationMs": 2.2000000001862645
+        },
+        {
+          "file": "skull.glb",
+          "bytes": 1002700,
+          "durationMs": 3.3999999999068677
+        },
+        {
+          "file": "spine.glb",
+          "bytes": 579828,
+          "durationMs": 22.199999999720603
+        },
+        {
+          "file": "thorax.glb",
+          "bytes": 1191640,
+          "durationMs": 8.100000000093132
+        },
+        {
+          "file": "completion2-styloid-ligament-left.glb",
+          "bytes": 54264,
+          "durationMs": 2.8999999999068677
+        },
+        {
+          "file": "completion2-styloid-ligament-right.glb",
+          "bytes": 54048,
+          "durationMs": 3.1000000000931323
+        },
+        {
+          "file": "muscular-upper-right.glb",
+          "bytes": 269856,
+          "durationMs": 45
+        },
+        {
+          "file": "muscular-upper-left.glb",
+          "bytes": 270076,
+          "durationMs": 12.899999999906868
+        },
+        {
+          "file": "muscular-torso-anterior.glb",
+          "bytes": 1372520,
+          "durationMs": 4.7999999998137355
+        },
+        {
+          "file": "muscular-abdomen.glb",
+          "bytes": 1971408,
+          "durationMs": 55.10000000009313
+        },
+        {
+          "file": "muscular-torso-posterior.glb",
+          "bytes": 1862216,
+          "durationMs": 64.10000000009313
+        },
+        {
+          "file": "muscular-gluteal-right.glb",
+          "bytes": 134776,
+          "durationMs": 2.7999999998137355
+        },
+        {
+          "file": "muscular-gluteal-left.glb",
+          "bytes": 134860,
+          "durationMs": 14.899999999906868
+        },
+        {
+          "file": "muscular-thigh-right.glb",
+          "bytes": 446544,
+          "durationMs": 13.5
+        },
+        {
+          "file": "muscular-thigh-left.glb",
+          "bytes": 446536,
+          "durationMs": 3.8999999999068677
+        },
+        {
+          "file": "muscular-leg-right.glb",
+          "bytes": 291172,
+          "durationMs": 3.5
+        },
+        {
+          "file": "muscular-leg-left.glb",
+          "bytes": 291188,
+          "durationMs": 3.2000000001862645
+        },
+        {
+          "file": "muscular-forearm-right.glb",
+          "bytes": 113968,
+          "durationMs": 3.3999999999068677
+        },
+        {
+          "file": "muscular-forearm-left.glb",
+          "bytes": 114312,
+          "durationMs": 4.2000000001862645
+        },
+        {
+          "file": "muscular-neck.glb",
+          "bytes": 1003996,
+          "durationMs": 28.699999999720603
+        },
+        {
+          "file": "muscular-hand-right.glb",
+          "bytes": 73596,
+          "durationMs": 3.7000000001862645
+        },
+        {
+          "file": "muscular-hand-left.glb",
+          "bytes": 73480,
+          "durationMs": 4.7000000001862645
+        },
+        {
+          "file": "muscular-foot-right.glb",
+          "bytes": 273584,
+          "durationMs": 3.5
+        },
+        {
+          "file": "muscular-foot-left.glb",
+          "bytes": 273776,
+          "durationMs": 3.1000000000931323
+        },
+        {
+          "file": "completion-respiratory-muscles.glb",
+          "bytes": 7183820,
+          "durationMs": 85.10000000009313
+        },
+        {
+          "file": "completion-hip-right.glb",
+          "bytes": 17984,
+          "durationMs": 3
+        },
+        {
+          "file": "completion-hip-left.glb",
+          "bytes": 18040,
+          "durationMs": 2.3999999999068677
+        },
+        {
+          "file": "completion-pelvic-floor.glb",
+          "bytes": 370176,
+          "durationMs": 4
+        },
+        {
+          "file": "completion2-lower-right.glb",
+          "bytes": 84072,
+          "durationMs": 2.8999999999068677
+        },
+        {
+          "file": "completion2-lower-left.glb",
+          "bytes": 84100,
+          "durationMs": 3.1999999997206032
+        },
+        {
+          "file": "completion2-thorax.glb",
+          "bytes": 137520,
+          "durationMs": 5.300000000279397
+        },
+        {
+          "file": "completion2-back.glb",
+          "bytes": 339156,
+          "durationMs": 8.900000000372529
+        },
+        {
+          "file": "completion2-forearm-right.glb",
+          "bytes": 575768,
+          "durationMs": 74.5
+        },
+        {
+          "file": "completion2-forearm-left.glb",
+          "bytes": 575760,
+          "durationMs": 6.7999999998137355
+        },
+        {
+          "file": "completion2-hand-right.glb",
+          "bytes": 121928,
+          "durationMs": 6.5
+        },
+        {
+          "file": "completion2-hand-left.glb",
+          "bytes": 121872,
+          "durationMs": 2.8999999999068677
+        },
+        {
+          "file": "completion2-neck.glb",
+          "bytes": 951692,
+          "durationMs": 5.5
+        },
+        {
+          "file": "completion3-foot-left.glb",
+          "bytes": 46328,
+          "durationMs": 2.7999999998137355
+        },
+        {
+          "file": "completion3-foot-right.glb",
+          "bytes": 46316,
+          "durationMs": 5.2000000001862645
+        },
+        {
+          "file": "cns.glb",
+          "bytes": 2600372,
+          "durationMs": 27.5
+        },
+        {
+          "file": "cranial.glb",
+          "bytes": 332748,
+          "durationMs": 5.100000000093132
+        },
+        {
+          "file": "lower-left.glb",
+          "bytes": 202496,
+          "durationMs": 5.600000000093132
+        },
+        {
+          "file": "lower-right.glb",
+          "bytes": 202584,
+          "durationMs": 10.5
+        },
+        {
+          "file": "upper-left.glb",
+          "bytes": 238688,
+          "durationMs": 3.6999999997206032
+        },
+        {
+          "file": "upper-right.glb",
+          "bytes": 238684,
+          "durationMs": 5.099999999627471
+        },
+        {
+          "file": "completion-tentorium.glb",
+          "bytes": 175016,
+          "durationMs": 4
+        },
+        {
+          "file": "completion2-ventricles.glb",
+          "bytes": 370260,
+          "durationMs": 6.400000000372529
+        },
+        {
+          "file": "completion2-deep-brain.glb",
+          "bytes": 271632,
+          "durationMs": 7.5
+        },
+        {
+          "file": "ocular.glb",
+          "bytes": 701656,
+          "durationMs": 4.7999999998137355
+        },
+        {
+          "file": "completion-ocular-muscles.glb",
+          "bytes": 381476,
+          "durationMs": 6.5
+        },
+        {
+          "file": "completion-ocular-internal.glb",
+          "bytes": 356076,
+          "durationMs": 9.399999999906868
+        },
+        {
+          "file": "completion2-ocular-interior.glb",
+          "bytes": 1182304,
+          "durationMs": 6.899999999906868
+        },
+        {
+          "file": "completion2-ocular-lacrimal-palpebral.glb",
+          "bytes": 93360,
+          "durationMs": 6.400000000372529
+        },
+        {
+          "file": "completion2-ocular-support.glb",
+          "bytes": 106624,
+          "durationMs": 4.100000000093132
+        }
+      ]
+    },
+    {
+      "name": "full-without-skin",
+      "scenario": "full-without-skin",
+      "environment": "Fresh headless Chromium / ANGLE SwiftShader, HTTP loopback no-store. CPU measures command submission, not GPU completion; frame samples do not establish sustained physical-device FPS.",
+      "expectedModules": 90,
+      "expectedMeshes": 1237,
+      "expectedTriangles": 4752236,
+      "expectedBytes": 46291816,
+      "progress": [],
+      "checks": [
+        "All expected modules, meshes and triangles loaded"
+      ],
+      "errors": [],
+      "badRequests": [],
+      "serverReadyMs": 62,
+      "navigationCompletedMs": 213,
+      "allMeshesObservedWallMs": 7814,
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 90,
+        "meshCount": 1237,
+        "triangleCount": 4752236,
+        "geometryBytes": 91379508,
+        "drawCalls": 1191,
+        "renderGeometries": 1241,
+        "renderTextures": 4,
+        "loadMs": 840.7000000001863,
+        "renderCpuMs": 34.200000000186265,
+        "firstGeometryMs": 1077.7999999998137,
+        "fullSystemMs": 6675
+      },
+      "timing": {
+        "frameIntervalsMs": [
+          950,
+          333.2999999999993
+        ],
+        "buffers": {
+          "created": 3719,
+          "deleted": 0,
+          "live": 3719
+        },
+        "transfers": [
+          {
+            "file": "arm-left.glb",
+            "bytes": 345860,
+            "durationMs": 26.90000000037253
+          },
+          {
+            "file": "arm-right.glb",
+            "bytes": 336004,
+            "durationMs": 41.19999999925494
+          },
+          {
+            "file": "leg-left.glb",
+            "bytes": 230240,
+            "durationMs": 6.800000000745058
+          },
+          {
+            "file": "leg-right.glb",
+            "bytes": 230668,
+            "durationMs": 27.899999999441206
+          },
+          {
+            "file": "skull.glb",
+            "bytes": 1002700,
+            "durationMs": 18.399999999441206
+          },
+          {
+            "file": "spine.glb",
+            "bytes": 579828,
+            "durationMs": 7.099999999627471
+          },
+          {
+            "file": "thorax.glb",
+            "bytes": 1191640,
+            "durationMs": 26.200000000186265
+          },
+          {
+            "file": "completion2-styloid-ligament-left.glb",
+            "bytes": 54264,
+            "durationMs": 5.5
+          },
+          {
+            "file": "completion2-styloid-ligament-right.glb",
+            "bytes": 54048,
+            "durationMs": 4.7999999998137355
+          },
+          {
+            "file": "muscular-upper-right.glb",
+            "bytes": 269856,
+            "durationMs": 4.599999999627471
+          },
+          {
+            "file": "muscular-upper-left.glb",
+            "bytes": 270076,
+            "durationMs": 5
+          },
+          {
+            "file": "muscular-torso-anterior.glb",
+            "bytes": 1372520,
+            "durationMs": 10.399999999441206
+          },
+          {
+            "file": "muscular-abdomen.glb",
+            "bytes": 1971408,
+            "durationMs": 12
+          },
+          {
+            "file": "muscular-torso-posterior.glb",
+            "bytes": 1862216,
+            "durationMs": 18.100000000558794
+          },
+          {
+            "file": "muscular-gluteal-right.glb",
+            "bytes": 134776,
+            "durationMs": 8.700000000186265
+          },
+          {
+            "file": "muscular-gluteal-left.glb",
+            "bytes": 134860,
+            "durationMs": 7.400000000372529
+          },
+          {
+            "file": "muscular-thigh-right.glb",
+            "bytes": 446544,
+            "durationMs": 5.7000000001862645
+          },
+          {
+            "file": "muscular-thigh-left.glb",
+            "bytes": 446536,
+            "durationMs": 13
+          },
+          {
+            "file": "muscular-leg-right.glb",
+            "bytes": 291172,
+            "durationMs": 6.7000000001862645
+          },
+          {
+            "file": "muscular-leg-left.glb",
+            "bytes": 291188,
+            "durationMs": 5.1000000005587935
+          },
+          {
+            "file": "muscular-forearm-right.glb",
+            "bytes": 113968,
+            "durationMs": 5.099999999627471
+          },
+          {
+            "file": "muscular-forearm-left.glb",
+            "bytes": 114312,
+            "durationMs": 5.099999999627471
+          },
+          {
+            "file": "muscular-neck.glb",
+            "bytes": 1003996,
+            "durationMs": 9.600000000558794
+          },
+          {
+            "file": "muscular-hand-right.glb",
+            "bytes": 73596,
+            "durationMs": 27.09999999962747
+          },
+          {
+            "file": "muscular-hand-left.glb",
+            "bytes": 73480,
+            "durationMs": 5.7000000001862645
+          },
+          {
+            "file": "muscular-foot-right.glb",
+            "bytes": 273584,
+            "durationMs": 5.7000000001862645
+          },
+          {
+            "file": "muscular-foot-left.glb",
+            "bytes": 273776,
+            "durationMs": 7.7000000001862645
+          },
+          {
+            "file": "completion-respiratory-muscles.glb",
+            "bytes": 7183820,
+            "durationMs": 108.90000000037253
+          },
+          {
+            "file": "completion-hip-right.glb",
+            "bytes": 17984,
+            "durationMs": 6.1000000005587935
+          },
+          {
+            "file": "completion-hip-left.glb",
+            "bytes": 18040,
+            "durationMs": 6.1000000005587935
+          },
+          {
+            "file": "completion-pelvic-floor.glb",
+            "bytes": 370176,
+            "durationMs": 6.099999999627471
+          },
+          {
+            "file": "completion2-lower-right.glb",
+            "bytes": 84072,
+            "durationMs": 5.699999999254942
+          },
+          {
+            "file": "completion2-lower-left.glb",
+            "bytes": 84100,
+            "durationMs": 6
+          },
+          {
+            "file": "completion2-thorax.glb",
+            "bytes": 137520,
+            "durationMs": 5.6000000005587935
+          },
+          {
+            "file": "completion2-back.glb",
+            "bytes": 339156,
+            "durationMs": 20.59999999962747
+          },
+          {
+            "file": "completion2-forearm-right.glb",
+            "bytes": 575768,
+            "durationMs": 8.099999999627471
+          },
+          {
+            "file": "completion2-forearm-left.glb",
+            "bytes": 575760,
+            "durationMs": 7.2999999998137355
+          },
+          {
+            "file": "completion2-hand-right.glb",
+            "bytes": 121928,
+            "durationMs": 6.2000000001862645
+          },
+          {
+            "file": "completion2-hand-left.glb",
+            "bytes": 121872,
+            "durationMs": 3.3999999994412065
+          },
+          {
+            "file": "completion2-neck.glb",
+            "bytes": 951692,
+            "durationMs": 9
+          },
+          {
+            "file": "completion3-foot-left.glb",
+            "bytes": 46328,
+            "durationMs": 4.6000000005587935
+          },
+          {
+            "file": "completion3-foot-right.glb",
+            "bytes": 46316,
+            "durationMs": 4.099999999627471
+          },
+          {
+            "file": "cns.glb",
+            "bytes": 2600372,
+            "durationMs": 27.40000000037253
+          },
+          {
+            "file": "cranial.glb",
+            "bytes": 332748,
+            "durationMs": 29.699999999254942
+          },
+          {
+            "file": "lower-left.glb",
+            "bytes": 202496,
+            "durationMs": 8
+          },
+          {
+            "file": "lower-right.glb",
+            "bytes": 202584,
+            "durationMs": 5.099999999627471
+          },
+          {
+            "file": "upper-left.glb",
+            "bytes": 238688,
+            "durationMs": 5.1000000005587935
+          },
+          {
+            "file": "upper-right.glb",
+            "bytes": 238684,
+            "durationMs": 5
+          },
+          {
+            "file": "completion-tentorium.glb",
+            "bytes": 175016,
+            "durationMs": 5
+          },
+          {
+            "file": "completion2-ventricles.glb",
+            "bytes": 370260,
+            "durationMs": 19.700000000186265
+          },
+          {
+            "file": "completion2-deep-brain.glb",
+            "bytes": 271632,
+            "durationMs": 4.7000000001862645
+          },
+          {
+            "file": "ocular.glb",
+            "bytes": 701656,
+            "durationMs": 16.299999999813735
+          },
+          {
+            "file": "completion-ocular-muscles.glb",
+            "bytes": 381476,
+            "durationMs": 5.800000000745058
+          },
+          {
+            "file": "completion-ocular-internal.glb",
+            "bytes": 356076,
+            "durationMs": 6.599999999627471
+          },
+          {
+            "file": "completion2-ocular-interior.glb",
+            "bytes": 1182304,
+            "durationMs": 25
+          },
+          {
+            "file": "completion2-ocular-lacrimal-palpebral.glb",
+            "bytes": 93360,
+            "durationMs": 4.7999999998137355
+          },
+          {
+            "file": "completion2-ocular-support.glb",
+            "bytes": 106624,
+            "durationMs": 9.600000000558794
+          },
+          {
+            "file": "head-neck.glb",
+            "bytes": 68156,
+            "durationMs": 24.90000000037253
+          },
+          {
+            "file": "heart.glb",
+            "bytes": 1047128,
+            "durationMs": 13
+          },
+          {
+            "file": "lower-left.glb",
+            "bytes": 1150400,
+            "durationMs": 10.800000000745058
+          },
+          {
+            "file": "lower-right.glb",
+            "bytes": 1140020,
+            "durationMs": 8.099999999627471
+          },
+          {
+            "file": "trunk.glb",
+            "bytes": 927548,
+            "durationMs": 25.09999999962747
+          },
+          {
+            "file": "upper-left.glb",
+            "bytes": 663612,
+            "durationMs": 8.899999999441206
+          },
+          {
+            "file": "upper-right.glb",
+            "bytes": 652416,
+            "durationMs": 8.200000000186265
+          },
+          {
+            "file": "completion-femoral-branches-right.glb",
+            "bytes": 63572,
+            "durationMs": 6.099999999627471
+          },
+          {
+            "file": "completion-femoral-branches-left.glb",
+            "bytes": 63152,
+            "durationMs": 5.2999999998137355
+          },
+          {
+            "file": "completion2-papillary.glb",
+            "bytes": 47796,
+            "durationMs": 5.1000000005587935
+          },
+          {
+            "file": "completion2-coronary-arteries.glb",
+            "bytes": 85504,
+            "durationMs": 11.599999999627471
+          },
+          {
+            "file": "completion2-coronary-veins.glb",
+            "bytes": 85772,
+            "durationMs": 5.900000000372529
+          },
+          {
+            "file": "completion2-cerebral-arteries.glb",
+            "bytes": 14588,
+            "durationMs": 6.7000000001862645
+          },
+          {
+            "file": "completion2-bronchial-arteries.glb",
+            "bytes": 29460,
+            "durationMs": 6
+          },
+          {
+            "file": "larynx.glb",
+            "bytes": 107936,
+            "durationMs": 6.2000000001862645
+          },
+          {
+            "file": "airway.glb",
+            "bytes": 733700,
+            "durationMs": 11.599999999627471
+          },
+          {
+            "file": "lungs.glb",
+            "bytes": 1488376,
+            "durationMs": 13.399999999441206
+          },
+          {
+            "file": "completion2-larynx-soft.glb",
+            "bytes": 1206880,
+            "durationMs": 8
+          },
+          {
+            "file": "completion2-pharynx-soft.glb",
+            "bytes": 1315912,
+            "durationMs": 12
+          },
+          {
+            "file": "upper.glb",
+            "bytes": 26860,
+            "durationMs": 4.2000000001862645
+          },
+          {
+            "file": "stomach-accessory.glb",
+            "bytes": 1261644,
+            "durationMs": 8.299999999813735
+          },
+          {
+            "file": "small-intestine.glb",
+            "bytes": 212852,
+            "durationMs": 4.8999999994412065
+          },
+          {
+            "file": "large-intestine.glb",
+            "bytes": 139840,
+            "durationMs": 5.900000000372529
+          },
+          {
+            "file": "completion-dentition.glb",
+            "bytes": 350100,
+            "durationMs": 122
+          },
+          {
+            "file": "completion-anal-sphincter.glb",
+            "bytes": 11480,
+            "durationMs": 101.20000000018626
+          },
+          {
+            "file": "completion2-oral.glb",
+            "bytes": 667852,
+            "durationMs": 8.600000000558794
+          },
+          {
+            "file": "completion2-mesentery.glb",
+            "bytes": 14820,
+            "durationMs": 3.7999999998137355
+          },
+          {
+            "file": "organs.glb",
+            "bytes": 94872,
+            "durationMs": 11.400000000372529
+          },
+          {
+            "file": "glands.glb",
+            "bytes": 69408,
+            "durationMs": 9.599999999627471
+          },
+          {
+            "file": "thyroid43.glb",
+            "bytes": 398320,
+            "durationMs": 9.400000000372529
+          },
+          {
+            "file": "central.glb",
+            "bytes": 35160,
+            "durationMs": 5.7999999998137355
+          },
+          {
+            "file": "male.glb",
+            "bytes": 93996,
+            "durationMs": 5
+          },
+          {
+            "file": "completion2-hair.glb",
+            "bytes": 451060,
+            "durationMs": 6.900000000372529
+          }
+        ]
+      },
+      "measurementComplete": true,
+      "success": true
+    },
+    {
+      "name": "full-with-skin",
+      "scenario": "full-with-skin",
+      "environment": "Fresh headless Chromium / ANGLE SwiftShader, HTTP loopback no-store. CPU measures command submission, not GPU completion; frame samples do not establish sustained physical-device FPS.",
+      "expectedModules": 91,
+      "expectedMeshes": 1238,
+      "expectedTriangles": 4955618,
+      "expectedBytes": 47923320,
+      "progress": [],
+      "checks": [
+        "All expected modules, meshes and triangles loaded"
+      ],
+      "errors": [],
+      "badRequests": [],
+      "serverReadyMs": 52,
+      "navigationCompletedMs": 187,
+      "allMeshesObservedWallMs": 8215,
+      "metrics": {
+        "selectedId": 0,
+        "contextIds": 0,
+        "loadedAssets": 91,
+        "meshCount": 1238,
+        "triangleCount": 4955618,
+        "geometryBytes": 95869432,
+        "drawCalls": 1192,
+        "renderGeometries": 1242,
+        "renderTextures": 4,
+        "loadMs": 612.5999999996275,
+        "renderCpuMs": 11.299999999813735,
+        "firstGeometryMs": 647.3999999994412,
+        "fullSystemMs": 7084.299999999814
+      },
+      "timing": {
+        "frameIntervalsMs": [
+          850.0660000000007,
+          816.5339999999997
+        ],
+        "buffers": {
+          "created": 3722,
+          "deleted": 0,
+          "live": 3722
+        },
+        "transfers": [
+          {
+            "file": "arm-left.glb",
+            "bytes": 345860,
+            "durationMs": 52.59999999962747
+          },
+          {
+            "file": "arm-right.glb",
+            "bytes": 336004,
+            "durationMs": 52
+          },
+          {
+            "file": "leg-left.glb",
+            "bytes": 230240,
+            "durationMs": 9.700000000186265
+          },
+          {
+            "file": "leg-right.glb",
+            "bytes": 230668,
+            "durationMs": 7.099999999627471
+          },
+          {
+            "file": "skull.glb",
+            "bytes": 1002700,
+            "durationMs": 11.5
+          },
+          {
+            "file": "spine.glb",
+            "bytes": 579828,
+            "durationMs": 7.699999999254942
+          },
+          {
+            "file": "thorax.glb",
+            "bytes": 1191640,
+            "durationMs": 8.899999999441206
+          },
+          {
+            "file": "completion2-styloid-ligament-left.glb",
+            "bytes": 54264,
+            "durationMs": 6
+          },
+          {
+            "file": "completion2-styloid-ligament-right.glb",
+            "bytes": 54048,
+            "durationMs": 7.1000000005587935
+          },
+          {
+            "file": "muscular-upper-right.glb",
+            "bytes": 269856,
+            "durationMs": 20.899999999441206
+          },
+          {
+            "file": "muscular-upper-left.glb",
+            "bytes": 270076,
+            "durationMs": 6.2999999998137355
+          },
+          {
+            "file": "muscular-torso-anterior.glb",
+            "bytes": 1372520,
+            "durationMs": 10.800000000745058
+          },
+          {
+            "file": "muscular-abdomen.glb",
+            "bytes": 1971408,
+            "durationMs": 19.799999999813735
+          },
+          {
+            "file": "muscular-torso-posterior.glb",
+            "bytes": 1862216,
+            "durationMs": 10.899999999441206
+          },
+          {
+            "file": "muscular-gluteal-right.glb",
+            "bytes": 134776,
+            "durationMs": 4.599999999627471
+          },
+          {
+            "file": "muscular-gluteal-left.glb",
+            "bytes": 134860,
+            "durationMs": 4.599999999627471
+          },
+          {
+            "file": "muscular-thigh-right.glb",
+            "bytes": 446544,
+            "durationMs": 5.599999999627471
+          },
+          {
+            "file": "muscular-thigh-left.glb",
+            "bytes": 446536,
+            "durationMs": 5.7000000001862645
+          },
+          {
+            "file": "muscular-leg-right.glb",
+            "bytes": 291172,
+            "durationMs": 17.100000000558794
+          },
+          {
+            "file": "muscular-leg-left.glb",
+            "bytes": 291188,
+            "durationMs": 5.2999999998137355
+          },
+          {
+            "file": "muscular-forearm-right.glb",
+            "bytes": 113968,
+            "durationMs": 3.900000000372529
+          },
+          {
+            "file": "muscular-forearm-left.glb",
+            "bytes": 114312,
+            "durationMs": 4.2000000001862645
+          },
+          {
+            "file": "muscular-neck.glb",
+            "bytes": 1003996,
+            "durationMs": 7.400000000372529
+          },
+          {
+            "file": "muscular-hand-right.glb",
+            "bytes": 73596,
+            "durationMs": 4.599999999627471
+          },
+          {
+            "file": "muscular-hand-left.glb",
+            "bytes": 73480,
+            "durationMs": 4.7999999998137355
+          },
+          {
+            "file": "muscular-foot-right.glb",
+            "bytes": 273584,
+            "durationMs": 5.5
+          },
+          {
+            "file": "muscular-foot-left.glb",
+            "bytes": 273776,
+            "durationMs": 4.6000000005587935
+          },
+          {
+            "file": "completion-respiratory-muscles.glb",
+            "bytes": 7183820,
+            "durationMs": 89.09999999962747
+          },
+          {
+            "file": "completion-hip-right.glb",
+            "bytes": 17984,
+            "durationMs": 6.2000000001862645
+          },
+          {
+            "file": "completion-hip-left.glb",
+            "bytes": 18040,
+            "durationMs": 5.3999999994412065
+          },
+          {
+            "file": "completion-pelvic-floor.glb",
+            "bytes": 370176,
+            "durationMs": 4.7999999998137355
+          },
+          {
+            "file": "completion2-lower-right.glb",
+            "bytes": 84072,
+            "durationMs": 5.2000000001862645
+          },
+          {
+            "file": "completion2-lower-left.glb",
+            "bytes": 84100,
+            "durationMs": 7.5
+          },
+          {
+            "file": "completion2-thorax.glb",
+            "bytes": 137520,
+            "durationMs": 4.599999999627471
+          },
+          {
+            "file": "completion2-back.glb",
+            "bytes": 339156,
+            "durationMs": 4.3999999994412065
+          },
+          {
+            "file": "completion2-forearm-right.glb",
+            "bytes": 575768,
+            "durationMs": 7.599999999627471
+          },
+          {
+            "file": "completion2-forearm-left.glb",
+            "bytes": 575760,
+            "durationMs": 6.3999999994412065
+          },
+          {
+            "file": "completion2-hand-right.glb",
+            "bytes": 121928,
+            "durationMs": 4.7999999998137355
+          },
+          {
+            "file": "completion2-hand-left.glb",
+            "bytes": 121872,
+            "durationMs": 5.2999999998137355
+          },
+          {
+            "file": "completion2-neck.glb",
+            "bytes": 951692,
+            "durationMs": 7.300000000745058
+          },
+          {
+            "file": "completion3-foot-left.glb",
+            "bytes": 46328,
+            "durationMs": 4.599999999627471
+          },
+          {
+            "file": "completion3-foot-right.glb",
+            "bytes": 46316,
+            "durationMs": 4.599999999627471
+          },
+          {
+            "file": "cns.glb",
+            "bytes": 2600372,
+            "durationMs": 35.200000000186265
+          },
+          {
+            "file": "cranial.glb",
+            "bytes": 332748,
+            "durationMs": 6.199999999254942
+          },
+          {
+            "file": "lower-left.glb",
+            "bytes": 202496,
+            "durationMs": 4.900000000372529
+          },
+          {
+            "file": "lower-right.glb",
+            "bytes": 202584,
+            "durationMs": 4.5
+          },
+          {
+            "file": "upper-left.glb",
+            "bytes": 238688,
+            "durationMs": 16.799999999813735
+          },
+          {
+            "file": "upper-right.glb",
+            "bytes": 238684,
+            "durationMs": 11.300000000745058
+          },
+          {
+            "file": "completion-tentorium.glb",
+            "bytes": 175016,
+            "durationMs": 4.5
+          },
+          {
+            "file": "completion2-ventricles.glb",
+            "bytes": 370260,
+            "durationMs": 35.200000000186265
+          },
+          {
+            "file": "completion2-deep-brain.glb",
+            "bytes": 271632,
+            "durationMs": 21.09999999962747
+          },
+          {
+            "file": "ocular.glb",
+            "bytes": 701656,
+            "durationMs": 8.400000000372529
+          },
+          {
+            "file": "completion-ocular-muscles.glb",
+            "bytes": 381476,
+            "durationMs": 8
+          },
+          {
+            "file": "completion-ocular-internal.glb",
+            "bytes": 356076,
+            "durationMs": 6.5
+          },
+          {
+            "file": "completion2-ocular-interior.glb",
+            "bytes": 1182304,
+            "durationMs": 8.199999999254942
+          },
+          {
+            "file": "completion2-ocular-lacrimal-palpebral.glb",
+            "bytes": 93360,
+            "durationMs": 4.6000000005587935
+          },
+          {
+            "file": "completion2-ocular-support.glb",
+            "bytes": 106624,
+            "durationMs": 4.2999999998137355
+          },
+          {
+            "file": "head-neck.glb",
+            "bytes": 68156,
+            "durationMs": 35.60000000055879
+          },
+          {
+            "file": "heart.glb",
+            "bytes": 1047128,
+            "durationMs": 53.60000000055879
+          },
+          {
+            "file": "lower-left.glb",
+            "bytes": 1150400,
+            "durationMs": 9.300000000745058
+          },
+          {
+            "file": "lower-right.glb",
+            "bytes": 1140020,
+            "durationMs": 8.400000000372529
+          },
+          {
+            "file": "trunk.glb",
+            "bytes": 927548,
+            "durationMs": 22.5
+          },
+          {
+            "file": "upper-left.glb",
+            "bytes": 663612,
+            "durationMs": 22.90000000037253
+          },
+          {
+            "file": "upper-right.glb",
+            "bytes": 652416,
+            "durationMs": 10.200000000186265
+          },
+          {
+            "file": "completion-femoral-branches-right.glb",
+            "bytes": 63572,
+            "durationMs": 155.09999999962747
+          },
+          {
+            "file": "completion-femoral-branches-left.glb",
+            "bytes": 63152,
+            "durationMs": 8
+          },
+          {
+            "file": "completion2-papillary.glb",
+            "bytes": 47796,
+            "durationMs": 14.200000000186265
+          },
+          {
+            "file": "completion2-coronary-arteries.glb",
+            "bytes": 85504,
+            "durationMs": 10.399999999441206
+          },
+          {
+            "file": "completion2-coronary-veins.glb",
+            "bytes": 85772,
+            "durationMs": 7.599999999627471
+          },
+          {
+            "file": "completion2-cerebral-arteries.glb",
+            "bytes": 14588,
+            "durationMs": 8.100000000558794
+          },
+          {
+            "file": "completion2-bronchial-arteries.glb",
+            "bytes": 29460,
+            "durationMs": 7.5
+          },
+          {
+            "file": "larynx.glb",
+            "bytes": 107936,
+            "durationMs": 9.400000000372529
+          },
+          {
+            "file": "airway.glb",
+            "bytes": 733700,
+            "durationMs": 9.200000000186265
+          },
+          {
+            "file": "lungs.glb",
+            "bytes": 1488376,
+            "durationMs": 33.60000000055879
+          },
+          {
+            "file": "completion2-larynx-soft.glb",
+            "bytes": 1206880,
+            "durationMs": 7.5
+          },
+          {
+            "file": "completion2-pharynx-soft.glb",
+            "bytes": 1315912,
+            "durationMs": 19.399999999441206
+          },
+          {
+            "file": "upper.glb",
+            "bytes": 26860,
+            "durationMs": 4.2000000001862645
+          },
+          {
+            "file": "stomach-accessory.glb",
+            "bytes": 1261644,
+            "durationMs": 10.899999999441206
+          },
+          {
+            "file": "small-intestine.glb",
+            "bytes": 212852,
+            "durationMs": 6.3999999994412065
+          },
+          {
+            "file": "large-intestine.glb",
+            "bytes": 139840,
+            "durationMs": 13.200000000186265
+          },
+          {
+            "file": "completion-dentition.glb",
+            "bytes": 350100,
+            "durationMs": 7.900000000372529
+          },
+          {
+            "file": "completion-anal-sphincter.glb",
+            "bytes": 11480,
+            "durationMs": 5.6000000005587935
+          },
+          {
+            "file": "completion2-oral.glb",
+            "bytes": 667852,
+            "durationMs": 10.400000000372529
+          },
+          {
+            "file": "completion2-mesentery.glb",
+            "bytes": 14820,
+            "durationMs": 5.800000000745058
+          },
+          {
+            "file": "organs.glb",
+            "bytes": 94872,
+            "durationMs": 8.599999999627471
+          },
+          {
+            "file": "glands.glb",
+            "bytes": 69408,
+            "durationMs": 5.6000000005587935
+          },
+          {
+            "file": "thyroid43.glb",
+            "bytes": 398320,
+            "durationMs": 4.8999999994412065
+          },
+          {
+            "file": "central.glb",
+            "bytes": 35160,
+            "durationMs": 4.099999999627471
+          },
+          {
+            "file": "male.glb",
+            "bytes": 93996,
+            "durationMs": 4.6000000005587935
+          },
+          {
+            "file": "skin.glb",
+            "bytes": 1631504,
+            "durationMs": 9
+          },
+          {
+            "file": "completion2-hair.glb",
+            "bytes": 451060,
+            "durationMs": 5.199999999254942
+          }
+        ]
+      },
+      "measurementComplete": true,
+      "success": true
+    }
+  ],
+  "attempts": [
+    {
+      "file": "browser/qa-timeout-preserved.json",
+      "report": {
+        "date": "2026-10-11T22:24:19.803Z",
+        "wave": "wave3",
+        "environment": "Headless Chromium / ANGLE SwiftShader; loopback no-store; not physical-device FPS",
+        "checks": [
+          "Every new owner: source-ID search, lazy load, selection, isolate, hide, restore and card without remount",
+          "All explosion modes return to exact rest"
+        ],
+        "captures": [
+          {
+            "file": "01-edb-left-context.png",
+            "selection": "Extensor corto de los dedos del pie izquierdo",
+            "visible": [
+              "bp3d:FMA24498",
+              "bp3d:FMA51145",
+              "zanatomy:extensor-digitorum-brevis-l"
+            ]
+          },
+          {
+            "file": "02-edb-right-context.png",
+            "selection": "Extensor corto de los dedos del pie derecho",
+            "visible": [
+              "bp3d:FMA24497",
+              "bp3d:FMA51144",
+              "zanatomy:extensor-digitorum-brevis-r"
+            ]
+          },
+          {
+            "file": "03-interossei-left-context.png",
+            "selection": "Interóseos dorsales del pie izquierdo · conjunto",
+            "visible": [
+              "bp3d:FMA24498",
+              "bp3d:FMA51145",
+              "zanatomy:dorsal-interossei-foot-l"
+            ]
+          },
+          {
+            "file": "04-interossei-right-context.png",
+            "selection": "Interóseos dorsales del pie derecho · conjunto",
+            "visible": [
+              "bp3d:FMA24497",
+              "bp3d:FMA51144",
+              "zanatomy:dorsal-interossei-foot-r"
+            ]
+          },
+          {
+            "file": "16-detail-isolated.png",
+            "selection": "Interóseos dorsales del pie izquierdo · conjunto",
+            "visible": [
+              "zanatomy:dorsal-interossei-foot-l"
+            ]
+          }
+        ],
+        "performance": [
+          {
+            "name": "first-load-default",
+            "expectedModules": 51,
+            "expectedBytes": 28164276,
+            "metrics": {
+              "selectedId": 0,
+              "contextIds": 0,
+              "loadedAssets": 51,
+              "meshCount": 936,
+              "triangleCount": 3036790,
+              "geometryBytes": 53567064,
+              "drawCalls": 892,
+              "renderGeometries": 940,
+              "renderTextures": 4,
+              "loadMs": 838.3999999999069,
+              "renderCpuMs": 4.100000000093132,
+              "firstGeometryMs": 353,
+              "fullSystemMs": 2307.6999999997206
+            },
+            "frameIntervalsMs": [
+              16.634000000000015
+            ],
+            "meanFrameIntervalMs": 16.634000000000015,
+            "transfers": [
+              {
+                "file": "arm-left.glb",
+                "bytes": 345860,
+                "durationMs": 4.800000000279397
+              },
+              {
+                "file": "arm-right.glb",
+                "bytes": 336004,
+                "durationMs": 7.199999999720603
+              },
+              {
+                "file": "leg-left.glb",
+                "bytes": 230240,
+                "durationMs": 3.3999999999068677
+              },
+              {
+                "file": "leg-right.glb",
+                "bytes": 230668,
+                "durationMs": 2.8999999999068677
+              },
+              {
+                "file": "skull.glb",
+                "bytes": 1002700,
+                "durationMs": 10.299999999813735
+              },
+              {
+                "file": "spine.glb",
+                "bytes": 579828,
+                "durationMs": 11.100000000093132
+              },
+              {
+                "file": "thorax.glb",
+                "bytes": 1191640,
+                "durationMs": 4.400000000372529
+              },
+              {
+                "file": "muscular-upper-right.glb",
+                "bytes": 269856,
+                "durationMs": 3.2999999998137355
+              },
+              {
+                "file": "muscular-upper-left.glb",
+                "bytes": 270076,
+                "durationMs": 2.8000000002793968
+              },
+              {
+                "file": "muscular-torso-anterior.glb",
+                "bytes": 1372520,
+                "durationMs": 18.5
+              },
+              {
+                "file": "muscular-abdomen.glb",
+                "bytes": 1971408,
+                "durationMs": 81
+              },
+              {
+                "file": "muscular-torso-posterior.glb",
+                "bytes": 1862216,
+                "durationMs": 116.60000000009313
+              },
+              {
+                "file": "muscular-gluteal-right.glb",
+                "bytes": 134776,
+                "durationMs": 85.29999999981374
+              },
+              {
+                "file": "muscular-gluteal-left.glb",
+                "bytes": 134860,
+                "durationMs": 84
+              },
+              {
+                "file": "muscular-thigh-right.glb",
+                "bytes": 446544,
+                "durationMs": 115.70000000018626
+              },
+              {
+                "file": "muscular-thigh-left.glb",
+                "bytes": 446536,
+                "durationMs": 51.5
+              },
+              {
+                "file": "muscular-leg-right.glb",
+                "bytes": 291172,
+                "durationMs": 45.299999999813735
+              },
+              {
+                "file": "muscular-leg-left.glb",
+                "bytes": 291188,
+                "durationMs": 4.2000000001862645
+              },
+              {
+                "file": "muscular-forearm-right.glb",
+                "bytes": 113968,
+                "durationMs": 5.5
+              },
+              {
+                "file": "muscular-forearm-left.glb",
+                "bytes": 114312,
+                "durationMs": 5.2999999998137355
+              },
+              {
+                "file": "muscular-neck.glb",
+                "bytes": 1003996,
+                "durationMs": 8.700000000186265
+              },
+              {
+                "file": "muscular-hand-right.glb",
+                "bytes": 73596,
+                "durationMs": 8.300000000279397
+              },
+              {
+                "file": "muscular-hand-left.glb",
+                "bytes": 73480,
+                "durationMs": 6.300000000279397
+              },
+              {
+                "file": "muscular-foot-right.glb",
+                "bytes": 273584,
+                "durationMs": 3.5
+              },
+              {
+                "file": "muscular-foot-left.glb",
+                "bytes": 273776,
+                "durationMs": 3.2999999998137355
+              },
+              {
+                "file": "cns.glb",
+                "bytes": 2600372,
+                "durationMs": 52.5
+              },
+              {
+                "file": "cranial.glb",
+                "bytes": 332748,
+                "durationMs": 14.200000000186265
+              },
+              {
+                "file": "lower-left.glb",
+                "bytes": 202496,
+                "durationMs": 4.399999999906868
+              },
+              {
+                "file": "lower-right.glb",
+                "bytes": 202584,
+                "durationMs": 7.5
+              },
+              {
+                "file": "upper-left.glb",
+                "bytes": 238688,
+                "durationMs": 3.2999999998137355
+              },
+              {
+                "file": "upper-right.glb",
+                "bytes": 238684,
+                "durationMs": 5.399999999906868
+              },
+              {
+                "file": "ocular.glb",
+                "bytes": 701656,
+                "durationMs": 6.2000000001862645
+              },
+              {
+                "file": "head-neck.glb",
+                "bytes": 68156,
+                "durationMs": 5.7000000001862645
+              },
+              {
+                "file": "heart.glb",
+                "bytes": 1047128,
+                "durationMs": 8.199999999720603
+              },
+              {
+                "file": "lower-left.glb",
+                "bytes": 1150400,
+                "durationMs": 10.399999999906868
+              },
+              {
+                "file": "lower-right.glb",
+                "bytes": 1140020,
+                "durationMs": 9.700000000186265
+              },
+              {
+                "file": "trunk.glb",
+                "bytes": 927548,
+                "durationMs": 33.09999999962747
+              },
+              {
+                "file": "upper-left.glb",
+                "bytes": 663612,
+                "durationMs": 20.300000000279397
+              },
+              {
+                "file": "upper-right.glb",
+                "bytes": 652416,
+                "durationMs": 6.100000000093132
+              },
+              {
+                "file": "larynx.glb",
+                "bytes": 107936,
+                "durationMs": 3.6000000000931323
+              },
+              {
+                "file": "airway.glb",
+                "bytes": 733700,
+                "durationMs": 10
+              },
+              {
+                "file": "lungs.glb",
+                "bytes": 1488376,
+                "durationMs": 10.700000000186265
+              },
+              {
+                "file": "upper.glb",
+                "bytes": 26860,
+                "durationMs": 3.3999999999068677
+              },
+              {
+                "file": "stomach-accessory.glb",
+                "bytes": 1261644,
+                "durationMs": 5.599999999627471
+              },
+              {
+                "file": "small-intestine.glb",
+                "bytes": 212852,
+                "durationMs": 22.200000000186265
+              },
+              {
+                "file": "large-intestine.glb",
+                "bytes": 139840,
+                "durationMs": 14.100000000093132
+              },
+              {
+                "file": "organs.glb",
+                "bytes": 94872,
+                "durationMs": 3.6000000000931323
+              },
+              {
+                "file": "glands.glb",
+                "bytes": 69408,
+                "durationMs": 2.8999999999068677
+              },
+              {
+                "file": "thyroid43.glb",
+                "bytes": 398320,
+                "durationMs": 6.599999999627471
+              },
+              {
+                "file": "central.glb",
+                "bytes": 35160,
+                "durationMs": 3.7000000001862645
+              },
+              {
+                "file": "male.glb",
+                "bytes": 93996,
+                "durationMs": 3.1999999997206032
+              }
+            ]
+          },
+          {
+            "name": "isolated-muscular-with-additions",
+            "expectedModules": 33,
+            "expectedBytes": 20092396,
+            "metrics": {
+              "selectedId": 0,
+              "contextIds": 0,
+              "loadedAssets": 33,
+              "meshCount": 298,
+              "triangleCount": 1780144,
+              "geometryBytes": 40321892,
+              "drawCalls": 282,
+              "renderGeometries": 302,
+              "renderTextures": 4,
+              "loadMs": 542.1000000000931,
+              "renderCpuMs": 2.599999999627471,
+              "firstGeometryMs": 266,
+              "fullSystemMs": 1571.2999999998137
+            },
+            "frameIntervalsMs": [
+              16.600000000002183
+            ],
+            "meanFrameIntervalMs": 16.600000000002183,
+            "transfers": [
+              {
+                "file": "muscular-upper-right.glb",
+                "bytes": 269856,
+                "durationMs": 14.399999999906868
+              },
+              {
+                "file": "muscular-upper-left.glb",
+                "bytes": 270076,
+                "durationMs": 21.700000000186265
+              },
+              {
+                "file": "muscular-torso-anterior.glb",
+                "bytes": 1372520,
+                "durationMs": 17.600000000093132
+              },
+              {
+                "file": "muscular-abdomen.glb",
+                "bytes": 1971408,
+                "durationMs": 21.299999999813735
+              },
+              {
+                "file": "muscular-torso-posterior.glb",
+                "bytes": 1862216,
+                "durationMs": 8.5
+              },
+              {
+                "file": "muscular-gluteal-right.glb",
+                "bytes": 134776,
+                "durationMs": 79.39999999990687
+              },
+              {
+                "file": "muscular-gluteal-left.glb",
+                "bytes": 134860,
+                "durationMs": 50
+              },
+              {
+                "file": "muscular-thigh-right.glb",
+                "bytes": 446544,
+                "durationMs": 29.5
+              },
+              {
+                "file": "muscular-thigh-left.glb",
+                "bytes": 446536,
+                "durationMs": 2.6999999997206032
+              },
+              {
+                "file": "muscular-leg-right.glb",
+                "bytes": 291172,
+                "durationMs": 3.3999999999068677
+              },
+              {
+                "file": "muscular-leg-left.glb",
+                "bytes": 291188,
+                "durationMs": 249.8000000002794
+              },
+              {
+                "file": "muscular-forearm-right.glb",
+                "bytes": 113968,
+                "durationMs": 211.59999999962747
+              },
+              {
+                "file": "muscular-forearm-left.glb",
+                "bytes": 114312,
+                "durationMs": 36.60000000009313
+              },
+              {
+                "file": "muscular-neck.glb",
+                "bytes": 1003996,
+                "durationMs": 24.799999999813735
+              },
+              {
+                "file": "muscular-hand-right.glb",
+                "bytes": 73596,
+                "durationMs": 5.2999999998137355
+              },
+              {
+                "file": "muscular-hand-left.glb",
+                "bytes": 73480,
+                "durationMs": 3.6000000000931323
+              },
+              {
+                "file": "muscular-foot-right.glb",
+                "bytes": 273584,
+                "durationMs": 16.600000000093132
+              },
+              {
+                "file": "muscular-foot-left.glb",
+                "bytes": 273776,
+                "durationMs": 3.2000000001862645
+              },
+              {
+                "file": "completion-respiratory-muscles.glb",
+                "bytes": 7183820,
+                "durationMs": 87.10000000009313
+              },
+              {
+                "file": "completion-hip-right.glb",
+                "bytes": 17984,
+                "durationMs": 5.600000000093132
+              },
+              {
+                "file": "completion-hip-left.glb",
+                "bytes": 18040,
+                "durationMs": 25.100000000093132
+              },
+              {
+                "file": "completion-pelvic-floor.glb",
+                "bytes": 370176,
+                "durationMs": 7.100000000093132
+              },
+              {
+                "file": "completion2-lower-right.glb",
+                "bytes": 84072,
+                "durationMs": 6.7000000001862645
+              },
+              {
+                "file": "completion2-lower-left.glb",
+                "bytes": 84100,
+                "durationMs": 14
+              },
+              {
+                "file": "completion2-thorax.glb",
+                "bytes": 137520,
+                "durationMs": 8.799999999813735
+              },
+              {
+                "file": "completion2-back.glb",
+                "bytes": 339156,
+                "durationMs": 6.600000000093132
+              },
+              {
+                "file": "completion2-forearm-right.glb",
+                "bytes": 575768,
+                "durationMs": 7.800000000279397
+              },
+              {
+                "file": "completion2-forearm-left.glb",
+                "bytes": 575760,
+                "durationMs": 6
+              },
+              {
+                "file": "completion2-hand-right.glb",
+                "bytes": 121928,
+                "durationMs": 4.699999999720603
+              },
+              {
+                "file": "completion2-hand-left.glb",
+                "bytes": 121872,
+                "durationMs": 6.199999999720603
+              },
+              {
+                "file": "completion2-neck.glb",
+                "bytes": 951692,
+                "durationMs": 7.5
+              },
+              {
+                "file": "completion3-foot-left.glb",
+                "bytes": 46328,
+                "durationMs": 3.3999999999068677
+              },
+              {
+                "file": "completion3-foot-right.glb",
+                "bytes": 46316,
+                "durationMs": 3.400000000372529
+              }
+            ]
+          },
+          {
+            "name": "multiple-systems",
+            "expectedModules": 57,
+            "expectedBytes": 31571624,
+            "metrics": {
+              "selectedId": 0,
+              "contextIds": 0,
+              "loadedAssets": 57,
+              "meshCount": 694,
+              "triangleCount": 3177114,
+              "geometryBytes": 63034016,
+              "drawCalls": 648,
+              "renderGeometries": 698,
+              "renderTextures": 4,
+              "loadMs": 725.6000000000931,
+              "renderCpuMs": 3.099999999627471,
+              "firstGeometryMs": 307.10000000009313,
+              "fullSystemMs": 4011.5
+            },
+            "frameIntervalsMs": [
+              833.2000000000007,
+              16.700000000000728
+            ],
+            "meanFrameIntervalMs": 424.9500000000007,
+            "transfers": [
+              {
+                "file": "arm-left.glb",
+                "bytes": 345860,
+                "durationMs": 4.199999999720603
+              },
+              {
+                "file": "arm-right.glb",
+                "bytes": 336004,
+                "durationMs": 3.8999999999068677
+              },
+              {
+                "file": "leg-left.glb",
+                "bytes": 230240,
+                "durationMs": 2.6000000000931323
+              },
+              {
+                "file": "leg-right.glb",
+                "bytes": 230668,
+                "durationMs": 2.2000000001862645
+              },
+              {
+                "file": "skull.glb",
+                "bytes": 1002700,
+                "durationMs": 3.3999999999068677
+              },
+              {
+                "file": "spine.glb",
+                "bytes": 579828,
+                "durationMs": 22.199999999720603
+              },
+              {
+                "file": "thorax.glb",
+                "bytes": 1191640,
+                "durationMs": 8.100000000093132
+              },
+              {
+                "file": "completion2-styloid-ligament-left.glb",
+                "bytes": 54264,
+                "durationMs": 2.8999999999068677
+              },
+              {
+                "file": "completion2-styloid-ligament-right.glb",
+                "bytes": 54048,
+                "durationMs": 3.1000000000931323
+              },
+              {
+                "file": "muscular-upper-right.glb",
+                "bytes": 269856,
+                "durationMs": 45
+              },
+              {
+                "file": "muscular-upper-left.glb",
+                "bytes": 270076,
+                "durationMs": 12.899999999906868
+              },
+              {
+                "file": "muscular-torso-anterior.glb",
+                "bytes": 1372520,
+                "durationMs": 4.7999999998137355
+              },
+              {
+                "file": "muscular-abdomen.glb",
+                "bytes": 1971408,
+                "durationMs": 55.10000000009313
+              },
+              {
+                "file": "muscular-torso-posterior.glb",
+                "bytes": 1862216,
+                "durationMs": 64.10000000009313
+              },
+              {
+                "file": "muscular-gluteal-right.glb",
+                "bytes": 134776,
+                "durationMs": 2.7999999998137355
+              },
+              {
+                "file": "muscular-gluteal-left.glb",
+                "bytes": 134860,
+                "durationMs": 14.899999999906868
+              },
+              {
+                "file": "muscular-thigh-right.glb",
+                "bytes": 446544,
+                "durationMs": 13.5
+              },
+              {
+                "file": "muscular-thigh-left.glb",
+                "bytes": 446536,
+                "durationMs": 3.8999999999068677
+              },
+              {
+                "file": "muscular-leg-right.glb",
+                "bytes": 291172,
+                "durationMs": 3.5
+              },
+              {
+                "file": "muscular-leg-left.glb",
+                "bytes": 291188,
+                "durationMs": 3.2000000001862645
+              },
+              {
+                "file": "muscular-forearm-right.glb",
+                "bytes": 113968,
+                "durationMs": 3.3999999999068677
+              },
+              {
+                "file": "muscular-forearm-left.glb",
+                "bytes": 114312,
+                "durationMs": 4.2000000001862645
+              },
+              {
+                "file": "muscular-neck.glb",
+                "bytes": 1003996,
+                "durationMs": 28.699999999720603
+              },
+              {
+                "file": "muscular-hand-right.glb",
+                "bytes": 73596,
+                "durationMs": 3.7000000001862645
+              },
+              {
+                "file": "muscular-hand-left.glb",
+                "bytes": 73480,
+                "durationMs": 4.7000000001862645
+              },
+              {
+                "file": "muscular-foot-right.glb",
+                "bytes": 273584,
+                "durationMs": 3.5
+              },
+              {
+                "file": "muscular-foot-left.glb",
+                "bytes": 273776,
+                "durationMs": 3.1000000000931323
+              },
+              {
+                "file": "completion-respiratory-muscles.glb",
+                "bytes": 7183820,
+                "durationMs": 85.10000000009313
+              },
+              {
+                "file": "completion-hip-right.glb",
+                "bytes": 17984,
+                "durationMs": 3
+              },
+              {
+                "file": "completion-hip-left.glb",
+                "bytes": 18040,
+                "durationMs": 2.3999999999068677
+              },
+              {
+                "file": "completion-pelvic-floor.glb",
+                "bytes": 370176,
+                "durationMs": 4
+              },
+              {
+                "file": "completion2-lower-right.glb",
+                "bytes": 84072,
+                "durationMs": 2.8999999999068677
+              },
+              {
+                "file": "completion2-lower-left.glb",
+                "bytes": 84100,
+                "durationMs": 3.1999999997206032
+              },
+              {
+                "file": "completion2-thorax.glb",
+                "bytes": 137520,
+                "durationMs": 5.300000000279397
+              },
+              {
+                "file": "completion2-back.glb",
+                "bytes": 339156,
+                "durationMs": 8.900000000372529
+              },
+              {
+                "file": "completion2-forearm-right.glb",
+                "bytes": 575768,
+                "durationMs": 74.5
+              },
+              {
+                "file": "completion2-forearm-left.glb",
+                "bytes": 575760,
+                "durationMs": 6.7999999998137355
+              },
+              {
+                "file": "completion2-hand-right.glb",
+                "bytes": 121928,
+                "durationMs": 6.5
+              },
+              {
+                "file": "completion2-hand-left.glb",
+                "bytes": 121872,
+                "durationMs": 2.8999999999068677
+              },
+              {
+                "file": "completion2-neck.glb",
+                "bytes": 951692,
+                "durationMs": 5.5
+              },
+              {
+                "file": "completion3-foot-left.glb",
+                "bytes": 46328,
+                "durationMs": 2.7999999998137355
+              },
+              {
+                "file": "completion3-foot-right.glb",
+                "bytes": 46316,
+                "durationMs": 5.2000000001862645
+              },
+              {
+                "file": "cns.glb",
+                "bytes": 2600372,
+                "durationMs": 27.5
+              },
+              {
+                "file": "cranial.glb",
+                "bytes": 332748,
+                "durationMs": 5.100000000093132
+              },
+              {
+                "file": "lower-left.glb",
+                "bytes": 202496,
+                "durationMs": 5.600000000093132
+              },
+              {
+                "file": "lower-right.glb",
+                "bytes": 202584,
+                "durationMs": 10.5
+              },
+              {
+                "file": "upper-left.glb",
+                "bytes": 238688,
+                "durationMs": 3.6999999997206032
+              },
+              {
+                "file": "upper-right.glb",
+                "bytes": 238684,
+                "durationMs": 5.099999999627471
+              },
+              {
+                "file": "completion-tentorium.glb",
+                "bytes": 175016,
+                "durationMs": 4
+              },
+              {
+                "file": "completion2-ventricles.glb",
+                "bytes": 370260,
+                "durationMs": 6.400000000372529
+              },
+              {
+                "file": "completion2-deep-brain.glb",
+                "bytes": 271632,
+                "durationMs": 7.5
+              },
+              {
+                "file": "ocular.glb",
+                "bytes": 701656,
+                "durationMs": 4.7999999998137355
+              },
+              {
+                "file": "completion-ocular-muscles.glb",
+                "bytes": 381476,
+                "durationMs": 6.5
+              },
+              {
+                "file": "completion-ocular-internal.glb",
+                "bytes": 356076,
+                "durationMs": 9.399999999906868
+              },
+              {
+                "file": "completion2-ocular-interior.glb",
+                "bytes": 1182304,
+                "durationMs": 6.899999999906868
+              },
+              {
+                "file": "completion2-ocular-lacrimal-palpebral.glb",
+                "bytes": 93360,
+                "durationMs": 6.400000000372529
+              },
+              {
+                "file": "completion2-ocular-support.glb",
+                "bytes": 106624,
+                "durationMs": 4.100000000093132
+              }
+            ]
+          },
+          {
+            "name": "full-without-skin",
+            "expectedModules": 90,
+            "expectedBytes": 46291816,
+            "metrics": {
+              "selectedId": 0,
+              "contextIds": 0,
+              "loadedAssets": 90,
+              "meshCount": 1237,
+              "triangleCount": 4752236,
+              "geometryBytes": 91379508,
+              "drawCalls": 1191,
+              "renderGeometries": 1241,
+              "renderTextures": 4,
+              "loadMs": 9252.100000000093,
+              "renderCpuMs": 13.5,
+              "firstGeometryMs": 498,
+              "fullSystemMs": 101288.3999999999
+            },
+            "frameIntervalsMs": [
+              16.699999999982538,
+              16.70000000001164,
+              133.29999999998836
+            ],
+            "meanFrameIntervalMs": 55.56666666666084,
+            "transfers": [
+              {
+                "file": "arm-left.glb",
+                "bytes": 345860,
+                "durationMs": 21.799999999813735
+              },
+              {
+                "file": "arm-right.glb",
+                "bytes": 336004,
+                "durationMs": 7.300000000279397
+              },
+              {
+                "file": "leg-left.glb",
+                "bytes": 230240,
+                "durationMs": 4.400000000372529
+              },
+              {
+                "file": "leg-right.glb",
+                "bytes": 230668,
+                "durationMs": 5.199999999720603
+              },
+              {
+                "file": "skull.glb",
+                "bytes": 1002700,
+                "durationMs": 9.600000000093132
+              },
+              {
+                "file": "spine.glb",
+                "bytes": 579828,
+                "durationMs": 5.699999999720603
+              },
+              {
+                "file": "thorax.glb",
+                "bytes": 1191640,
+                "durationMs": 8.300000000279397
+              },
+              {
+                "file": "completion2-styloid-ligament-left.glb",
+                "bytes": 54264,
+                "durationMs": 4
+              },
+              {
+                "file": "completion2-styloid-ligament-right.glb",
+                "bytes": 54048,
+                "durationMs": 3.8999999999068677
+              },
+              {
+                "file": "muscular-upper-right.glb",
+                "bytes": 269856,
+                "durationMs": 12.100000000093132
+              },
+              {
+                "file": "muscular-upper-left.glb",
+                "bytes": 270076,
+                "durationMs": 39.700000000186265
+              },
+              {
+                "file": "muscular-torso-anterior.glb",
+                "bytes": 1372520,
+                "durationMs": 18.299999999813735
+              },
+              {
+                "file": "muscular-abdomen.glb",
+                "bytes": 1971408,
+                "durationMs": 18.200000000186265
+              },
+              {
+                "file": "muscular-torso-posterior.glb",
+                "bytes": 1862216,
+                "durationMs": 403.1999999997206
+              },
+              {
+                "file": "muscular-gluteal-right.glb",
+                "bytes": 134776,
+                "durationMs": 445
+              },
+              {
+                "file": "muscular-gluteal-left.glb",
+                "bytes": 134860,
+                "durationMs": 4.699999999720603
+              },
+              {
+                "file": "muscular-thigh-right.glb",
+                "bytes": 446544,
+                "durationMs": 182.6999999997206
+              },
+              {
+                "file": "muscular-thigh-left.glb",
+                "bytes": 446536,
+                "durationMs": 1301.5
+              },
+              {
+                "file": "muscular-leg-right.glb",
+                "bytes": 291172,
+                "durationMs": 970.3999999999069
+              },
+              {
+                "file": "muscular-leg-left.glb",
+                "bytes": 291188,
+                "durationMs": 266.70000000018626
+              },
+              {
+                "file": "muscular-forearm-right.glb",
+                "bytes": 113968,
+                "durationMs": 2548.600000000093
+              },
+              {
+                "file": "muscular-forearm-left.glb",
+                "bytes": 114312,
+                "durationMs": 409.70000000018626
+              },
+              {
+                "file": "muscular-neck.glb",
+                "bytes": 1003996,
+                "durationMs": 3066.6999999997206
+              },
+              {
+                "file": "muscular-hand-right.glb",
+                "bytes": 73596,
+                "durationMs": 1938
+              },
+              {
+                "file": "muscular-hand-left.glb",
+                "bytes": 73480,
+                "durationMs": 539.2999999998137
+              },
+              {
+                "file": "muscular-foot-right.glb",
+                "bytes": 273584,
+                "durationMs": 874.3000000002794
+              },
+              {
+                "file": "muscular-foot-left.glb",
+                "bytes": 273776,
+                "durationMs": 814.8000000002794
+              },
+              {
+                "file": "completion-respiratory-muscles.glb",
+                "bytes": 7183820,
+                "durationMs": 4948.100000000093
+              },
+              {
+                "file": "completion-hip-right.glb",
+                "bytes": 17984,
+                "durationMs": 500.10000000009313
+              },
+              {
+                "file": "completion-hip-left.glb",
+                "bytes": 18040,
+                "durationMs": 1559.5
+              },
+              {
+                "file": "completion-pelvic-floor.glb",
+                "bytes": 370176,
+                "durationMs": 811.2999999998137
+              },
+              {
+                "file": "completion2-lower-right.glb",
+                "bytes": 84072,
+                "durationMs": 493
+              },
+              {
+                "file": "completion2-lower-left.glb",
+                "bytes": 84100,
+                "durationMs": 184.5
+              },
+              {
+                "file": "completion2-thorax.glb",
+                "bytes": 137520,
+                "durationMs": 585.2000000001863
+              },
+              {
+                "file": "completion2-back.glb",
+                "bytes": 339156,
+                "durationMs": 2003.2000000001863
+              },
+              {
+                "file": "completion2-forearm-right.glb",
+                "bytes": 575768,
+                "durationMs": 2359.399999999907
+              },
+              {
+                "file": "completion2-forearm-left.glb",
+                "bytes": 575760,
+                "durationMs": 304
+              },
+              {
+                "file": "completion2-hand-right.glb",
+                "bytes": 121928,
+                "durationMs": 815.1000000000931
+              },
+              {
+                "file": "completion2-hand-left.glb",
+                "bytes": 121872,
+                "durationMs": 436.20000000018626
+              },
+              {
+                "file": "completion2-neck.glb",
+                "bytes": 951692,
+                "durationMs": 480.29999999981374
+              },
+              {
+                "file": "completion3-foot-left.glb",
+                "bytes": 46328,
+                "durationMs": 476.89999999990687
+              },
+              {
+                "file": "completion3-foot-right.glb",
+                "bytes": 46316,
+                "durationMs": 6.600000000093132
+              },
+              {
+                "file": "cns.glb",
+                "bytes": 2600372,
+                "durationMs": 2191.100000000093
+              },
+              {
+                "file": "cranial.glb",
+                "bytes": 332748,
+                "durationMs": 1556.1000000000931
+              },
+              {
+                "file": "lower-left.glb",
+                "bytes": 202496,
+                "durationMs": 9.299999999813735
+              },
+              {
+                "file": "lower-right.glb",
+                "bytes": 202584,
+                "durationMs": 174.79999999981374
+              },
+              {
+                "file": "upper-left.glb",
+                "bytes": 238688,
+                "durationMs": 325.5
+              },
+              {
+                "file": "upper-right.glb",
+                "bytes": 238684,
+                "durationMs": 323.39999999990687
+              },
+              {
+                "file": "completion-tentorium.glb",
+                "bytes": 175016,
+                "durationMs": 138.60000000009313
+              },
+              {
+                "file": "completion2-ventricles.glb",
+                "bytes": 370260,
+                "durationMs": 1167.8999999999069
+              },
+              {
+                "file": "completion2-deep-brain.glb",
+                "bytes": 271632,
+                "durationMs": 24.199999999720603
+              },
+              {
+                "file": "ocular.glb",
+                "bytes": 701656,
+                "durationMs": 10.300000000279397
+              },
+              {
+                "file": "completion-ocular-muscles.glb",
+                "bytes": 381476,
+                "durationMs": 142.10000000009313
+              },
+              {
+                "file": "completion-ocular-internal.glb",
+                "bytes": 356076,
+                "durationMs": 119.90000000037253
+              },
+              {
+                "file": "completion2-ocular-interior.glb",
+                "bytes": 1182304,
+                "durationMs": 439.20000000018626
+              },
+              {
+                "file": "completion2-ocular-lacrimal-palpebral.glb",
+                "bytes": 93360,
+                "durationMs": 482.39999999990687
+              },
+              {
+                "file": "completion2-ocular-support.glb",
+                "bytes": 106624,
+                "durationMs": 266.60000000009313
+              },
+              {
+                "file": "head-neck.glb",
+                "bytes": 68156,
+                "durationMs": 177.39999999990687
+              },
+              {
+                "file": "heart.glb",
+                "bytes": 1047128,
+                "durationMs": 164.60000000009313
+              },
+              {
+                "file": "lower-left.glb",
+                "bytes": 1150400,
+                "durationMs": 583.6999999997206
+              },
+              {
+                "file": "lower-right.glb",
+                "bytes": 1140020,
+                "durationMs": 4988.700000000186
+              },
+              {
+                "file": "trunk.glb",
+                "bytes": 927548,
+                "durationMs": 946.8999999999069
+              },
+              {
+                "file": "upper-left.glb",
+                "bytes": 663612,
+                "durationMs": 122.20000000018626
+              },
+              {
+                "file": "upper-right.glb",
+                "bytes": 652416,
+                "durationMs": 7.199999999720603
+              },
+              {
+                "file": "completion-femoral-branches-right.glb",
+                "bytes": 63572,
+                "durationMs": 710.0999999996275
+              },
+              {
+                "file": "completion-femoral-branches-left.glb",
+                "bytes": 63152,
+                "durationMs": 274.39999999990687
+              },
+              {
+                "file": "completion2-papillary.glb",
+                "bytes": 47796,
+                "durationMs": 682.5
+              },
+              {
+                "file": "completion2-coronary-arteries.glb",
+                "bytes": 85504,
+                "durationMs": 449.10000000009313
+              },
+              {
+                "file": "completion2-coronary-veins.glb",
+                "bytes": 85772,
+                "durationMs": 402.39999999990687
+              },
+              {
+                "file": "completion2-cerebral-arteries.glb",
+                "bytes": 14588,
+                "durationMs": 398.60000000009313
+              },
+              {
+                "file": "completion2-bronchial-arteries.glb",
+                "bytes": 29460,
+                "durationMs": 117.5
+              },
+              {
+                "file": "larynx.glb",
+                "bytes": 107936,
+                "durationMs": 172.10000000009313
+              },
+              {
+                "file": "airway.glb",
+                "bytes": 733700,
+                "durationMs": 1344.6999999997206
+              },
+              {
+                "file": "lungs.glb",
+                "bytes": 1488376,
+                "durationMs": 768.6000000000931
+              },
+              {
+                "file": "completion2-larynx-soft.glb",
+                "bytes": 1206880,
+                "durationMs": 1250.7000000001863
+              },
+              {
+                "file": "completion2-pharynx-soft.glb",
+                "bytes": 1315912,
+                "durationMs": 819.5999999996275
+              },
+              {
+                "file": "upper.glb",
+                "bytes": 26860,
+                "durationMs": 190.39999999990687
+              },
+              {
+                "file": "stomach-accessory.glb",
+                "bytes": 1261644,
+                "durationMs": 567
+              },
+              {
+                "file": "small-intestine.glb",
+                "bytes": 212852,
+                "durationMs": 442.5
+              },
+              {
+                "file": "large-intestine.glb",
+                "bytes": 139840,
+                "durationMs": 922.6000000000931
+              },
+              {
+                "file": "completion-dentition.glb",
+                "bytes": 350100,
+                "durationMs": 305.79999999981374
+              },
+              {
+                "file": "completion-anal-sphincter.glb",
+                "bytes": 11480,
+                "durationMs": 279.60000000009313
+              },
+              {
+                "file": "completion2-oral.glb",
+                "bytes": 667852,
+                "durationMs": 1584.6000000000931
+              },
+              {
+                "file": "completion2-mesentery.glb",
+                "bytes": 14820,
+                "durationMs": 846.6000000000931
+              },
+              {
+                "file": "organs.glb",
+                "bytes": 94872,
+                "durationMs": 522.3000000002794
+              },
+              {
+                "file": "glands.glb",
+                "bytes": 69408,
+                "durationMs": 519.1000000000931
+              },
+              {
+                "file": "thyroid43.glb",
+                "bytes": 398320,
+                "durationMs": 133.39999999990687
+              },
+              {
+                "file": "central.glb",
+                "bytes": 35160,
+                "durationMs": 414.3000000002794
+              },
+              {
+                "file": "male.glb",
+                "bytes": 93996,
+                "durationMs": 383.29999999981374
+              },
+              {
+                "file": "completion2-hair.glb",
+                "bytes": 451060,
+                "durationMs": 958.3000000002794
+              }
+            ]
+          }
+        ],
+        "errors": [],
+        "badRequests": [],
+        "ownerCount": 4,
+        "realPickedModules": [
+          "muscular:completion3-foot-left",
+          "muscular:completion3-foot-right"
+        ],
+        "success": false,
+        "error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:61983/med3d/anatomia/?qa=1&systems=skeletal,muscular,nervous,cardiovascular,respiratory,digestive,urinary,endocrine,lymphatic,reproductive,integumentary,nervous&modules=skeletal:arm-left,skeletal:arm-right,skeletal:leg-left,skeletal:leg-right,skeletal:skull,skeletal:spine,skeletal:thorax,skeletal:completion2-styloid-ligament-left,skeletal:completion2-styloid-ligament-right,muscular:upper-right,muscular:upper-left,muscular:thorax-anterior,muscular:abdomen,muscular:back,muscular:gluteal-right,muscular:gluteal-left,muscular:thigh-right,muscular:thigh-left,muscular:leg-right,muscular:leg-left,muscular:forearm-right,muscular:forearm-left,muscular:neck,muscular:hand-right,muscular:hand-left,muscular:foot-right,muscular:foot-left,muscular:completion-respiratory-muscles,muscular:completion-hip-right,muscular:completion-hip-left,muscular:completion-pelvic-floor,muscular:completion2-lower-right,muscular:completion2-lower-left,muscular:completion2-thorax,muscular:completion2-back,muscular:completion2-forearm-right,muscular:completion2-forearm-left,muscular:completion2-hand-right,muscular:completion2-hand-left,muscular:completion2-neck,muscular:completion3-foot-left,muscular:completion3-foot-right,nervous:cns,nervous:cranial,nervous:lower-left,nervous:lower-right,nervous:upper-left,nervous:upper-right,nervous:completion-tentorium,nervous:completion2-ventricles,nervous:completion2-deep-brain,cardio:head-neck,cardio:heart,cardio:lower-left,cardio:lower-right,cardio:trunk,cardio:upper-left,cardio:upper-right,cardiovascular:completion-femoral-branches-right,cardiovascular:completion-femoral-branches-left,cardiovascular:completion2-papillary,cardiovascular:completion2-coronary-arteries,cardiovascular:completion2-coronary-veins,cardiovascular:completion2-cerebral-arteries,cardiovascular:completion2-bronchial-arteries,respiratory:larynx,respiratory:airway,respiratory:lungs,respiratory:completion2-larynx-soft,respiratory:completion2-pharynx-soft,digestive:upper,digestive:stomach-accessory,digestive:small-intestine,digestive:large-intestine,digestive:completion-dentition,digestive:completion-anal-sphincter,digestive:completion2-oral,digestive:completion2-mesentery,urinary:organs,endocrine:glands,endocrine:thyroid43,lymphatic:central,reproductive:male,integumentary:skin,integumentary:completion2-hair,nervous:ocular,nervous:completion-ocular-muscles,nervous:completion-ocular-internal,nervous:completion2-ocular-interior,nervous:completion2-ocular-lacrimal-palpebral,nervous:completion2-ocular-support\", waiting until \"load\"\u001b[22m\n\n    at goto (C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\completion-qa.mjs:21:223)\n    at measure (C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\completion-qa.mjs:22:67)\n    at C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\completion-qa.mjs:61:8\n    at async withinQaDeadline (C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\browser-qa.mjs:16:12)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/completion-qa.mjs:23:5"
+      }
+    },
+    {
+      "file": "recovery-mobile/qa-panel-order-failure.json",
+      "report": {
+        "scenario": "mobile",
+        "environment": "Fresh headless Chromium / ANGLE SwiftShader, HTTP loopback no-store. CPU measures command submission, not GPU completion; frame samples do not establish sustained physical-device FPS.",
+        "expectedModules": 9,
+        "expectedMeshes": 207,
+        "expectedTriangles": 523966,
+        "expectedBytes": 4025252,
+        "progress": [
+          {
+            "elapsedMs": 15213,
+            "glbResponses": 16
+          },
+          {
+            "elapsedMs": 30224,
+            "glbResponses": 17
+          },
+          {
+            "elapsedMs": 45231,
+            "glbResponses": 17
+          },
+          {
+            "elapsedMs": 60245,
+            "glbResponses": 17
+          },
+          {
+            "elapsedMs": 75255,
+            "glbResponses": 17
+          },
+          {
+            "elapsedMs": 90266,
+            "glbResponses": 17
+          },
+          {
+            "elapsedMs": 105280,
+            "glbResponses": 17
+          }
+        ],
+        "checks": [
+          "All expected modules, meshes and triangles loaded",
+          "Mobile zanatomy:extensor-digitorum-brevis-l: search, selection, card, isolate, hide, restore, focus, same Canvas, no overflow"
+        ],
+        "errors": [],
+        "badRequests": [],
+        "serverReadyMs": 51,
+        "navigationCompletedMs": 185,
+        "allMeshesObservedWallMs": 2277,
+        "metrics": {
+          "selectedId": 0,
+          "contextIds": 0,
+          "loadedAssets": 9,
+          "meshCount": 207,
+          "triangleCount": 523966,
+          "geometryBytes": 7819708,
+          "drawCalls": 175,
+          "renderGeometries": 211,
+          "renderTextures": 4,
+          "loadMs": 76,
+          "renderCpuMs": 1.7000000001862645,
+          "firstGeometryMs": 1120.7999999998137,
+          "fullSystemMs": 1120.8999999994412
+        },
+        "timing": {
+          "frameIntervalsMs": [
+            16.700000000000273
+          ],
+          "buffers": {
+            "created": 635,
+            "deleted": 0,
+            "live": 635
+          },
+          "transfers": [
+            {
+              "file": "arm-left.glb",
+              "bytes": 345860,
+              "durationMs": 20.799999999813735
+            },
+            {
+              "file": "arm-right.glb",
+              "bytes": 336004,
+              "durationMs": 22.90000000037253
+            },
+            {
+              "file": "leg-left.glb",
+              "bytes": 230240,
+              "durationMs": 7.099999999627471
+            },
+            {
+              "file": "leg-right.glb",
+              "bytes": 230668,
+              "durationMs": 9
+            },
+            {
+              "file": "skull.glb",
+              "bytes": 1002700,
+              "durationMs": 31
+            },
+            {
+              "file": "spine.glb",
+              "bytes": 579828,
+              "durationMs": 30.90000000037253
+            },
+            {
+              "file": "thorax.glb",
+              "bytes": 1191640,
+              "durationMs": 26.200000000186265
+            },
+            {
+              "file": "completion2-styloid-ligament-left.glb",
+              "bytes": 54264,
+              "durationMs": 6.2999999998137355
+            },
+            {
+              "file": "completion2-styloid-ligament-right.glb",
+              "bytes": 54048,
+              "durationMs": 6.699999999254942
+            }
+          ]
+        },
+        "measurementComplete": true,
+        "success": false,
+        "error": "locator.click: Timeout 90000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Estructuras', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button>…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"atlas-detail-content\">…</div> from <aside id=\"atlas-anatomical-info\" aria-label=\"Ficha anatómica\" class=\"atlas-detail is-open\">…</aside> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"atlas-detail-content\">…</div> from <aside id=\"atlas-anatomical-info\" aria-label=\"Ficha anatómica\" class=\"atlas-detail is-open\">…</aside> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    168 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <div class=\"atlas-detail-content\">…</div> from <aside id=\"atlas-anatomical-info\" aria-label=\"Ficha anatómica\" class=\"atlas-detail is-open\">…</aside> subtree intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\completion-recovery-qa.mjs:35:152\n    at async withinQaDeadline (C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\browser-qa.mjs:16:12)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/completion-recovery-qa.mjs:18:5"
+      }
+    },
+    {
+      "file": "recovery-full-with-skin/qa-capture-timeout.json",
+      "report": {
+        "scenario": "full-with-skin",
+        "environment": "Fresh headless Chromium / ANGLE SwiftShader, HTTP loopback no-store. CPU measures command submission, not GPU completion; frame samples do not establish sustained physical-device FPS.",
+        "expectedModules": 91,
+        "expectedMeshes": 1238,
+        "expectedTriangles": 4955618,
+        "expectedBytes": 47923320,
+        "progress": [
+          {
+            "elapsedMs": 16525,
+            "glbResponses": 69
+          },
+          {
+            "elapsedMs": 31528,
+            "glbResponses": 80
+          },
+          {
+            "elapsedMs": 46651,
+            "glbResponses": 88
+          },
+          {
+            "elapsedMs": 62359,
+            "glbResponses": 91
+          },
+          {
+            "elapsedMs": 77541,
+            "glbResponses": 91
+          },
+          {
+            "elapsedMs": 92557,
+            "glbResponses": 91
+          },
+          {
+            "elapsedMs": 107659,
+            "glbResponses": 91
+          },
+          {
+            "elapsedMs": 122671,
+            "glbResponses": 91
+          },
+          {
+            "elapsedMs": 137684,
+            "glbResponses": 91
+          },
+          {
+            "elapsedMs": 152694,
+            "glbResponses": 91
+          },
+          {
+            "elapsedMs": 167699,
+            "glbResponses": 91
+          }
+        ],
+        "checks": [],
+        "errors": [],
+        "badRequests": [],
+        "serverReadyMs": 53,
+        "navigationCompletedMs": 181,
+        "allMeshesObservedWallMs": 65657,
+        "metrics": {
+          "selectedId": 0,
+          "contextIds": 0,
+          "loadedAssets": 91,
+          "meshCount": 1238,
+          "triangleCount": 4955618,
+          "geometryBytes": 95869432,
+          "drawCalls": 1192,
+          "renderGeometries": 1242,
+          "renderTextures": 4,
+          "loadMs": 6558.9000000003725,
+          "renderCpuMs": 1163.9000000003725,
+          "firstGeometryMs": 1246.7999999998137,
+          "fullSystemMs": 56759.5
+        },
+        "timing": {
+          "frameIntervalsMs": [
+            3733.199999999997,
+            816.6999999999971,
+            733.3000000000029
+          ],
+          "buffers": {
+            "created": 3722,
+            "deleted": 0,
+            "live": 3722
+          },
+          "transfers": [
+            {
+              "file": "arm-left.glb",
+              "bytes": 345860,
+              "durationMs": 32.5
+            },
+            {
+              "file": "arm-right.glb",
+              "bytes": 336004,
+              "durationMs": 48.40000000037253
+            },
+            {
+              "file": "leg-left.glb",
+              "bytes": 230240,
+              "durationMs": 6.900000000372529
+            },
+            {
+              "file": "leg-right.glb",
+              "bytes": 230668,
+              "durationMs": 9.099999999627471
+            },
+            {
+              "file": "skull.glb",
+              "bytes": 1002700,
+              "durationMs": 24
+            },
+            {
+              "file": "spine.glb",
+              "bytes": 579828,
+              "durationMs": 10.400000000372529
+            },
+            {
+              "file": "thorax.glb",
+              "bytes": 1191640,
+              "durationMs": 27.100000000558794
+            },
+            {
+              "file": "completion2-styloid-ligament-left.glb",
+              "bytes": 54264,
+              "durationMs": 5.6000000005587935
+            },
+            {
+              "file": "completion2-styloid-ligament-right.glb",
+              "bytes": 54048,
+              "durationMs": 5.800000000745058
+            },
+            {
+              "file": "muscular-upper-right.glb",
+              "bytes": 269856,
+              "durationMs": 4.6000000005587935
+            },
+            {
+              "file": "muscular-upper-left.glb",
+              "bytes": 270076,
+              "durationMs": 5.2999999998137355
+            },
+            {
+              "file": "muscular-torso-anterior.glb",
+              "bytes": 1372520,
+              "durationMs": 9.200000000186265
+            },
+            {
+              "file": "muscular-abdomen.glb",
+              "bytes": 1971408,
+              "durationMs": 11.699999999254942
+            },
+            {
+              "file": "muscular-torso-posterior.glb",
+              "bytes": 1862216,
+              "durationMs": 11.100000000558794
+            },
+            {
+              "file": "muscular-gluteal-right.glb",
+              "bytes": 134776,
+              "durationMs": 4.900000000372529
+            },
+            {
+              "file": "muscular-gluteal-left.glb",
+              "bytes": 134860,
+              "durationMs": 5.599999999627471
+            },
+            {
+              "file": "muscular-thigh-right.glb",
+              "bytes": 446544,
+              "durationMs": 30
+            },
+            {
+              "file": "muscular-thigh-left.glb",
+              "bytes": 446536,
+              "durationMs": 26.299999999813735
+            },
+            {
+              "file": "muscular-leg-right.glb",
+              "bytes": 291172,
+              "durationMs": 13.5
+            },
+            {
+              "file": "muscular-leg-left.glb",
+              "bytes": 291188,
+              "durationMs": 6
+            },
+            {
+              "file": "muscular-forearm-right.glb",
+              "bytes": 113968,
+              "durationMs": 10.200000000186265
+            },
+            {
+              "file": "muscular-forearm-left.glb",
+              "bytes": 114312,
+              "durationMs": 5.5
+            },
+            {
+              "file": "muscular-neck.glb",
+              "bytes": 1003996,
+              "durationMs": 36.90000000037253
+            },
+            {
+              "file": "muscular-hand-right.glb",
+              "bytes": 73596,
+              "durationMs": 15.899999999441206
+            },
+            {
+              "file": "muscular-hand-left.glb",
+              "bytes": 73480,
+              "durationMs": 5.2999999998137355
+            },
+            {
+              "file": "muscular-foot-right.glb",
+              "bytes": 273584,
+              "durationMs": 5.5
+            },
+            {
+              "file": "muscular-foot-left.glb",
+              "bytes": 273776,
+              "durationMs": 29.899999999441206
+            },
+            {
+              "file": "completion-respiratory-muscles.glb",
+              "bytes": 7183820,
+              "durationMs": 109.79999999981374
+            },
+            {
+              "file": "completion-hip-right.glb",
+              "bytes": 17984,
+              "durationMs": 5.7000000001862645
+            },
+            {
+              "file": "completion-hip-left.glb",
+              "bytes": 18040,
+              "durationMs": 5.699999999254942
+            },
+            {
+              "file": "completion-pelvic-floor.glb",
+              "bytes": 370176,
+              "durationMs": 21.5
+            },
+            {
+              "file": "completion2-lower-right.glb",
+              "bytes": 84072,
+              "durationMs": 15.599999999627471
+            },
+            {
+              "file": "completion2-lower-left.glb",
+              "bytes": 84100,
+              "durationMs": 8.400000000372529
+            },
+            {
+              "file": "completion2-thorax.glb",
+              "bytes": 137520,
+              "durationMs": 8
+            },
+            {
+              "file": "completion2-back.glb",
+              "bytes": 339156,
+              "durationMs": 5.599999999627471
+            },
+            {
+              "file": "completion2-forearm-right.glb",
+              "bytes": 575768,
+              "durationMs": 25.90000000037253
+            },
+            {
+              "file": "completion2-forearm-left.glb",
+              "bytes": 575760,
+              "durationMs": 6.599999999627471
+            },
+            {
+              "file": "completion2-hand-right.glb",
+              "bytes": 121928,
+              "durationMs": 5.099999999627471
+            },
+            {
+              "file": "completion2-hand-left.glb",
+              "bytes": 121872,
+              "durationMs": 6.6000000005587935
+            },
+            {
+              "file": "completion2-neck.glb",
+              "bytes": 951692,
+              "durationMs": 21.299999999813735
+            },
+            {
+              "file": "completion3-foot-left.glb",
+              "bytes": 46328,
+              "durationMs": 7.2999999998137355
+            },
+            {
+              "file": "completion3-foot-right.glb",
+              "bytes": 46316,
+              "durationMs": 4.5
+            },
+            {
+              "file": "cns.glb",
+              "bytes": 2600372,
+              "durationMs": 115.5
+            },
+            {
+              "file": "cranial.glb",
+              "bytes": 332748,
+              "durationMs": 92.19999999925494
+            },
+            {
+              "file": "lower-left.glb",
+              "bytes": 202496,
+              "durationMs": 5.400000000372529
+            },
+            {
+              "file": "lower-right.glb",
+              "bytes": 202584,
+              "durationMs": 6.2999999998137355
+            },
+            {
+              "file": "upper-left.glb",
+              "bytes": 238688,
+              "durationMs": 34.40000000037253
+            },
+            {
+              "file": "upper-right.glb",
+              "bytes": 238684,
+              "durationMs": 32
+            },
+            {
+              "file": "completion-tentorium.glb",
+              "bytes": 175016,
+              "durationMs": 5.5
+            },
+            {
+              "file": "completion2-ventricles.glb",
+              "bytes": 370260,
+              "durationMs": 20.09999999962747
+            },
+            {
+              "file": "completion2-deep-brain.glb",
+              "bytes": 271632,
+              "durationMs": 5.5
+            },
+            {
+              "file": "ocular.glb",
+              "bytes": 701656,
+              "durationMs": 125.90000000037253
+            },
+            {
+              "file": "completion-ocular-muscles.glb",
+              "bytes": 381476,
+              "durationMs": 105.5
+            },
+            {
+              "file": "completion-ocular-internal.glb",
+              "bytes": 356076,
+              "durationMs": 6.5
+            },
+            {
+              "file": "completion2-ocular-interior.glb",
+              "bytes": 1182304,
+              "durationMs": 24.899999999441206
+            },
+            {
+              "file": "completion2-ocular-lacrimal-palpebral.glb",
+              "bytes": 93360,
+              "durationMs": 5.2000000001862645
+            },
+            {
+              "file": "completion2-ocular-support.glb",
+              "bytes": 106624,
+              "durationMs": 6.7000000001862645
+            },
+            {
+              "file": "head-neck.glb",
+              "bytes": 68156,
+              "durationMs": 230.79999999981374
+            },
+            {
+              "file": "heart.glb",
+              "bytes": 1047128,
+              "durationMs": 640.3999999994412
+            },
+            {
+              "file": "lower-left.glb",
+              "bytes": 1150400,
+              "durationMs": 10.699999999254942
+            },
+            {
+              "file": "lower-right.glb",
+              "bytes": 1140020,
+              "durationMs": 8.899999999441206
+            },
+            {
+              "file": "trunk.glb",
+              "bytes": 927548,
+              "durationMs": 97.80000000074506
+            },
+            {
+              "file": "upper-left.glb",
+              "bytes": 663612,
+              "durationMs": 1190.0999999996275
+            },
+            {
+              "file": "upper-right.glb",
+              "bytes": 652416,
+              "durationMs": 91.70000000018626
+            },
+            {
+              "file": "completion-femoral-branches-right.glb",
+              "bytes": 63572,
+              "durationMs": 5.5
+            },
+            {
+              "file": "completion-femoral-branches-left.glb",
+              "bytes": 63152,
+              "durationMs": 5.7000000001862645
+            },
+            {
+              "file": "completion2-papillary.glb",
+              "bytes": 47796,
+              "durationMs": 5.2999999998137355
+            },
+            {
+              "file": "completion2-coronary-arteries.glb",
+              "bytes": 85504,
+              "durationMs": 6
+            },
+            {
+              "file": "completion2-coronary-veins.glb",
+              "bytes": 85772,
+              "durationMs": 5.400000000372529
+            },
+            {
+              "file": "completion2-cerebral-arteries.glb",
+              "bytes": 14588,
+              "durationMs": 5.699999999254942
+            },
+            {
+              "file": "completion2-bronchial-arteries.glb",
+              "bytes": 29460,
+              "durationMs": 5848.200000000186
+            },
+            {
+              "file": "larynx.glb",
+              "bytes": 107936,
+              "durationMs": 5837.399999999441
+            },
+            {
+              "file": "airway.glb",
+              "bytes": 733700,
+              "durationMs": 804
+            },
+            {
+              "file": "lungs.glb",
+              "bytes": 1488376,
+              "durationMs": 2819.9000000003725
+            },
+            {
+              "file": "completion2-larynx-soft.glb",
+              "bytes": 1206880,
+              "durationMs": 2803.300000000745
+            },
+            {
+              "file": "completion2-pharynx-soft.glb",
+              "bytes": 1315912,
+              "durationMs": 708
+            },
+            {
+              "file": "upper.glb",
+              "bytes": 26860,
+              "durationMs": 449.59999999962747
+            },
+            {
+              "file": "stomach-accessory.glb",
+              "bytes": 1261644,
+              "durationMs": 599.3999999994412
+            },
+            {
+              "file": "small-intestine.glb",
+              "bytes": 212852,
+              "durationMs": 1273.0999999996275
+            },
+            {
+              "file": "large-intestine.glb",
+              "bytes": 139840,
+              "durationMs": 277.29999999981374
+            },
+            {
+              "file": "completion-dentition.glb",
+              "bytes": 350100,
+              "durationMs": 2547.7000000001863
+            },
+            {
+              "file": "completion-anal-sphincter.glb",
+              "bytes": 11480,
+              "durationMs": 445.5
+            },
+            {
+              "file": "completion2-oral.glb",
+              "bytes": 667852,
+              "durationMs": 913.4000000003725
+            },
+            {
+              "file": "completion2-mesentery.glb",
+              "bytes": 14820,
+              "durationMs": 654.7000000001863
+            },
+            {
+              "file": "organs.glb",
+              "bytes": 94872,
+              "durationMs": 1617.2999999998137
+            },
+            {
+              "file": "glands.glb",
+              "bytes": 69408,
+              "durationMs": 3439.0999999996275
+            },
+            {
+              "file": "thyroid43.glb",
+              "bytes": 398320,
+              "durationMs": 2516.9000000003725
+            },
+            {
+              "file": "central.glb",
+              "bytes": 35160,
+              "durationMs": 2511.899999999441
+            },
+            {
+              "file": "male.glb",
+              "bytes": 93996,
+              "durationMs": 1886.2999999998137
+            },
+            {
+              "file": "skin.glb",
+              "bytes": 1631504,
+              "durationMs": 3278
+            },
+            {
+              "file": "completion2-hair.glb",
+              "bytes": 451060,
+              "durationMs": 383.59999999962747
+            }
+          ]
+        },
+        "success": false,
+        "error": "page.screenshot: Timeout 90000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\n    at C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\completion-recovery-qa.mjs:26:13\n    at async withinQaDeadline (C:\\Users\\jotaj\\Desktop\\med3d\\scripts\\anatomy\\browser-qa.mjs:16:12)\n    at async file:///C:/Users/jotaj/Desktop/med3d/scripts/anatomy/completion-recovery-qa.mjs:18:5"
+      }
+    }
+  ],
+  "captures": [
+    {
+      "file": "browser/01-edb-left-context.png",
+      "bytes": 158083,
+      "sha256": "f573b233c92161b51eaab6e918e1c0136dd6524b3da7dfc045750ff8dda9c594",
+      "reviewed": true,
+      "currentContext": false
+    },
+    {
+      "file": "browser/02-edb-right-context.png",
+      "bytes": 154973,
+      "sha256": "22aa59bd48cc7b24410275960c0360ad9b83b3b74b0c07decf9415632ad53a04",
+      "reviewed": true,
+      "currentContext": false
+    },
+    {
+      "file": "browser/03-interossei-left-context.png",
+      "bytes": 159566,
+      "sha256": "857e2fd26a1b162b25c5a2b5f0cd7ed31ab314882d6721ed542a8b827b2783df",
+      "reviewed": true,
+      "currentContext": false
+    },
+    {
+      "file": "browser/04-interossei-right-context.png",
+      "bytes": 157878,
+      "sha256": "c91ba1ddb13675bd4f5edeef219481c597c8614db0c594ccca6112acd0a9a940",
+      "reviewed": true,
+      "currentContext": false
+    },
+    {
+      "file": "browser/16-detail-isolated.png",
+      "bytes": 165624,
+      "sha256": "4983c719f8946a9b5dc6f2782ad09bebcdeedece9f2cb1024c7d993eb60c716d",
+      "reviewed": true,
+      "currentContext": false
+    },
+    {
+      "file": "recovery-desktop/dorsal-interossei-foot-l-card.png",
+      "bytes": 165955,
+      "sha256": "64611fcdcca957c705bec9a7e1740e798291cb3ee46e3085187269c86690da51",
+      "reviewed": true,
+      "currentContext": true
+    },
+    {
+      "file": "recovery-desktop/dorsal-interossei-foot-l-context.png",
+      "bytes": 193353,
+      "sha256": "d65ab26b0a25a36e2a1d1d95aa409e1c3577fc9c378d10a339531f7ec3d90497",
+      "reviewed": true,
+      "currentContext": true
+    },
+    {
+      "file": "recovery-desktop/dorsal-interossei-foot-r-card.png",
+      "bytes": 165921,
+      "sha256": "281c1dacd5375515593cef08408ee9c0c48ec3786a3d7f7580f2c991227c154f",
+      "reviewed": true,
+      "currentContext": true
+    },
+    {
+      "file": "recovery-desktop/dorsal-interossei-foot-r-context.png",
+      "bytes": 193017,
+      "sha256": "14e6b7c2a6973f9dfbc03bdf00863b5af89b14df97416484e50a3e732d747178",
+      "reviewed": true,
+      "currentContext": true
+    },
+    {
+      "file": "recovery-desktop/extensor-digitorum-brevis-l-card.png",
+      "bytes": 158398,
+      "sha256": "31880057f660041d5f4f91efc212d8907281dcb42db2e2ff6ccd594400beb9b6",
+      "reviewed": true,
+      "currentContext": true
+    },
+    {
+      "file": "recovery-desktop/extensor-digitorum-brevis-l-context.png",
+      "bytes": 169983,
+      "sha256": "596ed358c9b955e161e31678d475bcca85ef57c252b5aed2acae7c6815a9e32c",
+      "reviewed": true,
+      "currentContext": true
+    },
+    {
+      "file": "recovery-desktop/extensor-digitorum-brevis-r-card.png",
+      "bytes": 144209,
+      "sha256": "da3929faab765958346bb30e47e38e606667e4a329f4801f327a42cfd642b70a",
+      "reviewed": true,
+      "currentContext": true
+    },
+    {
+      "file": "recovery-desktop/extensor-digitorum-brevis-r-context.png",
+      "bytes": 167670,
+      "sha256": "25818790bc6d8efcc3dd30401b503df33235b3fa7498bb36d44a0adbdad8a7ee",
+      "reviewed": true,
+      "currentContext": true
+    },
+    {
+      "file": "recovery-mobile/dorsal-interossei-foot-r-card.png",
+      "bytes": 52830,
+      "sha256": "938665bc33fb78f4c02b30cdfe820ab3ec57d582c31b0eb5d2504c4047e54867",
+      "reviewed": true,
+      "currentContext": true
+    },
+    {
+      "file": "recovery-mobile/dorsal-interossei-foot-r-model.png",
+      "bytes": 55962,
+      "sha256": "738b32cb12b8252c492a4990445ea97df24f7b795a76f16c66e7a07482f37089",
+      "reviewed": true,
+      "currentContext": true
+    },
+    {
+      "file": "recovery-mobile/extensor-digitorum-brevis-l-card.png",
+      "bytes": 52964,
+      "sha256": "65755260e2370d463737225536bf505fafe99619e025619667dbde14db03ecb9",
+      "reviewed": true,
+      "currentContext": true
+    },
+    {
+      "file": "recovery-mobile/extensor-digitorum-brevis-l-model.png",
+      "bytes": 55209,
+      "sha256": "f38b612ef5c32f986e5781b513317acca45ece809e0846607ede5b61bd29021f",
+      "reviewed": true,
+      "currentContext": true
+    }
+  ],
+  "diagnosis": {
+    "observed": [
+      "Initial sequential full-atlas run exceeded a 60 s navigation deadline after a 101 s previous scenario.",
+      "A fresh full-with-skin run loaded all 91 modules, 1238 meshes and 4955618 triangles before a separate pixel-capture timeout. HTTP and JS errors remained empty.",
+      "Fresh full-atlas runs retain progress, server readiness, renderer CPU, frame intervals, GLB transfers and WebGL buffer counters.",
+      "The mobile first retry was blocked by the inspection overlay reopening after Ver conjunto; closing that panel before the next search fixes harness interaction ordering."
+    ],
+    "inference": "Software-rendering/CPU pressure is consistent with the slow full-atlas and pixel-capture operations. A unique root cause for the historical navigation timeout cannot be proven from that trace; it is not evidence of an anatomical failure.",
+    "productChangesForQa": false
+  },
+  "limitations": [
+    "Frame intervals after one zoom are short samples, not sustained FPS or physical GPU measurements.",
+    "Renderer CPU measures command submission/driver, not GPU completion. Buffer counters are WebGL API allocations, not byte-accurate GPU memory.",
+    "Some browser teardowns exceeded the harness 5 s close deadline after report persistence; no application assertion failed.",
+    "Original context captures precede the metadata refinement. Current desktop captures show metatarsal/phalangeal relations.",
+    "The completed measurement preceding the failed full-body screenshot remains a failed capture attempt; regional desktop/mobile screenshots supply the required visual evidence."
+  ]
+}

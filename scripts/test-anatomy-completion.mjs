@@ -78,6 +78,23 @@ if(wave2){
  assert.equal(skeletal.coverage.structures,203,'Connective components do not inflate bone count');
 }
 
+const wave3=activeSelections.find(s=>s.wave===3);
+if(wave3){
+ assert.equal(wave3.nodes.length,4,'Two EDB owners and two intact interosseous groups');
+ assert.equal(wave3.modules.length,2);
+ for(const side of ['l','r']){
+  const edb=index.byId.get('zanatomy:extensor-digitorum-brevis-'+side);
+  const dorsal=index.byId.get('zanatomy:dorsal-interossei-foot-'+side);
+  assert.equal(edb.side,side==='l'?'left':'right');assert.equal(dorsal.side,edb.side);
+  assert.equal(edb.meshNames.length,1);assert.equal(dorsal.meshNames.length,1);
+  assert.ok(edb.relatedIds.some(id=>/5114[45]$/.test(id)),'EDB relates to distinct existing EHB');
+  assert.ok(dorsal.relatedIds.length>=8,'Dorsal group has metatarsal and phalangeal context');
+  assert.ok(!edb.meshNames.some(mesh=>dorsal.meshNames.includes(mesh)));
+  assert.ok(!/plantar/i.test(dorsal.name+' '+dorsal.latin));
+  assert.match(body.education[edb.educationId].limits,/clínic|esquemát/i);
+ }
+}
+
 const brokenLesson=structuredClone(body);delete brokenLesson.education[added.find(n=>n.educationId).educationId];
 assert.throws(()=>createCatalogIndex(brokenLesson),/ficha educativa/);
 const report={systems:11,nodes:body.nodes.length,structures:body.nodes.filter(n=>n.kind==='structure').length,components:body.nodes.filter(n=>n.kind==='component').length,meshes:owners.size,modules:body.assets.length,triangles:body.assets.reduce((s,a)=>s+a.triangles,0),bytes:body.assets.reduce((s,a)=>s+a.bytes,0),newNodes:added.length,newModules:modules.length,defaultModules:initial.length,checks:['unique owners and hashes','11 systems','optional defaults and explicit opt-in','ES/Latin/FMA/FJ search','scope and education shared with XR','isolation ancestry and reveal','zero explosion','dentition / aggregate / actual vessel identity']};

@@ -44,13 +44,15 @@ try{await withinQaDeadline(async()=>{
  if(skipOwners){const previous=JSON.parse(await readFile(path.join(output,'qa.json'),'utf8'));assert.ok(previous.checks.includes('Every new owner: source-ID search, lazy load, selection, isolate, hide, restore and card without remount'));report.ownerChecksFrom=previous.date;}
  check('Every new owner: source-ID search, lazy load, selection, isolate, hide, restore and card without remount');
  report.realPickedModules=[...pickedModules];
- const captures=wave==='wave2'?[
+ const captures=wave==='wave3'?[
+ ['zanatomy:extensor-digitorum-brevis-l','01-edb-left-context','superior'],['zanatomy:extensor-digitorum-brevis-r','02-edb-right-context','superior'],['zanatomy:dorsal-interossei-foot-l','03-interossei-left-context','superior'],['zanatomy:dorsal-interossei-foot-r','04-interossei-right-context','superior']
+ ]:wave==='wave2'?[
  ['bp3d:FMA46286','01-neck','anterior'],['bp3d:FMA38507','02-forearm','posterior'],['bp3d:FMA65198','03-hand','anterior'],['bp3d:FMA22546','04-leg','anterior'],['bp3d:FMA72311','05-stylohyoid','left'],['bp3d:FMA258716','06-deep-brain','anterior'],['bp3d:FMA78454','07-ventricles','posterior'],['resp:FMA46590','08-larynx','posterior'],['resp:FMA46632','09-pharynx','right'],['bp3d:FMA7260','10-papillary','anterior'],['bp3d:FMA3818','11-coronary','anterior'],['dig:FMA16549','12-mesoappendix','anterior'],['ocular:FMA58300','13-choroid','posterior'],['ocular:FMA59103','14-lacrimal','anterior'],['integ:FMA54241','15-hair','posterior']
  ]:[['bp3d:FMA13295','01-diaphragm-context','anterior'],['bp3d:FMA9756','02-intercostals','posterior'],['dig:FMA55699','03-dentition','anterior'],['bp3d:FMA22340','04-hip','posterior'],['bp3d:FMA45858','05-pelvic-floor','inferior'],['ocular:FMA49044','06-orbit','anterior'],['ocular:FMA58242','07-lens','right'],['ocular:FMA58607','08-retina','posterior'],['bp3d:FMA83966','09-tentorium','posterior'],['bp3d:FMA20801','10-femoral-branches','anterior']];
  for(const [id,name,view] of captures){
   if(!byId.has(id))continue;await choose(id);await page.getByRole('button',{name:'Mostrar contexto',exact:true}).click();await page.waitForTimeout(650);await h.view(view);await shot(name);
  }
- await choose(wave==='wave2'?'bp3d:FMA65198':'bp3d:FMA45858');await action('Aislar');await h.view('anterior');await shot('16-detail-isolated');await action('Ver conjunto');
+ await choose(wave==='wave3'?'zanatomy:dorsal-interossei-foot-l':wave==='wave2'?'bp3d:FMA65198':'bp3d:FMA45858');await action('Aislar');await h.view(wave==='wave3'?'superior':'anterior');await shot('16-detail-isolated');await action('Ver conjunto');
  for(const level of ['systems','regions','structures']){await page.getByRole('combobox',{name:'Nivel de despiece'}).selectOption(level);await setSlider(page.getByRole('slider',{name:'Separación de piezas'}),35);await page.waitForTimeout(1000);await setSlider(page.getByRole('slider',{name:'Separación de piezas'}),0);await page.waitForFunction(()=>window.__med3dAtlasScene().parts.every(p=>p.position.every((v,i)=>v===p.restPosition[i])),undefined,{timeout:120000});}check('All explosion modes return to exact rest');
  await measure('first-load-default',assets.filter(a=>a.systemId!=='integumentary').map(a=>a.systemId).filter((x,i,a)=>a.indexOf(x)===i));
  await measure('isolated-muscular-with-additions',['muscular'],assets.filter(a=>a.systemId==='muscular').map(a=>a.id));
@@ -58,7 +60,7 @@ try{await withinQaDeadline(async()=>{
  await measure('full-without-skin',[...new Set(assets.map(a=>a.systemId))],assets.filter(a=>a.id!=='integumentary:skin').map(a=>a.id));
  await measure('full-with-skin',cats.map(c=>c.assets[0]?.systemId).filter(Boolean),assets.map(a=>a.id));
  assert.equal(report.performance[0].metrics.meshCount,936);check('Default load unchanged; skin and added modules remain off');
- const mobileId=wave==='wave2'?'ocular:FMA59103':'ocular:FMA58242';
+ const mobileId=wave==='wave3'?'zanatomy:extensor-digitorum-brevis-l':wave==='wave2'?'ocular:FMA59103':'ocular:FMA58242';
  await goto(['skeletal']);await page.setViewportSize({width:390,height:844});await choose(mobileId);await page.getByRole('button',{name:'Inspección',exact:true}).click();assert.ok(await page.getByRole('region',{name:'Información anatómica de '+byId.get(mobileId).name}).isVisible());assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await shot('17-mobile-card');check('Mobile optional selection and educational panel');
  assert.deepEqual(h.errors,[]);assert.deepEqual(h.badRequests,[]);report.success=true;
 },1800000,'Completion '+wave);}

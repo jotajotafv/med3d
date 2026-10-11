@@ -116,6 +116,35 @@ Sólo se registraron uno o dos intervalos de frame por zoom: no representan FPS 
 
 11 sistemas; 739 estructuras; 322 componentes; 1.238 nodos; 177 editoriales; 1.234 mallas; 89 módulos; 4.945.358 triángulos; 47.830.676 bytes GLB. Son cifras derivadas por `test-anatomy-completion.mjs`, todavía provisionales para el programa. La primera carga conserva 51 módulos históricos sin piel ni ampliaciones.
 
-## Waves pendientes
+## WAVE 3 — fuentes registradas y recuperación validada
 
- WAVE 3: fuentes registrables con pruebas nuevas. WAVE 4: candidatos macro de fuente desconocida. WAVE 5: fuentes y arquitectura micro independiente vinculada. Al cierre se emitirán las decisiones de todos los gaps y los ledgers finales; no se considera este atlas completo.
+La recuperación parte de `83deba445c221adb2a21098143c81e563ae8816a`. Todos los cambios locales encontrados correspondían a Wave 3: catálogo muscular, dos GLB de pie, harness de QA, builder y originales/selección/registro/validación de investigación. No se descartó trabajo ni caché; los originales válidos no se descargaron de nuevo. Waves 1–2 y los 56 modelos históricos conservan sus hashes.
+
+Se evaluaron 317 candidatos únicos: 309 Z-Anatomy, dos HRA y seis huesecillos OpenEar. Cuatro se aprueban; 284 se bloquean por registro, 25 por identidad y cuatro por ausencia de superficie utilizable. Son candidatos, no gaps. Decisiones, intentos, matrices, controles y evidencia están en `research/anatomy/completion-wave3-decisions.json` y `research/anatomy/completion-wave3/README.md`.
+
+La incorporación contiene EDB bilateral, separado del EHB, y un conjunto original de interóseos dorsales por pie, separado de los plantares. Cuatro propietarios estructurales, cuatro mallas, dos módulos opcionales, 10.260 triángulos y 92.644 bytes GLB. No se individualizan artificialmente los cuatro interóseos de cada conjunto.
+
+Fuente Z-Anatomy fijada en el commit `38649f4193adbe58e426ccac5670b8c4dde474ec`, licencia CC BY-SA 4.0 y crédito BP3D original. Los dos lados son objetos independientes de la fuente; no se fabrica uno reflejando el otro. Se conservan sus matrices originales documentadas y se corrige el winding de exportación cuando corresponde.
+
+Una similitud global positiva, escala `0.9952171923529913`, se estima con 84 huesos; después se aplica una transformación rígida común por pie. Cada región usa 26 huesos, seis reservados del ajuste. RMS izquierda/derecha 0,913/0,905 mm; máximo muestreado 4,294/4,241 mm. No hay ajustes por músculo, deformación, recorte ni simplificación. Los contactos esquemáticos locales de hasta 1,09 mm con hueso y 0,89 mm con músculos vecinos se explicitan; estas cifras no establecen precisión clínica.
+
+Los originales seleccionados Float64, matrices y triángulos orientados se conservan en ZIP. La verificación independiente de salida mantiene posiciones utilizadas, multiconjunto orientado y multiplicidad de triángulos, bounds e identidad. Float32 sin cuantizar posiciones; Meshopt y cuantización sólo de normales. Error máximo numérico `1.0255714611608195e-8 m`; glTF comprimido y decodificado, cero errores/advertencias. `build-completion-registered.mjs --verify-only` comprueba sin reinstalar ni reconstruir.
+
+El catálogo comparte fichas entre Atlas y XR, con nombre español/latino, función, descripción, relaciones, licencia, fuente y límites de representación. El contexto del EDB usa calcáneo, falanges 2–4 y EHB; el de interóseos usa metatarsianos, falanges y EHB. Búsqueda y módulos siguen siendo opcionales. No se modificó código de interacción XR ni el renderer para completar QA.
+
+### QA recuperado y diagnóstico de tiempos
+
+Los cuatro owners pasan búsqueda, carga, selección, ficha, aislamiento, ocultación, restauración y conservación del mismo Canvas. Clic/hover real en ambos módulos y los tres modos de despiece con retorno exacto a cero pasan. Escritorio a 1366 px y móvil a 390 px pasan; se revisaron las ocho capturas nuevas de escritorio y cuatro móviles. El primer intento móvil del harness chocó con el panel de inspección reabierto; se corrigió el orden de cierre/apertura del test, sin cambiar producto.
+
+El timeout histórico ocurrió al navegar tras un escenario completo que había tardado ~101 s. Una repetición con piel cargó todos los datos antes de fallar únicamente la captura de píxeles. Hay evidencia de carga progresiva y alto coste de render por software, sin errores JS/HTTP; no se puede atribuir retrospectivamente una causa única a la navegación. Se conservaron ambos fallos, las métricas completadas y el intento móvil fallido. Sólo se ampliaron plazos del harness; las aserciones de carga, conteos y funcionamiento permanecen.
+
+Las repeticiones en navegadores nuevos pasan para el atlas completo:
+
+| Escenario | Módulos / mallas | Triángulos | Bytes GLB / geometría | Draw calls | Primera geometría / completo (ms) | CPU render (ms) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Sin piel, con pelo | 90 / 1.237 | 4.752.236 | 46.291.816 / 91.379.508 | 1.191 | 1.078 / 6.675 | 34,2 |
+| Con piel | 91 / 1.238 | 4.955.618 | 47.923.320 / 95.869.432 | 1.192 | 647 / 7.084 | 11,3 |
+
+`qa-summary.json` conserva los cinco escenarios de Wave 3, intervalos de frame, buffers, transferencias, errores e historial de intentos, además de hashes de las capturas. Las muestras de frames y CPU en Chromium/SwiftShader no describen FPS sostenidos de GPU física. El cierre del navegador puede exceder los cinco segundos del harness después de guardar un reporte exitoso; se documenta aparte de las comprobaciones de producto.
+
+Typecheck, build, prueba de cobertura y verificación de geometría pasan. La advertencia de chunk grande del build ya existía. `verify:anatomy` sigue reservado a una única campaña final. Inventario derivado: 11 sistemas, 743 estructuras, 322 componentes, 1.242 nodos, 177 editoriales, 1.238 mallas, 91 módulos, 4.955.618 triángulos y 47.923.320 bytes. Las cifras definitivas se cerrarán tras Waves 4–5.

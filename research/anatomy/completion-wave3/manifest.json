@@ -1,0 +1,258 @@
+{
+  "provenanceId": "z-anatomy-completion-wave3",
+  "source": {
+    "id": "z-anatomy-completion-wave3",
+    "source": "Z-Anatomy · musculatura dorsal del pie",
+    "author": "Gauthier Kervyn y colaboradores; BodyParts3D, Kousaku Okubo / DBCLS",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "version": "38649f4193adbe58e426ccac5670b8c4dde474ec",
+    "originalUrl": "https://github.com/Z-Anatomy/Models-of-human-anatomy/tree/38649f4193adbe58e426ccac5670b8c4dde474ec",
+    "attribution": "Z-Anatomy — CC BY-SA 4.0. BodyParts3D — DBCLS — CC BY-SA 2.1 Japan (crédito original).",
+    "modifications": [
+      "Cuatro mallas originales evaluadas en Blender 5.1; conserva matrices y reflejos ya presentes en la fuente, con orientación de triángulos corregida al exportar. No se genera un lado a partir del otro.",
+      "Una similitud global y una transformación rígida por pie, compartida por todos los candidatos de cada región. Sin deformación, cortes, subdivisión artificial ni simplificación añadida.",
+      "Float32 y Meshopt; cuantización sólo de normales. Derivados y originales seleccionados bajo CC BY-SA 4.0.",
+      "Interóseos dorsales agrupados por lado. Contactos esquemáticos locales documentados; sin precisión clínica acreditada."
+    ]
+  },
+  "registration": "research/anatomy/completion-wave3/registration.json",
+  "uniformScale": 0.9952171923529913,
+  "matrices": {
+    "foot_l": [
+      [
+        0.9673539735953197,
+        -0.23376412955667875,
+        -0.006154791379433252,
+        0.007678538679803237
+      ],
+      [
+        0.00552707095674529,
+        -0.003330670875501141,
+        0.9951962711310413,
+        -0.08123526024813232
+      ],
+      [
+        -0.23377981352322771,
+        -0.9673678195593959,
+        -0.0019391815070934782,
+        0.12783313395173979
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "foot_r": [
+      [
+        0.96743499284334,
+        0.2334175493648694,
+        0.006560657411841369,
+        -0.007703382159695769
+      ],
+      [
+        -0.005978122092667404,
+        -0.003194631728830298,
+        0.9951941098797424,
+        -0.08126863530335546
+      ],
+      [
+        0.2334331952260044,
+        -0.9674519636300235,
+        -0.0017033466946395886,
+        0.12778044729438265
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "sourceZipSha256": "bf337ce98dbdaffebf3f14194ed83996b7cd3e6793bfd70a955340ac2c6ea7e6",
+  "files": [
+    {
+      "anatomyId": "zanatomy:extensor-digitorum-brevis-l",
+      "meshName": "zanatomy_extensor-digitorum-brevis-l",
+      "side": "left",
+      "moduleId": "muscular:completion3-foot-left",
+      "transform": [
+        [
+          0.9673539735953197,
+          -0.23376412955667875,
+          -0.006154791379433252,
+          0.007678538679803237
+        ],
+        [
+          0.00552707095674529,
+          -0.003330670875501141,
+          0.9951962711310413,
+          -0.08123526024813232
+        ],
+        [
+          -0.23377981352322771,
+          -0.9673678195593959,
+          -0.0019391815070934782,
+          0.12783313395173979
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "boundsMetres": [
+        [
+          0.09384568097786508,
+          -0.06499394992072413,
+          0.06884311722890296
+        ],
+        [
+          0.15984691971872073,
+          -0.007086690368531046,
+          0.2175821311587317
+        ]
+      ],
+      "originalGeometrySha256": "da94604d8dc12b277d6cef352f1f67ce663718d3a15e5dafd7913c06cc3fadfd"
+    },
+    {
+      "anatomyId": "zanatomy:dorsal-interossei-foot-l",
+      "meshName": "zanatomy_dorsal-interossei-foot-l",
+      "side": "left",
+      "moduleId": "muscular:completion3-foot-left",
+      "transform": [
+        [
+          0.9673539735953197,
+          -0.23376412955667875,
+          -0.006154791379433252,
+          0.007678538679803237
+        ],
+        [
+          0.00552707095674529,
+          -0.003330670875501141,
+          0.9951962711310413,
+          -0.08123526024813232
+        ],
+        [
+          -0.23377981352322771,
+          -0.9673678195593959,
+          -0.0019391815070934782,
+          0.12783313395173979
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "boundsMetres": [
+        [
+          0.09134822494952037,
+          -0.06286282514382713,
+          0.11703409475275348
+        ],
+        [
+          0.14670280045543094,
+          -0.026521291005720544,
+          0.1932067379616026
+        ]
+      ],
+      "originalGeometrySha256": "d8cff2deabd1151a09f3581e707a15b12d232fb1816afefb0d1ab3201c22ed04"
+    },
+    {
+      "anatomyId": "zanatomy:extensor-digitorum-brevis-r",
+      "meshName": "zanatomy_extensor-digitorum-brevis-r",
+      "side": "right",
+      "moduleId": "muscular:completion3-foot-right",
+      "transform": [
+        [
+          0.96743499284334,
+          0.2334175493648694,
+          0.006560657411841369,
+          -0.007703382159695769
+        ],
+        [
+          -0.005978122092667404,
+          -0.003194631728830298,
+          0.9951941098797424,
+          -0.08126863530335546
+        ],
+        [
+          0.2334331952260044,
+          -0.9674519636300235,
+          -0.0017033466946395886,
+          0.12778044729438265
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "boundsMetres": [
+        [
+          -0.15984197711626782,
+          -0.0649807814165634,
+          0.0688322406133706
+        ],
+        [
+          -0.09386584800219129,
+          -0.007077074709652534,
+          0.2175783634924498
+        ]
+      ],
+      "originalGeometrySha256": "5d98848258d20193658b0a07c6be2647756c6aed14dba2e55f909906b479af20"
+    },
+    {
+      "anatomyId": "zanatomy:dorsal-interossei-foot-r",
+      "meshName": "zanatomy_dorsal-interossei-foot-r",
+      "side": "right",
+      "moduleId": "muscular:completion3-foot-right",
+      "transform": [
+        [
+          0.96743499284334,
+          0.2334175493648694,
+          0.006560657411841369,
+          -0.007703382159695769
+        ],
+        [
+          -0.005978122092667404,
+          -0.003194631728830298,
+          0.9951941098797424,
+          -0.08126863530335546
+        ],
+        [
+          0.2334331952260044,
+          -0.9674519636300235,
+          -0.0017033466946395886,
+          0.12778044729438265
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "boundsMetres": [
+        [
+          -0.14670519577565208,
+          -0.06284834650564361,
+          0.1170312269705004
+        ],
+        [
+          -0.09134325489341283,
+          -0.026522970588381253,
+          0.19319757422993822
+        ]
+      ],
+      "originalGeometrySha256": "a8e170f961c6a8ef8f672d81a322a4481034af6f40dd4dd9a1b107507ce60c47"
+    }
+  ]
+}

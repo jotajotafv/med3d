@@ -1,0 +1,33 @@
+{
+  "regions": {
+    "native": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "method": "Original BP3D 4.0 frame; fixed (x,y,z) -> (x,z,-y)/1000 before identity matrix. No fitted registration."
+}

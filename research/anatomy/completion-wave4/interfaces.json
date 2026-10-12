@@ -1,0 +1,1237 @@
+{
+  "method": "Unsigned nearest-surface distances and three-ray containment sampling. Occupancy inside a parent organ is expected for its own substructure; it is not a generic rejection. Skin tissue occupancy is not body containment.",
+  "results": [
+    {
+      "source": "Adenohypophysis",
+      "target": "endo:FMA13889",
+      "targetName": "Hip\u00f3fisis",
+      "samples": 369,
+      "insideSamples": 213,
+      "distanceMm": {
+        "min": 0.0016049372106863302,
+        "median": 0.5432848120108247,
+        "p95": 1.0530451778322452,
+        "max": 1.1861274251714349
+      },
+      "outsideMaxMm": 0.8909043972380459
+    },
+    {
+      "source": "Neurohypophysis",
+      "target": "endo:FMA13889",
+      "targetName": "Hip\u00f3fisis",
+      "samples": 325,
+      "insideSamples": 152,
+      "distanceMm": {
+        "min": 0.0006097540676819335,
+        "median": 0.48284794320352376,
+        "p95": 0.9079129318706693,
+        "max": 1.1715892469510436
+      },
+      "outsideMaxMm": 0.886771478690207
+    },
+    {
+      "source": "Nail plate (foot).l",
+      "target": "integ:FMA7163",
+      "targetName": "Piel \u00b7 superficie corporal",
+      "samples": 978,
+      "insideSamples": 379,
+      "distanceMm": {
+        "min": 0.00038541904245903424,
+        "median": 0.7384050404652953,
+        "p95": 2.6379329734481862,
+        "max": 4.778058733791113
+      },
+      "outsideMaxMm": 4.778058733791113
+    },
+    {
+      "source": "Nail plate (foot).r",
+      "target": "integ:FMA7163",
+      "targetName": "Piel \u00b7 superficie corporal",
+      "samples": 978,
+      "insideSamples": 424,
+      "distanceMm": {
+        "min": 0.0004012952103948919,
+        "median": 0.6139809265732765,
+        "p95": 2.147423499263822,
+        "max": 3.8933311589062214
+      },
+      "outsideMaxMm": 3.8933311589062214
+    },
+    {
+      "source": "Nail plate.l",
+      "target": "integ:FMA7163",
+      "targetName": "Piel \u00b7 superficie corporal",
+      "samples": 1392,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 6.857221946120262,
+        "median": 14.232081361114979,
+        "p95": 18.297207541763783,
+        "max": 20.211687311530113
+      },
+      "outsideMaxMm": 20.211687311530113
+    },
+    {
+      "source": "Nail plate.r",
+      "target": "integ:FMA7163",
+      "targetName": "Piel \u00b7 superficie corporal",
+      "samples": 1392,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 7.759503088891506,
+        "median": 16.729120165109634,
+        "p95": 20.209735725075006,
+        "max": 22.04427868127823
+      },
+      "outsideMaxMm": 22.04427868127823
+    },
+    {
+      "source": "Ejaculatory duct.l",
+      "target": "rep:FMA9600",
+      "targetName": "Pr\u00f3stata",
+      "samples": 444,
+      "insideSamples": 199,
+      "distanceMm": {
+        "min": 0.01658783912716899,
+        "median": 4.317101556807756,
+        "p95": 9.271739842370152,
+        "max": 10.319496504962444
+      },
+      "outsideMaxMm": 10.319496504962444
+    },
+    {
+      "source": "Ejaculatory duct.l",
+      "target": "uri:FMA15900",
+      "targetName": "Vejiga urinaria",
+      "samples": 444,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 0.6815561791881919,
+        "median": 2.4892298970371485,
+        "p95": 5.618425062857568,
+        "max": 6.66192639619112
+      },
+      "outsideMaxMm": 6.66192639619112
+    },
+    {
+      "source": "Ejaculatory duct.l",
+      "target": "uri:FMA19667",
+      "targetName": "Uretra masculina disponible",
+      "samples": 444,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 2.682838821783662,
+        "median": 11.875143740326166,
+        "p95": 20.74551424011588,
+        "max": 21.79460972547531
+      },
+      "outsideMaxMm": 21.79460972547531
+    },
+    {
+      "source": "Ejaculatory duct.l",
+      "target": "rep:FMA19387",
+      "targetName": "Ves\u00edcula seminal derecha",
+      "samples": 444,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 6.341476459056139,
+        "median": 9.48395300656557,
+        "p95": 13.011351274326444,
+        "max": 14.038878493010998
+      },
+      "outsideMaxMm": 14.038878493010998
+    },
+    {
+      "source": "Ejaculatory duct.l",
+      "target": "rep:FMA19388",
+      "targetName": "Ves\u00edcula seminal izquierda",
+      "samples": 444,
+      "insideSamples": 305,
+      "distanceMm": {
+        "min": 0.011681890100589953,
+        "median": 1.6337137785740197,
+        "p95": 6.127935275435448,
+        "max": 7.15244747698307
+      },
+      "outsideMaxMm": 7.15244747698307
+    },
+    {
+      "source": "Ejaculatory duct.r",
+      "target": "rep:FMA9600",
+      "targetName": "Pr\u00f3stata",
+      "samples": 444,
+      "insideSamples": 200,
+      "distanceMm": {
+        "min": 0.010522609954932705,
+        "median": 4.296653438359499,
+        "p95": 9.316399786621332,
+        "max": 10.299194604158401
+      },
+      "outsideMaxMm": 10.299194604158401
+    },
+    {
+      "source": "Ejaculatory duct.r",
+      "target": "uri:FMA15900",
+      "targetName": "Vejiga urinaria",
+      "samples": 444,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 0.02957134711323306,
+        "median": 1.9423708436079323,
+        "p95": 5.444813100621103,
+        "max": 6.594166625291109
+      },
+      "outsideMaxMm": 6.594166625291109
+    },
+    {
+      "source": "Ejaculatory duct.r",
+      "target": "uri:FMA19667",
+      "targetName": "Uretra masculina disponible",
+      "samples": 444,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 2.6117595843970776,
+        "median": 10.934569872915745,
+        "p95": 20.031577441841364,
+        "max": 21.06800302863121
+      },
+      "outsideMaxMm": 21.06800302863121
+    },
+    {
+      "source": "Ejaculatory duct.r",
+      "target": "rep:FMA19387",
+      "targetName": "Ves\u00edcula seminal derecha",
+      "samples": 444,
+      "insideSamples": 217,
+      "distanceMm": {
+        "min": 0.0011990676966888714,
+        "median": 0.8906195580493659,
+        "p95": 7.006089668720961,
+        "max": 7.908511906862259
+      },
+      "outsideMaxMm": 7.908511906862259
+    },
+    {
+      "source": "Ejaculatory duct.r",
+      "target": "rep:FMA19388",
+      "targetName": "Ves\u00edcula seminal izquierda",
+      "samples": 444,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 4.703597631305456,
+        "median": 7.546065142378211,
+        "p95": 10.836212011054158,
+        "max": 11.844406835734844
+      },
+      "outsideMaxMm": 11.844406835734844
+    },
+    {
+      "source": "FJ2042",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 150,
+      "insideSamples": 108,
+      "distanceMm": {
+        "min": 0.001675490466368501,
+        "median": 8.054570760577917,
+        "p95": 13.381691044196483,
+        "max": 14.308715239167213
+      },
+      "outsideMaxMm": 13.132368214428425
+    },
+    {
+      "source": "FJ2042",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 150,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 18.615523353219032,
+        "median": 33.88144262135029,
+        "p95": 59.590933099389076,
+        "max": 59.9776990711689
+      },
+      "outsideMaxMm": 59.9776990711689
+    },
+    {
+      "source": "FJ2043",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 132,
+      "insideSamples": 94,
+      "distanceMm": {
+        "min": 0.00746874138712883,
+        "median": 5.356906680390239,
+        "p95": 12.777407746762036,
+        "max": 14.796326868236065
+      },
+      "outsideMaxMm": 2.299476182088256
+    },
+    {
+      "source": "FJ2043",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 132,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 19.194642081856728,
+        "median": 42.14066080749035,
+        "p95": 53.04355975240469,
+        "max": 53.39404195547104
+      },
+      "outsideMaxMm": 53.39404195547104
+    },
+    {
+      "source": "FJ2045",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 248,
+      "insideSamples": 119,
+      "distanceMm": {
+        "min": 0.056151569879148155,
+        "median": 14.093182981014252,
+        "p95": 34.65584758669137,
+        "max": 35.66320240497589
+      },
+      "outsideMaxMm": 35.66320240497589
+    },
+    {
+      "source": "FJ2045",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 248,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 23.17294478416443,
+        "median": 54.74204942584038,
+        "p95": 88.57144564390182,
+        "max": 89.58743512630463
+      },
+      "outsideMaxMm": 89.58743512630463
+    },
+    {
+      "source": "FJ2049",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 154,
+      "insideSamples": 92,
+      "distanceMm": {
+        "min": 0.1000224074232392,
+        "median": 5.595006980001926,
+        "p95": 9.870040463283658,
+        "max": 11.236944235861301
+      },
+      "outsideMaxMm": 5.990881938487291
+    },
+    {
+      "source": "FJ2049",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 154,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 14.422239735722542,
+        "median": 27.133118361234665,
+        "p95": 49.94008410722017,
+        "max": 50.253018736839294
+      },
+      "outsideMaxMm": 50.253018736839294
+    },
+    {
+      "source": "FJ2052",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 133,
+      "insideSamples": 87,
+      "distanceMm": {
+        "min": 0.06212427979335189,
+        "median": 4.870365373790264,
+        "p95": 8.535332046449183,
+        "max": 9.948568418622017
+      },
+      "outsideMaxMm": 6.308792624622583
+    },
+    {
+      "source": "FJ2052",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 133,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 10.763085447251797,
+        "median": 24.5779138058424,
+        "p95": 55.25437518954277,
+        "max": 55.704548954963684
+      },
+      "outsideMaxMm": 55.704548954963684
+    },
+    {
+      "source": "FJ2053",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 142,
+      "insideSamples": 73,
+      "distanceMm": {
+        "min": 0.05235590288066305,
+        "median": 3.708333009853959,
+        "p95": 8.522279420867562,
+        "max": 9.669715538620949
+      },
+      "outsideMaxMm": 6.3270097598433495
+    },
+    {
+      "source": "FJ2053",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 142,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 29.71881814301014,
+        "median": 37.40750625729561,
+        "p95": 60.71593128144741,
+        "max": 61.48943677544594
+      },
+      "outsideMaxMm": 61.48943677544594
+    },
+    {
+      "source": "FJ2054",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 256,
+      "insideSamples": 58,
+      "distanceMm": {
+        "min": 0.003469477405815269,
+        "median": 7.546196458861232,
+        "p95": 14.17280058376491,
+        "max": 14.983292669057846
+      },
+      "outsideMaxMm": 14.983292669057846
+    },
+    {
+      "source": "FJ2054",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 256,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 6.904427893459797,
+        "median": 44.35131512582302,
+        "p95": 70.80761529505253,
+        "max": 72.0018744468689
+      },
+      "outsideMaxMm": 72.0018744468689
+    },
+    {
+      "source": "FJ2630",
+      "target": "dig:FMA7198",
+      "targetName": "P\u00e1ncreas",
+      "samples": 2218,
+      "insideSamples": 2142,
+      "distanceMm": {
+        "min": 0.12310183956287801,
+        "median": 6.147570442408323,
+        "p95": 8.699639793485403,
+        "max": 10.872643440961838
+      },
+      "outsideMaxMm": 10.872643440961838
+    },
+    {
+      "source": "FJ2630",
+      "target": "dig:FMA10419",
+      "targetName": "Conducto pancre\u00e1tico disponible",
+      "samples": 2218,
+      "insideSamples": 49,
+      "distanceMm": {
+        "min": 0.0003846666629669926,
+        "median": 2.1502343006432056,
+        "p95": 5.136151821352548,
+        "max": 11.193366721272469
+      },
+      "outsideMaxMm": 11.193366721272469
+    },
+    {
+      "source": "FJ2630",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 2218,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 15.86020179092884,
+        "median": 42.09337756037712,
+        "p95": 85.43309383094311,
+        "max": 92.7501916885376
+      },
+      "outsideMaxMm": 92.7501916885376
+    },
+    {
+      "source": "FJ2630",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 2218,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 14.615382067859173,
+        "median": 23.82062468677759,
+        "p95": 45.32928094267845,
+        "max": 52.29741334915161
+      },
+      "outsideMaxMm": 52.29741334915161
+    },
+    {
+      "source": "FJ3458",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 736,
+      "insideSamples": 179,
+      "distanceMm": {
+        "min": 0.0627622939646244,
+        "median": 13.869420625269413,
+        "p95": 26.948992628604174,
+        "max": 27.237217873334885
+      },
+      "outsideMaxMm": 27.237217873334885
+    },
+    {
+      "source": "FJ3458",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 736,
+      "insideSamples": 261,
+      "distanceMm": {
+        "min": 0.0046517225200659595,
+        "median": 2.9537652153521776,
+        "p95": 31.76773153245449,
+        "max": 32.04423561692238
+      },
+      "outsideMaxMm": 32.04423561692238
+    },
+    {
+      "source": "FJ3459",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 269,
+      "insideSamples": 194,
+      "distanceMm": {
+        "min": 0.012246589903952554,
+        "median": 5.6328424252569675,
+        "p95": 9.953743405640125,
+        "max": 10.906954295933247
+      },
+      "outsideMaxMm": 3.0485568568110466
+    },
+    {
+      "source": "FJ3459",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 269,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 18.721092492341995,
+        "median": 33.87525677680969,
+        "p95": 39.67532515525818,
+        "max": 39.92987796664238
+      },
+      "outsideMaxMm": 39.92987796664238
+    },
+    {
+      "source": "FJ3460",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 303,
+      "insideSamples": 303,
+      "distanceMm": {
+        "min": 2.83246417529881,
+        "median": 7.243169471621513,
+        "p95": 12.968946434557438,
+        "max": 13.240328989923
+      },
+      "outsideMaxMm": 0.0
+    },
+    {
+      "source": "FJ3460",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 303,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 31.092198565602303,
+        "median": 37.92271018028259,
+        "p95": 40.88848568499088,
+        "max": 41.2004329264164
+      },
+      "outsideMaxMm": 41.2004329264164
+    },
+    {
+      "source": "FJ3461",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 2197,
+      "insideSamples": 2197,
+      "distanceMm": {
+        "min": 5.392294377088547,
+        "median": 10.529054328799248,
+        "p95": 13.455640338361261,
+        "max": 15.015660785138607
+      },
+      "outsideMaxMm": 0.0
+    },
+    {
+      "source": "FJ3461",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 2197,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 27.770493179559708,
+        "median": 43.78971457481384,
+        "p95": 52.64202952384949,
+        "max": 53.26002836227417
+      },
+      "outsideMaxMm": 53.26002836227417
+    },
+    {
+      "source": "FJ3462",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 757,
+      "insideSamples": 360,
+      "distanceMm": {
+        "min": 0.03257349453633651,
+        "median": 11.78070530295372,
+        "p95": 21.481408551335335,
+        "max": 21.833986043930054
+      },
+      "outsideMaxMm": 21.833986043930054
+    },
+    {
+      "source": "FJ3462",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 757,
+      "insideSamples": 185,
+      "distanceMm": {
+        "min": 0.008319896551256534,
+        "median": 12.792974710464478,
+        "p95": 37.18156442046165,
+        "max": 37.664636969566345
+      },
+      "outsideMaxMm": 37.664636969566345
+    },
+    {
+      "source": "FJ3463",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 1470,
+      "insideSamples": 425,
+      "distanceMm": {
+        "min": 0.0037960544432280585,
+        "median": 7.332836277782917,
+        "p95": 27.14771181344986,
+        "max": 27.73963287472725
+      },
+      "outsideMaxMm": 27.73963287472725
+    },
+    {
+      "source": "FJ3463",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 1470,
+      "insideSamples": 260,
+      "distanceMm": {
+        "min": 0.004363377229310572,
+        "median": 13.169880956411362,
+        "p95": 38.63521832972765,
+        "max": 42.32865199446678
+      },
+      "outsideMaxMm": 42.32865199446678
+    },
+    {
+      "source": "FJ3467",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 481,
+      "insideSamples": 358,
+      "distanceMm": {
+        "min": 0.0683007892803289,
+        "median": 3.324422985315323,
+        "p95": 26.297269389033318,
+        "max": 27.185890823602676
+      },
+      "outsideMaxMm": 27.185890823602676
+    },
+    {
+      "source": "FJ3467",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 481,
+      "insideSamples": 48,
+      "distanceMm": {
+        "min": 0.06000803841743618,
+        "median": 45.96007987856865,
+        "p95": 59.62246656417847,
+        "max": 60.69675087928772
+      },
+      "outsideMaxMm": 60.69675087928772
+    },
+    {
+      "source": "FJ3472",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 278,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 0.7541554514318705,
+        "median": 6.676645250990987,
+        "p95": 35.164379328489304,
+        "max": 36.206863820552826
+      },
+      "outsideMaxMm": 36.206863820552826
+    },
+    {
+      "source": "FJ3472",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 278,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 7.3830122128129005,
+        "median": 53.26584726572037,
+        "p95": 64.08807337284088,
+        "max": 64.60297107696533
+      },
+      "outsideMaxMm": 64.60297107696533
+    },
+    {
+      "source": "FJ3473",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 177,
+      "insideSamples": 59,
+      "distanceMm": {
+        "min": 0.058218607591697946,
+        "median": 7.136273197829723,
+        "p95": 34.29176285862923,
+        "max": 34.82862189412117
+      },
+      "outsideMaxMm": 34.82862189412117
+    },
+    {
+      "source": "FJ3473",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 177,
+      "insideSamples": 54,
+      "distanceMm": {
+        "min": 0.05041232725488953,
+        "median": 16.650646924972534,
+        "p95": 35.294342786073685,
+        "max": 35.94360873103142
+      },
+      "outsideMaxMm": 35.94360873103142
+    },
+    {
+      "source": "FJ3474",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 129,
+      "insideSamples": 64,
+      "distanceMm": {
+        "min": 0.0004500206216562219,
+        "median": 1.9788937643170357,
+        "p95": 4.204903729259968,
+        "max": 4.52728196978569
+      },
+      "outsideMaxMm": 2.1150095853954554
+    },
+    {
+      "source": "FJ3474",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 129,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 22.052420303225517,
+        "median": 24.00028705596924,
+        "p95": 30.461587011814117,
+        "max": 31.679492443799973
+      },
+      "outsideMaxMm": 31.679492443799973
+    },
+    {
+      "source": "FJ3475",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 201,
+      "insideSamples": 84,
+      "distanceMm": {
+        "min": 0.2079123951261863,
+        "median": 5.2966889925301075,
+        "p95": 14.297201298177242,
+        "max": 14.518635347485542
+      },
+      "outsideMaxMm": 14.518635347485542
+    },
+    {
+      "source": "FJ3475",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 201,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 0.9037337731570005,
+        "median": 15.703868120908737,
+        "p95": 33.09318795800209,
+        "max": 33.23155641555786
+      },
+      "outsideMaxMm": 33.23155641555786
+    },
+    {
+      "source": "FJ3476",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 131,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 15.16762375831604,
+        "median": 37.54804655909538,
+        "p95": 46.990590170025826,
+        "max": 47.89060726761818
+      },
+      "outsideMaxMm": 47.89060726761818
+    },
+    {
+      "source": "FJ3476",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 131,
+      "insideSamples": 46,
+      "distanceMm": {
+        "min": 0.0007305844178517873,
+        "median": 0.09581775520928204,
+        "p95": 0.46334948274306953,
+        "max": 1.1017522774636745
+      },
+      "outsideMaxMm": 0.5739646730944514
+    },
+    {
+      "source": "FJ3481",
+      "target": "uri:FMA7205",
+      "targetName": "Ri\u00f1\u00f3n izquierdo",
+      "samples": 650,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 6.785270292311907,
+        "median": 15.157395042479038,
+        "p95": 33.63030180335045,
+        "max": 35.53100675344467
+      },
+      "outsideMaxMm": 35.53100675344467
+    },
+    {
+      "source": "FJ3481",
+      "target": "bp3d:FMA14753",
+      "targetName": "Arteria renal izquierda",
+      "samples": 650,
+      "insideSamples": 6,
+      "distanceMm": {
+        "min": 0.008716147931409068,
+        "median": 18.770430237054825,
+        "p95": 65.53293019533157,
+        "max": 67.22648441791534
+      },
+      "outsideMaxMm": 67.22648441791534
+    },
+    {
+      "source": "FJ3558",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 535,
+      "insideSamples": 234,
+      "distanceMm": {
+        "min": 0.04478526534512639,
+        "median": 7.681205403059721,
+        "p95": 11.752425972372293,
+        "max": 12.945478782057762
+      },
+      "outsideMaxMm": 10.74278261512518
+    },
+    {
+      "source": "FJ3558",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 535,
+      "insideSamples": 55,
+      "distanceMm": {
+        "min": 0.018794140487443656,
+        "median": 14.435932040214539,
+        "p95": 37.732502818107605,
+        "max": 37.972938269376755
+      },
+      "outsideMaxMm": 37.972938269376755
+    },
+    {
+      "source": "FJ3559",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 361,
+      "insideSamples": 108,
+      "distanceMm": {
+        "min": 0.05144507667864673,
+        "median": 4.73818788304925,
+        "p95": 8.163915015757084,
+        "max": 8.466492407023907
+      },
+      "outsideMaxMm": 8.466492407023907
+    },
+    {
+      "source": "FJ3559",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 361,
+      "insideSamples": 112,
+      "distanceMm": {
+        "min": 0.019660395992104895,
+        "median": 2.488077851012349,
+        "p95": 14.220314100384712,
+        "max": 14.382892288267612
+      },
+      "outsideMaxMm": 14.382892288267612
+    },
+    {
+      "source": "FJ3560",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 335,
+      "insideSamples": 197,
+      "distanceMm": {
+        "min": 0.06963977648410946,
+        "median": 5.861448589712381,
+        "p95": 11.592410504817963,
+        "max": 11.853408999741077
+      },
+      "outsideMaxMm": 6.170901469886303
+    },
+    {
+      "source": "FJ3560",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 335,
+      "insideSamples": 83,
+      "distanceMm": {
+        "min": 0.012254487046448048,
+        "median": 8.941691368818283,
+        "p95": 20.539576560258865,
+        "max": 20.783862099051476
+      },
+      "outsideMaxMm": 20.783862099051476
+    },
+    {
+      "source": "FJ3561",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 320,
+      "insideSamples": 127,
+      "distanceMm": {
+        "min": 0.09070169471669942,
+        "median": 6.393140880391002,
+        "p95": 12.095694383606315,
+        "max": 12.201470322906971
+      },
+      "outsideMaxMm": 8.417381905019283
+    },
+    {
+      "source": "FJ3561",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 320,
+      "insideSamples": 45,
+      "distanceMm": {
+        "min": 0.03457423736108467,
+        "median": 11.71446219086647,
+        "p95": 27.978049498051405,
+        "max": 28.09026651084423
+      },
+      "outsideMaxMm": 28.09026651084423
+    },
+    {
+      "source": "FJ3562",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 633,
+      "insideSamples": 556,
+      "distanceMm": {
+        "min": 0.02043074528046418,
+        "median": 8.922097273170948,
+        "p95": 12.536626495420933,
+        "max": 13.606289401650429
+      },
+      "outsideMaxMm": 10.188709013164043
+    },
+    {
+      "source": "FJ3562",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 633,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 12.563874013721943,
+        "median": 26.79486572742462,
+        "p95": 39.4091472029686,
+        "max": 41.188761591911316
+      },
+      "outsideMaxMm": 41.188761591911316
+    },
+    {
+      "source": "FJ3563",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 2364,
+      "insideSamples": 2363,
+      "distanceMm": {
+        "min": 0.5898485542275012,
+        "median": 11.063565034419298,
+        "p95": 14.088836731389165,
+        "max": 15.78434370458126
+      },
+      "outsideMaxMm": 10.420305654406548
+    },
+    {
+      "source": "FJ3563",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 2364,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 11.766117066144943,
+        "median": 32.78826363384724,
+        "p95": 47.80651964247227,
+        "max": 51.03174224495888
+      },
+      "outsideMaxMm": 51.03174224495888
+    },
+    {
+      "source": "FJ3573",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 252,
+      "insideSamples": 252,
+      "distanceMm": {
+        "min": 9.115134365856647,
+        "median": 12.679384555667639,
+        "p95": 14.94477721862495,
+        "max": 15.421311371028423
+      },
+      "outsideMaxMm": 0.0
+    },
+    {
+      "source": "FJ3573",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 252,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 29.49594147503376,
+        "median": 34.218981862068176,
+        "p95": 38.21986373513937,
+        "max": 38.44232112169266
+      },
+      "outsideMaxMm": 38.44232112169266
+    },
+    {
+      "source": "FJ3574",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 216,
+      "insideSamples": 216,
+      "distanceMm": {
+        "min": 2.441497752442956,
+        "median": 8.708914276212454,
+        "p95": 11.505378177389503,
+        "max": 11.633170768618584
+      },
+      "outsideMaxMm": 0.0
+    },
+    {
+      "source": "FJ3574",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 216,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 20.299050956964493,
+        "median": 28.96848414093256,
+        "p95": 35.36228742450476,
+        "max": 35.51072999835014
+      },
+      "outsideMaxMm": 35.51072999835014
+    },
+    {
+      "source": "FJ3575",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 927,
+      "insideSamples": 532,
+      "distanceMm": {
+        "min": 0.027977997888228856,
+        "median": 5.620311480015516,
+        "p95": 14.37998684123158,
+        "max": 15.722522512078285
+      },
+      "outsideMaxMm": 15.56445099413395
+    },
+    {
+      "source": "FJ3575",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 927,
+      "insideSamples": 159,
+      "distanceMm": {
+        "min": 0.0006845214670647692,
+        "median": 17.19558611512184,
+        "p95": 35.06945818662643,
+        "max": 36.48107498884201
+      },
+      "outsideMaxMm": 36.48107498884201
+    },
+    {
+      "source": "FJ3576",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 143,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 3.1653319019824266,
+        "median": 23.70212785899639,
+        "p95": 48.1394849717617,
+        "max": 49.28237572312355
+      },
+      "outsideMaxMm": 49.28237572312355
+    },
+    {
+      "source": "FJ3576",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 143,
+      "insideSamples": 57,
+      "distanceMm": {
+        "min": 0.001140207018579531,
+        "median": 0.38445848622359335,
+        "p95": 2.1189544117078185,
+        "max": 2.9123832937330008
+      },
+      "outsideMaxMm": 2.9123832937330008
+    },
+    {
+      "source": "FJ3581",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 236,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 5.205041728913784,
+        "median": 7.386460434645414,
+        "p95": 10.994339594617486,
+        "max": 11.549127288162708
+      },
+      "outsideMaxMm": 11.549127288162708
+    },
+    {
+      "source": "FJ3581",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 236,
+      "insideSamples": 52,
+      "distanceMm": {
+        "min": 0.16490615962538868,
+        "median": 14.596093911677599,
+        "p95": 37.647997960448265,
+        "max": 37.85771131515503
+      },
+      "outsideMaxMm": 37.85771131515503
+    },
+    {
+      "source": "FJ3582",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 307,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 2.3427840787917376,
+        "median": 5.995806306600571,
+        "p95": 10.752825904637575,
+        "max": 11.174028739333153
+      },
+      "outsideMaxMm": 11.174028739333153
+    },
+    {
+      "source": "FJ3582",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 307,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 9.983710944652557,
+        "median": 26.88783034682274,
+        "p95": 43.337732926011086,
+        "max": 43.77587512135506
+      },
+      "outsideMaxMm": 43.77587512135506
+    },
+    {
+      "source": "FJ3584",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 379,
+      "insideSamples": 245,
+      "distanceMm": {
+        "min": 0.004414599516167073,
+        "median": 1.1892961338162422,
+        "p95": 7.321539288386682,
+        "max": 9.909356944262981
+      },
+      "outsideMaxMm": 9.909356944262981
+    },
+    {
+      "source": "FJ3584",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 379,
+      "insideSamples": 19,
+      "distanceMm": {
+        "min": 0.11492372868815437,
+        "median": 39.01418298482895,
+        "p95": 46.14323116838932,
+        "max": 46.835772693157196
+      },
+      "outsideMaxMm": 46.835772693157196
+    },
+    {
+      "source": "FJ3586",
+      "target": "uri:FMA7204",
+      "targetName": "Ri\u00f1\u00f3n derecho",
+      "samples": 329,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 0.19367174536455423,
+        "median": 10.128149762749672,
+        "p95": 40.629162639379494,
+        "max": 41.53459891676903
+      },
+      "outsideMaxMm": 41.53459891676903
+    },
+    {
+      "source": "FJ3586",
+      "target": "bp3d:FMA14752",
+      "targetName": "Arteria renal derecha",
+      "samples": 329,
+      "insideSamples": 0,
+      "distanceMm": {
+        "min": 8.926535956561565,
+        "median": 34.767184406518936,
+        "p95": 48.46443310379982,
+        "max": 49.113888293504715
+      },
+      "outsideMaxMm": 49.113888293504715
+    }
+  ]
+}

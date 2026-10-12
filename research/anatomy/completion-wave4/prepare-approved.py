@@ -1,0 +1,24 @@
+import json,hashlib,zipfile
+from pathlib import Path
+root=Path.cwd();out=Path(__file__).parent;research=root/'research/anatomy'
+read=lambda p:json.loads(p.read_text(encoding='utf8'))
+write=lambda p,x:p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf8',newline='\n')
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+originals=read(out/'bp40-originals.json');cat=read(root/'public/models/anatomy/cardiovascular/catalog.json');byid={n['id']:n for n in cat['nodes']}
+nodes=[];files=[];module=dict(id='cardiovascular:completion4-ulnar-recurrent',label='Recurrentes cubitales anteriores',path='models/anatomy/cardiovascular/completion4-ulnar-recurrent.glb',systemId='cardiovascular',regionId='cardio:arterial:upper-limbs')
+for fid,side,parent in [('FJ2259','left','bp3d:FMA22798'),('FJ2311','right','bp3d:FMA22797')]:
+ r=next(x for x in originals['candidates'] if x['elementId']==fid);fma=r['headers']['Concept ID'];id='bp3d:'+fma;assert id not in byid
+ base=byid[parent];name='Arteria recurrente cubital anterior '+('izquierda' if side=='left' else 'derecha')
+ module['regionId']='cardio:arterial'
+ nodes.append(dict(id=id,sourceId=fma,name=name,anatomicalName='Arteria recurrente cubital anterior',latin='Arteria recurrens ulnaris anterior',aliases=[r['headers']['English name'],fma,fid,'Recurrente ulnar anterior','Arteria recurrens ulnaris anterior'],systemId='cardiovascular',parentId=base['parentId'],regionId=base['regionId'],children=[],kind='structure',assetIds=[module['id']],meshNames=[],sourceElements=[fid],family='completion4:anterior-ulnar-recurrent',educationId='completion4:anterior-ulnar-recurrent',side=side,anatomyType='Arteria · segmento disponible',relatedIds=[parent,'skeletal:region:arm-'+side],vascularClass='arterial',gaps=['cardio-secondary']))
+ file={k:r[k] for k in ['elementId','sha256','bytes','headers','archiveEntry'] if k in r};file.update(sourceId=fma,identityEvidence='Original 4.0 header, FMA/FJ tables and native side; distinct branch at the ulnar artery interface. No generated reflection.',nominalConcepts=r['nominalRows']);assert sha(out/'originals'/(fid+'.obj'))==r['sha256'];files.append(file)
+lesson=dict(description='Rama de la arteria cubital que asciende hacia la región anterior del codo.',function='Participa en la irrigación del codo y del pronador redondo.',relations='Se relaciona con la arteria cubital del mismo lado y asciende anterior al epicóndilo medial del húmero.',limits='Segmento macroscópico original disponible. La unión proximal se solapa con el tronco cubital esquemático; no representa toda la red anastomótica, la luz vascular ni flujo sanguíneo. No constituye una reconstrucción de precisión clínica.',sources=[dict(url='https://www.ncbi.nlm.nih.gov/books/NBK545155/',title='Anatomy, Shoulder and Upper Limb, Forearm Arteries'),dict(url='https://pubmed.ncbi.nlm.nih.gov/2350635/',title='Anatomical study of the recurrent flaps of the upper arm'),dict(url='https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html',title='BodyParts3D · identidad y representación')])
+selection=dict(wave=4,baseline='a0ec84efce918c0b0241bdcb359014ef6a4f61da',sourceArchive=originals['url'],license='CC BY 4.0',coverageNote='Wave 4: dos segmentos originales de las arterias recurrentes cubitales anteriores. Ampliación parcial de ramas regionales; no completa el árbol vascular ni representa microvasculatura.',nodes=nodes,modules=[module],education={'completion4:anterior-ulnar-recurrent':lesson},catalogs={'cardiovascular':[n['id'] for n in nodes]})
+selectionPath=research/'completion-wave4-selection.json';write(selectionPath,selection)
+zipPath=research/'completion-wave4-originals.zip';assert not zipPath.exists()
+with zipfile.ZipFile(zipPath,'w',zipfile.ZIP_DEFLATED) as z:
+ for f in files:z.write(out/'originals'/(f['elementId']+'.obj'),f['elementId']+'.obj')
+lock=dict(sourceArchive=originals['url'],version='4.0 OBJ99',acquiredAt='2026-10-11',author='Database Center for Life Science (DBCLS), Japan',license='CC BY 4.0',licenseUrl=originals['licenseUrl'],licenseDeclarationSha256=originals['licenseSha256'],licenseVerifiedBeforeAcquisition=True,directorySha256='edde15c7c5f34b2b9743935fb3c1873cce3a9789164427ddf8343c879bcde96b',selectionSha256=sha(selectionPath),sourceZipSha256=sha(zipPath),sourceZipBytes=zipPath.stat().st_size,files=files)
+write(research/'completion-wave4-source-lock.json',lock)
+write(research/'completion-wave4-acceptance.json',dict(selectionSha256=sha(selectionPath),acceptedNodeIds=[n['id'] for n in nodes],rejected=[],coverageNote='Native source geometry and anatomical identities preserved; proximal parent intersection interpreted as the branch junction, not extra ownership. Reviewed sampled bone/muscle depths zero. No claim of a complete arterial arcade.',limitationsByNode={}))
+print('Prepared two owners; parent regions:',[(n['parentId'],n['regionId']) for n in nodes])

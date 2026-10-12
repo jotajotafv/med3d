@@ -96,6 +96,15 @@ if(wave3){
 }
 
 const brokenLesson=structuredClone(body);delete brokenLesson.education[added.find(n=>n.educationId).educationId];
+const wave4=activeSelections.find(s=>s.wave===4);
+if(wave4){
+ assert.equal(wave4.nodes.length,2);assert.equal(wave4.modules.length,1);
+ for(const [id,side,parent] of [['bp3d:FMA22802','left','bp3d:FMA22798'],['bp3d:FMA22801','right','bp3d:FMA22797']]){
+  const n=index.byId.get(id);assert.equal(n.side,side);assert.equal(n.meshNames.length,1);
+  assert.ok(n.relatedIds.includes(parent));assert.match(n.name,/recurrente cubital anterior/);
+  assert.match(body.education[n.educationId].limits,/Segmento.*no representa toda la red/);
+ }
+}
 assert.throws(()=>createCatalogIndex(brokenLesson),/ficha educativa/);
 const report={systems:11,nodes:body.nodes.length,structures:body.nodes.filter(n=>n.kind==='structure').length,components:body.nodes.filter(n=>n.kind==='component').length,meshes:owners.size,modules:body.assets.length,triangles:body.assets.reduce((s,a)=>s+a.triangles,0),bytes:body.assets.reduce((s,a)=>s+a.bytes,0),newNodes:added.length,newModules:modules.length,defaultModules:initial.length,checks:['unique owners and hashes','11 systems','optional defaults and explicit opt-in','ES/Latin/FMA/FJ search','scope and education shared with XR','isolation ancestry and reveal','zero explosion','dentition / aggregate / actual vessel identity']};
 await writeFile('.cache/anatomy-completion/catalog-tests.json',JSON.stringify(report,null,2)+'\n');console.log(report);

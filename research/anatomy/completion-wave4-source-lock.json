@@ -1,0 +1,236 @@
+{
+  "sourceArchive": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+  "version": "4.0 OBJ99",
+  "acquiredAt": "2026-10-11",
+  "author": "Database Center for Life Science (DBCLS), Japan",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "licenseDeclarationSha256": "165b6bf236a2570002b35b4db7d87791ab162071451c8f9f1339778d58c39792",
+  "licenseVerifiedBeforeAcquisition": true,
+  "directorySha256": "edde15c7c5f34b2b9743935fb3c1873cce3a9789164427ddf8343c879bcde96b",
+  "selectionSha256": "7f32027cdd1aaa8f68ce8e6b21ffc48c0ca617e88a79f427d5b6390e76adf193",
+  "sourceZipSha256": "4d4b767e1a04ea9d0849c577037d685fef4ac4bcd8bab682d0e37745c9c2b41d",
+  "sourceZipBytes": 18761,
+  "files": [
+    {
+      "elementId": "FJ2259",
+      "sha256": "f8975da034eda2467bbd41a730024c7c52c74af628b199ed6f932400bd3bd089",
+      "bytes": 27102,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ2259",
+        "Representation ID": "BP6306",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22802",
+        "English name": "Left anterior ulnar recurrent artery",
+        "Bounds(mm)": "(193.421400,-80.283800,1004.415500)-(214.423800,-69.331400,1021.379100)",
+        "Volume(cm3)": "0.063600"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2259.obj",
+        "method": 8,
+        "crc": 219491069,
+        "compressedBytes": 8953,
+        "bytes": 27102,
+        "offset": 87938311
+      },
+      "sourceId": "FMA22802",
+      "identityEvidence": "Original 4.0 header, FMA/FJ tables and native side; distinct branch at the ulnar artery interface. No generated reflection.",
+      "nominalConcepts": [
+        {
+          "type": "isa",
+          "sourceId": "FMA22799",
+          "name": "branch of ulnar artery",
+          "elementId": "FJ2259"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA22800",
+          "name": "anterior ulnar recurrent artery",
+          "elementId": "FJ2259"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA22802",
+          "name": "left anterior ulnar recurrent artery",
+          "elementId": "FJ2259"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA50720",
+          "name": "artery",
+          "elementId": "FJ2259"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA66464",
+          "name": "systemic artery",
+          "elementId": "FJ2259"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA70345",
+          "name": "subdivision of subclavian artery",
+          "elementId": "FJ2259"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA77140",
+          "name": "ulnar recurrent artery",
+          "elementId": "FJ2259"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA86187",
+          "name": "segment of arterial tree organ",
+          "elementId": "FJ2259"
+        },
+        {
+          "type": "partof",
+          "sourceId": "FMA4694",
+          "name": "left subclavian artery",
+          "elementId": "FJ2259"
+        },
+        {
+          "type": "partof",
+          "sourceId": "FMA22798",
+          "name": "left ulnar artery",
+          "elementId": "FJ2259"
+        },
+        {
+          "type": "partof",
+          "sourceId": "FMA22802",
+          "name": "left anterior ulnar recurrent artery",
+          "elementId": "FJ2259"
+        },
+        {
+          "type": "partof",
+          "sourceId": "FMA45623",
+          "name": "systemic arterial system",
+          "elementId": "FJ2259"
+        },
+        {
+          "type": "partof",
+          "sourceId": "FMA49894",
+          "name": "systemic arterial tree",
+          "elementId": "FJ2259"
+        }
+      ]
+    },
+    {
+      "elementId": "FJ2311",
+      "sha256": "ed64165407c9ea2e2b0b8cbb3d2698dacbc68a461d8d3f97efbf0b4d3edcbd2b",
+      "bytes": 27734,
+      "headers": {
+        "The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows": "\"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+        "http": "//dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "Compatibility version": "4.0",
+        "File ID": "FJ2311",
+        "Representation ID": "BP6305",
+        "Build-up logic": "FMA 3.0 is_a",
+        "Concept ID": "FMA22801",
+        "English name": "Right anterior ulnar recurrent artery",
+        "Bounds(mm)": "(-214.424800,-80.286200,1004.413000)-(-193.415200,-69.336500,1021.369000)",
+        "Volume(cm3)": "0.064000"
+      },
+      "archiveEntry": {
+        "path": "isa_BP3D_4.0_obj_99/FJ2311.obj",
+        "method": 8,
+        "crc": 2368187374,
+        "compressedBytes": 9016,
+        "bytes": 27734,
+        "offset": 90604218
+      },
+      "sourceId": "FMA22801",
+      "identityEvidence": "Original 4.0 header, FMA/FJ tables and native side; distinct branch at the ulnar artery interface. No generated reflection.",
+      "nominalConcepts": [
+        {
+          "type": "isa",
+          "sourceId": "FMA22799",
+          "name": "branch of ulnar artery",
+          "elementId": "FJ2311"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA22800",
+          "name": "anterior ulnar recurrent artery",
+          "elementId": "FJ2311"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA22801",
+          "name": "right anterior ulnar recurrent artery",
+          "elementId": "FJ2311"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA50720",
+          "name": "artery",
+          "elementId": "FJ2311"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA66464",
+          "name": "systemic artery",
+          "elementId": "FJ2311"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA70345",
+          "name": "subdivision of subclavian artery",
+          "elementId": "FJ2311"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA77140",
+          "name": "ulnar recurrent artery",
+          "elementId": "FJ2311"
+        },
+        {
+          "type": "isa",
+          "sourceId": "FMA86187",
+          "name": "segment of arterial tree organ",
+          "elementId": "FJ2311"
+        },
+        {
+          "type": "partof",
+          "sourceId": "FMA3932",
+          "name": "brachiocephalic artery",
+          "elementId": "FJ2311"
+        },
+        {
+          "type": "partof",
+          "sourceId": "FMA3953",
+          "name": "right subclavian artery",
+          "elementId": "FJ2311"
+        },
+        {
+          "type": "partof",
+          "sourceId": "FMA22797",
+          "name": "right ulnar artery",
+          "elementId": "FJ2311"
+        },
+        {
+          "type": "partof",
+          "sourceId": "FMA22801",
+          "name": "right anterior ulnar recurrent artery",
+          "elementId": "FJ2311"
+        },
+        {
+          "type": "partof",
+          "sourceId": "FMA45623",
+          "name": "systemic arterial system",
+          "elementId": "FJ2311"
+        },
+        {
+          "type": "partof",
+          "sourceId": "FMA49894",
+          "name": "systemic arterial tree",
+          "elementId": "FJ2311"
+        }
+      ]
+    }
+  ]
+}

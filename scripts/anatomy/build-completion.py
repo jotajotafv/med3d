@@ -7,7 +7,7 @@ from pathlib import Path
 import argparse,copy,hashlib,json,struct,zipfile
 ROOT=Path(__file__).resolve().parents[2]
 p=argparse.ArgumentParser();p.add_argument('wave');p.add_argument('--install',action='store_true');p.add_argument('--replace-reviewed-cohort',action='store_true');A=p.parse_args()
-assert A.wave in ['wave1','wave2']
+assert A.wave in ['wave1','wave2','wave4']
 research=ROOT/'research/anatomy';out=ROOT/'.cache/anatomy-completion'/A.wave
 out.mkdir(parents=True,exist_ok=True)
 selection_path=research/f'completion-{A.wave}-selection.json'

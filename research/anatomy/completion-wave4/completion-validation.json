@@ -1,0 +1,90 @@
+{
+  "pipeline": "@gltf-transform 4.5.0; meshoptimizer 1.2.0",
+  "positionBits": 32,
+  "positionQuantization": false,
+  "normalBits": 12,
+  "additionalDecimation": false,
+  "transform": [
+    [
+      0.001,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.001,
+      0
+    ],
+    [
+      0,
+      -0.001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "numericalToleranceMetres": 0.00005,
+  "numericalToleranceScope": "Maximum Euclidean source-to-decoded position error; not anatomical/clinical accuracy.",
+  "method": "Original OBJ double coordinates transformed once; decoded GLB world positions nearest-matched within 0.05 mm; every oriented source triangle and duplicate occurrence matched, and every used source position retained.",
+  "sourceZipSha256": "4d4b767e1a04ea9d0849c577037d685fef4ac4bcd8bab682d0e37745c9c2b41d",
+  "modules": [
+    {
+      "id": "cardiovascular:completion4-ulnar-recurrent",
+      "bytes": 10376,
+      "sha256": "fde189e15cdfc88cf8196f83603b83114b5c6eac41a1989f801d087ab7205d01",
+      "meshes": 2,
+      "triangles": 938,
+      "vertices": 475,
+      "materials": 1,
+      "decodedAccessorBytes": 14178,
+      "compression": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ],
+      "maxPositionErrorMetres": 5.934869822905118e-8,
+      "maxBoundsErrorMetres": 5.3291320689652366e-8,
+      "elements": [
+        {
+          "elementId": "FJ2259",
+          "sourceId": "FMA22802",
+          "anatomyId": "bp3d:FMA22802",
+          "side": "left",
+          "triangles": 466,
+          "vertices": 236,
+          "uniqueUsedSourcePositions": 235,
+          "maxPositionErrorMetres": 5.93220939620369e-8,
+          "rmsPositionErrorMetres": 3.579983310122313e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 5.3291320689652366e-8
+        },
+        {
+          "elementId": "FJ2311",
+          "sourceId": "FMA22801",
+          "anatomyId": "bp3d:FMA22801",
+          "side": "right",
+          "triangles": 472,
+          "vertices": 239,
+          "uniqueUsedSourcePositions": 238,
+          "maxPositionErrorMetres": 5.934869822905118e-8,
+          "rmsPositionErrorMetres": 3.414852882835984e-8,
+          "triangleMultisetAndWindingPreserved": true,
+          "maxBoundsErrorMetres": 4.2037963776664355e-8
+        }
+      ]
+    }
+  ],
+  "totalBytes": 10376,
+  "totalTriangles": 938,
+  "totalMeshes": 2,
+  "totalVertices": 475,
+  "totalDecodedAccessorBytes": 14178,
+  "maxPositionErrorMetres": 5.934869822905118e-8,
+  "maxBoundsErrorMetres": 5.3291320689652366e-8
+}

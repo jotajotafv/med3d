@@ -1,0 +1,101 @@
+{
+  "method": "Original current soft tissues; deterministic used-vertex sampling; three parity directions, maximum sampled nearest-surface depth. Skin is a volumetric shell: parity measures skin tissue occupancy, NOT body enclosure. Expected physiological interfaces require separate interpretation.",
+  "results": [
+    {
+      "sourceObject": "FJ2259",
+      "samples": 235,
+      "outsideSkinTissueSamples": 235,
+      "distanceToSkinTissueMm": 29.72344681620598,
+      "contacts": [
+        {
+          "target": "bp3d:FMA22798",
+          "name": "Arteria cubital izquierda",
+          "samples": 126,
+          "over1mm": 47,
+          "maxDepthMm": 1.7009180737659335,
+          "deepest": {
+            "depthMm": 1.7009180737659335,
+            "point": [
+              0.21326,
+              1.00446,
+              0.0790674
+            ],
+            "surface": [
+              0.2117750197649002,
+              1.004699468612671,
+              0.07827328890562057
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA38471",
+          "name": "Flexor superficial de los dedos \u00b7 porciones disponibles \u00b7 lado izquierdo",
+          "samples": 35,
+          "over1mm": 0,
+          "maxDepthMm": 0.6413444643840194,
+          "deepest": {
+            "depthMm": 0.6413444643840194,
+            "point": [
+              0.193688,
+              1.02065,
+              0.0706285
+            ],
+            "surface": [
+              0.19403952360153198,
+              1.020676612854004,
+              0.07009273022413254
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceObject": "FJ2311",
+      "samples": 238,
+      "outsideSkinTissueSamples": 238,
+      "distanceToSkinTissueMm": 29.673628509044647,
+      "contacts": [
+        {
+          "target": "bp3d:FMA22797",
+          "name": "Arteria cubital derecha",
+          "samples": 133,
+          "over1mm": 53,
+          "maxDepthMm": 1.6870812978595495,
+          "deepest": {
+            "depthMm": 1.6870812978595495,
+            "point": [
+              -0.21343,
+              1.00442,
+              0.0792285
+            ],
+            "surface": [
+              -0.2147686779499054,
+              1.0041183233261108,
+              0.08020990341901779
+            ]
+          }
+        },
+        {
+          "target": "bp3d:FMA38470",
+          "name": "Flexor superficial de los dedos \u00b7 porciones disponibles \u00b7 lado derecho",
+          "samples": 32,
+          "over1mm": 0,
+          "maxDepthMm": 0.6278512883000076,
+          "deepest": {
+            "depthMm": 0.6278512883000076,
+            "point": [
+              -0.193687,
+              1.02069,
+              0.0706137
+            ],
+            "surface": [
+              -0.19403117895126343,
+              1.0207159519195557,
+              0.07008922845125198
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

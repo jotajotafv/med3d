@@ -1,0 +1,23 @@
+{
+  "wave": 4,
+  "checkedAt": "2026-10-11",
+  "scope": "Male / non-female anatomy only. Search discovery is not approval to integrate.",
+  "sources": [
+    {"id":"hra-library","url":"https://humanatlas.io/3d-reference-library","manifest":"https://humanatlas.io/assets/content/3d-reference-library-page/data.yaml","evidence":"hra-source-lock.json","finding":"Male-only originals and crosswalks inspected per asset. Full source metadata, hashes and node inventories retained. Library contains other categories; none of their female assets was requested."},
+    {"id":"nih-kidney","url":"https://3d.nih.gov/entries/21001?version=1","finding":"Official left male kidney entry confirms Visible Human origin. Version-specific prose cannot substitute for inspection of v1.3 mesh nodes/crosswalk: current originals still contain named papilla meshes despite removal wording."},
+    {"id":"nih-lymph-valve","url":"https://3d.nih.gov/entries/451","gaps":["lymphatic-vessels","lymphatic-thoracic-duct","lymphatic-right-duct","lymphatic-cisterna"],"finding":"The publisher identifies a theoretical, approximately axisymmetric vessel/valve designed for printing. It supplies no body-wide course, regional chain or named major duct. Not used as substitute geometry.","decision":"BLOCKED_IDENTITY"},
+    {"id":"xcat-lymphatic","url":"https://arxiv.org/abs/2107.11429","availability":"https://cvit.duke.edu/resource/xcat-phantom-program/","gaps":["lymphatic-nodes","lymphatic-vessels","lymphatic-thoracic-duct","lymphatic-right-duct","lymphatic-cisterna"],"finding":"Scientific lymphatic NURBS model exists. Official resource is request-based; no public asset-specific redistribution license and downloadable licensed model verified. Did not acquire a commercial/requested resource or contact anyone.","decision":"BLOCKED_LICENSE"},
+    {"id":"voxelman-lymphatic","url":"https://pubmed.ncbi.nlm.nih.gov/16783763/","gaps":["lymphatic-nodes"],"finding":"Scientific male Visible Human reconstruction described, incorporated into VOXEL-MAN. Article is evidence that such models exist, not an openly redistributable asset or a validated BP3D registration.","decision":"BLOCKED_SOURCE"},
+    {"id":"cisterna-study","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC6183002/","doi":"10.1111/joa.12869","gaps":["lymphatic-cisterna"],"finding":"Radio-anatomical study provides imaging/anatomical evidence. No separately licensed, identified 3D mesh for this atlas found in the reviewed record. Images not converted into invented geometry.","decision":"BLOCKED_SOURCE"},
+    {"id":"bulbourethral-study","url":"https://pubmed.ncbi.nlm.nih.gov/2327827/","doi":"10.3109/01485019008986877","gaps":["reproductive-bulbourethral"],"finding":"Primary human ultrastructure study is microscopy evidence, not a downloadable macroscopic 3D gland asset. Commercial atlas matches were not used.","decision":"BLOCKED_SOURCE"}
+  ],
+  "searches": [
+    "site.humanatlas.io kidney male reference organ cortex medulla pelvis 3d",
+    "site.zenodo.org human lymphatic system 3d thoracic duct lymph nodes model",
+    "site.3d.nih.gov thoracic duct",
+    "site.zenodo.org cisterna chyli",
+    "site.3d.nih.gov bulbourethral",
+    "site.3d.nih.gov lymphatic system"
+  ],
+  "limitation": "A negative result is bounded to the reviewed original repositories, catalogues and searches, not a claim of worldwide nonexistence. Final gap status also incorporates BP3D and Z-Anatomy geometry investigations."
+}

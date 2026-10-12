@@ -1,0 +1,98 @@
+{
+  "scenario": "mobile",
+  "environment": "Fresh headless Chromium / ANGLE SwiftShader, HTTP loopback no-store. CPU measures command submission, not GPU completion; frame samples do not establish sustained physical-device FPS.",
+  "expectedModules": 9,
+  "expectedMeshes": 207,
+  "expectedTriangles": 523966,
+  "expectedBytes": 4025252,
+  "progress": [
+    {
+      "elapsedMs": 15138,
+      "glbResponses": 17
+    }
+  ],
+  "checks": [
+    "All expected modules, meshes and triangles loaded",
+    "mobile bp3d:FMA22802: search, selection, card, isolate, hide, restore, focus, same Canvas, no overflow",
+    "mobile bp3d:FMA22801: search, selection, card, isolate, hide, restore, focus, same Canvas, no overflow"
+  ],
+  "errors": [],
+  "badRequests": [],
+  "serverReadyMs": 14,
+  "navigationCompletedMs": 65,
+  "allMeshesObservedWallMs": 970,
+  "metrics": {
+    "selectedId": 0,
+    "contextIds": 0,
+    "loadedAssets": 9,
+    "meshCount": 207,
+    "triangleCount": 523966,
+    "geometryBytes": 7819708,
+    "drawCalls": 175,
+    "renderGeometries": 211,
+    "renderTextures": 4,
+    "loadMs": 16.59999999962747,
+    "renderCpuMs": 1,
+    "firstGeometryMs": 168,
+    "fullSystemMs": 168
+  },
+  "timing": {
+    "frameIntervalsMs": [
+      16.699999999999932
+    ],
+    "buffers": {
+      "created": 635,
+      "deleted": 0,
+      "live": 635
+    },
+    "transfers": [
+      {
+        "file": "arm-left.glb",
+        "bytes": 345860,
+        "durationMs": 2.5
+      },
+      {
+        "file": "arm-right.glb",
+        "bytes": 336004,
+        "durationMs": 2.599999999627471
+      },
+      {
+        "file": "leg-left.glb",
+        "bytes": 230240,
+        "durationMs": 2.400000000372529
+      },
+      {
+        "file": "leg-right.glb",
+        "bytes": 230668,
+        "durationMs": 2.5
+      },
+      {
+        "file": "skull.glb",
+        "bytes": 1002700,
+        "durationMs": 2.599999999627471
+      },
+      {
+        "file": "spine.glb",
+        "bytes": 579828,
+        "durationMs": 2.2999999998137355
+      },
+      {
+        "file": "thorax.glb",
+        "bytes": 1191640,
+        "durationMs": 4.599999999627471
+      },
+      {
+        "file": "completion2-styloid-ligament-left.glb",
+        "bytes": 54264,
+        "durationMs": 1.400000000372529
+      },
+      {
+        "file": "completion2-styloid-ligament-right.glb",
+        "bytes": 54048,
+        "durationMs": 1.6000000005587935
+      }
+    ]
+  },
+  "measurementComplete": true,
+  "success": true
+}

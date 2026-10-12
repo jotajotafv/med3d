@@ -1,0 +1,78 @@
+{
+  "method": "Three panels: source in global similarity orientation; target original bones; regional overlay. Only QA display materials. Target/source landmark errors shown with green/magenta points and connecting lines. Each named region uses one shared rigid transform after global similarity, no candidate-specific fit.",
+  "captures": [
+    {
+      "region": "craniofacial",
+      "file": "01-neck-nodes.png",
+      "gaps": [
+        "lymphatic-nodes",
+        "lymphatic-tonsils"
+      ]
+    },
+    {
+      "region": "craniofacial",
+      "file": "02-pituitary.png",
+      "gaps": [
+        "endocrine-subdivisions"
+      ]
+    },
+    {
+      "region": "upper",
+      "file": "03-arm-nodes.png",
+      "gaps": [
+        "lymphatic-nodes"
+      ]
+    },
+    {
+      "region": "trunk",
+      "file": "04-trunk-nodes.png",
+      "gaps": [
+        "lymphatic-nodes"
+      ]
+    },
+    {
+      "region": "lower",
+      "file": "05-lower-nodes.png",
+      "gaps": [
+        "lymphatic-nodes"
+      ]
+    },
+    {
+      "region": "foot_l",
+      "file": "06-left-nails.png",
+      "gaps": [
+        "integumentary-nails"
+      ]
+    },
+    {
+      "region": "foot_r",
+      "file": "07-right-nails.png",
+      "gaps": [
+        "integumentary-nails"
+      ]
+    },
+    {
+      "region": "upper",
+      "file": "08-hand-nails.png",
+      "gaps": [
+        "integumentary-nails"
+      ]
+    },
+    {
+      "region": "lower",
+      "file": "10-ducts-pelvic.png",
+      "gaps": [
+        "reproductive-ejaculatory"
+      ]
+    },
+    {
+      "region": "trunk",
+      "file": "11-cutaneous-regions.png",
+      "gaps": [
+        "integumentary-regions"
+      ]
+    }
+  ],
+  "errors": [],
+  "badRequests": []
+}

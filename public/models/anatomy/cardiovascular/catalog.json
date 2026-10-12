@@ -47,7 +47,8 @@
         "cardiovascular:completion2-coronary-arteries",
         "cardiovascular:completion2-bronchial-arteries",
         "cardiovascular:completion2-coronary-veins",
-        "cardiovascular:completion2-papillary"
+        "cardiovascular:completion2-papillary",
+        "cardiovascular:completion4-ulnar-recurrent"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -93,7 +94,8 @@
         "cardiovascular:completion-femoral-branches-left",
         "cardiovascular:completion2-cerebral-arteries",
         "cardiovascular:completion2-coronary-arteries",
-        "cardiovascular:completion2-bronchial-arteries"
+        "cardiovascular:completion2-bronchial-arteries",
+        "cardiovascular:completion4-ulnar-recurrent"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -332,11 +334,13 @@
         "bp3d:FMA22691",
         "bp3d:FMA22696",
         "bp3d:FMA22733",
-        "bp3d:FMA22797"
+        "bp3d:FMA22797",
+        "bp3d:FMA22801"
       ],
       "kind": "region",
       "assetIds": [
-        "cardio:upper-right"
+        "cardio:upper-right",
+        "cardiovascular:completion4-ulnar-recurrent"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -369,11 +373,13 @@
         "bp3d:FMA22692",
         "bp3d:FMA22697",
         "bp3d:FMA22734",
-        "bp3d:FMA22798"
+        "bp3d:FMA22798",
+        "bp3d:FMA22802"
       ],
       "kind": "region",
       "assetIds": [
-        "cardio:upper-left"
+        "cardio:upper-left",
+        "cardiovascular:completion4-ulnar-recurrent"
       ],
       "meshNames": [],
       "relatedIds": [],
@@ -7643,6 +7649,104 @@
           0.0790958
         ]
       ]
+    },
+    {
+      "id": "bp3d:FMA22802",
+      "sourceId": "FMA22802",
+      "name": "Arteria recurrente cubital anterior izquierda",
+      "anatomicalName": "Arteria recurrente cubital anterior",
+      "latin": "Arteria recurrens ulnaris anterior",
+      "aliases": [
+        "Left anterior ulnar recurrent artery",
+        "FMA22802",
+        "FJ2259",
+        "Recurrente ulnar anterior",
+        "Arteria recurrens ulnaris anterior"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:upper-left",
+      "regionId": "cardio:arterial:upper-left",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion4-ulnar-recurrent"
+      ],
+      "meshNames": [
+        "bp3d_FMA22802_FJ2259"
+      ],
+      "family": "completion4:anterior-ulnar-recurrent",
+      "educationId": "completion4:anterior-ulnar-recurrent",
+      "side": "left",
+      "anatomyType": "Arteria · segmento disponible",
+      "relatedIds": [
+        "bp3d:FMA22798",
+        "skeletal:region:arm-left"
+      ],
+      "vascularClass": "arterial",
+      "gaps": [
+        "cardio-secondary"
+      ],
+      "bounds": [
+        [
+          0.193427,
+          1.00442,
+          0.0693471
+        ],
+        [
+          0.214418,
+          1.0213700000000001,
+          0.0802755
+        ]
+      ]
+    },
+    {
+      "id": "bp3d:FMA22801",
+      "sourceId": "FMA22801",
+      "name": "Arteria recurrente cubital anterior derecha",
+      "anatomicalName": "Arteria recurrente cubital anterior",
+      "latin": "Arteria recurrens ulnaris anterior",
+      "aliases": [
+        "Right anterior ulnar recurrent artery",
+        "FMA22801",
+        "FJ2311",
+        "Recurrente ulnar anterior",
+        "Arteria recurrens ulnaris anterior"
+      ],
+      "systemId": "cardiovascular",
+      "parentId": "cardio:arterial:upper-right",
+      "regionId": "cardio:arterial:upper-right",
+      "children": [],
+      "kind": "structure",
+      "assetIds": [
+        "cardiovascular:completion4-ulnar-recurrent"
+      ],
+      "meshNames": [
+        "bp3d_FMA22801_FJ2311"
+      ],
+      "family": "completion4:anterior-ulnar-recurrent",
+      "educationId": "completion4:anterior-ulnar-recurrent",
+      "side": "right",
+      "anatomyType": "Arteria · segmento disponible",
+      "relatedIds": [
+        "bp3d:FMA22797",
+        "skeletal:region:arm-right"
+      ],
+      "vascularClass": "arterial",
+      "gaps": [
+        "cardio-secondary"
+      ],
+      "bounds": [
+        [
+          -0.21441900000000003,
+          1.00442,
+          0.0693453
+        ],
+        [
+          -0.193425,
+          1.02136,
+          0.0802813
+        ]
+      ]
     }
   ],
   "assets": [
@@ -7995,6 +8099,32 @@
         ]
       ],
       "provenanceId": "bodyparts3d-4.0-completion-wave2"
+    },
+    {
+      "id": "cardiovascular:completion4-ulnar-recurrent",
+      "label": "Recurrentes cubitales anteriores",
+      "path": "models/anatomy/cardiovascular/completion4-ulnar-recurrent.glb",
+      "systemId": "cardiovascular",
+      "regionId": "cardio:arterial",
+      "frameId": "bodyparts3d-4.0-male",
+      "defaultEnabled": false,
+      "bytes": 10376,
+      "sha256": "fde189e15cdfc88cf8196f83603b83114b5c6eac41a1989f801d087ab7205d01",
+      "meshCount": 2,
+      "triangles": 938,
+      "bounds": [
+        [
+          -0.21441900000000003,
+          1.00442,
+          0.0693453
+        ],
+        [
+          0.214418,
+          1.0213700000000001,
+          0.0802813
+        ]
+      ],
+      "provenanceId": "bodyparts3d-4.0-completion-wave4"
     }
   ],
   "provenance": [
@@ -8045,12 +8175,28 @@
         "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
         "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
       ]
+    },
+    {
+      "id": "bodyparts3d-4.0-completion-wave4",
+      "source": "BodyParts3D / Anatomography",
+      "author": "Database Center for Life Science (DBCLS), Japan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0 OBJ99",
+      "originalUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20130619/isa_BP3D_4.0_obj_99.zip",
+      "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+      "modifications": [
+        "Wave 4: dos segmentos originales de las arterias recurrentes cubitales anteriores. Ampliación parcial de ramas regionales; no completa el árbol vascular ni representa microvasculatura. Native source geometry and anatomical identities preserved; proximal parent intersection interpreted as the branch junction, not extra ownership. Reviewed sampled bone/muscle depths zero. No claim of a complete arterial arcade.",
+        "One native transform (x,y,z) -> (x,z,-y)/1000. No individual registration, centering, deformation, mirroring or simplification.",
+        "Float32 positions; Meshopt lossless position compression; display normals quantized to 12 bits.",
+        "Current official CC BY 4.0 declaration; original historical headers preserved in source ZIP."
+      ]
     }
   ],
   "coverage": {
     "title": "Cobertura cardiovascular macroscópica disponible",
-    "structures": 124,
-    "meshes": 207,
+    "structures": 126,
+    "meshes": 209,
     "note": "110 unidades cardiovasculares y 30 componentes; corazón corporal y vasos principales de cabeza/cuello, tronco y extremidades.",
     "limitations": [
       "Cobertura parcial: sin carótidas externas, yugulares externas, troncos femorales profundos ni arterias fibulares inequívocos en esta selección.",
@@ -8059,7 +8205,8 @@
       "La nomenclatura de valvas semilunares se conserva con advertencia de fuente; no se equipara automáticamente a cúspides coronarias.",
       "El corazón HRA detallado sigue independiente; no se superpone su frame al corporal.",
       "Cohorte opcional nativa de prioridad A. Dentición permanente de 28 piezas, músculos, estructuras oculares y porciones identificadas; no afirma cierre de todos los gaps. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
-      "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa."
+      "Ampliación opcional nativa: tejido conectivo, músculos y porciones viscerales, encefálicas, oculares y pilosas. Respeta la granularidad disponible; no declara órganos, capas o sistemas completos. Selección revisada tras controles de contacto: las piezas retiradas figuran en el registro de aceptación y no se contabilizan como cobertura activa.",
+      "Wave 4: dos segmentos originales de las arterias recurrentes cubitales anteriores. Ampliación parcial de ramas regionales; no completa el árbol vascular ni representa microvasculatura. Native source geometry and anatomical identities preserved; proximal parent intersection interpreted as the branch junction, not extra ownership. Reviewed sampled bone/muscle depths zero. No claim of a complete arterial arcade."
     ]
   },
   "education": {
@@ -8296,6 +8443,26 @@
         {
           "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
           "title": "OpenStax · Anatomía cardíaca"
+        },
+        {
+          "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+          "title": "BodyParts3D · identidad y representación"
+        }
+      ]
+    },
+    "completion4:anterior-ulnar-recurrent": {
+      "description": "Rama de la arteria cubital que asciende hacia la región anterior del codo.",
+      "function": "Participa en la irrigación del codo y del pronador redondo.",
+      "relations": "Se relaciona con la arteria cubital del mismo lado y asciende anterior al epicóndilo medial del húmero.",
+      "limits": "Segmento macroscópico original disponible. La unión proximal se solapa con el tronco cubital esquemático; no representa toda la red anastomótica, la luz vascular ni flujo sanguíneo. No constituye una reconstrucción de precisión clínica.",
+      "sources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545155/",
+          "title": "Anatomy, Shoulder and Upper Limb, Forearm Arteries"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2350635/",
+          "title": "Anatomical study of the recurrent flaps of the upper arm"
         },
         {
           "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",

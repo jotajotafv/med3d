@@ -1,0 +1,4994 @@
+{
+  "date": "2026-10-12T00:01:44.544Z",
+  "scope": "Male assets only; original byte copies retained. No integration or registration asserted.",
+  "records": [
+    {
+      "name": "ureter-male-left",
+      "id": "https://lod.humanatlas.io/ref-organ/ureter-male-left/v1.2",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/ureter-male-left/latest/metadata.json",
+      "metadataSha256": "014a4a6b882e11b7ef4ea3399e0a40ac6cd43239d6fed86f56202d1689c4ad34",
+      "metadataBytes": 8875,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/ureter-male-left/v1.2#raw-data",
+        "label": "3D Reference Organ for Ureter, Male, Left",
+        "title": "3D Reference Organ for Ureter, Male, Left",
+        "description": "This reference organ, Left-ureter-male (https://humanatlas.io/3d-reference-library) was created using data from the\nVisible Human Male, provided by the National Library of Medicine (Spitzer et al. 1996; Ackerman 1998). Changes include\nadding the renal calyces and renal papillae from the kidney model per subject matter expert input.\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” *Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0002-0746-927X",
+            "label": "Douglas Strand",
+            "conforms_to": "Person",
+            "fullName": "Douglas Strand",
+            "firstName": "Douglas",
+            "lastName": "Strand",
+            "orcid": "0000-0002-0746-927X",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen, and Heidi Schlehlein. 2024. *3D Reference Organ for Ureter, Male, Left v1.2*. https://doi.org/10.48539/HBM434.VLQJ.299. Accessed on June 15, 2024.",
+        "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. HuBMAP CCF 3D Reference Object Library. https://humanatlas.io/3d-reference-library. Accessed on June 15, 2024.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM434.VLQJ.299",
+        "hubmapId": "HBM434.VLQJ.299",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/ureter-male-left/v1.2#3d-vh-m-ureter-l.glb",
+            "label": "Raw data distribution '3d-vh-m-ureter-l.glb' file",
+            "title": "Raw data distribution '3d-vh-m-ureter-l.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/ureter-male-left/v1.2/assets/3d-vh-m-ureter-l.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/ureter-male-left/v1.2#3d-vh-m-ureter-l.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/ureter-male-left/v1.2#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/ureter-male-left/v1.2/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/ureter-male-left/v1.2#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-ureter-l.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/ureter-male-left/v1.2/assets/3d-vh-m-ureter-l.glb",
+          "sha256": "ebdd493c2e8095ccb6e795f49bf26c94e8d205c94097a7e1f9a9d7b168a1173c",
+          "bytes": 682892,
+          "meshes": 14,
+          "nodes": [
+            {
+              "name": "VH_M_renal_pelvis_ureter_L"
+            },
+            {
+              "name": "VH_M_renal_pelvis_L",
+              "mesh": 0
+            },
+            {
+              "name": "VH_M_kidney_calyx_L"
+            },
+            {
+              "name": "VH_M_major_calyx_L"
+            },
+            {
+              "name": "VH_M_major_calyx_L_a",
+              "mesh": 1
+            },
+            {
+              "name": "VH_M_major_calyx_L_b",
+              "mesh": 2
+            },
+            {
+              "name": "VH_M_major_calyx_L_c",
+              "mesh": 3
+            },
+            {
+              "name": "VH_M_minor_calyx_L"
+            },
+            {
+              "name": "VH_M_minor_calyx_L_a",
+              "mesh": 4
+            },
+            {
+              "name": "VH_M_minor_calyx_L_b",
+              "mesh": 5
+            },
+            {
+              "name": "VH_M_minor_calyx_L_c",
+              "mesh": 6
+            },
+            {
+              "name": "VH_M_minor_calyx_L_d",
+              "mesh": 7
+            },
+            {
+              "name": "VH_M_minor_calyx_L_e",
+              "mesh": 8
+            },
+            {
+              "name": "VH_M_minor_calyx_L_f",
+              "mesh": 9
+            },
+            {
+              "name": "VH_M_minor_calyx_L_g",
+              "mesh": 10
+            },
+            {
+              "name": "VH_M_minor_calyx_L_h",
+              "mesh": 11
+            },
+            {
+              "name": "VH_M_minor_calyx_L_i",
+              "mesh": 12
+            },
+            {
+              "name": "VH_M_ureter_L",
+              "mesh": 13
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/ureter-male-left/v1.2/assets/crosswalk.csv",
+          "sha256": "38cddedbb9ebe8b57bdf27cae343418fde9d597b6d9bcb9fd1e08b7cc82f0f56",
+          "bytes": 850
+        }
+      ]
+    },
+    {
+      "name": "kidney-male-right",
+      "id": "https://lod.humanatlas.io/ref-organ/kidney-male-right/v1.3",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/kidney-male-right/latest/metadata.json",
+      "metadataSha256": "0e10e4aaa496c3c5a11854f749b9de6d0fa6ab9cf0258129991dc6fb0119a38d",
+      "metadataBytes": 9299,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/kidney-male-right/v1.3#raw-data",
+        "label": "3D Reference Organ for Kidney, Male, Right",
+        "title": "3D Reference Organ for Kidney, Male, Right",
+        "description": "This reference organ, Right-kidney-male (https://humanatlas.io/3d-reference-library) was created using data from the\nVisible Human Male, provided by the National Library of Medicine (Spitzer et al. 1996; Ackerman 1998). In version\nv1.3, changes include removing the renal calyces and renal papillae and adding them to the ureter model per subject\nmatter expert input.\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” *Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0001-9198-5498",
+            "label": "Jeffrey Spraggins",
+            "conforms_to": "Person",
+            "fullName": "Jeffrey Spraggins",
+            "firstName": "Jeffrey",
+            "lastName": "Spraggins",
+            "orcid": "0000-0001-9198-5498",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0003-2804-127X",
+            "label": "Sanjay Jain",
+            "conforms_to": "Person",
+            "fullName": "Sanjay Jain",
+            "firstName": "Sanjay",
+            "lastName": "Jain",
+            "orcid": "0000-0003-2804-127X",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen, and Heidi Schlehlein. 2024. \"3D Reference Organ for Kidney, Male, Right v1.3.\" https://doi.org/10.48539/HBM364.QTSC.334. Accessed on June 15, 2024.",
+        "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. \"HuBMAP CCF 3D Reference Object Library.\" https://humanatlas.io/3d-reference-library. Accessed on June 15, 2024.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM364.QTSC.334",
+        "hubmapId": "HBM364.QTSC.334",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/kidney-male-right/v1.3#3d-vh-m-kidney-r.glb",
+            "label": "Raw data distribution '3d-vh-m-kidney-r.glb' file",
+            "title": "Raw data distribution '3d-vh-m-kidney-r.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/kidney-male-right/v1.3/assets/3d-vh-m-kidney-r.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/kidney-male-right/v1.3#3d-vh-m-kidney-r.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/kidney-male-right/v1.3#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/kidney-male-right/v1.3/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/kidney-male-right/v1.3#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-kidney-r.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/kidney-male-right/v1.3/assets/3d-vh-m-kidney-r.glb",
+          "sha256": "f23bac3f62fd050b689bdee86bb8a20bff6997e830cb508c847f74c03c6a964b",
+          "bytes": 1547360,
+          "meshes": 24,
+          "nodes": [
+            {
+              "name": "VH_M_right_kidney"
+            },
+            {
+              "name": "VH_M_kidney_capsule_R",
+              "mesh": 0
+            },
+            {
+              "name": "VH_M_hilum_of_kidney_R",
+              "mesh": 1
+            },
+            {
+              "name": "VH_M_renal_medulla_R"
+            },
+            {
+              "name": "VH_M_renal_papilla_R"
+            },
+            {
+              "name": "VH_M_renal_papilla_R_j",
+              "mesh": 2
+            },
+            {
+              "name": "VH_M_renal_papilla_R_i",
+              "mesh": 3
+            },
+            {
+              "name": "VH_M_renal_papilla_R_h",
+              "mesh": 4
+            },
+            {
+              "name": "VH_M_renal_papilla_R_g",
+              "mesh": 5
+            },
+            {
+              "name": "VH_M_renal_papilla_R_f",
+              "mesh": 6
+            },
+            {
+              "name": "VH_M_renal_papilla_R_e",
+              "mesh": 7
+            },
+            {
+              "name": "VH_M_renal_papilla_R_d",
+              "mesh": 8
+            },
+            {
+              "name": "VH_M_renal_papilla_R_c",
+              "mesh": 9
+            },
+            {
+              "name": "VH_M_renal_papilla_R_b",
+              "mesh": 10
+            },
+            {
+              "name": "VH_M_renal_papilla_R_a",
+              "mesh": 11
+            },
+            {
+              "name": "VH_M_renal_pyramid_R"
+            },
+            {
+              "name": "VH_M_renal_pyramid_a",
+              "mesh": 12
+            },
+            {
+              "name": "VH_M_renal_pyramid_b",
+              "mesh": 13
+            },
+            {
+              "name": "VH_M_renal_pyramid_c",
+              "mesh": 14
+            },
+            {
+              "name": "VH_M_renal_pyramid_d",
+              "mesh": 15
+            },
+            {
+              "name": "VH_M_renal_pyramid_e",
+              "mesh": 16
+            },
+            {
+              "name": "VH_M_renal_pyramid_f",
+              "mesh": 17
+            },
+            {
+              "name": "VH_M_renal_pyramid_g",
+              "mesh": 18
+            },
+            {
+              "name": "VH_M_renal_pyramid_h",
+              "mesh": 19
+            },
+            {
+              "name": "VH_M_renal_pyramid_i",
+              "mesh": 20
+            },
+            {
+              "name": "VH_M_renal_pyramid_j",
+              "mesh": 21
+            },
+            {
+              "name": "VH_M_cortex_of_kidney_R"
+            },
+            {
+              "name": "VH_M_renal_column_R",
+              "mesh": 22
+            },
+            {
+              "name": "VH_M_outer_cortex_of_kidney_R",
+              "mesh": 23
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/kidney-male-right/v1.3/assets/crosswalk.csv",
+          "sha256": "9b647536778159808833556ea85a786f460e67dec0a151cdd4870d943408e36a",
+          "bytes": 1549
+        }
+      ]
+    },
+    {
+      "name": "kidney-male-left",
+      "id": "https://lod.humanatlas.io/ref-organ/kidney-male-left/v1.3",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/kidney-male-left/latest/metadata.json",
+      "metadataSha256": "bf56acbf551c9373aea131a159b05d0c16d414decdb13cff68d6675cc059a206",
+      "metadataBytes": 9252,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/kidney-male-left/v1.3#raw-data",
+        "label": "3D Reference Organ for Kidney, Male, Left",
+        "title": "3D Reference Organ for Kidney, Male, Left",
+        "description": "This reference organ, Left-kidney-male (https://humanatlas.io/3d-reference-library) was created using data from the\nVisible Human Male, provided by the National Library of Medicine (Spitzer et al. 1996; Ackerman 1998). In version\nv1.3, changes include removing the renal calyces and renal papillae and adding them to the ureter model per subject\nmatter expert input.\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” *Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0001-9198-5498",
+            "label": "Jeffrey Spraggins",
+            "conforms_to": "Person",
+            "fullName": "Jeffrey Spraggins",
+            "firstName": "Jeffrey",
+            "lastName": "Spraggins",
+            "orcid": "0000-0001-9198-5498",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0003-2804-127X",
+            "label": "Sanjay Jain",
+            "conforms_to": "Person",
+            "fullName": "Sanjay Jain",
+            "firstName": "Sanjay",
+            "lastName": "Jain",
+            "orcid": "0000-0003-2804-127X",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen, and Heidi Schlehlein. 2024. \"3D Reference Organ for Kidney, Male, Left v1.3.\" https://doi.org/10.48539/HBM759.JKKF.434. Accessed on June 15, 2024.",
+        "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. \"HuBMAP CCF 3D Reference Object Library.\" https://humanatlas.io/3d-reference-library. Accessed on June 15, 2024.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM759.JKKF.434",
+        "hubmapId": "HBM759.JKKF.434",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/kidney-male-left/v1.3#3d-vh-m-kidney-l.glb",
+            "label": "Raw data distribution '3d-vh-m-kidney-l.glb' file",
+            "title": "Raw data distribution '3d-vh-m-kidney-l.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/kidney-male-left/v1.3/assets/3d-vh-m-kidney-l.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/kidney-male-left/v1.3#3d-vh-m-kidney-l.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/kidney-male-left/v1.3#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/kidney-male-left/v1.3/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/kidney-male-left/v1.3#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-kidney-l.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/kidney-male-left/v1.3/assets/3d-vh-m-kidney-l.glb",
+          "sha256": "1e9f54281652d0b05c9ae54a06380a41a8d9c62c1036829180750995b1730fac",
+          "bytes": 1536980,
+          "meshes": 22,
+          "nodes": [
+            {
+              "name": "VH_M_left_kidney"
+            },
+            {
+              "name": "VH_M_kidney_capsule_L",
+              "mesh": 0
+            },
+            {
+              "name": "VH_M_hilum_of_kidney_L",
+              "mesh": 1
+            },
+            {
+              "name": "VH_M_cortex_of_kidney_L"
+            },
+            {
+              "name": "VH_M_renal_column_L",
+              "mesh": 2
+            },
+            {
+              "name": "VH_M_outer_cortex_of_kidney_L",
+              "mesh": 3
+            },
+            {
+              "name": "VH_M_renal_medulla_L"
+            },
+            {
+              "name": "VH_M_renal_papilla_L"
+            },
+            {
+              "name": "VH_M_renal_papilla_L_a",
+              "mesh": 4
+            },
+            {
+              "name": "VH_M_renal_papilla_L_b",
+              "mesh": 5
+            },
+            {
+              "name": "VH_M_renal_papilla_L_c",
+              "mesh": 6
+            },
+            {
+              "name": "VH_M_renal_papilla_L_d",
+              "mesh": 7
+            },
+            {
+              "name": "VH_M_renal_papilla_L_e",
+              "mesh": 8
+            },
+            {
+              "name": "VH_M_renal_papilla_L_f",
+              "mesh": 9
+            },
+            {
+              "name": "VH_M_renal_papilla_L_g",
+              "mesh": 10
+            },
+            {
+              "name": "VH_M_renal_papilla_L_h",
+              "mesh": 11
+            },
+            {
+              "name": "VH_M_renal_papilla_L_i",
+              "mesh": 12
+            },
+            {
+              "name": "VH_M_renal_pyramid_L"
+            },
+            {
+              "name": "VH_M_renal_pyramid_L_a",
+              "mesh": 13
+            },
+            {
+              "name": "VH_M_renal_pyramid_L_b",
+              "mesh": 14
+            },
+            {
+              "name": "VH_M_renal_pyramid_L_c",
+              "mesh": 15
+            },
+            {
+              "name": "VH_M_renal_pyramid_L_d",
+              "mesh": 16
+            },
+            {
+              "name": "VH_M_renal_pyramid_L_e",
+              "mesh": 17
+            },
+            {
+              "name": "VH_M_renal_pyramid_L_f",
+              "mesh": 18
+            },
+            {
+              "name": "VH_M_renal_pyramid_L_g",
+              "mesh": 19
+            },
+            {
+              "name": "VH_M_renal_pyramid_L_h",
+              "mesh": 20
+            },
+            {
+              "name": "VH_M_renal_pyramid_L_i",
+              "mesh": 21
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/kidney-male-left/v1.3/assets/crosswalk.csv",
+          "sha256": "254de6f11d173d35a736cebd8b25509dd92e5b9279b29d61332e9c00f807910c",
+          "bytes": 1461
+        }
+      ]
+    },
+    {
+      "name": "renal-pelvis-male-right",
+      "id": "https://lod.humanatlas.io/ref-organ/renal-pelvis-male-right/v1.0",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/renal-pelvis-male-right/latest/metadata.json",
+      "metadataSha256": "eb183c946e63f1f9615617834022318446b5adb9aaeab83f56421553254241b3",
+      "metadataBytes": 8818,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/renal-pelvis-male-right/v1.0#raw-data",
+        "label": "3D Reference Organ for Renal Pelvis, male, right",
+        "title": "3D Reference Organ for Renal Pelvis, male, right",
+        "description": "This reference organ, Right-renal-pelvis-male (https://humanatlas.io/3d-reference-library) was created using data from\nthe Visible Human Male, provided by the National Library of Medicine (Spitzer et al. 1996; Ackerman 1998).\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” *Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-12-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. [*HuBMAP CCF 3D Reference Object Library*.](https://humanatlas.io/3d-reference-library) Accessed on December 15, 2024.",
+        "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. *HuBMAP CCF 3D Reference Object Library*. Accessed December 15, 2024. https://humanatlas.io/3d-reference-library.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM349.XLHR.437",
+        "hubmapId": "HBM349.XLHR.437",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/renal-pelvis-male-right/v1.0#3d-vh-m-renal-pelvis-r.glb",
+            "label": "Raw data distribution '3d-vh-m-renal-pelvis-r.glb' file",
+            "title": "Raw data distribution '3d-vh-m-renal-pelvis-r.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/renal-pelvis-male-right/v1.0/assets/3d-vh-m-renal-pelvis-r.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/renal-pelvis-male-right/v1.0#3d-vh-m-renal-pelvis-r.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/renal-pelvis-male-right/v1.0#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/renal-pelvis-male-right/v1.0/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/renal-pelvis-male-right/v1.0#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-renal-pelvis-r.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/renal-pelvis-male-right/v1.0/assets/3d-vh-m-renal-pelvis-r.glb",
+          "sha256": "cee883e21ca4777caf0ca513f26a700699086556561598693d5f85383f36cbe7",
+          "bytes": 55052,
+          "meshes": 1,
+          "nodes": [
+            {
+              "name": "VH_M_renal_pelvis_R",
+              "mesh": 0
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/renal-pelvis-male-right/v1.0/assets/crosswalk.csv",
+          "sha256": "c2835a39c2b87cfb9cf031c3adbd06acdcd925eda1bc7e23134448bfa44825aa",
+          "bytes": 81
+        }
+      ]
+    },
+    {
+      "name": "renal-pelvis-male-left",
+      "id": "https://lod.humanatlas.io/ref-organ/renal-pelvis-male-left/v1.0",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/renal-pelvis-male-left/latest/metadata.json",
+      "metadataSha256": "ff33857cfe092c672af6aae3f938f17c3453bcbfd48a55c88d31d540d2f70242",
+      "metadataBytes": 9422,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/renal-pelvis-male-left/v1.0#raw-data",
+        "label": "3D Reference Organ for Renal Pelvis, male, left",
+        "title": "3D Reference Organ for Renal Pelvis, male, left",
+        "description": "This reference organ, Left-renal-pelvis-male (https://humanatlas.io/3d-reference-library) was created using data from\nthe Visible Human Male, provided by the National Library of Medicine (Spitzer et al. 1996; Ackerman 1998).\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” *Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0001-9198-5498",
+            "label": "Jeffrey Spraggins",
+            "conforms_to": "Person",
+            "fullName": "Jeffrey Spraggins",
+            "firstName": "Jeffrey",
+            "lastName": "Spraggins",
+            "orcid": "0000-0001-9198-5498",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0003-2804-127X",
+            "label": "Sanjay Jain",
+            "conforms_to": "Person",
+            "fullName": "Sanjay Jain",
+            "firstName": "Sanjay",
+            "lastName": "Jain",
+            "orcid": "0000-0003-2804-127X",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2021-12-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen, and Heidi Schlehlein. 2024. \"3D Reference Organ for Renal Pelvis, Male, Left v1.0.\" https://doi.org/10.48539/HBM636.ZFCT.453. Accessed on December 15, 2024.",
+        "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. \"HuBMAP CCF 3D Reference Object Library.\" https://humanatlas.io/3d-reference-library. Accessed on December 15, 2024.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM636.ZFCT.453",
+        "hubmapId": "HBM636.ZFCT.453",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/renal-pelvis-male-left/v1.0#3d-vh-m-renal-pelvis-l.glb",
+            "label": "Raw data distribution '3d-vh-m-renal-pelvis-l.glb' file",
+            "title": "Raw data distribution '3d-vh-m-renal-pelvis-l.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/renal-pelvis-male-left/v1.0/assets/3d-vh-m-renal-pelvis-l.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/renal-pelvis-male-left/v1.0#3d-vh-m-renal-pelvis-l.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/renal-pelvis-male-left/v1.0#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/renal-pelvis-male-left/v1.0/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/renal-pelvis-male-left/v1.0#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-renal-pelvis-l.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/renal-pelvis-male-left/v1.0/assets/3d-vh-m-renal-pelvis-l.glb",
+          "sha256": "ee8af190d7104f9f326e749e5757897800e974ac76360faecc5cac9104379863",
+          "bytes": 68824,
+          "meshes": 1,
+          "nodes": [
+            {
+              "name": "VH_M_renal_pelvis_L",
+              "mesh": 0
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/renal-pelvis-male-left/v1.0/assets/crosswalk.csv",
+          "sha256": "a38b90514d9b834a47121d14ae139e87a95d5aa4d674aace83d3a43422fa0cf7",
+          "bytes": 80
+        }
+      ]
+    },
+    {
+      "name": "ureter-male-right",
+      "id": "https://lod.humanatlas.io/ref-organ/ureter-male-right/v1.2",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/ureter-male-right/latest/metadata.json",
+      "metadataSha256": "8db9ab09819b5fc686452e3bc8e83c46c8e93e10f97684b22aedbcb036e929b5",
+      "metadataBytes": 8927,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/ureter-male-right/v1.2#raw-data",
+        "label": "3D Reference Organ for Ureter, Male, Right",
+        "title": "3D Reference Organ for Ureter, Male, Right",
+        "description": "This reference organ, Right-ureter-male (https://humanatlas.io/3d-reference-library) was created using data from the\nVisible Human Male, provided by the National Library of Medicine (Spitzer et al. 1996; Ackerman 1998). Changes include\nadding the renal calyces and renal papillae from the kidney model per subject matter expert input.\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” ,*Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0002-0746-927X",
+            "label": "Douglas Strand",
+            "conforms_to": "Person",
+            "fullName": "Douglas Strand",
+            "firstName": "Douglas",
+            "lastName": "Strand",
+            "orcid": "0000-0002-0746-927X",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen, and Heidi Schlehlein. 2024. *3D Reference Organ for Ureter, Male, Right v1.2*. https://doi.org/10.48539/HBM852.SVFJ.388. Accessed on June 15, 2024.",
+        "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. \"HuBMAP CCF 3D Reference Object Library.\" https://humanatlas.io/3d-reference-library. Accessed on June 15, 2024.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM852.SVFJ.388",
+        "hubmapId": "HBM852.SVFJ.388",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/ureter-male-right/v1.2#3d-vh-m-ureter-r.glb",
+            "label": "Raw data distribution '3d-vh-m-ureter-r.glb' file",
+            "title": "Raw data distribution '3d-vh-m-ureter-r.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/ureter-male-right/v1.2/assets/3d-vh-m-ureter-r.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/ureter-male-right/v1.2#3d-vh-m-ureter-r.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/ureter-male-right/v1.2#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/ureter-male-right/v1.2/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/ureter-male-right/v1.2#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-ureter-r.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/ureter-male-right/v1.2/assets/3d-vh-m-ureter-r.glb",
+          "sha256": "215978b67cf4d3876249a8dafb8c83a13471b5e1eb601559dca25a61a7c9d091",
+          "bytes": 540788,
+          "meshes": 13,
+          "nodes": [
+            {
+              "name": "VH_M_renal_pelvis_ureter_R"
+            },
+            {
+              "name": "VH_M_calyx_R"
+            },
+            {
+              "name": "VH_M_major_calyx_R"
+            },
+            {
+              "name": "VH_M_major_calyx_R_a",
+              "mesh": 0
+            },
+            {
+              "name": "VH_M_major_calyx_R_b",
+              "mesh": 1
+            },
+            {
+              "name": "VH_M_minor_calyx_R"
+            },
+            {
+              "name": "VH_M_minor_calyx_R_a",
+              "mesh": 2
+            },
+            {
+              "name": "VH_M_minor_calyx_R_b",
+              "mesh": 3
+            },
+            {
+              "name": "VH_M_minor_calyx_R_c",
+              "mesh": 4
+            },
+            {
+              "name": "VH_M_minor_calyx_R_d",
+              "mesh": 5
+            },
+            {
+              "name": "VH_M_minor_calyx_R_e",
+              "mesh": 6
+            },
+            {
+              "name": "VH_M_minor_calyx_R_f",
+              "mesh": 7
+            },
+            {
+              "name": "VH_M_minor_calyx_R_g",
+              "mesh": 8
+            },
+            {
+              "name": "VH_M_minor_calyx_R_h",
+              "mesh": 9
+            },
+            {
+              "name": "VH_M_minor_calyx_R_i",
+              "mesh": 10
+            },
+            {
+              "name": "VH_M_renal_pelvis_R",
+              "mesh": 11
+            },
+            {
+              "name": "VH_M_ureter_R",
+              "mesh": 12
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/ureter-male-right/v1.2/assets/crosswalk.csv",
+          "sha256": "2dc84b45611314a2119bf31027f364f37b6ef05a604107d2650e347f9ce9206c",
+          "bytes": 795
+        }
+      ]
+    },
+    {
+      "name": "male-reproductive-system",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/male-reproductive-system/latest/metadata.json",
+      "error": "404 https://cdn.humanatlas.io/digital-objects/ref-organ/male-reproductive-system/latest/metadata.json"
+    },
+    {
+      "name": "lymph-node-male",
+      "id": "https://lod.humanatlas.io/ref-organ/lymph-node-male/v1.4",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/lymph-node-male/latest/metadata.json",
+      "metadataSha256": "68ed420d1b1701c3783099fc4e8d13cdd12a024726677dcf88b90924a0af9e9f",
+      "metadataBytes": 8828,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/lymph-node-male/v1.4#raw-data",
+        "label": "3D Reference Organ for Lymph Node, Male",
+        "title": "3D Reference Organ for Lymph Node, Male",
+        "description": "This reference organ, Lymph-node-male (https://humanatlas.io/3d-reference-library) was created using the\nClearing-enhanced 3D (Ce3D) method developed by Dr. Weizhe Li, Laboratory of Immune System Biology, National Institute\nof Allergy and Infectious Diseases, NIH using data documented in (Li, Germain, and Gerner 2017). While the size and\ncellular composition of mouse and human lymph nodes varies between species, the overall anatomy is well-conserved.\n\n**Bibliography:**\n\n* Li, Weizhe, Ronald N. Germain, and Michael Y. Gerner. 2017. “Multiplex, Quantitative Cellular Analysis in Large Tissue Volumes with Clearing-Enhanced 3D Microscopy (Ce3D).” *Proceedings of the National Academy of Sciences* 114 (35): E7321–30. https://doi.org/10.1073/pnas.1708981114.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-2390-083X",
+            "label": "Li Yao",
+            "conforms_to": "Person",
+            "fullName": "Li Yao",
+            "firstName": "Li",
+            "lastName": "Yao",
+            "orcid": "0000-0003-2390-083X",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0002-7250-3569",
+            "label": "Marda Jorgensen",
+            "conforms_to": "Person",
+            "fullName": "Marda Jorgensen",
+            "firstName": "Marda",
+            "lastName": "Jorgensen",
+            "orcid": "0000-0002-7250-3569",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-12-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1073/pnas.1708981114."
+        ],
+        "citation": "Yao, Li, Kristen Browne, and Heidi Schlehlein. 2024. \"3D Reference Organ for Lymph Node, Male v1.4.\" https://doi.org/10.48539/HBM532.TNXR.875. Accessed on December 15, 2024.",
+        "citationOverall": "Yao, Li, Kristen Browne, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. \"HuBMAP CCF 3D Reference Object Library.\" https://humanatlas.io/3d-reference-library. Accessed on December 15, 2024.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM532.TNXR.875",
+        "hubmapId": "HBM532.TNXR.875",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/lymph-node-male/v1.4#3d-nih-m-lymph-node.glb",
+            "label": "Raw data distribution '3d-nih-m-lymph-node.glb' file",
+            "title": "Raw data distribution '3d-nih-m-lymph-node.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/lymph-node-male/v1.4/assets/3d-nih-m-lymph-node.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/lymph-node-male/v1.4#3d-nih-m-lymph-node.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/lymph-node-male/v1.4#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/lymph-node-male/v1.4/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/lymph-node-male/v1.4#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-nih-m-lymph-node.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/lymph-node-male/v1.4/assets/3d-nih-m-lymph-node.glb",
+          "sha256": "b3b21442de6efc5f6db7d905e80af333df4d07f10d121c16c4475313730ca6f8",
+          "bytes": 7414024,
+          "meshes": 7,
+          "nodes": [
+            {
+              "name": "Yao_lymph_node"
+            },
+            {
+              "name": "Yao_afferent_lymphatic_vessel",
+              "mesh": 0
+            },
+            {
+              "name": "Yao_capsule_of_lymph_node",
+              "mesh": 1
+            },
+            {
+              "name": "Yao_follicles",
+              "mesh": 2
+            },
+            {
+              "name": "Yao_efferent_lymph_node",
+              "mesh": 3
+            },
+            {
+              "name": "Yao_medulla_of_lymph_node",
+              "mesh": 4
+            },
+            {
+              "name": "Yao_paracortex",
+              "mesh": 5
+            },
+            {
+              "name": "Yao_blood_vasculature",
+              "mesh": 6
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/lymph-node-male/v1.4/assets/crosswalk.csv",
+          "sha256": "c4c14077821571a61d2deb67e2a6e44f04999b2ebb2a898aa6f3e7268c5abaa8",
+          "bytes": 507
+        }
+      ]
+    },
+    {
+      "name": "skin-male",
+      "id": "https://lod.humanatlas.io/ref-organ/skin-male/v1.4",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/skin-male/latest/metadata.json",
+      "metadataSha256": "88b477f4466f737a84106011b0ca2c07be0be12c74c4e8821f25e8b3413b6a95",
+      "metadataBytes": 8606,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/skin-male/v1.4#raw-data",
+        "label": "3D Reference Organ for Skin, Male",
+        "title": "3D Reference Organ for Skin, Male",
+        "description": "This reference organ, Skin-male was created using data from the Visible Human Male, provided by the National Library\nof Medicine (Spitzer et al. 1996; Ackerman 1998). It was adjusted to add space for the triceps surae and the ankle\nbones for the eventual addition of the triceps surae muscles. In v2.3, the head was adjusted to be more like the\noriginal skin of the Visible Human Male, to make space for the mouth 3D object and landmarks.\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” *Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0001-6638-683X",
+            "label": "Fiona Ginty",
+            "conforms_to": "Person",
+            "fullName": "Fiona Ginty",
+            "firstName": "Fiona",
+            "lastName": "Ginty",
+            "orcid": "0000-0001-6638-683X",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2025-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen. 2024. *3D Reference Organ for Skin, Male v1.4*. https://doi.org/10.48539/HBM953.DCMN.563. Accessed on June 15, 2025.",
+        "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. *HuBMAP CCF 3D Reference Object Library*. https://humanatlas.io/3d-reference-library. Accessed on June 15, 2025.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM953.DCMN.563",
+        "hubmapId": "HBM953.DCMN.563",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/skin-male/v1.4#3d-vh-m-skin.glb",
+            "label": "Raw data distribution '3d-vh-m-skin.glb' file",
+            "title": "Raw data distribution '3d-vh-m-skin.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/skin-male/v1.4/assets/3d-vh-m-skin.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/skin-male/v1.4#3d-vh-m-skin.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/skin-male/v1.4#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/skin-male/v1.4/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/skin-male/v1.4#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-skin.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/skin-male/v1.4/assets/3d-vh-m-skin.glb",
+          "sha256": "4764602f0866fbdad19382e7f12ba148ee33141677153b556f7238116bc33c2a",
+          "bytes": 19901928,
+          "meshes": 1,
+          "nodes": [
+            {
+              "name": "VH_M_skin",
+              "mesh": 0
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/skin-male/v1.4/assets/crosswalk.csv",
+          "sha256": "0445fc54a80a6b9a7af5e4953fc2f858a911c350a5db62ef24e8ecaf2d7b000f",
+          "bytes": 65
+        }
+      ]
+    },
+    {
+      "name": "integumentary-system-male",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/integumentary-system-male/latest/metadata.json",
+      "error": "404 https://cdn.humanatlas.io/digital-objects/ref-organ/integumentary-system-male/latest/metadata.json"
+    },
+    {
+      "name": "large-intestine-male",
+      "id": "https://lod.humanatlas.io/ref-organ/large-intestine-male/v1.3",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/large-intestine-male/latest/metadata.json",
+      "metadataSha256": "272b917b776ba3193c2278bcd6fc049c80f4589abea0bdc592ff2d972965718d",
+      "metadataBytes": 9109,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/large-intestine-male/v1.3#raw-data",
+        "label": "3D Reference Organ for Large Intestine, Male",
+        "title": "3D Reference Organ for Large Intestine, Male",
+        "description": "This reference organ, Large-intestine-male (https://humanatlas.io/3d-reference-library) was primarily based on\ncolonoscopy-derived data provided by Arie Kaufman (Stony Brook University). The model was generally aligned to the\nVisible Human Male, provided by the National Library of Medicine (Spitzer et al. 1996; Ackerman 1998) and other\nreference organs.\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” *Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0002-0317-7608",
+            "label": "Yiing Lin",
+            "conforms_to": "Person",
+            "fullName": "Yiing Lin",
+            "firstName": "Yiing",
+            "lastName": "Lin",
+            "orcid": "0000-0002-0317-7608",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen, and Heidi Schlehlein. 2024. \"3D Reference Organ for Large Intestine, Male v1.3.\" https://doi.org/10.48539/HBM487.ZKSN.693. Accessed on June 15, 2024.",
+        "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. \"HuBMAP CCF 3D Reference Object Library.\" https://humanatlas.io/3d-reference-library. Accessed on June 15, 2024.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM487.ZKSN.693",
+        "hubmapId": "HBM487.ZKSN.693",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/large-intestine-male/v1.3#3d-sbu-m-large-intestine.glb",
+            "label": "Raw data distribution '3d-sbu-m-large-intestine.glb' file",
+            "title": "Raw data distribution '3d-sbu-m-large-intestine.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/large-intestine-male/v1.3/assets/3d-sbu-m-large-intestine.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/large-intestine-male/v1.3#3d-sbu-m-large-intestine.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/large-intestine-male/v1.3#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/large-intestine-male/v1.3/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/large-intestine-male/v1.3#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-sbu-m-large-intestine.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/large-intestine-male/v1.3/assets/3d-sbu-m-large-intestine.glb",
+          "sha256": "908a5c38bf14574a673f2d2619502281f7f9e47c46c4eba837aae2e80e38c489",
+          "bytes": 687076,
+          "meshes": 10,
+          "nodes": [
+            {
+              "name": "VH_M_colon"
+            },
+            {
+              "name": "VH_M_ascending_colon",
+              "mesh": 0
+            },
+            {
+              "name": "VH_M_descending_colon",
+              "mesh": 1
+            },
+            {
+              "name": "VH_M_hepatic_flexure_of_colon",
+              "mesh": 2
+            },
+            {
+              "name": "VH_M_rectum",
+              "mesh": 3
+            },
+            {
+              "name": "VH_M_sigmoid_colon",
+              "mesh": 4
+            },
+            {
+              "name": "VH_M_splenic_flexure_of_colon",
+              "mesh": 5
+            },
+            {
+              "name": "VH_M_transverse_colon",
+              "mesh": 6
+            },
+            {
+              "name": "VH_M_ileocecal_valve",
+              "mesh": 7
+            },
+            {
+              "name": "VH_M_caecum",
+              "mesh": 8
+            },
+            {
+              "name": "VH_M_vermiform_appendix",
+              "mesh": 9
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/large-intestine-male/v1.3/assets/crosswalk.csv",
+          "sha256": "284ca9a8d42b453d36037e8b9236a6737d45d1186874a98e6f3c45a1f713c954",
+          "bytes": 605
+        }
+      ]
+    },
+    {
+      "name": "adipose-male",
+      "id": "https://lod.humanatlas.io/ref-organ/adipose-male/v1.0",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/adipose-male/latest/metadata.json",
+      "metadataSha256": "0f34b56bdb665a9175e34eb4cd4d922f40b6aebfc319d86cdb72a281e1cef528",
+      "metadataBytes": 7898,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/adipose-male/v1.0#raw-data",
+        "label": "3D reference organ for subcutaneous adipose tissue, Male",
+        "title": "3D reference organ for subcutaneous adipose tissue, Male",
+        "description": "[This reference organ](https://humanatlas.io/3d-reference-library) was created using data from the Visible Human Dataset, provided by the National Library of Medicine (Spitzer and Whitlock 2002). The current skin model (https://humanatlas.io/3d-reference-library?version=9&organ=Skin) was sectioned out in places where subcutaneous adipose tissue samples are commonly taken, and thickness was added to the skin.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0003-4603-708X",
+            "label": "Evan Rosen",
+            "conforms_to": "Person",
+            "fullName": "Evan Rosen",
+            "firstName": "Evan",
+            "lastName": "Rosen",
+            "orcid": "0000-0003-4603-708X",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2025-12-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "citation": "Heidi Schlehlein. 2025. *3D reference organ for subcutaneous adipose tissue, Male v1.0.* [https://doi.org/10.48539/HBM344.KNDS.959](https://doi.org/10.48539/HBM344.KNDS.959). Accessed on December 15, 2025.",
+        "citationOverall": "Browne, Kristen, Leonard E. Cross, Bruce W. Herr II, Lisel Record, Ellen Quardokus, Andreas Bueckle, Katy Börner. 2025. *HuBMAP CCF 3D Reference Object Library*. https://humanatlas.io/3d-reference-library. Accessed on December 15, 2025.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM344.KNDS.959",
+        "hubmapId": "HBM344.KNDS.959",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/adipose-male/v1.0#3d-vh-m-adipose.glb",
+            "label": "Raw data distribution '3d-vh-m-adipose.glb' file",
+            "title": "Raw data distribution '3d-vh-m-adipose.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/adipose-male/v1.0/assets/3d-vh-m-adipose.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/adipose-male/v1.0#3d-vh-m-adipose.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/adipose-male/v1.0#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/adipose-male/v1.0/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/adipose-male/v1.0#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-adipose.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/adipose-male/v1.0/assets/3d-vh-m-adipose.glb",
+          "sha256": "b86a157fd3a231da6935acc23978149a393006c1bf5433fa729228e67cf1cb4d",
+          "bytes": 325428,
+          "meshes": 3,
+          "nodes": [
+            {
+              "name": "VH_M_subcutaneous_abdominal_adipose_tissue"
+            },
+            {
+              "name": "VH_M_subcutaneous_abdominal_adipose_tissue_LUQ_area",
+              "mesh": 0
+            },
+            {
+              "name": "VH_M_subcutaneous_abdominal_adipose_tissue_RUQ_area",
+              "mesh": 1
+            },
+            {
+              "name": "VH_M_subcutaneous_abdominal_adipose_tissue_umbilicus_area",
+              "mesh": 2
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/adipose-male/v1.0/assets/crosswalk.csv",
+          "sha256": "bd2e95178d0eae2b0e011bd59d7044fb6ccc53ca06901958087f0de5b62b1750",
+          "bytes": 444
+        }
+      ]
+    },
+    {
+      "name": "pancreas-male",
+      "id": "https://lod.humanatlas.io/ref-organ/pancreas-male/v1.3",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/pancreas-male/latest/metadata.json",
+      "metadataSha256": "07d32e6cd08a76c071c18cf86546f3c224a830c959c48bf6b99e3aac6ffe5bb5",
+      "metadataBytes": 8802,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/pancreas-male/v1.3#raw-data",
+        "label": "3D Reference Organ for Pancreas, Male",
+        "title": "3D Reference Organ for Pancreas, Male",
+        "description": "This reference organ, Pancreas-male (https://humanatlas.io/3d-reference-library) was created using data from the\nVisible Human Male, provided by the National Library of Medicine (Spitzer et al. 1996; Ackerman 1998). In version\nv1.3, adjustments were made from the previous version to make the neck region smaller, and the body and tail regions\nmore equal in length.\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” *Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0001-6878-1235",
+            "label": "Martha Campbell-Thompson",
+            "conforms_to": "Person",
+            "fullName": "Martha Campbell-Thompson",
+            "firstName": "Martha",
+            "lastName": "Campbell-Thompson",
+            "orcid": "0000-0001-6878-1235",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen, and Heidi Schlehlein. 2024. \"3D Reference Organ for Pancreas, Male v1.3.\" https://doi.org/10.48539/HBM396.QWWJ.639. Accessed on June 15, 2024.",
+        "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. \"HuBMAP CCF 3D Reference Object Library.\" https://humanatlas.io/3d-reference-library. Accessed on June 15, 2024.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM396.QWWJ.639",
+        "hubmapId": "HBM396.QWWJ.639",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/pancreas-male/v1.3#3d-vh-m-pancreas.glb",
+            "label": "Raw data distribution '3d-vh-m-pancreas.glb' file",
+            "title": "Raw data distribution '3d-vh-m-pancreas.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/pancreas-male/v1.3/assets/3d-vh-m-pancreas.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/pancreas-male/v1.3#3d-vh-m-pancreas.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/pancreas-male/v1.3#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/pancreas-male/v1.3/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/pancreas-male/v1.3#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-pancreas.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/pancreas-male/v1.3/assets/3d-vh-m-pancreas.glb",
+          "sha256": "a89d7acbc9448ca1e6c09f7f6d6a18b2bd8a2e94cd4a0b51709915a8b7bea84e",
+          "bytes": 2110316,
+          "meshes": 5,
+          "nodes": [
+            {
+              "name": "VH_M_pancreas"
+            },
+            {
+              "name": "VH_M_body_of_pancreas",
+              "mesh": 0
+            },
+            {
+              "name": "VH_M_tail_of_pancreas",
+              "mesh": 1
+            },
+            {
+              "name": "VH_M_head_of_pancreas",
+              "mesh": 2
+            },
+            {
+              "name": "VH_M_neck_of_pancreas",
+              "mesh": 3
+            },
+            {
+              "name": "VH_M_uncinate_process_of_the_pancreas",
+              "mesh": 4
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/pancreas-male/v1.3/assets/crosswalk.csv",
+          "sha256": "02751ff545038977af564a40890b0cdd3fac41d8b9c21a28897dc6ef6602b653",
+          "bytes": 363
+        }
+      ]
+    },
+    {
+      "name": "urinary-bladder-male",
+      "id": "https://lod.humanatlas.io/ref-organ/urinary-bladder-male/v1.2",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/urinary-bladder-male/latest/metadata.json",
+      "metadataSha256": "85916ecbe04d143faffbaf33cc7f7452feea13518386f2e79f5d7dafaf0a6b72",
+      "metadataBytes": 9013,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#raw-data",
+        "label": "3D Reference Organ for Urinary Bladder, Male",
+        "title": "3D Reference Organ for Urinary Bladder, Male",
+        "description": "This reference organ, Urinary-bladder-male (https://humanatlas.io/3d-reference-library) was created using data from\nthe Visible Human Male, provided by the National Library of Medicine (Spitzer et al. 1996; Ackerman 1998).\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” *Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0002-0746-927X",
+            "label": "Douglas Strand",
+            "conforms_to": "Person",
+            "fullName": "Douglas Strand",
+            "firstName": "Douglas",
+            "lastName": "Strand",
+            "orcid": "0000-0002-0746-927X",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1002/(SICI)1097-0185(199804)253:2<49::AID-AR8>3.0.CO;2-9"
+        ],
+        "citation": "Browne, Kristen, and Heidi Schlehlein. 2024. *3D Reference Organ for Urinary Bladder, Male v1.2*. https://doi.org/10.48539/HBM722.RMHQ.397. Accessed on June 15, 2024.",
+        "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. *HuBMAP CCF 3D Reference Object Library*. Accessed on June 15, 2024. https://humanatlas.io/3d-reference-library).",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM722.RMHQ.397",
+        "hubmapId": "HBM722.RMHQ.397",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#3d-vh-m-urinary-bladder.glb",
+            "label": "Raw data distribution '3d-vh-m-urinary-bladder.glb' file",
+            "title": "Raw data distribution '3d-vh-m-urinary-bladder.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/urinary-bladder-male/v1.2/assets/3d-vh-m-urinary-bladder.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#3d-vh-m-urinary-bladder.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/urinary-bladder-male/v1.2/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-urinary-bladder.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/urinary-bladder-male/v1.2/assets/3d-vh-m-urinary-bladder.glb",
+          "sha256": "070893aea9139d9a2c4f8da3aa66ca309a3c683a599d93a37dd7031c7d71021d",
+          "bytes": 199044,
+          "meshes": 6,
+          "nodes": [
+            {
+              "name": "VH_M_urinary_bladder"
+            },
+            {
+              "name": "VH_M_urinary_bladder_neck_smooth_muscle",
+              "mesh": 0
+            },
+            {
+              "name": "VH_M_fundus_of_urinary_bladder_dome",
+              "mesh": 1
+            },
+            {
+              "name": "VH_M_fundus_of_urinary_bladder"
+            },
+            {
+              "name": "VH_M_ureteral_orifice"
+            },
+            {
+              "name": "VH_M_ureteral_orifice_R",
+              "mesh": 2
+            },
+            {
+              "name": "VH_M_ureteral_orifice_L",
+              "mesh": 3
+            },
+            {
+              "name": "VH_M_fundus_of_urinary_bladder_base1",
+              "mesh": 4
+            },
+            {
+              "name": "VH_M_trigone_of_urinary_bladder",
+              "mesh": 5
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/urinary-bladder-male/v1.2/assets/crosswalk.csv",
+          "sha256": "241df5e74cb6e707aeabc06591361e19ba1cf831a3a326527c766e6900e4e2c5",
+          "bytes": 590
+        }
+      ]
+    },
+    {
+      "name": "prostate-male",
+      "id": "https://lod.humanatlas.io/ref-organ/prostate-male/v1.2",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/prostate-male/latest/metadata.json",
+      "metadataSha256": "61c820ecfab2983f08295749c237613c94073f8194c2fb390e2a0986dc785591",
+      "metadataBytes": 8620,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/prostate-male/v1.2#raw-data",
+        "label": "3D Reference Organ for Prostate, Male",
+        "title": "3D Reference Organ for Prostate, Male",
+        "description": "This reference organ, Prostate-male (https://humanatlas.io/3d-reference-library) was created using data from the\nVisible Human Male, provided by the National Library of Medicine (Spitzer et al. 1996; Ackerman 1998).\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” *Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0002-0746-927X",
+            "label": "Douglas Strand",
+            "conforms_to": "Person",
+            "fullName": "Douglas Strand",
+            "firstName": "Douglas",
+            "lastName": "Strand",
+            "orcid": "0000-0002-0746-927X",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen, and Heidi Schlehlein. 2024. \"3D Reference Organ for Prostate, Male v1.2.\" https://doi.org/10.48539/HBM545.CTNV.442. Accessed on June 15, 2024.",
+        "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. \"HuBMAP CCF 3D Reference Object Library.\" https://humanatlas.io/3d-reference-library. Accessed on June 15, 2024.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM545.CTNV.442",
+        "hubmapId": "HBM545.CTNV.442",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/prostate-male/v1.2#3d-vh-m-prostate.glb",
+            "label": "Raw data distribution '3d-vh-m-prostate.glb' file",
+            "title": "Raw data distribution '3d-vh-m-prostate.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/prostate-male/v1.2/assets/3d-vh-m-prostate.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/prostate-male/v1.2#3d-vh-m-prostate.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/prostate-male/v1.2#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/prostate-male/v1.2/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/prostate-male/v1.2#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-prostate.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/prostate-male/v1.2/assets/3d-vh-m-prostate.glb",
+          "sha256": "b456bf89571b8ad46f7c01941cdc45d6c2176c1554849755b009819231142321",
+          "bytes": 4086520,
+          "meshes": 18,
+          "nodes": [
+            {
+              "name": "VH_M_male_reproductive_system"
+            },
+            {
+              "name": "VH_M_male_genital_duct"
+            },
+            {
+              "name": "VH_M_vas_deferens"
+            },
+            {
+              "name": "VH_M_vas_deferens_L",
+              "mesh": 0,
+              "scale": [
+                100,
+                100,
+                100
+              ]
+            },
+            {
+              "name": "VH_M_vas_deferens_R",
+              "mesh": 1,
+              "scale": [
+                100,
+                100,
+                100
+              ]
+            },
+            {
+              "name": "VH_M_seminal_vesicle",
+              "mesh": 2
+            },
+            {
+              "name": "VH_M_ejaculatory_duct",
+              "mesh": 3
+            },
+            {
+              "name": "VH_M_prostate_gland"
+            },
+            {
+              "name": "VH_M_prostatic_utricle",
+              "mesh": 4
+            },
+            {
+              "name": "VH_M_seminal_colliculus",
+              "mesh": 5
+            },
+            {
+              "name": "VH_M_prostate_duct"
+            },
+            {
+              "name": "VH_M_prostate_duct_R",
+              "mesh": 6
+            },
+            {
+              "name": "VH_M_prostate_duct_L",
+              "mesh": 7
+            },
+            {
+              "name": "VH_M_apex_of_prostate",
+              "mesh": 8
+            },
+            {
+              "name": "VH_M_base_of_prostate",
+              "mesh": 9
+            },
+            {
+              "name": "VH_M_peripheral_zone_of_prostate"
+            },
+            {
+              "name": "VH_M_peripheral_zone_of_prostate_R",
+              "mesh": 10
+            },
+            {
+              "name": "VH_M_peripheral_zone_of_prostate_L",
+              "mesh": 11
+            },
+            {
+              "name": "VH_M_transition_zone_of_prostate"
+            },
+            {
+              "name": "VH_M_transition_zone__of_prostate_L",
+              "mesh": 12
+            },
+            {
+              "name": "VH_M_transition_zone_of_prostate_R",
+              "mesh": 13
+            },
+            {
+              "name": "VH_M_central_zone_of_prostate"
+            },
+            {
+              "name": "VH_M_central_zone_of_prostate_R",
+              "mesh": 14
+            },
+            {
+              "name": "VH_M_central_zone_of_prostate_L",
+              "mesh": 15
+            },
+            {
+              "name": "VH_M_anterior_fibromuscular_stroma"
+            },
+            {
+              "name": "VH_M_anterior_fibromuscular_stroma_L",
+              "mesh": 16
+            },
+            {
+              "name": "VH_M_anterior_fibromuscular_stroma_R",
+              "mesh": 17
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/prostate-male/v1.2/assets/crosswalk.csv",
+          "sha256": "373f677816cf05c783eb2dfcfadd32180e71a36153d80756317cc8a1aa0c0bdd",
+          "bytes": 1222
+        }
+      ]
+    },
+    {
+      "name": "blood-vasculature-male",
+      "id": "https://lod.humanatlas.io/ref-organ/blood-vasculature-male/v1.3",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/blood-vasculature-male/latest/metadata.json",
+      "metadataSha256": "30fae0b2fe43d3bcfecf70857fe330bda84746bef1d8776144894598495e321d",
+      "metadataBytes": 9278,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/blood-vasculature-male/v1.3#raw-data",
+        "label": "3D Reference Organ for Blood Vasculature, Male",
+        "title": "3D Reference Organ for Blood Vasculature, Male",
+        "description": "This reference organ, Blood-vasculature-female (https://humanatlas.io/3d-reference-library) was created using data\nfrom the Visible Human Dataset, provided by the National Library of Medicine (Spitzer and Whitlock 2002).\n\n**Bibliography:**\n\n* Spitzer, Victor M., and David G. Whitlock. 2002. “The Visible Human Dataset: The Anatomical Platform for Human Simulation.” *The Anatomical Record* 253 (2): 49–57. https://doi.org/10.1002/(SICI)1097-0185(199804)253:2<49::AID-AR8>3.0.CO;2-9.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0002-7112-7389",
+            "label": "Marc Halushka",
+            "conforms_to": "Person",
+            "fullName": "Marc Halushka",
+            "firstName": "Marc",
+            "lastName": "Halushka",
+            "orcid": "0000-0002-7112-7389",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0003-0118-0413",
+            "label": "Shin Lin",
+            "conforms_to": "Person",
+            "fullName": "Shin Lin",
+            "firstName": "Shin",
+            "lastName": "Lin",
+            "orcid": "0000-0003-0118-0413",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen,\tand Heidi Schlehlein.\t 2024.\t\"3D Reference Organ for Blood Vasculature, Male v1.3.\"\t https://doi.org/10.48539/HBM473.XTPP.725.\tAccessed June 15, 2024.",
+        "citationOverall": "Browne, Kristen,\tHeidi Schlehlein,\tBruce W. Herr II,\tEllen Quardokus,\tAndreas Bueckle,\t and Katy Börner.\t 2024.\t\"HuBMAP CCF 3D Reference Object Library.\"\t https://humanatlas.io/3d-reference-library.\tAccessed June 15, 2024.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM473.XTPP.725",
+        "hubmapId": "HBM473.XTPP.725",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/blood-vasculature-male/v1.3#3d-vh-m-blood-vasculature.glb",
+            "label": "Raw data distribution '3d-vh-m-blood-vasculature.glb' file",
+            "title": "Raw data distribution '3d-vh-m-blood-vasculature.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/blood-vasculature-male/v1.3/assets/3d-vh-m-blood-vasculature.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/blood-vasculature-male/v1.3#3d-vh-m-blood-vasculature.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/blood-vasculature-male/v1.3#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/blood-vasculature-male/v1.3/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/blood-vasculature-male/v1.3#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-blood-vasculature.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/blood-vasculature-male/v1.3/assets/3d-vh-m-blood-vasculature.glb",
+          "sha256": "3a9fe60549769f3a27c15a0901a055e7c4fd3a9f4a37f39a77f5047f0166d4c3",
+          "bytes": 18050040,
+          "meshes": 106,
+          "nodes": [
+            {
+              "name": "VH_M_blood_vasculature"
+            },
+            {
+              "name": "VH_M_blood_vasculature_of_eye"
+            },
+            {
+              "name": "VH_M_veins_of_eye"
+            },
+            {
+              "name": "VH_M_ocular_veins_L"
+            },
+            {
+              "name": "VH_M_ophthalmic_vein_L",
+              "mesh": 0
+            },
+            {
+              "name": "VH_M_superior_ophthalmic_vein_L",
+              "mesh": 1
+            },
+            {
+              "name": "VH_M_inferior_ophthalmic_vein_L",
+              "mesh": 2
+            },
+            {
+              "name": "VH_M_central_retinal_vein_L",
+              "mesh": 3
+            },
+            {
+              "name": "VH_M_ocular_veins_R"
+            },
+            {
+              "name": "VH_M_ophthalmic_vein_R",
+              "mesh": 4
+            },
+            {
+              "name": "VH_M_superior_ophthalmic_vein_R",
+              "mesh": 5
+            },
+            {
+              "name": "VH_M_inferior_ophthalmic_vein_R",
+              "mesh": 6
+            },
+            {
+              "name": "VH_M_central_retinal_vein_R",
+              "mesh": 7
+            },
+            {
+              "name": "VH_M_arteries_of_eye"
+            },
+            {
+              "name": "VH_M_ocular_arteries_L"
+            },
+            {
+              "name": "VH_M_central_retinal_artery_L",
+              "mesh": 8
+            },
+            {
+              "name": "VH_M_opthalmic_artery_L",
+              "mesh": 9
+            },
+            {
+              "name": "VH_M_long_posterior_ciliary_artery_L",
+              "mesh": 10
+            },
+            {
+              "name": "VH_M_ocular_arteries_R"
+            },
+            {
+              "name": "VH_M_central_retinal_artery_R",
+              "mesh": 11
+            },
+            {
+              "name": "VH_M_opthalmic_artery_R",
+              "mesh": 12
+            },
+            {
+              "name": "VH_M_long_posterior_ciliary_artery_R",
+              "mesh": 13
+            },
+            {
+              "name": "VH_M_blood_vasculature_of_large_intestine"
+            },
+            {
+              "name": "VH_M_veins_of_large_intestine"
+            },
+            {
+              "name": "VH_M_inferior_mesenteric_vein",
+              "mesh": 14
+            },
+            {
+              "name": "VH_M_median_sacral_vein",
+              "mesh": 15
+            },
+            {
+              "name": "VH_M_sigmoid_vein",
+              "mesh": 16
+            },
+            {
+              "name": "VH_M_superior_mesenteric_vein",
+              "mesh": 17
+            },
+            {
+              "name": "VH_M_superior_rectal_vein",
+              "mesh": 18
+            },
+            {
+              "name": "VH_M_common_iliac_vein"
+            },
+            {
+              "name": "VH_M_common_iliac_vein_L",
+              "mesh": 19
+            },
+            {
+              "name": "VH_M_common_iliac_vein_R",
+              "mesh": 20
+            },
+            {
+              "name": "VH_M_inferior_pancreaticoduodenal_vein",
+              "mesh": 21
+            },
+            {
+              "name": "VH_M_external_iliac_vein"
+            },
+            {
+              "name": "VH_M_external_iliac_vein_L",
+              "mesh": 22
+            },
+            {
+              "name": "VH_M_external_iliac_vein_R",
+              "mesh": 23
+            },
+            {
+              "name": "VH_M_inferior_rectal_vein"
+            },
+            {
+              "name": "VH_M_inferior_rectal_vein_L",
+              "mesh": 24
+            },
+            {
+              "name": "VH_M_inferior_rectal_vein_R",
+              "mesh": 25
+            },
+            {
+              "name": "VH_M_internal_pudendal_vein"
+            },
+            {
+              "name": "VH_M_internal_pudendal_vein_L",
+              "mesh": 26
+            },
+            {
+              "name": "VH_M_internal_pudendal_vein_R",
+              "mesh": 27
+            },
+            {
+              "name": "VH_M_internal_iliac_vein"
+            },
+            {
+              "name": "VH_M_internal_iliac_vein_L",
+              "mesh": 28
+            },
+            {
+              "name": "VH_M_internal_iliac_vein_R",
+              "mesh": 29
+            },
+            {
+              "name": "VH_M_colic_vein"
+            },
+            {
+              "name": "VH_M_left_colic_vein",
+              "mesh": 30
+            },
+            {
+              "name": "VH_M_ileocolic_vein",
+              "mesh": 31
+            },
+            {
+              "name": "VH_M_right_colic_vein",
+              "mesh": 32
+            },
+            {
+              "name": "VH_M_middle_colic_vein",
+              "mesh": 33
+            },
+            {
+              "name": "VH_M_middle_rectal_vein"
+            },
+            {
+              "name": "VH_M_middle_rectal_vein_L",
+              "mesh": 34
+            },
+            {
+              "name": "VH_M_middle_rectal_vein_R",
+              "mesh": 35
+            },
+            {
+              "name": "VH_M_arteries_of_large_intestine"
+            },
+            {
+              "name": "VH_M_colic_artery"
+            },
+            {
+              "name": "VH_M_right_colic_artery",
+              "mesh": 36
+            },
+            {
+              "name": "VH_M_middle_colic_artery",
+              "mesh": 37
+            },
+            {
+              "name": "VH_M_left_colic_artery",
+              "mesh": 38
+            },
+            {
+              "name": "VH_M_ileocolic_artery",
+              "mesh": 39
+            },
+            {
+              "name": "VH_M_sigmoid_artery"
+            },
+            {
+              "name": "VH_M_sigmoid_artery_a",
+              "mesh": 40
+            },
+            {
+              "name": "VH_M_sigmoid_artery_b",
+              "mesh": 41
+            },
+            {
+              "name": "VH_M_sigmoid_artery_c",
+              "mesh": 42
+            },
+            {
+              "name": "VH_M_inferior_mesenteric_artery",
+              "mesh": 43
+            },
+            {
+              "name": "VH_M_superior_mesenteric_artery",
+              "mesh": 44
+            },
+            {
+              "name": "VH_M_marginal_artery_of_Drummond",
+              "mesh": 45
+            },
+            {
+              "name": "VH_M_blood_vasculature_of_kidney"
+            },
+            {
+              "name": "VH_M_veins_of_kidney"
+            },
+            {
+              "name": "VH_M_renal_vein"
+            },
+            {
+              "name": "VH_M_renal_vein_L",
+              "mesh": 46
+            },
+            {
+              "name": "VH_M_renal_vein_R",
+              "mesh": 47
+            },
+            {
+              "name": "VH_M_arteries_of_kidney"
+            },
+            {
+              "name": "VH_M_renal_artery"
+            },
+            {
+              "name": "VH_M_left_renal_artery",
+              "mesh": 48
+            },
+            {
+              "name": "VH_M_right_renal_artery",
+              "mesh": 49
+            },
+            {
+              "name": "VH_M_blood_vasculature_of_heart"
+            },
+            {
+              "name": "VH_M_arteries_of_heart"
+            },
+            {
+              "name": "VH_M_aorta"
+            },
+            {
+              "name": "VH_M_aortic_arch",
+              "mesh": 50
+            },
+            {
+              "name": "VH_M_ascending_aorta",
+              "mesh": 51
+            },
+            {
+              "name": "VH_M_brachiocephalic_artery"
+            },
+            {
+              "name": "VH_M_brachiocephalic_artery_b",
+              "mesh": 52
+            },
+            {
+              "name": "VH_M_brachiocephalic_artery_a",
+              "mesh": 53
+            },
+            {
+              "name": "VH_M_left_common_carotid_artery"
+            },
+            {
+              "name": "VH_M_left_common_carotid_artery_a",
+              "mesh": 54
+            },
+            {
+              "name": "VH_M_left_common_carotid_artery_b",
+              "mesh": 55
+            },
+            {
+              "name": "VH_M_left_subclavian_artery"
+            },
+            {
+              "name": "VH_M_left_subclavian_artery_a",
+              "mesh": 56
+            },
+            {
+              "name": "VH_M_left_subclavian_artery_b",
+              "mesh": 57
+            },
+            {
+              "name": "VH_M_descending_aorta"
+            },
+            {
+              "name": "VH_M_descending_aorta_a",
+              "mesh": 58
+            },
+            {
+              "name": "VH_M_descending_aorta_b",
+              "mesh": 59
+            },
+            {
+              "name": "VH_M_cardiac_artery"
+            },
+            {
+              "name": "VH_M_left_anterior_descending_artery",
+              "mesh": 60
+            },
+            {
+              "name": "VH_M_right_marginal_artery",
+              "mesh": 61
+            },
+            {
+              "name": "VH_M_right_posterior_descending_artery",
+              "mesh": 62
+            },
+            {
+              "name": "VH_M_diagonal_branch_of_anterior_descending_branch_of_left_coronary_artery",
+              "mesh": 63
+            },
+            {
+              "name": "VH_M_left_coronary_artery",
+              "mesh": 64
+            },
+            {
+              "name": "VH_M_right_coronary_artery",
+              "mesh": 65
+            },
+            {
+              "name": "VH_M_diagonal_branch_of_left_anterior_descending_artery",
+              "mesh": 66
+            },
+            {
+              "name": "VH_M_left_marginal_branch",
+              "mesh": 67
+            },
+            {
+              "name": "VH_M_pulmonary_artery"
+            },
+            {
+              "name": "VH_M_pulmonary_artery_L",
+              "mesh": 68
+            },
+            {
+              "name": "VH_M_pulmonary_artery_R",
+              "mesh": 69
+            },
+            {
+              "name": "VH_M_pulmonary_trunk",
+              "mesh": 70
+            },
+            {
+              "name": "VH_M_veins_of_heart"
+            },
+            {
+              "name": "VH_M_cardiac_vein"
+            },
+            {
+              "name": "VH_M_great_cardiac_vein",
+              "mesh": 71
+            },
+            {
+              "name": "VH_M_middle_cardiac_vein",
+              "mesh": 72
+            },
+            {
+              "name": "VH_M_oblique_vein_of_left_atrium",
+              "mesh": 73
+            },
+            {
+              "name": "VH_M_anterior_cardiac_vein",
+              "mesh": 74
+            },
+            {
+              "name": "VH_M_coronary_sinus",
+              "mesh": 75
+            },
+            {
+              "name": "VH_M_posterior_vein_of_left_ventricle",
+              "mesh": 76
+            },
+            {
+              "name": "VH_M_small_cardiac_vein",
+              "mesh": 77
+            },
+            {
+              "name": "VH_M_pulmonary_vein"
+            },
+            {
+              "name": "VH_M_pulmonary_vein_R_inf",
+              "mesh": 78
+            },
+            {
+              "name": "VH_M_pulmonary_vein_R_sup",
+              "mesh": 79
+            },
+            {
+              "name": "VH_M_pulmonary_vein_L_inf",
+              "mesh": 80
+            },
+            {
+              "name": "VH_M_pulmonary_vein_L_sup",
+              "mesh": 81
+            },
+            {
+              "name": "VH_M_brachiocephalic_vein"
+            },
+            {
+              "name": "VH_M_brachiocephalic_vein_L",
+              "mesh": 82
+            },
+            {
+              "name": "VH_M_brachiocephalic_vein_R",
+              "mesh": 83
+            },
+            {
+              "name": "VH_M_vena_cava"
+            },
+            {
+              "name": "VH_M_superior_vena_cava",
+              "mesh": 84
+            },
+            {
+              "name": "VH_M_inferior_vena_cava"
+            },
+            {
+              "name": "VH_M_inferior_vena_cava_b",
+              "mesh": 85
+            },
+            {
+              "name": "VH_M_inferior_vena_cava_a",
+              "mesh": 86
+            },
+            {
+              "name": "VH_M_blood_vasculature_of_spleen"
+            },
+            {
+              "name": "VH_M_veins_of_spleen"
+            },
+            {
+              "name": "VH_M_splenic_vein",
+              "mesh": 87
+            },
+            {
+              "name": "VH_M_arteries_of_spleen"
+            },
+            {
+              "name": "VH_M_splenic_artery",
+              "mesh": 88
+            },
+            {
+              "name": "VH_M_blood_vasculature_of_gall_bladder"
+            },
+            {
+              "name": "VH_M_veins_of_gallbladder"
+            },
+            {
+              "name": "VH_M_cystic_vein",
+              "mesh": 89
+            },
+            {
+              "name": "VH_M_arteries_of_gallbladder"
+            },
+            {
+              "name": "VH_M_cystic_artery",
+              "mesh": 90
+            },
+            {
+              "name": "VH_M_blood_vasculature_of_liver"
+            },
+            {
+              "name": "VH_M_arteries_of_liver"
+            },
+            {
+              "name": "VH_M_celiac_trunk",
+              "mesh": 91
+            },
+            {
+              "name": "VH_M_left_hepatic_artery",
+              "mesh": 92
+            },
+            {
+              "name": "VH_M_proper_hepatic_artery",
+              "mesh": 93
+            },
+            {
+              "name": "VH_M_posterior_segmental_right_hepatic_artery",
+              "mesh": 94
+            },
+            {
+              "name": "VH_M_right_hepatic_artery",
+              "mesh": 95
+            },
+            {
+              "name": "VH_M_anterior_segmental_right_hepatic_artery",
+              "mesh": 96
+            },
+            {
+              "name": "VH_M_common_hepatic_artery",
+              "mesh": 97
+            },
+            {
+              "name": "VH_M_middle_hepatic_artery_branch_of_left_hepatic_artery",
+              "mesh": 98
+            },
+            {
+              "name": "VH_M_veins_of_liver"
+            },
+            {
+              "name": "VH_M_right_hepatic_vein",
+              "mesh": 99
+            },
+            {
+              "name": "VH_M_left_hepatic_vein",
+              "mesh": 100
+            },
+            {
+              "name": "VH_M_middle_hepatic_vein",
+              "mesh": 101
+            },
+            {
+              "name": "VH_M_left_branch_of_portal_vein",
+              "mesh": 102
+            },
+            {
+              "name": "VH_M_right_branch_of_portal_vein",
+              "mesh": 103
+            },
+            {
+              "name": "VH_M_portal_vein",
+              "mesh": 104
+            },
+            {
+              "name": "VH_M_hepatic_portal_vein",
+              "mesh": 105
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/blood-vasculature-male/v1.3/assets/crosswalk.csv",
+          "sha256": "854c93e70886689aec0791ddfab60f57d392c92cfb2650a55012879d53f16deb",
+          "bytes": 7756
+        }
+      ]
+    },
+    {
+      "name": "liver-male",
+      "id": "https://lod.humanatlas.io/ref-organ/liver-male/v1.2",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/liver-male/latest/metadata.json",
+      "metadataSha256": "9ede3b14292c0dd7fa118896f13f7213100eba9e19a04ace8f2166a1d4dc4a5a",
+      "metadataBytes": 9123,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/liver-male/v1.2#raw-data",
+        "label": "3D Reference Organ for Liver, Male",
+        "title": "3D Reference Organ for Liver, Male",
+        "description": "This reference organ, Liver-male (https://humanatlas.io/3d-reference-library) was created using data from the Visible\nHuman Male, provided by the National Library of Medicine (Spitzer et al. 1996; Ackerman 1998).\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” *Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0003-1940-6740",
+            "label": "Anna Maria Masci",
+            "conforms_to": "Person",
+            "fullName": "Anna Maria Masci",
+            "firstName": "Anna",
+            "lastName": "Masci",
+            "orcid": "0000-0003-1940-6740",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-4174-2786",
+            "label": "Tim Kendall",
+            "conforms_to": "Person",
+            "fullName": "Tim Kendall",
+            "firstName": "Tim",
+            "lastName": "Kendall",
+            "orcid": "0000-0002-4174-2786",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0003-1824-1067",
+            "label": "Ayako Suzuki",
+            "conforms_to": "Person",
+            "fullName": "Ayako Suzuki",
+            "firstName": "Ayako",
+            "lastName": "Suzuki",
+            "orcid": "0000-0003-1824-1067",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen, and Heidi Schlehlein. 2024. \"3D Reference Organ for Liver, Male v1.2.\" https://doi.org/10.48539/HBM896.WMSL.867. Accessed on June 15, 2024.",
+        "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. \"HuBMAP CCF 3D Reference Object Library.\" https://humanatlas.io/3d-reference-library. Accessed on June 15, 2024.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM896.WMSL.867",
+        "hubmapId": "HBM896.WMSL.867",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/liver-male/v1.2#3d-vh-m-liver.glb",
+            "label": "Raw data distribution '3d-vh-m-liver.glb' file",
+            "title": "Raw data distribution '3d-vh-m-liver.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/liver-male/v1.2/assets/3d-vh-m-liver.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/liver-male/v1.2#3d-vh-m-liver.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/liver-male/v1.2#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/liver-male/v1.2/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/liver-male/v1.2#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-liver.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/liver-male/v1.2/assets/3d-vh-m-liver.glb",
+          "sha256": "8e4c38293cfdb6b4f47ef2930c7f4af9e37b9144d1cf26d07c8f12c5045eb404",
+          "bytes": 1136412,
+          "meshes": 26,
+          "nodes": [
+            {
+              "name": "VH_M_liver"
+            },
+            {
+              "name": "VH_M_bare_area_of_liver",
+              "mesh": 0
+            },
+            {
+              "name": "VH_M_liver_capsule",
+              "mesh": 1
+            },
+            {
+              "name": "VH_M_diaphragmatic_surface",
+              "mesh": 2
+            },
+            {
+              "name": "VH_M_suprarenal_impression_of_liver",
+              "mesh": 3
+            },
+            {
+              "name": "VH_M_renal_impression_of_liver",
+              "mesh": 4
+            },
+            {
+              "name": "VH_M_gastric_impression_of_liver",
+              "mesh": 5
+            },
+            {
+              "name": "VH_M_colic_impression_of_liver",
+              "mesh": 6
+            },
+            {
+              "name": "VH_M_esophageal_impression_of_liver",
+              "mesh": 7
+            },
+            {
+              "name": "VH_M_duodenal_impression_of_liver",
+              "mesh": 8
+            },
+            {
+              "name": "VH_M_porta_hepatis",
+              "mesh": 9
+            },
+            {
+              "name": "VH_M_couinaud_liver_segment"
+            },
+            {
+              "name": "VH_M_caudate_lobe_of_liver",
+              "mesh": 10
+            },
+            {
+              "name": "VH_M_right_lobe_of_liver"
+            },
+            {
+              "name": "VH_M_right_posteroinferior_segment",
+              "mesh": 11
+            },
+            {
+              "name": "VH_M_right_posterosuperior_segment",
+              "mesh": 12
+            },
+            {
+              "name": "VH_M_right_anterosuperior_segment",
+              "mesh": 13
+            },
+            {
+              "name": "VH_M_right_anteroinferior_segment",
+              "mesh": 14
+            },
+            {
+              "name": "VH_M_left_lobe_of_liver"
+            },
+            {
+              "name": "VH_M_left_lateral_lobe"
+            },
+            {
+              "name": "VH_M_left_anterolateral_segment",
+              "mesh": 15
+            },
+            {
+              "name": "VH_M_left_posterolateral_segment",
+              "mesh": 16
+            },
+            {
+              "name": "VH_M_left_medial_lobe"
+            },
+            {
+              "name": "VH_M_left_superiomedial_segment",
+              "mesh": 17
+            },
+            {
+              "name": "VH_M_left_inferomedial_segment",
+              "mesh": 18
+            },
+            {
+              "name": "VH_M_quadrate_lobe_of_liver",
+              "mesh": 19
+            },
+            {
+              "name": "VH_M_ligament_of_liver"
+            },
+            {
+              "name": "VH_M_hepataduodenal_ligament",
+              "mesh": 20
+            },
+            {
+              "name": "VH_M_ligamentum_venosum",
+              "mesh": 21
+            },
+            {
+              "name": "VH_M_round_ligament_of_liver",
+              "mesh": 22
+            },
+            {
+              "name": "VH_M_triangular_ligament_of_liver",
+              "mesh": 23
+            },
+            {
+              "name": "VH_M_falciform_ligament",
+              "mesh": 24
+            },
+            {
+              "name": "VH_M_coronary_ligament_of_liver",
+              "mesh": 25
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/liver-male/v1.2/assets/crosswalk.csv",
+          "sha256": "fca2a8375741f84bfbfdfba2e1da005bbe4c1fdba5d842738d9417da0d39ce40",
+          "bytes": 1511
+        }
+      ]
+    },
+    {
+      "name": "brain-male",
+      "id": "https://lod.humanatlas.io/ref-organ/brain-male/v1.4",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/brain-male/latest/metadata.json",
+      "metadataSha256": "5d0aae42bc02ded9969b29c34f51fdaf80e372c66528af41879aad823f40df9e",
+      "metadataBytes": 9107,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/brain-male/v1.4#raw-data",
+        "label": "3D Reference Organ for Brain, Male",
+        "title": "3D Reference Organ for Brain, Male",
+        "description": "This reference organ, Brain-male (https://humanatlas.io/3d-reference-library) was created using data from the Allen\nbrain reference atlas (Ding et al. 2016). The 141 anatomical structures were mirrored to arrive at a whole human brain\n(as intended) and resized to fit the Visible Human Male and Female bodies (Spitzer et al. 1996; Ackerman 1998). In\nversion v1.3, an update in licensing occurred; this brain model is now licensed under Creative Commons Attribution 4.0\nInternational (CC BY 4.0). Ding et al. 2016 was used to inform the creation of this model.\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” *Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Ding, Song-Lin, Joshua J. Royall, Susan M. Sunkin, Lydia Ng, Benjamin A.C. Facer, Phil Lesnar, Angie Guillozet-Bongaarts, et al. 2016. “Comprehensive Cellular-Resolution Atlas of the Adult Human Brain.” *Journal of Comparative Neurology* 524 (16): 3127–3481.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0002-7072-5272",
+            "label": "Song-Lin Ding",
+            "conforms_to": "Person",
+            "fullName": "Song-Lin Ding",
+            "firstName": "Song-Lin",
+            "lastName": "Ding",
+            "orcid": "0000-0002-7072-5272",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen,\tand Heidi Schlehlein.\t 2024.\t\"3D Reference Organ for Brain, Male v1.4.\"\t https://doi.org/10.48539/HBM538.NKCT.649.\tAccessed June 15, 2024.",
+        "citationOverall": "Browne, Kristen,\tHeidi Schlehlein,\tBruce W. Herr II,\tEllen Quardokus,\tAndreas Bueckle,\t and Katy Börner.\t 2024.\t\"HuBMAP CCF 3D Reference Object Library.\"\t https://humanatlas.io/3d-reference-library.\tAccessed June 15, 2024.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM538.NKCT.649",
+        "hubmapId": "HBM538.NKCT.649",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/brain-male/v1.4#3d-allen-m-brain.glb",
+            "label": "Raw data distribution '3d-allen-m-brain.glb' file",
+            "title": "Raw data distribution '3d-allen-m-brain.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/brain-male/v1.4/assets/3d-allen-m-brain.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/brain-male/v1.4#3d-allen-m-brain.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/brain-male/v1.4#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/brain-male/v1.4/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/brain-male/v1.4#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-allen-m-brain.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/brain-male/v1.4/assets/3d-allen-m-brain.glb",
+          "sha256": "c97d7d0b9ff0baebbdec5566fa7b08d789195ef965e0bd04cf743a8d683882db",
+          "bytes": 11982812,
+          "meshes": 283,
+          "nodes": [
+            {
+              "name": "Allen_brain"
+            },
+            {
+              "name": "Allen_brain_Hemisphere_L"
+            },
+            {
+              "name": "Allen_olfactory_bulb_L",
+              "mesh": 0
+            },
+            {
+              "name": "Allen_anterior_olfactory_nucleus_L",
+              "mesh": 1
+            },
+            {
+              "name": "Allen_piriform_region_L",
+              "mesh": 2
+            },
+            {
+              "name": "Allen_frontal_agranular_insular_cortex_area_Fl_L",
+              "mesh": 3
+            },
+            {
+              "name": "Allen_temporal_agranular_insular_cortex_area_Tl_L",
+              "mesh": 4
+            },
+            {
+              "name": "Allen_head_of_caudate_L",
+              "mesh": 5
+            },
+            {
+              "name": "Allen_body_of_caudate_L",
+              "mesh": 6
+            },
+            {
+              "name": "Allen_tail_of_caudate_L",
+              "mesh": 7
+            },
+            {
+              "name": "Allen_putamen_L",
+              "mesh": 8
+            },
+            {
+              "name": "Allen_nucleus_accumbens_L",
+              "mesh": 9
+            },
+            {
+              "name": "Allen_external_segment_of_globus_pallidus_L",
+              "mesh": 10
+            },
+            {
+              "name": "Allen_internal_segment_of_globus_pallidus_L",
+              "mesh": 11
+            },
+            {
+              "name": "Allen_claustrum_L",
+              "mesh": 12
+            },
+            {
+              "name": "Allen_basal_forebrain_L",
+              "mesh": 13
+            },
+            {
+              "name": "Allen_septal_nuclei_L",
+              "mesh": 14
+            },
+            {
+              "name": "Allen_amygdaloid_complex_L",
+              "mesh": 15
+            },
+            {
+              "name": "Allen_anterior_amygdaloid_area_L",
+              "mesh": 16
+            },
+            {
+              "name": "Allen_central_nuclear_group_L",
+              "mesh": 17
+            },
+            {
+              "name": "Allen_lateral_nucleus_L",
+              "mesh": 18
+            },
+            {
+              "name": "Allen_basolateral_nucleus_basal_nucleus_L",
+              "mesh": 19
+            },
+            {
+              "name": "Allen_basomedial_nucleus_accessory_basal_nucleus_L",
+              "mesh": 20
+            },
+            {
+              "name": "Allen_anterior_cortical_nucleus_L",
+              "mesh": 21
+            },
+            {
+              "name": "Allen_posterior_cortical_nucleus_L",
+              "mesh": 22
+            },
+            {
+              "name": "Allen_medial_nucleus_L",
+              "mesh": 23
+            },
+            {
+              "name": "Allen_amygdalohippocampal_area_L",
+              "mesh": 24
+            },
+            {
+              "name": "Allen_bed_nucleus_of_stria_terminalis_L",
+              "mesh": 25
+            },
+            {
+              "name": "Allen_thalamus_L",
+              "mesh": 26
+            },
+            {
+              "name": "Allen_anterior_nuclear_complex_of_thalamus_L",
+              "mesh": 27
+            },
+            {
+              "name": "Allen_lateral_dorsal_nucleus_of_thalamus_L",
+              "mesh": 28
+            },
+            {
+              "name": "Allen_mediodorsal_nucleus_of_thalamus_L",
+              "mesh": 29
+            },
+            {
+              "name": "Allen_reuniens_nucleus_medioventral_nucleus_of_thalamus_L",
+              "mesh": 30
+            },
+            {
+              "name": "Allen_lateral_posterior_nucleus_of_thalamus_L",
+              "mesh": 31
+            },
+            {
+              "name": "Allen_pulvinar_of_thalamus_L",
+              "mesh": 32
+            },
+            {
+              "name": "Allen_ventral_anterior_nucleus_of_thalamus_L",
+              "mesh": 33
+            },
+            {
+              "name": "Allen_ventral_lateral_nucleus_of_thalamus_L",
+              "mesh": 34
+            },
+            {
+              "name": "Allen_ventral_posterior_lateral_nucleus_L",
+              "mesh": 35
+            },
+            {
+              "name": "Allen_ventral_posterior_medial_nucleus_L",
+              "mesh": 36
+            },
+            {
+              "name": "Allen_dorsal_lateral_geniculate_nucleus_L",
+              "mesh": 37
+            },
+            {
+              "name": "Allen_medial_geniculate_nuclei_L",
+              "mesh": 38
+            },
+            {
+              "name": "Allen_centromedian_nucleus_of_thalamus_L",
+              "mesh": 39
+            },
+            {
+              "name": "Allen_parafascicular_nucleus_of_thalamus_L",
+              "mesh": 40
+            },
+            {
+              "name": "Allen_habenular_nuclei_L",
+              "mesh": 41
+            },
+            {
+              "name": "Allen_pineal_body_L",
+              "mesh": 42
+            },
+            {
+              "name": "Allen_zona_incerta_L",
+              "mesh": 43
+            },
+            {
+              "name": "Allen_supraoptic_region_of_HTH_L",
+              "mesh": 44
+            },
+            {
+              "name": "Allen_preoptic_region_of_HTH_L",
+              "mesh": 45
+            },
+            {
+              "name": "Allen_tuberal_region_of_HTH_L",
+              "mesh": 46
+            },
+            {
+              "name": "Allen_white_matter_of_forebrain_L",
+              "mesh": 47
+            },
+            {
+              "name": "Allen_anterior_commissure_L",
+              "mesh": 48
+            },
+            {
+              "name": "Allen_corpus_callosum_L",
+              "mesh": 49
+            },
+            {
+              "name": "Allen_fornix_L",
+              "mesh": 50
+            },
+            {
+              "name": "Allen_mammillothalamic_tract_L",
+              "mesh": 51
+            },
+            {
+              "name": "Allen_optic_tract_L",
+              "mesh": 52
+            },
+            {
+              "name": "Allen_anterior_horn_of_lateral_ventricle_L",
+              "mesh": 53
+            },
+            {
+              "name": "Allen_body_of_lateral_ventricle_L",
+              "mesh": 54
+            },
+            {
+              "name": "Allen_posterior_horn_of_lateral_ventricle_L",
+              "mesh": 55
+            },
+            {
+              "name": "Allen_inferior_horn_of_lateral_ventricle_L",
+              "mesh": 56
+            },
+            {
+              "name": "Allen_third_ventricle_L",
+              "mesh": 57
+            },
+            {
+              "name": "Allen_cerebellar_vermis_L",
+              "mesh": 58
+            },
+            {
+              "name": "Allen_cerebellar_deep_nuclei_L",
+              "mesh": 59
+            },
+            {
+              "name": "Allen_white_matter_of_hindbrain_L",
+              "mesh": 60
+            },
+            {
+              "name": "Allen_olfactory_tract_L",
+              "mesh": 61
+            },
+            {
+              "name": "Allen_primary_motor_cortex_L",
+              "mesh": 62
+            },
+            {
+              "name": "Allen_superior_frontal_gyrus_L",
+              "mesh": 63
+            },
+            {
+              "name": "Allen_middle_frontal_gyrus_L",
+              "mesh": 64
+            },
+            {
+              "name": "Allen_inferior_frontal_gyrus_triangular_part_L",
+              "mesh": 65
+            },
+            {
+              "name": "Allen_inferior_frontal_gyrus_opercular_part_L",
+              "mesh": 66
+            },
+            {
+              "name": "Allen_gyrus_rectus_straight_gyrus_L",
+              "mesh": 67
+            },
+            {
+              "name": "Allen_medial_orbital_gyrus_L",
+              "mesh": 68
+            },
+            {
+              "name": "Allen_anterior_intermediate_orbital_gyrus_L",
+              "mesh": 69
+            },
+            {
+              "name": "Allen_posterior_intermediate_orbital_gyrus_L",
+              "mesh": 70
+            },
+            {
+              "name": "Allen_lateral_orbital_gyrus_L",
+              "mesh": 71
+            },
+            {
+              "name": "Allen_paracentral_lobule_rostral_part_L",
+              "mesh": 72
+            },
+            {
+              "name": "Allen_frontal_operculum_L",
+              "mesh": 73
+            },
+            {
+              "name": "Allen_postcentral_gyrus_L",
+              "mesh": 74
+            },
+            {
+              "name": "Allen_supraparietal_lobule_L",
+              "mesh": 75
+            },
+            {
+              "name": "Allen_supramarginal_gyrus_L",
+              "mesh": 76
+            },
+            {
+              "name": "Allen_angular_gyrus_L",
+              "mesh": 77
+            },
+            {
+              "name": "Allen_precuneus_L",
+              "mesh": 78
+            },
+            {
+              "name": "Allen_paracentral_lobule_caudal_part_L",
+              "mesh": 79
+            },
+            {
+              "name": "Allen_superior_temporal_gyrus_L",
+              "mesh": 80
+            },
+            {
+              "name": "Allen_middle_temporal_gyrus_L",
+              "mesh": 81
+            },
+            {
+              "name": "Allen_inferior_temporal_gyrus_L",
+              "mesh": 82
+            },
+            {
+              "name": "Allen_occipitotemporal_fusiform_gyrus_temporal_part_L",
+              "mesh": 83
+            },
+            {
+              "name": "Allen_transverse_temporal_gyrus_Heschls_gyrus_L",
+              "mesh": 84
+            },
+            {
+              "name": "Allen_planum_temporale_L",
+              "mesh": 85
+            },
+            {
+              "name": "Allen_temporal_pole_L",
+              "mesh": 86
+            },
+            {
+              "name": "Allen_planum_polare_L",
+              "mesh": 87
+            },
+            {
+              "name": "Allen_occipital_pole_L",
+              "mesh": 88
+            },
+            {
+              "name": "Allen_cuneus_L",
+              "mesh": 89
+            },
+            {
+              "name": "Allen_lingual_gyrus_medial_occipitotemporal_gyrus_L",
+              "mesh": 90
+            },
+            {
+              "name": "Allen_lateral_occipitotemporal_fusiform_gyrus_occipital_part_L",
+              "mesh": 91
+            },
+            {
+              "name": "Allen_inferior_occipital_gyrus_L",
+              "mesh": 92
+            },
+            {
+              "name": "Allen_superior_occipital_gyrus_L",
+              "mesh": 93
+            },
+            {
+              "name": "Allen_cingulate_gyrus_rostral_anterior_part_L",
+              "mesh": 94
+            },
+            {
+              "name": "Allen_cingulate_gyrus_caudal_posterior_part_L",
+              "mesh": 95
+            },
+            {
+              "name": "Allen_ingulo_parahippocampal_isthmus_L",
+              "mesh": 96
+            },
+            {
+              "name": "Allen_subcallosal_gyrus_parolfactory_gyrus_L",
+              "mesh": 97
+            },
+            {
+              "name": "Allen_anterior_parahippocampal_gyrus_L",
+              "mesh": 98
+            },
+            {
+              "name": "Allen_posterior_parahippocampal_gyrus_L",
+              "mesh": 99
+            },
+            {
+              "name": "Allen_gyrus_ambiens_L",
+              "mesh": 100
+            },
+            {
+              "name": "Allen_long_insular_gyri_L",
+              "mesh": 101
+            },
+            {
+              "name": "Allen_short_insular_gyri_L",
+              "mesh": 102
+            },
+            {
+              "name": "Allen_limen_insula_L",
+              "mesh": 103
+            },
+            {
+              "name": "Allen_pretectal_region_L",
+              "mesh": 104
+            },
+            {
+              "name": "Allen_substantia_nigra_L",
+              "mesh": 105
+            },
+            {
+              "name": "Allen_superior_colliculus_L",
+              "mesh": 106
+            },
+            {
+              "name": "Allen_cerebral_peduncle_crus_cerebri_L",
+              "mesh": 107
+            },
+            {
+              "name": "Allen_superior_cerebellar_peduncle_brachium_conjunctivum_L",
+              "mesh": 108
+            },
+            {
+              "name": "Allen_cerebral_aqueduct_L",
+              "mesh": 109
+            },
+            {
+              "name": "Allen_paravermis_of_cerebellum_L",
+              "mesh": 110
+            },
+            {
+              "name": "Allen_lateral_hemisphere_of_cerebellum_L",
+              "mesh": 111
+            },
+            {
+              "name": "Allen_basilar_part_of_pons_L",
+              "mesh": 112
+            },
+            {
+              "name": "Allen_pontine_tegmentum_L",
+              "mesh": 113
+            },
+            {
+              "name": "Allen_pyramidal_part_of_medulla_oblongata_L",
+              "mesh": 114
+            },
+            {
+              "name": "Allen_tegmentum_of_medulla_oblongata_L",
+              "mesh": 115
+            },
+            {
+              "name": "Allen_inferior_olive_L",
+              "mesh": 116
+            },
+            {
+              "name": "Allen_middle_cerebellar_peduncle_L",
+              "mesh": 117
+            },
+            {
+              "name": "Allen_fourth_ventricle_L",
+              "mesh": 118
+            },
+            {
+              "name": "Allen_central_canal_of_medulla_oblongata_L",
+              "mesh": 119
+            },
+            {
+              "name": "Allen_midline_nuclear_complex_L",
+              "mesh": 120
+            },
+            {
+              "name": "Allen_lateral_olfactory_gyrus_L",
+              "mesh": 121
+            },
+            {
+              "name": "Allen_parietal_operculum_L",
+              "mesh": 122
+            },
+            {
+              "name": "Allen_optic_radiation_L",
+              "mesh": 123
+            },
+            {
+              "name": "Allen_posteroventral_putamen_L",
+              "mesh": 124
+            },
+            {
+              "name": "Allen_atrium_of_lateral_ventricle_L",
+              "mesh": 125
+            },
+            {
+              "name": "Allen_paracingulate_gyrus_L",
+              "mesh": 126
+            },
+            {
+              "name": "Allen_rostral_gyrus_L",
+              "mesh": 127
+            },
+            {
+              "name": "Allen_frontomarginal_gyrus_L",
+              "mesh": 128
+            },
+            {
+              "name": "Allen_frontal_pole_L",
+              "mesh": 129
+            },
+            {
+              "name": "Allen_inferior_cerebellar_peduncle_L",
+              "mesh": 130
+            },
+            {
+              "name": "Allen_perirhinal_gyrus_rostral_part_of_FuGt_L",
+              "mesh": 131
+            },
+            {
+              "name": "Allen_hippocampus_L"
+            },
+            {
+              "name": "Allen_head_of_hippocampus_L",
+              "mesh": 132
+            },
+            {
+              "name": "Allen_body_of_hippocampus_L",
+              "mesh": 133
+            },
+            {
+              "name": "Allen_tail_of_hippocampus_L",
+              "mesh": 134
+            },
+            {
+              "name": "Allen_brain_Hemisphere_R"
+            },
+            {
+              "name": "Allen_olfactory_bulb_R",
+              "mesh": 135
+            },
+            {
+              "name": "Allen_anterior_olfactory_nucleus_R",
+              "mesh": 136
+            },
+            {
+              "name": "Allen_piriform_region_R",
+              "mesh": 137
+            },
+            {
+              "name": "Allen_frontal_agranular_insular_cortex_area_Fl_R",
+              "mesh": 138
+            },
+            {
+              "name": "Allen_temporal_agranular_insular_cortex_area_Tl_R",
+              "mesh": 139
+            },
+            {
+              "name": "Allen_head_of_caudate_R",
+              "mesh": 140
+            },
+            {
+              "name": "Allen_body_of_caudate_R",
+              "mesh": 141
+            },
+            {
+              "name": "Allen_tail_of_caudate_R",
+              "mesh": 142
+            },
+            {
+              "name": "Allen_putamen_R",
+              "mesh": 143
+            },
+            {
+              "name": "Allen_nucleus_accumbens_R",
+              "mesh": 144
+            },
+            {
+              "name": "Allen_external_segment_of_globus_pallidus_R",
+              "mesh": 145
+            },
+            {
+              "name": "Allen_internal_segment_of_globus_pallidus_R",
+              "mesh": 146
+            },
+            {
+              "name": "Allen_claustrum_R",
+              "mesh": 147
+            },
+            {
+              "name": "Allen_basal_forebrain_R",
+              "mesh": 148
+            },
+            {
+              "name": "Allen_septal_nuclei_R",
+              "mesh": 149
+            },
+            {
+              "name": "Allen_amygdaloid_complex_R",
+              "mesh": 150
+            },
+            {
+              "name": "Allen_anterior_amygdaloid_area_R",
+              "mesh": 151
+            },
+            {
+              "name": "Allen_central_nuclear_group_R",
+              "mesh": 152
+            },
+            {
+              "name": "Allen_lateral_nucleus_R",
+              "mesh": 153
+            },
+            {
+              "name": "Allen_basolateral_nucleus_basal_nucleus_R",
+              "mesh": 154
+            },
+            {
+              "name": "Allen_basomedial_nucleus_accessory_basal_nucleus_R",
+              "mesh": 155
+            },
+            {
+              "name": "Allen_anterior_cortical_nucleus_R",
+              "mesh": 156
+            },
+            {
+              "name": "Allen_posterior_cortical_nucleus_R",
+              "mesh": 157
+            },
+            {
+              "name": "Allen_medial_nucleus_R",
+              "mesh": 158
+            },
+            {
+              "name": "Allen_amygdalohippocampal_area_R",
+              "mesh": 159
+            },
+            {
+              "name": "Allen_bed_nucleus_of_stria_terminalis_R",
+              "mesh": 160
+            },
+            {
+              "name": "Allen_thalamus_R",
+              "mesh": 161
+            },
+            {
+              "name": "Allen_anterior_nuclear_complex_of_thalamus_R",
+              "mesh": 162
+            },
+            {
+              "name": "Allen_lateral_dorsal_nucleus_of_thalamus_R",
+              "mesh": 163
+            },
+            {
+              "name": "Allen_mediodorsal_nucleus_of_thalamus_R",
+              "mesh": 164
+            },
+            {
+              "name": "Allen_reuniens_nucleus_medioventral_nucleus_of_thalamus_R",
+              "mesh": 165
+            },
+            {
+              "name": "Allen_lateral_posterior_nucleus_of_thalamus_R",
+              "mesh": 166
+            },
+            {
+              "name": "Allen_pulvinar_of_thalamus_R",
+              "mesh": 167
+            },
+            {
+              "name": "Allen_ventral_anterior_nucleus_of_thalamus_R",
+              "mesh": 168
+            },
+            {
+              "name": "Allen_ventral_lateral_nucleus_of_thalamus_R",
+              "mesh": 169
+            },
+            {
+              "name": "Allen_ventral_posterior_lateral_nucleus_R",
+              "mesh": 170
+            },
+            {
+              "name": "Allen_ventral_posterior_medial_nucleus_R",
+              "mesh": 171
+            },
+            {
+              "name": "Allen_dorsal_lateral_geniculate_nucleus_R",
+              "mesh": 172
+            },
+            {
+              "name": "Allen_medial_geniculate_nuclei_R",
+              "mesh": 173
+            },
+            {
+              "name": "Allen_centromedian_nucleus_of_thalamus_R",
+              "mesh": 174
+            },
+            {
+              "name": "Allen_parafascicular_nucleus_of_thalamus_R",
+              "mesh": 175
+            },
+            {
+              "name": "Allen_habenular_nuclei_R",
+              "mesh": 176
+            },
+            {
+              "name": "Allen_pineal_body_R",
+              "mesh": 177
+            },
+            {
+              "name": "Allen_zona_incerta_R",
+              "mesh": 178
+            },
+            {
+              "name": "Allen_supraoptic_region_of_HTH_R",
+              "mesh": 179
+            },
+            {
+              "name": "Allen_white_matter_of_forebrain_R",
+              "mesh": 180
+            },
+            {
+              "name": "Allen_anterior_commissure_R",
+              "mesh": 181
+            },
+            {
+              "name": "Allen_corpus_callosum_R",
+              "mesh": 182
+            },
+            {
+              "name": "Allen_fornix_R",
+              "mesh": 183
+            },
+            {
+              "name": "Allen_mammillothalamic_tract_R",
+              "mesh": 184
+            },
+            {
+              "name": "Allen_optic_tract_R",
+              "mesh": 185
+            },
+            {
+              "name": "Allen_anterior_horn_of_lateral_ventricle_R",
+              "mesh": 186
+            },
+            {
+              "name": "Allen_body_of_lateral_ventricle_R",
+              "mesh": 187
+            },
+            {
+              "name": "Allen_posterior_horn_of_lateral_ventricle_R",
+              "mesh": 188
+            },
+            {
+              "name": "Allen_inferior_horn_of_lateral_ventricle_R",
+              "mesh": 189
+            },
+            {
+              "name": "Allen_third_ventricle_R",
+              "mesh": 190
+            },
+            {
+              "name": "Allen_cerebellar_vermis_R",
+              "mesh": 191
+            },
+            {
+              "name": "Allen_cerebellar_deep_nuclei_R",
+              "mesh": 192
+            },
+            {
+              "name": "Allen_white_matter_of_hindbrain_R",
+              "mesh": 193
+            },
+            {
+              "name": "Allen_olfactory_tract_R",
+              "mesh": 194
+            },
+            {
+              "name": "Allen_primary_motor_cortex_R",
+              "mesh": 195
+            },
+            {
+              "name": "Allen_superior_frontal_gyrus_R",
+              "mesh": 196
+            },
+            {
+              "name": "Allen_middle_frontal_gyrus_R",
+              "mesh": 197
+            },
+            {
+              "name": "Allen_inferior_frontal_gyrus_triangular_part_R",
+              "mesh": 198
+            },
+            {
+              "name": "Allen_inferior_frontal_gyrus_opercular_part_R",
+              "mesh": 199
+            },
+            {
+              "name": "Allen_gyrus_rectus_straight_gyrus_R",
+              "mesh": 200
+            },
+            {
+              "name": "Allen_medial_orbital_gyrus_R",
+              "mesh": 201
+            },
+            {
+              "name": "Allen_anterior_intermediate_orbital_gyrus_R",
+              "mesh": 202
+            },
+            {
+              "name": "Allen_posterior_intermediate_orbital_gyrus_R",
+              "mesh": 203
+            },
+            {
+              "name": "Allen_lateral_orbital_gyrus_R",
+              "mesh": 204
+            },
+            {
+              "name": "Allen_paracentral_lobule_rostral_part_R",
+              "mesh": 205
+            },
+            {
+              "name": "Allen_frontal_operculum_R",
+              "mesh": 206
+            },
+            {
+              "name": "Allen_postcentral_gyrus_R",
+              "mesh": 207
+            },
+            {
+              "name": "Allen_supraparietal_lobule_R",
+              "mesh": 208
+            },
+            {
+              "name": "Allen_supramarginal_gyrus_R",
+              "mesh": 209
+            },
+            {
+              "name": "Allen_angular_gyrus_R",
+              "mesh": 210
+            },
+            {
+              "name": "Allen_precuneus_R",
+              "mesh": 211
+            },
+            {
+              "name": "Allen_paracentral_lobule_caudal_part_R",
+              "mesh": 212
+            },
+            {
+              "name": "Allen_superior_temporal_gyrus_R",
+              "mesh": 213
+            },
+            {
+              "name": "Allen_middle_temporal_gyrus_R",
+              "mesh": 214
+            },
+            {
+              "name": "Allen_inferior_temporal_gyrus_R",
+              "mesh": 215
+            },
+            {
+              "name": "Allen_occipitotemporal_fusiform_gyrus_temporal_part_R",
+              "mesh": 216
+            },
+            {
+              "name": "Allen_transverse_temporal_gyrus_Heschls_gyrus_R",
+              "mesh": 217
+            },
+            {
+              "name": "Allen_planum_temporale_R",
+              "mesh": 218
+            },
+            {
+              "name": "Allen_temporal_pole_R",
+              "mesh": 219
+            },
+            {
+              "name": "Allen_planum_polare_R",
+              "mesh": 220
+            },
+            {
+              "name": "Allen_occipital_pole_R",
+              "mesh": 221
+            },
+            {
+              "name": "Allen_cuneus_R",
+              "mesh": 222
+            },
+            {
+              "name": "Allen_lingual_gyrus_medial_occipitotemporal_gyrus_R",
+              "mesh": 223
+            },
+            {
+              "name": "Allen_lateral_occipitotemporal_fusiform_gyrus_occipital_part_R",
+              "mesh": 224
+            },
+            {
+              "name": "Allen_inferior_occipital_gyrus_R",
+              "mesh": 225
+            },
+            {
+              "name": "Allen_superior_occipital_gyrus_R",
+              "mesh": 226
+            },
+            {
+              "name": "Allen_cingulate_gyrus_rostral_anterior_part_R",
+              "mesh": 227
+            },
+            {
+              "name": "Allen_cingulate_gyrus_caudal_posterior_part_R",
+              "mesh": 228
+            },
+            {
+              "name": "Allen_ingulo_parahippocampal_isthmus_R",
+              "mesh": 229
+            },
+            {
+              "name": "Allen_subcallosal_gyrus_parolfactory_gyrus_R",
+              "mesh": 230
+            },
+            {
+              "name": "Allen_anterior_parahippocampal_gyrus_R",
+              "mesh": 231
+            },
+            {
+              "name": "Allen_posterior_parahippocampal_gyrus_R",
+              "mesh": 232
+            },
+            {
+              "name": "Allen_gyrus_ambiens_R",
+              "mesh": 233
+            },
+            {
+              "name": "Allen_long_insular_gyri_R",
+              "mesh": 234
+            },
+            {
+              "name": "Allen_short_insular_gyri_R",
+              "mesh": 235
+            },
+            {
+              "name": "Allen_limen_insula_R",
+              "mesh": 236
+            },
+            {
+              "name": "Allen_pretectal_region_R",
+              "mesh": 237
+            },
+            {
+              "name": "Allen_red_nucleus_R",
+              "mesh": 238
+            },
+            {
+              "name": "Allen_substantia_nigra_R",
+              "mesh": 239
+            },
+            {
+              "name": "Allen_superior_colliculus_R",
+              "mesh": 240
+            },
+            {
+              "name": "Allen_inferior_colliculus_R",
+              "mesh": 241
+            },
+            {
+              "name": "Allen_cerebral_peduncle_crus_cerebri_R",
+              "mesh": 242
+            },
+            {
+              "name": "Allen_superior_cerebellar_peduncle_brachium_conjunctivum_R",
+              "mesh": 243
+            },
+            {
+              "name": "Allen_cerebral_aqueduct_R",
+              "mesh": 244
+            },
+            {
+              "name": "Allen_paravermis_of_cerebellum_R",
+              "mesh": 245
+            },
+            {
+              "name": "Allen_lateral_hemisphere_of_cerebellum_R",
+              "mesh": 246
+            },
+            {
+              "name": "Allen_basilar_part_of_pons_R",
+              "mesh": 247
+            },
+            {
+              "name": "Allen_pontine_tegmentum_R",
+              "mesh": 248
+            },
+            {
+              "name": "Allen_pyramidal_part_of_medulla_oblongata_R",
+              "mesh": 249
+            },
+            {
+              "name": "Allen_tegmentum_of_medulla_oblongata_R",
+              "mesh": 250
+            },
+            {
+              "name": "Allen_inferior_olive_R",
+              "mesh": 251
+            },
+            {
+              "name": "Allen_inferior_cerebellar_peduncle_R",
+              "mesh": 252
+            },
+            {
+              "name": "Allen_middle_cerebellar_peduncle_R",
+              "mesh": 253
+            },
+            {
+              "name": "Allen_fourth_ventricle_R",
+              "mesh": 254
+            },
+            {
+              "name": "Allen_central_canal_of_medulla_oblongata_R",
+              "mesh": 255
+            },
+            {
+              "name": "Allen_midline_nuclear_complex_R",
+              "mesh": 256
+            },
+            {
+              "name": "Allen_lateral_olfactory_gyrus_R",
+              "mesh": 257
+            },
+            {
+              "name": "Allen_parietal_operculum_R",
+              "mesh": 258
+            },
+            {
+              "name": "Allen_optic_radiation_R",
+              "mesh": 259
+            },
+            {
+              "name": "Allen_posteroventral_putamen_R",
+              "mesh": 260
+            },
+            {
+              "name": "Allen_atrium_of_lateral_ventricle_R",
+              "mesh": 261
+            },
+            {
+              "name": "Allen_paracingulate_gyrus_R",
+              "mesh": 262
+            },
+            {
+              "name": "Allen_rostral_gyrus_R",
+              "mesh": 263
+            },
+            {
+              "name": "Allen_frontomarginal_gyrus_R",
+              "mesh": 264
+            },
+            {
+              "name": "Allen_frontal_pole_R",
+              "mesh": 265
+            },
+            {
+              "name": "Allen_perirhinal_gyrus_rostral_part_of_FuGt_R",
+              "mesh": 266
+            },
+            {
+              "name": "Allen_hypothalamus_L",
+              "mesh": 267
+            },
+            {
+              "name": "Allen_hypothalamus_R",
+              "mesh": 268
+            },
+            {
+              "name": "Allen_subthalamic_nucleus_R",
+              "mesh": 269
+            },
+            {
+              "name": "Allen_mammillary_region_of_HTH_R",
+              "mesh": 270
+            },
+            {
+              "name": "Allen_midbrain_tegmentum_R",
+              "mesh": 271
+            },
+            {
+              "name": "Allen_tuberal_region_of_HTH_R",
+              "mesh": 272
+            },
+            {
+              "name": "Allen_preoptic_region_of_HTH_R",
+              "mesh": 273
+            },
+            {
+              "name": "Allen_midbrain_tegmentum_L",
+              "mesh": 274
+            },
+            {
+              "name": "Allen_red_nucleus_L",
+              "mesh": 275
+            },
+            {
+              "name": "Allen_inferior_colliculus_L",
+              "mesh": 276
+            },
+            {
+              "name": "Allen_mammillary_region_of_HTH_L",
+              "mesh": 277
+            },
+            {
+              "name": "Allen_subthalamic_nucleus_L",
+              "mesh": 278
+            },
+            {
+              "name": "Allen_hippocampus_R"
+            },
+            {
+              "name": "Allen_head_of_hippocampus_R",
+              "mesh": 279
+            },
+            {
+              "name": "Allen_body_of_hippocampus_R",
+              "mesh": 280
+            },
+            {
+              "name": "Allen_tail_of_hippocampus_R",
+              "mesh": 281
+            },
+            {
+              "name": "VH_M_optic_chiasm",
+              "mesh": 282
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/brain-male/v1.4/assets/crosswalk.csv",
+          "sha256": "55907c4a83180f4af06a41a4b4361cf8afd4520ead71e6bef5f75ffef62febcf",
+          "bytes": 7274
+        }
+      ]
+    },
+    {
+      "name": "omentum-male",
+      "id": "https://lod.humanatlas.io/ref-organ/omentum-male/v1.0",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/omentum-male/latest/metadata.json",
+      "metadataSha256": "2b57f0e31271dc7685411915c66580bdce0dc6264777b35f966cf7084b045e07",
+      "metadataBytes": 7264,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/omentum-male/v1.0#raw-data",
+        "label": "3D reference organ for omentum, Male",
+        "title": "3D reference organ for omentum, Male",
+        "description": "[This reference organ](https://humanatlas.io/3d-reference-library) was created using data from the Visible Human Dataset, provided by the National Library of Medicine (Spitzer and Whitlock 2002). \nTODO: Description",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2026-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "citation": "Heidi Schlehlein. 2026. *3D reference organ for omentum, Male v1.0.* [https://doi.org/10.48539/HBM428.TMNG.749](https://doi.org/10.48539/HBM428.TMNG.749). Accessed on June 15, 2026.",
+        "citationOverall": "Browne, Kristen, Leonard E. Cross, Bruce W. Herr II, Lisel Record, Ellen Quardokus, Andreas Bueckle, Katy Börner. 2026. *HuBMAP CCF 3D Reference Object Library*. https://humanatlas.io/3d-reference-library. Accessed on June 15, 2026.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM428.TMNG.749",
+        "hubmapId": "HBM428.TMNG.749",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/omentum-male/v1.0#3d-vh-m-omentum.glb",
+            "label": "Raw data distribution '3d-vh-m-omentum.glb' file",
+            "title": "Raw data distribution '3d-vh-m-omentum.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/omentum-male/v1.0/assets/3d-vh-m-omentum.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/omentum-male/v1.0#3d-vh-m-omentum.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/omentum-male/v1.0#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/omentum-male/v1.0/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/omentum-male/v1.0#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-omentum.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/omentum-male/v1.0/assets/3d-vh-m-omentum.glb",
+          "sha256": "f77dd32911b9ef15bf831831914074b520e6fd1bf879f1eb6ca931e4049706b7",
+          "bytes": 2603108,
+          "meshes": 1,
+          "nodes": [
+            {
+              "name": "VH_M_visceral_adipose"
+            },
+            {
+              "name": "VH_M_omentum",
+              "mesh": 0,
+              "translation": [
+                0,
+                0,
+                -0.0105554964
+              ]
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/omentum-male/v1.0/assets/crosswalk.csv",
+          "sha256": "124df29cd6e9e1e6f884bfea8d8c3deb1d9ecd87bbdb2f7712dd65416a1c9150",
+          "bytes": 63
+        }
+      ]
+    },
+    {
+      "name": "lung-male",
+      "id": "https://lod.humanatlas.io/ref-organ/lung-male/v1.4",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/latest/metadata.json",
+      "metadataSha256": "2afab14cabadc5095f83797111bd5a3c28ab313980e5bb55136ba0bcbad00d8e",
+      "metadataBytes": 8563,
+      "source": {
+        "id": "https://lod.humanatlas.io/ref-organ/lung-male/v1.4#raw-data",
+        "label": "3D Reference Organ for Lung, Male",
+        "title": "3D Reference Organ for Lung, Male",
+        "description": "This reference organ, Lung-male (https://humanatlas.io/3d-reference-library) was created using data from the Visible\nHuman Male, provided by the National Library of Medicine (Spitzer et al. 1996; Ackerman 1998). In version 1.3, the\nlarynx, trachea, and main bronchi were removed; however, lung lobes and intrapulmonary bronchi remain part of the lung\nmodel.\n\n**Bibliography:**\n\n* Ackerman, Michael J. 1998. “The Visible Human Project.” *Proceedings of the IEEE* 86 (3): 504–11. https://doi.org/10.1109/5.662875.\n* Spitzer, V., M. J. Ackerman, A. L. Scherzinger, and D. Whitlock. 1996. “The Visible Human Male: A Technical Report.” *Journal of the American Medical Informatics Association* 3 (2): 118–30. https://doi.org/10.1136/jamia.1996.96236280.",
+        "creators": [
+          {
+            "id": "https://orcid.org/0000-0003-4066-7531",
+            "label": "Kristen Browne",
+            "conforms_to": "Person",
+            "fullName": "Kristen Browne",
+            "firstName": "Kristen",
+            "lastName": "Browne",
+            "orcid": "0000-0003-4066-7531",
+            "type_of": [
+              "schema:Person"
+            ]
+          },
+          {
+            "id": "https://orcid.org/0000-0002-3333-5646",
+            "label": "Heidi Schlehlein",
+            "conforms_to": "Person",
+            "fullName": "Heidi Schlehlein",
+            "firstName": "Heidi",
+            "lastName": "Schlehlein",
+            "orcid": "0000-0002-3333-5646",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "reviewers": [
+          {
+            "id": "https://orcid.org/0000-0002-9185-3994",
+            "label": "Gloria Pryhuber",
+            "conforms_to": "Person",
+            "fullName": "Gloria Pryhuber",
+            "firstName": "Gloria",
+            "lastName": "Pryhuber",
+            "orcid": "0000-0002-9185-3994",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "creation_date": "2024-06-15",
+        "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+        "publisher": "HuBMAP",
+        "references": [
+          "https://doi.org/10.1109/5.662875",
+          "https://doi.org/10.1136/jamia.1996.96236280"
+        ],
+        "citation": "Browne, Kristen, and Heidi Schlehlein. 2024. \"3D Reference Organ for Lung, Male v1.4.\" https://doi.org/10.48539/HBM532.KLZD.394. Accessed on June 15, 2024.",
+        "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2024. \"HuBMAP CCF 3D Reference Object Library.\" https://humanatlas.io/3d-reference-library. Accessed on June 15, 2024.",
+        "funders": [
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD033756"
+          },
+          {
+            "funder": "National Institutes of Health",
+            "awardNumber": "OT2OD026671"
+          }
+        ],
+        "doi": "https://doi.org/10.48539/HBM532.KLZD.394",
+        "hubmapId": "HBM532.KLZD.394",
+        "project_leads": [
+          {
+            "id": "https://orcid.org/0000-0002-3321-6137",
+            "label": "Katy Börner",
+            "conforms_to": "Person",
+            "fullName": "Katy Börner",
+            "firstName": "Katy",
+            "lastName": "Börner",
+            "orcid": "0000-0002-3321-6137",
+            "type_of": [
+              "schema:Person"
+            ]
+          }
+        ],
+        "distributions": [
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/lung-male/v1.4#3d-vh-m-lung.glb",
+            "label": "Raw data distribution '3d-vh-m-lung.glb' file",
+            "title": "Raw data distribution '3d-vh-m-lung.glb' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/v1.4/assets/3d-vh-m-lung.glb",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/lung-male/v1.4#3d-vh-m-lung.glb",
+            "mediaType": "model/gltf-binary"
+          },
+          {
+            "id": "https://lod.humanatlas.io/ref-organ/lung-male/v1.4#crosswalk.csv",
+            "label": "Raw data distribution 'crosswalk.csv' file",
+            "title": "Raw data distribution 'crosswalk.csv' file",
+            "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/v1.4/assets/crosswalk.csv",
+            "accessUrl": "https://lod.humanatlas.io/ref-organ/lung-male/v1.4#crosswalk.csv",
+            "mediaType": "text/csv"
+          }
+        ]
+      },
+      "files": [
+        {
+          "file": "3d-vh-m-lung.glb",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/v1.4/assets/3d-vh-m-lung.glb",
+          "sha256": "bba95516fa993ac45c3b1c53f32b58d97232ffd78ae56397e5a2589c6ce4903d",
+          "bytes": 10942332,
+          "meshes": 58,
+          "nodes": [
+            {
+              "name": "VH_M_respiratory_system"
+            },
+            {
+              "name": "VH_M_lungs"
+            },
+            {
+              "name": "VH_M_lungs_L"
+            },
+            {
+              "name": "VH_M_hilum_L",
+              "mesh": 0
+            },
+            {
+              "name": "VH_M_lungs_L_upper_lobe"
+            },
+            {
+              "name": "VH_M_hilum_upper_L",
+              "mesh": 1
+            },
+            {
+              "name": "VH_M_left_lingula_superior_bronchopulmonary_segment",
+              "mesh": 2
+            },
+            {
+              "name": "VH_M_left_posterior_bronchopulmonary_segment",
+              "mesh": 3
+            },
+            {
+              "name": "VH_M_left_anterior_bronchopulmonary_segment",
+              "mesh": 4
+            },
+            {
+              "name": "VH_M_left_apical_bronchopulmonary_segment",
+              "mesh": 5
+            },
+            {
+              "name": "VH_M_left_lingula_inferior_bronchopulmonary_segment",
+              "mesh": 6
+            },
+            {
+              "name": "VH_M_lungs_L_lower_lobe"
+            },
+            {
+              "name": "VH_M_hilum_lower_L",
+              "mesh": 7
+            },
+            {
+              "name": "VH_M_left_anterior_basal_bronchopulmonary_segment",
+              "mesh": 8
+            },
+            {
+              "name": "VH_M_left_lateral_basal_bronchopulmonary_segment",
+              "mesh": 9
+            },
+            {
+              "name": "VH_M_left_medial_basal_bronchopulmonary_segment",
+              "mesh": 10
+            },
+            {
+              "name": "VH_M_left_posetrior_basal_bronchopulmonary_segment",
+              "mesh": 11
+            },
+            {
+              "name": "VH_M_left_superior_bronchopulmonary_segment",
+              "mesh": 12
+            },
+            {
+              "name": "VH_M_lungs_R"
+            },
+            {
+              "name": "VH_M_hilum_R",
+              "mesh": 13
+            },
+            {
+              "name": "VH_M_lungs_R_middle_lobe"
+            },
+            {
+              "name": "VH_M_right_lateral_bronchopulmonary_segment",
+              "mesh": 14
+            },
+            {
+              "name": "VH_M_right_medial_bronchopulmonary_segment",
+              "mesh": 15
+            },
+            {
+              "name": "VH_M_hilum_middle_R",
+              "mesh": 16
+            },
+            {
+              "name": "VH_M_lungs_R_lower_lobe"
+            },
+            {
+              "name": "VH_M_hilum_lower_R",
+              "mesh": 17
+            },
+            {
+              "name": "VH_M_right_anterior_basal_bronchopulmonary_segment",
+              "mesh": 18
+            },
+            {
+              "name": "VH_M_right_lateral_basal_bronchopulmonary_segment",
+              "mesh": 19
+            },
+            {
+              "name": "VH_M_right_medial_basal_bronchopulmonary_segment",
+              "mesh": 20
+            },
+            {
+              "name": "VH_M_right_posterior_basal_bronchopulmonary_segment",
+              "mesh": 21
+            },
+            {
+              "name": "VH_M_right_superior_bronchopulmonary_segment",
+              "mesh": 22
+            },
+            {
+              "name": "VH_M_lungs_R_upper_lobe"
+            },
+            {
+              "name": "VH_M_right_apical_bronchopulmonary_segment",
+              "mesh": 23
+            },
+            {
+              "name": "VH_M_right_posterior_bronchopulmonary_segment",
+              "mesh": 24
+            },
+            {
+              "name": "VH_M_right_anterior_bronchopulmonary_segment",
+              "mesh": 25
+            },
+            {
+              "name": "VH_M_hilum_upper_R",
+              "mesh": 26
+            },
+            {
+              "name": "VH_M_tracheobronchial_tree"
+            },
+            {
+              "name": "VH_M_bronchi"
+            },
+            {
+              "name": "VH_M_bronchi_L"
+            },
+            {
+              "name": "VH_M_left_bronchial_cartilage"
+            },
+            {
+              "name": "VH_M_cartilage_of_the_lobar_bronchus_L",
+              "mesh": 27
+            },
+            {
+              "name": "VH_M_cartilage_of_the_tertiary_bronchus_L",
+              "mesh": 28
+            },
+            {
+              "name": "VH_M_lobar_bronchus_L"
+            },
+            {
+              "name": "VH_M_left_superior_lobar_bronchus",
+              "mesh": 29
+            },
+            {
+              "name": "VH_M_left_inferior_lobar_bronchus",
+              "mesh": 30
+            },
+            {
+              "name": "VH_M_tertiary_bronchi_L"
+            },
+            {
+              "name": "VH_M_left_superior_bronchus",
+              "mesh": 31
+            },
+            {
+              "name": "VH_M_left_posterior_basal_bronchus",
+              "mesh": 32
+            },
+            {
+              "name": "VH_M_left_medial_basal_bronchus",
+              "mesh": 33
+            },
+            {
+              "name": "VH_M_left_apical_bronchus",
+              "mesh": 34
+            },
+            {
+              "name": "VH_M_left_anterior_bronchus",
+              "mesh": 35
+            },
+            {
+              "name": "VH_M_left_lingular_bronchus",
+              "mesh": 36
+            },
+            {
+              "name": "VH_M_left_lingula_superior_bronchus",
+              "mesh": 37
+            },
+            {
+              "name": "VH_M_left_lingula_inferior_bronchus",
+              "mesh": 38
+            },
+            {
+              "name": "VH_M_left_lateral_basal_bronchus",
+              "mesh": 39
+            },
+            {
+              "name": "VH_M_left_anterior_basal_bronchus",
+              "mesh": 40
+            },
+            {
+              "name": "VH_M_bronchi_R"
+            },
+            {
+              "name": "VH_M_right_bronchial_cartilage"
+            },
+            {
+              "name": "VH_M_cartilage_of_the_lobar_bronchus_R",
+              "mesh": 41
+            },
+            {
+              "name": "VH_M_cartilage_of_the_tertiary_bronchus_R",
+              "mesh": 42
+            },
+            {
+              "name": "VH_M_lobar_bronchi_R"
+            },
+            {
+              "name": "VH_M_right_intermediate_bronchus",
+              "mesh": 43
+            },
+            {
+              "name": "VH_M_right_middle_lobar_bronchus",
+              "mesh": 44
+            },
+            {
+              "name": "VH_M_right_superior_lobar_bronchus",
+              "mesh": 45
+            },
+            {
+              "name": "VH_M_tertiary_bronchi_R"
+            },
+            {
+              "name": "VH_M_right_anterior_bronchus",
+              "mesh": 46
+            },
+            {
+              "name": "VH_M_right_lateral_basal_bronchus",
+              "mesh": 47
+            },
+            {
+              "name": "VH_M_right_lateral_bronchus",
+              "mesh": 48
+            },
+            {
+              "name": "VH_M_right_lower_lobar_bronchus",
+              "mesh": 49
+            },
+            {
+              "name": "VH_M_right_medial_basal_bronchus",
+              "mesh": 50
+            },
+            {
+              "name": "VH_M_right_medial_bronchus",
+              "mesh": 51
+            },
+            {
+              "name": "VH_M_right_posterior_basal",
+              "mesh": 52
+            },
+            {
+              "name": "VH_M_right_posterior_bronchus",
+              "mesh": 53
+            },
+            {
+              "name": "VH_M_right_superior_bronchus",
+              "mesh": 54
+            },
+            {
+              "name": "VH_M_right_apical_bronchus",
+              "mesh": 55
+            },
+            {
+              "name": "VH_M_right_anterior_basal_bronchus",
+              "mesh": 56
+            },
+            {
+              "name": "VH_M_bronchus",
+              "mesh": 57
+            }
+          ]
+        },
+        {
+          "file": "crosswalk.csv",
+          "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/v1.4/assets/crosswalk.csv",
+          "sha256": "072b3741e7e60c16f8d6f577ff302978211e826d7b9e345eb725afe5bdd9b910",
+          "bytes": 5416
+        }
+      ]
+    },
+    {
+      "name": "mouth-male",
+      "metadataUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/mouth-male/latest/metadata.json",
+      "error": "The operation was aborted due to timeout"
+    }
+  ]
+}

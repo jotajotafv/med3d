@@ -9,10 +9,11 @@ const { chromium } = require(process.env.XR_PLAYWRIGHT_MODULE || process.argv[2]
 const executablePath = process.env.XR_BROWSER_EXECUTABLE || process.argv[3];
 const origin = process.env.XR_QA_DEV_ORIGIN || 'http://127.0.0.1:5173';
 const output = process.env.XR_QA_OUTPUT || '.cache/xr-full-atlas'; await mkdir(output, { recursive: true });
-const browser = await chromium.launch({ headless: true, ...(executablePath ? { executablePath } : {}) });
+const browser = await chromium.launch({ headless: true, ...(executablePath ? { executablePath } : {}), args: ['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader'] });
 const context = await browser.newContext({ viewport: { width: 1366, height: 1000 }, hasTouch: true });
 await context.addInitScript(installHandFixture);
-const page = await context.newPage(); page.setDefaultTimeout(30000);
+const page = await context.newPage(); page.setDefaultTimeout(120000); page.setDefaultNavigationTimeout(180000);
+const manualTail=process.env.XR_QA_SECTION==='manual-tail';
 const results = [], errors = [], requests = [];
 page.on('pageerror', error => errors.push(error.message));
 page.on('request', request => { if (request.url().endsWith('.glb') || /models\/anatomy\/.*catalog\.json$/.test(request.url())) requests.push(request.url()); });
@@ -108,7 +109,8 @@ try {
   const { readFile } = await import('node:fs/promises');
   const ids = ['skeletal', 'muscular', 'nervous', 'cardiovascular', 'respiratory', 'digestive', 'urinary', 'endocrine', 'lymphatic', 'reproductive', 'integumentary'];
   const catalogs = Object.fromEntries(await Promise.all([...ids, 'ocular'].map(async id => [id, JSON.parse(await readFile('public/models/anatomy/' + id + '/catalog.json', 'utf8'))])));
-  const assetsFor = id => [...catalogs[id].assets, ...(id === 'nervous' ? catalogs.ocular.assets : [])];
+  const allAssetsFor = id => [...catalogs[id].assets, ...(id === 'nervous' ? catalogs.ocular.assets : [])];
+  const assetsFor = id => allAssetsFor(id).filter(a=>a.defaultEnabled!==false);
   const glbs = () => requests.filter(url => url.includes('/models/anatomy/') && url.endsWith('.glb'));
   const anatomyRequests = () => requests.filter(url => url.includes('/models/anatomy/')).map(url => new URL(url).pathname.replace('/med3d/', ''));
   const progressive = [], representatives = [];
@@ -145,11 +147,13 @@ try {
   assert.equal(initial.modules.length, 7);
   assert.deepEqual(Object.keys(initial.state.systemVisibility).filter(id => initial.state.systemVisibility[id]), ['skeletal']);
   await page.evaluate(() => { window.fullAtlasCanvas = document.querySelector('.xr-atlas-page canvas'); });
+  if(!manualTail){
   for (const [step, id] of ids.entries()) {
     activeIds.push(id);
     const started = Date.now();
     if (id !== 'skeletal') await control(id + '-toggle').check();
     const accumulated = activeIds.flatMap(assetsFor);
+    console.log('WAIT modules',id,accumulated.length,'observed',(await inspect()).modules.length);
     await page.waitForFunction(count => window.__med3dXrAtlas().modules.length === count, accumulated.length);
     for (const path of ['models/anatomy/' + id + '/catalog.json', ...assetsFor(id).map(a => a.path), ...(id === 'nervous' ? ['models/anatomy/ocular/catalog.json'] : [])]) expectedPaths.add(path);
     assert.deepEqual(new Set(anatomyRequests()), expectedPaths, id + ' downloads only its own catalogs/modules');
@@ -253,6 +257,7 @@ try {
   assert.ok((await pose()).target.scale > scale); await hands([], 8);
   assert.equal((await inspect()).state.selectedStructure, null);
   pass('all eleven loaded: pinch rotates whole root and two pinches scale without selection');
+  }
   await control('reset-view').click(); await setLayers(['skeletal']); await page.waitForTimeout(350);
   const manualHit = await findSurface('skeletal');
   await page.touchscreen.tap(manualHit.point.x, manualHit.point.y); await page.waitForFunction(() => !!window.__med3dXrAtlas().state.selectedStructure);
@@ -266,18 +271,21 @@ try {
   const rotatedHit = await findSurface('skeletal'); await page.mouse.click(rotatedHit.point.x, rotatedHit.point.y); assert.ok((await inspect()).state.selectedStructure);
   await control('close-card').click();
   await control('nervous-toggle').focus(); await page.keyboard.press('Space'); assert.equal((await inspect()).state.systemVisibility.nervous, true);
-  await page.keyboard.press('Tab'); assert.equal(await control('nervous-opacity').evaluate(el => el === document.activeElement), true);
+  await page.keyboard.press('Tab');
+  const optionalNervous=page.getByRole('checkbox',{name:'Ampliación anatómica Nervioso',exact:true});
+  if(await optionalNervous.isVisible()){assert.ok(await optionalNervous.evaluate(el=>el===document.activeElement));await page.keyboard.press('Tab');}
+  assert.equal(await control('nervous-opacity').evaluate(el => el === document.activeElement), true);
   await page.keyboard.press('ArrowLeft'); assert.equal(Number(await control('nervous-opacity').inputValue()), 99);
   await control('restore-atlas').focus(); await page.keyboard.press('Enter'); assert.equal((await inspect()).state.systemVisibility.nervous, false);
   pass('touch tap, drag/no selection, wheel, rotated/scaled real selection; Tab/Space/Enter/arrows');
-  await page.getByRole('button', { name: 'Desactivar control con manos', exact: true }).click();
+  const stopHands=page.getByRole('button', { name: 'Desactivar control con manos', exact: true });if(await stopHands.isVisible())await stopHands.click();
   const responsive = [];
   for (const width of [1366, 1050, 900, 768, 390]) {
     await page.setViewportSize({ width, height: 900 }); await page.keyboard.press('Escape');
     if (width === 390) { await page.locator('.xr-atlas-layers summary').click(); assert.equal(await page.locator('.xr-atlas-layers').getAttribute('open'), null); await page.locator('.xr-atlas-layers summary').click(); }
     await control('integumentary-toggle').scrollIntoViewIfNeeded(); assert.equal(await control('integumentary-toggle').isVisible(), true);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
-    responsive.push({ width, overflow: false, controls: await page.locator('.xr-atlas-layer input[type=checkbox]').count() });
+    responsive.push({ width, overflow: false, controls: await page.locator('.xr-atlas-layer input[type=checkbox][data-xr-hand-control]').count() });
     if (width === 390) {
       await page.locator('.xr-atlas-layers summary').click();
       const hit = await findSurface('skeletal'); await page.touchscreen.tap(hit.point.x, hit.point.y); await page.locator('.xr-atlas-card').waitFor();
@@ -287,11 +295,27 @@ try {
   pass('responsive 1366/1050/900/768/390; eleven controls, manual list scroll and mobile bottom sheet', { responsive });
   assert.equal(await page.locator('.xr-mode-switch').count(), 0);
   assert.ok(requests.every(url => !url.endsWith('/models/heart.glb')));
+  await page.setViewportSize({width:1366,height:1000});
+  if(await page.locator('.xr-atlas-layers').getAttribute('open')===null)await page.locator('.xr-atlas-layers summary').click();
+  await setLayers(ids);
+  for(const id of ids)if(allAssetsFor(id).some(a=>a.defaultEnabled===false)){
+    const checkbox=page.locator('.xr-atlas-layer').filter({has:control(id+'-toggle')}).getByRole('checkbox',{name:/Ampliación anatómica/});
+    await checkbox.check();
+  }
+  const allAssets=ids.flatMap(allAssetsFor),allMeshes=allAssets.reduce((n,a)=>n+a.meshCount,0);
+  await page.waitForFunction(({modules,meshes})=>window.__med3dXrAtlas().modules.length===modules&&window.__med3dXrAtlas().meshes===meshes,{modules:allAssets.length,meshes:allMeshes});
+  const expanded=await inspect();
   assert.ok(requests.some(url => url.endsWith('/models/anatomy/cardiovascular/heart.glb')));
   pass('unified public route has no mode selector or separate heart download');
+  for(const id of ['zanatomy:extensor-digitorum-brevis-l','zanatomy:extensor-digitorum-brevis-r','zanatomy:dorsal-interossei-foot-l','zanatomy:dorsal-interossei-foot-r','bp3d:FMA22802','bp3d:FMA22801'])assert.ok(expanded.parts.some(p=>p.id===id&&p.visible),'Shared approved owner '+id);
+  assert.ok(await page.evaluate(()=>document.querySelector('.xr-atlas-page canvas')===window.fullAtlasCanvas));
+  assert.equal(expanded.sceneId,sceneId);assert.ok(!requests.some(url=>url.includes('/micro/')));
+  pass('All optional shared anatomy loads through existing UI; W3/W4 owners visible, same scene/Canvas, micro remains independent',{modules:expanded.modules.length,meshes:expanded.meshes});
+  await page.goto(origin+'/med3d/acerca/');assert.equal(await page.locator('.xr-atlas-page canvas').count(),0);
+  pass('Leaving XR unmounts its Canvas and completes route cleanup');
   assert.deepEqual(errors, []);
-  await writeFile(output + '/browser-results.json', JSON.stringify({ synthetic: true, results, progressive, representatives, responsive, requests, errors }, null, 2));
+  await writeFile(output + '/browser-results.json', JSON.stringify({ synthetic: true, section:manualTail?'manual-tail':'all', results, progressive, representatives, responsive, requests, errors }, null, 2));
 } catch (error) {
-  await writeFile(output + '/failure-state.json', JSON.stringify({ error: String(error), errors, results, observed: await observe().catch(() => null), atlas: await inspect().then(v => ({ state: v.state, target: v.target })).catch(() => null) }, null, 2));
+  await writeFile(output + '/failure-state.json', JSON.stringify({ error: String(error), errors, results, requests, observed: await observe().catch(() => null), atlas: await inspect().then(v => ({ state: v.state, target: v.target, modules:v.modules, meshes:v.meshes, timings:v.timings })).catch(() => null) }, null, 2));
   await shot('failure').catch(() => {}); throw error;
 } finally { await browser.close(); }

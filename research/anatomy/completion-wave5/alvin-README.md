@@ -22,7 +22,7 @@ If you use _Alvin_ or the source code, please cite the publication above.
 ```
 RepositoryRoot/
     ├── binaries             // Archives (.zip) of builds for Windows, macOS and Linux
-    ├── code 		     // The project source code
+    ├── code          // The project source code
     ├── documentation        // Doxygen manual
     ├── publication
     │   ├── poster           // PDF of the presentation poster

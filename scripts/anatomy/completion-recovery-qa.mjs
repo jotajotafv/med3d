@@ -10,7 +10,7 @@ const cats=await Promise.all(['skeletal','muscular','nervous','cardiovascular','
 const assets=cats.flatMap(c=>c.assets),nodes=cats.flatMap(c=>c.nodes),byId=new Map(nodes.map(n=>[n.id,n]));
 const systemsFor={desktop:['skeletal'],mobile:['skeletal'],skeletal:['skeletal'],muscular:['muscular'],nervous:['nervous'],internal:['cardiovascular','respiratory','digestive','urinary','endocrine','lymphatic','reproductive']};
 const systems=systemsFor[scenario]||[...new Set(assets.map(a=>a.systemId))];
-const expected=assets.filter(a=>systems.includes(a.systemId)&&(scenario!=='full-without-skin'||a.id!=='integumentary:skin'));
+const expected=assets.filter(a=>systems.includes(a.systemId)&&(scenario!=='skeletal'||a.defaultEnabled!==false)&&(scenario!=='full-without-skin'||a.id!=='integumentary:skin'));
 const h=await createHarness({output:process.env.QA_OUTPUT_DIR||'.cache/anatomy-completion/'+wave+'/recovery-'+scenario,viewport:{width:1366,height:900},reducedMotion:'reduce',navigationTimeoutMs:180000,meshTimeoutMs:240000,actionTimeoutMs:90000}),{page}=h;
 const report={scenario,environment:'Fresh headless Chromium / ANGLE SwiftShader, HTTP loopback no-store. CPU measures command submission, not GPU completion; frame samples do not establish sustained physical-device FPS.',expectedModules:expected.length,expectedMeshes:expected.reduce((s,a)=>s+a.meshCount,0),expectedTriangles:expected.reduce((s,a)=>s+a.triangles,0),expectedBytes:expected.reduce((s,a)=>s+a.bytes,0),progress:[],checks:[],errors:h.errors,badRequests:h.badRequests};
 let received=0;page.on('response',r=>{if(r.url().endsWith('.glb'))received++;});

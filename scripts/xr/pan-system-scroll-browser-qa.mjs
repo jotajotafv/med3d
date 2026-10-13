@@ -8,16 +8,16 @@ const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.XR_PLAYWRIGHT_MODULE || process.argv[2] || 'playwright');
 const executablePath = process.env.XR_BROWSER_EXECUTABLE || process.argv[3];
 const origin = process.env.XR_QA_DEV_ORIGIN || 'http://127.0.0.1:5173';
-const output = '.cache/xr-pan-system-scroll'; await mkdir(output, { recursive: true });
-const browser = await chromium.launch({ headless: true, ignoreDefaultArgs: ['--hide-scrollbars'], ...(executablePath ? { executablePath } : {}) });
-const context = await browser.newContext({ viewport: { width: 1366, height: 1000 }, hasTouch: true });
-await context.addInitScript(installHandFixture);
-const page = await context.newPage(); page.setDefaultTimeout(30000);
+const output = process.env.XR_QA_OUTPUT || '.cache/xr-pan-system-scroll'; await mkdir(output, { recursive: true });
+const browser = await chromium.launch({ headless: true, ignoreDefaultArgs: ['--hide-scrollbars'], ...(executablePath ? { executablePath } : {}), args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
+const context = await browser.newContext({ viewport: { width: 1366, height: 1000 }, hasTouch: true, deviceScaleFactor: Number(process.env.XR_QA_DPR || 1) });
+await context.addInitScript(installHandFixture, { syntheticBitmap: process.env.XR_QA_SYNTHETIC_BITMAP === '1' });
+const page = await context.newPage(); page.setDefaultTimeout(120000); page.setDefaultNavigationTimeout(180000);
 const results = [], errors = [], requests = [];
 page.on('pageerror', error => errors.push(error.message));
 page.on('request', request => { if (request.url().endsWith('.glb') || /models\/anatomy\/.*catalog\.json$/.test(request.url())) requests.push(request.url()); });
 const inspect = () => page.evaluate(() => window.__med3dXrAtlas());
-const observe = () => page.evaluate(() => ({ capture: window.dwellQa.readCapture?.(), dwell: window.dwellQa.dwell, raycasts: window.dwellQa.raycasts, point: window.dwellQa.point }));
+const observe = () => page.evaluate(() => ({ capture: window.dwellQa.readCapture?.(), dwell: window.dwellQa.dwell, raycasts: window.dwellQa.raycasts, point: window.dwellQa.point, state: window.dwellQa.state, calls: window.dwellQa.calls, trace: window.dwellQa.trace }));
 const cursor = page.locator('.xr-atlas-page>.xr-hand-cursor');
 const control = id => page.locator(`[data-xr-hand-control="${id}"]`);
 const shot = name => page.screenshot({ path: `${output}/${name}.png` });
@@ -36,7 +36,7 @@ async function at(point, ratio = .5) {
     return { id: 'Left', u: (point.x - window.dwellQa.surface.left) / width, v: (point.y - window.dwellQa.surface.top) / height, ratio };
   }, { point, ratio });
 }
-async function aimPoint(point) { await hands([], 8); const h = await at(point); await hands([h], 9); return h; }
+async function aimPoint(point) { await hands([], 8); const h = await at(point); await hands([h], 9); await page.waitForFunction(() => window.dwellQa.state === 'tracking'); return h; }
 async function glide(from, to, frames = 8) {
   for (let i = 1; i <= frames; i++) await hands([{ ...to, u: from.u + (to.u - from.u) * i / frames, v: from.v + (to.v - from.v) * i / frames }], 1);
   await hands([to], 6);
@@ -76,7 +76,7 @@ try {
     };
     const update = HandStability.prototype.update;
     HandStability.prototype.update = function (...args) {
-      const mode = update.apply(this, args); qa.state = this.trackingState; qa.point = this.point; qa.rawPointer = this.lastReliablePointer; qa.lastTime = args[1]; return mode;
+      const mode = update.apply(this, args); (qa.trace ??= []).push({ time: args[1], dt: args[1] - qa.lastTime, state: this.trackingState, hands: args[0].length }); if (qa.trace.length > 40) qa.trace.shift(); qa.state = this.trackingState; qa.point = this.point; qa.rawPointer = this.lastReliablePointer; qa.lastTime = args[1]; return mode;
     };
   });
 
@@ -94,7 +94,7 @@ try {
   const pose = state => ({ ...state.target, y: state.verticalOffset });
   const near = (a, b, tolerance = .01) => assert.ok(Math.abs(a - b) < tolerance, a + ' != ' + b);
   const initial = await inspect(), seen = new Set();
-  assert.equal(await page.locator('.xr-atlas-layer input[type=checkbox]').count(), 11);
+  assert.equal(await page.locator('.xr-atlas-layer input[type=checkbox][data-xr-hand-control]').count(), 11);
   assert.deepEqual(Object.keys(initial.state.systemVisibility).filter(id => initial.state.systemVisibility[id]), ['skeletal']);
   assert.equal(requests.filter(url => url.endsWith('.glb')).length, 7);
   assert.ok((await scrollState()).max > 0);
@@ -109,6 +109,7 @@ try {
     await hands(to, 10);
   }
   await hands(await makePair(center.y, 220, .5), 10);
+  await page.waitForFunction(() => window.dwellQa.state === 'tracking');
   let two = await makePair(center.y, 220); await hands(two, 3);
   const panelTop = (await scrollState()).top, baseParts = initial.parts.map(p => p.position);
   let next = await makePair(center.y - 110, 220); await glidePair(two, next); two = next;
@@ -146,7 +147,7 @@ try {
   pass('keyboard Shift arrows, both clamps, child controls excluded, reset pose/explosion and unchanged Restore Atlas semantics');
 
   async function seenControls() {
-    for (const id of await list.evaluate(el => { const r = el.getBoundingClientRect(); return [...el.querySelectorAll('input[type=checkbox]')].filter(e => { const b = e.getBoundingClientRect(); return b.top >= r.top && b.bottom <= r.bottom; }).map(e => e.dataset.xrHandControl); })) seen.add(id);
+    for (const id of await list.evaluate(el => { const r = el.getBoundingClientRect(); return [...el.querySelectorAll('input[type=checkbox][data-xr-hand-control]')].filter(e => { const b = e.getBoundingClientRect(); return b.top >= r.top && b.bottom <= r.bottom; }).map(e => e.dataset.xrHandControl); })) seen.add(id);
   }
   async function rearm() {
     await hands([], 10);

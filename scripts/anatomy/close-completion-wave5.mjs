@@ -5,8 +5,8 @@ const hash=data=>crypto.createHash('sha256').update(data).digest('hex');
 const evidence=[];
 for(const name of ['neuron-102401.json','neuron-paper.json','neuromorpho-license.html','nih-glomerulus.html','nih-download-routes.json','alvin-repo.json','alvin-tree.json','alvin-NOTICES','alvin-REFERENCES','LICENSE','README.md']){
  const data=await fs.readFile(cache+name),destination=name==='LICENSE'?'alvin-LICENSE.txt':name==='README.md'?'alvin-README.md':name;
- const normalized=Buffer.from(data.toString('utf8').replace(/\r\n/g,'\n').replace(/[\t ]+$/gm,'').trimEnd()+'\n');
- await fs.writeFile(out+destination,normalized);evidence.push({file:out+destination,sha256:hash(normalized),bytes:normalized.length,originalSha256:hash(data),originalBytes:data.length,normalization:'Text evidence only: LF and trailing whitespace; original retained in cache.'});
+ const normalized=Buffer.from(data.toString('utf8').replace(/\r\n/g,'\n').replace(/\t/g,'  ').replace(/[\t ]+$/gm,'').trimEnd()+'\n');
+ await fs.writeFile(out+destination,normalized);evidence.push({file:out+destination,sha256:hash(normalized),bytes:normalized.length,originalSha256:hash(data),originalBytes:data.length,normalization:'Text evidence only: LF, tabs to spaces and trailing whitespace; original retained in cache.'});
 }
 const neuron=JSON.parse(await fs.readFile(out+'neuron-validation.json','utf8')),glom=JSON.parse(await fs.readFile(out+'glomerulus-validation.json','utf8'));
 const sources=[{

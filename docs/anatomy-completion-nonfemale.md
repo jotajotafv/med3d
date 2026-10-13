@@ -1,6 +1,6 @@
 # Programa de completado anatómico no femenino
 
-Programa en curso. Este documento se amplía por waves; todavía no constituye el cierre de los 117 gaps no femeninos.
+Revisión anatómica cerrada: los 117 gaps no femeninos tienen una decisión con evidencia. La aceptación global todavía no está aprobada: la campaña gestual XR en navegador presenta fallos reproducidos durante interrupciones del tracking sintético. Se conserva un checkpoint documental, sin declarar PASS global ni aceptación con webcam física. Las secciones por wave conservan sus resultados históricos; el cierre de revisión y los límites vigentes están al final.
 
 Base documental: `101024e8d4083fcaf991e9c683733d0a02388e29`. Base del producto: `1be9dd644dea33cc008fe47889e4608bd3fab8f6`. Rama: `phase-anatomy-completion-nonfemale`.
 
@@ -167,16 +167,92 @@ Los bloqueos describen fuentes y ensayos concretos, no una inexistencia mundial.
 
 Inventario corporal derivado después de Wave 4: 11 sistemas, 745 estructuras, 322 componentes, 1.244 nodos, 177 editoriales, 1.240 mallas, 92 módulos, 4.956.556 triángulos y 47.933.696 bytes GLB. La carga inicial mantiene los 51 módulos históricos sin piel. `verify:anatomy` continúa reservado a la campaña global final.
 
-## Wave 5 ? microanatom?a independiente
+## Wave 5 — microanatomía independiente
 
-Dos m?dulos reales bajo demanda, desde la ficha de Cerebro y la de cada ri??n. Neurona: original SWC de Allen Cell Types / NeuroMorpho.Org 102401, donante humano masculino de 30 a?os, 17.990 puntos y 17.989 conexiones, 830.373 bytes intactos. Es un trazado parcial; no superficie celular, sinapsis ni circuito. La metadata regional discordante no se convierte en una localizaci?n cortical precisa.
+Dos módulos reales bajo demanda, desde la ficha de Cerebro y la de cada riñón. Neurona: original SWC de Allen Cell Types / NeuroMorpho.Org 102401, donante humano masculino de 30 años, 17.990 puntos y 17.989 conexiones, 830.373 bytes intactos. Es un trazado parcial; no superficie celular, sinapsis ni circuito. La metadata regional discordante no se convierte en una localización cortical precisa.
 
-Glom?rulo: original HRA / NIH 3DPX-023604, Heidi Schlehlein, direcci?n Katy B?rner y revisi?n Sanjay Jain. Esquema cient?fico basado en bibliograf?a; no segmentaci?n de un donante. Arteriolas, capilares y quince podocitos: 18 mallas, 1.646.925 tri?ngulos. Descarga completa de 150.372.224 bytes verificada con SHA-256 y ETag multipart; se conserva la descarga incompleta anterior. El DOI declarado no resolvi?; la procedencia comprobada es la entrada NIH y su archivo exacto.
+Glomérulo: original HRA / NIH 3DPX-023604, Heidi Schlehlein, dirección Katy Börner y revisión Sanjay Jain. Esquema científico basado en bibliografía; no segmentación de un donante. Arteriolas, capilares y quince podocitos: 18 mallas, 1.646.925 triángulos. Descarga completa de 150.372.224 bytes verificada con SHA-256 y ETag multipart; se conserva la descarga incompleta anterior. El DOI declarado no resolvió; la procedencia comprobada es la entrada NIH y su archivo exacto.
 
-Ambas fuentes son CC BY 4.0. Glom?rulo comprimido con Meshopt a 57.940.448 bytes sin cuantizar posiciones, normales o colores: todos los atributos decodificados son id?nticos byte a byte; cada tri?ngulo conserva ?ndices y orientaci?n, permitiendo ?nicamente la rotaci?n c?clica del c?dec. Jerarqu?a, matrices, materiales y bounds conservados. Validador glTF original comprimido y decodificado: cero errores/advertencias. Memoria de atributos/?ndices: 150.357.740 bytes; este m?dulo es pesado y s?lo se descarga al abrirlo.
+Ambas fuentes son CC BY 4.0. Glomérulo comprimido con Meshopt a 57.940.448 bytes sin cuantizar posiciones, normales o colores: todos los atributos decodificados son idénticos byte a byte; cada triángulo conserva índices y orientación, permitiendo únicamente la rotación cíclica del códec. Jerarquía, matrices, materiales y bounds conservados. Validador glTF original comprimido y decodificado: cero errores/advertencias. Memoria de atributos/índices: 150.357.740 bytes; este módulo es pesado y sólo se descarga al abrirlo.
 
-Escenas independientes, coordenadas originales, c?mara propia y cierre con liberaci?n de geometr?as, materiales y buffers; sin sistema duod?cimo, ?rgano duplicado o inserci?n microsc?pica en el frame corporal. Se mantienen selecci?n y Canvas principal. Di?logo sem?ntico con foco, Escape, fuentes, licencias y l?mites; portal para permanecer visible al colapsar el panel. Escritorio y m?vil comprobados en 1366/1050/900/768/390, giro real, reset, cierre/reapertura, reintento tras HTTP 503 controlado y buffers creados/eliminados iguales. Capturas desktop/mobile revisadas. No cambios XR.
+Escenas independientes, coordenadas originales, cámara propia y cierre con liberación de geometrías, materiales y buffers; sin sistema duodécimo, órgano duplicado o inserción microscópica en el frame corporal. Se mantienen selección y Canvas principal. Diálogo semántico con foco, Escape, fuentes, licencias y límites; portal para permanecer visible al colapsar el panel. Escritorio y móvil comprobados en 1366/1050/900/768/390, giro real, reset, cierre/reapertura, reintento tras HTTP 503 controlado y buffers creados/eliminados iguales. Capturas desktop/mobile revisadas. No cambios XR.
 
-Los 13 gaps C tienen decisi?n en completion-wave5-decisions.json: tres parcialmente cubiertos (nervioso, microvasculatura y urinario), usando el glom?rulo una sola vez. Los dem?s tienen bloqueos concretos por fuente, identidad o licencia. No se convierten diagramas 2D, cultivos, datos moleculares o modelos animales en geometr?a humana. Se excluye la porci?n ov?rica del gap reproductor mixto.
+Los 13 gaps C tienen decisión en completion-wave5-decisions.json: tres parcialmente cubiertos (nervioso, microvasculatura y urinario), usando el glomérulo una sola vez. Los demás tienen bloqueos concretos por fuente, identidad o licencia. No se convierten diagramas 2D, cultivos, datos moleculares o modelos animales en geometría humana. Se excluye la porción ovárica del gap reproductor mixto.
 
-Cuatro pruebas unitarias micro pasan, junto con typecheck y build. El reporte de QA conserva fallos anteriores y correcciones. En SwiftShader, carga neuronal 50,2 ms y glom?rulo 399 ms; draw calls 2/18. CPU primer render glomerular 329,7 ms, incluyendo preparaci?n inicial; las muestras posteriores e intervalos est?n en qa-summary.json, sin afirmaci?n de FPS f?sicos. El cierre del navegador super? 5 s despu?s de guardar todas las comprobaciones satisfactorias. Campa?a global y conteos finales se cierran a continuaci?n.
+Cuatro pruebas unitarias micro pasan, junto con typecheck y build. El reporte de QA conserva fallos anteriores y correcciones. En SwiftShader, carga neuronal 50,2 ms y glomérulo 399 ms; draw calls 2/18. CPU primer render glomerular 329,7 ms, incluyendo preparación inicial; las muestras posteriores e intervalos están en qa-summary.json, sin afirmación de FPS físicos. El cierre del navegador superó 5 s después de guardar todas las comprobaciones satisfactorias. Campaña global y conteos finales se detallan a continuación.
+
+## Cierre de revisión anatómica — 13 de octubre de 2026
+
+Los [resultados por gap](anatomy-completion-nonfemale-final.json), [fuentes utilizadas](anatomy-completion-sources.json) y [bloqueos](anatomy-completion-blockers.json) se generan con `node scripts/anatomy/close-completion-final.mjs`. Cada uno de los 119 gaps originales aparece exactamente una vez. Se evalúan 117; dos siguen `EXCLUDED_FEMALE`. El campo `closed` del ledger significa cierre de la clasificación anatómica, no aprobación de toda la campaña XR.
+
+| Estado | Gaps |
+| --- | ---: |
+| INTEGRATED | 6 |
+| PARTIAL_ACCEPTED | 35 |
+| BLOCKED_SOURCE | 13 |
+| BLOCKED_IDENTITY | 8 |
+| BLOCKED_REGISTRATION | 51 |
+| BLOCKED_LICENSE | 1 |
+| BLOCKED_ANATOMY | 3 |
+| EXCLUDED_FEMALE | 2 |
+
+Los seis gaps integrados son diafragma, EDB, oponentes del pie, cristalinos, músculos extraoculares y coroides. Los interóseos dorsales agrupados siguen siendo una aceptación parcial. Un bloqueo describe lo que falta y no elimina cobertura parcial anterior: `baselineCoveredIds` la conserva. `wave` indica la última revisión y `integrationWaves` las cohortes que aportaron geometría. No hay gaps no femeninos pendientes de investigación ni estados UNKNOWN/TODO en el resultado final.
+
+La revisión suplementaria de nueve gaps macroscópicos está en `research/anatomy/completion-final-macro-review.json`: palmar corto, fascículos del plexo braquial, regiones encefálicas, oído, tabiques cardíacos, senos, bronquios, hilios y peritoneo. Distingue una publicación de un asset descargable, una segmentación con identidad desconocida de un modelo masculino verificado, y ausencia de registro de una prueba numérica de registro fallida. No se aplican métricas abdominopélvicas al cerebro o al tórax. NasalSeg y reconstrucciones patológicas del tabique no se presentan como anatomía normal masculina identificada. La ausencia de un asset verificado en estas búsquedas no prueba inexistencia mundial.
+
+### Inventario derivado
+
+Conteo con la composición real del catálogo, incluyendo Ocular bajo Nervioso, desde cada commit histórico. Wave 1 describe su checkpoint inicial, antes de las retiradas documentadas de Wave 2. Los micros se cuentan aparte.
+
+| Estado | Sistemas | Estructuras | Componentes | Nodos | Editoriales | Mallas | Módulos | Triángulos | Bytes GLB |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| BASELINE | 11 | 580 | 228 | 981 | 173 | 937 | 52 | 3.240.172 | 29.795.780 |
+| WAVE 1 | 11 | 657 | 233 | 1.064 | 174 | 1.023 | 63 | 4.100.946 | 39.200.560 |
+| WAVE 2 | 11 | 739 | 322 | 1.238 | 177 | 1.234 | 89 | 4.945.358 | 47.830.676 |
+| WAVE 3 | 11 | 743 | 322 | 1.242 | 177 | 1.238 | 91 | 4.955.618 | 47.923.320 |
+| WAVE 4 | 11 | 745 | 322 | 1.244 | 177 | 1.240 | 92 | 4.956.556 | 47.933.696 |
+| WAVE 5 | 11 | 745 | 322 | 1.244 | 177 | 1.240 | 92 | 4.956.556 | 47.933.696 |
+| FINAL corporal | 11 | 745 | 322 | 1.244 | 177 | 1.240 | 92 | 4.956.556 | 47.933.696 |
+
+Dos módulos micro independientes: neurona de 17.990 puntos / 17.989 conexiones y 830.373 bytes SWC; glomérulo de 18 mallas / 1.646.925 triángulos y 57.940.448 bytes GLB. Total corporal más glomérulo: 1.258 mallas triangulares, 6.603.481 triángulos y 105.874.144 bytes GLB; el trazado neuronal no se finge como malla triangular. Los micros no añaden owners al cuerpo ni un duodécimo sistema.
+
+El source ledger fija 305 originales activos: 299 BP3D, cuatro objetos Z y dos fuentes micro. Conserva versión, URL/DOI cuando existe, autoría disponible, licencia por asset, hashes, frames, matrices y derivados. NeuroMorpho/Allen y NIH/HRA micro son CC BY 4.0; las piezas Z aceptadas son CC BY-SA 4.0. Se conservan los encabezados históricos BP3D. El bloqueo de Alvin no afirma que GPL sea NC: la licencia de aplicación no resuelve por sí sola la procedencia/licencia específica del modelo.
+
+### Validación final y protección
+
+Commits de producto: Wave 3 `a0ec84efce918c0b0241bdcb359014ef6a4f61da`; Wave 4 `3dcf955c7aa049826a2166a0be3277a9b6edbf9f`; Wave 5 `1cb29b1046a8f3f93a1a39233de69e541efaecbd`.
+
+`node scripts/anatomy/validate-completion-final.mjs` pasa nueve comprobaciones: conservación desde originales de Waves 1–4 y glomérulo, validadores glTF comprimidos/decodificados y cuatro pruebas micro. Son 41 GLB nuevos activos, 40 corporales y uno micro, con cero errores/advertencias de validador. No se regeneran modelos durante esta verificación. El SWC conserva su grafo original. `test-anatomy-completion.mjs` pasa sobre el catálogo actual completo: IDs/refs/owners, hashes, módulos, búsqueda ES/latín/FMA/FJ, fichas, contexto y despiece.
+
+Typecheck PASS. Build PASS en 26,82 s, con el preload WASM ya existente y la advertencia conocida de chunks grandes. `test:xr` PASS, 181/181, sin pruebas omitidas. Un primer intento de tests heredó el preload de Rollup y falló antes de ejecutar pruebas en los workers de Node 24; el reintento sin ese preload pasa. No se cambiaron dependencias ni lockfile.
+
+`verify:anatomy` fue una campaña global final: la invocación inicial paró en la suite de miembros porque su proyección histórica retenía nuevas fichas/notas y bounds agregados tras las retiradas de Wave 2. Se corrigió únicamente `pre-completion-catalog.mjs`, manteniendo todas las aserciones. Se reanudaron las suites afectadas y se comprobaron las cuatro anteriores con la proyección definitiva. Las siete suites pasan. No se presenta la salida inicial de npm como exit 0; ambos resultados quedan documentados.
+
+Se compararon por SHA-256 los 93 GLB presentes en el HEAD recuperado de Wave 2 y ambos archivos originales de auditoría: todos intactos. Ningún archivo de producción de `src/features/xr/` cambia desde ese HEAD. No se descargó ni integró geometría femenina; los recursos históricos permanecen intactos. Las fuentes rechazadas y cachés se conservan.
+
+### Navegador, responsive y límite de aceptación XR
+
+Atlas principal PASS sobre el build: los once sistemas y Ocular, búsqueda/árbol virtualizado, clic/hover real, ficha, focus, seis orientaciones, aislamiento, ocultar/mostrar/restaurar, capas y opacidad, tres niveles de despiece con retorno exacto, reset, carga opcional, retry ante un 503 controlado, dispose y mismo Canvas. Los doce representantes incluyen EDB de Wave 3 y recurrente cubital de Wave 4. Responsive 1366/1050/900/768/390 sin overflow. Home, Anatomía, About, Corazón, Pulmones, Encéfalo y XR cargan; los exploradores renderizan sus GLB. Micro pasa las mismas cinco anchuras, giro, reset, foco, Escape, retry y liberación de buffers.
+
+XR pasa los once sistemas históricos con selección/raycast, fichas, opacidad, aislar, ocultar/restaurar, OFF/ON sin recarga y despiece exacto. Un seguimiento independiente pasa tap, drag sin selección, wheel, teclado, selección después de rotación/escala, responsive a cinco anchuras y bottom sheet. La UI existente carga los 92 módulos / 1.240 mallas, muestra los seis owners nuevos de Waves 3–4, conserva Canvas/escena y no carga micros; abandonar la ruta desmonta el Canvas.
+
+**La campaña gestual XR de navegador no está aprobada.** El recorrido multisistema falló al adquirir el primer control gestual. Reintentos independientes del pan observaron `grace/lost/reacquiring`, muestras vacías del watchdog de 250 ms y pausas de muestras de hasta varios segundos. Una pasada con DPR 0,5 consiguió pan ascendente (~0,45 unidades), pero perdió tracking antes del descendente. Excluir la lectura de píxeles del vídeo sintético tampoco mantuvo adquisición. No se deshabilitó el watchdog, se virtualizó el reloj ni se modificaron gestos o umbrales. Son limitaciones reproducidas de esta campaña; no prueban por sí solas una causa única ni el comportamiento de una webcam física. El scroll nativo de ficha pasó al esperar el estado real del scroll en lugar de 400 ms fijos: foco, flechas, Home/End, PageUp/PageDown, wheel y arrastre de scrollbar. Ese mismo reintento agotó 120 s al adquirir el scroll gestual; los fallos anteriores permanecen registrados. Los resultados exactos por intento se versionan en el resumen QA.
+
+Por este motivo, la clasificación anatómica está terminada y las waves anatómicamente validadas están protegidas, pero **no se emite el commit documental de aceptación final** `Document final non-female anatomy completion status`. El checkpoint documental conserva la evidencia y la limitación pendiente. Para cerrar la aceptación global falta ejecutar satisfactoriamente dwell, scroll de sistemas/ficha, pan y manipulación gestual en un navegador con continuidad de muestras suficiente, conservando las mismas aserciones y el producto actual.
+
+### Rendimiento final observado
+
+Navegadores nuevos, HTTP loopback sin caché, Chromium headless/SwiftShader. Óseo inicial conserva sólo siete módulos; los otros escenarios incluyen ampliaciones opcionales. Bytes de geometría = atributos/índices contabilizados, no memoria total del proceso. CPU = envío de comandos y driver, no finalización GPU.
+
+| Escenario | Módulos / mallas | Triángulos | Bytes GLB | Bytes geometría | Buffers vivos | Draws | Primera / completa ms | CPU ms | Intervalos ms (N) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| Óseo inicial | 7 / 205 | 512.450 | 3.916.940 | 7.609.772 | 629 | 173 | 166 / 166 | 1,4 | 16,60–16,63 (2) |
+| Muscular | 33 / 298 | 1.780.144 | 20.092.396 | 40.321.892 | 908 | 282 | 155,4 / 402,2 | 1,1 | 16,6 (1) |
+| Nervioso + Ocular | 15 / 189 | 873.004 | 7.453.976 | 14.892.416 | 575 | 191 | 155,2 / 237,9 | 28,8 | 16,7 (1) |
+| Órganos internos | 33 / 542 | 1.547.182 | 14.279.508 | 27.484.752 | 1.640 | 542 | 164,1 / 386,7 | 2,1 | 16,7 (1) |
+| Completo sin piel | 91 / 1.239 | 4.753.174 | 46.302.192 | 91.394.636 | 3.725 | 1.193 | 196 / 7.075,2 | 1.685,9 | 3.249,75–5.016,5 (3) |
+| Completo con piel | 92 / 1.240 | 4.956.556 | 47.933.696 | 95.884.560 | 3.728 | 1.194 | 199,4 / 2.414,1 | 4,2 | 16,7 (2) |
+
+Los seis escenarios cargan sin errores JS/HTTP. La observación completa desde el harness tardó respectivamente 933/1.145/995/1.154/11.701/3.183 ms. El pico del caso sin piel se conserva expresamente; la dispersión impide atribuir una mejora al caso con piel. Hay sólo 1–3 intervalos tras un zoom y render bajo demanda: **no son FPS sostenidos ni mediciones de GPU física**. No se cambia renderer o producto para mejorar estos números. El glomérulo independiente requiere 150.357.740 bytes de geometría y sigue siendo una descarga pesada bajo demanda.
+
+Evidencia consolidada y hashes de logs/capturas: `research/anatomy/completion-final/qa-summary.json`, generado por `scripts/anatomy/summarize-completion-final.mjs`. Los fallos previos, plazos de teardown tras reportes exitosos y diagnósticos de DPR se distinguen de los PASS funcionales. No se incluyen cachés temporales en Git. Sin push, merge, deploy, tag o release; no se inicia otra fase.

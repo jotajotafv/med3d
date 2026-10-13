@@ -1,5 +1,9 @@
 // Synthetic landmarks/video only. Shared browser QA fixture; never imported by the app.
-export function installHandFixture() {
+export function installHandFixture({ syntheticBitmap = false } = {}) {
+  // Optional landmark-only run: our fake worker never reads pixels. Exclude synthetic
+  // video readback from this run, while keeping wall-clock time and all app thresholds.
+  // Default runs still exercise the browser's real createImageBitmap/video path.
+  if (syntheticBitmap) window.createImageBitmap = async () => ({ close() {} });
   const qa = window.handQa = { hands: [], frames: 0, calls: 0, stops: 0, frozen: false };
   Object.defineProperty(navigator.mediaDevices, 'getUserMedia', { value: async () => {
     qa.calls++;

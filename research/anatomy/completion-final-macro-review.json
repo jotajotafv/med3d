@@ -1,0 +1,97 @@
+{
+  "wave": 4,
+  "reviewedAt": "2026-10-13",
+  "scope": "Final explicit review of nine macro gaps not individually closed by the Wave 1–4 ledgers. Bounded research conclusions, not claims of worldwide source nonexistence. No additional geometry downloaded or modified.",
+  "findings": [
+    {
+      "gap": "muscular-palmaris-brevis",
+      "status": "BLOCKED_SOURCE",
+      "source": "BodyParts3D 4.0; pinned Z-Anatomy inventory; NIH 3D, AnatomyTool and Zenodo discovery",
+      "urls": ["https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html", "https://github.com/Z-Anatomy/Models-of-human-anatomy", "https://3d.nih.gov/", "https://anatomytool.org/"],
+      "attempt": "Rechecked the baseline exact-name searches and pinned candidate inventories. External search: palmaris brevis model site:3d.nih.gov OR site:anatomytool.org OR site:zenodo.org. No attributable target 3D asset identified; unrelated text matches excluded.",
+      "finding": "No original palmaris brevis mesh was identified in the audited inventories. Palmaris longus and palmar aponeurosis are not substitutes.",
+      "evidence": ["docs/anatomical-gaps-audit.json#/gaps/muscular-palmaris-brevis", "research/anatomy/completion-wave3-decisions.json"],
+      "nextAction": "Obtain a named original palmaris brevis asset with provenance, permissive license and regional hand references before attempting registration."
+    },
+    {
+      "gap": "nervous-brachial-cords",
+      "status": "BLOCKED_SOURCE",
+      "source": "Pinned peripheral-nerve inventory; original anatomical studies",
+      "urls": ["https://pubmed.ncbi.nlm.nih.gov/32100569/", "https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/ar.20735"],
+      "attempt": "Reviewed the existing posterior-cord coverage and scientific adult plexus reconstruction reports, including the study of twelve male cadaveric plexuses (10.1177/1558944720906510).",
+      "finding": "Publications demonstrate real 3D studies, but no separately identified, redistributable medial/lateral-cord geometry with source coordinates was verified in the reviewed records. Figures do not supply meshes; no interpolation from the posterior cord.",
+      "evidence": ["docs/anatomical-gaps-audit.json#/gaps/nervous-brachial-cords", "research/anatomy/completion-wave3/evidence/neural-continuity/registration.json"],
+      "nextAction": "Acquire the original cord surfaces and an explicit redistribution license, then validate a common plexus registration and continuity."
+    },
+    {
+      "gap": "nervous-brain-regions",
+      "status": "BLOCKED_REGISTRATION",
+      "source": "HRA brain-male v1.4 / Allen-derived regional parcellation",
+      "urls": ["https://lod.humanatlas.io/ref-organ/brain-male/v1.4"],
+      "attempt": "Inspected the actual downloaded original: 283 meshes, including named cortical regions. Compared scope with the 32 existing regional owners in the baseline.",
+      "finding": "A source exists, but no common cortical registration with homologous regional controls and validated boundaries relative to the existing donor is approved. Overlapping another donor's parcellation would duplicate or misplace regions. Abdominopelvic HRA fit metrics do not apply to the brain.",
+      "evidence": ["research/anatomy/completion-wave4/hra-source-lock.json", "research/anatomy/completion-wave4/hra-geometry-inventory.json"],
+      "nextAction": "Establish cortical landmarks and a shared rigid/similarity fit with held-out regional controls; verify interfaces before integrating any new region."
+    },
+    {
+      "gap": "nervous-ear",
+      "status": "BLOCKED_REGISTRATION",
+      "source": "OpenEar ZETA/EPSILON; Z-Anatomy exception review",
+      "urls": ["https://zenodo.org/records/1473724"],
+      "attempt": "Reviewed original scala, tympanic membrane and canal context meshes and the preserved same-physical-scale source/target comparison. Checked specimen laterality and missing temporal-bone correspondences.",
+      "finding": "OpenEar CC BY 4.0 geometry is retained, but a reproducible temporal registration is not defensible without homologous source/target landmarks. No RMS is invented for a fit that was not established. Z inner-ear NC-SA exceptions are separately rejected for license.",
+      "evidence": ["research/anatomy/completion-wave3/evidence/other-sources/openear-context-lock.json", "research/anatomy/completion-wave3/evidence/other-sources/openear-fresh-index.json", "research/anatomy/completion-wave3/evidence/review-openear.mjs", "research/anatomy/completion-wave3/upstream-license.txt"],
+      "nextAction": "Resolve specimen identity and obtain corresponding temporal surfaces/landmarks for a common registration; do not mirror or position individual ear pieces manually."
+    },
+    {
+      "gap": "cardio-septum",
+      "status": "BLOCKED_IDENTITY",
+      "source": "BodyParts3D/Z inventory; scientific 3D septal myectomy study",
+      "urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC8932507/"],
+      "attempt": "Rechecked absence of an independent septal owner in native inventories and reviewed the source study (10.1093/icvts/ivab213).",
+      "finding": "The external reconstructions concern hypertrophic cardiomyopathy and abnormal muscle bundles. They are not an identified normal male septal surface for this atlas. Existing ventricular wall aggregates are retained; their tissue is not relabelled as a separately selectable septum.",
+      "evidence": ["docs/anatomical-gaps-audit.json#/gaps/cardio-septum", "research/anatomy/completion-wave4/bp40-inventory.json"],
+      "nextAction": "Find a normal, separately segmented septum and ventricular walls with male donor identity, source geometry, asset license and compatible regional references."
+    },
+    {
+      "gap": "resp-sinuses",
+      "status": "BLOCKED_IDENTITY",
+      "source": "NasalSeg v2, Zhang et al., Fudan University and collaborators",
+      "urls": ["https://zenodo.org/records/13893419"],
+      "attempt": "Reviewed public record metadata only: published 2024-10-05, DOI 10.5281/zenodo.13893419, 130 CT scans, five annotated classes (nasal cavities, nasopharynx, maxillary sinuses). The file listing identifies NasalSeg.zip, 224 MB, MD5 ba83df47974d907798542101fa43ac7d. Direct metadata API returned HTTP 403; the public record was readable through the web tool.",
+      "finding": "No case-level male donor mapping was verified in the public description; the scope also does not cover every sinus family. No mixed/unknown-sex scan or geometry was downloaded. The anatomical-identity gate is unresolved before geometry acquisition; no license is assumed from the word open-access.",
+      "evidence": ["docs/anatomical-gaps-audit.json#/gaps/resp-sinuses", "https://zenodo.org/records/13893419"],
+      "nextAction": "Verify an explicitly male case and asset-level license/segmentation definitions before download; then evaluate common skull registration."
+    },
+    {
+      "gap": "resp-bronchi",
+      "status": "BLOCKED_REGISTRATION",
+      "source": "Native respiratory coverage; HRA lung-male v1.4",
+      "urls": ["https://lod.humanatlas.io/ref-organ/lung-male/v1.4"],
+      "attempt": "Compared current bronchial portions and actual HRA original inventory (58 meshes), including lobar/segmental bronchial names.",
+      "finding": "The HRA donor supplies candidate geometry, but no approved thoracic registration establishes continuity with this atlas's native trachea, carina, vessels and lobes. Existing branches cannot be duplicated or joined with invented connectors. The visceral fit measured elsewhere does not validate the thorax.",
+      "evidence": ["docs/phase6-audit.md", "research/anatomy/completion-wave4/hra-source-lock.json", "research/anatomy/completion-wave4/hra-geometry-inventory.json"],
+      "nextAction": "Validate common thoracic landmarks and branch endpoints with withheld controls and regional interfaces before extending bronchial coverage."
+    },
+    {
+      "gap": "resp-hilum",
+      "status": "BLOCKED_REGISTRATION",
+      "source": "HRA lung-male v1.4; current bronchovascular regional coverage",
+      "urls": ["https://lod.humanatlas.io/ref-organ/lung-male/v1.4"],
+      "attempt": "Inspected HRA mesh names including VH_M_hilum_L and VH_M_hilum_R, and compared the baseline regional scope.",
+      "finding": "Named hilar candidates exist in another donor. They have no approved common thoracic fit to the current bronchi and vessels. Existing regional relationships remain represented by their proper owners; a hilum is not manufactured as an extra organ.",
+      "evidence": ["docs/phase6-audit.md", "research/anatomy/completion-wave4/hra-source-lock.json", "research/anatomy/completion-wave4/hra-geometry-inventory.json"],
+      "nextAction": "Validate bronchovascular relationships under a common thoracic registration, or develop separately authorized regional education without fabricating geometry."
+    },
+    {
+      "gap": "digestive-peritoneum",
+      "status": "BLOCKED_IDENTITY",
+      "source": "BodyParts3D 4.0 original FJ3396/FJ3397/FJ3398",
+      "urls": ["https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html"],
+      "attempt": "Cross-checked nominal visceral-peritoneum parents against original file headers: FJ3396 mesentery of small intestine/FMA14643, FJ3397 mesoappendix/FMA16549, FJ3398 transverse mesocolon/FMA14647.",
+      "finding": "These are mesenteric leaves already evaluated in the separate mesentery gap, not additional parietal peritoneum or remaining visceral ligaments. The accepted mesoappendix is not counted a second time. FJ3396/FJ3398 also failed the Wave 2 anatomical-interface review.",
+      "evidence": ["research/anatomy/completion-wave2-source-lock.json", "research/anatomy/completion-wave2-acceptance.json", "research/anatomy/completion-wave2-decisions.json", "research/anatomy/completion-wave4/bp40-originals.json"],
+      "nextAction": "Obtain distinct, identified peritoneal/ligament surfaces with native coordinates or validated common abdominal registration."
+    }
+  ]
+}

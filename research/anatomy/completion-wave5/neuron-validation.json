@@ -1,0 +1,37 @@
+{
+  "source": "NeuroMorpho.Org 102401 Source-Version",
+  "bytes": 830373,
+  "sha256": "7413e4f2be7bfa75e2c46492348a851f8496ee15ba0790cb0273cdc6104357c5",
+  "points": 17990,
+  "edges": 17989,
+  "types": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "bounds": [
+    [
+      295.8247,
+      111.3358,
+      2.2487
+    ],
+    [
+      1789.9253,
+      1238.0368,
+      137.1334
+    ]
+  ],
+  "maxFloat32ErrorMicrometers": 0.00006093749993851816,
+  "root": {
+    "id": 1,
+    "type": 1,
+    "x": 1156.6641,
+    "y": 664.3345,
+    "z": 26.04,
+    "radius": 6.7782,
+    "parent": -1
+  },
+  "validation": "all IDs unique; one root; all parent references present; no cycles; all coordinates finite; all radii positive; bytes preserved",
+  "bodyRegistration": null
+}

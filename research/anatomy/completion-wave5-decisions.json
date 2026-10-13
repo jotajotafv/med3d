@@ -1,0 +1,184 @@
+{
+  "wave": 5,
+  "scope": "All 13 original Level C gaps. Shared glomerular module counts once; ovarian portion of mixed reproductive gap excluded. Independent scenes only.",
+  "findings": [
+    {
+      "gap": "nervous-micro",
+      "status": "PARTIAL_ACCEPTED",
+      "integratedIds": [
+        "neuromorpho:102401"
+      ],
+      "urls": [
+        "https://neuromorpho.org/api/neuron/id/102401",
+        "https://neuromorpho.org/useterm.jsp"
+      ],
+      "finding": "Original human male neuronal tracing integrated. No approved identified synaptic mesh or connected microcircuit in the reviewed source; one cell is not a circuit.",
+      "residualStatus": "BLOCKED_SOURCE",
+      "nextAction": "Obtain an attributable human 3D synapse/circuit asset with cell identity and permissive license.",
+      "scope": "Bounded documented source audit, not a claim of worldwide nonexistence."
+    },
+    {
+      "gap": "cardio-micro",
+      "status": "PARTIAL_ACCEPTED",
+      "integratedIds": [
+        "hra:glomerulus-3d"
+      ],
+      "urls": [
+        "https://3d.nih.gov/entries/3DPX-023604",
+        "https://github.com/scfischer/schmid-et-al-2022"
+      ],
+      "finding": "Glomerular capillary network in one independent HRA module, without duplicating it into the vascular body. Broader systemic microvascular beds are not supplied. Alvin alveolar-capillary FBX sources additionally have an unresolved asset-specific license chain.",
+      "residualStatus": "BLOCKED_SOURCE",
+      "nextAction": "Validate other human microvascular beds as independent scientific source assets.",
+      "scope": "Bounded documented source audit, not a claim of worldwide nonexistence."
+    },
+    {
+      "gap": "urinary-micro",
+      "status": "PARTIAL_ACCEPTED",
+      "integratedIds": [
+        "hra:glomerulus-3d"
+      ],
+      "urls": [
+        "https://3d.nih.gov/entries/3DPX-023604",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10614912/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12134253/"
+      ],
+      "finding": "HRA glomerular schematic approved; no full nephron/tubular scene. Reviewed FTU diagrams are 2D; the human LSFM publication supplies imaging/analyses and movies, not an approved source-locked reusable nephron surface in this audit.",
+      "residualStatus": "BLOCKED_SOURCE",
+      "nextAction": "Obtain a human 3D complete nephron/tubule reconstruction with explicit asset metadata and reuse terms.",
+      "scope": "Bounded documented source audit, not a claim of worldwide nonexistence."
+    },
+    {
+      "gap": "resp-bronchioles",
+      "status": "BLOCKED_SOURCE",
+      "integratedIds": [],
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4452358/",
+        "https://www.mdpi.com/2311-5521/9/1/27"
+      ],
+      "finding": "The FFPE micro-CT publication demonstrates 3D small airways but no redistributable terminal/respiratory bronchiole geometry was identified. The CT flow model is limited to larger airway generations, with extended outlets; it does not resolve this target.",
+      "residualStatus": null,
+      "nextAction": "Obtain original small-airway segmentation and its redistribution license; validate terminal versus respiratory identity.",
+      "scope": "Bounded documented source audit, not a claim of worldwide nonexistence."
+    },
+    {
+      "gap": "resp-alveoli",
+      "status": "BLOCKED_LICENSE",
+      "integratedIds": [],
+      "urls": [
+        "https://www.biozentrum.uni-wuerzburg.de/en/cctb/research/ai-in-computational-biology/projects/3d-tissue-modelling/",
+        "https://github.com/scfischer/schmid-et-al-2022"
+      ],
+      "finding": "Alvin is a real published 3D alveolar/gas-exchange project. Its repository declares GPL-3.0 and has FBX Git-LFS assets, but a mesh-specific attribution/reuse chain separate from the application and third-party notices was not established. No CC license inferred for the meshes. GPL is not a noncommercial license; this is unresolved asset licensing, not a claim that GPL forbids reuse.",
+      "residualStatus": null,
+      "nextAction": "Clarify upstream mesh provenance and asset license, or use an explicit CC BY/SA scientific alveolar asset.",
+      "scope": "Bounded documented source audit, not a claim of worldwide nonexistence."
+    },
+    {
+      "gap": "digestive-micro",
+      "status": "BLOCKED_SOURCE",
+      "integratedIds": [],
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10614912/",
+        "https://zenodo.org/records/14726073",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11637431/"
+      ],
+      "finding": "Reviewed HRA intestinal/liver FTUs are 2D diagrams; organoid images and the spatial molecular atlas do not provide an approved 3D villus, complete wall-layer or gland surface asset. Organoid culture described as 3D is not itself downloadable geometry.",
+      "residualStatus": null,
+      "nextAction": "Acquire a source-locked human 3D villus/wall/gland segmentation with dimensional identity.",
+      "scope": "Bounded documented source audit, not a claim of worldwide nonexistence."
+    },
+    {
+      "gap": "endocrine-islets",
+      "status": "BLOCKED_SOURCE",
+      "integratedIds": [],
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10614912/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10027091/"
+      ],
+      "finding": "Human pancreatic neurovascular microscopy is available as measurements, Seurat data and supplementary movies; no source-locked 3D islet geometry identified. HRA pancreatic-islet FTU reviewed here is a 2D diagram.",
+      "residualStatus": null,
+      "nextAction": "Obtain segmented human islet geometry and an explicit asset license.",
+      "scope": "Bounded documented source audit, not a claim of worldwide nonexistence."
+    },
+    {
+      "gap": "endocrine-micro",
+      "status": "BLOCKED_IDENTITY",
+      "integratedIds": [],
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE183961",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10614912/"
+      ],
+      "finding": "Thyroid follicular organoid series GSE183961 supplies transcriptomic data, not an anatomical 3D follicle or adrenal-zone model. No gonadal microscopic surface accepted. Ovarian portion is excluded from research/integration.",
+      "residualStatus": null,
+      "nextAction": "Locate human 3D thyroid/adrenal (or male gonadal) tissue geometry with metadata rather than relabelling molecular/culture data.",
+      "scope": "Bounded documented source audit, not a claim of worldwide nonexistence."
+    },
+    {
+      "gap": "lymphatic-micro",
+      "status": "BLOCKED_IDENTITY",
+      "integratedIds": [],
+      "urls": [
+        "https://cdn.humanatlas.io/digital-objects/ref-organ/lymph-node/latest/metadata.json",
+        "https://doi.org/10.1073/pnas.1708981114",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10614912/"
+      ],
+      "finding": "HRA lymph-node 3D model is derived from mouse Ce3D work, despite the library anatomical placement label. It cannot silently stand for human node microarchitecture. Reviewed spleen red/white-pulp FTUs are 2D.",
+      "residualStatus": null,
+      "nextAction": "Acquire an identified human node/splenic microarchitecture asset; keep animal comparisons explicitly separate.",
+      "scope": "Bounded documented source audit, not a claim of worldwide nonexistence."
+    },
+    {
+      "gap": "reproductive-micro",
+      "status": "BLOCKED_IDENTITY",
+      "integratedIds": [],
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4609203/"
+      ],
+      "finding": "The reviewed complete seminiferous-tubule 3D reconstruction is adult mouse, not human. It is not integrated as male human tubules. Ovarian follicles in the original mixed gap are explicitly EXCLUDED_FEMALE.",
+      "residualStatus": null,
+      "nextAction": "Acquire an identified male human seminiferous-tubule reconstruction with redistributable geometry.",
+      "scope": "Bounded documented source audit, not a claim of worldwide nonexistence."
+    },
+    {
+      "gap": "integumentary-layers",
+      "status": "BLOCKED_SOURCE",
+      "integratedIds": [],
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10614912/",
+        "https://ncats.nih.gov/research/research-activities/tissue-chip/meet-chip/skin"
+      ],
+      "finding": "Reviewed epidermal/dermal FTUs are 2D; the NIH tissue-chip resource describes laboratory skin cultures rather than a downloadable 3D anatomical layer model. HRA adipose patches from W4 are not complete hypodermis.",
+      "residualStatus": null,
+      "nextAction": "Obtain a documented human skin-layer volume or surface segmentation and license.",
+      "scope": "Bounded documented source audit, not a claim of worldwide nonexistence."
+    },
+    {
+      "gap": "integumentary-glands",
+      "status": "BLOCKED_SOURCE",
+      "integratedIds": [],
+      "urls": [
+        "https://arxiv.org/abs/2504.17255",
+        "https://doi.org/10.1109/TMI.2025.3593284",
+        "https://tianchi.aliyun.com/notebook-zi/myDataSet#datalabId=195640",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5552089/"
+      ],
+      "finding": "The 2025 OCT paper supplies a data link for actual sweat-gland segmentation, but its myDataSet route did not yield a verifiable public asset/manifest or reuse license in this audit. The earlier sweat-gland organoid paper is not an approved geometry source. No skin-gland mesh fabricated.",
+      "residualStatus": null,
+      "nextAction": "Obtain a stable public dataset URL, sex/identity metadata, voxel calibration and asset license; then validate segmentation.",
+      "scope": "Bounded documented source audit, not a claim of worldwide nonexistence."
+    },
+    {
+      "gap": "ocular-micro",
+      "status": "BLOCKED_IDENTITY",
+      "integratedIds": [],
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6327073/"
+      ],
+      "finding": "OCT layer delineations come from a mixed clinical cohort, without a verified individual male asset selected and source-locked here; layer-label volumes also do not identify the requested cellular retinal microanatomy. No female data downloaded and no macroscopic retina relabelled as microscopic layers.",
+      "residualStatus": null,
+      "nextAction": "Obtain an identified eligible human retinal-layer 3D asset with donor linkage, calibrated geometry and permissive terms.",
+      "scope": "Bounded documented source audit, not a claim of worldwide nonexistence."
+    }
+  ]
+}

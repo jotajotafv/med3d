@@ -1,0 +1,148 @@
+{
+  "sourceSha256": "2c0a6f005aad31991fa247dea4602b258e9f0416990596ff604b80045882f52e",
+  "sourceBytes": 150372224,
+  "sha256": "3b27d350f566adc20583502be25de3596a53e1810d82eb802bcd78eb5267f56f",
+  "bytes": 57940448,
+  "method": "Lossless Meshopt only. No vertex reordering, quantization, decimation, repair or coordinate transform. All decoded attributes compared byte-for-byte; each ordered triangle retains its three indices and winding (Meshopt may cyclically rotate a triangle). Graph, transforms, material properties and bounds preserved.",
+  "meshes": 18,
+  "triangles": 1646925,
+  "vertices": 3297122,
+  "decodedAccessorBytes": 150357740,
+  "nodes": [
+    {
+      "name": "afferent_arteriole",
+      "triangles": 14498,
+      "vertices": 31894
+    },
+    {
+      "name": "efferent_arteriole",
+      "triangles": 12740,
+      "vertices": 26183
+    },
+    {
+      "name": "capillaries",
+      "triangles": 1431885,
+      "vertices": 2863480
+    },
+    {
+      "name": "podocyte_1",
+      "triangles": 7192,
+      "vertices": 14381
+    },
+    {
+      "name": "podocyte_2",
+      "triangles": 9040,
+      "vertices": 18075
+    },
+    {
+      "name": "podocyte_3",
+      "triangles": 10102,
+      "vertices": 20203
+    },
+    {
+      "name": "podocyte_4",
+      "triangles": 12480,
+      "vertices": 24959
+    },
+    {
+      "name": "podocyte_5",
+      "triangles": 9994,
+      "vertices": 19988
+    },
+    {
+      "name": "podocyte_6",
+      "triangles": 9534,
+      "vertices": 19062
+    },
+    {
+      "name": "podocyte_7",
+      "triangles": 13786,
+      "vertices": 27570
+    },
+    {
+      "name": "podocyte_8",
+      "triangles": 9466,
+      "vertices": 18932
+    },
+    {
+      "name": "podocyte_9",
+      "triangles": 9354,
+      "vertices": 18702
+    },
+    {
+      "name": "podocyte_10",
+      "triangles": 10910,
+      "vertices": 21819
+    },
+    {
+      "name": "podocyte_11",
+      "triangles": 13582,
+      "vertices": 27162
+    },
+    {
+      "name": "podocyte_12",
+      "triangles": 23142,
+      "vertices": 46280
+    },
+    {
+      "name": "podocyte_13",
+      "triangles": 18686,
+      "vertices": 37368
+    },
+    {
+      "name": "podocyte_14",
+      "triangles": 17788,
+      "vertices": 35574
+    },
+    {
+      "name": "podocyte_15",
+      "triangles": 12746,
+      "vertices": 25490
+    }
+  ],
+  "bounds": {
+    "min": [
+      -0.023867422714829445,
+      -0.025172114372253418,
+      -0.023694166913628578
+    ],
+    "max": [
+      0.023655731230974197,
+      0.032129134982824326,
+      0.023970361799001694
+    ]
+  },
+  "bodyRegistration": null,
+  "validator": {
+    "version": "2.0.0-dev.3.10",
+    "raw": {
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 2,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "UNSUPPORTED_EXTENSION",
+          "message": "Cannot validate an extension as it is not supported by the validator: 'EXT_meshopt_compression'.",
+          "severity": 2,
+          "pointer": "/extensionsUsed/0"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/buffers/0"
+        }
+      ],
+      "truncated": false
+    },
+    "decoded": {
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 0,
+      "numHints": 0,
+      "messages": [],
+      "truncated": false
+    }
+  }
+}

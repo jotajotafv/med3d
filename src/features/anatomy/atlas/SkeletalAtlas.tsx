@@ -8,6 +8,7 @@ import {createCatalogIndex, normalizeSearch, SYSTEMS} from './catalog-index';
 import type {AnatomyCatalog, AnatomyNode, AssetLoadStatus, AtlasCameraRequest, AtlasMetrics, ExplodeLevel, SystemId} from './types';
 import VirtualTree from './VirtualTree';
 import AnatomyInformation from './AnatomyInformation';
+import MicroAccess from '../micro/MicroAccess';
 import {publicText} from './public-information';
 import {getIntegumentaryContextIds} from './integumentary-education';
 import {getNerveContextIds} from './nerve-education';
@@ -205,6 +206,7 @@ export default function SkeletalAtlas() {
             {current?.systemId==='muscular'&&!isolated&&!contextIds.length&&<p className="atlas-context-note">Los músculos profundos pueden quedar cubiertos. Usa Aislar para estudiarlos; cambiar la vista conserva el contexto.</p>}
             <div className="atlas-education"><dl><div><dt>SISTEMA</dt><dd>{systemName(current?.systemId)}</dd></div><div><dt>REGIÓN</dt><dd>{current?regionName(current.regionId):'Cuerpo humano'}</dd></div></dl>
               {current?<AnatomyInformation node={current} catalog={catalog||undefined}/>:<p>Explora los sistemas del cuerpo humano. Activa las capas y selecciona una estructura para conocer su anatomía.</p>}
+              {current && <MicroAccess key={current.id} parentId={current.id}/>}
               {current&&<Related current={current} byId={index?.byId||new Map()} choose={choose}/>}
             </div>
             <div className="atlas-property"><label htmlFor={detailSystem+"-opacity"}>Opacidad de {systemName(detailSystem)} <strong>{Math.round((opacityBySystem[detailSystem]??1)*100)}%</strong></label><input id={detailSystem+"-opacity"} type="range" min="10" max="100" value={(opacityBySystem[detailSystem]??1)*100} onChange={event=>setOpacityBySystem(value=>({...value,[detailSystem]:Number(event.target.value)/100}))}/></div>

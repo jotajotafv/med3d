@@ -1,0 +1,7 @@
+[
+  {
+    "src": "/_next/static/chunks/5454-463323bce5891eef.js",
+    "term": "output-files",
+    "context": "ow Error(\"No workflow runs found in entry\");let t=new Set(i.map(e=>e.workflowVersion));if(0===t.size)throw Error(\"No workflow versions found in entry\");if(t.size>1)throw Error(\"Multiple workflow versions found: \".concat(Array.from(t).join(\", \")));return Array.from(t)[0]}(e),h=new Map;for(let r of null!=(i=e.submission.workflowRuns)?i:[]){let i=r.prefectRunId;for(let o of null!=(t=r.outputFiles)?t:[])c.push({...o,outputFileUrl:\"/submissions/\".concat(e.submission.submissionId,\"/runs/\").concat(i,\"/output-files/\").concat(o.fileId),baseName:y(o.name),ext:g(o.name),prefectRunId:i});let s=(null!=(o=r.outputFiles)?o:[]).find(e=>e.fileType===n.$A.Textures);s&&h.set(i,{...s,outputFileUrl:\"/submissions/\".concat(e.submission.submissionId,\"/runs/\").concat(i,\"/output-files/\").concat(s.fileId),baseName:y(s.name),ext:g(s.name),prefectRunId:i})}let p=c.filter(e=>e.fileType===n.$A.OutputMesh&&\"GLB\"===e.ext)||[],m=(null!=(l=e.submission.inputFiles)?l:[]).map(e=>{var r,i;return{...e,baseName:y(null!=(r=e.name)?r:\"\"),ext:g(null!=(i=e.name)?i:\"\")}}),b=m.fi"
+  }
+]

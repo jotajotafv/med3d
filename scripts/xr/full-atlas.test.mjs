@@ -44,7 +44,7 @@ const owner = new XrAtlasAssets(async (id, signal) => {
   const catalog = await loadXrCatalog(id, signal); catalogs[id] = catalog; originals[id] = JSON.stringify(catalog); return catalog;
 });
 const presentation = new XrAtlasPresentation(), root = new THREE.Group();
-const all = () => ({ ...initialAtlasState(), optionalSystems: Object.fromEntries(systems.map(s => [s.id, true])), systemVisibility: Object.fromEntries(systems.map(s => [s.id, true])) });
+const all = () => ({ ...initialAtlasState(), systemVisibility: Object.fromEntries(systems.map(s => [s.id, true])) });
 
 test('eleven configured systems derive public names and only skeletal defaults ON', () => {
   assert.equal(systems.length, 11); assert.deepEqual(new Set(systems.map(s => s.id)), new Set(SYSTEMS.map(s => s.id)));
@@ -58,11 +58,8 @@ test('progressive real catalogs/GLBs request only the chosen system, verify byte
     const before = requests.length; await owner.ensure(system.id);
     await wait(() => !owner.snapshot().systems[system.id].pending);
     const catalog = catalogs[system.id];
-    const optional = catalog.assets.filter(asset => asset.defaultEnabled === false);
-    assert.ok(owner.snapshot().resources.every(resource => resource.asset.systemId !== system.id || resource.asset.defaultEnabled !== false));
-    assert.ok(optional.every(asset => !requests.slice(before).includes(asset.path)));
-    await owner.ensure(system.id, true);
-    await wait(() => !owner.snapshot().systems[system.id].pending);
+    const moduleRequests = requests.slice(before).filter(p => p.endsWith('.glb'));
+    assert.deepEqual(moduleRequests, [...catalog.assets.filter(a => a.defaultEnabled !== false), ...catalog.assets.filter(a => a.defaultEnabled === false)].map(a => a.path));
     const snapshot = owner.snapshot(); assert.equal(snapshot.systems[system.id].error, undefined);
     assert.deepEqual(new Set(requests.slice(before)), new Set([...system.catalogPaths, ...catalog.assets.map(a => a.path)]));
     assert.equal(catalog.frame.id, 'bodyparts3d-4.0-male');
@@ -85,26 +82,29 @@ test('progressive real catalogs/GLBs request only the chosen system, verify byte
   assert.ok(catalogs.nervous.nodes.some(n => n.ocularClass)); assert.ok(catalogs.nervous.provenance.some(p => p.license === 'CC BY-SA 4.0'));
   globalThis.fetch = nativeFetch;
 });
-test('optional anatomy is hidden and excluded from picking until explicitly enabled; toggles retain every resource', () => {
+test('every approved module follows the system visibility and picking filter without another opt-in', () => {
   const catalog = owner.snapshot().catalog, resources = owner.snapshot().resources;
-  presentation.add(resources);
-  const optional = resources.filter(resource => resource.asset.defaultEnabled === false).flatMap(resource => resource.parts);
-  assert.ok(optional.length);
-  const off = { ...all(), optionalSystems: {} };
-  presentation.apply(off, catalog);
-  assert.ok(optional.every(part => !part.mesh.visible && !presentation.visibleMeshes.includes(part.mesh)));
-  presentation.apply(all(), catalog);
-  assert.ok(optional.every(part => part.mesh.visible && presentation.visibleMeshes.includes(part.mesh)));
-  presentation.apply(off, catalog);
+  presentation.add(resources); presentation.apply(all(), catalog);
+  assert.equal(presentation.visibleMeshes.length, expectedMeshes);
+  for (const {id} of systems) {
+    const parts = presentation.parts.filter(part => part.node.systemId === id);
+    presentation.apply(atlasReducer(all(), {type:'system', system:id, enabled:false}), catalog);
+    assert.ok(parts.every(part => !part.mesh.visible && !presentation.visibleMeshes.includes(part.mesh)));
+    presentation.apply(all(), catalog);
+    assert.ok(parts.every(part => part.mesh.visible && presentation.visibleMeshes.includes(part.mesh)));
+  }
   assert.equal(owner.snapshot().resources, resources);
   presentation.dispose(); presentation.add(resources);
 });
 test('each system supports opacity, real transformed raycasts, existing lessons, isolate/hide/restore and exact material reuse', () => {
   const catalog = owner.snapshot().catalog, originalMaterials = new Map(presentation.parts.map(p => [p, p.mesh.material]));
   const geometry = new Map(presentation.parts.map(p => [p, p.mesh.geometry]));
+  const resourcesFor = part => owner.snapshot().resources.find(resource => resource.parts.includes(part)).asset;
   root.rotation.set(.15, .35, 0); root.scale.setScalar(1.35);
   for (const { id } of systems) {
-    const part = presentation.parts.find(p => p.node.systemId === id && atlasEducation(p.node, catalog).fields.length);
+    const candidates = [false, true].map(addition => presentation.parts.find(p => p.node.systemId === id && atlasEducation(p.node, catalog).fields.length && (resourcesFor(p).defaultEnabled === false) === addition)).filter(Boolean);
+    assert.equal(candidates.length, 1 + Number(catalog.assets.some(a => a.systemId === id && a.defaultEnabled === false)), id + ' has lessons for base and additions');
+    for (const part of candidates) {
     assert.ok(part, id + ' has real educational content');
     let state = atlasReducer(all(), { type: 'opacity', system: id, value: .35 });
     state = atlasReducer(state, { type: 'isolate', id: part.node.id }); presentation.apply(state, catalog);
@@ -130,6 +130,7 @@ test('each system supports opacity, real transformed raycasts, existing lessons,
     assert.equal(presentation.pick(point, rect, camera, root, new THREE.Raycaster()).selection?.id === part.node.id, false);
     state = atlasReducer(state, { type: 'system', system: id, enabled: false }); state = atlasReducer(state, { type: 'restoreHidden' }); presentation.apply(state, catalog);
     assert.equal(part.mesh.visible, false); state = atlasReducer(state, { type: 'system', system: id, enabled: true }); presentation.apply(state, catalog); assert.equal(part.mesh.visible, true);
+  }
   }
   for (const [part, g] of geometry) assert.equal(part.mesh.geometry, g);
   presentation.dispose(); for (const [part, material] of originalMaterials) assert.equal(part.mesh.material, material);
@@ -178,11 +179,11 @@ test('rapid activation and failed-module retry respect two global slots; pending
     if (asset.id === catalogs.skeletal.assets[0].id && fail) throw new Error('fixture failure');
     return { asset, parts: [], dispose: () => freed.push(asset.id) };
   }, 1));
-  const pending = systems.map(s => queue.ensure(s.id, true)); assert.equal(catalogRequests.length, 2);
+  const pending = systems.map(s => queue.ensure(s.id)); assert.equal(catalogRequests.length, 2);
   await wait(() => !!queue.snapshot().systems.skeletal.error && !queue.snapshot().systems.skeletal.pending); fail = false; queue.retry('skeletal');
   await Promise.all(pending); await wait(() => systems.every(s => !queue.snapshot().systems[s.id].pending));
   assert.equal(peak, 2); assert.equal(queue.snapshot().resources.length, expectedModules); assert.equal(loaded.length, expectedModules + 1);
-  const refs = queue.snapshot().resources; await Promise.all(systems.map(s => queue.ensure(s.id, true))); assert.equal(queue.snapshot().resources, refs);
+  const refs = queue.snapshot().resources; await Promise.all(systems.map(s => queue.ensure(s.id))); assert.equal(queue.snapshot().resources, refs);
   queue.dispose(); queue.dispose(); assert.equal(freed.length, expectedModules); assert.equal(new Set(freed).size, expectedModules);
   const starts = []; let finish;
   const stopped = new XrAtlasAssets(id => { starts.push(id); return new Promise(resolve => { finish = resolve; }); });

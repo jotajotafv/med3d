@@ -1,0 +1,462 @@
+{
+  "base": "0eba7b5da92cfd80774c438bbb642c378fba5cdf",
+  "branch": "phase-anatomy-completion-nonfemale",
+  "scope": "Unified system UI/loading; controlled landmarks, no physical camera or MediaPipe acceptance",
+  "status": "PASS",
+  "browser": "149.0.7827.55",
+  "date": "2026-10-14T00:26:53.771Z",
+  "validation": [
+    {
+      "command": "npm run test:xr",
+      "exitCode": 0,
+      "durationMs": 49126,
+      "log": ".cache/unified-system-loading/test-xr.log",
+      "sha256": "96706285e872943b339fe9440cadfea80f05b4d8d161eeff080495f9ee6f9333"
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "durationMs": 21525,
+      "log": ".cache/unified-system-loading/typecheck.log",
+      "sha256": "c39971380a109322f083f1bf4e7dad46683104dd3864d4a882e3d6c598055eda"
+    },
+    {
+      "command": "node scripts/test-atlas-renderer.mjs",
+      "exitCode": 0,
+      "durationMs": 1874,
+      "log": ".cache/unified-system-loading/atlas-renderer.log",
+      "sha256": "0387ecba93d287306237ba4854a16634581987f5245036c5cded0e65aa3a4a0d"
+    },
+    {
+      "command": "node scripts/test-anatomy-completion.mjs",
+      "exitCode": 0,
+      "durationMs": 3744,
+      "log": ".cache/unified-system-loading/anatomy-completion.log",
+      "sha256": "8ca96ca9b882c223b2b966c09c21810f799d085f8e2839a8679c0e6724e915ac"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "durationMs": 37623,
+      "log": ".cache/unified-system-loading/build.log",
+      "sha256": "937934646c622e0ebbd63856fd48c24e98bb264ea546605b6b0f1aea7bc457a6"
+    }
+  ],
+  "xrTests": {
+    "passed": 187,
+    "failed": 0,
+    "skipped": 0,
+    "newTests": 6
+  },
+  "browserChecks": [
+    {
+      "name": "Atlas base renders before delayed addition and no other system starts"
+    },
+    {
+      "name": "Atlas ON/OFF/ON, all muscle opacity, off picking and zero repeated requests"
+    },
+    {
+      "name": "Atlas 92 modules / 1240 meshes, additions participate in explosion"
+    },
+    {
+      "name": "Atlas new structure search/focus, real picking, card, isolate, hide and restore"
+    },
+    {
+      "name": "Atlas responsive 1366/1050/900/768/390, manual scroll and Tegumentario"
+    },
+    {
+      "name": "Atlas fresh search automatically loads its necessary module"
+    },
+    {
+      "name": "Atlas module failure uses normal visible retry, without internal labels"
+    },
+    {
+      "name": "XR base renders before delayed addition and no other system starts"
+    },
+    {
+      "name": "XR all systems, reuse, opacity, picking new structure, card/isolate/hide/restore, explosion, drag and touch after transform"
+    },
+    {
+      "name": "XR responsive 1366/1050/900/768/390, manual scroll and Tegumentario"
+    },
+    {
+      "name": "Controlled gesture UI: system dwell 1000ms, opacity, freed scroll-region space, scroll to Tegumentario; no expansion targets"
+    },
+    {
+      "name": "XR module failure and normal system retry"
+    },
+    {
+      "name": "XR route cleanup removes inspector and scene"
+    }
+  ],
+  "focusedCatalogRecovery": [
+    {
+      "name": "XR catalog failure: OFF hides inactive error, ON reloads and clears stale error"
+    }
+  ],
+  "responsive": [
+    {
+      "viewer": "Atlas",
+      "width": 1366,
+      "scroll": {
+        "top": 5615,
+        "max": 5615,
+        "overflow": "auto"
+      }
+    },
+    {
+      "viewer": "Atlas",
+      "width": 1050,
+      "scroll": {
+        "top": 5615,
+        "max": 5615,
+        "overflow": "auto"
+      }
+    },
+    {
+      "viewer": "Atlas",
+      "width": 900,
+      "scroll": {
+        "top": 5739,
+        "max": 5739,
+        "overflow": "auto"
+      }
+    },
+    {
+      "viewer": "Atlas",
+      "width": 768,
+      "scroll": {
+        "top": 5739,
+        "max": 5739,
+        "overflow": "auto"
+      }
+    },
+    {
+      "viewer": "Atlas",
+      "width": 390,
+      "scroll": {
+        "top": 5394,
+        "max": 5394,
+        "overflow": "auto"
+      }
+    },
+    {
+      "viewer": "XR",
+      "width": 1366,
+      "scroll": {
+        "top": 185,
+        "max": 185,
+        "overflow": "auto"
+      }
+    },
+    {
+      "viewer": "XR",
+      "width": 1050,
+      "scroll": {
+        "top": 185,
+        "max": 185,
+        "overflow": "auto"
+      }
+    },
+    {
+      "viewer": "XR",
+      "width": 900,
+      "scroll": {
+        "top": 185,
+        "max": 185,
+        "overflow": "auto"
+      }
+    },
+    {
+      "viewer": "XR",
+      "width": 768,
+      "scroll": {
+        "top": 185,
+        "max": 185,
+        "overflow": "auto"
+      }
+    },
+    {
+      "viewer": "XR",
+      "width": 390,
+      "scroll": {
+        "top": 165,
+        "max": 165,
+        "overflow": "auto"
+      }
+    }
+  ],
+  "captures": [
+    {
+      "file": ".cache/unified-system-loading/browser-responsive/atlas-1366.png",
+      "sha256": "2ec97365ac1fe43ada75f9493acf5f258753afa1d8d2310e6151883704fc3029"
+    },
+    {
+      "file": ".cache/unified-system-loading/browser-responsive/atlas-1050.png",
+      "sha256": "56e98088b170f2ddaaf063392c859b455de46656d6acbc0bda4ecbdce8204230"
+    },
+    {
+      "file": ".cache/unified-system-loading/browser-responsive/atlas-900.png",
+      "sha256": "7eff83c2c4d1eb6f9db58ad52b201aebd1646d4acaf2fe1b00ed34d7e7555707"
+    },
+    {
+      "file": ".cache/unified-system-loading/browser-responsive/atlas-768.png",
+      "sha256": "c4d2a717285d4c173fbe839ff827461c465d899ba2d1d76dc792d235423b82e0"
+    },
+    {
+      "file": ".cache/unified-system-loading/browser-responsive/atlas-390.png",
+      "sha256": "bff408bfa23cd6bc0a0e7b8dfe784cd4a4ca3b612d2703cd259f5aa3934c4dba"
+    },
+    {
+      "file": ".cache/unified-system-loading/browser-responsive/xr-1366.png",
+      "sha256": "4b33801b8269694faf1f18b5388cf96d3c56dc55d0230f54697ff336a1d693b5"
+    },
+    {
+      "file": ".cache/unified-system-loading/browser-responsive/xr-1050.png",
+      "sha256": "3472de2477ad37710872259a9733df2048d4d0b044e64ee0d2a1781890282aec"
+    },
+    {
+      "file": ".cache/unified-system-loading/browser-responsive/xr-900.png",
+      "sha256": "ade0ee715e3322377c51ed2939ea8e06631808b7b0ca1bc72f79588be8fa5bc8"
+    },
+    {
+      "file": ".cache/unified-system-loading/browser-responsive/xr-768.png",
+      "sha256": "66556968e7e47355f74257126c2a261a3fdec1f434a2975ab148a529d2d015d6"
+    },
+    {
+      "file": ".cache/unified-system-loading/browser-responsive/xr-390.png",
+      "sha256": "1ad240fcfa0f6d1915f9ddf3d7a39f76613ff05e24ce5ebe74f76f077cb4bdf4"
+    }
+  ],
+  "performance": [
+    {
+      "name": "initial skeletal",
+      "viewer": "Atlas",
+      "elapsedMs": 8776,
+      "selectedId": "",
+      "contextIds": "",
+      "loadedAssets": "9",
+      "meshCount": "207",
+      "triangleCount": "523966",
+      "geometryBytes": "7819708",
+      "drawCalls": "207",
+      "renderGeometries": "211",
+      "renderTextures": "4",
+      "loadMs": "973.7000000029802",
+      "renderCpuMs": "2.7999999970197678",
+      "firstGeometryMs": "886.3999999910593",
+      "fullSystemMs": "2115.7999999970198",
+      "requests": 11
+    },
+    {
+      "name": "muscular",
+      "viewer": "Atlas",
+      "elapsedMs": 5254,
+      "selectedId": "",
+      "contextIds": "",
+      "loadedAssets": "42",
+      "meshCount": "505",
+      "triangleCount": "2304110",
+      "geometryBytes": "48141600",
+      "drawCalls": "505",
+      "renderGeometries": "509",
+      "renderTextures": "4",
+      "loadMs": "973.7000000029802",
+      "renderCpuMs": "5",
+      "firstGeometryMs": "886.3999999910593",
+      "fullSystemMs": "2115.7999999970198",
+      "requests": 44
+    },
+    {
+      "name": "several with nervous",
+      "viewer": "Atlas",
+      "elapsedMs": 4315,
+      "selectedId": "",
+      "contextIds": "",
+      "loadedAssets": "57",
+      "meshCount": "694",
+      "triangleCount": "3177114",
+      "geometryBytes": "63034016",
+      "drawCalls": "994",
+      "renderGeometries": "698",
+      "renderTextures": "4",
+      "loadMs": "973.7000000029802",
+      "renderCpuMs": "60",
+      "firstGeometryMs": "886.3999999910593",
+      "fullSystemMs": "2115.7999999970198",
+      "requests": 59
+    },
+    {
+      "name": "all eleven systems",
+      "viewer": "Atlas",
+      "elapsedMs": 12576,
+      "selectedId": "",
+      "contextIds": "",
+      "loadedAssets": "92",
+      "meshCount": "1240",
+      "triangleCount": "4956556",
+      "geometryBytes": "95884560",
+      "drawCalls": "1540",
+      "renderGeometries": "1244",
+      "renderTextures": "4",
+      "loadMs": "973.7000000029802",
+      "renderCpuMs": "41.6000000089407",
+      "firstGeometryMs": "886.3999999910593",
+      "fullSystemMs": "2115.7999999970198",
+      "requests": 94
+    },
+    {
+      "name": "initial skeletal",
+      "viewer": "XR",
+      "elapsedMs": 7652,
+      "modules": 9,
+      "meshes": 207,
+      "geometryBytes": 7819708,
+      "frameIntervalMs": 6.940000000099341,
+      "renderCpuMs": 2.180000000198682,
+      "timings": {
+        "skeletal": {
+          "firstGeometryMs": 300.90000000596046,
+          "completeMs": 2021.1000000089407
+        }
+      },
+      "requests": 148
+    },
+    {
+      "name": "muscular",
+      "viewer": "XR",
+      "elapsedMs": 3475,
+      "modules": 42,
+      "meshes": 505,
+      "geometryBytes": 48141600,
+      "frameIntervalMs": 8.201666666567325,
+      "renderCpuMs": 4.88666666696469,
+      "timings": {
+        "skeletal": {
+          "firstGeometryMs": 300.90000000596046,
+          "completeMs": 2021.1000000089407
+        },
+        "muscular": {
+          "firstGeometryMs": 185.79999999701977,
+          "completeMs": 2090.2000000029802
+        }
+      },
+      "requests": 181
+    },
+    {
+      "name": "several with nervous",
+      "viewer": "XR",
+      "elapsedMs": 4321,
+      "modules": 57,
+      "meshes": 694,
+      "geometryBytes": 63034016,
+      "frameIntervalMs": 51.928333333383,
+      "renderCpuMs": 34.014999999850986,
+      "timings": {
+        "skeletal": {
+          "firstGeometryMs": 300.90000000596046,
+          "completeMs": 2021.1000000089407
+        },
+        "muscular": {
+          "firstGeometryMs": 185.79999999701977,
+          "completeMs": 2090.2000000029802
+        },
+        "nervous": {
+          "firstGeometryMs": 639.0999999940395,
+          "completeMs": 2349.8999999910593
+        }
+      },
+      "requests": 196
+    },
+    {
+      "name": "all eleven systems",
+      "viewer": "XR",
+      "elapsedMs": 10369,
+      "modules": 92,
+      "meshes": 1240,
+      "geometryBytes": 95884560,
+      "frameIntervalMs": 54.67166666661699,
+      "renderCpuMs": 36.64166666716337,
+      "timings": {
+        "skeletal": {
+          "firstGeometryMs": 300.90000000596046,
+          "completeMs": 2021.1000000089407
+        },
+        "muscular": {
+          "firstGeometryMs": 185.79999999701977,
+          "completeMs": 2090.2000000029802
+        },
+        "nervous": {
+          "firstGeometryMs": 639.0999999940395,
+          "completeMs": 2349.8999999910593
+        },
+        "cardiovascular": {
+          "firstGeometryMs": 500.09999999403954,
+          "completeMs": 2896.7999999970198
+        },
+        "respiratory": {
+          "firstGeometryMs": 671.7999999970198,
+          "completeMs": 1286.3999999910593
+        },
+        "digestive": {
+          "firstGeometryMs": 762.4000000059605,
+          "completeMs": 1821.7000000029802
+        },
+        "urinary": {
+          "firstGeometryMs": 716.5,
+          "completeMs": 716.5
+        },
+        "endocrine": {
+          "firstGeometryMs": 514.9000000059605,
+          "completeMs": 643.4000000059605
+        },
+        "lymphatic": {
+          "firstGeometryMs": 536.1000000089407,
+          "completeMs": 536.1000000089407
+        },
+        "reproductive": {
+          "firstGeometryMs": 536.6999999880791,
+          "completeMs": 536.6999999880791
+        },
+        "integumentary": {
+          "firstGeometryMs": 576.4000000059605,
+          "completeMs": 714.6000000089407
+        }
+      },
+      "requests": 231
+    }
+  ],
+  "performanceLimitations": [
+    "Local development server; warm local transfers and synthetic delayed addition. End-to-end timings include UI, QA waits and intentional delay; not a cold production network benchmark.",
+    "Main Atlas fullSystemMs belongs to its initial requested batch, not subsequently enabled systems. XR timings are relative to each requested system.",
+    "Frame interval/render submission wall times are short samples, not physical GPU FPS or prolonged MediaPipe continuity.",
+    "Request counters accumulate the entire harness, including route reloads, intentional 503 retries and cancelled development StrictMode requests; reuse is asserted separately.",
+    "Decoded geometry bytes exclude materials, textures, driver/GPU memory and JavaScript objects."
+  ],
+  "environmentBlocked": "UNCHANGED; no prolonged-load campaign or physical camera test",
+  "browserErrors": [],
+  "attempts": [
+    {
+      "run": 1,
+      "status": "HARNESS_ERROR",
+      "reason": "Unregistered the artificially delayed route before its handler finished; fixed QA synchronization. No product failure."
+    },
+    {
+      "run": 2,
+      "status": "PASS",
+      "report": ".cache/unified-system-loading/browser-2/result.json"
+    },
+    {
+      "run": "responsive",
+      "status": "PASS",
+      "report": ".cache/unified-system-loading/browser-responsive/result.json"
+    },
+    {
+      "run": "catalog-retry",
+      "status": "PASS",
+      "report": ".cache/unified-system-loading/browser-catalog-retry/result.json"
+    }
+  ],
+  "protectedDiff": "No changes to public/, research/, anatomy identities/education/catalogs or XR gesture pipeline; all 92 GLB hashes verified by directed anatomy suite",
+  "verifyAnatomy": "Not run, as requested"
+}

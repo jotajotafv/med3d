@@ -48,7 +48,7 @@ assert.equal(new Set(body.assets.map(a=>a.systemId)).size,11);
 const owners=new Map();for(const n of body.nodes)for(const mesh of n.meshNames){assert.ok(!owners.has(mesh),'One owner '+mesh);owners.set(mesh,n.id);}
 for(const asset of body.assets){const bytes=await readFile('public/'+asset.path);assert.equal(hash(bytes),asset.sha256);assert.equal(bytes.length,asset.bytes);if(moduleIds.has(asset.id)){assert.equal(asset.defaultEnabled,false);assert.ok(asset.label?.trim(),'Public module label');}}
 const systems=[...new Set(body.assets.map(a=>a.systemId))].filter(s=>s!=='integumentary');
-const initial=initialAtlasAssets(body,systems);assert.equal(initial.length,51);assert.ok(initial.every(id=>!moduleIds.has(id)));
+const initial=initialAtlasAssets(body,systems);assert.equal(initial.length,body.assets.filter(asset=>systems.includes(asset.systemId)).length);assert.ok(body.assets.filter(asset=>systems.includes(asset.systemId)&&moduleIds.has(asset.id)).every(asset=>initial.includes(asset.id)));
 for(const module of modules)assert.ok(initialAtlasAssets(body,[module.systemId],[module.id]).includes(module.id));
 const offsets=createExplosionOffsets(body,new Set(systems));
 for(const n of added){const actual=index.byId.get(n.id);assert.ok(actual);assert.equal(actual.systemId,n.systemId);for(const id of n.relatedIds)assert.ok(index.byId.has(id));if(!n.sourceElements)continue;
@@ -106,5 +106,5 @@ if(wave4){
  }
 }
 assert.throws(()=>createCatalogIndex(brokenLesson),/ficha educativa/);
-const report={systems:11,nodes:body.nodes.length,structures:body.nodes.filter(n=>n.kind==='structure').length,components:body.nodes.filter(n=>n.kind==='component').length,meshes:owners.size,modules:body.assets.length,triangles:body.assets.reduce((s,a)=>s+a.triangles,0),bytes:body.assets.reduce((s,a)=>s+a.bytes,0),newNodes:added.length,newModules:modules.length,defaultModules:initial.length,checks:['unique owners and hashes','11 systems','optional defaults and explicit opt-in','ES/Latin/FMA/FJ search','scope and education shared with XR','isolation ancestry and reveal','zero explosion','dentition / aggregate / actual vessel identity']};
+const report={systems:11,nodes:body.nodes.length,structures:body.nodes.filter(n=>n.kind==='structure').length,components:body.nodes.filter(n=>n.kind==='component').length,meshes:owners.size,modules:body.assets.length,triangles:body.assets.reduce((s,a)=>s+a.triangles,0),bytes:body.assets.reduce((s,a)=>s+a.bytes,0),newNodes:added.length,newModules:modules.length,defaultModules:initial.length,checks:['unique owners and hashes','11 systems','unified system loading and explicit regional links','ES/Latin/FMA/FJ search','scope and education shared with XR','isolation ancestry and reveal','zero explosion','dentition / aggregate / actual vessel identity']};
 await writeFile('.cache/anatomy-completion/catalog-tests.json',JSON.stringify(report,null,2)+'\n');console.log(report);

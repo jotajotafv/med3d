@@ -3,6 +3,7 @@ import { Canvas, useFrame, useThree, type ThreeEvent } from '@react-three/fiber'
 import { OrbitControls, GizmoHelper, GizmoViewport } from '@react-three/drei';
 import * as THREE from 'three';
 import SceneBoundary from '../SceneBoundary';
+import { prioritizeAtlasAssets } from './initial-assets';
 import { AtlasAssetManager, type AssetSnapshot, type AtlasPart, type AtlasResource } from './asset-manager';
 import { createExplosionOffsets, explosionTarget } from './explosion';
 import { ANATOMICAL_VIEWS, fitCameraBounds } from './camera-framing';
@@ -34,13 +35,13 @@ function frameTransform(catalog: AnatomyCatalog) {
 }
 function useAssets(catalog: AnatomyCatalog, assetIds: string[], reset: number) {
   const manager = useRef<AtlasAssetManager | null>(null);
-  const desired = useRef(assetIds); desired.current = assetIds;
+  const desired = useRef(assetIds); desired.current = prioritizeAtlasAssets(catalog.assets.filter(asset => assetIds.includes(asset.id))).map(asset => asset.id);
   const loadTiming = useRef<LoadTiming>({ startedAt: 0, initialAssets: [] });
   const [snapshot, setSnapshot] = useState<AssetSnapshot>({ resources: [], statuses: [] });
   useEffect(() => {
     performance.clearMarks('med3d:load-start'); performance.clearMarks('med3d:first-geometry'); performance.clearMarks('med3d:all-assets-rendered');
     loadTiming.current = { startedAt: performance.mark('med3d:load-start').startTime, initialAssets: [...desired.current] };
-    const next = new AtlasAssetManager(catalog); manager.current = next;
+    const next = new AtlasAssetManager(catalog, undefined, 2, true); manager.current = next;
     const unsubscribe = next.subscribe(value => setSnapshot(previous => ({ ...value,
       resources: value.resources.length === previous.resources.length && value.resources.every((resource, index) => resource === previous.resources[index]) ? previous.resources : value.resources,
     })));
@@ -366,7 +367,7 @@ export default function AtlasScene(props: AtlasSceneProps) {
     </div>}
     {!contextLost && errors.length > 0 && <div role="alert" style={{ position: 'absolute', left: 16, top: 16, maxWidth: 'min(370px, calc(100% - 32px))', padding: '12px 14px', borderRadius: 10, fontSize: 12, color: '#65534c', background: '#fffaf5f5' }}>
       <strong>No se pudieron cargar {errors.length === 1 ? 'una región' : `${errors.length} regiones`}</strong>
-      <p style={{ lineHeight: 1.5, margin: '7px 0' }}>{errors[0].error}</p>
+      <p style={{ lineHeight: 1.5, margin: '7px 0' }}>Comprueba tu conexión e inténtalo de nuevo.</p>
       <button type="button" onClick={() => retry()} style={{ border: '1px solid #b0bfba', padding: '7px 12px', borderRadius: 7, background: 'white', color: '#356760', cursor: 'pointer' }}>Reintentar regiones pendientes</button>
     </div>}
   </div>;

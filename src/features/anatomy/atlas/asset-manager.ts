@@ -151,7 +151,7 @@ export function createAssetLoader(catalog: AnatomyCatalog): LoadAsset {
   };
 }
 
-/** Bounded, cancellable ownership. No retained decoded cache after a layer is disabled. */
+/** Bounded, cancellable ownership. Optional session retention reuses ready layers until disposal. */
 export class AtlasAssetManager {
   private entries = new Map<string, Entry>();
   private wanted: string[] = [];
@@ -159,7 +159,7 @@ export class AtlasAssetManager {
   private disposed = false;
   private listeners = new Set<(snapshot: AssetSnapshot) => void>();
   private assets: Map<string, AnatomyAsset>;
-  constructor(catalog: AnatomyCatalog, private load: LoadAsset = createAssetLoader(catalog), private concurrency = 2) {
+  constructor(catalog: AnatomyCatalog, private load: LoadAsset = createAssetLoader(catalog), private concurrency = 2, private retainReady = false) {
     this.assets = new Map(catalog.assets.map(asset => [asset.id, asset]));
     this.concurrency = Math.max(1, Math.min(2, concurrency));
   }
@@ -173,12 +173,12 @@ export class AtlasAssetManager {
     if (this.disposed) return;
     this.wanted = [...new Set(ids)].filter(id => this.assets.has(id));
     const wanted = new Set(this.wanted);
-    this.entries.forEach((entry, id) => { if (!wanted.has(id)) { entry.abort?.abort(); entry.resource?.dispose(); this.entries.delete(id); } });
+    this.entries.forEach((entry, id) => { if (!wanted.has(id) && !(this.retainReady && entry.resource)) { entry.abort?.abort(); entry.resource?.dispose(); this.entries.delete(id); } });
     this.wanted.forEach(id => { if (!this.entries.has(id)) this.entries.set(id, { asset: this.assets.get(id)!, status: { id, state: 'queued', progress: 0 } }); });
     this.emit(); this.pump();
   }
   retry(id?: string) {
-    this.entries.forEach(entry => { if ((!id || entry.asset.id === id) && entry.status.state === 'error') entry.status = { id: entry.asset.id, state: 'queued', progress: 0 }; });
+    this.entries.forEach(entry => { if (this.wanted.includes(entry.asset.id) && (!id || entry.asset.id === id) && entry.status.state === 'error') entry.status = { id: entry.asset.id, state: 'queued', progress: 0 }; });
     this.emit(); this.pump();
   }
   private pump() {

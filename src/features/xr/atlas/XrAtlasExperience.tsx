@@ -36,7 +36,7 @@ export default function XrAtlasExperience() {
     void manager.ensure('skeletal');
     return () => { unsubscribe(); manager.dispose(); if (owner.current === manager) owner.current = null; };
   }, []);
-  useEffect(() => { XR_ATLAS_SYSTEMS.forEach(({ id: system }) => { if (state.systemVisibility[system]) void owner.current?.ensure(system, state.optionalSystems[system]); }); }, [state.systemVisibility, state.optionalSystems]);
+  useEffect(() => { XR_ATLAS_SYSTEMS.forEach(({ id: system }) => { if (state.systemVisibility[system]) void owner.current?.ensure(system); else owner.current?.disable(system); }); }, [state.systemVisibility]);
   useEffect(() => {
     const escape = (event: KeyboardEvent) => { if (event.key === 'Escape' && !event.defaultPrevented) onSelect(null); };
     window.addEventListener('keydown', escape); return () => window.removeEventListener('keydown', escape);
@@ -70,7 +70,7 @@ export default function XrAtlasExperience() {
           <video ref={videoRef} autoPlay muted playsInline aria-label="Vista previa de cámara en espejo"/><span>Cámara · Vista espejo</span></div>
         <div className="xr-atlas-loading" data-xr-ui>{XR_ATLAS_SYSTEMS.map(({ id: system, label, name }) => {
           const load = assets.systems[system];
-          return load?.error ? <p role="alert" key={system}>{label}: {load.error} <button type="button" onClick={() => owner.current?.retry(system)}>Reintentar {label}</button></p>
+          return load?.error && state.systemVisibility[system] ? <p role="alert" key={system}>{label}: {load.error} <button type="button" onClick={() => owner.current?.retry(system)}>Reintentar {label}</button></p>
             : load?.pending && state.systemVisibility[system] ? <p role="status" key={system}>Cargando {name.toLowerCase()}…</p> : null;
         })}</div>
         <div className="xr-viewport-controls"><button type="button" data-xr-hand-control="reset-view" onClick={resetView}>Restablecer vista</button>
@@ -85,9 +85,6 @@ export default function XrAtlasExperience() {
               data-xr-hand-control="systems-scroll" data-xr-hand-kind="scroll-region">
             {XR_ATLAS_SYSTEMS.map(({ id: system, label }) => <div className="xr-atlas-layer" key={system}>
               <label><input type="checkbox" data-xr-hand-control={system + '-toggle'} checked={state.systemVisibility[system]} onChange={event => dispatch({ type: 'system', system, enabled: event.target.checked })}/>{label}</label>
-              {state.systemVisibility[system] && assets.catalog?.assets.some(asset => asset.systemId === system && asset.defaultEnabled === false) &&
-                <label><input type="checkbox" checked={!!state.optionalSystems[system]} aria-label={'Ampliación anatómica ' + label}
-                  onChange={event => dispatch({ type: 'optional', system, enabled: event.target.checked })}/>Ampliación anatómica</label>}
               {state.systemVisibility[system] && <label className="xr-atlas-range">Opacidad {label} <output>{Math.round(state.systemOpacity[system] * 100)}%</output>
                 <input type="range" data-xr-hand-control={system + '-opacity'} min="10" max="100" step="1" aria-label={'Opacidad ' + label} value={state.systemOpacity[system] * 100} onChange={event => dispatch({ type: 'opacity', system, value: Number(event.target.value) / 100 })}/></label>}
             </div>)}

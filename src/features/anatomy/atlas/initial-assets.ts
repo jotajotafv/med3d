@@ -1,9 +1,14 @@
-import type {AnatomyCatalog, SystemId} from './types';
+import type {AnatomyAsset, AnatomyCatalog, SystemId} from './types';
 
-/** Explicit module links may opt in; the regular first load keeps additions off. */
+/** Historical modules first; catalog flags are retained only as queue priority. */
+export function prioritizeAtlasAssets(assets: readonly AnatomyAsset[]): AnatomyAsset[] {
+  return [...assets.filter(asset => asset.defaultEnabled !== false), ...assets.filter(asset => asset.defaultEnabled === false)];
+}
+
+/** A system includes every approved module. Explicit regional links remain narrow. */
 export function initialAtlasAssets(catalog: AnatomyCatalog, systems: string[], modules?: string[], system?: SystemId): string[] {
-  return catalog.assets.filter(asset =>
-    (system ? asset.systemId===system : systems.includes(asset.systemId)) &&
-    (modules?.includes(asset.id) || (asset.defaultEnabled!==false && (asset.systemId==='skeletal'||!modules)))
-  ).map(asset=>asset.id);
+  return prioritizeAtlasAssets(catalog.assets.filter(asset =>
+    (system ? asset.systemId === system : systems.includes(asset.systemId)) &&
+    (system || !modules || modules.includes(asset.id) || (asset.systemId === 'skeletal' && asset.defaultEnabled !== false))
+  )).map(asset => asset.id);
 }

@@ -40,8 +40,7 @@ export default function SkeletalAtlas() {
   const [assetIds,setAssetIds] = useState<string[]>([]), [selected,setSelected] = useState<string|null>(null);
   const [hidden,setHidden] = useState<string[]>([]), [isolated,setIsolated] = useState<string|null>(null);
   const [contextIds,setContextIds] = useState<string[]>([]);
-  const rememberedAssets = useRef<Partial<Record<SystemId,string[]>>>({});
-  const initialSystems = useRef(new URLSearchParams(window.location.search).get('systems')?.split(',')||['skeletal','muscular','nervous','cardiovascular','respiratory','digestive','urinary','endocrine','lymphatic','reproductive']);
+  const initialSystems = useRef(new URLSearchParams(window.location.search).get('systems')?.split(',')||['skeletal']);
   // Optional regional entry point. Unknown IDs are ignored; the global catalog
   // remains searchable and selecting another region explicitly loads it.
   const initialModules = useRef(new URLSearchParams(window.location.search).get('modules')?.split(','));
@@ -108,10 +107,9 @@ export default function SkeletalAtlas() {
   function toggleSystem(systemId:SystemId) {
     const assets=catalog?.assets.filter(asset=>asset.systemId===systemId).map(asset=>asset.id)||[];
     const active=assetIds.filter(id=>assets.includes(id));
-    if(active.length)rememberedAssets.current[systemId]=active;
     const regionalDefaults=catalog?initialAssets(catalog,systemId):assets;
     const defaults=regionalDefaults.length?regionalDefaults:assets;
-    setAssetIds(value=>active.length?value.filter(id=>!assets.includes(id)):[...new Set([...value,...(rememberedAssets.current[systemId]||defaults)])]);
+    setAssetIds(value=>active.length?value.filter(id=>!assets.includes(id)):[...new Set([...value,...defaults])]);
   }
   function showContext() {
     if(!current||!index||!relatedContext.length)return;
@@ -129,7 +127,7 @@ export default function SkeletalAtlas() {
     request('reset');setPanel(null);
   }
   function reset() {
-    setSelected(null);setHidden([]);setIsolated(null);setContextIds([]);setOpacityBySystem({...initialOpacity});setExploded(0);setExplodeLevel('regions');setQuery('');rememberedAssets.current={};
+    setSelected(null);setHidden([]);setIsolated(null);setContextIds([]);setOpacityBySystem({...initialOpacity});setExploded(0);setExplodeLevel('regions');setQuery('');
     setAssetIds(catalog?initialAssets(catalog):[]);request('reset');
   }
   function selectByPointer(id:string|null) {setSelected(id);if(id&&index)setExpanded(value=>new Set([...value,...(index.ancestors.get(id)||[])]));}

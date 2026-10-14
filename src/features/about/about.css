@@ -8,8 +8,6 @@ body:has(.about-page) {
 }
 body:has(.about-page) .site-header { background: #050607f5; border-color: var(--border); }
 body:has(.about-page) .site-header-inner { max-width: 1800px; padding-inline: 32px; gap: 52px; }
-body:has(.about-page) .site-wordmark { font-size: 28px; letter-spacing: -1.3px; }
-body:has(.about-page) .brand-rule { display: none; }
 body:has(.about-page) .main-nav { gap: 32px; }
 body:has(.about-page) .main-nav>a { font-size: 13px; }
 body:has(.about-page) .main-nav>a[aria-current=page]::after { height: 1px; bottom: 13px; }
@@ -26,7 +24,6 @@ body:has(.about-page) .nav-atlas { color: #d4dadd; border-color: #ffffff30; font
 .about-hero { min-height: 690px; padding: 76px 0 28px; display: grid; grid-template-columns: minmax(0,1fr) 260px; gap: 48px 80px; align-items: center; }
 .about-hero h1 { font-size: clamp(44px, 5.3vw, 72px); font-weight: 450; line-height: 1.06; letter-spacing: -.05em; }
 .about-name { display: block; font-size: 25px; font-weight: 550; letter-spacing: -.04em; margin-bottom: 24px; }
-.about-name>span { color: #86bec8; font-weight: 400; }
 .about-hero .about-intro { font-size: 17px; max-width: 420px; margin-top: 26px; line-height: 1.7; }
 .about-atlas-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 30px; min-height: 48px; padding: 12px 19px; border: 1px solid #ffffff42; border-radius: 5px; color: #ecf0f2; font-size: 13px; transition: background .18s, border-color .18s; }
 .about-atlas-link:hover { background: #ffffff08; border-color: #86bec880; }
@@ -112,7 +109,6 @@ body:has(.about-page) .nav-atlas { color: #d4dadd; border-color: #ffffff30; font
 }
 @media (max-width: 760px) {
   body:has(.about-page) .site-header-inner { padding-inline: 20px; }
-  body:has(.about-page) .site-wordmark { font-size: 25px; }
   body:has(.about-page) .main-nav { background: #090b0d; border-color: var(--border); }
   body:has(.about-page) .main-nav>a { font-size: 14px; }
   .about-hero { grid-template-columns: 1fr; padding-top: 53px; gap: 40px; min-height: auto; }

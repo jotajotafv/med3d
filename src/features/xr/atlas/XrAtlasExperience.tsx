@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useReducer, useRef, useState } from 'react';
 import { Camera, Minus, Plus } from '@phosphor-icons/react';
+import BrandWordmark from '../../../components/BrandWordmark';
 import { GestureController, VERTICAL_PAN_KEY_STEP } from '../gestures';
 import { useManualControls } from '../useManualControls';
 import { useHandPointer } from '../useHandPointer';
@@ -52,9 +53,27 @@ export default function XrAtlasExperience() {
   return <main className="xr-page xr-atlas-page" ref={uiRootRef}>
     <span className="xr-hand-cursor" ref={cursorRef} hidden aria-hidden="true"/>
     {debugEnabled && <XrCalibrationDebug summary={calibration}/>}
-    <header className="xr-heading"><div><p className="xr-eyebrow">MED3D <span>/</span> ATLAS XR</p>
-      <h1>El cuerpo, <span>en tus manos.</span></h1><p className="xr-intro">Explora los once sistemas del atlas. Activa las capas que quieras estudiar.</p></div>
-      <p className="xr-atlas-note">Experiencia experimental · pantalla y cámara opcional.</p></header>
+    <header className="xr-heading">
+      <div className="xr-atlas-introduction">
+        <p className="xr-eyebrow xr-brand-label"><BrandWordmark/> <span>/</span> ATLAS XR</p>
+        <h1>El cuerpo, <span>en tus manos.</span></h1>
+        <p className="xr-intro">Explora los once sistemas del atlas. Activa las capas que quieras estudiar.</p>
+        <p className="xr-atlas-note">Experiencia experimental · pantalla y cámara opcional.</p>
+      </div>
+      <div className="xr-atlas-hands" data-xr-ui>
+        <div className="xr-atlas-hand-action"><p className="xr-eyebrow">CONTROL CON MANOS</p>
+          <button type="button" className="xr-primary-button" onClick={active ? stop : start}><Camera size={17}/>{active ? 'Desactivar control con manos' : 'Activar control con manos'}</button>
+          <p className="xr-privacy">La imagen de la cámara se procesa localmente en tu dispositivo. No se graba ni se envía.</p>
+        </div>
+        <div className="xr-atlas-hand-status">
+          <dl className="xr-tracking-status" aria-live="polite"><div><dt>Cámara</dt><dd>{{ off: 'Desactivada', requesting: 'Permiso pendiente', loading: 'Preparando', active: 'Activa', paused: 'En pausa', error: 'No disponible' }[status.camera]}</dd></div>
+            <div><dt>Manos</dt><dd>{status.hands} detectadas</dd></div><div><dt>Interacción</dt><dd>{{ idle: 'En espera', pointing: 'Apuntando', candidate: 'Preparando rotación', rotate: 'Rotar', scale: 'Escalar / desplazar' }[status.gesture]}</dd></div></dl>
+          {status.message && <p className="xr-status-message" role="status">{status.message}</p>}
+          {cameraOn && <button type="button" className="xr-preview-toggle" onClick={() => setShowCamera(value => !value)}>{showCamera ? 'Ocultar cámara' : 'Mostrar cámara'}</button>}
+        </div>
+        <p className="xr-atlas-guide">Apunta 1 segundo para seleccionar o activar controles. En sliders, espera el aro y mueve el índice horizontalmente; sal verticalmente para soltar. En el espacio entre sistemas, espera el aro y mueve el índice verticalmente para desplazar la lista; sal horizontalmente para soltar. Pinch y movimiento para rotar · dos pinches para escalar y subir/bajar el cuerpo.</p>
+      </div>
+    </header>
     <section className="xr-atlas-workspace" aria-label="Atlas XR de once sistemas">
       <div className="xr-viewport" {...manual} onKeyDown={event => {
         if (event.target === event.currentTarget && event.shiftKey && !event.altKey && !event.ctrlKey && !event.metaKey && ['ArrowUp', 'ArrowDown'].includes(event.key)) {
@@ -97,19 +116,6 @@ export default function XrAtlasExperience() {
             <button type="button" data-xr-hand-control="restore-atlas" onClick={() => dispatch({ type: 'restoreAtlas' })}>Restaurar atlas</button></div>
         </details>
       </aside>
-      <div className="xr-atlas-hands" data-xr-ui>
-        <div className="xr-atlas-hand-action"><p className="xr-eyebrow">CONTROL CON MANOS</p>
-          <button type="button" className="xr-primary-button" onClick={active ? stop : start}><Camera size={17}/>{active ? 'Desactivar control con manos' : 'Activar control con manos'}</button>
-          <p className="xr-privacy">La imagen de la cámara se procesa localmente en tu dispositivo. No se graba ni se envía.</p>
-        </div>
-        <div className="xr-atlas-hand-status">
-          <dl className="xr-tracking-status" aria-live="polite"><div><dt>Cámara</dt><dd>{{ off: 'Desactivada', requesting: 'Permiso pendiente', loading: 'Preparando', active: 'Activa', paused: 'En pausa', error: 'No disponible' }[status.camera]}</dd></div>
-            <div><dt>Manos</dt><dd>{status.hands} detectadas</dd></div><div><dt>Interacción</dt><dd>{{ idle: 'En espera', pointing: 'Apuntando', candidate: 'Preparando rotación', rotate: 'Rotar', scale: 'Escalar / desplazar' }[status.gesture]}</dd></div></dl>
-          {status.message && <p className="xr-status-message" role="status">{status.message}</p>}
-          {cameraOn && <button type="button" className="xr-preview-toggle" onClick={() => setShowCamera(value => !value)}>{showCamera ? 'Ocultar cámara' : 'Mostrar cámara'}</button>}
-        </div>
-        <p className="xr-atlas-guide">Apunta 1 segundo para seleccionar o activar controles. En sliders, espera el aro y mueve el índice horizontalmente; sal verticalmente para soltar. En el espacio entre sistemas, espera el aro y mueve el índice verticalmente para desplazar la lista; sal horizontalmente para soltar. Pinch y movimiento para rotar · dos pinches para escalar y subir/bajar el cuerpo.</p>
-      </div>
     </section>
     <p id="xr-atlas-help" className="xr-manual-help">Clic o toque: seleccionar · arrastra para rotar · rueda o dos dedos para ampliar · flechas y + / − · Shift + ↑/↓: subir/bajar cuerpo · 0: restablecer vista · Escape: deseleccionar.</p>
     <p className="xr-selection-announcement" role="status" aria-live="polite">{selected ? `${selected.name} seleccionado.` : 'Sin estructura seleccionada.'}</p>

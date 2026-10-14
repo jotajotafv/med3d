@@ -1,4 +1,5 @@
 import SiteLink from '../../components/SiteLink';
+import BrandWordmark from '../../components/BrandWordmark';
 import {ArrowRight, ArrowUpRight} from '@phosphor-icons/react';
 import AtlasOverview from './AtlasOverview';
 import './about.css';
@@ -35,7 +36,7 @@ export default function AboutPage() {
       <header className="about-hero">
         <div className="about-hero-copy">
           <p className="about-eyebrow">ACERCA DEL PROYECTO</p>
-          <h1><span className="about-name">MED<span>3D</span></span>Atlas anatómico<br/>interactivo.</h1>
+          <h1><span className="about-name"><BrandWordmark/></span>Atlas anatómico<br/>interactivo.</h1>
           <p className="about-intro">Una plataforma para explorar el cuerpo humano en tres dimensiones.</p>
           <SiteLink href="/anatomia/" className="about-atlas-link">Abrir atlas <ArrowRight size={19}/></SiteLink>
         </div>

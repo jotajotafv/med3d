@@ -9,8 +9,6 @@ body:has(.organ-explorer) {
 }
 body:has(.organ-explorer) .site-header { background: #050607f5; border-color: var(--border); }
 body:has(.organ-explorer) .site-header-inner { max-width: 1800px; padding-inline: 32px; gap: 52px; }
-body:has(.organ-explorer) .site-wordmark { font-size: 28px; letter-spacing: -1.3px; }
-body:has(.organ-explorer) .brand-rule { display: none; }
 body:has(.organ-explorer) .main-nav { gap: 32px; }
 body:has(.organ-explorer) .main-nav>a { font-size: 13px; }
 body:has(.organ-explorer) .main-nav>a[aria-current=page]::after { height: 1px; bottom: 13px; }
@@ -165,7 +163,6 @@ body:has(.organ-explorer) .nav-atlas { color: #d4dadd; border-color: #ffffff30; 
   .organ-explorer .atlas-interaction-hint span { font-size: 7px; }
   .organ-explorer .atlas-interaction-hint i { margin-inline: 2px; }
   body:has(.organ-explorer) .site-header-inner { padding-inline: 22px; }
-  body:has(.organ-explorer) .site-wordmark { font-size: 24px; }
   body:has(.organ-explorer) .main-nav { background: #080a0c; gap: 0; }
   body:has(.organ-explorer) .main-nav>a { font-size: 14px; }
 }

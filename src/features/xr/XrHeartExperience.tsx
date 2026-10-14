@@ -9,6 +9,7 @@ import { useManualControls } from './useManualControls';
 import XrEducationCard from './XrEducationCard';
 import XrCalibrationDebug from './XrCalibrationDebug';
 import type { HeartSelection, PickHandler, SelectionResult, SelectionRaycastApi } from './selection';
+import BrandWordmark from '../../components/BrandWordmark';
 import './xr.css';
 
 const supportLabel = (value: Support) => value === 'available' ? 'Disponible' : value === 'unknown' ? 'Sin confirmar' : 'No disponible';
@@ -60,7 +61,7 @@ export default function XrHeartExperience() {
   return <main className="xr-page">
     {debugEnabled && <XrCalibrationDebug summary={calibration}/>}
     <header className="xr-heading">
-      <div><p className="xr-eyebrow">MED3D <span>/</span> EXPERIENCIA INMERSIVA</p>
+      <div><p className="xr-eyebrow xr-brand-label"><BrandWordmark/> <span>/</span> EXPERIENCIA INMERSIVA</p>
         <h1>La anatomía,<br/><span>en tus manos.</span></h1>
         <p className="xr-intro">Utiliza la cámara de tu dispositivo para interactuar con un modelo anatómico mediante gestos.</p>
       </div>

@@ -10,8 +10,6 @@ body:has(.atlas-phase2) {
 }
 body:has(.atlas-phase2) .site-header { background: #050607f5; border-color: var(--border); }
 body:has(.atlas-phase2) .site-header-inner { max-width: 1800px; padding-inline: 32px; gap: 52px; }
-body:has(.atlas-phase2) .site-wordmark { font-size: 28px; letter-spacing: -1.3px; }
-body:has(.atlas-phase2) .brand-rule { display: none; }
 body:has(.atlas-phase2) .main-nav { gap: 32px; }
 body:has(.atlas-phase2) .main-nav>a { font-size: 13px; }
 body:has(.atlas-phase2) .main-nav>a[aria-current=page]::after { height: 1px; bottom: 13px; }
@@ -179,7 +177,6 @@ body:has(.atlas-phase2) .nav-atlas { color: #d4dadd; border-color: #ffffff30; fo
 }
 @media (max-width: 760px) {
   body:has(.atlas-phase2) .site-header-inner { padding-inline: 20px; }
-  body:has(.atlas-phase2) .site-wordmark { font-size: 25px; }
   body:has(.atlas-phase2) .main-nav { background: #090b0d; border-color: var(--border); }
   body:has(.atlas-phase2) .main-nav>a { font-size: 14px; }
 }

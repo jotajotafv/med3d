@@ -17,12 +17,12 @@ const images={};
 if(mode==='real')for(const [key,name]of [['pointing','pointing_up.jpg'],['fist','fist.jpg'],['thumb','thumb_up.jpg'],['two','right_hands.jpg']])images[key]='data:image/jpeg;base64,'+(await readFile('.cache/xr-gesture-acceptance/input/'+name)).toString('base64');
 // Full Chromium preserves the installed GPU path; headless_shell remains an explicit diagnostic override.
 const executablePath=process.env.XR_BROWSER_EXECUTABLE||chromium.executablePath();
-const browser=await chromium.launch({headless:!headed,executablePath,
+const browser=await chromium.launch({headless:!headed,ignoreDefaultArgs:['--hide-scrollbars'],executablePath,
   args:graphics==='swiftshader'?['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']:[]});
 const context=await browser.newContext({viewport:{width:Number(args.width||1366),height:1000},deviceScaleFactor:dpr,hasTouch:true});
 await context.addInitScript(installAcceptanceFixture,{mode,images});
 const page=await context.newPage();page.setDefaultTimeout(20000);page.setDefaultNavigationTimeout(120000);
-const report={executable:executablePath,date:new Date().toISOString(),mode,scenario,graphics,dpr,headed,section:args.section??'all',viewport:{width:Number(args.width||1366),height:1000},chrome:browser.version(),checks:[],errors:[],requests:[],captures:[]};
+const report={executable:executablePath,date:new Date().toISOString(),mode,scenario,graphics,dpr,headed,delegateOverride:args.delegate??null,allModules:args['all-modules']==='true',section:args.section??'all',viewport:{width:Number(args.width||1366),height:1000},chrome:browser.version(),checks:[],errors:[],requests:[],captures:[]};
 report.harnessHashes=Object.fromEntries(await Promise.all(['gesture-acceptance-browser-qa.mjs','gesture-acceptance-fixture.mjs','gesture-acceptance-scenarios.mjs','gesture-minimal-qa.tsx'].map(async name=>[name,createHash('sha256').update(await readFile('scripts/xr/'+name)).digest('hex')])));
 page.on('pageerror',e=>report.errors.push(e.message));
 page.on('response',r=>{if(r.url().includes('.wasm')||r.url().includes('hand_landmarker')||r.url().endsWith('.glb'))report.requests.push({url:r.url(),status:r.status()});});
@@ -30,7 +30,8 @@ await page.route('**/hand-tracking.worker.ts?*',async route=>{
   const response=await route.fetch(),original=await response.text();
   const needle='const result = detector.detectForVideo(message.bitmap, message.timestamp);';
   assert.ok(original.includes(needle),'Observe the actual production detectForVideo call');
-  const body=original.replace(needle,'const __qaStart=performance.now(); '+needle+' send({type:"qa-inference",sampleTime:message.timestamp,start:__qaStart,end:performance.now(),timeOrigin:performance.timeOrigin});');
+  let body=original.replace(needle,'const __qaStart=performance.now(); '+needle+' send({type:"qa-inference",sampleTime:message.timestamp,start:__qaStart,end:performance.now(),timeOrigin:performance.timeOrigin});');
+  if(args.delegate==='GPU'){assert.ok(body.includes('baseOptions: { modelAssetPath: modelUrl, delegate: "CPU" },'));body=body.replace('baseOptions: { modelAssetPath: modelUrl, delegate: "CPU" },','canvas: new OffscreenCanvas(1,1), baseOptions: { modelAssetPath: modelUrl, delegate: "GPU" },');}
   await route.fulfill({response,body});
 });
 if(scenario==='minimal')await page.route('**/gesture-acceptance-minimal',route=>route.fulfill({contentType:'text/html',body:`<!doctype html><html><head><meta charset="utf-8"><style>body{font:16px sans-serif;background:#111;color:white}button{padding:12px}</style></head><body><div id="root"></div><script type="module">import RefreshRuntime from '/med3d/@react-refresh';RefreshRuntime.injectIntoGlobalHook(window);window.$RefreshReg$=()=>{};window.$RefreshSig$=()=>(type)=>type;window.__vite_plugin_react_preamble_installed__=true;</script><script type="module" src="/med3d/scripts/xr/gesture-minimal-qa.tsx"></script></body></html>`}));
@@ -48,7 +49,7 @@ const at=point=>page.evaluate(point=>{
 const snapshot=()=>page.evaluate(()=>{const q=window.gestureQa;return {timeOrigin:q.timeOrigin,sent:q.sent,received:q.received,maxInFlight:q.maxInFlight,produced:q.produced,
   frames:q.frames,video:q.video,raf:q.raf,longTasks:q.longTasks,tracking:q.tracking,inference:q.inference,marks:q.marks,dwellEvents:q.dwellEvents??[],fired:q.fired??[],state:q.state,inputHands:q.hands,surface:q.surface,normalized:q.normalized,point:q.point,pose:q.pose?.()};});
 const summary=timeline=>{
-  const stats=a=>{a=[...a].sort((a,b)=>a-b);return {n:a.length,min:a[0]??null,p50:a[Math.floor(a.length*.5)]??null,p95:a[Math.floor(a.length*.95)]??null,max:a.at(-1)??null};};
+  const stats=a=>{a=[...a].sort((a,b)=>a-b);return {n:a.length,min:a[0]??null,p50:a[Math.floor(a.length*.5)]??null,p95:a[Math.floor(a.length*.95)]??null,p99:a[Math.floor(a.length*.99)]??null,max:a.at(-1)??null};};
   const frames=timeline.frames,valid=frames.filter(f=>f.hands>0),deltas=a=>a.slice(1).map((f,i)=>f.time-a[i].time);
   return {frames:frames.length,validHands:valid.length,maxInFlight:timeline.maxInFlight,receiveIntervalsMs:stats(deltas(frames)),validIntervalsMs:stats(deltas(valid)),sampleAgeMs:stats(frames.map(f=>f.time-f.sampleTime)),
     inferenceMs:stats(timeline.inference.map(f=>f.end-f.start)),bitmapMs:stats(timeline.video.filter(f=>f.kind==='bitmap').map(f=>f.end-f.start)),rafMs:stats(timeline.raf.map(f=>f.dt)),
@@ -59,10 +60,16 @@ const summary=timeline=>{
 };
 try{
   await page.goto(origin+(scenario==='minimal'?'/med3d/gesture-acceptance-minimal':'/med3d/experiencia-xr/?xrQa=1'));
-  if(scenario!=='minimal')await page.waitForFunction(()=>window.__med3dXrAtlas?.().meshes===205,null,{timeout:60000,polling:500});
+  if(scenario!=='minimal')await page.waitForFunction(()=>window.__med3dXrAtlas?.().meshes===207,null,{timeout:60000,polling:500});
+  if(report.allModules&&scenario!=='minimal'){
+    for(const id of ['skeletal','muscular','nervous','cardiovascular','respiratory','digestive','urinary','endocrine','lymphatic','reproductive','integumentary'])await page.locator('[data-xr-hand-control="'+id+'-toggle"]').evaluate(el=>{if(!el.checked)el.click();});
+    await page.waitForFunction(()=>{const s=window.__med3dXrAtlas();return s.modules.length===92&&s.meshes===1240;},null,{timeout:180000,polling:500});
+    await page.locator('[data-xr-hand-control="integumentary-toggle"]').evaluate(el=>el.click());
+  }
   await page.evaluate(observeAcceptanceControllers);
   await (scenario==='minimal'?page.locator('#qa-start'):page.getByRole('button',{name:'Activar control con manos',exact:true})).click();
   await page.waitForFunction(()=>document.querySelector('#qa-camera')?.textContent==='active'||document.querySelector('.xr-tracking-status')?.textContent.includes('Activa'),null,{timeout:45000,polling:200});
+  if(scenario!=='minimal')await page.locator('.xr-viewport').scrollIntoViewIfNeeded();
   const stableHand={id:'Left',u:Number(args.width||1366)<600?.25:.45,v:.45,ratio:.5,image:args.image||'pointing',size:280};
   await put([stableHand]);
   await waitTracking();
@@ -71,6 +78,7 @@ try{
   if(mode==='real'){assert.ok(measured.inference.length>0);assert.ok(report.requests.some(r=>r.url.endsWith('.wasm')&&r.status===200));assert.ok(report.requests.some(r=>r.url.endsWith('hand_landmarker.task')&&r.status===200));pass('actual MediaPipe Worker, WASM, task model and detectForVideo observed');}
   report.continuity={durationMs:end-start,validSamples:valid.length,losses:span.filter(f=>f.state!=='tracking').length,summary:summary({...measured,frames:measured.frames.filter(f=>f.time>=start&&f.time<=end),tracking:span,raf:measured.raf.filter(f=>f.time>=start&&f.time<=end),longTasks:measured.longTasks.filter(f=>f.time>=start&&f.time<=end),video:measured.video.filter(f=>(f.time??f.start)>=start&&(f.time??f.start)<=end),inference:measured.inference.filter(f=>f.sampleTime>=start&&f.sampleTime<=end)})};
   assert.ok(valid.length>=100,'At least 100 real-time hand samples in 15 s');assert.equal(report.continuity.losses,0,'No unexpected tracking loss during the stable interval');
+  assert.ok(report.continuity.summary.validIntervalsMs.max<=250,'No unintended sample gap above 250 ms');
   assert.ok(measured.maxInFlight<=1,'One frame in flight');pass('stable hand for 15 seconds',report.continuity);
   let imageAnchor;
   if(mode==='real'){

@@ -2,7 +2,8 @@
 export function installAcceptanceFixture(options) {
   const q = window.gestureQa = { options, timeOrigin:performance.timeOrigin, hands: [], frames: [], video: [], raf: [], longTasks: [], marks: [], tracking: [], inference: [],
     sent: 0, received: 0, inFlight: 0, maxInFlight: 0, produced: 0, lastFrame: null, pausedInput: false, plan: null, photo: null };
-  const keep = (array, row) => { array.push(row); if (array.length > 20000) array.shift(); };
+  const limit = Math.min(60000, Math.max(20000, options.maxRecords ?? 20000));
+  const keep = (array, row) => { array.push(row); if (array.length > limit) array.shift(); };
   q.mark = name => { const row={name,time:performance.now()}; q.marks.push(row); return row.time; };
   let priorRaf = 0;
   const raf = time => { if(priorRaf)keep(q.raf,{time,dt:time-priorRaf});priorRaf=time;requestAnimationFrame(raf); };requestAnimationFrame(raf);
@@ -16,7 +17,7 @@ export function installAcceptanceFixture(options) {
     q.received++;q.inFlight--;q.lastFrame=message.frame;
     const v=document.querySelector('video'),quality=v?.getVideoPlaybackQuality?.();
     keep(q.frames,{time:performance.now(),sampleTime:message.timestamp,hands:message.frame.landmarks.length,
-      visibility:document.visibilityState,readyState:v?.readyState,currentTime:v?.currentTime,paused:v?.paused,
+      visibility:document.visibilityState,focused:document.hasFocus(),readyState:v?.readyState,currentTime:v?.currentTime,paused:v?.paused,
       presented:quality?.totalVideoFrames,dropped:quality?.droppedVideoFrames});
   };
   const send = message => { if(message.type==='frame'){q.sent++;q.inFlight++;q.maxInFlight=Math.max(q.maxInFlight,q.inFlight);keep(q.video,{kind:'send',time:performance.now(),sampleTime:message.timestamp});} };
@@ -79,7 +80,7 @@ export async function observeAcceptanceControllers() {
   if(document.querySelector('.xr-scene')){const {XrAtlasPresentation}=await import(loaded('/med3d/src/features/xr/atlas/presentation.ts'));const pick=XrAtlasPresentation.prototype.pick;XrAtlasPresentation.prototype.pick=function(...args){q.probe=point=>pick.call(this,point,...args.slice(1));return pick.apply(this,args);};}
   const update=HandStability.prototype.update;
   HandStability.prototype.update=function(...args){const start=performance.now(),mode=update.apply(this,args);
-    q.state=this.trackingState;q.point=this.point;q.surface=this.surface;q.pose=()=>({...this.gestures.target,y:this.gestures.verticalOffset});
+    q.state=this.trackingState;q.point=this.point;q.surface=this.surface;q.primary=this.primary;q.pose=()=>({...this.gestures.target,y:this.gestures.verticalOffset});
     q.normalized=normalizeHands(q.lastFrame??{landmarks:[],handedness:[]},4/3);
     const row={time:start,end:performance.now(),sampleTime:args[1],hands:args[0].length,state:this.trackingState,settleSince:this.settleSince,lastValid:this.lastReliableTime,
       target:q.target??null,dwell:q.dwell??null,capture:q.readCapture?.()??null,mode};

@@ -76,7 +76,30 @@ async function responsive(xr){
  if(!xr&&await page.getByRole('button',{name:'Cerrar estructuras',exact:true}).isVisible())await page.getByRole('button',{name:'Cerrar estructuras',exact:true}).click();
 }
 try{
- if(process.argv.includes('--catalog-retry-only')){
+ if(process.argv.includes('--tracking-smoke')){
+  await page.goto(origin+'/med3d/anatomia/?qa=1');await atlasCount(9);await atlasLayers();
+  await atlasToggle('muscular').check();await atlasCount(42);await atlasToggle('nervous').check();await atlasCount(57);
+  const requests=report.requests.length;await atlasToggle('muscular').uncheck();await atlasCount(24);
+  await atlasToggle('muscular').check();await atlasCount(57);assert.equal(report.requests.length,requests);
+  const candidate=catalogs.muscular.nodes.find(n=>n.kind==='structure'&&n.educationId&&n.assetIds.some(id=>id.includes('completion-hip-right')));assert.ok(candidate);
+  await choose(candidate.id);assert.ok(await page.locator('.atlas-education').isVisible());await cleanText();await shot('atlas-tracking-smoke');
+  pass('Atlas smoke: skeletal, muscular, nervous, search, added structure selection, OFF/ON reuse');
+  await page.goto(origin+'/med3d/experiencia-xr/?xrQa=1');await xrCount(9);
+  for(const id of ids)await control(id+'-toggle').check();await xrCount(92);assert.equal((await read(true)).meshes,1240);
+  assert.equal(await page.locator('.xr-atlas-layer input[type=checkbox]').count(),11);await cleanText();
+  await setSlider(control('muscular-opacity'),50);await wait(()=>window.__med3dXrAtlas().parts.filter(p=>p.system==='muscular').every(p=>p.opacity===.5));
+  await setSlider(control('explosion'),50);assert.ok((await read(true)).parts.some(p=>p.offset.some(v=>v!==0)));
+  await control('restore-atlas').click();await wait(()=>window.__med3dXrAtlas().visibleMeshes===207);assert.equal((await read(true)).modules.length,92);
+  await control('skeletal-toggle').uncheck();await control('muscular-toggle').check();
+  const newIds=new Set(catalogs.muscular.nodes.filter(n=>n.educationId&&n.assetIds.some(id=>assets('muscular').find(a=>a.id===id)?.defaultEnabled===false)).map(n=>n.id));
+  let hit;for(const id of newIds){try{const points=await pointFor(true,id);for(const p of points){await page.mouse.click(p.x,p.y);const chosen=(await read(true)).state.selectedStructure;if(newIds.has(chosen)){hit=chosen;break;}}}catch{}if(hit)break;}
+  assert.ok(hit,'real raycast selects an added muscle');assert.ok(await page.locator('#xr-education-title').isVisible());
+  await control('isolate').click();await wait(id=>window.__med3dXrAtlas().parts.filter(p=>p.visible).every(p=>p.id===id),hit);
+  await control('hide').click();await wait(id=>window.__med3dXrAtlas().parts.filter(p=>p.id===id).every(p=>!p.visible),hit);
+  await control('restore-hidden').click();await control('restore-atlas').click();await control('reset-view').click();
+  await shot('xr-tracking-smoke');pass('XR smoke: 11 systems, 92/1240, opacity, selection/card, isolate, hide, restore, explosion');
+  await page.goto(origin+'/med3d/');assert.equal(await page.evaluate(()=>typeof window.__med3dXrAtlas),'undefined');pass('XR route cleanup');
+ }else if(process.argv.includes('--catalog-retry-only')){
   let fail=true;
   await page.route('**/models/anatomy/skeletal/catalog.json',route=>fail?route.fulfill({status:503,body:'QA catalog failure'}):route.continue());
   await page.goto(origin+'/med3d/experiencia-xr/?xrQa=1');await page.getByRole('alert').waitFor();

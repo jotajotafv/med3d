@@ -13,8 +13,8 @@ export async function runAtlasGestures(ctx) {
   const hand=(h,closed=false)=>mode==='real'?{...h,angle:h.u>.94?-Math.PI/2:h.u<.06?Math.PI/2:h.v>.77?Math.PI:0,ratio:closed?.2:.5,image:closed?'fist':'pointing',size:190,anchor:closed?{x:.60266,y:.3639}:imageAnchor}: {...h,ratio:closed?.2:.5};
   const aim=async(point)=>{await release();const h=hand(await at(point));await put([h]);await waitTracking();return h;};
   async function continuity(start,name){
-    const data=await page.evaluate(start=>{const q=window.gestureQa;return {start,end:performance.now(),frames:q.frames.filter(f=>f.time>=start).length,losses:q.tracking.filter(f=>f.time>=start&&f.state!=='tracking').map(f=>({time:f.time,state:f.state,hands:f.hands}))};},start);
-    (report.gestureSpans??=[]).push({name,...data});assert.equal(data.losses.length,0,name+' completes without unexpected tracking loss');
+    const data=await page.evaluate(start=>{const q=window.gestureQa,end=performance.now(),valid=q.frames.filter(f=>f.time>=start&&f.hands>0),times=[start,...valid.map(f=>f.time),end];return {start,end,frames:q.frames.filter(f=>f.time>=start).length,maxSampleGapMs:Math.max(...times.slice(1).map((t,i)=>t-times[i])),losses:q.tracking.filter(f=>f.time>=start&&f.state!=='tracking').map(f=>({time:f.time,state:f.state,hands:f.hands}))};},start);
+    (report.gestureSpans??=[]).push({name,...data});assert.equal(data.losses.length,0,name+' completes without unexpected tracking loss');assert.ok(data.maxSampleGapMs<=250,name+' has no unintended sample gap above 250 ms');
   }
   const glide=async(from,to,duration=1200)=>{
     const start=await mark('motion-start');
@@ -34,7 +34,7 @@ export async function runAtlasGestures(ctx) {
     assert.ok(Number.isFinite(start)&&f.sampleTime-start>=1000,'No dwell fire before 1000 ms of the original sample clock');
     await continuity(started,'dwell-'+id);return {h,b};
   }
-  if(section!=='card'){
+  if(section!=='card'&&section!=='ui'){
   // One-shot UI dwell, then leaving/re-entering the same real control rearms it.
   await dwell('layers-panel');await samples();
   const first=await page.evaluate(()=>window.gestureQa.fired.filter(f=>f.target?.id==='layers-panel').length);
@@ -61,7 +61,17 @@ export async function runAtlasGestures(ctx) {
   await glide([one],[{...one,u:one.u+.11*spanFactor}]);p=await pose();assert.ok(p.rotationY>beforeRotate.rotationY+.2);assert.equal(await selected(),0);
   pass('one-pinch rotation without selection',{pose:p});await shot('06-rotate');
   await reset();hs=await anchorPair();const scaleBase=await pose();to=pair(.53,.40,true);await glide(hs,to);p=await pose();assert.ok(p.scale>1.25);near(p.y,scaleBase.y,.06);
-  const retained=p;await put([to[0]]);await samples();near((await pose()).scale,retained.scale);await put(to);await samples();near((await pose()).scale,retained.scale);
+  // The real detector may acquire either photo as primary. Remove only its secondary.
+  // Observe the controller; change camera input only, never landmarks or controller state.
+  const primaryPhoto=await page.evaluate(hands=>{
+    const p=window.gestureQa.primary;if(!p)throw Error('Primary hand observation missing');
+    const distance=h=>Math.hypot(h.u-(p.indexX??p.x),h.v-(p.indexY??p.y));
+    return hands.reduce((a,b)=>distance(a)<=distance(b)?a:b);
+  },to);
+  report.secondaryLossInput={keptPhoto:primaryPhoto,removedPhotos:to.filter(h=>h.id!==primaryPhoto.id)};
+  const retained=p,secondaryStart=await mark('intentional-secondary-loss');
+  await put([primaryPhoto]);await samples();near((await pose()).scale,retained.scale);await put(to);await samples();near((await pose()).scale,retained.scale);
+  await continuity(secondaryStart,'secondary-loss-and-reanchor');
   hs=to;to=pair(.43,.46,true);await glide(hs,to);p=await pose();assert.ok(p.y>.25&&p.scale>retained.scale+.08);assert.ok(p.scale<=1.8&&p.scale>=.55);
   pass('scale, simultaneous pan/scale, secondary loss and reanchor, existing bounds',{pose:p});await shot('07-scale');
   hs=await anchorPair(.53,.28);await glide(hs,pair(.53,.44,true));near((await pose()).scale,1.8,.001);
@@ -108,19 +118,25 @@ export async function runAtlasGestures(ctx) {
     return {h,point,b:await control(id).boundingBox()};
   }
   async function scrollToEnd(id) {
-    for(let i=0;i<10;i++){
-      const s=await scrollState(id);if(s.top>=s.max-2)return;
+    // Each stroke must advance >10 px below. Bound attempts by remaining content,
+    // so a taller mobile card is not prematurely failed after a fixed ten strokes.
+    const initial=await scrollState(id),limit=Math.ceil((initial.max-initial.top)/10)+1;
+    const run={id,start:initial,limit,strokes:0};(report.scrollRuns??=[]).push(run);
+    for(let i=0;i<limit;i++){
+      const s=await scrollState(id);if(s.top>=s.max-2){run.final=s;return;}
       const a=await captureScroll(id),before=await pose(),sel=await selected();
       const end=hand(await at({x:a.point.x,y:Math.max(a.b.y+12,a.point.y-190)}));
       await glide([a.h],[end]);assert.deepEqual(await pose(),before);assert.equal(await selected(),sel);
       await release();assert.ok((await scrollState(id)).top>s.top+10,'scroll advances');
+      run.strokes++;
     }
+    run.final=await scrollState(id);
     assert.ok((await scrollState(id)).top>=(await scrollState(id)).max-2,'scroll reaches the end');
   }
   if(section!=='card'){
   await scrollToEnd('systems-scroll');pass('system scroll owns gesture, reaches lower systems without manipulating anatomy');await shot('02-system-scroll');
   await dwell('integumentary-toggle');await release();await wait(()=>document.querySelector('[data-xr-hand-control=integumentary-toggle]').checked);
-  await wait(()=>window.__med3dXrAtlas().modules.length>=8,null,45000);
+  await wait(expected=>window.__med3dXrAtlas().modules.length===expected,report.allModules?92:11,45000);
   await scrollToEnd('systems-scroll');
   const skin=await dwell('integumentary-opacity');const target=hand(await at({x:skin.b.x+skin.b.width/3,y:skin.b.y+skin.b.height/2}));
   const beforeSlider=await pose();await glide([skin.h],[target]);assert.deepEqual(await pose(),beforeSlider);
@@ -168,9 +184,10 @@ export async function runLoadMatrix({page,mode,report,pass,mark,put,snapshot,sum
   }
   // A is the separately launched minimal page, without this scene or modules.
   await control('layers-panel').click();await measure('B-skeletal');await control('layers-panel').click();await measure('C-skeletal-panel');
-  await layers(ids.slice(0,4));await page.waitForFunction(()=>window.__med3dXrAtlas().modules.length===39,null,{timeout:90000,polling:1000});await measure('D-several');
-  await layers(ids);await page.waitForFunction(()=>window.__med3dXrAtlas().modules.length===52,null,{timeout:120000,polling:1000});await measure('E-historical-11');
-  await stop();for(const c of await page.getByRole('checkbox',{name:/Ampliación anatómica/}).all())await c.check();
+  await layers(ids.slice(0,3));await page.waitForFunction(()=>window.__med3dXrAtlas().modules.length===57,null,{timeout:90000,polling:1000});await measure('D-several');
+  await layers(ids);await page.waitForFunction(()=>window.__med3dXrAtlas().modules.length===92,null,{timeout:120000,polling:1000});await measure('E-unified-11');
+  await stop();assert.equal(await page.getByRole('checkbox',{name:/Ampliación anatómica/}).count(),0,'Unified system toggles have no expansion controls');
+  assert.equal(await page.evaluate(()=>window.__med3dXrAtlas().meshes),1240,'All 1240 anatomical meshes remain available');
   await page.waitForFunction(()=>window.__med3dXrAtlas().modules.length===92,null,{timeout:120000,polling:1000});
   await control('integumentary-toggle').uncheck();await measure('F-92-modules');await control('integumentary-toggle').check();await measure('G-with-skin');await measure('H-no-screenshots');await measure('I-with-screenshots',true);
   report.loadStages=stages;assert.ok(stages.filter(s=>s.role==='acceptance-continuity').every(s=>s.status==='PASS'),'All acceptance load stages preserve stable tracking');pass('progressive load matrix, 11 systems/92 modules; screenshot contrast recorded separately');

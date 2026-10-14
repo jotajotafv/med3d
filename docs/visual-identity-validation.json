@@ -1,0 +1,2579 @@
+{
+  "releaseCommit": "aded3e51f31db49af688b5184f6c8aace68810ab",
+  "baseCommit": "dbd83c9489432a8a1c532c8de4c6be8ada0062ea",
+  "previousPublicCommit": "1be9dd644dea33cc008fe47889e4608bd3fab8f6",
+  "localChecks": {
+    "typecheck": "pass",
+    "xrTests": {
+      "pass": 193,
+      "fail": 0
+    },
+    "verifyAnatomy": "pass",
+    "anatomyCompletion": "pass",
+    "build": "pass",
+    "diffCheck": "pass",
+    "brandQa": {
+      "origin": "http://127.0.0.1:5184/med3d/",
+      "results": [
+        {
+          "kind": "route",
+          "name": "home",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 63.484375,
+            "y": 28.5,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 105,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "anatomy",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 32,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 89,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "about",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 32,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 52,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "xr",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 32,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 84,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "heart",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 32,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 120,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "lungs",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 32,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 137,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "brain",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 32,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 123,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "home",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 36,
+            "y": 28.5,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 85,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "anatomy",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 113,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "about",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 52,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "xr",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 86,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "heart",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 138,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "lungs",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 132,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "brain",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 128,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "home",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 36,
+            "y": 28.5,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 80,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "anatomy",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 118,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "about",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 51,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "xr",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 86,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "heart",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 134,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "lungs",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 134,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "brain",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 124,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "home",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 36,
+            "y": 28.5,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 83,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "anatomy",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 118,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "about",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 51,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "xr",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 84,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "heart",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 22,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 127,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "lungs",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 22,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 135,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "brain",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 22,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 100,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "home",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 22,
+            "y": 24,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 78,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "anatomy",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 20,
+            "y": 20.5,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 191,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "about",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 20,
+            "y": 20.5,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 52,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "xr",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 20,
+            "y": 20.5,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 87,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "heart",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 22,
+            "y": 20.5,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 134,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "lungs",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 22,
+            "y": 20.5,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 133,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "brain",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 22,
+            "y": 20.5,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 127,
+            "bad": []
+          }
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "home",
+          "width": 1366,
+          "count": 87,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "anatomy",
+          "width": 1366,
+          "count": 93,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "about",
+          "width": 1366,
+          "count": 78,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "xr",
+          "width": 1366,
+          "count": 99,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "home",
+          "width": 390,
+          "count": 89,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "anatomy",
+          "width": 390,
+          "count": 92,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "about",
+          "width": 390,
+          "count": 76,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "xr",
+          "width": 390,
+          "count": 87,
+          "bad": []
+        }
+      ],
+      "errors": [],
+      "httpErrors": []
+    }
+  },
+  "scope": {
+    "modelsChanged": false,
+    "catalogsChanged": false,
+    "newDependencies": false,
+    "trackingLogicChanged": false
+  },
+  "publication": {
+    "id": 38649767219,
+    "sha": "aded3e51f31db49af688b5184f6c8aace68810ab",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/jotajotafv/med3d/actions/runs/38649767219",
+    "updatedAt": "2026-10-14T22:46:29Z",
+    "jobs": [
+      {
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v6",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run npm run build",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run npm run typecheck",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run npm run verify:anatomy",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/upload-pages-artifact@v4",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v6",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/configure-pages@v5",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Publicar",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ],
+    "site": "https://jotajotafv.github.io/med3d/",
+    "publicQa": {
+      "origin": "https://jotajotafv.github.io/med3d/",
+      "results": [
+        {
+          "kind": "route",
+          "name": "home",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 63.484375,
+            "y": 28.5,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 167,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "anatomy",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 32,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 179,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "about",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 32,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 53,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "xr",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 32,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 88,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "heart",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 32,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 114,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "lungs",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 32,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 136,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "brain",
+          "width": 1366,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 32,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 134,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "home",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 36,
+            "y": 28.5,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 84,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "anatomy",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 188,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "about",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 51,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "xr",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 87,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "heart",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 121,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "lungs",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 117,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "brain",
+          "width": 1050,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 125,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "home",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 36,
+            "y": 28.5,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 98,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "anatomy",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 189,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "about",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 52,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "xr",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 87,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "heart",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 134,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "lungs",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 119,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "brain",
+          "width": 900,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 132,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "home",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 36,
+            "y": 28.5,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 92,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "anatomy",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 187,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "about",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 51,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "xr",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 24,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 91,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "heart",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 22,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 125,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "lungs",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 22,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 135,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "brain",
+          "width": 768,
+          "overflow": false,
+          "mark": {
+            "width": 89.078125,
+            "height": 27,
+            "x": 22,
+            "y": 25,
+            "text": "MED3D",
+            "size": "27px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.4px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 133,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "home",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 22,
+            "y": 24,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 94,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "anatomy",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 20,
+            "y": 20.5,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 197,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "about",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 20,
+            "y": 20.5,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 51,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "xr",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 20,
+            "y": 20.5,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 92,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "heart",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 22,
+            "y": 20.5,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 197,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "lungs",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 22,
+            "y": 20.5,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 140,
+            "bad": []
+          }
+        },
+        {
+          "kind": "route",
+          "name": "brain",
+          "width": 390,
+          "overflow": false,
+          "mark": {
+            "width": 79.1875,
+            "height": 24,
+            "x": 22,
+            "y": 20.5,
+            "text": "MED3D",
+            "size": "24px",
+            "font": "\"Geist Variable\", Arial, sans-serif",
+            "spacing": "-1.24445px",
+            "parts": [
+              {
+                "color": "rgb(245, 245, 245)",
+                "weight": "620"
+              },
+              {
+                "color": "rgb(150, 150, 150)",
+                "weight": "420"
+              }
+            ]
+          },
+          "aligned": true,
+          "footer": true,
+          "frames": {
+            "count": 137,
+            "bad": []
+          }
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "home",
+          "width": 1366,
+          "count": 80,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "anatomy",
+          "width": 1366,
+          "count": 87,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "about",
+          "width": 1366,
+          "count": 70,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "xr",
+          "width": 1366,
+          "count": 86,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "home",
+          "width": 390,
+          "count": 82,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "anatomy",
+          "width": 390,
+          "count": 89,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "about",
+          "width": 390,
+          "count": 79,
+          "bad": []
+        },
+        {
+          "kind": "delayed-first-paint",
+          "name": "xr",
+          "width": 390,
+          "count": 87,
+          "bad": []
+        }
+      ],
+      "errors": [],
+      "httpErrors": []
+    },
+    "brandAssets": [
+      {
+        "file": "favicon.svg",
+        "bytes": 1552,
+        "sha256": "4e48d883d37217725f1ed8d6c076cbc44dc30b513236d4c5431ab810578a83f6",
+        "match": true
+      },
+      {
+        "file": "favicon.ico",
+        "bytes": 1942,
+        "sha256": "31cac88a2d5ea8588e6fb4f05b01afcf7bdaae77f8dadff1ba3e26ce64ebebf2",
+        "match": true
+      },
+      {
+        "file": "favicon-16.png",
+        "bytes": 294,
+        "sha256": "89c1750564a6ac4e1a56f6c287d609c09391b0fb33d288c573926ed023f2df60",
+        "match": true
+      },
+      {
+        "file": "favicon-32.png",
+        "bytes": 541,
+        "sha256": "e693ef2ae138e8e358a12d767e60e260e429f1f2a5dcc536c4d2049acfb113d8",
+        "match": true
+      },
+      {
+        "file": "apple-touch-icon.png",
+        "bytes": 2758,
+        "sha256": "459b6884c4eb5544c02d84107ed7b229de4d6b450fba01f2e61269ec799d36a1",
+        "match": true
+      },
+      {
+        "file": "icon-192.png",
+        "bytes": 2950,
+        "sha256": "7d532bc2c222dccf985c8d12a2acdf9fddbffed636411a0338ea2ac8aae3cc52",
+        "match": true
+      },
+      {
+        "file": "icon-512.png",
+        "bytes": 8651,
+        "sha256": "50619e416794385cbf018cafa53fb9291ec54111473b319b6457d7d6954241b7",
+        "match": true
+      },
+      {
+        "file": "icon-maskable.png",
+        "bytes": 8651,
+        "sha256": "50619e416794385cbf018cafa53fb9291ec54111473b319b6457d7d6954241b7",
+        "match": true
+      },
+      {
+        "file": "site.webmanifest",
+        "bytes": 563,
+        "sha256": "357c3f6a5d9eab4ee00d1cb25799f1cbe84515a41c565449d75b95f74bb6cf1b",
+        "match": true
+      },
+      {
+        "file": "assets/og.webp",
+        "bytes": 20368,
+        "sha256": "81738dc2bcf090de00d599df016041bc3cea00cb51a910c71d5742221cb8088a",
+        "match": true
+      },
+      {
+        "file": "assets/og-wide.webp",
+        "bytes": 19790,
+        "sha256": "77e7819c42e20c1208db656c21a95cbf15b573bd392a8cf073a532e1f0b0684e",
+        "match": true
+      },
+      {
+        "file": "assets/cover.webp",
+        "bytes": 20368,
+        "sha256": "3fdec6c804f92ec38884c839f36d30bccf2081c86dded5fc195530605c1248ef",
+        "match": true
+      }
+    ],
+    "xrLoadedSelection": [
+      {
+        "width": 1366,
+        "meshes": 207,
+        "modules": 9,
+        "selected": "Clavícula izquierda",
+        "canvasPreserved": true
+      },
+      {
+        "width": 390,
+        "meshes": 207,
+        "modules": 9,
+        "selected": "Clavícula izquierda",
+        "canvasPreserved": true
+      }
+    ],
+    "pushRecovery": "Initial HTTP 408; successful retry with per-command HTTP/1.1 and postBuffer=157286400; no force push or persistent config change."
+  }
+}

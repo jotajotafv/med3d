@@ -1,6 +1,6 @@
 # MED3D
 
-Plataforma educativa en español centrada en anatomía 3D interactiva. Incluye Inicio, el atlas corporal, Acerca del proyecto y exploradores independientes de corazón, pulmones y encéfalo. Procedimientos y Primeros Auxilios se conservan en la historia del proyecto; sus antiguas URLs redirigen al atlas.
+Plataforma educativa en español centrada en anatomía 3D interactiva. Incluye Inicio, el atlas corporal, Acerca del proyecto, Experiencia XR y exploradores independientes de corazón, pulmones y encéfalo. Procedimientos y Primeros Auxilios se conservan en la historia del proyecto; sus antiguas URLs redirigen al atlas.
 
 ## Desarrollo
 
@@ -18,7 +18,7 @@ npm run build
 npm run typecheck
 ```
 
-`dist/` contiene la web estática: tres páginas públicas y 15 redirecciones de compatibilidad para enlaces antiguos.
+`dist/` contiene la web estática: cuatro páginas públicas y 15 redirecciones de compatibilidad para enlaces antiguos.
 
 En este Windows, si Application Control bloquea el binario nativo de Rollup, el adaptador local existente permite ejecutar Vite sin modificar las dependencias del producto:
 
@@ -72,3 +72,7 @@ El piloto muscular utiliza el mismo paquete BodyParts3D 4.0 OBJ99 / DBCLS, bajo 
 Además se conservan tres órganos y una envolvente de piel, 355 mallas anatómicas, 23 fichas explicativas curadas. Las dos escenas esquemáticas históricas de RCP de adultos y medición de presión arterial permanecen en Git y en las ramas anteriores. Material educativo sin validación clínica, no sustituye formación práctica ni atención sanitaria.
 
 Modelos HRA / HuBMAP bajo CC BY 4.0. Consulta `docs/model-licenses.md` y `public/models/LICENSE.txt` para fuentes, licencias y transformaciones. Las ilustraciones fueron creadas para MED3D con Higgsfield.
+
+## Identidad visual y cierre de publicación
+
+El wordmark de Inicio es la referencia compartida del sitio. Consulta [el cierre visual y de publicación](docs/visual-identity-release.md) para conocer el componente de marca, los recursos gráficos, las validaciones, el despliegue y los pendientes heredados. La evidencia resumida está en [visual-identity-validation.json](docs/visual-identity-validation.json).

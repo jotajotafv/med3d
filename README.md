@@ -76,3 +76,7 @@ Modelos HRA / HuBMAP bajo CC BY 4.0. Consulta `docs/model-licenses.md` y `public
 ## Identidad visual y cierre de publicación
 
 El wordmark de Inicio es la referencia compartida del sitio. Consulta [el cierre visual y de publicación](docs/visual-identity-release.md) para conocer el componente de marca, los recursos gráficos, las validaciones, el despliegue y los pendientes heredados. La evidencia resumida está en [visual-identity-validation.json](docs/visual-identity-validation.json).
+
+## Cierre de la Práctica 1
+
+Los efectos temporales FilmPass y GlitchPass se retiraron mediante `git revert` el 4 de noviembre de 2026. El atlas recuperó su funcionamiento original y la publicación en GitHub Pages fue verificada. Consulta el [informe de reversión](docs/practica1-reversion.md) y su [resumen de validación](docs/practica1-reversion-validation.json) para ver los archivos afectados, los SHA, las pruebas y el despliegue. Las ramas de respaldo y de la práctica se conservan para consulta histórica.

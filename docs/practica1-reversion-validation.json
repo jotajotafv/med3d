@@ -1,0 +1,59 @@
+{
+  "validatedOn": "2026-11-04",
+  "timezone": "America/La_Paz",
+  "repository": "jotajotafv/med3d",
+  "originalSha": "cac6e024b454c73e5623b99da7a7455abc1e3f9a",
+  "revertedSha": "465ad11c6759d5fef943d2f3dc6fc57ebbb0e144",
+  "revertSha": "7c671103206a6ce3b2dad2f05f74989b0368b5f9",
+  "originalAndRevertedTree": "981b0f5f075833b513eb57f6f3a4f13f4bf2f39c",
+  "method": "git revert --no-edit",
+  "conflicts": false,
+  "subsequentCommitsBeforeRevert": 0,
+  "retainedBranches": ["backup/practica1-before", "practica1-film-glitch"],
+  "checks": {
+    "typecheck": "passed",
+    "build": "passed",
+    "verifyAnatomy": "passed",
+    "testXr": { "passed": 193, "failed": 0, "skipped": 0, "cancelled": 0 },
+    "gitDiffCheck": "passed",
+    "revertTreeEqualsOriginal": true
+  },
+  "browser": {
+    "engine": "Chrome headless",
+    "environments": ["local production build", "public GitHub Pages after deployment"],
+    "viewports": [
+      { "width": 1366, "height": 960, "deviceScaleFactor": 1, "publicSelectedId": "bp3d:FMA8364" },
+      { "width": 390, "height": 960, "deviceScaleFactor": 2, "publicSelectedId": "bp3d:FMA8066" }
+    ],
+    "canvasMaxDpr": 1.5,
+    "initialVisibleMeshes": 207,
+    "singleCanvas": true,
+    "panelAbsentWithAndWithoutPracticeParameter": true,
+    "practiceShadersCompiled": 0,
+    "idleObservationMs": 800,
+    "idleDrawCalls": 0,
+    "identicalCanvasPixelsWithAndWithoutPracticeParameter": true,
+    "selection": "passed",
+    "rotation": "passed",
+    "zoom": "passed",
+    "horizontalOverflow": false,
+    "javascriptOrConsoleErrors": 0,
+    "httpErrors": 0,
+    "screenshotsReviewed": true
+  },
+  "deployment": {
+    "workflow": ".github/workflows/deploy-pages.yml",
+    "runId": 41881658940,
+    "url": "https://github.com/jotajotafv/med3d/actions/runs/41881658940",
+    "headSha": "7c671103206a6ce3b2dad2f05f74989b0368b5f9",
+    "build": "success",
+    "deploy": "success",
+    "publicUrl": "https://jotajotafv.github.io/med3d/anatomia/",
+    "legacyPracticeUrl": "https://jotajotafv.github.io/med3d/anatomia/?practica1=1",
+    "publicBrowserVerification": "passed"
+  },
+  "existingWarnings": ["Bundle larger than 500 kB", "THREE.Clock deprecated"],
+  "limitations": ["Mobile viewport/DPR emulation, not a physical phone", "Automated XR tests, not physical XR or camera validation"],
+  "localEvidenceDirectory": ".cache/practica1-revert/",
+  "scope": "Results belong to the revert commit; this documentation is added afterwards without application code changes."
+}

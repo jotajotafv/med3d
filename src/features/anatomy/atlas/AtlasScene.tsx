@@ -3,8 +3,6 @@ import { Canvas, useFrame, useThree, type ThreeEvent } from '@react-three/fiber'
 import { OrbitControls, GizmoHelper, GizmoViewport } from '@react-three/drei';
 import * as THREE from 'three';
 import SceneBoundary from '../SceneBoundary';
-import Practica1PostFX, { PRACTICA1_DEFAULTS } from './Practica1PostFX';
-import Practica1Panel from './Practica1Panel';
 import { prioritizeAtlasAssets } from './initial-assets';
 import { AtlasAssetManager, type AssetSnapshot, type AtlasPart, type AtlasResource } from './asset-manager';
 import { createExplosionOffsets, explosionTarget } from './explosion';
@@ -332,11 +330,6 @@ function SceneInspection({resources}:{resources:AtlasResource[]}) {
 }
 
 export default function AtlasScene(props: AtlasSceneProps) {
-  const [practica1] = useState(() => typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('practica1') === '1');
-  const [practiceSettings, setPracticeSettings] = useState({ ...PRACTICA1_DEFAULTS });
-  const reducedMotion = useReducedMotionPreference();
-  const postFXActive = practica1 && !reducedMotion && (practiceSettings.film || practiceSettings.glitch);
-  useEffect(() => { if (reducedMotion) setPracticeSettings({ ...PRACTICA1_DEFAULTS }); }, [reducedMotion]);
   const [reset, setReset] = useState(0), [contextLost, setContextLost] = useState(false);
   const { resources, statuses, loadTiming, retry } = useAssets(props.catalog, props.assetIds, reset);
   const parts = useMemo(() => resources.flatMap(resource => resource.parts), [resources]);
@@ -363,11 +356,9 @@ export default function AtlasScene(props: AtlasSceneProps) {
         <CameraRig {...props} resources={resources} parts={parts} />
         <Monitor resources={resources} loadTiming={loadTiming} onMetrics={props.onMetrics} onContextLost={setContextLost} />
         <SceneInspection resources={resources}/>
-        {practica1 && <Practica1PostFX active={postFXActive} settings={practiceSettings} />}
-        <GizmoHelper renderPriority={postFXActive ? 2 : 1} alignment="bottom-left" margin={[48, 48]}><GizmoViewport axisColors={['#b87874', '#819b8a', '#779fae']} labelColor="#ffffff" hideNegativeAxes /></GizmoHelper>
+        <GizmoHelper alignment="bottom-left" margin={[48, 48]}><GizmoViewport axisColors={['#b87874', '#819b8a', '#779fae']} labelColor="#ffffff" hideNegativeAxes /></GizmoHelper>
       </Canvas>
     </SceneBoundary>
-    {practica1 && <Practica1Panel settings={practiceSettings} reducedMotion={reducedMotion} onChange={setPracticeSettings} />}
     {contextLost && <div role="alert" style={{ position: 'absolute', inset: 0, display: 'grid', placeContent: 'center', textAlign: 'center', padding: 24, background: '#edf2f2ed', color: '#355c60' }}>
       <strong>La vista 3D se ha interrumpido</strong><p>El navegador perdió temporalmente la conexión gráfica.</p><button type="button" onClick={resetRenderer}>Restaurar la vista 3D</button>
     </div>}
